@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-16 23:36+0200\n"
+"POT-Creation-Date: 2014-07-19 22:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,39 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2)\n"
-
-#: jinja2integration/auth_views.py:107
-msgid "Logged out"
-msgstr ""
-
-#: jinja2integration/djangotags.py:178
-msgid "Err"
-msgstr ""
-
-#: jinja2integration/djangotags.py:179
-msgid "down0"
-msgstr ""
-
-#: jinja2integration/djangotags.py:180
-msgid "down+"
-msgstr ""
-
-#: jinja2integration/djangotags.py:181
-msgid "up"
-msgstr ""
-
-#: jinja2integration/djangotags.py:182
-msgid "OK"
-msgstr ""
-
-#: jinja2integration/djangotags.py:183
-#, fuzzy
-msgid "Off"
-msgstr "off"
-
-#: jinja2integration/djangotags.py:184
-msgid "Off!"
-msgstr ""
 
 #: jsonrpc/exceptions.py:3
 msgid "You're lazy..."
@@ -89,48 +56,60 @@ msgstr ""
 msgid "Error missed by other execeptions"
 msgstr ""
 
-#: project/settings.py:129
+#: mining/models.py:97
+msgid "invalid"
+msgstr "invalide"
+
+#: mining/models.py:99
+msgid "confirmed"
+msgstr "confirmé"
+
+#: project/settings.py:128
 msgid "English"
 msgstr ""
 
-#: project/settings.py:130
+#: project/settings.py:129
 msgid "German"
 msgstr ""
 
-#: project/settings.py:131
+#: project/settings.py:130
 msgid "French"
 msgstr ""
 
-#: project/settings.py:132
+#: project/settings.py:131
 msgid "Russian"
 msgstr ""
 
-#: project/settings.py:133
+#: project/settings.py:132
 msgid "Czech"
 msgstr ""
 
-#: project/settings.py:134
+#: project/settings.py:133
 msgid "Polish"
 msgstr ""
 
-#: project/settings.py:135
+#: project/settings.py:134
 msgid "Dutch"
 msgstr ""
 
-#: project/settings.py:136
+#: project/settings.py:135
 msgid "Spanish"
 msgstr ""
 
-#: project/settings.py:137
+#: project/settings.py:136
 msgid "Brazilian Portuguese"
 msgstr ""
 
-#: project/settings.py:138
+#: project/settings.py:137
 msgid "Simplified Chinese"
 msgstr ""
 
-#: project/settings.py:139
+#: project/settings.py:138
 msgid "Esperanto"
+msgstr ""
+
+#: web/auth_views.py:103
+msgid "Logged out"
 msgstr ""
 
 #: web/forms.py:43
@@ -203,8 +182,8 @@ msgstr ""
 msgid "Worker %s already exists"
 msgstr "Un Worker avec ce nom existe déjà."
 
-#: web/forms.py:232 web/templates/hall-of-fame.html:16
-#: web/templates/hall-of-fame.html.py:47
+#: web/forms.py:232 web/templates/hall-of-fame.html:17
+#: web/templates/hall-of-fame.html.py:48
 msgid "Username"
 msgstr "Nom d'utilisateur"
 
@@ -295,7 +274,7 @@ msgstr ""
 msgid "Send emails about device state changes"
 msgstr ""
 
-#: web/models.py:187 web/templates/base.html:114
+#: web/models.py:187 web/templates/base.html:115
 #, fuzzy
 msgid "User Manual"
 msgstr "Nom d'utilisateur"
@@ -319,20 +298,21 @@ msgstr "<User%(id)d>"
 msgid "Token not generated yet"
 msgstr "Jeton pas encore généré"
 
-#: web/models.py:235 web/views.py:532 web/views.py:1171
+#: web/models.py:235 web/views.py:530 web/views.py:1180
 msgid "Invalid token"
 msgstr "Jeton non valide"
 
-#: web/models.py:273 web/templates/wallet_confirm.html:4
-#: web/templates/wallet_confirm.html:9 web/templates/wallet_confirm_otp.html:3
+#: web/models.py:273 web/templates/wallet_confirm.html:6
+#: web/templates/wallet_confirm.html:11
+#: web/templates/wallet_confirm_otp.html:4
 msgid "Wallet change confirmation"
 msgstr "Confirmation changement de porte-monnaie"
 
-#: web/models.py:275 web/templates/stats.html:24
+#: web/models.py:275 web/templates/stats.html:25
 msgid "Bitcoin"
 msgstr "Bitcoin"
 
-#: web/models.py:490 web/templates/proposal_detail.html:164
+#: web/models.py:490 web/templates/proposal_detail.html:165
 msgid "Draft"
 msgstr ""
 
@@ -348,7 +328,7 @@ msgstr ""
 msgid "In progress"
 msgstr ""
 
-#: web/models.py:494 web/templates/proposal_list.html:139
+#: web/models.py:494 web/templates/proposal_list.html:140
 msgid "Released"
 msgstr ""
 
@@ -483,46 +463,46 @@ msgstr ""
 msgid "worker_update"
 msgstr ""
 
-#: web/registration.py:48
+#: web/registration.py:52
 msgid "New account confirmation"
 msgstr "Confirmation d'un nouveau compte créé"
 
-#: web/views.py:684
+#: web/views.py:690
 msgid "Delete account confirmation"
 msgstr "Confirmation suppression de compte"
 
-#: web/views.py:871
+#: web/views.py:879
 #, fuzzy
 msgid "The account has been updated."
 msgstr "Le compte a été mis à jour."
 
-#: web/views.py:886
+#: web/views.py:894
 #, fuzzy
 msgid "The monitoring settings has been updated."
 msgstr "Le parametrage Namecoin a été mis à jour."
 
-#: web/views.py:922
+#: web/views.py:932
 #, fuzzy
 msgid "Password has been successfully updated."
 msgstr "Votre porte-monnaie a bien été changé."
 
-#: web/views.py:1072 web/views.py:1092
+#: web/views.py:1081 web/views.py:1101
 msgid "Account banned. Contact pool administrator at support@bitcoin.cz"
 msgstr "Compte bani. Contactez l'administrateur à support@bitcoin.cz"
 
-#: web/templates/account_delete.html:2 web/templates/monitoring.html:2
-#: web/templates/settings.html:2 web/templates/support-titlepage.txt:2
-#: web/templates/transactions.html:2
+#: web/templates/account_delete.html:3 web/templates/monitoring.html:3
+#: web/templates/settings.html:3 web/templates/support-titlepage.txt:3
+#: web/templates/transactions.html:3
 msgid "My account"
 msgstr "Mon compte"
 
-#: web/templates/account_delete.html:2 web/templates/account_delete.html:6
-#: web/templates/settings.html:311 web/templates/settings.html.py:314
-#: web/templates/settings.html:322
+#: web/templates/account_delete.html:3 web/templates/account_delete.html:7
+#: web/templates/settings.html:320 web/templates/settings.html.py:323
+#: web/templates/settings.html:331
 msgid "Delete my account"
 msgstr "Supprimer mon compte"
 
-#: web/templates/account_delete.html:10 web/templates/wallet_confirm.html:41
+#: web/templates/account_delete.html:11 web/templates/wallet_confirm.html:53
 msgid ""
 "Confirmation email has been send. Please check your mailbox and follow the "
 "link."
@@ -530,7 +510,7 @@ msgstr ""
 "Un email de confirmation a été envoyé. Veuillez verifier votre boite e-mail "
 "et suivre le lien."
 
-#: web/templates/account_delete.html:15
+#: web/templates/account_delete.html:16
 msgid ""
 "Confirmation link which you provided is not valid. Please be sure that your "
 "confirmation link has been generated in less than one hour. If your current "
@@ -542,331 +522,351 @@ msgstr ""
 "lien est plus vieux qu'une heure, merci de retourner sur la configuration de "
 "votre compte pour réessayer."
 
-#: web/templates/base.html:70
+#: web/templates/base.html:71
 msgid "Loading ..."
 msgstr ""
 
-#: web/templates/base.html:113
+#: web/templates/base.html:114
 msgid "<strong>Home</strong>"
 msgstr ""
 
-#: web/templates/base.html:122
+#: web/templates/base.html:123
 msgid "<strong>News</strong>"
 msgstr ""
 
-#: web/templates/base.html:123
+#: web/templates/base.html:124
 msgid "Stay tuned"
 msgstr ""
 
-#: web/templates/base.html:128
+#: web/templates/base.html:129
 msgid "<strong>Pool</strong> Statistics"
 msgstr ""
 
-#: web/templates/base.html:129
+#: web/templates/base.html:130
 msgid "Public facts"
 msgstr ""
 
-#: web/templates/base.html:138 web/templates/menu2_contactus_links.html:1
+#: web/templates/base.html:139 web/templates/menu2_contactus_links.html:2
 msgid "<strong>Contact</strong> Us"
 msgstr ""
 
-#: web/templates/base.html:139
+#: web/templates/base.html:140
 #, fuzzy
 msgid "Support"
 msgstr "support LP"
 
-#: web/templates/base.html:148
+#: web/templates/base.html:149
 msgid "<strong>My</strong> account"
 msgstr ""
 
-#: web/templates/base.html:149 web/templates/base.html.py:167
+#: web/templates/base.html:150 web/templates/base.html.py:168
 msgid "Private zone"
 msgstr ""
 
-#: web/templates/base.html:155
+#: web/templates/base.html:156
 msgid "<strong>Logout</strong>"
 msgstr ""
 
-#: web/templates/base.html:160
+#: web/templates/base.html:161
 msgid "<strong>Sign up</strong> HERE"
 msgstr ""
 
-#: web/templates/base.html:161
+#: web/templates/base.html:162
 #, fuzzy
 msgid "New account"
 msgstr "Mon compte"
 
-#: web/templates/base.html:166
+#: web/templates/base.html:167
 msgid "<strong>Login</strong>"
 msgstr ""
 
-#: web/templates/blocks.html:2
+#: web/templates/blocks.html:3
 #, fuzzy
 msgid "Block History"
 msgstr "Historique des blocks Bitcoin "
 
-#: web/templates/blocks.html:12
+#: web/templates/blocks.html:13
 msgid "Block <span>History</span>"
 msgstr ""
 
-#: web/templates/blocks.html:14 web/templates/transactions.html:57
+#: web/templates/blocks.html:15 web/templates/transactions.html:58
 msgid "All times are in UTC."
 msgstr "Les temps sont en UTC."
 
-#: web/templates/blocks.html:16
+#: web/templates/blocks.html:17
 #, fuzzy
 msgid "Block Found At"
 msgstr "Block trouvé le"
 
-#: web/templates/blocks.html:16
+#: web/templates/blocks.html:17
 msgid "Duration"
 msgstr "Durée"
 
-#: web/templates/blocks.html:16
+#: web/templates/blocks.html:17
 #, fuzzy
 msgid "Total Shares"
 msgstr "Total de shares"
 
-#: web/templates/blocks.html:18
+#: web/templates/blocks.html:19
 #, fuzzy
 msgid "Your Shares"
 msgstr "Shares actuels"
 
-#: web/templates/blocks.html:19
+#: web/templates/blocks.html:20
 #, fuzzy
 msgid "Your Reward"
 msgstr "Votre récompense en BTC"
 
-#: web/templates/blocks.html:21
+#: web/templates/blocks.html:22
 msgid "Block #"
 msgstr "Block #"
 
-#: web/templates/blocks.html:21
+#: web/templates/blocks.html:22
 #, fuzzy
 msgid "Block Value"
 msgstr "Block #"
 
-#: web/templates/blocks.html:21
+#: web/templates/blocks.html:22
 #, fuzzy
 msgid "Confirmations Left"
 msgstr "confirmations restantes"
 
-#: web/templates/blocks.html:34
+#: web/templates/blocks.html:35
 msgid "Processing..."
 msgstr "Traitement en cours..."
 
-#: web/templates/blocks.html:42
-msgid "invalid"
-msgstr "invalide"
-
-#: web/templates/blocks.html:44
-msgid "confirmed"
-msgstr "confirmé"
-
-#: web/templates/confirm.html:5
+#: web/templates/confirm.html:7
 msgid "Your account is already activated."
 msgstr "Votre compte est déjà activé."
 
-#: web/templates/confirm.html:9
+#: web/templates/confirm.html:8
+#, fuzzy, python-format
+msgid "Please <a href=\"%(login_url)s\">login</a> to continue."
+msgstr "Merci de vous <a href='%(url)s'>login</a> pour continuer."
+
+#: web/templates/confirm.html:12
 msgid "Your account has been activated!"
 msgstr "Votre compte a été activé !"
 
-#: web/templates/confirm.html:11
+#: web/templates/confirm.html:14
 msgid ""
 "Your pool account is now ready for mining. Please use following credentials "
 "in your mining software:"
 msgstr ""
 
-#: web/templates/confirm.html:15
+#: web/templates/confirm.html:18
 #, fuzzy
 msgid "Worker login:"
 msgstr "Workers"
 
-#: web/templates/confirm.html:16
+#: web/templates/confirm.html:19
 #, fuzzy
 msgid "Worker password:"
 msgstr "Mot de passe requis"
 
-#: web/templates/confirm.html:19
+#: web/templates/confirm.html:22
 msgid "This is not your website login, use it only for your mining software."
 msgstr ""
 
-#: web/templates/confirm.html:20
+#: web/templates/confirm.html:23
 msgid "You can change it or register more workers on your profile page."
 msgstr ""
 
-#: web/templates/contacts.html:3 web/templates/support-titlepage.txt:2
+#: web/templates/confirm.html:25
+#, fuzzy, python-format
+msgid "Please <a href='%(login_url)s'>login</a> to continue."
+msgstr "Merci de vous <a href='%(url)s'>login</a> pour continuer."
+
+#: web/templates/contacts.html:3 web/templates/support-titlepage.txt:3
 msgid "Contact Us"
 msgstr ""
 
-#: web/templates/contacts.html:14 web/templates/contacts.html.py:38
-#: web/templates/contacts.html:40 web/templates/menu2_homepage_links.html:3
+#: web/templates/contacts.html:12 web/templates/contacts.html.py:36
+#: web/templates/contacts.html:38 web/templates/menu2_homepage_links.html:4
 msgid "<strong>User</strong> Manual"
 msgstr ""
 
-#: web/templates/contacts.html:14 web/templates/contacts.html.py:38
-#: web/templates/contacts.html:40 web/templates/menu2_contactus_links.html:4
+#: web/templates/contacts.html:12 web/templates/contacts.html.py:36
+#: web/templates/contacts.html:38 web/templates/menu2_contactus_links.html:5
 msgid "<strong>Knowledge</strong> Base"
 msgstr ""
 
-#: web/templates/contacts.html:16 web/templates/contacts.html.py:40
-#: web/templates/menu2_homepage_links.html:2
+#: web/templates/contacts.html:14 web/templates/contacts.html.py:38
+#: web/templates/menu2_homepage_links.html:3
 msgid "<strong>Get</strong> Started"
 msgstr ""
 
-#: web/templates/dashboard.html:2
+#: web/templates/dashboard.html:3
 #, fuzzy
 msgid "Account dashboard"
 msgstr "Le compte a été mis à jour."
 
-#: web/templates/dashboard.html:17
+#: web/templates/dashboard.html:18
 msgid "Dashboard"
 msgstr ""
 
-#: web/templates/dashboard.html:41
+#: web/templates/dashboard.html:42
 #, fuzzy
 msgid "Account"
 msgstr "Montant"
 
-#: web/templates/dashboard.html:44
+#: web/templates/dashboard.html:45
 #, fuzzy
 msgid "User Name"
 msgstr "Nom d'utilisateur"
 
-#: web/templates/dashboard.html:48
+#: web/templates/dashboard.html:49
 #, fuzzy
 msgid "E-mail"
 msgstr "Email"
 
-#: web/templates/dashboard.html:52
+#: web/templates/dashboard.html:53
 #, fuzzy
 msgid "Bitcoin address used for sending your rewards"
 msgstr "Votre adresse <strong>Bitcoin</strong> pour recevoir vos récompenses"
 
-#: web/templates/dashboard.html:53
+#: web/templates/dashboard.html:54
 #, fuzzy
 msgid "Payout Address"
 msgstr "Adresse Bitcoin"
 
-#: web/templates/dashboard.html:59
+#: web/templates/dashboard.html:60
 #, fuzzy
 msgid "Payout Threshold"
 msgstr "Historique des paiements"
 
-#: web/templates/dashboard.html:64
+#: web/templates/dashboard.html:65
 msgid "Rewards"
 msgstr ""
 
-#: web/templates/dashboard.html:67
+#: web/templates/dashboard.html:68
 msgid "Pending reward from unconfirmed blocks"
 msgstr "Récompense en attente provenant de blocks non confirmés"
 
-#: web/templates/dashboard.html:68
+#: web/templates/dashboard.html:69
 #, fuzzy
 msgid "Unconfirmed Reward"
 msgstr "Récompense non confirmée"
 
-#: web/templates/dashboard.html:72
+#: web/templates/dashboard.html:73
 msgid "Your confirmed balance from valid blocks"
 msgstr "Votre solde confirmé par des blocks valides"
 
-#: web/templates/dashboard.html:73
+#: web/templates/dashboard.html:74
 #, fuzzy
 msgid "Confirmed Reward"
 msgstr "Récompense confirmée"
 
-#: web/templates/dashboard.html:77
+#: web/templates/dashboard.html:78
 msgid "Unconfirmed + Confirmed rewards"
 msgstr "Récompenses confirmée + non confirmée"
 
-#: web/templates/dashboard.html:78
+#: web/templates/dashboard.html:79
 #, fuzzy
 msgid "Total Reward"
 msgstr "Récompense totale"
 
-#: web/templates/dashboard.html:82
+#: web/templates/dashboard.html:83
 #, fuzzy
 msgid "Estimated reward for the current round"
 msgstr "Récompense estimée pour le round en cours"
 
-#: web/templates/dashboard.html:83
+#: web/templates/dashboard.html:84
 #, fuzzy
 msgid "Estimated Reward"
 msgstr "Récompense estimée"
 
-#: web/templates/dashboard.html:90
+#: web/templates/dashboard.html:91
 msgid "Mining"
 msgstr ""
 
-#: web/templates/dashboard.html:93
+#: web/templates/dashboard.html:94
 msgid "Number of workers which submitted valid shares in the last 5 minutes"
 msgstr ""
 
-#: web/templates/dashboard.html:94 web/templates/dashboard.html.py:134
-#: web/templates/stats.html:40
+#: web/templates/dashboard.html:95 web/templates/dashboard.html.py:135
+#: web/templates/stats.html:41
 #, fuzzy
 msgid "Active Workers"
 msgstr "Workers"
 
-#: web/templates/dashboard.html:98
+#: web/templates/dashboard.html:99
 msgid "Effective Hash Rate (5min)"
 msgstr ""
 
-#: web/templates/dashboard.html:102
+#: web/templates/dashboard.html:103
 msgid "Effective Hash Rate (60min)"
 msgstr ""
 
-#: web/templates/dashboard.html:106
+#: web/templates/dashboard.html:107
 msgid "Effective Hash Rate (24h)"
 msgstr ""
 
-#: web/templates/dashboard.html:110
+#: web/templates/dashboard.html:111
 #, fuzzy
 msgid "Hashrate Age"
 msgstr "Taux de Hash"
 
-#: web/templates/dashboard.html:114
+#: web/templates/dashboard.html:115
 #, fuzzy
 msgid "Account Monitoring Status"
 msgstr "Configuration du compte"
 
-#: web/templates/dashboard.html:118
+#: web/templates/dashboard.html:119
 msgid "OK / low hash rate / off"
 msgstr ""
 
-#: web/templates/dashboard.html:119
+#: web/templates/dashboard.html:120
 msgid "Workers Monitoring Status"
 msgstr ""
 
-#: web/templates/dashboard.html:126 web/templates/stats.html:33
+#: web/templates/dashboard.html:127 web/templates/stats.html:34
 msgid "Loading chart data, please wait..."
 msgstr ""
 
-#: web/templates/dashboard.html:132 web/templates/stats.html:37
+#: web/templates/dashboard.html:133 web/templates/stats.html:38
 #, fuzzy
 msgid "Hash Rate (5min)"
 msgstr "Taux de Hash"
 
-#: web/templates/dashboard.html:133 web/templates/stats.html:38
+#: web/templates/dashboard.html:134 web/templates/stats.html:39
 #, fuzzy
 msgid "Hash Rate (1h)"
 msgstr "Taux de Hash"
 
-#: web/templates/email_account_delete.html:1 web/templates/email_payout.html:1
-#: web/templates/email_registration.html:1
-#: web/templates/email_wallet_change.html:1
+#: web/templates/email_account_delete.html:2 web/templates/email_payout.html:2
+#: web/templates/email_registration.html:2
+#: web/templates/email_wallet_change.html:2
 msgid "Hello"
 msgstr "Salut"
 
-#: web/templates/email_account_delete.html:7
+#: web/templates/email_account_delete.html:6
+#, fuzzy, python-format
 msgid ""
-"The link is valid for one hour. If you missed this email and link isn't "
-"valid anymore, please go to the website and retry the request."
+"\n"
+"    I'm sending you this email because somebody requested deletion of your "
+"account on <a href=\"%(url)s\">bitcoin.cz</a> mining pool!\n"
+"    "
 msgstr ""
-"Ce lien est valide une heure. Si vous ratez cet email et que le lien n'est "
-"plus valide, allez sur le site et refaite une requete."
+"Je vous envoie cet e-mail car quelqu'un a demandé la suppression de votre "
+"compte sur <a href='%(url)s'>bitcoin.cz</a> mining pool!"
 
-#: web/templates/email_account_delete.html:11
+#: web/templates/email_account_delete.html:15
+#, fuzzy, python-format
+msgid ""
+"\n"
+"    If you really want to delete your account <strong>%(username)s</strong>, "
+"please follow <a href=\"%(url)s%(token)s/%(timestamp)s\">this confirmation "
+"link</a>.\n"
+"    The link is valid for one hour. If you missed this email and link isn't "
+"valid anymore, please go to the website and retry the request.\n"
+"    "
+msgstr ""
+"Si vous souhaitez vraiment supprimervotre compte <strong>%(username)s</"
+"strong> suivez <a href='%(url)s%(token)s/%(timestamp)s'>ce lien de "
+"confirmation</a>."
+
+#: web/templates/email_account_delete.html:23
 msgid ""
 "Remaining balance of this account will be considered as a pool donation. If "
 "you forgot to request the payout, you have the last chance right now."
@@ -874,7 +874,7 @@ msgstr ""
 "Le solde restant de ce compte sera considéré comme un don au pool. Si vous "
 "oubliez de demander un paiement, ceci est votre dernière chance."
 
-#: web/templates/email_account_delete.html:15
+#: web/templates/email_account_delete.html:27
 msgid ""
 "If you didn't initiate this request, please don't click the confirmation "
 "link above,"
@@ -882,8 +882,8 @@ msgstr ""
 "Si vous n'avez pas initié cette demande, ne clickez pas sur ce lien de "
 "confirmation ci-dessus,"
 
-#: web/templates/email_account_delete.html:16
-#: web/templates/email_wallet_change.html:12
+#: web/templates/email_account_delete.html:28
+#: web/templates/email_wallet_change.html:17
 msgid ""
 "change your password immediately and report this incident to support@bitcoin."
 "cz."
@@ -891,15 +891,15 @@ msgstr ""
 "changez votre mot de passe immediatement et remontez cet incident à "
 "support@bitcoin.cz."
 
-#: web/templates/email_account_delete.html:21
-#: web/templates/email_payout.html:11 web/templates/email_registration.html:9
-#: web/templates/email_wallet_change.html:17
+#: web/templates/email_account_delete.html:33
+#: web/templates/email_payout.html:12 web/templates/email_registration.html:16
+#: web/templates/email_wallet_change.html:22
 msgid "Best regards,"
 msgstr "Cordialement,"
 
-#: web/templates/email_account_delete.html:23
-#: web/templates/email_payout.html:13 web/templates/email_registration.html:11
-#: web/templates/email_wallet_change.html:19
+#: web/templates/email_account_delete.html:35
+#: web/templates/email_payout.html:14 web/templates/email_registration.html:18
+#: web/templates/email_wallet_change.html:24
 msgid "The Pool Operator"
 msgstr "L'opérateur du pool"
 
@@ -927,203 +927,270 @@ msgstr ""
 msgid "The %(site_name)s team"
 msgstr ""
 
-#: web/templates/email_registration.html:3
+#: web/templates/email_registration.html:4
 #, fuzzy
 msgid "thank you for signing up for a mining.bitcoin.cz account!"
 msgstr "Merci d'avoir créé votre compte sur bitcoin.cz!"
 
-#: web/templates/faq.html:2
+#: web/templates/email_registration.html:8
+#, fuzzy, python-format
+msgid ""
+"\n"
+"    To activate your account, click to this <a href=\"%(url)s"
+"%(activation_key)s\">activation link</a>\n"
+"    "
+msgstr ""
+"Pour activer votre compte, clickez sur <a href='%(url)s"
+"%(activation_key)s'>ce lien d'activation</a>"
+
+#: web/templates/email_wallet_change.html:4
+#, fuzzy, python-format
+msgid ""
+"this email is sent due to a request to change your <strong>%(type)s</strong> "
+"wallet to the new address: <strong>%(wallet)s</strong>."
+msgstr ""
+"cet email est envoyé suite a une demande de changement de porte-monnaie "
+"<strong>%(type)s</strong> vers la nouvelle adresse: <strong>%(wallet)s</"
+"strong>. "
+
+#: web/templates/email_wallet_change.html:9
+#, fuzzy, python-format
+msgid ""
+"To authorize this request, please <a href=\"%(url)s%(wallet_token)s\">follow "
+"this link</a>"
+msgstr ""
+"Afin d'autoriser cette requete, Merci de <a href='%(url)s%(wallet_token)s'> "
+"suivre ce lien</a>."
+
+#: web/templates/email_wallet_change.html:15
+#, fuzzy, python-format
+msgid ""
+"If you didn't initiate this change please <a href=\"%(url)s%(wallet)s"
+"\">cancel this request</a>"
+msgstr ""
+"Si vous n'en n'êtes pas à l'origine <a href='%(url)s%(wallet)s'>annulez "
+"cette demande</a>, "
+
+#: web/templates/faq.html:3
 msgid "FAQ"
 msgstr ""
 
-#: web/templates/hall-of-fame.html:2 web/templates/stats.html:2
+#: web/templates/hall-of-fame.html:3 web/templates/stats.html:3
 msgid "Stats"
 msgstr "Statistiques"
 
-#: web/templates/hall-of-fame.html:9
+#: web/templates/hall-of-fame.html:10
 msgid "Hall of Fame"
 msgstr "Tableau d'honneur"
 
-#: web/templates/hall-of-fame.html:9
+#: web/templates/hall-of-fame.html:10
 msgid "TOP50 miners by hash rate and found blocks"
 msgstr ""
 
-#: web/templates/hall-of-fame.html:17 web/templates/hall-of-fame.html.py:49
+#: web/templates/hall-of-fame.html:18 web/templates/hall-of-fame.html.py:50
 #, fuzzy
 msgid "Peak Hash Rate"
 msgstr "Taux de Hash"
 
-#: web/templates/hall-of-fame.html:18 web/templates/hall-of-fame.html.py:50
+#: web/templates/hall-of-fame.html:19 web/templates/hall-of-fame.html.py:51
 msgid "Joined"
 msgstr ""
 
-#: web/templates/hall-of-fame.html:48
+#: web/templates/hall-of-fame.html:49
 #, fuzzy
 msgid "Found Blocks"
 msgstr "Blocks trouvés"
 
-#: web/templates/homepage.html:10
-msgid "Test _n a _p"
+#: web/templates/homepage.html:14
+msgctxt "Kontext stringu"
+msgid "String s kontextem"
 msgstr ""
 
-#: web/templates/login.html:3 web/templates/login.html.py:24
+#: web/templates/homepage.html:17
+#, python-format
+msgid "That will cost $ %(amount)s per year."
+msgid_plural "That will cost $ %(amount)s per %(years)s years."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: web/templates/login.html:4 web/templates/login.html.py:25
 msgid "Login"
 msgstr "Login"
 
-#: web/templates/login.html:25
+#: web/templates/login.html:26
 #, fuzzy
 msgid "Login to demo account"
 msgstr "Vous n'avez pas de compte?"
 
-#: web/templates/login.html:28
+#: web/templates/login.html:29
 msgid "Forgot username/password?"
 msgstr "Nom d'utilisateur/mot de passe oublié ?"
 
-#: web/templates/login.html:29
+#: web/templates/login.html:30
 msgid "Don't have an account?"
 msgstr "Vous n'avez pas de compte?"
 
-#: web/templates/login.html:29
+#: web/templates/login.html:30
 msgid "Sign up"
 msgstr "S'inscrire"
 
-#: web/templates/menu2_contactus_links.html:2
+#: web/templates/menu2_contactus_links.html:3
 msgid "<strong>Development</strong> Proposals"
 msgstr ""
 
-#: web/templates/menu2_contactus_links.html:6
+#: web/templates/menu2_contactus_links.html:7
 msgid "<strong>Support</strong> System"
 msgstr ""
 
-#: web/templates/menu2_contactus_links.html:8
+#: web/templates/menu2_contactus_links.html:9
 msgid "<strong>IRC</strong> Comunity Chat"
 msgstr ""
 
-#: web/templates/menu2_homepage_links.html:1
+#: web/templates/menu2_homepage_links.html:2
 msgid "<strong>Home</strong> Page"
 msgstr ""
 
-#: web/templates/menu2_poolstats_links.html:1
+#: web/templates/menu2_poolstats_links.html:2
 msgid "<strong>System</strong> Stats"
 msgstr ""
 
-#: web/templates/menu2_poolstats_links.html:2
+#: web/templates/menu2_poolstats_links.html:3
 msgid "<strong>Block</strong> History"
 msgstr ""
 
-#: web/templates/menu2_poolstats_links.html:3
+#: web/templates/menu2_poolstats_links.html:4
 msgid "<strong>Hall</strong> of Fame"
 msgstr ""
 
-#: web/templates/menu2_poolstats_links.html:4
+#: web/templates/menu2_poolstats_links.html:5
 msgid "<strong>Graphs</strong>"
 msgstr ""
 
-#: web/templates/menu2_poolstats_links.html:7
+#: web/templates/menu2_poolstats_links.html:8
 msgid "<strong>JSON</strong> stats"
 msgstr ""
 
-#: web/templates/menu2_poolstats_links.html:9
+#: web/templates/menu2_poolstats_links.html:10
 msgid "<strong>JSON</strong> Stats"
 msgstr ""
 
-#: web/templates/menu2_profile_links.html:1
+#: web/templates/menu2_profile_links.html:2
 msgid "<strong>Dashboard</strong>"
 msgstr ""
 
-#: web/templates/menu2_profile_links.html:2
+#: web/templates/menu2_profile_links.html:3
 msgid "<strong>Device</strong> Monitoring"
 msgstr ""
 
-#: web/templates/menu2_profile_links.html:3
+#: web/templates/menu2_profile_links.html:4
 msgid "<strong>Workers</strong>"
 msgstr ""
 
-#: web/templates/menu2_profile_links.html:4
+#: web/templates/menu2_profile_links.html:5
 msgid "<Strong>Payout</strong> History"
 msgstr ""
 
-#: web/templates/menu2_profile_links.html:5
+#: web/templates/menu2_profile_links.html:6
 #, fuzzy
 msgid "<strong>Account</strong> Settings"
 msgstr "Configuration du compte"
 
-#: web/templates/menu2_proposal.html:3
+#: web/templates/menu2_proposal.html:4
 msgid "Proposals"
 msgstr ""
 
-#: web/templates/monitoring.html:2
+#: web/templates/monitoring.html:3
 msgid "Device Monitoring"
 msgstr ""
 
-#: web/templates/monitoring.html:53
+#: web/templates/monitoring.html:54
 msgid "Device <span>Monitoring</span>"
 msgstr ""
 
-#: web/templates/monitoring.html:58
+#: web/templates/monitoring.html:59
 #, fuzzy
 msgid "Account state changes:"
 msgstr "Configuration du compte"
 
-#: web/templates/monitoring.html:63 web/templates/monitoring.html.py:100
-#: web/templates/profile_worker_pager.html:9
-#: web/templates/transactions-pager.html:9
+#: web/templates/monitoring.html:64 web/templates/monitoring.html.py:101
+#: web/templates/profile_worker_pager.html:10
+#: web/templates/transactions-pager.html:10
 msgid "Page"
 msgstr "Page"
 
-#: web/templates/monitoring.html:73 web/templates/monitoring.html.py:110
+#: web/templates/monitoring.html:74 web/templates/monitoring.html.py:111
 msgid "Event Time (before)"
 msgstr ""
 
-#: web/templates/monitoring.html:74 web/templates/monitoring.html.py:112
+#: web/templates/monitoring.html:75 web/templates/monitoring.html.py:113
 #, fuzzy
 msgid "State Change"
 msgstr "Changement de porte monnaie"
 
-#: web/templates/monitoring.html:75 web/templates/monitoring.html.py:113
+#: web/templates/monitoring.html:76 web/templates/monitoring.html.py:114
 #, fuzzy
 msgid "Hash Rate"
 msgstr "Taux de Hash"
 
-#: web/templates/monitoring.html:76 web/templates/monitoring.html.py:114
+#: web/templates/monitoring.html:77 web/templates/monitoring.html.py:115
 #, fuzzy
 msgid "Hash Rate Limit"
 msgstr "Taux de Hash"
 
-#: web/templates/monitoring.html:77 web/templates/monitoring.html.py:115
+#: web/templates/monitoring.html:78 web/templates/monitoring.html.py:116
 msgid "Reported"
 msgstr ""
 
-#: web/templates/monitoring.html:85 web/templates/monitoring.html.py:124
+#: web/templates/monitoring.html:86 web/templates/monitoring.html.py:125
 msgid "Skipped"
 msgstr ""
 
-#: web/templates/monitoring.html:94
+#: web/templates/monitoring.html:95
 msgid "Workers state changes:"
 msgstr ""
 
-#: web/templates/monitoring.html:99
+#: web/templates/monitoring.html:100
 msgid "worker filter (regexp)"
 msgstr ""
 
-#: web/templates/monitoring.html:111
+#: web/templates/monitoring.html:112
 #, fuzzy
 msgid "Worker"
 msgstr "Workers"
 
-#: web/templates/msg_pending_wallet.html:5
-msgid "Please check your mailbox and follow confirmation link."
-msgstr "Vérifiez votre boite email et suivez le lien de confirmation."
+#: web/templates/msg_pending_wallet.html:2
+#, fuzzy, python-format
+msgid ""
+"\n"
+"You have pending request for changing <strong>%(currency)s</strong> wallet "
+"to '%(wallet_pending)s'.\n"
+msgstr ""
+"Vous avez une requete en attente pour changer un porte-monnaie <strong>"
+"%(currency)s</strong> vers '%(wallet_pending)s'."
 
-#: web/templates/news_detail.html:3 web/templates/news_list.html:3
+#: web/templates/msg_pending_wallet.html:10
+#, python-format
+msgid ""
+"\n"
+"Email confirmation has been sent to email '%(email)s'.\n"
+"Please check your mailbox and follow confirmation link.\" %%}\n"
+"If you didn't receive confirmation email yet, you can also <a href="
+"\"%(url_resend)s\">resend confirmation</a>.\n"
+"If you didn't initiate this change please <a href=\"%(url_cancel)s\">cancel "
+"the request</a> and <a href=\"%(url_password_reset)s\">change your password</"
+"a> immediately.\n"
+msgstr ""
+
+#: web/templates/news_detail.html:4 web/templates/news_list.html:4
 msgid "News"
 msgstr "News"
 
-#: web/templates/password_reset.html:4
+#: web/templates/password_reset.html:5
 msgid "Password reset"
 msgstr "Reinitialisation du mot de passe"
 
-#: web/templates/password_reset.html:5
+#: web/templates/password_reset.html:6
 msgid ""
 "Forgotten your password? Enter your e-mail address below, and I'll e-mail "
 "instructions for setting a new one."
@@ -1131,15 +1198,15 @@ msgstr ""
 "Vous avez oublié votre mot de passe? Entrez votre email ci-dessous et "
 "nousvous enverrons des intructions pour le changer."
 
-#: web/templates/password_reset.html:24
+#: web/templates/password_reset.html:25
 msgid "Reset my password"
 msgstr "Reinitialiser mon mot de passe"
 
-#: web/templates/password_reset.html:31
+#: web/templates/password_reset.html:32
 msgid "Enter new password"
 msgstr "Entrez le nouveu mot de passe"
 
-#: web/templates/password_reset.html:32
+#: web/templates/password_reset.html:33
 msgid ""
 "Please enter your new password twice so I can verify you typed it in "
 "correctly."
@@ -1147,28 +1214,28 @@ msgstr ""
 "Veuillez saisir votre nouveau mot de passe une seconde fois pour vous "
 "prévenir d'une erreur de saisie."
 
-#: web/templates/password_reset.html:48
+#: web/templates/password_reset.html:49
 msgid "Change my password"
 msgstr "Changer mon mot de passe"
 
-#: web/templates/password_reset.html:54
+#: web/templates/password_reset.html:55
 msgid "Password reset complete"
 msgstr "Le mot de passe a été changé"
 
-#: web/templates/password_reset.html:55
+#: web/templates/password_reset.html:56
 msgid "Your password has been set. You may go ahead and log in now."
 msgstr ""
 "Votre mot de passe a été enregistré. Vous pouvez vous connecter maintenant."
 
-#: web/templates/password_reset.html:56
+#: web/templates/password_reset.html:57
 msgid "Log in"
 msgstr "Se connecter"
 
-#: web/templates/password_reset_done.html:3
+#: web/templates/password_reset_done.html:4
 msgid "Password reset successful"
 msgstr "Reinitialisation de mot de passe réussie"
 
-#: web/templates/password_reset_done.html:4
+#: web/templates/password_reset_done.html:5
 msgid ""
 "I've e-mailed you instructions for setting your password to the e-mail "
 "address you submitted. You should be receiving it shortly."
@@ -1176,134 +1243,139 @@ msgstr ""
 "Je vous ai envoyé un e-mail avec les instructions pour changer votre mot de "
 "passe. Vous devriez le recevoir rapidement."
 
-#: web/templates/profile_worker_pager.html:5
-#: web/templates/transactions-pager.html:5
+#: web/templates/profile_worker_pager.html:6
+#: web/templates/transactions-pager.html:6
 msgid "previous"
 msgstr "précédent"
 
-#: web/templates/profile_worker_pager.html:9
-#: web/templates/transactions-pager.html:9
+#: web/templates/profile_worker_pager.html:10
+#: web/templates/transactions-pager.html:10
 msgid "of"
 msgstr "de"
 
-#: web/templates/profile_worker_pager.html:13
-#: web/templates/transactions-pager.html:13
+#: web/templates/profile_worker_pager.html:14
+#: web/templates/transactions-pager.html:14
 msgid "next"
 msgstr "suivant"
 
-#: web/templates/proposal_detail.html:2 web/templates/proposal_form.html:2
-#: web/templates/proposal_form.html:15 web/templates/proposal_history.html:2
-#: web/templates/proposal_list.html:2 web/templates/proposal_vote_form.html:2
+#: web/templates/proposal_detail.html:3 web/templates/proposal_form.html:3
+#: web/templates/proposal_form.html:16 web/templates/proposal_history.html:3
+#: web/templates/proposal_list.html:3 web/templates/proposal_vote_form.html:3
 msgid "New proposal"
 msgstr ""
 
-#: web/templates/proposal_detail.html:18
+#: web/templates/proposal_detail.html:19
 msgid "History"
 msgstr ""
 
-#: web/templates/proposal_detail.html:22
+#: web/templates/proposal_detail.html:23
 msgid "Edit"
 msgstr "Edit"
 
-#: web/templates/proposal_detail.html:29 web/templates/proposal_list.html:26
+#: web/templates/proposal_detail.html:30 web/templates/proposal_list.html:27
 msgid "Remaining points"
 msgstr ""
 
-#: web/templates/proposal_detail.html:38 web/templates/proposal_list.html:39
+#: web/templates/proposal_detail.html:39 web/templates/proposal_list.html:40
 msgid "Votes"
 msgstr ""
 
-#: web/templates/proposal_detail.html:39 web/templates/proposal_list.html:40
+#: web/templates/proposal_detail.html:40 web/templates/proposal_list.html:41
 msgid "Points"
 msgstr ""
 
-#: web/templates/proposal_detail.html:41 web/templates/proposal_list.html:42
+#: web/templates/proposal_detail.html:42 web/templates/proposal_list.html:43
 msgid "My Points"
 msgstr ""
 
-#: web/templates/proposal_detail.html:119
+#: web/templates/proposal_detail.html:120
 msgid "Comments"
 msgstr ""
 
-#: web/templates/proposal_detail.html:142
-#: web/templates/proposal_detail.html:152 web/templates/proposal_form.html:39
-#: web/templates/settings.html:51 web/templates/settings.html.py:72
-#: web/templates/settings.html:103 web/templates/settings.html.py:152
-#: web/templates/worker.html:18
+#: web/templates/proposal_detail.html:143
+#: web/templates/proposal_detail.html:153 web/templates/proposal_form.html:40
+#: web/templates/settings.html:52 web/templates/settings.html.py:72
+#: web/templates/settings.html:102 web/templates/settings.html.py:154
+#: web/templates/worker.html:19
 msgid "Save"
 msgstr "Sauvegarder"
 
-#: web/templates/proposal_list.html:21
+#: web/templates/proposal_list.html:22
 msgid "Proposals list"
 msgstr ""
 
-#: web/templates/proposal_list.html:29
+#: web/templates/proposal_list.html:30
 msgid "New Proposal"
 msgstr ""
 
-#: web/templates/proposal_list.html:37
+#: web/templates/proposal_list.html:38
 msgid "Title"
 msgstr ""
 
-#: web/templates/proposal_list.html:51
+#: web/templates/proposal_list.html:52
 msgid "edit"
 msgstr ""
 
-#: web/templates/proposal_list.html:56
+#: web/templates/proposal_list.html:57
 #, fuzzy
 msgid "Waits for admin confirmation"
 msgstr "Confirmation changement de porte-monnaie"
 
-#: web/templates/proposal_list.html:125
+#: web/templates/proposal_list.html:126
 msgid "In development"
 msgstr ""
 
-#: web/templates/proposal_vote_form.html:21
+#: web/templates/proposal_vote_form.html:22
 msgid "Vote"
 msgstr ""
 
-#: web/templates/quick_updates.html:1
+#: web/templates/quick_updates.html:2
 msgid "Quick<span> updates</span>"
 msgstr ""
 
-#: web/templates/register.html:3
+#: web/templates/register.html:4
 #, fuzzy
 msgid "Register <span>an account</span>"
 msgstr "Créer un compte"
 
-#: web/templates/register.html:6
+#: web/templates/register.html:7
 msgid ""
 "Your account has been created. Please check your mail for activation link."
 msgstr "Votre compte a été créé. Verifiez vos email pour le lien d'activation."
 
-#: web/templates/register.html:10
+#: web/templates/register.html:11
 msgid "You already have an account."
 msgstr "Vous avez déjà un compte."
 
-#: web/templates/register.html:39
+#: web/templates/register.html:13
+#, fuzzy, python-format
+msgid "'Please continue to your <a href=\"%(url)s\">dashboard</a>"
+msgstr "Veuillez continuer vers votre <a href='%(url)s'>page de profile</a>"
+
+#: web/templates/register.html:42
 msgid "Register now!"
 msgstr "Inscrivez-vous maintenant!"
 
-#: web/templates/settings.html:2
+#: web/templates/settings.html:3
 msgid "Account settings"
 msgstr "Configuration du compte"
 
-#: web/templates/settings.html:16
+#: web/templates/settings.html:17
 #, fuzzy
 msgid "Account Settings"
 msgstr "Configuration du compte"
 
-#: web/templates/settings.html:20
+#: web/templates/settings.html:21
 msgid ""
 "You are logged in as a \"Spectator\". You can freely look around but you "
 "cannot change any settings."
 msgstr ""
 
-#: web/templates/settings.html:34 web/templates/settings.html.py:41
+#: web/templates/settings.html:35 web/templates/settings.html.py:42
 msgid "Basic"
 msgstr ""
 
-#: web/templates/settings.html:61
+#: web/templates/settings.html:62
 #, fuzzy
 msgid "Change Account Password"
 msgstr "Changer le mot de passe"
@@ -1320,37 +1392,46 @@ msgstr ""
 msgid "here"
 msgstr ""
 
-#: web/templates/settings.html:113
+#: web/templates/settings.html:112
 msgid "Anti-spam Report Counter"
 msgstr ""
 
-#: web/templates/settings.html:115
+#: web/templates/settings.html:114
+#, python-format
+msgid ""
+"\n"
+"                        Sent %(facts.reports)s / %(facts.max_reports)s "
+"reports since %(facts.window_beginning)s.\n"
+"                        "
+msgstr ""
+
+#: web/templates/settings.html:118
 msgid "Some help text."
 msgstr ""
 
-#: web/templates/settings.html:124
+#: web/templates/settings.html:127
 msgid "Reset Counter"
 msgstr ""
 
-#: web/templates/settings.html:133 web/templates/settings.html.py:140
+#: web/templates/settings.html:136 web/templates/settings.html.py:143
 #, fuzzy
 msgid "Payout"
 msgstr "Historique des paiements"
 
-#: web/templates/settings.html:162
+#: web/templates/settings.html:164
 msgid "Security"
 msgstr ""
 
-#: web/templates/settings.html:167 web/templates/wallet_confirm_otp.html:3
+#: web/templates/settings.html:169 web/templates/wallet_confirm_otp.html:4
 msgid "Two-factor authentication"
 msgstr ""
 
-#: web/templates/settings.html:169
+#: web/templates/settings.html:171
 msgid ""
 "<strong>Your two-factor authentication is successfully configured.</strong>"
 msgstr ""
 
-#: web/templates/settings.html:170 web/templates/settings.html.py:182
+#: web/templates/settings.html:172 web/templates/settings.html.py:184
 msgid ""
 "<strong>Please, note, that losing your smartphone (and a backup of your "
 "secret key) means you will not be able to change your payout address. Two-"
@@ -1358,17 +1439,17 @@ msgid ""
 "smartphone.</strong>"
 msgstr ""
 
-#: web/templates/settings.html:171
+#: web/templates/settings.html:173
 msgid ""
 "You can deactivate two-factor authentication by entering valid one-time "
 "password into the form below."
 msgstr ""
 
-#: web/templates/settings.html:176
+#: web/templates/settings.html:178
 msgid "Disable two-factor auth"
 msgstr ""
 
-#: web/templates/settings.html:183
+#: web/templates/settings.html:185
 msgid ""
 "You should seriously consider to backup the generated secret for the two-"
 "factor authentication to some safe place for cases when you lose your "
@@ -1376,53 +1457,66 @@ msgid ""
 "of paper. The generated URI is equivalent to the shown QR code."
 msgstr ""
 
-#: web/templates/settings.html:185
+#: web/templates/settings.html:187
 msgid "How to enable two-factor authentication"
 msgstr ""
 
-#: web/templates/settings.html:210
+#: web/templates/settings.html:212
 msgid "The URI form of the QR code:"
 msgstr ""
 
-#: web/templates/settings.html:214
+#: web/templates/settings.html:217
 msgid "Enable two-factor auth"
 msgstr ""
 
-#: web/templates/settings.html:220 web/templates/settings.html.py:231
+#: web/templates/settings.html:224 web/templates/settings.html.py:236
 msgid "Lock payout address"
 msgstr ""
 
-#: web/templates/settings.html:223
+#: web/templates/settings.html:227
+#, python-format
+msgid "<strong>Your payout address %(wallet)s is locked.</strong>"
+msgstr ""
+
+#: web/templates/settings.html:228
 msgid ""
 "Please be sure that you have a backup of your bitcoin wallet stored on safe "
 "place, because since the payout address is locked, there's no way how to "
 "change it anymore."
 msgstr ""
 
-#: web/templates/settings.html:226
+#: web/templates/settings.html:230
+#, python-format
+msgid ""
+"As a security precaution, you may lock your current payout address <strong>"
+"%(wallet)s</strong>, so it cannot be changed by anyone who gains access to "
+"your pool account."
+msgstr ""
+
+#: web/templates/settings.html:231
 msgid ""
 "Please be sure that you have a backup of your bitcoin wallet stored in a "
 "safe place. Since the payout address will be locked, there's <strong>no way "
 "how to change it anymore</strong>."
 msgstr ""
 
-#: web/templates/settings.html:228
+#: web/templates/settings.html:233
 msgid "Really lock the payout address?"
 msgstr ""
 
-#: web/templates/settings.html:244 web/templates/settings.html.py:247
+#: web/templates/settings.html:249 web/templates/settings.html.py:252
 msgid "Manage API tokens"
 msgstr "Gérer les jetons API"
 
-#: web/templates/settings.html:263
+#: web/templates/settings.html:268
 msgid "Your current token:"
 msgstr "Votre jeton actuel:"
 
-#: web/templates/settings.html:268
+#: web/templates/settings.html:273
 msgid "Generate new token"
 msgstr "Generer un nouveau jeton"
 
-#: web/templates/settings.html:272
+#: web/templates/settings.html:277
 msgid ""
 "Keep this token private. With this token and API described below, you can "
 "easily retrieve pool account details without need to store login and "
@@ -1432,26 +1526,26 @@ msgstr ""
 "pouvez facilement récupérer les details d'un compte du pool sans stocker le "
 "login et le mot de passe directement dans votre application."
 
-#: web/templates/settings.html:275
+#: web/templates/settings.html:280
 msgid "API details"
 msgstr "Détails API"
 
-#: web/templates/settings.html:277
+#: web/templates/settings.html:282
 #, fuzzy
 msgid ""
 "This URL contains JSON encoded data about recent pool rounds, including your "
 "round rewards:"
 msgstr "Cette URL contient des données encodées JSON de votre compte du pool:"
 
-#: web/templates/settings.html:281
+#: web/templates/settings.html:286
 msgid "This URL contains JSON encoded data about your pool account:"
 msgstr "Cette URL contient des données encodées JSON de votre compte du pool:"
 
-#: web/templates/settings.html:285
+#: web/templates/settings.html:290
 msgid "Login which belongs to given token."
 msgstr "Le login à qui appartient le jeton."
 
-#: web/templates/settings.html:286
+#: web/templates/settings.html:291
 msgid ""
 "Total user's hashrate, updated every hour and calculated from last 10 rounds "
 "(Mhash/s)."
@@ -1459,11 +1553,11 @@ msgstr ""
 "Hashrate total de l'utilisateur, mis à jour toutes les heures et calculé à "
 "partir des 10 derniers rounds.(Mhash/s)."
 
-#: web/templates/settings.html:287
+#: web/templates/settings.html:292
 msgid "Reserved."
 msgstr "Reservé."
 
-#: web/templates/settings.html:288
+#: web/templates/settings.html:293
 msgid ""
 "Estimated reward of current round. This is calculated as (your score)/(total "
 "score) for current round and may vary on every refresh."
@@ -1471,7 +1565,7 @@ msgstr ""
 "Récompense estimée pour le round en cour. Calculé en tant que (votre score)/"
 "(score total score) pour le round actuel et peut changer à chaque refresh."
 
-#: web/templates/settings.html:289
+#: web/templates/settings.html:294
 msgid ""
 "Reward from blocks with less than 100 confirmations. This may go down when "
 "some block become invalid (refused by Bitcoin network)."
@@ -1479,15 +1573,15 @@ msgstr ""
 "Récompense des blocks avec moins de 100 confirmations. Ceci peut diminuer si "
 "certains blocks deviennent invalides (rejeté par le résequ Bitcoin)."
 
-#: web/templates/settings.html:290
+#: web/templates/settings.html:295
 msgid "This is your real reward waiting to send to your wallet."
 msgstr "Ceci est votre récompense en attente d'envoi."
 
-#: web/templates/settings.html:291
+#: web/templates/settings.html:296
 msgid "Bitcoins will be send to this Bitcoin wallet."
 msgstr "Les Bitcoins seront envoyé dans votre porte-monnaie."
 
-#: web/templates/settings.html:292
+#: web/templates/settings.html:297
 msgid ""
 "Bitcoins will be sent to you once confirmed_reward crosses over this value. "
 "Pool is processing payments once per hour."
@@ -1495,24 +1589,32 @@ msgstr ""
 "Bitcoins will be sent to you once confirmed_reward crosses over this value. "
 "Pool is processing payments once per hour."
 
-#: web/templates/settings.html:297
+#: web/templates/settings.html:302
 msgid "Expected HTTP statuses:"
 msgstr "status HTTP attendus:"
 
-#: web/templates/settings.html:299
+#: web/templates/settings.html:304
 msgid "Request was successful, response contains JSON data described above."
 msgstr ""
 "Demande réussie, la réponse contient de données JSON décrites au dessus."
 
-#: web/templates/settings.html:300
+#: web/templates/settings.html:305
 msgid "Request was not successful, token is probably invalid."
 msgstr "Demande en echec, jeton probablement invalide."
 
-#: web/templates/settings.html:301
+#: web/templates/settings.html:306
 msgid "Server is down for maintenance or there is some unexpected error."
 msgstr "Le serveur est en cours de maintenance ou bien il y a une erreur."
 
-#: web/templates/settings.html:316
+#: web/templates/settings.html:310
+#, fuzzy, python-format
+msgid ""
+"\n"
+"                    All requests are cached for %(timeout)s seconds.\n"
+"                    "
+msgstr "Les requetes sont mise en cache pendant %(timeout)s secondes."
+
+#: web/templates/settings.html:325
 msgid ""
 "If you don't want to use this service anymore, you can cancel your account "
 "on the following link:"
@@ -1520,241 +1622,263 @@ msgstr ""
 "Si vous ne souhaitez plus utiliser ce service, vous pouvez supprimer votre "
 "compte avec le lien suivant:"
 
-#: web/templates/settings.html:319 web/templates/worker.html:21
+#: web/templates/settings.html:328 web/templates/worker.html:22
 msgid "Really?"
 msgstr "Vraiment?"
 
-#: web/templates/stats-graphs.html:2 web/templates/stats-graphs.html.py:15
+#: web/templates/stats-graphs.html:3 web/templates/stats-graphs.html.py:16
 msgid "Graphs"
 msgstr "Graphiques"
 
-#: web/templates/stats-graphs.html:59
+#: web/templates/stats-graphs.html:60
 msgid "Your daily reward"
 msgstr "Votre récompense journalière"
 
-#: web/templates/stats-graphs.html:96
+#: web/templates/stats-graphs.html:97
 msgid "Daily reward"
 msgstr "Récompense journalière"
 
-#: web/templates/stats-graphs.html:96
+#: web/templates/stats-graphs.html:97
 msgid "day moving AVG"
 msgstr "moyenne sur le dernier jour"
 
-#: web/templates/stats-graphs.html:155
+#: web/templates/stats-graphs.html:156
 msgid "System daily reward"
 msgstr "Récompense journalière système"
 
-#: web/templates/stats-graphs.html:251
+#: web/templates/stats-graphs.html:252
 msgid "Cumulative distribution of normalized number of shares per block"
 msgstr "Distribution cumulative du nombre de share par block normalisé"
 
-#: web/templates/stats-graphs.html:280
+#: web/templates/stats-graphs.html:281
 msgid "experimental CDF"
 msgstr "CDF expérimental"
 
-#: web/templates/stats-graphs.html:281
+#: web/templates/stats-graphs.html:282
 msgid "theoretical CDF"
 msgstr "CDF théorique"
 
-#: web/templates/stats.html:15
+#: web/templates/stats.html:16
 #, fuzzy
 msgid "System Statistics"
 msgstr "Statistiques système"
 
-#: web/templates/stats.html:20
+#: web/templates/stats.html:21
 #, fuzzy
 msgid "Current Server Time:"
 msgstr "Shares actuels"
 
-#: web/templates/stats.html:20 web/templates/stats.html.py:21
+#: web/templates/stats.html:21 web/templates/stats.html.py:22
 msgid "UTC"
 msgstr "UTC"
 
-#: web/templates/stats.html:21
+#: web/templates/stats.html:22
 #, fuzzy
 msgid "Current Round Start:"
 msgstr "Round actuel commencé à:"
 
-#: web/templates/stats.html:22
+#: web/templates/stats.html:23
 #, fuzzy
 msgid "Current Round Duration:"
 msgstr "Durée du round actuel:"
 
-#: web/templates/stats.html:23
+#: web/templates/stats.html:24
 #, fuzzy
 msgid "Current Shares"
 msgstr "Shares actuels"
 
-#: web/templates/stats.html:23
+#: web/templates/stats.html:24
 msgid "CDF"
 msgstr "CDF"
 
-#: web/templates/stats.html:24
+#: web/templates/stats.html:25
 msgid "Current"
 msgstr "Actuel"
 
-#: web/templates/stats.html:24
+#: web/templates/stats.html:25
 msgid "block"
 msgstr "block"
 
-#: web/templates/stats.html:24
+#: web/templates/stats.html:25
 msgid "difficulty"
 msgstr "difficulté"
 
-#: web/templates/stats.html:25
+#: web/templates/stats.html:26
 #, fuzzy
 msgid "Pool Luck"
 msgstr "Chance du pool"
 
-#: web/templates/stats.html:25
+#: web/templates/stats.html:26
 msgid "day"
 msgstr "jour"
 
-#: web/templates/stats.html:25
+#: web/templates/stats.html:26
 msgid "days"
 msgstr "jours"
 
-#: web/templates/stats.html:26
+#: web/templates/stats.html:27
 #, fuzzy
 msgid "Total Score in the Round:"
 msgstr "Score total du round actuel:"
 
-#: web/templates/stats.html:27
+#: web/templates/stats.html:28
 #, fuzzy
 msgid "Total Shares in the Round:"
 msgstr "Score total du round actuel:"
 
-#: web/templates/stats.html:28
+#: web/templates/stats.html:29
 msgid "Pool Effective Hash Rate (30 min average)"
 msgstr ""
 
-#: web/templates/stats.html:39
+#: web/templates/stats.html:40
 msgid "Active Users"
 msgstr ""
 
-#: web/templates/support-titlepage.txt:6
+#: web/templates/support-titlepage.txt:7
 msgid "Contact us"
 msgstr ""
 
-#: web/templates/transactions.html:2
+#: web/templates/transactions.html:3
 msgid "Transactions"
 msgstr "Transactions"
 
-#: web/templates/transactions.html:9
+#: web/templates/transactions.html:10
 #, fuzzy
 msgid "Payout History"
 msgstr "Historique des paiements"
 
-#: web/templates/transactions.html:11
+#: web/templates/transactions.html:12
 msgid "Total:"
 msgstr "Total:"
 
-#: web/templates/transactions.html:18
+#: web/templates/transactions.html:19
 msgid "Date"
 msgstr "Date"
 
-#: web/templates/transactions.html:19
+#: web/templates/transactions.html:20
 msgid "Address"
 msgstr "Adresse"
 
-#: web/templates/transactions.html:20
+#: web/templates/transactions.html:21
 msgid "Amount"
 msgstr "Montant"
 
-#: web/templates/transactions.html:21
+#: web/templates/transactions.html:22
 msgid "Fee"
 msgstr ""
 
-#: web/templates/transactions.html:22
+#: web/templates/transactions.html:23
 #, fuzzy
 msgid "BTC Transaction"
 msgstr "Transactions"
 
-#: web/templates/transactions.html:40
+#: web/templates/transactions.html:41
 #, fuzzy
 msgid "Pending..."
 msgstr "Traitement en cours..."
 
-#: web/templates/transactions.html:51
+#: web/templates/transactions.html:52
 msgid "No transactions yet"
 msgstr "Aucune transaction pour le moment"
 
-#: web/templates/wallet_confirm.html:4 web/templates/wallet_confirm.html:30
-#: web/templates/wallet_confirm.html:40
+#: web/templates/wallet_confirm.html:6 web/templates/wallet_confirm.html:40
+#: web/templates/wallet_confirm.html:52
 msgid "success"
 msgstr "Succès"
 
-#: web/templates/wallet_confirm.html:5
+#: web/templates/wallet_confirm.html:7
 msgid "Your wallet has been succesfully changed."
 msgstr "Votre porte-monnaie a bien été changé."
 
-#: web/templates/wallet_confirm.html:9 web/templates/wallet_confirm.html:25
+#: web/templates/wallet_confirm.html:11 web/templates/wallet_confirm.html:35
 msgid "failure"
 msgstr "echec"
 
-#: web/templates/wallet_confirm.html:17
+#: web/templates/wallet_confirm.html:14
+#, python-format
+msgid ""
+"\n"
+"                Your request cannot be completed earlier then 24 hours from "
+"creation. The time limit will pass at %(param)s UTC.\n"
+"                We're sorry for inconvenience, but this limitation is active "
+"because of recent security issues.\n"
+"                "
+msgstr ""
+
+#: web/templates/wallet_confirm.html:21
+#, python-format
+msgid ""
+"\n"
+"                Some wallet change confirmation was already processed from "
+"your IP today (%(param)s).\n"
+"                There can be only one wallet change per IP within 24 hours. "
+"Sorry for this inconvenience. Please try it tomorrow.\n"
+"                "
+msgstr ""
+
+#: web/templates/wallet_confirm.html:27
 msgid ""
 "Your request is waiting for manual confirmation by the pool stuff. Please "
 "try it later."
 msgstr ""
 
-#: web/templates/wallet_confirm.html:19
+#: web/templates/wallet_confirm.html:29
 msgid "You provided incorrect confirmation link for wallet change."
 msgstr ""
 "Vous avez fourni un lien de confirmation incorrect pour le changement de "
 "porte monnaie."
 
-#: web/templates/wallet_confirm.html:20
+#: web/templates/wallet_confirm.html:30
 msgid "However, you can resend confirmation email from profile page."
 msgstr ""
 "Malgres cela, vous pouvez renvoyer un email de confirmation depuis la page "
 "de votre profile."
 
-#: web/templates/wallet_confirm.html:25 web/templates/wallet_confirm.html:40
+#: web/templates/wallet_confirm.html:35 web/templates/wallet_confirm.html:52
 msgid "Wallet change resend"
 msgstr "Changement porte-monnaie renvoyé"
 
-#: web/templates/wallet_confirm.html:26
+#: web/templates/wallet_confirm.html:36
 msgid "You don't have any wallet change in progress, there's nothing to send."
 msgstr ""
 "Vous n'avez pas de demande de changement de porte-monnaie en cours, il n'y a "
 "rien à envoyer."
 
-#: web/templates/wallet_confirm.html:30 web/templates/wallet_confirm.html:35
+#: web/templates/wallet_confirm.html:40 web/templates/wallet_confirm.html:46
 msgid "Wallet change"
 msgstr "Changement de porte monnaie"
 
-#: web/templates/wallet_confirm.html:35
+#: web/templates/wallet_confirm.html:46
 msgid "request cancelled"
 msgstr "demande annulée"
 
-#: web/templates/wallet_confirm.html:36
+#: web/templates/wallet_confirm.html:47
 msgid "Request for changing wallet address has been cancelled."
 msgstr "La demande de changement d'adresse de porte-monnaie a été annulée."
 
-#: web/templates/wallet_confirm.html:44
+#: web/templates/wallet_confirm.html:56
 #, fuzzy
 msgid "Please continue to your"
 msgstr "Merci de continuer vers"
 
-#: web/templates/wallet_confirm.html:44
+#: web/templates/wallet_confirm.html:56
 msgid "dashboard"
 msgstr ""
 
-#: web/templates/worker.html:2 web/templates/workers.html:2
-#: web/templates/workers.html.py:10
+#: web/templates/worker.html:3 web/templates/workers.html:3
+#: web/templates/workers.html.py:11
 msgid "Workers"
 msgstr "Workers"
 
-#: web/templates/worker.html:10
+#: web/templates/worker.html:11
 msgid "Worker <span>configuration</span>"
 msgstr ""
 
-#: web/templates/worker.html:12
+#: web/templates/worker.html:13
 msgid "Worker has been updated."
 msgstr "Worker a été mis à jour."
 
-#: web/templates/worker.html:21
+#: web/templates/worker.html:22
 #, fuzzy
 msgid "All worker stats and shares in the current round will be lost!"
 msgstr "Les statistiques des workers seront perdues!"
@@ -1763,72 +1887,72 @@ msgstr "Les statistiques des workers seront perdues!"
 msgid "Delete"
 msgstr "Supprimer"
 
-#: web/templates/workers.html:12
+#: web/templates/workers.html:13
 msgid "Register new worker"
 msgstr "Inscrire un nouveau worker"
 
-#: web/templates/workers.html:13
+#: web/templates/workers.html:14
 msgid "Enable monitoring for all! workers"
 msgstr ""
 
-#: web/templates/workers.html:14
+#: web/templates/workers.html:15
 msgid "Disable monitoring for all! workers"
 msgstr ""
 
-#: web/templates/workers.html:19
+#: web/templates/workers.html:20
 msgid "Full Name"
 msgstr ""
 
-#: web/templates/workers.html:20
+#: web/templates/workers.html:21
 msgid "Mon.<br>State"
 msgstr ""
 
-#: web/templates/workers.html:21
+#: web/templates/workers.html:22
 msgid "Monitoring<br>Limit"
 msgstr ""
 
-#: web/templates/workers.html:22
+#: web/templates/workers.html:23
 msgid "Hash Rate<br>(5min)"
 msgstr ""
 
-#: web/templates/workers.html:23
+#: web/templates/workers.html:24
 msgid "Hash Rate<br>(60min)"
 msgstr ""
 
-#: web/templates/workers.html:24
+#: web/templates/workers.html:25
 msgid "Hash Rate<br>(24h)"
 msgstr ""
 
-#: web/templates/workers.html:25
+#: web/templates/workers.html:26
 msgid "Score<br>(round)"
 msgstr ""
 
-#: web/templates/workers.html:26
+#: web/templates/workers.html:27
 msgid "Shares<br>(round)"
 msgstr ""
 
-#: web/templates/workers.html:27
+#: web/templates/workers.html:28
 #, fuzzy
 msgid "Last Share"
 msgstr "Dernier share à"
 
-#: web/templates/workers.html:49
+#: web/templates/workers.html:50
 msgid "You don't have any worker yet. Register one right now!"
 msgstr "Vous n'avez pas encore de worker. Inscrivez en un maintenant!"
 
-#: web/templates/workers.html:53
+#: web/templates/workers.html:54
 msgid "Found blocks"
 msgstr "Blocks trouvés"
 
-#: web/templates/release_notes/2014-04_major.html:2
+#: web/templates/release_notes/2014-04_major.html:3
 msgid "Release notes"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:9
+#: web/templates/user_manual/get_started.html:8
 msgid "Get <span>Started</span>"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:11
+#: web/templates/user_manual/get_started.html:10
 msgid ""
 "In this article we give overall clarity to the process of setting up your "
 "account, mining device and software to the point where you are successfuly "
@@ -1837,182 +1961,224 @@ msgid ""
 "underlying technology and terminology."
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:13
+#: web/templates/user_manual/get_started.html:12
 msgid "Summary:"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:15
+#: web/templates/user_manual/get_started.html:14
 msgid "Sign-up and pool account setup"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:16
+#: web/templates/user_manual/get_started.html:15
 msgid "Geting a mining software / pointing it to the pool"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:20
+#: web/templates/user_manual/get_started.html:19
 msgid "Sign-up <span>and pool account setup</span>"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:23
+#: web/templates/user_manual/get_started.html:22
 msgid "Signup and wait for a confirmation email."
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:26
+#: web/templates/user_manual/get_started.html:25
 msgid "Login to your account and enter your wallet address."
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:35
+#: web/templates/user_manual/get_started.html:29
+#, python-format
+msgid ""
+"\n"
+"            Optionally enable the <a href=\"%(url1)s\">OTP protection</a> "
+"against arbitrary change of your wallet.\n"
+"            See our recommendations regarding the <a href=\"%(url2)s"
+"\">Bitcoin wallet choice</a>\n"
+"            "
+msgstr ""
+
+#: web/templates/user_manual/get_started.html:41
 msgid "Geting a mining software <span>/ pointing it to the pool"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:46
+#: web/templates/user_manual/get_started.html:52
 msgid ""
 "Otherwise we will guide you through the process. Complexity of this task "
 "depends on your mining hardware and platform used. We will cover the most "
 "occuring generic cases:"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:49
+#: web/templates/user_manual/get_started.html:55
 msgid "Standalone ASIC based mining device connected to your local network"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:51
+#: web/templates/user_manual/get_started.html:57
 msgid "Miner with Stratum protocol support"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:52
+#: web/templates/user_manual/get_started.html:58
 msgid "Miner with Getwork protocol support only"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:54
+#: web/templates/user_manual/get_started.html:60
 msgid "ASIC based miner connected to your PC or some other dedicated machine"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:57
+#: web/templates/user_manual/get_started.html:63
 msgid "Standalone mining hardware with Stratum protocol <span>support</span>"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:58
+#: web/templates/user_manual/get_started.html:64
 msgid ""
 "This is the most easy setup as such devices ussually provides you with some "
 "kind of user interface and you are only required to specify server url(s), "
 "username amd password."
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:60
+#: web/templates/user_manual/get_started.html:66
 #, fuzzy
 msgid "server:"
 msgstr "Reservé."
 
-#: web/templates/user_manual/get_started.html:61
+#: web/templates/user_manual/get_started.html:67
 #, fuzzy
 msgid "user name:"
 msgstr "Nom d'utilisateur"
 
-#: web/templates/user_manual/get_started.html:61
+#: web/templates/user_manual/get_started.html:67
 msgid "userID"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:61
+#: web/templates/user_manual/get_started.html:67
 msgid "workerName"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:62
+#: web/templates/user_manual/get_started.html:68
 #, fuzzy
 msgid "password:"
 msgstr "Mot de passe"
 
-#: web/templates/user_manual/get_started.html:62
+#: web/templates/user_manual/get_started.html:68
 msgid "anything"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:64
+#: web/templates/user_manual/get_started.html:70
 msgid ""
 "Password doesn't matter here since there is no security issue presented if "
 "someone tries to connect to our servers with your credentials. He would be "
 "just mining for you."
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:66
+#: web/templates/user_manual/get_started.html:72
 msgid ""
 "Standalone mining hardware with getwork protocol <span>support only</span>"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:69
+#: web/templates/user_manual/get_started.html:75
 msgid ""
 "ASIC based miner connected to your PC <span>or some other dedicated machine</"
 "span>"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:70
-#, python-format
-msgid ""
-"In this case you need a mining software installed on your computer. We "
-"recommend using <a href='%(urlcg)s' target='_blank'>CGminer</a> or <a "
-"href='%(urlbfg)s' target='_blank'>BFGminer</a>."
-msgstr ""
-
-#: web/templates/user_manual/get_started.html:74
+#: web/templates/user_manual/get_started.html:80
 msgid "CGminer on windows:"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:76
+#: web/templates/user_manual/get_started.html:82
 msgid ""
 "Press <strong>WIN + R</strong>, enter '<strong>CMD</strong>' and press "
 "<strong>enter</strong>"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:77
+#: web/templates/user_manual/get_started.html:83
 msgid "Enter following command and press Enter:"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:86
+#: web/templates/user_manual/get_started.html:92
 msgid "CGminer on Linux and Mac OS:"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:87
+#: web/templates/user_manual/get_started.html:93
 msgid "path/to/your/Cgminer_Folder"
 msgstr ""
 
-#: web/templates/user_manual/get_started.html:92
+#: web/templates/user_manual/get_started.html:98
 msgid ""
 "Other mining software like <em>cpuminer</em>, <em>rpcminer</em>, <em>minerd</"
 "em>, and <em>diablominer</em> is currently unsupported because of "
 "<strong>lack of support for the Stratum mining protocol</strong>"
 msgstr ""
 
-#: web/templates/user_manual/payments.html:8
+#: web/templates/user_manual/payments.html:7
 msgid "Payments"
 msgstr ""
 
-#: web/templates/user_manual/rewards.html:9
+#: web/templates/user_manual/rewards.html:8
 msgid "Reward <span>system</span>"
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:8
+#: web/templates/user_manual/terminology.html:7
 msgid "Pool <span>Terminology</span>"
 msgstr ""
 
-#: web/templates/user_manual/user_manual_base.html:6
+#: web/templates/user_manual/user_manual_base.html:7
 msgid "User <span>Manual</span>"
 msgstr ""
 
-#: web/templates/user_manual/user_manual_base.html:17
+#: web/templates/user_manual/user_manual_base.html:18
 msgid "Index"
 msgstr ""
 
-#: web/templates/widgets/pagedown.html:9
+#: web/templates/widgets/pagedown.html:10
 msgid "Preview"
 msgstr ""
 
-#: web/templates/widgets/wallet_pending.html:2
+#: web/templates/widgets/wallet_pending.html:3
 #, fuzzy
 msgid "Resend"
 msgstr "Reservé."
 
-#: web/templates/widgets/wallet_pending.html:3
+#: web/templates/widgets/wallet_pending.html:4
 msgid "Cancel"
 msgstr ""
+
+#: web/templatetags/utils.py:185
+msgid "Err"
+msgstr ""
+
+#: web/templatetags/utils.py:186
+msgid "down0"
+msgstr ""
+
+#: web/templatetags/utils.py:187
+msgid "down+"
+msgstr ""
+
+#: web/templatetags/utils.py:188
+msgid "up"
+msgstr ""
+
+#: web/templatetags/utils.py:189
+msgid "OK"
+msgstr ""
+
+#: web/templatetags/utils.py:190
+#, fuzzy
+msgid "Off"
+msgstr "off"
+
+#: web/templatetags/utils.py:191
+msgid "Off!"
+msgstr ""
+
+#~ msgid ""
+#~ "The link is valid for one hour. If you missed this email and link isn't "
+#~ "valid anymore, please go to the website and retry the request."
+#~ msgstr ""
+#~ "Ce lien est valide une heure. Si vous ratez cet email et que le lien "
+#~ "n'est plus valide, allez sur le site et refaite une requete."
+
+#~ msgid "Please check your mailbox and follow confirmation link."
+#~ msgstr "Vérifiez votre boite email et suivez le lien de confirmation."
 
 #~ msgid "IP address/Domain"
 #~ msgstr "Adresse IP/Domaine"
@@ -2405,25 +2571,6 @@ msgstr ""
 #~ "Active l'extension 'long polling' pour ce worker. Le désactiver nécessite "
 #~ "de redémarrer le worker."
 
-#~ msgid "Please <a href='%(url)s'>login</a> to continue."
-#~ msgstr "Merci de vous <a href='%(url)s'>login</a> pour continuer."
-
-#~ msgid ""
-#~ "I'm sending you this email because somebody requested deletion of your "
-#~ "account on <a href='%(url)s'>bitcoin.cz</a> mining pool!"
-#~ msgstr ""
-#~ "Je vous envoie cet e-mail car quelqu'un a demandé la suppression de votre "
-#~ "compte sur <a href='%(url)s'>bitcoin.cz</a> mining pool!"
-
-#~ msgid ""
-#~ "If you really want to delete your account <strong>%(username)s</strong>, "
-#~ "please follow <a href='%(url)s%(token)s/%(timestamp)s'>this confirmation "
-#~ "link</a>."
-#~ msgstr ""
-#~ "Si vous souhaitez vraiment supprimervotre compte <strong>%(username)s</"
-#~ "strong> suivez <a href='%(url)s%(token)s/%(timestamp)s'>ce lien de "
-#~ "confirmation</a>."
-
 #~ msgid ""
 #~ "Your reward for mining with the <strong><a href='%(url)s'>bitcoin.cz</a></"
 #~ "strong> mining pool service has exceeded threshold of %(threshold)s BTC."
@@ -2487,35 +2634,6 @@ msgstr ""
 #~ "jusqu'au dernier block ou demandez sur le forum Bitcoin pour obtenir de "
 #~ "l'aide."
 
-#~ msgid ""
-#~ "To activate your account, click to this <a href='%(url)s"
-#~ "%(activation_key)s'>activation link</a>"
-#~ msgstr ""
-#~ "Pour activer votre compte, clickez sur <a href='%(url)s"
-#~ "%(activation_key)s'>ce lien d'activation</a>"
-
-#~ msgid ""
-#~ "this email is sent due to a request to change your <strong>%(type)s</"
-#~ "strong> wallet to the new address: <strong>%(wallet)s</strong>. "
-#~ msgstr ""
-#~ "cet email est envoyé suite a une demande de changement de porte-monnaie "
-#~ "<strong>%(type)s</strong> vers la nouvelle adresse: <strong>%(wallet)s</"
-#~ "strong>. "
-
-#~ msgid ""
-#~ "To authorize this request, please <a href='%(url)s"
-#~ "%(wallet_token)s'>follow this link</a>."
-#~ msgstr ""
-#~ "Afin d'autoriser cette requete, Merci de <a href='%(url)s"
-#~ "%(wallet_token)s'> suivre ce lien</a>."
-
-#~ msgid ""
-#~ "If you didn't initiate this change please <a href='%(url)s"
-#~ "%(wallet)s'>cancel this request</a>, "
-#~ msgstr ""
-#~ "Si vous n'en n'êtes pas à l'origine <a href='%(url)s%(wallet)s'>annulez "
-#~ "cette demande</a>, "
-
 #~ msgid "The %(fee)s fee is used to keep this service alive."
 #~ msgstr "Les frais de %(fee)s sont utilisé pour maintenir le service."
 
@@ -2562,13 +2680,6 @@ msgstr ""
 #~ "Votre nom d'utilisateur et votre mot de passe ne correspondent pas. "
 #~ "Veuillez ré-essayer."
 
-#~ msgid ""
-#~ "You have pending request for changing <strong>%(currency)s</strong> "
-#~ "wallet to '%(wallet_pending)s'."
-#~ msgstr ""
-#~ "Vous avez une requete en attente pour changer un porte-monnaie <strong>"
-#~ "%(currency)s</strong> vers '%(wallet_pending)s'."
-
 #~ msgid "Email confirmation has been sent to email '%(email)s'."
 #~ msgstr "Un email de confirmation a été envoyé à '%(email)s'."
 
@@ -2608,9 +2719,6 @@ msgstr ""
 #~ msgid "Difficulty"
 #~ msgstr "Difficulté"
 
-#~ msgid "Please continue to your <a href='%(url)s'>profile page</a>"
-#~ msgstr "Veuillez continuer vers votre <a href='%(url)s'>page de profile</a>"
-
 #~ msgid "Change email"
 #~ msgstr "Changer d'adresse email"
 
@@ -2634,9 +2742,6 @@ msgstr ""
 
 #~ msgid "Live support"
 #~ msgstr "Support en direct"
-
-#~ msgid "All requests are cached for %(timeout)s seconds."
-#~ msgstr "Les requetes sont mise en cache pendant %(timeout)s secondes."
 
 #~ msgid "Applying changes on connected worker may take up to 30 minutes."
 #~ msgstr ""
