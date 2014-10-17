@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-16 15:29+0000\n"
+"POT-Creation-Date: 2014-10-17 11:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: backend/queries.py:776 web/templates/rewards.html:104
+#: backend/queries.py:779 web/templates/rewards.html:104
 #, fuzzy
 msgid "Invalid"
 msgstr "ungültig"
 
-#: backend/queries.py:778 web/templates/rewards.html:104
+#: backend/queries.py:781 web/templates/rewards.html:104
 #, fuzzy
 msgid "Confirmed"
 msgstr "bestätigt"
@@ -97,47 +97,47 @@ msgstr ""
 msgid "Calculate expected hash rate from workers past activity"
 msgstr ""
 
-#: project/settings.py:135
+#: project/settings.py:141
 msgid "English"
 msgstr ""
 
-#: project/settings.py:136
+#: project/settings.py:142
 msgid "German"
 msgstr ""
 
-#: project/settings.py:137
+#: project/settings.py:143
 msgid "French"
 msgstr ""
 
-#: project/settings.py:138
+#: project/settings.py:144
 msgid "Russian"
 msgstr ""
 
-#: project/settings.py:139
+#: project/settings.py:145
 msgid "Czech"
 msgstr ""
 
-#: project/settings.py:140
+#: project/settings.py:146
 msgid "Polish"
 msgstr ""
 
-#: project/settings.py:141
+#: project/settings.py:147
 msgid "Dutch"
 msgstr ""
 
-#: project/settings.py:142
+#: project/settings.py:148
 msgid "Spanish"
 msgstr ""
 
-#: project/settings.py:143
+#: project/settings.py:149
 msgid "Brazilian Portuguese"
 msgstr ""
 
-#: project/settings.py:144
+#: project/settings.py:150
 msgid "Simplified Chinese"
 msgstr ""
 
-#: project/settings.py:145
+#: project/settings.py:151
 msgid "Esperanto"
 msgstr ""
 
@@ -197,7 +197,7 @@ msgstr ""
 msgid "Values under 0.01 BTC are weighted by additional fee."
 msgstr ""
 
-#: web/forms.py:223 web/forms.py:275
+#: web/forms.py:223
 msgid ""
 "This is not a valid Bitcoin address. Please install Bitcoin client or "
 "register some web wallet to get one."
@@ -215,82 +215,52 @@ msgstr "Auszahlungsgrenze muss >= 0.01 sein."
 msgid "Sending threshold must be <= 5 BTC"
 msgstr "Auszahlungsgrenze muss >= 0.01 sein."
 
-#: web/forms.py:264
-msgid "Bitcoin address"
-msgstr "Bitcoin-Adresse"
-
-#: web/forms.py:266
-msgid "Your <strong>Bitcoin</strong> address for receiving rewards"
-msgstr "Deine <strong>Bitcoin</strong>-Adresse für Auszahlungen"
-
-#: web/forms.py:267 web/models.py:730
-msgid "Send threshold"
-msgstr "Auszahlungsgrenze"
-
-#: web/forms.py:268
-msgid ""
-"Coins will be sent once the reward crosses over the threshold. Minimal "
-"threshold is 0.001 BTC. If the threshold is at least 0.01 BTC then the "
-"payment is free of charge. If it is lower then 0.01 BTC then a fee is "
-"charged (0.0001 BTC per transaction)."
-msgstr ""
-
-#: web/forms.py:281
-#, fuzzy
-msgid "Sending threshold must be >= 0.001!"
-msgstr "Auszahlungsgrenze muss >= 0.01 sein."
-
-#: web/forms.py:284
-#, fuzzy
-msgid "Sending threshold must be <= 5! The pool is not a bank :-)."
-msgstr "Auszahlungsgrenze muss <= 20 sein. Seh ich etwa aus wie ne Bank?"
-
-#: web/forms.py:319
+#: web/forms.py:293
 msgid ""
 "Only letters, numbers and the following characters are accepted: _ @ + -"
 msgstr ""
 
-#: web/forms.py:325 web/forms.py:329 web/forms.py:332
+#: web/forms.py:299 web/forms.py:303 web/forms.py:306
 #, fuzzy, python-format
 msgid "Worker %s already exists"
 msgstr "Arbeiter mit diesem Namen existiert bereits."
 
-#: web/forms.py:344 web/templates/hall-of-fame.html:16
+#: web/forms.py:318 web/templates/hall-of-fame.html:16
 #: web/templates/hall-of-fame.html.py:47
 msgid "Username"
 msgstr "Benutzername"
 
-#: web/forms.py:345
+#: web/forms.py:319
 msgid "Enter a valid username."
 msgstr "Ungültiges Zusatzkennzeichen"
 
-#: web/forms.py:346 web/models.py:731
+#: web/forms.py:320 web/models.py:731
 msgid "Email"
 msgstr ""
 
-#: web/forms.py:347
+#: web/forms.py:321
 msgid "Required password"
 msgstr "Passwort (obligatorisch)"
 
-#: web/forms.py:348
+#: web/forms.py:322
 msgid "Password again"
 msgstr "Passwort-Wiederholung"
 
-#: web/forms.py:359
+#: web/forms.py:333
 msgid "Passwords are different!"
 msgstr "Passwörter sind nicht identisch."
 
-#: web/forms.py:452
+#: web/forms.py:426
 #, python-format
 msgid "Points must be greater or equal than %s."
 msgstr ""
 
-#: web/forms.py:454
+#: web/forms.py:428
 #, python-format
 msgid "Points must be lower or equal than %s."
 msgstr ""
 
-#: web/forms.py:471
+#: web/forms.py:445
 msgid "New comment"
 msgstr ""
 
@@ -356,7 +326,7 @@ msgstr ""
 msgid "Send emails about device state changes"
 msgstr ""
 
-#: web/models.py:210 web/templates/base.html:125
+#: web/models.py:210
 #, fuzzy
 msgid "User Manual"
 msgstr "Benutzername"
@@ -475,10 +445,13 @@ msgstr ""
 msgid "Expected hash rate"
 msgstr "Erwartete HTTP-Statuse:"
 
-#: web/models.py:733 web/templates/settings.html:33
-#: web/templates/settings.html.py:36 web/templates/settings.html:437
-#: web/templates/settings.html.py:445 web/templates/settings.html:454
-#: web/templates/settings.html.py:465
+#: web/models.py:730
+msgid "Send threshold"
+msgstr "Auszahlungsgrenze"
+
+#: web/models.py:733 web/templates/settings.html:35
+#: web/templates/settings.html.py:435 web/templates/settings.html:443
+#: web/templates/settings.html.py:452 web/templates/settings.html:463
 msgid "Monitoring"
 msgstr ""
 
@@ -521,8 +494,7 @@ msgstr "Konto-Einstellungen"
 msgid "Demo login"
 msgstr "Arbeiter"
 
-#: web/models.py:752 web/templates/login.html:11
-#: web/templates/password_reset_confirm.html:31
+#: web/models.py:752 web/templates/password_reset_confirm.html:31
 msgid "Login"
 msgstr "Login"
 
@@ -724,8 +696,7 @@ msgid "My account"
 msgstr "Mein Konto"
 
 #: web/templates/account_delete.html:3 web/templates/account_delete.html:7
-#: web/templates/settings.html:316 web/templates/settings.html.py:319
-#: web/templates/settings.html:326
+#: web/templates/settings.html:317
 #, fuzzy
 msgid "Delete my account"
 msgstr "Konto löschen"
@@ -799,59 +770,77 @@ msgstr ""
 
 #: web/templates/base.html:124
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Home</strong>"
 msgstr "Konto-Einstellungen"
 
+#: web/templates/base.html:125
+#, fuzzy
+msgctxt "UI, top menu"
+msgid "User Manual"
+msgstr "Benutzername"
+
 #: web/templates/base.html:133
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Pool</strong> Statistics"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/base.html:134
+msgctxt "UI, top menu"
 msgid "Public facts"
 msgstr ""
 
 #: web/templates/base.html:143 web/templates/menu2_contactus_links.html:2
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Contact</strong> Us"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/base.html:144
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "Support"
 msgstr "unterstützt LP"
 
 #: web/templates/base.html:153
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>My</strong> account"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/base.html:154 web/templates/base.html.py:172
+msgctxt "UI, top menu"
 msgid "Private zone"
 msgstr ""
 
 #: web/templates/base.html:160
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Logout</strong>"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/base.html:165
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Sign up</strong> HERE"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/base.html:166
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "New account"
 msgstr "Mein Konto"
 
 #: web/templates/base.html:171
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Login</strong>"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/base.html:203
 #, fuzzy
+msgctxt "UI"
 msgid "Back to Top"
 msgstr "zurück zum Profil"
 
@@ -924,6 +913,16 @@ msgstr "tägliche Vergütung"
 #: web/templates/rewards.html:118 web/templates/rewards.html.py:125
 msgid "7-day Average"
 msgstr ""
+
+#: web/templates/chart-switch.html:7
+#, fuzzy
+msgid "Full range"
+msgstr "Adressänderung"
+
+#: web/templates/chart-switch.html:8
+#, fuzzy
+msgid "Active range"
+msgstr "Arbeiter"
 
 #: web/templates/confirm.html:7
 msgid "Your account is already activated."
@@ -1054,7 +1053,6 @@ msgid "Why is my reward lower than usual?"
 msgstr ""
 
 #: web/templates/contacts.html:34
-#: web/templates/user_manual/user_manual_base.html:22
 #, fuzzy
 msgid "<strong>Reward</strong> System"
 msgstr "Konto-Einstellungen"
@@ -1260,7 +1258,7 @@ msgstr "Hashrate"
 msgid "Last share"
 msgstr "letzter share"
 
-#: web/templates/dashboard.html:129 web/templates/worker.html:61
+#: web/templates/dashboard.html:129 web/templates/worker.html:62
 #, fuzzy
 msgid "Recent <span>Hash Rate </span>"
 msgstr "Neues Konto anlegen"
@@ -1813,15 +1811,19 @@ msgid ""
 msgstr ""
 
 #: web/templates/intro_screen_markup.html:7
+#, fuzzy
+msgctxt "UI, intro"
 msgid "Previous Chapter"
-msgstr ""
+msgstr "vorhergehende"
 
 #: web/templates/intro_screen_markup.html:9
 #: web/templates/intro_screen_markup.html:10
+msgctxt "UI, intro"
 msgid "Select Chapter"
 msgstr ""
 
 #: web/templates/intro_screen_markup.html:14
+msgctxt "UI, intro"
 msgid "Next Chapter"
 msgstr ""
 
@@ -1831,28 +1833,33 @@ msgstr ""
 
 #: web/templates/intro_screen_markup.html:28
 #, fuzzy
+msgctxt "UI, intro"
 msgid "Previous topic"
 msgstr "vorhergehende"
 
 #: web/templates/intro_screen_markup.html:29
+msgctxt "UI, intro"
 msgid "Next topic"
 msgstr ""
 
 #: web/templates/intro_screen_markup.html:30
+msgctxt "UI, intro"
 msgid "Close this screen"
 msgstr ""
 
 #: web/templates/intro_screen_markup.html:30
+msgctxt "UI, intro"
 msgid "Close"
 msgstr ""
 
 #: web/templates/intro_screen_markup.html:39
+msgctxt "UI, intro"
 msgid ""
 "<strong>ESC</strong>: Close the screen | <strong>Left / Right keys</strong>: "
 "Navigate the topics"
 msgstr ""
 
-#: web/templates/login.html:4
+#: web/templates/login.html:4 web/templates/login.html.py:11
 #, fuzzy
 msgctxt "Page title"
 msgid "Login"
@@ -1872,123 +1879,147 @@ msgstr ""
 
 #: web/templates/menu2_contactus.html:4
 #, fuzzy
-msgctxt "UI, Contact us submenu title"
+msgctxt "UI, top menu"
 msgid "Contact <span>us!</span>"
 msgstr "Neues Konto anlegen"
 
 #: web/templates/menu2_contactus_links.html:3
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Development</strong> Proposals"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_contactus_links.html:5
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Knowledge</strong> Base"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_contactus_links.html:7
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>IRC</strong> Comunity Chat"
-msgstr "Konto-Einstellungen"
-
-#: web/templates/menu2_homepage_links.html:2
-#, fuzzy
-msgid "<strong>Home</strong> Page"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_homepage_links.html:3
 #, fuzzy
-msgid "<strong>News</strong>"
-msgstr "Konto-Einstellungen"
-
-#: web/templates/menu2_homepage_links.html:4
-#: web/templates/user_manual/user_manual_base.html:20
-#, fuzzy
-msgid "<strong>Getting</strong> Started"
-msgstr "Konto-Einstellungen"
-
-#: web/templates/menu2_homepage_links.html:5
-#, fuzzy
-msgid "<strong>User</strong> Manual"
+msgctxt "UI, top menu"
+msgid "<strong>Home</strong> Page"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_homepage_links.html:6
 #, fuzzy
+msgctxt "UI, top menu"
+msgid "<strong>News</strong>"
+msgstr "Konto-Einstellungen"
+
+#: web/templates/menu2_homepage_links.html:9
+#, fuzzy
+msgctxt "UI, top menu"
+msgid "<strong>Getting</strong> Started"
+msgstr "Konto-Einstellungen"
+
+#: web/templates/menu2_homepage_links.html:12
+#, fuzzy
+msgctxt "UI, top menu"
+msgid "<strong>User</strong> Manual"
+msgstr "Konto-Einstellungen"
+
+#: web/templates/menu2_homepage_links.html:15
+#, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Terms</strong> of Service"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_poolstats.html:4
-msgid "Pool <span>Statistics</span>"
-msgstr ""
-
-#: web/templates/menu2_poolstats_links.html:2
 #, fuzzy
-msgid "<strong>System</strong> Stats"
-msgstr "Konto-Einstellungen"
+msgctxt "UI, top menu"
+msgid "Pool <span>Statistics</span>"
+msgstr "Neues Konto anlegen"
 
 #: web/templates/menu2_poolstats_links.html:3
 #, fuzzy
-msgid "<strong>Block</strong> History"
-msgstr "Konto-Einstellungen"
-
-#: web/templates/menu2_poolstats_links.html:4
-#, fuzzy
-msgid "<strong>Hall</strong> of Fame"
+msgctxt "UI, top menu"
+msgid "<strong>System</strong> Stats"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_poolstats_links.html:6
 #, fuzzy
+msgctxt "UI, top menu"
+msgid "<strong>Block</strong> History"
+msgstr "Konto-Einstellungen"
+
+#: web/templates/menu2_poolstats_links.html:9
+#, fuzzy
+msgctxt "UI, top menu"
+msgid "<strong>Hall</strong> of Fame"
+msgstr "Konto-Einstellungen"
+
+#: web/templates/menu2_poolstats_links.html:13
+#, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>JSON</strong> stats"
 msgstr "Konto-Einstellungen"
 
-#: web/templates/menu2_poolstats_links.html:8
+#: web/templates/menu2_poolstats_links.html:17
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>JSON</strong> Stats"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_profile.html:4
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "My <span>account</span>"
 msgstr "Mein Konto"
 
 #: web/templates/menu2_profile_links.html:2
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Dashboard</strong>"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_profile_links.html:3
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Workers</strong>"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_profile_links.html:4
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Monitoring</strong>"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_profile_links.html:5
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<Strong>Rewards</strong>"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_profile_links.html:6
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<Strong>Payouts</strong>"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_profile_links.html:7
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<Strong>Activity</strong> Log"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_profile_links.html:8
 #, fuzzy
+msgctxt "UI, top menu"
 msgid "<strong>Settings</strong>"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_proposal.html:4
+#, fuzzy
+msgctxt "UI, top menu"
 msgid "Proposals"
-msgstr ""
+msgstr "Profil-Seite"
 
 #: web/templates/message-cold-mining.html:7
 #, python-format
@@ -2098,14 +2129,10 @@ msgstr ""
 msgid "Page"
 msgstr "Seite"
 
-#: web/templates/password_reset.html:4
+#: web/templates/password_reset.html:4 web/templates/password_reset.html:12
 #: web/templates/password_reset_confirm.html:4
 #, fuzzy
 msgctxt "Page title"
-msgid "Password reset"
-msgstr "Passwort zurücksetzen"
-
-#: web/templates/password_reset.html:12
 msgid "Password reset"
 msgstr "Passwort zurücksetzen"
 
@@ -2288,7 +2315,7 @@ msgstr ""
 
 #: web/templates/proposal_detail.html:126
 #: web/templates/proposal_detail.html:136 web/templates/proposal_form.html:33
-#: web/templates/settings.html:47 web/templates/settings.html.py:72
+#: web/templates/settings.html:46 web/templates/settings.html.py:71
 #: web/templates/settings_basic.html:15 web/templates/settings_basic.html:31
 #: web/templates/settings_basic.html:50
 #: web/templates/settings_security.html:87
@@ -2310,7 +2337,7 @@ msgstr "Adressänderung"
 msgid "Proposals list"
 msgstr ""
 
-#: web/templates/proposal_list.html:22 web/templates/settings.html:133
+#: web/templates/proposal_list.html:22 web/templates/settings.html:131
 #: web/templates/workers.html:37
 msgid "Filter (regexp)"
 msgstr ""
@@ -2449,34 +2476,61 @@ msgstr "Konto-Einstellungen"
 
 #: web/templates/settings.html:17
 #, fuzzy
+msgctxt "UI, settings"
 msgid "Account Settings"
 msgstr "Konto-Einstellungen"
 
-#: web/templates/settings.html:38
+#: web/templates/settings.html:32
+#, fuzzy
+msgctxt "UI, settings tab"
+msgid "Monitoring"
+msgstr "Konto-Einstellungen"
+
+#: web/templates/settings.html:37
 #, python-format
+msgctxt "UI, settings"
 msgid ""
 "Configure monitoring for individual workers <a href=\"%(workers)s\">here</a>"
 msgstr ""
 
-#: web/templates/settings.html:59 web/templates/settings.html.py:63
+#: web/templates/settings.html:58
+#, fuzzy
+msgctxt "UI, settings tab"
+msgid "Payouts"
+msgstr "Vergütungs-Historie"
+
+#: web/templates/settings.html:62
 #, fuzzy
 msgid "Payouts"
 msgstr "Vergütungs-Historie"
 
-#: web/templates/settings.html:90 web/templates/settings.html.py:92
+#: web/templates/settings.html:88
+#, fuzzy
+msgctxt "UI, settings tab"
 msgid "Manage API tokens"
 msgstr "API Tokens verwalten"
 
-#: web/templates/settings.html:94
+#: web/templates/settings.html:90
+#, fuzzy
+msgctxt "UI, settings"
+msgid "Manage API tokens"
+msgstr "API Tokens verwalten"
+
+#: web/templates/settings.html:92
+#, fuzzy
+msgctxt "UI, settings"
 msgid "Your current token:"
 msgstr "Dein derzeitiges Token:"
 
-#: web/templates/settings.html:102
+#: web/templates/settings.html:100
+#, fuzzy
+msgctxt "UI, button"
 msgid "Generate new token"
 msgstr "Neues Token generieren"
 
-#: web/templates/settings.html:110
+#: web/templates/settings.html:108
 #, fuzzy
+msgctxt "UI, settings"
 msgid ""
 "With this token and API described below, you can easily retrieve pool "
 "account details without need to store login and password directly in your "
@@ -2486,36 +2540,38 @@ msgstr ""
 "beschriebenen API kann auf Konto-Details zugegriffen werden, ohne daß die "
 "Anwendung den Benutzernamen oder das Passwort wissen muss."
 
-#: web/templates/settings.html:113
+#: web/templates/settings.html:111
 #, fuzzy
+msgctxt "UI, settings"
 msgid ""
 "Following page contains JSON encoded data about <strong>recent pool rounds</"
 "strong>, including your round rewards:"
 msgstr "Diese URL liefert JSON-encodete Daten bzgl. deines Pool-Kontos:"
 
-#: web/templates/settings.html:117
+#: web/templates/settings.html:115
 #, fuzzy
+msgctxt "UI, settings"
 msgid ""
 "This URL contains JSON encoded data about <strong>your pool account</strong>:"
 msgstr "Diese URL liefert JSON-encodete Daten bzgl. deines Pool-Kontos:"
 
-#: web/templates/settings.html:127
+#: web/templates/settings.html:125
 msgid "API details"
 msgstr "API-Details"
 
-#: web/templates/settings.html:128
+#: web/templates/settings.html:126
 msgid "These are the information that you get from your profiles JSON API."
 msgstr ""
 
-#: web/templates/settings.html:140
+#: web/templates/settings.html:138
 msgid "General Attributes"
 msgstr ""
 
-#: web/templates/settings.html:144
+#: web/templates/settings.html:142
 msgid "Login which belongs to given token."
 msgstr "Login, welcher mit diesem Token assoziiert ist."
 
-#: web/templates/settings.html:148
+#: web/templates/settings.html:146
 msgid ""
 "Total user's hashrate, updated every hour and calculated from last 10 rounds "
 "(Mhash/s)."
@@ -2523,11 +2579,11 @@ msgstr ""
 "Gesamt-Hashrate des Benutzers, stündlich aktualisiert und über die letzten "
 "10 Runden berechnet."
 
-#: web/templates/settings.html:152
+#: web/templates/settings.html:150
 msgid "Reserved."
 msgstr ""
 
-#: web/templates/settings.html:156
+#: web/templates/settings.html:154
 #, fuzzy
 msgid ""
 "Estimated reward of current round.<br/>This is calculated as (your score)/"
@@ -2537,7 +2593,7 @@ msgstr ""
 "berechnet: (dein score) / (gesamt-score) der laufenden Runde. Ändert sich "
 "bei reload."
 
-#: web/templates/settings.html:160
+#: web/templates/settings.html:158
 #, fuzzy
 msgid ""
 "Reward from blocks with less than 100 confirmations.<br/>This may go down "
@@ -2547,15 +2603,15 @@ msgstr ""
 "korrigiert werden, falls ein Block als ungültig (vom Bitcoin-Netzwerk "
 "abgelehnt) markiert wird "
 
-#: web/templates/settings.html:164
+#: web/templates/settings.html:162
 msgid "This is your real reward waiting to send to your wallet."
 msgstr "Dies ist deine tatsächliche Vergütung, welche auf Auszahlung wartet."
 
-#: web/templates/settings.html:168
+#: web/templates/settings.html:166
 msgid "Bitcoins will be send to this Bitcoin wallet."
 msgstr "Bitcoins werden an diese Bitcoin-Adresse geschickt"
 
-#: web/templates/settings.html:172
+#: web/templates/settings.html:170
 #, fuzzy
 msgid ""
 "Bitcoins will be sent to you once confirmed_reward crosses over this value."
@@ -2564,188 +2620,203 @@ msgstr ""
 "Bitcoins werden gesendet, sobald die 'bestätigte Vergütung' diesen Wert "
 "überschreitet. Auszahlungen werden stündlich verarbeitet."
 
-#: web/templates/settings.html:176
+#: web/templates/settings.html:174
 msgid "Number of workers which submitted valid shares in the last 5 minutes."
 msgstr ""
 
-#: web/templates/settings.html:180
+#: web/templates/settings.html:178
 msgid ""
 "Number of workers which did not submit a single valid share in last 5 "
 "minutes."
 msgstr ""
 
-#: web/templates/settings.html:184
+#: web/templates/settings.html:182
 msgid "Number of disabled / enabled workers."
 msgstr ""
 
-#: web/templates/settings.html:188
+#: web/templates/settings.html:186
 msgid ""
 "Number of workers which are mining, but are not registred in you account."
 msgstr ""
 
-#: web/templates/settings.html:192
+#: web/templates/settings.html:190
 #, python-format
 msgid ""
 "Average <a href=\"%(terminology)s#hashrate\" target=\"_blank\">Scoring Hash "
 "Rate</a> for last 5 minutes / 1 hour / 24 hours."
 msgstr ""
 
-#: web/templates/settings.html:196
+#: web/templates/settings.html:194
 #, fuzzy
 msgid "Pools / users combined Scoring Hashrate"
 msgstr "Gesamt-Score laufende Runde"
 
-#: web/templates/settings.html:199
+#: web/templates/settings.html:197
 msgid "Proportion your Hash Rate takes in the pools combined Hash Rate."
 msgstr ""
 
-#: web/templates/settings.html:203
+#: web/templates/settings.html:201
 msgid "Array of Found Blocks containinng our block id and block hash."
 msgstr ""
 
-#: web/templates/settings.html:207
+#: web/templates/settings.html:205
 msgid ""
 "Array of objects containing information about your workers (See the "
 "attributes below)."
 msgstr ""
 
-#: web/templates/settings.html:215
+#: web/templates/settings.html:213
 msgid "OK / off"
 msgstr ""
 
-#: web/templates/settings.html:232
+#: web/templates/settings.html:230
 msgid "Unix timestamp for the current time."
 msgstr ""
 
-#: web/templates/settings.html:236
+#: web/templates/settings.html:234
 msgid "Expected Hash Rate, you set up this value in your workers settings."
 msgstr ""
 
-#: web/templates/settings.html:240
+#: web/templates/settings.html:238
 msgid "True, if the specific worker is currently mining, otherwise false."
 msgstr ""
 
-#: web/templates/settings.html:244
+#: web/templates/settings.html:242
 #, fuzzy
 msgid "Monitoring state."
 msgstr "Konto-Einstellungen"
 
-#: web/templates/settings.html:248
+#: web/templates/settings.html:246
 msgid "Number of block found."
 msgstr ""
 
-#: web/templates/settings.html:252
+#: web/templates/settings.html:250
 #, fuzzy
 msgid "Worker id."
 msgstr "Arbeiter"
 
-#: web/templates/settings.html:256
+#: web/templates/settings.html:254
 msgid "Same as <code>hashrate_medium</code>."
 msgstr ""
 
-#: web/templates/settings.html:260
+#: web/templates/settings.html:258
 msgid "Date and time of last share."
 msgstr ""
 
-#: web/templates/settings.html:264
+#: web/templates/settings.html:262
 #, fuzzy
 msgid "Scoring Hashrate."
 msgstr "Hashrate"
 
-#: web/templates/settings.html:268
+#: web/templates/settings.html:266
 msgid "OK / Low / Off"
 msgstr ""
 
-#: web/templates/settings.html:272
+#: web/templates/settings.html:270
 msgid "Average Scoring Hash Rate for last 5 minutes / 1 hour / 24 hours."
 msgstr ""
 
-#: web/templates/settings.html:276
+#: web/templates/settings.html:274
 msgid "The name you have given this worker in workers settings."
 msgstr ""
 
-#: web/templates/settings.html:289
+#: web/templates/settings.html:287
 msgid "Expected HTTP statuses:"
 msgstr "Erwartete HTTP-Statuse:"
 
-#: web/templates/settings.html:294
+#: web/templates/settings.html:292
 msgid "Request was successful, response contains JSON data described above."
 msgstr "Request erfolgreich, Response enthält JSON-Daten wie oben beschrieben."
 
-#: web/templates/settings.html:298
+#: web/templates/settings.html:296
 msgid "Request was not successful, token is probably invalid."
 msgstr "Request fehlgeschlagen, wahrscheinlich Token ungültig."
 
-#: web/templates/settings.html:302
+#: web/templates/settings.html:300
 msgid "Server is down for maintenance or there is some unexpected error."
 msgstr "Server down oder unerwarteter Fehler."
 
-#: web/templates/settings.html:307
+#: web/templates/settings.html:305
 #, python-format
+msgctxt "UI, settings"
 msgid "All requests are cached for %(timeout)s seconds."
 msgstr ""
 
-#: web/templates/settings.html:320
+#: web/templates/settings.html:314
+#, fuzzy
+msgctxt "UI, settings tab"
+msgid "Delete my account"
+msgstr "Konto löschen"
+
+#: web/templates/settings.html:318
+msgctxt "UI, settings"
 msgid ""
 "If you do not want to use this service anymore, you can delete your account "
 "on this page, but be aware that this action is <strong>final and your "
 "account can not be reactivated</strong> in future."
 msgstr ""
 
-#: web/templates/settings.html:321
+#: web/templates/settings.html:319
+msgctxt "UI, settings"
 msgid ""
 "Your <strong>user name and e-mail adress</strong> will be <strong>free to "
 "use</strong> for new registration."
 msgstr ""
 
-#: web/templates/settings.html:322
+#: web/templates/settings.html:320
+msgctxt "UI, settings"
 msgid ""
 "Your account <strong>BTC balance will be lost</strong>, so please setup your "
 "send threshold to lowest possible value and wait for next payout."
 msgstr ""
 
-#: web/templates/settings.html:323 web/templates/worker.html:48
+#: web/templates/settings.html:321 web/templates/worker.html:48
 msgid "Really?"
 msgstr "Sicher?"
 
-#: web/templates/settings.html:420 web/templates/settings.html.py:428
-#: web/templates/settings_basic.html:2 web/templates/settings_basic.html:7
+#: web/templates/settings.html:324
+#, fuzzy
+msgctxt "UI, settings"
+msgid "Delete my account"
+msgstr "Konto löschen"
+
+#: web/templates/settings.html:418 web/templates/settings.html.py:426
 msgid "Basic"
 msgstr ""
 
-#: web/templates/settings.html:423
+#: web/templates/settings.html:421
 msgctxt "Intro"
 msgid ""
 "If you will choose not to enable this option, only user id will be shown in "
 "public statistics"
 msgstr ""
 
-#: web/templates/settings.html:431
+#: web/templates/settings.html:429
 msgctxt "Intro"
 msgid "Choose your prefered currency unit."
 msgstr ""
 
-#: web/templates/settings.html:432
+#: web/templates/settings.html:430
 msgctxt "Intro"
 msgid ""
 "This value is used for presentation purposes only and does not affect any "
 "payout calculations."
 msgstr ""
 
-#: web/templates/settings.html:440
+#: web/templates/settings.html:438
 msgctxt "Intro"
 msgid ""
 "If you uncheck this options, monitoring system will stay intact on web, but "
 "no further e-mail notifications will be sent."
 msgstr ""
 
-#: web/templates/settings.html:448
+#: web/templates/settings.html:446
 msgctxt "Intro"
 msgid ""
 "If enabled the pool will automatically set the expected hash rate for you."
 msgstr ""
 
-#: web/templates/settings.html:449
+#: web/templates/settings.html:447
 #, python-format
 msgctxt "Intro"
 msgid ""
@@ -2753,77 +2824,89 @@ msgid ""
 "rate in last 24 hours."
 msgstr ""
 
-#: web/templates/settings.html:457
+#: web/templates/settings.html:455
 msgctxt "Intro"
 msgid ""
 "When effective hash rate of all your workers combined drops below this value,"
 msgstr ""
 
-#: web/templates/settings.html:458
+#: web/templates/settings.html:456
 msgctxt "Intro"
 msgid "it is understood as a low hash rate state and the event is reported."
 msgstr ""
 
-#: web/templates/settings.html:460
+#: web/templates/settings.html:458
 msgctxt "Intro"
 msgid "Disable auto detection if you want to set your desired value manually."
 msgstr ""
 
-#: web/templates/settings.html:468
+#: web/templates/settings.html:466
 msgctxt "Intro"
 msgid ""
 "All reports above this value will be skipped, but will remain accesible on "
 "web."
 msgstr ""
 
-#: web/templates/settings.html:469
+#: web/templates/settings.html:467
 msgctxt "Intro"
 msgid "If you wish to get every report, set this to zero."
 msgstr ""
 
-#: web/templates/settings.html:474 web/templates/settings.html.py:484
+#: web/templates/settings.html:472 web/templates/settings.html.py:482
 #, fuzzy
 msgid "Payout"
 msgstr "Vergütungs-Historie"
 
-#: web/templates/settings.html:477
+#: web/templates/settings.html:475
 msgctxt "Intro"
 msgid ""
 "Precisely what it says on the tin, all bitcoins are being sent to this "
 "bitcoin wallet adress."
 msgstr ""
 
-#: web/templates/settings.html:479
+#: web/templates/settings.html:477
 msgctxt "Intro"
 msgid ""
 "Please take a look at the Security tab to see how you can further secure "
 "your acount against change of this value"
 msgstr ""
 
-#: web/templates/settings.html:487
+#: web/templates/settings.html:485
 msgctxt "Intro"
 msgid ""
 "When your account balance crosses the threshold value, our system will send "
 "you your payout."
 msgstr ""
 
-#: web/templates/settings.html:489
+#: web/templates/settings.html:487
 msgctxt "Intro"
 msgid "It is now possible to set this limit as low as 0.001 BTC."
 msgstr ""
 
-#: web/templates/settings.html:490
+#: web/templates/settings.html:488
 msgctxt "Intro"
 msgid "Values under 0.01 BTC are weighted by additional fee."
 msgstr ""
 
+#: web/templates/settings_basic.html:2
+msgctxt "UI, settings tab"
+msgid "Basic"
+msgstr ""
+
+#: web/templates/settings_basic.html:7
+msgctxt "UI, settings"
+msgid "Basic"
+msgstr ""
+
 #: web/templates/settings_basic.html:23
 #, fuzzy
+msgctxt "UI, settings"
 msgid "Change Account Password"
 msgstr "Passwort ändern"
 
 #: web/templates/settings_basic.html:42
 #, fuzzy
+msgctxt "UI, settings"
 msgid "Email Change"
 msgstr "Adressänderung"
 
@@ -2894,6 +2977,7 @@ msgid ""
 msgstr ""
 
 #: web/templates/settings_security.html:2
+msgctxt "UI, settings tab"
 msgid "Security"
 msgstr ""
 
@@ -2903,12 +2987,14 @@ msgid "Two-factor authentication"
 msgstr ""
 
 #: web/templates/settings_security.html:9
+msgctxt "UI, settings"
 msgid ""
 "<strong>Your two-factor authentication is successfully configured.</strong>"
 msgstr ""
 
 #: web/templates/settings_security.html:10
 #: web/templates/settings_security.html:21
+msgctxt "UI, settings"
 msgid ""
 "<strong>Please, note, that losing your smartphone (and a backup of your "
 "secret key) means you will not be able to change your payout address. Two-"
@@ -2917,6 +3003,7 @@ msgid ""
 msgstr ""
 
 #: web/templates/settings_security.html:11
+msgctxt "UI, settings"
 msgid ""
 "You can deactivate two-factor authentication by entering valid one-time "
 "password into the form below."
@@ -2931,6 +3018,7 @@ msgid "Disable two-factor auth by wallet signature"
 msgstr ""
 
 #: web/templates/settings_security.html:20
+msgctxt "UI, settings"
 msgid ""
 "Two-factor authentication adds an extra layer of security to your pool "
 "account. It reduces the chances of getting your account robbed by someone "
@@ -2943,6 +3031,7 @@ msgid ""
 msgstr ""
 
 #: web/templates/settings_security.html:22
+msgctxt "UI, settings"
 msgid ""
 "You should seriously consider to backup the generated secret for the two-"
 "factor authentication to some safe place for cases when you lose your "
@@ -2951,46 +3040,56 @@ msgid ""
 msgstr ""
 
 #: web/templates/settings_security.html:24
+msgctxt "UI, settings"
 msgid "How to enable two-factor authentication"
 msgstr ""
 
 #: web/templates/settings_security.html:26
+msgctxt "UI, settings"
 msgid "Install Google Authenticator to your smartphone"
 msgstr ""
 
 #: web/templates/settings_security.html:27
+msgctxt "UI, settings"
 msgid "Open Google Authenticator, click \"Add an account\" / \"Scan QR code\""
 msgstr ""
 
 #: web/templates/settings_security.html:29
+msgctxt "UI, settings"
 msgid "Scan the QR code below (and optionally backup the generated secret)"
 msgstr ""
 
 #: web/templates/settings_security.html:33
+msgctxt "UI, settings"
 msgid "The URI form of the QR code:"
 msgstr ""
 
 #: web/templates/settings_security.html:37
+msgctxt "UI, settings"
 msgid ""
 "Enter generated one-time password into this form to confirm that you've set "
 "up your application correctly"
 msgstr ""
 
 #: web/templates/settings_security.html:44
+msgctxt "UI, button"
 msgid "Enable two-factor auth"
 msgstr ""
 
 #: web/templates/settings_security.html:52
-#: web/templates/settings_security.html:65
+#, fuzzy
+msgctxt "UI, settings"
 msgid "Lock payout address"
-msgstr ""
+msgstr "Bitcoin-Adresse"
 
 #: web/templates/settings_security.html:55
 #, python-format
+msgctxt "UI, settings"
 msgid "<strong>Your payout address %(wallet)s is locked.</strong>"
 msgstr ""
 
 #: web/templates/settings_security.html:56
+msgctxt "UI, settings"
 msgid ""
 "Please be sure that you have a backup of your bitcoin wallet stored on safe "
 "place, because since the payout address is locked, there's no way how to "
@@ -2998,11 +3097,13 @@ msgid ""
 msgstr ""
 
 #: web/templates/settings_security.html:57
+msgctxt "UI, settings"
 msgid "Remove the wallet lock by wallet signature"
 msgstr ""
 
 #: web/templates/settings_security.html:59
 #, python-format
+msgctxt "UI, settings"
 msgid ""
 "As a security precaution, you may lock your current payout address <strong>"
 "%(wallet)s</strong>, so it cannot be changed by anyone who gains access to "
@@ -3010,6 +3111,7 @@ msgid ""
 msgstr ""
 
 #: web/templates/settings_security.html:60
+msgctxt "UI, settings"
 msgid ""
 "Please be sure that you have a backup of your bitcoin wallet stored in a "
 "safe place. Since the payout address will be locked, there's <strong>no way "
@@ -3017,15 +3119,24 @@ msgid ""
 msgstr ""
 
 #: web/templates/settings_security.html:62
+msgctxt "UI, settings"
 msgid "Really lock the payout address?"
 msgstr ""
 
+#: web/templates/settings_security.html:65
+#, fuzzy
+msgctxt "UI, button"
+msgid "Lock payout address"
+msgstr "Bitcoin-Adresse"
+
 #: web/templates/settings_security.html:79
 #, fuzzy
+msgctxt "UI, settings"
 msgid "Wallet unlock"
 msgstr "Adressänderung"
 
 #: web/templates/settings_security.html:99
+msgctxt "UI, settings"
 msgid "Disable two-factor authentication"
 msgstr ""
 
@@ -3433,8 +3544,9 @@ msgid "Hash Rate<br>(24h)"
 msgstr ""
 
 #: web/templates/workers.html:55
-msgid "Minimal<br>Difficulty"
-msgstr ""
+#, fuzzy
+msgid "Minimum<br>Difficulty"
+msgstr "Difficulty"
 
 #: web/templates/workers.html:56
 #, fuzzy
@@ -4029,24 +4141,29 @@ msgid ""
 msgstr ""
 
 #: web/templates/user_manual/mining-proxy.html:90
+msgctxt "proxy installation comment"
 msgid "Development package of Python is necessary"
 msgstr ""
 
 #: web/templates/user_manual/mining-proxy.html:93
+msgctxt "proxy installation comment"
 msgid "Upgrade setuptools package"
 msgstr ""
 
 #: web/templates/user_manual/mining-proxy.html:96
+msgctxt "proxy installation comment"
 msgid "Install required dependencies (namely Twisted and Stratum libraries)"
 msgstr ""
 
 #: web/templates/user_manual/mining-proxy.html:99
 #, fuzzy
+msgctxt "proxy installation comment"
 msgid "Start the proxy"
 msgstr "aktualisiert"
 
 #: web/templates/user_manual/mining-proxy.html:102
 #, fuzzy
+msgctxt "proxy installation comment"
 msgid "Update the proxy"
 msgstr "aktualisiert"
 
@@ -4753,31 +4870,49 @@ msgstr ""
 
 #: web/templates/user_manual/user_manual_base.html:19
 #, fuzzy
+msgctxt "UI, manual menu"
 msgid "<strong>Manual's</strong> Overview"
+msgstr "Konto-Einstellungen"
+
+#: web/templates/user_manual/user_manual_base.html:20
+#, fuzzy
+msgctxt "UI, manual menu"
+msgid "<strong>Getting</strong> Started"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/user_manual/user_manual_base.html:21
 #, fuzzy
+msgctxt "UI, manual menu"
 msgid "<strong>Pool</strong> Terminology"
+msgstr "Konto-Einstellungen"
+
+#: web/templates/user_manual/user_manual_base.html:22
+#, fuzzy
+msgctxt "UI, manual menu"
+msgid "<strong>Reward</strong> System"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/user_manual/user_manual_base.html:23
 #, fuzzy
+msgctxt "UI, manual menu"
 msgid "<strong>Payments</strong>"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/user_manual/user_manual_base.html:24
 #, fuzzy
+msgctxt "UI, manual menu"
 msgid "<strong>Device</strong>"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/user_manual/user_manual_base.html:25
 #, fuzzy
+msgctxt "UI, manual menu"
 msgid "<strong>Stratum</strong> Mining Proxy"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/user_manual/user_manual_base.html:26
 #, fuzzy
+msgctxt "UI, manual menu"
 msgid "<strong>Stratum</strong> Protocol"
 msgstr "Konto-Einstellungen"
 
@@ -4819,6 +4954,23 @@ msgstr ""
 #: web/templatetags/utils.py:271
 msgid "Help me"
 msgstr ""
+
+#~ msgid "Bitcoin address"
+#~ msgstr "Bitcoin-Adresse"
+
+#~ msgid "Your <strong>Bitcoin</strong> address for receiving rewards"
+#~ msgstr "Deine <strong>Bitcoin</strong>-Adresse für Auszahlungen"
+
+#, fuzzy
+#~ msgid "Sending threshold must be >= 0.001!"
+#~ msgstr "Auszahlungsgrenze muss >= 0.01 sein."
+
+#, fuzzy
+#~ msgid "Sending threshold must be <= 5! The pool is not a bank :-)."
+#~ msgstr "Auszahlungsgrenze muss <= 20 sein. Seh ich etwa aus wie ne Bank?"
+
+#~ msgid "Password reset"
+#~ msgstr "Passwort zurücksetzen"
 
 #, fuzzy
 #~ msgid ""
@@ -5030,11 +5182,6 @@ msgstr ""
 #, fuzzy
 #~ msgctxt "UI, manual menu"
 #~ msgid "<strong>Get</strong> Started"
-#~ msgstr "Konto-Einstellungen"
-
-#, fuzzy
-#~ msgctxt "UI, manual menu"
-#~ msgid "<strong>Reward</strong> System"
 #~ msgstr "Konto-Einstellungen"
 
 #, fuzzy
