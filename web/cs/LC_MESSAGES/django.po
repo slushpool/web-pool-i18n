@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slush's pool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-19 10:11+0000\n"
+"POT-Creation-Date: 2014-10-19 10:50+0000\n"
 "PO-Revision-Date: 2014-10-17 15:58+0200\n"
 "Last-Translator: Jan Čapek <jan.capek@braiins.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
@@ -1031,11 +1031,12 @@ msgstr "Zařízení"
 #: web/templates/confirm.html:15
 #, fuzzy
 msgctxt "UI"
-msgid "Your account is already activated."
+msgid "Your account has already been activated."
 msgstr "Tvůj účet již je aktivní."
 
-#: web/templates/confirm.html:16 web/templates/confirm.html.py:35
+#: web/templates/confirm.html:16
 #, fuzzy, python-format
+msgctxt "UI"
 msgid "Please <a href=\"%(login_url)s\">login</a> to continue."
 msgstr "Nyní se prosím <a href='%(url)s'>přihlaš</a>."
 
@@ -1085,6 +1086,11 @@ msgid ""
 "You can register more workers or further configure your account on your <a "
 "href=\"%(profile)s\">profile</a>."
 msgstr "Na své profilové stránce si můžes údaje zařízení kdykoliv změnit."
+
+#: web/templates/confirm.html:35
+#, fuzzy, python-format
+msgid "Please <a href=\"%(login_url)s\">login</a> to continue."
+msgstr "Nyní se prosím <a href='%(url)s'>přihlaš</a>."
 
 #: web/templates/confirm_page_template.html:3
 #, fuzzy
@@ -2567,11 +2573,11 @@ msgid "Password reset successful"
 msgstr "Obnovení hesla bylo úspěšné"
 
 #: web/templates/password_reset_sent.html:14
-#, fuzzy
+#, fuzzy, python-format
 msgctxt "UI"
 msgid ""
-"Password reset instructions have been sent to the email address you have "
-"submitted."
+"Password reset instructions have been sent to <strong>%(user_email)s</"
+"strong>."
 msgstr ""
 "Zaslal jsem Ti na email instrukce pro nastavení hesla. Měl by dorazit každou "
 "chvíli."
@@ -2586,8 +2592,7 @@ msgstr ""
 #: web/templates/password_reset_sent.html:16
 msgctxt "UI"
 msgid ""
-"You may now close this page and follow the instructions sent to your email "
-"address."
+"You may now close this page and follow the instructions in the email message."
 msgstr ""
 
 #: web/templates/payouts.html:3
@@ -2692,8 +2697,8 @@ msgstr ""
 #: web/templates/settings.html:46 web/templates/settings.html.py:71
 #: web/templates/settings_basic.html:15 web/templates/settings_basic.html:31
 #: web/templates/settings_basic.html:50
-#: web/templates/settings_security.html:90
-#: web/templates/settings_security.html:111
+#: web/templates/settings_security.html:94
+#: web/templates/settings_security.html:115
 msgid "Save"
 msgstr "Uložit"
 
@@ -3236,9 +3241,10 @@ msgid "Email Change"
 msgstr "Změna peněženky"
 
 #: web/templates/settings_basic.html:51
-#: web/templates/settings_security.html:91
-#: web/templates/settings_security.html:112
-#: web/templates/widgets/email_change.html:10
+#: web/templates/settings_security.html:95
+#: web/templates/settings_security.html:116
+#: web/templates/widgets/email_change.html:9
+#: web/templates/widgets/email_change.html:12
 #: web/templates/widgets/wallet_pending.html:4
 msgid "Cancel"
 msgstr ""
@@ -3337,7 +3343,7 @@ msgid ""
 msgstr ""
 
 #: web/templates/settings_security.html:10
-#: web/templates/settings_security.html:21
+#: web/templates/settings_security.html:23
 msgctxt "UI"
 msgid ""
 "<strong>Please, note, that losing your smartphone (and a backup of your "
@@ -3357,11 +3363,11 @@ msgstr ""
 msgid "Disable two-factor auth"
 msgstr ""
 
-#: web/templates/settings_security.html:17
+#: web/templates/settings_security.html:18
 msgid "Disable two-factor auth by wallet signature"
 msgstr ""
 
-#: web/templates/settings_security.html:20
+#: web/templates/settings_security.html:22
 msgctxt "UI"
 msgid ""
 "Two-factor authentication adds an extra layer of security to your pool "
@@ -3374,7 +3380,7 @@ msgid ""
 "your smartphone."
 msgstr ""
 
-#: web/templates/settings_security.html:22
+#: web/templates/settings_security.html:24
 msgctxt "UI"
 msgid ""
 "You should seriously consider to backup the generated secret for the two-"
@@ -3383,57 +3389,57 @@ msgid ""
 "of paper. The generated URI is equivalent to the shown QR code."
 msgstr ""
 
-#: web/templates/settings_security.html:24
+#: web/templates/settings_security.html:26
 msgctxt "UI"
 msgid "How to enable two-factor authentication"
 msgstr ""
 
-#: web/templates/settings_security.html:26
+#: web/templates/settings_security.html:28
 msgctxt "UI"
 msgid "Install Google Authenticator to your smartphone"
 msgstr ""
 
-#: web/templates/settings_security.html:27
+#: web/templates/settings_security.html:29
 msgctxt "UI"
 msgid "Open Google Authenticator, click \"Add an account\" / \"Scan QR code\""
 msgstr ""
 
-#: web/templates/settings_security.html:29
+#: web/templates/settings_security.html:31
 msgctxt "UI"
 msgid "Scan the QR code below (and optionally backup the generated secret)"
 msgstr ""
 
-#: web/templates/settings_security.html:33
+#: web/templates/settings_security.html:35
 msgctxt "UI"
 msgid "The URI form of the QR code:"
 msgstr ""
 
-#: web/templates/settings_security.html:37
+#: web/templates/settings_security.html:39
 msgctxt "UI"
 msgid ""
 "Enter generated one-time password into this form to confirm that you've set "
 "up your application correctly"
 msgstr ""
 
-#: web/templates/settings_security.html:44
+#: web/templates/settings_security.html:46
 msgctxt "UI"
 msgid "Enable two-factor auth"
 msgstr ""
 
-#: web/templates/settings_security.html:52
-#: web/templates/settings_security.html:67
+#: web/templates/settings_security.html:54
+#: web/templates/settings_security.html:71
 #, fuzzy
 msgctxt "UI"
 msgid "Lock payout address"
 msgstr "Bitcoin adresa"
 
-#: web/templates/settings_security.html:55
+#: web/templates/settings_security.html:57
 #, python-format
 msgctxt "UI"
 msgid "<strong>Your payout address %(wallet)s is locked.</strong>"
 msgstr ""
 
-#: web/templates/settings_security.html:56
+#: web/templates/settings_security.html:58
 msgctxt "UI"
 msgid ""
 "Please be sure that you have a backup of your bitcoin wallet stored on safe "
@@ -3441,12 +3447,12 @@ msgid ""
 "change it anymore."
 msgstr ""
 
-#: web/templates/settings_security.html:57
+#: web/templates/settings_security.html:60
 msgctxt "UI"
 msgid "Remove the wallet lock by wallet signature"
 msgstr ""
 
-#: web/templates/settings_security.html:59
+#: web/templates/settings_security.html:63
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -3455,7 +3461,7 @@ msgid ""
 "your pool account."
 msgstr ""
 
-#: web/templates/settings_security.html:60
+#: web/templates/settings_security.html:64
 msgctxt "UI"
 msgid ""
 "Please be sure that you have a backup of your bitcoin wallet stored in a "
@@ -3463,19 +3469,19 @@ msgid ""
 "how to change it anymore</strong>."
 msgstr ""
 
-#: web/templates/settings_security.html:62
+#: web/templates/settings_security.html:66
 #, fuzzy
 msgctxt "UI"
 msgid "Really lock the payout address?"
 msgstr "Bitcoin adresa"
 
-#: web/templates/settings_security.html:82
+#: web/templates/settings_security.html:86
 #, fuzzy
 msgctxt "UI"
 msgid "Wallet unlock"
 msgstr "Změna peněženky"
 
-#: web/templates/settings_security.html:103
+#: web/templates/settings_security.html:107
 msgctxt "UI"
 msgid "Disable two-factor authentication"
 msgstr ""
@@ -5331,13 +5337,14 @@ msgctxt "UI"
 msgid "<strong>Stratum</strong> Protocol"
 msgstr "Nastavení účtu"
 
-#: web/templates/widgets/email_change.html:9
+#: web/templates/widgets/email_change.html:8
+#: web/templates/widgets/email_change.html:11
 #: web/templates/widgets/wallet_pending.html:3
 #, fuzzy
 msgid "Resend"
 msgstr "Rezervováno."
 
-#: web/templates/widgets/email_change.html:12
+#: web/templates/widgets/email_change.html:15
 msgid "Confirm the change by wallet signature"
 msgstr ""
 

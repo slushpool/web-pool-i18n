@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-19 10:11+0000\n"
+"POT-Creation-Date: 2014-10-19 10:50+0000\n"
 "PO-Revision-Date: 2014-10-18 19:50+0200\n"
 "Last-Translator: Braiins Admin <web.accounts@braiins.cz>\n"
 "Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-cz/"
@@ -1011,11 +1011,12 @@ msgstr "工人"
 #: web/templates/confirm.html:15
 #, fuzzy
 msgctxt "UI"
-msgid "Your account is already activated."
+msgid "Your account has already been activated."
 msgstr "你的帐户已经启动了。"
 
-#: web/templates/confirm.html:16 web/templates/confirm.html.py:35
+#: web/templates/confirm.html:16
 #, python-format
+msgctxt "UI"
 msgid "Please <a href=\"%(login_url)s\">login</a> to continue."
 msgstr ""
 
@@ -1061,6 +1062,11 @@ msgid ""
 "You can register more workers or further configure your account on your <a "
 "href=\"%(profile)s\">profile</a>."
 msgstr "您可以在个人资料页互换或注册更多工人。"
+
+#: web/templates/confirm.html:35
+#, python-format
+msgid "Please <a href=\"%(login_url)s\">login</a> to continue."
+msgstr ""
 
 #: web/templates/confirm_page_template.html:3
 #, fuzzy
@@ -2483,11 +2489,11 @@ msgid "Password reset successful"
 msgstr "成功重置密码"
 
 #: web/templates/password_reset_sent.html:14
-#, fuzzy
+#, fuzzy, python-format
 msgctxt "UI"
 msgid ""
-"Password reset instructions have been sent to the email address you have "
-"submitted."
+"Password reset instructions have been sent to <strong>%(user_email)s</"
+"strong>."
 msgstr ""
 "我已通过电邮发送给您设置您的密码到您所提交的电子邮件地址的说明。你应该不久就"
 "会受到。"
@@ -2502,8 +2508,7 @@ msgstr ""
 #: web/templates/password_reset_sent.html:16
 msgctxt "UI"
 msgid ""
-"You may now close this page and follow the instructions sent to your email "
-"address."
+"You may now close this page and follow the instructions in the email message."
 msgstr ""
 
 #: web/templates/payouts.html:3
@@ -2608,8 +2613,8 @@ msgstr ""
 #: web/templates/settings.html:46 web/templates/settings.html.py:71
 #: web/templates/settings_basic.html:15 web/templates/settings_basic.html:31
 #: web/templates/settings_basic.html:50
-#: web/templates/settings_security.html:90
-#: web/templates/settings_security.html:111
+#: web/templates/settings_security.html:94
+#: web/templates/settings_security.html:115
 msgid "Save"
 msgstr "保存"
 
@@ -3145,9 +3150,10 @@ msgid "Email Change"
 msgstr "邮箱更改"
 
 #: web/templates/settings_basic.html:51
-#: web/templates/settings_security.html:91
-#: web/templates/settings_security.html:112
-#: web/templates/widgets/email_change.html:10
+#: web/templates/settings_security.html:95
+#: web/templates/settings_security.html:116
+#: web/templates/widgets/email_change.html:9
+#: web/templates/widgets/email_change.html:12
 #: web/templates/widgets/wallet_pending.html:4
 msgid "Cancel"
 msgstr ""
@@ -3246,7 +3252,7 @@ msgid ""
 msgstr "<strong>您的双重认证已成功设置。</strong>"
 
 #: web/templates/settings_security.html:10
-#: web/templates/settings_security.html:21
+#: web/templates/settings_security.html:23
 msgctxt "UI"
 msgid ""
 "<strong>Please, note, that losing your smartphone (and a backup of your "
@@ -3268,11 +3274,11 @@ msgstr "您可以通过下表输入有效的一次性密码取消双重认证。
 msgid "Disable two-factor auth"
 msgstr ""
 
-#: web/templates/settings_security.html:17
+#: web/templates/settings_security.html:18
 msgid "Disable two-factor auth by wallet signature"
 msgstr ""
 
-#: web/templates/settings_security.html:20
+#: web/templates/settings_security.html:22
 msgctxt "UI"
 msgid ""
 "Two-factor authentication adds an extra layer of security to your pool "
@@ -3289,7 +3295,7 @@ msgstr ""
 "了谷歌认证）去处理标准的确认邮件。因此，有人要更改您的支付地址时不仅需要进入"
 "您的注册邮箱，还要盗走您的智能手机才行。"
 
-#: web/templates/settings_security.html:22
+#: web/templates/settings_security.html:24
 msgctxt "UI"
 msgid ""
 "You should seriously consider to backup the generated secret for the two-"
@@ -3300,56 +3306,56 @@ msgstr ""
 "您得认真考虑备份您的双重认证的密码到安全的地方，以防您可能遗失您的智能手机。"
 "您可以用一些密码管理应用或者一张纸。生成的URI和二位码是相等的。"
 
-#: web/templates/settings_security.html:24
+#: web/templates/settings_security.html:26
 msgctxt "UI"
 msgid "How to enable two-factor authentication"
 msgstr "怎么启用双重认证"
 
-#: web/templates/settings_security.html:26
+#: web/templates/settings_security.html:28
 msgctxt "UI"
 msgid "Install Google Authenticator to your smartphone"
 msgstr "安装谷歌身份认证到您的智能手机"
 
-#: web/templates/settings_security.html:27
+#: web/templates/settings_security.html:29
 msgctxt "UI"
 msgid "Open Google Authenticator, click \"Add an account\" / \"Scan QR code\""
 msgstr "打开谷歌身份认证，点击“添加账户”/“扫描二维码”"
 
-#: web/templates/settings_security.html:29
+#: web/templates/settings_security.html:31
 msgctxt "UI"
 msgid "Scan the QR code below (and optionally backup the generated secret)"
 msgstr "请扫描下面的二维码（可选择备份生成的机密）"
 
-#: web/templates/settings_security.html:33
+#: web/templates/settings_security.html:35
 msgctxt "UI"
 msgid "The URI form of the QR code:"
 msgstr "URI形式的二维码"
 
-#: web/templates/settings_security.html:37
+#: web/templates/settings_security.html:39
 msgctxt "UI"
 msgid ""
 "Enter generated one-time password into this form to confirm that you've set "
 "up your application correctly"
 msgstr "请在此表输入生成的一次性密码确认您已正确设置好您的申请"
 
-#: web/templates/settings_security.html:44
+#: web/templates/settings_security.html:46
 msgctxt "UI"
 msgid "Enable two-factor auth"
 msgstr "启用双重认证"
 
-#: web/templates/settings_security.html:52
-#: web/templates/settings_security.html:67
+#: web/templates/settings_security.html:54
+#: web/templates/settings_security.html:71
 msgctxt "UI"
 msgid "Lock payout address"
 msgstr "锁定支付地址"
 
-#: web/templates/settings_security.html:55
+#: web/templates/settings_security.html:57
 #, python-format
 msgctxt "UI"
 msgid "<strong>Your payout address %(wallet)s is locked.</strong>"
 msgstr "<strong>您的支付地址 %(wallet)s 已锁定。</strong>"
 
-#: web/templates/settings_security.html:56
+#: web/templates/settings_security.html:58
 msgctxt "UI"
 msgid ""
 "Please be sure that you have a backup of your bitcoin wallet stored on safe "
@@ -3358,12 +3364,12 @@ msgid ""
 msgstr ""
 "请确保您的比特币钱包备份储存在安全地方，因为一旦支付地址被锁定，将无法更改。"
 
-#: web/templates/settings_security.html:57
+#: web/templates/settings_security.html:60
 msgctxt "UI"
 msgid "Remove the wallet lock by wallet signature"
 msgstr "通过钱包签名移除钱包锁定"
 
-#: web/templates/settings_security.html:59
+#: web/templates/settings_security.html:63
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -3374,7 +3380,7 @@ msgstr ""
 "作为一项安全措施，您可以锁定您当前的支付地址 <strong>%(wallet)s</strong>, 所"
 "以任何侵入您矿池账户的人都无法更改它。"
 
-#: web/templates/settings_security.html:60
+#: web/templates/settings_security.html:64
 msgctxt "UI"
 msgid ""
 "Please be sure that you have a backup of your bitcoin wallet stored in a "
@@ -3384,18 +3390,18 @@ msgstr ""
 "请确保您有比特币钱包的备份并储存在安全地方，因为一旦支付地址被锁定，将"
 "<strong>无法更改</strong>。"
 
-#: web/templates/settings_security.html:62
+#: web/templates/settings_security.html:66
 msgctxt "UI"
 msgid "Really lock the payout address?"
 msgstr "确定锁定支付地址？"
 
-#: web/templates/settings_security.html:82
+#: web/templates/settings_security.html:86
 #, fuzzy
 msgctxt "UI"
 msgid "Wallet unlock"
 msgstr "钱包解锁"
 
-#: web/templates/settings_security.html:103
+#: web/templates/settings_security.html:107
 msgctxt "UI"
 msgid "Disable two-factor authentication"
 msgstr "关闭或取消双重认证"
@@ -5229,13 +5235,14 @@ msgctxt "UI"
 msgid "<strong>Stratum</strong> Protocol"
 msgstr "<strong>阶层</strong> 协议"
 
-#: web/templates/widgets/email_change.html:9
+#: web/templates/widgets/email_change.html:8
+#: web/templates/widgets/email_change.html:11
 #: web/templates/widgets/wallet_pending.html:3
 #, fuzzy
 msgid "Resend"
 msgstr "保留"
 
-#: web/templates/widgets/email_change.html:12
+#: web/templates/widgets/email_change.html:15
 msgid "Confirm the change by wallet signature"
 msgstr ""
 
