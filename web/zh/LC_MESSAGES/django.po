@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-21 09:05+0000\n"
+"POT-Creation-Date: 2014-10-21 21:15+0000\n"
 "PO-Revision-Date: 2014-10-21 17:08+0200\n"
 "Last-Translator: xu <samanthaxu1987@163.com>\n"
-"Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-"
-"cz/mining/zh/>\n"
+"Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-cz/"
+"mining/zh/>\n"
 "Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,12 +19,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.0-dev\n"
 
-#: backend/queries.py:781
+#: backend/queries.py:788
 msgctxt "UI, Blocks"
 msgid "Invalid"
 msgstr "无效"
 
-#: backend/queries.py:783
+#: backend/queries.py:790
 msgctxt "UI, Blocks"
 msgid "Confirmed"
 msgstr "确认的"
@@ -139,7 +139,7 @@ msgctxt "UI"
 msgid "If you wish to change your email, enter it here"
 msgstr "如果您想更改邮箱，请在此输入"
 
-#: web/forms.py:118
+#: web/forms.py:118 web/models.py:737
 msgctxt "UI"
 msgid "Wallet"
 msgstr "钱包"
@@ -189,7 +189,7 @@ msgctxt "UI"
 msgid "Sending threshold must be <= 5 BTC"
 msgstr "发送报酬的最大值必须不超过5个比特币"
 
-#: web/forms.py:264
+#: web/forms.py:264 web/models.py:745
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr "最低难度"
@@ -221,7 +221,7 @@ msgctxt "UI"
 msgid "Enter a valid username."
 msgstr "请输入一个有效的用户名。"
 
-#: web/forms.py:326 web/models.py:738
+#: web/forms.py:326 web/models.py:740
 msgctxt "UI"
 msgid "Email"
 msgstr "邮箱地址"
@@ -374,12 +374,12 @@ msgctxt "UI"
 msgid "Invalid token"
 msgstr "无效令牌"
 
-#: web/models.py:301 web/templates/wallet_confirm_otp.html:4
+#: web/models.py:301
 msgctxt "UI"
 msgid "Wallet change confirmation"
 msgstr "更改钱包的确认"
 
-#: web/models.py:322 web/templates/settings_email_change_confirm.html:3
+#: web/models.py:322
 msgctxt "UI"
 msgid "Email change confirmation"
 msgstr "更改邮箱地址的确认"
@@ -461,207 +461,209 @@ msgctxt "UI"
 msgid "Expected hash rate"
 msgstr "预期的hash速率"
 
-#: web/models.py:737
+#: web/models.py:738
+msgctxt "UI"
+msgid "Pending wallet"
+msgstr "待定钱包"
+
+#: web/models.py:739
 msgctxt "UI"
 msgid "Send threshold"
 msgstr "发送报酬的门槛"
 
-#: web/models.py:740 web/templates/settings.html:32
+#: web/models.py:742 web/templates/settings.html:32
 #: web/templates/settings.html.py:35 web/templates/settings.html:455
 #: web/templates/settings.html.py:463 web/templates/settings.html:472
 msgctxt "UI"
 msgid "Monitoring"
 msgstr "监控"
 
-#: web/models.py:741
+#: web/models.py:743
 msgctxt "UI"
 msgid "Last Change"
 msgstr "上次修改"
 
-#: web/models.py:742
+#: web/models.py:744
 msgctxt "UI"
 msgid "Login suffix"
 msgstr "登录后缀"
 
-#: web/models.py:743
-msgctxt "UI"
-msgid "Pending wallet"
-msgstr "待定钱包"
-
-#: web/models.py:746 web/models.py:747 web/models.py:748
+#: web/models.py:748 web/models.py:749 web/models.py:750 web/models.py:751
+#: web/models.py:752
 msgctxt "UI"
 msgid "Enabled"
 msgstr "已启用"
 
-#: web/models.py:746 web/models.py:747 web/models.py:748
+#: web/models.py:748 web/models.py:749 web/models.py:750 web/models.py:751
+#: web/models.py:752
 msgctxt "UI"
 msgid "Disabled"
 msgstr "已禁用"
 
-#: web/models.py:756
+#: web/models.py:760
 msgctxt "UI"
 msgid "Account deleted"
 msgstr "账户已被删除"
 
-#: web/models.py:757
+#: web/models.py:761
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr "账户删除已申请"
 
-#: web/models.py:759 web/templates/login.html:4 web/templates/login.html.py:11
+#: web/models.py:763 web/templates/login.html:4 web/templates/login.html.py:11
 #: web/templates/registration_confirm_has_account.html:22
 msgctxt "UI"
 msgid "Login"
 msgstr "登录"
 
-#: web/models.py:760
+#: web/models.py:764
 msgctxt "UI"
 msgid "Logout"
 msgstr "退出"
 
-#: web/models.py:761
+#: web/models.py:765
 msgctxt "UI"
 msgid "Message seen"
 msgstr "信息已被看到"
 
-#: web/models.py:762
+#: web/models.py:766
 msgctxt "UI"
 msgid "Monitoring settings updated"
 msgstr "监控设置已更新"
 
-#: web/models.py:763
+#: web/models.py:767
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
 msgstr "时事通讯订阅已取消"
 
-#: web/models.py:764
+#: web/models.py:768
 msgctxt "UI"
 msgid "2-factor authentication disabled"
 msgstr "双重验证已禁用"
 
-#: web/models.py:765
+#: web/models.py:769
 msgctxt "UI"
 msgid "2-factor authentication enabled"
 msgstr "双重验证已启用"
 
-#: web/models.py:766 web/models.py:769
+#: web/models.py:770 web/models.py:773
 msgctxt "UI"
 msgid "Password changed"
 msgstr "密码已更改"
 
-#: web/models.py:767
+#: web/models.py:771
 msgctxt "UI"
 msgid "Password reset completed"
 msgstr "重置密码完成"
 
-#: web/models.py:768
+#: web/models.py:772
 msgctxt "UI"
 msgid "Password reset initiated"
 msgstr "密码重置已开始"
 
-#: web/models.py:770
+#: web/models.py:774
 msgctxt "UI"
 msgid "Payout settings updated"
 msgstr "报酬支付设置已更新"
 
-#: web/models.py:772
+#: web/models.py:776
 msgctxt "UI"
 msgid "Proposal created"
 msgstr "提议已创建"
 
-#: web/models.py:773
+#: web/models.py:777
 msgctxt "UI"
 msgid "You have created a new proposal:"
 msgstr "您已创建一个新的提议："
 
-#: web/models.py:776
+#: web/models.py:780
 msgctxt "UI"
 msgid "Proposal comment deleted"
 msgstr "提议评论已删除"
 
-#: web/models.py:778
+#: web/models.py:782
 msgctxt "UI"
 msgid "Proposal updated"
 msgstr "提议已更新"
 
-#: web/models.py:781
+#: web/models.py:785
 msgctxt "UI"
 msgid "Proposal state changed"
 msgstr "提议状态已更改"
 
-#: web/models.py:783
+#: web/models.py:787
 msgctxt "UI"
 msgid "Proposal vote"
 msgstr "提议投票"
 
-#: web/models.py:784
+#: web/models.py:788
 #, python-format
 msgctxt "UI"
 msgid "You gave <b>%(points)s</b> points to proposal"
 msgstr "您给出 <b>%(points)s</b> 分给提议"
 
-#: web/models.py:786
+#: web/models.py:790
 msgctxt "UI"
 msgid "Account settings updated"
 msgstr "账户设置已更新"
 
-#: web/models.py:787
+#: web/models.py:791
 msgctxt "UI"
 msgid "Wallet change confirmed"
 msgstr "钱包更改已确认"
 
-#: web/models.py:788
+#: web/models.py:792
 msgctxt "UI"
 msgid "Wallet change confirmation cancelled"
 msgstr "更改钱包的确认已被取消"
 
-#: web/models.py:789
+#: web/models.py:793
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
 msgstr "更改钱包的确认已重新发送"
 
-#: web/models.py:790
+#: web/models.py:794
 msgctxt "UI"
 msgid "Wallet locked"
 msgstr "钱包锁定"
 
-#: web/models.py:791
+#: web/models.py:795
 msgctxt "UI"
 msgid "Worker removed"
 msgstr "矿工已移除"
 
-#: web/models.py:791
+#: web/models.py:795
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr "您已移除矿工 <b>%(name)s</b>"
 
-#: web/models.py:792
+#: web/models.py:796
 msgctxt "UI"
 msgid "Monitoring disabled for all workers"
 msgstr "所有矿工的监控已禁用"
 
-#: web/models.py:793
+#: web/models.py:797
 msgctxt "UI"
 msgid "Monitoring enabled for all workers"
 msgstr "所有矿工的监控已启用"
 
-#: web/models.py:794
+#: web/models.py:798
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr "矿工设置已更新"
 
-#: web/models.py:795 web/templates/workers.html:23
+#: web/models.py:799 web/templates/workers.html:23
 msgctxt "UI"
 msgid "New worker"
 msgstr "新矿工"
 
-#: web/models.py:795
+#: web/models.py:799
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr "您已注册一个新矿工"
 
-#: web/models.py:797
+#: web/models.py:801
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr "无效的登录"
@@ -671,43 +673,103 @@ msgctxt "UI"
 msgid "New account confirmation"
 msgstr "新账户的确认"
 
-#: web/views.py:370
+#: web/views.py:428
+#, fuzzy
 msgctxt "UI"
-msgid "Delete account confirmation"
-msgstr "删除账户的确认"
+msgid "Two-factor authentication isn't configured yet"
+msgstr "双重认证"
 
-#: web/views.py:571
+#: web/views.py:438
+msgctxt "UI"
+msgid "Two-factor authentication token is invalid. Please, enter valid token."
+msgstr ""
+
+#: web/views.py:445
+#, fuzzy
+msgctxt "UI"
+msgid "Two-factor authentication has been succesfully disabled."
+msgstr "双重验证已禁用"
+
+#: web/views.py:456
+#, fuzzy
+msgctxt "UI"
+msgid "Two-factor authentication is already configured"
+msgstr "双重验证已禁用"
+
+#: web/views.py:468
+msgctxt "UI"
+msgid ""
+"Two-factor authentication token is invalid. Please, re-scan the QR code (a "
+"new one has been generated for security reasons)."
+msgstr ""
+
+#: web/views.py:475
+#, fuzzy
+msgctxt "UI"
+msgid "Two-factor authentication has been configured."
+msgstr "双重认证"
+
+#: web/views.py:486
+#, fuzzy
+msgctxt "UI"
+msgid "Invalid request"
+msgstr "令牌没效"
+
+#: web/views.py:499
+#, fuzzy
+msgctxt "UI"
+msgid "Wallet is not valid"
+msgstr "签名无效。"
+
+#: web/views.py:508
+#, fuzzy
+msgctxt "UI"
+msgid "Your payout address has been locked."
+msgstr "<strong>您的支付地址 %(wallet)s 已锁定。</strong>"
+
+#: web/views.py:561
 msgctxt "UI"
 msgid "The account has been updated."
 msgstr "账户已被更新。"
 
-#: web/views.py:586
+#: web/views.py:576
 msgctxt "UI"
 msgid "The monitoring settings has been updated."
 msgstr "监控设置已更新。"
 
-#: web/views.py:622
+#: web/views.py:612
 msgctxt "UI"
 msgid "Password has been successfully changed."
 msgstr "密码已修改成功。"
 
-#: web/views.py:648
+#: web/views.py:638
 msgctxt "UI"
 msgid "The payouts settings has been updated."
 msgstr "报酬支付设置已更新。"
 
-#: web/views.py:893
+#: web/views.py:649
+msgctxt "UI"
+msgid "Delete account confirmation"
+msgstr "删除账户的确认"
+
+#: web/views.py:667
+#, python-format
+msgctxt "UI"
+msgid "A notification email about deleting your account has been sent to %s."
+msgstr ""
+
+#: web/views.py:911
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at support@bitcoin.cz"
 msgstr "账户被禁止。请联系管理员support@bitcoin.cz"
 
-#: web/views.py:916
+#: web/views.py:934
 #, python-format
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at %(link)s"
 msgstr "账户被禁止。请从%(link)s和管理员联系"
 
-#: web/views.py:925
+#: web/views.py:943
 #, fuzzy, python-format
 msgctxt "UI"
 msgid ""
@@ -715,44 +777,33 @@ msgid ""
 "(%(reason)s). "
 msgstr "您的支付已暂时被矿池操作人员锁住 (%(原因)) "
 
-#: web/views.py:948
+#: web/views.py:966
 msgctxt "UI"
 msgid "Please consider enabling payout address protection by "
 msgstr ""
 
-#: web/views.py:951 web/templates/settings.html:3
+#: web/views.py:969 web/templates/settings.html:3
 msgctxt "UI"
 msgid "Account settings"
 msgstr "账户设置"
 
-#: web/templates/account_delete.html:3 web/templates/monitoring.html:3
-#: web/templates/payouts.html:3 web/templates/settings.html:3
-msgctxt "UI"
-msgid "My account"
-msgstr "我的账户"
-
-#: web/templates/account_delete.html:3 web/templates/account_delete.html:7
-#: web/templates/settings.html:314 web/templates/settings.html.py:317
-#: web/templates/settings.html:324
-msgctxt "UI"
-msgid "Delete my account"
-msgstr "删除我的账户"
-
-#: web/templates/account_delete.html:11
+#: web/templates/account_delete_invalid.html:14
+#, fuzzy
 msgctxt "UI"
 msgid ""
-"Confirmation email has been send. Please check your mailbox and follow the "
-"link."
-msgstr "确认邮件已发送。请检查您的邮箱并使用邮件里的链接继续下一步。"
+"Your confirmation link is not valid. Please be sure that your confirmation "
+"link has been generated in less than one hour ago. If your current link is "
+"older than that, please go to your profile settings and retry your request."
+msgstr ""
+"您使用的确认链接无效。请确认您使用的是一小时内产生的链接。如果您当前使用的链"
+"接已超过一小时，请去您的个人设置重发申请。"
 
-#: web/templates/account_delete.html:16
+#: web/templates/account_delete_success.html:14
 msgctxt "UI"
 msgid ""
-"Confirmation link which you provided is not valid. Please be sure that your "
-"confirmation link has been generated in less than one hour. If your current "
-"link is older than one hour, please go to your profile settings and retry "
-"your request."
-msgstr "您使用的确认链接无效。请确认您使用的是一小时内产生的链接。如果您当前使用的链接已超过一小时，请去您的个人设置重发申请。"
+"Your account has been succesfuly deleted. If you would like to register to "
+"our pool again in future, your former username can be used again."
+msgstr ""
 
 #: web/templates/activity_log.html:3
 msgctxt "UI"
@@ -1443,29 +1494,29 @@ msgstr "让我们开始玩儿吧"
 #: web/templates/development_corner.html:17
 msgctxt "UI"
 msgid ""
-" There many options how to decide\n"
-"    what are the features that miners want to see implemented. We have\n"
-"    come up with an idea how to get miners involved in the selection\n"
-"    process and have some fun.  Public development proposals are a way\n"
-"    that allows you to vote for the most wanted features and use your\n"
-"    hash rate as the weight.  The details are explained below. "
+"There many options how to decide what are the features that miners want to "
+"see implemented. We have come up with an idea how to get miners involved in "
+"the selection process and have some fun. Public development proposals are a "
+"way that allows you to vote for the most wanted features and use your hash "
+"rate as the weight. The details are explained below."
 msgstr ""
 
-#: web/templates/development_corner.html:24
+#: web/templates/development_corner.html:20
 msgctxt "UI"
 msgid ""
 "Every registered user has 100 points - you can distribute them among as many "
 "proposals as you like (in practice maximum is 100 proposal)."
-msgstr "每个注册用户有100分-您可以分配到尽可能多的提议上（事实上最多100个提议）。"
+msgstr ""
+"每个注册用户有100分-您可以分配到尽可能多的提议上（事实上最多100个提议）。"
 
-#: web/templates/development_corner.html:25
+#: web/templates/development_corner.html:21
 msgctxt "UI"
 msgid ""
 "The distribution of the points can always be changed later - for example if "
 "you change your mind on a particular proposal."
 msgstr "分数的分配之后都可以修改-比如您因一个特定提议而改变主意了。"
 
-#: web/templates/development_corner.html:26
+#: web/templates/development_corner.html:22
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -1473,17 +1524,17 @@ msgid ""
 "impact on the election you have ;-)"
 msgstr "1分=您hash速率的1%%。您的hash速率越大，那么您对所选的提议影响越大 ;-)"
 
-#: web/templates/development_corner.html:27
+#: web/templates/development_corner.html:23
 msgctxt "UI"
 msgid ""
 "You can vote <strong>for</strong> or <strong>against</strong> a proposal by "
 "putting <strong>positive</strong> or <strong>negative</strong> number of "
 "points."
 msgstr ""
-"您可以投票 <strong>支持</strong> 或 <strong>反对</strong> 一个提议根据给 <strong>正分</strong> "
-"或者 <strong>负分</strong> 。"
+"您可以投票 <strong>支持</strong> 或 <strong>反对</strong> 一个提议根据给 "
+"<strong>正分</strong> 或者 <strong>负分</strong> 。"
 
-#: web/templates/development_corner.html:28
+#: web/templates/development_corner.html:24
 msgctxt "UI"
 msgid ""
 "Every logged-in user can create new development proposals and edit them "
@@ -1492,111 +1543,118 @@ msgid ""
 "\"election\"."
 msgstr ""
 
-#: web/templates/development_corner.html:30
+#: web/templates/development_corner.html:26
 msgctxt "UI"
 msgid "Hash rates and total points and votes are refreshed every 5 minutes."
 msgstr "Hash速率、总分和投票每5分钟刷新一次。"
 
-#: web/templates/development_corner.html:31
+#: web/templates/development_corner.html:27
 msgctxt "UI"
 msgid ""
 "Once a proposal/feature is taken into the development process (and removed "
 "from the list), you get your points back."
-msgstr "一旦某提议/特性被采纳到开发程序（并从名单上移除），您可以拿回您的分数。"
+msgstr ""
+"一旦某提议/特性被采纳到开发程序（并从名单上移除），您可以拿回您的分数。"
 
-#: web/templates/development_corner.html:32
+#: web/templates/development_corner.html:28
 msgctxt "UI"
 msgid "Total hash rate shows the power of all points converted to hash rate."
 msgstr "总hash速率显示的是所有分数转换成hash速率的和。"
 
-#: web/templates/development_corner.html:33
+#: web/templates/development_corner.html:29
 msgctxt "UI"
 msgid "Total votes show how many users voted for a particular proposal."
 msgstr "总投票显示的是有多少用户对某一提议进行投票。"
 
-#: web/templates/development_corner.html:34
+#: web/templates/development_corner.html:30
 msgctxt "UI"
 msgid ""
 "Total points show how many points the proposal has received from all users "
 "together."
 msgstr "总分数显示的是该提议从所有用户那里得到的分数和。"
 
-#: web/templates/development_corner.html:40
+#: web/templates/development_corner.html:35
 msgctxt "UI"
 msgid "Proposals list"
 msgstr "提议名单"
 
-#: web/templates/development_corner.html:45
+#: web/templates/development_corner.html:40
 msgctxt "UI"
 msgid "Filter by title (regexp)"
 msgstr "根据标题筛选 (regexp)"
 
-#: web/templates/development_corner.html:50
+#: web/templates/development_corner.html:45
 msgctxt "UI"
 msgid "Your remaining points"
 msgstr "您所剩的分数"
 
-#: web/templates/development_corner.html:52
+#: web/templates/development_corner.html:47
 #: web/templates/proposal_form.html:16 web/templates/proposal_vote_form.html:3
 msgctxt "UI"
 msgid "New proposal"
 msgstr "新提议"
 
-#: web/templates/development_corner.html:57
+#: web/templates/development_corner.html:52
 msgctxt "UI"
 msgid "You can vote and create new proposals only if you are logged in."
 msgstr "您只有在登录状态才能投票或创建新提议。"
 
-#: web/templates/development_corner.html:67
+#: web/templates/development_corner.html:62
 msgctxt "UI"
 msgid "Title"
 msgstr "标题"
 
-#: web/templates/development_corner.html:68
+#: web/templates/development_corner.html:63
 #: web/templates/proposal_detail.html:37
 msgctxt "UI"
 msgid "Total Hash Rate"
 msgstr "总Hash速率"
 
-#: web/templates/development_corner.html:69
+#: web/templates/development_corner.html:64
 #: web/templates/proposal_detail.html:38
 msgctxt "UI"
 msgid "Total Votes"
 msgstr "总投票"
 
-#: web/templates/development_corner.html:70
+#: web/templates/development_corner.html:65
 #: web/templates/proposal_detail.html:39
 msgctxt "UI"
 msgid "Total Points"
 msgstr "总分"
 
-#: web/templates/development_corner.html:72
+#: web/templates/development_corner.html:67
 #: web/templates/proposal_detail.html:41
 msgctxt "UI"
 msgid "Your Points"
 msgstr "您的分数"
 
-#: web/templates/development_corner.html:73
+#: web/templates/development_corner.html:68
 #: web/templates/proposal_detail.html:42
 msgctxt "UI"
 msgid "Vote"
 msgstr "投票"
 
-#: web/templates/development_corner.html:83
+#: web/templates/development_corner.html:78
 msgctxt "UI"
 msgid "edit"
 msgstr "编辑"
 
-#: web/templates/development_corner.html:88
+#: web/templates/development_corner.html:83
 msgctxt "UI"
 msgid "Waits for admin confirmation"
 msgstr "等待管理员确认"
 
-#: web/templates/development_corner.html:163
+#: web/templates/development_corner.html:152
+#, fuzzy
+msgctxt "UI"
+msgid "There are no development proposals yet."
+msgstr "开发提议"
+
+#: web/templates/development_corner.html:162
 msgid "In development"
 msgstr ""
 
-#: web/templates/development_corner.html:177
+#: web/templates/development_corner.html:176
 msgid "Released"
 msgstr ""
 
@@ -1616,16 +1674,14 @@ msgstr ""
 #: web/templates/email_account_delete.html:8
 #, fuzzy, python-format
 msgid ""
-"\n"
-"    If you really want to delete your account <strong>%(username)s</strong>, "
-"please follow\n"
-"    <a href=\"http://%(SITE_URL)s/accounts/delete/%(token)s/%(timestamp)s"
-"\">this confirmation link</a>.\n"
-"    The link is valid for one hour. If you missed this email and link isn't "
-"valid anymore, please go to the website and retry the request.\n"
+"If you really want to delete your account <strong>%(username)s</strong>, "
+"please follow <a href=\"http://%(SITE_URL)s/accounts/delete/%(token)s/"
+"%(timestamp)s\">this confirmation link</a>. The link is valid for one hour. "
+"If you missed this email and link isn't valid anymore, please go to the "
+"website and retry the request."
 msgstr "链环的有效时期只是一小时内。如果您"
 
-#: web/templates/email_account_delete.html:15
+#: web/templates/email_account_delete.html:11
 msgid ""
 "Remaining balance of this account will be considered as a pool donation. If "
 "you forgot to request the payout, you have the last chance right now."
@@ -1633,7 +1689,7 @@ msgstr ""
 "此帐户的剩余余额将被视为一个集体捐赠。如果你忘了请求派息，您还有最后一次的机"
 "会。"
 
-#: web/templates/email_account_delete.html:19
+#: web/templates/email_account_delete.html:15
 #, fuzzy
 msgid ""
 "If you didn't initiate this request, please don't click the confirmation "
@@ -1641,15 +1697,15 @@ msgid ""
 "support@bitcoin.cz."
 msgstr "如果您没发出任何请求，请别按以上的确认链环。"
 
-#: web/templates/email_account_delete.html:24
-#: web/templates/email_email_change.html:22 web/templates/email_payout.html:23
-#: web/templates/email_registration.html:13
+#: web/templates/email_account_delete.html:20
+#: web/templates/email_email_change.html:22 web/templates/email_payout.html:12
+#: web/templates/email_registration.html:9
 msgid "Best regards,"
 msgstr ""
 
-#: web/templates/email_account_delete.html:25
-#: web/templates/email_email_change.html:23 web/templates/email_payout.html:24
-#: web/templates/email_registration.html:14
+#: web/templates/email_account_delete.html:21
+#: web/templates/email_email_change.html:23 web/templates/email_payout.html:13
+#: web/templates/email_registration.html:10
 #, fuzzy
 msgid "The Pool Operations Team"
 msgstr "The Pool Operator"
@@ -1706,48 +1762,38 @@ msgstr ""
 #: web/templates/email_payout.html:4
 #, python-format
 msgid ""
-"\n"
-"    Your reward for mining with the <strong><a href=\"http://%(SITE_URL)s/\">"
-"%(SITE_URL)s</a></strong>\n"
-"    mining pool service has exceeded your defined threshold.\n"
+"Your reward for mining with the <strong><a href=\"http://%(SITE_URL)s/\">"
+"%(SITE_URL)s</a></strong> mining pool service has exceeded your defined "
+"threshold."
 msgstr ""
 
-#: web/templates/email_payout.html:9
+#: web/templates/email_payout.html:6
 #, python-format
 msgid ""
-"\n"
-"    Amount <strong>%(amount)s BTC</strong> has been transferred to your "
-"address\n"
-"    <strong>%(wallet)s</strong> at %(date)s UTC.\n"
+"Amount <strong>%(amount)s BTC</strong> has been transferred to your address "
+"<strong>%(wallet)s</strong> at %(date)s UTC."
 msgstr ""
 
-#: web/templates/email_payout.html:14
+#: web/templates/email_payout.html:8
 #, python-format
 msgid ""
-"\n"
-"    Payment processing through Bitcoin network may take between 30 minutes "
-"to 3 hours. You can watch\n"
-"    current payment status on <a href=\"%(url)s%(wallet)s\">%(url)s"
-"%(wallet)s</a>.\n"
-"    If you see payment on Blockchain.info but not in your bitcoin client, "
-"please verify that your\n"
-"    client is up to the latest block or ask on Bitcoin forum for any other "
-"help.\n"
+"Payment processing through Bitcoin network may take between 30 minutes to 3 "
+"hours. You can watch current payment status on <a href=\"%(url)s%(wallet)s\">"
+"%(url)s%(wallet)s</a>. If you see payment on Blockchain.info but not in your "
+"bitcoin client, please verify that your client is up to the latest block or "
+"ask on Bitcoin forum for any other help."
 msgstr ""
 
 #: web/templates/email_registration.html:4
 #, fuzzy, python-format
-msgid ""
-"\n"
-"    thank you for signing up for a %(SITE_URL)s account!\n"
+msgid "thank you for signing up for a %(SITE_URL)s account!"
 msgstr "谢谢你报名户口！"
 
-#: web/templates/email_registration.html:8
+#: web/templates/email_registration.html:6
 #, python-format
 msgid ""
-"\n"
-"    To activate your account, please follow this <a href=\"http://"
-"%(SITE_URL)s/%(url_path)s/%(activation_key)s\">activation link</a>.\n"
+"To activate your account, please follow this <a href=\"http://%(SITE_URL)s/"
+"%(url_path)s/%(activation_key)s\">activation link</a>."
 msgstr ""
 
 #: web/templates/email_wallet_change.html:2
@@ -1758,45 +1804,39 @@ msgstr "你好"
 #: web/templates/email_wallet_change.html:4
 #, python-format
 msgid ""
-"\n"
-"    this email has been sent due to a request to change your "
-"<strong>Bitcoin</strong>\n"
-"    wallet to the new address: <strong>%(wallet)s</strong>.\n"
+"this email has been sent due to a request to change your <strong>Bitcoin</"
+"strong> wallet to the new address: <strong>%(wallet)s</strong>."
 msgstr ""
 
-#: web/templates/email_wallet_change.html:9
+#: web/templates/email_wallet_change.html:6
 #, fuzzy, python-format
 msgctxt "UI"
 msgid ""
-"\n"
-"    To authorize this request, please <a href=\"%(wallet_confirm_link)s"
-"\">follow this link</a>\n"
+"To authorize this request, please <a href=\"%(wallet_confirm_link)s\">follow "
+"this link</a>"
 msgstr ""
 "\n"
 "    授权此请求, 请 <a href=\"%(钱包_确认_链接)\">使用此链接</a>\n"
 
-#: web/templates/email_wallet_change.html:13
+#: web/templates/email_wallet_change.html:8
 #, fuzzy, python-format
 msgctxt "UI"
 msgid ""
-"\n"
-"    If you did not initiate this change, please <a href="
-"\"%(wallet_cancel_link)s\">\n"
-"    cancel this request</a>, change your password immediately, and report "
-"this incident to\n"
-"    %(SUPPORT_EMAIL)s.\n"
+"If you did not initiate this change, please <a href=\"%(wallet_cancel_link)s"
+"\"> cancel this request</a>, change your password immediately, and report "
+"this incident to %(SUPPORT_EMAIL)s."
 msgstr ""
 "\n"
 "    如果您未要求此更改, 请 <a href=\"%(钱包_取消_链接)\">\n"
 "    取消请求</a>, 立即更改您的密码, 并报告此事件给\n"
 "    %(技术支持_邮箱).\n"
 
-#: web/templates/email_wallet_change.html:21
+#: web/templates/email_wallet_change.html:12
 msgctxt "UI"
 msgid "Best regards,"
 msgstr "此致敬上"
 
-#: web/templates/email_wallet_change.html:22
+#: web/templates/email_wallet_change.html:13
 msgctxt "UI"
 msgid "The Pool Operations Team"
 msgstr "矿池运作组"
@@ -1885,7 +1925,8 @@ msgctxt "UI"
 msgid ""
 "New features have been released in a bundle with new web pages. Please, see "
 "<a href=\"%(url)s\">Release Notes</a> for more information."
-msgstr "新特性已随新页面发布。请从 <a href=\"%(url)s\">发布说明</a> 获取更多信息。"
+msgstr ""
+"新特性已随新页面发布。请从 <a href=\"%(url)s\">发布说明</a> 获取更多信息。"
 
 #: web/templates/homepage.html:27
 msgctxt "UI"
@@ -1912,8 +1953,8 @@ msgid ""
 "our <a href=\"%(get_started)s\"><span class=\"strong\">Getting</span> "
 "started</a> guide."
 msgstr ""
-"感兴趣吗？ 您可以立即注册，我们可以设置您到 <a href=\"%(get_started)s\"><span class=\"strong\""
-">准备</span> 开始</a> 导航。"
+"感兴趣吗？ 您可以立即注册，我们可以设置您到 <a href=\"%(get_started)s"
+"\"><span class=\"strong\">准备</span> 开始</a> 导航。"
 
 #: web/templates/homepage.html:40 web/templates/login.html:41
 msgctxt "UI"
@@ -1943,8 +1984,8 @@ msgid ""
 "balancing</strong> and <strong>fail-over system</strong> ensures you are up "
 "and running 99.9%% of the time."
 msgstr ""
-"我们的服务器分布全球。 智能的<strong>负载平衡</strong> 和 <strong>故障转移系统</strong> "
-"确保您在99.9%%的时间挖矿进行中。"
+"我们的服务器分布全球。 智能的<strong>负载平衡</strong> 和 <strong>故障转移系"
+"统</strong> 确保您在99.9%%的时间挖矿进行中。"
 
 #: web/templates/homepage.html:66
 msgctxt "UI"
@@ -1987,7 +2028,8 @@ msgid ""
 "Our support team is here for you <strong>24/7</strong>. We are working hard "
 "to give you a helpful answer in any situation."
 msgstr ""
-"我们的技术支持小组在这里 <strong>全年每天24小时</strong> 为您服务。我们为给您在任何情况下提供有用的答复正非常努力地工作着。"
+"我们的技术支持小组在这里 <strong>全年每天24小时</strong> 为您服务。我们为给您"
+"在任何情况下提供有用的答复正非常努力地工作着。"
 
 #: web/templates/homepage.html:93
 #, fuzzy
@@ -2131,10 +2173,11 @@ msgid "Close"
 msgstr "关闭"
 
 #: web/templates/intro_screen_markup.html:39
+#, fuzzy
 msgctxt "UI"
 msgid ""
-"<strong>ESC</strong>: Close the screen | <strong>Left / Right keys</strong>: "
-"Navigate the topics"
+"<strong>ESC</strong>, <strong>Click on background</strong>: Close the screen "
+"| <strong>Left / Right keys</strong>: Navigate the topics"
 msgstr ""
 "<strong>退出</strong>: 关闭此页 | <strong>左 / 右 键</strong>: 浏览主题"
 
@@ -2144,7 +2187,8 @@ msgctxt "UI"
 msgid ""
 "Your account doesn't permit login into the beta testing web site! Please, "
 "use the original <a href=\"%(orig_url)s\">web pages</a>."
-msgstr "您的账户未许可登录beta测试网页！请使用原 <a href=\"%(orig_url)s\">网页</a>。"
+msgstr ""
+"您的账户未许可登录beta测试网页！请使用原 <a href=\"%(orig_url)s\">网页</a>。"
 
 #: web/templates/login.html:31
 msgctxt "UI"
@@ -2299,6 +2343,12 @@ msgstr ""
 "矿池同步挖矿数据，最新份额信息可能会有一点点延迟。\n"
 "        处理将很快完成。"
 
+#: web/templates/monitoring.html:3 web/templates/payouts.html:3
+#: web/templates/settings.html:3
+msgctxt "UI"
+msgid "My account"
+msgstr "我的账户"
+
 #: web/templates/monitoring.html:3
 msgctxt "UI"
 msgid "Device Monitoring"
@@ -2354,7 +2404,8 @@ msgctxt "UI"
 msgid ""
 "Report was not sent because it contains only <span class=\"strong"
 "\">insignificant events</span>."
-msgstr "报告没被发送是因为它只包含 <span class=\"strong\">无关紧要的事件i</span>。"
+msgstr ""
+"报告没被发送是因为它只包含 <span class=\"strong\">无关紧要的事件i</span>。"
 
 #: web/templates/monitoring.html:121
 msgctxt "UI"
@@ -2503,8 +2554,8 @@ msgid ""
 "the registration process by following the activation link that has been sent "
 "to your email address: <strong>%(email)s</strong>."
 msgstr ""
-"您的账户 <strong>%(username)s</strong> 已创建。请使用发送到您邮箱的激活链接完成注册流程： "
-"<strong>%(email)s</strong>。"
+"您的账户 <strong>%(username)s</strong> 已创建。请使用发送到您邮箱的激活链接完"
+"成注册流程： <strong>%(email)s</strong>。"
 
 #: web/templates/new_user_registered.html:30
 msgctxt "UI"
@@ -2528,7 +2579,8 @@ msgctxt "UI"
 msgid ""
 "Our user manual provides a lot of useful information for troubleshooting any "
 "potential mining issues and explains many important concepts and features."
-msgstr "我们的用户指南提供大量的潜在挖矿故障排除的信息和许多重要概念和特性的说明。"
+msgstr ""
+"我们的用户指南提供大量的潜在挖矿故障排除的信息和许多重要概念和特性的说明。"
 
 #: web/templates/new_user_registered.html:43
 msgctxt "UI"
@@ -2566,7 +2618,9 @@ msgctxt "UI"
 msgid ""
 "If you have forgotten your password, please enter your e-mail address below "
 "and we will send you instructions for setting a new one."
-msgstr "如果您忘记密码了，请在下面输入您的邮箱地址，我们会发送设置一个新密码的指导给您。"
+msgstr ""
+"如果您忘记密码了，请在下面输入您的邮箱地址，我们会发送设置一个新密码的指导给"
+"您。"
 
 #: web/templates/password_reset.html:18
 msgctxt "UI"
@@ -2683,8 +2737,9 @@ msgid "Pending…"
 msgstr "待定...…"
 
 #: web/templates/payouts.html:71
+#, fuzzy
 msgctxt "UI"
-msgid "No transactions yet"
+msgid "No transactions have been sent yet."
 msgstr "还没有交易"
 
 #: web/templates/payouts.html:85
@@ -2872,7 +2927,9 @@ msgctxt "UI"
 msgid ""
 "Please note, that <strong>%(worker)s</strong> is not your website login. It "
 "is the setting for your miner configuration."
-msgstr "请注意， <strong>%(worker)s</strong> 并不是您的网页登录账号。它只是您挖矿配置里的设定。"
+msgstr ""
+"请注意， <strong>%(worker)s</strong> 并不是您的网页登录账号。它只是您挖矿配置"
+"里的设定。"
 
 #: web/templates/registration_confirm_success.html:33
 msgctxt "UI"
@@ -2930,71 +2987,76 @@ msgctxt "UI"
 msgid "Confirmations<br>Left"
 msgstr "剩下的<br>确认信息"
 
-#: web/templates/rewards.html:53
+#: web/templates/rewards.html:50
+msgctxt "UI"
+msgid "You have no rewards yet."
+msgstr ""
+
+#: web/templates/rewards.html:54
 msgctxt "UI"
 msgid "See block details on Block History page"
 msgstr "在矿区历史页面查看该矿区详情"
 
-#: web/templates/rewards.html:62
+#: web/templates/rewards.html:63
 msgctxt "UI"
 msgid "Processing..."
 msgstr "正在处理......"
 
-#: web/templates/rewards.html:73
+#: web/templates/rewards.html:74
 msgctxt "UI"
 msgid "Daily <span>Reward</span>"
 msgstr "每日 <span>报酬</span>"
 
-#: web/templates/rewards.html:76 web/templates/stats.html:66
+#: web/templates/rewards.html:77 web/templates/stats.html:66
 #: web/templates/stats.html.py:73
 msgctxt "UI"
 msgid "Loading chart data, please wait&hellip;"
 msgstr "正加载表格数据，请等待&hellip；"
 
-#: web/templates/rewards.html:91
+#: web/templates/rewards.html:92
 msgctxt "Intro"
 msgid "Click for more info about block and state of pool at the time."
 msgstr ""
 
-#: web/templates/rewards.html:98
+#: web/templates/rewards.html:99
 msgctxt "Intro"
 msgid ""
 "Reward is what you get if found block is valid (at least 100 confirmations)."
 msgstr ""
 
-#: web/templates/rewards.html:99
+#: web/templates/rewards.html:100
 msgctxt "Intro"
 msgid "You will not be given any reward if block is invalid."
 msgstr ""
 
-#: web/templates/rewards.html:101
+#: web/templates/rewards.html:102
 msgctxt "Intro"
 msgid ""
 "Your Reward = (Your Scoring Hash Rate / Pool Scoring Hash Rate) * (Block "
 "Value - Pool Fee)"
 msgstr ""
 
-#: web/templates/rewards.html:109
+#: web/templates/rewards.html:110
 #, fuzzy
 msgid "Invalid"
 msgstr "无效"
 
-#: web/templates/rewards.html:109
+#: web/templates/rewards.html:110
 #, fuzzy
 msgid "Confirmed"
 msgstr "确认的"
 
-#: web/templates/rewards.html:110
+#: web/templates/rewards.html:111
 msgctxt "Intro"
 msgid "Block is considered to be valid after 100 confirmations."
 msgstr ""
 
-#: web/templates/rewards.html:122 web/templates/rewards.html.py:130
+#: web/templates/rewards.html:123 web/templates/rewards.html.py:130
 msgctxt "UI"
 msgid "Daily Reward"
 msgstr "每日报酬"
 
-#: web/templates/rewards.html:123 web/templates/rewards.html.py:131
+#: web/templates/rewards.html:124 web/templates/rewards.html.py:131
 msgctxt "UI"
 msgid "7-day Average"
 msgstr "7天平均"
@@ -3037,14 +3099,18 @@ msgid ""
 "With this token and API described below, you can easily retrieve pool "
 "account details without need to store login and password directly in your "
 "application, so <strong>keep it private</strong>."
-msgstr "有此令牌和下面的API，您可以在没有储存账号和密码的情况下直接检索您的应用, 所以 <strong>请隐秘保管好</strong>。"
+msgstr ""
+"有此令牌和下面的API，您可以在没有储存账号和密码的情况下直接检索您的应用, 所"
+"以 <strong>请隐秘保管好</strong>。"
 
 #: web/templates/settings.html:111
 msgctxt "UI"
 msgid ""
 "Following page contains JSON encoded data about <strong>recent pool rounds</"
 "strong>, including your round rewards:"
-msgstr "接下来的页面含有关于 <strong>现时矿池回合</strong> JSON编码的数据, 包括您此回合的报酬："
+msgstr ""
+"接下来的页面含有关于 <strong>现时矿池回合</strong> JSON编码的数据, 包括您此回"
+"合的报酬："
 
 #: web/templates/settings.html:115
 msgctxt "UI"
@@ -3081,7 +3147,8 @@ msgstr "属于给定的令牌的登陆印信。"
 msgid ""
 "Total user's hashrate, updated every hour and calculated from last 10 rounds "
 "(Mhash/s)."
-msgstr "中踢用户的hash速率。这个数据会每小时更新一次，而是从前十轮算起的。（Mhash/s)"
+msgstr ""
+"中踢用户的hash速率。这个数据会每小时更新一次，而是从前十轮算起的。（Mhash/s)"
 
 #: web/templates/settings.html:150
 #, fuzzy
@@ -3247,6 +3314,12 @@ msgctxt "UI"
 msgid "All requests are cached for %(timeout)s seconds."
 msgstr "所有要求将缓存 %(timeout)s秒。"
 
+#: web/templates/settings.html:314 web/templates/settings.html.py:317
+#: web/templates/settings.html:324
+msgctxt "UI"
+msgid "Delete my account"
+msgstr "删除我的账户"
+
 #: web/templates/settings.html:318
 msgctxt "UI"
 msgid ""
@@ -3262,7 +3335,9 @@ msgctxt "UI"
 msgid ""
 "Your <strong>user name and e-mail address</strong> will be <strong>free to "
 "use</strong> for new registration."
-msgstr "您的 <strong>用户名和邮箱地址</strong> 将可被 <strong>自由使用</strong> 在新注册上。"
+msgstr ""
+"您的 <strong>用户名和邮箱地址</strong> 将可被 <strong>自由使用</strong> 在新"
+"注册上。"
 
 #: web/templates/settings.html:320
 msgctxt "UI"
@@ -3385,71 +3460,56 @@ msgctxt "UI"
 msgid "Cancel"
 msgstr "取消"
 
-#: web/templates/settings_email_change_confirm.html:13
-msgctxt "UI"
-msgid "Bad verification token"
-msgstr "坏的验证令牌"
-
-#: web/templates/settings_email_change_confirm.html:15
+#: web/templates/settings_email_change_bad_token.html:14
 msgctxt "UI"
 msgid ""
 "Verification token for changing your email address is not valid. Please, "
 "make sure that the URL in your browser matches exactly the URL that has been "
 "sent to you by email."
-msgstr "更改您邮箱地址的验证令牌无效，请确认您正浏览的链接是发送到您邮箱的那个链接。"
+msgstr ""
+"更改您邮箱地址的验证令牌无效，请确认您正浏览的链接是发送到您邮箱的那个链接。"
 
-#: web/templates/settings_email_change_confirm.html:18
+#: web/templates/settings_email_change_bad_token.html:15
 msgctxt "UI"
 msgid ""
 "If you are sure that the address in your browser is the same as the one you "
 "have received, please try to request a new email change message."
 msgstr "如果您确定浏览的正是发送给您的那个链接，请尝试重新申请邮箱更改。"
 
-#: web/templates/settings_email_change_confirm.html:21
+#: web/templates/settings_email_change_bad_token.html:16
 #, fuzzy, python-format
 msgctxt "UI"
 msgid ""
-"If this problem persists, please contact our\n"
-"                <a href=\"%(url)s\">%(globe_icon)s support system</a>."
+"If this problem persists, please contact our <a href=\"%(url)s\">"
+"%(globe_icon)s support system</a>."
 msgstr ""
 "如果问题任然存在, 请联系我们的\n"
 "                <a href=\"%(url)s\">%(globe_icon)s 技术支持系统</a>."
 
-#: web/templates/settings_email_change_confirm.html:26
+#: web/templates/settings_email_change_bad_token.html:20
+#: web/templates/settings_email_change_no_pending.html:18
+#: web/templates/settings_email_change_success.html:18
+#: web/templates/wallet_confirm_cancel.html:18
+#: web/templates/wallet_confirm_ip_reuse.html:19
+#: web/templates/wallet_confirm_no_token.html:25
+#: web/templates/wallet_confirm_not_verified.html:17
+#: web/templates/wallet_confirm_resend.html:18
+#: web/templates/wallet_confirm_too_early.html:19
+#: web/templates/wallet_confirm_valid.html:18
 msgctxt "UI"
-msgid "No pending email address change request"
-msgstr "无待定邮箱更改请求"
+msgid "Return to settings"
+msgstr "返回设置"
 
-#: web/templates/settings_email_change_confirm.html:27
-#, fuzzy, python-format
+#: web/templates/settings_email_change_no_pending.html:14
+#, fuzzy
 msgctxt "UI"
 msgid ""
 "There is no pending request for changing your email address with this ID. If "
-"you want to change your email address, please,\n"
-"\t  request this change in your <a href=\"%(account_settings)s\">account "
-"settings</a>."
+"you want to change your email address, please, request this change in your "
+"account settings."
 msgstr ""
 "此ID没有待定的更改您邮箱地址的申请。如果您想更改邮箱地址，请\n"
 "\t   在<a href=\"%(account_settings)s\">账户设置</a>里申请。"
-
-#: web/templates/settings_email_change_confirm.html:31
-msgctxt "UI"
-msgid "Email changed successfully"
-msgstr "邮箱地址更改成功"
-
-#: web/templates/settings_email_change_confirm.html:32
-#, python-format
-msgctxt "UI"
-msgid ""
-"Email (%(orig_email)s) associated with your account has been successfully "
-"changed to %(new_email)s."
-msgstr "关联您账户的邮箱 (%(orig_email)s) 已成功更改成 %(new_email)s。"
-
-#: web/templates/settings_email_change_confirm.html:35
-#: web/templates/settings_email_change_resend.html:21
-msgctxt "UI"
-msgid "Return to Settings"
-msgstr "返回设置"
 
 #: web/templates/settings_email_change_resend.html:3
 msgctxt "UI"
@@ -3462,13 +3522,25 @@ msgid ""
 "A new verification email has been sent to your original email address at: "
 msgstr ""
 
+#: web/templates/settings_email_change_resend.html:21
+msgctxt "UI"
+msgid "Return to Settings"
+msgstr "返回设置"
+
+#: web/templates/settings_email_change_success.html:14
+#, python-format
+msgctxt "UI"
+msgid ""
+"Email (%(orig_email)s) associated with your account has been successfully "
+"changed to %(new_email)s."
+msgstr "关联您账户的邮箱 (%(orig_email)s) 已成功更改成 %(new_email)s。"
+
 #: web/templates/settings_security.html:2
 msgctxt "UI"
 msgid "Security"
 msgstr "安全"
 
 #: web/templates/settings_security.html:7
-#: web/templates/wallet_confirm_otp.html:4
 msgctxt "UI"
 msgid "Two-factor authentication"
 msgstr "双重认证"
@@ -3532,7 +3604,9 @@ msgid ""
 "factor authentication to some safe place for cases when you lose your "
 "spartphone. You can use some kind of password manager application or a piece "
 "of paper. The generated URI is equivalent to the shown QR code."
-msgstr "您得认真考虑备份您的双重认证的密码到安全的地方，以防您可能遗失您的智能手机。您可以用一些密码管理应用或者一张纸。生成的URI和二维码是相等的。"
+msgstr ""
+"您得认真考虑备份您的双重认证的密码到安全的地方，以防您可能遗失您的智能手机。"
+"您可以用一些密码管理应用或者一张纸。生成的URI和二维码是相等的。"
 
 #: web/templates/settings_security.html:26
 msgctxt "UI"
@@ -3604,7 +3678,9 @@ msgid ""
 "As a security precaution, you may lock your current payout address <strong>"
 "%(wallet)s</strong>, so it cannot be changed by anyone who gains access to "
 "your pool account."
-msgstr "作为一项安全措施，您可以锁定您当前的支付地址 <strong>%(wallet)s</strong>，所以任何侵入您矿池账户的人都无法更改它。"
+msgstr ""
+"作为一项安全措施，您可以锁定您当前的支付地址 <strong>%(wallet)s</strong>，所"
+"以任何侵入您矿池账户的人都无法更改它。"
 
 #: web/templates/settings_security.html:64
 msgctxt "UI"
@@ -3904,17 +3980,6 @@ msgctxt "UI"
 msgid "Your wallet change request has been cancelled."
 msgstr "更改钱包地址的请求已被取消。"
 
-#: web/templates/wallet_confirm_cancel.html:18
-#: web/templates/wallet_confirm_ip_reuse.html:19
-#: web/templates/wallet_confirm_no_token.html:25
-#: web/templates/wallet_confirm_not_verified.html:17
-#: web/templates/wallet_confirm_resend.html:18
-#: web/templates/wallet_confirm_too_early.html:19
-#: web/templates/wallet_confirm_valid.html:18
-msgctxt "UI"
-msgid "Return to settings"
-msgstr "返回设置"
-
 #: web/templates/wallet_confirm_ip_reuse.html:14
 #, python-format
 msgctxt "UI"
@@ -3924,7 +3989,8 @@ msgid ""
 "within 24 hours. We are sorry for this inconvenience. Please, try again "
 "tomorrow."
 msgstr ""
-"钱包更改申请今天已从您的IP确认(%(param)s)。出于安全考虑，同一IP24小时内钱包更改只能一次。我们为带来的不便表示歉意，请明天再尝试。"
+"钱包更改申请今天已从您的IP确认(%(param)s)。出于安全考虑，同一IP24小时内钱包更"
+"改只能一次。我们为带来的不便表示歉意，请明天再尝试。"
 
 #: web/templates/wallet_confirm_no_token.html:16
 msgctxt "UI"
@@ -3939,7 +4005,9 @@ msgctxt "UI"
 msgid ""
 "You can resend the wallet change confirmation email from your <a href="
 "\"%(profile_page)s\">profile page</a>."
-msgstr "您可以从 <a href=\"%(profile_page)s\">个人资料页面</a>重新发送钱包更改确认邮件。"
+msgstr ""
+"您可以从 <a href=\"%(profile_page)s\">个人资料页面</a>重新发送钱包更改确认邮"
+"件。"
 
 #: web/templates/wallet_confirm_not_verified.html:13
 msgctxt "UI"
@@ -3948,11 +4016,13 @@ msgid ""
 ">Please, try again later."
 msgstr "您的申请在等待矿池工作人员手动确认。<br/>请稍后再尝试。"
 
-#: web/templates/wallet_confirm_otp.html:12
+#: web/templates/wallet_confirm_otp.html:22
+#, fuzzy
 msgctxt "UI"
 msgid ""
-"OTP - one-time password as provided by your two-factor authentication "
-"software."
+"Please enter valid one-time password provided by your two-factor "
+"authentication software, or return to your account settings and cancel the "
+"request."
 msgstr "OTP-由您双重认证软件提供的一次性密码。"
 
 #: web/templates/wallet_confirm_resend.html:14
@@ -3971,8 +4041,8 @@ msgid ""
 "This limitation has been activated due to recent brute force attacks on user "
 "profiles."
 msgstr ""
-"您的请求在创建后24小时内不能完成。 The time limit will pass at %(param)s UTC. "
-"我们为此不便表示歉意。这项限制被启用源于最近针对用户资料的强力袭击。"
+"您的请求在创建后24小时内不能完成。 The time limit will pass at %(param)s "
+"UTC. 我们为此不便表示歉意。这项限制被启用源于最近针对用户资料的强力袭击。"
 
 #: web/templates/wallet_confirm_valid.html:14
 msgctxt "UI"
@@ -5557,6 +5627,24 @@ msgid "Help me"
 msgstr "帮助我"
 
 #~ msgctxt "UI"
+#~ msgid ""
+#~ "Confirmation email has been send. Please check your mailbox and follow "
+#~ "the link."
+#~ msgstr "确认邮件已发送。请检查您的邮箱并使用邮件里的链接继续下一步。"
+
+#~ msgctxt "UI"
+#~ msgid "Bad verification token"
+#~ msgstr "坏的验证令牌"
+
+#~ msgctxt "UI"
+#~ msgid "No pending email address change request"
+#~ msgstr "无待定邮箱更改请求"
+
+#~ msgctxt "UI"
+#~ msgid "Email changed successfully"
+#~ msgstr "邮箱地址更改成功"
+
+#~ msgctxt "UI"
 #~ msgid "The monitoring system will automatically "
 #~ msgstr "监控系统会自动... "
 
@@ -5655,10 +5743,6 @@ msgstr "帮助我"
 #~ msgctxt "UI, manual menu"
 #~ msgid "<strong>Getting</strong> Started"
 #~ msgstr "<strong>入门</strong> 准备"
-
-#, fuzzy
-#~ msgid "Invalid Request."
-#~ msgstr "令牌没效"
 
 #~ msgid "invalid"
 #~ msgstr "无效"
