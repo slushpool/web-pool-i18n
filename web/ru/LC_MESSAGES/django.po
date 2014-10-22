@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-22 14:36+0000\n"
+"POT-Creation-Date: 2014-10-22 15:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -760,93 +760,93 @@ msgctxt "UI"
 msgid "New account confirmation"
 msgstr "Подтверждение нового аккаунта"
 
-#: web/views.py:455
+#: web/views.py:449
 msgctxt "UI"
 msgid "Two-factor authentication isn't configured yet"
 msgstr ""
 
-#: web/views.py:466
+#: web/views.py:460
 msgctxt "UI"
 msgid "Two-factor authentication token is invalid. Please, enter valid token."
 msgstr ""
 
-#: web/views.py:474
+#: web/views.py:468
 #, fuzzy
 msgctxt "UI"
 msgid "Two-factor authentication has been succesfully disabled."
 msgstr "Кошелёк был успешно изменён."
 
-#: web/views.py:486
+#: web/views.py:480
 msgctxt "UI"
 msgid "Two-factor authentication is already configured"
 msgstr ""
 
-#: web/views.py:499
+#: web/views.py:493
 msgctxt "UI"
 msgid ""
 "Two-factor authentication token is invalid. Please, re-scan the QR code (a "
 "new one has been generated for security reasons)."
 msgstr ""
 
-#: web/views.py:507
+#: web/views.py:501
 msgctxt "UI"
 msgid "Two-factor authentication has been configured."
 msgstr ""
 
-#: web/views.py:518
+#: web/views.py:512
 #, fuzzy
 msgctxt "UI"
 msgid "Invalid request"
 msgstr "Недействительный ключ"
 
-#: web/views.py:532
+#: web/views.py:526
 msgctxt "UI"
 msgid "Wallet is not valid"
 msgstr ""
 
-#: web/views.py:542
+#: web/views.py:536
 #, fuzzy
 msgctxt "UI"
 msgid "Your payout address has been locked."
 msgstr "Ваш аккаунт активирован!"
 
-#: web/views.py:595
+#: web/views.py:589
 #, fuzzy
 msgctxt "UI"
 msgid "The account has been updated."
 msgstr "Аккаунт был обновлен."
 
-#: web/views.py:610
+#: web/views.py:604
 #, fuzzy
 msgctxt "UI"
 msgid "The monitoring settings has been updated."
 msgstr "Нэймкойн настройки были обновлены."
 
-#: web/views.py:646
+#: web/views.py:640
 #, fuzzy
 msgctxt "UI"
 msgid "Password has been successfully changed."
 msgstr "Кошелёк был успешно изменён."
 
-#: web/views.py:672
+#: web/views.py:666
 #, fuzzy
 msgctxt "UI"
 msgid "The payouts settings has been updated."
 msgstr "Нэймкойн настройки были обновлены."
 
-#: web/views.py:686
+#: web/views.py:680
 #, fuzzy
 msgctxt "UI"
 msgid "Delete account confirmation"
 msgstr "Подтверждение для удаления аккаунта"
 
-#: web/views.py:702
+#: web/views.py:696
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
 msgstr ""
 
-#: web/views.py:947
+#: web/views.py:941
 #, fuzzy
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at support@bitcoin.cz"
@@ -854,7 +854,7 @@ msgstr ""
 "Аккаунт заблокирован. Свяжитесь с администратором пула с помощью "
 "support@bitcoin.cz"
 
-#: web/views.py:970
+#: web/views.py:964
 #, fuzzy, python-format
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at %(link)s"
@@ -862,7 +862,7 @@ msgstr ""
 "Аккаунт заблокирован. Свяжитесь с администратором пула с помощью "
 "support@bitcoin.cz"
 
-#: web/views.py:979
+#: web/views.py:973
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -870,20 +870,20 @@ msgid ""
 "(%(reason)s). "
 msgstr ""
 
-#: web/views.py:980
+#: web/views.py:974
 #, python-format
 msgctxt "UI"
 msgid "Please, contact %(link)s for further details."
 msgstr ""
 
-#: web/views.py:1002
+#: web/views.py:996
 msgctxt "UI"
 msgid ""
 "Please consider enabling payout address protection by two-factor "
 "authentication or by locking it"
 msgstr ""
 
-#: web/views.py:1004 web/templates/settings.html:3
+#: web/views.py:998 web/templates/settings.html:3
 #, fuzzy
 msgctxt "UI"
 msgid "Account settings"
@@ -922,11 +922,12 @@ msgstr "Регистрация аккаунта"
 
 #: web/templates/activity_log.html:12
 #, fuzzy
-msgid "Not avaliable in demo account."
-msgstr "У Вас всё ещё нет аккаунта?"
+msgctxt "UI"
+msgid "Demo account not available."
+msgstr "Мой аккаунт"
 
-#: web/templates/activity_log.html:14 web/templates/payouts.html:34
-#: web/templates/rewards.html:36
+#: web/templates/activity_log.html:14 web/templates/blocks.html:39
+#: web/templates/payouts.html:34 web/templates/rewards.html:36
 #, fuzzy
 msgctxt "UI"
 msgid "All times are in UTC."
@@ -1061,66 +1062,81 @@ msgid "Block History"
 msgstr "История Биткойн блоков"
 
 #: web/templates/blocks.html:37
-msgid "Block <span>History</span>"
-msgstr ""
-
-#: web/templates/blocks.html:39
-msgid "All times are in UTC."
-msgstr "Время представлено в зоне UTC."
-
-#: web/templates/blocks.html:47
 #, fuzzy
+msgctxt "UI"
+msgid "Block <span>History</span>"
+msgstr "Регистрация аккаунта"
+
+#: web/templates/blocks.html:47 web/templates/rewards.html:43
+#, fuzzy
+msgctxt "UI"
 msgid "Block Found At"
 msgstr "Блок найден в"
 
 #: web/templates/blocks.html:48
+#, fuzzy
+msgctxt "UI"
 msgid "Duration"
 msgstr "Продолжительность"
 
 #: web/templates/blocks.html:49
 #, fuzzy
-msgid "Pool Scoring<br/>Hashrate"
+msgctxt "UI"
+msgid " Pool Scoring<br/>Hashrate "
 msgstr "Общий счёт текущего раунда:"
 
 #: web/templates/blocks.html:50
 #, fuzzy
+msgctxt "UI"
 msgid "Difficulty"
 msgstr "сложность"
 
 #: web/templates/blocks.html:51
 #, fuzzy
+msgctxt "UI"
 msgid "Pool Luck"
 msgstr "Успешность пула"
 
 #: web/templates/blocks.html:52
+#, fuzzy
+msgctxt "UI"
 msgid "Block #"
 msgstr "Блок #"
 
-#: web/templates/blocks.html:53
+#: web/templates/blocks.html:53 web/templates/rewards.html:47
 #, fuzzy
+msgctxt "UI"
 msgid "Block Value"
 msgstr "Блок #"
 
 #: web/templates/blocks.html:54
 #, fuzzy
-msgid "Confirm.<br />Left"
+msgctxt "UI"
+msgid "Confirm.<br />Left "
 msgstr "подтверждений остаётся"
 
 #: web/templates/blocks.html:76
 #, fuzzy
+msgctxt "UI"
 msgid "Pool <span>Daily Reward</span>"
 msgstr "Регистрация аккаунта"
 
-#: web/templates/blocks.html:77
+#: web/templates/blocks.html:77 web/templates/rewards.html:77
+#: web/templates/stats.html:66 web/templates/stats.html.py:73
+msgctxt "UI"
 msgid "Loading chart data, please wait&hellip;"
 msgstr ""
 
 #: web/templates/blocks.html:89 web/templates/blocks.html.py:96
+#: web/templates/rewards.html:123 web/templates/rewards.html.py:130
 #, fuzzy
+msgctxt "UI"
 msgid "Daily Reward"
 msgstr "Дневное вознаграждение"
 
 #: web/templates/blocks.html:90 web/templates/blocks.html.py:97
+#: web/templates/rewards.html:124 web/templates/rewards.html.py:131
+msgctxt "UI"
 msgid "7-day Average"
 msgstr ""
 
@@ -3297,12 +3313,6 @@ msgctxt "UI"
 msgid "Block<br>ID"
 msgstr ""
 
-#: web/templates/rewards.html:43
-#, fuzzy
-msgctxt "UI"
-msgid "Block Found At"
-msgstr "Блок найден в"
-
 #: web/templates/rewards.html:44
 #, fuzzy
 msgctxt "UI"
@@ -3320,12 +3330,6 @@ msgstr "Скорость хэша"
 msgctxt "UI"
 msgid "Your Reward"
 msgstr "Ваше БТК вознаграждение"
-
-#: web/templates/rewards.html:47
-#, fuzzy
-msgctxt "UI"
-msgid "Block Value"
-msgstr "Блок #"
 
 #: web/templates/rewards.html:48
 #, fuzzy
@@ -3354,12 +3358,6 @@ msgstr "В процессе..."
 msgctxt "UI"
 msgid "Daily <span>Reward</span>"
 msgstr "Мой аккаунт"
-
-#: web/templates/rewards.html:77 web/templates/stats.html:66
-#: web/templates/stats.html.py:73
-msgctxt "UI"
-msgid "Loading chart data, please wait&hellip;"
-msgstr ""
 
 #: web/templates/rewards.html:92
 msgctxt "Intro"
@@ -3397,17 +3395,6 @@ msgstr "подтверждено"
 #: web/templates/rewards.html:111
 msgctxt "Intro"
 msgid "Block is considered to be valid after 100 confirmations."
-msgstr ""
-
-#: web/templates/rewards.html:123 web/templates/rewards.html.py:130
-#, fuzzy
-msgctxt "UI"
-msgid "Daily Reward"
-msgstr "Дневное вознаграждение"
-
-#: web/templates/rewards.html:124 web/templates/rewards.html.py:131
-msgctxt "UI"
-msgid "7-day Average"
 msgstr ""
 
 #: web/templates/settings.html:17
@@ -6011,6 +5998,25 @@ msgstr ""
 msgctxt "UI"
 msgid "Help me"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Not avaliable in demo account."
+#~ msgstr "У Вас всё ещё нет аккаунта?"
+
+#~ msgid "All times are in UTC."
+#~ msgstr "Время представлено в зоне UTC."
+
+#, fuzzy
+#~ msgid "Block Found At"
+#~ msgstr "Блок найден в"
+
+#, fuzzy
+#~ msgid "Block Value"
+#~ msgstr "Блок #"
+
+#, fuzzy
+#~ msgid "Daily Reward"
+#~ msgstr "Дневное вознаграждение"
 
 #, fuzzy
 #~ msgid "Average Hash Rate (5min)"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mining.bitcoin.cz 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-22 14:37+0000\n"
+"POT-Creation-Date: 2014-10-22 15:01+0000\n"
 "PO-Revision-Date: 2012-08-07 22:48-0500\n"
 "Last-Translator: Colin Dean <git@cad.cx>\n"
 "Language-Team: Colin Dean <cad@cad.cx>\n"
@@ -756,105 +756,105 @@ msgctxt "UI"
 msgid "New account confirmation"
 msgstr "Konfirmo de nova konto"
 
-#: web/views.py:455
+#: web/views.py:449
 msgctxt "UI"
 msgid "Two-factor authentication isn't configured yet"
 msgstr ""
 
-#: web/views.py:466
+#: web/views.py:460
 msgctxt "UI"
 msgid "Two-factor authentication token is invalid. Please, enter valid token."
 msgstr ""
 
-#: web/views.py:474
+#: web/views.py:468
 #, fuzzy
 msgctxt "UI"
 msgid "Two-factor authentication has been succesfully disabled."
 msgstr "Via monujo estis ŝanĝita sukcese."
 
-#: web/views.py:486
+#: web/views.py:480
 msgctxt "UI"
 msgid "Two-factor authentication is already configured"
 msgstr ""
 
-#: web/views.py:499
+#: web/views.py:493
 msgctxt "UI"
 msgid ""
 "Two-factor authentication token is invalid. Please, re-scan the QR code (a "
 "new one has been generated for security reasons)."
 msgstr ""
 
-#: web/views.py:507
+#: web/views.py:501
 msgctxt "UI"
 msgid "Two-factor authentication has been configured."
 msgstr ""
 
-#: web/views.py:518
+#: web/views.py:512
 #, fuzzy
 msgctxt "UI"
 msgid "Invalid request"
 msgstr "Malvalida ĵetono"
 
-#: web/views.py:532
+#: web/views.py:526
 msgctxt "UI"
 msgid "Wallet is not valid"
 msgstr ""
 
-#: web/views.py:542
+#: web/views.py:536
 #, fuzzy
 msgctxt "UI"
 msgid "Your payout address has been locked."
 msgstr "Via konto aktiviĝis!"
 
-#: web/views.py:595
+#: web/views.py:589
 #, fuzzy
 msgctxt "UI"
 msgid "The account has been updated."
 msgstr "Konto ĝisdatiĝis."
 
-#: web/views.py:610
+#: web/views.py:604
 #, fuzzy
 msgctxt "UI"
 msgid "The monitoring settings has been updated."
 msgstr "Nomamonaj agordoj ĝisdatiĝis."
 
-#: web/views.py:646
+#: web/views.py:640
 #, fuzzy
 msgctxt "UI"
 msgid "Password has been successfully changed."
 msgstr "Via monujo estis ŝanĝita sukcese."
 
-#: web/views.py:672
+#: web/views.py:666
 #, fuzzy
 msgctxt "UI"
 msgid "The payouts settings has been updated."
 msgstr "Nomamonaj agordoj ĝisdatiĝis."
 
-#: web/views.py:686
+#: web/views.py:680
 #, fuzzy
 msgctxt "UI"
 msgid "Delete account confirmation"
 msgstr "Konfirmo de forigo de konto"
 
-#: web/views.py:702
+#: web/views.py:696
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
 msgstr ""
 
-#: web/views.py:947
+#: web/views.py:941
 #, fuzzy
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at support@bitcoin.cz"
 msgstr "Konto forbariĝis. Kontaktu grupadministranto ĉe support@bitcoin.cz"
 
-#: web/views.py:970
+#: web/views.py:964
 #, fuzzy, python-format
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at %(link)s"
 msgstr "Konto forbariĝis. Kontaktu grupadministranto ĉe support@bitcoin.cz"
 
-#: web/views.py:979
+#: web/views.py:973
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -862,20 +862,20 @@ msgid ""
 "(%(reason)s). "
 msgstr ""
 
-#: web/views.py:980
+#: web/views.py:974
 #, python-format
 msgctxt "UI"
 msgid "Please, contact %(link)s for further details."
 msgstr ""
 
-#: web/views.py:1002
+#: web/views.py:996
 msgctxt "UI"
 msgid ""
 "Please consider enabling payout address protection by two-factor "
 "authentication or by locking it"
 msgstr ""
 
-#: web/views.py:1004 web/templates/settings.html:3
+#: web/views.py:998 web/templates/settings.html:3
 #, fuzzy
 msgctxt "UI"
 msgid "Account settings"
@@ -914,11 +914,12 @@ msgstr "Registri konton"
 
 #: web/templates/activity_log.html:12
 #, fuzzy
-msgid "Not avaliable in demo account."
-msgstr "Ne havas konton?"
+msgctxt "UI"
+msgid "Demo account not available."
+msgstr "Mia konto"
 
-#: web/templates/activity_log.html:14 web/templates/payouts.html:34
-#: web/templates/rewards.html:36
+#: web/templates/activity_log.html:14 web/templates/blocks.html:39
+#: web/templates/payouts.html:34 web/templates/rewards.html:36
 #, fuzzy
 msgctxt "UI"
 msgid "All times are in UTC."
@@ -1053,66 +1054,81 @@ msgid "Block History"
 msgstr "Historio de bitmonaj blokoj"
 
 #: web/templates/blocks.html:37
-msgid "Block <span>History</span>"
-msgstr ""
-
-#: web/templates/blocks.html:39
-msgid "All times are in UTC."
-msgstr "Ĉiaj tempoj estas en UTC."
-
-#: web/templates/blocks.html:47
 #, fuzzy
+msgctxt "UI"
+msgid "Block <span>History</span>"
+msgstr "Registri konton"
+
+#: web/templates/blocks.html:47 web/templates/rewards.html:43
+#, fuzzy
+msgctxt "UI"
 msgid "Block Found At"
 msgstr "Bloko trovita ĉe"
 
 #: web/templates/blocks.html:48
+#, fuzzy
+msgctxt "UI"
 msgid "Duration"
 msgstr "Daŭro"
 
 #: web/templates/blocks.html:49
 #, fuzzy
-msgid "Pool Scoring<br/>Hashrate"
+msgctxt "UI"
+msgid " Pool Scoring<br/>Hashrate "
 msgstr "Totala nombro de poentoj en nuntempa raŭndo:"
 
 #: web/templates/blocks.html:50
 #, fuzzy
+msgctxt "UI"
 msgid "Difficulty"
 msgstr "malfacileco"
 
 #: web/templates/blocks.html:51
 #, fuzzy
+msgctxt "UI"
 msgid "Pool Luck"
 msgstr "Grupa sorto"
 
 #: web/templates/blocks.html:52
+#, fuzzy
+msgctxt "UI"
 msgid "Block #"
 msgstr "Bloko #"
 
-#: web/templates/blocks.html:53
+#: web/templates/blocks.html:53 web/templates/rewards.html:47
 #, fuzzy
+msgctxt "UI"
 msgid "Block Value"
 msgstr "Bloko #"
 
 #: web/templates/blocks.html:54
 #, fuzzy
-msgid "Confirm.<br />Left"
+msgctxt "UI"
+msgid "Confirm.<br />Left "
 msgstr "konfirmoj restantaj"
 
 #: web/templates/blocks.html:76
 #, fuzzy
+msgctxt "UI"
 msgid "Pool <span>Daily Reward</span>"
 msgstr "Registri konton"
 
-#: web/templates/blocks.html:77
+#: web/templates/blocks.html:77 web/templates/rewards.html:77
+#: web/templates/stats.html:66 web/templates/stats.html.py:73
+msgctxt "UI"
 msgid "Loading chart data, please wait&hellip;"
 msgstr ""
 
 #: web/templates/blocks.html:89 web/templates/blocks.html.py:96
+#: web/templates/rewards.html:123 web/templates/rewards.html.py:130
 #, fuzzy
+msgctxt "UI"
 msgid "Daily Reward"
 msgstr "Ĉiutaga rekompenco"
 
 #: web/templates/blocks.html:90 web/templates/blocks.html.py:97
+#: web/templates/rewards.html:124 web/templates/rewards.html.py:131
+msgctxt "UI"
 msgid "7-day Average"
 msgstr ""
 
@@ -3278,12 +3294,6 @@ msgctxt "UI"
 msgid "Block<br>ID"
 msgstr ""
 
-#: web/templates/rewards.html:43
-#, fuzzy
-msgctxt "UI"
-msgid "Block Found At"
-msgstr "Bloko trovita ĉe"
-
 #: web/templates/rewards.html:44
 #, fuzzy
 msgctxt "UI"
@@ -3301,12 +3311,6 @@ msgstr "Haketa rapido"
 msgctxt "UI"
 msgid "Your Reward"
 msgstr "Via BTC-a rekompenco"
-
-#: web/templates/rewards.html:47
-#, fuzzy
-msgctxt "UI"
-msgid "Block Value"
-msgstr "Bloko #"
 
 #: web/templates/rewards.html:48
 #, fuzzy
@@ -3335,12 +3339,6 @@ msgstr "Traktanta..."
 msgctxt "UI"
 msgid "Daily <span>Reward</span>"
 msgstr "Mia konto"
-
-#: web/templates/rewards.html:77 web/templates/stats.html:66
-#: web/templates/stats.html.py:73
-msgctxt "UI"
-msgid "Loading chart data, please wait&hellip;"
-msgstr ""
 
 #: web/templates/rewards.html:92
 msgctxt "Intro"
@@ -3378,17 +3376,6 @@ msgstr "konfirmita"
 #: web/templates/rewards.html:111
 msgctxt "Intro"
 msgid "Block is considered to be valid after 100 confirmations."
-msgstr ""
-
-#: web/templates/rewards.html:123 web/templates/rewards.html.py:130
-#, fuzzy
-msgctxt "UI"
-msgid "Daily Reward"
-msgstr "Ĉiutaga rekompenco"
-
-#: web/templates/rewards.html:124 web/templates/rewards.html.py:131
-msgctxt "UI"
-msgid "7-day Average"
 msgstr ""
 
 #: web/templates/settings.html:17
@@ -5982,6 +5969,25 @@ msgstr ""
 msgctxt "UI"
 msgid "Help me"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Not avaliable in demo account."
+#~ msgstr "Ne havas konton?"
+
+#~ msgid "All times are in UTC."
+#~ msgstr "Ĉiaj tempoj estas en UTC."
+
+#, fuzzy
+#~ msgid "Block Found At"
+#~ msgstr "Bloko trovita ĉe"
+
+#, fuzzy
+#~ msgid "Block Value"
+#~ msgstr "Bloko #"
+
+#, fuzzy
+#~ msgid "Daily Reward"
+#~ msgstr "Ĉiutaga rekompenco"
 
 #, fuzzy
 #~ msgid "Average Hash Rate (5min)"
