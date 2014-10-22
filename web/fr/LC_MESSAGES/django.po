@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-22 15:00+0000\n"
+"POT-Creation-Date: 2014-10-22 16:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -758,105 +758,105 @@ msgctxt "UI"
 msgid "New account confirmation"
 msgstr "Confirmation d'un nouveau compte créé"
 
-#: web/views.py:449
+#: web/views.py:450
 msgctxt "UI"
 msgid "Two-factor authentication isn't configured yet"
 msgstr ""
 
-#: web/views.py:460
+#: web/views.py:461
 msgctxt "UI"
 msgid "Two-factor authentication token is invalid. Please, enter valid token."
 msgstr ""
 
-#: web/views.py:468
+#: web/views.py:469
 #, fuzzy
 msgctxt "UI"
 msgid "Two-factor authentication has been succesfully disabled."
 msgstr "Votre porte-monnaie a bien été changé."
 
-#: web/views.py:480
+#: web/views.py:481
 msgctxt "UI"
 msgid "Two-factor authentication is already configured"
 msgstr ""
 
-#: web/views.py:493
+#: web/views.py:494
 msgctxt "UI"
 msgid ""
 "Two-factor authentication token is invalid. Please, re-scan the QR code (a "
 "new one has been generated for security reasons)."
 msgstr ""
 
-#: web/views.py:501
+#: web/views.py:502
 msgctxt "UI"
 msgid "Two-factor authentication has been configured."
 msgstr ""
 
-#: web/views.py:512
+#: web/views.py:513
 #, fuzzy
 msgctxt "UI"
 msgid "Invalid request"
 msgstr "Jeton non valide"
 
-#: web/views.py:526
+#: web/views.py:527
 msgctxt "UI"
 msgid "Wallet is not valid"
 msgstr ""
 
-#: web/views.py:536
+#: web/views.py:537
 #, fuzzy
 msgctxt "UI"
 msgid "Your payout address has been locked."
 msgstr "Votre compte a été activé !"
 
-#: web/views.py:589
+#: web/views.py:590
 #, fuzzy
 msgctxt "UI"
 msgid "The account has been updated."
 msgstr "Le compte a été mis à jour."
 
-#: web/views.py:604
+#: web/views.py:605
 #, fuzzy
 msgctxt "UI"
 msgid "The monitoring settings has been updated."
 msgstr "Le parametrage Namecoin a été mis à jour."
 
-#: web/views.py:640
+#: web/views.py:641
 #, fuzzy
 msgctxt "UI"
 msgid "Password has been successfully changed."
 msgstr "Votre porte-monnaie a bien été changé."
 
-#: web/views.py:666
+#: web/views.py:667
 #, fuzzy
 msgctxt "UI"
 msgid "The payouts settings has been updated."
 msgstr "Le parametrage Namecoin a été mis à jour."
 
-#: web/views.py:680
+#: web/views.py:681
 #, fuzzy
 msgctxt "UI"
 msgid "Delete account confirmation"
 msgstr "Confirmation suppression de compte"
 
-#: web/views.py:696
+#: web/views.py:697
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
 msgstr ""
 
-#: web/views.py:941
+#: web/views.py:942
 #, fuzzy
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at support@bitcoin.cz"
 msgstr "Compte bani. Contactez l'administrateur à support@bitcoin.cz"
 
-#: web/views.py:964
+#: web/views.py:965
 #, fuzzy, python-format
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at %(link)s"
 msgstr "Compte bani. Contactez l'administrateur à support@bitcoin.cz"
 
-#: web/views.py:973
+#: web/views.py:974
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -864,20 +864,20 @@ msgid ""
 "(%(reason)s). "
 msgstr ""
 
-#: web/views.py:974
+#: web/views.py:975
 #, python-format
 msgctxt "UI"
 msgid "Please, contact %(link)s for further details."
 msgstr ""
 
-#: web/views.py:996
+#: web/views.py:997
 msgctxt "UI"
 msgid ""
 "Please consider enabling payout address protection by two-factor "
 "authentication or by locking it"
 msgstr ""
 
-#: web/views.py:998 web/templates/settings.html:3
+#: web/views.py:999 web/templates/settings.html:3
 #, fuzzy
 msgctxt "UI"
 msgid "Account settings"
@@ -1472,17 +1472,17 @@ msgctxt "UI"
 msgid "Average Hash Rate"
 msgstr "Taux de Hash"
 
-#: web/templates/dashboard.html:111
+#: web/templates/dashboard.html:111 web/templates/workers.html:52
 msgctxt "UI,time"
 msgid "5min"
 msgstr ""
 
-#: web/templates/dashboard.html:115
+#: web/templates/dashboard.html:115 web/templates/workers.html:53
 msgctxt "UI,time"
 msgid "60min"
 msgstr ""
 
-#: web/templates/dashboard.html:119
+#: web/templates/dashboard.html:119 web/templates/workers.html:54
 msgctxt "UI,time"
 msgid "24h"
 msgstr ""
@@ -3200,15 +3200,12 @@ msgid "Register <span>an account</span>"
 msgstr "Créer un compte"
 
 #: web/templates/register.html:21
+#, python-format
 msgctxt "UI"
-msgid "I agree with"
+msgid ""
+"I agree with <a target=\"_blank\" href=\"%(terms_url)s\">terms of service</"
+"a>."
 msgstr ""
-
-#: web/templates/register.html:21
-#, fuzzy
-msgctxt "UI"
-msgid "terms of service"
-msgstr "Configuration du compte"
 
 #: web/templates/register.html:23
 #, fuzzy
@@ -4525,7 +4522,6 @@ msgstr ""
 
 #: web/templates/workers.html:50
 #, fuzzy
-msgctxt "UI"
 msgid "Login<br>suffix"
 msgstr "Sufixe Login"
 
@@ -4535,22 +4531,11 @@ msgctxt "UI"
 msgid "Scoring<br>Hash Rate"
 msgstr "Taux de Hash"
 
-#: web/templates/workers.html:52
-#, fuzzy
-msgctxt "UI"
-msgid "Hash Rate<br>(5min)"
-msgstr "Taux de Hash"
-
-#: web/templates/workers.html:53
-#, fuzzy
-msgctxt "UI"
-msgid "Hash Rate<br>(60min)"
-msgstr "Taux de Hash"
-
+#: web/templates/workers.html:52 web/templates/workers.html.py:53
 #: web/templates/workers.html:54
 #, fuzzy
 msgctxt "UI"
-msgid "Hash Rate<br>(24h)"
+msgid "Hash Rate"
 msgstr "Taux de Hash"
 
 #: web/templates/workers.html:55
@@ -5970,6 +5955,26 @@ msgstr ""
 msgctxt "UI"
 msgid "Help me"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "UI"
+#~ msgid "terms of service"
+#~ msgstr "Configuration du compte"
+
+#, fuzzy
+#~ msgctxt "UI"
+#~ msgid "Hash Rate<br>(5min)"
+#~ msgstr "Taux de Hash"
+
+#, fuzzy
+#~ msgctxt "UI"
+#~ msgid "Hash Rate<br>(60min)"
+#~ msgstr "Taux de Hash"
+
+#, fuzzy
+#~ msgctxt "UI"
+#~ msgid "Hash Rate<br>(24h)"
+#~ msgstr "Taux de Hash"
 
 #, fuzzy
 #~ msgid "Not avaliable in demo account."
