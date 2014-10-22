@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-22 13:03+0000\n"
+"POT-Creation-Date: 2014-10-22 14:37+0000\n"
 "PO-Revision-Date: 2014-10-22 16:14+0200\n"
 "Last-Translator: Braiins Admin <web.accounts@braiins.cz>\n"
-"Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-"
-"cz/mining/zh/>\n"
+"Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-cz/"
+"mining/zh/>\n"
 "Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1225,122 +1225,160 @@ msgid "Account dashboard"
 msgstr "账户仪表板"
 
 #: web/templates/dashboard.html:17
+#, fuzzy
+msgctxt "UI"
 msgid "Dashboard"
-msgstr ""
+msgstr "帐户已被更新。"
 
 #: web/templates/dashboard.html:23
 #, fuzzy
+msgctxt "UI"
 msgid "Account"
 msgstr "数目"
 
 #: web/templates/dashboard.html:27
 #, fuzzy
+msgctxt "UI"
 msgid "User Name"
 msgstr "帐号"
 
 #: web/templates/dashboard.html:31
 #, fuzzy
+msgctxt "UI"
 msgid "E-mail"
 msgstr "电邮地址"
 
 #: web/templates/dashboard.html:35
 #, fuzzy
+msgctxt "UI"
 msgid "Payout Address"
 msgstr "比特币地址"
 
 #: web/templates/dashboard.html:41
 #, fuzzy
+msgctxt "UI"
 msgid "Set wallet"
 msgstr "名币（Namecoin）钱包"
 
 #: web/templates/dashboard.html:49
 #, fuzzy
+msgctxt "UI"
 msgid "Payout Threshold"
 msgstr "派息历史"
 
 #: web/templates/dashboard.html:55
+#, fuzzy
+msgctxt "UI"
 msgid "Rewards"
-msgstr ""
+msgstr "回报历史"
 
 #: web/templates/dashboard.html:59
 #, fuzzy
+msgctxt "UI"
 msgid "Total Reward"
 msgstr "总酬报"
 
 #: web/templates/dashboard.html:63
 #, fuzzy
+msgctxt "UI"
 msgid "Confirmed Reward"
 msgstr "坚信的酬报"
 
 #: web/templates/dashboard.html:67
 #, fuzzy
+msgctxt "UI"
 msgid "Unconfirmed Reward"
 msgstr "未经证实的酬报"
 
 #: web/templates/dashboard.html:71
 #, fuzzy
+msgctxt "UI"
 msgid "Estimated Reward"
 msgstr "估计的酬报"
 
 #: web/templates/dashboard.html:78
+msgctxt "UI"
 msgid "Mining"
 msgstr ""
 
 #: web/templates/dashboard.html:82
 #, fuzzy
+msgctxt "UI"
 msgid "Pool Scoring Hash Rate"
 msgstr "本轮的总比分"
 
 #: web/templates/dashboard.html:86
 #, fuzzy
+msgctxt "UI"
 msgid "Your Scoring Hash Rate"
 msgstr "Hash的速率"
 
 #: web/templates/dashboard.html:90
+msgctxt "UI"
 msgid "Your Contribution to the Pool"
 msgstr ""
 
 #: web/templates/dashboard.html:94
 #, fuzzy
+msgctxt "UI"
 msgid "Account Monitoring Status"
 msgstr "户口选项"
 
 #: web/templates/dashboard.html:98
+#, fuzzy
+msgctxt "UI"
 msgid "Workers Monitoring Status"
-msgstr ""
+msgstr "户口选项"
+
+#: web/templates/dashboard.html:107 web/templates/stats.html:145
+#: web/templates/stats.html.py:154
+msgctxt "UI"
+msgid "Active Workers"
+msgstr "激活的矿工"
 
 #: web/templates/dashboard.html:107
-msgid "Active Workers | Inactive Workers"
-msgstr ""
-
-#: web/templates/dashboard.html:111
 #, fuzzy
-msgid "Average Hash Rate (5min)"
-msgstr "Hash的速率"
+msgctxt "UI"
+msgid "Inactive Workers"
+msgstr "工人"
 
-#: web/templates/dashboard.html:115
-#, fuzzy
-msgid "Average Hash Rate (60min)"
-msgstr "Hash的速率"
-
+#: web/templates/dashboard.html:111 web/templates/dashboard.html.py:115
 #: web/templates/dashboard.html:119
 #, fuzzy
-msgid "Average Hash Rate (24h)"
+msgctxt "UI"
+msgid "Average Hash Rate"
 msgstr "Hash的速率"
 
-#: web/templates/dashboard.html:123
-#, fuzzy
-msgid "Last Share"
-msgstr "上个股份的时间："
-
-#: web/templates/dashboard.html:131
-#, fuzzy
-msgid "Recent <span>Hash Rate </span>"
-msgstr "注册户口"
-
-#: web/templates/dashboard.html:133
-msgid "Loading chart data, please wait..."
+#: web/templates/dashboard.html:111
+msgctxt "UI,time"
+msgid "5min"
 msgstr ""
+
+#: web/templates/dashboard.html:115
+msgctxt "UI,time"
+msgid "60min"
+msgstr ""
+
+#: web/templates/dashboard.html:119
+msgctxt "UI,time"
+msgid "24h"
+msgstr ""
+
+#: web/templates/dashboard.html:123 web/templates/workers.html:56
+msgctxt "UI"
+msgid "Last Share"
+msgstr "上一次份额"
+
+#: web/templates/dashboard.html:131 web/templates/stats.html:64
+#: web/templates/worker.html:62
+msgctxt "UI"
+msgid "Recent <span>Hash Rate </span>"
+msgstr "最近 <span>Hash速率 </span>"
+
+#: web/templates/dashboard.html:133 web/templates/worker.html:64
+msgctxt "UI"
+msgid "Loading chart data, please wait..."
+msgstr "正在加载表格数据，请等待......"
 
 #: web/templates/dashboard.html:148
 msgctxt "Intro"
@@ -1554,7 +1592,9 @@ msgid ""
 "Every logged-in user can create new development proposals and edit them "
 "later. Once approved by admins, they go public and are prepared for the "
 "\"election\"."
-msgstr "每个登录的用户都可以创建新的开发提议并在之后进行修改。提议一旦被管理员批准，将被公开并接受投票。"
+msgstr ""
+"每个登录的用户都可以创建新的开发提议并在之后进行修改。提议一旦被管理员批准，"
+"将被公开并接受投票。"
 
 #: web/templates/development_corner.html:25
 msgctxt "UI"
@@ -1682,7 +1722,9 @@ msgctxt "UI"
 msgid ""
 "You are receiving this email email because you have requested deletion of "
 "your account on <a href=\"%(site_url)s\">%(site_url)s</a> mining pool!"
-msgstr "您收到此邮件是因为您申请了删除在 <a href=\"%(site_url)s\">%(site_url)s</a> 矿池的账户！"
+msgstr ""
+"您收到此邮件是因为您申请了删除在 <a href=\"%(site_url)s\">%(site_url)s</a> 矿"
+"池的账户！"
 
 #: web/templates/email_account_delete.html:9
 #, python-format
@@ -1693,8 +1735,9 @@ msgid ""
 "link is valid for one hour. If you missed this email and the link is not "
 "valid anymore, please go to the website and make a new request."
 msgstr ""
-"如果您确定要删除您的账户 <strong>%(username)s</strong>，请使用 <a href=\"%(delete_url)s\""
-">这个确认链接</a>。此链接一小时内有效。如果您错过了此链接的有效期，它将失效，请去网站重新申请。"
+"如果您确定要删除您的账户 <strong>%(username)s</strong>，请使用 <a href="
+"\"%(delete_url)s\">这个确认链接</a>。此链接一小时内有效。如果您错过了此链接的"
+"有效期，它将失效，请去网站重新申请。"
 
 #: web/templates/email_account_delete.html:12
 msgctxt "UI"
@@ -1702,7 +1745,9 @@ msgid ""
 "All remaining balance of this account will be considered a pool donation. If "
 "you did not request the payout, you have the last chance right now before "
 "following the confirmation link."
-msgstr "此账户的余额将视作矿池捐献。如果您还没申请支付余额，这将是您在使用确认链接前的最后一次机会。"
+msgstr ""
+"此账户的余额将视作矿池捐献。如果您还没申请支付余额，这将是您在使用确认链接前"
+"的最后一次机会。"
 
 #: web/templates/email_account_delete.html:16
 #, python-format
@@ -1712,8 +1757,8 @@ msgid ""
 "link above, change your password immediately, and report this incident to <a "
 "href=\"%(support_url)s\">to the support team.</a> "
 msgstr ""
-"如果您没有发起申请，请不要点上面的确认链接，立即更改您的密码，并报告此事件到<a href=\"%(support_url)s\""
-">给技术支持小组。</a> "
+"如果您没有发起申请，请不要点上面的确认链接，立即更改您的密码，并报告此事件到"
+"<a href=\"%(support_url)s\">给技术支持小组。</a> "
 
 #: web/templates/email_account_delete.html:21
 #: web/templates/email_password_reset.html:14
@@ -1749,9 +1794,8 @@ msgid ""
 "%(url_path)s/%(user_id)s/%(timestamp)s/%(token)s\">follow this link</a>.\n"
 msgstr ""
 "\n"
-"    授权此申请，请 <a href=\""
-"http://%(SITE_URL)s/%(url_path)s/%(user_id)s/%(timestamp)s/%(token)s\""
-">使用此链接</a>。\n"
+"    授权此申请，请 <a href=\"http://%(SITE_URL)s/%(url_path)s/%(user_id)s/"
+"%(timestamp)s/%(token)s\">使用此链接</a>。\n"
 
 #: web/templates/email_email_change.html:14
 #, fuzzy, python-format
@@ -2379,7 +2423,9 @@ msgid ""
 "It looks like you have clicked on invalid or broken link. This can be caused "
 "by your email client or recent account changes. Please go to you account "
 "settings and disable your monitoring reports manually."
-msgstr "您好像点击了无效或坏的链接。可能是您的邮箱客户端或您最近有账户更改引起的。请去您的账户设置禁止报告监控功能。"
+msgstr ""
+"您好像点击了无效或坏的链接。可能是您的邮箱客户端或您最近有账户更改引起的。请"
+"去您的账户设置禁止报告监控功能。"
 
 #: web/templates/moni_unsubscribe_success.html:14
 msgctxt "UI"
@@ -2387,7 +2433,8 @@ msgid ""
 "You have been successfully unsubscribed from your monitoring email reports. "
 "If you would like to receive these reports again, please go to your account "
 "settings."
-msgstr "您已取消了监控报告邮件的订阅。如果您之后想继续接受报告，请去您的账户设置。"
+msgstr ""
+"您已取消了监控报告邮件的订阅。如果您之后想继续接受报告，请去您的账户设置。"
 
 #: web/templates/monitoring.html:3 web/templates/payouts.html:3
 #: web/templates/settings.html:3
@@ -2450,7 +2497,8 @@ msgctxt "UI"
 msgid ""
 "Report has not been sent because it contains only <span class=\"strong"
 "\">insignificant events</span>."
-msgstr "报告没被发送是因为它只包含 <span class=\"strong\">无关紧要的事件</span>。"
+msgstr ""
+"报告没被发送是因为它只包含 <span class=\"strong\">无关紧要的事件</span>。"
 
 #: web/templates/monitoring.html:121
 msgctxt "UI"
@@ -2641,7 +2689,9 @@ msgid ""
 "It looks like you have clicked on invalid or broken link. This can be caused "
 "by your email client or recent account changes. Please go to your account "
 "settings and opt-out of our pool newsletter manually."
-msgstr "您好像点击了无效或坏的链接。可能是您的邮箱客户端或您最近的账户更改引起的。请去您的账户设置选择退出我们的矿池时事通讯。"
+msgstr ""
+"您好像点击了无效或坏的链接。可能是您的邮箱客户端或您最近的账户更改引起的。请"
+"去您的账户设置选择退出我们的矿池时事通讯。"
 
 #: web/templates/newsletter_unsubscribe_success.html:14
 msgctxt "UI"
@@ -2649,7 +2699,9 @@ msgid ""
 "You have been successfully unsubscribed from our pool newsletter. If you "
 "would like to receive the newsletters again, please go to your account "
 "settings."
-msgstr "您已成功取消我们矿池的时事通讯订阅。如果您之后想继续接受时事通讯，请去您的账户设置。"
+msgstr ""
+"您已成功取消我们矿池的时事通讯订阅。如果您之后想继续接受时事通讯，请去您的账"
+"户设置。"
 
 #: web/templates/pager-angular.html:5
 msgctxt "UI"
@@ -3577,7 +3629,8 @@ msgctxt "UI"
 msgid ""
 "A new verification email has been sent to your original email address at "
 "<span class=\"strong\">%(email)s</span>"
-msgstr "一封新的验证邮件已经发送到您原始的邮箱<span class=\"strong\">%(email)s</span>"
+msgstr ""
+"一封新的验证邮件已经发送到您原始的邮箱<span class=\"strong\">%(email)s</span>"
 
 #: web/templates/settings_email_change_resend.html:21
 msgctxt "UI"
@@ -3814,11 +3867,6 @@ msgctxt "UI"
 msgid "Pool Effective Hash Rate (30 min average)"
 msgstr "矿池有效Hash速率（30分钟平均值）"
 
-#: web/templates/stats.html:64 web/templates/worker.html:62
-msgctxt "UI"
-msgid "Recent <span>Hash Rate </span>"
-msgstr "最近 <span>Hash速率 </span>"
-
 #: web/templates/stats.html:71
 msgctxt "UI"
 msgid "Hash Rate <span>Distribution</span>"
@@ -3914,11 +3962,6 @@ msgstr "衡量出的Hash速率"
 msgctxt "UI"
 msgid "Active Users"
 msgstr "活动的用户"
-
-#: web/templates/stats.html:145 web/templates/stats.html.py:154
-msgctxt "UI"
-msgid "Active Workers"
-msgstr "激活的矿工"
 
 #: web/templates/support-titlepage.txt:3
 msgid "My account"
@@ -4096,8 +4139,8 @@ msgid ""
 "This limitation has been activated due to recent brute force attacks on user "
 "profiles."
 msgstr ""
-"您的请求在创建后24小时内不能完成。其限制的时间点将到 "
-"%(param)s世界统一时间。我们为此不便表示歉意。这项限制被启用源于最近针对用户资料的强力袭击。"
+"您的请求在创建后24小时内不能完成。其限制的时间点将到 %(param)s世界统一时间。"
+"我们为此不便表示歉意。这项限制被启用源于最近针对用户资料的强力袭击。"
 
 #: web/templates/wallet_confirm_valid.html:14
 msgctxt "UI"
@@ -4138,11 +4181,6 @@ msgstr "所有矿工此回合的统计和份额将丢失！"
 msgctxt "UI"
 msgid "Delete worker"
 msgstr "删除矿工"
-
-#: web/templates/worker.html:64
-msgctxt "UI"
-msgid "Loading chart data, please wait..."
-msgstr "正在加载表格数据，请等待......"
 
 #: web/templates/worker.html:76
 msgctxt "Intro"
@@ -4282,11 +4320,6 @@ msgstr "Hash速率<br>（24小时）"
 msgctxt "UI"
 msgid "Minimum<br>Difficulty"
 msgstr "最小<br>难度"
-
-#: web/templates/workers.html:56
-msgctxt "UI"
-msgid "Last Share"
-msgstr "上一次份额"
 
 #: web/templates/workers.html:86
 msgctxt "UI"
@@ -5680,6 +5713,22 @@ msgctxt "UI"
 msgid "Help me"
 msgstr "帮助我"
 
+#, fuzzy
+#~ msgid "Average Hash Rate (5min)"
+#~ msgstr "Hash的速率"
+
+#, fuzzy
+#~ msgid "Average Hash Rate (60min)"
+#~ msgstr "Hash的速率"
+
+#, fuzzy
+#~ msgid "Last Share"
+#~ msgstr "上个股份的时间："
+
+#, fuzzy
+#~ msgid "Recent <span>Hash Rate </span>"
+#~ msgstr "注册户口"
+
 #~ msgctxt "UI"
 #~ msgid ""
 #~ "Confirmation email has been send. Please check your mailbox and follow "
@@ -5755,11 +5804,6 @@ msgstr "帮助我"
 #~ msgctxt "UI"
 #~ msgid "Please continue to your"
 #~ msgstr "请接着到："
-
-#, fuzzy
-#~ msgctxt "UI"
-#~ msgid "dashboard"
-#~ msgstr "帐户已被更新。"
 
 #, fuzzy
 #~ msgctxt "Page title"
@@ -5928,10 +5972,6 @@ msgstr "帮助我"
 
 #, fuzzy
 #~ msgid "Monitoring reports"
-#~ msgstr "户口选项"
-
-#, fuzzy
-#~ msgid "Monitoring status"
 #~ msgstr "户口选项"
 
 #, fuzzy

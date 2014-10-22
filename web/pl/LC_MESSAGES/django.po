@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bitcoin.cz pool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-22 13:03+0000\n"
+"POT-Creation-Date: 2014-10-22 14:36+0000\n"
 "PO-Revision-Date: 2012-07-12 08:15+0200\n"
 "Last-Translator: Dominik Kozaczko <dominik@kozaczko.info>\n"
 "Language-Team: polski <dominik@kozaczko.info>\n"
@@ -1332,120 +1332,161 @@ msgid "Account dashboard"
 msgstr "Konto zostało zaktualizowane."
 
 #: web/templates/dashboard.html:17
+#, fuzzy
+msgctxt "UI"
 msgid "Dashboard"
-msgstr ""
+msgstr "Konto zostało zaktualizowane."
 
 #: web/templates/dashboard.html:23
 #, fuzzy
+msgctxt "UI"
 msgid "Account"
 msgstr "Wartość"
 
 #: web/templates/dashboard.html:27
 #, fuzzy
+msgctxt "UI"
 msgid "User Name"
 msgstr "Nazwa"
 
 #: web/templates/dashboard.html:31
 #, fuzzy
+msgctxt "UI"
 msgid "E-mail"
 msgstr "Email"
 
 #: web/templates/dashboard.html:35
 #, fuzzy
+msgctxt "UI"
 msgid "Payout Address"
 msgstr "Adres Bitcoin"
 
 #: web/templates/dashboard.html:41
 #, fuzzy
+msgctxt "UI"
 msgid "Set wallet"
 msgstr "Portfel Namecoin"
 
 #: web/templates/dashboard.html:49
 #, fuzzy
+msgctxt "UI"
 msgid "Payout Threshold"
 msgstr "Historia wypłat"
 
 #: web/templates/dashboard.html:55
+#, fuzzy
+msgctxt "UI"
 msgid "Rewards"
-msgstr ""
+msgstr "Historia wypłat"
 
 #: web/templates/dashboard.html:59
 #, fuzzy
+msgctxt "UI"
 msgid "Total Reward"
 msgstr "Całkowita nagroda"
 
 #: web/templates/dashboard.html:63
 #, fuzzy
+msgctxt "UI"
 msgid "Confirmed Reward"
 msgstr "Potwierdzona nagroda"
 
 #: web/templates/dashboard.html:67
 #, fuzzy
+msgctxt "UI"
 msgid "Unconfirmed Reward"
 msgstr "Nie potwierdzona nagroda"
 
 #: web/templates/dashboard.html:71
 #, fuzzy
+msgctxt "UI"
 msgid "Estimated Reward"
 msgstr "Szacowana nagroda"
 
 #: web/templates/dashboard.html:78
+msgctxt "UI"
 msgid "Mining"
 msgstr ""
 
 #: web/templates/dashboard.html:82
 #, fuzzy
+msgctxt "UI"
 msgid "Pool Scoring Hash Rate"
 msgstr "Całkowity wynik bieżącej rundy:"
 
 #: web/templates/dashboard.html:86
 #, fuzzy
+msgctxt "UI"
 msgid "Your Scoring Hash Rate"
 msgstr "Hash rate"
 
 #: web/templates/dashboard.html:90
+msgctxt "UI"
 msgid "Your Contribution to the Pool"
 msgstr ""
 
 #: web/templates/dashboard.html:94
 #, fuzzy
+msgctxt "UI"
 msgid "Account Monitoring Status"
 msgstr "Ustawienia konta"
 
 #: web/templates/dashboard.html:98
+#, fuzzy
+msgctxt "UI"
 msgid "Workers Monitoring Status"
-msgstr ""
+msgstr "Ustawienia konta"
+
+#: web/templates/dashboard.html:107 web/templates/stats.html:145
+#: web/templates/stats.html.py:154
+#, fuzzy
+msgctxt "UI"
+msgid "Active Workers"
+msgstr "Górnicy"
 
 #: web/templates/dashboard.html:107
-msgid "Active Workers | Inactive Workers"
-msgstr ""
-
-#: web/templates/dashboard.html:111
 #, fuzzy
-msgid "Average Hash Rate (5min)"
-msgstr "Hash rate"
+msgctxt "UI"
+msgid "Inactive Workers"
+msgstr "Górnicy"
 
-#: web/templates/dashboard.html:115
-#, fuzzy
-msgid "Average Hash Rate (60min)"
-msgstr "Hash rate"
-
+#: web/templates/dashboard.html:111 web/templates/dashboard.html.py:115
 #: web/templates/dashboard.html:119
 #, fuzzy
-msgid "Average Hash Rate (24h)"
+msgctxt "UI"
+msgid "Average Hash Rate"
 msgstr "Hash rate"
 
-#: web/templates/dashboard.html:123
+#: web/templates/dashboard.html:111
+msgctxt "UI,time"
+msgid "5min"
+msgstr ""
+
+#: web/templates/dashboard.html:115
+msgctxt "UI,time"
+msgid "60min"
+msgstr ""
+
+#: web/templates/dashboard.html:119
+msgctxt "UI,time"
+msgid "24h"
+msgstr ""
+
+#: web/templates/dashboard.html:123 web/templates/workers.html:56
 #, fuzzy
+msgctxt "UI"
 msgid "Last Share"
 msgstr "Ostatni udział"
 
-#: web/templates/dashboard.html:131
+#: web/templates/dashboard.html:131 web/templates/stats.html:64
+#: web/templates/worker.html:62
 #, fuzzy
+msgctxt "UI"
 msgid "Recent <span>Hash Rate </span>"
 msgstr "Załóż konto"
 
-#: web/templates/dashboard.html:133
+#: web/templates/dashboard.html:133 web/templates/worker.html:64
+msgctxt "UI"
 msgid "Loading chart data, please wait..."
 msgstr ""
 
@@ -4052,12 +4093,6 @@ msgctxt "UI"
 msgid "Pool Effective Hash Rate (30 min average)"
 msgstr ""
 
-#: web/templates/stats.html:64 web/templates/worker.html:62
-#, fuzzy
-msgctxt "UI"
-msgid "Recent <span>Hash Rate </span>"
-msgstr "Załóż konto"
-
 #: web/templates/stats.html:71
 #, fuzzy
 msgctxt "UI"
@@ -4156,12 +4191,6 @@ msgstr "Hash rate"
 #, fuzzy
 msgctxt "UI"
 msgid "Active Users"
-msgstr "Górnicy"
-
-#: web/templates/stats.html:145 web/templates/stats.html.py:154
-#, fuzzy
-msgctxt "UI"
-msgid "Active Workers"
 msgstr "Górnicy"
 
 #: web/templates/support-titlepage.txt:3
@@ -4386,11 +4415,6 @@ msgctxt "UI"
 msgid "Delete worker"
 msgstr "Edytuj górnika"
 
-#: web/templates/worker.html:64
-msgctxt "UI"
-msgid "Loading chart data, please wait..."
-msgstr ""
-
 #: web/templates/worker.html:76
 msgctxt "Intro"
 msgid ""
@@ -4538,12 +4562,6 @@ msgstr "Hash rate"
 msgctxt "UI"
 msgid "Minimum<br>Difficulty"
 msgstr "trudność"
-
-#: web/templates/workers.html:56
-#, fuzzy
-msgctxt "UI"
-msgid "Last Share"
-msgstr "Ostatni udział"
 
 #: web/templates/workers.html:86
 #, fuzzy
@@ -5958,6 +5976,22 @@ msgid "Help me"
 msgstr ""
 
 #, fuzzy
+#~ msgid "Average Hash Rate (5min)"
+#~ msgstr "Hash rate"
+
+#, fuzzy
+#~ msgid "Average Hash Rate (60min)"
+#~ msgstr "Hash rate"
+
+#, fuzzy
+#~ msgid "Last Share"
+#~ msgstr "Ostatni udział"
+
+#, fuzzy
+#~ msgid "Recent <span>Hash Rate </span>"
+#~ msgstr "Załóż konto"
+
+#, fuzzy
 #~ msgctxt "UI"
 #~ msgid ""
 #~ "Confirmation email has been send. Please check your mailbox and follow "
@@ -6033,11 +6067,6 @@ msgstr ""
 #~ msgctxt "UI"
 #~ msgid "Please continue to your"
 #~ msgstr "Proszę przejść do"
-
-#, fuzzy
-#~ msgctxt "UI"
-#~ msgid "dashboard"
-#~ msgstr "Konto zostało zaktualizowane."
 
 #, fuzzy
 #~ msgctxt "Page title"
@@ -6219,10 +6248,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Monitoring reports"
-#~ msgstr "Ustawienia konta"
-
-#, fuzzy
-#~ msgid "Monitoring status"
 #~ msgstr "Ustawienia konta"
 
 #, fuzzy

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-22 13:03+0000\n"
+"POT-Creation-Date: 2014-10-22 14:36+0000\n"
 "PO-Revision-Date: 2012-07-26 14:05-0300\n"
 "Last-Translator: Wagner R. de Morais <wagnerrdemorais@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1336,120 +1336,161 @@ msgid "Account dashboard"
 msgstr "La Cuenta se ha actualizada."
 
 #: web/templates/dashboard.html:17
+#, fuzzy
+msgctxt "UI"
 msgid "Dashboard"
-msgstr ""
+msgstr "La Cuenta se ha actualizada."
 
 #: web/templates/dashboard.html:23
 #, fuzzy
+msgctxt "UI"
 msgid "Account"
 msgstr "Cantidad"
 
 #: web/templates/dashboard.html:27
 #, fuzzy
+msgctxt "UI"
 msgid "User Name"
 msgstr "Nombre de usuario"
 
 #: web/templates/dashboard.html:31
 #, fuzzy
+msgctxt "UI"
 msgid "E-mail"
 msgstr "E-mail"
 
 #: web/templates/dashboard.html:35
 #, fuzzy
+msgctxt "UI"
 msgid "Payout Address"
 msgstr "Bitcoin dirección"
 
 #: web/templates/dashboard.html:41
 #, fuzzy
+msgctxt "UI"
 msgid "Set wallet"
 msgstr "Cartera Namecoin"
 
 #: web/templates/dashboard.html:49
 #, fuzzy
+msgctxt "UI"
 msgid "Payout Threshold"
 msgstr "Historia de lo pago"
 
 #: web/templates/dashboard.html:55
+#, fuzzy
+msgctxt "UI"
 msgid "Rewards"
-msgstr ""
+msgstr "Historia de lo pago"
 
 #: web/templates/dashboard.html:59
 #, fuzzy
+msgctxt "UI"
 msgid "Total Reward"
 msgstr "Recompensa total"
 
 #: web/templates/dashboard.html:63
 #, fuzzy
+msgctxt "UI"
 msgid "Confirmed Reward"
 msgstr "Recompensas confirmada"
 
 #: web/templates/dashboard.html:67
 #, fuzzy
+msgctxt "UI"
 msgid "Unconfirmed Reward"
 msgstr "Recompensa aún no ha confirmado"
 
 #: web/templates/dashboard.html:71
 #, fuzzy
+msgctxt "UI"
 msgid "Estimated Reward"
 msgstr "Recompensa estimada"
 
 #: web/templates/dashboard.html:78
+msgctxt "UI"
 msgid "Mining"
 msgstr ""
 
 #: web/templates/dashboard.html:82
 #, fuzzy
+msgctxt "UI"
 msgid "Pool Scoring Hash Rate"
 msgstr "Puntiación total de la ronda actual:"
 
 #: web/templates/dashboard.html:86
 #, fuzzy
+msgctxt "UI"
 msgid "Your Scoring Hash Rate"
 msgstr "Tasa de hash"
 
 #: web/templates/dashboard.html:90
+msgctxt "UI"
 msgid "Your Contribution to the Pool"
 msgstr ""
 
 #: web/templates/dashboard.html:94
 #, fuzzy
+msgctxt "UI"
 msgid "Account Monitoring Status"
 msgstr "Configuración de la cuenta"
 
 #: web/templates/dashboard.html:98
+#, fuzzy
+msgctxt "UI"
 msgid "Workers Monitoring Status"
-msgstr ""
+msgstr "Configuración de la cuenta"
+
+#: web/templates/dashboard.html:107 web/templates/stats.html:145
+#: web/templates/stats.html.py:154
+#, fuzzy
+msgctxt "UI"
+msgid "Active Workers"
+msgstr "Trabajadores"
 
 #: web/templates/dashboard.html:107
-msgid "Active Workers | Inactive Workers"
-msgstr ""
-
-#: web/templates/dashboard.html:111
 #, fuzzy
-msgid "Average Hash Rate (5min)"
-msgstr "Tasa de hash"
+msgctxt "UI"
+msgid "Inactive Workers"
+msgstr "Trabajadores"
 
-#: web/templates/dashboard.html:115
-#, fuzzy
-msgid "Average Hash Rate (60min)"
-msgstr "Tasa de hash"
-
+#: web/templates/dashboard.html:111 web/templates/dashboard.html.py:115
 #: web/templates/dashboard.html:119
 #, fuzzy
-msgid "Average Hash Rate (24h)"
+msgctxt "UI"
+msgid "Average Hash Rate"
 msgstr "Tasa de hash"
 
-#: web/templates/dashboard.html:123
+#: web/templates/dashboard.html:111
+msgctxt "UI,time"
+msgid "5min"
+msgstr ""
+
+#: web/templates/dashboard.html:115
+msgctxt "UI,time"
+msgid "60min"
+msgstr ""
+
+#: web/templates/dashboard.html:119
+msgctxt "UI,time"
+msgid "24h"
+msgstr ""
+
+#: web/templates/dashboard.html:123 web/templates/workers.html:56
 #, fuzzy
+msgctxt "UI"
 msgid "Last Share"
 msgstr "Share passado en "
 
-#: web/templates/dashboard.html:131
+#: web/templates/dashboard.html:131 web/templates/stats.html:64
+#: web/templates/worker.html:62
 #, fuzzy
+msgctxt "UI"
 msgid "Recent <span>Hash Rate </span>"
 msgstr "Registrar una cuenta"
 
-#: web/templates/dashboard.html:133
+#: web/templates/dashboard.html:133 web/templates/worker.html:64
+msgctxt "UI"
 msgid "Loading chart data, please wait..."
 msgstr ""
 
@@ -4077,12 +4118,6 @@ msgctxt "UI"
 msgid "Pool Effective Hash Rate (30 min average)"
 msgstr ""
 
-#: web/templates/stats.html:64 web/templates/worker.html:62
-#, fuzzy
-msgctxt "UI"
-msgid "Recent <span>Hash Rate </span>"
-msgstr "Registrar una cuenta"
-
 #: web/templates/stats.html:71
 #, fuzzy
 msgctxt "UI"
@@ -4181,12 +4216,6 @@ msgstr "Tasa de hash"
 #, fuzzy
 msgctxt "UI"
 msgid "Active Users"
-msgstr "Trabajadores"
-
-#: web/templates/stats.html:145 web/templates/stats.html.py:154
-#, fuzzy
-msgctxt "UI"
-msgid "Active Workers"
 msgstr "Trabajadores"
 
 #: web/templates/support-titlepage.txt:3
@@ -4414,11 +4443,6 @@ msgctxt "UI"
 msgid "Delete worker"
 msgstr "Editar los trabajadores"
 
-#: web/templates/worker.html:64
-msgctxt "UI"
-msgid "Loading chart data, please wait..."
-msgstr ""
-
 #: web/templates/worker.html:76
 msgctxt "Intro"
 msgid ""
@@ -4566,12 +4590,6 @@ msgstr "Tasa de hash"
 msgctxt "UI"
 msgid "Minimum<br>Difficulty"
 msgstr "Dificultad"
-
-#: web/templates/workers.html:56
-#, fuzzy
-msgctxt "UI"
-msgid "Last Share"
-msgstr "Share passado en "
 
 #: web/templates/workers.html:86
 #, fuzzy
@@ -5987,6 +6005,22 @@ msgid "Help me"
 msgstr ""
 
 #, fuzzy
+#~ msgid "Average Hash Rate (5min)"
+#~ msgstr "Tasa de hash"
+
+#, fuzzy
+#~ msgid "Average Hash Rate (60min)"
+#~ msgstr "Tasa de hash"
+
+#, fuzzy
+#~ msgid "Last Share"
+#~ msgstr "Share passado en "
+
+#, fuzzy
+#~ msgid "Recent <span>Hash Rate </span>"
+#~ msgstr "Registrar una cuenta"
+
+#, fuzzy
 #~ msgctxt "UI"
 #~ msgid ""
 #~ "Confirmation email has been send. Please check your mailbox and follow "
@@ -6063,11 +6097,6 @@ msgstr ""
 #~ msgctxt "UI"
 #~ msgid "Please continue to your"
 #~ msgstr "Por favor, continúe para"
-
-#, fuzzy
-#~ msgctxt "UI"
-#~ msgid "dashboard"
-#~ msgstr "La Cuenta se ha actualizada."
 
 #, fuzzy
 #~ msgctxt "Page title"
@@ -6250,10 +6279,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Monitoring reports"
-#~ msgstr "Configuración de la cuenta"
-
-#, fuzzy
-#~ msgid "Monitoring status"
 #~ msgstr "Configuración de la cuenta"
 
 #, fuzzy
