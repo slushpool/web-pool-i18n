@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-22 16:07+0000\n"
+"POT-Creation-Date: 2014-10-23 06:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,7 @@ msgid ""
 "this worker"
 msgstr ""
 
-#: mining/models.py:170 web/models.py:733
+#: mining/models.py:170 web/models.py:734
 #, fuzzy
 msgctxt "UI"
 msgid "Auto-detect expected hash rate"
@@ -144,133 +144,158 @@ msgctxt "UI"
 msgid "If you wish to change your email, enter it here"
 msgstr ""
 
-#: web/forms.py:118 web/models.py:737
+#: web/forms.py:118
+msgctxt "UI"
+msgid "New email must be different from the current."
+msgstr ""
+
+#: web/forms.py:125 web/models.py:737
 #, fuzzy
 msgctxt "UI"
 msgid "Wallet"
 msgstr "Verander portemonnee"
 
-#: web/forms.py:119 web/forms.py:122
+#: web/forms.py:126 web/forms.py:129
 msgctxt "UI"
 msgid "Click to select all."
 msgstr ""
 
-#: web/forms.py:121
+#: web/forms.py:128
 msgctxt "UI"
 msgid "Message"
 msgstr ""
 
-#: web/forms.py:124
+#: web/forms.py:131
 #, fuzzy
 msgctxt "UI"
 msgid "Signature"
 msgstr "Aanmelden"
 
-#: web/forms.py:125
+#: web/forms.py:132
 msgctxt "UI"
 msgid "Paste the signature obtained from your BTC wallet software"
 msgstr ""
 
-#: web/forms.py:142
+#: web/forms.py:150
+msgctxt "UI"
+msgid "Cannot verify the message, please try it later."
+msgstr ""
+
+#: web/forms.py:152
 msgctxt "UI"
 msgid "Signature is not valid."
 msgstr ""
 
-#: web/forms.py:175
+#: web/forms.py:185
 msgctxt "UI"
 msgid "If you wish to change your BTC wallet, enter its address here"
 msgstr ""
 
-#: web/forms.py:196 web/templates/settings.html:498
+#: web/forms.py:206 web/templates/settings.html:498
 msgctxt "UI"
 msgid "An additional fee of 0.0001 BTC applies to payouts lower than 0.01 BTC."
 msgstr ""
 
-#: web/forms.py:240
+#: web/forms.py:231
 #, fuzzy
 msgctxt "UI"
-msgid "Sending threshold must be >= 0.001"
+msgid ""
+"This is not a valid Bitcoin address. Please install Bitcoin client or "
+"register some web wallet to get one."
+msgstr ""
+"Dit is geen geldig Bitcoin adres. Gelieve de Bitcoin software te installeren "
+"of registreer een web portemonnee om er een te krijgen."
+
+#: web/forms.py:234
+msgctxt "UI"
+msgid "New wallet must be different from the current."
+msgstr ""
+
+#: web/forms.py:252
+#, fuzzy
+msgctxt "UI"
+msgid "Sending threshold must be >= 0.001 BTC"
 msgstr "De betalingsgrens moet >= 0.01!"
 
-#: web/forms.py:243
+#: web/forms.py:255
 #, fuzzy
 msgctxt "UI"
 msgid "Sending threshold must be <= 5 BTC"
 msgstr "De betalingsgrens moet >= 0.01!"
 
-#: web/forms.py:264 web/models.py:745
+#: web/forms.py:276 web/models.py:745
 #, fuzzy
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr "moeilijkheidsgraad"
 
-#: web/forms.py:265
+#: web/forms.py:277
 msgctxt "UI"
 msgid "Pool always assigns difficulty equal or greater than this value."
 msgstr ""
 
-#: web/forms.py:295
+#: web/forms.py:307
 msgctxt "UI"
 msgid ""
 "Only letters, numbers and the following characters are accepted: _ @ + -"
 msgstr ""
 
-#: web/forms.py:301 web/forms.py:306 web/forms.py:310
+#: web/forms.py:313 web/forms.py:318 web/forms.py:322
 #, fuzzy, python-format
 msgctxt "UI"
 msgid "Worker %s already exists"
 msgstr "Er bestaat al een werker met deze naam."
 
-#: web/forms.py:323 web/templates/hall-of-fame.html:19
+#: web/forms.py:335 web/templates/hall-of-fame.html:19
 #: web/templates/hall-of-fame.html.py:48
 #, fuzzy
 msgctxt "UI"
 msgid "Username"
 msgstr "Gebruikersnaam"
 
-#: web/forms.py:324
+#: web/forms.py:336
 #, fuzzy
 msgctxt "UI"
 msgid "Enter a valid username."
 msgstr "Vul een geldige gebruikersnaam in."
 
-#: web/forms.py:325 web/models.py:740
+#: web/forms.py:337 web/models.py:740
 #, fuzzy
 msgctxt "UI"
 msgid "Email"
 msgstr "Email"
 
-#: web/forms.py:326
+#: web/forms.py:338
 #, fuzzy
 msgctxt "UI"
 msgid "Required password"
 msgstr "Verplicht paswoord"
 
-#: web/forms.py:327
+#: web/forms.py:339
 #, fuzzy
 msgctxt "UI"
 msgid "Password again"
 msgstr "Paswoord nogmaals"
 
-#: web/forms.py:338
+#: web/forms.py:350
 #, fuzzy
 msgctxt "UI"
 msgid "Passwords are different!"
 msgstr "Paswoorden zijn verschillend!"
 
-#: web/forms.py:431
+#: web/forms.py:443
 #, python-format
 msgctxt "UI"
 msgid "Points must be greater or equal than %s."
 msgstr ""
 
-#: web/forms.py:433
+#: web/forms.py:445
 #, python-format
 msgctxt "UI"
 msgid "Points must be lower or equal than %s."
 msgstr ""
 
-#: web/forms.py:450
+#: web/forms.py:463
 #, fuzzy
 msgctxt "UI"
 msgid "New comment"
@@ -309,7 +334,7 @@ msgid "Coins will be sent once the reward crosses over the threshold"
 msgstr ""
 "Coins zullen verzonden worden eens de beloning de over de threshold gaat"
 
-#: web/models.py:189 web/models.py:727
+#: web/models.py:189 web/models.py:728
 #, fuzzy
 msgctxt "UI"
 msgid "Username in stats"
@@ -321,7 +346,7 @@ msgctxt "UI"
 msgid "Show my username in public server stats"
 msgstr "Laat mijn gebruikersnaam in de publieke serverstatistieken zien"
 
-#: web/models.py:192 web/models.py:728
+#: web/models.py:192 web/models.py:729
 #, fuzzy
 msgctxt "UI"
 msgid "Notify me on payout"
@@ -333,7 +358,7 @@ msgctxt "UI"
 msgid "Send email when the system sends me a payment"
 msgstr "Stuur me een email wanneer het systeem een uitbetaling stuurt"
 
-#: web/models.py:195 web/models.py:729
+#: web/models.py:195 web/models.py:730
 msgctxt "UI"
 msgid "Newsletter"
 msgstr ""
@@ -343,7 +368,7 @@ msgctxt "UI"
 msgid "Receive pool newsletters"
 msgstr ""
 
-#: web/models.py:202 web/models.py:730
+#: web/models.py:202 web/models.py:731
 #, fuzzy
 msgctxt "UI"
 msgid "Currency unit"
@@ -354,7 +379,7 @@ msgctxt "UI"
 msgid "Unit used by the site when displaying Bitcoin amounts"
 msgstr ""
 
-#: web/models.py:207 web/models.py:732
+#: web/models.py:207 web/models.py:733
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr ""
@@ -392,7 +417,7 @@ msgctxt "UI"
 msgid "Account low Effective Hash Rate threshold"
 msgstr ""
 
-#: web/models.py:219 web/models.py:735
+#: web/models.py:219
 msgctxt "UI"
 msgid "Max. reports per day"
 msgstr ""
@@ -420,94 +445,100 @@ msgctxt "UI"
 msgid "Wallet change confirmation"
 msgstr "portemonneeverandering confirmatie"
 
-#: web/models.py:322
+#: web/models.py:321
 #, fuzzy
 msgctxt "UI"
 msgid "Email change confirmation"
 msgstr "portemonneeverandering confirmatie"
 
-#: web/models.py:480
+#: web/models.py:477
 #, fuzzy
 msgctxt "UI, Transaction state"
 msgid "New"
 msgstr "Nieuws"
 
-#: web/models.py:481
+#: web/models.py:478
 #, fuzzy
 msgctxt "UI, Transaction state"
 msgid "Processing"
 msgstr "Berekenen..."
 
-#: web/models.py:482
+#: web/models.py:479
 msgctxt "UI, Transaction state"
 msgid "Failed"
 msgstr ""
 
-#: web/models.py:483
+#: web/models.py:480
 msgctxt "UI, Transaction state"
 msgid "Sent"
 msgstr ""
 
-#: web/models.py:551
+#: web/models.py:548
 msgctxt "UI, Proposals"
 msgid "Draft"
 msgstr ""
 
-#: web/models.py:552
+#: web/models.py:549
 msgctxt "UI, Proposals"
 msgid "Approved"
 msgstr ""
 
-#: web/models.py:553
+#: web/models.py:550
 msgctxt "UI, Proposals"
 msgid "Rejected"
 msgstr ""
 
-#: web/models.py:554
+#: web/models.py:551
 msgctxt "UI, Proposals"
 msgid "In progress"
 msgstr ""
 
-#: web/models.py:555
+#: web/models.py:552
 msgctxt "UI, Proposals"
 msgid "Released"
 msgstr ""
 
-#: web/models.py:662
+#: web/models.py:659
 #, python-format
 msgctxt "UI"
 msgid "Proposal %(link)s changed state from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr ""
 
-#: web/models.py:671 web/models.py:675
+#: web/models.py:668 web/models.py:676
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr ""
 
-#: web/models.py:679
+#: web/models.py:672
+#, python-format
+msgctxt "UI, value"
+msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
+msgstr ""
+
+#: web/models.py:680
 #, python-format
 msgctxt "UI, time"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr ""
 
-#: web/models.py:684
+#: web/models.py:685
 msgctxt "UI"
 msgid "Nothing has changed"
 msgstr ""
 
-#: web/models.py:690 web/models.py:692 web/templates/payouts.html:67
+#: web/models.py:691 web/models.py:693 web/templates/payouts.html:67
 msgctxt "UI"
 msgid "N/A"
 msgstr ""
 
-#: web/models.py:707 web/templates/worker.html:3
+#: web/models.py:708 web/templates/worker.html:3
 #, fuzzy
 msgctxt "UI"
 msgid "Worker"
 msgstr "Werkers"
 
-#: web/models.py:734
+#: web/models.py:735
 #, fuzzy
 msgctxt "UI"
 msgid "Expected hash rate"
@@ -545,318 +576,327 @@ msgctxt "UI"
 msgid "Login suffix"
 msgstr "Login suffix"
 
-#: web/models.py:748 web/models.py:749 web/models.py:750 web/models.py:751
-#: web/models.py:752
+#: web/models.py:747
 msgctxt "UI"
 msgid "Enabled"
 msgstr ""
 
-#: web/models.py:748 web/models.py:749 web/models.py:750 web/models.py:751
-#: web/models.py:752
+#: web/models.py:747
 msgctxt "UI"
 msgid "Disabled"
 msgstr ""
 
-#: web/models.py:760
+#: web/models.py:765
 #, fuzzy
 msgctxt "UI"
 msgid "Account deleted"
 msgstr "Account instellingen"
 
-#: web/models.py:761
+#: web/models.py:766
 #, fuzzy
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr "Account instellingen"
 
-#: web/models.py:763 web/templates/login.html:4 web/templates/login.html.py:11
+#: web/models.py:768 web/templates/login.html:4 web/templates/login.html.py:11
 #: web/templates/registration_confirm_has_account.html:22
 #, fuzzy
 msgctxt "UI"
 msgid "Login"
 msgstr "Log in"
 
-#: web/models.py:764
+#: web/models.py:769
 #, fuzzy
 msgctxt "UI"
 msgid "Logout"
 msgstr "Uitloggen"
 
-#: web/models.py:765
+#: web/models.py:770
 msgctxt "UI"
 msgid "Message seen"
 msgstr ""
 
-#: web/models.py:766
+#: web/models.py:771
 #, fuzzy
 msgctxt "UI"
 msgid "Monitoring settings updated"
 msgstr "Account instellingen"
 
-#: web/models.py:767
+#: web/models.py:772
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
 msgstr ""
 
-#: web/models.py:768
+#: web/models.py:773
 msgctxt "UI"
 msgid "2-factor authentication disabled"
 msgstr ""
 
-#: web/models.py:769
+#: web/models.py:774
 msgctxt "UI"
 msgid "2-factor authentication enabled"
 msgstr ""
 
-#: web/models.py:770 web/models.py:773
+#: web/models.py:775 web/models.py:778
 #, fuzzy
 msgctxt "UI"
 msgid "Password changed"
 msgstr "Paswoord nogmaals"
 
-#: web/models.py:771
+#: web/models.py:776
 #, fuzzy
 msgctxt "UI"
 msgid "Password reset completed"
 msgstr "Paswoordreset compleet"
 
-#: web/models.py:772
+#: web/models.py:777
 #, fuzzy
 msgctxt "UI"
 msgid "Password reset initiated"
 msgstr "Paswoord reset"
 
-#: web/models.py:774
+#: web/models.py:779
 #, fuzzy
 msgctxt "UI"
 msgid "Payout settings updated"
 msgstr "Account instellingen"
 
-#: web/models.py:776
+#: web/models.py:781
 #, fuzzy
 msgctxt "UI"
 msgid "Proposal created"
 msgstr "uw profiel pagina"
 
-#: web/models.py:777
+#: web/models.py:782
 #, fuzzy
 msgctxt "UI"
 msgid "You have created a new proposal:"
 msgstr "Registreer nieuwe werker"
 
-#: web/models.py:780
+#: web/models.py:785
 #, fuzzy
 msgctxt "UI"
 msgid "Proposal comment deleted"
 msgstr "uw profiel pagina"
 
-#: web/models.py:782
+#: web/models.py:787
 #, fuzzy
 msgctxt "UI"
 msgid "Proposal updated"
 msgstr "uw profiel pagina"
 
-#: web/models.py:785
+#: web/models.py:790
 #, fuzzy
 msgctxt "UI"
 msgid "Proposal state changed"
 msgstr "uw profiel pagina"
 
-#: web/models.py:787
+#: web/models.py:792
 #, fuzzy
 msgctxt "UI"
 msgid "Proposal vote"
 msgstr "uw profiel pagina"
 
-#: web/models.py:788
+#: web/models.py:793
 #, python-format
 msgctxt "UI"
 msgid "You gave <b>%(points)s</b> points to proposal"
 msgstr ""
 
-#: web/models.py:790
+#: web/models.py:795
 #, fuzzy
 msgctxt "UI"
 msgid "Account settings updated"
 msgstr "Account instellingen"
 
-#: web/models.py:791
+#: web/models.py:796
 #, fuzzy
 msgctxt "UI"
 msgid "Wallet change confirmed"
 msgstr "portemonneeverandering confirmatie"
 
-#: web/models.py:792
+#: web/models.py:797
 #, fuzzy
 msgctxt "UI"
-msgid "Wallet change confirmation cancelled"
-msgstr "portemonneeverandering confirmatie"
+msgid "Wallet change cancelled"
+msgstr "Portemonnee verandering opnieuw sturen"
 
-#: web/models.py:793
+#: web/models.py:798
 #, fuzzy
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
 msgstr "portemonneeverandering confirmatie"
 
-#: web/models.py:794
+#: web/models.py:799
 #, fuzzy
 msgctxt "UI"
 msgid "Wallet locked"
 msgstr "Verander portemonnee"
 
-#: web/models.py:795
+#: web/models.py:800
 #, fuzzy
 msgctxt "UI"
 msgid "Worker removed"
 msgstr "Werkers"
 
-#: web/models.py:795
+#: web/models.py:800
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr ""
 
-#: web/models.py:796
+#: web/models.py:801
 msgctxt "UI"
 msgid "Monitoring disabled for all workers"
 msgstr ""
 
-#: web/models.py:797
+#: web/models.py:802
 msgctxt "UI"
 msgid "Monitoring enabled for all workers"
 msgstr ""
 
-#: web/models.py:798
+#: web/models.py:803
 #, fuzzy
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr "Werker is geupdated."
 
-#: web/models.py:799 web/templates/workers.html:23
+#: web/models.py:804 web/templates/workers.html:23
 #, fuzzy
 msgctxt "UI"
 msgid "New worker"
 msgstr "Registreer nieuwe werker"
 
-#: web/models.py:799
+#: web/models.py:804
 #, fuzzy
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr "Registreer nieuwe werker"
 
-#: web/models.py:801
+#: web/models.py:806
 #, fuzzy
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr "Ongeldig token"
 
-#: web/registration.py:55
+#: web/registration.py:54
 #, fuzzy
 msgctxt "UI"
 msgid "New account confirmation"
 msgstr "Nieuwe account confirmatie"
 
-#: web/views.py:450
+#: web/views.py:451
 msgctxt "UI"
 msgid "Two-factor authentication isn't configured yet"
 msgstr ""
 
-#: web/views.py:461
+#: web/views.py:463
 msgctxt "UI"
 msgid "Two-factor authentication token is invalid. Please, enter valid token."
 msgstr ""
 
-#: web/views.py:469
+#: web/views.py:471
 #, fuzzy
 msgctxt "UI"
 msgid "Two-factor authentication has been succesfully disabled."
 msgstr "Uw portemonnee is succesvol verstuurd."
 
-#: web/views.py:481
+#: web/views.py:483
 msgctxt "UI"
 msgid "Two-factor authentication is already configured"
 msgstr ""
 
-#: web/views.py:494
+#: web/views.py:496
 msgctxt "UI"
 msgid ""
 "Two-factor authentication token is invalid. Please, re-scan the QR code (a "
 "new one has been generated for security reasons)."
 msgstr ""
 
-#: web/views.py:502
+#: web/views.py:504
 msgctxt "UI"
 msgid "Two-factor authentication has been configured."
 msgstr ""
 
-#: web/views.py:513
+#: web/views.py:515
 #, fuzzy
 msgctxt "UI"
 msgid "Invalid request"
 msgstr "Ongeldig token"
 
-#: web/views.py:527
+#: web/views.py:529
 msgctxt "UI"
 msgid "Wallet is not valid"
 msgstr ""
 
-#: web/views.py:537
+#: web/views.py:539
 #, fuzzy
 msgctxt "UI"
 msgid "Your payout address has been locked."
 msgstr "Uw account is geactiveerd!"
 
-#: web/views.py:590
+#: web/views.py:593 web/views.py:673
+#: web/templates/wallet_confirm_resend.html:14
+#, fuzzy
+msgctxt "UI"
+msgid ""
+"Confirmation email has been sent. Please, check your mailbox and follow the "
+"link."
+msgstr ""
+"Confirmatie email is gestuurd. Gelieve je postbus na te zien de link te "
+"volgen"
+
+#: web/views.py:600
 #, fuzzy
 msgctxt "UI"
 msgid "The account has been updated."
 msgstr "Account is geupdated"
 
-#: web/views.py:605
+#: web/views.py:615
 #, fuzzy
 msgctxt "UI"
 msgid "The monitoring settings has been updated."
 msgstr "Namecoin instellingen zijn geupdated"
 
-#: web/views.py:641
+#: web/views.py:651
 #, fuzzy
 msgctxt "UI"
 msgid "Password has been successfully changed."
 msgstr "Uw portemonnee is succesvol verstuurd."
 
-#: web/views.py:667
+#: web/views.py:685
 #, fuzzy
 msgctxt "UI"
 msgid "The payouts settings has been updated."
 msgstr "Namecoin instellingen zijn geupdated"
 
-#: web/views.py:681
+#: web/views.py:699
 #, fuzzy
 msgctxt "UI"
 msgid "Delete account confirmation"
 msgstr "Verwijder account confirmatie"
 
-#: web/views.py:697
+#: web/views.py:714
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
 msgstr ""
 
-#: web/views.py:942
+#: web/views.py:958
 #, fuzzy
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at support@bitcoin.cz"
 msgstr ""
 "Account verboden. Contacteer de pool administrator via support@bitcoin.cz"
 
-#: web/views.py:965
+#: web/views.py:981
 #, fuzzy, python-format
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at %(link)s"
 msgstr ""
 "Account verboden. Contacteer de pool administrator via support@bitcoin.cz"
 
-#: web/views.py:974
+#: web/views.py:990
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -864,20 +904,20 @@ msgid ""
 "(%(reason)s). "
 msgstr ""
 
-#: web/views.py:975
+#: web/views.py:991
 #, python-format
 msgctxt "UI"
 msgid "Please, contact %(link)s for further details."
 msgstr ""
 
-#: web/views.py:997
+#: web/views.py:1013
 msgctxt "UI"
 msgid ""
 "Please consider enabling payout address protection by two-factor "
 "authentication or by locking it"
 msgstr ""
 
-#: web/views.py:999 web/templates/settings.html:3
+#: web/views.py:1015 web/templates/settings.html:3
 #, fuzzy
 msgctxt "UI"
 msgid "Account settings"
@@ -1213,12 +1253,8 @@ msgstr "Registreer een account"
 msgid ""
 "Regular updates and all current issues are being posted on our <a href="
 "\"%(fb_url)s\">%(globe_icon)sFacebook page</a>. Only user comments on our "
-"post are allowed. User posts are not allowed to prevent spamming."
-msgstr ""
-
-#: web/templates/contacts.html:26
-msgid ""
-"The Facebook page is not intended as a support channel, although our support "
+"post are allowed. User posts are not allowed to prevent spamming. The "
+"Facebook page is not intended as a support channel, although our support "
 "team regularly checks and replies to some of the user comments."
 msgstr ""
 
@@ -1259,7 +1295,7 @@ msgid "Payments"
 msgstr ""
 
 #: web/templates/contacts.html:36
-msgid "I can see different hash rate than my miner displays"
+msgid "I can see different hash rate than my miner displays."
 msgstr ""
 
 #: web/templates/contacts.html:36
@@ -2683,8 +2719,8 @@ msgstr ""
 #: web/templates/monitoring.html:121
 msgctxt "UI"
 msgid ""
-"Report has not been not sent because you have <span class=\"strong"
-"\">disabled reporting</span>."
+"Report has not been sent because you have <span class=\"strong\">disabled "
+"reporting</span>."
 msgstr ""
 
 #: web/templates/monitoring.html:127
@@ -4339,16 +4375,6 @@ msgid ""
 "request."
 msgstr ""
 
-#: web/templates/wallet_confirm_resend.html:14
-#, fuzzy
-msgctxt "UI"
-msgid ""
-"Confirmation email has been sent. Please, check your mailbox and follow the "
-"link."
-msgstr ""
-"Confirmatie email is gestuurd. Gelieve je postbus na te zien de link te "
-"volgen"
-
 #: web/templates/wallet_confirm_too_early.html:14
 #, python-format
 msgctxt "UI"
@@ -5227,7 +5253,7 @@ msgstr ""
 msgid ""
 "For this reason we have introduced algorithms that decides whether to send a "
 "report notification or skip it and send you daily report with a link to web "
-"view"
+"view."
 msgstr ""
 
 #: web/templates/user_manual/monitoring.html:23
@@ -5577,7 +5603,7 @@ msgstr ""
 #: web/templates/user_manual/terminology.html:13
 msgid ""
 "The time period between two blocks found by the pool. It can last from few "
-"seconds to hours, depending on the <a href=\"#luck\">pool's luck.</a>"
+"seconds to many hours, depending on the <a href=\"#luck\">pool's luck.</a>"
 msgstr ""
 
 #: web/templates/user_manual/terminology.html:16
@@ -5892,7 +5918,7 @@ msgstr "Account instellingen"
 #: web/templates/user_manual/user_manual_base.html:24
 #, fuzzy
 msgctxt "UI"
-msgid "<strong>Device</strong>"
+msgid "<strong>Device</strong> Monitoring"
 msgstr "Account instellingen"
 
 #: web/templates/user_manual/user_manual_base.html:25
@@ -5953,6 +5979,16 @@ msgstr ""
 msgctxt "UI"
 msgid "Help me"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "UI"
+#~ msgid "Wallet change confirmation cancelled"
+#~ msgstr "portemonneeverandering confirmatie"
+
+#, fuzzy
+#~ msgctxt "UI"
+#~ msgid "<strong>Device</strong>"
+#~ msgstr "Account instellingen"
 
 #, fuzzy
 #~ msgctxt "UI"
@@ -6107,9 +6143,6 @@ msgstr ""
 #~ msgid "failure"
 #~ msgstr "mislukt"
 
-#~ msgid "Wallet change resend"
-#~ msgstr "Portemonnee verandering opnieuw sturen"
-
 #~ msgid "Wallet change"
 #~ msgstr "Verander portemonnee"
 
@@ -6121,13 +6154,6 @@ msgstr ""
 
 #~ msgid "confirmed"
 #~ msgstr "geconfirmeerd"
-
-#~ msgid ""
-#~ "This is not a valid Bitcoin address. Please install Bitcoin client or "
-#~ "register some web wallet to get one."
-#~ msgstr ""
-#~ "Dit is geen geldig Bitcoin adres. Gelieve de Bitcoin software te "
-#~ "installeren of registreer een web portemonnee om er een te krijgen."
 
 #~ msgid "<User%(id)d>"
 #~ msgstr "<User%(id)d>"
@@ -6324,11 +6350,6 @@ msgstr ""
 #, fuzzy
 #~ msgctxt "UI, Pool stats submenu"
 #~ msgid "<strong>Graphs</strong>"
-#~ msgstr "Account instellingen"
-
-#, fuzzy
-#~ msgctxt "UI, Profile submenu"
-#~ msgid "<strong>Device</strong> Monitoring"
 #~ msgstr "Account instellingen"
 
 #, fuzzy
