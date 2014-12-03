@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: Slush's pool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-28 15:33+0000\n"
-"PO-Revision-Date: 2014-11-28 16:26+0200\n"
+"PO-Revision-Date: 2014-12-03 13:27+0200\n"
 "Last-Translator: Jan Pecinovsky <jan.pecinovsky@braiins.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
-"cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-"
+"cz/mining/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,7 +42,7 @@ msgstr "Očekávaný hash rate [Gh/s]"
 #: mining/models.py:171
 msgctxt "UI"
 msgid "The system will report issues, when hash rate drops below this value"
-msgstr "System bude hlásit potíže, pokud hash rate klesne pod tuto hodnotu"
+msgstr "Systém bude hlásit potíže, pokud hash rate klesne pod tuto hodnotu"
 
 #: mining/models.py:172
 msgctxt "UI"
@@ -55,8 +55,8 @@ msgid ""
 "The monitoring system will detect and report any hash rate issues related to "
 "this worker"
 msgstr ""
-"Monitoring bude detekovat a hlásit jakékoliv potíže s hash rate u tohoto "
-"zařízení"
+"Monitorovací systém bude detekovat a hlásit jakékoliv potíže s hash rate u "
+"tohoto zařízení"
 
 #: mining/models.py:175 web/models.py:803
 msgctxt "UI"
@@ -310,6 +310,8 @@ msgctxt "UI"
 msgid ""
 "(Deactivate proposal updates in <a href=\"/accounts/settings\">Settings</a>)"
 msgstr ""
+"(Deaktivovat aktualizace návrhů v <a href=\"/accounts/settings\""
+">Nastavení</a>)"
 
 #: web/messages.py:8
 msgctxt "UI"
@@ -317,6 +319,8 @@ msgid ""
 "New proposal(s) is ready for voting in <a href=\"/devcorner/\">Development "
 "Corner</a>. "
 msgstr ""
+"Nový/é návrh(y) jsou připraveny k hlasování ve <a href=\"/devcorner/\">"
+"Vývojářském koutku</a>. "
 
 #: web/messages.py:10
 #, python-format
@@ -325,6 +329,8 @@ msgid ""
 "Proposal <a href=\"/proposal/detail/%(id)s\">%(title)s</a> is now being "
 "implemented. "
 msgstr ""
+"Návrh <a href=\"/proposal/detail/%(id)s\">%(title)s</a> je nyní "
+"implementován. "
 
 #: web/messages.py:12
 #, python-format
@@ -332,25 +338,28 @@ msgctxt "UI"
 msgid ""
 "Proposal <a href=\"/proposal/detail/%(id)s\">%(title)s</a> has been "
 "released. "
-msgstr ""
+msgstr "Návrh <a href=\"/proposal/detail/%(id)s\">%(title)s</a> byl vydán. "
 
 #: web/messages.py:15
 msgctxt "UI"
 msgid "Thank you for mining with us! We have a special reward for You:"
-msgstr ""
+msgstr "Díky za to, že s námi těžíte! Máme pro vás speciální odměnu:"
 
 #: web/messages.py:17
 #, python-format
 msgctxt "UI"
 msgid "A Slush Pool-sponsored Bitcoin TREZOR with an amazing 33%% discount!"
-msgstr ""
+msgstr "Slushpoolem sponzorovaný Bitcoin TREZOR s úžasnou 33% slevou!"
 
 #: web/messages.py:18
+#, fuzzy
 msgctxt "UI"
 msgid ""
 "Keep your mined bitcoin safe with<br><strong>\"the most sophisticated "
 "financial authenticator device in the world!\"</strong>"
 msgstr ""
+"Udržujte své vytěžené bitcoiny v bezpečí <br><strong>\"světově "
+"nejsofistikovanějšího finančního ověřovacího zařízení!\"</strong>"
 
 #: web/models.py:168
 msgctxt "UI"
@@ -468,15 +477,14 @@ msgid "Pool will not send more than this number of reports to you in one day"
 msgstr "Pool nebude posílat více reportů za den než je tato hodnota"
 
 #: web/models.py:222
-#, fuzzy
 msgctxt "UI"
 msgid "Watch proposals"
-msgstr "Všechny návrhy"
+msgstr "Sledovat návrhy"
 
 #: web/models.py:223
 msgctxt "UI"
 msgid "Receive notifications about proposal changes to dashboard"
-msgstr ""
+msgstr "Dostávat upozornění o změnách návrhů na přehledovou stránku"
 
 #: web/models.py:254
 msgctxt "UI"
@@ -824,10 +832,9 @@ msgid "Monitoring <b>disabled</b> on all workers."
 msgstr "Monitorování <b>vypnuto</b> pro všechna zařízení."
 
 #: web/views.py:324
-#, fuzzy
 msgctxt "UI"
 msgid "Worker does not exist."
-msgstr "Zařízení s tímto jménem neexistuje"
+msgstr "Zařízení s tímto jménem neexistuje."
 
 #: web/views.py:346
 msgctxt "UI"
@@ -1264,9 +1271,10 @@ msgid "Contact Us"
 msgstr "Kontaktujte nás"
 
 #: web/templates/contacts.html:17
+#, fuzzy
 msgctxt "UI"
 msgid "You can use multiple channels to reach out to us."
-msgstr ""
+msgstr "Můžete použít několikero kanálu, abyste nás kontaktoval."
 
 #: web/templates/contacts.html:18
 #, python-format
@@ -1281,6 +1289,14 @@ msgid ""
 "operation status visit our <a href=\"%(fb_url)s\" target=\"_blank\">"
 "%(globe_icon)s Facebook pages</a>."
 msgstr ""
+"Nejrychlejší způsob nalezení odpovědí na vaše otázky je náš <a href=\""
+"%(manual_intro)s\">Uživatelský manuál</a> a <a href=\"%(kb)s\" target=\""
+"_blank\">%(globe_icon)s Knowledge base</a>. Také máme silnou komunitní "
+"podporu na <a href=\"%(irc_url)s\" target=\"_blank\">%(globe_icon)s IRC "
+"kanálu</a>. I když to není oficiální podpora, pořád můžete rychle dostat "
+"dobré rady a tipy od zkušených uživatelů. Pro čerstvé novinky o Slushpoolu "
+"prosíme navštivte <a href=\"%(fb_url)s\" target=\"_blank\">%(globe_icon)s "
+"Facebookové stránky</a>."
 
 #: web/templates/contacts.html:20
 msgctxt "UI"
@@ -1288,11 +1304,13 @@ msgid ""
 "Please make sure to look into these resources before contacting our Support "
 "Team:"
 msgstr ""
+"Prosím podívejte se nejdříve do těchto materiálů než kontaktujete náš tým "
+"zákaznické podpory:"
 
 #: web/templates/contacts.html:24 web/templates/new_user_registered.html:36
 msgctxt "UI"
 msgid "User <span>Manual</span>"
-msgstr "Uživatelský <span>Manuál</span>"
+msgstr "Uživatelský <span>manuál</span>"
 
 #: web/templates/contacts.html:26
 msgctxt "UI"
@@ -1300,47 +1318,43 @@ msgid ""
 "helps you to get started fast and understand all the basics you need to know "
 "about mining with Slush's Pool."
 msgstr ""
+"vám pomůže rychle začít a pochopit základní informace, které potrřebujete "
+"znát pro těžení na Slushpoolu."
 
 #: web/templates/contacts.html:29
-#, fuzzy
 msgctxt "UI"
 msgid "Getting Started"
-msgstr "Začínáme Těžit"
+msgstr "Začínáme těžit"
 
 #: web/templates/contacts.html:30
-#, fuzzy
 msgctxt "UI"
 msgid "Pool Terminology"
-msgstr "<strong>Poolová</strong> terminologie"
+msgstr "Poolová terminologie"
 
 #: web/templates/contacts.html:31
-#, fuzzy
 msgctxt "UI"
 msgid "Reward System"
-msgstr "Nastavení účtu"
+msgstr "Systém odměn"
 
 #: web/templates/contacts.html:32
-#, fuzzy
 msgctxt "UI"
 msgid "Payments"
-msgstr "Komentáře"
+msgstr "Platby"
 
 #: web/templates/contacts.html:33
-#, fuzzy
 msgctxt "UI"
 msgid "Mining Device Monitoring"
-msgstr "Sledování Zařízení"
+msgstr "Sledování těžících zařízení"
 
 #: web/templates/contacts.html:34
 msgctxt "UI"
 msgid "and more&hellip;"
-msgstr ""
+msgstr "a další&hellip;"
 
 #: web/templates/contacts.html:38
-#, fuzzy
 msgctxt "UI"
 msgid "Knowledge <span>Base</span>"
-msgstr "Založení účtu"
+msgstr "Knowledge <span>base</span>"
 
 #: web/templates/contacts.html:40
 msgctxt "UI"
@@ -1348,15 +1362,16 @@ msgid ""
 "provides answers to the most frequent questions and technical issues of our "
 "users."
 msgstr ""
+"zprostředkovává odpovědi na nejčastěji kladené otázky a technické problémy "
+"našich uživatelů."
 
 #: web/templates/contacts.html:44
-#, fuzzy
 msgctxt "UI"
 msgid "IRC <span>Channel</span>"
-msgstr "Komunikační <span>Kanály</span>"
+msgstr "IRC <span>kanál</span>"
 
 #: web/templates/contacts.html:46
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "Log into our IRC channel here: <a href=\"%(irc_url)s\" target=\"_blank\">"
@@ -1364,15 +1379,15 @@ msgid ""
 "users. Also, new blocks found by our pool are being announced through this "
 "channel."
 msgstr ""
-"Náš IRC kanál <a href=\"%(irc_url)s\">%(globe_icon)s#mining.bitcoin.cz</a> "
-"je věnován našim uživatelům pro diskuzi o poolu. Vytěžení nového bloku naším "
-"poolem je také oznámeno na tomto kanálu. "
+"Přihlašte se do našeho IRC kanálu zde: <a href=\"%(irc_url)s\" target=\""
+"_blank\">%(globe_icon)s #mining.bitcoin.cz</a> a diskutujte s našimi "
+"zkušenými uživateli. Jsou zde také oznamovány nové bloky vytěžené naším "
+"poolem."
 
 #: web/templates/contacts.html:50
-#, fuzzy
 msgctxt "UI"
 msgid "Facebook Page"
-msgstr "Facebooková <span>Stránka</span>"
+msgstr "Facebooková stránka"
 
 #: web/templates/contacts.html:52
 #, python-format
@@ -1381,6 +1396,9 @@ msgid ""
 "Regular updates and all current issues are being posted on our <a href="
 "\"%(fb_url)s\">Facebook page.</a> User comments to our post are allowed."
 msgstr ""
+"Pravidelné aktualizace a všechny aktuální problémy jsou sdíleny na naší <a "
+"href=\"%(fb_url)s\">Facebookové stránce.</a> Uživatelské komentáře jsou u "
+"našich příspěvků povoleny."
 
 #: web/templates/contacts.html:55
 msgctxt "UI"
@@ -1388,11 +1406,14 @@ msgid ""
 "Our Facebook page is not our official support channel, but our support team "
 "regularly checks and replies to some of the user comments."
 msgstr ""
+"Naše Facebooková stránka není místo pro oficiální podporu, ale náš tým "
+"zákaznické podpory pravidelně kontroluje a odpovídá na uživatelské komentáře."
 
 #: web/templates/contacts.html:59
+#, fuzzy
 msgctxt "UI"
 msgid "Submit a Ticket"
-msgstr ""
+msgstr "Kontaktovat zákaznickou podporu"
 
 #: web/templates/contacts.html:61
 #, python-format
@@ -1405,11 +1426,17 @@ msgid ""
 "support team. Like this you will help us maintaining a high quality and "
 "response rate of our Support. Thank you for your understanding."
 msgstr ""
+"Ujistěte se prosím, že nelze nalézt odpověď na vaši otázky v sekci<a href=\""
+"%(getting_started)s\">Začínáme těžit</a>, <a href=\"%(manual_intro)s\">"
+"Uživatelském manuálu</a> a <a href=\"%(kb)s\" target=\"_blank\">%(globe_icon)"
+"s Knowledge base</a> před tím, než kontaktujete naší zákaznickou podporu. "
+"Takto nám pomůžete udržet vysoký standard kvalitty a rychlosti odpovědí od "
+"podpůrného týmu. Děkujeme za pochopení."
 
 #: web/templates/contacts.html:64
 msgctxt "UI"
 msgid "When Submitting a Support System Ticket"
-msgstr ""
+msgstr "Když kontaktujete zákaznickou podporu"
 
 #: web/templates/contacts.html:70
 #, python-format
@@ -1420,6 +1447,10 @@ msgid ""
 "our <a href=\"%(kb_ticket)s\" target=\"_blank\">%(globe_icon)s web "
 "interface</a>."
 msgstr ""
+"Odesláním emailu podpůrnému týmu na <span class=\"strong\">bitcoin tečka "
+"cz</span> nebo vložením požadavku přes naše <a href=\"%(kb_ticket)s\" target="
+"\"_blank\">%(globe_icon)s webové rozhraní </a> se automaticky vytvoří nový "
+"požadavek."
 
 #: web/templates/dashboard.html:3
 msgctxt "UI"
@@ -1520,7 +1551,7 @@ msgstr "Váš příspěvek poolu"
 #: web/templates/dashboard.html:98
 msgctxt "UI"
 msgid "Account Monitoring Status"
-msgstr "Stav monitorovaní účtu"
+msgstr "Stav monitorování účtu"
 
 #: web/templates/dashboard.html:102
 msgctxt "UI"
@@ -1597,6 +1628,7 @@ msgid ""
 "Vertical lines represent blocks found by the pool. They are labeled with "
 "#block numbers."
 msgstr ""
+"Svislé čáry reprezentují bloky nalezené poolem. Jsou označeny číslem bloku."
 
 #: web/templates/dashboard.html:171
 msgctxt "Intro"
@@ -1774,7 +1806,7 @@ msgstr "Vývojářský koutek"
 #: web/templates/development_corner.html:10
 msgctxt "UI"
 msgid "Rule the Pool!"
-msgstr ""
+msgstr "Vládněte poolu!"
 
 #: web/templates/development_corner.html:12
 msgctxt "UI"
@@ -1782,16 +1814,19 @@ msgid ""
 "Submit your ideas for improvement of this pool. Upvote what you like to see "
 "implemented first."
 msgstr ""
+"Pošlete nám vaše nápady jak vylepšit pool. Hlasujte pro nápady, které chcete "
+"vidět implementované jako první."
 
 #: web/templates/development_corner.html:13
 msgctxt "UI"
 msgid "<strong>Your hash rate is your voting power.</strong> Use it wisely!"
 msgstr ""
+"<strong>Váš hash rate ja síla vašeho hlasu.</strong> Použijte ho rozumně!"
 
 #: web/templates/development_corner.html:17
 msgctxt "UI"
 msgid "How to submit proposals?"
-msgstr ""
+msgstr "Jak vytvořit návrhy?"
 
 #: web/templates/development_corner.html:20
 #, python-format
@@ -1800,17 +1835,20 @@ msgid ""
 "Log in and click the <a href=\"%(proposal_new_url)s\">+New Proposal</a> "
 "button."
 msgstr ""
+"Přihlašte se a klikněte na tlačitko <a href=\"%(proposal_new_url)s\">+Nové "
+"návrhy</a>."
 
 #: web/templates/development_corner.html:21
 msgctxt "UI"
 msgid "Describe and save your proposal. You can edit it later."
-msgstr ""
+msgstr "Popište a uložte váš návrh. Můžete ho upravovat i později."
 
 #: web/templates/development_corner.html:22
 msgctxt "UI"
 msgid ""
 "Once approved by our admins, your proposal shows up here in New Proposals."
 msgstr ""
+"Váš návrh se ukáže mezi novými návrhy jakmile bude schválen administrátory."
 
 #: web/templates/development_corner.html:23
 msgctxt "UI"
@@ -1818,12 +1856,13 @@ msgid ""
 "Please, follow this <a href=\"#guideline\">guideline</a> when creating a new "
 "proposal! Thank you."
 msgstr ""
+"Postupujte prosím podle <a href=\"#guideline\">návodu</a>, když vytváříte "
+"nový návrh! Děkujeme."
 
 #: web/templates/development_corner.html:27
-#, fuzzy
 msgctxt "UI"
 msgid "Voting rules"
-msgstr "Nastavení účtu"
+msgstr "Pravidla hlasování"
 
 #: web/templates/development_corner.html:29
 #, python-format
@@ -1832,64 +1871,64 @@ msgid ""
 "You have a total of 100 points. <strong>1 point = 1%% of your hash rate</"
 "strong>. Only hash rate of actively mining users counts."
 msgstr ""
+"Celkem máte 100 bodů. <strong>1 bod = 1%% vašeho hash rate</strong>. Počítá "
+"se pouze hash rate aktivně těžících uživatelů."
 
 #: web/templates/development_corner.html:30
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "Upvote or downvote proposals by assigning <strong>positive</strong> or "
 "<strong>negative</strong> points."
 msgstr ""
-"Můžeš hlasovat <strong>pro</strong> nebo <strong>proti</strong> návrhu "
-"přidělením <strong>pozitivního</strong> nebo <strong>negativního</strong> "
-"počtu bodů."
+"Můžete hlasovat pro nebo proti návrhu přidělením <strong>pozitivního</strong>"
+" nebo <strong>negativního</strong> počtu bodů."
 
 #: web/templates/development_corner.html:31
 msgctxt "UI"
 msgid "You can re-distribute your points later if you like some new proposal."
 msgstr ""
+"Později můžete své body přerozdělit, pokud se vám bude líbit nějaký nový "
+"návrh."
 
 #: web/templates/development_corner.html:32
 msgctxt "UI"
 msgid "Voting statistics are being refreshed every 5 minutes."
-msgstr ""
+msgstr "Statistiky hlasování jsou aktualizovány každých 5 minut."
 
 #: web/templates/development_corner.html:33
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "Once we start developing some proposal you voted for, you get your points "
 "back."
 msgstr ""
-"Jakmile se na návrhu/vlastnosti začne pracovat (a jsou odebrány ze seznamu), "
-"dostaneš své body nazpátek."
+"Jakmile se na vývoji nové vlastnosti podle návrhu, pro který jste hlasoval, "
+"začne pracovat, dostanete své body nazpátek."
 
 #: web/templates/development_corner.html:39
 msgctxt "UI"
 msgid "New <span>Proposals</span>"
-msgstr "Nové <span>Návrhy</span>"
+msgstr "Nové <span>návrhy</span>"
 
 #: web/templates/development_corner.html:44
-#, fuzzy
 msgctxt "UI"
 msgid "Filter by title (regexp)"
-msgstr "Filtrovat podle názvu (regexp)"
+msgstr "Filtrovat podle názvu"
 
 #: web/templates/development_corner.html:49
 msgctxt "UI"
 msgid "Show starred items only"
-msgstr ""
+msgstr "Zobrazit pouze sledované návrhy"
 
 #: web/templates/development_corner.html:54
 msgctxt "UI"
 msgid "Show unread items only"
-msgstr ""
+msgstr "Zobrazit pouze nepřečtené návrhy"
 
 #: web/templates/development_corner.html:63
 #: web/templates/proposal_detail.html:19
 msgctxt "UI"
 msgid "Your unspent points"
-msgstr "Tvé nepřidělené body"
+msgstr "Vaše nepřidělené body"
 
 #: web/templates/development_corner.html:65
 #: web/templates/proposal_form.html:17 web/templates/proposal_vote_form.html:3
@@ -1900,7 +1939,7 @@ msgstr "Nový návrh"
 #: web/templates/development_corner.html:71
 msgctxt "UI"
 msgid "You can vote and create new proposals only if you are logged in."
-msgstr "Hlasovat a vytvářet nové návrhy můžeš pouze pokud jsi přihlášen."
+msgstr "Hlasovat a vytvářet nové návrhy můžete pouze pokud jste přihlášen."
 
 #: web/templates/development_corner.html:81
 #: web/templates/development_corner.html:202
@@ -1912,27 +1951,25 @@ msgstr "Název"
 #: web/templates/development_corner.html:82
 msgctxt "UI"
 msgid "Total<br/>Hash Rate"
-msgstr "Celkový<br/>Hash Rate"
+msgstr "Celkový<br/>hash rate"
 
 #: web/templates/development_corner.html:83
-#, fuzzy
 msgctxt "UI"
 msgid "Total<br/>Votes"
-msgstr "Celkem<br/>Hlasů"
+msgstr "Celkem<br/>hlasů"
 
 #: web/templates/development_corner.html:84
 msgctxt "UI"
 msgid "Total<br/>Points"
-msgstr "Celkem<br/>Bodů"
+msgstr "Celkem<br/>bodů"
 
 #: web/templates/development_corner.html:86
 msgctxt "UI"
 msgid "Your<br/>Points"
-msgstr "Tvých<br/>Bodů"
+msgstr "Vašich<br/>bodů"
 
 #: web/templates/development_corner.html:87
 #: web/templates/proposal_detail.html:34
-#, fuzzy
 msgctxt "UI"
 msgid "Vote"
 msgstr "Hlasovat"
@@ -1956,21 +1993,19 @@ msgstr "Nejsou zde ještě žádné vývojářské návrhy."
 #: web/templates/development_corner.html:198
 msgctxt "UI"
 msgid "<span>Proposals</span> In Development"
-msgstr "<span>Návrhy</span> Ve Vývoji"
+msgstr "<span>Návrhy</span> ve vývoji"
 
 #: web/templates/development_corner.html:203
 msgctxt "UI"
 msgid "From"
-msgstr ""
+msgstr "Z"
 
 #: web/templates/development_corner.html:217
-#, fuzzy
 msgctxt "UI"
 msgid "Released <span>Proposals</span>"
-msgstr "Released <span>Proposals</span>"
+msgstr "Dokončené <span>návrhy</span>"
 
 #: web/templates/development_corner.html:222
-#, fuzzy
 msgctxt "UI"
 msgid "Released"
 msgstr "Vydáno"
@@ -1978,7 +2013,7 @@ msgstr "Vydáno"
 #: web/templates/development_corner.html:236
 msgctxt "UI"
 msgid "Guideline for new proposals"
-msgstr ""
+msgstr "Návod pro vytváření nových návrhů"
 
 #: web/templates/development_corner.html:336
 msgctxt "Intro"
@@ -2009,17 +2044,17 @@ msgstr ""
 #: web/templates/email_wallet_change.html:2
 msgctxt "UI"
 msgid "Hello"
-msgstr "Ahoj"
+msgstr "Dobrý den"
 
 #: web/templates/email_account_delete.html:6
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "You are receiving this email because you have requested deletion of your "
 "account on <a href=\"%(site_url)s\">%(site_url)s</a> mining pool!"
 msgstr ""
-"Tento email byl odeslán, protože někdo zažádal o smazání Tvého účtu na poolu "
-"<a href=\"%(site_url)s\">%(site_url)s</a> !"
+"Tento email byl odeslán, protože někdo zažádal o smazání vašeho účtu na "
+"poolu <a href=\"%(site_url)s\">%(site_url)s</a> !"
 
 #: web/templates/email_account_delete.html:10
 #, python-format
@@ -2030,10 +2065,10 @@ msgid ""
 "link is valid for one hour. If you missed this email and the link is not "
 "valid anymore, please go to the website and make a new request."
 msgstr ""
-"Pokud chceš opravdu smazat svůj účet <strong>%(username)s</strong>, klikni "
-"prosím na <a href=\"%(delete_url)s\">tento potvrzující odkaz</a>. Odkaz je "
-"platný po dobu jedné hodiny. Jestliže vypršela platnost odkazu, jdi prosím "
-"na naši webovou stránku a vytvoř nový požadavek."
+"Pokud chcete opravdu smazat svůj účet <strong>%(username)s</strong>, "
+"klikněte prosím na <a href=\"%(delete_url)s\">tento potvrzující odkaz</a>. "
+"Odkaz je platný po dobu jedné hodiny. Jestliže vypršela platnost odkazu, "
+"jděte prosím na naši webovou stránku a vytvořte nový požadavek."
 
 #: web/templates/email_account_delete.html:14
 msgctxt "UI"
@@ -2042,8 +2077,8 @@ msgid ""
 "you did not request the payout, you have the last chance right now before "
 "following the confirmation link."
 msgstr ""
-"Případný zbývající zůstatek na Tvém účtu bude použit jako příspěvek na "
-"provoz poolu. Pokud jsi zapomněl požádat o vyplacení zbývající odměny, máš "
+"Případný zbývající zůstatek na vašem účtu bude použit jako příspěvek na "
+"provoz poolu. Pokud jste zapomněl požádat o vyplacení zbývající odměny, máte "
 "teď poslední příležitost."
 
 #: web/templates/email_account_delete.html:18
