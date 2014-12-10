@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-08 20:04+0000\n"
-"PO-Revision-Date: 2014-12-08 20:51+0200\n"
-"Last-Translator: Braiins Admin <web.accounts@braiins.cz>\n"
-"Language-Team: English <https://hosted.weblate.org/projects/bitcoin-cz/"
-"mining/en/>\n"
+"PO-Revision-Date: 2014-12-10 14:46+0200\n"
+"Last-Translator: Jochen Spalding <jochen.spalding@me.com>\n"
+"Language-Team: English <https://hosted.weblate.org/projects/bitcoin-"
+"cz/mining/en/>\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.1\n"
+"X-Generator: Weblate 2.1-dev\n"
 
 #: backend/queries.py:845
 msgctxt "UI, Blocks"
@@ -177,22 +177,24 @@ msgstr ""
 #: web/forms.py:160
 msgctxt "UI"
 msgid "Cannot verify the message, please try it later."
-msgstr ""
+msgstr "Kann die Nachricht nicht bestätigen. Bitte später nochmal probieren."
 
 #: web/forms.py:162
 msgctxt "UI"
 msgid "Signature is not valid."
-msgstr ""
+msgstr "Signatur nicht valide."
 
 #: web/forms.py:195
 msgctxt "UI"
 msgid "If you wish to change your BTC wallet, enter its address here"
 msgstr ""
+"Wenn du deine Wallet-Adresse ändern möchtest, bitte neue Adresse hier "
+"eintragen"
 
 #: web/forms.py:216 web/templates/settings.html:504
 msgctxt "UI"
 msgid "An additional fee of 0.0001 BTC applies to payouts lower than 0.01 BTC."
-msgstr ""
+msgstr "Es fallen Gebühren in höhe von 0.0001 BTC an."
 
 #: web/forms.py:241
 msgctxt "UI"
@@ -200,97 +202,101 @@ msgid ""
 "This is not a valid Bitcoin address. Please install Bitcoin client or "
 "register some web wallet to get one."
 msgstr ""
+"Dies ist keine valide Bitcoin Adresse. Bitte Bitcoin Core oder Trezor "
+"benutzen."
 
 #: web/forms.py:244
 msgctxt "UI"
 msgid "New wallet must be different from the current."
-msgstr ""
+msgstr "Die neue Adresse darf nicht die alte sein."
 
 #: web/forms.py:262
 msgctxt "UI"
 msgid "Sending threshold must be >= 0.001 BTC"
-msgstr ""
+msgstr "Die Mindestauszahlung beträgt 0.001 BTC"
 
 #: web/forms.py:265
 msgctxt "UI"
 msgid "Sending threshold must be <= 5 BTC"
-msgstr ""
+msgstr "Der Höchstauszahlungsbetrag ist 5 BTC"
 
 #: web/forms.py:286 web/models.py:835
 msgctxt "UI"
 msgid "Minimum difficulty"
-msgstr ""
+msgstr "Minimale Difficulty"
 
 #: web/forms.py:287
 msgctxt "UI"
 msgid "Pool always assigns difficulty equal or greater than this value."
-msgstr ""
+msgstr "Der Pool nimmt diesen oder einen höheren Wert als Difficulty."
 
 #: web/forms.py:320
 msgctxt "UI"
 msgid ""
 "Only letters, numbers and the following characters are accepted: _ @ + -"
-msgstr ""
+msgstr "Es werden nur Buchstaben, Nummern und _ @ + - akzeptiert"
 
 #: web/forms.py:326 web/forms.py:331 web/forms.py:335
 #, python-format
 msgctxt "UI"
 msgid "Worker %s already exists"
-msgstr ""
+msgstr "Worker %s besteht bereits"
 
 #: web/forms.py:348 web/templates/hall-of-fame.html:19
 #: web/templates/hall-of-fame.html.py:47
 msgctxt "UI"
 msgid "Username"
-msgstr ""
+msgstr "User Name"
 
 #: web/forms.py:349
 msgctxt "UI"
 msgid "Enter a valid username."
-msgstr ""
+msgstr "Gib einen validen User Name ein."
 
 #: web/forms.py:350 web/models.py:830
 msgctxt "UI"
 msgid "Email"
-msgstr ""
+msgstr "eMail"
 
 #: web/forms.py:351
 msgctxt "UI"
 msgid "Required password"
-msgstr ""
+msgstr "Angefordertes Passwort"
 
 #: web/forms.py:352
 msgctxt "UI"
 msgid "Password again"
-msgstr ""
+msgstr "nochmal Passwort"
 
 #: web/forms.py:363
 msgctxt "UI"
 msgid "Passwords are different!"
-msgstr ""
+msgstr "Passwörter sind nicht Gleich!"
 
 #: web/forms.py:449
 #, python-format
 msgctxt "UI"
 msgid "Points must be greater or equal than %s."
-msgstr ""
+msgstr "Punkte müssen grösser oder gleich %s sein."
 
 #: web/forms.py:451
 #, python-format
 msgctxt "UI"
 msgid "Points must be lower or equal than %s."
-msgstr ""
+msgstr "Punkte müssen kleiner oder gleich %s sein."
 
 #: web/forms.py:469
 msgctxt "UI"
 msgid "New comment"
-msgstr ""
+msgstr "Neuer Kommentar"
 
 #: web/messages.py:5
 msgctxt "UI"
 msgid ""
 "(Deactivate proposal updates in <a href=\"/accounts/settings\">Settings</a>)"
 msgstr ""
+"(Anforderungs-Updates hier abstellen: <a href=\"/accounts/settings\""
+">Settings</a>)"
 
 #: web/messages.py:8
 msgctxt "UI"
@@ -298,6 +304,8 @@ msgid ""
 "New proposal(s) is ready for voting in <a href=\"/devcorner/\">Development "
 "Corner</a>. "
 msgstr ""
+"Neue Vorschläge zum abstimmen vorhanden <a href=\"/devcorner/\">Development "
+"Corner</a>. "
 
 #: web/messages.py:10
 #, python-format
@@ -306,6 +314,8 @@ msgid ""
 "Proposal <a href=\"/proposal/detail/%(id)s\">%(title)s</a> is now being "
 "implemented. "
 msgstr ""
+"Vorschlag <a href=\"/proposal/detail/%(id)s\">%(title)s</a> ist jetzt "
+"implementiert. "
 
 #: web/messages.py:12
 #, python-format
@@ -314,24 +324,30 @@ msgid ""
 "Proposal <a href=\"/proposal/detail/%(id)s\">%(title)s</a> has been "
 "released. "
 msgstr ""
+"Vorschlag <a href=\"/proposal/detail/%(id)s\">%(title)s</a> ist jetzt "
+"veröffentlicht. "
 
 #: web/messages.py:15
 msgctxt "UI"
 msgid "Thank you for mining with us! We have a special reward for You:"
 msgstr ""
+"Danke, dass du hier minst. Wir haben einen spezielles Dankeschön für dich:"
 
 #: web/messages.py:17
 #, python-format
 msgctxt "UI"
 msgid "A Slush Pool-sponsored Bitcoin TREZOR with an amazing 33%% discount!"
-msgstr ""
+msgstr "Slush Pool sponsert Bitcoin TREZOR mit einem 33%% discount!"
 
 #: web/messages.py:18
+#, fuzzy
 msgctxt "UI"
 msgid ""
 "Keep your mined bitcoin safe with<br><strong>\"the most sophisticated "
 "financial authenticator device in the world!\"</strong>"
 msgstr ""
+"Speichere deine Bitcoins sicher mit<br><ᕕ( ᐛ )ᕗ>dem best entwickelten finanz "
+"autentifizierungs Gerät der Welt</strong>"
 
 #: web/models.py:169
 msgctxt "UI"
@@ -339,11 +355,13 @@ msgid ""
 "You have a pending request for changing your email, please confirm or cancel "
 "the request"
 msgstr ""
+"Du hast eine ausstehende Anfrage bezüglich Änderung deiner eMail Adresse, "
+"bitte bestätige oder verwerfe diese Anforderung."
 
 #: web/models.py:177
 msgctxt "UI"
 msgid "Your Bitcoin address for receiving rewards"
-msgstr ""
+msgstr "Deine Bitcoin Adresse auf die überwiesen werden soll"
 
 #: web/models.py:183
 msgctxt "UI"
@@ -356,41 +374,43 @@ msgstr ""
 msgctxt "UI"
 msgid "Coins will be sent once the reward crosses over the threshold"
 msgstr ""
+"Coins werden ausgezahlt, wenn der mindest-Auszahlungsbetrag erreicht oder "
+"überstiegen wird."
 
 #: web/models.py:191 web/models.py:818
 msgctxt "UI"
 msgid "Username in stats"
-msgstr ""
+msgstr "User Name in den Statistiken"
 
 #: web/models.py:193
 msgctxt "UI"
 msgid "Show my username in public server stats"
-msgstr ""
+msgstr "Zeige meinen User Namen in den öffentlichen Statistiken"
 
 #: web/models.py:194 web/models.py:819
 msgctxt "UI"
 msgid "Notify me on payout"
-msgstr ""
+msgstr "Benachrichtige mich bei einer Auszahlung"
 
 #: web/models.py:195
 msgctxt "UI"
 msgid "Send email when the system sends me a payment"
-msgstr ""
+msgstr "Schicke mir eine eMail, wenn ich eine Auszahlung  erhalten habe"
 
 #: web/models.py:197 web/models.py:820
 msgctxt "UI"
 msgid "Newsletter"
-msgstr ""
+msgstr "Newsletter"
 
 #: web/models.py:198
 msgctxt "UI"
 msgid "Receive pool newsletters"
-msgstr ""
+msgstr "Erhalte den Pool-Newsletter"
 
 #: web/models.py:203 web/models.py:821
 msgctxt "UI"
 msgid "Currency unit"
-msgstr ""
+msgstr "Währungseinheit"
 
 #: web/models.py:205
 msgctxt "UI"
@@ -400,33 +420,35 @@ msgstr ""
 #: web/models.py:208 web/models.py:823
 msgctxt "UI"
 msgid "Reporting enabled"
-msgstr ""
+msgstr "Benachrichtigungen eingeschaltet"
 
 #: web/models.py:210
 msgctxt "UI"
 msgid "Send emails about device state changes"
-msgstr ""
+msgstr "Schicke eMail wenn sich der Geräte Status ändert"
 
 #: web/models.py:212 web/templates/base.html:120
 #: web/templates/new_user_registered.html:47
 msgctxt "UI"
 msgid "User Manual"
-msgstr ""
+msgstr "Anleitung"
 
 #: web/models.py:213
 msgctxt "UI"
 msgid "Auto-detect expected hash rate for account"
-msgstr ""
+msgstr "Automatische Erkennung der Hashrate des Accounts"
 
 #: web/models.py:215
 msgctxt "UI"
 msgid "Calculate expected hash rate from past activity of all workers"
 msgstr ""
+"Berechne die zu erwartende Hashrate basierend auf letzter Aktivität aller "
+"Worker"
 
 #: web/models.py:217
 msgctxt "UI"
 msgid "Expected hash rate for account [Gh/s]"
-msgstr ""
+msgstr "Zu erwartende Hashrate für Account [GH/s]"
 
 #: web/models.py:218
 msgctxt "UI"
@@ -436,408 +458,411 @@ msgstr ""
 #: web/models.py:220
 msgctxt "UI"
 msgid "Max. reports per day"
-msgstr ""
+msgstr "Maximale Anzahl der Reporte pro Tag"
 
 #: web/models.py:222
 msgctxt "UI"
 msgid "Pool will not send more than this number of reports to you in one day"
-msgstr ""
+msgstr "Maximal Anzahl von Berichten pro Tag vom Pool"
 
 #: web/models.py:223
 msgctxt "UI"
 msgid "Watch proposals"
-msgstr ""
+msgstr "Vorschläge ansehen"
 
 #: web/models.py:224
 msgctxt "UI"
 msgid "Receive notifications about proposal changes to dashboard"
-msgstr ""
+msgstr "Erhalte Nachrichten bezüglich Vorschlagsänderungen im Dashboard"
 
 #: web/models.py:255
 msgctxt "UI"
 msgid "Token not generated yet"
-msgstr ""
+msgstr "Token noch nicht erstellt"
 
 #: web/models.py:257
 msgctxt "UI"
 msgid "Invalid token"
-msgstr ""
+msgstr "Token nicht valide"
 
 #: web/models.py:296
 msgctxt "UI"
 msgid "Wallet change confirmation"
-msgstr ""
+msgstr "Wallet Änderung bestätigt"
 
 #: web/models.py:316
 msgctxt "UI"
 msgid "Email change confirmation"
-msgstr ""
+msgstr "eMail Änderung bestätigt"
 
 #: web/models.py:466
 msgctxt "UI, Transaction state"
 msgid "New"
-msgstr ""
+msgstr "Neu"
 
 #: web/models.py:467
 msgctxt "UI, Transaction state"
 msgid "Processing"
-msgstr ""
+msgstr "wird bearbeitet"
 
 #: web/models.py:468
 msgctxt "UI, Transaction state"
 msgid "Failed"
-msgstr ""
+msgstr "ist gescheitert"
 
 #: web/models.py:469
 msgctxt "UI, Transaction state"
 msgid "Sent"
-msgstr ""
+msgstr "versendet"
 
 #: web/models.py:589
 msgctxt "UI, Proposals"
 msgid "Draft"
-msgstr ""
+msgstr "Entwurf"
 
 #: web/models.py:590
 msgctxt "UI, Proposals"
 msgid "Approved"
-msgstr ""
+msgstr "genehmigt"
 
 #: web/models.py:591
 msgctxt "UI, Proposals"
 msgid "Rejected"
-msgstr ""
+msgstr "abgelehnt"
 
 #: web/models.py:592
 msgctxt "UI, Proposals"
 msgid "In progress"
-msgstr ""
+msgstr "in bearbeitung"
 
 #: web/models.py:593
 msgctxt "UI, Proposals"
 msgid "Released"
-msgstr ""
+msgstr "herausgegeben"
 
 #: web/models.py:594
 msgctxt "UI, Proposals"
 msgid "Merged"
-msgstr ""
+msgstr "zusammengefügt"
 
 #: web/models.py:747
 #, python-format
 msgctxt "UI"
 msgid "Proposal %(link)s changed state from <b>%(old)s</b> to <b>%(new)s</b>"
-msgstr ""
+msgstr "Vorschläge %(link)s geändert von <b>%(old)s</b> zu <b>%(new)s</b>"
 
 #: web/models.py:756 web/models.py:764
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
-msgstr ""
+msgstr "<b>%(key)s</b> hat sich von <b>%(old)s</b> zu <b>%(new)s</b> geändert"
 
 #: web/models.py:760
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
-msgstr ""
+msgstr "<b>%(key)s</b> wurde zu <b>%(new)s</b> verändert"
 
 #: web/models.py:768
 #, python-format
 msgctxt "UI, time"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
-msgstr ""
+msgstr "<b>%(key)s</b> ändern sich <b>%(old)s</b> zu <b>%(new)s</b>"
 
 #: web/models.py:773
 msgctxt "UI"
 msgid "Nothing has changed"
-msgstr ""
+msgstr "Keine Veränderung"
 
 #: web/models.py:779 web/models.py:781 web/templates/blocks.html:66
 #: web/templates/payouts.html:71
 msgctxt "UI"
 msgid "N/A"
-msgstr ""
+msgstr "nicht Verfügbar"
 
 #: web/models.py:796 web/templates/worker.html:3
 msgctxt "UI"
 msgid "Worker"
-msgstr ""
+msgstr "Worker"
 
 #: web/models.py:825
 msgctxt "UI"
 msgid "Expected hash rate"
-msgstr ""
+msgstr "zu erwartende Hashrate"
 
 #: web/models.py:828
 msgctxt "UI"
 msgid "Pending wallet"
-msgstr ""
+msgstr "Ausstehende Wallet"
 
 #: web/models.py:829
+#, fuzzy
 msgctxt "UI"
 msgid "Send threshold"
-msgstr ""
+msgstr "Überweisungsschwelle"
 
 #: web/models.py:832 web/templates/settings.html:27
 #: web/templates/settings.html.py:30 web/templates/settings.html:461
 #: web/templates/settings.html.py:469 web/templates/settings.html:478
 msgctxt "UI"
 msgid "Monitoring"
-msgstr ""
+msgstr "Monitoring"
 
 #: web/models.py:833
 msgctxt "UI"
 msgid "Last Change"
-msgstr ""
+msgstr "letzte Änderung"
 
 #: web/models.py:837
 msgctxt "UI"
 msgid "Enabled"
-msgstr ""
+msgstr "aktiviert"
 
 #: web/models.py:837
 msgctxt "UI"
 msgid "Disabled"
-msgstr ""
+msgstr "deaktiviert"
 
 #: web/models.py:855
 msgctxt "UI"
 msgid "Account deleted"
-msgstr ""
+msgstr "Account gelöscht"
 
 #: web/models.py:856
 msgctxt "UI"
 msgid "Account deletion requested"
-msgstr ""
+msgstr "Anforderung zum löschen des Accounts"
 
 #: web/models.py:858 web/templates/login.html:4
 #: web/templates/registration_confirm_has_account.html:22
 msgctxt "UI"
 msgid "Login"
-msgstr ""
+msgstr "Einloggen"
 
 #: web/models.py:859
 msgctxt "UI"
 msgid "Logout"
-msgstr ""
+msgstr "Ausloggen"
 
 #: web/models.py:860
 msgctxt "UI"
 msgid "Message seen"
-msgstr ""
+msgstr "Nachricht gelesen"
 
 #: web/models.py:861
 msgctxt "UI"
 msgid "Monitoring settings updated"
-msgstr ""
+msgstr "Beobachtungseinstellungen aktualisiert"
 
 #: web/models.py:862
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
-msgstr ""
+msgstr "Newsletter abbestellt"
 
 #: web/models.py:863
 msgctxt "UI"
 msgid "2-factor authentication disabled"
-msgstr ""
+msgstr "sichere Authentifizierung (2FA) deaktiviert"
 
 #: web/models.py:864
 msgctxt "UI"
 msgid "2-factor authentication enabled"
-msgstr ""
+msgstr "sichere Authentifizierung (2FA) aktiviert"
 
 #: web/models.py:865 web/models.py:868
 msgctxt "UI"
 msgid "Password changed"
-msgstr ""
+msgstr "Passwort geändert"
 
 #: web/models.py:866
 msgctxt "UI"
 msgid "Password reset completed"
-msgstr ""
+msgstr "zurücksetzten  des Passworts abgeschlossen"
 
 #: web/models.py:867
 msgctxt "UI"
 msgid "Password reset initiated"
-msgstr ""
+msgstr "zurücksetzten  des Passworts initialisiert"
 
 #: web/models.py:869
 msgctxt "UI"
 msgid "Payout settings updated"
-msgstr ""
+msgstr "Auszahlungseinstellungen aktualisiert"
 
 #: web/models.py:871
 msgctxt "UI"
 msgid "Proposal created"
-msgstr ""
+msgstr "Vorschlag erstellt"
 
 #: web/models.py:872
 msgctxt "UI"
 msgid "You have created a new proposal:"
-msgstr ""
+msgstr "Du hast einen neuen Vorschlag erstellt:"
 
 #: web/models.py:874
 msgctxt "UI"
 msgid "Proposal comment deleted"
-msgstr ""
+msgstr "Kommentar zum Vorschlag gelöscht"
 
 #: web/models.py:876
 msgctxt "UI"
 msgid "Proposal updated"
-msgstr ""
+msgstr "Vorschlag aktualisiert"
 
 #: web/models.py:879
 msgctxt "UI"
 msgid "Proposal state changed"
-msgstr ""
+msgstr "Vorschlagsstatus hat sich geändert"
 
 #: web/models.py:881
 msgctxt "UI"
 msgid "Proposal vote"
-msgstr ""
+msgstr "Vorschlagswahl"
 
 #: web/models.py:882
 #, python-format
 msgctxt "UI"
 msgid "You gave <b>%(points)s</b> points to proposal"
-msgstr ""
+msgstr "Du hast <b>%(points)s</b> Punkte vergeben"
 
 #: web/models.py:884
 msgctxt "UI"
 msgid "Account settings updated"
-msgstr ""
+msgstr "Account Einstellungen aktualisiert"
 
 #: web/models.py:885
 msgctxt "UI"
 msgid "Wallet change confirmed"
-msgstr ""
+msgstr "Wallet Änderung bestätigt"
 
 #: web/models.py:886
 msgctxt "UI"
 msgid "Wallet change cancelled"
-msgstr ""
+msgstr "Wallet Änderung abgebrochen"
 
 #: web/models.py:887
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
-msgstr ""
+msgstr "Wallet Änderungsbestätigung neu gesendet"
 
 #: web/models.py:888
 msgctxt "UI"
 msgid "Email change confirmed"
-msgstr ""
+msgstr "eMail Änderung bestätigt"
 
 #: web/models.py:889
 msgctxt "UI"
 msgid "Email change cancelled"
-msgstr ""
+msgstr "eMail Änderung abgebrochen"
 
 #: web/models.py:890
 msgctxt "UI"
 msgid "Email change confirmation resent"
-msgstr ""
+msgstr "eMail Änderungsbestätigung neu gesendet"
 
 #: web/models.py:891
 msgctxt "UI"
 msgid "Wallet locked"
-msgstr ""
+msgstr "Wallet gesperrt"
 
 #: web/models.py:892
 msgctxt "UI"
 msgid "Wallet unlocked"
-msgstr ""
+msgstr "Wallet entsperrt"
 
 #: web/models.py:893
 msgctxt "UI"
 msgid "Worker removed"
-msgstr ""
+msgstr "Worker gelöscht"
 
 #: web/models.py:893
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
-msgstr ""
+msgstr "Du hast den Worker <b>%(name)s</b> gelöscht"
 
 #: web/models.py:894
 msgctxt "UI"
 msgid "Monitoring disabled for all workers"
-msgstr ""
+msgstr "Beobachtung für alle Worker deaktiviert"
 
 #: web/models.py:895
 msgctxt "UI"
 msgid "Monitoring enabled for all workers"
-msgstr ""
+msgstr "Beobachtung für alle Worker aktiviert"
 
 #: web/models.py:896
 msgctxt "UI"
 msgid "Worker settings updated"
-msgstr ""
+msgstr "Worker Einstellungen aktualisiert"
 
 #: web/models.py:897 web/templates/worker.html:22
 #: web/templates/workers.html:20
 msgctxt "UI"
 msgid "New worker"
-msgstr ""
+msgstr "Neuer Worker"
 
 #: web/models.py:897
 msgctxt "UI"
 msgid "You have registered a new worker"
-msgstr ""
+msgstr "Du hast einen neuen Worker angelegt"
 
 #: web/models.py:899
 msgctxt "UI"
 msgid "Invalid Login"
-msgstr ""
+msgstr "Login nicht valide"
 
 #: web/registration.py:53
 msgctxt "UI"
 msgid "New account confirmation"
-msgstr ""
+msgstr "Neue Account Bestätigung"
 
 #: web/views.py:307
 msgctxt "UI"
 msgid "Monitoring <b>enabled</b> on all workers."
-msgstr ""
+msgstr "Beobachtung für alle Worker <b>aktiviert</b>"
 
 #: web/views.py:319
 msgctxt "UI"
 msgid "Monitoring <b>disabled</b> on all workers."
-msgstr ""
+msgstr "Beobachtung für alle Worker <b>deaktiviert</b>"
 
 #: web/views.py:329
 msgctxt "UI"
 msgid "Worker does not exist."
-msgstr ""
+msgstr "Worker existiert nicht."
 
 #: web/views.py:351
 msgctxt "UI"
 msgid "Worker settings has been updated."
-msgstr ""
+msgstr "Worker Einstellungen aktualisiert."
 
 #: web/views.py:361
 msgctxt "UI"
 msgid "Worker has been created."
-msgstr ""
+msgstr "Worker wurde erstellt."
 
 #: web/views.py:468
 msgctxt "UI"
 msgid "Two-factor authentication isn't configured yet"
-msgstr ""
+msgstr "Sichere Authentifizierung (2FA) noch nicht aktiviert"
 
 #: web/views.py:479
 msgctxt "UI"
 msgid "Two-factor authentication token is invalid. Please, enter valid token."
 msgstr ""
+"Sichere Authentifizierung (2FA) Token ist nicht valide. Bitte ein valides "
+"Token eingeben."
 
 #: web/views.py:487
 msgctxt "UI"
 msgid "Two-factor authentication has been succesfully disabled."
-msgstr ""
+msgstr "Sichere Authentifizierung (2FA) wurde erfolgreich deaktiviert."
 
 #: web/views.py:499
 msgctxt "UI"
 msgid "Two-factor authentication is already configured"
-msgstr ""
+msgstr "Sichere Authentifizierung (2FA) ist bereits eingerichtet"
 
 #: web/views.py:516
 msgctxt "UI"
@@ -845,26 +870,28 @@ msgid ""
 "Two-factor authentication token is invalid. Please, re-scan the QR code (a "
 "new one has been generated for security reasons)."
 msgstr ""
+"Sichere Authentifizierung (2FA) Token nicht valide. Bitte den QR-Code "
+"nochmal senden (aus Sicherheitsgründen wurde ein neuer generiert)"
 
 #: web/views.py:524
 msgctxt "UI"
 msgid "Two-factor authentication has been configured."
-msgstr ""
+msgstr "Sichere Authentifizierung (2FA) wurde eingerichtet."
 
 #: web/views.py:536
 msgctxt "UI"
 msgid "Invalid request"
-msgstr ""
+msgstr "Invalide Anfrage"
 
 #: web/views.py:550
 msgctxt "UI"
 msgid "Wallet is not valid"
-msgstr ""
+msgstr "Wallet ist nicht valide"
 
 #: web/views.py:560
 msgctxt "UI"
 msgid "Your payout address has been locked."
-msgstr ""
+msgstr "Deine Auszahlungsadresse wurde gesperrt."
 
 #: web/views.py:603 web/views.py:683 web/views.py:859 web/views.py:997
 msgctxt "UI"
@@ -872,58 +899,63 @@ msgid ""
 "Confirmation email has been sent. Please, check your mailbox and follow the "
 "link."
 msgstr ""
+"Bestätigungs-eMail wurde versendet. Bitte den Link in der eMail klicken."
 
 #: web/views.py:610
 msgctxt "UI"
 msgid "The account has been updated."
-msgstr ""
+msgstr "Account wurde aktualisiert."
 
 #: web/views.py:625
 msgctxt "UI"
 msgid "The monitoring settings has been updated."
-msgstr ""
+msgstr "Beobachtungseinstellungen wurden aktualisiert."
 
 #: web/views.py:661
 msgctxt "UI"
 msgid "Password has been successfully changed."
-msgstr ""
+msgstr "Passwort wurde erfolgreich geändert."
 
 #: web/views.py:695
 msgctxt "UI"
 msgid "The payouts settings has been updated."
-msgstr ""
+msgstr "Die Auszahlungseinstellungen wurden erfolgreich aktualisiert."
 
 #: web/views.py:708
 msgctxt "UI"
 msgid "Delete account confirmation"
-msgstr ""
+msgstr "Lösche Accountbestätigung"
 
 #: web/views.py:724
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
-msgstr ""
+msgstr "Eine eMail bezüglich der Löschung deines Accounts wurde an %s gesendet."
 
 #: web/views.py:872
 msgctxt "UI"
 msgid "Email change request has been successfully canceled."
-msgstr ""
+msgstr "Anfrage bezüglich Änderung der eMail wurde abgebrochen."
 
 #: web/views.py:976
 msgctxt "UI"
 msgid "Wallet change request has been successfully canceled."
-msgstr ""
+msgstr "Anfrage bezüglich Änderung der Wallet wurde abgebrochen."
 
 #: web/views.py:1008
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at support@bitcoin.cz"
 msgstr ""
+"Der Account ist gesperrt! Bitte den Pool-Administrator via support@"
+"bitcoin.cz kontaktieren."
 
 #: web/views.py:1033
 #, python-format
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at %(link)s"
 msgstr ""
+"Der Account ist gesperrt! Bitte den Pool-Administrator via %(link)s "
+"kontaktieren."
 
 #: web/views.py:1042
 #, python-format
@@ -932,12 +964,14 @@ msgid ""
 "Your payouts have been temporarily blocked by the pool operator "
 "(%(reason)s). "
 msgstr ""
+"Deine Auszahlungsadresse wurde vorübergehend durch den Pool Eigentümer "
+"gesperrt (%(reason)s). "
 
 #: web/views.py:1043
 #, python-format
 msgctxt "UI"
 msgid "Please, contact %(link)s for further details."
-msgstr ""
+msgstr "Bitte %(link)s kontaktieren für weitere Informationen."
 
 #: web/views.py:1065
 msgctxt "UI"
@@ -945,11 +979,13 @@ msgid ""
 "Please consider enabling payout address protection by two-factor "
 "authentication or by locking it"
 msgstr ""
+"Bitte erwäge sichere Authentifizierung (2FA) oder sperre zumindest die "
+"Payout Adresse."
 
 #: web/views.py:1067 web/templates/settings.html:3
 msgctxt "UI"
 msgid "Account settings"
-msgstr ""
+msgstr "Accounteinstellungen"
 
 #: web/views.py:1570
 msgctxt "UI"
