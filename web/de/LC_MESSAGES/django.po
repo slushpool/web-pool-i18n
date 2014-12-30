@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-08 20:04+0000\n"
-"PO-Revision-Date: 2014-12-25 11:36+0200\n"
+"PO-Revision-Date: 2014-12-30 15:18+0200\n"
 "Last-Translator: Jochen Spalding <jochen.spalding@me.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/bitcoin-"
 "cz/mining/de/>\n"
@@ -52,7 +52,6 @@ msgid "Monitoring enabled"
 msgstr "Beobachtung eingeschaltet"
 
 #: mining/models.py:174
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "The monitoring system will detect and report any hash rate issues related to "
@@ -201,10 +200,9 @@ msgstr ""
 "eintragen"
 
 #: web/forms.py:216 web/templates/settings.html:504
-#, fuzzy
 msgctxt "UI"
 msgid "An additional fee of 0.0001 BTC applies to payouts lower than 0.01 BTC."
-msgstr "Es fallen Gebühren in höhe von 0.0001 BTC an."
+msgstr "Es fallen Gebühren in Höhe von 0.0001 BTC an."
 
 #: web/forms.py:241
 msgctxt "UI"
@@ -909,14 +907,13 @@ msgid "Your payout address has been locked."
 msgstr "Deine Payout-Adresse wurde gelockt."
 
 #: web/views.py:603 web/views.py:683 web/views.py:859 web/views.py:997
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "Confirmation email has been sent. Please, check your mailbox and follow the "
 "link."
 msgstr ""
-"Bestätigungs-EMail versendet. Check deine EMails und folge dem enthaltenen "
-"Link."
+"Bestätigungs-eMail versandt. Überprüfe deine eMails und folge dem "
+"entsprechenden Link."
 
 #: web/views.py:610
 #, fuzzy
@@ -925,62 +922,54 @@ msgid "The account has been updated."
 msgstr "Konto-Einstellungen aktualisiert."
 
 #: web/views.py:625
-#, fuzzy
 msgctxt "UI"
 msgid "The monitoring settings has been updated."
-msgstr "Namecoin-Einstellungen aktualisiert."
+msgstr "Beobachtungs-Einstellungen aktualisiert."
 
 #: web/views.py:661
-#, fuzzy
 msgctxt "UI"
 msgid "Password has been successfully changed."
-msgstr "Deine Adresse wurde erfolgreich geändert."
+msgstr "Passwort wurde erfolgreich geändert."
 
 #: web/views.py:695
-#, fuzzy
 msgctxt "UI"
 msgid "The payouts settings has been updated."
-msgstr "Namecoin-Einstellungen aktualisiert."
+msgstr "Auszahlungs-Einstellungen aktualisiert."
 
 #: web/views.py:708
-#, fuzzy
 msgctxt "UI"
 msgid "Delete account confirmation"
-msgstr "Bestätigung einer Adressänderung"
+msgstr "Bestätigung der Account-Löschung"
 
 #: web/views.py:724
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
 msgstr ""
+"Eine Nachricht bezüglich der  Löscheung des Accounts wurde an %s gesendet."
 
 #: web/views.py:872
-#, fuzzy
 msgctxt "UI"
 msgid "Email change request has been successfully canceled."
-msgstr "Anfrage zur Änderung der Adresse abgebrochen"
+msgstr "Anfrage zur Änderung der Adresse erfolgreich abgebrochen."
 
 #: web/views.py:976
-#, fuzzy
 msgctxt "UI"
 msgid "Wallet change request has been successfully canceled."
-msgstr "Anfrage zur Änderung der Adresse abgebrochen"
+msgstr "Anfrage zur Änderung der Adresse erfolgreich abgebrochen."
 
 #: web/views.py:1008
-#, fuzzy
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at support@bitcoin.cz"
 msgstr ""
-"Konto deaktiviert. Bitte nimm Kontakt mit dem Pool-Administrator unter "
-"support@bitcoin.cz auf"
+"Konto deaktiviert. Bitte kontaktiere Pool-Administrator unter "
+"support@bitcoin.cz"
 
 #: web/views.py:1033
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at %(link)s"
-msgstr ""
-"Konto deaktiviert. Bitte nimm Kontakt mit dem Pool-Administrator unter "
-"support@bitcoin.cz auf"
+msgstr "Konto deaktiviert. Bitte kontaktiere Pool-Administrator unter %(link)s"
 
 #: web/views.py:1042
 #, python-format
@@ -989,12 +978,14 @@ msgid ""
 "Your payouts have been temporarily blocked by the pool operator "
 "(%(reason)s). "
 msgstr ""
+"Die Auszahlungen wurden vorübergehend vom Pool-Betreiber deaktiviert "
+"(%(reason)s). "
 
 #: web/views.py:1043
 #, python-format
 msgctxt "UI"
 msgid "Please, contact %(link)s for further details."
-msgstr ""
+msgstr "Bitte kontaktiere %(link)s für weitere Details."
 
 #: web/views.py:1065
 msgctxt "UI"
@@ -1002,18 +993,18 @@ msgid ""
 "Please consider enabling payout address protection by two-factor "
 "authentication or by locking it"
 msgstr ""
+"Bitte erwäge die Aktivierung der Zwei-Faktoren Authentifizierung (2FA) oder "
+"Locken der Auszahlungsadresse"
 
 #: web/views.py:1067 web/templates/settings.html:3
-#, fuzzy
 msgctxt "UI"
 msgid "Account settings"
 msgstr "Konto-Einstellungen"
 
 #: web/views.py:1570
-#, fuzzy
 msgctxt "UI"
 msgid "Requested proposal is waiting for admin confirmation"
-msgstr "Bestätigung einer Adressänderung"
+msgstr "Verbesserungsvorschlag wartet auf Bestätigung durch den Administrator"
 
 #: web/templates/account_delete_invalid.html:13
 msgctxt "UI"
@@ -1022,6 +1013,9 @@ msgid ""
 "link has been generated in less than one hour ago. If your current link is "
 "older than that, please go to your profile settings and retry your request."
 msgstr ""
+"Dieser Bestätigungs-Link ist nicht valide weil er vermutlich älter als eine "
+"Stunde ist. Bitte den Bestätigungs-Link in den Profileinstellungen erneut "
+"anfordern."
 
 #: web/templates/account_delete_success.html:13
 msgctxt "UI"
@@ -1029,185 +1023,168 @@ msgid ""
 "Your account has been succesfuly deleted. If you would like to register to "
 "our pool again in future, your former username can be used again."
 msgstr ""
+"Dein Account wurde erfolgreich gelöscht. Wenn du dich in Zukunft neu "
+"registrieren möchtest, kann dein ursprünglicher Benutzername wiederverwandt "
+"werden."
 
 #: web/templates/activity_log.html:3
 msgctxt "UI"
 msgid "Activity log"
-msgstr ""
+msgstr "Aktivitäts-Log"
 
 #: web/templates/activity_log.html:12 web/templates/activity_log.html.py:18
-#, fuzzy
 msgctxt "UI"
 msgid "Activity <span>Log</span>"
-msgstr "Neues Konto anlegen"
+msgstr "Aktivität <span>Log</span>"
 
 #: web/templates/activity_log.html:13
-#, fuzzy
 msgctxt "UI"
 msgid "Activity Log is not available in Demo account."
-msgstr "Konto löschen"
+msgstr "Aktivitäts-Log ist im Demo-Account nicht verfügbar."
 
 #: web/templates/activity_log.html:19 web/templates/blocks.html:36
 #: web/templates/payouts.html:36 web/templates/rewards.html:36
-#, fuzzy
 msgctxt "UI"
 msgid "All times are in UTC."
-msgstr "Alle Zeitangaben in UTC"
+msgstr "Alle Zeitangaben in UTC."
 
 #: web/templates/activity_log.html:29
 msgctxt "UI"
 msgid "Timestamp"
-msgstr ""
+msgstr "Zeitstempel"
 
 #: web/templates/activity_log.html:30
 msgctxt "UI"
 msgid "Activity"
-msgstr ""
+msgstr "Aktivität"
 
 #: web/templates/activity_log.html:31
-#, fuzzy
 msgctxt "UI"
 msgid "Details"
-msgstr "API-Details"
+msgstr "Details"
 
 #: web/templates/activity_log.html:32
-#, fuzzy
 msgctxt "UI"
 msgid "IP Address"
-msgstr "Adresse"
+msgstr "IP-Adresse"
 
 #: web/templates/activity_log.html:56
 msgctxt "Intro"
 msgid "Short, broad type of activity."
-msgstr ""
+msgstr "Kurz- oder Langfassung der Aktivitäten."
 
 #: web/templates/activity_log.html:63
 msgctxt "Intro"
 msgid "Detailed description for certain type of activities with value changes."
-msgstr ""
+msgstr "Detaillierte Beschreibung für bestimmter Aktivitäten mit Wertänderung."
 
 #: web/templates/activity_log.html:71
 msgctxt "Intro"
 msgid "IP adress of computer that initiated the change."
-msgstr ""
+msgstr "IP Adresse des Computers, der die Änderung ausgelöst hat."
 
 #: web/templates/base.html:73
 msgid "Loading ..."
-msgstr ""
+msgstr "Lade..."
 
 #: web/templates/base.html:119
-#, fuzzy
 msgctxt "UI"
 msgid "<strong>Home</strong>"
-msgstr "Konto-Einstellungen"
+msgstr "<strong>Home</strong>"
 
 #: web/templates/base.html:128
-#, fuzzy
 msgctxt "UI"
 msgid "<strong>Pool</strong> Statistics"
-msgstr "Konto-Einstellungen"
+msgstr "<strong>Pool</strong>  Statistik"
 
 #: web/templates/base.html:129
 msgctxt "UI"
 msgid "Public facts"
-msgstr ""
+msgstr "Öffentliche Fakten"
 
 #: web/templates/base.html:138 web/templates/menu2_contactus_links.html:2
-#, fuzzy
 msgctxt "UI"
 msgid "<strong>Contact</strong> Us"
-msgstr "Konto-Einstellungen"
+msgstr "<strong>Kontakt</strong> zu uns"
 
 #: web/templates/base.html:139 web/templates/menu2_devel_corner.html:4
-#, fuzzy
 msgctxt "UI"
 msgid "Development <span>Corner</span>"
-msgstr "Mein Konto"
+msgstr "Entwicklungs <span>Ecke</span>"
 
 #: web/templates/base.html:148
-#, fuzzy
 msgctxt "UI"
 msgid "<strong>My</strong> account"
-msgstr "Konto-Einstellungen"
+msgstr "<strong>Mein</strong> Account"
 
 #: web/templates/base.html:149 web/templates/base.html.py:177
 msgctxt "UI"
 msgid "Private zone"
-msgstr ""
+msgstr "Private Zone"
 
 #: web/templates/base.html:155
-#, fuzzy
 msgctxt "UI"
 msgid "<strong>Log out</strong>"
-msgstr "Konto-Einstellungen"
+msgstr "<strong>Ausloggen</strong>"
 
 #: web/templates/base.html:170
-#, fuzzy
 msgctxt "UI"
 msgid "<strong>Sign up</strong> HERE"
-msgstr "Konto-Einstellungen"
+msgstr "Melde dich <strong>HIER</strong> an"
 
 #: web/templates/base.html:171
-#, fuzzy
 msgctxt "UI"
 msgid "New account"
-msgstr "Mein Konto"
+msgstr "Neues Konto"
 
 #: web/templates/base.html:176
-#, fuzzy
 msgctxt "UI"
 msgid "<strong>Log in</strong>"
-msgstr "Konto-Einstellungen"
+msgstr "<strong>Einloggen</strong>"
 
 #: web/templates/base.html:198
-#, fuzzy
 msgctxt "UI"
 msgid "You are using a <strong>Demo Account</strong>"
-msgstr "Konto-Einstellungen"
+msgstr "Du benutzt einen <strong>Demo Account</strong>"
 
 #: web/templates/base.html:201
-#, fuzzy
 msgctxt "UI"
 msgid "Log in"
 msgstr "Einloggen"
 
 #: web/templates/base.html:202
-#, fuzzy
 msgctxt "UI"
 msgid "Sign up"
 msgstr "Registrieren"
 
 #: web/templates/base.html:220
-#, fuzzy
 msgctxt "UI"
 msgid "Back to Top"
-msgstr "zurück zum Profil"
+msgstr "zurück zum Anfang"
 
 #: web/templates/base.html:222
 #, python-format
 msgctxt "UI"
 msgid "Follow us on %(twitter)s and %(facebook)s."
-msgstr ""
+msgstr "Folge uns auf %(twitter)s und %(facebook)s."
 
 #: web/templates/base.html:239
 msgctxt "UI"
 msgid "You cannot do this in the Demo account, please log in to proceed."
 msgstr ""
+"Dies ist im Demo-Account nicht möglich. Bitte einloggen um fortzufahren."
 
 #: web/templates/blocks.html:3
-#, fuzzy
 msgctxt "UI"
 msgid "Block History"
 msgstr "Bitcoin Block-Historie"
 
 #: web/templates/blocks.html:35
-#, fuzzy
 msgctxt "UI"
 msgid "Block <span>History</span>"
-msgstr "Neues Konto anlegen"
+msgstr "Block <span>Historie</span>"
 
 #: web/templates/blocks.html:47 web/templates/rewards.html:48
-#, fuzzy
 msgctxt "UI"
 msgid "Block Found At"
 msgstr "Block gefunden"
@@ -1219,13 +1196,11 @@ msgid "Duration"
 msgstr "Dauer"
 
 #: web/templates/blocks.html:49
-#, fuzzy
 msgctxt "UI"
 msgid "Pool Scoring<br/>Hashrate"
-msgstr "Gesamt-Score laufende Runde"
+msgstr "Pool Wertung<br/>Hash-Rate"
 
 #: web/templates/blocks.html:50
-#, fuzzy
 msgctxt "UI"
 msgid "Difficulty"
 msgstr "Difficulty"
@@ -1233,36 +1208,34 @@ msgstr "Difficulty"
 #: web/templates/blocks.html:51
 msgctxt "UI"
 msgid "Pool Luck"
-msgstr ""
+msgstr "Pool 'Glück'"
 
 #: web/templates/blocks.html:52
-#, fuzzy
 msgctxt "UI"
 msgid "Block #"
-msgstr "Bitcoin Block-Historie"
+msgstr "Block #"
 
 #: web/templates/blocks.html:53 web/templates/rewards.html:52
 msgctxt "UI"
 msgid "Block Value"
-msgstr ""
+msgstr "Wert des Blocks"
 
 #: web/templates/blocks.html:54
 #, fuzzy
 msgctxt "UI"
 msgid "Confirm.<br />Left "
-msgstr "Bestätigungen ausstehend"
+msgstr "Bestätigungen ausstehend "
 
 #: web/templates/blocks.html:78
-#, fuzzy
 msgctxt "UI"
 msgid "Pool <span>Daily Reward</span>"
-msgstr "Neues Konto anlegen"
+msgstr "Pool <span>Tägliche Vergütung</span>"
 
 #: web/templates/blocks.html:85 web/templates/rewards.html:90
 #: web/templates/stats.html:67 web/templates/stats.html.py:105
 msgctxt "UI"
 msgid "Loading chart data, please wait&hellip;"
-msgstr ""
+msgstr "Lade Daten, bitte warten;"
 
 #: web/templates/blocks.html:94 web/templates/rewards.html:145
 #, fuzzy
@@ -1273,17 +1246,17 @@ msgstr "tägliche Vergütung"
 #: web/templates/blocks.html:95 web/templates/rewards.html:146
 msgctxt "UI"
 msgid "7-day Average"
-msgstr ""
+msgstr "7-Tage Durchschnitt"
 
 #: web/templates/blocks.html:107
 msgctxt "Intro"
 msgid "A unique identifier assigned to each found block by the pool."
-msgstr ""
+msgstr "Zugewiesene einmalige Kennung für jeden vom Pool gefundenen Block."
 
 #: web/templates/blocks.html:115
 msgctxt "Intro"
 msgid "Total scoring hash rate of the pool at time when a block was found."
-msgstr ""
+msgstr "Pool Hash-Rate während ein Block gefunden wurde."
 
 #: web/templates/blocks.html:116
 msgctxt "Intro"
@@ -1291,56 +1264,56 @@ msgid ""
 "This value and your scoring hash rate from the same time are used for "
 "calculating your reward for the block."
 msgstr ""
+"Dieser Wert sowie die bewertete Hash-Rate wird zum errechnen der Vergütung "
+"je Block benutzt."
 
 #: web/templates/blocks.html:118
 msgctxt "Intro"
 msgid "Visit User Manual for more details"
-msgstr ""
+msgstr "Für weitere Details bitte die Anleitung lesen"
 
 #: web/templates/blocks.html:126
 msgctxt "Intro"
 msgid "A block number within the Bitcoin block chain. "
-msgstr ""
+msgstr "Eine Block-Nummer aus der Bitcoin Block-Chain "
 
 #: web/templates/blocks.html:127
 msgctxt "Intro"
 msgid ""
 "Follow the link to see more details about the block on blockchain.info. "
 msgstr ""
+"Folge dem Link für weitere Informationen über diesen Block auf "
+"blockchain.info. "
 
 #: web/templates/chart-switch.html:7
-#, fuzzy
 msgctxt "UI"
 msgid "Date range:"
-msgstr "Arbeiter"
+msgstr "Datum von/bis"
 
 #: web/templates/chart-switch.html:15
-#, fuzzy
 msgctxt "UI"
 msgid "Show active range"
-msgstr "Arbeiter"
+msgstr "Zeige aktive Zeiten"
 
 #: web/templates/chart-switch.html:21
-#, fuzzy
 msgctxt "UI"
 msgid "Show monitoring states"
-msgstr "Konto-Einstellungen"
+msgstr "Zeige Beobachtungsstatus"
 
 #: web/templates/confirm_page_template.html:3
-#, fuzzy
 msgctxt "UI"
 msgid "Confirmation page"
-msgstr "Bestätigungen ausstehend"
+msgstr "Bestätigungs-Seite"
 
 #: web/templates/contacts.html:3
 msgctxt "UI"
 msgid "Contact Us"
-msgstr ""
+msgstr "Kontaktiere uns"
 
 #: web/templates/contacts.html:17
 msgctxt "UI"
 msgid "You can use multiple channels to reach out to us."
-msgstr ""
+msgstr "Es gibt mehrere Möglichkeiten uns zu kontaktieren."
 
 #: web/templates/contacts.html:18
 #, python-format
