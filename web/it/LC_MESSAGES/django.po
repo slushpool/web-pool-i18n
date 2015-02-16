@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-16 12:44+0000\n"
+"POT-Creation-Date: 2015-02-16 14:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,14 +27,33 @@ msgctxt "UI, Blocks"
 msgid "Confirmed"
 msgstr ""
 
-#: mining/models.py:162 web/models.py:838 web/templates/workers.html:47
+#: mailing/forms.py:36 mailing/forms.py:39 mailing/views.py:67
+msgid "UI"
+msgstr ""
+
+#: mailing/templates/mailing/unsubscribe.html:21
+msgctxt "UI"
+msgid "Unsubscribe me"
+msgstr ""
+
+#: mailing/templates/mailing/unsubscribe_confirm.html:12
+msgctxt "UI"
+msgid "You have been unsubscribed from Slush Pool's newsletter."
+msgstr ""
+
+#: mailing/templates/mailing/unsubscribe_confirm.html:13
+msgctxt "UI"
+msgid "Go to Homepage"
+msgstr ""
+
+#: mining/models.py:162 web/models.py:848 web/templates/workers.html:47
 msgctxt "UI"
 msgid "Login suffix"
 msgstr ""
 
 #: mining/models.py:170
 msgctxt "UI"
-msgid "Expected Hash Rate [Gh/s]"
+msgid "Alert Limit [Gh/s]"
 msgstr ""
 
 #: mining/models.py:171
@@ -54,9 +73,9 @@ msgid ""
 "this worker"
 msgstr ""
 
-#: mining/models.py:175 web/models.py:828
+#: mining/models.py:175 web/models.py:838
 msgctxt "UI"
-msgid "Auto-detect expected hash rate"
+msgid "Auto-detect alert limit"
 msgstr ""
 
 #: mining/models.py:177
@@ -66,67 +85,67 @@ msgid ""
 "based on its past activity"
 msgstr ""
 
-#: project/settings.py:167
+#: project/settings.py:177
 msgid "English"
 msgstr ""
 
-#: project/settings.py:168
+#: project/settings.py:178
 msgid "German"
 msgstr ""
 
-#: project/settings.py:169
+#: project/settings.py:179
 msgid "French"
 msgstr ""
 
-#: project/settings.py:170
+#: project/settings.py:180
 msgid "Russian"
 msgstr ""
 
-#: project/settings.py:171
+#: project/settings.py:181
 msgid "Czech"
 msgstr ""
 
-#: project/settings.py:172
+#: project/settings.py:182
 msgid "Polish"
 msgstr ""
 
-#: project/settings.py:173
+#: project/settings.py:183
 msgid "Dutch"
 msgstr ""
 
-#: project/settings.py:174
+#: project/settings.py:184
 msgid "Spanish"
 msgstr ""
 
-#: project/settings.py:175
+#: project/settings.py:185
 msgid "Brazilian Portuguese"
 msgstr ""
 
-#: project/settings.py:176
+#: project/settings.py:186
 msgid "Simplified Chinese"
 msgstr ""
 
-#: project/settings.py:177
+#: project/settings.py:187
 msgid "Esperanto"
 msgstr ""
 
-#: project/settings.py:178
+#: project/settings.py:188
 msgid "Romanian"
 msgstr ""
 
-#: project/settings.py:179
+#: project/settings.py:189
 msgid "Hungarian"
 msgstr ""
 
-#: project/settings.py:180
+#: project/settings.py:190
 msgid "Italian"
 msgstr ""
 
-#: project/settings.py:181
+#: project/settings.py:191
 msgid "Turkish"
 msgstr ""
 
-#: web/auth_views.py:120
+#: web/auth_views.py:127
 msgctxt "UI"
 msgid "Logged out"
 msgstr ""
@@ -163,7 +182,7 @@ msgctxt "UI"
 msgid "New email must be different from the current."
 msgstr ""
 
-#: web/forms.py:135 web/models.py:831
+#: web/forms.py:135 web/models.py:841
 msgctxt "UI"
 msgid "Wallet"
 msgstr ""
@@ -198,104 +217,104 @@ msgctxt "UI"
 msgid "Signature is not valid."
 msgstr ""
 
-#: web/forms.py:195
+#: web/forms.py:180
 msgctxt "UI"
 msgid "If you wish to change your BTC wallet, enter its address here"
 msgstr ""
 
-#: web/forms.py:216 web/templates/settings.html:504
+#: web/forms.py:201 web/templates/settings.html:504
 msgctxt "UI"
 msgid "An additional fee of 0.0001 BTC applies to payouts lower than 0.01 BTC."
 msgstr ""
 
-#: web/forms.py:238
+#: web/forms.py:223
 msgctxt "UI"
 msgid ""
 "This is not a valid Bitcoin address. Please install Bitcoin client or "
 "register some web wallet to get one."
 msgstr ""
 
-#: web/forms.py:241
+#: web/forms.py:226
 msgctxt "UI"
 msgid "New wallet must be different from the current."
 msgstr ""
 
-#: web/forms.py:259
+#: web/forms.py:244
 msgctxt "UI"
 msgid "Sending threshold must be >= 0.001 BTC"
 msgstr ""
 
-#: web/forms.py:262
+#: web/forms.py:247
 msgctxt "UI"
 msgid "Sending threshold must be <= 5 BTC"
 msgstr ""
 
-#: web/forms.py:283 web/models.py:839
+#: web/forms.py:268 web/models.py:849
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr ""
 
-#: web/forms.py:284
+#: web/forms.py:269
 msgctxt "UI"
 msgid "Pool always assigns difficulty equal or greater than this value."
 msgstr ""
 
-#: web/forms.py:317
+#: web/forms.py:302
 msgctxt "UI"
 msgid ""
 "Only letters, numbers and the following characters are accepted: _ @ + -"
 msgstr ""
 
-#: web/forms.py:323 web/forms.py:328 web/forms.py:332
+#: web/forms.py:308 web/forms.py:313 web/forms.py:317
 #, python-format
 msgctxt "UI"
 msgid "Worker %s already exists"
 msgstr ""
 
-#: web/forms.py:345 web/templates/hall-of-fame.html:19
+#: web/forms.py:330 web/templates/hall-of-fame.html:19
 #: web/templates/hall-of-fame.html.py:47
 msgctxt "UI"
 msgid "Username"
 msgstr ""
 
-#: web/forms.py:346
+#: web/forms.py:331
 msgctxt "UI"
 msgid "Enter a valid username."
 msgstr ""
 
-#: web/forms.py:347 web/models.py:834
+#: web/forms.py:332 web/models.py:844
 msgctxt "UI"
 msgid "Email"
 msgstr ""
 
-#: web/forms.py:348
+#: web/forms.py:333
 msgctxt "UI"
 msgid "Required password"
 msgstr ""
 
-#: web/forms.py:349
+#: web/forms.py:334
 msgctxt "UI"
 msgid "Password again"
 msgstr ""
 
-#: web/forms.py:360
+#: web/forms.py:345
 msgctxt "UI"
 msgid "Passwords are different!"
 msgstr ""
 
-#: web/forms.py:446
+#: web/forms.py:431
 #, python-format
 msgctxt "UI"
 msgid "Points must be greater or equal than %s."
 msgstr ""
 
-#: web/forms.py:448
+#: web/forms.py:433
 #, python-format
 msgctxt "UI"
 msgid "Points must be lower or equal than %s."
 msgstr ""
 
-#: web/forms.py:466
+#: web/forms.py:451
 msgctxt "UI"
 msgid "New comment"
 msgstr ""
@@ -347,458 +366,468 @@ msgid ""
 "financial authenticator device in the world!\"</strong>"
 msgstr ""
 
-#: web/models.py:172
+#: web/models.py:175
+msgctxt "UI"
+msgid "Your preferred language for web and email communication when logged in."
+msgstr ""
+
+#: web/models.py:181
 msgctxt "UI"
 msgid ""
 "You have a pending request for changing your email, please confirm or cancel "
 "the request"
 msgstr ""
 
-#: web/models.py:180
+#: web/models.py:189
 msgctxt "UI"
 msgid "Your Bitcoin address for receiving rewards"
 msgstr ""
 
-#: web/models.py:186
+#: web/models.py:195
 msgctxt "UI"
 msgid ""
 "You have a pending request for changing your wallet, please confirm or "
 "cancel the request"
 msgstr ""
 
-#: web/models.py:191
+#: web/models.py:200
 msgctxt "UI"
 msgid "Coins will be sent once the reward crosses over the threshold"
 msgstr ""
 
-#: web/models.py:194 web/models.py:822
+#: web/models.py:203 web/models.py:832
 msgctxt "UI"
 msgid "Username in stats"
 msgstr ""
 
-#: web/models.py:196
+#: web/models.py:205
 msgctxt "UI"
 msgid "Show my username in public server stats"
 msgstr ""
 
-#: web/models.py:197 web/models.py:823
+#: web/models.py:206 web/models.py:833
 msgctxt "UI"
 msgid "Notify me on payout"
 msgstr ""
 
-#: web/models.py:198
+#: web/models.py:207
 msgctxt "UI"
 msgid "Send email when the system sends me a payment"
 msgstr ""
 
-#: web/models.py:200 web/models.py:824
+#: web/models.py:209 web/models.py:834
 msgctxt "UI"
 msgid "Newsletter"
 msgstr ""
 
-#: web/models.py:201
+#: web/models.py:210
 msgctxt "UI"
 msgid "Receive pool newsletters"
 msgstr ""
 
-#: web/models.py:206 web/models.py:825
+#: web/models.py:215 web/models.py:835
 msgctxt "UI"
 msgid "Currency unit"
 msgstr ""
 
-#: web/models.py:208
+#: web/models.py:217
 msgctxt "UI"
 msgid "Unit used by the site when displaying Bitcoin amounts"
 msgstr ""
 
-#: web/models.py:211 web/models.py:827
+#: web/models.py:220 web/models.py:837
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr ""
 
-#: web/models.py:213
+#: web/models.py:222
 msgctxt "UI"
 msgid "Send emails about device state changes"
 msgstr ""
 
-#: web/models.py:215 web/templates/base.html:122
+#: web/models.py:224 web/templates/base.html:125
 #: web/templates/new_user_registered.html:47
 msgctxt "UI"
 msgid "User Manual"
 msgstr ""
 
-#: web/models.py:216
-msgctxt "UI"
-msgid "Auto-detect expected hash rate for account"
-msgstr ""
-
-#: web/models.py:218
-msgctxt "UI"
-msgid "Calculate expected hash rate from past activity of all workers"
-msgstr ""
-
-#: web/models.py:220
-msgctxt "UI"
-msgid "Expected hash rate for account [Gh/s]"
-msgstr ""
-
-#: web/models.py:221
-msgctxt "UI"
-msgid "Account low Effective Hash Rate threshold"
-msgstr ""
-
-#: web/models.py:223
-msgctxt "UI"
-msgid "Max. reports per day"
-msgstr ""
-
 #: web/models.py:225
 msgctxt "UI"
-msgid "Pool will not send more than this number of reports to you in one day"
-msgstr ""
-
-#: web/models.py:226
-msgctxt "UI"
-msgid "Watch proposals"
+msgid "Auto-detect alert limit for account"
 msgstr ""
 
 #: web/models.py:227
 msgctxt "UI"
+msgid "Calculate alert limit from past activity of all workers"
+msgstr ""
+
+#: web/models.py:229
+msgctxt "UI"
+msgid "Alert limit for account [Gh/s]"
+msgstr ""
+
+#: web/models.py:230
+msgctxt "UI"
+msgid "Account low Effective Hash Rate threshold"
+msgstr ""
+
+#: web/models.py:232
+msgctxt "UI"
+msgid "Max. reports per day"
+msgstr ""
+
+#: web/models.py:234
+msgctxt "UI"
+msgid "Pool will not send more than this number of reports to you in one day"
+msgstr ""
+
+#: web/models.py:235
+msgctxt "UI"
+msgid "Watch proposals"
+msgstr ""
+
+#: web/models.py:236
+msgctxt "UI"
 msgid "Receive notifications about proposal changes to dashboard"
 msgstr ""
 
-#: web/models.py:259
+#: web/models.py:268
 msgctxt "UI"
 msgid "Token not generated yet"
 msgstr ""
 
-#: web/models.py:261
+#: web/models.py:270
 msgctxt "UI"
 msgid "Invalid token"
 msgstr ""
 
-#: web/models.py:300
+#: web/models.py:309
 msgctxt "UI"
 msgid "Wallet change confirmation"
 msgstr ""
 
-#: web/models.py:320
+#: web/models.py:329
 msgctxt "UI"
 msgid "Email change confirmation"
 msgstr ""
 
-#: web/models.py:470
+#: web/models.py:479
 msgctxt "UI, Transaction state"
 msgid "New"
 msgstr ""
 
-#: web/models.py:471
+#: web/models.py:480
 msgctxt "UI, Transaction state"
 msgid "Processing"
 msgstr ""
 
-#: web/models.py:472
+#: web/models.py:481
 msgctxt "UI, Transaction state"
 msgid "Failed"
 msgstr ""
 
-#: web/models.py:473
+#: web/models.py:482
 msgctxt "UI, Transaction state"
 msgid "Sent"
 msgstr ""
 
-#: web/models.py:593
+#: web/models.py:602
 msgctxt "UI, Proposals"
 msgid "Draft"
 msgstr ""
 
-#: web/models.py:594
+#: web/models.py:603
 msgctxt "UI, Proposals"
 msgid "Approved"
 msgstr ""
 
-#: web/models.py:595
+#: web/models.py:604
 msgctxt "UI, Proposals"
 msgid "Rejected"
 msgstr ""
 
-#: web/models.py:596
+#: web/models.py:605
 msgctxt "UI, Proposals"
 msgid "In progress"
 msgstr ""
 
-#: web/models.py:597
+#: web/models.py:606
 msgctxt "UI, Proposals"
 msgid "Released"
 msgstr ""
 
-#: web/models.py:598
+#: web/models.py:607
 msgctxt "UI, Proposals"
 msgid "Merged"
 msgstr ""
 
-#: web/models.py:751
+#: web/models.py:760
 #, python-format
 msgctxt "UI"
 msgid "Proposal %(link)s changed state from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr ""
 
-#: web/models.py:760 web/models.py:768
+#: web/models.py:769 web/models.py:777
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr ""
 
-#: web/models.py:764
+#: web/models.py:773
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
 msgstr ""
 
-#: web/models.py:772
+#: web/models.py:781
 #, python-format
 msgctxt "UI, time"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr ""
 
-#: web/models.py:777
+#: web/models.py:786
 msgctxt "UI"
 msgid "Nothing has changed"
 msgstr ""
 
-#: web/models.py:783 web/models.py:785 web/templates/blocks.html:66
+#: web/models.py:792 web/models.py:794 web/templates/blocks.html:66
 #: web/templates/payouts.html:71
 msgctxt "UI"
 msgid "N/A"
 msgstr ""
 
-#: web/models.py:800 web/templates/worker.html:3
+#: web/models.py:809 web/templates/worker.html:3
 msgctxt "UI"
 msgid "Worker"
 msgstr ""
 
-#: web/models.py:829
+#: web/models.py:831
 msgctxt "UI"
-msgid "Expected hash rate"
+msgid "Preferred language"
 msgstr ""
 
-#: web/models.py:832
+#: web/models.py:839
+msgctxt "UI"
+msgid "Alert limit"
+msgstr ""
+
+#: web/models.py:842
 msgctxt "UI"
 msgid "Pending wallet"
 msgstr ""
 
-#: web/models.py:833
+#: web/models.py:843
 msgctxt "UI"
 msgid "Send threshold"
 msgstr ""
 
-#: web/models.py:836 web/templates/settings.html:27
+#: web/models.py:846 web/templates/settings.html:27
 #: web/templates/settings.html.py:30 web/templates/settings.html:461
 #: web/templates/settings.html.py:469 web/templates/settings.html:478
 msgctxt "UI"
 msgid "Monitoring"
 msgstr ""
 
-#: web/models.py:837
+#: web/models.py:847
 msgctxt "UI"
 msgid "Last Change"
 msgstr ""
 
-#: web/models.py:841
+#: web/models.py:851
 msgctxt "UI"
 msgid "Enabled"
 msgstr ""
 
-#: web/models.py:841
+#: web/models.py:851
 msgctxt "UI"
 msgid "Disabled"
 msgstr ""
 
-#: web/models.py:859
+#: web/models.py:870
 msgctxt "UI"
 msgid "Account deleted"
 msgstr ""
 
-#: web/models.py:860
+#: web/models.py:871
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr ""
 
-#: web/models.py:862 web/templates/login.html:4
+#: web/models.py:873 web/templates/login.html:4
 #: web/templates/registration_confirm_has_account.html:22
 msgctxt "UI"
 msgid "Login"
 msgstr ""
 
-#: web/models.py:863
+#: web/models.py:874
 msgctxt "UI"
 msgid "Logout"
 msgstr ""
 
-#: web/models.py:864
+#: web/models.py:875
 msgctxt "UI"
 msgid "Message seen"
 msgstr ""
 
-#: web/models.py:865
+#: web/models.py:876
 msgctxt "UI"
 msgid "Monitoring settings updated"
 msgstr ""
 
-#: web/models.py:866
+#: web/models.py:877
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
 msgstr ""
 
-#: web/models.py:867
+#: web/models.py:878
 msgctxt "UI"
 msgid "2-factor authentication disabled"
 msgstr ""
 
-#: web/models.py:868
+#: web/models.py:879
 msgctxt "UI"
 msgid "2-factor authentication enabled"
 msgstr ""
 
-#: web/models.py:869 web/models.py:872
+#: web/models.py:880 web/models.py:883
 msgctxt "UI"
 msgid "Password changed"
 msgstr ""
 
-#: web/models.py:870
+#: web/models.py:881
 msgctxt "UI"
 msgid "Password reset completed"
 msgstr ""
 
-#: web/models.py:871
+#: web/models.py:882
 msgctxt "UI"
 msgid "Password reset initiated"
 msgstr ""
 
-#: web/models.py:873
+#: web/models.py:884
 msgctxt "UI"
 msgid "Payout settings updated"
 msgstr ""
 
-#: web/models.py:875
+#: web/models.py:886
 msgctxt "UI"
 msgid "Proposal created"
 msgstr ""
 
-#: web/models.py:876
+#: web/models.py:887
 msgctxt "UI"
 msgid "You have created a new proposal:"
 msgstr ""
 
-#: web/models.py:878
+#: web/models.py:889
 msgctxt "UI"
 msgid "Proposal comment deleted"
 msgstr ""
 
-#: web/models.py:880
+#: web/models.py:891
 msgctxt "UI"
 msgid "Proposal updated"
 msgstr ""
 
-#: web/models.py:883
+#: web/models.py:894
 msgctxt "UI"
 msgid "Proposal state changed"
 msgstr ""
 
-#: web/models.py:885
+#: web/models.py:896
 msgctxt "UI"
 msgid "Proposal vote"
 msgstr ""
 
-#: web/models.py:886
+#: web/models.py:897
 #, python-format
 msgctxt "UI"
 msgid "You gave <b>%(points)s</b> points to proposal"
 msgstr ""
 
-#: web/models.py:888
+#: web/models.py:899
 msgctxt "UI"
 msgid "Account settings updated"
 msgstr ""
 
-#: web/models.py:889
+#: web/models.py:900
 msgctxt "UI"
 msgid "Wallet change confirmed"
 msgstr ""
 
-#: web/models.py:890
+#: web/models.py:901
 msgctxt "UI"
 msgid "Wallet change cancelled"
 msgstr ""
 
-#: web/models.py:891
+#: web/models.py:902
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
 msgstr ""
 
-#: web/models.py:892
+#: web/models.py:903
 msgctxt "UI"
 msgid "Email change confirmed"
 msgstr ""
 
-#: web/models.py:893
+#: web/models.py:904
 msgctxt "UI"
 msgid "Email change cancelled"
 msgstr ""
 
-#: web/models.py:894
+#: web/models.py:905
 msgctxt "UI"
 msgid "Email change confirmation resent"
 msgstr ""
 
-#: web/models.py:895
+#: web/models.py:906
 msgctxt "UI"
 msgid "Wallet locked"
 msgstr ""
 
-#: web/models.py:896
+#: web/models.py:907
 msgctxt "UI"
 msgid "Wallet unlocked"
 msgstr ""
 
-#: web/models.py:897
+#: web/models.py:908
 msgctxt "UI"
 msgid "Worker removed"
 msgstr ""
 
-#: web/models.py:897
+#: web/models.py:908
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr ""
 
-#: web/models.py:898
+#: web/models.py:909
 msgctxt "UI"
 msgid "Monitoring disabled for all workers"
 msgstr ""
 
-#: web/models.py:899
+#: web/models.py:910
 msgctxt "UI"
 msgid "Monitoring enabled for all workers"
 msgstr ""
 
-#: web/models.py:900
+#: web/models.py:911
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr ""
 
-#: web/models.py:901 web/templates/worker.html:22
+#: web/models.py:912 web/templates/worker.html:22
 #: web/templates/workers.html:20
 msgctxt "UI"
 msgid "New worker"
 msgstr ""
 
-#: web/models.py:901
+#: web/models.py:912
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr ""
 
-#: web/models.py:903
+#: web/models.py:914
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr ""
@@ -808,132 +837,132 @@ msgctxt "UI"
 msgid "New account confirmation"
 msgstr ""
 
-#: web/views.py:307
+#: web/views.py:304
 msgctxt "UI"
 msgid "Monitoring <b>enabled</b> on all workers."
 msgstr ""
 
-#: web/views.py:319
+#: web/views.py:316
 msgctxt "UI"
 msgid "Monitoring <b>disabled</b> on all workers."
 msgstr ""
 
-#: web/views.py:329
+#: web/views.py:326
 msgctxt "UI"
 msgid "Worker does not exist."
 msgstr ""
 
-#: web/views.py:351
+#: web/views.py:348
 msgctxt "UI"
 msgid "Worker settings has been updated."
 msgstr ""
 
-#: web/views.py:361
+#: web/views.py:358
 msgctxt "UI"
 msgid "Worker has been created."
 msgstr ""
 
-#: web/views.py:468
+#: web/views.py:464
 msgctxt "UI"
 msgid "Two-factor authentication isn't configured yet"
 msgstr ""
 
-#: web/views.py:479
+#: web/views.py:475
 msgctxt "UI"
 msgid "Two-factor authentication token is invalid. Please, enter valid token."
 msgstr ""
 
-#: web/views.py:487
+#: web/views.py:483
 msgctxt "UI"
 msgid "Two-factor authentication has been succesfully disabled."
 msgstr ""
 
-#: web/views.py:499
+#: web/views.py:495
 msgctxt "UI"
 msgid "Two-factor authentication is already configured"
 msgstr ""
 
-#: web/views.py:516
+#: web/views.py:512
 msgctxt "UI"
 msgid ""
 "Two-factor authentication token is invalid. Please, re-scan the QR code (a "
 "new one has been generated for security reasons)."
 msgstr ""
 
-#: web/views.py:524
+#: web/views.py:520
 msgctxt "UI"
 msgid "Two-factor authentication has been configured."
 msgstr ""
 
-#: web/views.py:536
+#: web/views.py:532
 msgctxt "UI"
 msgid "Invalid request"
 msgstr ""
 
-#: web/views.py:550
+#: web/views.py:546
 msgctxt "UI"
 msgid "Wallet is not valid"
 msgstr ""
 
-#: web/views.py:560
+#: web/views.py:556
 msgctxt "UI"
 msgid "Your payout address has been locked."
 msgstr ""
 
-#: web/views.py:603 web/views.py:689 web/views.py:865 web/views.py:1003
+#: web/views.py:605 web/views.py:691 web/views.py:867 web/views.py:1005
 msgctxt "UI"
 msgid ""
 "Confirmation email has been sent. Please, check your mailbox and follow the "
 "link."
 msgstr ""
 
-#: web/views.py:610
+#: web/views.py:612
 msgctxt "UI"
 msgid "The account has been updated."
 msgstr ""
 
-#: web/views.py:625
+#: web/views.py:627
 msgctxt "UI"
 msgid "The monitoring settings has been updated."
 msgstr ""
 
-#: web/views.py:661
+#: web/views.py:663
 msgctxt "UI"
 msgid "Password has been successfully changed."
 msgstr ""
 
-#: web/views.py:683
+#: web/views.py:685
 msgctxt "UI"
 msgid "Now, confirm change by wallet signature."
 msgstr ""
 
-#: web/views.py:701
+#: web/views.py:703
 msgctxt "UI"
 msgid "The payouts settings has been updated."
 msgstr ""
 
-#: web/views.py:714
+#: web/views.py:716
 msgctxt "UI"
 msgid "Delete account confirmation"
 msgstr ""
 
-#: web/views.py:730
+#: web/views.py:732
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
 msgstr ""
 
-#: web/views.py:878
+#: web/views.py:880
 msgctxt "UI"
 msgid "Email change request has been successfully canceled."
 msgstr ""
 
-#: web/views.py:982
+#: web/views.py:984
 msgctxt "UI"
 msgid "Wallet change request has been successfully canceled."
 msgstr ""
 
-#: web/views.py:1014
+#: web/views.py:1015
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at support@bitcoin.cz"
 msgstr ""
@@ -970,7 +999,7 @@ msgctxt "UI"
 msgid "Account settings"
 msgstr ""
 
-#: web/views.py:1583
+#: web/views.py:1580
 msgctxt "UI"
 msgid "Requested proposal is waiting for admin confirmation"
 msgstr ""
@@ -1050,93 +1079,93 @@ msgstr ""
 msgid "Loading ..."
 msgstr ""
 
-#: web/templates/base.html:121
+#: web/templates/base.html:124
 msgctxt "UI"
 msgid "<strong>Home</strong>"
 msgstr ""
 
-#: web/templates/base.html:130
+#: web/templates/base.html:133
 msgctxt "UI"
 msgid "<strong>Pool</strong> Statistics"
 msgstr ""
 
-#: web/templates/base.html:131
+#: web/templates/base.html:134
 msgctxt "UI"
 msgid "Public facts"
 msgstr ""
 
-#: web/templates/base.html:140 web/templates/menu2_contactus_links.html:2
+#: web/templates/base.html:143 web/templates/menu2_contactus_links.html:2
 msgctxt "UI"
 msgid "<strong>Contact</strong> Us"
 msgstr ""
 
-#: web/templates/base.html:141 web/templates/menu2_devel_corner.html:4
+#: web/templates/base.html:144 web/templates/menu2_devel_corner.html:4
 msgctxt "UI"
 msgid "Development <span>Corner</span>"
 msgstr ""
 
-#: web/templates/base.html:150
+#: web/templates/base.html:153
 msgctxt "UI"
 msgid "<strong>My</strong> account"
 msgstr ""
 
-#: web/templates/base.html:151 web/templates/base.html.py:179
+#: web/templates/base.html:154 web/templates/base.html.py:182
 msgctxt "UI"
 msgid "Private zone"
 msgstr ""
 
-#: web/templates/base.html:157
+#: web/templates/base.html:160
 msgctxt "UI"
 msgid "<strong>Log out</strong>"
 msgstr ""
 
-#: web/templates/base.html:172
+#: web/templates/base.html:175
 msgctxt "UI"
 msgid "<strong>Sign up</strong> HERE"
 msgstr ""
 
-#: web/templates/base.html:173
+#: web/templates/base.html:176
 msgctxt "UI"
 msgid "New account"
 msgstr ""
 
-#: web/templates/base.html:178
+#: web/templates/base.html:181
 msgctxt "UI"
 msgid "<strong>Log in</strong>"
 msgstr ""
 
-#: web/templates/base.html:200
+#: web/templates/base.html:203
 msgctxt "UI"
 msgid "You are using a <strong>Demo Account</strong>"
 msgstr ""
 
-#: web/templates/base.html:203
+#: web/templates/base.html:206
 msgctxt "UI"
 msgid "Log in"
 msgstr ""
 
-#: web/templates/base.html:204
+#: web/templates/base.html:207
 msgctxt "UI"
 msgid "Sign up"
 msgstr ""
 
-#: web/templates/base.html:222
+#: web/templates/base.html:225
 msgctxt "UI"
 msgid "Back to Top"
 msgstr ""
 
-#: web/templates/base.html:224
+#: web/templates/base.html:227
 #, python-format
 msgctxt "UI"
 msgid "Follow us on %(twitter)s and %(facebook)s."
 msgstr ""
 
-#: web/templates/base.html:225
+#: web/templates/base.html:228
 msgctxt "UI"
 msgid "BTC prices provided by "
 msgstr ""
 
-#: web/templates/base.html:241
+#: web/templates/base.html:244
 msgctxt "UI"
 msgid "You cannot do this in the Demo account, please log in to proceed."
 msgstr ""
@@ -1738,13 +1767,13 @@ msgctxt "Intro"
 msgid "Vertical solid lines represent blocks found at that instant."
 msgstr ""
 
-#: web/templates/dashboard.html:298 web/templates/worker.html:217
+#: web/templates/dashboard.html:298 web/templates/worker.html:216
 #: web/templates/user_manual/rewards.html:50
 #: web/templates/user_manual/rewards.html:64
 msgid "Hash Rate (5min)"
 msgstr ""
 
-#: web/templates/dashboard.html:299 web/templates/worker.html:218
+#: web/templates/dashboard.html:299 web/templates/worker.html:217
 #: web/templates/user_manual/rewards.html:51
 #: web/templates/user_manual/rewards.html:65
 msgid "Scoring Hash Rate"
@@ -1754,8 +1783,8 @@ msgstr ""
 msgid "Active Workers"
 msgstr ""
 
-#: web/templates/dashboard.html:301 web/templates/worker.html:219
-msgid "Expected Hash Rate"
+#: web/templates/dashboard.html:301 web/templates/worker.html:218
+msgid "Alert Limit"
 msgstr ""
 
 #: web/templates/development_corner.html:3 web/templates/proposals_feed.html:3
@@ -2103,9 +2132,9 @@ msgstr ""
 
 #: web/templates/email_monitoring_body.html:8
 #: web/templates/email_monitoring_body.html:20
-#: web/templates/monitoring.html:125
+#: web/templates/monitoring.html:114
 msgctxt "UI"
-msgid "Expected Hash Rate"
+msgid "Alert Limit"
 msgstr ""
 
 #: web/templates/email_monitoring_body.html:9
@@ -2114,19 +2143,19 @@ msgid "Worker States (Changes)"
 msgstr ""
 
 #: web/templates/email_monitoring_body.html:16
-#: web/templates/monitoring.html:121
+#: web/templates/monitoring.html:110
 msgctxt "UI"
 msgid "Worker Name"
 msgstr ""
 
 #: web/templates/email_monitoring_body.html:17
-#: web/templates/monitoring.html:122
+#: web/templates/monitoring.html:111
 msgctxt "UI"
 msgid "State Change"
 msgstr ""
 
 #: web/templates/email_monitoring_body.html:18
-#: web/templates/monitoring.html:123
+#: web/templates/monitoring.html:112
 msgctxt "UI"
 msgid "State Changed After"
 msgstr ""
@@ -2792,148 +2821,132 @@ msgstr ""
 
 #: web/templates/monitoring.html:60
 msgctxt "UI"
-msgid "Account<br/>State"
+msgid "Account<br/>Hash Rate"
 msgstr ""
 
 #: web/templates/monitoring.html:61
 msgctxt "UI"
-msgid "Account<br/>Hash Rate"
+msgid "Expected<br/>Hash Rate"
 msgstr ""
 
 #: web/templates/monitoring.html:62
 msgctxt "UI"
-msgid "Expected<br/>Hash Rate"
-msgstr ""
-
-#: web/templates/monitoring.html:63
-msgctxt "UI"
 msgid "Report<br/>State"
 msgstr ""
 
-#: web/templates/monitoring.html:109
+#: web/templates/monitoring.html:98
 msgctxt "UI"
 msgid "Report has been sent to your email."
 msgstr ""
 
-#: web/templates/monitoring.html:112
+#: web/templates/monitoring.html:101
 msgctxt "UI"
 msgid ""
 "Report has not been sent because it contains only <span class=\"strong"
 "\">insignificant events</span>."
 msgstr ""
 
-#: web/templates/monitoring.html:115
+#: web/templates/monitoring.html:104
 msgctxt "UI"
 msgid ""
 "Report has not been sent because you have <span class=\"strong\">disabled "
 "reporting</span>."
 msgstr ""
 
-#: web/templates/monitoring.html:124
+#: web/templates/monitoring.html:113
 msgctxt "UI"
 msgid "Worker Hash Rate"
 msgstr ""
 
-#: web/templates/monitoring.html:146
+#: web/templates/monitoring.html:135
 msgctxt "UI"
 msgid ""
 "There are no worker incidents to be shown here since only your Account State "
 "has changed."
 msgstr ""
 
-#: web/templates/monitoring.html:158
+#: web/templates/monitoring.html:147
 msgctxt "UI"
 msgid "There are no incidents available for you to show."
 msgstr ""
 
-#: web/templates/monitoring.html:169
+#: web/templates/monitoring.html:158
 msgctxt "UI"
 msgid "State <span>Changes in Time</span>"
 msgstr ""
 
-#: web/templates/monitoring.html:196
+#: web/templates/monitoring.html:185
 msgid "Total Hash Rate"
 msgstr ""
 
-#: web/templates/monitoring.html:200
+#: web/templates/monitoring.html:189
 msgid "Hash Rate Limit"
 msgstr ""
 
-#: web/templates/monitoring.html:204
-msgid "Account state"
-msgstr ""
-
-#: web/templates/monitoring.html:212 web/templatetags/utils.py:199
+#: web/templates/monitoring.html:197 web/templatetags/utils.py:199
 msgctxt "UI, Monitoring"
 msgid "OK"
 msgstr ""
 
-#: web/templates/monitoring.html:213 web/templatetags/utils.py:198
+#: web/templates/monitoring.html:198 web/templatetags/utils.py:198
 msgctxt "UI, Monitoring"
 msgid "Low"
 msgstr ""
 
-#: web/templates/monitoring.html:214 web/templatetags/utils.py:197
+#: web/templates/monitoring.html:199 web/templatetags/utils.py:197
 msgctxt "UI, Monitoring"
 msgid "Error"
 msgstr ""
 
-#: web/templates/monitoring.html:215 web/templatetags/utils.py:200
+#: web/templates/monitoring.html:200 web/templatetags/utils.py:200
 msgctxt "UI, Monitoring"
 msgid "Disabled"
 msgstr ""
 
-#: web/templates/monitoring.html:217
+#: web/templates/monitoring.html:202
 msgctxt "UI"
 msgid ""
 "Each point on the chart represents worker incident and its color describes "
 "type of the incident."
 msgstr ""
 
-#: web/templates/monitoring.html:218
+#: web/templates/monitoring.html:203
 msgctxt "UI"
 msgid ""
 "E.g. when your worker goes from Low to OK, you will see an orange line "
 "followed by green point, representing the state change, and green line."
 msgstr ""
 
-#: web/templates/monitoring.html:232
+#: web/templates/monitoring.html:217
 msgctxt "Intro"
 msgid ""
 "Every row in the following table contains summary of incidents that happened "
 "at the same time."
 msgstr ""
 
-#: web/templates/monitoring.html:234 web/templates/monitoring.html.py:271
+#: web/templates/monitoring.html:219 web/templates/monitoring.html.py:246
 msgctxt "Intro"
 msgid "Click the table row to see the details for a particular event."
 msgstr ""
 
-#: web/templates/monitoring.html:242
+#: web/templates/monitoring.html:227
 msgctxt "Intro"
 msgid ""
 "Absolute number of workers in each state and relative change to the previous "
 "state."
 msgstr ""
 
-#: web/templates/monitoring.html:244 web/templates/monitoring.html.py:254
+#: web/templates/monitoring.html:229
 msgctxt "Intro"
 msgid "States: OK | Low | Error | Monitoring disabled"
 msgstr ""
 
-#: web/templates/monitoring.html:252
-msgctxt "Intro"
-msgid ""
-"If the total hash rate of your account drops below the expected value, it is "
-"considered a low state."
-msgstr ""
-
-#: web/templates/monitoring.html:262
+#: web/templates/monitoring.html:237
 msgctxt "Intro"
 msgid "Total hash rate of all your workers together (5min average)"
 msgstr ""
 
-#: web/templates/monitoring.html:270
+#: web/templates/monitoring.html:245
 msgctxt "Intro"
 msgid ""
 "Status of the report showing if the report has been sent to you by email or "
@@ -3773,7 +3786,7 @@ msgid "Unix timestamp for the current time."
 msgstr ""
 
 #: web/templates/settings.html:212
-msgid "Expected Hash Rate, you set up this value in your workers settings."
+msgid "Alert Limit, you set up this value in your workers settings."
 msgstr ""
 
 #: web/templates/settings.html:216
@@ -3909,8 +3922,7 @@ msgstr ""
 
 #: web/templates/settings.html:472
 msgctxt "Intro"
-msgid ""
-"If enabled the pool will automatically set the expected hash rate for you."
+msgid "If enabled the pool will automatically set the alert limit for you."
 msgstr ""
 
 #: web/templates/settings.html:473
@@ -4636,7 +4648,7 @@ msgstr ""
 msgctxt "Intro"
 msgid ""
 "You can either let the monitoring system automatically detect the hash rate "
-"of your worker, or you can set the expected hash rate manually."
+"of your worker, or you can set the alert limit manually."
 msgstr ""
 
 #: web/templates/worker.html:120
@@ -4661,8 +4673,8 @@ msgstr ""
 #: web/templates/worker.html:130
 msgctxt "Intro"
 msgid ""
-"When enabled, the monitoring system will automatically set the expected hash "
-"rate for you."
+"When enabled, the monitoring system will automatically set the alert limit "
+"for you."
 msgstr ""
 
 #: web/templates/worker.html:132
@@ -4741,13 +4753,13 @@ msgstr ""
 #: web/templates/workers.html:142
 msgctxt "Intro"
 msgid ""
-"OK - Monitoring is enabled and hash rate of the worker is above Expected "
-"Hash Rate."
+"OK - Monitoring is enabled and hash rate of the worker is above its alert "
+"limit."
 msgstr ""
 
 #: web/templates/workers.html:143
 msgctxt "Intro"
-msgid "Low - Worker shows lower than expected Hash Rate."
+msgid "Low - Worker has lower hash rate than its alert limit."
 msgstr ""
 
 #: web/templates/workers.html:144
@@ -4763,8 +4775,8 @@ msgstr ""
 #: web/templates/workers.html:154
 msgctxt "Intro"
 msgid ""
-"Expected Hash Rate. You will be notified if hash rate of the affected worker "
-"drops below this threshold value."
+"Alert Limit. You will be notified if hash rate of the affected worker drops "
+"below this value."
 msgstr ""
 
 #: web/templates/workers.html:155
