@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-16 14:39+0000\n"
-"PO-Revision-Date: 2015-01-26 14:40+0200\n"
+"PO-Revision-Date: 2015-02-19 13:17+0200\n"
 "Last-Translator: xu <samanthaxu1987@163.com>\n"
-"Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-cz/"
-"mining/zh/>\n"
+"Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-"
+"cz/mining/zh/>\n"
 "Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1557,9 +1557,10 @@ msgid "24h"
 msgstr "24小时"
 
 #: web/templates/dashboard.html:67 web/templates/workers.html:53
+#, fuzzy
 msgctxt "UI"
 msgid "Last Share"
-msgstr "上一次份额"
+msgstr "上一次share"
 
 #: web/templates/dashboard.html:75
 msgctxt "UI"
@@ -1809,16 +1810,14 @@ msgstr ""
 #: web/templates/dashboard.html:298 web/templates/worker.html:216
 #: web/templates/user_manual/rewards.html:50
 #: web/templates/user_manual/rewards.html:64
-#, fuzzy
 msgid "Hash Rate (5min)"
-msgstr "Hash的速率"
+msgstr "Hash速率（5分钟）"
 
 #: web/templates/dashboard.html:299 web/templates/worker.html:217
 #: web/templates/user_manual/rewards.html:51
 #: web/templates/user_manual/rewards.html:65
-#, fuzzy
 msgid "Scoring Hash Rate"
-msgstr "Hash的速率"
+msgstr "指数加权Hash速率"
 
 #: web/templates/dashboard.html:300
 #, fuzzy
@@ -2868,11 +2867,12 @@ msgid "<strong>Settings</strong>"
 msgstr "<strong>设置</strong>"
 
 #: web/templates/message-cold-mining.html:7
+#, fuzzy
 msgctxt "UI"
 msgid ""
 "Pool is synchronizing mining data, information about last shares can be "
 "slightly delayed. The process will finish in a moment."
-msgstr "矿池同步挖矿数据，最新份额信息可能会有一点点延迟。处理将很快完成。"
+msgstr "矿池同步挖矿数据，最新share信息可能会有一点点延迟。处理将很快完成。"
 
 #: web/templates/moni_unsubscribe_invalid.html:14
 msgctxt "UI"
@@ -4424,9 +4424,10 @@ msgid "Current Round Duration:"
 msgstr "本轮持续时间："
 
 #: web/templates/stats.html:29
+#, fuzzy
 msgctxt "UI, Current Shares CDF (link)"
 msgid "Current Shares"
-msgstr "当前份额"
+msgstr "当前share"
 
 #: web/templates/stats.html:29
 msgctxt "UI"
@@ -4444,9 +4445,10 @@ msgid "Pool Luck (1 day, 7 days, 30 days)"
 msgstr "矿池运气（1天，7天，30天）"
 
 #: web/templates/stats.html:47
+#, fuzzy
 msgctxt "UI"
 msgid "Total Shares in the Round:"
-msgstr "本轮的总份额："
+msgstr "本轮的总share："
 
 #: web/templates/stats.html:51
 msgctxt "UI"
@@ -4794,9 +4796,10 @@ msgid "Really?"
 msgstr "确定？"
 
 #: web/templates/worker.html:56
+#, fuzzy
 msgctxt "UI"
 msgid "All worker stats and shares in the current round will be lost!"
-msgstr "所有矿工此回合的统计和份额将丢失！"
+msgstr "所有矿工此回合的统计和share将丢失！"
 
 #: web/templates/worker.html:58 web/templates/worker.html.py:61
 msgctxt "UI"
@@ -5041,9 +5044,8 @@ msgstr ""
 
 #: web/templates/user_manual/getting_started.html:28
 #: web/templates/user_manual/intro.html:18
-#, fuzzy
 msgid "Getting <span>Started</span>"
-msgstr "本人帐户"
+msgstr "入门<span>准备</span>"
 
 #: web/templates/user_manual/getting_started.html:30
 msgid ""
@@ -5290,22 +5292,22 @@ msgid "Manual Overview"
 msgstr "指南概述"
 
 #: web/templates/user_manual/intro.html:7
-#, fuzzy
 msgid "Contents of User Manual"
-msgstr "用户指南"
+msgstr "用户指南内容"
 
 #: web/templates/user_manual/intro.html:19
 msgid ""
 "A step-by-step guide for creating a new user account and starting to mine "
 "with our pool."
-msgstr ""
+msgstr "一个创建新账户并开始在我们矿池挖矿的的逐步指南。"
 
 #: web/templates/user_manual/intro.html:21
 #: web/templates/user_manual/terminology.html:14
 msgid "Pool <span>Terminology</span>"
-msgstr ""
+msgstr "矿池<span>术语</span>"
 
 #: web/templates/user_manual/intro.html:22
+#, fuzzy
 msgid ""
 "Most important terms explained. We strongly recommended for each beginner to "
 "mining."
@@ -5313,58 +5315,55 @@ msgstr ""
 
 #: web/templates/user_manual/intro.html:24
 msgid "Reward <span>System"
-msgstr ""
+msgstr "报酬<span>系统"
 
 #: web/templates/user_manual/intro.html:25
 msgid ""
 "How do we calculate your reward? Understand the basic mathematics and "
 "practical implications in comparison to some other methods used among mining "
 "pools."
-msgstr ""
+msgstr "我们如何计算您的报酬呢？通过不同矿池的计算方法比较以了解基本的数学运算和实际影响。"
 
 #: web/templates/user_manual/intro.html:27
 #: web/templates/user_manual/payouts.html:10
-#, fuzzy
 msgid "Pool <span>Payouts</span>"
-msgstr "矿池 <span>统计</span>"
+msgstr "矿池<span>报酬支付</span>"
 
 #: web/templates/user_manual/intro.html:28
 msgid ""
 "How do we process reward payouts? What's the difference between expected and "
 "confirmed rewards?"
-msgstr ""
+msgstr "我们怎么处理报酬的支付呢？预期报酬和确认报酬的区别是什么？"
 
 #: web/templates/user_manual/intro.html:30
 #: web/templates/user_manual/monitoring.html:9
 msgid "Device <span>Monitoring</span>"
-msgstr ""
+msgstr "设备<span>监控</span>"
 
 #: web/templates/user_manual/intro.html:31
 msgid ""
 "Explains how to monitor your performance and workers and how to receive "
 "notifications."
-msgstr ""
+msgstr "怎么监控您的挖矿成绩和矿工以及如何接收通知的说明。"
 
 #: web/templates/user_manual/intro.html:33
-#, fuzzy
 msgid "Stratum <span>Mining Proxy</span>"
-msgstr "注册户口"
+msgstr "阶层<span>挖矿代理</span>"
 
 #: web/templates/user_manual/intro.html:34
 msgid ""
 "Read this if you have mining software with the old Getwork protocol. This "
 "proxy will help you to use the modern Stratum mining protocol provided by "
 "our pool."
-msgstr ""
+msgstr "如果您的挖矿软件用的旧的协议请阅读此内容。这个代理将帮助您使用我们矿池当前的阶层挖矿协议。"
 
 #: web/templates/user_manual/intro.html:36
-#, fuzzy
 msgid "Stratum <span>Mining Protocol</span>"
-msgstr "注册户口"
+msgstr "阶层<span>挖矿协议</span>"
 
 #: web/templates/user_manual/intro.html:37
 msgid "The official documentation of our lightweight bitcoin mining protocol."
-msgstr ""
+msgstr "我们简洁的挖矿官方文件。"
 
 #: web/templates/user_manual/mining-proxy.html:4
 msgctxt "UI"
@@ -5651,52 +5650,52 @@ msgstr "在处理中"
 #: web/templates/user_manual/payouts.html:4
 msgctxt "UI"
 msgid "Pool payouts"
-msgstr "矿池报酬支付史"
+msgstr "矿池报酬支付"
 
 #: web/templates/user_manual/payouts.html:12
 msgid ""
 "This article brings clarity into the matter of payouts, how they are managed "
 "and what are the possible difficulties. Let's break it down to 4 main parts"
-msgstr ""
+msgstr "这篇文章让报酬支付一目了然，它们是怎么被管理的和可能遇到的困难是什么。让我们把它分解为4个主要部分"
 
 #: web/templates/user_manual/payouts.html:15
 msgid "Amount of BTC you can get get"
-msgstr ""
+msgstr "您可以得到的比特币数量"
 
 #: web/templates/user_manual/payouts.html:16
 msgid "Frequency of and routines behind payouts"
-msgstr ""
+msgstr "报酬支付背后的频率和常规"
 
 #: web/templates/user_manual/payouts.html:17
 msgid "Fees paid from every payout"
-msgstr ""
+msgstr "每笔支付所付的手续费"
 
 #: web/templates/user_manual/payouts.html:18
 msgid "Possible difficulties"
-msgstr ""
+msgstr "可能的困难"
 
 #: web/templates/user_manual/payouts.html:23
 msgid "1. Amount of Bitcoins <span>You Can Get with Your Hashrate.</span>"
-msgstr ""
+msgstr "1.<span>您的hash速率能得到的</span>比特币数量"
 
 #: web/templates/user_manual/payouts.html:24
 #, python-format
 msgid ""
 "You can get yourself a rough estimation of how much you should earn per "
 "block using the Bitcoin calculator <a href=\"%(url)s\">here</a>"
-msgstr ""
+msgstr "通过使用<a href=\"%(url)s\">这里</a>这个比特币计算器，您可以得到一个每矿区您能赚到的比特币估值"
 
 #: web/templates/user_manual/payouts.html:25
 msgid ""
 "It is however always good to see the calculations behind and be able to do "
 "it by yourself, so here is the formula for <strong>calculationg the "
 "estimated reward per round</strong>:"
-msgstr ""
+msgstr "能够清楚知道怎么计算报酬并能自己动手计算总是好的，这里就是<strong>计算每轮估计报酬</strong>的公式："
 
 #: web/templates/user_manual/payouts.html:27
 #, python-format
 msgid "reward = (your hashrate/pool hashrate) * (block reward - 2%% pool fee)"
-msgstr ""
+msgstr "报酬=（您的hash速率/矿池hash速率）*（矿区报酬 - 2%% 矿池费用）"
 
 #: web/templates/user_manual/payouts.html:29
 #, python-format
@@ -5704,7 +5703,7 @@ msgid ""
 "Please mind, that this formula only applies if you mine during the whole "
 "round. For more information, learn about our <a href=\"%(rewards)s\">score-"
 "based reward system</a>."
-msgstr ""
+msgstr "请注意，此公式只适用于您完成整轮挖矿的情况。更多信息请参看<a href=\"%(rewards)s\">基于加权指数的报酬系统</a>。"
 
 #: web/templates/user_manual/payouts.html:30
 msgid ""
@@ -5713,14 +5712,16 @@ msgid ""
 "take a look at <strong>stats page</strong>, block reward these days is "
 "<strong>roughtly 25BTC</strong>"
 msgstr ""
+"当一个矿区被发现，我们认为是<strong>未确认的报酬</strong>。 查看当前<strong>矿池hash速率</strong>，请到<stron"
+"g>统计页面</strong>，如今的一个区报酬是<strong>大概25BTC</strong>"
 
 #: web/templates/user_manual/payouts.html:33
 msgid "2. Frequency of and Routines <span>Behind Payouts</span>"
-msgstr ""
+msgstr "2. <span>报酬支付背后</span>的频率和常规"
 
 #: web/templates/user_manual/payouts.html:35
 msgid "Time Needed to Confirm <span>Your Reward.</span>"
-msgstr ""
+msgstr "确认<span>您的报酬</span>所需的时间"
 
 #: web/templates/user_manual/payouts.html:36
 #, python-format
@@ -5730,6 +5731,8 @@ msgid ""
 "15-16 hours</strong>. You can follow this progress on the <a href=\"%(stats)s"
 "\">stats page</a>"
 msgstr ""
+"您某一矿区的报酬将在比特币网络里<strong>接下来的100个矿区被发现后</strong>被确认。这<strong>通常耗时15-16小时</stro"
+"ng>。您可以在<a href=\"%(stats)s\">统计页面</a>查看进度"
 
 #: web/templates/user_manual/payouts.html:38
 msgid ""
@@ -5738,10 +5741,12 @@ msgid ""
 "<strong>accepted by bitcoin network</strong>. This is generally assumed "
 "after 100 confirmations."
 msgstr ""
+"此方式的原因是矿池管理软件必须<strong>确保所挖的矿区</strong>是有效的并且<strong>被比特币网络承认的</strong>。通常需要1"
+"00个确认信息。"
 
 #: web/templates/user_manual/payouts.html:40
 msgid "Sending Confirmed Reward <span>to Your Wallet.</span>"
-msgstr ""
+msgstr "发送确认的报酬<span>到您的钱包。</span>"
 
 #: web/templates/user_manual/payouts.html:42
 msgid ""
@@ -5750,16 +5755,18 @@ msgid ""
 "strong>). Pool checks for this and sends out payments automatically every "
 "hour."
 msgstr ""
+"当<strong>您的余额达到支付门槛时</strong>，确认的报酬将被发送（支付门槛由用户自己设置可以低到<strong>0.001 "
+"BTC</strong>）。矿池自动查看并在每小时支付报酬。"
 
 #: web/templates/user_manual/payouts.html:44
 msgid ""
 "For technical reasons like paying excessive transaction fees and flooding "
 "bitcoin network, we do not process payouts below the mentioned value."
-msgstr ""
+msgstr "由于技术原因如支付过高交易费用和大量比特币网络信息流通，我们不处理低于此值的报酬支付。"
 
 #: web/templates/user_manual/payouts.html:48
 msgid "3. Fees Paid <span>from Every Payout"
-msgstr ""
+msgstr "3. 每笔支付<span>的费用"
 
 #: web/templates/user_manual/payouts.html:49
 #, python-format
@@ -5772,18 +5779,22 @@ msgid ""
 "Transaction fees for threshold equal to or higher than the limit value are "
 "covered by the pool."
 msgstr ""
+"我们的支付系统有两种类型的费用。第一种是稳定的 (矿池费用 2%% 上面所提到的每矿区)用于涵盖矿池费用的。第二种只在您设置您的<strong>"
+"支付门槛低于 0.01&nbsp;BTC</strong> 时支付 <strong>0.0001&nbsp;BTC</strong>的交易费用.<br>"
+"\n"
+"在支付门槛不低于上述值时矿池会处理相关交易费用。"
 
 #: web/templates/user_manual/payouts.html:53
 msgid "4. Possible Difficulties"
-msgstr ""
+msgstr "4. 可能的困难"
 
 #: web/templates/user_manual/payouts.html:55
 msgid "Delay in Payout."
-msgstr ""
+msgstr "延迟支付。"
 
 #: web/templates/user_manual/payouts.html:56
 msgid "For security reason pool uses two wallets – Hot and Cold."
-msgstr ""
+msgstr "出于安全考虑矿池采用两种钱包-热钱包和冷钱包。"
 
 #: web/templates/user_manual/payouts.html:57
 msgid ""
@@ -5795,6 +5806,9 @@ msgid ""
 "and only very limited number of people has access to the cold wallet, it can "
 "introduce a few hours delay in sending bitcoins to user's wallet."
 msgstr ""
+"可以即时用于支付的资金保存在<strong>热钱包</strong>。因安全因素此钱包持有<strong>较低余额</strong>并且当它空了时，矿池管"
+"理人员需<strong>从冷钱包向其加载资金</strong>–一个高度安全的线下电脑保存矿池的比特币资金。因为此操作不能自动化，所以只有少数有权限的人员"
+"能够接触冷钱包，由此有时可能导致发送报酬到用户钱包的延迟。"
 
 #: web/templates/user_manual/rewards.html:4
 msgctxt "UI"
@@ -5802,23 +5816,22 @@ msgid "Reward System"
 msgstr "报酬系统"
 
 #: web/templates/user_manual/rewards.html:15
-#, fuzzy
 msgid "Reward <span>System</span>"
-msgstr "注册户口"
+msgstr "报酬<span>系统</span>"
 
 #: web/templates/user_manual/rewards.html:18
 msgid ""
 "Finding a Bitcoin block is quite a rare and randomly occurring event. The "
 "pool service however needs some method to fairly distribute the value of a "
 "found block among pool users and pay them accordingly."
-msgstr ""
+msgstr "发现一个矿区是不容易并很随机的事。因此矿池得有好的方法公平分配给挖矿者相应的报酬。"
 
 #: web/templates/user_manual/rewards.html:21
 msgid ""
 "Our reward system ensures that when a new block is found every user receives "
 "a reward proportional to his/her participation in the pool's mining power. "
 "Bigger miners receive proportionally more than smaller miners."
-msgstr ""
+msgstr "我们的报酬系统确保每个挖矿者在新矿区发现后按挖矿能力比例得到相应的报酬。挖矿能力大的比能力小的得到更大比例。"
 
 #: web/templates/user_manual/rewards.html:26
 #, python-format
@@ -5832,6 +5845,10 @@ msgid ""
 "calculation more stable and fair (the exact mathematical definition is "
 "provided lower)."
 msgstr ""
+"用户参与挖矿的能力由<strong>指数加权hash速率</strong>衡量。它反映的是用户在当前的一段时间内工作的量。您可以把指数加权hash速率看作"
+"由所有用户连接到矿池的挖矿设备的hash速率<em>指数加权变动的均值</em> (参看 <a href=\"%(url)s\" target=\""
+"_blank\">%(globe)s EMA on "
+"wikipedia</a>)。平均的方法消除了hash速率短期升降的影响，使报酬结果的计算更稳定公平（精确的数学计算之后有提供）。"
 
 #: web/templates/user_manual/rewards.html:29
 #, python-format
@@ -5840,12 +5857,14 @@ msgid ""
 "1%% of the block rewards. If you own 0.031%% of hash rate, you receive "
 "0.031%% of rewards from the block. It is that simple."
 msgstr ""
+"例如：如果您的指数加权hash速率是整个矿池的1%%，您将收到1%%整个区的报酬。如果您有0.031%%的hash速率，您将收到0.031%%整个区得报酬"
+"。非常简单。"
 
 #: web/templates/user_manual/rewards.html:32
 msgid ""
 "The pool calculates your reward for <strong>every found block</strong> as "
 "follows:"
-msgstr ""
+msgstr "矿池对<strong>每个发现的矿区</strong>对您的报酬计算方法如下："
 
 #: web/templates/user_manual/rewards.html:37
 #, python-format
@@ -5854,18 +5873,19 @@ msgid ""
 "contained in the block (you can see block values <a href=\"%(blocks)s"
 "\">here</a>)."
 msgstr ""
+"一个<em>矿区价值</em>是25 BTC + 矿区包含的交易费用（您可以从<a href=\"%(blocks)s\">这里</a>看到矿区价值）。"
 
 #: web/templates/user_manual/rewards.html:38
 msgid ""
 "<em>Scoring hash rates</em> used for the calculation are hash rates from "
 "time when a particular block was found. They reflect some mining history "
 "before the actual block finding."
-msgstr ""
+msgstr "用于计算的<em>指数加权hash速率</em>是指自某个矿区被发现时的hash速率。它们反映当前矿区发现前的挖矿历史。"
 
 #: web/templates/user_manual/rewards.html:39
 #, python-format
 msgid "A <em>pool fee</em> is currently 2%%."
-msgstr ""
+msgstr "当前<em>矿池费用</em>是2%%。"
 
 #: web/templates/user_manual/rewards.html:43
 msgid ""
@@ -5873,53 +5893,53 @@ msgid ""
 "declines at time when you start or stop mining (effective hash rate is blue, "
 "scoring hash rate is gold):"
 msgstr ""
+"下表展现<strong>指数加权hash速率</strong>在您开始或停止挖矿后的升或降。（有效的hash速率是蓝线，指数加权hash速率是金色线）："
 
 #: web/templates/user_manual/rewards.html:57
 msgid ""
 "The chart would look much more like the one below with a real miner. The "
 "reason is that miner's effective hash rate changes in time (if you refresh "
 "the page a new random sequence will be generated to give you the idea):"
-msgstr ""
+msgstr "图表看起来更像是下面的一个真实挖矿者。原因是挖矿者的有效hash速率及时更改（如果您刷新一下页面，一个新的随机序列将被生成）："
 
 #: web/templates/user_manual/rewards.html:70
-#, fuzzy
 msgid "Important Facts <span>about the Method</span>"
-msgstr "联系 <span>我们!</span>"
+msgstr "<span>关于方法</span>的重要事实"
 
 #: web/templates/user_manual/rewards.html:73
 msgid ""
 "Important properties of using <em>scoring hash rate</em> for rewards "
 "calculation:"
-msgstr ""
+msgstr "使用<em>指数加权hash速率</em>来计算报酬的重要性能："
 
 #: web/templates/user_manual/rewards.html:77
 msgid ""
 "You can literally see and understand at any instant how the hash rate is "
 "changing and what reward you can expect."
-msgstr ""
+msgstr "您可以在任何时间看到hash速率是怎样变化的并预期您将得到的报酬。"
 
 #: web/templates/user_manual/rewards.html:78
 msgid ""
 "Rewards are fully <strong>independent</strong> from rounds. The only "
 "important thing is the scoring hash rate."
-msgstr ""
+msgstr "报酬是完全<strong>独立</strong>于每轮的。唯一重要的是指数加权hash速率。"
 
 #: web/templates/user_manual/rewards.html:79
 msgid ""
 "When you start mining, it takes roughly 1.5 hour until it reaches your "
 "actual hash rate and then it becomes stable."
-msgstr ""
+msgstr "当您开始挖矿时，将会在大约1.5小时后达到您实际的hash速率，然后它将保持稳定。"
 
 #: web/templates/user_manual/rewards.html:80
 msgid ""
 "it is stable during the time when your miners are connected and working."
-msgstr ""
+msgstr "只要您的矿机是连接好并正常工作的，它将保持稳定。"
 
 #: web/templates/user_manual/rewards.html:81
 msgid ""
 "When you stop mining the scoring hash rate starts to fall down. It takes "
 "again cca 1.5 hour until it is roughly zero."
-msgstr ""
+msgstr "当您停止挖矿，指数加权hash速率将开始下降，会在1.5小时后趋于0。"
 
 #: web/templates/user_manual/rewards.html:82
 msgid ""
@@ -5930,26 +5950,27 @@ msgid ""
 "disconnects, the opposite will happen. Statistically, there is no difference "
 "for you in longer term."
 msgstr ""
+"当其他挖矿者连接到矿池时您的指数加权hash速率不会变但实际矿池的hash速率总值会上升。因而您将拥有稍小的比例来分配到报酬，但更常出现的情况是因为矿池的"
+"能力加强，在一些其他挖矿者断开连接的情况下，相反的结果会出现。统计学上来看，长期来看对您来说没有区别。"
 
 #: web/templates/user_manual/rewards.html:85
-#, fuzzy
 msgid "The Math <span>Behind the Scenes</span>"
-msgstr "注册户口"
+msgstr "<span>幕后的</span>数学"
 
 #: web/templates/user_manual/rewards.html:87
 msgid ""
 "Let's start with the basic concepts and definitions to describe how exactly "
 "rewards and other values presented by the pool are computed. Gradually, we "
 "will show more interesting stuff."
-msgstr ""
+msgstr "让我们开始从基本概念和定义来描述矿池呈现的报酬和其他一些价值到底是怎样被计算的。逐渐我们会展示更多有趣的事。"
 
 #: web/templates/user_manual/rewards.html:90
 #, fuzzy
 msgid "Shares"
-msgstr "现时的股份数量"
+msgstr "share量"
 
 #: web/templates/user_manual/rewards.html:92
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "When a miner connects to the pool it receives computational task to be "
 "solved - it computes hash values with certain properties. Hashes satisfying "
@@ -5959,12 +5980,16 @@ msgid ""
 "work) with difficulty %(d)s is submitted by a miner then %(d)s shares is "
 "accounted by the pool."
 msgstr ""
+"当矿机连接到矿池时将会收到可被计算的任务去解决-它计算具有某些特性的hash值。符合任务要求的hash值将被发送回矿池被作为<strong>挖矿工作的证明"
+"</strong>。挖矿工作的数量以单位记录被称作<strong>shares</strong>。如果一个困难度%(d)s的hash（工作证明）值被提交，"
+"那么用户将有%(d)s share量被矿池采纳用于计算。"
 
 #: web/templates/user_manual/rewards.html:95
+#, fuzzy
 msgid ""
 "Whenever a new share is registered by the system a timestamp of the event is "
 "recorded and used for share's valuation later."
-msgstr ""
+msgstr "每当一个新的share被系统记录时，此事件均有一个对应的时间点被记录下来并用于之后的share计算。"
 
 #: web/templates/user_manual/rewards.html:98
 #, python-format
@@ -5976,10 +6001,10 @@ msgstr ""
 
 #: web/templates/user_manual/rewards.html:101
 msgid "Time handling"
-msgstr ""
+msgstr "时间处理"
 
 #: web/templates/user_manual/rewards.html:103
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Let %(tau)s be a function which gives us a time when some share %(s)s was "
 "submitted (or when a block %(b)s was found). The time is measured in seconds "
@@ -5989,27 +6014,35 @@ msgid ""
 "in time %(t_0)s, written as %(time_delta)s, is a key part of shares "
 "valuation."
 msgstr ""
+"让%(tau)s作为当share %(s)s被提交（或者一个新矿区%(b)s 被发现时）为我们提供时间的一个功能。这个时间是在某些稳定点以秒来计算的（例如"
+"：矿池开始运作）。这个时间的价值仅被用于衡量两件事件之间的时间流逝。比如在share%(s)s被提交和某一时点%(t_0)s间的时间，也就是%(time_"
+"delta)s，是作为计算share量的重要部分。"
 
 #: web/templates/user_manual/rewards.html:106
 #, fuzzy
 msgid "Shares valuation<span> - score</span>"
-msgstr "开发 <span>角</span>"
+msgstr "Share量的计算<span>-指数加权</span>"
 
 #: web/templates/user_manual/rewards.html:108
+#, fuzzy
 msgid ""
 "A value of each share (for rewards calculation) decreases in time - younger "
 "shares are valued higher then older shares. This motivates users to mine "
 "with the pool steadily, without switching among pools. Once user disconnects "
 "from the pool, his shares start to lose value."
 msgstr ""
+"每个share的价值（用于报酬计算）随时间降低-年轻的shares相对老的shares有更高价值。这样激励用户稳定地使用矿池挖矿，而不是在矿池间不断切换。"
+"一旦用户断开矿池连接，他的share开始贬值。"
 
 #: web/templates/user_manual/rewards.html:111
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The exact share value at time is defined by <strong>scoring function</"
 "strong> %(fc)s. It calculates\n"
 "    <strong>score</strong> of a share %(s)s at time %(t_0)s as"
 msgstr ""
+"确切的share价值根据<strong>指数加权功能</strong> "
+"%(fc)s来确定。它计算一个share%(s)s在时间%(t_0)s的<strong>指数加权</strong>为"
 
 #: web/templates/user_manual/rewards.html:116
 #, python-format
@@ -6021,7 +6054,7 @@ msgid ""
 msgstr ""
 
 #: web/templates/user_manual/rewards.html:119
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "(For users who knew slush's scoring system presented years ago, one of the "
 "key differences is that the score is not related to beginning of the round, "
@@ -6030,38 +6063,42 @@ msgid ""
 "subtle but has quite significant consequences, because it fully eliminates a "
 "concept of rounds from rewards calculation.)"
 msgstr ""
+"（对于从几年前就知道slush的指数加权系统的用户来说，关键的不同点之一是指数加权不是关联到一轮开始的那个点，而是随给出的任意时点%(t_0)s相关联的动"
+"态来确定的，例如当您查看仪表盘的时候那个点。这种变化是很微妙的但却有显著的结果，因为它完全消除了报酬计算时每轮的概念。"
 
 #: web/templates/user_manual/rewards.html:122
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Let's continue. Let %(Us)s be a set of <em>all pool users</em> and %(set)s "
 "be a set of <em>all valid shares</em> submitted by user %(u)s until time "
 "%(t_0)s. Written more formally the following holds"
 msgstr ""
+"让我们继续。设%(Us)s为<em>矿池所有用户</em>，设%(set)s为由用户%(u)s在时间time "
+"%(t_0)s提交的<em>所有有效share量</em>。正式写为如下"
 
 #: web/templates/user_manual/rewards.html:126
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Then score for some user %(u)s at time %(t_0)s is calculated as total score "
 "of all his/her shares from time %(t_0)s, submitted at %(t_0)s or earlier:"
-msgstr ""
+msgstr "因此一些用户%(u)s在时间%(t_0)s的指数加权被计算为一个总指数加权数，即是他们从时间%(t_0)s或更早时间前提交的总share量："
 
 #: web/templates/user_manual/rewards.html:131
 msgid ""
 "Technically, the pool computes score for each worker separately but the math "
 "is analogous."
-msgstr ""
+msgstr "理论上讲，矿池给每个矿工分开计算指数加权但运用的数学方法是类似的。"
 
 #: web/templates/user_manual/rewards.html:134
 #, python-format
 msgid ""
 "Score of the whole pool %(c)s is a sum of score of all users in the given "
 "time together:"
-msgstr ""
+msgstr "整个矿池的指数加权%(c)是在给出时间内的所有用户的指数加权的总和："
 
 #: web/templates/user_manual/rewards.html:138
 msgid "Rewards Calculation"
-msgstr ""
+msgstr "报酬计算"
 
 #: web/templates/user_manual/rewards.html:140
 #, python-format
@@ -6070,16 +6107,18 @@ msgid ""
 "- %(v_b)s, the pool can calculate reward %(R_u)s for each user %(u)s as "
 "follows (%(f)s stands for a pool fee):"
 msgstr ""
+"当矿区%(b)s在时间%(tau_b)s呗发现时，它的价值被认为是-%(v_b)s，矿池可以按如下方式给每个用户%(u)s计算报酬%(R_u)s（%(f)"
+"s代表矿池费用）："
 
 #: web/templates/user_manual/rewards.html:144
 msgid ""
 "For those who really love math equations the full rewards formula for "
 "<strong>continuous scoring system</strong> is:"
-msgstr ""
+msgstr "对于热爱数学公式的用户们，<strong>连续的指数加权系统</strong>完整的报酬公式如下："
 
 #: web/templates/user_manual/rewards.html:149
 msgid "Other values"
-msgstr ""
+msgstr "其他价值"
 
 #: web/templates/user_manual/rewards.html:151
 #, python-format
@@ -6090,11 +6129,13 @@ msgid ""
 "was found at that time but instead of block value (which is not known yet) "
 "we use 25 BTC:"
 msgstr ""
+"当您查看您的仪表盘时，会发现矿池为您计算的其他价值。如用户%(u)s在时间%(t_0)s<strong>估计的报酬</strong>被计算如下（在未知矿区"
+"是否已被发现，没有确定价值时，我们使用25BTC）："
 
 #: web/templates/user_manual/rewards.html:156
 #, python-format
 msgid "<strong>User's contribution</strong> to the pool (in %%) is defined as"
-msgstr ""
+msgstr "对矿池(in %%)<strong>用户的贡献</strong>被定义为"
 
 #: web/templates/user_manual/rewards.html:161
 #, python-format
@@ -6103,13 +6144,15 @@ msgid ""
 "time %(t_0)s is internally not calculated by hash rate averaging, but "
 "directly from shares using scoring function (result is in h/s):"
 msgstr ""
+"最后用户%(u)s和时间%(t_0)s的<strong>指数加权hash速率</strong>%(H)s实际上并不是由hash速率的均值来计算，而是直接用"
+"指数加权法计算share量（结果是以h/s）："
 
 #: web/templates/user_manual/rewards.html:166
 #, python-format
 msgid ""
 "Pool's scoring hash rate %(H)s is not surprisingly defined as all user "
 "scoring hash rates together:"
-msgstr ""
+msgstr "矿池指数加权hash速率%(H)s也不是定义为所有用户的指数加权hash速率之和："
 
 #: web/templates/user_manual/terminology.html:4
 msgctxt "UI"
@@ -6118,18 +6161,18 @@ msgstr "矿池术语"
 
 #: web/templates/user_manual/terminology.html:16
 msgid "Round"
-msgstr ""
+msgstr "轮"
 
 #: web/templates/user_manual/terminology.html:17
 msgid ""
 "Round is the time period between two blocks found by the pool. It can last "
 "from few seconds to many hours, depending on <a href=\"#luck\">pool's luck.</"
 "a>"
-msgstr ""
+msgstr "一轮即是矿池发现两个区之间的时间。它可能会是几秒钟也可能持续多个小时，取决于<a href=\"#luck\">矿池运气。</a>"
 
 #: web/templates/user_manual/terminology.html:20
 msgid "Miner"
-msgstr ""
+msgstr "矿机"
 
 #: web/templates/user_manual/terminology.html:21
 msgid ""
@@ -6138,30 +6181,31 @@ msgid ""
 "Bitcoin network (the hash rate of all miners) is so high nowadays, that "
 "using such a miner would not even pay back its costs."
 msgstr ""
+"矿机是您挖矿的设备。过去挖矿可以使用显卡或CPU。但如今比特币网络的性能（所有挖矿人的hash速率）非常高，所以显卡或CPU这样的矿机的挖矿成果根本不能抵"
+"消其成本。"
 
 #: web/templates/user_manual/terminology.html:22
 msgid ""
 "ASIC based miners offer a significantly higher <a href=\"#hashrate\">Hash "
 "Rate</a> at a lower power consumption."
-msgstr ""
+msgstr "基于ASIC的矿工提供一个在较低能量消耗情况下的显著的高<a href=\"#hashrate\">Hash速率</a>。"
 
 #: web/templates/user_manual/terminology.html:25
-#, fuzzy
 msgid "Worker"
-msgstr "工人"
+msgstr "矿工"
 
 #: web/templates/user_manual/terminology.html:26
 msgid ""
 "Worker is a name for your mining device that you use as a login for your "
 "mining software."
-msgstr ""
+msgstr "矿工是作为登录您挖矿软件您使用的的挖矿设备的名称。"
 
 #: web/templates/user_manual/terminology.html:27
 msgid ""
 "We recommend to give a designated worker name to every mining device. That "
 "way you can <strong>track down a faulty miner</strong> easily just by "
 "looking at the monitoring section of your profile page."
-msgstr ""
+msgstr "我们推荐您给每个挖矿设备指定一个名称。这样您就可以通过查看您个人资料下的监控选项轻松<strong>追查到出错的矿机</strong>。"
 
 #: web/templates/user_manual/terminology.html:28
 msgid ""
@@ -6171,16 +6215,17 @@ msgid ""
 "your hash rate, however, you will not be able to determine which device it "
 "is."
 msgstr ""
+"您也可以用 <strong>一个矿工名称</strong>命名所有的挖矿设备，没有问题的。但这样做的不利之处是当您的某个设备工作不正常时，您可以觉察到ha"
+"sh速率的下降，但是您无法确认不正常工作的是哪一个设备。"
 
 #: web/templates/user_manual/terminology.html:31
-#, fuzzy
 msgid "Hash Rate"
-msgstr "Hash的速率"
+msgstr "Hash速率"
 
 #: web/templates/user_manual/terminology.html:32
 msgid ""
 "<strong>Hash rate</strong> is the number of hashes generated per second."
-msgstr ""
+msgstr "<strong>Hash速率</strong>每秒获取的hash数值。"
 
 #: web/templates/user_manual/terminology.html:34
 msgid ""
@@ -6188,6 +6233,8 @@ msgid ""
 "strong>in our statistics. However, you might also come across the “hash rate "
 "of the pool” or the “hash rate of the entire Bitcoin network”."
 msgstr ""
+"在我们的统计库里您可以观察<strong>您挖矿设备的hash速率</strong>。 "
+"进而您可以发现“矿池hash速率”或者“整个比特币网络hash速率“。"
 
 #: web/templates/user_manual/terminology.html:35
 msgid ""
@@ -6196,21 +6243,23 @@ msgid ""
 "shown in our system. It is important for you to understand the difference "
 "between these two."
 msgstr ""
+"显示在您挖矿设备指南上的<strong>名义hash速率</strong>和在我们系统里的<strong>有效hash速率</strong>是不同的。了解"
+"这两项直接的不同对您是非常重要的。"
 
 #: web/templates/user_manual/terminology.html:37
 msgid "Nominal <span>Hash Rate</span>"
-msgstr ""
+msgstr "名义<span>Hash速率</span>"
 
 #: web/templates/user_manual/terminology.html:38
 msgid ""
 "The nominal hash rate of 1 Gh/s means that your device is capable of "
 "generating 1 billion hashes per second - no matter if they match any "
 "criteria."
-msgstr ""
+msgstr "1Gh/s的名义hash速率表示您的设备每秒可以产生10亿hash值-不管他们是否符合任何标准。"
 
 #: web/templates/user_manual/terminology.html:40
 msgid "Effective <span>Hash Rate</span>"
-msgstr ""
+msgstr "有效<span>Hash速率</span>"
 
 #: web/templates/user_manual/terminology.html:41
 msgid ""
@@ -6219,12 +6268,14 @@ msgid ""
 "generated hashes by your devices get sent. They must fit certain criteria "
 "assigned by the pool (see: <a href=\"#share\">Shares</a>)."
 msgstr ""
+"有效的hash速率是指<strong>由您的设备提交到我们矿池的hash速率计算出的</strong>速率。即使您设备生成的一小部分hash值发送，它们也"
+"必须符合我们矿池设定的一定标准（参照：<a href=\"#share\">shares</a>）。"
 
 #: web/templates/user_manual/terminology.html:42
 msgid ""
 "Most of the times, the effective hash rate will be somewhat lower than the "
 "nominal hash rate."
-msgstr ""
+msgstr "通常情况下，有效hash速率比名义hash速率低一些。"
 
 #: web/templates/user_manual/terminology.html:43
 msgid ""
@@ -6233,17 +6284,18 @@ msgid ""
 "experienced connection issues, then your effective hash rate will be lower "
 "than the nominal hash rate in that period of time."
 msgstr ""
+"您的有效hash速率取决于您挖矿设备的运气和您连接到我们矿池的质量（稳定性）。如果您遇到过连接问题，那么那段时间里您的有效hash速率将低于名义hash速"
+"率。"
 
 #: web/templates/user_manual/terminology.html:44
 msgid ""
 "Occasionally, you can be more lucky and find more valid hashes than usual. "
 "That is what gives you a slightly higher effective hash rate."
-msgstr ""
+msgstr "偶尔情况下，您可能特别幸运会得到比平时更多的有用hash值，那将带给您稍高的有效hash速率。"
 
 #: web/templates/user_manual/terminology.html:46
-#, fuzzy
 msgid "Scoring <span>Hash Rate</span>"
-msgstr "近期 <span>Hash速率</span>"
+msgstr "指数加权<span>Hash速率</span>"
 
 #: web/templates/user_manual/terminology.html:48
 #, python-format
@@ -6252,18 +6304,21 @@ msgid ""
 "rewards calculation. Please, see <a href=\"%(rewards_manual)s\">Reward "
 "System</a> for the explanation."
 msgstr ""
+"指数加权hash速率是由有效hash速率生成的用给报酬计算的一个值。详情请参看<a href=\"%(rewards_manual)s\""
+">报酬系统</a>。"
 
 #: web/templates/user_manual/terminology.html:51
-#, fuzzy
 msgid "Share - <span>Proof of Work</span>"
-msgstr "<span>每个位置</span>的Hash速率"
+msgstr "share-<span>工作证明</span>"
 
 #: web/templates/user_manual/terminology.html:52
+#, fuzzy
 msgid ""
 "<strong>Share</strong> is a unit which pool uses for computing mining work."
-msgstr ""
+msgstr "<strong>share</strong>是一个矿池用来计算挖矿工作的单元。"
 
 #: web/templates/user_manual/terminology.html:54
+#, fuzzy
 msgid ""
 "When a miner connects to the pool it receives computational task to be "
 "solved - it computes hash values with certain properties (they must be lower "
@@ -6273,36 +6328,43 @@ msgid ""
 "<strong>shares</strong>. If a hash (proof of work) with difficulty \\(d\\) "
 "is submitted by a miner then \\(d\\) shares is counted by the pool."
 msgstr ""
+"当矿机连接到矿池时将接收需要被解决的任务-它根据某些特性来计算hash值（必须低于来自困难度的限制）。符合要求的hash值将被发送回矿池并作为 "
+"<strong>矿机的工作证明</strong>。矿机工作的数量以单位形式称作<strong>shares</strong>。 如果在困难度 \\(d\\"
+")的一个hash值（工作证明）被用户提交，那么\\(d\\) shares将被矿池采用。"
 
 #: web/templates/user_manual/terminology.html:56
 msgid "To put it as simple as it could be:"
-msgstr ""
+msgstr "尽可能简单来说："
 
 #: web/templates/user_manual/terminology.html:58
+#, fuzzy
 msgid "1 share = 1 proof of work on difficulty 1"
-msgstr ""
+msgstr "1 share = 困难度1时的1个工作证明"
 
 #: web/templates/user_manual/terminology.html:59
+#, fuzzy
 msgid ""
 "5 shares = 1 proof of work on difficulty 5 (or 5 proofs of work on "
 "difficulty 1)"
-msgstr ""
+msgstr "5 shares = 困难度5时的1个工作证明（或困难度1时的5个工作证明）"
 
 #: web/templates/user_manual/terminology.html:60
+#, fuzzy
 msgid ""
 "100 shares = 10 proofs of work on difficulty 10 (or .. you can see the "
 "pattern)"
-msgstr ""
+msgstr "100 shares =困难度10时的10个工作证明（或您可以推算可能的组合）"
 
 #: web/templates/user_manual/terminology.html:64
 msgid "Vardiff <span>(Variable Difficulty Algorithm)</span>"
-msgstr ""
+msgstr "Vardiff<span>(变量困难值算法)</span>"
 
 #: web/templates/user_manual/terminology.html:65
+#, fuzzy
 msgid ""
 "(Please, have a look at how <a href=\"#share\">shares</a> are being produced "
 "before reading on.)"
-msgstr ""
+msgstr "（请在继续阅读前看一下<a href=\"#share\">shares</a>是怎样产生的。）"
 
 #: web/templates/user_manual/terminology.html:66
 msgid ""
@@ -6314,6 +6376,8 @@ msgid ""
 "    so that an average communication frequency is roughly the same for all "
 "miners."
 msgstr ""
+"不同挖矿用户的hash值有很大的不同。为了最优化您的矿机和矿池间的网络通信量，我们介绍给您变量困难运算法（变量困难度）。它将分配给强一些的矿机更困难的任务"
+"（大一点的难度），容易点的任务给弱的矿机，因此所有的用户享有大致平均的通信频率。"
 
 #: web/templates/user_manual/terminology.html:69
 msgid ""
@@ -6323,12 +6387,14 @@ msgid ""
 "ideal frequency that allows a balanced data load to our servers and correct "
 "measurements of your miner's hash rate."
 msgstr ""
+"<strong>变量困难度</strong>分配给用户恰好能够发送回矿池<strong>每分钟16-20次</strong>的工作任务。为什么每分钟16-"
+"20次呢？根据我们的计算，这是能够允许一个平衡的数据加载到我们的服务器并能准确计算您的hash速率的理想频率。"
 
 #: web/templates/user_manual/terminology.html:70
 msgid ""
 "If your miner is too fast, Vardiff increases the difficulty for its work and "
 "when too slow, the difficulty decreases."
-msgstr ""
+msgstr "当您的矿机工作非常快，变量困难度将增加其工作的困难度，反之减少。"
 
 #: web/templates/user_manual/terminology.html:71
 msgid ""
@@ -6337,36 +6403,38 @@ msgid ""
 "submission. Hence you will not lose any share and the network does not get "
 "jammed."
 msgstr ""
+"举个例子：20的困难度表示您将发现20次低于符合要求的hash值，但每次提交您将会得到20 shares。因此您不会浪费任何share而且网络不会被卡住。"
 
 #: web/templates/user_manual/terminology.html:74
 msgid "Luck"
-msgstr ""
+msgstr "运气"
 
 #: web/templates/user_manual/terminology.html:75
+#, fuzzy
 msgid ""
 "Pool luck explains how many shares the pool needed to find a specific block "
 "in comparison <strong>to the average number of shares</strong> needed for "
 "finding a block."
-msgstr ""
+msgstr "矿池运气表示相对于发现一个矿区的<strong>平均share数量</strong>矿池发现某一矿区实际需要的share数量。"
 
 #: web/templates/user_manual/terminology.html:77
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "If the luck is above 100%% it means that the pool needed less shares than "
 "expected for the given difficulty."
-msgstr ""
+msgstr "如果运气值高于100%%即表示矿池需要在预期困难度下较少的share量。"
 
 #: web/templates/user_manual/terminology.html:78
-#, python-format
+#, fuzzy, python-format
 msgid "If the luck is below 100%%, more shares than average were needed."
-msgstr ""
+msgstr "如果运气值低于100%%，那么需要高于平均数的share量。"
 
 #: web/templates/user_manual/terminology.html:80
 #, python-format
 msgid ""
 "E.g. if the luck is 200%%, the pool found two times more blocks in the given "
 "time period than average."
-msgstr ""
+msgstr "例如：如果运气是 200%%，矿池将在平均时间内找到高于2倍的矿区数。"
 
 #: web/templates/user_manual/terminology.html:81
 #, python-format
@@ -6377,28 +6445,31 @@ msgid ""
 "luck is high and disconnecting when the luck is low does not make any sense. "
 "In the long run, the luck is always 100%%."
 msgstr ""
+"请牢记<strong>运气代表的是之前矿池的状况并不能预期矿池在未来发现矿区的情况</strong>。发现一个新矿区跟历史记录是毫无关系的。因此在矿池运气"
+"好的时候加入挖矿，在矿池运气不好的时候离开是没有意义的。长期来看，运气基本是处于100%%的。"
 
 #: web/templates/user_manual/terminology.html:84
-#, fuzzy
 msgid "Stale Rate"
-msgstr "Hash的速率"
+msgstr "过期的速率"
 
 #: web/templates/user_manual/terminology.html:85
+#, fuzzy
 msgid ""
 "Stale rate is number of shares submitted after the old block has already "
 "been found and pool has moved to the next block. If everything works "
 "correctly, it should be a very low number."
-msgstr ""
+msgstr "过期速率指在旧的矿区被发现后，矿池已经转移到下一个新矿区后被提交的share量。如果一切正常，这个速率值将是非常低的。"
 
 #: web/templates/user_manual/terminology.html:86
 msgid "Several factors can increase your stale rate:"
-msgstr ""
+msgstr "有几个因素能增加您的过期速率："
 
 #: web/templates/user_manual/terminology.html:88
 msgid "Network Latency"
-msgstr ""
+msgstr "网络延迟"
 
 #: web/templates/user_manual/terminology.html:89
+#, fuzzy
 msgid ""
 "On slower networks (or when there is a network issue on the path from your "
 "miner to the pool), it takes more time for a miner to receive notification "
@@ -6406,12 +6477,15 @@ msgid ""
 "old block for some time and these are being rejected by the pool as "
 "<em>stale</em> shares</em>."
 msgstr ""
+"在较慢的网络上（或在您的矿机与矿池连接间有网络故障），用户接收新矿区的通知将需要更多时间。然而，矿机仍在提交工作结果到旧的矿区时，矿池已把这些结果当作<e"
+"m>过期</em> shares</em>否决掉了。"
 
 #: web/templates/user_manual/terminology.html:91
 msgid "Slower Mining Device"
-msgstr ""
+msgstr "慢的挖矿设备"
 
 #: web/templates/user_manual/terminology.html:92
+#, fuzzy
 msgid ""
 "Some miners are like men. They only handle one task at a time. Before taking "
 "on a new job, they need to finish the previous one. While others are "
@@ -6419,6 +6493,8 @@ msgid ""
 "for the old block that cannot be accepted by the pool anymore. Such results "
 "are also called <strong>stale</strong> shares."
 msgstr ""
+"有些矿机像人类一样。他们在同一时间只能处理一件事情。在进行新任务时，他们需要完成之前的任务。在别的用户已经开始在新矿区生成share时，这些矿机仍在旧的矿"
+"区工作生成不再被矿池接受的share。这样的结果也被称作<strong>过期</strong>shares。"
 
 #: web/templates/user_manual/user_manual_base.html:17
 msgctxt "UI"
