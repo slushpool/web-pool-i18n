@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-16 14:39+0000\n"
-"PO-Revision-Date: 2015-02-20 09:30+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2015-02-23 10:34+0200\n"
+"Last-Translator: xu <samanthaxu1987@163.com>\n"
 "Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-"
 "cz/mining/zh/>\n"
 "Language: zh\n"
@@ -1557,7 +1557,6 @@ msgid "24h"
 msgstr "24小时"
 
 #: web/templates/dashboard.html:67 web/templates/workers.html:53
-#, fuzzy
 msgctxt "UI"
 msgid "Last Share"
 msgstr "上一次share"
@@ -2867,7 +2866,6 @@ msgid "<strong>Settings</strong>"
 msgstr "<strong>设置</strong>"
 
 #: web/templates/message-cold-mining.html:7
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "Pool is synchronizing mining data, information about last shares can be "
@@ -4424,7 +4422,6 @@ msgid "Current Round Duration:"
 msgstr "本轮持续时间："
 
 #: web/templates/stats.html:29
-#, fuzzy
 msgctxt "UI, Current Shares CDF (link)"
 msgid "Current Shares"
 msgstr "当前share"
@@ -4445,7 +4442,6 @@ msgid "Pool Luck (1 day, 7 days, 30 days)"
 msgstr "矿池运气（1天，7天，30天）"
 
 #: web/templates/stats.html:47
-#, fuzzy
 msgctxt "UI"
 msgid "Total Shares in the Round:"
 msgstr "本轮的总share："
@@ -4796,7 +4792,6 @@ msgid "Really?"
 msgstr "确定？"
 
 #: web/templates/worker.html:56
-#, fuzzy
 msgctxt "UI"
 msgid "All worker stats and shares in the current round will be lost!"
 msgstr "所有矿工此回合的统计和share将丢失！"
@@ -5965,12 +5960,11 @@ msgid ""
 msgstr "让我们开始从基本概念和定义来描述矿池呈现的报酬和其他一些价值到底是怎样被计算的。逐渐我们会展示更多有趣的事。"
 
 #: web/templates/user_manual/rewards.html:90
-#, fuzzy
 msgid "Shares"
 msgstr "share量"
 
 #: web/templates/user_manual/rewards.html:92
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "When a miner connects to the pool it receives computational task to be "
 "solved - it computes hash values with certain properties. Hashes satisfying "
@@ -5985,7 +5979,6 @@ msgstr ""
 "那么用户将有%(d)s share量被矿池采纳用于计算。"
 
 #: web/templates/user_manual/rewards.html:95
-#, fuzzy
 msgid ""
 "Whenever a new share is registered by the system a timestamp of the event is "
 "recorded and used for share's valuation later."
@@ -6004,7 +5997,7 @@ msgid "Time handling"
 msgstr "时间处理"
 
 #: web/templates/user_manual/rewards.html:103
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Let %(tau)s be a function which gives us a time when some share %(s)s was "
 "submitted (or when a block %(b)s was found). The time is measured in seconds "
@@ -6019,12 +6012,10 @@ msgstr ""
 "delta)s，是作为计算share量的重要部分。"
 
 #: web/templates/user_manual/rewards.html:106
-#, fuzzy
 msgid "Shares valuation<span> - score</span>"
 msgstr "Share量的计算<span>-指数加权</span>"
 
 #: web/templates/user_manual/rewards.html:108
-#, fuzzy
 msgid ""
 "A value of each share (for rewards calculation) decreases in time - younger "
 "shares are valued higher then older shares. This motivates users to mine "
@@ -6035,7 +6026,7 @@ msgstr ""
 "一旦用户断开矿池连接，他的share开始贬值。"
 
 #: web/templates/user_manual/rewards.html:111
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The exact share value at time is defined by <strong>scoring function</"
 "strong> %(fc)s. It calculates\n"
@@ -6054,7 +6045,7 @@ msgid ""
 msgstr ""
 
 #: web/templates/user_manual/rewards.html:119
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "(For users who knew slush's scoring system presented years ago, one of the "
 "key differences is that the score is not related to beginning of the round, "
@@ -6064,10 +6055,10 @@ msgid ""
 "concept of rounds from rewards calculation.)"
 msgstr ""
 "（对于从几年前就知道slush的指数加权系统的用户来说，关键的不同点之一是指数加权不是关联到一轮开始的那个点，而是随给出的任意时点%(t_0)s相关联的动"
-"态来确定的，例如当您查看仪表盘的时候那个点。这种变化是很微妙的但却有显著的结果，因为它完全消除了报酬计算时每轮的概念。"
+"态来确定的，例如当您查看仪表盘的时候那个点。这种变化是很微妙的但却有显著的结果，因为它完全消除了报酬计算时每轮的概念。)"
 
 #: web/templates/user_manual/rewards.html:122
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Let's continue. Let %(Us)s be a set of <em>all pool users</em> and %(set)s "
 "be a set of <em>all valid shares</em> submitted by user %(u)s until time "
@@ -6077,7 +6068,7 @@ msgstr ""
 "%(t_0)s提交的<em>所有有效share量</em>。正式写为如下"
 
 #: web/templates/user_manual/rewards.html:126
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Then score for some user %(u)s at time %(t_0)s is calculated as total score "
 "of all his/her shares from time %(t_0)s, submitted at %(t_0)s or earlier:"
@@ -6312,13 +6303,11 @@ msgid "Share - <span>Proof of Work</span>"
 msgstr "share-<span>工作证明</span>"
 
 #: web/templates/user_manual/terminology.html:52
-#, fuzzy
 msgid ""
 "<strong>Share</strong> is a unit which pool uses for computing mining work."
 msgstr "<strong>share</strong>是一个矿池用来计算挖矿工作的单元。"
 
 #: web/templates/user_manual/terminology.html:54
-#, fuzzy
 msgid ""
 "When a miner connects to the pool it receives computational task to be "
 "solved - it computes hash values with certain properties (they must be lower "
@@ -6337,19 +6326,16 @@ msgid "To put it as simple as it could be:"
 msgstr "尽可能简单来说："
 
 #: web/templates/user_manual/terminology.html:58
-#, fuzzy
 msgid "1 share = 1 proof of work on difficulty 1"
 msgstr "1 share = 困难度1时的1个工作证明"
 
 #: web/templates/user_manual/terminology.html:59
-#, fuzzy
 msgid ""
 "5 shares = 1 proof of work on difficulty 5 (or 5 proofs of work on "
 "difficulty 1)"
 msgstr "5 shares = 困难度5时的1个工作证明（或困难度1时的5个工作证明）"
 
 #: web/templates/user_manual/terminology.html:60
-#, fuzzy
 msgid ""
 "100 shares = 10 proofs of work on difficulty 10 (or .. you can see the "
 "pattern)"
@@ -6360,7 +6346,6 @@ msgid "Vardiff <span>(Variable Difficulty Algorithm)</span>"
 msgstr "Vardiff<span>(变量困难值算法)</span>"
 
 #: web/templates/user_manual/terminology.html:65
-#, fuzzy
 msgid ""
 "(Please, have a look at how <a href=\"#share\">shares</a> are being produced "
 "before reading on.)"
@@ -6410,7 +6395,6 @@ msgid "Luck"
 msgstr "运气"
 
 #: web/templates/user_manual/terminology.html:75
-#, fuzzy
 msgid ""
 "Pool luck explains how many shares the pool needed to find a specific block "
 "in comparison <strong>to the average number of shares</strong> needed for "
@@ -6418,14 +6402,14 @@ msgid ""
 msgstr "矿池运气表示相对于发现一个矿区的<strong>平均share数量</strong>矿池发现某一矿区实际需要的share数量。"
 
 #: web/templates/user_manual/terminology.html:77
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "If the luck is above 100%% it means that the pool needed less shares than "
 "expected for the given difficulty."
 msgstr "如果运气值高于100%%即表示矿池需要在预期困难度下较少的share量。"
 
 #: web/templates/user_manual/terminology.html:78
-#, fuzzy, python-format
+#, python-format
 msgid "If the luck is below 100%%, more shares than average were needed."
 msgstr "如果运气值低于100%%，那么需要高于平均数的share量。"
 
@@ -6453,7 +6437,6 @@ msgid "Stale Rate"
 msgstr "过期的速率"
 
 #: web/templates/user_manual/terminology.html:85
-#, fuzzy
 msgid ""
 "Stale rate is number of shares submitted after the old block has already "
 "been found and pool has moved to the next block. If everything works "
@@ -6469,7 +6452,6 @@ msgid "Network Latency"
 msgstr "网络延迟"
 
 #: web/templates/user_manual/terminology.html:89
-#, fuzzy
 msgid ""
 "On slower networks (or when there is a network issue on the path from your "
 "miner to the pool), it takes more time for a miner to receive notification "
@@ -6485,7 +6467,6 @@ msgid "Slower Mining Device"
 msgstr "慢的挖矿设备"
 
 #: web/templates/user_manual/terminology.html:92
-#, fuzzy
 msgid ""
 "Some miners are like men. They only handle one task at a time. Before taking "
 "on a new job, they need to finish the previous one. While others are "
