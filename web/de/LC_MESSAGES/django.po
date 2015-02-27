@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-25 09:22+0000\n"
+"POT-Creation-Date: 2015-02-27 10:52+0000\n"
 "PO-Revision-Date: 2015-01-06 14:58+0200\n"
 "Last-Translator: Jochen Spalding <jochen.spalding@me.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
@@ -30,8 +30,8 @@ msgid "Confirmed"
 msgstr "bestätigt"
 
 #: contact/forms.py:39 contact/forms.py:40 contact/forms.py:41
-#: contact/forms.py:42 contact/views.py:42 mailing/forms.py:36
-#: mailing/forms.py:39 mailing/views.py:67 news/views.py:68
+#: contact/forms.py:42 contact/views.py:42 mailing/forms.py:39
+#: mailing/forms.py:42 mailing/views.py:67 news/views.py:66
 #: notifications/backends/blocks.py:24 notifications/backends/proposals.py:23
 msgid "UI"
 msgstr ""
@@ -57,42 +57,47 @@ msgctxt "UI"
 msgid "Send"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:11
+#: mailing/templates/mailing/unsubscribe.html:14
+msgctxt "UI"
+msgid "Mailing"
+msgstr ""
+
+#: mailing/templates/mailing/unsubscribe.html:23
 msgctxt "UI"
 msgid "We are sorry to see you go!"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:13
+#: mailing/templates/mailing/unsubscribe.html:25
 msgctxt "UI"
 msgid "We would still appreciate any feedback why you are unsubscribing:"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:15
+#: mailing/templates/mailing/unsubscribe.html:27
 msgctxt "UI"
 msgid "I receive the newsletters too frequently."
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:16
+#: mailing/templates/mailing/unsubscribe.html:28
 msgctxt "UI"
 msgid "I don't mine anymore."
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:17
+#: mailing/templates/mailing/unsubscribe.html:29
 msgctxt "UI"
 msgid "I have joined another pool."
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:18
+#: mailing/templates/mailing/unsubscribe.html:30
 msgctxt "UI"
 msgid "The newsletter content is of no value to me."
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:19
+#: mailing/templates/mailing/unsubscribe.html:31
 msgctxt "UI"
 msgid "Other reason."
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:24
+#: mailing/templates/mailing/unsubscribe.html:36
 msgctxt "UI"
 msgid "Unsubscribe me"
 msgstr ""
@@ -165,7 +170,12 @@ msgctxt "UI"
 msgid "News"
 msgstr ""
 
-#: news/templates/news/detail.html:38
+#: news/templates/news/detail.html:26
+msgctxt "UI"
+msgid "All news"
+msgstr ""
+
+#: news/templates/news/detail.html:39
 msgctxt "UI"
 msgid "Other news"
 msgstr ""
@@ -974,8 +984,7 @@ msgctxt "UI"
 msgid "Account deletion requested"
 msgstr "Löschung des Accounts angefragt"
 
-#: web/models.py:900 web/templates/login.html:4
-#: web/templates/registration_confirm_has_account.html:22
+#: web/models.py:900
 msgctxt "UI"
 msgid "Login"
 msgstr "Einloggen"
@@ -1159,53 +1168,53 @@ msgctxt "UI"
 msgid "New account confirmation"
 msgstr "Neuer Account bestätigt"
 
-#: web/views.py:323
+#: web/views.py:325
 msgctxt "UI"
 msgid "Monitoring <b>enabled</b> on all workers."
 msgstr "Beobachtungssystem <b>enabled</b> für alle Worker."
 
-#: web/views.py:335
+#: web/views.py:337
 msgctxt "UI"
 msgid "Monitoring <b>disabled</b> on all workers."
 msgstr "Beobachtungssystem <b>disabled</b> für alle Worker."
 
-#: web/views.py:345
+#: web/views.py:347
 msgctxt "UI"
 msgid "Worker does not exist."
 msgstr "Dieser Worker existiert nicht."
 
-#: web/views.py:367
+#: web/views.py:369
 msgctxt "UI"
 msgid "Worker settings has been updated."
 msgstr "Worker-Einstellungen wurden aktualisiert."
 
-#: web/views.py:377
+#: web/views.py:379
 msgctxt "UI"
 msgid "Worker has been created."
 msgstr "Worker wurde erstellt."
 
-#: web/views.py:483
+#: web/views.py:485
 msgctxt "UI"
 msgid "Two-factor authentication isn't configured yet"
 msgstr "2-Faktoren-Autentifizierung ist noch nicht eingerichtet"
 
-#: web/views.py:494
+#: web/views.py:496
 msgctxt "UI"
 msgid "Two-factor authentication token is invalid. Please, enter valid token."
 msgstr ""
 "2-Faktoren-Autentifizierungstoken ist nicht valide. Bitte erneut eingeben."
 
-#: web/views.py:502
+#: web/views.py:504
 msgctxt "UI"
 msgid "Two-factor authentication has been succesfully disabled."
 msgstr "2-Faktoren-Autentifizierung wurde erfolgreich abgestellt."
 
-#: web/views.py:514
+#: web/views.py:516
 msgctxt "UI"
 msgid "Two-factor authentication is already configured"
 msgstr "2-Faktoren-Autentifizierung ist bereits eingerichtet"
 
-#: web/views.py:531
+#: web/views.py:533
 msgctxt "UI"
 msgid ""
 "Two-factor authentication token is invalid. Please, re-scan the QR code (a "
@@ -1214,27 +1223,27 @@ msgstr ""
 "2-Faktoren-Autentifizierungstoken ist nicht valide. Bitte den QR-Code erneut "
 "scannen (Ein neuer wurde aus Sicherheitsgründen erstellt)."
 
-#: web/views.py:539
+#: web/views.py:541
 msgctxt "UI"
 msgid "Two-factor authentication has been configured."
 msgstr "2-Faktoren-Autentifizierung wurde eingerichtet."
 
-#: web/views.py:551
+#: web/views.py:553
 msgctxt "UI"
 msgid "Invalid request"
 msgstr "Ungültiges Token"
 
-#: web/views.py:565
+#: web/views.py:567
 msgctxt "UI"
 msgid "Wallet is not valid"
 msgstr "Wallet-Adresse ist nicht valide"
 
-#: web/views.py:575
+#: web/views.py:577
 msgctxt "UI"
 msgid "Your payout address has been locked."
 msgstr "Deine Payout-Adresse wurde gelockt."
 
-#: web/views.py:624 web/views.py:710 web/views.py:886 web/views.py:1024
+#: web/views.py:626 web/views.py:712 web/views.py:888 web/views.py:1026
 msgctxt "UI"
 msgid ""
 "Confirmation email has been sent. Please, check your mailbox and follow the "
@@ -1243,67 +1252,67 @@ msgstr ""
 "Bestätigungs-eMail versandt. Überprüfe deine eMails und folge dem "
 "entsprechenden Link."
 
-#: web/views.py:631
+#: web/views.py:633
 msgctxt "UI"
 msgid "The account has been updated."
 msgstr "Konto-Einstellungen aktualisiert."
 
-#: web/views.py:646
+#: web/views.py:648
 msgctxt "UI"
 msgid "The monitoring settings has been updated."
 msgstr "Beobachtungs-Einstellungen aktualisiert."
 
-#: web/views.py:682
+#: web/views.py:684
 msgctxt "UI"
 msgid "Password has been successfully changed."
 msgstr "Passwort wurde erfolgreich geändert."
 
-#: web/views.py:704
+#: web/views.py:706
 msgctxt "UI"
 msgid "Now, confirm change by wallet signature."
 msgstr ""
 
-#: web/views.py:722
+#: web/views.py:724
 msgctxt "UI"
 msgid "The payouts settings has been updated."
 msgstr "Auszahlungs-Einstellungen aktualisiert."
 
-#: web/views.py:735
+#: web/views.py:737
 msgctxt "UI"
 msgid "Delete account confirmation"
 msgstr "Bestätigung der Account-Löschung"
 
-#: web/views.py:751
+#: web/views.py:753
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
 msgstr ""
 "Eine Nachricht bezüglich der  Löscheung des Accounts wurde an %s gesendet."
 
-#: web/views.py:899
+#: web/views.py:901
 msgctxt "UI"
 msgid "Email change request has been successfully canceled."
 msgstr "Anfrage zur Änderung der Adresse erfolgreich abgebrochen."
 
-#: web/views.py:1003
+#: web/views.py:1005
 msgctxt "UI"
 msgid "Wallet change request has been successfully canceled."
 msgstr "Anfrage zur Änderung der Adresse erfolgreich abgebrochen."
 
-#: web/views.py:1037
+#: web/views.py:1039
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at support@bitcoin.cz"
 msgstr ""
 "Konto deaktiviert. Bitte kontaktiere Pool-Administrator unter "
 "support@bitcoin.cz"
 
-#: web/views.py:1074
+#: web/views.py:1076
 #, python-format
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at %(link)s"
 msgstr "Konto deaktiviert. Bitte kontaktiere Pool-Administrator unter %(link)s"
 
-#: web/views.py:1083
+#: web/views.py:1085
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -1313,13 +1322,13 @@ msgstr ""
 "Die Auszahlungen wurden vorübergehend vom Pool-Betreiber deaktiviert "
 "(%(reason)s). "
 
-#: web/views.py:1084
+#: web/views.py:1086
 #, python-format
 msgctxt "UI"
 msgid "Please, contact %(link)s for further details."
 msgstr "Bitte kontaktiere %(link)s für weitere Details."
 
-#: web/views.py:1106
+#: web/views.py:1108
 msgctxt "UI"
 msgid ""
 "Please consider enabling payout address protection by two-factor "
@@ -1328,12 +1337,12 @@ msgstr ""
 "Bitte erwäge die Aktivierung der Zwei-Faktoren Authentifizierung (2FA) oder "
 "Locken der Auszahlungsadresse"
 
-#: web/views.py:1108 web/templates/settings.html:3
+#: web/views.py:1110 web/templates/settings.html:3
 msgctxt "UI"
 msgid "Account settings"
 msgstr "Konto-Einstellungen"
 
-#: web/views.py:1623
+#: web/views.py:1630
 msgctxt "UI"
 msgid "Requested proposal is waiting for admin confirmation"
 msgstr "Verbesserungsvorschlag wartet auf Bestätigung durch den Administrator"
@@ -1831,10 +1840,12 @@ msgid "Recent <span>Hash Rate</span>"
 msgstr "Neues Konto anlegen"
 
 #: web/templates/dashboard.html:85 web/templates/worker.html:80
-#: web/templates/user_manual/monitoring.html:158
-#: web/templates/user_manual/monitoring.html:173
+#: web/templates/user_manual/m.html:164 web/templates/user_manual/m.html:179
 #: web/templates/user_manual/rewards.html:46
 #: web/templates/user_manual/rewards.html:60
+#: web/templates/user_manual/t.html:66 web/templates/user_manual/t.html:79
+#: web/templates/user_manual/troubleshooting.html:66
+#: web/templates/user_manual/troubleshooting.html:79
 msgctxt "UI"
 msgid "Loading chart data, please wait..."
 msgstr ""
@@ -1875,30 +1886,34 @@ msgctxt "Intro"
 msgid "Vertical solid lines represent blocks found at that instant."
 msgstr ""
 
-#: web/templates/dashboard.html:130 web/templates/worker.html:216
-#: web/templates/user_manual/monitoring.html:162
-#: web/templates/user_manual/monitoring.html:177
+#: web/templates/dashboard.html:133 web/templates/worker.html:216
+#: web/templates/user_manual/m.html:168 web/templates/user_manual/m.html:183
 #: web/templates/user_manual/rewards.html:50
 #: web/templates/user_manual/rewards.html:64
+#: web/templates/user_manual/t.html:70 web/templates/user_manual/t.html:83
+#: web/templates/user_manual/troubleshooting.html:70
+#: web/templates/user_manual/troubleshooting.html:83
 #, fuzzy
 msgid "Hash Rate (5min)"
 msgstr "Hashrate"
 
-#: web/templates/dashboard.html:131 web/templates/worker.html:217
-#: web/templates/user_manual/monitoring.html:163
-#: web/templates/user_manual/monitoring.html:178
+#: web/templates/dashboard.html:134 web/templates/worker.html:217
+#: web/templates/user_manual/m.html:169 web/templates/user_manual/m.html:184
 #: web/templates/user_manual/rewards.html:51
 #: web/templates/user_manual/rewards.html:65
+#: web/templates/user_manual/t.html:71 web/templates/user_manual/t.html:84
+#: web/templates/user_manual/troubleshooting.html:71
+#: web/templates/user_manual/troubleshooting.html:84
 #, fuzzy
 msgid "Scoring Hash Rate"
 msgstr "Hashrate"
 
-#: web/templates/dashboard.html:132
+#: web/templates/dashboard.html:135
 #, fuzzy
 msgid "Active Workers"
 msgstr "Arbeiter"
 
-#: web/templates/dashboard.html:133 web/templates/worker.html:218
+#: web/templates/dashboard.html:136 web/templates/worker.html:218
 #: web/templates/user_manual/terminology.html:94
 msgid "Alert Limit"
 msgstr ""
@@ -2789,6 +2804,13 @@ msgctxt "Intro"
 msgid "Account Settings"
 msgstr "Konto-Einstellungen"
 
+#: web/templates/login.html:4 web/templates/password_reset_confirm.html:31
+#: web/templates/registration_confirm_has_account.html:22
+#, fuzzy
+msgctxt "UI, action"
+msgid "Login"
+msgstr "Einloggen"
+
 #: web/templates/login.html:11
 #, fuzzy
 msgctxt "UI"
@@ -2850,7 +2872,6 @@ msgid "<strong>News</strong>"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/menu2_homepage_links.html:9
-#: web/templates/user_manual/user_manual_base.html:20
 #, fuzzy
 msgctxt "UI"
 msgid "<strong>Getting</strong> Started"
@@ -2988,7 +3009,8 @@ msgctxt "UI"
 msgid "My account"
 msgstr "Mein Konto"
 
-#: web/templates/monitoring.html:3 web/templates/user_manual/monitoring.html:4
+#: web/templates/monitoring.html:3 web/templates/user_manual/m.html:4
+#: web/templates/user_manual/monitoring.html:4
 #, fuzzy
 msgctxt "UI"
 msgid "Device Monitoring"
@@ -3076,26 +3098,28 @@ msgstr "Hashrate"
 msgid "Hash Rate Limit"
 msgstr "Hashrate"
 
-#: web/templates/monitoring.html:197
-#: web/templates/user_manual/monitoring.html:94 web/templatetags/utils.py:186
+#: web/templates/monitoring.html:197 web/templates/user_manual/m.html:62
+#: web/templates/user_manual/m.html:100
+#: web/templates/user_manual/monitoring.html:62 web/templatetags/utils.py:186
 msgctxt "UI, Monitoring"
 msgid "OK"
 msgstr ""
 
-#: web/templates/monitoring.html:198
-#: web/templates/user_manual/monitoring.html:100 web/templatetags/utils.py:185
+#: web/templates/monitoring.html:198 web/templates/user_manual/m.html:65
+#: web/templates/user_manual/m.html:106
+#: web/templates/user_manual/monitoring.html:65 web/templatetags/utils.py:185
 msgctxt "UI, Monitoring"
 msgid "Low"
 msgstr ""
 
-#: web/templates/monitoring.html:199
-#: web/templates/user_manual/monitoring.html:111
+#: web/templates/monitoring.html:199 web/templates/user_manual/m.html:117
 msgctxt "UI, Monitoring"
 msgid "Error"
 msgstr ""
 
-#: web/templates/monitoring.html:200
-#: web/templates/user_manual/monitoring.html:117 web/templatetags/utils.py:187
+#: web/templates/monitoring.html:200 web/templates/user_manual/m.html:71
+#: web/templates/user_manual/m.html:123
+#: web/templates/user_manual/monitoring.html:71 web/templatetags/utils.py:187
 msgctxt "UI, Monitoring"
 msgid "Disabled"
 msgstr ""
@@ -3301,12 +3325,6 @@ msgstr "Passwort zurückgesetzt"
 msgctxt "UI"
 msgid "Your password has been set. You may go ahead and log in now."
 msgstr "Dein Passwort wurde festgelegt. Du kannst dich jetzt einloggen."
-
-#: web/templates/password_reset_confirm.html:31
-#, fuzzy
-msgctxt "UI, Button"
-msgid "Login"
-msgstr "Login"
 
 #: web/templates/password_reset_sent.html:4
 #: web/templates/password_reset_sent.html:13
@@ -5283,7 +5301,7 @@ msgid ""
 msgstr ""
 
 #: web/templates/user_manual/getting_started.html:28
-#: web/templates/user_manual/intro.html:18
+#: web/templates/user_manual/intro.html:19
 #, fuzzy
 msgid "Getting <span>Started</span>"
 msgstr "Neues Konto anlegen"
@@ -5537,77 +5555,362 @@ msgstr "Neues Konto anlegen"
 msgid "Contents of User Manual"
 msgstr "Benutzername"
 
-#: web/templates/user_manual/intro.html:19
+#: web/templates/user_manual/intro.html:20
 msgid ""
 "A step-by-step guide for creating a new user account and starting to mine "
 "with our pool."
 msgstr ""
 
-#: web/templates/user_manual/intro.html:21
+#: web/templates/user_manual/intro.html:22
 #: web/templates/user_manual/terminology.html:15
 msgid "Pool <span>Terminology</span>"
 msgstr ""
 
-#: web/templates/user_manual/intro.html:22
+#: web/templates/user_manual/intro.html:23
 msgid ""
 "Most important terms explained. We strongly recommended for each beginner to "
 "read."
 msgstr ""
 
-#: web/templates/user_manual/intro.html:24
+#: web/templates/user_manual/intro.html:25
+#, fuzzy
+msgid "Troubleshooting"
+msgstr "Konto-Einstellungen"
+
+#: web/templates/user_manual/intro.html:26
+msgid ""
+"There are only few repetitive issues our customers experience from time to "
+"time and all can be solved by customer himself. Save your time and educate "
+"yourself in advance."
+msgstr ""
+
+#: web/templates/user_manual/intro.html:28
 #, fuzzy
 msgid "Reward <span>System"
 msgstr "Konto-Einstellungen"
 
-#: web/templates/user_manual/intro.html:25
+#: web/templates/user_manual/intro.html:29
 msgid ""
 "How do we calculate your reward? Understand the basic mathematics and "
 "practical implications in comparison to some other methods used among mining "
 "pools."
 msgstr ""
 
-#: web/templates/user_manual/intro.html:27
+#: web/templates/user_manual/intro.html:31
 #: web/templates/user_manual/payouts.html:10
 #, fuzzy
 msgid "Pool <span>Payouts</span>"
 msgstr "Neues Konto anlegen"
 
-#: web/templates/user_manual/intro.html:28
+#: web/templates/user_manual/intro.html:32
 msgid ""
 "How do we process reward payouts? What's the difference between expected and "
 "confirmed rewards?"
 msgstr ""
 
-#: web/templates/user_manual/intro.html:30
+#: web/templates/user_manual/intro.html:34 web/templates/user_manual/m.html:13
 #: web/templates/user_manual/monitoring.html:13
 msgid "Device <span>Monitoring</span>"
 msgstr ""
 
-#: web/templates/user_manual/intro.html:31
+#: web/templates/user_manual/intro.html:35
 msgid ""
 "Explains how to monitor your performance and workers and how to receive "
 "notifications."
 msgstr ""
 
-#: web/templates/user_manual/intro.html:33
+#: web/templates/user_manual/intro.html:37
 #, fuzzy
 msgid "Stratum <span>Mining Proxy</span>"
 msgstr "Konto-Einstellungen"
 
-#: web/templates/user_manual/intro.html:34
+#: web/templates/user_manual/intro.html:38
 msgid ""
 "Read this if you have mining software with the old Getwork protocol. This "
 "proxy will help you to use the modern Stratum mining protocol provided by "
 "our pool."
 msgstr ""
 
-#: web/templates/user_manual/intro.html:36
+#: web/templates/user_manual/intro.html:41
 #, fuzzy
 msgid "Stratum <span>Mining Protocol</span>"
 msgstr "Konto-Einstellungen"
 
-#: web/templates/user_manual/intro.html:37
+#: web/templates/user_manual/intro.html:42
 msgid "The official documentation of our lightweight bitcoin mining protocol."
+msgstr ""
+
+#: web/templates/user_manual/m.html:15
+#: web/templates/user_manual/monitoring.html:15
+msgid "Why should I care?"
+msgstr ""
+
+#: web/templates/user_manual/m.html:16
+#: web/templates/user_manual/monitoring.html:16
+msgid ""
+"Since mining is usually considered as an investment, we believe that "
+"monitoring should be an essential part of your mining operation. Although "
+"your rewards are not directly affected by any monitoring settings they can "
+"be better managed with few simple tools we have developed so far."
+msgstr ""
+
+#: web/templates/user_manual/m.html:18
+#: web/templates/user_manual/monitoring.html:18
+msgid ""
+"Monitoring helps you supervise how your miners work in time and minimizes "
+"losses caused by infrastructure or software failures."
+msgstr ""
+
+#: web/templates/user_manual/m.html:21
+#: web/templates/user_manual/monitoring.html:21
+#, fuzzy
+msgid "How can monitoring help?"
+msgstr "Zeige Beobachtungsstatus"
+
+#: web/templates/user_manual/m.html:22
+#: web/templates/user_manual/monitoring.html:22
+msgid ""
+"The main benefit of monitoring is an alert message you will receive to your "
+"Inbox once a mining device starts misbehaving. E.g. there are communication "
+"issues between your miner and our pool. Such alert will help you to "
+"<strong>react faster</strong> therefore <strong>minimize financial impact</"
+"strong> of the outage."
+msgstr ""
+
+#: web/templates/user_manual/m.html:24
+#: web/templates/user_manual/monitoring.html:24
+msgid "Outages may typically have the following causes:"
+msgstr ""
+
+#: web/templates/user_manual/m.html:26
+#: web/templates/user_manual/monitoring.html:26
+msgid "Internet connectivity issues"
+msgstr ""
+
+#: web/templates/user_manual/m.html:27
+#: web/templates/user_manual/monitoring.html:27
+msgid "Hardware power-supply failures"
+msgstr ""
+
+#: web/templates/user_manual/m.html:28
+#: web/templates/user_manual/monitoring.html:28
+msgid "Mining hardware overheating"
+msgstr ""
+
+#: web/templates/user_manual/m.html:29
+#: web/templates/user_manual/monitoring.html:29
+msgid "Mining software issues"
+msgstr ""
+
+#: web/templates/user_manual/m.html:31
+#: web/templates/user_manual/monitoring.html:31
+msgid ""
+"Below you can find a simple step-by-step instructions how to enable "
+"monitoring in order to be able keep track of how your investments are do."
+msgstr ""
+
+#: web/templates/user_manual/m.html:33
+#: web/templates/user_manual/monitoring.html:33
+msgid "How to enable monitoring?"
+msgstr ""
+
+#: web/templates/user_manual/m.html:35
+#: web/templates/user_manual/monitoring.html:35
+#, python-format
+msgid ""
+"You can enable worker monitoring on each <a href=\"%(workers)s\" target="
+"\"_blank\">Worker profile</a> separately."
+msgstr ""
+
+#: web/templates/user_manual/m.html:37
+#: web/templates/user_manual/monitoring.html:37
+#, python-format
+msgid ""
+"Once the worker monitoring is enabled, the <a href=\"%(url)s\">Alert limit</"
+"a> can be set:"
+msgstr ""
+
+#: web/templates/user_manual/m.html:39
+#: web/templates/user_manual/monitoring.html:39
+msgid ""
+"Automatically - our system selects the Alert Limit based on the past "
+"performance of the worker"
+msgstr ""
+
+#: web/templates/user_manual/m.html:40
+#: web/templates/user_manual/monitoring.html:40
+msgid "Manually - You can set your own Alert Limit value"
+msgstr ""
+
+#: web/templates/user_manual/m.html:46
+#: web/templates/user_manual/monitoring.html:46
+#, python-format
+msgid ""
+"Once you enable monitoring for your workers you will see each worker in one "
+"of these <a href=\"%(url)s\">states</a>: <strong>OK, Low, Offline, Disabled</"
+"strong>."
+msgstr ""
+
+#: web/templates/user_manual/m.html:48
+#: web/templates/user_manual/monitoring.html:48
+#, python-format
+msgid ""
+"Permanently <strong>Low</strong> or <strong>Offline</strong> state of your "
+"worker can be caused by weak worker whose hash rate is below <strong>10 Gh/"
+"s</strong>. We recommend to switch off monitoring for such workers. If it is "
+"not the case please do not hesitate to contact our <a href="
+"\"%(support_submit)s\">support</a>."
+msgstr ""
+
+#: web/templates/user_manual/m.html:51
+#: web/templates/user_manual/monitoring.html:51
+msgid ""
+"<strong class=\"red\">Please note:</strong> The pool keeps track of mining "
+"devices on a <strong>worker basis</strong>. This means that if you have more "
+"than one mining device connected to the pool as a single worker,  monitoring "
+"and issue reporting covers all the mining devices in bulk. On the other "
+"hand, when you setup a <strong>designated worker name</strong> for every "
+"<strong>mining device</strong> you have (and connect them correctly), the "
+"pool can track down hash rate drops and report them to you for each mining "
+"device separately."
+msgstr ""
+
+#: web/templates/user_manual/m.html:53
+#: web/templates/user_manual/monitoring.html:53
+#, fuzzy
+msgid "How does monitoring work?"
+msgstr "Wie funktioniert Pooled Mining?"
+
+#: web/templates/user_manual/m.html:54
+#: web/templates/user_manual/monitoring.html:54
+#, python-format
+msgid ""
+"The pool takes a snapshot of  <a href=\"%(hashrate_url)s\">effective hash "
+"rate</a> for all your workers <strong>every 5 minutes</strong> . This value "
+"is then compared to <a href=\"%(alert_url)s\">Alert Limit</a> (you setup "
+"this value while enabling the monitoring)."
+msgstr ""
+
+#: web/templates/user_manual/m.html:55
+#: web/templates/user_manual/monitoring.html:55
+#, python-format
+msgid ""
+"The period of 5 minutes is sufficient for collecting just enough data to "
+"calculate all the values with a certain accuracy without clogging our "
+"servers. With a <a href=\"%(url)s\">Vardiff</a> introduced, even a slow "
+"miner can submit sufficient amount of results."
+msgstr ""
+
+#: web/templates/user_manual/m.html:59
+#: web/templates/user_manual/monitoring.html:59
+#, fuzzy
+msgid "Device monitoring states"
+msgstr "Zeige Beobachtungsstatus"
+
+#: web/templates/user_manual/m.html:60
+#: web/templates/user_manual/monitoring.html:60
+msgid ""
+"There are 4 possible states of your worker, regarding monitoring. Every "
+"worker is always in one of the <strong>following</strong> states:"
+msgstr ""
+
+#: web/templates/user_manual/m.html:63
+#: web/templates/user_manual/monitoring.html:63
+msgid ""
+"Means that the worker's hash rate is greater or equal to alert limit. This "
+"is the desired state. If everything works properly and the configuration is "
+"correct, you should see this state all the time."
+msgstr ""
+
+#: web/templates/user_manual/m.html:66
+#: web/templates/user_manual/monitoring.html:66
+#, python-format
+msgid ""
+"This state signals that worker's hash rate is lower than it should be but "
+"the device still submits some shares. It was connected and working somehow "
+"at least part of the measuring period. A worker goes from OK to Low when its "
+"hash rate is lower than the alert limit for 2 consecutive periods. In the "
+"case you see this state for longer period of time, please create a ticket to "
+"our <a href=\"%(support_submit)s\">support</a>."
+msgstr ""
+
+#: web/templates/user_manual/m.html:68
+#: web/templates/user_manual/monitoring.html:68 web/templatetags/utils.py:184
+msgctxt "UI, Monitoring"
+msgid "Offline"
+msgstr ""
+
+#: web/templates/user_manual/m.html:69
+#: web/templates/user_manual/monitoring.html:69
+msgid ""
+"You could see this state when monitoring is enabled for the worker but there "
+"is no hash rate detected for the worker. The pool doesn't monitor the actual "
+"network connection of the worker. The only significant value is hash rate."
+msgstr ""
+
+#: web/templates/user_manual/m.html:72
+#: web/templates/user_manual/monitoring.html:72
+msgid ""
+"When you switch off monitoring for a worker its state is reported as "
+"Disabled, regardless a fact if it submits some shares or not."
+msgstr ""
+
+#: web/templates/user_manual/m.html:77
+#, fuzzy
+msgid "ORIGINAL: Device <span>Monitoring</span>"
+msgstr "Mein Konto"
+
+#: web/templates/user_manual/m.html:219
+msgid ""
+"We keep track of mining devices on a\n"
+"worker basis. This means that if you have more than one mining device\n"
+"but all of them are connected to our pool as a single worker, then we\n"
+"can see, monitor and report missfunctions on the whole setup only.<br>\n"
+"On the other hand, when you setup a different worker name for every\n"
+"mining device you have (and connect them correctly), we can track down\n"
+"hash rate drops and report them to you."
+msgstr ""
+
+#: web/templates/user_manual/m.html:227
+#, python-format
+msgid ""
+"The way this works is that <strong>every 5 minutes</strong> we catch a "
+"snapshop of all your workers <a href=\"%(terminology)s#hashrate\">effective "
+"hash rate</a> (calculated value based on submited proofs of work). This "
+"value is then compared to <em>Expected hash rate</em> (you setup this value "
+"while enabling the monitoring)."
+msgstr ""
+
+#: web/templates/user_manual/m.html:229
+#, python-format
+msgid ""
+"The 5 minutes period is there so that we can collect just enough data to "
+"calculate all the values with a certain accuracy without clogging our "
+"servers. With a <a href=\"%(terminology)s#vardiff\">Vardiff</a> introduced "
+"even a slow miner can submit sufficient amountf results."
+msgstr ""
+
+#: web/templates/user_manual/m.html:231
+msgid "Notification <span>Reports</span>"
+msgstr ""
+
+#: web/templates/user_manual/m.html:232
+msgid ""
+"Consider the case where because of some connection issues one of your mining "
+"device drops hash rate below your expected value, but gets back up in next 5-"
+"minute window — repeating this for some time. If we would send you an e-mail "
+"report for every such event, you would condider it very annoying and your e-"
+"mail server would flag us as being spammers."
+msgstr ""
+
+#: web/templates/user_manual/m.html:234
+msgid ""
+"For this reason we have introduced algorithms that decides whether to send a "
+"report notification immediately or skip it."
+msgstr ""
+
+#: web/templates/user_manual/m.html:236
+msgid "Work in progress"
 msgstr ""
 
 #: web/templates/user_manual/mining-proxy.html:4
@@ -5838,240 +6141,6 @@ msgid ""
 "To enable this extension, just type <code>make</code> in <code>midstatec</"
 "code> subdirectory. Proxy will auto-detect compiled extension on next "
 "startup."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:15
-msgid "Why should I care?"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:16
-msgid ""
-"Mining is usually considered an <strong>investment</strong>. Therefore, we "
-"believe that monitoring protects your investment. Please be aware that "
-"although your <strong>rewards</strong> are <strong>not directly affected</"
-"strong> by any monitoring settings they can be <strong>better managed</"
-"strong> with properly set monitoring values."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:18
-msgid ""
-"Monitoring helps you supervise how your miners work in time and minimizes "
-"losses caused by infrastructure or software failures."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:21
-#, fuzzy
-msgid "How can monitoring help?"
-msgstr "Zeige Beobachtungsstatus"
-
-#: web/templates/user_manual/monitoring.html:22
-msgid ""
-"You can <strong>react faster</strong> and therefore <strong>minimize "
-"financial impact</strong> of miner outages. Outages may typically have the "
-"following causes:"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:24
-msgid "Internet connectivity issues"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:25
-msgid "Hardware power-supply failures"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:26
-msgid "Mining hardware overheating"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:27
-msgid "Mining software issues"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:30
-msgid "How to enable monitoring?"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:32
-#, python-format
-msgid ""
-"You can enable worker monitoring on each <a href=\"%(workers)s\" target="
-"\"_blank\">Worker profile</a> separately."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:34
-#, python-format
-msgid ""
-"Once the worker monitoring is enabled, the <a href=\"%(url)s\">Alert limit</"
-"a> can be setup:"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:36
-msgid ""
-"Automatically - our system selects the Alert Limit based on the past "
-"performance of the worker"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:37
-msgid "Manually - You can set your own Alert Limit value"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:43
-#, python-format
-msgid ""
-"Once you enable monitoring for your workers you will see each worker in "
-"either of these <a href=\"%(url)s\">3 states</a>: <strong>OK, Low, Offline</"
-"strong>."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:45
-#, python-format
-msgid ""
-"Permanently <strong>Low</strong> or <strong>Offline</strong> state of your "
-"worker can be caused by weak worker whose hash rate is below <strong>10 Gh/"
-"s</strong>. We recommend to switch off monitoring for such workers. If it is "
-"not the case please do not hesitate to contact our <a href="
-"\"%(support_submit)s\">support</a>."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:48
-msgid ""
-"<strong class=\"red\">Please note:</strong> The pool keeps track of mining "
-"devices on a <strong>worker basis</strong>. This means that if you have more "
-"than one mining device connected to the pool as a single worker,  monitoring "
-"and issue reporting covers all the mining devices in bulk. On the other "
-"hand, when you setup a <strong>designated worker name</strong> for every "
-"<strong>mining device</strong> you have (and connect them correctly), the "
-"pool can track down hash rate drops and report them to you for each mining "
-"device separately."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:50
-#, fuzzy
-msgid "How does monitoring work?"
-msgstr "Wie funktioniert Pooled Mining?"
-
-#: web/templates/user_manual/monitoring.html:51
-#, python-format
-msgid ""
-"The pool takes a snapshot of  <a href=\"%(hashrate_url)s\">effective hash "
-"rate</a> for all your workers <strong>every 5 minutes</strong> . This value "
-"is then compared to <a href=\"%(alert_url)s\">Alert Limit</a> (you setup "
-"this value while enabling the monitoring)."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:52
-#, python-format
-msgid ""
-"The period of 5 minutes period is sufficient for collecting just enough data "
-"to calculate all the values with a certain accuracy without clogging our "
-"servers. With a <a href=\"%(url)s\">Vardiff</a> introduced, even a slow "
-"miner can submit sufficient amount of results."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:56
-#, fuzzy
-msgid "Device monitoring states"
-msgstr "Zeige Beobachtungsstatus"
-
-#: web/templates/user_manual/monitoring.html:57
-msgid ""
-"There are 4 possible states of your worker, regarding monitoring. Every "
-"worker is always in one of the <strong>following</strong> states:"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:59
-msgid "OK"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:60
-msgid ""
-"Means that the worker's hash rate is greater or equal to alert limit. This "
-"is the desired state. If everything works properly and the configuration is "
-"correct, you should see this state all the time."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:62
-msgid "Low"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:63
-#, python-format
-msgid ""
-"This state signals that worker's hash rate is lower than it should be but "
-"the device still submits some shares. It was connected and working somehow "
-"at least part of the measuring period. A worker goes from OK to Low when its "
-"hash rate is lower than the alert limit for 2 consecutive periods. In the "
-"case you see this state for longer period of time, please create a ticket to "
-"our <a href=\"%(support_submit)s\">support</a>."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:65
-msgid "Offline"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:66
-msgid ""
-"You could see this state when monitoring is enabled for the worker but there "
-"is no hash rate detected for the worker. The pool doesn't monitor the actual "
-"network connection of the worker. The only significant value is hash rate."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:71
-#, fuzzy
-msgid "ORIGINAL: Device <span>Monitoring</span>"
-msgstr "Mein Konto"
-
-#: web/templates/user_manual/monitoring.html:213
-msgid ""
-"We keep track of mining devices on a\n"
-"worker basis. This means that if you have more than one mining device\n"
-"but all of them are connected to our pool as a single worker, then we\n"
-"can see, monitor and report missfunctions on the whole setup only.<br>\n"
-"On the other hand, when you setup a different worker name for every\n"
-"mining device you have (and connect them correctly), we can track down\n"
-"hash rate drops and report them to you."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:221
-#, python-format
-msgid ""
-"The way this works is that <strong>every 5 minutes</strong> we catch a "
-"snapshop of all your workers <a href=\"%(terminology)s#hashrate\">effective "
-"hash rate</a> (calculated value based on submited proofs of work). This "
-"value is then compared to <em>Expected hash rate</em> (you setup this value "
-"while enabling the monitoring)."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:223
-#, python-format
-msgid ""
-"The 5 minutes period is there so that we can collect just enough data to "
-"calculate all the values with a certain accuracy without clogging our "
-"servers. With a <a href=\"%(terminology)s#vardiff\">Vardiff</a> introduced "
-"even a slow miner can submit sufficient amountf results."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:225
-msgid "Notification <span>Reports</span>"
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:226
-msgid ""
-"Consider the case where because of some connection issues one of your mining "
-"device drops hash rate below your expected value, but gets back up in next 5-"
-"minute window — repeating this for some time. If we would send you an e-mail "
-"report for every such event, you would condider it very annoying and your e-"
-"mail server would flag us as being spammers."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:228
-msgid ""
-"For this reason we have introduced algorithms that decides whether to send a "
-"report notification immediately or skip it."
-msgstr ""
-
-#: web/templates/user_manual/monitoring.html:230
-msgid "Work in progress"
 msgstr ""
 
 #: web/templates/user_manual/payouts.html:4
@@ -6539,6 +6608,135 @@ msgid ""
 "scoring hash rates together:"
 msgstr ""
 
+#: web/templates/user_manual/t.html:4
+#: web/templates/user_manual/troubleshooting.html:4
+msgctxt "UI"
+msgid "Troubleshooting"
+msgstr ""
+
+#: web/templates/user_manual/t.html:13
+#: web/templates/user_manual/troubleshooting.html:13
+msgid "Hash Rate Lower than Expected"
+msgstr ""
+
+#: web/templates/user_manual/t.html:20
+#: web/templates/user_manual/troubleshooting.html:20
+msgid "Mining hardware<br/>hash rate"
+msgstr ""
+
+#: web/templates/user_manual/t.html:21
+#: web/templates/user_manual/troubleshooting.html:21
+#, fuzzy
+msgid "Minimum difficulty<br/>value"
+msgstr "Minimale Difficulty"
+
+#: web/templates/user_manual/t.html:50
+#: web/templates/user_manual/troubleshooting.html:50
+msgid ""
+"If you experience significantly lower effective hash rate than what your "
+"hardware manufacturer declares, it is possible your worker does not accept "
+"difficulty which our server automatically provides."
+msgstr ""
+
+#: web/templates/user_manual/t.html:51
+#: web/templates/user_manual/troubleshooting.html:51
+#, python-format
+msgid ""
+"You can <strong>fix</strong> this by setting the optimal <strong>minimum "
+"difficulty</strong> value on <a href=\"%(workers)s\" target=\"_blank"
+"\">workers profile</a>. See the table for <strong>recommended</strong> "
+"values…"
+msgstr ""
+
+#: web/templates/user_manual/t.html:53
+#: web/templates/user_manual/troubleshooting.html:53
+#, python-format
+msgid ""
+"Please be aware that if you set the minimum difficulty too high it can have "
+"negative effect on your monitoring because it can lead to false monitoring "
+"alarms. Therefore we recommend to let <a href=\"%(url)s\">VarDiff algorithm</"
+"a> to select difficulty for you worker automatically."
+msgstr ""
+
+#: web/templates/user_manual/t.html:57
+#: web/templates/user_manual/troubleshooting.html:57
+#, fuzzy
+msgid "Worker offline state"
+msgstr "Arbeiter"
+
+#: web/templates/user_manual/t.html:58
+#: web/templates/user_manual/troubleshooting.html:58
+msgid ""
+"Since the bare minimum difficulty assigned by the pool right now is 8 (and "
+"it will probably be further lowered in the future) your workers should have "
+"<strong>at least 10 Gh/s</strong> to provide proofs of work at optimal "
+"frequency (with difficulty 8). You will see bigger variance in hash rate in "
+"the worker stats for devices with less than 10 Gh/s. Finally, it can happen "
+"that a very weak mining device will not produce a valid proof of work in the "
+"whole 5 minute monitoring period. Such situation will be indicated by an "
+"<strong>Offline</strong> state of your worker, even though it works. We "
+"recommend to switch off monitoring for such workers."
+msgstr ""
+
+#: web/templates/user_manual/t.html:61
+#: web/templates/user_manual/troubleshooting.html:61
+#, fuzzy
+msgid "False Monitoring Alarms"
+msgstr "Worker Status"
+
+#: web/templates/user_manual/t.html:63
+#: web/templates/user_manual/troubleshooting.html:63
+#, python-format
+msgid ""
+"If you set the minimum difficulty for a worker to a value higher than 70 %% "
+"of its nominal hash rate in Gh/s, its communication frequency with the pool "
+"will not be optimal. It will lead to high variance of its hash rate (wide "
+"range of values in different time periods)."
+msgstr ""
+
+#: web/templates/user_manual/t.html:64
+#: web/templates/user_manual/troubleshooting.html:64
+#, python-format
+msgid ""
+"You can see this effect on the following two charts. The first shows miner "
+"with nominal hash rate 100 Gh/s with difficulty set by <a href=\"%(url)s"
+"\">vardiff</a> algorithm to roughly 70."
+msgstr ""
+
+#: web/templates/user_manual/t.html:77
+#: web/templates/user_manual/troubleshooting.html:77
+msgid ""
+"If you manually set your minimum difficulty to a significantly higher value, "
+"it leads to behavior as presented below. Please, notice how the hash rate "
+"spread is now much wider."
+msgstr ""
+
+#: web/templates/user_manual/t.html:90
+#: web/templates/user_manual/troubleshooting.html:90
+msgid ""
+"Higher hash rate variance makes proper monitoring more difficult and can "
+"lead to false monitoring alarms (you can be notified about some event even "
+"when the worker works correctly)."
+msgstr ""
+
+#: web/templates/user_manual/t.html:91
+#: web/templates/user_manual/troubleshooting.html:91
+#, fuzzy
+msgid "We recommend to:"
+msgstr "Neuer Kommentar"
+
+#: web/templates/user_manual/t.html:93
+#: web/templates/user_manual/troubleshooting.html:93
+msgid ""
+"Let vardiff algorithm to select difficulty for your worker automatically."
+msgstr ""
+
+#: web/templates/user_manual/t.html:97
+#: web/templates/user_manual/troubleshooting.html:97
+msgid ""
+"Set minimum difficulty provided by the vendor of your device on your own."
+msgstr ""
+
 #: web/templates/user_manual/terminology.html:4
 #, fuzzy
 msgctxt "UI"
@@ -6902,116 +7100,6 @@ msgid ""
 "the<strong>Alert Limit</strong> would be set to 900 Ghs/s."
 msgstr ""
 
-#: web/templates/user_manual/troubleshooting.html:4
-msgctxt "UI"
-msgid "Troubleshooting"
-msgstr ""
-
-#: web/templates/user_manual/troubleshooting.html:13
-msgid "Hash Rate Lower than Expected"
-msgstr ""
-
-#: web/templates/user_manual/troubleshooting.html:20
-msgid "Mining hardware<br/>hash rate"
-msgstr ""
-
-#: web/templates/user_manual/troubleshooting.html:21
-#, fuzzy
-msgid "Minimum difficulty<br/>value"
-msgstr "Minimale Difficulty"
-
-#: web/templates/user_manual/troubleshooting.html:50
-msgid ""
-"If you experience significantly lower effective hash rate than what your "
-"hardware manufacturer declares then it is possible your worker does not "
-"accept difficulty which our server automatically provides."
-msgstr ""
-
-#: web/templates/user_manual/troubleshooting.html:51
-#, python-format
-msgid ""
-"You can <strong>fix</strong> this by setting the optimal <strong>minimum "
-"difficulty</strong> value on <a href=\"%(workers)s\" target=\"_blank"
-"\">workers profile</a>. See the table for <strong>recommended</strong> "
-"values…"
-msgstr ""
-
-#: web/templates/user_manual/troubleshooting.html:53
-#, python-format
-msgid ""
-"Please be aware that if you set the minimum difficulty too high it can have "
-"negative effect on your monitoring because it can lead to false monitoring "
-"alarms. Therefore we recommend to let <a href=\"%(url)s\">VarDiff algorithm</"
-"a> to select difficulty for you worker automatically."
-msgstr ""
-
-#: web/templates/user_manual/troubleshooting.html:57
-#, fuzzy
-msgid "Worker offline state"
-msgstr "Arbeiter"
-
-#: web/templates/user_manual/troubleshooting.html:58
-msgid ""
-"Since the bare minimum difficulty assigned by the pool right now is 8 (and "
-"it will be probably further lowered in the future) your workers should have "
-"<strong>at least 10 Gh/s</strong> to provide proofs of work in optimal "
-"frequency (with difficulty 8). The lower under 10 Gh/s it is the bigger "
-"variance in hash rate you'll see in the worker stats. Finally it can happen "
-"that the small device will not produce valid proof of work in the whole 5 "
-"minute period used for device monitoring. Such situation will then cause "
-"that you worker state will be set to <strong>Offline</strong>, even it can "
-"be working. We recommend to switch off monitoring for such workers."
-msgstr ""
-
-#: web/templates/user_manual/troubleshooting.html:61
-#, fuzzy
-msgid "False Monitoring Alarms"
-msgstr "Worker Status"
-
-#: web/templates/user_manual/troubleshooting.html:63
-msgid ""
-"If you set the minimum difficulty for a worker to value higher then roughly "
-"0.7 times its nominal hash rate in Gh/s, then its communication frequency "
-"with the pool will not be optimal and it will lead to high variance of its "
-"hash rate (wide range of values in different time periods)."
-msgstr ""
-
-#: web/templates/user_manual/troubleshooting.html:64
-#, python-format
-msgid ""
-"You can see this effect on the following two charts. The first shows miner "
-"with nominal hash rate 100 Gh/s with difficulty set by <a href=\"%(url)s"
-"\">vardiff</a> algorithm to roughly 70."
-msgstr ""
-
-#: web/templates/user_manual/troubleshooting.html:68
-msgid ""
-"If you manually set your minimum difficulty to significantly higher value, "
-"it leads to picture like the following. Please notice how a range of the "
-"hash rate is now much wider."
-msgstr ""
-
-#: web/templates/user_manual/troubleshooting.html:72
-msgid ""
-"Higher hash rate variance make proper monitoring more difficult and can lead "
-"to false monitoring alarms (you can be notified about some event even when "
-"the worker works correctly)."
-msgstr ""
-
-#: web/templates/user_manual/troubleshooting.html:73
-#, fuzzy
-msgid "We recommend to:"
-msgstr "Neuer Kommentar"
-
-#: web/templates/user_manual/troubleshooting.html:75
-msgid ""
-"Let vardiff algorithm to select difficulty for you worker automatically or"
-msgstr ""
-
-#: web/templates/user_manual/troubleshooting.html:76
-msgid "Set minimum difficulty provided by a vendor of your device on your own"
-msgstr ""
-
 #: web/templates/user_manual/user_manual_base.html:17
 msgctxt "UI"
 msgid "Index"
@@ -7023,40 +7111,49 @@ msgctxt "UI"
 msgid "<strong>Contents</strong> of User Manual"
 msgstr "Konto-Einstellungen"
 
+#: web/templates/user_manual/user_manual_base.html:20
+msgctxt "UI"
+msgid ""
+"<i class=\"fa fa-graduation-cap fa-fw\"></i> <strong>Getting</strong> Started"
+msgstr ""
+
 #: web/templates/user_manual/user_manual_base.html:21
 #, fuzzy
 msgctxt "UI"
-msgid "<strong>Pool</strong> Terminology"
+msgid "<i class=\"fa fa-book fa-fw\"></i> <strong>Pool</strong> Terminology"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/user_manual/user_manual_base.html:22
 #, fuzzy
 msgctxt "UI"
-msgid "<strong>Reward</strong> System"
+msgid ""
+"<i class=\"fa fa-binoculars fa-fw\"></i> <strong>Troubleshooting</strong>"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/user_manual/user_manual_base.html:23
 #, fuzzy
 msgctxt "UI"
-msgid "<strong>Pool</strong> Payouts"
+msgid "<i class=\"fa fa-btc fa-fw\"></i> <strong>Reward</strong> System"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/user_manual/user_manual_base.html:24
 #, fuzzy
 msgctxt "UI"
-msgid "<strong>Device</strong> Monitoring"
+msgid "<i class=\"fa fa-usd fa-fw\"></i> <strong>Pool</strong> Payouts"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/user_manual/user_manual_base.html:25
 #, fuzzy
 msgctxt "UI"
-msgid "<strong>Troubleshooting</strong>"
+msgid ""
+"<i class=\"fa fa-line-chart fa-fw\"></i> <strong>Device</strong> Monitoring"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/user_manual/user_manual_base.html:26
 #, fuzzy
 msgctxt "UI"
-msgid "<strong>Stratum</strong> Mining Proxy"
+msgid ""
+"<i class=\"fa fa-share-alt fa-fw\"></i> <strong>Stratum</strong> Mining Proxy"
 msgstr "Konto-Einstellungen"
 
 #: web/templates/user_manual/user_manual_base.html:27
@@ -7094,15 +7191,15 @@ msgstr "Vorschau:"
 msgid "%i days"
 msgstr "%i Tage"
 
-#: web/templatetags/utils.py:184
-msgctxt "UI, Monitoring"
-msgid "Offline"
-msgstr ""
-
 #: web/templatetags/utils.py:243
 msgctxt "UI"
 msgid "Help me"
 msgstr "brauche Hilfe"
+
+#, fuzzy
+#~ msgctxt "UI, Button"
+#~ msgid "Login"
+#~ msgstr "Login"
 
 #~ msgctxt "UI"
 #~ msgid "All times are in UTC."
