@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 17:24+0000\n"
+"POT-Creation-Date: 2015-03-06 18:44+0000\n"
 "PO-Revision-Date: 2015-03-02 16:26+0200\n"
 "Last-Translator: xu <samanthaxu1987@163.com>\n"
 "Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-cz/"
@@ -31,8 +31,9 @@ msgstr "确认的"
 
 #: contact/forms.py:39 contact/forms.py:40 contact/forms.py:41
 #: contact/forms.py:42 contact/views.py:43 mailing/forms.py:84
-#: news/views.py:69 notifications/backends/blocks.py:24
-#: notifications/backends/proposals.py:23
+#: mailing/models.py:450 mailing/models.py:451 mailing/models.py:452
+#: mailing/models.py:453 mailing/models.py:454 news/views.py:69
+#: notifications/backends/blocks.py:24 notifications/backends/proposals.py:23
 msgid "UI"
 msgstr ""
 
@@ -86,57 +87,28 @@ msgid "We would still appreciate any feedback why you are unsubscribing:"
 msgstr "很感谢您反馈给我们取消订阅的原因："
 
 #: mailing/templates/mailing/unsubscribe.html:29
-msgctxt "UI"
-msgid "I receive the newsletters too frequently."
-msgstr "太频繁地接收到时事新闻。"
-
-#: mailing/templates/mailing/unsubscribe.html:30
-msgctxt "UI"
-msgid "I don't mine anymore."
-msgstr "我不再挖矿了。"
-
-#: mailing/templates/mailing/unsubscribe.html:31
-msgctxt "UI"
-msgid "I have joined another pool."
-msgstr "我换到了另一个矿池。"
-
-#: mailing/templates/mailing/unsubscribe.html:32
-msgctxt "UI"
-msgid "The newsletter content is of no value to me."
-msgstr "时事新闻的内容对我没有价值。"
-
-#: mailing/templates/mailing/unsubscribe.html:33
-msgctxt "UI"
-msgid "Other reason."
-msgstr "其他原因。"
-
-#: mailing/templates/mailing/unsubscribe.html:36
 #, python-format
 msgctxt "UI"
 msgid ""
-"Please select account%(accounts_found|pluralize)s you want to to unsubscribe "
+"Please select account%(accounts_found|pluralize)s you want to unsubscribe "
 "from"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:41
-msgctxt "UI"
-msgid "Your feedback means the world to us!"
-msgstr ""
-
-#: mailing/templates/mailing/unsubscribe.html:45
+#: mailing/templates/mailing/unsubscribe.html:33
 msgctxt "UI"
 msgid "Unsubscribe me"
 msgstr "取消订阅"
 
+#: mailing/templates/mailing/unsubscribe.html:37
 #: mailing/templates/mailing/unsubscribe_confirm.html:20
-msgctxt "UI"
-msgid "You have been unsubscribed from Slush Pool's newsletter."
-msgstr "您已取消Slush矿池的时事新闻订阅。"
-
-#: mailing/templates/mailing/unsubscribe_confirm.html:21
 msgctxt "UI"
 msgid "Go to Homepage"
 msgstr "去主页"
+
+#: mailing/templates/mailing/unsubscribe_confirm.html:19
+msgctxt "UI"
+msgid "You have been unsubscribed from Slush Pool's newsletter."
+msgstr "您已取消Slush矿池的时事新闻订阅。"
 
 #: mining/models.py:162 web/models.py:879 web/templates/workers.html:103
 msgctxt "UI"
@@ -765,7 +737,7 @@ msgctxt "UI"
 msgid "Send emails about device state changes"
 msgstr "当设置有变化时发送邮件"
 
-#: web/models.py:229 web/templates/base.html:129
+#: web/models.py:229 web/templates/base.html:145
 #: web/templates/new_user_registered.html:47
 msgctxt "UI"
 msgid "User Manual"
@@ -1399,97 +1371,97 @@ msgid "IP adress of computer that initiated the change."
 msgstr ""
 
 #: web/templates/base.html:77
-msgid "Loading ..."
-msgstr ""
-
-#: web/templates/base.html:128
-msgctxt "UI"
-msgid "<strong>Home</strong>"
-msgstr "<strong>主页</strong>"
-
-#: web/templates/base.html:137
-msgctxt "UI"
-msgid "<strong>Pool</strong> Statistics"
-msgstr "<strong>矿池</strong> 统计"
-
-#: web/templates/base.html:138
-msgctxt "UI"
-msgid "Public facts"
-msgstr "公开数据"
-
-#: web/templates/base.html:147 web/templates/menu2_contactus_links.html:2
-msgctxt "UI"
-msgid "<strong>Contact</strong> Us"
-msgstr "<strong>联系</strong> 我们"
-
-#: web/templates/base.html:148 web/templates/menu2_devel_corner.html:4
-msgctxt "UI"
-msgid "Development <span>Corner</span>"
-msgstr "开发 <span>角</span>"
-
-#: web/templates/base.html:157
-msgctxt "UI"
-msgid "<strong>My</strong> account"
-msgstr "<strong>我的</strong> 账户"
-
-#: web/templates/base.html:158 web/templates/base.html.py:186
-msgctxt "UI"
-msgid "Private zone"
-msgstr "私人专区"
-
-#: web/templates/base.html:164
-msgctxt "UI"
-msgid "<strong>Log out</strong>"
-msgstr "<strong>退出</strong>"
-
-#: web/templates/base.html:179
-msgctxt "UI"
-msgid "<strong>Sign up</strong> HERE"
-msgstr "这里 <strong>注册</strong>"
-
-#: web/templates/base.html:180
-msgctxt "UI"
-msgid "New account"
-msgstr "新账户"
-
-#: web/templates/base.html:185
-msgctxt "UI"
-msgid "<strong>Log in</strong>"
-msgstr "<strong>登录</strong>"
-
-#: web/templates/base.html:207
 msgctxt "UI"
 msgid "You are using a <strong>Demo Account</strong>"
 msgstr "你正在使用一个<strong>模拟账户</strong>"
 
-#: web/templates/base.html:210 web/templates/login.html:9
+#: web/templates/base.html:80 web/templates/login.html:9
 #: web/templates/login.html.py:25
 msgctxt "UI"
 msgid "Log in"
 msgstr "登录"
 
-#: web/templates/base.html:211
+#: web/templates/base.html:81
 msgctxt "UI"
 msgid "Sign up"
 msgstr "注册"
 
-#: web/templates/base.html:229
+#: web/templates/base.html:93
+msgid "Loading ..."
+msgstr ""
+
+#: web/templates/base.html:144
+msgctxt "UI"
+msgid "<strong>Home</strong>"
+msgstr "<strong>主页</strong>"
+
+#: web/templates/base.html:153
+msgctxt "UI"
+msgid "<strong>Pool</strong> Statistics"
+msgstr "<strong>矿池</strong> 统计"
+
+#: web/templates/base.html:154
+msgctxt "UI"
+msgid "Public facts"
+msgstr "公开数据"
+
+#: web/templates/base.html:163 web/templates/menu2_contactus_links.html:2
+msgctxt "UI"
+msgid "<strong>Contact</strong> Us"
+msgstr "<strong>联系</strong> 我们"
+
+#: web/templates/base.html:164 web/templates/menu2_devel_corner.html:4
+msgctxt "UI"
+msgid "Development <span>Corner</span>"
+msgstr "开发 <span>角</span>"
+
+#: web/templates/base.html:173
+msgctxt "UI"
+msgid "<strong>My</strong> account"
+msgstr "<strong>我的</strong> 账户"
+
+#: web/templates/base.html:174 web/templates/base.html.py:202
+msgctxt "UI"
+msgid "Private zone"
+msgstr "私人专区"
+
+#: web/templates/base.html:180
+msgctxt "UI"
+msgid "<strong>Log out</strong>"
+msgstr "<strong>退出</strong>"
+
+#: web/templates/base.html:195
+msgctxt "UI"
+msgid "<strong>Sign up</strong> HERE"
+msgstr "这里 <strong>注册</strong>"
+
+#: web/templates/base.html:196
+msgctxt "UI"
+msgid "New account"
+msgstr "新账户"
+
+#: web/templates/base.html:201
+msgctxt "UI"
+msgid "<strong>Log in</strong>"
+msgstr "<strong>登录</strong>"
+
+#: web/templates/base.html:231
 msgctxt "UI"
 msgid "Back to Top"
 msgstr "返回顶部"
 
-#: web/templates/base.html:231
+#: web/templates/base.html:233
 #, python-format
 msgctxt "UI"
 msgid "Follow us on %(twitter)s and %(facebook)s."
 msgstr "从%(twitter)s和%(facebook)s关注我们。"
 
-#: web/templates/base.html:232
+#: web/templates/base.html:234
 msgctxt "UI"
 msgid "BTC prices provided by "
 msgstr ""
 
-#: web/templates/base.html:248
+#: web/templates/base.html:250
 msgctxt "UI"
 msgid "You cannot do this in the Demo account, please log in to proceed."
 msgstr "您不能在模拟账户下进行此操作，请登录继续。"
@@ -4479,6 +4451,45 @@ msgctxt "UI"
 msgid "Did you like it? You can instantly sign-up for your own account."
 msgstr "您感兴趣吗？您可以立即注册您自己的账户。"
 
+#: web/templates/slider.html:15 web/templates/slider.html.py:18
+#, fuzzy
+msgctxt "UI"
+msgid "Powerful <span>Dashboard</span>"
+msgstr "矿池 <span>每日报酬</span>"
+
+#: web/templates/slider.html:19
+#, fuzzy
+msgctxt "UI"
+msgid "<strong>See all important facts</strong> on one page."
+msgstr "<strong>开发</strong> 角"
+
+#: web/templates/slider.html:26 web/templates/slider.html.py:29
+#, fuzzy
+msgctxt "UI"
+msgid "Advanced <span>Monitoring</span>"
+msgstr "设备 <span>监控</span>"
+
+#: web/templates/slider.html:30
+msgctxt "UI"
+msgid ""
+"<strong>Get notified</strong> when your workers have troubles or go back on-"
+"line."
+msgstr ""
+
+#: web/templates/slider.html:37 web/templates/slider.html.py:40
+#, fuzzy
+msgctxt "UI"
+msgid "Rule <span>the Pool</span>"
+msgstr "已发布的 <span>提议</span>"
+
+#: web/templates/slider.html:41
+#, fuzzy
+msgctxt "UI"
+msgid ""
+"<strong>Submit your ideas</strong> for improvement of this pool. "
+"<strong>Upvote what you like</strong> to see implemented first."
+msgstr "提交矿池改进的想法建议。为您想最先施行的提议投票。"
+
 #: web/templates/stats.html:18
 msgctxt "UI"
 msgid "System Statistics"
@@ -7135,6 +7146,26 @@ msgstr "日"
 msgctxt "UI"
 msgid "Help me"
 msgstr "帮助我"
+
+#~ msgctxt "UI"
+#~ msgid "I receive the newsletters too frequently."
+#~ msgstr "太频繁地接收到时事新闻。"
+
+#~ msgctxt "UI"
+#~ msgid "I don't mine anymore."
+#~ msgstr "我不再挖矿了。"
+
+#~ msgctxt "UI"
+#~ msgid "I have joined another pool."
+#~ msgstr "我换到了另一个矿池。"
+
+#~ msgctxt "UI"
+#~ msgid "The newsletter content is of no value to me."
+#~ msgstr "时事新闻的内容对我没有价值。"
+
+#~ msgctxt "UI"
+#~ msgid "Other reason."
+#~ msgstr "其他原因。"
 
 #~ msgctxt "UI"
 #~ msgid "Dashboard"

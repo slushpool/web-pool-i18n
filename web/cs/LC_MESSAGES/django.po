@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slush's pool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 17:23+0000\n"
+"POT-Creation-Date: 2015-03-06 18:43+0000\n"
 "PO-Revision-Date: 2015-01-07 17:51+0200\n"
 "Last-Translator: Jan Pecinovsky <jan.pecinovsky@braiins.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
@@ -31,8 +31,9 @@ msgstr "Potvrzený"
 
 #: contact/forms.py:39 contact/forms.py:40 contact/forms.py:41
 #: contact/forms.py:42 contact/views.py:43 mailing/forms.py:84
-#: news/views.py:69 notifications/backends/blocks.py:24
-#: notifications/backends/proposals.py:23
+#: mailing/models.py:450 mailing/models.py:451 mailing/models.py:452
+#: mailing/models.py:453 mailing/models.py:454 news/views.py:69
+#: notifications/backends/blocks.py:24 notifications/backends/proposals.py:23
 msgid "UI"
 msgstr ""
 
@@ -86,58 +87,29 @@ msgid "We would still appreciate any feedback why you are unsubscribing:"
 msgstr ""
 
 #: mailing/templates/mailing/unsubscribe.html:29
+#, python-format
 msgctxt "UI"
-msgid "I receive the newsletters too frequently."
-msgstr ""
-
-#: mailing/templates/mailing/unsubscribe.html:30
-msgctxt "UI"
-msgid "I don't mine anymore."
-msgstr ""
-
-#: mailing/templates/mailing/unsubscribe.html:31
-msgctxt "UI"
-msgid "I have joined another pool."
-msgstr ""
-
-#: mailing/templates/mailing/unsubscribe.html:32
-msgctxt "UI"
-msgid "The newsletter content is of no value to me."
+msgid ""
+"Please select account%(accounts_found|pluralize)s you want to unsubscribe "
+"from"
 msgstr ""
 
 #: mailing/templates/mailing/unsubscribe.html:33
 msgctxt "UI"
-msgid "Other reason."
-msgstr ""
-
-#: mailing/templates/mailing/unsubscribe.html:36
-#, python-format
-msgctxt "UI"
-msgid ""
-"Please select account%(accounts_found|pluralize)s you want to to unsubscribe "
-"from"
-msgstr ""
-
-#: mailing/templates/mailing/unsubscribe.html:41
-msgctxt "UI"
-msgid "Your feedback means the world to us!"
-msgstr ""
-
-#: mailing/templates/mailing/unsubscribe.html:45
-msgctxt "UI"
 msgid "Unsubscribe me"
 msgstr ""
 
+#: mailing/templates/mailing/unsubscribe.html:37
 #: mailing/templates/mailing/unsubscribe_confirm.html:20
-msgctxt "UI"
-msgid "You have been unsubscribed from Slush Pool's newsletter."
-msgstr ""
-
-#: mailing/templates/mailing/unsubscribe_confirm.html:21
 #, fuzzy
 msgctxt "UI"
 msgid "Go to Homepage"
 msgstr "Domovská stránka"
+
+#: mailing/templates/mailing/unsubscribe_confirm.html:19
+msgctxt "UI"
+msgid "You have been unsubscribed from Slush Pool's newsletter."
+msgstr ""
 
 #: mining/models.py:162 web/models.py:879 web/templates/workers.html:103
 msgctxt "UI"
@@ -789,7 +761,7 @@ msgctxt "UI"
 msgid "Send emails about device state changes"
 msgstr "Odesílat emaily o změnách stavu zařízení"
 
-#: web/models.py:229 web/templates/base.html:129
+#: web/models.py:229 web/templates/base.html:145
 #: web/templates/new_user_registered.html:47
 msgctxt "UI"
 msgid "User Manual"
@@ -1435,97 +1407,97 @@ msgid "IP adress of computer that initiated the change."
 msgstr "IP adresa počítače, který zažádal o změnu."
 
 #: web/templates/base.html:77
-msgid "Loading ..."
-msgstr "Nahrávám ..."
-
-#: web/templates/base.html:128
-msgctxt "UI"
-msgid "<strong>Home</strong>"
-msgstr "<strong>Domů</strong>"
-
-#: web/templates/base.html:137
-msgctxt "UI"
-msgid "<strong>Pool</strong> Statistics"
-msgstr "<strong>Statistiky</strong> poolu"
-
-#: web/templates/base.html:138
-msgctxt "UI"
-msgid "Public facts"
-msgstr "Pro veřejnost"
-
-#: web/templates/base.html:147 web/templates/menu2_contactus_links.html:2
-msgctxt "UI"
-msgid "<strong>Contact</strong> Us"
-msgstr "<strong>Kontaktujte</strong> nás"
-
-#: web/templates/base.html:148 web/templates/menu2_devel_corner.html:4
-msgctxt "UI"
-msgid "Development <span>Corner</span>"
-msgstr "Vývojářský <span>koutek</span>"
-
-#: web/templates/base.html:157
-msgctxt "UI"
-msgid "<strong>My</strong> account"
-msgstr "<strong>Můj</strong> účet"
-
-#: web/templates/base.html:158 web/templates/base.html.py:186
-msgctxt "UI"
-msgid "Private zone"
-msgstr "Privátní zóna"
-
-#: web/templates/base.html:164
-msgctxt "UI"
-msgid "<strong>Log out</strong>"
-msgstr "<strong>Odhlásit</strong>"
-
-#: web/templates/base.html:179
-msgctxt "UI"
-msgid "<strong>Sign up</strong> HERE"
-msgstr "<strong>Registrace</strong> ZDE"
-
-#: web/templates/base.html:180
-msgctxt "UI"
-msgid "New account"
-msgstr "Nový účet"
-
-#: web/templates/base.html:185
-msgctxt "UI"
-msgid "<strong>Log in</strong>"
-msgstr "<strong>Přihlásit</strong>"
-
-#: web/templates/base.html:207
 msgctxt "UI"
 msgid "You are using a <strong>Demo Account</strong>"
 msgstr "Jste přihlášen v <strong>Demo účtu</strong>"
 
-#: web/templates/base.html:210 web/templates/login.html:9
+#: web/templates/base.html:80 web/templates/login.html:9
 #: web/templates/login.html.py:25
 msgctxt "UI"
 msgid "Log in"
 msgstr "Přihlásit"
 
-#: web/templates/base.html:211
+#: web/templates/base.html:81
 msgctxt "UI"
 msgid "Sign up"
 msgstr "Registrace"
 
-#: web/templates/base.html:229
+#: web/templates/base.html:93
+msgid "Loading ..."
+msgstr "Nahrávám ..."
+
+#: web/templates/base.html:144
+msgctxt "UI"
+msgid "<strong>Home</strong>"
+msgstr "<strong>Domů</strong>"
+
+#: web/templates/base.html:153
+msgctxt "UI"
+msgid "<strong>Pool</strong> Statistics"
+msgstr "<strong>Statistiky</strong> poolu"
+
+#: web/templates/base.html:154
+msgctxt "UI"
+msgid "Public facts"
+msgstr "Pro veřejnost"
+
+#: web/templates/base.html:163 web/templates/menu2_contactus_links.html:2
+msgctxt "UI"
+msgid "<strong>Contact</strong> Us"
+msgstr "<strong>Kontaktujte</strong> nás"
+
+#: web/templates/base.html:164 web/templates/menu2_devel_corner.html:4
+msgctxt "UI"
+msgid "Development <span>Corner</span>"
+msgstr "Vývojářský <span>koutek</span>"
+
+#: web/templates/base.html:173
+msgctxt "UI"
+msgid "<strong>My</strong> account"
+msgstr "<strong>Můj</strong> účet"
+
+#: web/templates/base.html:174 web/templates/base.html.py:202
+msgctxt "UI"
+msgid "Private zone"
+msgstr "Privátní zóna"
+
+#: web/templates/base.html:180
+msgctxt "UI"
+msgid "<strong>Log out</strong>"
+msgstr "<strong>Odhlásit</strong>"
+
+#: web/templates/base.html:195
+msgctxt "UI"
+msgid "<strong>Sign up</strong> HERE"
+msgstr "<strong>Registrace</strong> ZDE"
+
+#: web/templates/base.html:196
+msgctxt "UI"
+msgid "New account"
+msgstr "Nový účet"
+
+#: web/templates/base.html:201
+msgctxt "UI"
+msgid "<strong>Log in</strong>"
+msgstr "<strong>Přihlásit</strong>"
+
+#: web/templates/base.html:231
 msgctxt "UI"
 msgid "Back to Top"
 msgstr "Zpět nahoru"
 
-#: web/templates/base.html:231
+#: web/templates/base.html:233
 #, python-format
 msgctxt "UI"
 msgid "Follow us on %(twitter)s and %(facebook)s."
 msgstr "Sledujte nás na %(twitter)s a %(facebook)s."
 
-#: web/templates/base.html:232
+#: web/templates/base.html:234
 msgctxt "UI"
 msgid "BTC prices provided by "
 msgstr ""
 
-#: web/templates/base.html:248
+#: web/templates/base.html:250
 msgctxt "UI"
 msgid "You cannot do this in the Demo account, please log in to proceed."
 msgstr "V Demo účtu toto nelze provést. Pro pokračování se prosím přihlašte."
@@ -4685,6 +4657,47 @@ msgstr "Registruj se ZDE"
 msgctxt "UI"
 msgid "Did you like it? You can instantly sign-up for your own account."
 msgstr ""
+
+#: web/templates/slider.html:15 web/templates/slider.html.py:18
+#, fuzzy
+msgctxt "UI"
+msgid "Powerful <span>Dashboard</span>"
+msgstr "Denní <span>odměna poolu</span>"
+
+#: web/templates/slider.html:19
+#, fuzzy
+msgctxt "UI"
+msgid "<strong>See all important facts</strong> on one page."
+msgstr "<strong>Vývojářský</strong> koutek"
+
+#: web/templates/slider.html:26 web/templates/slider.html.py:29
+#, fuzzy
+msgctxt "UI"
+msgid "Advanced <span>Monitoring</span>"
+msgstr "Monitorování <span>zařízení</span>"
+
+#: web/templates/slider.html:30
+msgctxt "UI"
+msgid ""
+"<strong>Get notified</strong> when your workers have troubles or go back on-"
+"line."
+msgstr ""
+
+#: web/templates/slider.html:37 web/templates/slider.html.py:40
+#, fuzzy
+msgctxt "UI"
+msgid "Rule <span>the Pool</span>"
+msgstr "Dokončené <span>návrhy</span>"
+
+#: web/templates/slider.html:41
+#, fuzzy
+msgctxt "UI"
+msgid ""
+"<strong>Submit your ideas</strong> for improvement of this pool. "
+"<strong>Upvote what you like</strong> to see implemented first."
+msgstr ""
+"Pošlete nám vaše nápady jak vylepšit pool. Hlasujte pro nápady, které chcete "
+"vidět implementované jako první."
 
 #: web/templates/stats.html:18
 msgctxt "UI"
