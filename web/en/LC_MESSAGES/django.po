@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 18:42+0000\n"
+"POT-Creation-Date: 2015-03-07 20:27+0000\n"
 "PO-Revision-Date: 2015-01-07 16:59+0200\n"
 "Last-Translator: Jan Pecinovsky <jan.pecinovsky@braiins.cz>\n"
 "Language-Team: English <https://hosted.weblate.org/projects/bitcoin-cz/"
@@ -1484,6 +1484,7 @@ msgid "Difficulty"
 msgstr ""
 
 #: web/templates/blocks.html:50
+#: web/templates/layout_elements/pool_stats.html:70
 msgctxt "UI"
 msgid "Pool Luck"
 msgstr ""
@@ -1740,13 +1741,33 @@ msgctxt "UI"
 msgid "Account dashboard"
 msgstr ""
 
-#: web/templates/dashboard.html:108 web/templates/stats.html:60
+#: web/templates/dashboard.html:79
+msgctxt "UI"
+msgid "Low Density"
+msgstr ""
+
+#: web/templates/dashboard.html:82
+msgctxt "UI"
+msgid "Hight Density"
+msgstr ""
+
+#: web/templates/dashboard.html:89
+msgctxt "UI"
+msgid "Basic View"
+msgstr ""
+
+#: web/templates/dashboard.html:92
+msgctxt "UI"
+msgid "Extended View"
+msgstr ""
+
+#: web/templates/dashboard.html:123 web/templates/stats.html:60
 #: web/templates/worker.html:74
 msgctxt "UI"
 msgid "Recent <span>Hash Rate</span>"
 msgstr ""
 
-#: web/templates/dashboard.html:117 web/templates/worker.html:80
+#: web/templates/dashboard.html:132 web/templates/worker.html:80
 #: web/templates/user_manual/rewards.html:46
 #: web/templates/user_manual/rewards.html:60
 #: web/templates/user_manual/troubleshooting.html:67
@@ -1755,7 +1776,7 @@ msgctxt "UI"
 msgid "Loading chart data, please wait..."
 msgstr ""
 
-#: web/templates/dashboard.html:126
+#: web/templates/dashboard.html:141
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -1763,34 +1784,34 @@ msgid ""
 "\"%(rewards)s\">scoring hash rate</a> progress on a 5 minutes basis."
 msgstr ""
 
-#: web/templates/dashboard.html:129
+#: web/templates/dashboard.html:144
 msgctxt "UI"
 msgid "Right axis: Active workers."
 msgstr ""
 
-#: web/templates/dashboard.html:130
+#: web/templates/dashboard.html:145
 msgctxt "UI"
 msgid ""
 "Vertical lines represent blocks found by the pool. They are labeled with "
 "#block numbers."
 msgstr ""
 
-#: web/templates/dashboard.html:199
+#: web/templates/dashboard.html:214
 msgctxt "Intro"
 msgid "Chart of 5 min Average Hash Rate/Your Scoring Hash Rate/Active Workers"
 msgstr ""
 
-#: web/templates/dashboard.html:202
+#: web/templates/dashboard.html:217
 msgctxt "Intro"
 msgid "The chart presents the highlighted values as a function of time."
 msgstr ""
 
-#: web/templates/dashboard.html:204
+#: web/templates/dashboard.html:219
 msgctxt "Intro"
 msgid "Vertical solid lines represent blocks found at that instant."
 msgstr ""
 
-#: web/templates/dashboard.html:220 web/templates/worker.html:216
+#: web/templates/dashboard.html:235 web/templates/worker.html:216
 #: web/templates/user_manual/rewards.html:50
 #: web/templates/user_manual/rewards.html:64
 #: web/templates/user_manual/troubleshooting.html:71
@@ -1798,7 +1819,7 @@ msgstr ""
 msgid "Hash Rate (5min)"
 msgstr ""
 
-#: web/templates/dashboard.html:221 web/templates/worker.html:217
+#: web/templates/dashboard.html:236 web/templates/worker.html:217
 #: web/templates/user_manual/rewards.html:51
 #: web/templates/user_manual/rewards.html:65
 #: web/templates/user_manual/troubleshooting.html:72
@@ -1806,11 +1827,11 @@ msgstr ""
 msgid "Scoring Hash Rate"
 msgstr ""
 
-#: web/templates/dashboard.html:222
+#: web/templates/dashboard.html:237
 msgid "Active Workers"
 msgstr ""
 
-#: web/templates/dashboard.html:223 web/templates/worker.html:218
+#: web/templates/dashboard.html:238 web/templates/worker.html:218
 #: web/templates/user_manual/terminology.html:94
 msgid "Alert Limit"
 msgstr ""
@@ -2907,13 +2928,13 @@ msgid "Hash Rate Limit"
 msgstr ""
 
 #: web/templates/monitoring.html:197
-#: web/templates/user_manual/monitoring.html:65 web/templatetags/utils.py:184
+#: web/templates/user_manual/monitoring.html:65 web/templatetags/utils.py:186
 msgctxt "UI, Monitoring"
 msgid "OK"
 msgstr ""
 
 #: web/templates/monitoring.html:198
-#: web/templates/user_manual/monitoring.html:69 web/templatetags/utils.py:183
+#: web/templates/user_manual/monitoring.html:69 web/templatetags/utils.py:185
 msgctxt "UI, Monitoring"
 msgid "Low"
 msgstr ""
@@ -2924,7 +2945,7 @@ msgid "Error"
 msgstr ""
 
 #: web/templates/monitoring.html:200
-#: web/templates/user_manual/monitoring.html:77 web/templatetags/utils.py:185
+#: web/templates/user_manual/monitoring.html:77 web/templatetags/utils.py:187
 msgctxt "UI, Monitoring"
 msgid "Disabled"
 msgstr ""
@@ -3587,7 +3608,7 @@ msgctxt "UI"
 msgid "Your Scoring<br>Hash Rate"
 msgstr ""
 
-#: web/templates/rewards.html:50
+#: web/templates/rewards.html:50 web/templates/layout_elements/blocks.html:17
 #: web/templates/layout_items/recent_blocks.html:8
 msgctxt "UI"
 msgid "Your Reward"
@@ -4390,6 +4411,7 @@ msgid "Active Users"
 msgstr ""
 
 #: web/templates/stats.html:124
+#: web/templates/layout_elements/pool_stats.html:40
 msgctxt "UI"
 msgid "Active Workers"
 msgstr ""
@@ -4750,7 +4772,9 @@ msgctxt "UI"
 msgid "Minimum<br>Difficulty"
 msgstr ""
 
-#: web/templates/workers.html:109 web/templates/layout_items/last_share.html:3
+#: web/templates/workers.html:109
+#: web/templates/layout_elements/user_mining.html:47
+#: web/templates/layout_items/last_share.html:3
 msgctxt "UI"
 msgid "Last Share"
 msgstr ""
@@ -4856,14 +4880,176 @@ msgid ""
 "successfully mining right now."
 msgstr ""
 
-#: web/templates/layout_items/current_block.html:3
+#: web/templates/layout_elements/blocks.html:15
 msgctxt "UI"
-msgid "Current Bitcoin block, difficulty"
+msgid "Time Since"
 msgstr ""
 
+#: web/templates/layout_elements/blocks.html:16
+#: web/templates/layout_elements/user_mining.html:16
+#: web/templates/layout_items/hr_user_scoring.html:3
+msgctxt "UI"
+msgid "Your Scoring Hash Rate"
+msgstr ""
+
+#: web/templates/layout_elements/blocks.html:18
+msgctxt "UI"
+msgid "Confirmation Status"
+msgstr ""
+
+#: web/templates/layout_elements/blocks.html:41
+msgctxt "UI"
+msgid "Rewards for Last 14 Days"
+msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:6
+#: web/templates/layout_elements/user_mining.html:6
+msgctxt "UI"
+msgid "Pool is synchronizing mining data!"
+msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:15
+#: web/templates/layout_elements/pool_stats.html:27
+#: web/templates/layout_elements/pool_stats.html:37
+msgctxt "UI"
+msgid "Go to Pool Statistics"
+msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:18
+#: web/templates/layout_items/hr_pool_scoring.html:3
+msgctxt "UI"
+msgid "Pool Scoring Hash Rate"
+msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:29
+msgctxt "UI"
+msgid "Loading..."
+msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:32
 #: web/templates/layout_items/current_round_duration.html:3
 msgctxt "UI"
 msgid "Current Round Duration"
+msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:50
+msgctxt "UI"
+msgid "Cumulative Distribution Function"
+msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:62
+msgctxt "UI"
+msgid "Block number"
+msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:66
+msgctxt "UI"
+msgid "Block Difficulty"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:11
+#: web/templates/layout_elements/rewards.html:21
+#: web/templates/layout_elements/rewards.html:33
+#: web/templates/layout_elements/rewards.html:45
+#: web/templates/layout_elements/rewards.html:52
+msgctxt "UI"
+msgid "Go to Rewards"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:14
+msgctxt "UI"
+msgid "Confirmed</span> Reward"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:24
+msgctxt "UI"
+msgid "Unconfirmed</span> Reward"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:36
+msgctxt "UI"
+msgid "All Times Reward"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:48
+#: web/templates/layout_elements/rewards.html:101
+msgctxt "UI"
+msgid "BTC Price"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:55
+#: web/templates/layout_elements/rewards.html:96
+msgctxt "UI"
+msgid "Last Payout"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:65
+#, python-format
+msgctxt "UI"
+msgid "%% to Payout"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:78
+#: web/templates/layout_items/payout_threshold.html:3
+#: web/templates/layout_items/rw_progress_bar.html:26
+msgctxt "UI"
+msgid "Payout Threshold"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:82
+msgctxt "UI"
+msgid "Estimated</span> Reward"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:86
+msgctxt "UI"
+msgid "Estimated Time to Payout"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:90
+msgctxt "UI"
+msgid "Average Payout Period"
+msgstr ""
+
+#: web/templates/layout_elements/user_mining.html:15
+msgctxt "UI"
+msgid "Go to Workers page"
+msgstr ""
+
+#: web/templates/layout_elements/user_mining.html:26
+msgctxt "UI"
+msgid "Go to Monitoring"
+msgstr ""
+
+#: web/templates/layout_elements/user_mining.html:31
+msgctxt "UI"
+msgid "Workers States"
+msgstr ""
+
+#: web/templates/layout_elements/user_mining.html:43
+#: web/templates/layout_items/user_scoring_fragment.html:3
+msgctxt "UI"
+msgid "Your Contribution to the Pool"
+msgstr ""
+
+#: web/templates/layout_elements/user_mining.html:54
+msgctxt "UI"
+msgid "5 minutes"
+msgstr ""
+
+#: web/templates/layout_elements/user_mining.html:58
+msgctxt "UI"
+msgid "Hour"
+msgstr ""
+
+#: web/templates/layout_elements/user_mining.html:62
+msgctxt "UI"
+msgid "Day"
+msgstr ""
+
+#: web/templates/layout_items/current_block.html:3
+msgctxt "UI"
+msgid "Current Bitcoin block, difficulty"
 msgstr ""
 
 #: web/templates/layout_items/current_round_start.html:3
@@ -4891,16 +5077,6 @@ msgctxt "UI"
 msgid "Pool Effective Hash Rate (30 min average)"
 msgstr ""
 
-#: web/templates/layout_items/hr_pool_scoring.html:3
-msgctxt "UI"
-msgid "Pool Scoring Hash Rate"
-msgstr ""
-
-#: web/templates/layout_items/hr_user_scoring.html:3
-msgctxt "UI"
-msgid "Your Scoring Hash Rate"
-msgstr ""
-
 #: web/templates/layout_items/moni_user_state.html:3
 msgctxt "UI"
 msgid "Account Monitoring Status"
@@ -4909,12 +5085,6 @@ msgstr ""
 #: web/templates/layout_items/moni_workers_state.html:3
 msgctxt "UI"
 msgid "Workers Monitoring Status"
-msgstr ""
-
-#: web/templates/layout_items/payout_threshold.html:3
-#: web/templates/layout_items/rw_progress_bar.html:26
-msgctxt "UI"
-msgid "Payout Threshold"
 msgstr ""
 
 #: web/templates/layout_items/pool_luck.html:3
@@ -4987,11 +5157,6 @@ msgstr ""
 #: web/templates/layout_items/total_shares.html:3
 msgctxt "UI"
 msgid "Total Shares in the Round:"
-msgstr ""
-
-#: web/templates/layout_items/user_scoring_fragment.html:3
-msgctxt "UI"
-msgid "Your Contribution to the Pool"
 msgstr ""
 
 #: web/templates/layout_items/username.html:3
@@ -5088,7 +5253,7 @@ msgstr ""
 
 #: web/templates/user_manual/advanced_mining.html:43
 #: web/templates/user_manual/advanced_mining.html:50
-#: web/templates/user_manual/getting_started.html:41
+#: web/templates/user_manual/getting_started.html:42
 msgid "userID"
 msgstr ""
 
@@ -5176,61 +5341,97 @@ msgctxt "UI"
 msgid "The login credentials needed for your miner look like this:"
 msgstr ""
 
-#: web/templates/user_manual/getting_started.html:40
-msgid "server:"
+#: web/templates/user_manual/getting_started.html:39
+msgid ""
+"(please, fill you <span class=\"darkred\">user ID</span> and <span class="
+"\"green\">worker name</span>)"
 msgstr ""
 
 #: web/templates/user_manual/getting_started.html:41
+msgid "URL:"
+msgstr ""
+
+#: web/templates/user_manual/getting_started.html:42
 msgid "user name:"
 msgstr ""
 
-#: web/templates/user_manual/getting_started.html:41
+#: web/templates/user_manual/getting_started.html:42
 msgid "workerName"
 msgstr ""
 
-#: web/templates/user_manual/getting_started.html:42
+#: web/templates/user_manual/getting_started.html:43
 msgid "password:"
 msgstr ""
 
-#: web/templates/user_manual/getting_started.html:42
+#: web/templates/user_manual/getting_started.html:43
 msgid "anything"
 msgstr ""
 
-#: web/templates/user_manual/getting_started.html:44
-msgid ""
-"The servers can be chosen from the following list based on your geographical "
-"location:"
-msgstr ""
-
-#: web/templates/user_manual/getting_started.html:53
+#: web/templates/user_manual/getting_started.html:46
 msgid ""
 "The password can be an arbitrary text since there is no security issue "
 "present here. If someone tried to connect to our servers with your "
 "credentials, he would be just mining for your benefit."
 msgstr ""
 
+#: web/templates/user_manual/getting_started.html:48
+msgid ""
+"The servers can be chosen from the following list based on your geographical "
+"location:"
+msgstr ""
+
+#: web/templates/user_manual/getting_started.html:54
+msgid "Servers Location"
+msgstr ""
+
 #: web/templates/user_manual/getting_started.html:55
+msgid "Address"
+msgstr ""
+
+#: web/templates/user_manual/getting_started.html:60
+msgid "<strong>USA</strong>, east cost"
+msgstr ""
+
+#: web/templates/user_manual/getting_started.html:64
+msgid "<strong>Europe</strong>"
+msgstr ""
+
+#: web/templates/user_manual/getting_started.html:68
+msgid "<strong>China</strong>, mainland"
+msgstr ""
+
+#: web/templates/user_manual/getting_started.html:72
+msgid "Asia-Pacific/<strong>Singapore</strong>"
+msgstr ""
+
+#: web/templates/user_manual/getting_started.html:79
+msgid ""
+"When you use some servers based on geo-location, we recommend to always "
+"setup second URL pointing to the base pool address:"
+msgstr ""
+
+#: web/templates/user_manual/getting_started.html:85
 msgid "3. Setup your payout address"
 msgstr ""
 
-#: web/templates/user_manual/getting_started.html:57
+#: web/templates/user_manual/getting_started.html:87
 msgid ""
 "To collect your reward you have to set a payout address. If you don't have "
 "an address, you need to get a bitcoin wallet first:"
 msgstr ""
 
-#: web/templates/user_manual/getting_started.html:63
+#: web/templates/user_manual/getting_started.html:93
 msgid "Additional Information"
 msgstr ""
 
-#: web/templates/user_manual/getting_started.html:65
+#: web/templates/user_manual/getting_started.html:95
 #, python-format
 msgid ""
 "Step by step tutorial on how to setup your non-standalone miner can be found "
 "in the <a href=\"%(advanced_mining)s\">Advanced Mining</a> section."
 msgstr ""
 
-#: web/templates/user_manual/getting_started.html:66
+#: web/templates/user_manual/getting_started.html:96
 #, python-format
 msgid ""
 "You can use one worker name for all your miners. However, we recommend to "
@@ -5238,7 +5439,7 @@ msgid ""
 "\">monitoring</a>."
 msgstr ""
 
-#: web/templates/user_manual/getting_started.html:67
+#: web/templates/user_manual/getting_started.html:97
 #, python-format
 msgid ""
 "Optionally, enable the <a href=\"%(url_2fa)s\">Two-factor-authentication</a> "
@@ -5731,7 +5932,7 @@ msgid ""
 "our <a href=\"%(support_submit)s\">support</a>."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:73 web/templatetags/utils.py:182
+#: web/templates/user_manual/monitoring.html:73 web/templatetags/utils.py:184
 msgctxt "UI, Monitoring"
 msgid "Offline"
 msgstr ""
@@ -6701,12 +6902,12 @@ msgctxt "UI"
 msgid "Preview:"
 msgstr ""
 
-#: web/templatetags/utils.py:37
+#: web/templatetags/utils.py:39
 #, python-format
 msgid "%i days"
 msgstr ""
 
-#: web/templatetags/utils.py:242
+#: web/templatetags/utils.py:244
 msgctxt "UI"
 msgid "Help me"
 msgstr ""

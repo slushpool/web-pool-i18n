@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 18:44+0000\n"
+"POT-Creation-Date: 2015-03-07 20:29+0000\n"
 "PO-Revision-Date: 2015-03-07 21:12+0200\n"
 "Last-Translator: xu <samanthaxu1987@163.com>\n"
-"Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-"
-"cz/mining/zh/>\n"
+"Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-cz/"
+"mining/zh/>\n"
 "Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1497,6 +1497,7 @@ msgid "Difficulty"
 msgstr "难度"
 
 #: web/templates/blocks.html:50
+#: web/templates/layout_elements/pool_stats.html:70
 msgctxt "UI"
 msgid "Pool Luck"
 msgstr "矿池运气"
@@ -1773,13 +1774,34 @@ msgctxt "UI"
 msgid "Account dashboard"
 msgstr "账户仪表板"
 
-#: web/templates/dashboard.html:108 web/templates/stats.html:60
+#: web/templates/dashboard.html:79
+msgctxt "UI"
+msgid "Low Density"
+msgstr ""
+
+#: web/templates/dashboard.html:82
+msgctxt "UI"
+msgid "Hight Density"
+msgstr ""
+
+#: web/templates/dashboard.html:89
+#, fuzzy
+msgctxt "UI"
+msgid "Basic View"
+msgstr "基本"
+
+#: web/templates/dashboard.html:92
+msgctxt "UI"
+msgid "Extended View"
+msgstr ""
+
+#: web/templates/dashboard.html:123 web/templates/stats.html:60
 #: web/templates/worker.html:74
 msgctxt "UI"
 msgid "Recent <span>Hash Rate</span>"
 msgstr "近期 <span>Hash速率</span>"
 
-#: web/templates/dashboard.html:117 web/templates/worker.html:80
+#: web/templates/dashboard.html:132 web/templates/worker.html:80
 #: web/templates/user_manual/rewards.html:46
 #: web/templates/user_manual/rewards.html:60
 #: web/templates/user_manual/troubleshooting.html:67
@@ -1788,7 +1810,7 @@ msgctxt "UI"
 msgid "Loading chart data, please wait..."
 msgstr "正在加载表格数据，请等待......"
 
-#: web/templates/dashboard.html:126
+#: web/templates/dashboard.html:141
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -1798,34 +1820,34 @@ msgstr ""
 "左轴：<a href=\"%(url)s\">有效的hash速率</a>和<a href=\"%(rewards)s\">加权指"
 "数hash速率</a> 每5分钟进展。"
 
-#: web/templates/dashboard.html:129
+#: web/templates/dashboard.html:144
 msgctxt "UI"
 msgid "Right axis: Active workers."
 msgstr "右轴：活跃的矿工。"
 
-#: web/templates/dashboard.html:130
+#: web/templates/dashboard.html:145
 msgctxt "UI"
 msgid ""
 "Vertical lines represent blocks found by the pool. They are labeled with "
 "#block numbers."
 msgstr "垂直线代表矿池已发现的矿区。被标注为#block加数字。"
 
-#: web/templates/dashboard.html:199
+#: web/templates/dashboard.html:214
 msgctxt "Intro"
 msgid "Chart of 5 min Average Hash Rate/Your Scoring Hash Rate/Active Workers"
 msgstr ""
 
-#: web/templates/dashboard.html:202
+#: web/templates/dashboard.html:217
 msgctxt "Intro"
 msgid "The chart presents the highlighted values as a function of time."
 msgstr ""
 
-#: web/templates/dashboard.html:204
+#: web/templates/dashboard.html:219
 msgctxt "Intro"
 msgid "Vertical solid lines represent blocks found at that instant."
 msgstr ""
 
-#: web/templates/dashboard.html:220 web/templates/worker.html:216
+#: web/templates/dashboard.html:235 web/templates/worker.html:216
 #: web/templates/user_manual/rewards.html:50
 #: web/templates/user_manual/rewards.html:64
 #: web/templates/user_manual/troubleshooting.html:71
@@ -1833,7 +1855,7 @@ msgstr ""
 msgid "Hash Rate (5min)"
 msgstr "Hash速率（5分钟）"
 
-#: web/templates/dashboard.html:221 web/templates/worker.html:217
+#: web/templates/dashboard.html:236 web/templates/worker.html:217
 #: web/templates/user_manual/rewards.html:51
 #: web/templates/user_manual/rewards.html:65
 #: web/templates/user_manual/troubleshooting.html:72
@@ -1841,12 +1863,12 @@ msgstr "Hash速率（5分钟）"
 msgid "Scoring Hash Rate"
 msgstr "指数加权Hash速率"
 
-#: web/templates/dashboard.html:222
+#: web/templates/dashboard.html:237
 #, fuzzy
 msgid "Active Workers"
 msgstr "工人"
 
-#: web/templates/dashboard.html:223 web/templates/worker.html:218
+#: web/templates/dashboard.html:238 web/templates/worker.html:218
 #: web/templates/user_manual/terminology.html:94
 msgid "Alert Limit"
 msgstr "警告限值"
@@ -2998,13 +3020,13 @@ msgid "Hash Rate Limit"
 msgstr "Hash的速率"
 
 #: web/templates/monitoring.html:197
-#: web/templates/user_manual/monitoring.html:65 web/templatetags/utils.py:184
+#: web/templates/user_manual/monitoring.html:65 web/templatetags/utils.py:186
 msgctxt "UI, Monitoring"
 msgid "OK"
 msgstr "好"
 
 #: web/templates/monitoring.html:198
-#: web/templates/user_manual/monitoring.html:69 web/templatetags/utils.py:183
+#: web/templates/user_manual/monitoring.html:69 web/templatetags/utils.py:185
 msgctxt "UI, Monitoring"
 msgid "Low"
 msgstr "低"
@@ -3015,7 +3037,7 @@ msgid "Error"
 msgstr "错误"
 
 #: web/templates/monitoring.html:200
-#: web/templates/user_manual/monitoring.html:77 web/templatetags/utils.py:185
+#: web/templates/user_manual/monitoring.html:77 web/templatetags/utils.py:187
 msgctxt "UI, Monitoring"
 msgid "Disabled"
 msgstr "已禁用"
@@ -3700,7 +3722,7 @@ msgctxt "UI"
 msgid "Your Scoring<br>Hash Rate"
 msgstr "您的指数加权<br>Hash速率"
 
-#: web/templates/rewards.html:50
+#: web/templates/rewards.html:50 web/templates/layout_elements/blocks.html:17
 #: web/templates/layout_items/recent_blocks.html:8
 msgctxt "UI"
 msgid "Your Reward"
@@ -4550,6 +4572,7 @@ msgid "Active Users"
 msgstr "活动的用户"
 
 #: web/templates/stats.html:124
+#: web/templates/layout_elements/pool_stats.html:40
 msgctxt "UI"
 msgid "Active Workers"
 msgstr "活跃的矿工"
@@ -4927,7 +4950,9 @@ msgctxt "UI"
 msgid "Minimum<br>Difficulty"
 msgstr "最小<br>难度"
 
-#: web/templates/workers.html:109 web/templates/layout_items/last_share.html:3
+#: web/templates/workers.html:109
+#: web/templates/layout_elements/user_mining.html:47
+#: web/templates/layout_items/last_share.html:3
 msgctxt "UI"
 msgid "Last Share"
 msgstr "上一次share"
@@ -5036,15 +5061,195 @@ msgid ""
 "successfully mining right now."
 msgstr ""
 
-#: web/templates/layout_items/current_block.html:3
+#: web/templates/layout_elements/blocks.html:15
+#, fuzzy
 msgctxt "UI"
-msgid "Current Bitcoin block, difficulty"
-msgstr "当前比特币矿区，困难指数"
+msgid "Time Since"
+msgstr "时间处理"
 
+#: web/templates/layout_elements/blocks.html:16
+#: web/templates/layout_elements/user_mining.html:16
+#: web/templates/layout_items/hr_user_scoring.html:3
+msgctxt "UI"
+msgid "Your Scoring Hash Rate"
+msgstr "您的指数加权hash速率"
+
+#: web/templates/layout_elements/blocks.html:18
+#, fuzzy
+msgctxt "UI"
+msgid "Confirmation Status"
+msgstr "确认页面"
+
+#: web/templates/layout_elements/blocks.html:41
+msgctxt "UI"
+msgid "Rewards for Last 14 Days"
+msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:6
+#: web/templates/layout_elements/user_mining.html:6
+msgctxt "UI"
+msgid "Pool is synchronizing mining data!"
+msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:15
+#: web/templates/layout_elements/pool_stats.html:27
+#: web/templates/layout_elements/pool_stats.html:37
+#, fuzzy
+msgctxt "UI"
+msgid "Go to Pool Statistics"
+msgstr "统计"
+
+#: web/templates/layout_elements/pool_stats.html:18
+#: web/templates/layout_items/hr_pool_scoring.html:3
+msgctxt "UI"
+msgid "Pool Scoring Hash Rate"
+msgstr "矿池指数加权hash速率"
+
+#: web/templates/layout_elements/pool_stats.html:29
+#, fuzzy
+msgctxt "UI"
+msgid "Loading..."
+msgstr "正在处理......"
+
+#: web/templates/layout_elements/pool_stats.html:32
 #: web/templates/layout_items/current_round_duration.html:3
 msgctxt "UI"
 msgid "Current Round Duration"
 msgstr "本轮持续时间"
+
+#: web/templates/layout_elements/pool_stats.html:50
+msgctxt "UI"
+msgid "Cumulative Distribution Function"
+msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:62
+#, fuzzy
+msgctxt "UI"
+msgid "Block number"
+msgstr "矿区价值"
+
+#: web/templates/layout_elements/pool_stats.html:66
+#, fuzzy
+msgctxt "UI"
+msgid "Block Difficulty"
+msgstr "难度"
+
+#: web/templates/layout_elements/rewards.html:11
+#: web/templates/layout_elements/rewards.html:21
+#: web/templates/layout_elements/rewards.html:33
+#: web/templates/layout_elements/rewards.html:45
+#: web/templates/layout_elements/rewards.html:52
+#, fuzzy
+msgctxt "UI"
+msgid "Go to Rewards"
+msgstr "总报酬"
+
+#: web/templates/layout_elements/rewards.html:14
+#, fuzzy
+msgctxt "UI"
+msgid "Confirmed</span> Reward"
+msgstr "已确认的报酬"
+
+#: web/templates/layout_elements/rewards.html:24
+#, fuzzy
+msgctxt "UI"
+msgid "Unconfirmed</span> Reward"
+msgstr "未确认的报酬"
+
+#: web/templates/layout_elements/rewards.html:36
+#, fuzzy
+msgctxt "UI"
+msgid "All Times Reward"
+msgstr "所有报酬"
+
+#: web/templates/layout_elements/rewards.html:48
+#: web/templates/layout_elements/rewards.html:101
+msgctxt "UI"
+msgid "BTC Price"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:55
+#: web/templates/layout_elements/rewards.html:96
+#, fuzzy
+msgctxt "UI"
+msgid "Last Payout"
+msgstr "报酬支付"
+
+#: web/templates/layout_elements/rewards.html:65
+#, fuzzy, python-format
+msgctxt "UI"
+msgid "%% to Payout"
+msgstr "报酬支付"
+
+#: web/templates/layout_elements/rewards.html:78
+#: web/templates/layout_items/payout_threshold.html:3
+#: web/templates/layout_items/rw_progress_bar.html:26
+msgctxt "UI"
+msgid "Payout Threshold"
+msgstr "报酬支付门槛"
+
+#: web/templates/layout_elements/rewards.html:82
+#, fuzzy
+msgctxt "UI"
+msgid "Estimated</span> Reward"
+msgstr "估计的报酬"
+
+#: web/templates/layout_elements/rewards.html:86
+#, fuzzy
+msgctxt "UI"
+msgid "Estimated Time to Payout"
+msgstr "在付款时通知我"
+
+#: web/templates/layout_elements/rewards.html:90
+msgctxt "UI"
+msgid "Average Payout Period"
+msgstr ""
+
+#: web/templates/layout_elements/user_mining.html:15
+#, fuzzy
+msgctxt "UI"
+msgid "Go to Workers page"
+msgstr "去主页"
+
+#: web/templates/layout_elements/user_mining.html:26
+#, fuzzy
+msgctxt "UI"
+msgid "Go to Monitoring"
+msgstr "监控"
+
+#: web/templates/layout_elements/user_mining.html:31
+#, fuzzy
+msgctxt "UI"
+msgid "Workers States"
+msgstr "矿工Hash速率"
+
+#: web/templates/layout_elements/user_mining.html:43
+#: web/templates/layout_items/user_scoring_fragment.html:3
+msgctxt "UI"
+msgid "Your Contribution to the Pool"
+msgstr "您对矿池的贡献"
+
+#: web/templates/layout_elements/user_mining.html:54
+#, fuzzy
+msgctxt "UI"
+msgid "5 minutes"
+msgstr "前五十名矿工"
+
+#: web/templates/layout_elements/user_mining.html:58
+msgctxt "UI"
+msgid "Hour"
+msgstr ""
+
+#: web/templates/layout_elements/user_mining.html:62
+#, fuzzy
+msgctxt "UI"
+msgid "Day"
+msgstr "日"
+
+#: web/templates/layout_items/current_block.html:3
+msgctxt "UI"
+msgid "Current Bitcoin block, difficulty"
+msgstr "当前比特币矿区，困难指数"
 
 #: web/templates/layout_items/current_round_start.html:3
 msgctxt "UI"
@@ -5071,16 +5276,6 @@ msgctxt "UI"
 msgid "Pool Effective Hash Rate (30 min average)"
 msgstr "矿池有效Hash速率（30分钟平均值）"
 
-#: web/templates/layout_items/hr_pool_scoring.html:3
-msgctxt "UI"
-msgid "Pool Scoring Hash Rate"
-msgstr "矿池指数加权hash速率"
-
-#: web/templates/layout_items/hr_user_scoring.html:3
-msgctxt "UI"
-msgid "Your Scoring Hash Rate"
-msgstr "您的指数加权hash速率"
-
 #: web/templates/layout_items/moni_user_state.html:3
 msgctxt "UI"
 msgid "Account Monitoring Status"
@@ -5090,12 +5285,6 @@ msgstr "账户监控状态"
 msgctxt "UI"
 msgid "Workers Monitoring Status"
 msgstr "矿工监控状态"
-
-#: web/templates/layout_items/payout_threshold.html:3
-#: web/templates/layout_items/rw_progress_bar.html:26
-msgctxt "UI"
-msgid "Payout Threshold"
-msgstr "报酬支付门槛"
 
 #: web/templates/layout_items/pool_luck.html:3
 msgctxt "UI"
@@ -5168,11 +5357,6 @@ msgstr "当前时间"
 msgctxt "UI"
 msgid "Total Shares in the Round:"
 msgstr "本轮的总share："
-
-#: web/templates/layout_items/user_scoring_fragment.html:3
-msgctxt "UI"
-msgid "Your Contribution to the Pool"
-msgstr "您对矿池的贡献"
 
 #: web/templates/layout_items/username.html:3
 msgctxt "UI"
@@ -5278,7 +5462,7 @@ msgstr "输入下面的指令然后按回车："
 
 #: web/templates/user_manual/advanced_mining.html:43
 #: web/templates/user_manual/advanced_mining.html:50
-#: web/templates/user_manual/getting_started.html:41
+#: web/templates/user_manual/getting_started.html:42
 msgid "userID"
 msgstr "用户ID"
 
@@ -5376,33 +5560,33 @@ msgctxt "UI"
 msgid "The login credentials needed for your miner look like this:"
 msgstr "您矿工所需的登录凭证是像这样的："
 
-#: web/templates/user_manual/getting_started.html:40
-msgid "server:"
-msgstr "服务器："
+#: web/templates/user_manual/getting_started.html:39
+msgid ""
+"(please, fill you <span class=\"darkred\">user ID</span> and <span class="
+"\"green\">worker name</span>)"
+msgstr ""
 
 #: web/templates/user_manual/getting_started.html:41
+msgid "URL:"
+msgstr ""
+
+#: web/templates/user_manual/getting_started.html:42
 msgid "user name:"
 msgstr "用户名："
 
-#: web/templates/user_manual/getting_started.html:41
+#: web/templates/user_manual/getting_started.html:42
 msgid "workerName"
 msgstr "矿工名"
 
-#: web/templates/user_manual/getting_started.html:42
+#: web/templates/user_manual/getting_started.html:43
 msgid "password:"
 msgstr "密码："
 
-#: web/templates/user_manual/getting_started.html:42
+#: web/templates/user_manual/getting_started.html:43
 msgid "anything"
 msgstr "任意"
 
-#: web/templates/user_manual/getting_started.html:44
-msgid ""
-"The servers can be chosen from the following list based on your geographical "
-"location:"
-msgstr "根据您的地理位置您可以从下面的名单里选择服务器："
-
-#: web/templates/user_manual/getting_started.html:53
+#: web/templates/user_manual/getting_started.html:46
 msgid ""
 "The password can be an arbitrary text since there is no security issue "
 "present here. If someone tried to connect to our servers with your "
@@ -5411,11 +5595,52 @@ msgstr ""
 "密码可以是任意的，因为我们不存在安全问题。如果某人试图用您的证书连接到我们矿"
 "池，那么他将替您挖矿。"
 
+#: web/templates/user_manual/getting_started.html:48
+msgid ""
+"The servers can be chosen from the following list based on your geographical "
+"location:"
+msgstr "根据您的地理位置您可以从下面的名单里选择服务器："
+
+#: web/templates/user_manual/getting_started.html:54
+msgid "Servers Location"
+msgstr ""
+
 #: web/templates/user_manual/getting_started.html:55
+#, fuzzy
+msgid "Address"
+msgstr "地址"
+
+#: web/templates/user_manual/getting_started.html:60
+#, fuzzy
+msgid "<strong>USA</strong>, east cost"
+msgstr "<strong>我的</strong> 账户"
+
+#: web/templates/user_manual/getting_started.html:64
+#, fuzzy
+msgid "<strong>Europe</strong>"
+msgstr "<strong>主页</strong>"
+
+#: web/templates/user_manual/getting_started.html:68
+#, fuzzy
+msgid "<strong>China</strong>, mainland"
+msgstr "<strong>联系</strong> 我们"
+
+#: web/templates/user_manual/getting_started.html:72
+#, fuzzy
+msgid "Asia-Pacific/<strong>Singapore</strong>"
+msgstr "<strong>设置</strong>"
+
+#: web/templates/user_manual/getting_started.html:79
+msgid ""
+"When you use some servers based on geo-location, we recommend to always "
+"setup second URL pointing to the base pool address:"
+msgstr ""
+
+#: web/templates/user_manual/getting_started.html:85
 msgid "3. Setup your payout address"
 msgstr "3. 设置您的报酬支付地址"
 
-#: web/templates/user_manual/getting_started.html:57
+#: web/templates/user_manual/getting_started.html:87
 msgid ""
 "To collect your reward you have to set a payout address. If you don't have "
 "an address, you need to get a bitcoin wallet first:"
@@ -5423,11 +5648,11 @@ msgstr ""
 "为了收集您的报酬您需要设置一个支付地址。如果您没有任何地址，请去弄一个比特币"
 "钱包："
 
-#: web/templates/user_manual/getting_started.html:63
+#: web/templates/user_manual/getting_started.html:93
 msgid "Additional Information"
 msgstr "附加信息"
 
-#: web/templates/user_manual/getting_started.html:65
+#: web/templates/user_manual/getting_started.html:95
 #, python-format
 msgid ""
 "Step by step tutorial on how to setup your non-standalone miner can be found "
@@ -5436,7 +5661,7 @@ msgstr ""
 "分步设置您需要连接到电脑上的矿机教程可以在<a href=\"%(advanced_mining)s\">高"
 "级挖矿</a>章节找到。"
 
-#: web/templates/user_manual/getting_started.html:66
+#: web/templates/user_manual/getting_started.html:96
 #, python-format
 msgid ""
 "You can use one worker name for all your miners. However, we recommend to "
@@ -5446,7 +5671,7 @@ msgstr ""
 "您可以把所有矿机设置成一个矿工名字，但是我们推荐为您的每个矿机设置不同的矿工"
 "名而简化<a href=\"%(monitoring)s\">监控</a>。"
 
-#: web/templates/user_manual/getting_started.html:67
+#: web/templates/user_manual/getting_started.html:97
 #, python-format
 msgid ""
 "Optionally, enable the <a href=\"%(url_2fa)s\">Two-factor-authentication</a> "
@@ -5978,7 +6203,7 @@ msgstr ""
 "正常变到低。如果您长时间看到此状态，请创建一个消息发送给我们的<a href="
 "\"%(support_submit)s\">技术支持组</a>。"
 
-#: web/templates/user_manual/monitoring.html:73 web/templatetags/utils.py:182
+#: web/templates/user_manual/monitoring.html:73 web/templatetags/utils.py:184
 msgctxt "UI, Monitoring"
 msgid "Offline"
 msgstr "离线"
@@ -7125,15 +7350,18 @@ msgctxt "UI"
 msgid "Preview:"
 msgstr "预览："
 
-#: web/templatetags/utils.py:37
+#: web/templatetags/utils.py:39
 #, fuzzy, python-format
 msgid "%i days"
 msgstr "日"
 
-#: web/templatetags/utils.py:242
+#: web/templatetags/utils.py:244
 msgctxt "UI"
 msgid "Help me"
 msgstr "帮助我"
+
+#~ msgid "server:"
+#~ msgstr "服务器："
 
 #~ msgctxt "UI"
 #~ msgid "I receive the newsletters too frequently."
@@ -7926,9 +8154,6 @@ msgstr "帮助我"
 #~ msgid "block"
 #~ msgstr "块"
 
-#~ msgid "day"
-#~ msgstr "日"
-
 #, fuzzy
 #~ msgid "Total Score in the Round:"
 #~ msgstr "本轮的总比分："
@@ -7985,9 +8210,6 @@ msgstr "帮助我"
 
 #~ msgid "Namecoin"
 #~ msgstr "名笔"
-
-#~ msgid "(TOP50 miners)"
-#~ msgstr "前五十名矿工"
 
 #~ msgid "Mhash/s"
 #~ msgstr "Mhash/s"
