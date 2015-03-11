@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 13:58+0000\n"
+"POT-Creation-Date: 2015-03-11 14:03+0000\n"
 "PO-Revision-Date: 2015-02-09 16:49+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/bitcoin-cz/"
@@ -30,10 +30,11 @@ msgid "Confirmed"
 msgstr "Confirmado"
 
 #: contact/forms.py:39 contact/forms.py:40 contact/forms.py:41
-#: contact/forms.py:42 contact/views.py:43 mailing/forms.py:84
-#: mailing/models.py:450 mailing/models.py:451 mailing/models.py:452
-#: mailing/models.py:453 mailing/models.py:454 news/views.py:69
-#: notifications/backends/blocks.py:24 notifications/backends/proposals.py:23
+#: contact/forms.py:42 contact/views.py:34 mailing/forms.py:39
+#: mailing/forms.py:40 mailing/forms.py:41 mailing/forms.py:71
+#: mailing/models.py:441 mailing/models.py:442 mailing/models.py:443
+#: mailing/models.py:444 mailing/models.py:445 news/views.py:69
+#: notifications/backends/blocks.py:23 notifications/backends/proposals.py:23
 msgid "UI"
 msgstr ""
 
@@ -53,7 +54,7 @@ msgctxt "UI"
 msgid "We will be happy to hear from you."
 msgstr ""
 
-#: contact/templates/contact/write_to_us.html:75
+#: contact/templates/contact/write_to_us.html:73
 msgctxt "UI"
 msgid "Send"
 msgstr ""
@@ -76,38 +77,58 @@ msgctxt "UI"
 msgid "Mailing"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:25
+#: mailing/templates/mailing/unsubscribe.html:27
 msgctxt "UI"
 msgid "We are sorry to see you go!"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:27
+#: mailing/templates/mailing/unsubscribe.html:31
 msgctxt "UI"
-msgid "We would still appreciate any feedback why you are unsubscribing:"
+msgid "Please select account you want to unsubscribe from"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:29
-#, python-format
-msgctxt "UI"
-msgid ""
-"Please select account%(accounts_found|pluralize)s you want to unsubscribe "
-"from"
-msgstr ""
-
-#: mailing/templates/mailing/unsubscribe.html:33
+#: mailing/templates/mailing/unsubscribe.html:36
 msgctxt "UI"
 msgid "Unsubscribe me"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:37
-#: mailing/templates/mailing/unsubscribe_confirm.html:20
+#: mailing/templates/mailing/unsubscribe.html:41
+msgctxt "UI"
+msgid ""
+"I've change my mind. Take me to\n"
+"                homepage."
+msgstr ""
+
+#: mailing/templates/mailing/unsubscribe_confirm.html:23
+msgctxt "UI"
+msgid "You have been unsubscribed from <nobr>Slush Pool's newsletter.</nobr>"
+msgstr ""
+
+#: mailing/templates/mailing/unsubscribe_confirm.html:27
+#, fuzzy
+msgctxt "UI"
+msgid "Show My Dashboard"
+msgstr "Tablero"
+
+#: mailing/templates/mailing/unsubscribe_confirm.html:30
 msgctxt "UI"
 msgid "Go to Homepage"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe_confirm.html:19
+#: mailing/templates/mailing/emails/unsubscribe_confirmation.html:9
 msgctxt "UI"
-msgid "You have been unsubscribed from Slush Pool's newsletter."
+msgid ""
+"\n"
+"From the bottom of our heart we would like to confirm that we had "
+"unsubscribe you from our newsletter.\n"
+msgstr ""
+
+#: mailing/templates/mailing/emails/unsubscribe_confirmation.html:13
+msgctxt "UI"
+msgid ""
+"\n"
+"In case you change your mind, you can tune up our news from your account "
+"settings.\n"
 msgstr ""
 
 #: mining/models.py:162 web/models.py:879 web/templates/workers.html:108
@@ -205,7 +226,7 @@ msgstr "Nombre de usuario"
 msgid "log ig"
 msgstr "Iniciar Sesion"
 
-#: notifications/templates/notifications/parts/notifications.html:25
+#: notifications/templates/notifications/parts/notifications.html:21
 msgctxt "UI"
 msgid "You don't have any notifications."
 msgstr ""
@@ -455,34 +476,12 @@ msgctxt "UI"
 msgid "New comment"
 msgstr "Comentario nuevo"
 
-#: web/layout_items.py:28
-msgctxt "Intro"
-msgid "Percentage part of your scoring hash rate in the pool hash rate."
-msgstr ""
-"Su porcentaje del puntaje del poder de hasheo dentro del poder de hasheo del "
-"pool."
-
-#: web/layout_items.py:30
-#, fuzzy
-msgctxt "Intro"
-msgid "(User Scoring Hash Rate / Pool Scoring Hash rate) * 100%"
-msgstr ""
-"(Puntuacion de Poder de Hasheo del usuario / Puntuacion de Poder de Hasheo "
-"del Pool) * 100%%"
-
-#: web/layout_items.py:44
-msgctxt "Intro"
-msgid ""
-"Effective hash rate is being calculated from valid shares only - (see Pool "
-"Terminology manual page)."
-msgstr ""
-
-#: web/layout_items.py:58
+#: web/layout_elements.py:95
 msgctxt "Intro"
 msgid "Exponentially weighted hash rate of the pool and of your account."
 msgstr "Poder de hasheo con peso exponencial del pool y de su cuenta."
 
-#: web/layout_items.py:59
+#: web/layout_elements.py:96
 msgctxt "Intro"
 msgid ""
 "The scoring function performs exponential weighting of the respective hash "
@@ -491,7 +490,7 @@ msgstr ""
 "La funcion de puntaje ejecuta un puntaje exponencial de los poderes de "
 "hasheo respectivos."
 
-#: web/layout_items.py:60
+#: web/layout_elements.py:97
 msgctxt "Intro"
 msgid ""
 "These values are being used for reward calculation, unlike the average hash "
@@ -500,132 +499,17 @@ msgstr ""
 "Estos valores estan siendo usados para la el calculo de las recompensas, a "
 "diferencia del poder de hasheo promedio."
 
-#: web/layout_items.py:74
-msgctxt "Intro"
-msgid "Average effective hashrate for past 5 minutes / 1 hour / 24 hours."
-msgstr ""
-"Promedio del Poder de hasheo efectivo de los ultimos 5 minutos / 1 Hora / 24 "
-"Horas."
-
-#: web/layout_items.py:75
-msgctxt "Intro"
-msgid "No scoring function is applied to these values."
-msgstr "No hay ninguna funcion de puntaje aplicada a estos valores."
-
-#: web/layout_items.py:93 web/layout_items.py:107 web/layout_items.py:121
-#: web/layout_items.py:139
-msgctxt "Intro"
-msgid "Rewards Overview"
-msgstr "Resumen de Recompensas"
-
-#: web/layout_items.py:97
-msgctxt "Intro"
-msgid "Estimated reward for a block when it was found right now"
-msgstr "Recompensa estimada para la actual ronda"
-
-#: web/layout_items.py:111
-msgctxt "Intro"
-msgid "Pending reward from unconfirmed blocks"
-msgstr "Recompensa pendiente de bloques sin confirmacion"
-
-#: web/layout_items.py:143
-msgctxt "Intro"
-msgid "Confirmed Rewards + Unconfirmed Rewards"
-msgstr "Recompensas Confirmadas + Recompensas sin Confirmacion"
-
-#: web/layout_items.py:165
-msgctxt "Intro"
-msgid ""
-"Date and time when pool has found the last block and started mining work for "
-"a new one."
-msgstr ""
-
-#: web/layout_items.py:178
-msgctxt "Intro"
-msgid ""
-"Cumulative distribution function for the probability that a block will be "
-"found after a given number of contributed shares."
-msgstr ""
-
-#: web/layout_items.py:179
-msgctxt "Intro"
-msgid ""
-"The actual value has a bit reversed meaning. The lower the current value of "
-"CDF value, the better the luck."
-msgstr ""
-
-#: web/layout_items.py:181
-msgctxt "Intro"
-msgid ""
-"20% - In 20% of cases, the block would be found after submitting (0.22 * "
-"current difficulty) shares = quite a luck."
-msgstr ""
-
-#: web/layout_items.py:182
-msgctxt "Intro"
-msgid ""
-"90% - In 90% of cases, the block would be found after submitting (2.32 * "
-"current difficulty) shares = bad luck."
-msgstr ""
-
-#: web/layout_items.py:183
-msgctxt "Intro"
-msgid ""
-"63% - In 63% of cases, the block would be found after submitting (1 * "
-"current difficulty) shares = long term luck is @ 100%."
-msgstr ""
-
-#: web/layout_items.py:195
-msgctxt "Intro"
-msgid "Current bitcoin block number, current bitcoin network difficulty."
-msgstr ""
-
-#: web/layout_items.py:207
-msgctxt "Intro"
-msgid ""
-"Percentage ratio between shares the pool needed to find a block and average "
-"number of shares needed."
-msgstr ""
-
-#: web/layout_items.py:208
-msgctxt "Intro"
-msgid "A 1 day, 7 day, and 30 days luck is provided."
-msgstr ""
-
-#: web/layout_items.py:221
-msgctxt "Intro"
-msgid ""
-"Total number of shares that have been submitted by all workers in the "
-"current round."
-msgstr ""
-
-#: web/layout_items.py:234
+#: web/layout_elements.py:107
 msgctxt "Intro"
 msgid "# of workers in respective monitoring states."
 msgstr "# de trabajadores en sus respectivos estados de monitoreo."
 
-#: web/layout_items.py:236
+#: web/layout_elements.py:109
 msgctxt "Intro"
 msgid "OK | Low | Offline"
 msgstr ""
 
-#: web/layout_items.py:274
-msgctxt "Intro"
-msgid "Number of points that you can use to vote for new pool features"
-msgstr ""
-"Numero de puntos que puede usar para votar por funciones nuevas del pool"
-
-#: web/layout_items.py:275
-msgctxt "Intro"
-msgid "Visit Development Corner for more details"
-msgstr "Visite el Rincon de Desarrollo para mas detalles"
-
-#: web/layout_items.py:277
-msgctxt "Intro"
-msgid "Unspent points / Total points"
-msgstr "Puntos sin Utilizar / Puntos Totales"
-
-#: web/layout_items.py:290
+#: web/layout_elements.py:119
 msgctxt "Intro"
 msgid ""
 "The amount of time that has elapsed since submission of the last share by "
@@ -634,12 +518,138 @@ msgstr ""
 "La cantidad de tiempo que ha pasado desde la entrega del ultimo share por "
 "sus trabajadores."
 
-#: web/layout_items.py:291
+#: web/layout_elements.py:120
 msgctxt "Intro"
 msgid "The value should be 0 minutes if your miners work properly."
 msgstr ""
 "El valor debera ser 0 minutos si sus trabajadores estan funcionando de "
 "manera correcta."
+
+#: web/layout_elements.py:130
+msgctxt "Intro"
+msgid "Average effective hashrate for past 5 minutes / 1 hour / 24 hours."
+msgstr ""
+"Promedio del Poder de hasheo efectivo de los ultimos 5 minutos / 1 Hora / 24 "
+"Horas."
+
+#: web/layout_elements.py:131
+msgctxt "Intro"
+msgid "No scoring function is applied to these values."
+msgstr "No hay ninguna funcion de puntaje aplicada a estos valores."
+
+#: web/layout_elements.py:160
+msgctxt "Intro"
+msgid ""
+"Your reward for valid and already confirmed blocks (more than 100 blocks in "
+"history)"
+msgstr ""
+"Su recompensa por bloques validos y ya confirmados (mas de 100 bloques en la "
+"historia)"
+
+#: web/layout_elements.py:169
+msgctxt "Intro"
+msgid "Pending reward from unconfirmed blocks"
+msgstr "Recompensa pendiente de bloques sin confirmacion"
+
+#: web/layout_elements.py:179
+msgctxt "Intro"
+msgid "Estimated reward for a block when it was found right now"
+msgstr "Recompensa estimada para la actual ronda"
+
+#: web/layout_elements.py:208
+msgctxt "Intro"
+msgid "Percentage part of your scoring hash rate in the pool hash rate."
+msgstr ""
+"Su porcentaje del puntaje del poder de hasheo dentro del poder de hasheo del "
+"pool."
+
+#: web/layout_elements.py:210
+#, fuzzy
+msgctxt "Intro"
+msgid "(User Scoring Hash Rate / Pool Scoring Hash rate) * 100%"
+msgstr ""
+"(Puntuacion de Poder de Hasheo del usuario / Puntuacion de Poder de Hasheo "
+"del Pool) * 100%%"
+
+#: web/layout_elements.py:220
+msgctxt "Intro"
+msgid ""
+"Time that has elapsed since the pool has started mining work on the current "
+"block."
+msgstr ""
+
+#: web/layout_elements.py:229 web/layout_items.py:78
+msgctxt "Intro"
+msgid "Current bitcoin block number, current bitcoin network difficulty."
+msgstr ""
+
+#: web/layout_elements.py:238 web/layout_items.py:90
+msgctxt "Intro"
+msgid ""
+"Percentage ratio between shares the pool needed to find a block and average "
+"number of shares needed."
+msgstr ""
+
+#: web/layout_elements.py:239 web/layout_items.py:91
+msgctxt "Intro"
+msgid "A 1 day, 7 day, and 30 days luck is provided."
+msgstr ""
+
+#: web/layout_items.py:28
+msgctxt "Intro"
+msgid ""
+"Effective hash rate is being calculated from valid shares only - (see Pool "
+"Terminology manual page)."
+msgstr ""
+
+#: web/layout_items.py:46
+msgctxt "Intro"
+msgid ""
+"Date and time when pool has found the last block and started mining work for "
+"a new one."
+msgstr ""
+
+#: web/layout_items.py:60
+msgctxt "Intro"
+msgid ""
+"Cumulative distribution function for the probability that a block will be "
+"found after a given number of contributed shares."
+msgstr ""
+
+#: web/layout_items.py:61
+msgctxt "Intro"
+msgid ""
+"The actual value has a bit reversed meaning. The lower the current value of "
+"CDF value, the better the luck."
+msgstr ""
+
+#: web/layout_items.py:63
+msgctxt "Intro"
+msgid ""
+"20% - In 20% of cases, the block would be found after submitting (0.22 * "
+"current difficulty) shares = quite a luck."
+msgstr ""
+
+#: web/layout_items.py:64
+msgctxt "Intro"
+msgid ""
+"90% - In 90% of cases, the block would be found after submitting (2.32 * "
+"current difficulty) shares = bad luck."
+msgstr ""
+
+#: web/layout_items.py:65
+msgctxt "Intro"
+msgid ""
+"63% - In 63% of cases, the block would be found after submitting (1 * "
+"current difficulty) shares = long term luck is @ 100%."
+msgstr ""
+
+#: web/layout_items.py:104
+msgctxt "Intro"
+msgid ""
+"Total number of shares that have been submitted by all workers in the "
+"current round."
+msgstr ""
 
 #: web/messages.py:5
 msgctxt "UI"
@@ -1554,7 +1564,6 @@ msgid "Block <span>History</span>"
 msgstr "Historia del <span>Bloque</span>"
 
 #: web/templates/blocks.html:46 web/templates/rewards.html:47
-#: web/templates/layout_items/recent_blocks.html:6
 msgctxt "UI"
 msgid "Block Found At"
 msgstr "Bloque encontrado en"
@@ -1874,38 +1883,38 @@ msgctxt "UI"
 msgid "Account dashboard"
 msgstr "Tablero de Cuenta"
 
-#: web/templates/dashboard.html:100
+#: web/templates/dashboard.html:95
 msgctxt "UI"
 msgid "Low Density"
 msgstr ""
 
-#: web/templates/dashboard.html:103
+#: web/templates/dashboard.html:98
 msgctxt "UI"
 msgid "Hight Density"
 msgstr ""
 
-#: web/templates/dashboard.html:109
+#: web/templates/dashboard.html:104
 msgctxt "UI"
 msgid "Basic View"
 msgstr ""
 
-#: web/templates/dashboard.html:112
+#: web/templates/dashboard.html:107
 msgctxt "UI"
 msgid "Extended View"
 msgstr ""
 
-#: web/templates/dashboard.html:120
+#: web/templates/dashboard.html:115
 msgctxt "UI"
 msgid "Connection to the server can not be established!"
 msgstr ""
 
-#: web/templates/dashboard.html:148 web/templates/stats.html:65
+#: web/templates/dashboard.html:143 web/templates/stats.html:65
 #: web/templates/worker.html:74
 msgctxt "UI"
 msgid "Recent <span>Hash Rate</span>"
 msgstr "Poder de Hasheo <span>Reciente</span>"
 
-#: web/templates/dashboard.html:157 web/templates/worker.html:80
+#: web/templates/dashboard.html:152 web/templates/worker.html:80
 #: web/templates/user_manual/rewards.html:46
 #: web/templates/user_manual/rewards.html:60
 #: web/templates/user_manual/troubleshooting.html:67
@@ -1914,7 +1923,7 @@ msgctxt "UI"
 msgid "Loading chart data, please wait..."
 msgstr "Cargando datos, por favor esperar..."
 
-#: web/templates/dashboard.html:166
+#: web/templates/dashboard.html:161
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -1925,12 +1934,12 @@ msgstr ""
 "\"%(rewards)s\">puntuacion de hasheo</a> tendran actualizaciones de progreso "
 "en intervalos de 5 minutos."
 
-#: web/templates/dashboard.html:169
+#: web/templates/dashboard.html:164
 msgctxt "UI"
 msgid "Right axis: Active workers."
 msgstr "Axis derecho: Trabajadores Activos."
 
-#: web/templates/dashboard.html:170
+#: web/templates/dashboard.html:165
 msgctxt "UI"
 msgid ""
 "Vertical lines represent blocks found by the pool. They are labeled with "
@@ -1939,25 +1948,25 @@ msgstr ""
 "Lineas verticales representan bloques encontrados por el pool. Esos bloques "
 "estan etiquetados con numeros de #block."
 
-#: web/templates/dashboard.html:247
+#: web/templates/dashboard.html:242
 msgctxt "Intro"
 msgid "Chart of 5 min Average Hash Rate/Your Scoring Hash Rate/Active Workers"
 msgstr ""
 "Grafico de Poder de Hasheo resumido/Su puntaje de poder de hasheo/"
 "Trabajadores Activos"
 
-#: web/templates/dashboard.html:250
+#: web/templates/dashboard.html:245
 msgctxt "Intro"
 msgid "The chart presents the highlighted values as a function of time."
 msgstr "El grafico presenta los valores resaltados como una funcion de tiempo."
 
-#: web/templates/dashboard.html:252
+#: web/templates/dashboard.html:247
 msgctxt "Intro"
 msgid "Vertical solid lines represent blocks found at that instant."
 msgstr ""
 "Lineas solidas verticales representan bloques encontrados en ese instante."
 
-#: web/templates/dashboard.html:268 web/templates/worker.html:216
+#: web/templates/dashboard.html:263 web/templates/worker.html:216
 #: web/templates/user_manual/rewards.html:50
 #: web/templates/user_manual/rewards.html:64
 #: web/templates/user_manual/troubleshooting.html:71
@@ -1965,7 +1974,7 @@ msgstr ""
 msgid "Hash Rate (5min)"
 msgstr "Poder de Hasheo (5min)"
 
-#: web/templates/dashboard.html:269 web/templates/worker.html:217
+#: web/templates/dashboard.html:264 web/templates/worker.html:217
 #: web/templates/user_manual/rewards.html:51
 #: web/templates/user_manual/rewards.html:65
 #: web/templates/user_manual/troubleshooting.html:72
@@ -1973,11 +1982,11 @@ msgstr "Poder de Hasheo (5min)"
 msgid "Scoring Hash Rate"
 msgstr "Puntaje de Poder de Hasheo"
 
-#: web/templates/dashboard.html:270
+#: web/templates/dashboard.html:265
 msgid "Active Workers"
 msgstr "Trabajadores Activos"
 
-#: web/templates/dashboard.html:271 web/templates/worker.html:218
+#: web/templates/dashboard.html:266 web/templates/worker.html:218
 #: web/templates/user_manual/terminology.html:94
 msgid "Alert Limit"
 msgstr ""
@@ -3958,53 +3967,45 @@ msgid "Pool Scoring<br>Hash Rate"
 msgstr "Puntiación total de la ronda actual:"
 
 #: web/templates/rewards.html:49
-#: web/templates/layout_items/recent_blocks.html:7
 #, fuzzy
 msgctxt "UI"
 msgid "Your Scoring<br>Hash Rate"
 msgstr "Tasa de hash"
 
 #: web/templates/rewards.html:50 web/templates/layout_elements/blocks.html:17
-#: web/templates/layout_items/recent_blocks.html:8
 #, fuzzy
 msgctxt "UI"
 msgid "Your Reward"
 msgstr "Su recompensa BTC"
 
 #: web/templates/rewards.html:52
-#: web/templates/layout_items/recent_blocks.html:9
 #, fuzzy
 msgctxt "UI"
 msgid "Confirmations<br>Left"
 msgstr "confirmaciones pendientes  "
 
 #: web/templates/rewards.html:54
-#: web/templates/layout_items/recent_blocks.html:11
 msgctxt "UI"
 msgid "You have no rewards yet."
 msgstr ""
 
 #: web/templates/rewards.html:58
-#: web/templates/layout_items/recent_blocks.html:15
 msgctxt "UI"
 msgid "See block details on Block History page"
 msgstr ""
 
 #: web/templates/rewards.html:65
-#: web/templates/layout_items/recent_blocks.html:20
 msgctxt "UI"
 msgid "Block is invalid, no reward has been sent"
 msgstr ""
 
 #: web/templates/rewards.html:65
-#: web/templates/layout_items/recent_blocks.html:20
 #, fuzzy
 msgctxt "UI"
 msgid "Reward has been sent"
 msgstr "Trabajador ha sito actualizado."
 
 #: web/templates/rewards.html:67
-#: web/templates/layout_items/recent_blocks.html:22
 #, fuzzy
 msgctxt "UI"
 msgid "Processing..."
@@ -4782,9 +4783,7 @@ msgctxt "UI"
 msgid "User Count"
 msgstr ""
 
-#: web/templates/stats.html:91 web/templates/layout_items/hr_user_24h.html:3
-#: web/templates/layout_items/hr_user_5m.html:3
-#: web/templates/layout_items/hr_user_60m.html:3
+#: web/templates/stats.html:91
 msgctxt "UI"
 msgid "Average Hash Rate"
 msgstr "Poder de hasheo Promedio"
@@ -5168,19 +5167,16 @@ msgid "Hash Rate"
 msgstr "Tasa de hash"
 
 #: web/templates/workers.html:61 web/templates/workers.html.py:110
-#: web/templates/layout_items/hr_user_5m.html:3
 msgctxt "UI,time"
 msgid "5min"
 msgstr "5min"
 
 #: web/templates/workers.html:62 web/templates/workers.html.py:111
-#: web/templates/layout_items/hr_user_60m.html:3
 msgctxt "UI,time"
 msgid "60min"
 msgstr "60min"
 
 #: web/templates/workers.html:63 web/templates/workers.html.py:112
-#: web/templates/layout_items/hr_user_24h.html:3
 msgctxt "UI,time"
 msgid "24h"
 msgstr "24h"
@@ -5226,7 +5222,6 @@ msgstr "Dificultad"
 
 #: web/templates/workers.html:114
 #: web/templates/layout_elements/user_mining.html:47
-#: web/templates/layout_items/last_share.html:3
 msgctxt "UI"
 msgid "Last Share"
 msgstr "Ultimo Share"
@@ -5343,7 +5338,6 @@ msgstr ""
 
 #: web/templates/layout_elements/blocks.html:16
 #: web/templates/layout_elements/user_mining.html:16
-#: web/templates/layout_items/hr_user_scoring.html:3
 msgctxt "UI"
 msgid "Your Scoring Hash Rate"
 msgstr "Su tasa de poder de hasheo"
@@ -5354,7 +5348,7 @@ msgctxt "UI"
 msgid "Confirmation Status"
 msgstr "Pagina de Confirmacion"
 
-#: web/templates/layout_elements/blocks.html:41
+#: web/templates/layout_elements/blocks.html:43
 msgctxt "UI"
 msgid "Rewards for Last 14 Days"
 msgstr ""
@@ -5408,16 +5402,6 @@ msgctxt "UI"
 msgid "Block Difficulty"
 msgstr "Dificultad"
 
-#: web/templates/layout_elements/rewards.html:11
-#: web/templates/layout_elements/rewards.html:21
-#: web/templates/layout_elements/rewards.html:33
-#: web/templates/layout_elements/rewards.html:45
-#: web/templates/layout_elements/rewards.html:52
-#, fuzzy
-msgctxt "UI"
-msgid "Go to Rewards"
-msgstr "Recompensa Total"
-
 #: web/templates/layout_elements/rewards.html:14
 #, fuzzy
 msgctxt "UI"
@@ -5436,11 +5420,22 @@ msgctxt "UI"
 msgid "All Times Reward"
 msgstr "Recompensa Estimada"
 
+#: web/templates/layout_elements/rewards.html:45
+#, fuzzy
+msgctxt "UI"
+msgid "Go to Rewards"
+msgstr "Recompensa Total"
+
 #: web/templates/layout_elements/rewards.html:48
-#: web/templates/layout_elements/rewards.html:101
 msgctxt "UI"
 msgid "BTC Price"
 msgstr ""
+
+#: web/templates/layout_elements/rewards.html:52
+#, fuzzy
+msgctxt "UI"
+msgid "Go to Payouts"
+msgstr "Historia de lo pago"
 
 #: web/templates/layout_elements/rewards.html:55
 #: web/templates/layout_elements/rewards.html:96
@@ -5456,8 +5451,6 @@ msgid "%% to Payout"
 msgstr "Historia de lo pago"
 
 #: web/templates/layout_elements/rewards.html:78
-#: web/templates/layout_items/payout_threshold.html:3
-#: web/templates/layout_items/rw_progress_bar.html:26
 msgctxt "UI"
 msgid "Payout Threshold"
 msgstr "Umbral de Pago"
@@ -5504,7 +5497,6 @@ msgid "Workers States"
 msgstr "Tasa de hash"
 
 #: web/templates/layout_elements/user_mining.html:43
-#: web/templates/layout_items/user_scoring_fragment.html:3
 msgctxt "UI"
 msgid "Your Contribution to the Pool"
 msgstr "Su contribucion al pool"
@@ -5555,91 +5547,15 @@ msgctxt "UI"
 msgid "CDF"
 msgstr "CDF"
 
-#: web/templates/layout_items/email.html:3
-msgctxt "UI"
-msgid "E-mail"
-msgstr "Direccion de Correo Electronico"
-
 #: web/templates/layout_items/hr_pool_effective_30m.html:3
 msgctxt "UI"
 msgid "Pool Effective Hash Rate (30 min average)"
 msgstr ""
 
-#: web/templates/layout_items/moni_user_state.html:3
-msgctxt "UI"
-msgid "Account Monitoring Status"
-msgstr "estado de Monitoreo de Cuenta"
-
-#: web/templates/layout_items/moni_workers_state.html:3
-msgctxt "UI"
-msgid "Workers Monitoring Status"
-msgstr "Estado de Monitoreo de Trabajadores"
-
 #: web/templates/layout_items/pool_luck.html:3
 msgctxt "UI"
 msgid "Pool Luck (1 day, 7 days, 30 days)"
 msgstr ""
-
-#: web/templates/layout_items/pr_unspent_points.html:3
-msgctxt "UI"
-msgid "Unspent Points"
-msgstr "Puntos sin Utilizar"
-
-#: web/templates/layout_items/pr_unspent_points.html:5
-msgctxt "UI"
-msgid "vote here"
-msgstr "vote aqui"
-
-#: web/templates/layout_items/recent_blocks.html:2
-#, fuzzy
-msgctxt "UI"
-msgid "Recent Blocks"
-msgstr "Namecoin bloques"
-
-#: web/templates/layout_items/rw_all_time.html:3
-#, fuzzy
-msgctxt "UI"
-msgid "All Time Reward"
-msgstr "Recompensa Estimada"
-
-#: web/templates/layout_items/rw_confirmed.html:3
-#: web/templates/layout_items/rw_progress_bar.html:11
-#: web/templates/layout_items/rw_progress_bar.html:16
-msgctxt "UI"
-msgid "Confirmed Reward"
-msgstr "Recompensa Confirmada"
-
-#: web/templates/layout_items/rw_estimated.html:3
-msgctxt "UI"
-msgid "Estimated Reward"
-msgstr "Recompensa Estimada"
-
-#: web/templates/layout_items/rw_progress_bar.html:4
-msgctxt "UI"
-msgid "Rewards"
-msgstr "Recompensas"
-
-#: web/templates/layout_items/rw_progress_bar.html:24
-#, fuzzy
-msgctxt "UI"
-msgid "Confirmed"
-msgstr "confirmado"
-
-#: web/templates/layout_items/rw_progress_bar.html:25
-#, fuzzy
-msgctxt "UI"
-msgid "Unonfirmed"
-msgstr "confirmado"
-
-#: web/templates/layout_items/rw_total.html:3
-msgctxt "UI"
-msgid "Total Reward"
-msgstr "Recompensa Total"
-
-#: web/templates/layout_items/rw_unconfirmed.html:3
-msgctxt "UI"
-msgid "Unconfirmed Reward"
-msgstr "Recompensa no Confirmada"
 
 #: web/templates/layout_items/time.html:3
 #, fuzzy
@@ -5652,21 +5568,6 @@ msgstr "Current"
 msgctxt "UI"
 msgid "Total Shares in the Round:"
 msgstr "Puntiación total de la ronda actual:"
-
-#: web/templates/layout_items/username.html:3
-msgctxt "UI"
-msgid "User Name"
-msgstr "Nombre de Usuario"
-
-#: web/templates/layout_items/wallet.html:3
-msgctxt "UI"
-msgid "Payout Address"
-msgstr "Direccion de Pago"
-
-#: web/templates/layout_items/wallet.html:10
-msgctxt "UI"
-msgid "Set wallet"
-msgstr "Designar Cartera"
 
 #: web/templates/user_manual/advanced_mining.html:4
 msgctxt "UI"
@@ -7420,6 +7321,16 @@ msgctxt "UI"
 msgid "Stratum <span>Protocol</span>"
 msgstr "Configuración de la cuenta"
 
+#: web/templates/web/parts/pagination.html:8
+msgctxt "UI"
+msgid "Newer"
+msgstr ""
+
+#: web/templates/web/parts/pagination.html:14
+msgctxt "UI"
+msgid "Older"
+msgstr ""
+
 #: web/templates/widgets/email_change.html:5
 #: web/templates/widgets/wallet_pending.html:5
 #, fuzzy
@@ -7455,6 +7366,99 @@ msgctxt "UI"
 msgid "Help me"
 msgstr "Ayuda"
 
+#~ msgctxt "Intro"
+#~ msgid "Rewards Overview"
+#~ msgstr "Resumen de Recompensas"
+
+#~ msgctxt "Intro"
+#~ msgid "Confirmed Rewards + Unconfirmed Rewards"
+#~ msgstr "Recompensas Confirmadas + Recompensas sin Confirmacion"
+
+#~ msgctxt "Intro"
+#~ msgid "Number of points that you can use to vote for new pool features"
+#~ msgstr ""
+#~ "Numero de puntos que puede usar para votar por funciones nuevas del pool"
+
+#~ msgctxt "Intro"
+#~ msgid "Visit Development Corner for more details"
+#~ msgstr "Visite el Rincon de Desarrollo para mas detalles"
+
+#~ msgctxt "Intro"
+#~ msgid "Unspent points / Total points"
+#~ msgstr "Puntos sin Utilizar / Puntos Totales"
+
+#~ msgctxt "UI"
+#~ msgid "E-mail"
+#~ msgstr "Direccion de Correo Electronico"
+
+#~ msgctxt "UI"
+#~ msgid "Account Monitoring Status"
+#~ msgstr "estado de Monitoreo de Cuenta"
+
+#~ msgctxt "UI"
+#~ msgid "Workers Monitoring Status"
+#~ msgstr "Estado de Monitoreo de Trabajadores"
+
+#~ msgctxt "UI"
+#~ msgid "Unspent Points"
+#~ msgstr "Puntos sin Utilizar"
+
+#~ msgctxt "UI"
+#~ msgid "vote here"
+#~ msgstr "vote aqui"
+
+#, fuzzy
+#~ msgctxt "UI"
+#~ msgid "Recent Blocks"
+#~ msgstr "Namecoin bloques"
+
+#, fuzzy
+#~ msgctxt "UI"
+#~ msgid "All Time Reward"
+#~ msgstr "Recompensa Estimada"
+
+#~ msgctxt "UI"
+#~ msgid "Confirmed Reward"
+#~ msgstr "Recompensa Confirmada"
+
+#~ msgctxt "UI"
+#~ msgid "Estimated Reward"
+#~ msgstr "Recompensa Estimada"
+
+#~ msgctxt "UI"
+#~ msgid "Rewards"
+#~ msgstr "Recompensas"
+
+#, fuzzy
+#~ msgctxt "UI"
+#~ msgid "Confirmed"
+#~ msgstr "confirmado"
+
+#, fuzzy
+#~ msgctxt "UI"
+#~ msgid "Unonfirmed"
+#~ msgstr "confirmado"
+
+#~ msgctxt "UI"
+#~ msgid "Total Reward"
+#~ msgstr "Recompensa Total"
+
+#~ msgctxt "UI"
+#~ msgid "Unconfirmed Reward"
+#~ msgstr "Recompensa no Confirmada"
+
+#~ msgctxt "UI"
+#~ msgid "User Name"
+#~ msgstr "Nombre de Usuario"
+
+#~ msgctxt "UI"
+#~ msgid "Payout Address"
+#~ msgstr "Direccion de Pago"
+
+#~ msgctxt "UI"
+#~ msgid "Set wallet"
+#~ msgstr "Designar Cartera"
+
 #~ msgctxt "UI"
 #~ msgid "BTC prices provided by "
 #~ msgstr "Precios del BTC proveidos por "
@@ -7467,10 +7471,6 @@ msgstr "Ayuda"
 #, fuzzy
 #~ msgid "server:"
 #~ msgstr "Reservado."
-
-#~ msgctxt "UI"
-#~ msgid "Dashboard"
-#~ msgstr "Tablero"
 
 #~ msgctxt "UI"
 #~ msgid "Mining"
@@ -7633,14 +7633,6 @@ msgstr "Ayuda"
 #~ msgstr ""
 #~ "Inactivo  - # de trabajadores que han entregado shares validos en los "
 #~ "ultimos 5 minutos."
-
-#~ msgctxt "Intro"
-#~ msgid ""
-#~ "Your reward for valid and already confirmed blocks (more than 100 blocks "
-#~ "in history)"
-#~ msgstr ""
-#~ "Su recompensa por bloques validos y ya confirmados (mas de 100 bloques en "
-#~ "la historia)"
 
 #~ msgctxt "UI"
 #~ msgid "Account State"
