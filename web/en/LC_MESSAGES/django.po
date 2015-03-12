@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-11 14:02+0000\n"
+"POT-Creation-Date: 2015-03-12 11:20+0000\n"
 "PO-Revision-Date: 2015-01-07 16:59+0200\n"
 "Last-Translator: Jan Pecinovsky <jan.pecinovsky@braiins.cz>\n"
 "Language-Team: English <https://hosted.weblate.org/projects/bitcoin-cz/"
@@ -1750,38 +1750,38 @@ msgctxt "UI"
 msgid "Account dashboard"
 msgstr ""
 
-#: web/templates/dashboard.html:95
+#: web/templates/dashboard.html:95 web/templates/dashboard.html.py:96
 msgctxt "UI"
 msgid "Low Density"
 msgstr ""
 
-#: web/templates/dashboard.html:98
+#: web/templates/dashboard.html:98 web/templates/dashboard.html.py:99
 msgctxt "UI"
 msgid "Hight Density"
 msgstr ""
 
-#: web/templates/dashboard.html:104
+#: web/templates/dashboard.html:104 web/templates/dashboard.html.py:105
 msgctxt "UI"
 msgid "Basic View"
 msgstr ""
 
-#: web/templates/dashboard.html:107
+#: web/templates/dashboard.html:107 web/templates/dashboard.html.py:108
 msgctxt "UI"
 msgid "Extended View"
 msgstr ""
 
-#: web/templates/dashboard.html:115
+#: web/templates/dashboard.html:113
 msgctxt "UI"
 msgid "Connection to the server can not be established!"
 msgstr ""
 
-#: web/templates/dashboard.html:143 web/templates/stats.html:65
+#: web/templates/dashboard.html:141 web/templates/stats.html:65
 #: web/templates/worker.html:74
 msgctxt "UI"
 msgid "Recent <span>Hash Rate</span>"
 msgstr ""
 
-#: web/templates/dashboard.html:152 web/templates/worker.html:80
+#: web/templates/dashboard.html:150 web/templates/worker.html:80
 #: web/templates/user_manual/rewards.html:46
 #: web/templates/user_manual/rewards.html:60
 #: web/templates/user_manual/troubleshooting.html:67
@@ -1790,7 +1790,7 @@ msgctxt "UI"
 msgid "Loading chart data, please wait..."
 msgstr ""
 
-#: web/templates/dashboard.html:161
+#: web/templates/dashboard.html:159
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -1798,34 +1798,34 @@ msgid ""
 "\"%(rewards)s\">scoring hash rate</a> progress on a 5 minutes basis."
 msgstr ""
 
-#: web/templates/dashboard.html:164
+#: web/templates/dashboard.html:162
 msgctxt "UI"
 msgid "Right axis: Active workers."
 msgstr ""
 
-#: web/templates/dashboard.html:165
+#: web/templates/dashboard.html:163
 msgctxt "UI"
 msgid ""
 "Vertical lines represent blocks found by the pool. They are labeled with "
 "#block numbers."
 msgstr ""
 
-#: web/templates/dashboard.html:242
+#: web/templates/dashboard.html:240
 msgctxt "Intro"
 msgid "Chart of 5 min Average Hash Rate/Your Scoring Hash Rate/Active Workers"
 msgstr ""
 
-#: web/templates/dashboard.html:245
+#: web/templates/dashboard.html:243
 msgctxt "Intro"
 msgid "The chart presents the highlighted values as a function of time."
 msgstr ""
 
-#: web/templates/dashboard.html:247
+#: web/templates/dashboard.html:245
 msgctxt "Intro"
 msgid "Vertical solid lines represent blocks found at that instant."
 msgstr ""
 
-#: web/templates/dashboard.html:263 web/templates/worker.html:216
+#: web/templates/dashboard.html:261 web/templates/worker.html:216
 #: web/templates/user_manual/rewards.html:50
 #: web/templates/user_manual/rewards.html:64
 #: web/templates/user_manual/troubleshooting.html:71
@@ -1833,7 +1833,7 @@ msgstr ""
 msgid "Hash Rate (5min)"
 msgstr ""
 
-#: web/templates/dashboard.html:264 web/templates/worker.html:217
+#: web/templates/dashboard.html:262 web/templates/worker.html:217
 #: web/templates/user_manual/rewards.html:51
 #: web/templates/user_manual/rewards.html:65
 #: web/templates/user_manual/troubleshooting.html:72
@@ -1841,11 +1841,11 @@ msgstr ""
 msgid "Scoring Hash Rate"
 msgstr ""
 
-#: web/templates/dashboard.html:265
+#: web/templates/dashboard.html:263
 msgid "Active Workers"
 msgstr ""
 
-#: web/templates/dashboard.html:266 web/templates/worker.html:218
+#: web/templates/dashboard.html:264 web/templates/worker.html:218
 #: web/templates/user_manual/terminology.html:94
 msgid "Alert Limit"
 msgstr ""
@@ -2183,30 +2183,30 @@ msgctxt "UI"
 msgid "Event Time"
 msgstr ""
 
-#: web/templates/email_monitoring_body.html:6
+#: web/templates/email_monitoring_body.html:6 web/templates/monitoring.html:60
 msgctxt "UI"
 msgid "Account Hash Rate"
 msgstr ""
 
-#: web/templates/email_monitoring_body.html:7
+#: web/templates/email_monitoring_body.html:7 web/templates/monitoring.html:59
 msgctxt "UI"
 msgid "Worker States (Changes)"
 msgstr ""
 
 #: web/templates/email_monitoring_body.html:14
-#: web/templates/monitoring.html:110
+#: web/templates/monitoring.html:106
 msgctxt "UI"
 msgid "Worker Name"
 msgstr ""
 
 #: web/templates/email_monitoring_body.html:15
-#: web/templates/monitoring.html:111
+#: web/templates/monitoring.html:107
 msgctxt "UI"
 msgid "State Change"
 msgstr ""
 
 #: web/templates/email_monitoring_body.html:16
-#: web/templates/monitoring.html:112
+#: web/templates/monitoring.html:108
 msgctxt "UI"
 msgid "State Changed After"
 msgstr ""
@@ -2217,7 +2217,7 @@ msgid "Actual Hash Rate"
 msgstr ""
 
 #: web/templates/email_monitoring_body.html:18
-#: web/templates/monitoring.html:114
+#: web/templates/monitoring.html:110
 msgctxt "UI"
 msgid "Alert Limit"
 msgstr ""
@@ -2872,142 +2872,123 @@ msgctxt "UI"
 msgid "Device <span>Monitoring</span>"
 msgstr ""
 
-#: web/templates/monitoring.html:59
-msgctxt "UI"
-msgid "Worker States<br/>(Changes)"
-msgstr ""
-
-#: web/templates/monitoring.html:60
-msgctxt "UI"
-msgid "Account<br/>Hash Rate"
-msgstr ""
-
 #: web/templates/monitoring.html:61
 msgctxt "UI"
-msgid "Expected<br/>Hash Rate"
+msgid "Report State"
 msgstr ""
 
-#: web/templates/monitoring.html:62
-msgctxt "UI"
-msgid "Report<br/>State"
-msgstr ""
-
-#: web/templates/monitoring.html:98
+#: web/templates/monitoring.html:94
 msgctxt "UI"
 msgid "Report has been sent to your email."
 msgstr ""
 
-#: web/templates/monitoring.html:101
+#: web/templates/monitoring.html:97
 msgctxt "UI"
 msgid ""
 "Report has not been sent because it contains only <span class=\"strong"
 "\">insignificant events</span>."
 msgstr ""
 
-#: web/templates/monitoring.html:104
+#: web/templates/monitoring.html:100
 msgctxt "UI"
 msgid ""
 "Report has not been sent because you have <span class=\"strong\">disabled "
 "reporting</span>."
 msgstr ""
 
-#: web/templates/monitoring.html:113
+#: web/templates/monitoring.html:109
 msgctxt "UI"
 msgid "Worker Hash Rate"
 msgstr ""
 
-#: web/templates/monitoring.html:135
+#: web/templates/monitoring.html:131
 msgctxt "UI"
 msgid ""
 "There are no worker incidents to be shown here since only your Account State "
 "has changed."
 msgstr ""
 
-#: web/templates/monitoring.html:147
+#: web/templates/monitoring.html:143
 msgctxt "UI"
 msgid "There are no incidents available for you to show."
 msgstr ""
 
-#: web/templates/monitoring.html:158
+#: web/templates/monitoring.html:154
 msgctxt "UI"
 msgid "State <span>Changes in Time</span>"
 msgstr ""
 
-#: web/templates/monitoring.html:185
+#: web/templates/monitoring.html:181
 msgid "Total Hash Rate"
 msgstr ""
 
 #: web/templates/monitoring.html:189
-msgid "Hash Rate Limit"
-msgstr ""
-
-#: web/templates/monitoring.html:197
 #: web/templates/user_manual/monitoring.html:65 web/templatetags/utils.py:186
 msgctxt "UI, Monitoring"
 msgid "OK"
 msgstr ""
 
-#: web/templates/monitoring.html:198
+#: web/templates/monitoring.html:190
 #: web/templates/user_manual/monitoring.html:69 web/templatetags/utils.py:185
 msgctxt "UI, Monitoring"
 msgid "Low"
 msgstr ""
 
-#: web/templates/monitoring.html:199
+#: web/templates/monitoring.html:191
 msgctxt "UI, Monitoring"
 msgid "Error"
 msgstr ""
 
-#: web/templates/monitoring.html:200
+#: web/templates/monitoring.html:192
 #: web/templates/user_manual/monitoring.html:77 web/templatetags/utils.py:187
 msgctxt "UI, Monitoring"
 msgid "Disabled"
 msgstr ""
 
-#: web/templates/monitoring.html:202
+#: web/templates/monitoring.html:194
 msgctxt "UI"
 msgid ""
 "Each point on the chart represents worker incident and its color describes "
 "type of the incident."
 msgstr ""
 
-#: web/templates/monitoring.html:203
+#: web/templates/monitoring.html:195
 msgctxt "UI"
 msgid ""
 "E.g. when your worker goes from Low to OK, you will see an orange line "
 "followed by green point, representing the state change, and green line."
 msgstr ""
 
-#: web/templates/monitoring.html:217
+#: web/templates/monitoring.html:209
 msgctxt "Intro"
 msgid ""
 "Every row in the following table contains summary of incidents that happened "
 "at the same time."
 msgstr ""
 
-#: web/templates/monitoring.html:219 web/templates/monitoring.html.py:246
+#: web/templates/monitoring.html:211 web/templates/monitoring.html.py:238
 msgctxt "Intro"
 msgid "Click the table row to see the details for a particular event."
 msgstr ""
 
-#: web/templates/monitoring.html:227
+#: web/templates/monitoring.html:219
 msgctxt "Intro"
 msgid ""
 "Absolute number of workers in each state and relative change to the previous "
 "state."
 msgstr ""
 
-#: web/templates/monitoring.html:229
+#: web/templates/monitoring.html:221
 msgctxt "Intro"
 msgid "States: OK | Low | Error | Monitoring disabled"
 msgstr ""
 
-#: web/templates/monitoring.html:237
+#: web/templates/monitoring.html:229
 msgctxt "Intro"
 msgid "Total hash rate of all your workers together (5min average)"
 msgstr ""
 
-#: web/templates/monitoring.html:245
+#: web/templates/monitoring.html:237
 msgctxt "Intro"
 msgid ""
 "Status of the report showing if the report has been sent to you by email or "
@@ -3163,30 +3144,36 @@ msgid "Your password has been set. You may go ahead and log in now."
 msgstr ""
 
 #: web/templates/password_reset_sent.html:4
-#: web/templates/password_reset_sent.html:13
+#: web/templates/password_reset_sent.html:15
 msgctxt "UI"
 msgid "Password reset successful"
 msgstr ""
 
-#: web/templates/password_reset_sent.html:14
+#: web/templates/password_reset_sent.html:16
+#, python-format
+msgctxt "UI"
+msgid "Email confirmation has been sent to <strong>%(user_email)s</strong>."
+msgstr ""
+
+#: web/templates/password_reset_sent.html:17
+msgctxt "UI"
+msgid "Please check your mailbox and follow confirmation link."
+msgstr ""
+
+#: web/templates/password_reset_sent.html:19
+msgctxt "UI"
+msgid ""
+"If you do not receive an email, please make sure you have entered the "
+"address you registered with, and check your spam folder."
+msgstr ""
+
+#: web/templates/password_reset_sent.html:20
 #, python-format
 msgctxt "UI"
 msgid ""
-"Password reset instructions have been sent to <strong>%(user_email)s</"
-"strong>."
-msgstr ""
-
-#: web/templates/password_reset_sent.html:15
-msgctxt "UI"
-msgid ""
-"You will receive a separate email for each account registered with this "
-"email address."
-msgstr ""
-
-#: web/templates/password_reset_sent.html:16
-msgctxt "UI"
-msgid ""
-"You may now close this page and follow the instructions in the email message."
+"In case you still did not receive the confirmation, please, try to <a href="
+"\"%(reset_link)s\" title=\"click to reset your password\">reset your "
+"password</a> again."
 msgstr ""
 
 #: web/templates/payouts.html:3
@@ -4117,7 +4104,7 @@ msgid ""
 msgstr ""
 
 #: web/templates/settings_payouts.html:2 web/templates/settings_payouts.html:7
-#: web/templates/layout_elements/rewards.html:96
+#: web/templates/layout_elements/rewards.html:100
 msgctxt "UI"
 msgid "Payouts"
 msgstr ""
@@ -4949,69 +4936,85 @@ msgctxt "UI"
 msgid "Block Difficulty"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:14
+#: web/templates/layout_elements/pool_stats.html:73
+#: web/templates/layout_elements/user_mining.html:62
 msgctxt "UI"
-msgid "Confirmed</span> Reward"
+msgid "Day"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:24
+#: web/templates/layout_elements/pool_stats.html:77
 msgctxt "UI"
-msgid "Unconfirmed</span> Reward"
+msgid "Week"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:36
+#: web/templates/layout_elements/pool_stats.html:81
+msgctxt "UI"
+msgid "Month"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:15
+msgctxt "UI"
+msgid "<span>Confirmed</span> Reward"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:27
+msgctxt "UI"
+msgid "<span>Unconfirmed</span> Reward"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:40
 msgctxt "UI"
 msgid "All Times Reward"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:45
+#: web/templates/layout_elements/rewards.html:49
 msgctxt "UI"
 msgid "Go to Rewards"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:48
+#: web/templates/layout_elements/rewards.html:52
 msgctxt "UI"
 msgid "BTC Price"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:52
+#: web/templates/layout_elements/rewards.html:56
 msgctxt "UI"
 msgid "Go to Payouts"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:55
-#: web/templates/layout_elements/rewards.html:96
+#: web/templates/layout_elements/rewards.html:59
+#: web/templates/layout_elements/rewards.html:100
 msgctxt "UI"
 msgid "Last Payout"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:65
+#: web/templates/layout_elements/rewards.html:69
 #, python-format
 msgctxt "UI"
 msgid "%% to Payout"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:78
+#: web/templates/layout_elements/rewards.html:82
 msgctxt "UI"
 msgid "Payout Threshold"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:78
+#: web/templates/layout_elements/rewards.html:82
 msgctxt "UI"
 msgid "Settings"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:82
+#: web/templates/layout_elements/rewards.html:86
 msgctxt "UI"
-msgid "Estimated</span> Reward"
+msgid "<span>Estimated</span> Reward"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:86
+#: web/templates/layout_elements/rewards.html:90
 msgctxt "UI"
 msgid "Estimated Time to Payout"
 msgstr ""
 
-#: web/templates/layout_elements/rewards.html:90
+#: web/templates/layout_elements/rewards.html:94
 msgctxt "UI"
 msgid "Average Payout Period"
 msgstr ""
@@ -5044,11 +5047,6 @@ msgstr ""
 #: web/templates/layout_elements/user_mining.html:58
 msgctxt "UI"
 msgid "Hour"
-msgstr ""
-
-#: web/templates/layout_elements/user_mining.html:62
-msgctxt "UI"
-msgid "Day"
 msgstr ""
 
 #: web/templates/layout_items/current_block.html:3

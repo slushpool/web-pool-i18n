@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-11 14:04+0000\n"
+"POT-Creation-Date: 2015-03-12 11:22+0000\n"
 "PO-Revision-Date: 2015-03-12 11:58+0200\n"
 "Last-Translator: xu <samanthaxu1987@163.com>\n"
-"Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-"
-"cz/mining/zh/>\n"
+"Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-cz/"
+"mining/zh/>\n"
 "Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1785,38 +1785,38 @@ msgctxt "UI"
 msgid "Account dashboard"
 msgstr "账户仪表板"
 
-#: web/templates/dashboard.html:95
+#: web/templates/dashboard.html:95 web/templates/dashboard.html.py:96
 msgctxt "UI"
 msgid "Low Density"
 msgstr "低密度"
 
-#: web/templates/dashboard.html:98
+#: web/templates/dashboard.html:98 web/templates/dashboard.html.py:99
 msgctxt "UI"
 msgid "Hight Density"
 msgstr "高密度"
 
-#: web/templates/dashboard.html:104
+#: web/templates/dashboard.html:104 web/templates/dashboard.html.py:105
 msgctxt "UI"
 msgid "Basic View"
 msgstr "基本视图"
 
-#: web/templates/dashboard.html:107
+#: web/templates/dashboard.html:107 web/templates/dashboard.html.py:108
 msgctxt "UI"
 msgid "Extended View"
 msgstr "扩展视图"
 
-#: web/templates/dashboard.html:115
+#: web/templates/dashboard.html:113
 msgctxt "UI"
 msgid "Connection to the server can not be established!"
 msgstr "不能建立与服务器的连接！"
 
-#: web/templates/dashboard.html:143 web/templates/stats.html:65
+#: web/templates/dashboard.html:141 web/templates/stats.html:65
 #: web/templates/worker.html:74
 msgctxt "UI"
 msgid "Recent <span>Hash Rate</span>"
 msgstr "近期 <span>Hash速率</span>"
 
-#: web/templates/dashboard.html:152 web/templates/worker.html:80
+#: web/templates/dashboard.html:150 web/templates/worker.html:80
 #: web/templates/user_manual/rewards.html:46
 #: web/templates/user_manual/rewards.html:60
 #: web/templates/user_manual/troubleshooting.html:67
@@ -1825,7 +1825,7 @@ msgctxt "UI"
 msgid "Loading chart data, please wait..."
 msgstr "正在加载表格数据，请等待......"
 
-#: web/templates/dashboard.html:161
+#: web/templates/dashboard.html:159
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -1835,34 +1835,34 @@ msgstr ""
 "左轴：<a href=\"%(url)s\">有效的hash速率</a>和<a href=\"%(rewards)s\">加权指"
 "数hash速率</a> 每5分钟进展。"
 
-#: web/templates/dashboard.html:164
+#: web/templates/dashboard.html:162
 msgctxt "UI"
 msgid "Right axis: Active workers."
 msgstr "右轴：活跃的矿工。"
 
-#: web/templates/dashboard.html:165
+#: web/templates/dashboard.html:163
 msgctxt "UI"
 msgid ""
 "Vertical lines represent blocks found by the pool. They are labeled with "
 "#block numbers."
 msgstr "垂直线代表矿池已发现的矿区。被标注为#block加数字。"
 
-#: web/templates/dashboard.html:242
+#: web/templates/dashboard.html:240
 msgctxt "Intro"
 msgid "Chart of 5 min Average Hash Rate/Your Scoring Hash Rate/Active Workers"
 msgstr ""
 
-#: web/templates/dashboard.html:245
+#: web/templates/dashboard.html:243
 msgctxt "Intro"
 msgid "The chart presents the highlighted values as a function of time."
 msgstr ""
 
-#: web/templates/dashboard.html:247
+#: web/templates/dashboard.html:245
 msgctxt "Intro"
 msgid "Vertical solid lines represent blocks found at that instant."
 msgstr ""
 
-#: web/templates/dashboard.html:263 web/templates/worker.html:216
+#: web/templates/dashboard.html:261 web/templates/worker.html:216
 #: web/templates/user_manual/rewards.html:50
 #: web/templates/user_manual/rewards.html:64
 #: web/templates/user_manual/troubleshooting.html:71
@@ -1870,7 +1870,7 @@ msgstr ""
 msgid "Hash Rate (5min)"
 msgstr "Hash速率（5分钟）"
 
-#: web/templates/dashboard.html:264 web/templates/worker.html:217
+#: web/templates/dashboard.html:262 web/templates/worker.html:217
 #: web/templates/user_manual/rewards.html:51
 #: web/templates/user_manual/rewards.html:65
 #: web/templates/user_manual/troubleshooting.html:72
@@ -1878,12 +1878,12 @@ msgstr "Hash速率（5分钟）"
 msgid "Scoring Hash Rate"
 msgstr "指数加权Hash速率"
 
-#: web/templates/dashboard.html:265
+#: web/templates/dashboard.html:263
 #, fuzzy
 msgid "Active Workers"
 msgstr "工人"
 
-#: web/templates/dashboard.html:266 web/templates/worker.html:218
+#: web/templates/dashboard.html:264 web/templates/worker.html:218
 #: web/templates/user_manual/terminology.html:94
 msgid "Alert Limit"
 msgstr "警告限值"
@@ -2240,30 +2240,30 @@ msgctxt "UI"
 msgid "Event Time"
 msgstr "事件时间"
 
-#: web/templates/email_monitoring_body.html:6
+#: web/templates/email_monitoring_body.html:6 web/templates/monitoring.html:60
 msgctxt "UI"
 msgid "Account Hash Rate"
 msgstr "账户hash速率"
 
-#: web/templates/email_monitoring_body.html:7
+#: web/templates/email_monitoring_body.html:7 web/templates/monitoring.html:59
 msgctxt "UI"
 msgid "Worker States (Changes)"
 msgstr "矿工状态 (更改)"
 
 #: web/templates/email_monitoring_body.html:14
-#: web/templates/monitoring.html:110
+#: web/templates/monitoring.html:106
 msgctxt "UI"
 msgid "Worker Name"
 msgstr "矿工名字"
 
 #: web/templates/email_monitoring_body.html:15
-#: web/templates/monitoring.html:111
+#: web/templates/monitoring.html:107
 msgctxt "UI"
 msgid "State Change"
 msgstr "状态修改"
 
 #: web/templates/email_monitoring_body.html:16
-#: web/templates/monitoring.html:112
+#: web/templates/monitoring.html:108
 msgctxt "UI"
 msgid "State Changed After"
 msgstr "状态持续"
@@ -2274,7 +2274,7 @@ msgid "Actual Hash Rate"
 msgstr "当前Hash速率"
 
 #: web/templates/email_monitoring_body.html:18
-#: web/templates/monitoring.html:114
+#: web/templates/monitoring.html:110
 msgctxt "UI"
 msgid "Alert Limit"
 msgstr "警告限值"
@@ -2962,32 +2962,18 @@ msgctxt "UI"
 msgid "Device <span>Monitoring</span>"
 msgstr "设备 <span>监控</span>"
 
-#: web/templates/monitoring.html:59
-msgctxt "UI"
-msgid "Worker States<br/>(Changes)"
-msgstr "矿工状态<br/>(更改)"
-
-#: web/templates/monitoring.html:60
-msgctxt "UI"
-msgid "Account<br/>Hash Rate"
-msgstr "账户<br/>hash速率"
-
 #: web/templates/monitoring.html:61
+#, fuzzy
 msgctxt "UI"
-msgid "Expected<br/>Hash Rate"
-msgstr "预期的<br/>Hash速率"
-
-#: web/templates/monitoring.html:62
-msgctxt "UI"
-msgid "Report<br/>State"
+msgid "Report State"
 msgstr "报告<br/>状态"
 
-#: web/templates/monitoring.html:98
+#: web/templates/monitoring.html:94
 msgctxt "UI"
 msgid "Report has been sent to your email."
 msgstr "报告已发送到您的邮箱。"
 
-#: web/templates/monitoring.html:101
+#: web/templates/monitoring.html:97
 msgctxt "UI"
 msgid ""
 "Report has not been sent because it contains only <span class=\"strong"
@@ -2995,76 +2981,71 @@ msgid ""
 msgstr ""
 "报告没被发送是因为它只包含 <span class=\"strong\">无关紧要的事件</span>。"
 
-#: web/templates/monitoring.html:104
+#: web/templates/monitoring.html:100
 msgctxt "UI"
 msgid ""
 "Report has not been sent because you have <span class=\"strong\">disabled "
 "reporting</span>."
 msgstr "报告没被发送是因为您 <span class=\"strong\">禁用报告</span>。"
 
-#: web/templates/monitoring.html:113
+#: web/templates/monitoring.html:109
 msgctxt "UI"
 msgid "Worker Hash Rate"
 msgstr "矿工Hash速率"
 
-#: web/templates/monitoring.html:135
+#: web/templates/monitoring.html:131
 msgctxt "UI"
 msgid ""
 "There are no worker incidents to be shown here since only your Account State "
 "has changed."
 msgstr "没有可以显示的矿工事件，因为只有账户状态被更改。"
 
-#: web/templates/monitoring.html:147
+#: web/templates/monitoring.html:143
 msgctxt "UI"
 msgid "There are no incidents available for you to show."
 msgstr "没有可为您显示的事件。"
 
-#: web/templates/monitoring.html:158
+#: web/templates/monitoring.html:154
 msgctxt "UI"
 msgid "State <span>Changes in Time</span>"
 msgstr "状态 <span>更改时间</span>"
 
-#: web/templates/monitoring.html:185
+#: web/templates/monitoring.html:181
 #, fuzzy
 msgid "Total Hash Rate"
 msgstr "Hash的速率"
 
 #: web/templates/monitoring.html:189
-#, fuzzy
-msgid "Hash Rate Limit"
-msgstr "Hash的速率"
-
-#: web/templates/monitoring.html:197
 #: web/templates/user_manual/monitoring.html:65 web/templatetags/utils.py:186
 msgctxt "UI, Monitoring"
 msgid "OK"
 msgstr "好"
 
-#: web/templates/monitoring.html:198
+#: web/templates/monitoring.html:190
 #: web/templates/user_manual/monitoring.html:69 web/templatetags/utils.py:185
 msgctxt "UI, Monitoring"
 msgid "Low"
 msgstr "低"
 
-#: web/templates/monitoring.html:199
+#: web/templates/monitoring.html:191
 msgctxt "UI, Monitoring"
 msgid "Error"
 msgstr "错误"
 
-#: web/templates/monitoring.html:200
+#: web/templates/monitoring.html:192
 #: web/templates/user_manual/monitoring.html:77 web/templatetags/utils.py:187
 msgctxt "UI, Monitoring"
 msgid "Disabled"
 msgstr "已禁用"
 
-#: web/templates/monitoring.html:202
+#: web/templates/monitoring.html:194
 msgctxt "UI"
 msgid ""
 "Each point on the chart represents worker incident and its color describes "
 "type of the incident."
 msgstr "图表上的每个点代表一个矿工事件，其颜色表示事件的类型。"
 
-#: web/templates/monitoring.html:203
+#: web/templates/monitoring.html:195
 msgctxt "UI"
 msgid ""
 "E.g. when your worker goes from Low to OK, you will see an orange line "
@@ -3073,36 +3054,36 @@ msgstr ""
 "例如：当您的矿工从低效到正常，您将看到一条橙色的线接着绿色的点，代表状态改"
 "变，然后是绿色的线。"
 
-#: web/templates/monitoring.html:217
+#: web/templates/monitoring.html:209
 msgctxt "Intro"
 msgid ""
 "Every row in the following table contains summary of incidents that happened "
 "at the same time."
 msgstr ""
 
-#: web/templates/monitoring.html:219 web/templates/monitoring.html.py:246
+#: web/templates/monitoring.html:211 web/templates/monitoring.html.py:238
 msgctxt "Intro"
 msgid "Click the table row to see the details for a particular event."
 msgstr ""
 
-#: web/templates/monitoring.html:227
+#: web/templates/monitoring.html:219
 msgctxt "Intro"
 msgid ""
 "Absolute number of workers in each state and relative change to the previous "
 "state."
 msgstr ""
 
-#: web/templates/monitoring.html:229
+#: web/templates/monitoring.html:221
 msgctxt "Intro"
 msgid "States: OK | Low | Error | Monitoring disabled"
 msgstr ""
 
-#: web/templates/monitoring.html:237
+#: web/templates/monitoring.html:229
 msgctxt "Intro"
 msgid "Total hash rate of all your workers together (5min average)"
 msgstr ""
 
-#: web/templates/monitoring.html:245
+#: web/templates/monitoring.html:237
 msgctxt "Intro"
 msgid ""
 "Status of the report showing if the report has been sent to you by email or "
@@ -3267,31 +3248,38 @@ msgid "Your password has been set. You may go ahead and log in now."
 msgstr "您的新密码已重置。您现在可以登录了。"
 
 #: web/templates/password_reset_sent.html:4
-#: web/templates/password_reset_sent.html:13
+#: web/templates/password_reset_sent.html:15
 msgctxt "UI"
 msgid "Password reset successful"
 msgstr "密码重置成功"
 
-#: web/templates/password_reset_sent.html:14
+#: web/templates/password_reset_sent.html:16
+#, fuzzy, python-format
+msgctxt "UI"
+msgid "Email confirmation has been sent to <strong>%(user_email)s</strong>."
+msgstr "密码重置指导已发送给 <strong>%(user_email)s</strong>。"
+
+#: web/templates/password_reset_sent.html:17
+#, fuzzy
+msgctxt "UI"
+msgid "Please check your mailbox and follow confirmation link."
+msgstr "请查电子邮件然后跟进链环确认。"
+
+#: web/templates/password_reset_sent.html:19
+msgctxt "UI"
+msgid ""
+"If you do not receive an email, please make sure you have entered the "
+"address you registered with, and check your spam folder."
+msgstr ""
+
+#: web/templates/password_reset_sent.html:20
 #, python-format
 msgctxt "UI"
 msgid ""
-"Password reset instructions have been sent to <strong>%(user_email)s</"
-"strong>."
-msgstr "密码重置指导已发送给 <strong>%(user_email)s</strong>。"
-
-#: web/templates/password_reset_sent.html:15
-msgctxt "UI"
-msgid ""
-"You will receive a separate email for each account registered with this "
-"email address."
-msgstr "对每一个基于此邮箱地址注册的账号，您将收到单独的邮件。"
-
-#: web/templates/password_reset_sent.html:16
-msgctxt "UI"
-msgid ""
-"You may now close this page and follow the instructions in the email message."
-msgstr "您现在可以关闭此页并根据邮件里的指导进行操作。"
+"In case you still did not receive the confirmation, please, try to <a href="
+"\"%(reset_link)s\" title=\"click to reset your password\">reset your "
+"password</a> again."
+msgstr ""
 
 #: web/templates/payouts.html:3
 msgctxt "UI"
@@ -4263,7 +4251,7 @@ msgid ""
 msgstr "关联您账户的邮箱 (%(orig_email)s) 已成功更改成 %(new_email)s。"
 
 #: web/templates/settings_payouts.html:2 web/templates/settings_payouts.html:7
-#: web/templates/layout_elements/rewards.html:96
+#: web/templates/layout_elements/rewards.html:100
 msgctxt "UI"
 msgid "Payouts"
 msgstr "报酬支付历史"
@@ -5132,69 +5120,88 @@ msgctxt "UI"
 msgid "Block Difficulty"
 msgstr "矿区难度"
 
-#: web/templates/layout_elements/rewards.html:14
+#: web/templates/layout_elements/pool_stats.html:73
+#: web/templates/layout_elements/user_mining.html:62
 msgctxt "UI"
-msgid "Confirmed</span> Reward"
+msgid "Day"
+msgstr "日"
+
+#: web/templates/layout_elements/pool_stats.html:77
+msgctxt "UI"
+msgid "Week"
+msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:81
+msgctxt "UI"
+msgid "Month"
+msgstr ""
+
+#: web/templates/layout_elements/rewards.html:15
+#, fuzzy
+msgctxt "UI"
+msgid "<span>Confirmed</span> Reward"
 msgstr "已确认的</span>报酬"
 
-#: web/templates/layout_elements/rewards.html:24
+#: web/templates/layout_elements/rewards.html:27
+#, fuzzy
 msgctxt "UI"
-msgid "Unconfirmed</span> Reward"
+msgid "<span>Unconfirmed</span> Reward"
 msgstr "未确认的</span>报酬"
 
-#: web/templates/layout_elements/rewards.html:36
+#: web/templates/layout_elements/rewards.html:40
 msgctxt "UI"
 msgid "All Times Reward"
 msgstr "所有报酬"
 
-#: web/templates/layout_elements/rewards.html:45
+#: web/templates/layout_elements/rewards.html:49
 msgctxt "UI"
 msgid "Go to Rewards"
 msgstr "去报酬界面"
 
-#: web/templates/layout_elements/rewards.html:48
+#: web/templates/layout_elements/rewards.html:52
 msgctxt "UI"
 msgid "BTC Price"
 msgstr "比特币价格"
 
-#: web/templates/layout_elements/rewards.html:52
+#: web/templates/layout_elements/rewards.html:56
 msgctxt "UI"
 msgid "Go to Payouts"
 msgstr "到报酬支付"
 
-#: web/templates/layout_elements/rewards.html:55
-#: web/templates/layout_elements/rewards.html:96
+#: web/templates/layout_elements/rewards.html:59
+#: web/templates/layout_elements/rewards.html:100
 msgctxt "UI"
 msgid "Last Payout"
 msgstr "上次报酬支付"
 
-#: web/templates/layout_elements/rewards.html:65
+#: web/templates/layout_elements/rewards.html:69
 #, python-format
 msgctxt "UI"
 msgid "%% to Payout"
 msgstr "%% 到报酬支付"
 
-#: web/templates/layout_elements/rewards.html:78
+#: web/templates/layout_elements/rewards.html:82
 msgctxt "UI"
 msgid "Payout Threshold"
 msgstr "报酬支付门槛"
 
-#: web/templates/layout_elements/rewards.html:78
+#: web/templates/layout_elements/rewards.html:82
 msgctxt "UI"
 msgid "Settings"
 msgstr "设置"
 
-#: web/templates/layout_elements/rewards.html:82
+#: web/templates/layout_elements/rewards.html:86
+#, fuzzy
 msgctxt "UI"
-msgid "Estimated</span> Reward"
+msgid "<span>Estimated</span> Reward"
 msgstr "估计的</span>报酬"
 
-#: web/templates/layout_elements/rewards.html:86
+#: web/templates/layout_elements/rewards.html:90
 msgctxt "UI"
 msgid "Estimated Time to Payout"
 msgstr "预计到支付点需要的时间"
 
-#: web/templates/layout_elements/rewards.html:90
+#: web/templates/layout_elements/rewards.html:94
 msgctxt "UI"
 msgid "Average Payout Period"
 msgstr "平均支付周期"
@@ -5228,11 +5235,6 @@ msgstr "５分钟"
 msgctxt "UI"
 msgid "Hour"
 msgstr "小时"
-
-#: web/templates/layout_elements/user_mining.html:62
-msgctxt "UI"
-msgid "Day"
-msgstr "日"
 
 #: web/templates/layout_items/current_block.html:3
 msgctxt "UI"
@@ -5929,7 +5931,8 @@ msgstr ""
 msgid ""
 "Monitoring helps you supervise how your miners work in time and minimizes "
 "losses caused by infrastructure or software failures."
-msgstr "监控可以帮助您监督您的矿工的工作情况，把由基础设备或软件造成的损失最小化。"
+msgstr ""
+"监控可以帮助您监督您的矿工的工作情况，把由基础设备或软件造成的损失最小化。"
 
 #: web/templates/user_manual/monitoring.html:21
 msgid "How can monitoring help?"
@@ -5983,7 +5986,9 @@ msgstr "怎样启用监控？"
 msgid ""
 "You can enable worker monitoring on each <a href=\"%(workers)s\" target="
 "\"_blank\">Worker profile</a> separately."
-msgstr "您可以在每一个<a href=\"%(workers)s\" target=\"_blank\">矿工资料</a>下单独启用每个矿工的监控。"
+msgstr ""
+"您可以在每一个<a href=\"%(workers)s\" target=\"_blank\">矿工资料</a>下单独启"
+"用每个矿工的监控。"
 
 #: web/templates/user_manual/monitoring.html:37
 #, python-format
@@ -6066,8 +6071,9 @@ msgid ""
 "servers. With a <a href=\"%(url)s\">Vardiff</a> introduced, even a slow "
 "miner can submit sufficient amount of results."
 msgstr ""
-"５分钟的周期能成功收集到足够的用来准确计算所有值的信息，同时不用堵塞我们的服务器。通过我们介绍过的<a href=\"%(url)s\""
-">变量困难值</a>，即使慢速的矿机也能提交足够的信息量。"
+"５分钟的周期能成功收集到足够的用来准确计算所有值的信息，同时不用堵塞我们的服"
+"务器。通过我们介绍过的<a href=\"%(url)s\">变量困难值</a>，即使慢速的矿机也能"
+"提交足够的信息量。"
 
 #: web/templates/user_manual/monitoring.html:59
 msgid "Device monitoring states"
@@ -6769,8 +6775,8 @@ msgid ""
 "shown in our system. It is important for you to understand the difference "
 "between these two."
 msgstr ""
-"显示在您挖矿设备指南上的<strong>名义hash速率</strong>和在我们系统里的<strong>有效hash速率</strong>是不同的。了解"
-"这两项之间的不同对您是非常重要的。"
+"显示在您挖矿设备指南上的<strong>名义hash速率</strong>和在我们系统里的<strong>"
+"有效hash速率</strong>是不同的。了解这两项之间的不同对您是非常重要的。"
 
 #: web/templates/user_manual/terminology.html:38
 msgid "Nominal <span>Hash Rate</span>"
@@ -6857,9 +6863,11 @@ msgid ""
 "<strong>shares</strong>. If a hash (proof of work) with difficulty \\(d\\) "
 "is submitted by a miner then \\(d\\) shares is counted by the pool."
 msgstr ""
-"当矿机连接到矿池时将接收需要被解决的任务-它根据某些特性来计算hash值（必须低于来自困难度的限值）。符合要求的hash值将被发送回矿池并作为 "
-"<strong>矿机的工作证明</strong>。矿机工作的数量以单位形式称作<strong>shares</strong>。 如果在困难度 \\(d\\"
-")的一个hash值（工作证明）被用户提交，那么\\(d\\) shares将被矿池采用。"
+"当矿机连接到矿池时将接收需要被解决的任务-它根据某些特性来计算hash值（必须低于"
+"来自困难度的限值）。符合要求的hash值将被发送回矿池并作为 <strong>矿机的工作证"
+"明</strong>。矿机工作的数量以单位形式称作<strong>shares</strong>。 如果在困难"
+"度 \\(d\\)的一个hash值（工作证明）被用户提交，那么\\(d\\) shares将被矿池采"
+"用。"
 
 #: web/templates/user_manual/terminology.html:57
 msgid "To put it as simple as it could be:"
@@ -6899,8 +6907,10 @@ msgid ""
 "to stronger miners (higher difficulty) and easier tasks to weaker so that an "
 "average communication frequency is roughly the same for all miners."
 msgstr ""
-"不同挖矿用户的hash值有很大的不同。为了最优化您的矿机和矿池间的网络通信量，我们介绍给您变量困难运算法（变量困难值）。它将分配给强一些的矿机更困难的任务"
-"（大一点的难度），容易点的任务给弱的矿机，因此所有的用户享有大致平均的通信频率。"
+"不同挖矿用户的hash值有很大的不同。为了最优化您的矿机和矿池间的网络通信量，我"
+"们介绍给您变量困难运算法（变量困难值）。它将分配给强一些的矿机更困难的任务"
+"（大一点的难度），容易点的任务给弱的矿机，因此所有的用户享有大致平均的通信频"
+"率。"
 
 #: web/templates/user_manual/terminology.html:68
 msgid ""
@@ -6910,8 +6920,9 @@ msgid ""
 "ideal frequency that allows a balanced data load to our servers and correct "
 "measurements of your miner's hash rate."
 msgstr ""
-"<strong>变量困难值</strong>分配给用户恰好能够发送回矿池<strong>每分钟16-20次</strong>的工作任务。为什么每分钟16-"
-"20次呢？根据我们的计算，这是能够允许一个平衡的数据加载到我们的服务器并能准确计算您的hash速率的理想频率。"
+"<strong>变量困难值</strong>分配给用户恰好能够发送回矿池<strong>每分钟16-20次"
+"</strong>的工作任务。为什么每分钟16-20次呢？根据我们的计算，这是能够允许一个"
+"平衡的数据加载到我们的服务器并能准确计算您的hash速率的理想频率。"
 
 #: web/templates/user_manual/terminology.html:69
 msgid ""
@@ -7126,8 +7137,9 @@ msgid ""
 "alarms. Therefore we recommend to let <a href=\"%(url)s\">VarDiff algorithm</"
 "a> to select difficulty for you worker automatically."
 msgstr ""
-"请注意如果您把最低难度值设置过高会给监控结果造成负面影响，因为它将导致虚假监控警报。因此我们推荐让<a href=\"%(url)s\""
-">变量难度值运算法</a>为您的矿工自动选择难度指数。"
+"请注意如果您把最低难度值设置过高会给监控结果造成负面影响，因为它将导致虚假监"
+"控警报。因此我们推荐让<a href=\"%(url)s\">变量难度值运算法</a>为您的矿工自动"
+"选择难度指数。"
 
 #: web/templates/user_manual/troubleshooting.html:58
 msgid "Worker offline state"
@@ -7173,8 +7185,8 @@ msgid ""
 "with nominal hash rate 100 Gh/s with difficulty set by <a href=\"%(url)s"
 "\">vardiff</a> algorithm to roughly 70."
 msgstr ""
-"您可以从下面２个图表看出影响。第一个代表有100 Gh/s hash速率的矿机，由 <a href=\"%(url)s\""
-">变量困难值</a>运算法设置了约70的困难值。"
+"您可以从下面２个图表看出影响。第一个代表有100 Gh/s hash速率的矿机，由 <a "
+"href=\"%(url)s\">变量困难值</a>运算法设置了约70的困难值。"
 
 #: web/templates/user_manual/troubleshooting.html:78
 msgid ""
@@ -7269,6 +7281,34 @@ msgstr "日"
 msgctxt "UI"
 msgid "Help me"
 msgstr "帮助我"
+
+#~ msgctxt "UI"
+#~ msgid "Worker States<br/>(Changes)"
+#~ msgstr "矿工状态<br/>(更改)"
+
+#~ msgctxt "UI"
+#~ msgid "Account<br/>Hash Rate"
+#~ msgstr "账户<br/>hash速率"
+
+#~ msgctxt "UI"
+#~ msgid "Expected<br/>Hash Rate"
+#~ msgstr "预期的<br/>Hash速率"
+
+#, fuzzy
+#~ msgid "Hash Rate Limit"
+#~ msgstr "Hash的速率"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "You will receive a separate email for each account registered with this "
+#~ "email address."
+#~ msgstr "对每一个基于此邮箱地址注册的账号，您将收到单独的邮件。"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "You may now close this page and follow the instructions in the email "
+#~ "message."
+#~ msgstr "您现在可以关闭此页并根据邮件里的指导进行操作。"
 
 #~ msgctxt "UI"
 #~ msgid "We would still appreciate any feedback why you are unsubscribing:"
@@ -8357,9 +8397,6 @@ msgstr "帮助我"
 #~ "<a href='https://www.facebook.com/MiningBitcoinCz'>Facebook profile</a> "
 #~ "for latest news and updates."
 #~ msgstr "您可联系"
-
-#~ msgid "Please check your mailbox and follow confirmation link."
-#~ msgstr "请查电子邮件然后跟进链环确认。"
 
 #~ msgid "IP Whitelist"
 #~ msgstr "IP 白名单"
