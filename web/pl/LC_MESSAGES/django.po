@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bitcoin.cz pool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-12 11:21+0000\n"
+"POT-Creation-Date: 2015-03-18 14:06+0000\n"
 "PO-Revision-Date: 2012-07-12 08:15+0200\n"
 "Last-Translator: Dominik Kozaczko <dominik@kozaczko.info>\n"
 "Language-Team: polski <dominik@kozaczko.info>\n"
@@ -22,24 +22,25 @@ msgstr ""
 "X-Poedit-Country: POLAND\n"
 "X-Poedit-Bookmarks: 104,32,105,106,277,279,-1,-1,-1,-1\n"
 
-#: backend/queries.py:874
+#: backend/queries.py:872
 #, fuzzy
 msgctxt "UI, Blocks"
 msgid "Invalid"
 msgstr "niepoprawny"
 
-#: backend/queries.py:876
+#: backend/queries.py:874
 #, fuzzy
 msgctxt "UI, Blocks"
 msgid "Confirmed"
 msgstr "potwierdzony"
 
 #: contact/forms.py:39 contact/forms.py:40 contact/forms.py:41
-#: contact/forms.py:42 contact/views.py:34 mailing/forms.py:39
-#: mailing/forms.py:40 mailing/forms.py:41 mailing/forms.py:71
-#: mailing/models.py:441 mailing/models.py:442 mailing/models.py:443
-#: mailing/models.py:444 mailing/models.py:445 news/views.py:69
-#: notifications/backends/blocks.py:23 notifications/backends/proposals.py:23
+#: contact/forms.py:42 contact/views.py:41 contact/views.py:51
+#: mailing/forms.py:39 mailing/forms.py:40 mailing/forms.py:41
+#: mailing/forms.py:71 mailing/models.py:447 mailing/models.py:448
+#: mailing/models.py:449 mailing/models.py:450 mailing/models.py:451
+#: news/views.py:69 notifications/backends/blocks.py:23
+#: notifications/backends/proposals.py:23
 msgid "UI"
 msgstr ""
 
@@ -54,12 +55,22 @@ msgid "Write to Us"
 msgstr ""
 
 #: contact/templates/contact/write_to_us.html:23
+msgctxt "UI"
+msgid "Your feedback means the world to us!"
+msgstr ""
+
+#: contact/templates/contact/write_to_us.html:25
 #: web/templates/contacts.html:76
 msgctxt "UI"
 msgid "We will be happy to hear from you."
 msgstr ""
 
-#: contact/templates/contact/write_to_us.html:73
+#: contact/templates/contact/write_to_us.html:76
+msgctxt "UI"
+msgid "Send feedback"
+msgstr ""
+
+#: contact/templates/contact/write_to_us.html:78
 msgctxt "UI"
 msgid "Send"
 msgstr ""
@@ -70,9 +81,8 @@ msgid "Enter a valid, non empty value."
 msgstr "Proszę podać poprawną nazwę."
 
 #: mailing/templates/mailing/unsubscribe.html:5
-#: mailing/templates/mailing/unsubscribe_confirm.html:5
 msgctxt "UI"
-msgid "Newsletter unsubscription"
+msgid "Unsubscribe from newsletter"
 msgstr ""
 
 #: mailing/templates/mailing/unsubscribe.html:16
@@ -81,26 +91,37 @@ msgctxt "UI"
 msgid "Mailing"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:27
+#: mailing/templates/mailing/unsubscribe.html:30
 msgctxt "UI"
 msgid "We are sorry to see you go!"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:31
+#: mailing/templates/mailing/unsubscribe.html:34
 msgctxt "UI"
 msgid "Please select account you want to unsubscribe from"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:36
+#: mailing/templates/mailing/unsubscribe.html:68
 msgctxt "UI"
 msgid "Unsubscribe me"
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe.html:41
+#: mailing/templates/mailing/unsubscribe.html:74
+#, python-format
 msgctxt "UI"
 msgid ""
-"I've change my mind. Take me to\n"
-"                homepage."
+"I have changed my mind. Take me to <a href=\"%(homepage_url)s\">homepage</a> "
+"or <a href=\"%(dashboard_url)s\">show my dashboard</a>."
+msgstr ""
+
+#: mailing/templates/mailing/unsubscribe.html:76
+msgctxt "UI"
+msgid "I have changed my mind. Take me to homepage."
+msgstr ""
+
+#: mailing/templates/mailing/unsubscribe_confirm.html:5
+msgctxt "UI"
+msgid "Newsletter unsubscription"
 msgstr ""
 
 #: mailing/templates/mailing/unsubscribe_confirm.html:23
@@ -122,17 +143,15 @@ msgstr ""
 #: mailing/templates/mailing/emails/unsubscribe_confirmation.html:9
 msgctxt "UI"
 msgid ""
-"\n"
 "From the bottom of our heart we would like to confirm that we had "
-"unsubscribe you from our newsletter.\n"
+"unsubscribe you from our newsletter."
 msgstr ""
 
-#: mailing/templates/mailing/emails/unsubscribe_confirmation.html:13
+#: mailing/templates/mailing/emails/unsubscribe_confirmation.html:11
 msgctxt "UI"
 msgid ""
-"\n"
 "In case you change your mind, you can tune up our news from your account "
-"settings.\n"
+"settings."
 msgstr ""
 
 #: mining/models.py:162 web/models.py:879 web/templates/workers.html:108
@@ -177,44 +196,50 @@ msgid ""
 "based on its past activity"
 msgstr ""
 
-#: news/templates/news/detail.html:5
+#: news/templates/news/detail.html:4
 #, python-format
 msgctxt "UI"
 msgid "%(title)s"
 msgstr ""
 
-#: news/templates/news/detail.html:5 news/templates/news/home.html:11
+#: news/templates/news/detail.html:4 news/templates/news/home.html:4
 #: web/templates/facebook_feed_page.html:3
 msgctxt "UI"
 msgid "Latest News"
 msgstr ""
 
-#: news/templates/news/detail.html:10 news/templates/news/home.html:16
+#: news/templates/news/detail.html:9 news/templates/news/home.html:9
 #: web/templates/news_detail.html:4 web/templates/news_list.html:4
 #, fuzzy
 msgctxt "UI"
 msgid "News"
 msgstr "Wiadomości"
 
-#: news/templates/news/detail.html:21
+#: news/templates/news/detail.html:37
 msgctxt "UI"
 msgid "All news"
 msgstr ""
 
-#: news/templates/news/detail.html:40
+#: news/templates/news/detail.html:38
 msgctxt "UI"
 msgid "Other news"
 msgstr ""
 
-#: news/templates/news/home.html:30
+#: news/templates/news/home.html:29 news/templates/news/home.html.py:41
 msgctxt "UI"
-msgid "Recent news"
+msgid "Permalink"
 msgstr ""
 
-#: news/templates/news/home.html:51
+#: news/templates/news/home.html:52
 msgctxt "UI"
 msgid "We didn't post yet. Stay tuned."
 msgstr ""
+
+#: news/templates/news/content/release-20.html:2
+#, fuzzy
+msgctxt "UI"
+msgid "Release notes 20"
+msgstr "Załóż konto"
 
 #: news/templates/news/content/test.html:4
 #, fuzzy
@@ -231,63 +256,63 @@ msgctxt "UI"
 msgid "You don't have any notifications."
 msgstr ""
 
-#: project/settings.py:193
+#: project/settings.py:190
 msgid "English"
 msgstr ""
 
-#: project/settings.py:194
+#: project/settings.py:191
 msgid "German"
 msgstr ""
 
-#: project/settings.py:195
+#: project/settings.py:192
 msgid "French"
 msgstr ""
 
-#: project/settings.py:196
+#: project/settings.py:193
 msgid "Russian"
 msgstr ""
 
-#: project/settings.py:197
+#: project/settings.py:194
 msgid "Czech"
 msgstr ""
 
-#: project/settings.py:198
+#: project/settings.py:195
 msgid "Polish"
 msgstr ""
 
-#: project/settings.py:199
+#: project/settings.py:196
 msgid "Dutch"
 msgstr ""
 
-#: project/settings.py:200
+#: project/settings.py:197
 msgid "Spanish"
 msgstr ""
 
-#: project/settings.py:201
+#: project/settings.py:198
 msgid "Brazilian Portuguese"
 msgstr ""
 
-#: project/settings.py:202
+#: project/settings.py:199
 msgid "Simplified Chinese"
 msgstr ""
 
-#: project/settings.py:203
+#: project/settings.py:200
 msgid "Esperanto"
 msgstr ""
 
-#: project/settings.py:204
+#: project/settings.py:201
 msgid "Romanian"
 msgstr ""
 
-#: project/settings.py:205
+#: project/settings.py:202
 msgid "Hungarian"
 msgstr ""
 
-#: project/settings.py:206
+#: project/settings.py:203
 msgid "Italian"
 msgstr ""
 
-#: project/settings.py:207
+#: project/settings.py:204
 msgid "Turkish"
 msgstr ""
 
@@ -366,16 +391,22 @@ msgid "Signature is not valid."
 msgstr ""
 
 #: web/forms.py:186
+#, fuzzy
+msgctxt "UI"
+msgid "New wallet"
+msgstr "Portfel Namecoin"
+
+#: web/forms.py:187
 msgctxt "UI"
 msgid "If you wish to change your BTC wallet, enter its address here"
 msgstr ""
 
-#: web/forms.py:207 web/templates/settings.html:503
+#: web/forms.py:208 web/templates/settings.html:503
 msgctxt "UI"
 msgid "An additional fee of 0.0001 BTC applies to payouts lower than 0.01 BTC."
 msgstr ""
 
-#: web/forms.py:229
+#: web/forms.py:230
 #, fuzzy
 msgctxt "UI"
 msgid ""
@@ -385,96 +416,96 @@ msgstr ""
 "To nie jest prawidłowy adres Bitcoin. Aby otrzymać tak adres proszę "
 "zainstalować klienta Bitcion lub skorzystać z serwisu portfelowego."
 
-#: web/forms.py:232
+#: web/forms.py:233
 msgctxt "UI"
 msgid "New wallet must be different from the current."
 msgstr ""
 
-#: web/forms.py:250
+#: web/forms.py:251
 #, fuzzy
 msgctxt "UI"
 msgid "Sending threshold must be >= 0.001 BTC"
 msgstr "Próg wysyłki nie może być mniejszy niż 0.01!"
 
-#: web/forms.py:253
+#: web/forms.py:254
 #, fuzzy
 msgctxt "UI"
 msgid "Sending threshold must be <= 5 BTC"
 msgstr "Próg wysyłki nie może być mniejszy niż 0.01!"
 
-#: web/forms.py:274 web/models.py:880
+#: web/forms.py:275 web/models.py:880
 #, fuzzy
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr "trudność"
 
-#: web/forms.py:275
+#: web/forms.py:276
 msgctxt "UI"
 msgid "Pool always assigns difficulty equal or greater than this value."
 msgstr ""
 
-#: web/forms.py:308
+#: web/forms.py:309
 msgctxt "UI"
 msgid ""
 "Only letters, numbers and the following characters are accepted: _ @ + -"
 msgstr ""
 
-#: web/forms.py:314 web/forms.py:319 web/forms.py:323
+#: web/forms.py:315 web/forms.py:320 web/forms.py:324
 #, fuzzy, python-format
 msgctxt "UI"
 msgid "Worker %s already exists"
 msgstr "Górnik o takiej nazwie już istnieje."
 
-#: web/forms.py:339 web/templates/hall-of-fame.html:19
+#: web/forms.py:340 web/templates/hall-of-fame.html:19
 #: web/templates/hall-of-fame.html.py:47
 #, fuzzy
 msgctxt "UI"
 msgid "Username"
 msgstr "Nazwa"
 
-#: web/forms.py:340
+#: web/forms.py:341
 #, fuzzy
 msgctxt "UI"
 msgid "Enter a valid username."
 msgstr "Proszę podać poprawną nazwę."
 
-#: web/forms.py:341 web/models.py:875
+#: web/forms.py:342 web/models.py:875
 #, fuzzy
 msgctxt "UI"
 msgid "Email"
 msgstr "Email"
 
-#: web/forms.py:342
+#: web/forms.py:343
 #, fuzzy
 msgctxt "UI"
 msgid "Required password"
 msgstr "Wymagane hasło"
 
-#: web/forms.py:343
+#: web/forms.py:344
 #, fuzzy
 msgctxt "UI"
 msgid "Password again"
 msgstr "Hasło powtórnie"
 
-#: web/forms.py:354
+#: web/forms.py:355
 #, fuzzy
 msgctxt "UI"
 msgid "Passwords are different!"
 msgstr "Hasła się różnią!"
 
-#: web/forms.py:438
+#: web/forms.py:439
 #, python-format
 msgctxt "UI"
 msgid "Points must be greater or equal than %s."
 msgstr ""
 
-#: web/forms.py:440
+#: web/forms.py:441
 #, python-format
 msgctxt "UI"
 msgid "Points must be lower or equal than %s."
 msgstr ""
 
-#: web/forms.py:458
+#: web/forms.py:459
 #, fuzzy
 msgctxt "UI"
 msgid "New comment"
@@ -482,20 +513,18 @@ msgstr "Moje konto"
 
 #: web/layout_elements.py:95
 msgctxt "Intro"
-msgid "Exponentially weighted hash rate of the pool and of your account."
+msgid "Exponentially weighted hash rate of your account."
 msgstr ""
 
 #: web/layout_elements.py:96
 msgctxt "Intro"
-msgid ""
-"The scoring function performs exponential weighting of the respective hash "
-"rates."
+msgid "The scoring function performs exponential weighting of your hash rate."
 msgstr ""
 
 #: web/layout_elements.py:97
 msgctxt "Intro"
 msgid ""
-"These values are being used for reward calculation, unlike the average hash "
+"This value is being used for reward calculation, unlike the average hash "
 "rate."
 msgstr ""
 
@@ -550,38 +579,98 @@ msgctxt "Intro"
 msgid "Estimated reward for a block when it was found right now"
 msgstr "Szacowana nagroda za bieżącą rundę"
 
-#: web/layout_elements.py:208
+#: web/layout_elements.py:189
 msgctxt "Intro"
-msgid "Percentage part of your scoring hash rate in the pool hash rate."
+msgid "Pool calculates average time between two consecutive payouts."
 msgstr ""
 
-#: web/layout_elements.py:210
-msgctxt "Intro"
-msgid "(User Scoring Hash Rate / Pool Scoring Hash rate) * 100%"
-msgstr ""
-
-#: web/layout_elements.py:220
+#: web/layout_elements.py:190
 msgctxt "Intro"
 msgid ""
-"Time that has elapsed since the pool has started mining work on the current "
-"block."
+"The calculation is based on current difficulty, your recent hash rate and "
+"payout threshold."
 msgstr ""
 
-#: web/layout_elements.py:229 web/layout_items.py:78
+#: web/layout_elements.py:191
+msgctxt "Intro"
+msgid ""
+"This progress bar gives you rough estimate where you are in the current "
+"payout period."
+msgstr ""
+
+#: web/layout_elements.py:201
+msgctxt "Intro"
+msgid ""
+"Estimated daily reward if you keep mining at the current hash (and with "
+"current difficulty)."
+msgstr ""
+
+#: web/layout_elements.py:230
+msgctxt "Intro"
+msgid "Exponentially weighted hash rate of the pool."
+msgstr ""
+
+#: web/layout_elements.py:231
+msgctxt "Intro"
+msgid ""
+"The scoring function performs exponential weighting of the pool hash rate."
+msgstr ""
+
+#: web/layout_elements.py:241 web/layout_items.py:46
+msgctxt "Intro"
+msgid ""
+"Date and time when pool has found the last block and started mining work for "
+"a new one."
+msgstr ""
+
+#: web/layout_elements.py:250 web/layout_items.py:78
 msgctxt "Intro"
 msgid "Current bitcoin block number, current bitcoin network difficulty."
 msgstr ""
 
-#: web/layout_elements.py:238 web/layout_items.py:90
+#: web/layout_elements.py:259 web/layout_items.py:90
 msgctxt "Intro"
 msgid ""
 "Percentage ratio between shares the pool needed to find a block and average "
 "number of shares needed."
 msgstr ""
 
-#: web/layout_elements.py:239 web/layout_items.py:91
+#: web/layout_elements.py:260 web/layout_items.py:91
 msgctxt "Intro"
 msgid "A 1 day, 7 day, and 30 days luck is provided."
+msgstr ""
+
+#: web/layout_elements.py:278
+msgctxt "Intro"
+msgid ""
+"Overview of the most recent blocks found by the pool and their confirmation "
+"status."
+msgstr ""
+
+#: web/layout_elements.py:287
+msgctxt "Intro"
+msgid "Time that has elapsed since each block has been found"
+msgstr ""
+
+#: web/layout_elements.py:296
+msgctxt "Intro"
+msgid "Your scoring hash rate at the time when the block was found."
+msgstr ""
+
+#: web/layout_elements.py:305
+msgctxt "Intro"
+msgid "Amount you have been rewarded for each block."
+msgstr ""
+
+#: web/layout_elements.py:314
+#, fuzzy
+msgctxt "Intro"
+msgid "Confirmation status of the block."
+msgstr "potrzebnych potwierdzeń"
+
+#: web/layout_elements.py:323
+msgctxt "Intro"
+msgid "The chart shows history of your rewards for the past 14 days."
 msgstr ""
 
 #: web/layout_items.py:28
@@ -589,13 +678,6 @@ msgctxt "Intro"
 msgid ""
 "Effective hash rate is being calculated from valid shares only - (see Pool "
 "Terminology manual page)."
-msgstr ""
-
-#: web/layout_items.py:46
-msgctxt "Intro"
-msgid ""
-"Date and time when pool has found the last block and started mining work for "
-"a new one."
 msgstr ""
 
 #: web/layout_items.py:60
@@ -825,7 +907,7 @@ msgstr "strony profilu"
 
 #: web/models.py:241
 msgctxt "UI"
-msgid "Receive notifications about proposal changes to dashboard"
+msgid "Receive notifications about proposal changes"
 msgstr ""
 
 #: web/models.py:282
@@ -1219,86 +1301,86 @@ msgctxt "UI"
 msgid "New account confirmation"
 msgstr "Potwierdzenie nowego konta"
 
-#: web/views.py:328
+#: web/views.py:345
 #, fuzzy
 msgctxt "UI"
 msgid "Monitoring <b>enabled</b> on all workers."
 msgstr "Ustawienia konta"
 
-#: web/views.py:340
+#: web/views.py:357
 msgctxt "UI"
 msgid "Monitoring <b>disabled</b> on all workers."
 msgstr ""
 
-#: web/views.py:350
+#: web/views.py:367
 #, fuzzy
 msgctxt "UI"
 msgid "Worker does not exist."
 msgstr "Górnik o takiej nazwie już istnieje."
 
-#: web/views.py:372
+#: web/views.py:389
 #, fuzzy
 msgctxt "UI"
 msgid "Worker settings has been updated."
 msgstr "Górnik został zaktualizowany."
 
-#: web/views.py:382
+#: web/views.py:399
 #, fuzzy
 msgctxt "UI"
 msgid "Worker has been created."
 msgstr "Górnik został zaktualizowany."
 
-#: web/views.py:488
+#: web/views.py:505
 msgctxt "UI"
 msgid "Two-factor authentication isn't configured yet"
 msgstr ""
 
-#: web/views.py:499
+#: web/views.py:516
 msgctxt "UI"
 msgid "Two-factor authentication token is invalid. Please, enter valid token."
 msgstr ""
 
-#: web/views.py:507
+#: web/views.py:524
 #, fuzzy
 msgctxt "UI"
 msgid "Two-factor authentication has been succesfully disabled."
 msgstr "Twój portfel został pomyślnie zmieniony."
 
-#: web/views.py:519
+#: web/views.py:536
 msgctxt "UI"
 msgid "Two-factor authentication is already configured"
 msgstr ""
 
-#: web/views.py:536
+#: web/views.py:553
 msgctxt "UI"
 msgid ""
 "Two-factor authentication token is invalid. Please, re-scan the QR code (a "
 "new one has been generated for security reasons)."
 msgstr ""
 
-#: web/views.py:544
+#: web/views.py:561
 msgctxt "UI"
 msgid "Two-factor authentication has been configured."
 msgstr ""
 
-#: web/views.py:556
+#: web/views.py:573
 #, fuzzy
 msgctxt "UI"
 msgid "Invalid request"
 msgstr "Nieprawidłowy token"
 
-#: web/views.py:570
+#: web/views.py:587
 msgctxt "UI"
 msgid "Wallet is not valid"
 msgstr ""
 
-#: web/views.py:580
+#: web/views.py:597
 #, fuzzy
 msgctxt "UI"
 msgid "Your payout address has been locked."
 msgstr "Konto zostało aktywowane!"
 
-#: web/views.py:629 web/views.py:715 web/views.py:891 web/views.py:1029
+#: web/views.py:646 web/views.py:732 web/views.py:908 web/views.py:1046
 #, fuzzy
 msgctxt "UI"
 msgid ""
@@ -1307,74 +1389,74 @@ msgid ""
 msgstr ""
 "Wysłano email potwierdzający. Proszę sprawdzić skrzynkę i kliknąć w link."
 
-#: web/views.py:636
+#: web/views.py:653
 #, fuzzy
 msgctxt "UI"
 msgid "The account has been updated."
 msgstr "Konto zostało zaktualizowane."
 
-#: web/views.py:651
+#: web/views.py:668
 #, fuzzy
 msgctxt "UI"
 msgid "The monitoring settings has been updated."
 msgstr "Ustawienia Namecoin zostały zaktualizowane."
 
-#: web/views.py:687
+#: web/views.py:704
 #, fuzzy
 msgctxt "UI"
 msgid "Password has been successfully changed."
 msgstr "Twój portfel został pomyślnie zmieniony."
 
-#: web/views.py:709
+#: web/views.py:726
 msgctxt "UI"
 msgid "Now, confirm change by wallet signature."
 msgstr ""
 
-#: web/views.py:727
+#: web/views.py:744
 #, fuzzy
 msgctxt "UI"
 msgid "The payouts settings has been updated."
 msgstr "Ustawienia Namecoin zostały zaktualizowane."
 
-#: web/views.py:740
+#: web/views.py:757
 #, fuzzy
 msgctxt "UI"
 msgid "Delete account confirmation"
 msgstr "Potwierdzenie usunięcia konta"
 
-#: web/views.py:756
+#: web/views.py:773
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
 msgstr ""
 
-#: web/views.py:904
+#: web/views.py:921
 #, fuzzy
 msgctxt "UI"
 msgid "Email change request has been successfully canceled."
 msgstr "Żądanie zmiany adresu portfela zostało anulowane."
 
-#: web/views.py:1008
+#: web/views.py:1025
 #, fuzzy
 msgctxt "UI"
 msgid "Wallet change request has been successfully canceled."
 msgstr "Żądanie zmiany adresu portfela zostało anulowane."
 
-#: web/views.py:1042
+#: web/views.py:1059
 #, fuzzy
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at support@bitcoin.cz"
 msgstr ""
 "Konto zablokowane. Skontaktuj się z administratorem: support@bitcoin.cz"
 
-#: web/views.py:1078
+#: web/views.py:1095
 #, fuzzy, python-format
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at %(link)s"
 msgstr ""
 "Konto zablokowane. Skontaktuj się z administratorem: support@bitcoin.cz"
 
-#: web/views.py:1087
+#: web/views.py:1108
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -1382,26 +1464,26 @@ msgid ""
 "(%(reason)s). "
 msgstr ""
 
-#: web/views.py:1088
+#: web/views.py:1109
 #, python-format
 msgctxt "UI"
 msgid "Please, contact %(link)s for further details."
 msgstr ""
 
-#: web/views.py:1110
+#: web/views.py:1131
 msgctxt "UI"
 msgid ""
 "Please consider enabling payout address protection by two-factor "
 "authentication or by locking it"
 msgstr ""
 
-#: web/views.py:1112 web/templates/settings.html:3
+#: web/views.py:1133 web/templates/settings.html:3
 #, fuzzy
 msgctxt "UI"
 msgid "Account settings"
 msgstr "Ustawienia konta"
 
-#: web/views.py:1647
+#: web/views.py:1617
 #, fuzzy
 msgctxt "UI"
 msgid "Requested proposal is waiting for admin confirmation"
@@ -1567,26 +1649,36 @@ msgctxt "UI"
 msgid "<strong>Log in</strong>"
 msgstr "Ustawienia konta"
 
-#: web/templates/base.html:231
+#: web/templates/base.html:232
+msgctxt "UI"
+msgid "Feedback"
+msgstr ""
+
+#: web/templates/base.html:233
+msgctxt "UI"
+msgid "Old web skin"
+msgstr ""
+
+#: web/templates/base.html:234
 #, fuzzy
 msgctxt "UI"
 msgid "Back to Top"
 msgstr "Wróć do profilu"
 
-#: web/templates/base.html:233
+#: web/templates/base.html:238
 #, python-format
 msgctxt "UI"
 msgid "Follow us on %(twitter)s and %(facebook)s."
 msgstr ""
 
-#: web/templates/base.html:234
+#: web/templates/base.html:239
 #, python-format
 msgctxt "UI"
 msgid ""
 "BTC prices provided by <a href=\"%(url)s\">BitcoinAverage Price Index</a>"
 msgstr ""
 
-#: web/templates/base.html:250
+#: web/templates/base.html:255
 msgctxt "UI"
 msgid "You cannot do this in the Demo account, please log in to proceed."
 msgstr ""
@@ -1609,7 +1701,7 @@ msgctxt "UI"
 msgid "Block Found At"
 msgstr "Blok znaleziony"
 
-#: web/templates/blocks.html:47
+#: web/templates/blocks.html:47 web/templates/rewards.html:48
 #, fuzzy
 msgctxt "UI"
 msgid "Duration"
@@ -1640,7 +1732,7 @@ msgctxt "UI"
 msgid "Block #"
 msgstr "Nr bloku"
 
-#: web/templates/blocks.html:52 web/templates/rewards.html:51
+#: web/templates/blocks.html:52 web/templates/rewards.html:52
 #, fuzzy
 msgctxt "UI"
 msgid "Block Value"
@@ -1658,19 +1750,19 @@ msgctxt "UI"
 msgid "Pool <span>Daily Reward</span>"
 msgstr "Załóż konto"
 
-#: web/templates/blocks.html:84 web/templates/rewards.html:89
+#: web/templates/blocks.html:84 web/templates/rewards.html:91
 #: web/templates/stats.html:71 web/templates/stats.html.py:109
 msgctxt "UI"
 msgid "Loading chart data, please wait&hellip;"
 msgstr ""
 
-#: web/templates/blocks.html:93 web/templates/rewards.html:144
+#: web/templates/blocks.html:93 web/templates/rewards.html:146
 #, fuzzy
 msgctxt "UI"
 msgid "Daily Reward"
 msgstr "Dzienna nagroda"
 
-#: web/templates/blocks.html:94 web/templates/rewards.html:145
+#: web/templates/blocks.html:94 web/templates/rewards.html:147
 msgctxt "UI"
 msgid "7-day Average"
 msgstr ""
@@ -1906,39 +1998,39 @@ msgctxt "UI"
 msgid "Account dashboard"
 msgstr "Konto zostało zaktualizowane."
 
-#: web/templates/dashboard.html:95 web/templates/dashboard.html.py:96
+#: web/templates/dashboard.html:92 web/templates/dashboard.html.py:93
 msgctxt "UI"
 msgid "Low Density"
 msgstr ""
 
-#: web/templates/dashboard.html:98 web/templates/dashboard.html.py:99
+#: web/templates/dashboard.html:95 web/templates/dashboard.html.py:96
 msgctxt "UI"
-msgid "Hight Density"
+msgid "High Density"
 msgstr ""
 
-#: web/templates/dashboard.html:104 web/templates/dashboard.html.py:105
+#: web/templates/dashboard.html:101 web/templates/dashboard.html.py:102
 msgctxt "UI"
 msgid "Basic View"
 msgstr ""
 
-#: web/templates/dashboard.html:107 web/templates/dashboard.html.py:108
+#: web/templates/dashboard.html:104 web/templates/dashboard.html.py:105
 msgctxt "UI"
 msgid "Extended View"
 msgstr ""
 
-#: web/templates/dashboard.html:113
+#: web/templates/dashboard.html:110
 msgctxt "UI"
 msgid "Connection to the server can not be established!"
 msgstr ""
 
-#: web/templates/dashboard.html:141 web/templates/stats.html:65
+#: web/templates/dashboard.html:138 web/templates/stats.html:65
 #: web/templates/worker.html:74
 #, fuzzy
 msgctxt "UI"
 msgid "Recent <span>Hash Rate</span>"
 msgstr "Załóż konto"
 
-#: web/templates/dashboard.html:150 web/templates/worker.html:80
+#: web/templates/dashboard.html:147 web/templates/worker.html:80
 #: web/templates/user_manual/rewards.html:46
 #: web/templates/user_manual/rewards.html:60
 #: web/templates/user_manual/troubleshooting.html:67
@@ -1947,7 +2039,7 @@ msgctxt "UI"
 msgid "Loading chart data, please wait..."
 msgstr ""
 
-#: web/templates/dashboard.html:159
+#: web/templates/dashboard.html:156
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -1955,13 +2047,13 @@ msgid ""
 "\"%(rewards)s\">scoring hash rate</a> progress on a 5 minutes basis."
 msgstr ""
 
-#: web/templates/dashboard.html:162
+#: web/templates/dashboard.html:159
 #, fuzzy
 msgctxt "UI"
 msgid "Right axis: Active workers."
 msgstr "Górnicy"
 
-#: web/templates/dashboard.html:163
+#: web/templates/dashboard.html:160
 msgctxt "UI"
 msgid ""
 "Vertical lines represent blocks found by the pool. They are labeled with "
@@ -1970,46 +2062,35 @@ msgstr ""
 
 #: web/templates/dashboard.html:240
 msgctxt "Intro"
-msgid "Chart of 5 min Average Hash Rate/Your Scoring Hash Rate/Active Workers"
+msgid ""
+"The chart shows the total number of your active workers and their total hash "
+"rate."
 msgstr ""
 
-#: web/templates/dashboard.html:243
-msgctxt "Intro"
-msgid "The chart presents the highlighted values as a function of time."
-msgstr ""
-
-#: web/templates/dashboard.html:245
+#: web/templates/dashboard.html:242
 msgctxt "Intro"
 msgid "Vertical solid lines represent blocks found at that instant."
 msgstr ""
 
-#: web/templates/dashboard.html:261 web/templates/worker.html:216
-#: web/templates/user_manual/rewards.html:50
-#: web/templates/user_manual/rewards.html:64
-#: web/templates/user_manual/troubleshooting.html:71
-#: web/templates/user_manual/troubleshooting.html:84
+#: web/templates/dashboard.html:261 web/templates/stats.html:128
 #, fuzzy
+msgctxt "UI"
 msgid "Hash Rate (5min)"
 msgstr "Hash rate"
 
-#: web/templates/dashboard.html:262 web/templates/worker.html:217
-#: web/templates/user_manual/rewards.html:51
-#: web/templates/user_manual/rewards.html:65
-#: web/templates/user_manual/troubleshooting.html:72
-#: web/templates/user_manual/troubleshooting.html:85
+#: web/templates/dashboard.html:262 web/templates/stats.html:129
+#: web/templates/workers.html:60
 #, fuzzy
+msgctxt "UI"
 msgid "Scoring Hash Rate"
 msgstr "Hash rate"
 
-#: web/templates/dashboard.html:263
+#: web/templates/dashboard.html:263 web/templates/stats.html:131
+#: web/templates/layout_elements/pool_stats.html:40
 #, fuzzy
+msgctxt "UI"
 msgid "Active Workers"
 msgstr "Górnicy"
-
-#: web/templates/dashboard.html:264 web/templates/worker.html:218
-#: web/templates/user_manual/terminology.html:94
-msgid "Alert Limit"
-msgstr ""
 
 #: web/templates/development_corner.html:3 web/templates/proposals_feed.html:3
 #, fuzzy
@@ -2125,7 +2206,7 @@ msgid "Show unread proposals only"
 msgstr ""
 
 #: web/templates/development_corner.html:60
-#: web/templates/proposal_detail.html:209
+#: web/templates/proposal_detail.html:210
 msgctxt "UI"
 msgid "Unread proposals count"
 msgstr ""
@@ -3281,16 +3362,32 @@ msgstr ""
 "adres '%(wallet_pending)s'."
 
 #: web/templates/msg_pending_wallet.html:7
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"Email confirmation has been sent to '%(email)s'.<br />\n"
-"Please check your mailbox and follow confirmation link.<br />\n"
+"Email confirmation has been sent to '%(email)s'. Please check your mailbox "
+"and follow confirmation link."
+msgstr ""
+"Wysłano email potwierdzający. Proszę sprawdzić skrzynkę i kliknąć w link."
+
+#: web/templates/msg_pending_wallet.html:9
+#, fuzzy, python-format
+msgid ""
 "If you didn't receive confirmation email yet, you can also <a href="
-"\"%(url_resend)s\">resend confirmation</a>.<br />\n"
+"\"%(url_resend)s\">resend confirmation</a>."
+msgstr ""
+"Jeśli email potwierdzający jeszcze nie dotarł, możemy <a href='%(url_resend)s"
+"%(wallet_pending)s'>wysłać go ponownie</a>."
+
+#: web/templates/msg_pending_wallet.html:11
+#, fuzzy, python-format
+msgid ""
 "If you didn't initiate this change, please <a href=\"%(url_cancel)s\">cancel "
 "the request</a> and <a href=\"%(url_password_reset)s\">change your password</"
 "a> immediately."
 msgstr ""
+"Jeśli nie prosiłeś o zmianę, <a href='%(url_cancel)s"
+"%(wallet_pending)s'>odwołaj żądanie</a> i natychmiast <a "
+"href='%(url_password_reset)s'>zmień hasło</a>."
 
 #: web/templates/new_user_registered.html:4
 #, fuzzy
@@ -3670,13 +3767,13 @@ msgctxt "UI"
 msgid "Delete"
 msgstr "Usuń"
 
-#: web/templates/proposal_detail.html:208
+#: web/templates/proposal_detail.html:209
 #, fuzzy
 msgctxt "UI"
 msgid "All proposals"
 msgstr "strony profilu"
 
-#: web/templates/proposal_detail.html:217
+#: web/templates/proposal_detail.html:219
 msgctxt "UI"
 msgid "Draft"
 msgstr ""
@@ -3935,102 +4032,102 @@ msgctxt "UI"
 msgid "Block<br>ID"
 msgstr ""
 
-#: web/templates/rewards.html:48
+#: web/templates/rewards.html:49
 #, fuzzy
 msgctxt "UI"
 msgid "Pool Scoring<br>Hash Rate"
 msgstr "Całkowity wynik bieżącej rundy:"
 
-#: web/templates/rewards.html:49
+#: web/templates/rewards.html:50
 #, fuzzy
 msgctxt "UI"
 msgid "Your Scoring<br>Hash Rate"
 msgstr "Hash rate"
 
-#: web/templates/rewards.html:50 web/templates/layout_elements/blocks.html:17
+#: web/templates/rewards.html:51 web/templates/layout_elements/blocks.html:21
 #, fuzzy
 msgctxt "UI"
 msgid "Your Reward"
 msgstr "Twoja nagroda BTC"
 
-#: web/templates/rewards.html:52
+#: web/templates/rewards.html:53
 #, fuzzy
 msgctxt "UI"
 msgid "Confirmations<br>Left"
 msgstr "potrzebnych potwierdzeń"
 
-#: web/templates/rewards.html:54
+#: web/templates/rewards.html:55
 msgctxt "UI"
 msgid "You have no rewards yet."
 msgstr ""
 
-#: web/templates/rewards.html:58
+#: web/templates/rewards.html:59
 msgctxt "UI"
 msgid "See block details on Block History page"
 msgstr ""
 
-#: web/templates/rewards.html:65
+#: web/templates/rewards.html:67 web/templates/layout_elements/blocks.html:33
 msgctxt "UI"
 msgid "Block is invalid, no reward has been sent"
 msgstr ""
 
-#: web/templates/rewards.html:65
+#: web/templates/rewards.html:67
 #, fuzzy
 msgctxt "UI"
 msgid "Reward has been sent"
 msgstr "Górnik został zaktualizowany."
 
-#: web/templates/rewards.html:67
+#: web/templates/rewards.html:69 web/templates/layout_elements/blocks.html:37
 #, fuzzy
 msgctxt "UI"
 msgid "Processing..."
 msgstr "Przetwarzanie..."
 
-#: web/templates/rewards.html:81
+#: web/templates/rewards.html:83
 #, fuzzy
 msgctxt "UI"
 msgid "Daily <span>Reward</span>"
 msgstr "Moje konto"
 
-#: web/templates/rewards.html:103
+#: web/templates/rewards.html:105
 msgctxt "Intro"
 msgid "Click for more info about block and state of pool at the time."
 msgstr ""
 
-#: web/templates/rewards.html:110
+#: web/templates/rewards.html:112
 msgctxt "Intro"
 msgid ""
 "Reward is what you get if found block is valid (at least 100 confirmations)."
 msgstr ""
 
-#: web/templates/rewards.html:111
+#: web/templates/rewards.html:113
 msgctxt "Intro"
 msgid "You will not be given any reward if block is invalid."
 msgstr ""
 
-#: web/templates/rewards.html:113
+#: web/templates/rewards.html:115
 msgctxt "Intro"
 msgid ""
 "Your Reward = (Your Scoring Hash Rate / Pool Scoring Hash Rate) * (Block "
 "Value * 0.98)"
 msgstr ""
 
-#: web/templates/rewards.html:121
+#: web/templates/rewards.html:123
 #, fuzzy
 msgid "Invalid"
 msgstr "niepoprawny"
 
-#: web/templates/rewards.html:121
+#: web/templates/rewards.html:123
 #, fuzzy
 msgid "Confirmed"
 msgstr "potwierdzony"
 
-#: web/templates/rewards.html:122
+#: web/templates/rewards.html:124
 msgctxt "Intro"
 msgid "Block is considered to be valid after 100 confirmations."
 msgstr ""
 
-#: web/templates/rewards.html:130
+#: web/templates/rewards.html:132
 msgid ""
 "Every point shows sum of your rewards from blocks found on that particular "
 "day."
@@ -4786,29 +4883,10 @@ msgctxt "UI"
 msgid "Hash Rate <span>Per Location</span>"
 msgstr "Załóż konto"
 
-#: web/templates/stats.html:126
-#, fuzzy
-msgctxt "UI"
-msgid "Hash Rate (5min)"
-msgstr "Hash rate"
-
-#: web/templates/stats.html:127 web/templates/workers.html:60
-#, fuzzy
-msgctxt "UI"
-msgid "Scoring Hash Rate"
-msgstr "Hash rate"
-
-#: web/templates/stats.html:128
+#: web/templates/stats.html:130
 #, fuzzy
 msgctxt "UI"
 msgid "Active Users"
-msgstr "Górnicy"
-
-#: web/templates/stats.html:129
-#: web/templates/layout_elements/pool_stats.html:40
-#, fuzzy
-msgctxt "UI"
-msgid "Active Workers"
 msgstr "Górnicy"
 
 #: web/templates/support-titlepage.txt:3
@@ -5123,6 +5201,26 @@ msgid ""
 "been mining in the past 24 hours."
 msgstr ""
 
+#: web/templates/worker.html:216 web/templates/user_manual/rewards.html:50
+#: web/templates/user_manual/rewards.html:64
+#: web/templates/user_manual/troubleshooting.html:71
+#: web/templates/user_manual/troubleshooting.html:84
+#, fuzzy
+msgid "Hash Rate (5min)"
+msgstr "Hash rate"
+
+#: web/templates/worker.html:217 web/templates/user_manual/rewards.html:51
+#: web/templates/user_manual/rewards.html:65
+#: web/templates/user_manual/troubleshooting.html:72
+#: web/templates/user_manual/troubleshooting.html:85
+#, fuzzy
+msgid "Scoring Hash Rate"
+msgstr "Hash rate"
+
+#: web/templates/worker.html:218 web/templates/user_manual/terminology.html:94
+msgid "Alert Limit"
+msgstr ""
+
 #: web/templates/workers.html:61 web/templates/workers.html.py:62
 #: web/templates/workers.html:63 web/templates/workers.html.py:110
 #: web/templates/workers.html:111 web/templates/workers.html.py:112
@@ -5297,25 +5395,25 @@ msgid ""
 "successfully mining right now."
 msgstr ""
 
-#: web/templates/layout_elements/blocks.html:15
+#: web/templates/layout_elements/blocks.html:19
 msgctxt "UI"
 msgid "Time Since"
 msgstr ""
 
-#: web/templates/layout_elements/blocks.html:16
+#: web/templates/layout_elements/blocks.html:20
 #: web/templates/layout_elements/user_mining.html:16
 #, fuzzy
 msgctxt "UI"
 msgid "Your Scoring Hash Rate"
 msgstr "Hash rate"
 
-#: web/templates/layout_elements/blocks.html:18
+#: web/templates/layout_elements/blocks.html:22
 #, fuzzy
 msgctxt "UI"
 msgid "Confirmation Status"
 msgstr "potrzebnych potwierdzeń"
 
-#: web/templates/layout_elements/blocks.html:43
+#: web/templates/layout_elements/blocks.html:56
 msgctxt "UI"
 msgid "Rewards for Last 14 Days"
 msgstr ""
@@ -5358,6 +5456,13 @@ msgstr "Bieżąca runda trwa już:"
 msgctxt "UI"
 msgid "Cumulative Distribution Function"
 msgstr ""
+
+#: web/templates/layout_elements/pool_stats.html:50
+#: web/templates/layout_items/current_shares.html:3
+#, fuzzy
+msgctxt "UI"
+msgid "CDF"
+msgstr "Dystr."
 
 #: web/templates/layout_elements/pool_stats.html:62
 #, fuzzy
@@ -5451,19 +5556,19 @@ msgstr "Ustawienia konta"
 #: web/templates/layout_elements/rewards.html:86
 #, fuzzy
 msgctxt "UI"
-msgid "<span>Estimated</span> Reward"
+msgid "<span>Estimated</span> Reward for Current Block"
 msgstr "Szacowana nagroda"
 
 #: web/templates/layout_elements/rewards.html:90
-#, fuzzy
-msgctxt "UI"
-msgid "Estimated Time to Payout"
-msgstr "Powiadom mnie przy wypłacie"
-
-#: web/templates/layout_elements/rewards.html:94
 msgctxt "UI"
 msgid "Average Payout Period"
 msgstr ""
+
+#: web/templates/layout_elements/rewards.html:94
+#, fuzzy
+msgctxt "UI"
+msgid "Average Daily Reward"
+msgstr "Dzienna nagroda"
 
 #: web/templates/layout_elements/user_mining.html:15
 #, fuzzy
@@ -5521,12 +5626,6 @@ msgstr "Bieżąca runda rozpoczęła się:"
 msgctxt "UI, Current Shares CDF (link)"
 msgid "Current Shares"
 msgstr "Bieżące udziały"
-
-#: web/templates/layout_items/current_shares.html:3
-#, fuzzy
-msgctxt "UI"
-msgid "CDF"
-msgstr "Dystr."
 
 #: web/templates/layout_items/hr_pool_effective_30m.html:3
 msgctxt "UI"
@@ -7348,6 +7447,15 @@ msgid "Help me"
 msgstr ""
 
 #, fuzzy
+#~ msgid "Active Workers"
+#~ msgstr "Górnicy"
+
+#, fuzzy
+#~ msgctxt "UI"
+#~ msgid "Estimated Time to Payout"
+#~ msgstr "Powiadom mnie przy wypłacie"
+
+#, fuzzy
 #~ msgctxt "UI"
 #~ msgid "Worker States<br/>(Changes)"
 #~ msgstr "Zmiana portfela"
@@ -7445,11 +7553,6 @@ msgstr ""
 #~ msgctxt "UI"
 #~ msgid "Payout Address"
 #~ msgstr "Adres Bitcoin"
-
-#, fuzzy
-#~ msgctxt "UI"
-#~ msgid "Set wallet"
-#~ msgstr "Portfel Namecoin"
 
 #, fuzzy
 #~ msgctxt "UI, Proposal"
@@ -8626,22 +8729,6 @@ msgstr ""
 
 #~ msgid "Your username and password didn't match. Please try again."
 #~ msgstr "Nazwa użytkownika nie zgadza się z hasłem. Proszę ponowić próbę."
-
-#~ msgid ""
-#~ "If you didn't receive confirmation email yet, you can also <a "
-#~ "href='%(url_resend)s%(wallet_pending)s'>resend confirmation</a>."
-#~ msgstr ""
-#~ "Jeśli email potwierdzający jeszcze nie dotarł, możemy <a "
-#~ "href='%(url_resend)s%(wallet_pending)s'>wysłać go ponownie</a>."
-
-#~ msgid ""
-#~ "If you didn't initiate this change please <a href='%(url_cancel)s"
-#~ "%(wallet_pending)s'>cancel the request</a> and <a "
-#~ "href='%(url_password_reset)s'>change your password</a> immediately."
-#~ msgstr ""
-#~ "Jeśli nie prosiłeś o zmianę, <a href='%(url_cancel)s%(wallet_pending)"
-#~ "s'>odwołaj żądanie</a> i natychmiast <a href='%(url_password_reset)"
-#~ "s'>zmień hasło</a>."
 
 #~ msgid "Show Namecoin settings"
 #~ msgstr "Pokaż ustawienia Namecoin"
