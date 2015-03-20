@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-18 14:08+0000\n"
+"POT-Creation-Date: 2015-03-20 17:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,10 +29,10 @@ msgstr ""
 
 #: contact/forms.py:39 contact/forms.py:40 contact/forms.py:41
 #: contact/forms.py:42 contact/views.py:41 contact/views.py:51
-#: mailing/forms.py:39 mailing/forms.py:40 mailing/forms.py:41
-#: mailing/forms.py:71 mailing/models.py:447 mailing/models.py:448
-#: mailing/models.py:449 mailing/models.py:450 mailing/models.py:451
-#: news/views.py:69 notifications/backends/blocks.py:23
+#: mailing/forms.py:43 mailing/forms.py:44 mailing/forms.py:45
+#: mailing/forms.py:75 mailing/models.py:463 mailing/models.py:464
+#: mailing/models.py:465 mailing/models.py:466 mailing/models.py:467
+#: news/views.py:70 notifications/backends/blocks.py:23
 #: notifications/backends/proposals.py:23
 msgid "UI"
 msgstr ""
@@ -73,8 +73,9 @@ msgid "Enter a valid, non empty value."
 msgstr ""
 
 #: mailing/templates/mailing/unsubscribe.html:5
+#: mailing/templates/mailing/unsubscribe_confirm.html:5
 msgctxt "UI"
-msgid "Unsubscribe from newsletter"
+msgid "Newsletter unsubscription"
 msgstr ""
 
 #: mailing/templates/mailing/unsubscribe.html:16
@@ -111,11 +112,6 @@ msgctxt "UI"
 msgid "I have changed my mind. Take me to homepage."
 msgstr ""
 
-#: mailing/templates/mailing/unsubscribe_confirm.html:5
-msgctxt "UI"
-msgid "Newsletter unsubscription"
-msgstr ""
-
 #: mailing/templates/mailing/unsubscribe_confirm.html:23
 msgctxt "UI"
 msgid "You have been unsubscribed from <nobr>Slush Pool's newsletter.</nobr>"
@@ -145,7 +141,7 @@ msgid ""
 "settings."
 msgstr ""
 
-#: mining/models.py:162 web/models.py:879 web/templates/workers.html:108
+#: mining/models.py:162 web/models.py:879 web/templates/workers.html:49
 msgctxt "UI"
 msgid "Login suffix"
 msgstr ""
@@ -202,37 +198,217 @@ msgctxt "UI"
 msgid "News"
 msgstr ""
 
-#: news/templates/news/detail.html:37
+#: news/templates/news/detail.html:41
 msgctxt "UI"
 msgid "All news"
 msgstr ""
 
-#: news/templates/news/detail.html:38
+#: news/templates/news/detail.html:42
 msgctxt "UI"
 msgid "Other news"
 msgstr ""
 
-#: news/templates/news/home.html:29 news/templates/news/home.html.py:41
-msgctxt "UI"
-msgid "Permalink"
-msgstr ""
-
-#: news/templates/news/home.html:52
+#: news/templates/news/home.html:36
 msgctxt "UI"
 msgid "We didn't post yet. Stay tuned."
 msgstr ""
 
+#: news/templates/news/home.html:40
+msgctxt "UI"
+msgid "Get Slush Pool news in your RSS reader"
+msgstr ""
+
+#: news/templates/news/content/release-10.html:3
+#: web/templates/release_notes.html:3
+msgid "Release notes"
+msgstr ""
+
 #: news/templates/news/content/release-20.html:2
 msgctxt "UI"
-msgid "Release notes 20"
+msgid "Dashboard"
 msgstr ""
 
-#: news/templates/news/content/test.html:4
-msgid "username"
+#: news/templates/news/content/2015/03_20_changes_in_monitoring.html:2
+msgid "Changes in Monitoring"
 msgstr ""
 
-#: news/templates/news/content/test.html:6
-msgid "log ig"
+#: news/templates/news/content/2015/03_20_changes_in_monitoring.html:7
+msgid ""
+"After identifying the optimal use of our monitoring system we have decided "
+"to simplify few things:"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_changes_in_monitoring.html:9
+msgid ""
+"Now <strong>only workers</strong> are being monitored. Account monitoring "
+"has been removed since we detected an unpleasant behavior in some corner "
+"cases. Users who have used account monitoring only (without worker "
+"monitoring), please <strong>reconfigure your account to use worker "
+"monitoring</strong>."
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_changes_in_monitoring.html:10
+#, python-format
+msgid ""
+"“Expected hash rate” setting has been renamed to <strong>“Alert limit”</"
+"strong> for clarity (<a href=\"%(url)s\">see its explanation</a>)."
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_changes_in_monitoring.html:12
+#, python-format
+msgid ""
+"You can read full description of the Monitoring in a <a href="
+"\"%(manual_moni)s\">User Manual</a>."
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_changes_in_monitoring.html:14
+#: news/templates/news/content/2015/03_20_feedback_form_for_direct_requests.html:9
+#: news/templates/news/content/2015/03_20_merged_mining_in_dev.html:10
+#: news/templates/news/content/2015/03_20_new_dashboard.html:21
+msgid "Slush Pool Team"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_feedback_form_for_direct_requests.html:2
+msgid "Feedback form for direct requests"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_feedback_form_for_direct_requests.html:6
+msgid ""
+"Do you want to report a bug, is there something specific you have on your "
+"mind or you just want to say hi?"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_feedback_form_for_direct_requests.html:7
+#, python-format
+msgid ""
+"We will be happy to hear from you. A new <a href=\"%(feedback)s\">feedback "
+"form</a> has been added to the site for convenience. Feel free to use it! :)"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_merged_mining_in_dev.html:2
+msgid "Merged Mining in development!"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_merged_mining_in_dev.html:6
+msgid ""
+"Now that we have started development activities on the most demanded user "
+"proposals, we're glad to announce that <strong>merged mining is on the way</"
+"strong> and it has <strong>top priority</strong>."
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_merged_mining_in_dev.html:7
+#, python-format
+msgid ""
+"We're watching the <a href=\"%(dev_corner)s\">Development Corner</a> closely "
+"as there's a lot of important feedback for us. Quite a number of proposals "
+"have been implemented with a new version of the dashboard and some are now "
+"being worked on."
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_merged_mining_in_dev.html:8
+msgid ""
+"If you have submitted a proposal and it is neither rejected nor accepted for "
+"voting yet, be sure it will be processed soon. We have received quite a long "
+"list, which is great but takes some time to go through ;)"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_new_dashboard.html:2
+msgid "New Dashboard and Features"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_new_dashboard.html:7
+msgid ""
+"We've received quite a lot of feedback to user interface since the new web "
+"pages release. We'd like to let you know that we're listening and that we "
+"work on development of your proposals."
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_new_dashboard.html:8
+msgid ""
+"Most notable changes that are now being rolled out is the new dashboard "
+"design and couple of other UI tweaks. Here's a list of the features:"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_new_dashboard.html:10
+msgid ""
+"<strong>Redesigned dashboard</strong> with new data - automatically "
+"refreshed every minute"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_new_dashboard.html:11
+msgid ""
+"“Pool statistics page” has <strong>autorefreshing</strong> enabled, "
+"including all charts"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_new_dashboard.html:12
+msgid ""
+"<strong>Notifications</strong> – gives you the important info right on the "
+"dashboard"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_new_dashboard.html:13
+#, python-format
+msgid ""
+"All rewards can now be shown in <strong>BTC, mBTC, USD, EUR or CNY</strong> "
+"using the current prices (see <a href=\"%(settings)s\">Settings</a>)."
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_new_dashboard.html:14
+msgid ""
+"<strong>Language preference</strong> now applies to the whole system "
+"including email notifications"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_new_dashboard.html:15
+#, python-format
+msgid ""
+"Support for <strong>local time zones</strong> - all time information are "
+"shown in your selected time zone - including emails (see <a href="
+"\"%(settings)s\">Settings</a>)."
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_new_dashboard.html:16
+msgid "Plenty of other small changes."
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_new_dashboard.html:19
+#, python-format
+msgid ""
+"These changes closed more then 10 user proposals, you can now <a href="
+"\"%(dev_corner)s\">vote here</a> for other ideas!"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_reward_system_proposals.html:2
+msgid "Reward System Proposals"
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_reward_system_proposals.html:7
+#, python-format
+msgid ""
+"We are able to quite precisely gauge interest in proposed changes, updates "
+"and tweaks of our mining pool thanks to the unique way of collecting "
+"feedback – <a href=\"%(dev_corner)s\">the devcorner</a>."
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_reward_system_proposals.html:8
+#, python-format
+msgid ""
+"One of the important topics turned out to be the reward system. There seems "
+"to be a couple of miners who would prefer different system but majority "
+"approved keeping the current score based rewards (<a href=\"%(rewards)s"
+"\">see how it works here</a>), therefore we decided to stick with the "
+"current reward system."
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_reward_system_proposals.html:9
+msgid ""
+"If the demand for different system grows in future we will be happy to "
+"change it to meet the needs of our miners."
+msgstr ""
+
+#: news/templates/news/content/2015/03_20_reward_system_proposals.html:11
+msgid "Slush Pool team"
 msgstr ""
 
 #: notifications/templates/notifications/parts/notifications.html:21
@@ -240,63 +416,63 @@ msgctxt "UI"
 msgid "You don't have any notifications."
 msgstr ""
 
-#: project/settings.py:190
+#: project/settings.py:233
 msgid "English"
 msgstr ""
 
-#: project/settings.py:191
+#: project/settings.py:234
 msgid "German"
 msgstr ""
 
-#: project/settings.py:192
+#: project/settings.py:235
 msgid "French"
 msgstr ""
 
-#: project/settings.py:193
+#: project/settings.py:236
 msgid "Russian"
 msgstr ""
 
-#: project/settings.py:194
+#: project/settings.py:237
 msgid "Czech"
 msgstr ""
 
-#: project/settings.py:195
+#: project/settings.py:238
 msgid "Polish"
 msgstr ""
 
-#: project/settings.py:196
+#: project/settings.py:239
 msgid "Dutch"
 msgstr ""
 
-#: project/settings.py:197
+#: project/settings.py:240
 msgid "Spanish"
 msgstr ""
 
-#: project/settings.py:198
+#: project/settings.py:241
 msgid "Brazilian Portuguese"
 msgstr ""
 
-#: project/settings.py:199
+#: project/settings.py:242
 msgid "Simplified Chinese"
 msgstr ""
 
-#: project/settings.py:200
+#: project/settings.py:243
 msgid "Esperanto"
 msgstr ""
 
-#: project/settings.py:201
+#: project/settings.py:244
 msgid "Romanian"
 msgstr ""
 
-#: project/settings.py:202
+#: project/settings.py:245
 msgid "Hungarian"
 msgstr ""
 
-#: project/settings.py:203
+#: project/settings.py:246
 msgid "Italian"
 msgstr ""
 
-#: project/settings.py:204
+#: project/settings.py:247
 msgid "Turkish"
 msgstr ""
 
@@ -382,7 +558,7 @@ msgctxt "UI"
 msgid "If you wish to change your BTC wallet, enter its address here"
 msgstr ""
 
-#: web/forms.py:208 web/templates/settings.html:503
+#: web/forms.py:208 web/templates/settings.html:499
 msgctxt "UI"
 msgid "An additional fee of 0.0001 BTC applies to payouts lower than 0.01 BTC."
 msgstr ""
@@ -560,80 +736,80 @@ msgstr ""
 #: web/layout_elements.py:191
 msgctxt "Intro"
 msgid ""
-"This progress bar gives you rough estimate where you are in the current "
+"The progress bar gives you rough estimate where you are in the current "
 "payout period."
 msgstr ""
 
-#: web/layout_elements.py:201
+#: web/layout_elements.py:202
 msgctxt "Intro"
 msgid ""
 "Estimated daily reward if you keep mining at the current hash (and with "
 "current difficulty)."
 msgstr ""
 
-#: web/layout_elements.py:230
+#: web/layout_elements.py:231
 msgctxt "Intro"
 msgid "Exponentially weighted hash rate of the pool."
 msgstr ""
 
-#: web/layout_elements.py:231
+#: web/layout_elements.py:232
 msgctxt "Intro"
 msgid ""
 "The scoring function performs exponential weighting of the pool hash rate."
 msgstr ""
 
-#: web/layout_elements.py:241 web/layout_items.py:46
+#: web/layout_elements.py:242 web/layout_items.py:46
 msgctxt "Intro"
 msgid ""
 "Date and time when pool has found the last block and started mining work for "
 "a new one."
 msgstr ""
 
-#: web/layout_elements.py:250 web/layout_items.py:78
+#: web/layout_elements.py:251 web/layout_items.py:78
 msgctxt "Intro"
 msgid "Current bitcoin block number, current bitcoin network difficulty."
 msgstr ""
 
-#: web/layout_elements.py:259 web/layout_items.py:90
+#: web/layout_elements.py:260 web/layout_items.py:90
 msgctxt "Intro"
 msgid ""
 "Percentage ratio between shares the pool needed to find a block and average "
 "number of shares needed."
 msgstr ""
 
-#: web/layout_elements.py:260 web/layout_items.py:91
+#: web/layout_elements.py:261 web/layout_items.py:91
 msgctxt "Intro"
 msgid "A 1 day, 7 day, and 30 days luck is provided."
 msgstr ""
 
-#: web/layout_elements.py:278
+#: web/layout_elements.py:279
 msgctxt "Intro"
 msgid ""
 "Overview of the most recent blocks found by the pool and their confirmation "
 "status."
 msgstr ""
 
-#: web/layout_elements.py:287
+#: web/layout_elements.py:288
 msgctxt "Intro"
 msgid "Time that has elapsed since each block has been found"
 msgstr ""
 
-#: web/layout_elements.py:296
+#: web/layout_elements.py:297
 msgctxt "Intro"
 msgid "Your scoring hash rate at the time when the block was found."
 msgstr ""
 
-#: web/layout_elements.py:305
+#: web/layout_elements.py:306
 msgctxt "Intro"
 msgid "Amount you have been rewarded for each block."
 msgstr ""
 
-#: web/layout_elements.py:314
+#: web/layout_elements.py:315
 msgctxt "Intro"
 msgid "Confirmation status of the block."
 msgstr ""
 
-#: web/layout_elements.py:323
+#: web/layout_elements.py:324
 msgctxt "Intro"
 msgid "The chart shows history of your rewards for the past 14 days."
 msgstr ""
@@ -995,8 +1171,8 @@ msgid "Send threshold"
 msgstr ""
 
 #: web/models.py:877 web/templates/settings.html:26
-#: web/templates/settings.html.py:29 web/templates/settings.html:460
-#: web/templates/settings.html.py:468 web/templates/settings.html:477
+#: web/templates/settings.html.py:29 web/templates/settings.html:456
+#: web/templates/settings.html.py:464 web/templates/settings.html:473
 msgctxt "UI"
 msgid "Monitoring"
 msgstr ""
@@ -1189,7 +1365,7 @@ msgid "Worker settings updated"
 msgstr ""
 
 #: web/models.py:944 web/templates/worker.html:22
-#: web/templates/workers.html:84
+#: web/templates/workers.html:25
 msgctxt "UI"
 msgid "New worker"
 msgstr ""
@@ -1837,38 +2013,38 @@ msgctxt "UI"
 msgid "Account dashboard"
 msgstr ""
 
-#: web/templates/dashboard.html:92 web/templates/dashboard.html.py:93
+#: web/templates/dashboard.html:93
 msgctxt "UI"
 msgid "Low Density"
 msgstr ""
 
-#: web/templates/dashboard.html:95 web/templates/dashboard.html.py:96
+#: web/templates/dashboard.html:96
 msgctxt "UI"
 msgid "High Density"
 msgstr ""
 
-#: web/templates/dashboard.html:101 web/templates/dashboard.html.py:102
+#: web/templates/dashboard.html:102
 msgctxt "UI"
 msgid "Basic View"
 msgstr ""
 
-#: web/templates/dashboard.html:104 web/templates/dashboard.html.py:105
+#: web/templates/dashboard.html:105
 msgctxt "UI"
 msgid "Extended View"
 msgstr ""
 
-#: web/templates/dashboard.html:110
+#: web/templates/dashboard.html:111
 msgctxt "UI"
 msgid "Connection to the server can not be established!"
 msgstr ""
 
-#: web/templates/dashboard.html:138 web/templates/stats.html:65
+#: web/templates/dashboard.html:139 web/templates/stats.html:65
 #: web/templates/worker.html:74
 msgctxt "UI"
 msgid "Recent <span>Hash Rate</span>"
 msgstr ""
 
-#: web/templates/dashboard.html:147 web/templates/worker.html:80
+#: web/templates/dashboard.html:148 web/templates/worker.html:80
 #: web/templates/user_manual/rewards.html:46
 #: web/templates/user_manual/rewards.html:60
 #: web/templates/user_manual/troubleshooting.html:67
@@ -1877,7 +2053,7 @@ msgctxt "UI"
 msgid "Loading chart data, please wait..."
 msgstr ""
 
-#: web/templates/dashboard.html:156
+#: web/templates/dashboard.html:157
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -1885,42 +2061,41 @@ msgid ""
 "\"%(rewards)s\">scoring hash rate</a> progress on a 5 minutes basis."
 msgstr ""
 
-#: web/templates/dashboard.html:159
+#: web/templates/dashboard.html:160
 msgctxt "UI"
 msgid "Right axis: Active workers."
 msgstr ""
 
-#: web/templates/dashboard.html:160
+#: web/templates/dashboard.html:161
 msgctxt "UI"
 msgid ""
 "Vertical lines represent blocks found by the pool. They are labeled with "
 "#block numbers."
 msgstr ""
 
-#: web/templates/dashboard.html:240
+#: web/templates/dashboard.html:241
 msgctxt "Intro"
 msgid ""
 "The chart shows the total number of your active workers and their total hash "
 "rate."
 msgstr ""
 
-#: web/templates/dashboard.html:242
+#: web/templates/dashboard.html:243
 msgctxt "Intro"
 msgid "Vertical solid lines represent blocks found at that instant."
 msgstr ""
 
-#: web/templates/dashboard.html:261 web/templates/stats.html:128
+#: web/templates/dashboard.html:262 web/templates/stats.html:128
 msgctxt "UI"
 msgid "Hash Rate (5min)"
 msgstr ""
 
-#: web/templates/dashboard.html:262 web/templates/stats.html:129
-#: web/templates/workers.html:60
+#: web/templates/dashboard.html:263 web/templates/stats.html:129
 msgctxt "UI"
 msgid "Scoring Hash Rate"
 msgstr ""
 
-#: web/templates/dashboard.html:263 web/templates/stats.html:131
+#: web/templates/dashboard.html:264 web/templates/stats.html:131
 #: web/templates/layout_elements/pool_stats.html:40
 msgctxt "UI"
 msgid "Active Workers"
@@ -2307,7 +2482,7 @@ msgid ""
 msgstr ""
 
 #: web/templates/email_monitoring_subject.html:2 web/templates/workers.html:3
-#: web/templates/workers.html.py:18
+#: web/templates/workers.html.py:17
 msgctxt "UI"
 msgid "Workers"
 msgstr ""
@@ -2428,9 +2603,8 @@ msgid "See the Full Story"
 msgstr ""
 
 #: web/templates/facebook_feed.html:15
-#: web/templates/facebook_feed_page.html:25
 msgctxt "UI"
-msgid "Get our latest news in your RSS reader"
+msgid "Get our Facebook news in your RSS reader"
 msgstr ""
 
 #: web/templates/facebook_feed.html:15
@@ -2447,6 +2621,11 @@ msgstr ""
 #: web/templates/facebook_feed_page.html:20
 msgctxt "UI"
 msgid "Read more..."
+msgstr ""
+
+#: web/templates/facebook_feed_page.html:25
+msgctxt "UI"
+msgid "Get our latest news in your RSS reader"
 msgstr ""
 
 #: web/templates/faq.html:3
@@ -2479,7 +2658,7 @@ msgctxt "UI"
 msgid "Joined"
 msgstr ""
 
-#: web/templates/hall-of-fame.html:48 web/templates/workers.html:149
+#: web/templates/hall-of-fame.html:48 web/templates/workers.html:89
 msgctxt "UI"
 msgid "Found Blocks"
 msgstr ""
@@ -2942,7 +3121,7 @@ msgid "Device Monitoring"
 msgstr ""
 
 #: web/templates/monitoring.html:49 web/templates/user_manual/intro.html:34
-#: web/templates/user_manual/monitoring.html:13
+#: web/templates/user_manual/monitoring.html:14
 #: web/templates/user_manual/user_manual_base.html:25
 msgctxt "UI"
 msgid "Device <span>Monitoring</span>"
@@ -2999,13 +3178,13 @@ msgid "Total Hash Rate"
 msgstr ""
 
 #: web/templates/monitoring.html:189
-#: web/templates/user_manual/monitoring.html:65 web/templatetags/utils.py:186
+#: web/templates/user_manual/monitoring.html:67 web/templatetags/utils.py:186
 msgctxt "UI, Monitoring"
 msgid "OK"
 msgstr ""
 
 #: web/templates/monitoring.html:190
-#: web/templates/user_manual/monitoring.html:69 web/templatetags/utils.py:185
+#: web/templates/user_manual/monitoring.html:71 web/templatetags/utils.py:185
 msgctxt "UI, Monitoring"
 msgid "Low"
 msgstr ""
@@ -3016,7 +3195,7 @@ msgid "Error"
 msgstr ""
 
 #: web/templates/monitoring.html:192
-#: web/templates/user_manual/monitoring.html:77 web/templatetags/utils.py:187
+#: web/templates/user_manual/monitoring.html:79 web/templatetags/utils.py:187
 msgctxt "UI, Monitoring"
 msgid "Disabled"
 msgstr ""
@@ -3282,7 +3461,7 @@ msgctxt "UI"
 msgid "Date"
 msgstr ""
 
-#: web/templates/payouts.html:46 web/templates/workers.html:106
+#: web/templates/payouts.html:46 web/templates/workers.html:47
 msgctxt "UI"
 msgid "State"
 msgstr ""
@@ -3654,10 +3833,6 @@ msgctxt "UI"
 msgid "Login to continue"
 msgstr ""
 
-#: web/templates/release_notes.html:3
-msgid "Release notes"
-msgstr ""
-
 #: web/templates/release_notes.html:8
 msgctxt "UI"
 msgid "Release <span>Notes</span>"
@@ -3836,7 +4011,7 @@ msgctxt "UI"
 msgid "These are the information that you get from your profiles JSON API."
 msgstr ""
 
-#: web/templates/settings.html:108 web/templates/workers.html:96
+#: web/templates/settings.html:108 web/templates/workers.html:37
 msgctxt "UI"
 msgid "Filter (regexp)"
 msgstr ""
@@ -3930,91 +4105,87 @@ msgid ""
 "attributes below)."
 msgstr ""
 
-#: web/templates/settings.html:190
-msgid "OK / off"
-msgstr ""
-
-#: web/templates/settings.html:207
+#: web/templates/settings.html:203
 msgid "Unix timestamp for the current time."
 msgstr ""
 
-#: web/templates/settings.html:211
+#: web/templates/settings.html:207
 msgid "Alert Limit, you set up this value in your workers settings."
 msgstr ""
 
-#: web/templates/settings.html:215
+#: web/templates/settings.html:211
 msgid "True, if the specific worker is currently mining, otherwise false."
 msgstr ""
 
-#: web/templates/settings.html:219
+#: web/templates/settings.html:215
 msgid "Monitoring state."
 msgstr ""
 
-#: web/templates/settings.html:223
+#: web/templates/settings.html:219
 msgid "Number of block found."
 msgstr ""
 
-#: web/templates/settings.html:227
+#: web/templates/settings.html:223
 msgid "Worker id."
 msgstr ""
 
-#: web/templates/settings.html:231
+#: web/templates/settings.html:227
 msgid "Same as <code>hashrate_medium</code>."
 msgstr ""
 
-#: web/templates/settings.html:235
+#: web/templates/settings.html:231
 msgid "Date and time of last share."
 msgstr ""
 
-#: web/templates/settings.html:239
+#: web/templates/settings.html:235
 msgid "Scoring Hashrate."
 msgstr ""
 
-#: web/templates/settings.html:243
+#: web/templates/settings.html:239
 msgid "OK / Low / Off"
 msgstr ""
 
-#: web/templates/settings.html:247
+#: web/templates/settings.html:243
 msgid "Average Scoring Hash Rate for last 5 minutes / 1 hour / 24 hours."
 msgstr ""
 
-#: web/templates/settings.html:251
+#: web/templates/settings.html:247
 msgid "The name you have given this worker in workers settings."
 msgstr ""
 
-#: web/templates/settings.html:264
+#: web/templates/settings.html:260
 msgctxt "UI"
 msgid "Expected HTTP statuses:"
 msgstr ""
 
-#: web/templates/settings.html:269
+#: web/templates/settings.html:265
 msgctxt "UI"
 msgid "Request was successful, response contains JSON data described above."
 msgstr ""
 
-#: web/templates/settings.html:273
+#: web/templates/settings.html:269
 msgctxt "UI"
 msgid "Request was not successful, token is probably invalid."
 msgstr ""
 
-#: web/templates/settings.html:277
+#: web/templates/settings.html:273
 msgctxt "UI"
 msgid "Server is down for maintenance or there is some unexpected error."
 msgstr ""
 
-#: web/templates/settings.html:282
+#: web/templates/settings.html:278
 #, python-format
 msgctxt "UI"
 msgid "All requests are cached for %(timeout)s seconds."
 msgstr ""
 
-#: web/templates/settings.html:291 web/templates/settings.html.py:294
-#: web/templates/settings.html:301
+#: web/templates/settings.html:287 web/templates/settings.html.py:290
+#: web/templates/settings.html:297
 msgctxt "UI"
 msgid "Delete my account"
 msgstr ""
 
-#: web/templates/settings.html:295
+#: web/templates/settings.html:291
 msgctxt "UI"
 msgid ""
 "If you do not want to use this service anymore, you can delete your account "
@@ -4022,63 +4193,63 @@ msgid ""
 "account can not be reactivated</strong> in future."
 msgstr ""
 
-#: web/templates/settings.html:296
+#: web/templates/settings.html:292
 msgctxt "UI"
 msgid ""
 "Your <strong>user name and e-mail address</strong> will be <strong>free to "
 "use</strong> for new registration."
 msgstr ""
 
-#: web/templates/settings.html:297
+#: web/templates/settings.html:293
 msgctxt "UI"
 msgid ""
 "Your account <strong>BTC balance will be lost</strong>, so please setup your "
 "send threshold to lowest possible value and wait for next payout."
 msgstr ""
 
-#: web/templates/settings.html:298
+#: web/templates/settings.html:294
 msgctxt "UI"
 msgid "Do you really want to delete your account?"
 msgstr ""
 
-#: web/templates/settings.html:443 web/templates/settings.html.py:451
+#: web/templates/settings.html:439 web/templates/settings.html.py:447
 #: web/templates/settings_basic.html:2 web/templates/settings_basic.html:7
 msgctxt "UI"
 msgid "Basic"
 msgstr ""
 
-#: web/templates/settings.html:446
+#: web/templates/settings.html:442
 msgctxt "Intro"
 msgid ""
 "If you keep this option disabled, only user id will be shown in public "
 "statistics"
 msgstr ""
 
-#: web/templates/settings.html:454
+#: web/templates/settings.html:450
 msgctxt "Intro"
 msgid "Choose your prefered currency unit."
 msgstr ""
 
-#: web/templates/settings.html:455
+#: web/templates/settings.html:451
 msgctxt "Intro"
 msgid ""
 "This value is used for presentation purposes only and does not affect any "
 "payout calculations."
 msgstr ""
 
-#: web/templates/settings.html:463
+#: web/templates/settings.html:459
 msgctxt "Intro"
 msgid ""
 "If you disable this option, the monitoring system will not send any more e-"
 "mail notifications."
 msgstr ""
 
-#: web/templates/settings.html:471
+#: web/templates/settings.html:467
 msgctxt "Intro"
 msgid "If enabled the pool will automatically set the alert limit for you."
 msgstr ""
 
-#: web/templates/settings.html:472
+#: web/templates/settings.html:468
 #, python-format
 msgctxt "Intro"
 msgid ""
@@ -4086,43 +4257,43 @@ msgid ""
 "rate in the past 24 hours."
 msgstr ""
 
-#: web/templates/settings.html:480
+#: web/templates/settings.html:476
 msgctxt "Intro"
 msgid ""
 "When the combined effective hash rate of all your workers drops below this "
 "value, it is understood as a low hash rate state and the event is reported."
 msgstr ""
 
-#: web/templates/settings.html:482
+#: web/templates/settings.html:478
 msgctxt "Intro"
 msgid "Disable auto detection if you want to set your desired value manually."
 msgstr ""
 
-#: web/templates/settings.html:487 web/templates/settings.html.py:497
+#: web/templates/settings.html:483 web/templates/settings.html.py:493
 msgctxt "UI"
 msgid "Payout"
 msgstr ""
 
-#: web/templates/settings.html:490
+#: web/templates/settings.html:486
 msgctxt "Intro"
 msgid "All bitcoins are being sent to this bitcoin wallet adress."
 msgstr ""
 
-#: web/templates/settings.html:492
+#: web/templates/settings.html:488
 msgctxt "Intro"
 msgid ""
 "Please take a look at the Security tab to see how you can further secure "
 "your account"
 msgstr ""
 
-#: web/templates/settings.html:500
+#: web/templates/settings.html:496
 msgctxt "Intro"
 msgid ""
 "When your account balance crosses the threshold value, the pool sends the "
 "entire balance to your payout address."
 msgstr ""
 
-#: web/templates/settings.html:502
+#: web/templates/settings.html:498
 msgctxt "Intro"
 msgid "It is now possible to set this limit as low as 0.001 BTC."
 msgstr ""
@@ -4790,168 +4961,157 @@ msgstr ""
 msgid "Scoring Hash Rate"
 msgstr ""
 
-#: web/templates/worker.html:218 web/templates/user_manual/terminology.html:94
+#: web/templates/worker.html:218 web/templates/user_manual/terminology.html:73
 msgid "Alert Limit"
 msgstr ""
 
-#: web/templates/workers.html:61 web/templates/workers.html.py:62
-#: web/templates/workers.html:63 web/templates/workers.html.py:110
-#: web/templates/workers.html:111 web/templates/workers.html.py:112
-msgctxt "UI"
-msgid "Hash Rate"
-msgstr ""
-
-#: web/templates/workers.html:61 web/templates/workers.html.py:110
-msgctxt "UI,time"
-msgid "5min"
-msgstr ""
-
-#: web/templates/workers.html:62 web/templates/workers.html.py:111
-msgctxt "UI,time"
-msgid "60min"
-msgstr ""
-
-#: web/templates/workers.html:63 web/templates/workers.html.py:112
-msgctxt "UI,time"
-msgid "24h"
-msgstr ""
-
-#: web/templates/workers.html:64
-msgctxt "UI"
-msgid "Last share"
-msgstr ""
-
-#: web/templates/workers.html:69
-msgctxt "UI"
-msgid "Total"
-msgstr ""
-
-#: web/templates/workers.html:88
+#: web/templates/workers.html:29
 msgctxt "UI"
 msgid "Enable monitoring for all"
 msgstr ""
 
-#: web/templates/workers.html:92
+#: web/templates/workers.html:33
 msgctxt "UI"
 msgid "Disable monitoring for all"
 msgstr ""
 
-#: web/templates/workers.html:107
+#: web/templates/workers.html:48
 msgctxt "UI"
-msgid "Reporting<br>Limit"
+msgid "Alert<br>Limit"
 msgstr ""
 
-#: web/templates/workers.html:109
+#: web/templates/workers.html:50
 msgctxt "UI"
 msgid "Scoring<br>Hash Rate"
 msgstr ""
 
-#: web/templates/workers.html:113
+#: web/templates/workers.html:51 web/templates/workers.html.py:52
+#: web/templates/workers.html:53
+msgctxt "UI"
+msgid "Hash Rate"
+msgstr ""
+
+#: web/templates/workers.html:51
+msgctxt "UI,time"
+msgid "5min"
+msgstr ""
+
+#: web/templates/workers.html:52
+msgctxt "UI,time"
+msgid "60min"
+msgstr ""
+
+#: web/templates/workers.html:53
+msgctxt "UI,time"
+msgid "24h"
+msgstr ""
+
+#: web/templates/workers.html:54
 msgctxt "UI"
 msgid "Minimum<br>Difficulty"
 msgstr ""
 
-#: web/templates/workers.html:114
+#: web/templates/workers.html:55
 #: web/templates/layout_elements/user_mining.html:47
 msgctxt "UI"
 msgid "Last Share"
 msgstr ""
 
-#: web/templates/workers.html:141
+#: web/templates/workers.html:82
 msgctxt "UI"
 msgid "You do not have any worker yet. Register one right now!"
 msgstr ""
 
-#: web/templates/workers.html:195
+#: web/templates/workers.html:135
 msgctxt "Intro"
 msgid "This column indicates current monitoring status of the worker."
 msgstr ""
 
-#: web/templates/workers.html:196
+#: web/templates/workers.html:136
 msgctxt "Intro"
 msgid ""
 "OK - Monitoring is enabled and hash rate of the worker is above its alert "
 "limit."
 msgstr ""
 
-#: web/templates/workers.html:197
+#: web/templates/workers.html:137
 msgctxt "Intro"
 msgid "Low - Worker has lower hash rate than its alert limit."
 msgstr ""
 
-#: web/templates/workers.html:198
+#: web/templates/workers.html:138
 msgctxt "Intro"
 msgid "Error - No shares submitted by the worker in last minutes."
 msgstr ""
 
-#: web/templates/workers.html:199
+#: web/templates/workers.html:139
 msgctxt "Intro"
 msgid "Disabled - Monitoring for this worker has been disabled."
 msgstr ""
 
-#: web/templates/workers.html:208
+#: web/templates/workers.html:148
 msgctxt "Intro"
 msgid ""
 "Alert Limit. You will be notified if hash rate of the affected worker drops "
 "below this value."
 msgstr ""
 
-#: web/templates/workers.html:209
+#: web/templates/workers.html:149
 msgctxt "Intro"
 msgid "This value can be set on the worker setup page."
 msgstr ""
 
-#: web/templates/workers.html:217
+#: web/templates/workers.html:157
 msgctxt "Intro"
 msgid "Effectively a worker ID."
 msgstr ""
 
-#: web/templates/workers.html:218
+#: web/templates/workers.html:158
 msgctxt "Intro"
 msgid ""
 "Your user ID together with this suffix composes the complete worker login."
 msgstr ""
 
-#: web/templates/workers.html:220
+#: web/templates/workers.html:160
 msgctxt "Intro"
 msgid ""
 "Click the worker ID to see worker details and to change worker settings."
 msgstr ""
 
-#: web/templates/workers.html:228
+#: web/templates/workers.html:168
 msgctxt "Intro"
 msgid "Exponentially weighted effective hash rate."
 msgstr ""
 
-#: web/templates/workers.html:230
+#: web/templates/workers.html:170
 msgctxt "Intro"
 msgid "See user manual for detailed explanation of the scoring hash rate."
 msgstr ""
 
-#: web/templates/workers.html:231
+#: web/templates/workers.html:171
 msgid "User Manual"
 msgstr ""
 
-#: web/templates/workers.html:231
+#: web/templates/workers.html:171
 msgid "Reward System"
 msgstr ""
 
-#: web/templates/workers.html:239
+#: web/templates/workers.html:179
 msgctxt "Intro"
 msgid "Average effective hash rate for the past 5 minutes / 1 hour / 24 hours."
 msgstr ""
 
-#: web/templates/workers.html:240
+#: web/templates/workers.html:180
 msgctxt "Intro"
 msgid "No scoring function is being applied to these values."
 msgstr ""
 
-#: web/templates/workers.html:248
+#: web/templates/workers.html:188
 msgctxt "Intro"
 msgid "Time since the worker has submitted its last share."
 msgstr ""
 
-#: web/templates/workers.html:249
+#: web/templates/workers.html:189
 msgctxt "Intro"
 msgid ""
 "If you see '0 minutes', it indicates that a particular worker is "
@@ -5031,7 +5191,7 @@ msgid "Block Difficulty"
 msgstr ""
 
 #: web/templates/layout_elements/pool_stats.html:73
-#: web/templates/layout_elements/user_mining.html:62
+#: web/templates/layout_elements/user_mining.html:65
 msgctxt "UI"
 msgid "Day"
 msgstr ""
@@ -5069,11 +5229,6 @@ msgstr ""
 #: web/templates/layout_elements/rewards.html:52
 msgctxt "UI"
 msgid "BTC Price"
-msgstr ""
-
-#: web/templates/layout_elements/rewards.html:56
-msgctxt "UI"
-msgid "Go to Payouts"
 msgstr ""
 
 #: web/templates/layout_elements/rewards.html:59
@@ -5133,12 +5288,12 @@ msgctxt "UI"
 msgid "Your Contribution to the Pool"
 msgstr ""
 
-#: web/templates/layout_elements/user_mining.html:54
+#: web/templates/layout_elements/user_mining.html:57
 msgctxt "UI"
 msgid "5 minutes"
 msgstr ""
 
-#: web/templates/layout_elements/user_mining.html:58
+#: web/templates/layout_elements/user_mining.html:61
 msgctxt "UI"
 msgid "Hour"
 msgstr ""
@@ -5776,11 +5931,11 @@ msgid ""
 "startup."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:15
+#: web/templates/user_manual/monitoring.html:16
 msgid "Why should I care?"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:16
+#: web/templates/user_manual/monitoring.html:17
 msgid ""
 "Since mining is usually considered as an investment, we believe that "
 "monitoring should be an essential part of your mining operation. Although "
@@ -5788,17 +5943,17 @@ msgid ""
 "be better managed with few simple tools we have developed so far."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:18
+#: web/templates/user_manual/monitoring.html:19
 msgid ""
 "Monitoring helps you supervise how your miners work in time and minimizes "
 "losses caused by infrastructure or software failures."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:21
+#: web/templates/user_manual/monitoring.html:22
 msgid "How can monitoring help?"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:22
+#: web/templates/user_manual/monitoring.html:23
 msgid ""
 "The main benefit of monitoring is an alert message you will receive to your "
 "Inbox once a mining device starts misbehaving. E.g. there are communication "
@@ -5807,61 +5962,68 @@ msgid ""
 "strong> of the outage."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:24
+#: web/templates/user_manual/monitoring.html:25
 msgid "Outages may typically have the following causes:"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:26
+#: web/templates/user_manual/monitoring.html:27
 msgid "Internet connectivity issues"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:27
+#: web/templates/user_manual/monitoring.html:28
 msgid "Hardware power-supply failures"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:28
+#: web/templates/user_manual/monitoring.html:29
 msgid "Mining hardware overheating"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:29
+#: web/templates/user_manual/monitoring.html:30
 msgid "Mining software issues"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:31
+#: web/templates/user_manual/monitoring.html:32
 msgid ""
 "Below you can find a simple step-by-step instructions how to enable "
 "monitoring in order to be able keep track of how your investments are do."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:33
+#: web/templates/user_manual/monitoring.html:34
 msgid "How to enable monitoring?"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:35
+#: web/templates/user_manual/monitoring.html:36
+#, python-format
+msgid ""
+"Enable sending monitoring emails in <a href=\"%(settings)s#monitoring\" "
+"target=\"_blank\">Settings (Monitring)</a>."
+msgstr ""
+
+#: web/templates/user_manual/monitoring.html:37
 #, python-format
 msgid ""
 "You can enable worker monitoring on each <a href=\"%(workers)s\" target="
 "\"_blank\">Worker profile</a> separately."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:37
+#: web/templates/user_manual/monitoring.html:39
 #, python-format
 msgid ""
 "Once the worker monitoring is enabled, the <a href=\"%(url)s\">Alert limit</"
 "a> can be set:"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:39
+#: web/templates/user_manual/monitoring.html:41
 msgid ""
 "Automatically - our system selects the Alert Limit based on the past "
 "performance of the worker"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:40
+#: web/templates/user_manual/monitoring.html:42
 msgid "Manually - You can set your own Alert Limit value"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:46
+#: web/templates/user_manual/monitoring.html:48
 #, python-format
 msgid ""
 "Once you enable monitoring for your workers you will see each worker in one "
@@ -5869,7 +6031,7 @@ msgid ""
 "strong>."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:48
+#: web/templates/user_manual/monitoring.html:50
 #, python-format
 msgid ""
 "Permanently <strong>Low</strong> or <strong>Offline</strong> state of your "
@@ -5879,7 +6041,7 @@ msgid ""
 "\"%(support_submit)s\">support</a>."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:51
+#: web/templates/user_manual/monitoring.html:53
 msgid ""
 "<strong class=\"red\">Please note:</strong> The pool keeps track of mining "
 "devices on a <strong>worker basis</strong>. This means that if you have more "
@@ -5891,11 +6053,11 @@ msgid ""
 "device separately."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:53
+#: web/templates/user_manual/monitoring.html:55
 msgid "How does monitoring work?"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:54
+#: web/templates/user_manual/monitoring.html:56
 #, python-format
 msgid ""
 "The pool takes a snapshot of  <a href=\"%(hashrate_url)s\">effective hash "
@@ -5904,7 +6066,7 @@ msgid ""
 "this value while enabling the monitoring)."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:55
+#: web/templates/user_manual/monitoring.html:57
 #, python-format
 msgid ""
 "The period of 5 minutes is sufficient for collecting just enough data to "
@@ -5913,24 +6075,24 @@ msgid ""
 "miner can submit sufficient amount of results."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:59
+#: web/templates/user_manual/monitoring.html:61
 msgid "Device monitoring states"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:60
+#: web/templates/user_manual/monitoring.html:62
 msgid ""
 "There are 4 possible states of your worker, regarding monitoring. Every "
 "worker is always in one of the <strong>following</strong> states:"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:66
+#: web/templates/user_manual/monitoring.html:68
 msgid ""
 "Means that the worker's hash rate is greater or equal to alert limit. This "
 "is the desired state. If everything works properly and the configuration is "
 "correct, you should see this state all the time."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:70
+#: web/templates/user_manual/monitoring.html:72
 #, python-format
 msgid ""
 "This state signals that worker's hash rate is lower than it should be but "
@@ -5941,19 +6103,19 @@ msgid ""
 "our <a href=\"%(support_submit)s\">support</a>."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:73 web/templatetags/utils.py:184
+#: web/templates/user_manual/monitoring.html:75 web/templatetags/utils.py:184
 msgctxt "UI, Monitoring"
 msgid "Offline"
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:74
+#: web/templates/user_manual/monitoring.html:76
 msgid ""
 "You could see this state when monitoring is enabled for the worker but there "
 "is no hash rate detected for the worker. The pool doesn't monitor the actual "
 "network connection of the worker. The only significant value is hash rate."
 msgstr ""
 
-#: web/templates/user_manual/monitoring.html:78
+#: web/templates/user_manual/monitoring.html:80
 msgid ""
 "When you switch off monitoring for a worker its state is reported as "
 "Disabled, regardless a fact if it submits some shares or not."
@@ -6634,37 +6796,89 @@ msgid ""
 "jammed."
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:73
+#: web/templates/user_manual/terminology.html:74
+msgid ""
+"This value is used as a <strong>hash rate limit</strong> for checking "
+"whether your device works properly. If the effective hash rate of a worker "
+"is greater or equal to <strong>Alert Limit</strong>, everything is perfect "
+"and you will not receive any monitoring alert reports."
+msgstr ""
+
+#: web/templates/user_manual/terminology.html:75
+msgid ""
+"However, sometimes it can happen that effective hash rate drops "
+"<strong>below the Alert Limit</strong>. If your monitoring is enabled you "
+"will be notified by an e-mail and you can start acting accordingly. Such "
+"behavior is mainly caused by the following reasons:"
+msgstr ""
+
+#: web/templates/user_manual/terminology.html:77
+msgid "Mining software does not accept difficulty assigned by our pool"
+msgstr ""
+
+#: web/templates/user_manual/terminology.html:78
+msgid "Internet connection is not stable"
+msgstr ""
+
+#: web/templates/user_manual/terminology.html:79
+msgid "Your mining device might have a hardware problem (e.g. overheating)"
+msgstr ""
+
+#: web/templates/user_manual/terminology.html:82
+msgid "How to set the alert limit"
+msgstr ""
+
+#: web/templates/user_manual/terminology.html:84
+#, python-format
+msgid ""
+"Let the pool automatically compute <strong>Alert Limit</strong> for you. It "
+"is done once in 5 minutes and the value is set to 70%% of hash rate average "
+"from the last 24hours."
+msgstr ""
+
+#: web/templates/user_manual/terminology.html:86
+msgid "Set it manually to any value from 0.5 Gh/s to e.g. 100 Ph/s or more."
+msgstr ""
+
+#: web/templates/user_manual/terminology.html:87
+#, python-format
+msgid ""
+"We recommend to set it 30%% below the value of your expected effective hash "
+"rate.<br>E.g. you expect your miner hash rate to be 1 Ths/s, the "
+"<strong>Alert Limit</strong> would be set to 700 Ghs/s."
+msgstr ""
+
+#: web/templates/user_manual/terminology.html:92
 msgid "Luck"
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:74
+#: web/templates/user_manual/terminology.html:93
 msgid ""
 "Pool luck explains how many shares the pool needed to find a specific block "
 "in comparison <strong>to the average number of shares</strong> needed for "
 "finding a block."
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:76
+#: web/templates/user_manual/terminology.html:95
 #, python-format
 msgid ""
 "If the luck is above 100%% it means that the pool needed less shares than "
 "expected for the given difficulty."
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:77
+#: web/templates/user_manual/terminology.html:96
 #, python-format
 msgid "If the luck is below 100%%, more shares than average were needed."
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:79
+#: web/templates/user_manual/terminology.html:98
 #, python-format
 msgid ""
 "E.g. if the luck is 200%%, the pool found two times more blocks in the given "
 "time period than average."
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:80
+#: web/templates/user_manual/terminology.html:99
 #, python-format
 msgid ""
 "Please, keep in mind that <strong>luck only describes the history but says "
@@ -6674,26 +6888,26 @@ msgid ""
 "In the long run, the luck is always 100%%."
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:83
+#: web/templates/user_manual/terminology.html:102
 msgid "Stale Rate"
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:84
+#: web/templates/user_manual/terminology.html:103
 msgid ""
 "Stale rate is number of shares submitted after the old block has already "
 "been found and pool has moved to the next block. If everything works "
 "correctly, it should be a very low number."
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:85
+#: web/templates/user_manual/terminology.html:104
 msgid "Several factors can increase your stale rate:"
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:87
+#: web/templates/user_manual/terminology.html:106
 msgid "Network Latency"
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:88
+#: web/templates/user_manual/terminology.html:107
 msgid ""
 "On slower networks (or when there is a network issue on the path from your "
 "miner to the pool), it takes more time for a miner to receive notification "
@@ -6702,69 +6916,17 @@ msgid ""
 "<em>stale</em> shares</em>."
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:90
+#: web/templates/user_manual/terminology.html:109
 msgid "Slower Mining Device"
 msgstr ""
 
-#: web/templates/user_manual/terminology.html:91
+#: web/templates/user_manual/terminology.html:110
 msgid ""
 "Some miners are like men. They only handle one task at a time. Before taking "
 "on a new job, they need to finish the previous one. While others are "
 "generating shares for a new block already, these miners are producing shares "
 "for the old block that cannot be accepted by the pool anymore. Such results "
 "are also called <strong>stale</strong> shares."
-msgstr ""
-
-#: web/templates/user_manual/terminology.html:95
-msgid ""
-"This value is used as a <strong>hash rate limit</strong> for checking "
-"whether your device works properly. If the effective hash rate of a worker "
-"is greater or equal to <strong>Alert Limit</strong>, everything is perfect "
-"and you will not receive any monitoring alert reports."
-msgstr ""
-
-#: web/templates/user_manual/terminology.html:96
-msgid ""
-"However, sometimes it can happen that effective hash rate drops "
-"<strong>below the Alert Limit</strong>. If your monitoring is enabled you "
-"will be notified by an e-mail and you can start acting accordingly. Such "
-"behavior is mainly caused by the following reasons:"
-msgstr ""
-
-#: web/templates/user_manual/terminology.html:98
-msgid "Mining software does not accept difficulty assigned by our pool"
-msgstr ""
-
-#: web/templates/user_manual/terminology.html:99
-msgid "Internet connection is not stable"
-msgstr ""
-
-#: web/templates/user_manual/terminology.html:100
-msgid "Your mining device might have a hardware problem (e.g. overheating)"
-msgstr ""
-
-#: web/templates/user_manual/terminology.html:103
-msgid "How to set the alert limit"
-msgstr ""
-
-#: web/templates/user_manual/terminology.html:105
-#, python-format
-msgid ""
-"Let the pool automatically compute <strong>Alert Limit</strong> for you. It "
-"is done once in 5 minutes and the value is set to 70%% of hash rate average "
-"from the last 24hours."
-msgstr ""
-
-#: web/templates/user_manual/terminology.html:107
-msgid "Set it manually to any value from 0.5 Gh/s to e.g. 100 Ph/s or more."
-msgstr ""
-
-#: web/templates/user_manual/terminology.html:108
-#, python-format
-msgid ""
-"We recommend to set it 10%% below the value of your expected effective hash "
-"rate.<br>E.g. you expect your miner hash rate to be 1 Ths/s, "
-"the<strong>Alert Limit</strong> would be set to 900 Ghs/s."
 msgstr ""
 
 #: web/templates/user_manual/troubleshooting.html:14
