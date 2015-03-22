@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: Slush's pool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-20 17:53+0000\n"
-"PO-Revision-Date: 2015-03-18 23:57+0200\n"
+"PO-Revision-Date: 2015-03-22 14:55+0200\n"
 "Last-Translator: Jan Pecinovsky <jan.pecinovsky@braiins.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
-"cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-"
+"cz/mining/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -71,9 +71,8 @@ msgid "Send"
 msgstr "Odeslat"
 
 #: core/validators.py:10
-#, fuzzy
 msgid "Enter a valid, non empty value."
-msgstr "Vložte platné uživatelské jméno."
+msgstr "Vložte platnou, neprázdnou hodnotu."
 
 #: mailing/templates/mailing/unsubscribe.html:5
 #: mailing/templates/mailing/unsubscribe_confirm.html:5
@@ -227,10 +226,9 @@ msgid "We didn't post yet. Stay tuned."
 msgstr "Zatím tu nic není. Podívejte se prosím později."
 
 #: news/templates/news/home.html:40
-#, fuzzy
 msgctxt "UI"
 msgid "Get Slush Pool news in your RSS reader"
-msgstr "Získejte poslední novinky z poolu do své RSS čtečky"
+msgstr "Získejte novinky z poolu do své RSS čtečky"
 
 #: news/templates/news/content/release-10.html:3
 #: web/templates/release_notes.html:3
@@ -238,10 +236,9 @@ msgid "Release notes"
 msgstr ""
 
 #: news/templates/news/content/release-20.html:2
-#, fuzzy
 msgctxt "UI"
 msgid "Dashboard"
-msgstr "Zobrazit můj přehled"
+msgstr "Přehled"
 
 #: news/templates/news/content/2015/03_20_changes_in_monitoring.html:2
 #, fuzzy
@@ -681,12 +678,12 @@ msgstr "Nový komentář"
 #: web/layout_elements.py:95
 msgctxt "Intro"
 msgid "Exponentially weighted hash rate of your account."
-msgstr ""
+msgstr "Exponenciálně vyvážený hash rate vašeho účtu."
 
 #: web/layout_elements.py:96
 msgctxt "Intro"
 msgid "The scoring function performs exponential weighting of your hash rate."
-msgstr ""
+msgstr "Skórovací funkce exponenciálně vyvažuje váš hash rate."
 
 #: web/layout_elements.py:97
 msgctxt "Intro"
@@ -694,38 +691,40 @@ msgid ""
 "This value is being used for reward calculation, unlike the average hash "
 "rate."
 msgstr ""
+"Tato hodnota se narozdíl od průměrného hash rate používá pro výpočet odměn."
 
 #: web/layout_elements.py:107
 msgctxt "Intro"
 msgid "# of workers in respective monitoring states."
-msgstr ""
+msgstr "# zařízení v jednotlivých stavech monitorování."
 
 #: web/layout_elements.py:109
 msgctxt "Intro"
 msgid "OK | Low | Offline"
-msgstr ""
+msgstr "OK | Pomalý | Offline"
 
 #: web/layout_elements.py:119
 msgctxt "Intro"
 msgid ""
 "The amount of time that has elapsed since submission of the last share by "
 "your workers."
-msgstr ""
+msgstr "Doba, která uplynula od odevzdání posledního řešení od vašich zařízení."
 
 #: web/layout_elements.py:120
 msgctxt "Intro"
 msgid "The value should be 0 minutes if your miners work properly."
-msgstr ""
+msgstr "Pokud vaše zařízení pracují správně, hodnota by měla být 0 minut."
 
 #: web/layout_elements.py:130
 msgctxt "Intro"
 msgid "Average effective hashrate for past 5 minutes / 1 hour / 24 hours."
 msgstr ""
+"Průměrný efektivní hash rate za posledních 5 minut / 1 hodinu / 24 hodin."
 
 #: web/layout_elements.py:131
 msgctxt "Intro"
 msgid "No scoring function is applied to these values."
-msgstr ""
+msgstr "Žádná skórovací funkce na tyto hodnoty nemá vliv."
 
 #: web/layout_elements.py:160
 msgctxt "Intro"
@@ -733,23 +732,22 @@ msgid ""
 "Your reward for valid and already confirmed blocks (more than 100 blocks in "
 "history)"
 msgstr ""
+"Vaše odměna za platné a již potvrzené bloky (více než 100 bloků nazpátek)"
 
 #: web/layout_elements.py:169
-#, fuzzy
 msgctxt "Intro"
 msgid "Pending reward from unconfirmed blocks"
 msgstr "Odměna ze zatím nepotvrzených bloků"
 
 #: web/layout_elements.py:179
-#, fuzzy
 msgctxt "Intro"
 msgid "Estimated reward for a block when it was found right now"
-msgstr "Očekávaná odměna pro aktuální kolo"
+msgstr "Očekávaná odměna pro aktuální blok, pokud by byl ukončen právě teď"
 
 #: web/layout_elements.py:189
 msgctxt "Intro"
 msgid "Pool calculates average time between two consecutive payouts."
-msgstr ""
+msgstr "Pool počítá průměrný čas mezi dvěma následujícími výplatami."
 
 #: web/layout_elements.py:190
 msgctxt "Intro"
@@ -757,6 +755,8 @@ msgid ""
 "The calculation is based on current difficulty, your recent hash rate and "
 "payout threshold."
 msgstr ""
+"Výpočet je založen na aktuální obtížnosti, vašem nedávném hash rate a limitu "
+"pro výplaty."
 
 #: web/layout_elements.py:191
 msgctxt "Intro"
@@ -764,6 +764,8 @@ msgid ""
 "The progress bar gives you rough estimate where you are in the current "
 "payout period."
 msgstr ""
+"Ukazatel průběhu nabízí odhad, kde zhruba se v aktualní výplatním období "
+"nacházíte."
 
 #: web/layout_elements.py:202
 msgctxt "Intro"
@@ -771,29 +773,31 @@ msgid ""
 "Estimated daily reward if you keep mining at the current hash (and with "
 "current difficulty)."
 msgstr ""
+"Předpokládaná denní odměna, pokud budete nadále těžit s aktuálním hash rate ("
+"a při aktuální obtížnosti)."
 
 #: web/layout_elements.py:231
 msgctxt "Intro"
 msgid "Exponentially weighted hash rate of the pool."
-msgstr ""
+msgstr "Exponenciálně vyvážený hash rate poolu."
 
 #: web/layout_elements.py:232
 msgctxt "Intro"
 msgid ""
 "The scoring function performs exponential weighting of the pool hash rate."
-msgstr ""
+msgstr "Skórovací funkce exponenciálně vyvažuje hash rate poolu."
 
 #: web/layout_elements.py:242 web/layout_items.py:46
 msgctxt "Intro"
 msgid ""
 "Date and time when pool has found the last block and started mining work for "
 "a new one."
-msgstr ""
+msgstr "Datum a čas, kdy pool našel poslední blok a začal pracovat na novém."
 
 #: web/layout_elements.py:251 web/layout_items.py:78
 msgctxt "Intro"
 msgid "Current bitcoin block number, current bitcoin network difficulty."
-msgstr ""
+msgstr "Číslo aktuálního bloku, aktuální obtížnost těžení v bitcoinové síti."
 
 #: web/layout_elements.py:260 web/layout_items.py:90
 msgctxt "Intro"
@@ -801,45 +805,45 @@ msgid ""
 "Percentage ratio between shares the pool needed to find a block and average "
 "number of shares needed."
 msgstr ""
+"Procentuální poměr mezi počtem řešení, která pool potřeboval k dokončení "
+"bloku, a průměrným počtem řešení."
 
 #: web/layout_elements.py:261 web/layout_items.py:91
 msgctxt "Intro"
 msgid "A 1 day, 7 day, and 30 days luck is provided."
-msgstr ""
+msgstr "1denní, 7denní a 30denní štěstí poolu."
 
 #: web/layout_elements.py:279
 msgctxt "Intro"
 msgid ""
 "Overview of the most recent blocks found by the pool and their confirmation "
 "status."
-msgstr ""
+msgstr "Přehled nedávno nalezených bloků a stav jejich ověření."
 
 #: web/layout_elements.py:288
 msgctxt "Intro"
 msgid "Time that has elapsed since each block has been found"
-msgstr ""
+msgstr "Čas, který uběhl mezi nalezenými bloky"
 
 #: web/layout_elements.py:297
-#, fuzzy
 msgctxt "Intro"
 msgid "Your scoring hash rate at the time when the block was found."
-msgstr "Součet skórovacího hash rate poolu v době nalezení bloku."
+msgstr "Váš skórovací hash rate v době nalezení bloku."
 
 #: web/layout_elements.py:306
 msgctxt "Intro"
 msgid "Amount you have been rewarded for each block."
-msgstr ""
+msgstr "Vaše odměna za každý blok."
 
 #: web/layout_elements.py:315
-#, fuzzy
 msgctxt "Intro"
 msgid "Confirmation status of the block."
-msgstr "Potvrzovací stránka"
+msgstr "Stav ověření bloku."
 
 #: web/layout_elements.py:324
 msgctxt "Intro"
 msgid "The chart shows history of your rewards for the past 14 days."
-msgstr ""
+msgstr "Graf ukazující historii vašich odměn za posledních 14 dní."
 
 #: web/layout_items.py:28
 msgctxt "Intro"
@@ -847,6 +851,8 @@ msgid ""
 "Effective hash rate is being calculated from valid shares only - (see Pool "
 "Terminology manual page)."
 msgstr ""
+"Efektivní hash rate je počítán pouze z platných řešení - (podívejte se na "
+"stránku Odborná terminologie)."
 
 #: web/layout_items.py:60
 msgctxt "Intro"
@@ -854,6 +860,8 @@ msgid ""
 "Cumulative distribution function for the probability that a block will be "
 "found after a given number of contributed shares."
 msgstr ""
+"Kumulativní distribuční funkce k určení pravděpodobnosti, že blok bude "
+"nalezen po určitém počtu odevzdaných řešní."
 
 #: web/layout_items.py:61
 msgctxt "Intro"
@@ -861,6 +869,8 @@ msgid ""
 "The actual value has a bit reversed meaning. The lower the current value of "
 "CDF value, the better the luck."
 msgstr ""
+"Hodnota samotná má tak trochu obrácený význam. Čím nižší je totiž aktuální "
+"CDF hodnota, tím větší štěstí."
 
 #: web/layout_items.py:63
 msgctxt "Intro"
@@ -868,6 +878,8 @@ msgid ""
 "20% - In 20% of cases, the block would be found after submitting (0.22 * "
 "current difficulty) shares = quite a luck."
 msgstr ""
+"20% - V 20% případů by byl blok nalezen po odevzdání (0.22 * aktuální "
+"obtížnost) řešení = docela štěstí."
 
 #: web/layout_items.py:64
 msgctxt "Intro"
@@ -875,6 +887,8 @@ msgid ""
 "90% - In 90% of cases, the block would be found after submitting (2.32 * "
 "current difficulty) shares = bad luck."
 msgstr ""
+"90% - V 90% případů by byl blok nalezen po odevzdání (2.32 * aktuální "
+"obtížnost) řešení = smůla."
 
 #: web/layout_items.py:65
 msgctxt "Intro"
@@ -882,13 +896,15 @@ msgid ""
 "63% - In 63% of cases, the block would be found after submitting (1 * "
 "current difficulty) shares = long term luck is @ 100%."
 msgstr ""
+"63% - V 63% případů by byl blok nalezen po odevzdání (1 * aktuální obtížnost)"
+" řešení = štěstí je dlouhodobě @ 100%."
 
 #: web/layout_items.py:104
 msgctxt "Intro"
 msgid ""
 "Total number of shares that have been submitted by all workers in the "
 "current round."
-msgstr ""
+msgstr "Celkový počet řešení odevzdaných všemi zařízeními v aktuálním kole."
 
 #: web/messages.py:5
 msgctxt "UI"
@@ -1657,7 +1673,7 @@ msgstr "IP adresa"
 #: web/templates/activity_log.html:55
 msgctxt "Intro"
 msgid "Short, broad type of activity."
-msgstr ""
+msgstr "Krátký popis aktivity."
 
 #: web/templates/activity_log.html:62
 msgctxt "Intro"
@@ -1850,25 +1866,22 @@ msgid "7-day Average"
 msgstr "7denní průměr"
 
 #: web/templates/blocks.html:106
-#, fuzzy
 msgctxt "Intro"
 msgid "A unique identifier assigned to each found block by the pool."
 msgstr "Unikátní identifikátor přiřazený každému poolem vytěženému bloku."
 
 #: web/templates/blocks.html:114
-#, fuzzy
 msgctxt "Intro"
 msgid "Total scoring hash rate of the pool at time when a block was found."
-msgstr "Součet skórovacího hash rate poolu v době nalezení bloku."
+msgstr "Celkový skórovací hash rate poolu v době nalezení bloku."
 
 #: web/templates/blocks.html:115
-#, fuzzy
 msgctxt "Intro"
 msgid ""
 "This value and your scoring hash rate from the same time are used for "
 "calculating your reward for the block."
 msgstr ""
-"Pro výpočet Tvé odměny za blok je použita tato hodnota a Tvůj skórovací hash "
+"Pro výpočet vaší odměny za blok je použita tato hodnota a váš skórovací hash "
 "rate ze stejného momentu."
 
 #: web/templates/blocks.html:117
@@ -1879,7 +1892,7 @@ msgstr "Navštiv Uživatelský Manuál pro více detailů"
 #: web/templates/blocks.html:125
 msgctxt "Intro"
 msgid "A block number within the Bitcoin block chain. "
-msgstr ""
+msgstr "Číslo bloku v Bitcoinovém block chain. "
 
 #: web/templates/blocks.html:126
 msgctxt "Intro"
@@ -2172,11 +2185,13 @@ msgid ""
 "The chart shows the total number of your active workers and their total hash "
 "rate."
 msgstr ""
+"Graf ukazuje celkový počet vašich aktivních zařízení a jejich celkový hash "
+"rate."
 
 #: web/templates/dashboard.html:243
 msgctxt "Intro"
 msgid "Vertical solid lines represent blocks found at that instant."
-msgstr ""
+msgstr "Svislé linky reprezentují bloky nalezené v daný moment."
 
 #: web/templates/dashboard.html:262 web/templates/stats.html:128
 msgctxt "UI"
@@ -2433,17 +2448,17 @@ msgstr "Návod pro vytváření nových návrhů"
 #: web/templates/development_corner.html:295
 msgctxt "Intro"
 msgid "Shows the power of all points converted to hash rate together."
-msgstr ""
+msgstr "Zobrazení váhy všech přidělených bodů převedených na hash rate."
 
 #: web/templates/development_corner.html:296
 msgctxt "Intro"
 msgid "This value is refreshed every 5 minutes."
-msgstr ""
+msgstr "Tato hodnota se obnovuje každých 5 minut."
 
 #: web/templates/development_corner.html:304
 msgctxt "Intro"
 msgid "Shows how many users voted for a particular proposal."
-msgstr ""
+msgstr "Ukazuje, kolik uživatelů hlasovalo pro konkrétní návrh."
 
 #: web/templates/development_corner.html:312
 msgctxt "Intro"
@@ -2451,6 +2466,8 @@ msgid ""
 "Total points show how many points the proposal has received from all users "
 "together."
 msgstr ""
+"Celkový počet bodů ukazuje, kolik bodů návrh dostal od všech uživatelů "
+"dohromady."
 
 #: web/templates/email_account_delete.html:3
 #: web/templates/email_email_change.html:2
@@ -2761,10 +2778,9 @@ msgid "See the Full Story"
 msgstr "Přečtete si celý příběh"
 
 #: web/templates/facebook_feed.html:15
-#, fuzzy
 msgctxt "UI"
 msgid "Get our Facebook news in your RSS reader"
-msgstr "Získejte poslední novinky z poolu do své RSS čtečky"
+msgstr "Získejte poolové novinky z Facebooku do své RSS čtečky"
 
 #: web/templates/facebook_feed.html:15
 #: web/templates/facebook_feed_page.html:25
@@ -2956,7 +2972,7 @@ msgstr ""
 #: web/templates/homepage_intro_content.html:8
 msgctxt "Intro"
 msgid "Welcome to our interactive help screen!"
-msgstr ""
+msgstr "Vítejte na naší interaktivní stránce nápovědy!"
 
 #: web/templates/homepage_intro_content.html:13
 msgctxt "Intro"
@@ -2964,26 +2980,29 @@ msgid ""
 "This function is here to show you what certain parts of this web mean and "
 "what they do."
 msgstr ""
+"Tato funkce je zde proto, aby vám ukázala, co konkrétní části webu znamenají "
+"a co dělají."
 
 #: web/templates/homepage_intro_content.html:14
 msgctxt "Intro"
 msgid "Please note, that many chapters do need you to be logged in."
 msgstr ""
+"Vezměte prosím v úvahu, že mnohé kapitoly vyžadují, abyste byl přihlášen."
 
 #: web/templates/homepage_intro_content.html:15
 msgctxt "Intro"
 msgid "You can use our Demo Account ."
-msgstr ""
+msgstr "Můžete použít náš Demo účet."
 
 #: web/templates/homepage_intro_content.html:20
 msgctxt "Intro"
 msgid "There are several ways how to use this interactive help:"
-msgstr ""
+msgstr "Existuje několik způsobů, jak používat tuto interaktivní nápovědu:"
 
 #: web/templates/homepage_intro_content.html:22
 msgctxt "Intro"
 msgid "1) Specific Topic"
-msgstr ""
+msgstr "1) Specifické téma"
 
 #: web/templates/homepage_intro_content.html:23
 msgctxt "Intro"
@@ -2991,11 +3010,13 @@ msgid ""
 "Whenever you see a small info icon, clicking on it will take you to a "
 "specific topic."
 msgstr ""
+"Kdykoliv vidíte malou informační ikonku, kliknutím na ni se dostanete na "
+"specifické téma."
 
 #: web/templates/homepage_intro_content.html:25
 msgctxt "Intro"
 msgid "2) Individual Pages"
-msgstr ""
+msgstr "2) Jednotlivé stránky"
 
 #: web/templates/homepage_intro_content.html:26
 msgctxt "Intro"
@@ -3003,11 +3024,13 @@ msgid ""
 "When you see a yellow info button in left bottom corner of a page, you can "
 "invoke this screen on a particular chapter."
 msgstr ""
+"Kdykoliv vidíte žluté informační tlačítko v levém dolním rohu stránky, "
+"můžete vyvolat tuto obrazovku u konkrétních kapitol."
 
 #: web/templates/homepage_intro_content.html:28
 msgctxt "Intro"
 msgid "3) Full Walkthrough"
-msgstr ""
+msgstr "3) Kompletní prohlídka"
 
 #: web/templates/homepage_intro_content.html:29
 msgctxt "Intro"
@@ -3015,6 +3038,8 @@ msgid ""
 "You can navigate yourself by chapters and than cycle through topics on "
 "individual pages right from here or any other help screen."
 msgstr ""
+"Rovnou odsud nebo odkudkoliv z této nápovědy můžete postupovat po kapitolách "
+"a poté procházet témata na jednotlivých stránkách."
 
 #: web/templates/intro_screen_markup.html:7
 msgctxt "UI"
@@ -3067,67 +3092,56 @@ msgstr ""
 "<strong>Levá / Pravá šipka</strong>: Navigovat v tématech"
 
 #: web/templates/intro_screen_markup.html:44
-#, fuzzy
 msgctxt "Intro"
 msgid "Introduction"
-msgstr "návod"
+msgstr "Představení"
 
 #: web/templates/intro_screen_markup.html:45
-#, fuzzy
 msgctxt "Intro"
 msgid "Pool Statistics"
-msgstr "Statistiky"
+msgstr "Statistiky poolu"
 
 #: web/templates/intro_screen_markup.html:46
-#, fuzzy
 msgctxt "Intro"
 msgid "Development Corner"
-msgstr "Můj <span>účet</span>"
+msgstr "Vývojářský koutek"
 
 #: web/templates/intro_screen_markup.html:47
-#, fuzzy
 msgctxt "Intro"
 msgid "Account Dashboard"
-msgstr "Nastavení bylo uloženo."
+msgstr "Přehled účtu"
 
 #: web/templates/intro_screen_markup.html:48
-#, fuzzy
 msgctxt "Intro"
 msgid "Workers Overview"
-msgstr "Zařízení"
+msgstr "Přehled zařízení"
 
 #: web/templates/intro_screen_markup.html:49
-#, fuzzy
 msgctxt "Intro"
 msgid "Worker Configuration"
-msgstr "Založení účtu"
+msgstr "Nastavení zařízení"
 
 #: web/templates/intro_screen_markup.html:50
-#, fuzzy
 msgctxt "Intro"
 msgid "Device Monitoring"
-msgstr "Nastavení účtu"
+msgstr "Sledování zařízení"
 
 #: web/templates/intro_screen_markup.html:51
-#, fuzzy
 msgctxt "Intro"
 msgid "Reward History"
-msgstr "Historie výplat"
+msgstr "Historie odměn"
 
 #: web/templates/intro_screen_markup.html:52
-#, fuzzy
 msgctxt "Intro"
 msgid "Payout History"
 msgstr "Historie výplat"
 
 #: web/templates/intro_screen_markup.html:54
-#, fuzzy
 msgctxt "Intro"
 msgid "Activity Log"
-msgstr "Založení účtu"
+msgstr "Záznam aktivit"
 
 #: web/templates/intro_screen_markup.html:56
-#, fuzzy
 msgctxt "Intro"
 msgid "Account Settings"
 msgstr "Nastavení účtu"
@@ -3387,10 +3401,9 @@ msgstr "OK"
 
 #: web/templates/monitoring.html:190
 #: web/templates/user_manual/monitoring.html:71 web/templatetags/utils.py:185
-#, fuzzy
 msgctxt "UI, Monitoring"
 msgid "Low"
-msgstr "Pomalu"
+msgstr "Pomalý"
 
 #: web/templates/monitoring.html:191
 msgctxt "UI, Monitoring"
@@ -3427,28 +3440,30 @@ msgid ""
 "Every row in the following table contains summary of incidents that happened "
 "at the same time."
 msgstr ""
+"Každý řádek v následující tabulce obsahuje souhrn událostí, které se "
+"odehrály ve stejný čas."
 
 #: web/templates/monitoring.html:211 web/templates/monitoring.html.py:238
 msgctxt "Intro"
 msgid "Click the table row to see the details for a particular event."
-msgstr ""
+msgstr "Klikněte na řádek tabulky pro zobrazení detailů konkrétní události."
 
 #: web/templates/monitoring.html:219
 msgctxt "Intro"
 msgid ""
 "Absolute number of workers in each state and relative change to the previous "
 "state."
-msgstr ""
+msgstr "Konečný počet zařízení v každém stavu a předcházející změny stavů."
 
 #: web/templates/monitoring.html:221
 msgctxt "Intro"
 msgid "States: OK | Low | Error | Monitoring disabled"
-msgstr ""
+msgstr "Stavy: OK | Pomalý | Chyba | Sledování vypnuto"
 
 #: web/templates/monitoring.html:229
 msgctxt "Intro"
 msgid "Total hash rate of all your workers together (5min average)"
-msgstr ""
+msgstr "Celkový hash rate všech vašich zařízení dohromady (5minutový průměr)"
 
 #: web/templates/monitoring.html:237
 msgctxt "Intro"
@@ -3456,6 +3471,8 @@ msgid ""
 "Status of the report showing if the report has been sent to you by email or "
 "not."
 msgstr ""
+"Stav reportu ukazující, jestli byl report odeslán na vaši emailovou adresu "
+"nebo ne."
 
 #: web/templates/msg_pending_wallet.html:2
 #, fuzzy, python-format
@@ -3679,6 +3696,9 @@ msgid ""
 "\"%(reset_link)s\" title=\"click to reset your password\">reset your "
 "password</a> again."
 msgstr ""
+"Pokud jste ještě neobdržel potvrzení, zkuste prosím <a href=\"%(reset_link)"
+"s\" title=\"click to reset your password\">zresetovat své heslo</a> ještě "
+"jednou."
 
 #: web/templates/payouts.html:3
 msgctxt "UI"
@@ -3738,23 +3758,25 @@ msgstr "Zatím neproběhla žádná transakce."
 #: web/templates/payouts.html:88
 msgctxt "Intro"
 msgid "Processing / Failed / Sent"
-msgstr ""
+msgstr "Zpracovávám / Selhalo / Odesláno"
 
 #: web/templates/payouts.html:96
 msgctxt "Intro"
 msgid "Bitcoin address to which we sent the payout."
-msgstr ""
+msgstr "Adresa bitcoinové peněženky, na kterou posíláme výplatu."
 
 #: web/templates/payouts.html:97
 msgctxt "Intro"
 msgid "Click for blockchain information about adress transactions."
-msgstr ""
+msgstr "Klikněte na adresu pro zobrazení transakční historie v block chainu."
 
 #: web/templates/payouts.html:105
 msgctxt "Intro"
 msgid ""
 "Payouts under certain value are weighted by additional fee (see settings)."
 msgstr ""
+"Výplaty pod určitou hodnotou jsou zatíženy dodatečným poplatkem (podívejte "
+"se na nastavení)."
 
 #: web/templates/profile_worker_pager.html:6
 msgid "previous"
@@ -3805,7 +3827,7 @@ msgstr "Vašich bodů"
 #: web/templates/proposal_detail.html:102
 msgctxt "UI"
 msgid "Add this proposal to your favourites"
-msgstr ""
+msgstr "Přidat tento návrh do oblíbených"
 
 #: web/templates/proposal_detail.html:122
 msgctxt "UI"
@@ -3819,10 +3841,9 @@ msgid "Edit"
 msgstr "Změnit"
 
 #: web/templates/proposal_detail.html:137
-#, fuzzy
 msgctxt "UI"
 msgid "Comments & Updates"
-msgstr "Komentáře"
+msgstr "Komentáře & Aktualizace"
 
 #: web/templates/proposal_detail.html:144
 #: web/templates/proposal_detail.html:198 web/templates/proposal_form.html:34
@@ -3837,16 +3858,13 @@ msgid "Save"
 msgstr "Uložit"
 
 #: web/templates/proposal_detail.html:159
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI, Proposal"
 msgid ""
 "Proposal merged with <a href=\"%(proposal_merged_url)s\">#%(proposal_id)s</a>"
-msgstr ""
-"Přihlašte se a klikněte na tlačitko <a href=\"%(proposal_new_url)s\">+Nové "
-"návrhy</a>."
+msgstr "Návrh spojen s <a href=\"%(proposal_merged_url)s\">#%(proposal_id)s</a>"
 
 #: web/templates/proposal_detail.html:163
-#, fuzzy
 msgctxt "UI, Proposal"
 msgid "Proposal state changed"
 msgstr "Stav návrhu změněn"
@@ -3854,7 +3872,7 @@ msgstr "Stav návrhu změněn"
 #: web/templates/proposal_detail.html:164
 msgctxt "UI, Proposals"
 msgid "to"
-msgstr ""
+msgstr "s"
 
 #: web/templates/proposal_detail.html:181
 msgctxt "UI"
@@ -3992,10 +4010,9 @@ msgid "Vote"
 msgstr "Hlasovat"
 
 #: web/templates/proposals_feed.html:13
-#, fuzzy
 msgctxt "UI"
 msgid "Proposals feed"
-msgstr "Návrh vytvořen"
+msgstr "Seznam návrhů"
 
 #: web/templates/quick_updates.html:2
 msgid "Quick<span> updates</span>"
@@ -4008,10 +4025,9 @@ msgid "New account registration"
 msgstr "Potvrzení o registraci"
 
 #: web/templates/register.html:9
-#, fuzzy
 msgctxt "UI"
 msgid "Registration"
-msgstr "Registrace nového uživatele"
+msgstr "Registrace"
 
 #: web/templates/register.html:18
 msgctxt "UI"
@@ -4019,31 +4035,29 @@ msgid "Register <span>an account</span>"
 msgstr "Registrovat <span>účet</span>"
 
 #: web/templates/register.html:28
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "I agree with <a target=\"_blank\" href=\"%(terms_url)s\">terms of service</"
 "a>."
 msgstr ""
-"Souhlasím s <a target=\"_blank\" href=\"%(terms_url)s\">podmínkami užítí</a>."
+"Souhlasím se <a target=\"_blank\" href=\"%(terms_url)s\">smluvními "
+"podmínkami</a>."
 
 #: web/templates/register.html:30
-#, fuzzy
 msgctxt "UI"
 msgid "Register now"
-msgstr "Založit účet!"
+msgstr "Zaregistrovat se"
 
 #: web/templates/register.html:34
-#, fuzzy
 msgctxt "UI"
 msgid "Already have an account?"
-msgstr "Již máš funkční účet."
+msgstr "Už máte účet?"
 
 #: web/templates/register.html:37
-#, fuzzy
 msgctxt "UI"
 msgid "Log in here"
-msgstr "hlasujte zde"
+msgstr "Přihlašte se zde"
 
 #: web/templates/register.html:46
 msgctxt "UI"
@@ -4106,10 +4120,9 @@ msgid "Login to continue"
 msgstr "Pro pokračování se přihlašte"
 
 #: web/templates/release_notes.html:8
-#, fuzzy
 msgctxt "UI"
 msgid "Release <span>Notes</span>"
-msgstr "Dokončené <span>návrhy</span>"
+msgstr "Poznámky <span>k verzi</span>"
 
 #: web/templates/rewards.html:3
 msgctxt "UI"
@@ -4189,18 +4202,18 @@ msgstr "Denní <span>odměna</span>"
 #: web/templates/rewards.html:105
 msgctxt "Intro"
 msgid "Click for more info about block and state of pool at the time."
-msgstr ""
+msgstr "Klikněte pro více informací o bloku a stavu poolu v daný okamžik."
 
 #: web/templates/rewards.html:112
 msgctxt "Intro"
 msgid ""
 "Reward is what you get if found block is valid (at least 100 confirmations)."
-msgstr ""
+msgstr "Odměna je to, co dostanete, až se blok potvrdí (alespoň 100 potvrzení)."
 
 #: web/templates/rewards.html:113
 msgctxt "Intro"
 msgid "You will not be given any reward if block is invalid."
-msgstr ""
+msgstr "Pokud je blok neplatný, nedostanete žádnou odměnu."
 
 #: web/templates/rewards.html:115
 msgctxt "Intro"
@@ -4208,6 +4221,8 @@ msgid ""
 "Your Reward = (Your Scoring Hash Rate / Pool Scoring Hash Rate) * (Block "
 "Value * 0.98)"
 msgstr ""
+"Vaše odměna = (váš skórovací hash rate / skórovací hash rate poolu) * ("
+"hodnota bloku * 0.98)"
 
 #: web/templates/rewards.html:123
 msgid "Invalid"
@@ -4220,7 +4235,7 @@ msgstr "Potvrzeno"
 #: web/templates/rewards.html:124
 msgctxt "Intro"
 msgid "Block is considered to be valid after 100 confirmations."
-msgstr ""
+msgstr "Blok je považován za platný po 100 ověřeních."
 
 #: web/templates/rewards.html:132
 msgid ""
@@ -4535,11 +4550,13 @@ msgid ""
 "If you keep this option disabled, only user id will be shown in public "
 "statistics"
 msgstr ""
+"Pokud necháte tuto možnost vypnutou, ve veřejných statistikách bude "
+"zobrazeno pouze ID uživatele"
 
 #: web/templates/settings.html:450
 msgctxt "Intro"
 msgid "Choose your prefered currency unit."
-msgstr ""
+msgstr "Vyberte vaši preferovanou jednotku měny."
 
 #: web/templates/settings.html:451
 msgctxt "Intro"
@@ -4547,6 +4564,8 @@ msgid ""
 "This value is used for presentation purposes only and does not affect any "
 "payout calculations."
 msgstr ""
+"Tato hodnota je používána pouze pro zobrazování a nemá žádný vliv na výpočet "
+"výplat."
 
 #: web/templates/settings.html:459
 msgctxt "Intro"
@@ -4554,11 +4573,14 @@ msgid ""
 "If you disable this option, the monitoring system will not send any more e-"
 "mail notifications."
 msgstr ""
+"Pokud tuto možnost vypnete, sledovací systém již nebude posílat žádná "
+"emailová upozornění."
 
 #: web/templates/settings.html:467
 msgctxt "Intro"
 msgid "If enabled the pool will automatically set the alert limit for you."
 msgstr ""
+"Pokud tuto možnost zapnete, pool bude automaticky detekovat výstražný limit."
 
 #: web/templates/settings.html:468
 #, python-format
@@ -4567,6 +4589,8 @@ msgid ""
 "This value is calculated every 5 minutes by taking 70%% of your average hash "
 "rate in the past 24 hours."
 msgstr ""
+"Tato hodnota je počítána každých 5 minut tak, že vezme 70%% vašeho "
+"průměrného hash rate za posledních 24 hodin."
 
 #: web/templates/settings.html:476
 msgctxt "Intro"
@@ -4574,11 +4598,13 @@ msgid ""
 "When the combined effective hash rate of all your workers drops below this "
 "value, it is understood as a low hash rate state and the event is reported."
 msgstr ""
+"Pokud součet efektivního hash rate všech vašich zařízení klesne pod tuto "
+"hodnotu, je to vyhodnoceno jako Pomalý stav a tato událost je reportována."
 
 #: web/templates/settings.html:478
 msgctxt "Intro"
 msgid "Disable auto detection if you want to set your desired value manually."
-msgstr ""
+msgstr "Vypněte autodetekci, pokud chcete nastavit tuto hodnotu ručně."
 
 #: web/templates/settings.html:483 web/templates/settings.html.py:493
 msgctxt "UI"
@@ -4586,10 +4612,9 @@ msgid "Payout"
 msgstr "Výplata"
 
 #: web/templates/settings.html:486
-#, fuzzy
 msgctxt "Intro"
 msgid "All bitcoins are being sent to this bitcoin wallet adress."
-msgstr "Bitcoiny budou odeslány do této peněženky."
+msgstr "Všechny bitcoiny jsou odesílány na tuto adresu bitcoinové peněženky."
 
 #: web/templates/settings.html:488
 msgctxt "Intro"
@@ -4597,6 +4622,8 @@ msgid ""
 "Please take a look at the Security tab to see how you can further secure "
 "your account"
 msgstr ""
+"Pokud chcete vidět, jak můžete zabezpečit svůj účet, podívejte se prosím na "
+"záložku Zabezpečení"
 
 #: web/templates/settings.html:496
 msgctxt "Intro"
@@ -4604,6 +4631,8 @@ msgid ""
 "When your account balance crosses the threshold value, the pool sends the "
 "entire balance to your payout address."
 msgstr ""
+"Když potvrzená odměna překročí limit pro výplatu, pool ji automaticky "
+"odesílá na výplatní adresu."
 
 #: web/templates/settings.html:498
 msgctxt "Intro"
@@ -4900,7 +4929,7 @@ msgstr "Vypnutí dvoufaktorové autentizace"
 #: web/templates/slider.html:4
 msgctxt "UI"
 msgid "Explore Live Demo"
-msgstr ""
+msgstr "Prohlédněte si živé demo"
 
 #: web/templates/slider.html:5
 msgctxt "UI"
@@ -4912,33 +4941,30 @@ msgstr ""
 "reálná data v akci."
 
 #: web/templates/slider.html:8
-#, fuzzy
 msgctxt "UI"
 msgid "Sign up here!"
-msgstr "Registruj se ZDE"
+msgstr "Registrujte se zde!"
 
 #: web/templates/slider.html:9
 msgctxt "UI"
 msgid "Did you like it? You can instantly sign-up for your own account."
 msgstr ""
+"Líbilo se vám to? Můžete se okamžitě zaregistrovat a mít svůj vlastní účet."
 
 #: web/templates/slider.html:15 web/templates/slider.html.py:18
-#, fuzzy
 msgctxt "UI"
 msgid "Powerful <span>Dashboard</span>"
-msgstr "Denní <span>odměna poolu</span>"
+msgstr "Obsáhlý <span>přehled</span>"
 
 #: web/templates/slider.html:19
-#, fuzzy
 msgctxt "UI"
 msgid "<strong>See all important facts</strong> on one page."
-msgstr "<strong>Vývojářský</strong> koutek"
+msgstr "<strong>Všechna důležitá fakta</strong> na jedné stránce."
 
 #: web/templates/slider.html:26 web/templates/slider.html.py:29
-#, fuzzy
 msgctxt "UI"
 msgid "Advanced <span>Monitoring</span>"
-msgstr "Monitorování <span>zařízení</span>"
+msgstr "Pokročilé <span>Monitorování</span>"
 
 #: web/templates/slider.html:30
 msgctxt "UI"
@@ -4946,22 +4972,22 @@ msgid ""
 "<strong>Get notified</strong> when your workers have troubles or go back on-"
 "line."
 msgstr ""
+"<strong>Upozorňování</strong>, když vaše zařízení mají problémy se znovu "
+"připojit."
 
 #: web/templates/slider.html:37 web/templates/slider.html.py:40
-#, fuzzy
 msgctxt "UI"
 msgid "Rule <span>the Pool</span>"
-msgstr "Dokončené <span>návrhy</span>"
+msgstr "Vládněte <span>poolu</span>"
 
 #: web/templates/slider.html:41
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "<strong>Submit your ideas</strong> for improvement of this pool. "
 "<strong>Upvote what you like</strong> to see implemented first."
 msgstr ""
-"Pošlete nám vaše nápady jak vylepšit pool. Hlasujte pro nápady, které chcete "
-"vidět implementované jako první."
+"<strong>Předložte vlastní nápady</strong> jak vylepšit tento pool. <strong>"
+"Dejte hlas těm</strong>, které chcete vidět naimplementované nejdřív."
 
 #: web/templates/stats.html:18
 msgctxt "UI"
@@ -5041,10 +5067,9 @@ msgid "Terms of service"
 msgstr "Nastavení účtu"
 
 #: web/templates/terms-of-service.html:8
-#, fuzzy
 msgctxt "UI"
 msgid "Terms <span>of Service</span>"
-msgstr "Nastavení účtu"
+msgstr "Smluvní <span>podmínky</span>"
 
 #: web/templates/terms-of-service.html:19
 #, fuzzy
@@ -5220,16 +5245,14 @@ msgid "Worker <span>Settings</span>"
 msgstr "Nastavení <span>zařízení</span>"
 
 #: web/templates/worker.html:15
-#, fuzzy
 msgctxt "UI"
 msgid "New Worker <span>Settings</span>"
-msgstr "Nastavení <span>zařízení</span>"
+msgstr "Nastavení <span>nového zařízení</span>"
 
 #: web/templates/worker.html:19
-#, fuzzy
 msgctxt "UI"
 msgid "Switch to worker"
-msgstr "Nové zařízení"
+msgstr "Přepnout na zařízení"
 
 #: web/templates/worker.html:40
 msgctxt "UI"
@@ -5282,16 +5305,17 @@ msgid ""
 "When monitoring is enabled, the pool monitors hash rate of your worker for "
 "unexpected drops and reports these events."
 msgstr ""
+"Pokud je sledování zapnuto, pool sleduje hash rate vašeho zařízení a "
+"reportuje neočekávané poklesy."
 
 #: web/templates/worker.html:112
-#, fuzzy
 msgctxt "Intro"
 msgid ""
 "You can either let the monitoring system automatically detect the hash rate "
 "of your worker, or you can set the alert limit manually."
 msgstr ""
-"Monitorovací systém automaticky určí předpokládaný hash rate zařízení podle "
-"jeho předchozí aktivity"
+"Buď můžete nechat sledovací systém určit hash rate vašeho zařízení "
+"automaticky, nebo můžete výstražný limit nastavit ručně."
 
 #: web/templates/worker.html:120
 msgctxt "Intro"
@@ -5299,11 +5323,13 @@ msgid ""
 "This setting is intended for mining hardware that ignores the difficulty "
 "selected by the pool vardiff mechanism."
 msgstr ""
+"Toto nastavení je určeno těžícím zařízením, která ignorují nastavení "
+"minimální obtížnosti zvolené vardiff mechanismem."
 
 #: web/templates/worker.html:121
 msgctxt "Intro"
 msgid "It is recommended to leave this field empty."
-msgstr ""
+msgstr "Doporučujeme nechat toto pole prázdné."
 
 #: web/templates/worker.html:122
 msgctxt "Intro"
@@ -5311,14 +5337,17 @@ msgid ""
 "The pool automatically assigns the difficulty that corresponds to the hash "
 "rate of your miner."
 msgstr ""
+"Pool zařízení automaticky přiřazuje obtížnost, která koresponduje s jeho "
+"hash rate."
 
 #: web/templates/worker.html:130
-#, fuzzy
 msgctxt "Intro"
 msgid ""
 "When enabled, the monitoring system will automatically set the alert limit "
 "for you."
-msgstr "Monitorovací system bude automaticky "
+msgstr ""
+"Pokud je tato možnost zapnuta, sledovací systém automaticky určí výstražný "
+"limit."
 
 #: web/templates/worker.html:132
 #, python-format
@@ -5327,11 +5356,13 @@ msgid ""
 "This value is calculated every 5 minutes by taking 70%% of your average hash "
 "rate in the last 24 hours."
 msgstr ""
+"Tato hodnota je počítána každých 5 minut tak, že vezme 70%% vašeho "
+"průměrného hash rate za posledních 24 hodin."
 
 #: web/templates/worker.html:140
 msgctxt "Intro"
 msgid "You will be notified when 5 minute hash rate drops below this value."
-msgstr ""
+msgstr "Budete upozorněn, pokud 5minutový hash rate klesne pod tuto hodnotu."
 
 #: web/templates/worker.html:142
 msgctxt "Intro"
@@ -5339,11 +5370,12 @@ msgid ""
 "With auto-detection enabled, this field shows the computed alert limit for "
 "the worker."
 msgstr ""
+"Se zapnutou autodetekcí je v tomto poli zobrazen výstražný limit zařízení."
 
 #: web/templates/worker.html:150
 msgctxt "Intro"
 msgid "You can save your changes here."
-msgstr ""
+msgstr "Zde můžete uložit vaše nastavení."
 
 #: web/templates/worker.html:151
 msgctxt "Intro"
@@ -5351,6 +5383,8 @@ msgid ""
 "Please note, that you can not delete your last worker or worker that has "
 "been mining in the past 24 hours."
 msgstr ""
+"Vezměte prosím v potaz, že nemůžete smazat své poslední zařízení nebo "
+"zařízení, které těžilo v posledních 24 hodinách."
 
 #: web/templates/worker.html:216 web/templates/user_manual/rewards.html:50
 #: web/templates/user_manual/rewards.html:64
@@ -5383,10 +5417,9 @@ msgid "Disable monitoring for all"
 msgstr "Vypnout monitorování pro všechny"
 
 #: web/templates/workers.html:48
-#, fuzzy
 msgctxt "UI"
 msgid "Alert<br>Limit"
-msgstr "Výstražný limit"
+msgstr "Výstražný<br>limit"
 
 #: web/templates/workers.html:50
 msgctxt "UI"
@@ -5433,7 +5466,7 @@ msgstr "Zatím nemáte registrované žádné zařízení. Zaregistrujte nějak�
 #: web/templates/workers.html:135
 msgctxt "Intro"
 msgid "This column indicates current monitoring status of the worker."
-msgstr ""
+msgstr "Tentou sloupec ukazuje aktuální status sledování zařízení."
 
 #: web/templates/workers.html:136
 msgctxt "Intro"
@@ -5441,22 +5474,22 @@ msgid ""
 "OK - Monitoring is enabled and hash rate of the worker is above its alert "
 "limit."
 msgstr ""
+"OK - Sledování je zapnuto a hash rate zařízení je nad výstražným limitem."
 
 #: web/templates/workers.html:137
 msgctxt "Intro"
 msgid "Low - Worker has lower hash rate than its alert limit."
-msgstr ""
+msgstr "Pomalý - Hash rate zařízení je pod výstražným limitem."
 
 #: web/templates/workers.html:138
 msgctxt "Intro"
 msgid "Error - No shares submitted by the worker in last minutes."
-msgstr ""
+msgstr "Chyba - Zařízení neodevzdalo v posledních minutách žádná řešení."
 
 #: web/templates/workers.html:139
-#, fuzzy
 msgctxt "Intro"
 msgid "Disabled - Monitoring for this worker has been disabled."
-msgstr "Nastavení pro Namecoin bylo uloženo."
+msgstr "Vypnuto - Sledování zařízení bylo vypnuto."
 
 #: web/templates/workers.html:148
 msgctxt "Intro"
@@ -5464,38 +5497,45 @@ msgid ""
 "Alert Limit. You will be notified if hash rate of the affected worker drops "
 "below this value."
 msgstr ""
+"Výstražný limit., Budete upozorněni pokud hash rate zasaženého zařízení "
+"klesne pod tuto hodnotu."
 
 #: web/templates/workers.html:149
 msgctxt "Intro"
 msgid "This value can be set on the worker setup page."
-msgstr ""
+msgstr "Tato hodnota může být nastavena na stránce zařízení."
 
 #: web/templates/workers.html:157
 msgctxt "Intro"
 msgid "Effectively a worker ID."
-msgstr ""
+msgstr "V podstatě identita zařízení."
 
 #: web/templates/workers.html:158
 msgctxt "Intro"
 msgid ""
 "Your user ID together with this suffix composes the complete worker login."
 msgstr ""
+"Vaše uživatelské jméno dohromady s touto příponou tvoří kompletní "
+"přihlašovací jméno zařízení."
 
 #: web/templates/workers.html:160
 msgctxt "Intro"
 msgid ""
 "Click the worker ID to see worker details and to change worker settings."
 msgstr ""
+"Klikněte na jméno zařízení pro zobrazení detailů o zařízení a jeho nastavení."
 
 #: web/templates/workers.html:168
 msgctxt "Intro"
 msgid "Exponentially weighted effective hash rate."
-msgstr ""
+msgstr "Exponenciálně vyvážený efektivní hash rate."
 
 #: web/templates/workers.html:170
 msgctxt "Intro"
 msgid "See user manual for detailed explanation of the scoring hash rate."
 msgstr ""
+"Podívejte se do uživatelského manuálu na podrobné vysvětlení skórovacího "
+"hash rate."
 
 #: web/templates/workers.html:171
 #, fuzzy
@@ -5511,16 +5551,17 @@ msgstr "Nastavení účtu"
 msgctxt "Intro"
 msgid "Average effective hash rate for the past 5 minutes / 1 hour / 24 hours."
 msgstr ""
+"Průměrný efektivní hash rate za posledních 5 minut / 1 hodinu / 24 hodin."
 
 #: web/templates/workers.html:180
 msgctxt "Intro"
 msgid "No scoring function is being applied to these values."
-msgstr ""
+msgstr "Žádná skórovací funkce na tuto hodnotu nemá vliv."
 
 #: web/templates/workers.html:188
 msgctxt "Intro"
 msgid "Time since the worker has submitted its last share."
-msgstr ""
+msgstr "Doba od odevzdání posledního řešení zařízením."
 
 #: web/templates/workers.html:189
 msgctxt "Intro"
@@ -5528,11 +5569,13 @@ msgid ""
 "If you see '0 minutes', it indicates that a particular worker is "
 "successfully mining right now."
 msgstr ""
+"Pokud vidíte '0 minut', tak to znamená, že konkrétní zařízení právě bez "
+"problémů těží."
 
 #: web/templates/layout_elements/blocks.html:19
 msgctxt "UI"
 msgid "Time Since"
-msgstr ""
+msgstr "Čas od"
 
 #: web/templates/layout_elements/blocks.html:20
 #: web/templates/layout_elements/user_mining.html:16
@@ -5541,29 +5584,27 @@ msgid "Your Scoring Hash Rate"
 msgstr "Váš skórovací hash rate"
 
 #: web/templates/layout_elements/blocks.html:22
-#, fuzzy
 msgctxt "UI"
 msgid "Confirmation Status"
-msgstr "Potvrzovací stránka"
+msgstr "Stav potvrzení"
 
 #: web/templates/layout_elements/blocks.html:56
 msgctxt "UI"
 msgid "Rewards for Last 14 Days"
-msgstr ""
+msgstr "Odměna za posledních 14 dní"
 
 #: web/templates/layout_elements/pool_stats.html:6
 #: web/templates/layout_elements/user_mining.html:6
 msgctxt "UI"
 msgid "Pool is synchronizing mining data!"
-msgstr ""
+msgstr "Pool právě synchronizuje data!"
 
 #: web/templates/layout_elements/pool_stats.html:15
 #: web/templates/layout_elements/pool_stats.html:27
 #: web/templates/layout_elements/pool_stats.html:37
-#, fuzzy
 msgctxt "UI"
 msgid "Go to Pool Statistics"
-msgstr "Statistiky"
+msgstr "Jít na poolové statistiky"
 
 #: web/templates/layout_elements/pool_stats.html:18
 #: web/templates/layout_items/hr_pool_scoring.html:3
@@ -5572,7 +5613,6 @@ msgid "Pool Scoring Hash Rate"
 msgstr "Skórovací hash rate poolu"
 
 #: web/templates/layout_elements/pool_stats.html:29
-#, fuzzy
 msgctxt "UI"
 msgid "Loading..."
 msgstr "Nahrávám ..."
@@ -5586,7 +5626,7 @@ msgstr "Trvání aktuálního kola"
 #: web/templates/layout_elements/pool_stats.html:50
 msgctxt "UI"
 msgid "Cumulative Distribution Function"
-msgstr ""
+msgstr "Kumulativní distribuční funkce (CDF)"
 
 #: web/templates/layout_elements/pool_stats.html:50
 #: web/templates/layout_items/current_shares.html:3
@@ -5595,75 +5635,67 @@ msgid "CDF"
 msgstr "CDF"
 
 #: web/templates/layout_elements/pool_stats.html:62
-#, fuzzy
 msgctxt "UI"
 msgid "Block number"
-msgstr "Hodnota bloku"
+msgstr "Číslo bloku"
 
 #: web/templates/layout_elements/pool_stats.html:66
-#, fuzzy
 msgctxt "UI"
 msgid "Block Difficulty"
-msgstr "Složitost"
+msgstr "Složitost bloku"
 
 #: web/templates/layout_elements/pool_stats.html:73
 #: web/templates/layout_elements/user_mining.html:65
-#, fuzzy
 msgctxt "UI"
 msgid "Day"
-msgstr "den"
+msgstr "Den"
 
 #: web/templates/layout_elements/pool_stats.html:77
 msgctxt "UI"
 msgid "Week"
-msgstr ""
+msgstr "Týden"
 
 #: web/templates/layout_elements/pool_stats.html:81
 msgctxt "UI"
 msgid "Month"
-msgstr ""
+msgstr "Měsíc"
 
 #: web/templates/layout_elements/rewards.html:15
-#, fuzzy
 msgctxt "UI"
 msgid "<span>Confirmed</span> Reward"
-msgstr "Potvrzená odměna"
+msgstr "<span>Potvrzená</span> odměna"
 
 #: web/templates/layout_elements/rewards.html:27
-#, fuzzy
 msgctxt "UI"
 msgid "<span>Unconfirmed</span> Reward"
-msgstr "Nepotvrzená odměna"
+msgstr "<span>Nepotvrzená</span> odměna"
 
 #: web/templates/layout_elements/rewards.html:40
-#, fuzzy
 msgctxt "UI"
 msgid "All Times Reward"
-msgstr "Předpokládaná odměna"
+msgstr "Odměna za celou dobu"
 
 #: web/templates/layout_elements/rewards.html:49
-#, fuzzy
 msgctxt "UI"
 msgid "Go to Rewards"
-msgstr "Celková odměna"
+msgstr "Jít na odměny"
 
 #: web/templates/layout_elements/rewards.html:52
 msgctxt "UI"
 msgid "BTC Price"
-msgstr ""
+msgstr "Cena BTC"
 
 #: web/templates/layout_elements/rewards.html:59
 #: web/templates/layout_elements/rewards.html:100
-#, fuzzy
 msgctxt "UI"
 msgid "Last Payout"
-msgstr "Výplata"
+msgstr "Poslední výplata"
 
 #: web/templates/layout_elements/rewards.html:69
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "%% to Payout"
-msgstr "Výplata"
+msgstr "%% do výplaty"
 
 #: web/templates/layout_elements/rewards.html:82
 msgctxt "UI"
@@ -5671,45 +5703,39 @@ msgid "Payout Threshold"
 msgstr "Limit pro výplaty"
 
 #: web/templates/layout_elements/rewards.html:82
-#, fuzzy
 msgctxt "UI"
 msgid "Settings"
-msgstr "Nastavení účtu"
+msgstr "Nastavení"
 
 #: web/templates/layout_elements/rewards.html:86
-#, fuzzy
 msgctxt "UI"
 msgid "<span>Estimated</span> Reward for Current Block"
-msgstr "Předpokládaná odměna"
+msgstr "<span>Předpokládaná</span> odměna za aktuální blok"
 
 #: web/templates/layout_elements/rewards.html:90
 msgctxt "UI"
 msgid "Average Payout Period"
-msgstr ""
+msgstr "Průměrná výplatní doba"
 
 #: web/templates/layout_elements/rewards.html:94
-#, fuzzy
 msgctxt "UI"
 msgid "Average Daily Reward"
-msgstr "Denní odměna"
+msgstr "Průměrná denní odměna"
 
 #: web/templates/layout_elements/user_mining.html:15
-#, fuzzy
 msgctxt "UI"
 msgid "Go to Workers page"
-msgstr "Domovská stránka"
+msgstr "Jít na stránku zařízení"
 
 #: web/templates/layout_elements/user_mining.html:26
-#, fuzzy
 msgctxt "UI"
 msgid "Go to Monitoring"
-msgstr "Monitorování"
+msgstr "Jít na stránku monitorování"
 
 #: web/templates/layout_elements/user_mining.html:31
-#, fuzzy
 msgctxt "UI"
 msgid "Workers States"
-msgstr "Hash rate zařízení"
+msgstr "Stavy zařízení"
 
 #: web/templates/layout_elements/user_mining.html:43
 msgctxt "UI"
@@ -5717,15 +5743,14 @@ msgid "Your Contribution to the Pool"
 msgstr "Váš příspěvek poolu"
 
 #: web/templates/layout_elements/user_mining.html:57
-#, fuzzy
 msgctxt "UI"
 msgid "5 minutes"
-msgstr "(Nej 50 minerů)"
+msgstr "5 minut"
 
 #: web/templates/layout_elements/user_mining.html:61
 msgctxt "UI"
 msgid "Hour"
-msgstr ""
+msgstr "Hodina"
 
 #: web/templates/layout_items/current_block.html:3
 msgctxt "UI"
@@ -5733,10 +5758,9 @@ msgid "Current Bitcoin block, difficulty"
 msgstr "Aktuální Bitcoin blok, složitost"
 
 #: web/templates/layout_items/current_round_duration.html:5
-#, fuzzy
 msgctxt "UI"
 msgid "Loading"
-msgstr "Nahrávám ..."
+msgstr "Nahrávám"
 
 #: web/templates/layout_items/current_round_start.html:3
 msgctxt "UI"
@@ -5759,10 +5783,9 @@ msgid "Pool Luck (1 day, 7 days, 30 days)"
 msgstr "Štěstí (1 den, 7 dní, 30 dní)"
 
 #: web/templates/layout_items/time.html:3
-#, fuzzy
 msgctxt "UI"
 msgid "Current time"
-msgstr "Aktuální"
+msgstr "Aktuální čas"
 
 #: web/templates/layout_items/total_shares.html:3
 msgctxt "UI"
@@ -5772,14 +5795,13 @@ msgstr "Celkem řešení v aktuálním kole:"
 #: web/templates/user_manual/advanced_mining.html:4
 msgctxt "UI"
 msgid "Advanced Mining Setup"
-msgstr ""
+msgstr "Pokročilé nastavení zařízení"
 
 #: web/templates/user_manual/advanced_mining.html:18
 #: web/templates/user_manual/user_manual_base.html:27
-#, fuzzy
 msgctxt "UI"
 msgid "Advanced <span>Mining Setup</span>"
-msgstr "Monitorování <span>zařízení</span>"
+msgstr "Pokročilé <span>nastavení těžby</span>"
 
 #: web/templates/user_manual/advanced_mining.html:20
 msgid ""
@@ -6072,10 +6094,9 @@ msgstr ""
 #: web/templates/user_manual/intro.html:22
 #: web/templates/user_manual/terminology.html:15
 #: web/templates/user_manual/user_manual_base.html:21
-#, fuzzy
 msgctxt "UI"
 msgid "Pool <span>Terminology</span>"
-msgstr "Denní <span>odměna poolu</span>"
+msgstr "Odborná <span>terminologie</span>"
 
 #: web/templates/user_manual/intro.html:23
 msgid ""
@@ -6089,7 +6110,7 @@ msgstr ""
 #: web/templates/user_manual/user_manual_base.html:22
 msgctxt "UI"
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Poradce při potížích"
 
 #: web/templates/user_manual/intro.html:26
 msgid ""
@@ -6100,10 +6121,9 @@ msgstr ""
 #: web/templates/user_manual/intro.html:28
 #: web/templates/user_manual/rewards.html:15
 #: web/templates/user_manual/user_manual_base.html:23
-#, fuzzy
 msgctxt "UI"
 msgid "Reward <span>System</span>"
-msgstr "Založení účtu"
+msgstr "Odměňovací <span>systém</span>"
 
 #: web/templates/user_manual/intro.html:29
 msgid ""
@@ -6115,10 +6135,9 @@ msgstr ""
 #: web/templates/user_manual/intro.html:31
 #: web/templates/user_manual/payouts.html:10
 #: web/templates/user_manual/user_manual_base.html:24
-#, fuzzy
 msgctxt "UI"
 msgid "Pool <span>Payouts</span>"
-msgstr "Založení účtu"
+msgstr "Výplaty <span>z poolu</span>"
 
 #: web/templates/user_manual/intro.html:32
 msgid ""
@@ -6135,10 +6154,9 @@ msgstr ""
 #: web/templates/user_manual/intro.html:37
 #: web/templates/user_manual/mining-proxy.html:10
 #: web/templates/user_manual/user_manual_base.html:26
-#, fuzzy
 msgctxt "UI"
 msgid "Stratum <span>Mining Proxy</span>"
-msgstr "Nastavení účtu"
+msgstr "Stratum <span>těžební proxy</span>"
 
 #: web/templates/user_manual/intro.html:38
 msgid ""
@@ -6149,10 +6167,9 @@ msgstr ""
 
 #: web/templates/user_manual/intro.html:41
 #: web/templates/user_manual/stratum-protocol.html:7
-#, fuzzy
 msgctxt "UI"
 msgid "Stratum <span>Mining Protocol</span>"
-msgstr "Nastavení účtu"
+msgstr "Stratum <span>těžební protokol</span>"
 
 #: web/templates/user_manual/intro.html:42
 msgid "The official documentation of our lightweight bitcoin mining protocol."
@@ -6561,7 +6578,7 @@ msgstr ""
 #: web/templates/user_manual/monitoring.html:75 web/templatetags/utils.py:184
 msgctxt "UI, Monitoring"
 msgid "Offline"
-msgstr ""
+msgstr "Offline"
 
 #: web/templates/user_manual/monitoring.html:76
 msgid ""
@@ -7518,20 +7535,19 @@ msgid "<strong>Contents</strong> of User Manual"
 msgstr "<strong>Obsah</strong> uživatelského manuálu"
 
 #: web/templates/user_manual/user_manual_base.html:28
-#, fuzzy
 msgctxt "UI"
 msgid "Stratum <span>Protocol</span>"
-msgstr "Nastavení účtu"
+msgstr "Stratum <span>protokol</span>"
 
 #: web/templates/web/parts/pagination.html:8
 msgctxt "UI"
 msgid "Newer"
-msgstr ""
+msgstr "Novější"
 
 #: web/templates/web/parts/pagination.html:14
 msgctxt "UI"
 msgid "Older"
-msgstr ""
+msgstr "Starší"
 
 #: web/templates/widgets/email_change.html:5
 #: web/templates/widgets/wallet_pending.html:5
@@ -7546,10 +7562,11 @@ msgid "Sign by wallet"
 msgstr "Podepsat peněženkou"
 
 #: web/templates/widgets/pagedown.html:7
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Read more about <a target=\"_blank\" href=\"%(url)s\">markdown</a>"
-msgstr "Přečtěte si více o <a target=\"_blank\" href=\"%(url)s\">markdown</a>"
+msgstr ""
+"Přečtěte si více o <a target=\"_blank\" href=\"%(url)s\">markdown</a> jazyku"
 
 #: web/templates/widgets/pagedown.html:11
 msgctxt "UI"
