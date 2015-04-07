@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Slush's pool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-26 11:27+0000\n"
-"PO-Revision-Date: 2015-03-27 16:31+0200\n"
+"PO-Revision-Date: 2015-04-07 14:30+0200\n"
 "Last-Translator: Jan Pecinovsky <jan.pecinovsky@braiins.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-"
 "cz/mining/cs/>\n"
@@ -5782,11 +5782,11 @@ msgstr ""
 
 #: web/templates/user_manual/advanced_mining.html:47
 msgid "CGminer on Linux and Mac OS:"
-msgstr ""
+msgstr "CGminer na Linuxu a Mac OS:"
 
 #: web/templates/user_manual/advanced_mining.html:48
 msgid "path/to/your/Cgminer_Folder"
-msgstr ""
+msgstr "cesta/do/vaseho/Cgminer_adresare"
 
 #: web/templates/user_manual/advanced_mining.html:53
 msgid ""
@@ -5794,12 +5794,17 @@ msgid ""
 "em>, and <em>diablominer</em> is currently <strong>not supported</strong> "
 "because of lack of support for the Stratum mining protocol."
 msgstr ""
+"Ostatní software pro těžení jako například <em>cpuminer</em>, "
+"<em>rpcminer</em>, <em>minerd</em>, and <em>diablominer</em> aktuálně "
+"<strong>není podporován</strong> kvůli nedostatečné podpoře Stratum "
+"protokolu."
 
 #: web/templates/user_manual/advanced_mining.html:55
 msgid ""
 "2.3 Standalone ASIC based miner with Getwork Protocol <span>Support Only</"
 "span>"
 msgstr ""
+"2.3 Samostatné ASIC zařízení podporující pouze Getwork <span>protokol</span>"
 
 #: web/templates/user_manual/advanced_mining.html:56
 #, python-format
@@ -5808,27 +5813,33 @@ msgid ""
 "such mining hardware with our pool through the use of <a href=\"%(proxy)s"
 "\">Stratum proxy</a>. We provide this as a free software for our miners."
 msgstr ""
+"Getwork protokol je v dnešní době považovám za zastaralý. Pořád můžete s "
+"takovým zařízením na našem poolu těžit, nicméně je potřeba použít <a href=\""
+"%(proxy)s\">Stratum proxy</a>. Tento software poskytujeme našim těžařům "
+"zcela zdarma."
 
 #: web/templates/user_manual/getting_started.html:21
 msgid ""
 "In order to start mining you basically need just two things, create an "
 "account with our pool and setup your miner."
 msgstr ""
+"Abyste mohl začít těžit, potřebujete v zásadě pouze dvě věci: vytvořit si "
+"účet na našem poolu a nastavit si zařízení."
 
 #: web/templates/user_manual/getting_started.html:23
-#, fuzzy
 msgid "1. Sign-up <span>for a new account</span>"
-msgstr "Založení účtu"
+msgstr "1. Zaregistrovat <span>nový účet</span>"
 
 #: web/templates/user_manual/getting_started.html:26
-#, fuzzy, python-format
+#, python-format
 msgid "<a href=\"%(signup)s\">Sign-up</a> and wait for a confirmation email."
-msgstr "Nyní se prosím <a href='%(url)s'>přihlaš</a>."
+msgstr ""
+"<a href=\"%(signup)s\">Zaregistrujte se</a> a počkejte na potvrzující email."
 
 #: web/templates/user_manual/getting_started.html:29
-#, fuzzy, python-format
+#, python-format
 msgid "<a href=\"%(login)s\">Login</a> to your account."
-msgstr "Nyní se prosím <a href='%(url)s'>přihlaš</a>."
+msgstr "<a href=\"%(login)s\">Přihlašte se</a> k vašemu účtu."
 
 #: web/templates/user_manual/getting_started.html:33
 msgid "2. Configure <span>Your Device"
@@ -5841,6 +5852,10 @@ msgid ""
 "the following regions: US east coast (us-east), Europe (eu), China mainland "
 "(cn), and Asia-Pacific/Singapore (sg)."
 msgstr ""
+"Vaše zařízení musí být připojeno k jednomu ze stratum serverů zmíněných níže "
+"a musíte mít vyplněny přihlašovací údaje k vašemu účtu. Aktuálně operujeme v "
+"následujících regionech: Východní pobřeží USA (us-east), Evropa (eu), Čína "
+"(cn) a Asie-Pacifik/Singapur (sg)."
 
 #: web/templates/user_manual/getting_started.html:38
 msgctxt "UI"
@@ -5852,28 +5867,28 @@ msgid ""
 "(please, fill you <span class=\"darkred\">user ID</span> and <span class="
 "\"green\">worker name</span>)"
 msgstr ""
+"(vyplňte prosím své <span class=\"darkred\">ID uživatele</span> a <span "
+"class=\"green\">název zařízení</span>)"
 
 #: web/templates/user_manual/getting_started.html:41
 msgid "URL:"
-msgstr ""
+msgstr "URL:"
 
 #: web/templates/user_manual/getting_started.html:42
-#, fuzzy
 msgid "user name:"
-msgstr "Uživatel"
+msgstr "uživatelské jméno:"
 
 #: web/templates/user_manual/getting_started.html:42
 msgid "workerName"
-msgstr ""
+msgstr "jménozařízení"
 
 #: web/templates/user_manual/getting_started.html:43
-#, fuzzy
 msgid "password:"
-msgstr "Heslo"
+msgstr "heslo:"
 
 #: web/templates/user_manual/getting_started.html:43
 msgid "anything"
-msgstr ""
+msgstr "cokoliv"
 
 #: web/templates/user_manual/getting_started.html:46
 msgid ""
@@ -5881,62 +5896,65 @@ msgid ""
 "present here. If someone tried to connect to our servers with your "
 "credentials, he would be just mining for your benefit."
 msgstr ""
+"Heslo může být libovolný text, protože zde není žádný problém se "
+"zabezpečením. Pokud by se někdo pokusil připojit na naše servery s vašimi "
+"údaji, těžil by ve Váš prospěch."
 
 #: web/templates/user_manual/getting_started.html:48
 msgid ""
 "The servers can be chosen from the following list based on your geographical "
 "location:"
 msgstr ""
+"Vyberte si server z následujícího seznamu v závislosti na vaší geografické "
+"poloze:"
 
 #: web/templates/user_manual/getting_started.html:54
 msgid "Servers Location"
-msgstr ""
+msgstr "Umístění serverů"
 
 #: web/templates/user_manual/getting_started.html:55
-#, fuzzy
 msgid "Address"
 msgstr "Adresa"
 
 #: web/templates/user_manual/getting_started.html:60
-#, fuzzy
 msgid "<strong>USA</strong>, east coast"
-msgstr "<strong>Můj</strong> účet"
+msgstr "<strong>USA</strong>, východní pobřeží"
 
 #: web/templates/user_manual/getting_started.html:64
-#, fuzzy
 msgid "<strong>Europe</strong>"
-msgstr "<strong>Domů</strong>"
+msgstr "<strong>Evropa</strong>"
 
 #: web/templates/user_manual/getting_started.html:68
-#, fuzzy
 msgid "<strong>China</strong>, mainland"
-msgstr "<strong>Kontaktujte</strong> nás"
+msgstr "<strong>Čína</strong>, pevnina"
 
 #: web/templates/user_manual/getting_started.html:72
-#, fuzzy
 msgid "Asia-Pacific/<strong>Singapore</strong>"
-msgstr "<strong>Nastavení</strong>"
+msgstr "Asie-Pacifik/<strong>Singapur</strong>"
 
 #: web/templates/user_manual/getting_started.html:79
 msgid ""
 "When you use some servers based on geo-location, we recommend to always "
 "setup second URL pointing to the base pool address:"
 msgstr ""
+"Když nastavujete servery na základě lokace, doporučujeme si vždy nastavit "
+"základní adresu poolu jako další server:"
 
 #: web/templates/user_manual/getting_started.html:85
-#, fuzzy
 msgid "3. Setup your payout address"
-msgstr "Zamknout výplatní adresu"
+msgstr "3. Nastavte si výplatní adresu"
 
 #: web/templates/user_manual/getting_started.html:87
 msgid ""
 "To collect your reward you have to set a payout address. If you don't have "
 "an address, you need to get a bitcoin wallet first:"
 msgstr ""
+"Pro příjem vašich odměn si musíte nastavit výplatní adresu. Pokud ještě "
+"žádnou adresu nemáte, pořiďte si nejdříve bitcoinovou peněženku:"
 
 #: web/templates/user_manual/getting_started.html:93
 msgid "Additional Information"
-msgstr ""
+msgstr "Dodatečné informace"
 
 #: web/templates/user_manual/getting_started.html:95
 #, python-format
@@ -5962,6 +5980,8 @@ msgid ""
 "Optionally, enable the <a href=\"%(url_2fa)s\">Two-factor-authentication</a> "
 "to protect you from arbitrary change of your wallet."
 msgstr ""
+"Eventuelně si nastavte <a href=\"%(url_2fa)s\">dvoufaktorovou autentizaci</a>"
+", která vás ochrání před náhodnou změnou peněženky."
 
 #: web/templates/user_manual/intro.html:4
 msgctxt "UI"
@@ -5969,15 +5989,16 @@ msgid "Manual Overview"
 msgstr "Přehled manuálu"
 
 #: web/templates/user_manual/intro.html:7
-#, fuzzy
 msgid "Contents of User Manual"
-msgstr "Uživatel"
+msgstr "Obsah uživatelského manuálu"
 
 #: web/templates/user_manual/intro.html:20
 msgid ""
 "A step-by-step guide for creating a new user account and starting to mine "
 "with our pool."
 msgstr ""
+"Podrobný návod jak si vytvořit nový uživatelský účet a začít těžit na našem "
+"poolu."
 
 #: web/templates/user_manual/intro.html:22
 #: web/templates/user_manual/terminology.html:15
@@ -5991,6 +6012,7 @@ msgid ""
 "Most important terms explained. We strongly recommended for each beginner to "
 "read."
 msgstr ""
+"Vysvětlení nejdůležitějších pojmů. Vřele doporučujeme všem začátečníkům."
 
 #: web/templates/user_manual/intro.html:25
 #: web/templates/user_manual/troubleshooting.html:4
@@ -6005,6 +6027,9 @@ msgid ""
 "A summary of most common problems that miners experience. It may provide you "
 "an instant solution to the issue you are currently having."
 msgstr ""
+"Souhrn nejčastějších problémů, se kterými těžař přijde do styku. "
+"Pravděpodobně zde najdete okamžité řešení některých vašich případných "
+"problémů."
 
 #: web/templates/user_manual/intro.html:28
 #: web/templates/user_manual/rewards.html:15
@@ -6019,6 +6044,8 @@ msgid ""
 "practical implications in comparison to some other methods used among mining "
 "pools."
 msgstr ""
+"Jak počítáme vaše odměny? Porozumějte základní matematice a praktickým "
+"důsledkům v porovnání s metodami běžně používanými ostatními pooly."
 
 #: web/templates/user_manual/intro.html:31
 #: web/templates/user_manual/payouts.html:10
@@ -6032,12 +6059,15 @@ msgid ""
 "How do we process reward payouts? What's the difference between expected and "
 "confirmed rewards?"
 msgstr ""
+"Jak probíhají výplaty odměn? Jaký je rozdíl mezi předpokládanou a potvrzenou "
+"odměnou?"
 
 #: web/templates/user_manual/intro.html:35
 msgid ""
 "Explains how to monitor your performance and workers and how to receive "
 "notifications."
 msgstr ""
+"Vysvětluje, jak sledovat výkonnost vašich zařízení a jak dostávat upozornění."
 
 #: web/templates/user_manual/intro.html:37
 #: web/templates/user_manual/mining-proxy.html:10
@@ -6052,6 +6082,8 @@ msgid ""
 "proxy will help you to use the modern Stratum mining protocol provided by "
 "our pool."
 msgstr ""
+"Čtěte, pokud máte zařízení podporující Getwork protokol.  Tato proxy vám "
+"pomůže používat moderní Stratum protokol, který náš pool poskytuje."
 
 #: web/templates/user_manual/intro.html:41
 #: web/templates/user_manual/stratum-protocol.html:7
@@ -6061,7 +6093,7 @@ msgstr "Stratum <span>těžební protokol</span>"
 
 #: web/templates/user_manual/intro.html:42
 msgid "The official documentation of our lightweight bitcoin mining protocol."
-msgstr ""
+msgstr "Oficiální dokumentace moderního protokolu na těžení bitcoinů."
 
 #: web/templates/user_manual/mining-proxy.html:4
 msgctxt "UI"
@@ -6070,7 +6102,7 @@ msgstr "Jak nainstalovat Stratum mining proxy"
 
 #: web/templates/user_manual/mining-proxy.html:12
 msgid "Overview"
-msgstr ""
+msgstr "Přehled"
 
 #: web/templates/user_manual/mining-proxy.html:14
 msgid ""
@@ -6548,14 +6580,16 @@ msgid ""
 "This article brings clarity into the matter of payouts, how they are managed "
 "and what are the possible difficulties. Let's break it down to 4 main parts"
 msgstr ""
+"Tento článek vyjasňuje problematiku výplat, jak jsou zpracovávány a s čím "
+"mohou být potenciálně problémy. Pojďme ho rozdělit do 4 hlavních částí"
 
 #: web/templates/user_manual/payouts.html:15
 msgid "Amount of BTC you can get get"
-msgstr ""
+msgstr "Počet BTC, které můžete dostat"
 
 #: web/templates/user_manual/payouts.html:16
 msgid "Frequency of and routines behind payouts"
-msgstr ""
+msgstr "Frekvence a běžné výplatní operace"
 
 #: web/templates/user_manual/payouts.html:17
 msgid "Fees paid from every payout"
@@ -6563,11 +6597,11 @@ msgstr ""
 
 #: web/templates/user_manual/payouts.html:18
 msgid "Possible difficulties"
-msgstr ""
+msgstr "Možné problémy"
 
 #: web/templates/user_manual/payouts.html:23
 msgid "1. Amount of Bitcoins <span>You Can Get with Your Hashrate.</span>"
-msgstr ""
+msgstr "1. Počet Bitcoinů, <span>které můžete získat s vaším hash rate.</span>"
 
 #: web/templates/user_manual/payouts.html:24
 #, python-format
@@ -6575,6 +6609,8 @@ msgid ""
 "You can get yourself a rough estimation of how much you should earn per "
 "block using the Bitcoin calculator <a href=\"%(url)s\">here</a>"
 msgstr ""
+"Kolik bitcoinů zhruba dostanete za blok si můžete sám spočítat pomocí "
+"Bitcoinové kalkulačky <a href=\"%(url)s\">zde</a>"
 
 #: web/templates/user_manual/payouts.html:25
 msgid ""
@@ -6582,11 +6618,16 @@ msgid ""
 "it by yourself, so here is the formula for <strong>calculationg the "
 "estimated reward per round</strong>:"
 msgstr ""
+"Nicméně vždy je dobré znát pozadí výpočtů a být schopný si je osobně ověřit, "
+"takže zde je vzorec pro <strong>výpočet předpokládané odměny za "
+"kolo</strong>:"
 
 #: web/templates/user_manual/payouts.html:27
 #, python-format
 msgid "reward = (your hashrate/pool hashrate) * (block reward - 2%% pool fee)"
 msgstr ""
+"odměna = (váš hash rate/hash rate poolu) * (odměna za blok - 2%% poplatek "
+"poolu)"
 
 #: web/templates/user_manual/payouts.html:29
 #, python-format
@@ -6595,6 +6636,9 @@ msgid ""
 "round. For more information, learn about our <a href=\"%(rewards)s\">score-"
 "based reward system</a>."
 msgstr ""
+"Berte prosím v potaz, že tento vzorec platí pouze pokud těžíte v průběhu "
+"celého kola. Pro více informací si přečtěte o našem <a href=\"%(rewards)s\">"
+"skórovacím systému odměn</a>."
 
 #: web/templates/user_manual/payouts.html:30
 msgid ""
@@ -6603,6 +6647,10 @@ msgid ""
 "take a look at <strong>stats page</strong>, block reward these days is "
 "<strong>roughtly 25BTC</strong>"
 msgstr ""
+"Když je nalezen blok, považujeme odměnu za <strong>neověřenou</strong>. Pro "
+"zjištění, kolik je aktuální <strong>hash rate poolu</strong>, se prosím "
+"podívejte na <strong>statistiky</strong>, odměna za blok je v tomto období "
+"<strong>zhruba 25BTC</strong>"
 
 #: web/templates/user_manual/payouts.html:33
 msgid "2. Frequency of and Routines <span>Behind Payouts</span>"
@@ -6610,7 +6658,7 @@ msgstr ""
 
 #: web/templates/user_manual/payouts.html:35
 msgid "Time Needed to Confirm <span>Your Reward.</span>"
-msgstr ""
+msgstr "Čas potřebný k potvrzení <span>vaší odměny.</span>"
 
 #: web/templates/user_manual/payouts.html:36
 #, python-format
@@ -6620,6 +6668,10 @@ msgid ""
 "15-16 hours</strong>. You can follow this progress on the <a href=\"%(stats)s"
 "\">stats page</a>"
 msgstr ""
+"Vaše odměna za konkrétní blok je potvrzena <strong>po nalezení dalších 100 "
+"bloků</strong> v Bitcoinové síti. To <strong>většinou trvá 15-16 "
+"hodin</strong>. Vývoj můžete sledovat na stránce <a href=\"%(stats)s\""
+">statistik</a>"
 
 #: web/templates/user_manual/payouts.html:38
 msgid ""
@@ -6628,10 +6680,14 @@ msgid ""
 "<strong>accepted by bitcoin network</strong>. This is generally assumed "
 "after 100 confirmations."
 msgstr ""
+"Důvodem pro takové chování je, že software starající se o správu poolu si "
+"musí být jist, že <strong>vytěžený blok je platný</strong> a <strong>byl "
+"přijat bitcoinovou sítí</strong>. Za takový je všeobecně považován po 100 "
+"potvrzeních."
 
 #: web/templates/user_manual/payouts.html:40
 msgid "Sending Confirmed Reward <span>to Your Wallet.</span>"
-msgstr ""
+msgstr "Posílání potvrzených odměn <span>do vaší peněženky.</span>"
 
 #: web/templates/user_manual/payouts.html:42
 msgid ""
@@ -6640,12 +6696,19 @@ msgid ""
 "strong>). Pool checks for this and sends out payments automatically every "
 "hour."
 msgstr ""
+"Vaše potvrzená odměna je vám odeslána jakmile <strong>překročí stanovený "
+"limit pro výplatu</strong> (který může být nastaven až na <strong>0.001 "
+"BTC</strong>). Pool toto kontroluje a výplaty odesílá automaticky každou "
+"hodinu."
 
 #: web/templates/user_manual/payouts.html:44
 msgid ""
 "For technical reasons like paying excessive transaction fees and flooding "
 "bitcoin network, we do not process payouts below the mentioned value."
 msgstr ""
+"Z technických důvodů (jako například placení nadměrných poplatků nebo "
+"zahlcování bitcoinové sítě) neumožňujeme vyplácení částek pod zmíněnou "
+"hodnotou."
 
 #: web/templates/user_manual/payouts.html:48
 msgid "3. Fees Paid <span>from Every Payout"
@@ -6665,15 +6728,17 @@ msgstr ""
 
 #: web/templates/user_manual/payouts.html:53
 msgid "4. Possible Difficulties"
-msgstr ""
+msgstr "4. Možné problémy"
 
 #: web/templates/user_manual/payouts.html:55
 msgid "Delay in Payout."
-msgstr ""
+msgstr "Zpoždění výplaty."
 
 #: web/templates/user_manual/payouts.html:56
 msgid "For security reason pool uses two wallets – Hot and Cold."
 msgstr ""
+"Z bezbečnostních důvodů pool používá dvě peněženky - Online (Hot) a Offline "
+"(Cold)."
 
 #: web/templates/user_manual/payouts.html:57
 msgid ""
@@ -6685,6 +6750,15 @@ msgid ""
 "and only very limited number of people has access to the cold wallet, it can "
 "introduce a few hours delay in sending bitcoins to user's wallet."
 msgstr ""
+"Prostředky připravené k okamžitému použití jsou uchovávány v <strong>Online "
+"peněžence</strong>. Tato peněženka má z bezpečnostních důvodů <strong>"
+"relativně nízký zůstatek</strong> a když se vyprázdní, poolový administrátor "
+"musí <strong>přesunout prostředky z offline úložiště</strong> – vysoce "
+"zabezpečeného počítače, který není připojen k sítí, a na kterém je uložena "
+"většina poolových bitcoinů. Tento proces nemůže být zautomatizován a přístup "
+"k tomuto počítači má velice omezený počet lidí, proto může výjimečně "
+"vzniknout několikahodinová prodleva ve vyplácení peněz do uživatelovy "
+"peněženky."
 
 #: web/templates/user_manual/rewards.html:4
 msgctxt "UI"
@@ -6697,6 +6771,9 @@ msgid ""
 "pool service however needs some method to fairly distribute the value of a "
 "found block among pool users and pay them accordingly."
 msgstr ""
+"Nalezení Bitcoinového bloku je celkem vzácná, náhodně se vyskytující "
+"událost. Naše služba nicméně potřebuje nějakou metodu férového rozdělění "
+"odměn za nalezený blok mezi všechny těžaře a následného vyplácení."
 
 #: web/templates/user_manual/rewards.html:21
 msgid ""
@@ -6704,6 +6781,10 @@ msgid ""
 "a reward proportional to his/her participation in the pool's mining power. "
 "Bigger miners receive proportionally more than smaller miners."
 msgstr ""
+"Náš systém odměn zajišťuje, že když je nalezen nový blok, uživatel obdrží "
+"část odměny proporčně adekvátní poměru jeho výpočetního výkonu k výpočetnímu "
+"výkonu poolu. Uživatelé se silnějšími zařízeními dostanou proporčně víc než "
+"uživatelé se slabšími zařízeními."
 
 #: web/templates/user_manual/rewards.html:26
 #, python-format
@@ -6717,6 +6798,14 @@ msgid ""
 "calculation more stable and fair (the exact mathematical definition is "
 "provided lower)."
 msgstr ""
+"Uživatelův podíl na výpočetní síle poolu je vyměřen <strong>skórovacím hash "
+"rate</strong>. Ten odráží objem práce v uplynulých hodinách. Skórovací hash "
+"rate můžete chápat jako<em>exponenciální klouzavý průměr (EMA anglicky)</em> "
+"hash rate všech uživatelových zařízení připojených k poolu (podívejte se na <"
+"a href=\"%(url)s\" target=\"_blank\">%(globe)s EMA na wikipedii</a>). "
+"Průměrování vyhlazuje krátké propady nebo nárusty hash rate a umožňuje "
+"stabilnější a férovější výpočty odměn (přesná matematická definice je "
+"poskytnuta níže)."
 
 #: web/templates/user_manual/rewards.html:29
 #, python-format
@@ -6725,12 +6814,16 @@ msgid ""
 "1%% of the block rewards. If you own 0.031%% of hash rate, you receive "
 "0.031%% of rewards from the block. It is that simple."
 msgstr ""
+"Například když je váš skórovací hash rate je 1%% celého poolu, dostanete 1%% "
+"odměny z bloku. Pokud vlastníte 0.031%% hash rate, dostanete 0.031%% odměn z "
+"bloku. Tak jednoduché to je."
 
 #: web/templates/user_manual/rewards.html:32
 msgid ""
 "The pool calculates your reward for <strong>every found block</strong> as "
 "follows:"
 msgstr ""
+"Pool vypočítává odměny za <strong>naždý nazelezený blok</strong> následovně:"
 
 #: web/templates/user_manual/rewards.html:37
 #, python-format
@@ -6739,6 +6832,9 @@ msgid ""
 "contained in the block (you can see block values <a href=\"%(blocks)s"
 "\">here</a>)."
 msgstr ""
+"<em>Hodnota bloku</em> je typicky 25 BTC + transakční poplatky z "
+"bitcoinových transakcí provedených v průběhu bloku (hodnoty bloků najdete <a "
+"href=\"%(blocks)s\">zde</a>)."
 
 #: web/templates/user_manual/rewards.html:38
 msgid ""
@@ -6746,11 +6842,14 @@ msgid ""
 "time when a particular block was found. They reflect some mining history "
 "before the actual block finding."
 msgstr ""
+"<em>Skórovací hash rate</em> použité pro výpočet jsou hash rate z času "
+"nalezení daného bloku. Odráží část historie těžení před vlastním nalezením "
+"bloku."
 
 #: web/templates/user_manual/rewards.html:39
 #, python-format
 msgid "A <em>pool fee</em> is currently 2%%."
-msgstr ""
+msgstr "<em>Poplatek poolu</em> je aktuálně 2%%."
 
 #: web/templates/user_manual/rewards.html:43
 msgid ""
@@ -6758,6 +6857,9 @@ msgid ""
 "declines at time when you start or stop mining (effective hash rate is blue, "
 "scoring hash rate is gold):"
 msgstr ""
+"Graf níže ukazuje, jak <strong>skórovací hash rate</strong> stoupá a klesá, "
+"když začnete nebo přestanete těžit (efektivní hash rate je modrý, skórovací "
+"hash rate je zlatý):"
 
 #: web/templates/user_manual/rewards.html:57
 msgid ""
@@ -6765,46 +6867,59 @@ msgid ""
 "reason is that miner's effective hash rate changes in time (if you refresh "
 "the page a new random sequence will be generated to give you the idea):"
 msgstr ""
+"Při použití reálného těžebního zařízení by graf vypadal spíš jako ten níž. "
+"Důvodem je, že efektivní hash rate zařízení se v čase mění (pro představu "
+"zkuste několikrát obnovit tuto stránku, vždy se vygeneruje náhodná nová "
+"sekvence):"
 
 #: web/templates/user_manual/rewards.html:70
-#, fuzzy
 msgid "Important Facts <span>about the Method</span>"
-msgstr "Kontaktujte <span>nás!</span>"
+msgstr "Důležitá fakta <span>o této metodě</span>"
 
 #: web/templates/user_manual/rewards.html:73
 msgid ""
 "Important properties of using <em>scoring hash rate</em> for rewards "
 "calculation:"
 msgstr ""
+"Důležité vlastnosti používání <em>skórovacího hash rate</em> pro výpočet "
+"odměn:"
 
 #: web/templates/user_manual/rewards.html:77
 msgid ""
 "You can literally see and understand at any instant how the hash rate is "
 "changing and what reward you can expect."
 msgstr ""
+"Doslova v každém okamžiku můžete vidět, jak se hash rate mění, a odvodit si, "
+"jakou odměnu můžete očekávat."
 
 #: web/templates/user_manual/rewards.html:78
 msgid ""
 "Rewards are fully <strong>independent</strong> from rounds. The only "
 "important thing is the scoring hash rate."
 msgstr ""
+"Odměny jsou naprosto <strong>nezávislé</strong> na kolech. Jediná podstatná "
+"věc je skórovací hash rate."
 
 #: web/templates/user_manual/rewards.html:79
 msgid ""
 "When you start mining, it takes roughly 1.5 hour until it reaches your "
 "actual hash rate and then it becomes stable."
 msgstr ""
+"Když začnete těžit, trvá mu zhruba 1.5 hodiny se dostat na váš aktuální hash "
+"rate a pak se stabilizuje."
 
 #: web/templates/user_manual/rewards.html:80
 msgid ""
 "it is stable during the time when your miners are connected and working."
-msgstr ""
+msgstr "Po dobu, kdy jsou vaše zařízení připojena a těží, je stabilní."
 
 #: web/templates/user_manual/rewards.html:81
 msgid ""
 "When you stop mining the scoring hash rate starts to fall down. It takes "
 "again cca 1.5 hour until it is roughly zero."
 msgstr ""
+"Když přestanete těžit, skórovací hash rate začne klesat. Opět trvá cca 1.5 "
+"hodiny, než se dostane zhruba na nulu."
 
 #: web/templates/user_manual/rewards.html:82
 msgid ""
@@ -6815,11 +6930,16 @@ msgid ""
 "disconnects, the opposite will happen. Statistically, there is no difference "
 "for you in longer term."
 msgstr ""
+"Když se k poolu připojí nová zařízení, váš skórovací hash rate zůstane "
+"stejný, ale hash rate poolu přiměřeně vzroste. Výsledkem toho bude, že "
+"obdržíte menší část odměny za blok, ale měl byste ji obdržet častěji, "
+"protože pool je silnější a má větší šanci nalézt blok. Když se některá "
+"zařízení odpojí, stane se přesný opak. Statisticky v tom pro vás dlouhodobě "
+"není žádný rozdíl."
 
 #: web/templates/user_manual/rewards.html:85
-#, fuzzy
 msgid "The Math <span>Behind the Scenes</span>"
-msgstr "Založení účtu"
+msgstr "Matematika <span> v pozadí</span>"
 
 #: web/templates/user_manual/rewards.html:87
 msgid ""
@@ -6827,11 +6947,13 @@ msgid ""
 "rewards and other values presented by the pool are computed. Gradually, we "
 "will show more interesting stuff."
 msgstr ""
+"Začněme se základními koncepty a definicemi, abychom popsali, jak přesně "
+"jsou výplaty a další hodnoty poolem počítány. Postupně se dostaneme k čím "
+"dál zajímavějším věcem."
 
 #: web/templates/user_manual/rewards.html:90
-#, fuzzy
 msgid "Shares"
-msgstr "Poslední řešení v"
+msgstr "Řešení"
 
 #: web/templates/user_manual/rewards.html:92
 #, python-format
@@ -6844,12 +6966,20 @@ msgid ""
 "work) with difficulty %(d)s is submitted by a miner then %(d)s shares is "
 "accounted by the pool."
 msgstr ""
+"Když se zařízení připojí k poolu, obdrží příklad k vypočtení - počítá "
+"hodnoty hash se specifickými vlastnostmi. Hashe s odpovídajícímí vlastnostmi "
+"jsou odevzdány zpět poolu a použity jako <strong>důkaz odvedené "
+"práce</strong>. Objem odvedené práce je registrován v jednotkách zvaných "
+"<strong>řešení</strong>. Pokud je odevzdán hash (důkaz odvedené práce) se "
+"složitostí %(d)s, tak je to poolem započítáno jako %(d)s řešení."
 
 #: web/templates/user_manual/rewards.html:95
 msgid ""
 "Whenever a new share is registered by the system a timestamp of the event is "
 "recorded and used for share's valuation later."
 msgstr ""
+"Kdykoliv je nové řešení odevzdáno poolu, je tato událost označena časovým "
+"razítkem a použita pro pozdější určení hodnoty řešení."
 
 #: web/templates/user_manual/rewards.html:98
 #, python-format
@@ -6858,10 +6988,13 @@ msgid ""
 "separately as a proof of work with difficulty 1. This approach leads "
 "numerically to the same results, however, the formulas are less complex."
 msgstr ""
+"Pro účel tohoto textu bereme každé řešení %(s)s, jako kdyby byla odevzdána "
+"odděleně se složitostí 1. Tento přístup vede početně ke stejným výsledkům, "
+"jen vzorce jsou méně složité."
 
 #: web/templates/user_manual/rewards.html:101
 msgid "Time handling"
-msgstr ""
+msgstr "Význam času"
 
 #: web/templates/user_manual/rewards.html:103
 #, python-format
@@ -6874,11 +7007,16 @@ msgid ""
 "in time %(t_0)s, written as %(time_delta)s, is a key part of shares "
 "valuation."
 msgstr ""
+"Řekněme, že %(tau)s je funkce, která nám oznámí čas odevzdání řešení %(s)s ("
+"nebo kdy byl nalezen blok %(b)s). Čas je měřen v sekundách od určitého "
+"pevného bodu v čase (například začátku této služby). Proměnná času je "
+"použita pouze pro měření, kolik času uplynulo mezi dvěma událostmi. "
+"Například doba mezi odevzdáním řešení %(s)s a nějakým dalším bodem v čase "
+"%(t_0)s, zapsána jako %(time_delta)s, je klíčem k určení hodnoty řešení."
 
 #: web/templates/user_manual/rewards.html:106
-#, fuzzy
 msgid "Shares valuation<span> - score</span>"
-msgstr "Vývojářský <span>koutek</span>"
+msgstr "Ocenění řešení<span> - skóre</span>"
 
 #: web/templates/user_manual/rewards.html:108
 msgid ""
@@ -6887,6 +7025,10 @@ msgid ""
 "with the pool steadily, without switching among pools. Once user disconnects "
 "from the pool, his shares start to lose value."
 msgstr ""
+"Hodnota každého řešení (pro výpočet odměn) se v průběhu času snižuje - "
+"novější řešení mají vyšší hodnotu než starší řešení. To uživatele motivuje "
+"těžit na poolu stabilně, bez přeskakování mezi pooly. Jakmile se uživatel od "
+"poolu odpojí, jím odevzdaná řešení začnou ztrácet na hodnotě."
 
 #: web/templates/user_manual/rewards.html:111
 #, python-format
@@ -6904,6 +7046,10 @@ msgid ""
 "greater %(lambda)s the slower old shares loose their value in comparison to "
 "new shares. Currently, the parameter %(lambda)s is set to 1200."
 msgstr ""
+"kde %(lambda)s je bezrozměrný <strong>parametr systému</strong>. %(lambda)s "
+"definuje, jak rychle skóre přiřazené k řešení klesá v čase. Čím větší "
+"%(lambda)s, tím pomaleji stará řešení ztrácejí hodnotu v porovnání s novými "
+"řešeními. Aktuálně je tento %(lambda)s parametr nastaven na 1200."
 
 #: web/templates/user_manual/rewards.html:119
 #, python-format
@@ -6915,6 +7061,12 @@ msgid ""
 "subtle but has quite significant consequences, because it fully eliminates a "
 "concept of rounds from rewards calculation.)"
 msgstr ""
+"(Pro uživatele, kteří znali Slushův skórovací systém zveřejněný před lety, "
+"je jedním z hlavních rozdílů, že skóre není vázáno na začátek nového kola, "
+"ale je definováno dynamicky vztahem k určitému bodu v čase %(t_0)s, "
+"například k momentu, kdy jste se podíval na svůj přehled. Změna je to "
+"drobná, má ale podstatný vliv, protože z počítání odměn zcela eliminuje "
+"koncept kol.)"
 
 #: web/templates/user_manual/rewards.html:122
 #, python-format
@@ -6923,6 +7075,9 @@ msgid ""
 "be a set of <em>all valid shares</em> submitted by user %(u)s until time "
 "%(t_0)s. Written more formally the following holds"
 msgstr ""
+"Ale pojďme dál. Řekněme, že %(Us)s reprezentuje <em>všechny uživatele "
+"poolu</em> a %(set)s reprezentuje <em>všechna platná řešení</em> odevzdaná "
+"uživatelem %(u)s do doby %(t_0)s. Formálněji zapsáno to znamená"
 
 #: web/templates/user_manual/rewards.html:126
 #, python-format
@@ -6930,12 +7085,16 @@ msgid ""
 "Then score for some user %(u)s at time %(t_0)s is calculated as total score "
 "of all his/her shares from time %(t_0)s, submitted at %(t_0)s or earlier:"
 msgstr ""
+"Skóre pro uživatele %(u)s v čase %(t_0)s je počítáno jako celkové skóre "
+"všech jeho řešení v čase %(t_0)s, odevzdaných v %(t_0)s nebo dříve:"
 
 #: web/templates/user_manual/rewards.html:131
 msgid ""
 "Technically, the pool computes score for each worker separately but the math "
 "is analogous."
 msgstr ""
+"Technicky, pool počítá skóre pro každé zařízení zvlášť, ale matematika je "
+"analogická."
 
 #: web/templates/user_manual/rewards.html:134
 #, python-format
@@ -6943,10 +7102,12 @@ msgid ""
 "Score of the whole pool %(c)s is a sum of score of all users in the given "
 "time together:"
 msgstr ""
+"Skóre celého poolu %(c)s je součtem skóre všech uživatelů dohromady v daném "
+"čase:"
 
 #: web/templates/user_manual/rewards.html:138
 msgid "Rewards Calculation"
-msgstr ""
+msgstr "Počítání odměn"
 
 #: web/templates/user_manual/rewards.html:140
 #, python-format
@@ -6955,16 +7116,21 @@ msgid ""
 "- %(v_b)s, the pool can calculate reward %(R_u)s for each user %(u)s as "
 "follows (%(f)s stands for a pool fee):"
 msgstr ""
+"Když je blok %(b)s nalezen v čase %(tau_b)s a jeho hodnota je konečně známa -"
+" %(v_b)s, pool může spočítat odměnu %(R_u)s pro každého uživatele %(u)s "
+"následovně (%(f)s znamená poplatek poolu):"
 
 #: web/templates/user_manual/rewards.html:144
 msgid ""
 "For those who really love math equations the full rewards formula for "
 "<strong>continuous scoring system</strong> is:"
 msgstr ""
+"Pro opravdové matematické nadšence tu máme kompletní znění vzorce pro "
+"<strong>průběžný skórovací systém</strong>:"
 
 #: web/templates/user_manual/rewards.html:149
 msgid "Other values"
-msgstr ""
+msgstr "Ostatní hodnoty"
 
 #: web/templates/user_manual/rewards.html:151
 #, python-format
@@ -6975,11 +7141,16 @@ msgid ""
 "was found at that time but instead of block value (which is not known yet) "
 "we use 25 BTC:"
 msgstr ""
+"Když se podíváte na svou přehledovou stránku, najdete další hodnoty, které "
+"pro vás pool vypočítal. Ty jsou definovány následovně. <strong>Předpokládaná "
+"odměna</strong> pro uživatele %(u)s a čas %(t_0)s je počítána přesně jako "
+"kdyby byl nový blok nalezen v daný čas, ale jako hodnotu bloku (která ještě "
+"není známa) používáme 25 BTC:"
 
 #: web/templates/user_manual/rewards.html:156
 #, python-format
 msgid "<strong>User's contribution</strong> to the pool (in %%) is defined as"
-msgstr ""
+msgstr "<strong>Uživatelův příspěvek</strong> poolu (v %%) je definován jako"
 
 #: web/templates/user_manual/rewards.html:161
 #, python-format
@@ -6988,6 +7159,9 @@ msgid ""
 "time %(t_0)s is internally not calculated by hash rate averaging, but "
 "directly from shares using scoring function (result is in h/s):"
 msgstr ""
+"A konečně <strong>skórovací hash rate</strong> %(H)s pro uživatele %(u)s a "
+"čas %(t_0)s se interně nepočítá průměrováním hash rate, ale přímo z řešení "
+"použitím skórovací funkce (výsledek v h/s):"
 
 #: web/templates/user_manual/rewards.html:166
 #, python-format
@@ -6995,6 +7169,8 @@ msgid ""
 "Pool's scoring hash rate %(H)s is not surprisingly defined as all user "
 "scoring hash rates together:"
 msgstr ""
+"Skórovací hash rate poolu %(H)s není překvapivě definován jako skórovací "
+"hash rate všech uživatelů dohromady:"
 
 #: web/templates/user_manual/terminology.html:4
 msgctxt "UI"
@@ -7003,7 +7179,7 @@ msgstr "Poolová terminologie"
 
 #: web/templates/user_manual/terminology.html:17
 msgid "Round"
-msgstr ""
+msgstr "Kolo"
 
 #: web/templates/user_manual/terminology.html:18
 msgid ""
@@ -7011,10 +7187,13 @@ msgid ""
 "from few seconds to many hours, depending on <a href=\"#luck\">pool's luck.</"
 "a>"
 msgstr ""
+"Kolo je na poolu doba mezi nalezením dvou bloků. Může trvat mezi pár "
+"vteřinami a několika hodinami v závislosti na <a href=\"#luck\">poolovém "
+"štěstí.</a>"
 
 #: web/templates/user_manual/terminology.html:21
 msgid "Miner"
-msgstr ""
+msgstr "Fyzické těžící zařízení (miner)"
 
 #: web/templates/user_manual/terminology.html:22
 msgid ""
@@ -7023,23 +7202,30 @@ msgid ""
 "Bitcoin network (the hash rate of all miners) is so high nowadays, that "
 "using such a miner would not even pay back its costs."
 msgstr ""
+"Miner je vaše fyzické těžící zařízení. V minulosti bylo možné těžit na "
+"grafických kartách nebo dokonce na CPU. Nicméně výkonnost bitcoinové sítě ("
+"hash rate všech zařízení) je dnes tak vysoká, že používání takového zařízení "
+"nevydělá ani na náklady spojené s těžbou."
 
 #: web/templates/user_manual/terminology.html:23
 msgid ""
 "ASIC based miners offer a significantly higher <a href=\"#hashrate\">Hash "
 "Rate</a> at a lower power consumption."
 msgstr ""
+"Zařízení založená na technologii ASIC nabízí výrazně vyšší <a href=\"#"
+"hashrate\">hash rate</a> při nižší spotřebě energií."
 
 #: web/templates/user_manual/terminology.html:26
-#, fuzzy
 msgid "Worker"
-msgstr "Zařízení"
+msgstr "Jméno těžícího zařízení (worker)"
 
 #: web/templates/user_manual/terminology.html:27
 msgid ""
 "Worker is a name for your mining device that you use as a login for your "
 "mining software."
 msgstr ""
+"Worker je jméno vašeho těžícího zařízení, které používáte jako přihlašovací "
+"údaj do vašeho těžebního software."
 
 #: web/templates/user_manual/terminology.html:28
 msgid ""
@@ -7059,16 +7245,19 @@ msgid ""
 "your hash rate, however, you will not be able to determine which device it "
 "is."
 msgstr ""
+"Můžete také provozovat všechna zařízení pod <strong>jedním názvem</strong> a "
+"všechno bude v pořádku. Problém u tohoto přístupu je, že když jedno z vašich "
+"zařízení nebude fungovat správně, uvidíte pouze pokles hash rate, ale už "
+"nezjistíte, o které zařízení konkrétně se jedná."
 
 #: web/templates/user_manual/terminology.html:32
-#, fuzzy
 msgid "Hash Rate"
-msgstr "Hash Rate"
+msgstr "Hash rate"
 
 #: web/templates/user_manual/terminology.html:33
 msgid ""
 "<strong>Hash rate</strong> is the number of hashes generated per second."
-msgstr ""
+msgstr "<strong>Hash rate</strong> je počet hashů vygenerovaných za vteřinu."
 
 #: web/templates/user_manual/terminology.html:35
 msgid ""
@@ -7076,6 +7265,9 @@ msgid ""
 "strong>in our statistics. However, you might also come across the “hash rate "
 "of the pool” or the “hash rate of the entire Bitcoin network”."
 msgstr ""
+"Většinou budete sledovat <strong>hash rate vašeho těžícího zařízení</strong> "
+"ve vašich statistikách. Můžete ale také narazit na “hash rate poolu” nebo “"
+"hash rate celé bitcoinové sítě”."
 
 #: web/templates/user_manual/terminology.html:36
 msgid ""
@@ -7084,11 +7276,13 @@ msgid ""
 "shown in our system. It is important for you to understand the difference "
 "between these two."
 msgstr ""
+"Je rozdíl mezi <strong>nominálním hash rate</strong> zapsaným v materiálech "
+"o vašem zařízení a <strong>efektivním hash rate</strong> zobrazeným v našem "
+"systému. Je také důležité, abyste rozuměl rozdílu mezi nimi."
 
 #: web/templates/user_manual/terminology.html:38
-#, fuzzy
 msgid "Nominal <span>Hash Rate</span>"
-msgstr "Založení účtu"
+msgstr "Nominální <span>hash rate</span>"
 
 #: web/templates/user_manual/terminology.html:39
 msgid ""
@@ -7096,11 +7290,12 @@ msgid ""
 "generating 1 billion hashes per second - no matter if they match any "
 "criteria."
 msgstr ""
+"Nominální hash rate 1 GH/s znamená, že vaše zařízení je schopno generovat 1 "
+"miliardu hashů za vteřinu - bez ohledu na to, jestli splňují nějaká kriteria."
 
 #: web/templates/user_manual/terminology.html:41
-#, fuzzy
 msgid "Effective <span>Hash Rate</span>"
-msgstr "Založení účtu"
+msgstr "Efektivní <span>hash rate</span>"
 
 #: web/templates/user_manual/terminology.html:42
 msgid ""
@@ -7109,12 +7304,18 @@ msgid ""
 "generated hashes by your devices get sent. They must fit certain criteria "
 "assigned by the pool (see: <a href=\"#share\">Shares</a>)."
 msgstr ""
+"Efektivní hash rate je hash rate <strong>počítaný z hashů odevzdaných vaším "
+"zařízením poolu</strong>. Pouze malá část z hashů generovaných vaším "
+"zařízením je ve skutečnosti odeslána, Hashe musí splnit určitá kriteria "
+"přidělená poolem (podívejte se na: <a href=\"#share\">%Řešení</a>)."
 
 #: web/templates/user_manual/terminology.html:43
 msgid ""
 "Most of the times, the effective hash rate will be somewhat lower than the "
 "nominal hash rate."
 msgstr ""
+"Po většinu času bude efektivní hash rate o něco menší než nominální hash "
+"rate."
 
 #: web/templates/user_manual/terminology.html:44
 msgid ""
@@ -7123,17 +7324,22 @@ msgid ""
 "experienced connection issues, then your effective hash rate will be lower "
 "than the nominal hash rate in that period of time."
 msgstr ""
+"Vás efektivní hash rate záleží na štěstí vašeho těžícího zařízení a kvalitě "
+"(stabilitě) vašeho připojení k poolovému serveru. Pokud jste zaznamenal "
+"nějaké potíže s připojením, bude váš efektivní hash rate v daném období "
+"nižší než nominální hash rate."
 
 #: web/templates/user_manual/terminology.html:45
 msgid ""
 "Occasionally, you can be more lucky and find more valid hashes than usual. "
 "That is what gives you a slightly higher effective hash rate."
 msgstr ""
+"Čas od času můžete mít více štěstí a najít více platných řešení než obvykle. "
+"To naopak způsobí trochu vyšší efektivní hash rate."
 
 #: web/templates/user_manual/terminology.html:47
-#, fuzzy
 msgid "Scoring <span>Hash Rate</span>"
-msgstr "Založení účtu"
+msgstr "Skórovací <span>hash rate</span>"
 
 #: web/templates/user_manual/terminology.html:49
 #, python-format
@@ -7142,16 +7348,20 @@ msgid ""
 "rewards calculation. Please, see <a href=\"%(rewards_manual)s\">Reward "
 "System</a> for the explanation."
 msgstr ""
+"Skórovací hash rate je hodnota odvozená od efektivního hash rate použitá pro "
+"výpočet odměn. Podívejte se prosím na <a href=\"%(rewards_manual)s\">systém "
+"odměn</a> pro více informací."
 
 #: web/templates/user_manual/terminology.html:52
-#, fuzzy
 msgid "Share - <span>Proof of Work</span>"
-msgstr "Hash Rate <span>Podle Lokace</span>"
+msgstr "Řešení - <span>důkaz odvedené práce</span>"
 
 #: web/templates/user_manual/terminology.html:53
 msgid ""
 "<strong>Share</strong> is a unit which pool uses for computing mining work."
 msgstr ""
+"<strong>Řešení</strong> je jednotka použitá pro výpočet objemu práce na "
+"poolu."
 
 #: web/templates/user_manual/terminology.html:55
 msgid ""
@@ -7163,36 +7373,51 @@ msgid ""
 "<strong>shares</strong>. If a hash (proof of work) with difficulty \\(d\\) "
 "is submitted by a miner then \\(d\\) shares is counted by the pool."
 msgstr ""
+"Když se zařízení připojí k poolu, obdrží příklad k vypočtení - počítá "
+"hodnoty hash se specifickými vlastnostmi (musí být nižší než limit odvozený "
+"ze složitosti). Hashe s odpovídajícímí vlastnostmi jsou odevzdány zpět poolu "
+"a použity jako <strong>důkaz odvedené práce</strong>. Objem odvedené práce "
+"je registrován v jednotkách zvaných <strong>řešení</strong>. Pokud je "
+"odevzdán hash (důkaz odvedené práce) se složitostí \\(d\\), tak je to poolem "
+"započítáno jako \\(d\\) řešení."
 
 #: web/templates/user_manual/terminology.html:57
 msgid "To put it as simple as it could be:"
-msgstr ""
+msgstr "Vezměme to opravdu jednoduše:"
 
 #: web/templates/user_manual/terminology.html:59
 msgid "1 share = 1 proof of work on difficulty 1"
-msgstr ""
+msgstr "1 řešení = 1 důkaz odvedené práce se složitostí 1"
 
 #: web/templates/user_manual/terminology.html:60
 msgid ""
 "5 shares = 1 proof of work on difficulty 5 (or 5 proofs of work on "
 "difficulty 1)"
 msgstr ""
+"5 řešení = 1 důkaz odvedené práce se složitostí 5 (nebo 5 důkazů odvedené "
+"práce se složitostí 1)"
 
 #: web/templates/user_manual/terminology.html:61
 msgid ""
 "100 shares = 10 proofs of work on difficulty 10 (or .. you can see the "
 "pattern)"
 msgstr ""
+"100 řešení = 10 důkazů odvedené práce se složitostí 10 (nebo.. už vidíte ten "
+"vzorec)"
 
 #: web/templates/user_manual/terminology.html:65
 msgid "Vardiff <span>(Variable Difficulty Algorithm)</span>"
 msgstr ""
+"Vardiff <span>(Variable Difficulty Algorithm - Algoritmus promenlive "
+"slozitosti)</span>"
 
 #: web/templates/user_manual/terminology.html:66
 msgid ""
 "(Please, have a look at how <a href=\"#share\">shares</a> are being produced "
 "before reading on.)"
 msgstr ""
+"(Před pokračováním ve čtení se prosím nejdřív podívejte jak jsou vytvářena <"
+"a href=\"#share\">řešení</a>.)"
 
 #: web/templates/user_manual/terminology.html:67
 msgid ""
@@ -7202,6 +7427,11 @@ msgid ""
 "to stronger miners (higher difficulty) and easier tasks to weaker so that an "
 "average communication frequency is roughly the same for all miners."
 msgstr ""
+"Mezi jednotlivými zařízeními jsou velké rozdíly ve výpočetní síle. Pro lepší "
+"optimalizaci síťového vytížení mezi vašimi zařízeními a poolem jsme vyvinuli "
+"algortimus proměnlivé složitosti (též Vardiff). Ten přiděluje složitější "
+"úkony silnějším zařízením a jednodušší úkony těm slabším tak, aby průměrná "
+"frekvence komunikace byla zhruba stejná pro všechna zařízení."
 
 #: web/templates/user_manual/terminology.html:68
 msgid ""
@@ -7211,12 +7441,19 @@ msgid ""
 "ideal frequency that allows a balanced data load to our servers and correct "
 "measurements of your miner's hash rate."
 msgstr ""
+"<strong>Vardiff</strong> přiděluje každému zařízení přesně tolik práce, aby "
+"bylo schopno odesílat řešení zpět poolu <strong>16 až 20krát za "
+"minutu</strong>. Proč 16-20krát? Podle našich měření je to ideální "
+"frekvence, která umožňuje zatěžovat naše servery rovnoměrně a přitom jsme "
+"schopni správně změřit hash rate vašeho zařízení."
 
 #: web/templates/user_manual/terminology.html:69
 msgid ""
 "If your miner is too fast, Vardiff increases the difficulty for its work and "
 "when too slow, the difficulty decreases."
 msgstr ""
+"Pokud je vaše zařízení moc silné, Vardiff zvýší složitost jeho práce, a "
+"pokud je slabé, složitost se sníží."
 
 #: web/templates/user_manual/terminology.html:70
 msgid ""
@@ -7225,6 +7462,9 @@ msgid ""
 "submission. Hence you will not lose any share and the network does not get "
 "jammed."
 msgstr ""
+"Například složitost 20 znamená, že najdete 20krát méně hashů odpovídajících "
+"zadání, ale bude vám započítáno 20 řešení při každém odevzdání. Tím "
+"nepřijdete o žádná řešení a síť nebude zbytečně zahlcována."
 
 #: web/templates/user_manual/terminology.html:74
 msgid ""
@@ -7252,20 +7492,19 @@ msgstr ""
 
 #: web/templates/user_manual/terminology.html:77
 msgid "Mining software does not accept difficulty assigned by our pool"
-msgstr ""
+msgstr "Těžební software nechce přijmout složitost přidělenou poolem"
 
 #: web/templates/user_manual/terminology.html:78
 msgid "Internet connection is not stable"
-msgstr ""
+msgstr "Připojení k internetu není stabilní"
 
 #: web/templates/user_manual/terminology.html:79
 msgid "Your mining device might have a hardware problem (e.g. overheating)"
-msgstr ""
+msgstr "Vaše těžící zařízení může mít problém s hardware (např. přehřívání)"
 
 #: web/templates/user_manual/terminology.html:82
-#, fuzzy
 msgid "How to set the alert limit"
-msgstr "Autodetekce očekávaného hash rate"
+msgstr "Jak nastavit výstražný limit"
 
 #: web/templates/user_manual/terminology.html:84
 #, python-format
@@ -7274,10 +7513,14 @@ msgid ""
 "is done once in 5 minutes and the value is set to 70%% of hash rate average "
 "from the last 24hours."
 msgstr ""
+"Nechte pool vám automaticky vypočítat <strong>výstražný limit</strong>. Děje "
+"se to jednou za 5 minut a hodnota je nastavena na 70%% z průměrného hash "
+"rate za posledních 24 hodin."
 
 #: web/templates/user_manual/terminology.html:86
 msgid "Set it manually to any value from 0.5 Gh/s to e.g. 100 Ph/s or more."
 msgstr ""
+"Nastavte si ho ručně na cokoliv od 0.5 Gh/s až po např. 100 Ph/s nebo víc."
 
 #: web/templates/user_manual/terminology.html:87
 #, python-format
@@ -7286,11 +7529,14 @@ msgid ""
 "rate.<br>E.g. you expect your miner hash rate to be 1 Ths/s, the "
 "<strong>Alert Limit</strong> would be set to 700 Ghs/s."
 msgstr ""
+"Doporučujeme si ho nastavit na 30%% pod hodnotu vašeho očekávaného "
+"efektivního hash rate.<br>Např. pokud očekáváte, že vaše zařízení bude mít "
+"hash rate 1 TH/s, <strong>výstražný limit</strong> by měl být nastaven na "
+"700 Ghs/s."
 
 #: web/templates/user_manual/terminology.html:92
-#, fuzzy
 msgid "Luck"
-msgstr "Úspěch"
+msgstr "Štěstí"
 
 #: web/templates/user_manual/terminology.html:93
 msgid ""
@@ -7298,6 +7544,9 @@ msgid ""
 "in comparison <strong>to the average number of shares</strong> needed for "
 "finding a block."
 msgstr ""
+"Štěstí poolu říká, kolik řešení pool potřeboval k nalezení konkrétního bloku "
+"v porovnání s <strong>průměrným počtem řešení</strong> potřebným k nalezení "
+"bloku."
 
 #: web/templates/user_manual/terminology.html:95
 #, python-format
@@ -7305,11 +7554,13 @@ msgid ""
 "If the luck is above 100%% it means that the pool needed less shares than "
 "expected for the given difficulty."
 msgstr ""
+"Štěstí přes 100%% znamená, že pool potřeboval méně řešení, než se pro danou "
+"složitost předpokládalo."
 
 #: web/templates/user_manual/terminology.html:96
 #, python-format
 msgid "If the luck is below 100%%, more shares than average were needed."
-msgstr ""
+msgstr "Štěstí pod 100%% znamená, že bylo potřeba více řešení."
 
 #: web/templates/user_manual/terminology.html:98
 #, python-format
@@ -7317,6 +7568,8 @@ msgid ""
 "E.g. if the luck is 200%%, the pool found two times more blocks in the given "
 "time period than average."
 msgstr ""
+"Např. štěstí 200%%  znamená, že pool našel dvakrát více bloků než byl průměr "
+"v daném časovém období."
 
 #: web/templates/user_manual/terminology.html:99
 #, python-format
@@ -7327,11 +7580,15 @@ msgid ""
 "luck is high and disconnecting when the luck is low does not make any sense. "
 "In the long run, the luck is always 100%%."
 msgstr ""
+"Mějte prosím na paměti, že <strong>štěstí pouze popisuje minulost, ale "
+"neříká nic o budoucích blocích</strong>. Nalezení bloku je naprosto "
+"nezávislé na uplynulých událostech. To je důvod, proč nedává žádný smysl se "
+"připojovat k poolu, když je štěstí velké, a odpojovat se, když je malé. Z "
+"dlouhodobého pohledu bude štěstí vždy 100%%."
 
 #: web/templates/user_manual/terminology.html:102
-#, fuzzy
 msgid "Stale Rate"
-msgstr "Rychlost hašování"
+msgstr "Stale rate"
 
 #: web/templates/user_manual/terminology.html:103
 msgid ""
@@ -7339,14 +7596,17 @@ msgid ""
 "been found and pool has moved to the next block. If everything works "
 "correctly, it should be a very low number."
 msgstr ""
+"Stale rate je počet řešení odevzdaných po tom, co byl starý blok nalezen a "
+"pool už se přesunul na nový blok. Pokud vše funguje v pořádku, toto číslo by "
+"mělo být velmi malé."
 
 #: web/templates/user_manual/terminology.html:104
 msgid "Several factors can increase your stale rate:"
-msgstr ""
+msgstr "Váš stale rate může navýšit několik faktorů:"
 
 #: web/templates/user_manual/terminology.html:106
 msgid "Network Latency"
-msgstr ""
+msgstr "Latence sítě"
 
 #: web/templates/user_manual/terminology.html:107
 msgid ""
@@ -7356,10 +7616,15 @@ msgid ""
 "old block for some time and these are being rejected by the pool as "
 "<em>stale</em> shares</em>."
 msgstr ""
+"Na pomalejších sítích (nebo tam, kde jsou na cestě mezi vaším zařízením a "
+"poolem nějaké problémy se sítí) je potřeba k obdržení upozornění o novém "
+"bloku delší čas. Zařízení ale mezitím pokračuje v práci a odevzdává řešení "
+"pro starý blok. Tato jsou následně zamítnuta poolem jakožto  <em>stará</em> "
+"řešení</em>."
 
 #: web/templates/user_manual/terminology.html:109
 msgid "Slower Mining Device"
-msgstr ""
+msgstr "Pomalejší těžící zařízení"
 
 #: web/templates/user_manual/terminology.html:110
 msgid ""
@@ -7369,19 +7634,23 @@ msgid ""
 "for the old block that cannot be accepted by the pool anymore. Such results "
 "are also called <strong>stale</strong> shares."
 msgstr ""
+"Některá zařízení jsou jako muži. Umí dělat najednou jen jednu věc. Před tím, "
+"než si přiberou další práci, musí dokončit tu předchozí. Takže zatímco "
+"ostatní už generují řešení pro nový blok, tato zařízení stále produkují "
+"řešení pro starý blok, která už nicméně nebudou poolem přijata. Taková "
+"řešení se také nazývají <strong>stará</strong> řešení."
 
 #: web/templates/user_manual/troubleshooting.html:14
 msgid "Hash Rate Lower than Expected"
-msgstr ""
+msgstr "Hash rate nižší než předpokládaný"
 
 #: web/templates/user_manual/troubleshooting.html:21
 msgid "Mining hardware<br/>hash rate"
-msgstr ""
+msgstr "Hash rate<br/>těžebního zařízení"
 
 #: web/templates/user_manual/troubleshooting.html:22
-#, fuzzy
 msgid "Minimum difficulty<br/>value"
-msgstr "Minimální složitost"
+msgstr "Minimální složitost<br/>hodnota"
 
 #: web/templates/user_manual/troubleshooting.html:51
 msgid ""
@@ -7389,6 +7658,9 @@ msgid ""
 "hardware manufacturer declares, it is possible your worker does not accept "
 "difficulty which our server automatically provides."
 msgstr ""
+"Pokud je efektivní hash rate vašeho zařízení znatelně nižší, než uvádí "
+"výrobce, může to být způsobeno tím, že toto zařízení neakceptuje složitost "
+"automaticky přidělenou naším serverem."
 
 #: web/templates/user_manual/troubleshooting.html:52
 #, python-format
@@ -7398,6 +7670,10 @@ msgid ""
 "\">workers profile</a>. See the table for <strong>recommended</strong> "
 "values…"
 msgstr ""
+"Toto nastavení můžete <strong>opravit</strong> nastavením optimální hodnoty "
+"<strong>minimální složitosti</strong> na <a href=\"%(workers)s\" target=\""
+"_blank\">profilu zařízení</a>. Podívejte se na tabulku "
+"<strong>doporučených</strong> hodnot…"
 
 #: web/templates/user_manual/troubleshooting.html:54
 #, python-format
@@ -7413,9 +7689,8 @@ msgstr ""
 "algoritmus</a> vybrat a přiřadit vašemu zařízení složitost automaticky."
 
 #: web/templates/user_manual/troubleshooting.html:58
-#, fuzzy
 msgid "Worker offline state"
-msgstr "Přihlašovací jméno pro zařízení"
+msgstr "Offline stav zařízení"
 
 #: web/templates/user_manual/troubleshooting.html:59
 msgid ""
@@ -7429,11 +7704,19 @@ msgid ""
 "<strong>Offline</strong> state of your worker, even though it works. We "
 "recommend to switch off monitoring for such workers."
 msgstr ""
+"Protože minimální složitost přidělovaná aktuálně poolem je 8 (a "
+"pravděpodobně bude v budoucnu dále snižována), vaše zařízení by měla mít "
+"<strong>alespoň 10 Gh/s</strong>, aby odevzdávala řešení s optimální "
+"frekvencí (při složitosti 8). Pro zařízení s méně než 10 Gh/s uvidíte větší "
+"variabilitu v hash rate. Na závěr se také může stát, že velice slabá "
+"zařízení nebudou produkovat platná řešení v celém měřeném 5minutovém "
+"obodobí. Taková situace bude zobrazena jako <strong>Offline</strong> stav "
+"vašeho zařízení, i když zařízení funguje. Doporučujeme sledování pro taková "
+"zařízení vypnout."
 
 #: web/templates/user_manual/troubleshooting.html:62
-#, fuzzy
 msgid "False Monitoring Alarms"
-msgstr "Stav monitorování zařízení"
+msgstr "Falešná upozornění"
 
 #: web/templates/user_manual/troubleshooting.html:64
 msgid ""
@@ -7442,6 +7725,10 @@ msgid ""
 "pool will not be optimal. It will lead to high variance of its hash rate "
 "(wide range of values in different time periods)."
 msgstr ""
+"Pokud nastavíte minimální složitost zařízení na citelně vyšší hodnotu, než "
+"jsou udávaná doporučení v tabulce výše, frekvence jeho komunikace s poolem "
+"nebude optimální. To povede k vyšší variabilitě hash rate (širší spektrum "
+"hodnot v rozdílných měřených úsecích)."
 
 #: web/templates/user_manual/troubleshooting.html:65
 #, python-format
@@ -7450,6 +7737,9 @@ msgid ""
 "with nominal hash rate 100 Gh/s with difficulty set by <a href=\"%(url)s"
 "\">vardiff</a> algorithm to roughly 70."
 msgstr ""
+"Tento efekt můžete vidět na následujících grafech. První ukazuje zařízení s "
+"nominálním hash rate 100 Gh/s a minimální složitostí zhruba 70 přidělenou <a "
+"href=\"%(url)s\">VarDiff</a> algoritmem."
 
 #: web/templates/user_manual/troubleshooting.html:78
 msgid ""
@@ -7457,6 +7747,9 @@ msgid ""
 "it leads to behavior as presented below. Please, notice how the hash rate "
 "spread is now much wider."
 msgstr ""
+"Když ručně nastavíte minimální složitost na citelně vyšší hodnotu, povede to "
+"k chování zobrazenému níže. Všimněte si prosím, že hash rate má nyní mnohem "
+"širší spektrum."
 
 #: web/templates/user_manual/troubleshooting.html:91
 msgid ""
@@ -7464,25 +7757,28 @@ msgid ""
 "lead to false monitoring alarms (you can be notified about some event even "
 "when the worker works correctly)."
 msgstr ""
+"Vyšší variabilita hash rate znesnadňuje správné fungování sledování a může "
+"vést k falešným upozorněním (můžete být opozorňováni i na události, při "
+"kterých zařízení pracuje správně)."
 
 #: web/templates/user_manual/troubleshooting.html:92
-#, fuzzy
 msgid "We recommend to:"
-msgstr "Nový komentář"
+msgstr "Doporučujeme:"
 
 #: web/templates/user_manual/troubleshooting.html:94
 msgid ""
 "Let vardiff algorithm to select difficulty for your worker automatically."
 msgstr ""
+"Nechte VarDiff algoritmus přiřadit složitost vašim zařízením automaticky."
 
 #: web/templates/user_manual/troubleshooting.html:96
 msgid "OR"
-msgstr ""
+msgstr "NEBO"
 
 #: web/templates/user_manual/troubleshooting.html:98
 msgid ""
 "Set minimum difficulty provided by the vendor of your device on your own."
-msgstr ""
+msgstr "Nastavte ručně nastavte minimální složitost doporučenou výrobcem ."
 
 #: web/templates/user_manual/user_manual_base.html:17
 msgctxt "UI"
@@ -7534,9 +7830,9 @@ msgid "Preview:"
 msgstr "Náhled:"
 
 #: web/templatetags/utils.py:39
-#, fuzzy, python-format
+#, python-format
 msgid "%i days"
-msgstr "dnů"
+msgstr "%i dnů"
 
 #: web/templatetags/utils.py:244
 msgctxt "UI"
