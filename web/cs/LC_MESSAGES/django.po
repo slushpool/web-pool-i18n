@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: Slush's pool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-10 09:32+0000\n"
-"PO-Revision-Date: 2015-04-07 14:30+0200\n"
+"PO-Revision-Date: 2015-04-10 14:17+0200\n"
 "Last-Translator: Jan Pecinovsky <jan.pecinovsky@braiins.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
-"cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-"
+"cz/mining/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1337,7 +1337,7 @@ msgstr "Ve vývoji"
 #: web/models.py:626
 msgctxt "UI, Proposals"
 msgid "Released"
-msgstr "Vydáno"
+msgstr "Implementováno"
 
 #: web/models.py:627
 msgctxt "UI, Proposals"
@@ -1640,21 +1640,19 @@ msgid "Worker does not exist."
 msgstr "Zařízení s tímto jménem neexistuje."
 
 #: web/views.py:394
-#, fuzzy
 msgctxt "UI"
 msgid "Worker {!s} settings has been updated."
-msgstr "Nastavení zařízení bylo aktualizováno."
+msgstr "Nastavení zařízení {!s} bylo aktualizováno."
 
 #: web/views.py:404
-#, fuzzy
 msgctxt "UI"
 msgid "Worker {!s} has been created."
-msgstr "Zařízení bylo vytvořeno."
+msgstr "Zařízení {!s} bylo vytvořeno."
 
 #: web/views.py:413
 msgctxt "UI"
 msgid "You can add another worker now."
-msgstr ""
+msgstr "Nyní můžete přidat další zařízení."
 
 #: web/views.py:518
 msgctxt "UI"
@@ -1808,18 +1806,17 @@ msgstr "Návrh čeká na potvrzení administrátorem"
 #: web/templates/404.html:3
 msgctxt "UI"
 msgid "Page Not Found"
-msgstr ""
+msgstr "Stránka nenalezena"
 
 #: web/templates/404.html:7
 msgctxt "UI"
 msgid "Looks like you got lost."
-msgstr ""
+msgstr "Vypadáte ztraceně."
 
 #: web/templates/404.html:8
-#, fuzzy
 msgctxt "UI"
 msgid "Not Found"
-msgstr "Blok nalezen v"
+msgstr "Nenalezeno"
 
 #: web/templates/account_delete_invalid.html:13
 msgctxt "UI"
@@ -3950,11 +3947,11 @@ msgid "Bitcoin address to which we sent the payout."
 msgstr "Adresa bitcoinové peněženky, na kterou posíláme výplatu."
 
 #: web/templates/payouts.html:97
-#, fuzzy
 msgctxt "Intro"
 msgid ""
 "Click for the transactions details for the particular address in blockchain."
-msgstr "Klikněte na řádek tabulky pro zobrazení detailů konkrétní události."
+msgstr ""
+"Klikněte pro zobrazení transakčních detailů konkrétní adresy v blockchainu."
 
 #: web/templates/payouts.html:105
 msgctxt "Intro"
@@ -5093,7 +5090,6 @@ msgstr ""
 "Poolový poplatek je 2%% (počítáno z odměny za blok a transakčních poplatků)."
 
 #: web/templates/terms-of-service.html:36
-#, fuzzy
 msgctxt "terms"
 msgid ""
 "Fees from bitcoin transactions are paid to miners that use Stratum interface."
@@ -5258,15 +5254,14 @@ msgid "Worker login name"
 msgstr "Přihlašovací jméno pro zařízení"
 
 #: web/templates/worker.html:51
-#, fuzzy
 msgctxt "UI"
 msgid "Save and add another"
-msgstr "Uložit a vrátit se"
+msgstr "Uložit a přidat další"
 
 #: web/templates/worker.html:52
 msgctxt "UI"
 msgid "Save and show all"
-msgstr ""
+msgstr "Uložit a zobrazit vše"
 
 #: web/templates/worker.html:57
 msgctxt "UI"
@@ -5997,9 +5992,8 @@ msgid "<a href=\"%(login)s\">Login</a> to your account."
 msgstr "<a href=\"%(login)s\">Přihlašte se</a> k vašemu účtu."
 
 #: web/templates/user_manual/getting_started.html:33
-#, fuzzy
 msgid "2. Configure <span>Your Device</span>"
-msgstr "Smluvní <span>podmínky</span>"
+msgstr "2. Nastavit <span>zařízení</span>"
 
 #: web/templates/user_manual/getting_started.html:35
 msgid ""
@@ -6019,7 +6013,6 @@ msgid "The login credentials needed for your miner look like this:"
 msgstr "Přihlašovací údaje potřebné pro vaše zařízení vypadají takto:"
 
 #: web/templates/user_manual/getting_started.html:39
-#, fuzzy
 msgid ""
 "(please, fill your <span class=\"darkred\">user ID</span> and <span class="
 "\"green\">worker name</span>)"
@@ -6119,6 +6112,8 @@ msgid ""
 "Detailed step by step tutorial on how to setup a miner can be found in the "
 "<a href=\"%(advanced_mining)s\">Advanced Mining</a> section."
 msgstr ""
+"Detailní návod, jak krok za krokem nastavit zařízení, najdete v sekci <a "
+"href=\"%(advanced_mining)s\">Pokročilé těžení</a>."
 
 #: web/templates/user_manual/getting_started.html:96
 #, python-format
@@ -6493,13 +6488,13 @@ msgstr ""
 "mít větší kontrolu."
 
 #: web/templates/user_manual/monitoring.html:19
-#, fuzzy
 msgid ""
 "Monitoring helps you supervise how your miners work in time and minimizes "
 "losses caused by connection issues or mining hardware/software failures."
 msgstr ""
 "Sledování vám pomáhá kontrolovat vaše zařízení v průběhu času a minimalizuje "
-"ztráty způsobené selháním infrastruktury nebo software."
+"ztráty způsobené problémy s připojením nebo selháním těžebního "
+"hardware/software."
 
 #: web/templates/user_manual/monitoring.html:22
 msgid "How can monitoring help?"
@@ -6540,7 +6535,6 @@ msgid "Mining software issues"
 msgstr "Problémy s těžícím software"
 
 #: web/templates/user_manual/monitoring.html:32
-#, fuzzy
 msgid ""
 "Below you can find simple step-by-step instructions how to setup monitoring "
 "in order to keep track of how your mining equipment is doing."
@@ -6553,7 +6547,7 @@ msgid "How to enable monitoring?"
 msgstr "Jak zapnout sledování?"
 
 #: web/templates/user_manual/monitoring.html:36
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Enable sending monitoring emails in <a href=\"%(settings)s#monitoring\" "
 "target=\"_blank\">Settings (Monitoring)</a>."
@@ -6742,24 +6736,22 @@ msgstr ""
 "mohou být potenciálně problémy. Pojďme ho rozdělit do 4 hlavních částí"
 
 #: web/templates/user_manual/payouts.html:15
-#, fuzzy
 msgid "Amount of BTC you can get"
 msgstr "Počet BTC, které můžete dostat"
 
 #: web/templates/user_manual/payouts.html:16
 msgid "Payout routines and frequency"
-msgstr ""
+msgstr "Výplatní procesy a frekvence"
 
 #: web/templates/user_manual/payouts.html:17
 msgid "Fees paid from every payout"
-msgstr ""
+msgstr "Poplatky placené z každé výplaty"
 
 #: web/templates/user_manual/payouts.html:18
 msgid "Possible difficulties"
 msgstr "Možné problémy"
 
 #: web/templates/user_manual/payouts.html:23
-#, fuzzy
 msgid "1. Amount of Bitcoins <span>You Can Get with Your Hash Rate.</span>"
 msgstr "1. Počet Bitcoinů, <span>které můžete získat s vaším hash rate.</span>"
 
@@ -6869,9 +6861,8 @@ msgstr ""
 "hodnotou."
 
 #: web/templates/user_manual/payouts.html:48
-#, fuzzy
 msgid "3. Fees Paid <span>from Every Payout</span>"
-msgstr "1. Zaregistrovat <span>nový účet</span>"
+msgstr "3. Poplatky placené <span>z každé výplaty</span>"
 
 #: web/templates/user_manual/payouts.html:49
 #, python-format
@@ -6883,6 +6874,12 @@ msgid ""
 "<strong>0.0001&nbsp;BTC</strong>.<br>Transaction fees for threshold equal to "
 "or higher than the limit value are covered by the pool."
 msgstr ""
+"V našem výplatním systému jsou pouze dva typy poplatků (poplatek poolu 2%% "
+"za každý blok zmíněný výše), které jsou použity na pokrytí nákladů poolu. "
+"Druhý poplatek se vás týká pouze pokud nastavíte výplatní limit <strong>pod "
+"0.01&nbsp;BTC</strong> a rovná se <strong>0.0001&nbsp;BTC</strong>.<br>"
+"Transakční poplatky při výplatním limitu rovném nebo vyšším než je zmíněná "
+"hodnota jsou placeny poolem."
 
 #: web/templates/user_manual/payouts.html:52
 msgid "4. Possible Difficulties"
@@ -7067,7 +7064,6 @@ msgstr ""
 "rate a pak se stabilizuje."
 
 #: web/templates/user_manual/rewards.html:80
-#, fuzzy
 msgid ""
 "It is stable during the time when your miners are connected and working."
 msgstr "Po dobu, kdy jsou vaše zařízení připojena a těží, je stabilní."
@@ -7196,6 +7192,8 @@ msgid ""
 "strong> %(fc)s. It calculates <strong>score</strong> of a share %(s)s at "
 "time %(t_0)s as"
 msgstr ""
+"Přesná hodnota řešení v čase jedinována <strong>skórovací funkcí</strong> "
+"%(fc)s. Ta počítá <strong>skóre</strong> řešení %(s)s v čase %(t_0)s jako"
 
 #: web/templates/user_manual/rewards.html:115
 #, python-format
