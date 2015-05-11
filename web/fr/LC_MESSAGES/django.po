@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-10 09:32+0000\n"
-"PO-Revision-Date: 2015-05-04 04:05+0200\n"
+"PO-Revision-Date: 2015-05-11 22:34+0200\n"
 "Last-Translator: sega fanatik <segafanatik@free.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/bitcoin-"
 "cz/mining/fr/>\n"
@@ -161,6 +161,10 @@ msgid ""
 "span> POOL HERE!\n"
 "            "
 msgstr ""
+"\n"
+"                Hé %(username)s, <span style=\"color:#346ee5;\">la pool "
+"slush</span> ICI !\n"
+"            "
 
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:31
 #, python-format
@@ -336,7 +340,7 @@ msgstr ""
 #, python-format
 msgctxt "UI"
 msgid "%(title)s"
-msgstr ""
+msgstr "%(title)s"
 
 #: news/templates/news/detail.html:4 news/templates/news/home.html:4
 #: web/templates/facebook_feed_page.html:3
@@ -478,6 +482,11 @@ msgid ""
 "have been implemented with a new version of the dashboard and some are now "
 "being worked on."
 msgstr ""
+"Nous surveillons le <a href=\"%(dev_corner)s\"> Coin du développement</a> "
+"étroitement car il y a beaucoup de commentaires importants pour nous. Un "
+"certain nombre de propositions ont été mises en œuvre avec une nouvelle "
+"version du tableau de bord et certaines sont maintenant en cours "
+"d'élaboration."
 
 #: news/templates/news/content/2015/03_20_merged_mining_in_dev.html:8
 msgid ""
@@ -485,6 +494,9 @@ msgid ""
 "voting yet, be sure it will be processed soon. We have received quite a long "
 "list, which is great but takes some time to go through ;)"
 msgstr ""
+"Si vous nous avez soumis une proposition de vote et qu'elle soit ni rejetée "
+"ou acceptée, n'oubliez pas qu'elle sera traitée rapidement. Nous avons reçu "
+"une longue et énorme liste, et cela prend un certain temps à traiter ;)"
 
 #: news/templates/news/content/2015/03_20_new_dashboard.html:2
 msgid "New Dashboard and Features"
@@ -496,6 +508,9 @@ msgid ""
 "pages release. We'd like to let you know that we're listening and that we "
 "work on development of your proposals."
 msgstr ""
+"Nous avons reçu beaucoup de commentaires sur la nouvelle interface "
+"utilisateur depuis sa sortie. Nous tenons à vous informer que nous restons à "
+"l'écoute et que nous travaillons sur d'autres propositions d'amélioration."
 
 #: news/templates/news/content/2015/03_20_new_dashboard.html:8
 msgid ""
@@ -524,6 +539,8 @@ msgid ""
 "<strong>Notifications</strong> – gives you the important info right on the "
 "dashboard"
 msgstr ""
+"<strong>Les notifications</strong> – vous donnent des informations "
+"importantes directement sur le tableau de bord"
 
 #: news/templates/news/content/2015/03_20_new_dashboard.html:13
 #, python-format
@@ -531,6 +548,9 @@ msgid ""
 "All rewards can now be shown in <strong>BTC, mBTC, USD, EUR or CNY</strong> "
 "using the current prices (see <a href=\"%(settings)s\">Settings</a>)."
 msgstr ""
+"Toutes les récompenses peuvent désormais être affichée en<strong>BTC, mBTC, "
+"USD, EUR ou CNY</strong> en utilisant le cours actuel (voir <a href=\""
+"%(settings)s\"> réglages</a>)."
 
 #: news/templates/news/content/2015/03_20_new_dashboard.html:14
 msgid ""
@@ -959,13 +979,12 @@ msgid "Exponentially weighted hash rate of the pool."
 msgstr "Taux de hachage exponentiel pondéré de la pool."
 
 #: web/layout_elements.py:232
-#, fuzzy
 msgctxt "Intro"
 msgid ""
 "The scoring function performs exponential weighting of the pool hash rate."
 msgstr ""
-"La fonction du taux de pondération exponentielle effectue la notation des "
-"taux de hachage respectifs."
+"La fonction de notation effectue une pondération exponentielle de votre taux "
+"de hachage."
 
 #: web/layout_elements.py:242 web/layout_items.py:46
 msgctxt "Intro"
@@ -5286,6 +5305,9 @@ msgid ""
 "authentication software, or return to your account settings and cancel the "
 "request."
 msgstr ""
+"Veuillez entrer le mot de passe unique fourni par votre logiciel "
+"d'authentification à deux facteurs (two-factor), ou revenez à vos paramètres "
+"de compte et annuler cette demande."
 
 #: web/templates/wallet_confirm_too_early.html:14
 #, python-format
@@ -5374,14 +5396,14 @@ msgstr ""
 "ces événements."
 
 #: web/templates/worker.html:113
-#, fuzzy
 msgctxt "Intro"
 msgid ""
 "You can either let the monitoring system automatically detect the hash rate "
 "of your worker, or you can set the alert limit manually."
 msgstr ""
-"Le système de surveillance va automatiquement estimer le taux de hachage de "
-"votre travailleur basé sur ses anciennes activités"
+"Vous pouvez soit laisser le système de surveillance détecter automatiquement "
+"le taux de hachage de votre travailleur, ou vous pouvez définir cette limite "
+"d'alerte manuellement."
 
 #: web/templates/worker.html:121
 msgctxt "Intro"
@@ -5597,16 +5619,20 @@ msgctxt "Intro"
 msgid ""
 "Click the worker ID to see worker details and to change worker settings."
 msgstr ""
+"Cliquez sur l'Identifiant du travailleur pour consulter ses paramètres ou "
+"les modifier."
 
 #: web/templates/workers.html:168
 msgctxt "Intro"
 msgid "Exponentially weighted effective hash rate."
-msgstr ""
+msgstr "Taux de hachage efficace pondérée exponentiellement."
 
 #: web/templates/workers.html:170
 msgctxt "Intro"
 msgid "See user manual for detailed explanation of the scoring hash rate."
 msgstr ""
+"Consultez le manuel d'utilisateur pour des explications détaillées "
+"concernant la notation du taux de hachage."
 
 #: web/templates/workers.html:171
 msgid "User Manual"
@@ -5902,6 +5928,9 @@ msgid ""
 "task depends on the mining hardware and platform used. We will cover the "
 "most common cases below:"
 msgstr ""
+"Il y a généralement 3 types de mineurs. La complexité de leurs "
+"configurations dépend de votre matériel et de la plate-forme utilisée. Nous "
+"allons couvrir la plupart des cas courants ci-dessous :"
 
 #: web/templates/user_manual/advanced_mining.html:23
 msgid "Standalone ASIC based miner with Stratum protocol"
@@ -5943,6 +5972,10 @@ msgid ""
 "recommend using <a href=\"%(cgminer)s\" target=\"_blank\">CGminer</a> or <a "
 "href=\"%(bfgminer)s\" target=\"_blank\">BFGminer</a>"
 msgstr ""
+"Dans ce cas, vous avez besoin d'un logiciel spécifique installé sur votre "
+"ordinateur. Nous vous recommandons d'utiliser <a href=\"%(cgminer)s\" target="
+"\"_blank\"> CGminer</a> ou <a href=\"%(bfgminer)s\" target=\"_blank\"> "
+"BFGminer</a>"
 
 #: web/templates/user_manual/advanced_mining.html:35
 #, python-format
@@ -5988,6 +6021,9 @@ msgid ""
 "ask you to install WinUSB drivers. This process is covered in our "
 "aforementioned <a href=\"%(miner_tutorial)s\">tutorial</a>"
 msgstr ""
+"Sous windows, CGminer ne peut pas reconnaître votre matériel nativement, il "
+"va vous demander d'installer des pilotes WinUSB. Ce processus est mentionné "
+"à cette adresse <a href=\"%(miner_tutorial)s\"> tutoriel</a>"
 
 #: web/templates/user_manual/advanced_mining.html:47
 msgid "CGminer on Linux and Mac OS:"
@@ -6003,6 +6039,10 @@ msgid ""
 "em>, and <em>diablominer</em> is currently <strong>not supported</strong> "
 "because of lack of support for the Stratum mining protocol."
 msgstr ""
+"Les autres logiciels d'exploitation tels que <em>cpuminer</em>, "
+"<em>rpcminer</em>, <em>minerd</em> et <em>diablominer</em> ne sont "
+"actuellement <strong>pas pris en charge</strong> en raison du manque de "
+"manque de soutien du protocole Stratum."
 
 #: web/templates/user_manual/advanced_mining.html:55
 msgid ""
@@ -6072,6 +6112,8 @@ msgid ""
 "(please, fill your <span class=\"darkred\">user ID</span> and <span class="
 "\"green\">worker name</span>)"
 msgstr ""
+"(Veuillez, indiquer votre <span class=\"darkred\"> Identifiant "
+"d'utilisateur</span> et le <span class=\"green\"> nom du travailleur</span>)"
 
 #: web/templates/user_manual/getting_started.html:41
 msgid "URL:"
@@ -6099,6 +6141,9 @@ msgid ""
 "present here. If someone tried to connect to our servers with your "
 "credentials, he would be just mining for your benefit."
 msgstr ""
+"Le mot de passe peut être un texte arbitraire depuis qu'il n'y a plus aucun "
+"de problème de sécurité ici. Si quelqu'un essaye de se connecter à nos "
+"serveurs de minage avec vos identifiants, Il va juste miner à votre bénéfice."
 
 #: web/templates/user_manual/getting_started.html:48
 msgid ""
@@ -6254,6 +6299,8 @@ msgid ""
 "How do we process reward payouts? What's the difference between expected and "
 "confirmed rewards?"
 msgstr ""
+"Comment traitons-nous vos récompense de blocs minés ? Quelle est la "
+"différence entre récompense attendue et confirmée ?"
 
 #: web/templates/user_manual/intro.html:35
 msgid ""
@@ -6276,6 +6323,9 @@ msgid ""
 "proxy will help you to use the modern Stratum mining protocol provided by "
 "our pool."
 msgstr ""
+"Lisez ceci si vous avec un logiciel de minage avec prise en charge du vieux "
+"protocole Getwork. Ce proxy (serveur mandataire) vous aidera à utiliser le "
+"récent protocole Stratum fourni par notre pool."
 
 #: web/templates/user_manual/intro.html:41
 #: web/templates/user_manual/stratum-protocol.html:7
@@ -6365,12 +6415,16 @@ msgstr "Installation sur Windows"
 msgid ""
 "Download official Windows binaries (EXE) from <a href=\"%(url)s\">here</a>"
 msgstr ""
+"Télécharger les codes source officiels pour Windows (EXE) <a href=\"%(url)s\""
+">ici</a>"
 
 #: web/templates/user_manual/mining-proxy.html:34
 msgid ""
 "Open downloaded file. It will open console window using default settings "
 "(proxy connects to Slush's pool interface)"
 msgstr ""
+"Ouvrez le fichier téléchargé. Il ouvrira une fenêtre de console avec les "
+"paramètres par défaut (le proxy se connecte à l'interface de pool)"
 
 #: web/templates/user_manual/mining-proxy.html:38
 msgid "Installation on Linux (Ubuntu / Debian)"
@@ -6416,6 +6470,9 @@ msgid ""
 "probably do not have the %(lib)s binary required to run the %(setup)s file. "
 "You have two options here:"
 msgstr ""
+"Sur Mac OS X, si vous avez déjà installé Python sur votre système  mais vous "
+"n'avez probablement pas la librairie %(lib)s requise pour exécuter le "
+"fichier %(setup)s. Vous avez deux options ici :"
 
 #: web/templates/user_manual/mining-proxy.html:60
 msgid ""
@@ -6423,6 +6480,10 @@ msgid ""
 "applications folder) and go to <em>preferences → downloads</em> section and "
 "download/install the <em>\"command line tools\"</em>."
 msgstr ""
+"Télécharger Xcode (gratuit) sur l'App Store, l'ouvrir (il est dans votre "
+"dossier applications) et passez à la section <em>Préférences → "
+"téléchargements</em> et télécharger/installer les <em>\"outils de ligne de "
+"commande\"</em>."
 
 #: web/templates/user_manual/mining-proxy.html:61
 #, python-format
@@ -6430,10 +6491,14 @@ msgid ""
 "If you don't want to install Xcode, <a href=\"%(url)s\">get osx-gcc-"
 "installer here</a>"
 msgstr ""
+"Si vous ne voulez pas installer Xcode, <a href=\"%(url)s\">prenez osx-gcc-"
+"installateur</a>"
 
 #: web/templates/user_manual/mining-proxy.html:64
 msgid "Now if you have installed GCC, you can procede with following steps:"
 msgstr ""
+"Maintenant, si vous avez installé GCC, vous pouvez procéder avec les étapes "
+"suivante :"
 
 #: web/templates/user_manual/mining-proxy.html:67
 msgid ""
@@ -6441,6 +6506,9 @@ msgid ""
 "code>) and get to directory containing file you have just downloaded (eg.:"
 "&nbsp;<code>cd ~/Downloads</code>)"
 msgstr ""
+"Ouvrez votre application terminal (<code>Applications → Utilitaires → "
+"Terminal</code>) et rendez-vous au répertoire contenant le fichier que vous "
+"venez de télécharger (exemple.: <code>cd ~/Downloads</code>)"
 
 #: web/templates/user_manual/mining-proxy.html:74
 #, python-format
@@ -6448,6 +6516,8 @@ msgid ""
 "Now you can start the proxy by typing %(t)s (provided you are in directory "
 "where you have installed your copy of the proxy)"
 msgstr ""
+"Maintenant vous pouvez commencer à démarrer le proxy en tapant %(t)s (si "
+"vous avez bel et bien installé votre proxy dans le bon répertoire)"
 
 #: web/templates/user_manual/mining-proxy.html:77
 #, python-format
@@ -6468,6 +6538,8 @@ msgid ""
 "This is advanced option for experienced users, but it gives you the easiest "
 "way for updating the proxy."
 msgstr ""
+"Cette option est destinée aux utilisateurs expérimentés, mais il vous donne "
+"le moyen le plus simple de mettre à jour le serveur proxy."
 
 #: web/templates/user_manual/mining-proxy.html:89
 msgctxt "proxy installation comment"
@@ -6483,6 +6555,8 @@ msgstr "Mise à jour du pack boite à outils"
 msgctxt "proxy installation comment"
 msgid "Install required dependencies (namely Twisted and Stratum libraries)"
 msgstr ""
+"Installez les dépendances requises (à savoir les bibliothèques Twisted et "
+"Stratum)"
 
 #: web/templates/user_manual/mining-proxy.html:98
 msgctxt "proxy installation comment"
@@ -6512,10 +6586,13 @@ msgid ""
 "code> subdirectory. Proxy will auto-detect compiled extension on next "
 "startup."
 msgstr ""
+"Pour activer cette extension, il suffit de taper <code>make</code> dans le "
+"sous-répertoire <code>midstatec</code>. Le serveur proxy détecte "
+"automatiquement l'extension compilée au prochain redémarrage."
 
 #: web/templates/user_manual/monitoring.html:16
 msgid "Why should I care?"
-msgstr ""
+msgstr "Pourquoi devrais-je m'y intéresser ?"
 
 #: web/templates/user_manual/monitoring.html:17
 msgid ""
@@ -6532,9 +6609,8 @@ msgid ""
 msgstr ""
 
 #: web/templates/user_manual/monitoring.html:22
-#, fuzzy
 msgid "How can monitoring help?"
-msgstr "Voir les états de surveillance"
+msgstr "Comment le monitoring peut aider ?"
 
 #: web/templates/user_manual/monitoring.html:23
 msgid ""
@@ -6547,34 +6623,36 @@ msgstr ""
 
 #: web/templates/user_manual/monitoring.html:25
 msgid "Outages may typically have the following causes:"
-msgstr ""
+msgstr "Les pannes peuvent avoir les causes suivantes :"
 
 #: web/templates/user_manual/monitoring.html:27
 msgid "Internet connectivity issues"
-msgstr ""
+msgstr "Problèmes de connectivité Internet"
 
 #: web/templates/user_manual/monitoring.html:28
 msgid "Hardware power-supply failures"
-msgstr ""
+msgstr "Pannes matérielles des alimentations"
 
 #: web/templates/user_manual/monitoring.html:29
 msgid "Mining hardware overheating"
-msgstr ""
+msgstr "Surchauffe de matériel minier"
 
 #: web/templates/user_manual/monitoring.html:30
 msgid "Mining software issues"
-msgstr ""
+msgstr "Problèmes sur les logiciels de minage"
 
 #: web/templates/user_manual/monitoring.html:32
 msgid ""
 "Below you can find simple step-by-step instructions how to setup monitoring "
 "in order to keep track of how your mining equipment is doing."
 msgstr ""
+"Ci-dessous, vous trouverez des instructions pas à pas simples pour "
+"configurer le système de surveillance, afin de garder une trace sur "
+"l'activité de votre équipement."
 
 #: web/templates/user_manual/monitoring.html:34
-#, fuzzy
 msgid "How to enable monitoring?"
-msgstr "Activer le suivi pour tous"
+msgstr "Comment activer le monitoring ?"
 
 #: web/templates/user_manual/monitoring.html:36
 #, python-format
