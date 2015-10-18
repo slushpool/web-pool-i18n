@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 07:11+0000\n"
-"PO-Revision-Date: 2015-10-12 07:37+0200\n"
+"PO-Revision-Date: 2015-10-18 21:34+0200\n"
 "Last-Translator: Luis Ruiz <luisan00@hotmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/bitcoin-"
 "cz/mining/es/>\n"
@@ -5318,7 +5318,7 @@ msgid "Connection to the server can not be established!"
 msgstr ""
 
 #: templates/r/web/dashboard.html:228
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "Left axis:\n"
@@ -5328,9 +5328,12 @@ msgid ""
 "\">scoring hash rate</a> progress on a 5 minutes\n"
 "                                                basis."
 msgstr ""
-"Axis izquierdo: <a href=\"%(url)s\">Poder de Hasheo Efectivo</a> y <a href="
-"\"%(rewards)s\">puntuacion de hasheo</a> tendran actualizaciones de progreso "
-"en intervalos de 5 minutos."
+"Eje izquierdo:\n"
+"                                                <a href=\"%(url)s\">Tasa de "
+"hash efectiva</a> y\n"
+"                                                <a href=\"%(rewards)s\">"
+"puntuación de tasa de hash</a> progresión cada 5 minutos\n"
+"                                                base."
 
 #: templates/r/web/dashboard.html:234 web/templates/dashboard.html:161
 msgctxt "UI"
@@ -7526,15 +7529,16 @@ msgstr ""
 "este enlace</a>."
 
 #: web/templates/email_email_change.html:12
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "If you did NOT initiate this change, please <a href=\"%(cancel_url)s"
 "\">cancel this request</a>, change your password immediately and report this "
 "incident to %(support_email)s."
 msgstr ""
-"Si usted no inició este cambio, por favor <a href='%(url)s"
-"%(wallet)s'>cancele esta solicitud</a>."
+"Si NO iniciaste este cambio, por favor<a href=\"%(cancel_url)s\">cancela "
+"esta petición </a>, cambia tu contraseña inmediatamente y reporta este "
+"incidente a %(support_email)s."
 
 #: web/templates/email_footer.html:3
 msgctxt "UI"
@@ -8099,13 +8103,13 @@ msgid ""
 msgstr ""
 
 #: web/templates/msg_pending_wallet.html:2
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "You have pending request for changing <strong>%(currency)s</strong> wallet "
 "to '%(wallet_pending)s'."
 msgstr ""
-"Usted tiene pendiente la solicitud de cambio de  <strong>%(currency)s</"
-"strong> da cartera para '%(wallet_pending)s'."
+"Tienes pendiente una solicitud para el cambio de "
+"<strong>%(currency)s</strong> cartera a '%(wallet_pending)s'."
 
 #: web/templates/msg_pending_wallet.html:7
 #, python-format
@@ -8117,13 +8121,13 @@ msgstr ""
 "bandeja de entrada y siga el enlace de confirmación."
 
 #: web/templates/msg_pending_wallet.html:9
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "If you didn't receive confirmation email yet, you can also <a href="
 "\"%(url_resend)s\">resend confirmation</a>."
 msgstr ""
-"Si usted aún no recibió el E-mail de confirmación, también puede <a "
-"href='%(url_resend)s%(wallet_pending)s'>volver a enviar la confirmación</a>."
+"Si no has recibido la confirmación aún, también puedes<a href=\"%(url_resend)"
+"s\">reenviar la confirmación</a>."
 
 #: web/templates/msg_pending_wallet.html:11
 #, fuzzy, python-format
@@ -8562,10 +8566,9 @@ msgid "Proposal history"
 msgstr "Historial de propuestas"
 
 #: web/templates/proposal_history.html:13
-#, fuzzy
 msgctxt "UI"
 msgid "History for:"
-msgstr "História del bloque Bitcoin"
+msgstr "Historial para:"
 
 #: web/templates/proposal_history.html:14
 msgctxt "UI"
@@ -8573,10 +8576,9 @@ msgid "Back to proposal detail"
 msgstr ""
 
 #: web/templates/proposal_history.html:27
-#, fuzzy
 msgctxt "UI"
 msgid "Saved at:"
-msgstr "Guardar"
+msgstr "Guardar:"
 
 #: web/templates/proposal_vote_form.html:22
 msgctxt "UI, Button"
@@ -8698,12 +8700,13 @@ msgstr ""
 "aplicación."
 
 #: web/templates/settings.html:88
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "Following page contains JSON encoded data about <strong>recent pool rounds</"
 "strong>, including your round rewards:"
-msgstr "Esta URL contiene datos JSON codificados sobre su cuenta del grupo:"
+msgstr ""
+"La siguiente página contiene datos en codificación JSON sobre <strong>"
+"recientes rondas del pool</strong>, incluyendo sus recompensas por ronda:"
 
 #: web/templates/settings.html:92
 msgctxt "UI"
@@ -8809,10 +8812,9 @@ msgid "Payout"
 msgstr "Pago"
 
 #: web/templates/settings.html:306
-#, fuzzy
 msgctxt "Intro"
 msgid "All bitcoins are being sent to this bitcoin wallet adress."
-msgstr "Los bitcoin será enviada a esta cartera de Bitcoin."
+msgstr "Todos los bitcoins están siendo enviados a esta dirección bitcoin."
 
 #: web/templates/settings.html:308
 msgctxt "Intro"
@@ -8888,12 +8890,14 @@ msgid ""
 msgstr ""
 
 #: web/templates/settings_email_change_success.html:14
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "Email (%(orig_email)s) associated with your account has been successfully "
 "changed to %(new_email)s."
-msgstr "Su cartera se ha cambiado correctamente."
+msgstr ""
+"El Email (%(orig_email)s) asociado con su cuenta ha sido correctamente "
+"cambiado a %(new_email)s."
 
 #: web/templates/settings_payouts.html:2 web/templates/settings_payouts.html:7
 #: web/templates/layout_elements/rewards.html:100
@@ -9079,10 +9083,9 @@ msgid "Did you like it? You can instantly sign-up for your own account."
 msgstr ""
 
 #: web/templates/slider.html:15 web/templates/slider.html.py:18
-#, fuzzy
 msgctxt "UI"
 msgid "Powerful <span>Dashboard</span>"
-msgstr "<span>Recompensa Diaria</span> del Pool"
+msgstr "Potente <span>Tablero de control</span>"
 
 #: web/templates/slider.html:19
 #, fuzzy
@@ -9103,10 +9106,9 @@ msgid ""
 msgstr ""
 
 #: web/templates/slider.html:37 web/templates/slider.html.py:40
-#, fuzzy
 msgctxt "UI"
 msgid "Rule <span>the Pool</span>"
-msgstr "Propuestas <span>Publicadas</span>"
+msgstr "Gobierna <span>El Pool</span>"
 
 #: web/templates/slider.html:41
 #, fuzzy
@@ -9300,10 +9302,9 @@ msgid "New Worker <span>Settings</span>"
 msgstr "Nueva <span>Configuración</span> de trabajador"
 
 #: web/templates/worker.html:19
-#, fuzzy
 msgctxt "UI"
 msgid "Switch to worker"
-msgstr "Registro de nuevo trabajador"
+msgstr "Cambiar a trabajador"
 
 #: web/templates/worker.html:40
 msgctxt "UI"
@@ -9508,10 +9509,10 @@ msgid "Error - No shares submitted by the worker in last minutes."
 msgstr ""
 
 #: web/templates/workers.html:133 workers/templates/workers/home.html:141
-#, fuzzy
 msgctxt "Intro"
 msgid "Disabled - Monitoring for this worker has been disabled."
-msgstr "Los ajustes de Namecoin se ha actualizado."
+msgstr ""
+"Desactivado - La monitorización para este trabajador ha sido desactivada."
 
 #: web/templates/workers.html:142 workers/templates/workers/home.html:150
 msgctxt "Intro"
@@ -9587,10 +9588,9 @@ msgid "Time Since"
 msgstr ""
 
 #: web/templates/layout_elements/blocks.html:23
-#, fuzzy
 msgctxt "UI"
 msgid "Confirmation Status"
-msgstr "Pagina de Confirmacion"
+msgstr "Estado de confirmación"
 
 #: web/templates/layout_elements/blocks.html:57
 msgctxt "UI"
