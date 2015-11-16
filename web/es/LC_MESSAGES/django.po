@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 07:11+0000\n"
-"PO-Revision-Date: 2015-11-07 00:14+0000\n"
+"PO-Revision-Date: 2015-11-16 10:41+0000\n"
 "Last-Translator: Luis Ruiz <luisan00@hotmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/bitcoin-"
 "cz/mining/es/>\n"
@@ -2778,6 +2778,8 @@ msgid ""
 "To collect your reward you have to set a payout address. If you don't have "
 "an address, you need to get a bitcoin wallet first:"
 msgstr ""
+"Para obtener tu recompensa necesitas establecer una dirección de pago. Si no "
+"tienes una dirección, necesitas obtener un monedero Bitcoin primero:"
 
 #: help/templates/help/manual/getting_started.html:88
 msgid "Additional Information"
@@ -2789,6 +2791,9 @@ msgid ""
 "Detailed step by step tutorial on how to setup a miner can be found in the "
 "<a href=\"%(advanced_mining)s\">Advanced Mining</a> section."
 msgstr ""
+"Un detallado tutorial paso a paso de cómo configurar un minero puede ser "
+"encontrado en la sección <a href=\"%(advanced_mining)s\">Mimeria Avanzada</a>"
+" ."
 
 #: help/templates/help/manual/getting_started.html:91
 #, python-format
@@ -2797,6 +2802,9 @@ msgid ""
 "connect every miner to a separate worker for easier <a href=\"%(monitoring)s"
 "\">monitoring</a>."
 msgstr ""
+"Puedes usar un nombre de trabajador para todos tus mineros. No obstante, "
+"recomendamos conectar cada minero a un trabador para una mejor <a href=\""
+"%(monitoring)s\">monitorización</a>."
 
 #: help/templates/help/manual/getting_started.html:92
 #, python-format
@@ -2804,6 +2812,8 @@ msgid ""
 "Optionally, enable the <a href=\"%(url_2fa)s\">Two-factor-authentication</a> "
 "to protect you from arbitrary change of your wallet."
 msgstr ""
+"Opcionalmente, activa el <a href=\"%(url_2fa)s\">Doble factor de "
+"autentificación</a> para protegerte de cambios arbitrarios de tu cartera."
 
 #: help/templates/help/manual/intro.html:5
 msgid "Contents of User Manual"
@@ -2962,6 +2972,8 @@ msgid ""
 "Open downloaded file. It will open console window using default settings "
 "(proxy connects to Slush's pool interface)"
 msgstr ""
+"Abre el fichero descargado. Ello abrirá una ventana de consola usando la "
+"configuración por defecto (el proxy conecta a la interface de Slush pool)"
 
 #: help/templates/help/manual/mining-proxy.html:34
 msgid ""
@@ -3072,6 +3084,8 @@ msgid ""
 "This is advanced option for experienced users, but it gives you the easiest "
 "way for updating the proxy."
 msgstr ""
+"Esta es un opción avanzanda para usuarios expertos, pero consigue que puedas "
+"actualizar el proxy con mayor facilidad."
 
 #: help/templates/help/manual/mining-proxy.html:90
 msgctxt "proxy installation comment"
@@ -3732,6 +3746,8 @@ msgid ""
 "When you stop mining the scoring hash rate starts to fall down. It takes "
 "again cca 1.5 hour until it is roughly zero."
 msgstr ""
+"Cuando tú paras el minado, la puntuación de hasheo comienza a caer. Toma "
+"entorno a 1.5 horas hasta que es prácticamente cero."
 
 #: help/templates/help/manual/rewards.html:77
 msgid ""
@@ -3933,6 +3949,9 @@ msgid ""
 "from few seconds to many hours, depending on <a href=\"%(link)s\">pool's "
 "luck.</a>"
 msgstr ""
+"Una ronda es el periodo de tiempo entre dos bloques encontrados por el pool. "
+"Pueden ser desde pocos segundo a varias horas, dependiendo de <a href=\""
+"%(link)s\">la suerte del Pool.</a>"
 
 #: help/templates/help/manual/terminology.html:28
 msgid "Miner"
@@ -3964,6 +3983,8 @@ msgid ""
 "Worker is a name for your mining device that you use as a login for your "
 "mining software."
 msgstr ""
+"Trabajador si un nombre para tu dispositivo de minado el cual  usaras como "
+"login para tu software de minado."
 
 #: help/templates/help/manual/terminology.html:45
 msgid ""
@@ -4186,6 +4207,8 @@ msgstr "Conexión no estable a internet"
 #: help/templates/help/manual/terminology.html:125
 msgid "Your mining device might have a hardware problem (e.g. overheating)"
 msgstr ""
+"Tu dispositivo de minado podría tener un problema de hardware (ejemp. "
+"Sobrecalentamiento)"
 
 #: help/templates/help/manual/terminology.html:128
 msgid "How to set the alert limit"
@@ -5443,10 +5466,9 @@ msgid "<span>World's First</span> Bitcoin Mining Pool"
 msgstr ""
 
 #: templates/r/web/homepage.html:115 web/templates/homepage.html:27
-#, fuzzy
 msgctxt "UI"
 msgid "<span></span>Tradition &amp; Trust"
-msgstr "Servicio por toda la vida & operador de la confianza"
+msgstr "<span></span>Tradición &amp; Confianza"
 
 #: templates/r/web/homepage.html:119 web/templates/homepage.html:30
 msgctxt "UI"
@@ -6090,12 +6112,10 @@ msgid "Exponentially weighted hash rate of your account."
 msgstr "Tasa de hash exponencial ponderado de tu cuenta."
 
 #: web/layout_elements.py:96
-#, fuzzy
 msgctxt "Intro"
 msgid "The scoring function performs exponential weighting of your hash rate."
 msgstr ""
-"La funcion de puntaje ejecuta un puntaje exponencial de los poderes de "
-"hasheo respectivos."
+"La función de puntuación ejecuta un ponderado exponencial de tu tasa de hash."
 
 #: web/layout_elements.py:97
 msgctxt "Intro"
@@ -8164,15 +8184,15 @@ msgstr ""
 "s\">reenviar la confirmación</a>."
 
 #: web/templates/msg_pending_wallet.html:11
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "If you didn't initiate this change, please <a href=\"%(url_cancel)s\">cancel "
 "the request</a> and <a href=\"%(url_password_reset)s\">change your password</"
 "a> immediately."
 msgstr ""
-"Si usted no inició este cambio por favor <a href='%(url_cancel)s"
-"%(wallet_pending)s'>cancelar la solicitud</a> y <a "
-"href='%(url_password_reset)s'>cambiar la contraseña</a> inmediatamente."
+"Si no iniciaste este cambio, por favor <a href=\"%(url_cancel)s\">cancela la "
+"petición</a> y <a href=\"%(url_password_reset)s\">cambia tu contraseña</a> "
+"inmediatamente."
 
 #: web/templates/new_user_registered.html:4
 msgctxt "UI"
@@ -8476,19 +8496,18 @@ msgid "Save"
 msgstr "Guardar"
 
 #: web/templates/proposal_detail.html:159
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI, Proposal"
 msgid ""
 "Proposal merged with <a href=\"%(proposal_merged_url)s\">#%(proposal_id)s</a>"
 msgstr ""
-"Conectate y haga clic el boton de <a href=\"%(proposal_new_url)s\">+Nuevas "
-"Propuestas</a>."
+"Propuesta  integrada con <a href=\"%(proposal_merged_url)s\""
+">#%(proposal_id)s</a>"
 
 #: web/templates/proposal_detail.html:163
-#, fuzzy
 msgctxt "UI, Proposal"
 msgid "Proposal state changed"
-msgstr "su pagina de perfil"
+msgstr "El estado de la propuesta cambió"
 
 #: web/templates/proposal_detail.html:164
 msgctxt "UI, Proposals"
@@ -9145,14 +9164,13 @@ msgid "Rule <span>the Pool</span>"
 msgstr "Gobierna <span>El Pool</span>"
 
 #: web/templates/slider.html:41
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "<strong>Submit your ideas</strong> for improvement of this pool. "
 "<strong>Upvote what you like</strong> to see implemented first."
 msgstr ""
-"Entregue sus ideas para mejorar este pool. De su voto sobre lo que quiera "
-"que se implemente primero."
+"<strong>Envía tus ideas</strong> para las mejoras de este Pool. <strong>Vota "
+"lo que te gustaría</strong> ver implementado primero."
 
 #: web/templates/support-titlepage.txt:3
 msgid "My account"
@@ -9287,13 +9305,14 @@ msgstr ""
 "inválido."
 
 #: web/templates/wallet_confirm_no_token.html:19
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "You can resend the wallet change confirmation email from your <a href="
 "\"%(profile_page)s\">profile page</a>."
 msgstr ""
-"Usted puede volver a enviar el link de confirmación de la página por email."
+"Puedes reenviar la confirmación de cambio de Wallet desde tu <a href=\""
+"%(profile_page)s\">página de perfil</a>."
 
 #: web/templates/wallet_confirm_not_verified.html:13
 msgctxt "UI"
@@ -9395,14 +9414,14 @@ msgid ""
 msgstr ""
 
 #: web/templates/worker.html:113
-#, fuzzy
 msgctxt "Intro"
 msgid ""
 "You can either let the monitoring system automatically detect the hash rate "
 "of your worker, or you can set the alert limit manually."
 msgstr ""
-"El sistema de monitorización automaticamente estimará la capacidad de hasheo "
-"de su trabajador basado en su actividad anterior"
+"Puedes dejar que el sistema de monitorización automaticamente estime la "
+"capacidad de hasheo de su trabajador,  o puedes establecer el límite de "
+"alerta manualmente."
 
 #: web/templates/worker.html:121
 msgctxt "Intro"
