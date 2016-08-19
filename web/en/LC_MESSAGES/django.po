@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-12 13:34+0200\n"
+"POT-Creation-Date: 2016-08-19 11:58+0200\n"
 "PO-Revision-Date: 2015-01-07 16:59+0200\n"
 "Last-Translator: Jan Pecinovsky <jan.pecinovsky@braiins.cz>\n"
 "Language-Team: English <https://hosted.weblate.org/projects/bitcoin-cz/"
@@ -24,169 +24,175 @@ msgctxt "UI"
 msgid "Unknown error"
 msgstr ""
 
-#: api/exceptions.py:26
+#. Translators: %s will be format description, eg.: JSON
+#: api/exceptions.py:27
 #, python-format
 msgctxt "UI"
 msgid "Request is not a %s"
 msgstr ""
 
-#: api/exceptions.py:31
+#. Translators: %s will be format description, eg.: JSON
+#: api/exceptions.py:33
 #, python-format
 msgctxt "UI"
-msgid "Response is not a %(format)s serializable: %(error)s"
+msgid "Response is not a %(format)s serializable"
 msgstr ""
 
-#: api/exceptions.py:36
+#: api/exceptions.py:38
 msgctxt "UI"
 msgid "Need authentication"
 msgstr ""
 
-#: api/exceptions.py:41
+#. Translators: %s will be api method, eg.: get, list, get_facts, etc.
+#: api/exceptions.py:44
 #, python-format
 msgctxt "UI"
 msgid "Method %s is not allowed"
 msgstr ""
 
-#: api/exceptions.py:46
+#. Translators: %s will be api method, eg.: get, list, get_facts, etc.
+#: api/exceptions.py:50
 #, python-format
 msgctxt "UI"
-msgid "Method %s doesnt exist"
+msgid "Method %s doesn't exist"
 msgstr ""
 
-#: api/exceptions.py:51
-#, python-format
+#: api/exceptions.py:55
 msgctxt "UI"
-msgid "Token '%s' doesnt exist"
+msgid "Non-existent or expired token used"
 msgstr ""
 
-#: api/exceptions.py:56
+#: api/exceptions.py:60
 msgctxt "UI"
 msgid "The method is not allowed in read only mode"
 msgstr ""
 
-#: api/exceptions.py:61
+#: api/exceptions.py:65
 msgctxt "UI"
 msgid "Bad request"
 msgstr ""
 
-#: api/exceptions.py:66
+#: api/exceptions.py:70
 msgctxt "UI"
 msgid "Method not found"
 msgstr ""
 
-#: api/exceptions.py:71
+#. Translators: %s = worker, label, ...
+#: api/exceptions.py:76
 #, python-format
 msgctxt "UI"
 msgid "Bulk %s creation is not allowed"
 msgstr ""
 
-#: api/exceptions.py:76
+#. Translators: %s = worker, label, ...
+#: api/exceptions.py:82
 #, python-format
 msgctxt "UI"
 msgid "Bulk %s deletion is not allowed"
 msgstr ""
 
-#: api/exceptions.py:81
+#. Translators: "Label / Worker can't be removed".
+#: api/exceptions.py:88
 #, python-format
 msgctxt "UI"
 msgid "%s can't be removed"
 msgstr ""
 
-#: api/exceptions.py:86
+#. Translators: %s = worker, label, ...
+#: api/exceptions.py:94
 #, python-format
 msgctxt "UI"
 msgid "Access denied to object: %s"
 msgstr ""
 
-#: api/exceptions.py:91 web/forms.py:409 web/forms.py:414 web/forms.py:418
+#: api/exceptions.py:99
 #, python-format
 msgctxt "UI"
-msgid "Worker %s already exists"
+msgid "Worker \"%s\" already exists"
 msgstr ""
 
-#: api/exceptions.py:96
+#: api/exceptions.py:104
 #, python-format
 msgctxt "UI"
-msgid "Label %s already exists"
+msgid "Label \"%s\" already exists"
 msgstr ""
 
-#: api/exceptions.py:101
+#: api/exceptions.py:109
 msgctxt "UI"
 msgid "Label doesn't exist"
 msgstr ""
 
-#: api/exceptions.py:106
+#: api/exceptions.py:114
 msgctxt "UI"
-msgid "Workers labels update failed."
+msgid "Workers labels update failed"
 msgstr ""
 
-#: api/exceptions.py:111
+#: api/exceptions.py:119
 #, python-format
 msgctxt "UI"
-msgid "User does not have worker (%s)"
+msgid "User doesn't have worker (%s)"
 msgstr ""
 
-#: api/exceptions.py:116
+#. Translators: %s will be timestamp, eg.: "1471594856"
+#: api/exceptions.py:125
 #, python-format
 msgctxt "UI"
 msgid "Slot \"%s\" not found"
 msgstr ""
 
-#: api/exceptions.py:121
+#. Translators: %s will be timestamp, eg.: "1471594856"
+#: api/exceptions.py:131
 #, python-format
 msgctxt "UI"
-msgid "Slot number \"%(slot)s\" is not valid: %(error)s"
+msgid ""
+"Slot number \"%s\" is not valid. Slot number must be first second of an hour."
 msgstr ""
 
-#: api/exceptions.py:126 api/exceptions.py:131 api/exceptions.py:151
+#. Translators: %s will be some invalid blockchain voting option
+#: api/exceptions.py:147
 #, python-format
 msgctxt "UI"
-msgid "%s"
+msgid "You can't vote for \"%s\""
 msgstr ""
 
-#: api/exceptions.py:136
-#, python-format
+#: api/exceptions.py:152
 msgctxt "UI"
-msgid "You cant vote for \"%s\""
+msgid "You must specify the \"coin_type\" attribute (\"BTC\" or \"NMC\")"
 msgstr ""
 
-#: api/exceptions.py:141
+#: api/exceptions.py:157
 msgctxt "UI"
-msgid "Must be set \"coin_type\" in request to \"BTC\" or \"NMC\"."
+msgid "Missing data for HR distribution"
 msgstr ""
 
-#: api/exceptions.py:146
-msgctxt "UI"
-msgid "Missing data for HR distribution."
-msgstr ""
-
-#: api/exceptions.py:156
+#: api/exceptions.py:167
 msgctxt "UI"
 msgid "Integrity error on worker update"
 msgstr ""
 
-#: api/exceptions.py:161
+#: api/exceptions.py:172
 msgctxt "UI"
-msgid "Worker name has been already used"
+msgid "Worker name has already been used"
 msgstr ""
 
-#: api/exceptions.py:166
+#: api/exceptions.py:177
 msgctxt "UI"
-msgid "Form error."
+msgid "Form error"
 msgstr ""
 
-#: api/exceptions.py:171
+#. Translators: %s = form id
+#: api/exceptions.py:183
 #, python-format
 msgctxt "UI"
-msgid "Form \"%s\" does not exist"
+msgid "Form \"%s\" doesn't exist"
 msgstr ""
 
-#: api/exceptions.py:176
+#: api/exceptions.py:188
 msgctxt "UI"
 msgid "Validation error"
 msgstr ""
 
-#: api/exceptions.py:181
+#: api/exceptions.py:193
 msgctxt "UI"
 msgid "Form save has failed."
 msgstr ""
@@ -1125,8 +1131,8 @@ msgstr ""
 #, python-format
 msgid ""
 "You can get pool hash rate at the <a href=\"%(stats)s\">stats page</a>, "
-"block reward is 25BTC + fees nowadays. This formula however only applies if "
-"you mine during the whole round."
+"block reward is 12.5BTC + fees nowadays. This formula however only applies "
+"if you mine during the whole round."
 msgstr ""
 
 #: help/templates/help/faq/mining_in_general.html:154
@@ -1507,7 +1513,7 @@ msgstr ""
 #: help/templates/help/faq/rewards.html:55
 #, python-format
 msgid ""
-"See the question above and the <a href=\"%(link)s\">folowing article</a>"
+"See the question above and the <a href=\"%(link)s\">following article</a>"
 msgstr ""
 
 #: help/templates/help/faq/rewards.html:58
@@ -2326,7 +2332,7 @@ msgstr ""
 #, python-format
 msgid ""
 "A new ticket will be created automatically by sending email to <span class="
-"\"strong\">support at bitcoin dot cz</span> or by entering the ticket via "
+"\"strong\">support at slushpool dot com</span> or by entering the ticket via "
 "our <a href=\"%(kb_ticket)s\" target=\"_blank\" class=\"ext\">web interface</"
 "a>."
 msgstr ""
@@ -3451,7 +3457,7 @@ msgid ""
 "When the block is found we consider this to be <strong>unconfirmed reward</"
 "strong>. To see what the current <strong>pool hashrate</strong> is, please "
 "take a look at <strong>stats page</strong>, block reward these days is "
-"<strong>roughtly 25BTC</strong>"
+"<strong>roughtly 12.5BTC</strong>"
 msgstr ""
 
 #: help/templates/help/manual/payouts.html:30
@@ -3579,9 +3585,9 @@ msgstr ""
 #: help/templates/help/manual/rewards.html:32
 #, python-format
 msgid ""
-"A <em>block value</em> is typically 25 BTC + fees from bitcoin transactions "
-"contained in the block (you can see block values <a href=\"%(blocks)s"
-"\">here</a>)."
+"A <em>block value</em> is typically 12.5 BTC + fees from bitcoin "
+"transactions contained in the block (you can see block values <a href="
+"\"%(blocks)s\">here</a>)."
 msgstr ""
 
 #: help/templates/help/manual/rewards.html:33
@@ -3835,7 +3841,7 @@ msgid ""
 "for you by the pool. They are defined as follows. <strong>Estimated reward </"
 "strong> for user %(u)s and time %(t_0)s is calculated exactly as if a block "
 "was found at that time but instead of block value (which is not known yet) "
-"we use 25 BTC:"
+"we use 12.5BTC:"
 msgstr ""
 
 #: help/templates/help/manual/rewards.html:152
@@ -4581,7 +4587,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: mining/models.py:219 web/models.py:1055
+#: mining/models.py:219 web/models.py:951
 msgctxt "UI"
 msgid "Login suffix"
 msgstr ""
@@ -4608,7 +4614,7 @@ msgid ""
 "this worker"
 msgstr ""
 
-#: mining/models.py:232 web/models.py:1045
+#: mining/models.py:232 web/models.py:941
 msgctxt "UI"
 msgid "Auto-detect alert limit"
 msgstr ""
@@ -5029,7 +5035,7 @@ msgstr ""
 msgid "Turkish"
 msgstr ""
 
-#: settings/email.py:25 web/views.py:631
+#: settings/email.py:25
 msgctxt "UI"
 msgid "Delete account confirmation"
 msgstr ""
@@ -5064,7 +5070,7 @@ msgctxt "UI"
 msgid "Wallet is not valid."
 msgstr ""
 
-#: settings/api/v1/api_actions.py:89 web/views.py:450
+#: settings/api/v1/api_actions.py:89
 msgctxt "UI"
 msgid "Your payout address has been locked."
 msgstr ""
@@ -5075,14 +5081,13 @@ msgid "No pending email."
 msgstr ""
 
 #: settings/api/v1/api_actions.py:111 settings/api/v1/api_actions.py:144
-#: web/views.py:501 web/views.py:605 web/views.py:787
 msgctxt "UI"
 msgid ""
 "Confirmation email has been sent. Please, check your mailbox and follow the "
 "link."
 msgstr ""
 
-#: settings/api/v1/api_actions.py:128 web/views.py:800
+#: settings/api/v1/api_actions.py:128
 msgctxt "UI"
 msgid "Email change request has been successfully canceled."
 msgstr ""
@@ -5092,18 +5097,18 @@ msgctxt "UI"
 msgid "No pending wallet."
 msgstr ""
 
-#: settings/api/v1/api_actions.py:158 web/views.py:881
+#: settings/api/v1/api_actions.py:158
 msgctxt "UI"
 msgid "Wallet change request has been successfully canceled."
 msgstr ""
 
-#: settings/api/v1/api_actions.py:184 web/views.py:651
+#: settings/api/v1/api_actions.py:184
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
 msgstr ""
 
-#: settings/forms/otp_setting_forms.py:54 web/views.py:389
+#: settings/forms/otp_setting_forms.py:54
 msgctxt "UI"
 msgid "Two-factor authentication is already configured"
 msgstr ""
@@ -5251,7 +5256,7 @@ msgctxt "UI"
 msgid "New email must be different from the current."
 msgstr ""
 
-#: web/forms.py:230 web/models.py:1048
+#: web/forms.py:230 web/models.py:944
 msgctxt "UI"
 msgid "Wallet"
 msgstr ""
@@ -5291,7 +5296,7 @@ msgctxt "UI"
 msgid "If you wish to change your BTC wallet, enter its address here"
 msgstr ""
 
-#: web/forms.py:297 web/templates/settings.html:371
+#: web/forms.py:297
 msgctxt "UI"
 msgid "An additional fee of 0.0001 BTC applies to payouts lower than 0.01 BTC."
 msgstr ""
@@ -5318,7 +5323,7 @@ msgctxt "UI"
 msgid "Sending threshold must be <= 5 BTC"
 msgstr ""
 
-#: web/forms.py:364 web/models.py:1056 web/models.py:1057
+#: web/forms.py:364 web/models.py:952 web/models.py:953
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr ""
@@ -5326,6 +5331,12 @@ msgstr ""
 #: web/forms.py:365
 msgctxt "UI"
 msgid "Pool always assigns difficulty equal or greater than this value."
+msgstr ""
+
+#: web/forms.py:409 web/forms.py:414 web/forms.py:418
+#, python-format
+msgctxt "UI"
+msgid "Worker %s already exists"
 msgstr ""
 
 #: web/forms.py:434 web/templates/hall-of-fame.html:19
@@ -5339,7 +5350,7 @@ msgctxt "UI"
 msgid "Enter a valid username."
 msgstr ""
 
-#: web/forms.py:436 web/models.py:1051
+#: web/forms.py:436 web/models.py:947
 msgctxt "UI"
 msgid "Email"
 msgstr ""
@@ -5452,7 +5463,7 @@ msgctxt "UI"
 msgid "Coins will be sent once the reward crosses over the threshold"
 msgstr ""
 
-#: web/models.py:189 web/models.py:1038
+#: web/models.py:189 web/models.py:934
 msgctxt "UI"
 msgid "Username in stats"
 msgstr ""
@@ -5462,7 +5473,7 @@ msgctxt "UI"
 msgid "Show my username in public server stats"
 msgstr ""
 
-#: web/models.py:192 web/models.py:1039
+#: web/models.py:192 web/models.py:935
 msgctxt "UI"
 msgid "Notify me on payout"
 msgstr ""
@@ -5472,7 +5483,7 @@ msgctxt "UI"
 msgid "Send email when the system sends me a payment"
 msgstr ""
 
-#: web/models.py:195 web/models.py:1040
+#: web/models.py:195 web/models.py:936
 msgctxt "UI"
 msgid "Newsletter"
 msgstr ""
@@ -5482,7 +5493,7 @@ msgctxt "UI"
 msgid "Receive pool newsletters"
 msgstr ""
 
-#: web/models.py:201 web/models.py:1041
+#: web/models.py:201 web/models.py:937
 msgctxt "UI"
 msgid "Currency unit"
 msgstr ""
@@ -5492,7 +5503,7 @@ msgctxt "UI"
 msgid "Unit used by the site when displaying Bitcoin amounts"
 msgstr ""
 
-#: web/models.py:206 web/models.py:1044
+#: web/models.py:206 web/models.py:940
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr ""
@@ -5577,349 +5588,348 @@ msgctxt "UI"
 msgid "Email change confirmation"
 msgstr ""
 
-#: web/models.py:519
+#: web/models.py:415
 msgctxt "UI, Transaction state"
 msgid "New"
 msgstr ""
 
-#: web/models.py:520
+#: web/models.py:416
 msgctxt "UI, Transaction state"
 msgid "Processing"
 msgstr ""
 
-#: web/models.py:521
+#: web/models.py:417
 msgctxt "UI, Transaction state"
 msgid "Failed"
 msgstr ""
 
-#: web/models.py:522
+#: web/models.py:418
 msgctxt "UI, Transaction state"
 msgid "Sent"
 msgstr ""
 
-#: web/models.py:775
+#: web/models.py:671
 msgctxt "UI, Proposals"
 msgid "Draft"
 msgstr ""
 
-#: web/models.py:776
+#: web/models.py:672
 msgctxt "UI, Proposals"
 msgid "Approved"
 msgstr ""
 
-#: web/models.py:777
+#: web/models.py:673
 msgctxt "UI, Proposals"
 msgid "Rejected"
 msgstr ""
 
-#: web/models.py:778
+#: web/models.py:674
 msgctxt "UI, Proposals"
 msgid "In progress"
 msgstr ""
 
-#: web/models.py:779
+#: web/models.py:675
 msgctxt "UI, Proposals"
 msgid "Released"
 msgstr ""
 
-#: web/models.py:780
+#: web/models.py:676
 msgctxt "UI, Proposals"
 msgid "Merged"
 msgstr ""
 
-#: web/models.py:939
+#: web/models.py:835
 #, python-format
 msgctxt "UI"
 msgid "Proposal %(link)s changed state from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr ""
 
-#: web/models.py:948 web/models.py:956
+#: web/models.py:844 web/models.py:852
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr ""
 
-#: web/models.py:952
+#: web/models.py:848
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
 msgstr ""
 
-#: web/models.py:960 web/models.py:979
+#: web/models.py:856 web/models.py:875
 #, python-format
 msgctxt "UI, time"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr ""
 
-#: web/models.py:973
+#: web/models.py:869
 msgctxt "UI"
 msgid "Depricated"
 msgstr ""
 
-#: web/models.py:985
+#: web/models.py:881
 msgctxt "UI"
 msgid "Nothing has changed"
 msgstr ""
 
-#: web/models.py:991 web/models.py:993
+#: web/models.py:887 web/models.py:889
 msgctxt "UI"
 msgid "N/A"
 msgstr ""
 
-#: web/models.py:1011
+#: web/models.py:907 workers/api/v1/views.py:84
 msgctxt "UI"
 msgid "Worker"
 msgstr ""
 
-#: web/models.py:1036
+#: web/models.py:932
 msgctxt "UI"
 msgid "Preferred language"
 msgstr ""
 
-#: web/models.py:1037
+#: web/models.py:933
 msgctxt "UI"
 msgid "Preferred timezone"
 msgstr ""
 
-#: web/models.py:1042
+#: web/models.py:938
 msgctxt "UI"
 msgid "Blockchain voting"
 msgstr ""
 
-#: web/models.py:1046
+#: web/models.py:942
 msgctxt "UI"
 msgid "Alert limit"
 msgstr ""
 
-#: web/models.py:1049
+#: web/models.py:945
 msgctxt "UI"
 msgid "Pending wallet"
 msgstr ""
 
-#: web/models.py:1050
+#: web/models.py:946
 msgctxt "UI"
 msgid "Send threshold"
 msgstr ""
 
-#: web/models.py:1053 web/templates/settings.html:52
-#: web/templates/settings.html.py:55 web/templates/settings.html:347
+#: web/models.py:949
 msgctxt "UI"
 msgid "Monitoring"
 msgstr ""
 
-#: web/models.py:1054
+#: web/models.py:950
 msgctxt "UI"
 msgid "Last Change"
 msgstr ""
 
-#: web/models.py:1059
+#: web/models.py:955
 msgctxt "UI"
 msgid "Enabled"
 msgstr ""
 
-#: web/models.py:1059
+#: web/models.py:955
 msgctxt "UI"
 msgid "Disabled"
 msgstr ""
 
-#: web/models.py:1080
+#: web/models.py:976
 msgctxt "UI"
 msgid "Account deleted"
 msgstr ""
 
-#: web/models.py:1081
+#: web/models.py:977
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr ""
 
-#: web/models.py:1083
+#: web/models.py:979
 msgctxt "UI"
 msgid "Login"
 msgstr ""
 
-#: web/models.py:1084
+#: web/models.py:980
 msgctxt "UI"
 msgid "Login to readonly mode"
 msgstr ""
 
-#: web/models.py:1085
+#: web/models.py:981
 msgctxt "UI"
 msgid "Logout"
 msgstr ""
 
-#: web/models.py:1086
+#: web/models.py:982
 msgctxt "UI"
 msgid "Message seen"
 msgstr ""
 
-#: web/models.py:1087
+#: web/models.py:983
 msgctxt "UI"
 msgid "Mining settings updated"
 msgstr ""
 
-#: web/models.py:1088
+#: web/models.py:984
 msgctxt "UI"
 msgid "Monitoring settings updated"
 msgstr ""
 
-#: web/models.py:1089
+#: web/models.py:985
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
 msgstr ""
 
-#: web/models.py:1090
+#: web/models.py:986
 msgctxt "UI"
 msgid "2-factor authentication disabled"
 msgstr ""
 
-#: web/models.py:1091
+#: web/models.py:987
 msgctxt "UI"
 msgid "2-factor authentication enabled"
 msgstr ""
 
-#: web/models.py:1092 web/models.py:1095
+#: web/models.py:988 web/models.py:991
 msgctxt "UI"
 msgid "Password changed"
 msgstr ""
 
-#: web/models.py:1093
+#: web/models.py:989
 msgctxt "UI"
 msgid "Password reset completed"
 msgstr ""
 
-#: web/models.py:1094
+#: web/models.py:990
 msgctxt "UI"
 msgid "Password reset initiated"
 msgstr ""
 
-#: web/models.py:1096
+#: web/models.py:992
 msgctxt "UI"
 msgid "Payout settings updated"
 msgstr ""
 
-#: web/models.py:1098
+#: web/models.py:994
 msgctxt "UI"
 msgid "Proposal created"
 msgstr ""
 
-#: web/models.py:1099
+#: web/models.py:995
 msgctxt "UI"
 msgid "You have created a new proposal:"
 msgstr ""
 
-#: web/models.py:1101
+#: web/models.py:997
 msgctxt "UI"
 msgid "Proposal comment deleted"
 msgstr ""
 
-#: web/models.py:1103
+#: web/models.py:999
 msgctxt "UI"
 msgid "Proposal updated"
 msgstr ""
 
-#: web/models.py:1106
+#: web/models.py:1002
 msgctxt "UI"
 msgid "Proposal state changed"
 msgstr ""
 
-#: web/models.py:1108
+#: web/models.py:1004
 msgctxt "UI"
 msgid "Proposal vote"
 msgstr ""
 
-#: web/models.py:1109
+#: web/models.py:1005
 #, python-format
 msgctxt "UI"
 msgid "You gave <b>%(points)s</b> points to proposal"
 msgstr ""
 
-#: web/models.py:1111
+#: web/models.py:1007
 msgctxt "UI"
 msgid "Account settings updated"
 msgstr ""
 
-#: web/models.py:1112
+#: web/models.py:1008
 msgctxt "UI"
 msgid "Wallet change confirmed"
 msgstr ""
 
-#: web/models.py:1113
+#: web/models.py:1009
 msgctxt "UI"
 msgid "Wallet change cancelled"
 msgstr ""
 
-#: web/models.py:1114
+#: web/models.py:1010
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
 msgstr ""
 
-#: web/models.py:1115
+#: web/models.py:1011
 msgctxt "UI"
 msgid "Email change confirmed"
 msgstr ""
 
-#: web/models.py:1116
+#: web/models.py:1012
 msgctxt "UI"
 msgid "Email change cancelled"
 msgstr ""
 
-#: web/models.py:1117
+#: web/models.py:1013
 msgctxt "UI"
 msgid "Email change confirmation resent"
 msgstr ""
 
-#: web/models.py:1118
+#: web/models.py:1014
 msgctxt "UI"
 msgid "Wallet locked"
 msgstr ""
 
-#: web/models.py:1119
+#: web/models.py:1015
 msgctxt "UI"
 msgid "Wallet unlocked"
 msgstr ""
 
-#: web/models.py:1120
+#: web/models.py:1016
 msgctxt "UI"
 msgid "Worker removed"
 msgstr ""
 
-#: web/models.py:1121
+#: web/models.py:1017
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr ""
 
-#: web/models.py:1122
+#: web/models.py:1018
 msgctxt "UI"
 msgid "Monitoring disabled for all workers"
 msgstr ""
 
-#: web/models.py:1123
+#: web/models.py:1019
 msgctxt "UI"
 msgid "Monitoring enabled for all workers"
 msgstr ""
 
-#: web/models.py:1124
+#: web/models.py:1020
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr ""
 
-#: web/models.py:1125
+#: web/models.py:1021
 msgctxt "UI"
 msgid "New worker"
 msgstr ""
 
-#: web/models.py:1126
+#: web/models.py:1022
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr ""
 
-#: web/models.py:1128
+#: web/models.py:1024
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr ""
 
-#: web/models.py:1129
+#: web/models.py:1025
 msgctxt "UI"
 msgid "Invalid login to readonly mode"
 msgstr ""
@@ -5934,81 +5944,12 @@ msgstr ""
 msgid "%i days"
 msgstr ""
 
-#: web/views.py:358
-msgctxt "UI"
-msgid "Two-factor authentication isn't configured yet"
-msgstr ""
-
-#: web/views.py:369
-msgctxt "UI"
-msgid "Two-factor authentication token is invalid. Please, enter valid token."
-msgstr ""
-
-#: web/views.py:377
-msgctxt "UI"
-msgid "Two-factor authentication has been succesfully disabled."
-msgstr ""
-
-#: web/views.py:406
-msgctxt "UI"
-msgid ""
-"Two-factor authentication token is invalid. Please, re-scan the QR code (a "
-"new one has been generated for security reasons)."
-msgstr ""
-
-#: web/views.py:414
-msgctxt "UI"
-msgid "Two-factor authentication has been configured."
-msgstr ""
-
-#: web/views.py:426
-msgctxt "UI"
-msgid "Invalid request"
-msgstr ""
-
-#: web/views.py:440
-msgctxt "UI"
-msgid "Wallet is not valid"
-msgstr ""
-
-#: web/views.py:508
-msgctxt "UI"
-msgid "The account has been updated."
-msgstr ""
-
-#: web/views.py:535
-msgctxt "UI"
-msgid "The monitoring settings has been updated."
-msgstr ""
-
-#: web/views.py:576
-msgctxt "UI"
-msgid "Password has been successfully changed."
-msgstr ""
-
-#: web/views.py:599
-msgctxt "UI"
-msgid "Now, confirm change by wallet signature."
-msgstr ""
-
-#: web/views.py:617
-msgctxt "UI"
-msgid "The payouts settings has been updated."
-msgstr ""
-
-#: web/views.py:903
-msgctxt "UI"
-msgid ""
-"Confirmation email has been sent. Please, check your mailbox and follow the "
-"link.<span data-test-key=\"wallet_confirm_resend\"></span>"
-msgstr ""
-
-#: web/views.py:913
+#: web/views.py:324
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at support@slushpool.com"
 msgstr ""
 
-#: web/views.py:1266
+#: web/views.py:677
 msgctxt "UI"
 msgid "Requested proposal is waiting for admin confirmation"
 msgstr ""
@@ -6922,7 +6863,6 @@ msgid ""
 msgstr ""
 
 #: web/templates/monitoring.html:3 web/templates/payouts.html:3
-#: web/templates/settings.html:3
 msgctxt "UI"
 msgid "My account"
 msgstr ""
@@ -7276,12 +7216,6 @@ msgstr ""
 
 #: web/templates/proposal_detail.html:144
 #: web/templates/proposal_detail.html:198 web/templates/proposal_form.html:34
-#: web/templates/settings.html:40 web/templates/settings.html.py:66
-#: web/templates/settings_basic.html:15 web/templates/settings_basic.html:31
-#: web/templates/settings_basic.html:50 web/templates/settings_payouts.html:16
-#: web/templates/settings_payouts.html:37
-#: web/templates/settings_security.html:104
-#: web/templates/settings_security.html:125
 msgctxt "UI"
 msgid "Save"
 msgstr ""
@@ -7329,9 +7263,6 @@ msgid "New proposal"
 msgstr ""
 
 #: web/templates/proposal_form.html:36 web/templates/proposal_form.html:38
-#: web/templates/settings_basic.html:51 web/templates/settings_payouts.html:38
-#: web/templates/settings_security.html:105
-#: web/templates/settings_security.html:126
 #: web/templates/widgets/email_change.html:6
 #: web/templates/widgets/wallet_pending.html:7
 msgctxt "UI"
@@ -7529,234 +7460,6 @@ msgctxt "UI"
 msgid "Reward History"
 msgstr ""
 
-#: web/templates/settings.html:3
-msgctxt "UI"
-msgid "Account settings"
-msgstr ""
-
-#: web/templates/settings.html:12
-msgctxt "UI"
-msgid "Account Settings"
-msgstr ""
-
-#: web/templates/settings.html:26 web/templates/settings.html.py:29
-#: web/templates/settings.html:332
-msgctxt "UI"
-msgid "Mining"
-msgstr ""
-
-#: web/templates/settings.html:31
-msgctxt "UI"
-msgid "Configure global mining settings"
-msgstr ""
-
-#: web/templates/settings.html:57
-#, python-format
-msgctxt "UI"
-msgid ""
-"Configure monitoring for individual workers <a href=\"%(workers)s\">here</a>"
-msgstr ""
-
-#: web/templates/settings.html:91
-msgctxt "UI"
-msgid "Manage tokens"
-msgstr ""
-
-#: web/templates/settings.html:93
-msgctxt "UI"
-msgid "Manage API token"
-msgstr ""
-
-#: web/templates/settings.html:95 web/templates/settings.html.py:127
-msgctxt "UI"
-msgid "Your current token:"
-msgstr ""
-
-#: web/templates/settings.html:103 web/templates/settings.html.py:139
-msgctxt "UI"
-msgid "Generate new token"
-msgstr ""
-
-#: web/templates/settings.html:111
-msgctxt "UI"
-msgid ""
-"With this token and API described below, you can easily retrieve pool "
-"account details without need to store login and password directly in your "
-"application, so <strong>keep it private</strong>."
-msgstr ""
-
-#: web/templates/settings.html:114
-msgctxt "UI"
-msgid ""
-"Following page contains JSON encoded data about <strong>recent pool rounds</"
-"strong>, including your round rewards:"
-msgstr ""
-
-#: web/templates/settings.html:118
-msgctxt "UI"
-msgid ""
-"This URL contains JSON encoded data about <strong>your pool account</strong>:"
-msgstr ""
-
-#: web/templates/settings.html:125
-msgctxt "UI"
-msgid "Manage readonly token"
-msgstr ""
-
-#: web/templates/settings.html:135
-msgid "token not generated"
-msgstr ""
-
-#: web/templates/settings.html:147
-msgctxt "UI"
-msgid ""
-"This token allows you to login into your account in readonly mode. All "
-"sensitive information - payouts, activity log and settings - will be hidden. "
-"Follow the link below to switch into this mode."
-msgstr ""
-
-#: web/templates/settings.html:159 web/templates/settings.html.py:162
-#: web/templates/settings.html:169
-msgctxt "UI"
-msgid "Delete my account"
-msgstr ""
-
-#: web/templates/settings.html:163
-msgctxt "UI"
-msgid ""
-"If you do not want to use this service anymore, you can delete your account "
-"on this page, but be aware that this action is <strong>final and your "
-"account can not be reactivated</strong> in future."
-msgstr ""
-
-#: web/templates/settings.html:164
-msgctxt "UI"
-msgid ""
-"Your <strong>user name and e-mail address</strong> will be <strong>free to "
-"use</strong> for new registration."
-msgstr ""
-
-#: web/templates/settings.html:165
-msgctxt "UI"
-msgid ""
-"Your account <strong>BTC balance will be lost</strong>, so please setup your "
-"send threshold to lowest possible value and wait for next payout."
-msgstr ""
-
-#: web/templates/settings.html:166
-msgctxt "UI"
-msgid "Do you really want to delete your account?"
-msgstr ""
-
-#: web/templates/settings.html:315 web/templates/settings.html.py:323
-#: web/templates/settings_basic.html:2 web/templates/settings_basic.html:7
-msgctxt "UI"
-msgid "Basic"
-msgstr ""
-
-#: web/templates/settings.html:318
-msgctxt "Intro"
-msgid ""
-"If you keep this option disabled, only user id will be shown in public "
-"statistics"
-msgstr ""
-
-#: web/templates/settings.html:326
-msgctxt "Intro"
-msgid "Choose your prefered currency unit."
-msgstr ""
-
-#: web/templates/settings.html:327
-msgctxt "Intro"
-msgid ""
-"This value is used for presentation purposes only and does not affect any "
-"payout calculations."
-msgstr ""
-
-#: web/templates/settings.html:335
-msgctxt "Intro"
-msgid ""
-"The preference you have selected determines the type of mining jobs that "
-"your workers will be receiving."
-msgstr ""
-
-#: web/templates/settings.html:336
-msgctxt "Intro"
-msgid ""
-"We want to give you a complete freedom to express your attitude to any "
-"current or future soft- and hard-forks"
-msgstr ""
-
-#: web/templates/settings.html:337
-msgctxt "Intro"
-msgid "that may take place on the Bitcoin network."
-msgstr ""
-
-#: web/templates/settings.html:339
-msgctxt "Intro"
-msgid ""
-"You also have a full right not to vote at all. In that case, you will be "
-"receiving standard bitcoin core jobs"
-msgstr ""
-
-#: web/templates/settings.html:340
-msgctxt "Intro"
-msgid ""
-"as long as no hard-fork takes place. You can check the current state of user "
-"preferences on the following page:"
-msgstr ""
-
-#: web/templates/settings.html:342
-msgctxt "Intro"
-msgid "State of user preferences"
-msgstr ""
-
-#: web/templates/settings.html:350
-msgctxt "Intro"
-msgid ""
-"If you disable this option, the monitoring system will not send any more e-"
-"mail notifications."
-msgstr ""
-
-#: web/templates/settings.html:355 web/templates/settings.html.py:365
-msgctxt "UI"
-msgid "Payout"
-msgstr ""
-
-#: web/templates/settings.html:358
-msgctxt "Intro"
-msgid "All bitcoins are being sent to this bitcoin wallet adress."
-msgstr ""
-
-#: web/templates/settings.html:360
-msgctxt "Intro"
-msgid ""
-"Please take a look at the Security tab to see how you can further secure "
-"your account"
-msgstr ""
-
-#: web/templates/settings.html:368
-msgctxt "Intro"
-msgid ""
-"When your account balance crosses the threshold value, the pool sends the "
-"entire balance to your payout address."
-msgstr ""
-
-#: web/templates/settings.html:370
-msgctxt "Intro"
-msgid "It is now possible to set this limit as low as 0.001 BTC."
-msgstr ""
-
-#: web/templates/settings_basic.html:23
-msgctxt "UI"
-msgid "Change Account Password"
-msgstr ""
-
-#: web/templates/settings_basic.html:42
-msgctxt "UI"
-msgid "Email Change"
-msgstr ""
-
 #: web/templates/settings_email_change_bad_token.html:14
 msgctxt "UI"
 msgid ""
@@ -7807,183 +7510,6 @@ msgctxt "UI"
 msgid ""
 "Email (%(orig_email)s) associated with your account has been successfully "
 "changed to %(new_email)s."
-msgstr ""
-
-#: web/templates/settings_payouts.html:2 web/templates/settings_payouts.html:7
-msgctxt "UI"
-msgid "Payouts"
-msgstr ""
-
-#: web/templates/settings_payouts.html:29
-msgctxt "UI"
-msgid "Wallet change"
-msgstr ""
-
-#: web/templates/settings_security.html:2
-msgctxt "UI"
-msgid "Security"
-msgstr ""
-
-#: web/templates/settings_security.html:7
-msgctxt "UI"
-msgid "Two-factor authentication"
-msgstr ""
-
-#: web/templates/settings_security.html:9
-msgctxt "UI"
-msgid ""
-"<strong>Your two-factor authentication is successfully configured.</strong>"
-msgstr ""
-
-#: web/templates/settings_security.html:10
-#: web/templates/settings_security.html:30
-msgctxt "UI"
-msgid ""
-"<strong>Please, note, that losing your smartphone (and a backup of your "
-"secret key) means you will not be able to change your payout address. Two-"
-"factor authentication cannot be deactivated without access to your "
-"smartphone.</strong>"
-msgstr ""
-
-#: web/templates/settings_security.html:11
-msgctxt "UI"
-msgid ""
-"You can deactivate two-factor authentication by entering valid one-time "
-"password into the form below."
-msgstr ""
-
-#: web/templates/settings_security.html:18
-msgctxt "UI"
-msgid "Disable two-factor auth"
-msgstr ""
-
-#: web/templates/settings_security.html:24
-msgctxt "UI"
-msgid ""
-"Alternatively if you do not have access to your authentication software, you "
-"can disable your OTP protection by sending us message signed by your bitcoin "
-"wallet"
-msgstr ""
-
-#: web/templates/settings_security.html:26
-msgctxt "UI"
-msgid "Disable by wallet signature"
-msgstr ""
-
-#: web/templates/settings_security.html:29
-msgctxt "UI"
-msgid ""
-"Two-factor authentication adds an extra layer of security to your pool "
-"account. It reduces the chances of getting your account robbed by someone "
-"else. When two-factor authentication is enabled, changing the <strong>payout "
-"address</strong> requires owning a special token (e.g. your smartphone with "
-"google authenticator installed) in addition to processing the standard "
-"confirmation email. Therefore, bad guys would have to get access to your "
-"registration email to confirm pool payouts and also they would have to steal "
-"your smartphone."
-msgstr ""
-
-#: web/templates/settings_security.html:31
-msgctxt "UI"
-msgid ""
-"You should seriously consider to backup the generated secret for the two-"
-"factor authentication to some safe place for cases when you lose your "
-"smartphone. You can use some kind of password manager application or a piece "
-"of paper. The generated URI is equivalent to the shown QR code."
-msgstr ""
-
-#: web/templates/settings_security.html:33
-msgctxt "UI"
-msgid "How to enable two-factor authentication"
-msgstr ""
-
-#: web/templates/settings_security.html:35
-msgctxt "UI"
-msgid "Install Google Authenticator to your smartphone"
-msgstr ""
-
-#: web/templates/settings_security.html:36
-msgctxt "UI"
-msgid "Open Google Authenticator, click \"Add an account\" / \"Scan QR code\""
-msgstr ""
-
-#: web/templates/settings_security.html:38
-msgctxt "UI"
-msgid "Scan the QR code below (and optionally backup the generated secret)"
-msgstr ""
-
-#: web/templates/settings_security.html:42
-msgctxt "UI"
-msgid "The URI form of the QR code:"
-msgstr ""
-
-#: web/templates/settings_security.html:46
-msgctxt "UI"
-msgid ""
-"Enter generated one-time password into this form to confirm that you've set "
-"up your application correctly"
-msgstr ""
-
-#: web/templates/settings_security.html:54
-msgctxt "UI"
-msgid "Enable two-factor auth"
-msgstr ""
-
-#: web/templates/settings_security.html:64
-#: web/templates/settings_security.html:81
-msgctxt "UI"
-msgid "Lock payout address"
-msgstr ""
-
-#: web/templates/settings_security.html:67
-#, python-format
-msgctxt "UI"
-msgid "<strong>Your payout address %(wallet)s is locked.</strong>"
-msgstr ""
-
-#: web/templates/settings_security.html:68
-msgctxt "UI"
-msgid ""
-"Please be sure that you have a backup of your bitcoin wallet stored on safe "
-"place, because since the payout address is locked, there's no way how to "
-"change it anymore."
-msgstr ""
-
-#: web/templates/settings_security.html:70
-msgctxt "UI"
-msgid "Remove the wallet lock by wallet signature"
-msgstr ""
-
-#: web/templates/settings_security.html:73
-#, python-format
-msgctxt "UI"
-msgid ""
-"As a security precaution, you may lock your current payout address <strong>"
-"%(wallet)s</strong>, so it cannot be changed by anyone who gains access to "
-"your pool account."
-msgstr ""
-
-#: web/templates/settings_security.html:74
-msgctxt "UI"
-msgid ""
-"Please be sure that you have a backup of your bitcoin wallet stored in a "
-"safe place. Since the payout address will be locked, there's <strong>no way "
-"how to change it anymore</strong>."
-msgstr ""
-
-#: web/templates/settings_security.html:76
-msgctxt "UI"
-msgid "Really lock the payout address?"
-msgstr ""
-
-#: web/templates/settings_security.html:96
-msgctxt "UI"
-msgid "Wallet unlock"
-msgstr ""
-
-#: web/templates/settings_security.html:117
-msgctxt "UI"
-msgid "Disable two-factor authentication"
 msgstr ""
 
 #: web/templates/slider.html:4
