@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: Slush's pool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-19 11:59+0200\n"
-"PO-Revision-Date: 2016-08-17 21:29+0000\n"
+"PO-Revision-Date: 2016-08-21 21:51+0000\n"
 "Last-Translator: Jan Pecinovsky <jan.pecinovsky@braiins.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
-"cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-"
+"cz/mining/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,7 +52,7 @@ msgstr "Metoda %s není povolena"
 
 #. Translators: %s will be api method, eg.: get, list, get_facts, etc.
 #: api/exceptions.py:50
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Method %s doesn't exist"
 msgstr "Metoda %s neexistuje"
@@ -60,7 +60,7 @@ msgstr "Metoda %s neexistuje"
 #: api/exceptions.py:55
 msgctxt "UI"
 msgid "Non-existent or expired token used"
-msgstr ""
+msgstr "Byl použit neexistující nebo neplatný token"
 
 #: api/exceptions.py:60
 msgctxt "UI"
@@ -106,13 +106,13 @@ msgid "Access denied to object: %s"
 msgstr "Zakázán přístup k objektu: %s"
 
 #: api/exceptions.py:99
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Worker \"%s\" already exists"
 msgstr "Zařízení %s již existuje"
 
 #: api/exceptions.py:104
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Label \"%s\" already exists"
 msgstr "Popisek %s už existuje"
@@ -123,13 +123,12 @@ msgid "Label doesn't exist"
 msgstr "Popisek neexistuje"
 
 #: api/exceptions.py:114
-#, fuzzy
 msgctxt "UI"
 msgid "Workers labels update failed"
-msgstr "Aktualizace popisků zařízení selhala."
+msgstr "Aktualizace popisků zařízení selhala"
 
 #: api/exceptions.py:119
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "User doesn't have worker (%s)"
 msgstr "Uživatel nemá zařízení (%s)"
@@ -148,13 +147,14 @@ msgctxt "UI"
 msgid ""
 "Slot number \"%s\" is not valid. Slot number must be first second of an hour."
 msgstr ""
+"Číslo slotu \"%s\" je neplatné. Číslo slotu musí být první vteřina v hodině."
 
 #. Translators: %s will be some invalid blockchain voting option
 #: api/exceptions.py:147
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "You can't vote for \"%s\""
-msgstr "Můžete hlasovat pro \"%s\""
+msgstr "Nemůžete hlasovat pro \"%s\""
 
 #: api/exceptions.py:152
 msgctxt "UI"
@@ -162,10 +162,9 @@ msgid "You must specify the \"coin_type\" attribute (\"BTC\" or \"NMC\")"
 msgstr ""
 
 #: api/exceptions.py:157
-#, fuzzy
 msgctxt "UI"
 msgid "Missing data for HR distribution"
-msgstr "Chybí data pro distribuci HR."
+msgstr "Chybí data pro distribuci HR"
 
 #: api/exceptions.py:167
 msgctxt "UI"
@@ -173,20 +172,18 @@ msgid "Integrity error on worker update"
 msgstr "Chyba integrity aktualizace zařízení"
 
 #: api/exceptions.py:172
-#, fuzzy
 msgctxt "UI"
 msgid "Worker name has already been used"
-msgstr "Jméno zařízení už bylo použito"
+msgstr "Jméno zařízení již bylo použito"
 
 #: api/exceptions.py:177
-#, fuzzy
 msgctxt "UI"
 msgid "Form error"
-msgstr "Chyba formuláře."
+msgstr "Chyba formuláře"
 
 #. Translators: %s = form id
 #: api/exceptions.py:183
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Form \"%s\" doesn't exist"
 msgstr "Formulář \"%s\" neexistuje"
@@ -279,10 +276,9 @@ msgstr ""
 "\">změňte heslo</a>."
 
 #: hashrate_proof/templates/hashrate_proof/home.html:4
-#, fuzzy
 msgctxt "UI"
 msgid "Hash Rate Proof"
-msgstr "Hash rate"
+msgstr "Důkaz výkonu"
 
 #: help/help_categories.py:74
 msgid "Getting started"
@@ -1251,7 +1247,7 @@ msgid "pool scoring hash rate"
 msgstr "skórovací hash rate poolu"
 
 #: help/templates/help/faq/mining_in_general.html:153
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "You can get pool hash rate at the <a href=\"%(stats)s\">stats page</a>, "
 "block reward is 12.5BTC + fees nowadays. This formula however only applies "
@@ -1739,12 +1735,12 @@ msgid "Reward"
 msgstr "Odměna"
 
 #: help/templates/help/faq/rewards.html:55
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "See the question above and the <a href=\"%(link)s\">following article</a>"
 msgstr ""
-"Podívejte se na otázku nahoře a na <a href=\"%(link)s\">následující článek</"
-"a>"
+"Podívejte se na otázku nahoře a na <a href=\"%(link)s\">následující "
+"článek</a>"
 
 #: help/templates/help/faq/rewards.html:58
 msgid "Reach payout threshold and get your money"
@@ -2759,17 +2755,17 @@ msgid "Including logs and/or screenshots where applicable."
 msgstr "Kde to pomůže, přidejte logy / snímky obrazovky."
 
 #: help/templates/help/first-aid/resources.html:35
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A new ticket will be created automatically by sending email to <span class="
 "\"strong\">support at slushpool dot com</span> or by entering the ticket via "
 "our <a href=\"%(kb_ticket)s\" target=\"_blank\" class=\"ext\">web interface</"
 "a>."
 msgstr ""
-"Odesláním emailu na <span class=\"strong\">support zavináč bitcoin tečka cz</"
-"span> nebo vložením požadavku přes naše <a href=\"%(kb_ticket)s\" target="
-"\"_blank\" class=\"ext\">webové rozhraní</a> se automaticky vytvoří nový "
-"požadavek."
+"Odesláním emailu na <span class=\"strong\">support zavináč slushpool tečka "
+"com</span> nebo vložením požadavku přes naše <a href=\"%(kb_ticket)s\" "
+"target=\"_blank\" class=\"ext\">webové rozhraní</a> se automaticky vytvoří "
+"nový požadavek."
 
 #: help/templates/help/first-aid/resources.html:39
 msgid "See what's new"
@@ -3443,6 +3439,8 @@ msgid ""
 "No more \"Pool is not providing work fast enough\" messages in mining "
 "software"
 msgstr ""
+"Už žádné zprávy jako \"Pool neposkytuje práci dostatečně rychle\" v těžebním "
+"software"
 
 #: help/templates/help/manual/mining-proxy.html:23
 #, python-format
@@ -3450,44 +3448,53 @@ msgid ""
 "Extremely low <a href=\"%(link)s\">stale rate</a> (less than 0.1%%, that "
 "means below 1 stale per 1000 accepted shares)"
 msgstr ""
+"Extrémně nízký <a href=\"%(link)s\">počet neplatných řešení</a> (méně než "
+"0.1%%, což znamená méně než 1 neplatné na 1000 platných řešení)"
 
 #: help/templates/help/manual/mining-proxy.html:24
 msgid "Very low network bandwidth usage (~10kB/minute)"
-msgstr ""
+msgstr "Velice malé zatěžování internetového připojení (~10kB/minutu)"
 
 #: help/templates/help/manual/mining-proxy.html:28
 msgid "Installation on Windows"
-msgstr ""
+msgstr "Instalace na Windows"
 
 #: help/templates/help/manual/mining-proxy.html:31
 #, python-format
 msgid ""
 "Download official Windows binaries (EXE) from <a href=\"%(url)s\">here</a>"
 msgstr ""
+"Stáhněte si oficiální instalaci pro Windows (EXE) <a href=\"%(url)s\">zde</a>"
 
 #: help/templates/help/manual/mining-proxy.html:32
 msgid ""
 "Open downloaded file. It will open console window using default settings "
 "(proxy connects to Slush's pool interface)"
 msgstr ""
+"Otevřete stažený soubor. Ten otevře okno konzole se standardním nastavením ("
+"proxy se připojuje ke Slush Poolu)"
 
 #: help/templates/help/manual/mining-proxy.html:34
 msgid ""
 "If you are experienced user then you can set mining proxy as a service by "
 "following instructions on the link below:"
 msgstr ""
+"Pokud jste zkušený uživatel, můžete nastavit těžební proxy jako službu dle "
+"instrukcí v odkazu níže:"
 
 #: help/templates/help/manual/mining-proxy.html:39
 msgid "Installation on Linux (Ubuntu / Debian)"
-msgstr ""
+msgstr "Instalace na Linuxu (Ubuntu / Debian)"
 
 #: help/templates/help/manual/mining-proxy.html:42
 #: help/templates/help/manual/mining-proxy.html:67
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Download TGZ file from <a href=\"%(url)s\" target=\"_blank\" class=\"ext"
 "\">here</a>"
-msgstr "Pokračuj prosím na stránku <a href='%(url)s'>svého profilu</a>"
+msgstr ""
+"Stáhněte si TGZ soubor <a href=\"%(url)s\" target=\"_blank\" class=\"ext\""
+">zde</a>"
 
 #: help/templates/help/manual/mining-proxy.html:43
 msgid ""
@@ -3495,11 +3502,14 @@ msgid ""
 "get to directory containing file you have just downloaded (eg. <code>cd ~/"
 "Downloads</code>)"
 msgstr ""
+"Otevřete terminál (<code>ctrl + alt + T</code> v Ubuntu) a přejděte do "
+"adresáře obsahujícího právě stažený soubor (např. <code>cd "
+"~/Downloads</code>)"
 
 #: help/templates/help/manual/mining-proxy.html:44
 #: help/templates/help/manual/mining-proxy.html:69
 msgid "Enter following commands one by one:"
-msgstr ""
+msgstr "Postupně zadejte následující příkazy:"
 
 #: help/templates/help/manual/mining-proxy.html:53
 #, python-format
@@ -3507,14 +3517,16 @@ msgid ""
 "Now you can start the proxy by typing %(t)s in the terminal window (provided "
 "you are in directory where you have installed your copy of the proxy)."
 msgstr ""
+"Nyní můžete spouštět proxy zadáním %(t)s v okně terminálu (předpokládaje, že "
+"se nacházíte v adresáři, do kterého jste proxy nainstaloval)."
 
 #: help/templates/help/manual/mining-proxy.html:57
 msgid "Installation on Mac"
-msgstr ""
+msgstr "Instalace na Macu"
 
 #: help/templates/help/manual/mining-proxy.html:58
 msgid "Prerequisites:"
-msgstr ""
+msgstr "Požadavky:"
 
 #: help/templates/help/manual/mining-proxy.html:59
 #, python-format
@@ -3523,6 +3535,8 @@ msgid ""
 "probably do not have the %(lib)s binary required to run the %(setup)s file. "
 "You have two options here:"
 msgstr ""
+"V Mac OS X již máte nainstalován Python, ale pravděpodobně nemáte %(lib)s "
+"binárku potřebnou ke spuštění souboru %(setup)s. Máte dvě možnosti:"
 
 #: help/templates/help/manual/mining-proxy.html:61
 msgid ""
@@ -3530,6 +3544,9 @@ msgid ""
 "applications folder) and go to <em>preferences → downloads</em> section and "
 "download/install the <em>\"command line tools\"</em>."
 msgstr ""
+"Stáhněte si Xcode (zdarma) z App Store, otevřete ho (je ve Vašem adresáři s "
+"aplikacemi) a pokračujte na do sekce <em>Předvolby → Stažené</em> stáhněte / "
+"nainstalujte si <em>\"nástroje pro práci v příkazovém řádku\"</em>."
 
 #: help/templates/help/manual/mining-proxy.html:62
 #, python-format
@@ -3537,10 +3554,12 @@ msgid ""
 "If you don't want to install Xcode, <a href=\"%(url)s\" target=\"_blank\" "
 "class=\"ext\">get osx-gcc-installer here</a>"
 msgstr ""
+"Pokud nechcete instalovat Xcode, <a href=\"%(url)s\" target=\"_blank\" class="
+"\"ext\">stáhněte si osx-gcc-installer</a>"
 
 #: help/templates/help/manual/mining-proxy.html:65
 msgid "Now if you have installed GCC, you can procede with following steps:"
-msgstr ""
+msgstr "Nyní, když máte GCC, můžete pokračovat následovně:"
 
 #: help/templates/help/manual/mining-proxy.html:68
 msgid ""
@@ -3548,6 +3567,9 @@ msgid ""
 "code>) and get to directory containing file you have just downloaded (eg.:"
 "&nbsp;<code>cd ~/Downloads</code>)"
 msgstr ""
+"Otevřete terminál (<code>Aplikace → Nástroje → Terminál</code>) a přejděte "
+"do adresáře obsahujícím právě stažený soubor (např.:&nbsp;<code>cd "
+"~/Downloads</code>)"
 
 #: help/templates/help/manual/mining-proxy.html:75
 #, python-format
@@ -3555,6 +3577,8 @@ msgid ""
 "Now you can start the proxy by typing %(t)s (provided you are in directory "
 "where you have installed your copy of the proxy)"
 msgstr ""
+"Nyní můžete spouštět proxy zadáním %(t)s (předpokládaje, že jste v adresáři, "
+"do kterého jste proxy nainstaloval)"
 
 #: help/templates/help/manual/mining-proxy.html:78
 #, python-format
@@ -3566,47 +3590,54 @@ msgid ""
 "gcc-installer</a> and download the specific gcc binary for your version of "
 "Mac OS."
 msgstr ""
+"Berte prosím v potaz, že jakmile Apple vydá <strong>Xcode 4.7</strong>, tak "
+"<strong>odstraní možnost volitelné instalace gcc</strong> (chtějí používat "
+"clang). Až se toto stane, můžete si vybrat buď neupgradovat, nebo se vrátit "
+"k prve zmíněnému <a href=\"%(url)s\" target=\"_blank\" class=\"ext\">osx-gcc-"
+"installeru</a> a stáhnout si konkrétní verzi gcc pro Vaši verzi Mac OS."
 
 #: help/templates/help/manual/mining-proxy.html:80
 msgid "Installation on Linux Using Git (Advanced)"
-msgstr ""
+msgstr "Instalace na Linuxu za použití Gitu (Pokročilé)"
 
 #: help/templates/help/manual/mining-proxy.html:82
 msgid ""
 "This is advanced option for experienced users, but it gives you the easiest "
 "way for updating the proxy."
 msgstr ""
+"Tato možnost je pro zkušené uživatele, je to nicméně nejjednodušší způsob, "
+"jak proxy aktualizovat."
 
 #: help/templates/help/manual/mining-proxy.html:90
 msgctxt "proxy installation comment"
 msgid "Development package of Python is necessary"
-msgstr ""
+msgstr "Vývojářská verze Pythonu je nezbytná"
 
 #: help/templates/help/manual/mining-proxy.html:93
 msgctxt "proxy installation comment"
 msgid "Upgrade setuptools package"
-msgstr ""
+msgstr "Aktualizujte balíček setuptools"
 
 #: help/templates/help/manual/mining-proxy.html:96
 msgctxt "proxy installation comment"
 msgid "Install required dependencies (namely Twisted and Stratum libraries)"
 msgstr ""
+"Nainstalujte požadované závislosti (jmenovitě jsou potřeba knihovny Twisted "
+"a Stratum)"
 
 #: help/templates/help/manual/mining-proxy.html:99
-#, fuzzy
 msgctxt "proxy installation comment"
 msgid "Start the proxy"
-msgstr "Aktualizováno v"
+msgstr "Spusťte proxy"
 
 #: help/templates/help/manual/mining-proxy.html:102
-#, fuzzy
 msgctxt "proxy installation comment"
 msgid "Update the proxy"
-msgstr "Aktualizováno v"
+msgstr "Aktualizujte proxy"
 
 #: help/templates/help/manual/mining-proxy.html:105
 msgid "Compiling Midstate C Extension"
-msgstr ""
+msgstr "Kompilování rozšíření Midstate C"
 
 #: help/templates/help/manual/mining-proxy.html:107
 msgid ""
@@ -3615,6 +3646,10 @@ msgid ""
 "midstate calculations (plain python implementation is <span class=\"em"
 "\">very slow</span>)."
 msgstr ""
+"U některých opravdu velkých sestav težebních zařízení používajících getwork "
+"rozhraní této proxy se Vám bude hodit rozšíření \"midstatec\" C, které "
+"významně zrychluje midstate kalkulace (prostá python implementace je <span "
+"class=\"em\">velmi pomalá</span>)."
 
 #: help/templates/help/manual/mining-proxy.html:109
 msgid ""
@@ -3622,20 +3657,26 @@ msgid ""
 "code> subdirectory. Proxy will auto-detect compiled extension on next "
 "startup."
 msgstr ""
+"Pro zapnutí tohoto rozšíření pouze napište <code>make</code> v "
+"<code>midstatec</code> podadresáři. Proxy automaticky detekuje zkompilované "
+"rozšíření při příštím startu."
 
 #: help/templates/help/manual/mining_beginners.html:11
 msgid ""
 "1. <span>I am new to mining.</span> What do I need <span>to start mining?</"
 "span>"
 msgstr ""
+"1. <span>Těžení je pro mě novinkou.</span> Co potřebuji <span>, abych mohl "
+"začít těžit?</span>"
 
 #: help/templates/help/manual/mining_beginners.html:13
 msgid ""
 "First of all you need <strong>specialized hardware (ASIC miner)</strong>"
 msgstr ""
+"Nejdříve ze všeho potřebujete <strong>specializovaný hardware (ASIC "
+"zařízení)</strong>"
 
 #: help/templates/help/manual/mining_beginners.html:15
-#, fuzzy
 msgid ""
 "<strong>Do not even try</strong> mining <strong>without an ASIC miner</"
 "strong>. Neither your <strong>CPU/GPU</strong> nor your <strong>Smart phone</"
@@ -3643,9 +3684,11 @@ msgid ""
 "dead and unprofitable due to low efficiency (hash rate vs. power "
 "consumption)."
 msgstr ""
-"Vezměte prosím v potaz, že těžení na <strong>CPU/GPU</strong> je považováno "
-"za <strong>mrtvé a nevýdělečné</strong> kvůli nízké efektivitě (hash rate "
-"vs. spotřeba elektříny)."
+"<strong>Ani nezkoušejte</strong> těžit <strong>bez ASIC zařízení</strong>. "
+"Ani Vaše <strong>CPU/GPU</strong>, ani Váš <strong>chytrý telefon</strong> "
+"nejsou <strong>dostatečné</strong> pro těžení v dnešní době. Takové těžení "
+"je považováno za mrtvé a nevýdělečné kvůli nízké efektivitě (hash rate vs. "
+"spotřeba elektříny)."
 
 #: help/templates/help/manual/mining_beginners.html:17
 #, python-format
@@ -3654,16 +3697,17 @@ msgid ""
 "here: <a href=\"%(url)s\" target=\"_blank\">%(globe)s Mining hardware "
 "comparison</a>"
 msgstr ""
+"Pokud <strong>nevlastníte</strong> žádné ASIC zařízení, začněte s průzkumem "
+"zde: <a href=\"%(url)s\" target=\"_blank\">%(globe)s Porovnání těžebního "
+"hardware</a>"
 
 #: help/templates/help/manual/mining_beginners.html:19
-#, fuzzy
 msgid "2. <span>Required</span> software"
-msgstr "<span>Potvrzená</span> odměna"
+msgstr "2. <span>Požadovaný</span> software"
 
 #: help/templates/help/manual/mining_beginners.html:40
-#, fuzzy
 msgid "3. <span>Expected</span> reward"
-msgstr "<span>Nepotvrzená</span> odměna"
+msgstr "3. <span>Předpokládaná</span> odměna"
 
 #: help/templates/help/manual/mining_beginners.html:42
 #, python-format
@@ -3672,10 +3716,13 @@ msgid ""
 "calculator</a> to determine how much you can make with your mining hardware. "
 "Just insert your hash rate and you will see approximate reward."
 msgstr ""
+"Pro odhadnutí výdělku s Vaším težebním zařízením můžete použít <a href=\""
+"%(url)s\" target=\"_blank\">%(globe)s online kalkulačku</a>. Jednodušte "
+"vložte Váš hash rate a dostanete předpokládanou odměnu."
 
 #: help/templates/help/manual/mining_beginners.html:44
 msgid "4. Connecting your ASIC miner <span>to the pool</span>"
-msgstr ""
+msgstr "4. Připojování ASIC zařízení <span>k poolu</span>"
 
 #: help/templates/help/manual/mining_beginners.html:46
 msgid ""
@@ -3683,10 +3730,13 @@ msgid ""
 "please \tcontinue with following article regarding your miner setup and "
 "connecting it to our pool:"
 msgstr ""
+"Jakmile máte ASIC zařízení k dispozici a máte nainstalován požadovaný "
+"software, pokračujte prosím \tna následující článek ohledně nastavení Vašeho "
+"zařízení a jeho připojení k poolu:"
 
 #: help/templates/help/manual/mining_beginners.html:49
 msgid "5. <span>How do i find my</span> Bitcoin address?"
-msgstr ""
+msgstr "5. <span>Jak zjistím svou</span> Bitcoinovou adresu?"
 
 #: help/templates/help/manual/mining_beginners.html:50
 msgid ""
@@ -3697,6 +3747,12 @@ msgid ""
 "<strong>Electrum.org</strong>, <strong>BitcoinArmory.com</strong> and others "
 "where you can easily create your own wallet."
 msgstr ""
+"Pool nefunguje jako Bitcoinová peněženka. Proto není možné generovat si "
+"vlastní výplatní adresy na poolových stránkách. Existuje nicméně spousta "
+"poskytovatelů Bitcoinových peněženek jako <strong>myTrezor.com</strong>, "
+"<strong>Mycelium.com</strong>, <strong>Greenaddress.it</strong>, "
+"<strong>Electrum.org</strong>, <strong>BitcoinArmory.com</strong> a další, "
+"kde si můžete peněženku jednoduše vytvořit."
 
 #: help/templates/help/manual/mining_beginners.html:51
 #, python-format
@@ -3704,10 +3760,12 @@ msgid ""
 "Once you have it go to <a href=\"%(account_settings)s\">Payouts tab here</a> "
 "and set it as your payout address."
 msgstr ""
+"Jakmile ji máte, běžte na <a href=\"%(account_settings)s\">záložku "
+"Výplaty</a> a nastavte si ji jako výplatní adresu."
 
 #: help/templates/help/manual/mining_beginners.html:53
 msgid "Further questions?"
-msgstr ""
+msgstr "Další otázky?"
 
 #: help/templates/help/manual/mining_beginners.html:55
 #, python-format
@@ -3716,12 +3774,16 @@ msgid ""
 "<a href=\"%(url)s\">following useful articles</a> which will help you "
 "mastering at our pool."
 msgstr ""
+"Máte další otázky? Pokud berete těžbu vážně, přečtěte si prosím <a href=\""
+"%(url)s\">následující užitečné články</a>, které Vám pomohou zjistit více."
 
 #: help/templates/help/manual/mining_beginners.html:57
 msgid ""
 "We would like to recommend <strong>Bitcoin Mining</strong> thread on "
 "<strong>Reddit</strong> which is a nice place to start as well:"
 msgstr ""
+"Chtěli bychom doporučit vlákno o <strong>Bitcoinové těžbě</strong> na "
+"<strong>Redditu</strong>, které považujeme za dobré místo, kde začít:"
 
 #: help/templates/help/manual/monitoring.html:15
 msgid "Why should I care?"
@@ -4021,14 +4083,14 @@ msgid "1. Amount of Bitcoins <span>You Can Get with Your Hash Rate.</span>"
 msgstr "1. Počet Bitcoinů, <span>které můžete získat s vaším hash rate.</span>"
 
 #: help/templates/help/manual/payouts.html:21
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "You can get yourself a rough estimation of how much you should earn per "
 "block using the <a href=\"%(url)s\" target=\"_blank\" class=\"ext\">Bitcoin "
 "calculator</a>"
 msgstr ""
-"Kolik bitcoinů zhruba dostanete za blok si můžete sám spočítat pomocí "
-"Bitcoinové kalkulačky <a href=\"%(url)s\">zde</a>"
+"Kolik bitcoinů zhruba dostanete za blok si můžete sám spočítat pomocí <a "
+"href=\"%(url)s\" target=\"_blank\" class=\"ext\">Bitcoinové kalkulačky</a>"
 
 #: help/templates/help/manual/payouts.html:22
 msgid ""
@@ -4052,7 +4114,6 @@ msgstr ""
 "\">skórovacím systému odměn</a>."
 
 #: help/templates/help/manual/payouts.html:27
-#, fuzzy
 msgid ""
 "When the block is found we consider this to be <strong>unconfirmed reward</"
 "strong>. To see what the current <strong>pool hashrate</strong> is, please "
@@ -4062,7 +4123,7 @@ msgstr ""
 "Když je nalezen blok, považujeme odměnu za <strong>neověřenou</strong>. Pro "
 "zjištění, kolik je aktuální <strong>hash rate poolu</strong>, se prosím "
 "podívejte na <strong>statistiky</strong>, odměna za blok je v tomto období "
-"<strong>zhruba 25BTC</strong>"
+"<strong>zhruba 12.5 BTC</strong>"
 
 #: help/templates/help/manual/payouts.html:30
 msgid "2. Frequency of and Routines <span>Behind Payouts</span>"
@@ -4236,13 +4297,13 @@ msgstr ""
 "Pool vypočítává odměny za <strong>naždý nazelezený blok</strong> následovně:"
 
 #: help/templates/help/manual/rewards.html:32
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A <em>block value</em> is typically 12.5 BTC + fees from bitcoin "
 "transactions contained in the block (you can see block values <a href="
 "\"%(blocks)s\">here</a>)."
 msgstr ""
-"<em>Hodnota bloku</em> je typicky 25 BTC + transakční poplatky z "
+"<em>Hodnota bloku</em> je typicky 12.5 BTC + transakční poplatky z "
 "bitcoinových transakcí provedených v průběhu bloku (hodnoty bloků najdete <a "
 "href=\"%(blocks)s\">zde</a>)."
 
@@ -4567,7 +4628,7 @@ msgid "Other values"
 msgstr "Ostatní hodnoty"
 
 #: help/templates/help/manual/rewards.html:147
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "When you look at your dashboard page you will find other values calculated "
 "for you by the pool. They are defined as follows. <strong>Estimated reward </"
@@ -4576,10 +4637,10 @@ msgid ""
 "we use 12.5BTC:"
 msgstr ""
 "Když se podíváte na svou přehledovou stránku, najdete další hodnoty, které "
-"pro vás pool vypočítal. Ty jsou definovány následovně. <strong>Předpokládaná "
+"pro Vás pool vypočítal. Ty jsou definovány následovně. <strong>Předpokládaná "
 "odměna</strong> pro uživatele %(u)s a čas %(t_0)s je počítána přesně jako "
 "kdyby byl nový blok nalezen v daný čas, ale jako hodnotu bloku (která ještě "
-"není známa) používáme 25 BTC:"
+"není známa) používáme 12.5 BTC:"
 
 #: help/templates/help/manual/rewards.html:152
 #, python-format
@@ -4611,14 +4672,14 @@ msgid "Round"
 msgstr "Kolo"
 
 #: help/templates/help/manual/terminology.html:20
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Round is the time period between two blocks found by the pool. It can last "
 "from few seconds to many hours, depending on <a href=\"%(link)s\">pool's "
 "luck.</a>"
 msgstr ""
 "Kolo je na poolu doba mezi nalezením dvou bloků. Může trvat mezi pár "
-"vteřinami a několika hodinami v závislosti na <a href=\"#luck\">poolovém "
+"vteřinami a několika hodinami v závislosti na <a href=\"%(link)s\">poolovém "
 "štěstí.</a>"
 
 #: help/templates/help/manual/terminology.html:28
@@ -4639,13 +4700,13 @@ msgstr ""
 "zařízení nevydělá ani na náklady spojené s těžbou."
 
 #: help/templates/help/manual/terminology.html:32
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "ASIC based miners offer a significantly higher <a href=\"%(link)s\">Hash "
 "Rate</a> at a lower power consumption."
 msgstr ""
-"Zařízení založená na technologii ASIC nabízí výrazně vyšší <a href="
-"\"#hashrate\">hash rate</a> při nižší spotřebě energií."
+"Zařízení založená na technologii ASIC nabízí výrazně vyšší <a href=\"%(link)"
+"s\">hash rate</a> při nižší spotřebě energií."
 
 #: help/templates/help/manual/terminology.html:40
 msgid "Worker"
@@ -4660,7 +4721,6 @@ msgstr ""
 "údaj do vašeho těžebního software."
 
 #: help/templates/help/manual/terminology.html:45
-#, fuzzy
 msgid ""
 "We recommend to give a designated worker name to every mining device. That "
 "way you can <strong>track down a faulty miner</strong> easily just by "
@@ -4731,7 +4791,7 @@ msgid "Effective <span>Hash Rate</span>"
 msgstr "Efektivní <span>hash rate</span>"
 
 #: help/templates/help/manual/terminology.html:67
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The effective hash rate is a hash rate <strong>calculated from hashes "
 "submitted by your device to our pool</strong>. Only a small portion of "
@@ -4739,9 +4799,9 @@ msgid ""
 "assigned by the pool (see: <a href=\"%(link)s\">Shares</a>)."
 msgstr ""
 "Efektivní hash rate je hash rate <strong>počítaný z hashů odevzdaných vaším "
-"zařízením poolu</strong>. Pouze malá část z hashů generovaných vaším "
+"zařízením poolu</strong>. Pouze malá část z hashů generovaných Vaším "
 "zařízením je ve skutečnosti odeslána, Hashe musí splnit určitá kriteria "
-"přidělená poolem (podívejte se na: <a href=\"#share\">%Řešení</a>)."
+"přidělená poolem (podívejte se na: <a href=\"%(link)s\">Řešení</a>)."
 
 #: help/templates/help/manual/terminology.html:68
 msgid ""
@@ -4776,14 +4836,14 @@ msgid "Scoring <span>Hash Rate</span>"
 msgstr "Skórovací <span>hash rate</span>"
 
 #: help/templates/help/manual/terminology.html:73
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Scoring hash rate is a value derived from effective hash rate used for "
 "rewards calculation. Please, see <a href=\"%(rewards)s\">Reward System</a> "
 "for the explanation."
 msgstr ""
 "Skórovací hash rate je hodnota odvozená od efektivního hash rate použitá pro "
-"výpočet odměn. Podívejte se prosím na <a href=\"%(rewards_manual)s\">systém "
+"výpočet odměn. Podívejte se prosím na <a href=\"%(rewards)s\">systém "
 "odměn</a> pro více informací."
 
 #: help/templates/help/manual/terminology.html:81
@@ -4846,13 +4906,13 @@ msgstr ""
 "slozitosti)</span>"
 
 #: help/templates/help/manual/terminology.html:104
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "(Please, have a look at how <a href=\"%(link)s\">shares</a> are being "
 "produced before reading on.)"
 msgstr ""
-"(Před pokračováním ve čtení se prosím nejdřív podívejte jak jsou vytvářena "
-"<a href=\"#share\">řešení</a>.)"
+"(Před pokračováním ve čtení se prosím nejdřív podívejte jak jsou vytvářena <"
+"a href=\"%(link)s\">řešení</a>.)"
 
 #: help/templates/help/manual/terminology.html:105
 msgid ""
@@ -5225,7 +5285,6 @@ msgid ""
 msgstr "Nastavte ručně nastavte minimální složitost doporučenou výrobcem ."
 
 #: help/templates/help/manual/worker-management.html:15
-#, fuzzy
 msgctxt "UI"
 msgid "Worker <span>Management</span>"
 msgstr "Nastavení <span>zařízení</span>"
@@ -5237,21 +5296,19 @@ msgid "Newsletter unsubscription"
 msgstr "Odběr novinek odhlášen"
 
 #: mailing/templates/mailing/unsubscribe.html:15
-#, fuzzy
 msgctxt "UI"
 msgid "I am sorry to see you go!"
-msgstr "Mrzí nás, že se odhlašujete!"
+msgstr "Mrzí mě, že se odhlašujete!"
 
 #: mailing/templates/mailing/unsubscribe.html:17
-#, fuzzy
 msgctxt "UI"
 msgid "Please select account you want to unsubscribe from."
-msgstr "Prosím vyberte účet, který chcete odhlásit"
+msgstr "Prosím vyberte účet, který chcete odhlásit."
 
 #: mailing/templates/mailing/unsubscribe.html:19
 msgctxt "UI"
 msgid "If you care to, you can give me some feedback."
-msgstr ""
+msgstr "Pokud máte chvilku, můžete mi poskytnout zpětnou vazbu."
 
 #: mailing/templates/mailing/unsubscribe.html:39
 msgctxt "UI"
@@ -5259,7 +5316,7 @@ msgid "Unsubscribe me"
 msgstr "Odhlašte mě"
 
 #: mailing/templates/mailing/unsubscribe.html:48
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "I have changed my mind. Take me to <a href=\"%(homepage_url)s\">Homepage</a> "
@@ -5321,6 +5378,10 @@ msgid ""
 "span> POOL HERE!\n"
 "            "
 msgstr ""
+"\n"
+"                HEJ %(username)s, <span style=\"color:#346ee5;\">TADY </span>"
+" SLUSH POOL!\n"
+"            "
 
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:33
 #, python-format
@@ -5331,6 +5392,10 @@ msgid ""
 "\">SLUSH</span> POOL!\n"
 "            "
 msgstr ""
+"\n"
+"                %(username)s, CHYBÍTE NÁM NA <span style=\"color:#346ee5;\""
+">SLUSH</span> POOLU!\n"
+"            "
 
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:37
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:45
@@ -5342,6 +5407,10 @@ msgid ""
 "POOL THANKS YOU!\n"
 "            "
 msgstr ""
+"\n"
+"                %(username)s, <span style=\"color:#346ee5;\">SLUSH</span> "
+"POOL VÁM DĚKUJE!\n"
+"            "
 
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:41
 #, python-format
@@ -5352,6 +5421,10 @@ msgid ""
 "#346ee5;\">SLUSH</span> POOL!\n"
 "            "
 msgstr ""
+"\n"
+"                %(username)s, CHYBÍTE NÁM NA NOVÉM <span style=\""
+"color:#346ee5;\">SLUSH</span> POOLU!\n"
+"            "
 
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:58
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:78
@@ -5361,6 +5434,9 @@ msgid ""
 "            (just a wee reminder)\n"
 "        "
 msgstr ""
+"\n"
+"            (jen drobné připomenutí)\n"
+"        "
 
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:62
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:70
@@ -5370,6 +5446,9 @@ msgid ""
 "            (and so did the other miners)\n"
 "        "
 msgstr ""
+"\n"
+"            (a ostatní těžaři také)\n"
+"        "
 
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:66
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:74
@@ -5379,6 +5458,9 @@ msgid ""
 "            (as do thousands of our users)\n"
 "        "
 msgstr ""
+"\n"
+"            (stejně jako tisíce našich uživatelů)\n"
+"        "
 
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:86
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:123
@@ -5533,7 +5615,7 @@ msgstr ""
 #: mining/models.py:388
 msgctxt "UI"
 msgid "-- not voted --"
-msgstr ""
+msgstr "-- nehlasováno --"
 
 #: mining/models.py:389
 msgctxt "UI"
@@ -5541,17 +5623,18 @@ msgid ""
 "Users that don't have any preference = their hash rate is split among all "
 "block size proposals proportionally."
 msgstr ""
+"Uživatelé, kteří nemají žádné preference = jejich hash rate je poměrově "
+"rozdělen mezi ostatní návrhy na velikost bloku."
 
 #: mining/models.py:390
-#, fuzzy
 msgctxt "UI"
 msgid "Not voted"
-msgstr "Nenalezeno"
+msgstr "Nehlasováno"
 
 #: mining/models.py:395
 msgctxt "UI"
 msgid "Current rules / Bitcoin Core"
-msgstr ""
+msgstr "Aktuální pravidla / Bitcoin Core"
 
 #: mining/models.py:396
 msgctxt "UI"
@@ -5559,17 +5642,18 @@ msgid ""
 "Users that prefer Current rules given by Bitcoin core = their hash rate is "
 "used for mining Bitcoin Core blocks."
 msgstr ""
+"Uživatelé, kteří preferují aktuální pravidla vytvořená Bitcoin core = jejich "
+"hash rate je použit pro těžení Bitcoin Core bloků."
 
 #: mining/models.py:397
-#, fuzzy
 msgctxt "UI"
 msgid "Bitcoin Core"
-msgstr "Bitcoin adresa"
+msgstr "Bitcoin Core"
 
 #: mining/models.py:402
 msgctxt "UI"
 msgid "Bitcoin Classic / BIP109"
-msgstr ""
+msgstr "Bitcoin Classic / BIP109"
 
 #: mining/models.py:403
 msgctxt "UI"
@@ -5577,17 +5661,18 @@ msgid ""
 "Users that prefer Bitcoin Classic rules = their hash rate is used for mining "
 "Bitcoin Classic blocks (BIP109)."
 msgstr ""
+"Uživatelé, kteří preferují pravidla Bitcoin Classic = jejich hash rate je "
+"použit pro těžení Bitcoin Classic bloků (BIP109)."
 
 #: mining/models.py:404
-#, fuzzy
 msgctxt "UI"
 msgid "Bitcoin Classic"
-msgstr "Bitcoin adresa"
+msgstr "Bitcoin Classic"
 
 #: mining/models.py:409
 msgctxt "UI"
 msgid "8MB - BIP100"
-msgstr ""
+msgstr "8MB - BIP100"
 
 #: mining/models.py:410
 msgctxt "UI"
@@ -5595,16 +5680,18 @@ msgid ""
 "Users that prefer 8MB blocks = their hash rate is used for mining 8MB blocks "
 "(BIP 100)."
 msgstr ""
+"Uživatelé, kteří preferují 8MB bloky = jejich hash rate je použit pro těžení "
+"8MB bloků (BIP100)."
 
 #: mining/models.py:411
 msgctxt "UI"
 msgid "8MB (BIP100)"
-msgstr ""
+msgstr "8MB (BIP100)"
 
 #: mining/models.py:416
 msgctxt "UI"
 msgid "Bitpay's Adaptive block size"
-msgstr ""
+msgstr "Adaptivní velikost bloku od Bitpay"
 
 #: mining/models.py:417
 msgctxt "UI"
@@ -5612,17 +5699,18 @@ msgid ""
 "Users that prefer BitPay's Adaptive block size proposal = their hash rate is "
 "used for mining blocks with BitPay's block version."
 msgstr ""
+"Uživatelé, kteří preferují Adaptivní velikost bloku od Bitpay = jejich hash "
+"rate je použit pro těžení bloků s Bitpay verzí bloku."
 
 #: mining/models.py:418
-#, fuzzy
 msgctxt "UI"
 msgid "Bitpay's Bitcoin"
-msgstr "Bitcoin"
+msgstr "Bitcoin od Bitpay"
 
 #: mining/models.py:423 mining/models.py:425
 msgctxt "UI"
 msgid "Bitcoin Unlimited"
-msgstr ""
+msgstr "Bitcoin Unlimited"
 
 #: mining/models.py:424
 msgctxt "UI"
@@ -5630,11 +5718,13 @@ msgid ""
 "Users that prefer Bitcoin Unlimited proposal = their hash rate is used for "
 "mining blocks with Bitcoin Unlimited signature."
 msgstr ""
+"Uživatelé, kteří preferují návrh Bitcoin Unlimited = jejich hash rate je "
+"použit pro těžení bloků s podpisem Bitcoin Unlimited."
 
 #: mining/models.py:430
 msgctxt "UI"
 msgid "I don't care, pool AI decides on her own"
-msgstr ""
+msgstr "Je mi to jedno, ať AI poolu rozhodne za mě"
 
 #: mining/models.py:431
 msgctxt "UI"
@@ -5642,17 +5732,20 @@ msgid ""
 "Users that set I don't care option = pool AI decides on her own which block "
 "size is closest to her heart."
 msgstr ""
+"Uživatelé, kteří nastavili možnost Je mi to jedno = AI poolu rozhodne dle "
+"vlastního uvážení, která velikost bloků je jejímu srdci nejbližší."
 
 #: mining/models.py:432
 msgctxt "UI"
 msgid "Don't care"
-msgstr ""
+msgstr "Je to jedno"
 
 #: mining/models.py:456
 msgctxt "UI"
 msgid ""
 "Express your attitude to forks that may take place on the Bitcoin network."
 msgstr ""
+"Vyjádřete svůj postoj k forkům, které se mohou v Bitcoinové síti odehrát."
 
 #: mining/validators.py:13 web/forms.py:403
 msgctxt "UI"
@@ -6012,32 +6105,29 @@ msgid "Signature is not valid."
 msgstr "Podpis je neplatný."
 
 #: settings/form_mixins.py:82
-#, fuzzy
 msgctxt "UI"
 msgid "Message is wrong."
-msgstr "Zobrazená zpráva"
+msgstr "Zpráva je špatně."
 
 #: settings/form_mixins.py:86
-#, fuzzy
 msgctxt "UI"
 msgid "Signature is out of date."
-msgstr "Podpis je neplatný."
+msgstr "Podpis je již neplatný."
 
 #: settings/api/v1/api_actions.py:78
 msgctxt "UI"
 msgid "Invalid request, you don't have any wallet."
-msgstr ""
+msgstr "Neplatný požadavek, nemáte žádnou peněženku."
 
 #: settings/api/v1/api_actions.py:81
 msgctxt "UI"
 msgid "Invalid request, wallet is allready locked."
-msgstr ""
+msgstr "Neplatný požadavek, peněženka je již uzamčena."
 
 #: settings/api/v1/api_actions.py:86
-#, fuzzy
 msgctxt "UI"
 msgid "Wallet is not valid."
-msgstr "Peněženka je neplatná"
+msgstr "Peněženka je neplatná."
 
 #: settings/api/v1/api_actions.py:89
 msgctxt "UI"
@@ -6045,10 +6135,9 @@ msgid "Your payout address has been locked."
 msgstr "Vaše výplatní adresa byla zamčena."
 
 #: settings/api/v1/api_actions.py:105 settings/api/v1/api_actions.py:121
-#, fuzzy
 msgctxt "UI"
 msgid "No pending email."
-msgstr "Hlavní výhody"
+msgstr "Žádný nevyřízený email."
 
 #: settings/api/v1/api_actions.py:111 settings/api/v1/api_actions.py:144
 msgctxt "UI"
@@ -6065,10 +6154,9 @@ msgid "Email change request has been successfully canceled."
 msgstr "Požadavek na změnu emailu byl úspěšně zrušen."
 
 #: settings/api/v1/api_actions.py:138
-#, fuzzy
 msgctxt "UI"
 msgid "No pending wallet."
-msgstr "Peněženka čekající na vyřízení"
+msgstr "Žádná peněženka čekající na vyřízení."
 
 #: settings/api/v1/api_actions.py:158
 msgctxt "UI"
@@ -6087,25 +6175,24 @@ msgid "Two-factor authentication is already configured"
 msgstr "Dvoufaktorová autentizace je již nastavena"
 
 #: settings/forms/otp_setting_forms.py:59
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "2FA token is invalid. Please, re-scan the QR code (new one has been "
 "generated)."
 msgstr ""
-"Token pro dvoufaktorovou autentizaci je neplatný. Přeskenujte prosím QR kód "
-"(z bezpečnostních důvodů byl vygenerován nový)."
+"Token pro dvoufaktorovou autentizaci je neplatný. Přeskenujte prosím QR kód ("
+"z bezpečnostních důvodů byl vygenerován nový)."
 
 #: settings/forms/otp_setting_forms.py:106
 #: settings/forms/otp_setting_forms.py:139
 msgctxt "UI"
 msgid "User doesn't have OTP."
-msgstr ""
+msgstr "Uživatel nemá OTP."
 
 #: settings/forms/payouts_settings_form.py:50
 msgctxt "UI"
 msgid "You cant change locked wallet."
-msgstr ""
+msgstr "Nemůžete změnit uzamčenou peněženku."
 
 #: settings/templates/settings/home.html:4
 #: user_request/templates/user_request/otp.html:4
@@ -6185,7 +6272,7 @@ msgstr "Statistiky"
 #: user_request/templates/user_request/otp.html:14
 msgctxt "UI"
 msgid "Submit"
-msgstr ""
+msgstr "Potvrdit"
 
 #: web/auth_views.py:186
 msgctxt "UI"
@@ -6200,12 +6287,12 @@ msgstr "Captcha"
 #: web/forms.py:59
 msgctxt "UI"
 msgid "Read only login token"
-msgstr ""
+msgstr "Token pro přihlášení pouze pro čtení"
 
 #: web/forms.py:71
 msgctxt "UI"
 msgid "User is not active"
-msgstr ""
+msgstr "Uživatel není aktivní"
 
 #: web/forms.py:155
 msgctxt "UI"
@@ -6557,13 +6644,12 @@ msgstr "Dostávat upozornění o změnách návrhů"
 #: web/models.py:224
 msgctxt "UI"
 msgid "Readonly login token"
-msgstr ""
+msgstr "Token pro přihlášení pouze pro čtení"
 
 #: web/models.py:256
-#, fuzzy
 msgctxt "UI"
 msgid "Invalid token format"
-msgstr "Neplatný token"
+msgstr "Neplatný formát tokenu"
 
 #: web/models.py:261
 msgctxt "UI"
@@ -6662,7 +6748,7 @@ msgstr "<b>%(key)s</b> změněno z <b>%(old)s</b> na <b>%(new)s</b>"
 #: web/models.py:869
 msgctxt "UI"
 msgid "Depricated"
-msgstr ""
+msgstr "Zastaralý"
 
 #: web/models.py:881
 msgctxt "UI"
@@ -6692,7 +6778,7 @@ msgstr "Preferované časové pásmo"
 #: web/models.py:938
 msgctxt "UI"
 msgid "Blockchain voting"
-msgstr ""
+msgstr "Blockchain hlasování"
 
 #: web/models.py:942
 msgctxt "UI"
@@ -6745,10 +6831,9 @@ msgid "Login"
 msgstr "Přihlášení"
 
 #: web/models.py:980
-#, fuzzy
 msgctxt "UI"
 msgid "Login to readonly mode"
-msgstr "Pro pokračování se přihlašte"
+msgstr "Přihlašte se do módu pouze pro čtení"
 
 #: web/models.py:981
 msgctxt "UI"
@@ -6761,10 +6846,9 @@ msgid "Message seen"
 msgstr "Zobrazená zpráva"
 
 #: web/models.py:983
-#, fuzzy
 msgctxt "UI"
 msgid "Mining settings updated"
-msgstr "Nastavení sledování aktualizováno"
+msgstr "Nastavení těžby aktualizováno"
 
 #: web/models.py:984
 msgctxt "UI"
@@ -6931,7 +7015,7 @@ msgstr "Neplatné uživatelské jméno"
 #: web/models.py:1025
 msgctxt "UI"
 msgid "Invalid login to readonly mode"
-msgstr ""
+msgstr "Neplatné přihlášení do módu pouze pro čtení"
 
 #: web/registration.py:53
 msgctxt "UI"
@@ -6944,10 +7028,9 @@ msgid "%i days"
 msgstr "%i dnů"
 
 #: web/views.py:324
-#, fuzzy
 msgctxt "UI"
 msgid "Account banned. Contact pool administrator at support@slushpool.com"
-msgstr "Účet je zablokován. Kontaktujte správce poolu na support@bitcoin.cz"
+msgstr "Účet je zablokován. Kontaktujte správce poolu na support@slushpool.com"
 
 #: web/views.py:677
 msgctxt "UI"
@@ -6955,32 +7038,28 @@ msgid "Requested proposal is waiting for admin confirmation"
 msgstr "Návrh čeká na potvrzení administrátorem"
 
 #: web/api/v1/appeals.py:37
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "Your payouts have been temporarily blocked by the pool operator (%(reason)s)."
-msgstr "Vaše výplaty byly dočasně zablokovány správcem poolu (%(reason)s). "
+msgstr "Vaše výplaty byly dočasně zablokovány správcem poolu (%(reason)s)."
 
 #: web/api/v1/appeals.py:39
-#, fuzzy
 msgctxt "UI"
 msgid "Please, contact our support for further details."
-msgstr "Kontaktujte prosím %(link)s pro detailní informace."
+msgstr "Pro více informací prosím kontaktujte naši zákaznickou podporu ."
 
 #: web/api/v1/appeals.py:70
-#, fuzzy
 msgctxt "UI"
 msgid "Resend Confirmation"
-msgstr "Potvrzovací stránka"
+msgstr "Opětovné odeslání"
 
 #: web/api/v1/appeals.py:75
-#, fuzzy
 msgctxt "UI"
 msgid "Cancel the Request"
-msgstr "Opětovné odeslání požadavku na změnu peněženky"
+msgstr "Zrušit požadavek"
 
 #: web/api/v1/appeals.py:80
-#, fuzzy
 msgctxt "UI"
 msgid "Change my Password"
 msgstr "Změnit moje heslo"
@@ -6991,6 +7070,8 @@ msgid ""
 "Your opinion on block size matters to the whole community. It is up to you "
 "to make a choice. Please, select one of the options below."
 msgstr ""
+"Váš názor na velikost bloku má vliv na celou komunitu. Výběr je na Vás. "
+"Vyberte prosím jednu z možností níže."
 
 #: web/api/v1/appeals.py:120
 #, python-format
@@ -7000,6 +7081,9 @@ msgid ""
 "\"%(settings)s\">settings</a>. Check out the latest <a href=\"%(stats)s"
 "\">results</a>."
 msgstr ""
+"Pokud později změníte názor, můžete si vybrat znovu v <a href=\"%(settings)"
+"s\">nastavení</a>. Podívejte se na aktuální <a href=\"%(stats)s\""
+">výsledky</a>."
 
 #: web/templates/404.html:3
 msgctxt "UI"
@@ -7048,6 +7132,8 @@ msgid ""
 "Please enable <strong>javascript</strong> to see all features of this "
 "website. (<a href=\"%(url)s\" target=\"_blank\">see how…</a>)"
 msgstr ""
+"Povolte prosím <strong>javascript</strong> pro zobrazení všech funkcí tohoto "
+"webu. (<a href=\"%(url)s\" target=\"_blank\">podívejte se jak…</a>)"
 
 #: web/templates/base.html:167
 msgctxt "UI"
@@ -7055,10 +7141,9 @@ msgid "You are using a <strong>Demo Account</strong>"
 msgstr "Jste přihlášen v <strong>Demo účtu</strong>"
 
 #: web/templates/base.html:169
-#, fuzzy
 msgctxt "UI"
 msgid "You are using a <strong>Read-only Mode</strong>"
-msgstr "Jste přihlášen v <strong>Demo účtu</strong>"
+msgstr "Jste přihlášen v <strong>Módu pouze pro čtení</strong>"
 
 #: web/templates/base.html:174 web/templates/login.html:9
 #: web/templates/login.html.py:25 web/templates/login.html:45
@@ -7092,10 +7177,9 @@ msgid "Public facts"
 msgstr "Pro veřejnost"
 
 #: web/templates/base.html:258 web/templates/menu2_helpcenter_links.html:5
-#, fuzzy
 msgctxt "UI"
 msgid "<strong>Help</strong> Center"
-msgstr "<strong>Vývojářský</strong> koutek"
+msgstr "Centrum <strong>nápovědy</strong>"
 
 #: web/templates/base.html:259 web/templates/menu2_devel_corner.html:4
 msgctxt "UI"
@@ -7149,16 +7233,18 @@ msgid "Follow us on %(twitter)s and %(facebook)s."
 msgstr "Sledujte nás na %(twitter)s a %(facebook)s."
 
 #: web/templates/base.html:333
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "BTC prices provided by <a href=\"%(url)s\" target=\"_blank\">BitcoinAverage "
 "Price Index</a>"
-msgstr "Ceny BTC poskytuje <a href=\"%(url)s\">BitcoinAverage Price Index</a>"
+msgstr ""
+"Ceny BTC poskytuje <a href=\"%(url)s\" target=\"_blank\">BitcoinAverage "
+"Price Index</a>"
 
 #: web/templates/base.html:347
 msgid "Denied!"
-msgstr ""
+msgstr "Zamítnuto!"
 
 #: web/templates/base.html:350
 msgctxt "UI"
@@ -7166,10 +7252,11 @@ msgid "You cannot do this in the Demo account, please log in to proceed."
 msgstr "V Demo účtu toto nelze provést. Pro pokračování se prosím přihlašte."
 
 #: web/templates/base.html:352
-#, fuzzy
 msgctxt "UI"
 msgid "You cannot do this in the Read-only mode, please log in to proceed."
-msgstr "V Demo účtu toto nelze provést. Pro pokračování se prosím přihlašte."
+msgstr ""
+"V módu pouze pro čtení toto nelze provést. Pro pokračování se prosím "
+"přihlašte."
 
 #: web/templates/blocks.html:3
 msgctxt "UI"
@@ -7192,10 +7279,9 @@ msgid "Show monitoring states"
 msgstr "Ukázat stavy sledování"
 
 #: web/templates/chart-switch.html:28
-#, fuzzy
 msgctxt "UI"
 msgid "Show Namecoin Blocks"
-msgstr "Zobrazit nastavení Namecoinů"
+msgstr "Zobrazit Namecoinové bloky"
 
 #: web/templates/confirm_page_template.html:3
 msgctxt "UI"
@@ -7217,7 +7303,6 @@ msgstr ""
 "nový návrh! Děkujeme."
 
 #: web/templates/development_corner.html:40
-#, fuzzy
 msgctxt "UI"
 msgid "Recent <span>Proposals</span>"
 msgstr "Nové <span>návrhy</span>"
@@ -7249,7 +7334,6 @@ msgid "Unspent points"
 msgstr "Nepřiřazené body"
 
 #: web/templates/development_corner.html:86
-#, fuzzy
 msgctxt "UI"
 msgid "You can vote and propose new ideas only if you are logged in."
 msgstr "Hlasovat a vytvářet nové návrhy můžete pouze pokud jste přihlášen."
@@ -7453,6 +7537,8 @@ msgid ""
 "Looking for mining URLs? Read how to <a href=\"%(link)s\" class=\"alert-link"
 "\">get started</a>!"
 msgstr ""
+"Hledáte URL těžebních serverů? Přečtěte si jak <a href=\"%(link)s\" class"
+"=\"alert-link\">začít</a>!"
 
 #: web/templates/homepage.html:24
 msgctxt "UI"
@@ -7772,25 +7858,22 @@ msgstr "Zapomenuté jméno/heslo?"
 #: web/templates/login.html:32
 msgctxt "UI"
 msgid "Can't login?"
-msgstr ""
+msgstr "Nemůžete se přihlásit?"
 
 #: web/templates/login.html:38
-#, fuzzy
 msgctxt "UI"
 msgid "<span>Read-only</span> Access"
-msgstr "Denní <span>odměna</span>"
+msgstr "Přístup <span>pouze pro čtení</span>"
 
 #: web/templates/login_failed.html:18
-#, fuzzy
 msgctxt "UI"
 msgid "Invalid read-only access token"
-msgstr "Neplatný token"
+msgstr "Neplatný token pro přístup pouze pro čtení"
 
 #: web/templates/menu2_helpcenter.html:4
-#, fuzzy
 msgctxt "UI"
 msgid "Help <span>Center</span>"
-msgstr "Vývojářský <span>koutek</span>"
+msgstr "<span>Centrum</span> nápovědy"
 
 #: web/templates/menu2_helpcenter_links.html:11
 msgctxt "UI"
@@ -7823,10 +7906,9 @@ msgid "<strong>System</strong> Stats"
 msgstr "<strong>Systémové</strong> statistiky"
 
 #: web/templates/menu2_poolstats_links.html:10
-#, fuzzy
 msgctxt "UI"
 msgid "<strong>Hash Rate</strong> Proof"
-msgstr "<strong>Stratum</strong> protokol"
+msgstr "Důkaz <strong>výkonu</strong>"
 
 #: web/templates/menu2_poolstats_links.html:16
 msgctxt "UI"
@@ -8667,22 +8749,19 @@ msgstr ""
 "Líbilo se vám to? Můžete se okamžitě zaregistrovat a mít svůj vlastní účet."
 
 #: web/templates/slider.html:15
-#, fuzzy
 msgctxt "UI"
 msgid "New <span>Slush Pool AI</span>"
-msgstr "Vládněte <span>poolu</span>"
+msgstr "Nová <span>Slush Pool AI</span>"
 
 #: web/templates/slider.html:18
-#, fuzzy
 msgctxt "UI"
 msgid "New AI <span>of Slush Pool</span>"
-msgstr "Vládněte <span>poolu</span>"
+msgstr "Nová AI <span>Slush Poolu</span>"
 
 #: web/templates/slider.html:19
-#, fuzzy
 msgctxt "UI"
 msgid "<strong>Many improvements and features</strong> are coming ahead."
-msgstr "<strong>Všechna důležitá fakta</strong> na jedné stránce."
+msgstr "<strong>Mnoho vylepšení a nových funkcí</strong> je na cestě."
 
 #: web/templates/slider.html:28 web/templates/slider.html.py:31
 msgctxt "UI"
@@ -8920,42 +8999,39 @@ msgid "Your wallet has been successfully changed."
 msgstr "Vaše peněženka byla úspěšně změněna."
 
 #: web/templates/djangocms_blog/post_detail.html:19
-#, fuzzy
 msgctxt "UI"
 msgid "Return to blog feed"
-msgstr "Nastavení bylo uloženo."
+msgstr "Vrátit se na blog"
 
 #: web/templates/djangocms_blog/post_detail.html:26
-#, fuzzy
 msgctxt "UI"
 msgid "Published:"
-msgstr "Polština"
+msgstr "Publikováno:"
 
 #: web/templates/djangocms_blog/post_list.html:11
 msgid "Articles by"
-msgstr ""
+msgstr "Články od"
 
 #: web/templates/djangocms_blog/post_list.html:12
 #: web/templates/djangocms_blog/plugins/archive.html:3
 msgid "Archive"
-msgstr ""
+msgstr "Archiv"
 
 #: web/templates/djangocms_blog/post_list.html:13
 msgid "Tag"
-msgstr ""
+msgstr "Značka"
 
 #: web/templates/djangocms_blog/post_list.html:14
 msgid "Category"
-msgstr ""
+msgstr "Kategorie"
 
 #: web/templates/djangocms_blog/post_list.html:21
 #: web/templates/djangocms_blog/plugins/archive.html:26
 #: web/templates/djangocms_blog/plugins/authors.html:15
 #: web/templates/djangocms_blog/plugins/latest_entries.html:7
 #: web/templates/djangocms_blog/plugins/tags.html:15
-#, fuzzy
 msgid "No article found."
-msgstr "Nenalezeno"
+msgstr "Nenalezeny žádné články."
 
 #: web/templates/djangocms_blog/post_list.html:26
 msgid "previous"
@@ -8975,7 +9051,7 @@ msgstr "následující"
 
 #: web/templates/djangocms_blog/includes/blog_meta.html:5
 msgid "by"
-msgstr ""
+msgstr "od"
 
 #: web/templates/djangocms_blog/plugins/archive.html:17
 #: web/templates/djangocms_blog/plugins/authors.html:10
@@ -8984,32 +9060,32 @@ msgstr ""
 #, python-format
 msgid "1 article"
 msgid_plural "%(articles)s articles"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "článek"
+msgstr[1] "%(articles)s články"
+msgstr[2] "%(articles)s článků"
 
 #: web/templates/djangocms_blog/plugins/archive.html:18
 #: web/templates/djangocms_blog/plugins/authors.html:11
 #: web/templates/djangocms_blog/plugins/categories.html:12
 #: web/templates/djangocms_blog/plugins/tags.html:11
 msgid "0 articles"
-msgstr ""
+msgstr "0 článků"
 
 #: web/templates/djangocms_blog/plugins/authors.html:3
 msgid "Authors"
-msgstr ""
+msgstr "Autoři"
 
 #: web/templates/djangocms_blog/plugins/categories.html:3
 msgid "Categories"
-msgstr ""
+msgstr "Kategorie"
 
 #: web/templates/djangocms_blog/plugins/categories.html:17
 msgid "No categories found."
-msgstr ""
+msgstr "Nenalezeny žádné kategorie."
 
 #: web/templates/djangocms_blog/plugins/tags.html:3
 msgid "Tags"
-msgstr ""
+msgstr "Značky"
 
 #: web/templates/email/_base.html:2 web/templates/email/_base_graphic.html:24
 msgctxt "UI"
@@ -9017,28 +9093,28 @@ msgid "Hello"
 msgstr "Dobrý den"
 
 #: web/templates/email/_base.html:7
-#, fuzzy
 msgctxt "UI"
 msgid "Slush Pool"
-msgstr "Slush Pool Team"
+msgstr "Slush Pool"
 
 #: web/templates/email/_base.html:8
+#, fuzzy
 msgctxt "UI"
 msgid "Mine as one."
 msgstr ""
 
 #: web/templates/email/account_delete.html:5
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "You are receiving this email because you requested a deletion of your "
 "account in our <a href=\"%(site_url)s\">%(site_name)s</a> mining pool."
 msgstr ""
-"Tento email byl odeslán, protože někdo zažádal o smazání vašeho účtu na "
-"poolu <a href=\"%(site_url)s\">%(site_url)s</a> !"
+"Tento email byl odeslán, protože někdo zažádal o smazání Vašeho účtu na "
+"poolu <a href=\"%(site_url)s\">%(site_name)s</a>."
 
 #: web/templates/email/account_delete.html:6
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "If you are certain you wish to delete your account <strong>%(username)s</"
@@ -9048,12 +9124,12 @@ msgid ""
 "pool website."
 msgstr ""
 "Pokud chcete opravdu smazat svůj účet <strong>%(username)s</strong>, "
-"klikněte prosím na <a href=\"%(delete_url)s\">tento potvrzující odkaz</a>. "
-"Odkaz je platný po dobu jedné hodiny. Jestliže vypršela platnost odkazu, "
-"jděte prosím na naši webovou stránku a vytvořte nový požadavek."
+"klikněte prosím na <a href=\"%(delete_url)s\""
+">tento&nbsp;potvrzující&nbsp;odkaz</a>. Odkaz je platný po dobu jedné "
+"hodiny. Jestliže vypršela platnost odkazu, jděte prosím na naši webovou "
+"stránku a vytvořte nový požadavek."
 
 #: web/templates/email/account_delete.html:7
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "Please note that after account deletion, any remaining balance of your "
@@ -9061,12 +9137,12 @@ msgid ""
 "request the payout, you now have the last chance before following the "
 "confirmation link."
 msgstr ""
-"Případný zbývající zůstatek na vašem účtu bude použit jako příspěvek na "
+"Případný zbývající zůstatek na Vašem účtu bude použit jako příspěvek na "
 "provoz poolu. Pokud jste zapomněl požádat o vyplacení zbývající odměny, máte "
 "teď poslední příležitost."
 
 #: web/templates/email/account_delete.html:8
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "In case you did NOT initiate this request, please do NOT click the "
@@ -9075,18 +9151,18 @@ msgid ""
 "%(support_email)s</a>."
 msgstr ""
 "Pokud jste o zrušení účtu nežádal, neklikejte prosím na potvrzující odkaz "
-"uvedený výše, ihned si změňte heslo, a nahlašte tento incident našemu <a "
-"href=\"%(support_url)s\">týmu zákaznické podpory.</a> "
+"uvedený výše, ihned si změňte heslo, a nahlašte tento incident na <a href=\""
+"mailto:%(support_email)s\">%(support_email)s</a>."
 
 #: web/templates/email/account_delete_warning.templ.html:5
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "We noticed that you have not used your account at our pool <a href="
 "\"%(site_url)s\">%(site_name)s</a> for longer than one year."
 msgstr ""
-"Tento email byl odeslán, protože někdo zažádal o smazání vašeho účtu na "
-"poolu <a href=\"%(site_url)s\">%(site_url)s</a> !"
+"Všimli jsme si, že jste nepoužil svůj účet <a href=\"%(site_url)s\""
+">%(site_name)s</a> na našem poolu déle než jeden rok."
 
 #: web/templates/email/account_delete_warning.templ.html:6
 msgctxt "UI"
@@ -9094,6 +9170,8 @@ msgid ""
 "The pool logic is set so that it automatically deactivates unused user "
 "accounts in order to keep the database compact and reliable."
 msgstr ""
+"Logika poolu je nastavena tak, aby pro udržení kompaktní a spolehlivé "
+"databáze automaticky deaktivovala nepoužívané uživatelské účty."
 
 #: web/templates/email/account_delete_warning.templ.html:7
 #, python-format
@@ -9103,6 +9181,9 @@ msgid ""
 "your account will be disabled and any remaining coins will be considered a "
 "kind donation to the pool."
 msgstr ""
+"Pokud služeb našeho poolu nevyužijete v následujících %(days)s dnech, Váš "
+"účet bude deaktivován a veškeré zbývající prostředky budou považovány za "
+"příspěvek poolu."
 
 #: web/templates/email/account_delete_warning.templ.html:8
 #, python-format
@@ -9111,39 +9192,41 @@ msgid ""
 "To prevent your account from being disabled, please log into your profile on "
 "the pool website at <a href=\"%(site_url)s\">%(site_url)s</a>."
 msgstr ""
+"Abyste zabránil deaktivaci Vašeho účtu, přihlašte se prosím na stránce poolu "
+"<a href=\"%(site_url)s\">%(site_url)s</a>."
 
 #: web/templates/email/account_delete_warning.templ.html:9
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "If you have any further questions, please contact us at <a href=\"mailto:"
 "%(support_url)s\">%(support_url)s</a>."
 msgstr ""
-"Pokud tento problém přetrvává, obraťte se prosím na náš <a href=\"%(url)s\">"
-"%(globe_icon)s systém podpory</a>."
+"Pokud máte nějaké další dotazy, obraťte se prosím na <a href=\""
+"mailto:%(support_url)s\">%(support_url)s</a>."
 
 #: web/templates/email/email_change.html:5
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "You are receiving this email because you requested to change your e-mail "
 "address to <strong>%(email)s</strong>"
 msgstr ""
-"tento email byl odeslán, protože někdo požádal o změnu vašeho emailu na: "
-"<strong>%(email)s</strong>."
+"Tento email byl odeslán, protože někdo požádal o změnu Vašeho emailu na: "
+"<strong>%(email)s</strong>"
 
 #: web/templates/email/email_change.html:6
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "To authorize this request, please follow <a href=\"%(confirm_url)s"
 "\">this&nbsp;confirmation&nbsp;link</a>"
 msgstr ""
-"Pro potvrzení tohoto požadavku prosím klikněte na <a href=\"%(confirm_url)s"
-"\">tento odkaz</a>."
+"Pro potvrzení tohoto požadavku prosím klikněte na <a href=\"%(confirm_url)s\""
+">tento&nbsp;potvrzující&nbsp;odkaz</a>"
 
 #: web/templates/email/email_change.html:7
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "In case you did NOT initiate this change, please cancel this request at <a "
@@ -9151,24 +9234,22 @@ msgid ""
 "immediately and report this incident for further investigation at <a href="
 "\"mailto:%(support_email)s\">%(support_email)s</a>."
 msgstr ""
-"Pokud jste tuto změnu adresy nevyžádal, <a href=\"%(cancel_url)s\">zrušte "
-"tento požadavek</a>, ihned si změňte heslo a nahlašte tento incident na "
-"%(support_email)s."
+"Pokud jste tuto změnu adresy nevyžádal, <a href=\"%(cancel_url)s\""
+">zrušte&nbsp;tento&nbsp;požadavek</a>, ihned si změňte heslo a nahlašte "
+"tento incident na <a href=\"mailto:%(support_email)s\">%(support_email)s</a>."
 
 #: web/templates/email/email_change.html:9
-#, fuzzy
 msgid "Change my email"
-msgstr "Změnit moje heslo"
+msgstr "Změnit můj email"
 
 #: web/templates/email/monitoring_body.html:5
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "We detect changes in the current state of your workers. Please see the "
 "report below:"
 msgstr ""
-"Pool zjistil změny ve stavu vašich zařízení/vašeho účtu, podívejte se prosím "
-"na zprávu níže."
+"Pool zjistil změny ve stavu Vašich zařízení. Podívejte se prosím na zprávu "
+"níže:"
 
 #: web/templates/email/monitoring_body.html:20
 msgctxt "UI"
@@ -9176,14 +9257,14 @@ msgid "Actual Hash Rate"
 msgstr "Aktuální hash rate"
 
 #: web/templates/email/monitoring_body.html:35
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI "
 msgid ""
 "You can also see the monitoring report on-line at <a href="
 "\"%(monitoring_url)s\">%(monitoring_url)s</a>"
 msgstr ""
-"Zpráva o sledování je přístupná on-line na stránce <a href="
-"\"%(monitoring_url)s\">Sledování</a>."
+"Zpráva o sledování je přístupná on-line na stránce <a href=\""
+"%(monitoring_url)s\">%(monitoring_url)s</a>"
 
 #: web/templates/email/monitoring_subject.html:2
 #: workers/templates/workers/home.html:4
@@ -9192,29 +9273,33 @@ msgid "Workers"
 msgstr "Zařízení"
 
 #: web/templates/email/password_reset.html:6
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "You are receiving this email because you requested a password reset for your "
 "user account at <a href=\"%(site_url)s\">%(site_name)s</a>."
 msgstr ""
-"Tento email byl odeslán protože někdo zažádal o obnovení hesla u vašeho účtu "
-"%(site_name)s."
+"Tento email byl odeslán, protože někdo zažádal o obnovení hesla u vašeho "
+"účtu <a href=\"%(site_url)s\">%(site_name)s</a>."
 
 #: web/templates/email/password_reset.html:7
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "Please, follow the link and change your password <a href=\"%(reset_url)s"
 "\">here</a>"
-msgstr "Pokračuj prosím na stránku <a href='%(url)s'>svého profilu</a>"
+msgstr ""
+"Pro změnu hesla pokračujte prosím na stránku <a href=\"%(reset_url)s\">svého "
+"profilu</a>"
 
 #: web/templates/email/password_reset.html:8
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "The username associated with this e-mail is: <strong>%(username)s</strong>"
-msgstr "Uživatelské jméno spojené s tímto emailovým účtem je:"
+msgstr ""
+"Uživatelské jméno spojené s tímto emailovým účtem je: "
+"<strong>%(username)s</strong>"
 
 #: web/templates/email/password_reset.html:9
 #, python-format
@@ -9223,127 +9308,118 @@ msgid ""
 "In case you did NOT initiate this change, please, contact us at <a href="
 "\"mailto:%(support_email)s\">%(support_email)s</a>"
 msgstr ""
+"V případě, že jste o tuto změnu nežádal, nás prosím kontaktujte na <a href=\""
+"mailto:%(support_email)s\">%(support_email)s</a>"
 
 #: web/templates/email/password_reset.html:11
-#, fuzzy
 msgid "Reset password"
 msgstr "Obnovení mého hesla"
 
 #: web/templates/email/password_reset_subject.txt:1
-#, fuzzy
 msgctxt "UI"
 msgid "Password reset on Slush Pool"
-msgstr "Obnovení hesla"
+msgstr "Obnovení hesla pro Slush Pool"
 
 #: web/templates/email/payout.html:5
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "Your reward for mining with our <a href=\"%(site_url)s\">%(site_name)s</a> "
 "mining pool has exceeded your defined threshold."
 msgstr ""
-"Odměna za těžení na <strong><a href=\"%(site_url)s\">%(site_url)s</a></"
-"strong> poolu překročila vámi stanovený limit pro výplatu."
+"Odměna za těžení na <a href=\"%(site_url)s\">%(site_name)s</a> poolu "
+"překročila Vámi stanovený limit pro výplatu."
 
 #: web/templates/email/payout.html:6
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "The amount of %(amount)s BTC has been transferred to your address %(wallet)s "
 "on %(date)s"
 msgstr ""
-"Částka <strong>%(amount)s BTC</strong> byla odeslána na vaši výplatní adresu "
-"<strong>%(wallet)s</strong> v %(date)s."
+"Částka %(amount)s BTC byla odeslána na Vaši výplatní adresu %(wallet)s v "
+"%(date)s"
 
 #: web/templates/email/payout.html:7
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "Payment processing through Bitcoin network may take between 30 minutes to 3 "
 "hours. You can watch current payment status on <a href=\"%(wallet_info)s\">"
 "%(wallet_info)s</a>"
 msgstr ""
-"Zpracování plateb v Bitcoinové síti zpravidla trvá od 30 minut do třech "
-"hodin. Aktuální stav transakce můžete sledovat na <a href=\"%(wallet_info)s"
-"\">%(wallet_info)s</a>.. Pokud vidíte transakci na Blockchain.info, ale není "
-"ještě ve vašem bitcoinovém klientu, zkontrolujte prosím, že váš klient má "
-"staženou kompletní databázi bloků. Pro další pomoc se můžete obrátit také na "
-"českou komunitu na Bitcoin fóru."
+"Zpracování plateb v Bitcoinové síti zpravidla trvá od 30 minut do 3 hodin. "
+"Aktuální stav transakce můžete sledovat na <a href=\"%(wallet_info)s\""
+">%(wallet_info)s</a>"
 
 #: web/templates/email/payout.html:8
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "If you see payment on Blockchain.info but not in your bitcoin client, please "
 "verify that your client is up to the latest block or ask on Bitcoin forum "
 "for any other help."
 msgstr ""
-"Zpracování plateb v Bitcoinové síti zpravidla trvá od 30 minut do třech "
-"hodin. Aktuální stav transakce můžete sledovat na <a href=\"%(wallet_info)s"
-"\">%(wallet_info)s</a>.. Pokud vidíte transakci na Blockchain.info, ale není "
-"ještě ve vašem bitcoinovém klientu, zkontrolujte prosím, že váš klient má "
-"staženou kompletní databázi bloků. Pro další pomoc se můžete obrátit také na "
-"českou komunitu na Bitcoin fóru."
+"Pokud vidíte transakci na Blockchain.info, ale není ještě ve Vašem "
+"bitcoinovém klientu, zkontrolujte prosím, že má Váš klient staženou "
+"kompletní databázi bloků. Pro další pomoc se můžete obrátit také na českou "
+"komunitu na Bitcoin fóru."
 
 #: web/templates/email/proposal_state_update.html:13
-#, fuzzy
 msgid "View your proposal"
-msgstr "Nový návrh"
+msgstr "Zobrazit Váš návrh"
 
 #: web/templates/email/proposal_state_update_subject.txt:1
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Proposal state change - %(state)s (%(name)s)"
-msgstr "Stav návrhu změněn"
+msgstr "Změna stavu návrhu - %(state)s (%(name)s)"
 
 #: web/templates/email/registration.html:5
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "Thank you for signing up for our <a href=\"%(site_url)s\">%(site_name)s</a> "
 "mining pool."
 msgstr ""
-"děkujeme že jste si zaregistroval účet na <a href=\"%(site_url)s\">"
-"%(site_url)s</a> !"
+"Děkujeme, že jste si zaregistroval účet na <a href=\"%(site_url)s\""
+">%(site_name)s</a> poolu."
 
 #: web/templates/email/registration.html:6
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "In order to activate your account and start mining, please follow this <a "
 "href=\"%(activate_url)s\">activation url</a>."
 msgstr ""
-"Pro aktivaci svého účtu prosím klikněte na <a href=\"%(activate_url)s"
-"\">aktivační odkaz</a>."
+"Pro aktivaci svého účtu prosím klikněte na <a href=\"%(activate_url)s\">"
+"aktivační odkaz</a>."
 
 #: web/templates/email/registration.html:8
-#, fuzzy
 msgid "Activate"
-msgstr "Aktivita"
+msgstr "Aktivovat"
 
 #: web/templates/email/wallet_change.html:5
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "You are receiving this email because you requested to change your wallet to "
 "the new address: <strong>%(wallet)s</strong>."
 msgstr ""
-"tento email byl odeslán, protože někdo požádal o změnu vaší "
-"<strong>Bitcoinové</strong> peněženky na novou adresu: <strong>%(wallet)s</"
-"strong>."
+"Tento email byl odeslán, protože někdo požádal o změnu Vaší peněženky na "
+"novou adresu: <strong>%(wallet)s</strong>."
 
 #: web/templates/email/wallet_change.html:6
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "To authorize this request, please follow <a href=\"%(wallet_confirm_link)s"
 "\">this&nbsp;confirmation&nbsp;link</a>."
 msgstr ""
-"Pro potvrzení tohoto požadavku prosím klikněte na <a href="
-"\"%(wallet_confirm_link)s\">tento odkaz</a>"
+"Pro potvrzení tohoto požadavku prosím klikněte <a href=\""
+"%(wallet_confirm_link)s\">na&nbsp;tento&nbsp;odkaz</a>."
 
 #: web/templates/email/wallet_change.html:7
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "In case you did NOT initiate this change, please <a href="
@@ -9351,14 +9427,14 @@ msgid ""
 "password immediately and report this incident for further investigation at "
 "<a href=\"mailto:%(support_email)s\">%(support_email)s</a>."
 msgstr ""
-"Pokud jste tuto změnu nevyžádal, prosím <a href=\"%(wallet_cancel_link)s\"> "
-"zrušte tento požadavek</a>, ihned si změňte heslo a nahlašte tento incident "
-"našemu týmu zákaznické podpory na %(support_email)s."
+"Pokud jste tuto změnu nevyžádal, prosím <a href=\"%(wallet_cancel_link)s\""
+">zrušte&nbsp;tento&nbsp;požadavek</a>, ihned si změňte heslo a nahlašte "
+"tento incident našemu týmu zákaznické podpory na <a href=\""
+"mailto:%(support_email)s\">%(support_email)s</a>."
 
 #: web/templates/email/wallet_change.html:9
-#, fuzzy
 msgid "Change my wallet"
-msgstr "Podepsat peněženkou"
+msgstr "Změnit peněženku"
 
 #: web/templates/layout_items/current_block.html:3
 msgctxt "UI"
@@ -9403,7 +9479,7 @@ msgstr "Skórovací hash rate poolu"
 #: web/templates/layout_items/pool_luck.html:3
 msgctxt "UI"
 msgid "Pool Luck (current round, 10, 50, 250 blocks)"
-msgstr ""
+msgstr "Poolové štěstí (aktuální kolo, 10, 50, 250 bloků)"
 
 #: web/templates/layout_items/time.html:3
 msgctxt "UI"
