@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slush's pool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-19 11:59+0200\n"
+"POT-Creation-Date: 2016-08-22 10:45+0200\n"
 "PO-Revision-Date: 2016-08-21 21:51+0000\n"
 "Last-Translator: Jan Pecinovsky <jan.pecinovsky@braiins.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-"
-"cz/mining/cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
+"cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1739,8 +1739,8 @@ msgstr "Odměna"
 msgid ""
 "See the question above and the <a href=\"%(link)s\">following article</a>"
 msgstr ""
-"Podívejte se na otázku nahoře a na <a href=\"%(link)s\">následující "
-"článek</a>"
+"Podívejte se na otázku nahoře a na <a href=\"%(link)s\">následující článek</"
+"a>"
 
 #: help/templates/help/faq/rewards.html:58
 msgid "Reach payout threshold and get your money"
@@ -3117,7 +3117,7 @@ msgstr ""
 "Eventuelně si nastavte <a href=\"%(url_2fa)s\">dvoufaktorovou autentizaci</"
 "a>, která vás ochrání před náhodnou změnou peněženky."
 
-#: help/templates/help/manual/hashrate-proof.html:112
+#: help/templates/help/manual/hashrate-proof.html:108
 #, python-format
 msgid ""
 "\n"
@@ -3130,7 +3130,7 @@ msgid ""
 "function."
 msgstr ""
 
-#: help/templates/help/manual/hashrate-proof.html:132
+#: help/templates/help/manual/hashrate-proof.html:128
 #, python-format
 msgid ""
 "\n"
@@ -3143,7 +3143,7 @@ msgid ""
 "for the block in one minute."
 msgstr ""
 
-#: help/templates/help/manual/hashrate-proof.html:148
+#: help/templates/help/manual/hashrate-proof.html:144
 #, python-format
 msgid ""
 "\n"
@@ -3156,7 +3156,7 @@ msgid ""
 "which the miner had to do in the given time."
 msgstr ""
 
-#: help/templates/help/manual/hashrate-proof.html:165
+#: help/templates/help/manual/hashrate-proof.html:161
 #, python-format
 msgid ""
 "\n"
@@ -3171,7 +3171,7 @@ msgid ""
 "follows:"
 msgstr ""
 
-#: help/templates/help/manual/hashrate-proof.html:177
+#: help/templates/help/manual/hashrate-proof.html:173
 #, python-format
 msgid ""
 "\n"
@@ -3182,120 +3182,6 @@ msgid ""
 "In simple terms, if the player rolls long enough and the number of marks is "
 "huge, it is easy to determine the number of required\n"
 "tries with arbitrarily small deviation."
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:189
-msgid "<em>Dice</em> = Hashing function"
-msgstr "<em>Kostka</em> = hashovací funkce"
-
-#: help/templates/help/manual/hashrate-proof.html:190
-#, python-format
-msgid ""
-"<em>Dice values %(dval)s</em> = Hashing function values in the range "
-"%(exp256)s."
-msgstr ""
-"<em>Hodnoty na kostce %(dval)s</em> = Hodnoty hashovací funkce v rozmezí "
-"%(exp256)s."
-
-#: help/templates/help/manual/hashrate-proof.html:191
-#, fuzzy
-msgid ""
-"<em>One dice roll</em> = One hashing computation over block candidate header "
-"(80B)"
-msgstr ""
-"<em>Jeden hod kostkou</em> = One hashing computation over block candidate "
-"header (80B)"
-
-#: help/templates/help/manual/hashrate-proof.html:192
-#, python-format
-msgid ""
-"<em>Limit %(Lko)s on the rolled value</em>, when we mark down the value = "
-"Number from range %(exp256)s / %(exp32)s determining the probability of work "
-"submission"
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:193
-#, python-format
-msgid ""
-"<em>Mark on the paper</em> = Unique block header with a hash value lower "
-"than the limit %(Lko)s."
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:194
-#, python-format
-msgid ""
-"<em>Number of marks %(Ccko)s</em> = Number of 80B block candidates submitted "
-"by miner"
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:195
-#, python-format
-msgid ""
-"<em>Dice rolls %(Hcko)s</em> = Count of unique block candidates tries, thus "
-"real work"
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:196
-#, python-format
-msgid ""
-"<em>Guessed number of dice rolls %(EH)s</em> = Pool's guess regarding the "
-"work done by miner"
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:201
-#, python-format
-msgid ""
-"\n"
-"The last item in the list above is probably the most important one. Proof of "
-"miner's hash rate is observed indirectly by measuring\n"
-"the work that the miner has submitted. The pool can compute the %(EH)s "
-"easily and therefore knows what is the likely hash rate of\n"
-"the miner. It is crucial for the pool operator that the miner can not cheat "
-"its submitted data in any way. The reason is simple,\n"
-"each submitted block represents a unique piece of data. Discovering it "
-"requires a certain number of attempts (%(ratio)s).\n"
-"It can not be altered in any way because of hashing function properties "
-"described above. As long as the miner is sending enough results,\n"
-"the pool operator can compute the hash rate of the miner with arbitrary "
-"precision."
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:213
-#, python-format
-msgid ""
-"Let's define %(Lform)s for the entire pool. Each block candidate (80B) "
-"received by the pool whose hash value is\n"
-"less than or equal %(Lko)s will be published. (Therefore the pool will "
-"publish each <strong>%(exp10)s</strong> share on average which means each "
-"<strong>%(exp42)s</strong>\n"
-"hash tried). The data is going to be published every hour and the number of "
-"published hashes is %(Qcko)s."
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:218
-#, python-format
-msgid ""
-"The expected hash rate of the pool %(EHr)s can be computed easily by using "
-"following formula:\n"
-"\n"
-"\\begin{equation}\n"
-"  E_{Hr} = C\\frac{N}{L} = \\frac{Q}{3600}\\frac{2^{256}}{\\frac{2^{256}}"
-"{2^{42}}} [h/s] = Q\\cdot\\frac{2^{42}}{3600}[h/s] = Q\\cdot\\frac{2^{42}}"
-"{3600 \\cdot 10^{15}} [Ph/s]\n"
-"\\end{equation}"
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:226
-#, python-format
-msgid ""
-" where %(Cform)s and defines an average number of block candidates per one "
-"second and %(Lko)s is an arbitrary set value.\n"
-"</p>\n"
-"\n"
-"<p class=\"text\">\n"
-"It can be concluded that hash rate is linearly dependent on the number of "
-"published block candidates.\n"
-"Which is exactly what might be expected."
 msgstr ""
 
 #: help/templates/help/manual/intro.html:5
@@ -3368,299 +3254,6 @@ msgstr "Stratum <span>těžební protokol</span>"
 msgid "The official documentation of our lightweight bitcoin mining protocol."
 msgstr "Oficiální dokumentace moderního protokolu na těžení bitcoinů."
 
-#: help/templates/help/manual/mining-proxy.html:8
-msgctxt "UI"
-msgid "Stratum <span>Mining Proxy</span>"
-msgstr "Stratum <span>těžební proxy</span>"
-
-#: help/templates/help/manual/mining-proxy.html:10
-msgid "Overview"
-msgstr "Přehled"
-
-#: help/templates/help/manual/mining-proxy.html:12
-msgid ""
-"Stratum mining proxy allows mining software supporting the old <em>Getwork "
-"protocol</em> to use modern <em>Stratum mining protocol</em> provided by our "
-"pool."
-msgstr ""
-"Stratum těžební proxy umožňuje těžebnímu software podporujícímu starý "
-"<em>Getwork protokol</em> používat naším poolem vymyšlený a moderní "
-"<em>Stratum těžební protokol</em>."
-
-#: help/templates/help/manual/mining-proxy.html:14
-#, python-format
-msgid ""
-"We will not cover full technical details and reasoning for designing the "
-"<em>Stratum protocol</em> here. If you are looking for those, please find "
-"your way over <a href=\"%(stratum)s\">here</a>."
-msgstr ""
-"Nebudeme zde rozepisovat veškeré technické detaily a důvody k vytvoření "
-"<em>Stratum protokolu</em>. Pokud hledáte právě tyto informace, podívejte se "
-"prosím <a href=\"%(stratum)s\">sem</a>."
-
-#: help/templates/help/manual/mining-proxy.html:16
-msgid ""
-"We do however believe that you should know some <strong>basic facts and "
-"reasons</strong>. The old <em>Getwork protocol</em> was designed as an easy "
-"solution for standalone miners in times, where there was <strong>no mining "
-"pool</strong> and mining rigs had just about <strong>few GHash per second</"
-"strong>. Back then it was just good enough to get by, but the situation has "
-"changed radically. Now you can easily get miner which is capable of "
-"producing even 6&nbsp;THash/s. Such performance would require a considerably "
-"great network bandwidth on user side (~1428 getwork requests at once) and "
-"ridiculously great one on the server side (imagine few hundred users, each "
-"polling the server for work)."
-msgstr ""
-"Věříme nicméně, že byste měl znát některá <strong>základní fakta a důvody</"
-"strong>. Starý <em>Getwork protokol</em> byl vytvořen jako jednoduché řešení "
-"pro samostatná zařízení v časech, kdy neexistovaly <strong>žádné těžební "
-"pooly</strong> a těžící zařízení měla výkon pouze kolem <strong>několika "
-"GHashů za vteřinu</strong>. Na tuto dobu to bylo jakž takž dostačující, ale "
-"situace se rychle změnila. Nyní můžete jednoduše získat zařízení schopné "
-"těžit rychlostí i 6&nbsp;THash/s. Takový výkon by vyžadoval značně vyšší "
-"propustnost internetového připojení na straně uživatele (~1428 getwork "
-"požadavků najednou) a nesmyslně obří na straně serveru (představte si "
-"několik set uživatelů, každého požadujícího \"zadání práce\")."
-
-#: help/templates/help/manual/mining-proxy.html:17
-msgid ""
-"Stratum protocol reduces network load and significantly improves miner "
-"performance on slower and unstable networks."
-msgstr ""
-"Stratum protokol snižuje zatížení sítě a výrazně zlepšuje efektivitu "
-"zařízení na pomalejších a nestabilních sítích."
-
-#: help/templates/help/manual/mining-proxy.html:19
-msgid "Advantages for Users"
-msgstr "Výhody pro uživatele"
-
-#: help/templates/help/manual/mining-proxy.html:22
-msgid ""
-"No more \"Pool is not providing work fast enough\" messages in mining "
-"software"
-msgstr ""
-"Už žádné zprávy jako \"Pool neposkytuje práci dostatečně rychle\" v těžebním "
-"software"
-
-#: help/templates/help/manual/mining-proxy.html:23
-#, python-format
-msgid ""
-"Extremely low <a href=\"%(link)s\">stale rate</a> (less than 0.1%%, that "
-"means below 1 stale per 1000 accepted shares)"
-msgstr ""
-"Extrémně nízký <a href=\"%(link)s\">počet neplatných řešení</a> (méně než "
-"0.1%%, což znamená méně než 1 neplatné na 1000 platných řešení)"
-
-#: help/templates/help/manual/mining-proxy.html:24
-msgid "Very low network bandwidth usage (~10kB/minute)"
-msgstr "Velice malé zatěžování internetového připojení (~10kB/minutu)"
-
-#: help/templates/help/manual/mining-proxy.html:28
-msgid "Installation on Windows"
-msgstr "Instalace na Windows"
-
-#: help/templates/help/manual/mining-proxy.html:31
-#, python-format
-msgid ""
-"Download official Windows binaries (EXE) from <a href=\"%(url)s\">here</a>"
-msgstr ""
-"Stáhněte si oficiální instalaci pro Windows (EXE) <a href=\"%(url)s\">zde</a>"
-
-#: help/templates/help/manual/mining-proxy.html:32
-msgid ""
-"Open downloaded file. It will open console window using default settings "
-"(proxy connects to Slush's pool interface)"
-msgstr ""
-"Otevřete stažený soubor. Ten otevře okno konzole se standardním nastavením ("
-"proxy se připojuje ke Slush Poolu)"
-
-#: help/templates/help/manual/mining-proxy.html:34
-msgid ""
-"If you are experienced user then you can set mining proxy as a service by "
-"following instructions on the link below:"
-msgstr ""
-"Pokud jste zkušený uživatel, můžete nastavit těžební proxy jako službu dle "
-"instrukcí v odkazu níže:"
-
-#: help/templates/help/manual/mining-proxy.html:39
-msgid "Installation on Linux (Ubuntu / Debian)"
-msgstr "Instalace na Linuxu (Ubuntu / Debian)"
-
-#: help/templates/help/manual/mining-proxy.html:42
-#: help/templates/help/manual/mining-proxy.html:67
-#, python-format
-msgid ""
-"Download TGZ file from <a href=\"%(url)s\" target=\"_blank\" class=\"ext"
-"\">here</a>"
-msgstr ""
-"Stáhněte si TGZ soubor <a href=\"%(url)s\" target=\"_blank\" class=\"ext\""
-">zde</a>"
-
-#: help/templates/help/manual/mining-proxy.html:43
-msgid ""
-"Open your terminal application (<code>ctrl + alt + T</code> on Ubuntu) and "
-"get to directory containing file you have just downloaded (eg. <code>cd ~/"
-"Downloads</code>)"
-msgstr ""
-"Otevřete terminál (<code>ctrl + alt + T</code> v Ubuntu) a přejděte do "
-"adresáře obsahujícího právě stažený soubor (např. <code>cd "
-"~/Downloads</code>)"
-
-#: help/templates/help/manual/mining-proxy.html:44
-#: help/templates/help/manual/mining-proxy.html:69
-msgid "Enter following commands one by one:"
-msgstr "Postupně zadejte následující příkazy:"
-
-#: help/templates/help/manual/mining-proxy.html:53
-#, python-format
-msgid ""
-"Now you can start the proxy by typing %(t)s in the terminal window (provided "
-"you are in directory where you have installed your copy of the proxy)."
-msgstr ""
-"Nyní můžete spouštět proxy zadáním %(t)s v okně terminálu (předpokládaje, že "
-"se nacházíte v adresáři, do kterého jste proxy nainstaloval)."
-
-#: help/templates/help/manual/mining-proxy.html:57
-msgid "Installation on Mac"
-msgstr "Instalace na Macu"
-
-#: help/templates/help/manual/mining-proxy.html:58
-msgid "Prerequisites:"
-msgstr "Požadavky:"
-
-#: help/templates/help/manual/mining-proxy.html:59
-#, python-format
-msgid ""
-"On Mac OS X you already have Python installed on your system, but you "
-"probably do not have the %(lib)s binary required to run the %(setup)s file. "
-"You have two options here:"
-msgstr ""
-"V Mac OS X již máte nainstalován Python, ale pravděpodobně nemáte %(lib)s "
-"binárku potřebnou ke spuštění souboru %(setup)s. Máte dvě možnosti:"
-
-#: help/templates/help/manual/mining-proxy.html:61
-msgid ""
-"Download Xcode (free) from the App Store, Open it up (it's in your "
-"applications folder) and go to <em>preferences → downloads</em> section and "
-"download/install the <em>\"command line tools\"</em>."
-msgstr ""
-"Stáhněte si Xcode (zdarma) z App Store, otevřete ho (je ve Vašem adresáři s "
-"aplikacemi) a pokračujte na do sekce <em>Předvolby → Stažené</em> stáhněte / "
-"nainstalujte si <em>\"nástroje pro práci v příkazovém řádku\"</em>."
-
-#: help/templates/help/manual/mining-proxy.html:62
-#, python-format
-msgid ""
-"If you don't want to install Xcode, <a href=\"%(url)s\" target=\"_blank\" "
-"class=\"ext\">get osx-gcc-installer here</a>"
-msgstr ""
-"Pokud nechcete instalovat Xcode, <a href=\"%(url)s\" target=\"_blank\" class="
-"\"ext\">stáhněte si osx-gcc-installer</a>"
-
-#: help/templates/help/manual/mining-proxy.html:65
-msgid "Now if you have installed GCC, you can procede with following steps:"
-msgstr "Nyní, když máte GCC, můžete pokračovat následovně:"
-
-#: help/templates/help/manual/mining-proxy.html:68
-msgid ""
-"Open your terminal application (<code>Applications → Utilities → Terminal</"
-"code>) and get to directory containing file you have just downloaded (eg.:"
-"&nbsp;<code>cd ~/Downloads</code>)"
-msgstr ""
-"Otevřete terminál (<code>Aplikace → Nástroje → Terminál</code>) a přejděte "
-"do adresáře obsahujícím právě stažený soubor (např.:&nbsp;<code>cd "
-"~/Downloads</code>)"
-
-#: help/templates/help/manual/mining-proxy.html:75
-#, python-format
-msgid ""
-"Now you can start the proxy by typing %(t)s (provided you are in directory "
-"where you have installed your copy of the proxy)"
-msgstr ""
-"Nyní můžete spouštět proxy zadáním %(t)s (předpokládaje, že jste v adresáři, "
-"do kterého jste proxy nainstaloval)"
-
-#: help/templates/help/manual/mining-proxy.html:78
-#, python-format
-msgid ""
-"Please note, that once Apple releases <strong>Xcode 4.7</strong> they will "
-"<strong>remove the optional install of gcc</strong> (they want you to use "
-"clang). When that happens you can either choose not to upgrade, or return to "
-"the aforementioned <a href=\"%(url)s\" target=\"_blank\" class=\"ext\">osx-"
-"gcc-installer</a> and download the specific gcc binary for your version of "
-"Mac OS."
-msgstr ""
-"Berte prosím v potaz, že jakmile Apple vydá <strong>Xcode 4.7</strong>, tak "
-"<strong>odstraní možnost volitelné instalace gcc</strong> (chtějí používat "
-"clang). Až se toto stane, můžete si vybrat buď neupgradovat, nebo se vrátit "
-"k prve zmíněnému <a href=\"%(url)s\" target=\"_blank\" class=\"ext\">osx-gcc-"
-"installeru</a> a stáhnout si konkrétní verzi gcc pro Vaši verzi Mac OS."
-
-#: help/templates/help/manual/mining-proxy.html:80
-msgid "Installation on Linux Using Git (Advanced)"
-msgstr "Instalace na Linuxu za použití Gitu (Pokročilé)"
-
-#: help/templates/help/manual/mining-proxy.html:82
-msgid ""
-"This is advanced option for experienced users, but it gives you the easiest "
-"way for updating the proxy."
-msgstr ""
-"Tato možnost je pro zkušené uživatele, je to nicméně nejjednodušší způsob, "
-"jak proxy aktualizovat."
-
-#: help/templates/help/manual/mining-proxy.html:90
-msgctxt "proxy installation comment"
-msgid "Development package of Python is necessary"
-msgstr "Vývojářská verze Pythonu je nezbytná"
-
-#: help/templates/help/manual/mining-proxy.html:93
-msgctxt "proxy installation comment"
-msgid "Upgrade setuptools package"
-msgstr "Aktualizujte balíček setuptools"
-
-#: help/templates/help/manual/mining-proxy.html:96
-msgctxt "proxy installation comment"
-msgid "Install required dependencies (namely Twisted and Stratum libraries)"
-msgstr ""
-"Nainstalujte požadované závislosti (jmenovitě jsou potřeba knihovny Twisted "
-"a Stratum)"
-
-#: help/templates/help/manual/mining-proxy.html:99
-msgctxt "proxy installation comment"
-msgid "Start the proxy"
-msgstr "Spusťte proxy"
-
-#: help/templates/help/manual/mining-proxy.html:102
-msgctxt "proxy installation comment"
-msgid "Update the proxy"
-msgstr "Aktualizujte proxy"
-
-#: help/templates/help/manual/mining-proxy.html:105
-msgid "Compiling Midstate C Extension"
-msgstr "Kompilování rozšíření Midstate C"
-
-#: help/templates/help/manual/mining-proxy.html:107
-msgid ""
-"For some really big operations using getwork interface of this proxy, you'll "
-"find useful \"midstatec\" C extension, which significantly speeds up "
-"midstate calculations (plain python implementation is <span class=\"em"
-"\">very slow</span>)."
-msgstr ""
-"U některých opravdu velkých sestav težebních zařízení používajících getwork "
-"rozhraní této proxy se Vám bude hodit rozšíření \"midstatec\" C, které "
-"významně zrychluje midstate kalkulace (prostá python implementace je <span "
-"class=\"em\">velmi pomalá</span>)."
-
-#: help/templates/help/manual/mining-proxy.html:109
-msgid ""
-"To enable this extension, just type <code>make</code> in <code>midstatec</"
-"code> subdirectory. Proxy will auto-detect compiled extension on next "
-"startup."
-msgstr ""
-"Pro zapnutí tohoto rozšíření pouze napište <code>make</code> v "
-"<code>midstatec</code> podadresáři. Proxy automaticky detekuje zkompilované "
-"rozšíření při příštím startu."
-
 #: help/templates/help/manual/mining_beginners.html:11
 msgid ""
 "1. <span>I am new to mining.</span> What do I need <span>to start mining?</"
@@ -3716,8 +3309,8 @@ msgid ""
 "calculator</a> to determine how much you can make with your mining hardware. "
 "Just insert your hash rate and you will see approximate reward."
 msgstr ""
-"Pro odhadnutí výdělku s Vaším težebním zařízením můžete použít <a href=\""
-"%(url)s\" target=\"_blank\">%(globe)s online kalkulačku</a>. Jednodušte "
+"Pro odhadnutí výdělku s Vaším težebním zařízením můžete použít <a href="
+"\"%(url)s\" target=\"_blank\">%(globe)s online kalkulačku</a>. Jednodušte "
 "vložte Váš hash rate a dostanete předpokládanou odměnu."
 
 #: help/templates/help/manual/mining_beginners.html:44
@@ -3725,9 +3318,10 @@ msgid "4. Connecting your ASIC miner <span>to the pool</span>"
 msgstr "4. Připojování ASIC zařízení <span>k poolu</span>"
 
 #: help/templates/help/manual/mining_beginners.html:46
+#, fuzzy
 msgid ""
 "Once your ASIC miner has been delivered and you installed required software "
-"please \tcontinue with following article regarding your miner setup and "
+"please continue with following article regarding your miner setup and "
 "connecting it to our pool:"
 msgstr ""
 "Jakmile máte ASIC zařízení k dispozici a máte nainstalován požadovaný "
@@ -3760,8 +3354,8 @@ msgid ""
 "Once you have it go to <a href=\"%(account_settings)s\">Payouts tab here</a> "
 "and set it as your payout address."
 msgstr ""
-"Jakmile ji máte, běžte na <a href=\"%(account_settings)s\">záložku "
-"Výplaty</a> a nastavte si ji jako výplatní adresu."
+"Jakmile ji máte, běžte na <a href=\"%(account_settings)s\">záložku Výplaty</"
+"a> a nastavte si ji jako výplatní adresu."
 
 #: help/templates/help/manual/mining_beginners.html:53
 msgid "Further questions?"
@@ -3774,8 +3368,8 @@ msgid ""
 "<a href=\"%(url)s\">following useful articles</a> which will help you "
 "mastering at our pool."
 msgstr ""
-"Máte další otázky? Pokud berete těžbu vážně, přečtěte si prosím <a href=\""
-"%(url)s\">následující užitečné články</a>, které Vám pomohou zjistit více."
+"Máte další otázky? Pokud berete těžbu vážně, přečtěte si prosím <a href="
+"\"%(url)s\">následující užitečné články</a>, které Vám pomohou zjistit více."
 
 #: help/templates/help/manual/mining_beginners.html:57
 msgid ""
@@ -4705,8 +4299,8 @@ msgid ""
 "ASIC based miners offer a significantly higher <a href=\"%(link)s\">Hash "
 "Rate</a> at a lower power consumption."
 msgstr ""
-"Zařízení založená na technologii ASIC nabízí výrazně vyšší <a href=\"%(link)"
-"s\">hash rate</a> při nižší spotřebě energií."
+"Zařízení založená na technologii ASIC nabízí výrazně vyšší <a href=\"%(link)s"
+"\">hash rate</a> při nižší spotřebě energií."
 
 #: help/templates/help/manual/terminology.html:40
 msgid "Worker"
@@ -4721,10 +4315,11 @@ msgstr ""
 "údaj do vašeho těžebního software."
 
 #: help/templates/help/manual/terminology.html:45
+#, fuzzy
 msgid ""
 "We recommend to give a designated worker name to every mining device. That "
 "way you can <strong>track down a faulty miner</strong> easily just by "
-"looking at the monitoring sectionour profile page."
+"looking at the monitoring section of your profile page."
 msgstr ""
 "Doporučujeme přiřadit každému zařízení unikátní název. Jedině tak můžete "
 "jednoduše <strong>vystopovat problémové zařízení</strong> pouhým "
@@ -4843,8 +4438,8 @@ msgid ""
 "for the explanation."
 msgstr ""
 "Skórovací hash rate je hodnota odvozená od efektivního hash rate použitá pro "
-"výpočet odměn. Podívejte se prosím na <a href=\"%(rewards)s\">systém "
-"odměn</a> pro více informací."
+"výpočet odměn. Podívejte se prosím na <a href=\"%(rewards)s\">systém odměn</"
+"a> pro více informací."
 
 #: help/templates/help/manual/terminology.html:81
 msgid "Share - <span>Proof of Work</span>"
@@ -4911,8 +4506,8 @@ msgid ""
 "(Please, have a look at how <a href=\"%(link)s\">shares</a> are being "
 "produced before reading on.)"
 msgstr ""
-"(Před pokračováním ve čtení se prosím nejdřív podívejte jak jsou vytvářena <"
-"a href=\"%(link)s\">řešení</a>.)"
+"(Před pokračováním ve čtení se prosím nejdřív podívejte jak jsou vytvářena "
+"<a href=\"%(link)s\">řešení</a>.)"
 
 #: help/templates/help/manual/terminology.html:105
 msgid ""
@@ -5368,205 +4963,139 @@ msgstr ""
 "Pokud změníte názor, můžete se kdykoliv znovu přihlásit v nastavení vašeho "
 "účtu."
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:29
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:49
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:28
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:43
 #, python-format
 msgctxt "MAILING"
-msgid ""
-"\n"
-"                HEY %(username)s, <span style=\"color:#346ee5;\">SLUSH</"
-"span> POOL HERE!\n"
-"            "
+msgid "HEY %(username)s, SLUSH POOL HERE!"
 msgstr ""
-"\n"
-"                HEJ %(username)s, <span style=\"color:#346ee5;\">TADY </span>"
-" SLUSH POOL!\n"
-"            "
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:33
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:31
 #, python-format
 msgctxt "MAILING"
-msgid ""
-"\n"
-"                %(username)s, WE MISSED YOU AT <span style=\"color:#346ee5;"
-"\">SLUSH</span> POOL!\n"
-"            "
+msgid "%(username)s, WE MISSED YOU AT SLUSH POOL!"
 msgstr ""
-"\n"
-"                %(username)s, CHYBÍTE NÁM NA <span style=\"color:#346ee5;\""
-">SLUSH</span> POOLU!\n"
-"            "
+
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:34
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:40
+#, python-format
+msgctxt "MAILING"
+msgid "%(username)s, SLUSH POOL THANKS YOU!"
+msgstr ""
 
 #: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:37
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:45
 #, python-format
 msgctxt "MAILING"
-msgid ""
-"\n"
-"                %(username)s, <span style=\"color:#346ee5;\">SLUSH</span> "
-"POOL THANKS YOU!\n"
-"            "
+msgid "%(username)s, WE MISSED YOU AT NEW SLUSH POOL!"
 msgstr ""
-"\n"
-"                %(username)s, <span style=\"color:#346ee5;\">SLUSH</span> "
-"POOL VÁM DĚKUJE!\n"
-"            "
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:41
-#, python-format
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:51
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:66
+#, fuzzy
 msgctxt "MAILING"
-msgid ""
-"\n"
-"                %(username)s, WE MISSED YOU AT NEW <span style=\"color:"
-"#346ee5;\">SLUSH</span> POOL!\n"
-"            "
-msgstr ""
-"\n"
-"                %(username)s, CHYBÍTE NÁM NA NOVÉM <span style=\""
-"color:#346ee5;\">SLUSH</span> POOLU!\n"
-"            "
-
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:58
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:78
-msgctxt "MAILING"
-msgid ""
-"\n"
-"            (just a wee reminder)\n"
-"        "
+msgid "(just a wee reminder)"
 msgstr ""
 "\n"
 "            (jen drobné připomenutí)\n"
 "        "
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:62
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:70
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:54
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:60
+#, fuzzy
 msgctxt "MAILING"
-msgid ""
-"\n"
-"            (and so did the other miners)\n"
-"        "
+msgid "(and so did the other miners)"
 msgstr ""
 "\n"
 "            (a ostatní těžaři také)\n"
 "        "
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:66
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:74
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:57
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:63
+#, fuzzy
 msgctxt "MAILING"
-msgid ""
-"\n"
-"            (as do thousands of our users)\n"
-"        "
+msgid "(as do thousands of our users)"
 msgstr ""
 "\n"
 "            (stejně jako tisíce našich uživatelů)\n"
 "        "
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:86
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:123
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:73
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:88
 #, python-format
 msgctxt "MAILING"
 msgid ""
-"\n"
-"            It’s been a while since you decided to give us a shot but up to "
-"now, not even a single jingle. Since the\n"
-"            last time, we’ve been working hard on many great things,\n"
-"            <a href=\"%(main_url)s\">new website</a> being one of them. "
-"Apart from the\n"
-"            completely new layout, we have some new, beneficial features "
-"which you'll love - pay us a visit and let us\n"
-"            know what you think. We are here for you.\n"
-"        "
+"It’s been a while since you decided to give us a shot but up to now, not "
+"even a single jingle. Since the last time, we’ve been working hard on many "
+"great things, <a href=\"%(main_url)s\">new website</a> being one of them. "
+"Apart from the completely new layout, we have some new, beneficial features "
+"which you'll love - pay us a visit and let us know what you think. We are "
+"here for you."
 msgstr ""
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:94
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:76
 #, python-format
 msgctxt "MAILING"
 msgid ""
-"\n"
-"            It has been a while since we mined together…and a lot has "
-"happened since then. Among other things,\n"
-"            <a href=\"%(main_url)s\">new site</a>\n"
-"            is up! Apart from the completely new layout, we have some new, "
-"beneficial features which you'll love - pay\n"
-"            us a visit and let us know what you think. We are here for you.\n"
-"        "
+"It has been a while since we mined together…and a lot has happened since "
+"then. Among other things, <a href=\"%(main_url)s\">new site</a> is up! Apart "
+"from the completely new layout, we have some new, beneficial features which "
+"you'll love - pay us a visit and let us know what you think. We are here for "
+"you."
 msgstr ""
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:101
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:79
 #, python-format
 msgctxt "MAILING"
 msgid ""
-"\n"
-"            Really, we wanted to thank you for being with us for all this "
-"time, it means a great deal. And, as a token\n"
-"            of our appreciation (pun intended), we wanted to let you know "
-"about the\n"
-"            <a href=\"%(main_url)s\">new version of our site</a>! Apart "
-"from\n"
-"            the completely new layout, we have some new, beneficial features "
-"which you'll love - pay us a visit and let\n"
-"            us know what you think. We are here for you.\n"
-"        "
+"Really, we wanted to thank you for being with us for all this time, it means "
+"a great deal. And, as a token of our appreciation (pun intended), we wanted "
+"to let you know about the <a href=\"%(main_url)s\">new version of our site</"
+"a>! Apart from the completely new layout, we have some new, beneficial "
+"features which you'll love - pay us a visit and let us know what you think. "
+"We are here for you."
 msgstr ""
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:109
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:82
 #, python-format
 msgctxt "MAILING"
 msgid ""
-"\n"
-"            Thanks for giving a shot to our recently launched new site, we "
-"really appreciate it. We realize you may\n"
-"            feel there are still things we could do better, and yes, we will "
-"value your feedback. That said, we are\n"
-"            working hard to implement all valid suggestions and comments in "
-"order to be constantly improving our web\n"
-"            experience. We will be happy when you <a href=\"%(feedback_url)s"
-"\">drop by again</a> and let us know what you think. We are here for you.\n"
-"        "
+"Thanks for giving a shot to our recently launched new site, we really "
+"appreciate it. We realize you may feel there are still things we could do "
+"better, and yes, we will value your feedback. That said, we are working hard "
+"to implement all valid suggestions and comments in order to be constantly "
+"improving our web experience. We will be happy when you <a href="
+"\"%(feedback_url)s\">drop by again</a> and let us know what you think. We "
+"are here for you."
 msgstr ""
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:116
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:85
 #, python-format
 msgctxt "MAILING"
 msgid ""
-"\n"
-"            Really, we wanted to thank you for being with us for all this "
-"time, it means a great deal. We wanted you to\n"
-"            know that we really appreciate your feedback and take a close "
-"look at any feature suggestions or other ideas\n"
-"            you may submit! So please, <a href=\"%(feedback_url)s\">keep us "
-"in the loop</a>. Thank you again for being with us, it is only thanks to "
-"you\n"
-"            that we can do what we do - we are here for you.\n"
-"        "
+"Really, we wanted to thank you for being with us for all this time, it means "
+"a great deal. We wanted you to know that we really appreciate your feedback "
+"and take a close look at any feature suggestions or other ideas you may "
+"submit! So please, <a href=\"%(feedback_url)s\">keep us in the loop</a>. "
+"Thank you again for being with us, it is only thanks to you that we can do "
+"what we do - we are here for you."
 msgstr ""
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:145
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:149
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:165
-msgctxt "MAILING"
-msgid ""
-"\n"
-"            CHECK OUT THE NEW WEBSITE\n"
-"        "
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:105
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:108
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:120
+msgctxt "mailing"
+msgid "CHECK OUT THE NEW WEBSITE"
 msgstr ""
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:153
-msgctxt "MAILING"
-msgid ""
-"\n"
-"            START USING THE NEW WEBSITE\n"
-"        "
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:111
+msgctxt "mailing"
+msgid "START USING THE NEW WEBSITE"
 msgstr ""
 
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:157
-#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:161
-msgctxt "MAILING"
-msgid ""
-"\n"
-"            SUBMIT YOUR IDEAS\n"
-"        "
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:114
+#: mailing/templates/mailing/emails/activation_campaign/activation_campaign.html:117
+msgctxt "mailing"
+msgid "SUBMIT YOUR IDEAS"
 msgstr ""
 
 #: mining/models.py:219 web/models.py:951
@@ -6180,8 +5709,8 @@ msgid ""
 "2FA token is invalid. Please, re-scan the QR code (new one has been "
 "generated)."
 msgstr ""
-"Token pro dvoufaktorovou autentizaci je neplatný. Přeskenujte prosím QR kód ("
-"z bezpečnostních důvodů byl vygenerován nový)."
+"Token pro dvoufaktorovou autentizaci je neplatný. Přeskenujte prosím QR kód "
+"(z bezpečnostních důvodů byl vygenerován nový)."
 
 #: settings/forms/otp_setting_forms.py:106
 #: settings/forms/otp_setting_forms.py:139
@@ -7081,9 +6610,9 @@ msgid ""
 "\"%(settings)s\">settings</a>. Check out the latest <a href=\"%(stats)s"
 "\">results</a>."
 msgstr ""
-"Pokud později změníte názor, můžete si vybrat znovu v <a href=\"%(settings)"
-"s\">nastavení</a>. Podívejte se na aktuální <a href=\"%(stats)s\""
-">výsledky</a>."
+"Pokud později změníte názor, můžete si vybrat znovu v <a href=\"%(settings)s"
+"\">nastavení</a>. Podívejte se na aktuální <a href=\"%(stats)s\">výsledky</"
+"a>."
 
 #: web/templates/404.html:3
 msgctxt "UI"
@@ -7537,8 +7066,8 @@ msgid ""
 "Looking for mining URLs? Read how to <a href=\"%(link)s\" class=\"alert-link"
 "\">get started</a>!"
 msgstr ""
-"Hledáte URL těžebních serverů? Přečtěte si jak <a href=\"%(link)s\" class"
-"=\"alert-link\">začít</a>!"
+"Hledáte URL těžebních serverů? Přečtěte si jak <a href=\"%(link)s\" class="
+"\"alert-link\">začít</a>!"
 
 #: web/templates/homepage.html:24
 msgctxt "UI"
@@ -9098,7 +8627,6 @@ msgid "Slush Pool"
 msgstr "Slush Pool"
 
 #: web/templates/email/_base.html:8
-#, fuzzy
 msgctxt "UI"
 msgid "Mine as one."
 msgstr ""
@@ -9124,10 +8652,9 @@ msgid ""
 "pool website."
 msgstr ""
 "Pokud chcete opravdu smazat svůj účet <strong>%(username)s</strong>, "
-"klikněte prosím na <a href=\"%(delete_url)s\""
-">tento&nbsp;potvrzující&nbsp;odkaz</a>. Odkaz je platný po dobu jedné "
-"hodiny. Jestliže vypršela platnost odkazu, jděte prosím na naši webovou "
-"stránku a vytvořte nový požadavek."
+"klikněte prosím na <a href=\"%(delete_url)s\">tento&nbsp;potvrzující&nbsp;"
+"odkaz</a>. Odkaz je platný po dobu jedné hodiny. Jestliže vypršela platnost "
+"odkazu, jděte prosím na naši webovou stránku a vytvořte nový požadavek."
 
 #: web/templates/email/account_delete.html:7
 msgctxt "UI"
@@ -9151,8 +8678,8 @@ msgid ""
 "%(support_email)s</a>."
 msgstr ""
 "Pokud jste o zrušení účtu nežádal, neklikejte prosím na potvrzující odkaz "
-"uvedený výše, ihned si změňte heslo, a nahlašte tento incident na <a href=\""
-"mailto:%(support_email)s\">%(support_email)s</a>."
+"uvedený výše, ihned si změňte heslo, a nahlašte tento incident na <a href="
+"\"mailto:%(support_email)s\">%(support_email)s</a>."
 
 #: web/templates/email/account_delete_warning.templ.html:5
 #, python-format
@@ -9161,8 +8688,8 @@ msgid ""
 "We noticed that you have not used your account at our pool <a href="
 "\"%(site_url)s\">%(site_name)s</a> for longer than one year."
 msgstr ""
-"Všimli jsme si, že jste nepoužil svůj účet <a href=\"%(site_url)s\""
-">%(site_name)s</a> na našem poolu déle než jeden rok."
+"Všimli jsme si, že jste nepoužil svůj účet <a href=\"%(site_url)s\">"
+"%(site_name)s</a> na našem poolu déle než jeden rok."
 
 #: web/templates/email/account_delete_warning.templ.html:6
 msgctxt "UI"
@@ -9202,8 +8729,8 @@ msgid ""
 "If you have any further questions, please contact us at <a href=\"mailto:"
 "%(support_url)s\">%(support_url)s</a>."
 msgstr ""
-"Pokud máte nějaké další dotazy, obraťte se prosím na <a href=\""
-"mailto:%(support_url)s\">%(support_url)s</a>."
+"Pokud máte nějaké další dotazy, obraťte se prosím na <a href=\"mailto:"
+"%(support_url)s\">%(support_url)s</a>."
 
 #: web/templates/email/email_change.html:5
 #, python-format
@@ -9222,8 +8749,8 @@ msgid ""
 "To authorize this request, please follow <a href=\"%(confirm_url)s"
 "\">this&nbsp;confirmation&nbsp;link</a>"
 msgstr ""
-"Pro potvrzení tohoto požadavku prosím klikněte na <a href=\"%(confirm_url)s\""
-">tento&nbsp;potvrzující&nbsp;odkaz</a>"
+"Pro potvrzení tohoto požadavku prosím klikněte na <a href=\"%(confirm_url)s"
+"\">tento&nbsp;potvrzující&nbsp;odkaz</a>"
 
 #: web/templates/email/email_change.html:7
 #, python-format
@@ -9234,8 +8761,8 @@ msgid ""
 "immediately and report this incident for further investigation at <a href="
 "\"mailto:%(support_email)s\">%(support_email)s</a>."
 msgstr ""
-"Pokud jste tuto změnu adresy nevyžádal, <a href=\"%(cancel_url)s\""
-">zrušte&nbsp;tento&nbsp;požadavek</a>, ihned si změňte heslo a nahlašte "
+"Pokud jste tuto změnu adresy nevyžádal, <a href=\"%(cancel_url)s"
+"\">zrušte&nbsp;tento&nbsp;požadavek</a>, ihned si změňte heslo a nahlašte "
 "tento incident na <a href=\"mailto:%(support_email)s\">%(support_email)s</a>."
 
 #: web/templates/email/email_change.html:9
@@ -9263,8 +8790,8 @@ msgid ""
 "You can also see the monitoring report on-line at <a href="
 "\"%(monitoring_url)s\">%(monitoring_url)s</a>"
 msgstr ""
-"Zpráva o sledování je přístupná on-line na stránce <a href=\""
-"%(monitoring_url)s\">%(monitoring_url)s</a>"
+"Zpráva o sledování je přístupná on-line na stránce <a href="
+"\"%(monitoring_url)s\">%(monitoring_url)s</a>"
 
 #: web/templates/email/monitoring_subject.html:2
 #: workers/templates/workers/home.html:4
@@ -9298,8 +8825,8 @@ msgctxt "UI"
 msgid ""
 "The username associated with this e-mail is: <strong>%(username)s</strong>"
 msgstr ""
-"Uživatelské jméno spojené s tímto emailovým účtem je: "
-"<strong>%(username)s</strong>"
+"Uživatelské jméno spojené s tímto emailovým účtem je: <strong>%(username)s</"
+"strong>"
 
 #: web/templates/email/password_reset.html:9
 #, python-format
@@ -9308,8 +8835,8 @@ msgid ""
 "In case you did NOT initiate this change, please, contact us at <a href="
 "\"mailto:%(support_email)s\">%(support_email)s</a>"
 msgstr ""
-"V případě, že jste o tuto změnu nežádal, nás prosím kontaktujte na <a href=\""
-"mailto:%(support_email)s\">%(support_email)s</a>"
+"V případě, že jste o tuto změnu nežádal, nás prosím kontaktujte na <a href="
+"\"mailto:%(support_email)s\">%(support_email)s</a>"
 
 #: web/templates/email/password_reset.html:11
 msgid "Reset password"
@@ -9349,8 +8876,8 @@ msgid ""
 "%(wallet_info)s</a>"
 msgstr ""
 "Zpracování plateb v Bitcoinové síti zpravidla trvá od 30 minut do 3 hodin. "
-"Aktuální stav transakce můžete sledovat na <a href=\"%(wallet_info)s\""
-">%(wallet_info)s</a>"
+"Aktuální stav transakce můžete sledovat na <a href=\"%(wallet_info)s\">"
+"%(wallet_info)s</a>"
 
 #: web/templates/email/payout.html:8
 msgctxt "UI"
@@ -9381,8 +8908,8 @@ msgid ""
 "Thank you for signing up for our <a href=\"%(site_url)s\">%(site_name)s</a> "
 "mining pool."
 msgstr ""
-"Děkujeme, že jste si zaregistroval účet na <a href=\"%(site_url)s\""
-">%(site_name)s</a> poolu."
+"Děkujeme, že jste si zaregistroval účet na <a href=\"%(site_url)s\">"
+"%(site_name)s</a> poolu."
 
 #: web/templates/email/registration.html:6
 #, python-format
@@ -9391,8 +8918,8 @@ msgid ""
 "In order to activate your account and start mining, please follow this <a "
 "href=\"%(activate_url)s\">activation url</a>."
 msgstr ""
-"Pro aktivaci svého účtu prosím klikněte na <a href=\"%(activate_url)s\">"
-"aktivační odkaz</a>."
+"Pro aktivaci svého účtu prosím klikněte na <a href=\"%(activate_url)s"
+"\">aktivační odkaz</a>."
 
 #: web/templates/email/registration.html:8
 msgid "Activate"
@@ -9415,8 +8942,8 @@ msgid ""
 "To authorize this request, please follow <a href=\"%(wallet_confirm_link)s"
 "\">this&nbsp;confirmation&nbsp;link</a>."
 msgstr ""
-"Pro potvrzení tohoto požadavku prosím klikněte <a href=\""
-"%(wallet_confirm_link)s\">na&nbsp;tento&nbsp;odkaz</a>."
+"Pro potvrzení tohoto požadavku prosím klikněte <a href="
+"\"%(wallet_confirm_link)s\">na&nbsp;tento&nbsp;odkaz</a>."
 
 #: web/templates/email/wallet_change.html:7
 #, python-format
@@ -9427,10 +8954,10 @@ msgid ""
 "password immediately and report this incident for further investigation at "
 "<a href=\"mailto:%(support_email)s\">%(support_email)s</a>."
 msgstr ""
-"Pokud jste tuto změnu nevyžádal, prosím <a href=\"%(wallet_cancel_link)s\""
-">zrušte&nbsp;tento&nbsp;požadavek</a>, ihned si změňte heslo a nahlašte "
-"tento incident našemu týmu zákaznické podpory na <a href=\""
-"mailto:%(support_email)s\">%(support_email)s</a>."
+"Pokud jste tuto změnu nevyžádal, prosím <a href=\"%(wallet_cancel_link)s"
+"\">zrušte&nbsp;tento&nbsp;požadavek</a>, ihned si změňte heslo a nahlašte "
+"tento incident našemu týmu zákaznické podpory na <a href=\"mailto:"
+"%(support_email)s\">%(support_email)s</a>."
 
 #: web/templates/email/wallet_change.html:9
 msgid "Change my wallet"
@@ -9550,6 +9077,321 @@ msgstr "Náhled:"
 msgctxt "UI"
 msgid "Help me"
 msgstr "Pomoc"
+
+#~ msgid "<em>Dice</em> = Hashing function"
+#~ msgstr "<em>Kostka</em> = hashovací funkce"
+
+#~ msgid ""
+#~ "<em>Dice values %(dval)s</em> = Hashing function values in the range "
+#~ "%(exp256)s."
+#~ msgstr ""
+#~ "<em>Hodnoty na kostce %(dval)s</em> = Hodnoty hashovací funkce v rozmezí "
+#~ "%(exp256)s."
+
+#, fuzzy
+#~ msgid ""
+#~ "<em>One dice roll</em> = One hashing computation over block candidate "
+#~ "header (80B)"
+#~ msgstr ""
+#~ "<em>Jeden hod kostkou</em> = One hashing computation over block candidate "
+#~ "header (80B)"
+
+#~ msgctxt "UI"
+#~ msgid "Stratum <span>Mining Proxy</span>"
+#~ msgstr "Stratum <span>těžební proxy</span>"
+
+#~ msgid "Overview"
+#~ msgstr "Přehled"
+
+#~ msgid ""
+#~ "Stratum mining proxy allows mining software supporting the old "
+#~ "<em>Getwork protocol</em> to use modern <em>Stratum mining protocol</em> "
+#~ "provided by our pool."
+#~ msgstr ""
+#~ "Stratum těžební proxy umožňuje těžebnímu software podporujícímu starý "
+#~ "<em>Getwork protokol</em> používat naším poolem vymyšlený a moderní "
+#~ "<em>Stratum těžební protokol</em>."
+
+#~ msgid ""
+#~ "We will not cover full technical details and reasoning for designing the "
+#~ "<em>Stratum protocol</em> here. If you are looking for those, please find "
+#~ "your way over <a href=\"%(stratum)s\">here</a>."
+#~ msgstr ""
+#~ "Nebudeme zde rozepisovat veškeré technické detaily a důvody k vytvoření "
+#~ "<em>Stratum protokolu</em>. Pokud hledáte právě tyto informace, podívejte "
+#~ "se prosím <a href=\"%(stratum)s\">sem</a>."
+
+#~ msgid ""
+#~ "We do however believe that you should know some <strong>basic facts and "
+#~ "reasons</strong>. The old <em>Getwork protocol</em> was designed as an "
+#~ "easy solution for standalone miners in times, where there was <strong>no "
+#~ "mining pool</strong> and mining rigs had just about <strong>few GHash per "
+#~ "second</strong>. Back then it was just good enough to get by, but the "
+#~ "situation has changed radically. Now you can easily get miner which is "
+#~ "capable of producing even 6&nbsp;THash/s. Such performance would require "
+#~ "a considerably great network bandwidth on user side (~1428 getwork "
+#~ "requests at once) and ridiculously great one on the server side (imagine "
+#~ "few hundred users, each polling the server for work)."
+#~ msgstr ""
+#~ "Věříme nicméně, že byste měl znát některá <strong>základní fakta a "
+#~ "důvody</strong>. Starý <em>Getwork protokol</em> byl vytvořen jako "
+#~ "jednoduché řešení pro samostatná zařízení v časech, kdy neexistovaly "
+#~ "<strong>žádné těžební pooly</strong> a těžící zařízení měla výkon pouze "
+#~ "kolem <strong>několika GHashů za vteřinu</strong>. Na tuto dobu to bylo "
+#~ "jakž takž dostačující, ale situace se rychle změnila. Nyní můžete "
+#~ "jednoduše získat zařízení schopné těžit rychlostí i 6&nbsp;THash/s. "
+#~ "Takový výkon by vyžadoval značně vyšší propustnost internetového "
+#~ "připojení na straně uživatele (~1428 getwork požadavků najednou) a "
+#~ "nesmyslně obří na straně serveru (představte si několik set uživatelů, "
+#~ "každého požadujícího \"zadání práce\")."
+
+#~ msgid ""
+#~ "Stratum protocol reduces network load and significantly improves miner "
+#~ "performance on slower and unstable networks."
+#~ msgstr ""
+#~ "Stratum protokol snižuje zatížení sítě a výrazně zlepšuje efektivitu "
+#~ "zařízení na pomalejších a nestabilních sítích."
+
+#~ msgid "Advantages for Users"
+#~ msgstr "Výhody pro uživatele"
+
+#~ msgid ""
+#~ "No more \"Pool is not providing work fast enough\" messages in mining "
+#~ "software"
+#~ msgstr ""
+#~ "Už žádné zprávy jako \"Pool neposkytuje práci dostatečně rychle\" v "
+#~ "těžebním software"
+
+#~ msgid ""
+#~ "Extremely low <a href=\"%(link)s\">stale rate</a> (less than 0.1%%, that "
+#~ "means below 1 stale per 1000 accepted shares)"
+#~ msgstr ""
+#~ "Extrémně nízký <a href=\"%(link)s\">počet neplatných řešení</a> (méně než "
+#~ "0.1%%, což znamená méně než 1 neplatné na 1000 platných řešení)"
+
+#~ msgid "Very low network bandwidth usage (~10kB/minute)"
+#~ msgstr "Velice malé zatěžování internetového připojení (~10kB/minutu)"
+
+#~ msgid "Installation on Windows"
+#~ msgstr "Instalace na Windows"
+
+#~ msgid ""
+#~ "Download official Windows binaries (EXE) from <a href=\"%(url)s\">here</a>"
+#~ msgstr ""
+#~ "Stáhněte si oficiální instalaci pro Windows (EXE) <a href=\"%(url)s"
+#~ "\">zde</a>"
+
+#~ msgid ""
+#~ "Open downloaded file. It will open console window using default settings "
+#~ "(proxy connects to Slush's pool interface)"
+#~ msgstr ""
+#~ "Otevřete stažený soubor. Ten otevře okno konzole se standardním "
+#~ "nastavením (proxy se připojuje ke Slush Poolu)"
+
+#~ msgid ""
+#~ "If you are experienced user then you can set mining proxy as a service by "
+#~ "following instructions on the link below:"
+#~ msgstr ""
+#~ "Pokud jste zkušený uživatel, můžete nastavit těžební proxy jako službu "
+#~ "dle instrukcí v odkazu níže:"
+
+#~ msgid "Installation on Linux (Ubuntu / Debian)"
+#~ msgstr "Instalace na Linuxu (Ubuntu / Debian)"
+
+#~ msgid ""
+#~ "Download TGZ file from <a href=\"%(url)s\" target=\"_blank\" class=\"ext"
+#~ "\">here</a>"
+#~ msgstr ""
+#~ "Stáhněte si TGZ soubor <a href=\"%(url)s\" target=\"_blank\" class=\"ext"
+#~ "\">zde</a>"
+
+#~ msgid ""
+#~ "Open your terminal application (<code>ctrl + alt + T</code> on Ubuntu) "
+#~ "and get to directory containing file you have just downloaded (eg. "
+#~ "<code>cd ~/Downloads</code>)"
+#~ msgstr ""
+#~ "Otevřete terminál (<code>ctrl + alt + T</code> v Ubuntu) a přejděte do "
+#~ "adresáře obsahujícího právě stažený soubor (např. <code>cd ~/Downloads</"
+#~ "code>)"
+
+#~ msgid "Enter following commands one by one:"
+#~ msgstr "Postupně zadejte následující příkazy:"
+
+#~ msgid ""
+#~ "Now you can start the proxy by typing %(t)s in the terminal window "
+#~ "(provided you are in directory where you have installed your copy of the "
+#~ "proxy)."
+#~ msgstr ""
+#~ "Nyní můžete spouštět proxy zadáním %(t)s v okně terminálu (předpokládaje, "
+#~ "že se nacházíte v adresáři, do kterého jste proxy nainstaloval)."
+
+#~ msgid "Installation on Mac"
+#~ msgstr "Instalace na Macu"
+
+#~ msgid "Prerequisites:"
+#~ msgstr "Požadavky:"
+
+#~ msgid ""
+#~ "On Mac OS X you already have Python installed on your system, but you "
+#~ "probably do not have the %(lib)s binary required to run the %(setup)s "
+#~ "file. You have two options here:"
+#~ msgstr ""
+#~ "V Mac OS X již máte nainstalován Python, ale pravděpodobně nemáte %(lib)s "
+#~ "binárku potřebnou ke spuštění souboru %(setup)s. Máte dvě možnosti:"
+
+#~ msgid ""
+#~ "Download Xcode (free) from the App Store, Open it up (it's in your "
+#~ "applications folder) and go to <em>preferences → downloads</em> section "
+#~ "and download/install the <em>\"command line tools\"</em>."
+#~ msgstr ""
+#~ "Stáhněte si Xcode (zdarma) z App Store, otevřete ho (je ve Vašem adresáři "
+#~ "s aplikacemi) a pokračujte na do sekce <em>Předvolby → Stažené</em> "
+#~ "stáhněte / nainstalujte si <em>\"nástroje pro práci v příkazovém řádku\"</"
+#~ "em>."
+
+#~ msgid ""
+#~ "If you don't want to install Xcode, <a href=\"%(url)s\" target=\"_blank\" "
+#~ "class=\"ext\">get osx-gcc-installer here</a>"
+#~ msgstr ""
+#~ "Pokud nechcete instalovat Xcode, <a href=\"%(url)s\" target=\"_blank\" "
+#~ "class=\"ext\">stáhněte si osx-gcc-installer</a>"
+
+#~ msgid "Now if you have installed GCC, you can procede with following steps:"
+#~ msgstr "Nyní, když máte GCC, můžete pokračovat následovně:"
+
+#~ msgid ""
+#~ "Open your terminal application (<code>Applications → Utilities → "
+#~ "Terminal</code>) and get to directory containing file you have just "
+#~ "downloaded (eg.:&nbsp;<code>cd ~/Downloads</code>)"
+#~ msgstr ""
+#~ "Otevřete terminál (<code>Aplikace → Nástroje → Terminál</code>) a "
+#~ "přejděte do adresáře obsahujícím právě stažený soubor (např.:&nbsp;"
+#~ "<code>cd ~/Downloads</code>)"
+
+#~ msgid ""
+#~ "Now you can start the proxy by typing %(t)s (provided you are in "
+#~ "directory where you have installed your copy of the proxy)"
+#~ msgstr ""
+#~ "Nyní můžete spouštět proxy zadáním %(t)s (předpokládaje, že jste v "
+#~ "adresáři, do kterého jste proxy nainstaloval)"
+
+#~ msgid ""
+#~ "Please note, that once Apple releases <strong>Xcode 4.7</strong> they "
+#~ "will <strong>remove the optional install of gcc</strong> (they want you "
+#~ "to use clang). When that happens you can either choose not to upgrade, or "
+#~ "return to the aforementioned <a href=\"%(url)s\" target=\"_blank\" class="
+#~ "\"ext\">osx-gcc-installer</a> and download the specific gcc binary for "
+#~ "your version of Mac OS."
+#~ msgstr ""
+#~ "Berte prosím v potaz, že jakmile Apple vydá <strong>Xcode 4.7</strong>, "
+#~ "tak <strong>odstraní možnost volitelné instalace gcc</strong> (chtějí "
+#~ "používat clang). Až se toto stane, můžete si vybrat buď neupgradovat, "
+#~ "nebo se vrátit k prve zmíněnému <a href=\"%(url)s\" target=\"_blank\" "
+#~ "class=\"ext\">osx-gcc-installeru</a> a stáhnout si konkrétní verzi gcc "
+#~ "pro Vaši verzi Mac OS."
+
+#~ msgid "Installation on Linux Using Git (Advanced)"
+#~ msgstr "Instalace na Linuxu za použití Gitu (Pokročilé)"
+
+#~ msgid ""
+#~ "This is advanced option for experienced users, but it gives you the "
+#~ "easiest way for updating the proxy."
+#~ msgstr ""
+#~ "Tato možnost je pro zkušené uživatele, je to nicméně nejjednodušší "
+#~ "způsob, jak proxy aktualizovat."
+
+#~ msgctxt "proxy installation comment"
+#~ msgid "Development package of Python is necessary"
+#~ msgstr "Vývojářská verze Pythonu je nezbytná"
+
+#~ msgctxt "proxy installation comment"
+#~ msgid "Upgrade setuptools package"
+#~ msgstr "Aktualizujte balíček setuptools"
+
+#~ msgctxt "proxy installation comment"
+#~ msgid "Install required dependencies (namely Twisted and Stratum libraries)"
+#~ msgstr ""
+#~ "Nainstalujte požadované závislosti (jmenovitě jsou potřeba knihovny "
+#~ "Twisted a Stratum)"
+
+#~ msgctxt "proxy installation comment"
+#~ msgid "Start the proxy"
+#~ msgstr "Spusťte proxy"
+
+#~ msgctxt "proxy installation comment"
+#~ msgid "Update the proxy"
+#~ msgstr "Aktualizujte proxy"
+
+#~ msgid "Compiling Midstate C Extension"
+#~ msgstr "Kompilování rozšíření Midstate C"
+
+#~ msgid ""
+#~ "For some really big operations using getwork interface of this proxy, "
+#~ "you'll find useful \"midstatec\" C extension, which significantly speeds "
+#~ "up midstate calculations (plain python implementation is <span class=\"em"
+#~ "\">very slow</span>)."
+#~ msgstr ""
+#~ "U některých opravdu velkých sestav težebních zařízení používajících "
+#~ "getwork rozhraní této proxy se Vám bude hodit rozšíření \"midstatec\" C, "
+#~ "které významně zrychluje midstate kalkulace (prostá python implementace "
+#~ "je <span class=\"em\">velmi pomalá</span>)."
+
+#~ msgid ""
+#~ "To enable this extension, just type <code>make</code> in <code>midstatec</"
+#~ "code> subdirectory. Proxy will auto-detect compiled extension on next "
+#~ "startup."
+#~ msgstr ""
+#~ "Pro zapnutí tohoto rozšíření pouze napište <code>make</code> v "
+#~ "<code>midstatec</code> podadresáři. Proxy automaticky detekuje "
+#~ "zkompilované rozšíření při příštím startu."
+
+#~ msgctxt "MAILING"
+#~ msgid ""
+#~ "\n"
+#~ "                HEY %(username)s, <span style=\"color:#346ee5;\">SLUSH</"
+#~ "span> POOL HERE!\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "                HEJ %(username)s, <span style=\"color:#346ee5;\">TADY </"
+#~ "span> SLUSH POOL!\n"
+#~ "            "
+
+#~ msgctxt "MAILING"
+#~ msgid ""
+#~ "\n"
+#~ "                %(username)s, WE MISSED YOU AT <span style=\"color:"
+#~ "#346ee5;\">SLUSH</span> POOL!\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "                %(username)s, CHYBÍTE NÁM NA <span style=\"color:#346ee5;"
+#~ "\">SLUSH</span> POOLU!\n"
+#~ "            "
+
+#~ msgctxt "MAILING"
+#~ msgid ""
+#~ "\n"
+#~ "                %(username)s, <span style=\"color:#346ee5;\">SLUSH</span> "
+#~ "POOL THANKS YOU!\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "                %(username)s, <span style=\"color:#346ee5;\">SLUSH</span> "
+#~ "POOL VÁM DĚKUJE!\n"
+#~ "            "
+
+#~ msgctxt "MAILING"
+#~ msgid ""
+#~ "\n"
+#~ "                %(username)s, WE MISSED YOU AT NEW <span style=\"color:"
+#~ "#346ee5;\">SLUSH</span> POOL!\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "                %(username)s, CHYBÍTE NÁM NA NOVÉM <span style=\"color:"
+#~ "#346ee5;\">SLUSH</span> POOLU!\n"
+#~ "            "
 
 #~ msgctxt "UI"
 #~ msgid "Token '%s' doesnt exist"
