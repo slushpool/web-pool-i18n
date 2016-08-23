@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-22 10:57+0200\n"
+"POT-Creation-Date: 2016-08-23 10:32+0200\n"
 "PO-Revision-Date: 2016-07-06 19:59+0000\n"
 "Last-Translator: Nelson Camilo de Almeida <ncamilo@pictronics.com.br>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/bitcoin-cz/"
@@ -2664,73 +2664,6 @@ msgstr ""
 msgid ""
 "Optionally, enable the <a href=\"%(url_2fa)s\">Two-factor-authentication</a> "
 "to protect you from arbitrary change of your wallet."
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:108
-#, python-format
-msgid ""
-"\n"
-"Hashing function is in Bitcoin context the <strong>double-SHA256</strong> "
-"function which takes block of data and returns a <strong>number</strong> "
-"exactly from range\n"
-"%(zero)s to %(exp256)s. Even a small change in the block of data will result "
-"in a completely different hash. Every hash value in the output range\n"
-"is generated with the same probability, which is important property of this "
-"function."
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:128
-#, python-format
-msgid ""
-"\n"
-"2. If the miner finds the hash lower than %(exp256)s / %(exp32)s (which is "
-"once in %(exp32)s tries) it sends 80B header block back to\n"
-"the pool as a result of its work. Such a proof of work is called Share. "
-"Based on this information the pool is able to verify that\n"
-"the miner is working and even compute the hashing power of such miner. Lets "
-"suppose that the miner sent 100 of such 80B candidates\n"
-"for the block in one minute."
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:144
-#, python-format
-msgid ""
-"\n"
-"The value of %(exp32)s was chosen arbitrarily in the past, but is stable and "
-"makes one share well defined.\n"
-"In reality, proof of work value may vary from miner to miner, but it is just "
-"an implementation detail.\n"
-"The important thing is that with regular submits and the known limit to the "
-"submitted work the pool can compute the number of attempts\n"
-"which the miner had to do in the given time."
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:161
-#, python-format
-msgid ""
-"\n"
-"Let's imagine a game where players roll a dice repeatedly, trying to roll a "
-"valid value on the dice. It is known in advance how many\n"
-"sides %(Nko)s the dice has and values which are counted as valid %(Lko)s "
-"(%(q)s). Moreover it is known how many marks representing\n"
-"thrown valid values are on the paper %(Ccko)s. What is NOT known is count of "
-"dice throws %(Hcko)s, which were necessary to generate marks on the\n"
-"paper. In other words it is NOT known how much work was needed to do the "
-"job. However the count of throws can be easily estimated as\n"
-"follows:"
-msgstr ""
-
-#: help/templates/help/manual/hashrate-proof.html:173
-#, python-format
-msgid ""
-"\n"
-"Ratio %(ratio)s can be considered as an average count of throws per one "
-"mark. In reality, when %(Ccko)s a %(Lko)s are big enough,\n"
-"the %(EH)s is not different from real %(Hcko)s (their limits are equal). "
-"Therefore we can substitute %(EH)s with %(Hcko)s in our calculations.\n"
-"In simple terms, if the player rolls long enough and the number of marks is "
-"huge, it is easy to determine the number of required\n"
-"tries with arbitrarily small deviation."
 msgstr ""
 
 #: help/templates/help/manual/intro.html:5
