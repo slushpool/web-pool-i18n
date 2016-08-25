@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-23 10:58+0200\n"
+"POT-Creation-Date: 2016-08-25 16:09+0200\n"
 "PO-Revision-Date: 2016-01-16 11:47+0000\n"
 "Last-Translator: Klaus Burgstaller <kburgstaller@hotmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
@@ -201,6 +201,16 @@ msgstr ""
 #: api/exceptions.py:193
 msgctxt "UI"
 msgid "Form save has failed."
+msgstr ""
+
+#: api/exceptions.py:208
+msgctxt "UI"
+msgid "U2F device not found."
+msgstr ""
+
+#: api/exceptions.py:213
+msgctxt "UI"
+msgid "U2F verification failed."
 msgstr ""
 
 #: backend/queries.py:998 backend/queries.py:1044
@@ -4333,7 +4343,7 @@ msgid "Latest News"
 msgstr ""
 
 #: news/templates/news/detail.html:32 news/templates/news/home.html:9
-#: web/templates/base.html:240 web/templates/menu2_blog.html:4
+#: web/templates/base.html:238 web/templates/menu2_blog.html:4
 #: web/templates/news_detail.html:4 web/templates/news_list.html:4
 #: web/templates/djangocms_blog/base.html:13
 msgctxt "UI"
@@ -4556,59 +4566,59 @@ msgctxt "UI"
 msgid "You don't have any notifications."
 msgstr ""
 
-#: project/settings.py:336
+#: project/settings.py:338
 msgid "English"
 msgstr "Englisch"
 
-#: project/settings.py:337
+#: project/settings.py:339
 msgid "German"
 msgstr "Deutsch"
 
-#: project/settings.py:338
+#: project/settings.py:340
 msgid "French"
 msgstr "Französisch"
 
-#: project/settings.py:339
+#: project/settings.py:341
 msgid "Russian"
 msgstr "Russisch"
 
-#: project/settings.py:340
+#: project/settings.py:342
 msgid "Czech"
 msgstr "Tschechisch"
 
-#: project/settings.py:341
+#: project/settings.py:343
 msgid "Polish"
 msgstr "Polnisch"
 
-#: project/settings.py:342
+#: project/settings.py:344
 msgid "Dutch"
 msgstr "Niederländisch"
 
-#: project/settings.py:343
+#: project/settings.py:345
 msgid "Spanish"
 msgstr "Spanisch"
 
-#: project/settings.py:344
+#: project/settings.py:346
 msgid "Brazilian Portuguese"
 msgstr "brasilianisches Portugiesisch"
 
-#: project/settings.py:345
+#: project/settings.py:347
 msgid "Simplified Chinese"
 msgstr "vereinfachtes Chinesisch"
 
-#: project/settings.py:346
+#: project/settings.py:348
 msgid "Romanian"
 msgstr ""
 
-#: project/settings.py:347
+#: project/settings.py:349
 msgid "Hungarian"
 msgstr ""
 
-#: project/settings.py:348
+#: project/settings.py:350
 msgid "Italian"
 msgstr ""
 
-#: project/settings.py:349
+#: project/settings.py:351
 msgid "Turkish"
 msgstr ""
 
@@ -4799,9 +4809,26 @@ msgctxt "UI"
 msgid "Stats"
 msgstr "Statistiken"
 
-#: user_request/templates/user_request/otp.html:14
+#: user_request/templates/user_request/otp.html:9
+msgctxt "UI"
+msgid "Second Factor Validation"
+msgstr ""
+
+#: user_request/templates/user_request/otp.html:12
+msgctxt "UI"
+msgid ""
+"Enter OTP token from your <strong>Google Authenticator</strong> or similar "
+"<strong>2FA client</strong>"
+msgstr ""
+
+#: user_request/templates/user_request/otp.html:18
 msgctxt "UI"
 msgid "Submit"
+msgstr ""
+
+#: user_request/templates/user_request/otp.html:45
+msgctxt "UI"
+msgid "Connect your <strong>U2F device</strong> and confirm your request on it"
 msgstr ""
 
 #: web/auth_views.py:186
@@ -5590,7 +5617,7 @@ msgctxt "UI"
 msgid "Requested proposal is waiting for admin confirmation"
 msgstr "Verbesserungsvorschlag wartet auf Bestätigung durch den Administrator"
 
-#: web/api/v1/appeals.py:37
+#: web/api/v1/appeals.py:38
 #, fuzzy, python-format
 msgctxt "UI"
 msgid ""
@@ -5599,38 +5626,38 @@ msgstr ""
 "Die Auszahlungen wurden vorübergehend vom Pool-Betreiber deaktiviert "
 "(%(reason)s). "
 
-#: web/api/v1/appeals.py:39
+#: web/api/v1/appeals.py:40
 #, fuzzy
 msgctxt "UI"
 msgid "Please, contact our support for further details."
 msgstr "Bitte kontaktiere %(link)s für weitere Details."
 
-#: web/api/v1/appeals.py:70
+#: web/api/v1/appeals.py:72
 #, fuzzy
 msgctxt "UI"
 msgid "Resend Confirmation"
 msgstr "Bestätigungs-Seite"
 
-#: web/api/v1/appeals.py:75
+#: web/api/v1/appeals.py:77
 #, fuzzy
 msgctxt "UI"
 msgid "Cancel the Request"
 msgstr "Bestätigung Addressänderung erneut senden"
 
-#: web/api/v1/appeals.py:80
+#: web/api/v1/appeals.py:82
 #, fuzzy
 msgctxt "UI"
 msgid "Change my Password"
 msgstr "Passwort ändern"
 
-#: web/api/v1/appeals.py:119
+#: web/api/v1/appeals.py:121
 msgctxt "UI"
 msgid ""
 "Your opinion on block size matters to the whole community. It is up to you "
 "to make a choice. Please, select one of the options below."
 msgstr ""
 
-#: web/api/v1/appeals.py:120
+#: web/api/v1/appeals.py:122
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -5681,7 +5708,7 @@ msgctxt "UI"
 msgid "Activity log"
 msgstr "Aktivitäts-Log"
 
-#: web/templates/base.html:157
+#: web/templates/base.html:155
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -5689,106 +5716,106 @@ msgid ""
 "website. (<a href=\"%(url)s\" target=\"_blank\">see how…</a>)"
 msgstr ""
 
-#: web/templates/base.html:167
+#: web/templates/base.html:165
 msgctxt "UI"
 msgid "You are using a <strong>Demo Account</strong>"
 msgstr "Du benutzt einen <strong>Demo Account</strong>"
 
-#: web/templates/base.html:169
+#: web/templates/base.html:167
 #, fuzzy
 msgctxt "UI"
 msgid "You are using a <strong>Read-only Mode</strong>"
 msgstr "Du benutzt einen <strong>Demo Account</strong>"
 
-#: web/templates/base.html:174 web/templates/login.html:9
+#: web/templates/base.html:172 web/templates/login.html:9
 #: web/templates/login.html.py:25 web/templates/login.html:45
 #: web/templates/login_failed.html:9
 msgctxt "UI"
 msgid "Log in"
 msgstr "Einloggen"
 
-#: web/templates/base.html:175
+#: web/templates/base.html:173
 msgctxt "UI"
 msgid "Sign up"
 msgstr "Registrieren"
 
-#: web/templates/base.html:188
+#: web/templates/base.html:186
 msgid "Loading ..."
 msgstr "Lade..."
 
-#: web/templates/base.html:239
+#: web/templates/base.html:237
 msgctxt "UI"
 msgid "<strong>Home</strong>"
 msgstr "<strong>Home</strong>"
 
-#: web/templates/base.html:248
+#: web/templates/base.html:246
 msgctxt "UI"
 msgid "<strong>Pool</strong> Statistics"
 msgstr "<strong>Pool</strong>  Statistik"
 
-#: web/templates/base.html:249
+#: web/templates/base.html:247
 msgctxt "UI"
 msgid "Public facts"
 msgstr "Öffentliche Fakten"
 
-#: web/templates/base.html:258 web/templates/menu2_helpcenter_links.html:5
+#: web/templates/base.html:256 web/templates/menu2_helpcenter_links.html:5
 #, fuzzy
 msgctxt "UI"
 msgid "<strong>Help</strong> Center"
 msgstr "Konto-Einstellungen"
 
-#: web/templates/base.html:259 web/templates/menu2_devel_corner.html:4
+#: web/templates/base.html:257 web/templates/menu2_devel_corner.html:4
 msgctxt "UI"
 msgid "Development <span>Corner</span>"
 msgstr "Entwicklungs <span>Ecke</span>"
 
-#: web/templates/base.html:268
+#: web/templates/base.html:266
 msgctxt "UI"
 msgid "<strong>My</strong> account"
 msgstr "<strong>Mein</strong> Account"
 
-#: web/templates/base.html:269 web/templates/base.html.py:297
+#: web/templates/base.html:267 web/templates/base.html.py:295
 msgctxt "UI"
 msgid "Private zone"
 msgstr "Private Zone"
 
-#: web/templates/base.html:275
+#: web/templates/base.html:273
 msgctxt "UI"
 msgid "<strong>Log out</strong>"
 msgstr "<strong>Ausloggen</strong>"
 
-#: web/templates/base.html:290
+#: web/templates/base.html:288
 msgctxt "UI"
 msgid "<strong>Sign up</strong> HERE"
 msgstr "Melde dich <strong>HIER</strong> an"
 
-#: web/templates/base.html:291
+#: web/templates/base.html:289
 msgctxt "UI"
 msgid "New account"
 msgstr "Neues Konto"
 
-#: web/templates/base.html:296
+#: web/templates/base.html:294
 msgctxt "UI"
 msgid "<strong>Log in</strong>"
 msgstr "<strong>Einloggen</strong>"
 
-#: web/templates/base.html:327
+#: web/templates/base.html:325
 msgctxt "UI"
 msgid "Feedback"
 msgstr ""
 
-#: web/templates/base.html:328
+#: web/templates/base.html:326
 msgctxt "UI"
 msgid "Back to Top"
 msgstr "zurück zum Anfang"
 
-#: web/templates/base.html:332
+#: web/templates/base.html:330
 #, python-format
 msgctxt "UI"
 msgid "Follow us on %(twitter)s and %(facebook)s."
 msgstr "Folge uns auf %(twitter)s und %(facebook)s."
 
-#: web/templates/base.html:333
+#: web/templates/base.html:331
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -5796,17 +5823,17 @@ msgid ""
 "Price Index</a>"
 msgstr ""
 
-#: web/templates/base.html:347
+#: web/templates/base.html:345
 msgid "Denied!"
 msgstr ""
 
-#: web/templates/base.html:350
+#: web/templates/base.html:348
 msgctxt "UI"
 msgid "You cannot do this in the Demo account, please log in to proceed."
 msgstr ""
 "Dies ist im Demo-Account nicht möglich. Bitte einloggen um fortzufahren."
 
-#: web/templates/base.html:352
+#: web/templates/base.html:350
 #, fuzzy
 msgctxt "UI"
 msgid "You cannot do this in the Read-only mode, please log in to proceed."
