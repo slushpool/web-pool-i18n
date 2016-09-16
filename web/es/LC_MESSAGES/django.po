@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-31 11:25+0200\n"
-"PO-Revision-Date: 2016-09-15 08:12+0000\n"
-"Last-Translator: Josef Kubíček <kubijo@gmail.com>\n"
+"PO-Revision-Date: 2016-09-16 14:57+0000\n"
+"Last-Translator: Daniel Esparza <daniel.sparza@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/bitcoin-"
 "cz/mining/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.8\n"
+"X-Generator: Weblate 2.9-dev\n"
 
 #: api/exceptions.py:10
 msgctxt "UI"
@@ -3356,10 +3356,12 @@ msgid ""
 "Once you have it go to <a href=\"%(account_settings)s\">Payouts tab here</a> "
 "and set it as your payout address."
 msgstr ""
+"Uana vez que usted tenga esto, vaya a <a href=\"%(account_settings)s\">"
+"Pestaña pagos aquí</a> y coloque esta como su dirección de pago."
 
 #: help/templates/help/manual/mining_beginners.html:53
 msgid "Further questions?"
-msgstr ""
+msgstr "¿Mas preguntas?"
 
 #: help/templates/help/manual/mining_beginners.html:55
 #, python-format
@@ -3368,6 +3370,9 @@ msgid ""
 "<a href=\"%(url)s\">following useful articles</a> which will help you "
 "mastering at our pool."
 msgstr ""
+"¿Tiene más preguntas? Si se toma en serio la minería, por favor lea <a href="
+"\"%(url)s\">los siguientes artículos útiles</a> los cuales lo ayudarán a "
+"dominarla en nuestro Pool."
 
 #: help/templates/help/manual/mining_beginners.html:57
 msgid ""
@@ -3388,6 +3393,11 @@ msgid ""
 "your rewards are not directly affected by any monitoring settings they can "
 "be better managed with few simple tools we have developed so far."
 msgstr ""
+"Dado que la minería es generalmente considerado como una inversión, creemos "
+"que  el monitoreo debe ser una parte esencial de su operación minera. A "
+"pesar de que sus beneficios no se ven afectados directamente por los valores "
+"de su supervisión ellos se pueden gestionar mejor con una pocas herramientas "
+"simples que hemos desarrollado hasta ahora."
 
 #: help/templates/help/manual/monitoring.html:18
 msgid ""
@@ -3410,10 +3420,16 @@ msgid ""
 "<strong>react faster</strong> therefore <strong>minimize financial impact</"
 "strong> of the outage."
 msgstr ""
+"El principal beneficio del monitoreo es un mensaje de alerta que recibirá a "
+"su bandeja de entrada una vez que el dispositivo de la minería comienza a "
+"fallar. Por ejemplo, si existen problemas de comunicación entre la mina y el "
+"Pool. Dicha alerta le ayudará a <strong>reaccionar más rápido</strong>, y "
+"por lo tanto <strong>minimizar el impacto financiero</strong> de la "
+"interrupción."
 
 #: help/templates/help/manual/monitoring.html:24
 msgid "Outages may typically have the following causes:"
-msgstr ""
+msgstr "Las interrupciones normalmente pueden tener las siguientes causas:"
 
 #: help/templates/help/manual/monitoring.html:26
 msgid "Internet connectivity issues"
@@ -3436,6 +3452,9 @@ msgid ""
 "Below you can find simple step-by-step instructions how to setup monitoring "
 "in order to keep track of how your mining equipment is doing."
 msgstr ""
+"A continuación puede encontrar instrucciones paso a paso de cómo configurar "
+"el monitoreo con el fin de realizar un seguimiento de cómo su equipo de "
+"minería está trabajando."
 
 #: help/templates/help/manual/monitoring.html:33
 msgid "How to enable monitoring?"
@@ -3447,6 +3466,8 @@ msgid ""
 "Enable sending monitoring emails in <a href=\"%(settings)s#monitoring\" "
 "target=\"_blank\">Settings (Monitoring)</a>."
 msgstr ""
+"Habilitar el envío de mensajes de correo electrónico de monitoreo en <a href="
+"\"%(settings)s#monitoring\" target=\"_blank\"> Ajustes (Monitoreo)</a>."
 
 #: help/templates/help/manual/monitoring.html:36
 #, python-format
@@ -3499,6 +3520,12 @@ msgid ""
 "not the case please do not hesitate to contact our <a href="
 "\"%(support_submit)s\">support</a>."
 msgstr ""
+"El estado permanentemente <strong>Bajo</strong> o "
+"<strong>Desconectado</strong>  de su trabajador puede ser causado por un "
+"trabajador débil cuya tasa de hash está por debajo de <strong>10 "
+"Gh/s</strong>. Nosotros recomendamos desactivar el seguimiento de estos "
+"trabajadores. Si este no es el caso, por favor no dude en ponerse en "
+"contacto con nuestro <a href=\"%(support_submit)s\">Centro de Soporte</a>."
 
 #: help/templates/help/manual/monitoring.html:51
 msgid ""
@@ -3511,6 +3538,15 @@ msgid ""
 "pool can track down hash rate drops and report them to you for each mining "
 "device separately."
 msgstr ""
+"<strong class=\"red\">Por favor note:</strong> El Pool hace un seguimiento "
+"de los dispositivos Mineros sobre un <strong>trabajador basis</strong>. Esto "
+"significa que si usted tiene más de un dispositivo minero conectado al Pool "
+"como uno solo, el monitoreo y los reportes de problemas cubrirán todos los "
+"dispositivos en lote. Por otra parte, cuando usted configure un <strong>"
+"nombre de trabajador designado</strong> para cada <strong>dispositivo de "
+"minería</strong> que usted tenga (y conectados correctamente), el Pool puede "
+"rastrear las caídas de hashrate e informarle de cada dispositivo de minería "
+"por separado."
 
 #: help/templates/help/manual/monitoring.html:53
 msgid "How does monitoring work?"
@@ -3524,6 +3560,11 @@ msgid ""
 "is then compared to <a href=\"%(alert_url)s\">Alert Limit</a> (you setup "
 "this value while enabling the monitoring)."
 msgstr ""
+"El Pool toma un captura de pantalla de la <a href=\"%(hashrate_url)s\">tasa "
+"de hash efectiva</a> de todos sus trabajadores <strong>cada 5 "
+"minutos</strong>. Este valor entonces es comparado con el <a href=\""
+"%(alert_url)s\">Límite de alerta</a> (usted configura este valor mientras "
+"habilita el monitoreo)."
 
 #: help/templates/help/manual/monitoring.html:55
 #, python-format
@@ -3533,6 +3574,11 @@ msgid ""
 "servers. With a <a href=\"%(url)s\">Vardiff</a> introduced, even a slow "
 "miner can submit sufficient amount of results."
 msgstr ""
+"El período de 5 minutos es suficiente para recoger sólo los datos "
+"suficientes para calcular todos los valores con una cierta precisión sin "
+"obstruir nuestros servidores. Con un <a href=\"%(url)s\">Vardiff</a> "
+"introducido, incluso un minero lento puede presentar una cantidad suficiente "
+"de resultados."
 
 #: help/templates/help/manual/monitoring.html:59
 msgid "Device monitoring states"
@@ -3543,6 +3589,8 @@ msgid ""
 "There are 4 possible states of your worker, regarding monitoring. Every "
 "worker is always in one of the <strong>following</strong> states:"
 msgstr ""
+"Hay 4 posibles estados de su trabajador, en cuanto al monitoreo. Todo "
+"trabajador está siempre en uno de los <strong>siguientes</strong> estados:"
 
 #: help/templates/help/manual/monitoring.html:65
 #: web/templates/monitoring.html:185 web/templatetags/utils.py:170
@@ -3556,6 +3604,9 @@ msgid ""
 "is the desired state. If everything works properly and the configuration is "
 "correct, you should see this state all the time."
 msgstr ""
+"Significa que los trabajadores tasa de hash es mayor o igual a el límite de "
+"alerta. Este es el estado deseado. Si todo funciona correctamente y la "
+"configuración es correcta, debería ver este estado todo el tiempo."
 
 #: help/templates/help/manual/monitoring.html:69
 #: web/templates/monitoring.html:186 web/templatetags/utils.py:169
@@ -3573,6 +3624,13 @@ msgid ""
 "case you see this state for longer period of time, please create a ticket to "
 "our <a href=\"%(support_submit)s\">support</a>."
 msgstr ""
+"Este tipo de señales de estado de la tasa de hash de los trabajadores es más "
+"baja de lo que debería ser, pero el dispositivo todavía presenta algunas "
+"acciones. Se conectó y funciona de alguna manera al menos en parte del "
+"período medido. Un trabajador pasa de OK a Bajo cuando su tasa de hash es "
+"menor que el límite de alerta durante 2 periodos consecutivos. En caso de "
+"que vea este estado durante largo periodo de tiempo, por favor, cree un "
+"ticket en nuestro <a href=\"%(support_submit)s\">Centro de Soporte</a> ."
 
 #: help/templates/help/manual/monitoring.html:73 web/templatetags/utils.py:168
 msgctxt "UI, Monitoring"
@@ -3585,6 +3643,10 @@ msgid ""
 "is no hash rate detected for the worker. The pool doesn't monitor the actual "
 "network connection of the worker. The only significant value is hash rate."
 msgstr ""
+"Pudiera ver este estado cuando el monitoreo está habilitado para el "
+"trabajador, pero no existe una tasa de hash detectado por el trabajador. El "
+"Pool no supervisa la conexión de red real del trabajador. El único valor "
+"importante es la tasa de hash."
 
 #: help/templates/help/manual/monitoring.html:77
 #: web/templates/monitoring.html:188 web/templatetags/utils.py:171
@@ -3597,6 +3659,8 @@ msgid ""
 "When you switch off monitoring for a worker its state is reported as "
 "Disabled, regardless a fact if it submits some shares or not."
 msgstr ""
+"Cuando se desactiva el monitoreo para un trabajador su estado se reporta "
+"como Deshabilitado, sin importar que este envíe alguna participación o no."
 
 #: help/templates/help/manual/payouts.html:10
 msgid ""
@@ -3634,6 +3698,9 @@ msgid ""
 "block using the <a href=\"%(url)s\" target=\"_blank\" class=\"ext\">Bitcoin "
 "calculator</a>"
 msgstr ""
+"Usted puede conseguir una estimación aproximada de la cantidad que debe "
+"ganar por cada bloque con el <a href=\"%(url)s\" target=\"_blank\" class=\""
+"ext\">Calculador Bitcoin</a>"
 
 #: help/templates/help/manual/payouts.html:22
 msgid ""
@@ -3641,6 +3708,9 @@ msgid ""
 "it by yourself, so here is the formula for <strong>calculationg the "
 "estimated reward per round</strong>:"
 msgstr ""
+"Sin embargo, siempre es bueno ver los cálculos que hay detrás y ser capaz de "
+"hacerlos por uno mismo, así que aquí está la fórmula para el <strong>cálculo "
+"de recompensa estimada por ronda</strong>:"
 
 #: help/templates/help/manual/payouts.html:26
 #, python-format
@@ -3649,6 +3719,9 @@ msgid ""
 "round. For more information, learn about our <a href=\"%(rewards)s\">score-"
 "based reward system</a>."
 msgstr ""
+"Por favor tenga presente, que esta fórmula sólo se aplicará si usted mina "
+"durante toda la ronda. Para obtener más información, aprenda acerca de "
+"nuestro <a href=\"%(rewards)s\">sistema de recompensa basado en puntos</a>."
 
 #: help/templates/help/manual/payouts.html:27
 msgid ""
@@ -3657,6 +3730,11 @@ msgid ""
 "take a look at <strong>stats page</strong>, block reward these days is "
 "<strong>roughtly 12.5BTC</strong>"
 msgstr ""
+"Cuando se encuentra el bloque tenemos en cuenta que se trata de <strong>la "
+"recompensa sin confirmar</strong>. Para ver cual es la actual <strong>tasa "
+"de hash del Pool</strong>, por favor, eche un vistazo a la <strong>página de "
+"estadísticas</strong>, el bloque de recompensa en estos días <strong>ronda "
+"los 12.5BTC</strong>"
 
 #: help/templates/help/manual/payouts.html:30
 msgid "2. Frequency of and Routines <span>Behind Payouts</span>"
@@ -3674,6 +3752,10 @@ msgid ""
 "15-16 hours</strong>. You can follow this progress on the <a href=\"%(stats)s"
 "\">stats page</a>"
 msgstr ""
+"Su recompensa por un bloque determinado se confirma <strong>después de los "
+"siguientes 100 bloques encontrados</strong> en la red Bitcoin. Esto <strong>"
+"suele tardar 15-16 horas</strong>. Puede seguir este progreso en la <a href="
+"\"%(stats)s\">página de estadísticas</a>"
 
 #: help/templates/help/manual/payouts.html:34
 msgid ""
@@ -3682,6 +3764,10 @@ msgid ""
 "<strong>accepted by bitcoin network</strong>. This is generally assumed "
 "after 100 confirmations."
 msgstr ""
+"La razón para este comportamiento es que el software de administración del "
+"Pool tiene que <strong>estar seguro de que el bloque minado</strong> se "
+"considera válido y está<strong>aceptado por la red bitcoin</strong>. Esto se "
+"asume generalmente después de 100 confirmaciones."
 
 #: help/templates/help/manual/payouts.html:36
 msgid "Sending Confirmed Reward <span>to Your Wallet.</span>"
@@ -3694,12 +3780,19 @@ msgid ""
 "strong>). Pool checks for this and sends out payments automatically every "
 "hour."
 msgstr ""
+"Su balance confirmado se le envia una vez este <strong>cruce el "
+"umbral</strong> (que puede ser ajustado por el usuario hasta un mínimo de "
+"<strong>30.001 BTC</strong>). El Pool comprueba esto y envía los pagos "
+"automáticamente cada hora."
 
 #: help/templates/help/manual/payouts.html:39
 msgid ""
 "For technical reasons like paying excessive transaction fees and flooding "
 "bitcoin network, we do not process payouts below the mentioned value."
 msgstr ""
+"Por razones técnicas, como el pago de tasas de transacción excesivas y la "
+"inundación de la red Bitcoin, nosotros no procesamos pagos por debajo del "
+"valor mencionado."
 
 #: help/templates/help/manual/payouts.html:42
 msgid "3. Fees Paid <span>from Every Payout</span>"
@@ -3715,6 +3808,13 @@ msgid ""
 "<strong>0.0001&nbsp;BTC</strong>.<br>Transaction fees for threshold equal to "
 "or higher than the limit value are covered by the pool."
 msgstr ""
+"Hay dos tipos de tasas que se incorporan en nuestro sistema de pago. La "
+"primera de ellas es estable (pago del Pool 2%% por bloque mencionado "
+"anteriormente) y se utiliza para cubrir los gastos del Pool. El segundo de "
+"ellos se introduce sólo si usted establece su umbral de pago por debajo de "
+"0,01 & nbsp; BTC y este es igual a 0,0001 & nbsp; BTC. Los gastos de "
+"transacción para el umbral igual o mayor que el valor límite están cubiertos "
+"por el Pool."
 
 #: help/templates/help/manual/payouts.html:46
 msgid "4. Possible Difficulties"
@@ -3740,6 +3840,14 @@ msgid ""
 "and only very limited number of people has access to the cold wallet, it can "
 "introduce a few hours delay in sending bitcoins to user's wallet."
 msgstr ""
+"Los fondos inmediatamente disponibles para pagos se mantienen en una <strong>"
+"Cartera caliente</strong>. Esta cartera tiene <strong>un muy bajo "
+"balance</strong> por razones de seguridad, y cuando esta se vacía, el "
+"administrador del Pool tiene que cargarla <strong>desde el almacenamiento en "
+"frio</strong>-una computadora fuera de línea donde se mantienen los "
+"bitcoins. Ya que este proceso no puede ser automatizado y solamente un muy "
+"limitado número de personas tiene acceso a la cartera fría, esta presenta "
+"unas horas de retraso al enviar bitcoins a la cartera del usuario."
 
 #: help/templates/help/manual/rewards.html:12
 msgid ""
@@ -3747,6 +3855,10 @@ msgid ""
 "pool service however needs some method to fairly distribute the value of a "
 "found block among pool users and pay them accordingly."
 msgstr ""
+"Encontrar un bloque de Bitcoin es un suceso bastante raro y ocurre al azar. "
+"El servicio del Pool sin embargo, necesita algún método para distribuir "
+"equitativamente el valor de un bloque encontrado entre los usuarios de la "
+"piscina y pagar en consecuencia."
 
 #: help/templates/help/manual/rewards.html:15
 msgid ""
@@ -3754,6 +3866,10 @@ msgid ""
 "a reward proportional to his/her participation in the pool's mining power. "
 "Bigger miners receive proportionally more than smaller miners."
 msgstr ""
+"Nuestro sistema de recompensa se asegura de que cuando se encuentra un nuevo "
+"bloque cada usuario reciba una recompensa proporcional a su participación en "
+"el poder de Minería de la piscina. Mineros más grandes reciben "
+"proporcionalmente más que los mineros más pequeños."
 
 #: help/templates/help/manual/rewards.html:20
 #, python-format
@@ -3767,6 +3883,15 @@ msgid ""
 "calculation more stable and fair (the exact mathematical definition is "
 "provided lower)."
 msgstr ""
+"La participación de un usuario en el poder de minería del Pool es medida por "
+"<strong>la puntuación de tasa de hash</strong>. Esta refleja que tanto "
+"trabajo hizo el usuario en las últimas horas.  Usted puede entender la "
+"puntuación de tasa de hash como un <em>promedio exponencial de "
+"movimiento</em> de la tasa de hash de todos los dispositivos mineros "
+"conectados al Pool (vea <a href=\"%(url)s\" target=\"_blank\">%(globe)s EMA "
+"en wikipedia</a>). El promedio suaviza las cortas caídas o aumentos en la "
+"tasa de hash y hace un cálculo de recompensas más estable y justo (la "
+"definición matemática exacta se proporciona más abajo)."
 
 #: help/templates/help/manual/rewards.html:23
 #, python-format
@@ -3775,6 +3900,9 @@ msgid ""
 "1%% of the block rewards. If you own 0.031%% of hash rate, you receive "
 "0.031%% of rewards from the block. It is that simple."
 msgstr ""
+"Por ejemplo, si su puntuación de tasa de hsh es 1%% del Pool entero, usted "
+"recibe 1%% de la recompensa de bloque. Si usted  posee 0.031%% de tasa de "
+"hash, usted recibe 0.031%% de la recompensa del bloque. Es así de sencillo."
 
 #: help/templates/help/manual/rewards.html:26
 msgid ""
@@ -3791,6 +3919,9 @@ msgid ""
 "transactions contained in the block (you can see block values <a href="
 "\"%(blocks)s\">here</a>)."
 msgstr ""
+"Un <em>valor de bloque</em> es típicamente 12.5 BTC + pagos de transacción "
+"contenidas en el bloque (usted puede ver los valores de los bloques<a href=\""
+"%(blocks)s\">aquí</a>)."
 
 #: help/templates/help/manual/rewards.html:33
 msgid ""
@@ -3798,6 +3929,9 @@ msgid ""
 "time when a particular block was found. They reflect some mining history "
 "before the actual block finding."
 msgstr ""
+"<em>La puntuación de la tasa de hash</em> usada para el calculo son tasas de "
+"hash de l tiempo cuando un bloque en particular fue encontrado. Estos "
+"reflejan algo del historial de minado antes de encontrar el actual bloque."
 
 #: help/templates/help/manual/rewards.html:34
 #, python-format
@@ -3810,6 +3944,9 @@ msgid ""
 "declines at time when you start or stop mining (effective hash rate is blue, "
 "scoring hash rate is gold):"
 msgstr ""
+"La carta abajo muestra cómo la <strong>puntuación de tasa de hash</strong> "
+"se eleva y desciende en el momento cuando se inicia o detiene la minería (la "
+"tasa efectiva de hash es azul, la puntuación tasa de hash es dorada):"
 
 #: help/templates/help/manual/rewards.html:41
 #: help/templates/help/manual/rewards.html:55
@@ -3839,6 +3976,10 @@ msgid ""
 "reason is that miner's effective hash rate changes in time (if you refresh "
 "the page a new random sequence will be generated to give you the idea):"
 msgstr ""
+"El gráfico se vería mucho más como el de abajo con un minero real. La razón "
+"es que la tasa efectiva de hash de los mineros cambia con el tiempo (si "
+"actualiza la página se generará una nueva secuencia aleatoria para darle una "
+"idea):"
 
 #: help/templates/help/manual/rewards.html:65
 msgid "Important Facts <span>about the Method</span>"
@@ -3849,12 +3990,16 @@ msgid ""
 "Important properties of using <em>scoring hash rate</em> for rewards "
 "calculation:"
 msgstr ""
+"Importantes propiedades usadas en la <em>puntuación de tasa de hash</em> "
+"para el cálculo de recompensas:"
 
 #: help/templates/help/manual/rewards.html:72
 msgid ""
 "You can literally see and understand at any instant how the hash rate is "
 "changing and what reward you can expect."
 msgstr ""
+"Usted puede literalmente ver y entender en cualquier instante como va "
+"cambiando la tasa de hash y la recompensa que usted puede esperar."
 
 #: help/templates/help/manual/rewards.html:73
 msgid ""
@@ -3895,6 +4040,13 @@ msgid ""
 "disconnects, the opposite will happen. Statistically, there is no difference "
 "for you in longer term."
 msgstr ""
+"Cuando alguna otra minero se conecta a la piscina, entonces su puntuación de "
+"tasa de hash será la misma, pero la tasa de hash del Pool se incrementará "
+"proporcionalmente. Como resultado, usted recibirá una parte más pequeña de "
+"los bloques que se encuentran como una recompensa, pero con mayor "
+"frecuencia, debido a que la agrupación va a ser más fuerte. Cuando se "
+"desconecta algunos otros mineros, ocurrirá lo contrario. Estadísticamente, "
+"no hay ninguna diferencia para usted a largo plazo."
 
 #: help/templates/help/manual/rewards.html:80
 msgid "The Math <span>Behind the Scenes</span>"
@@ -4564,10 +4716,9 @@ msgid ""
 msgstr ""
 
 #: help/templates/help/manual/worker-management.html:15
-#, fuzzy
 msgctxt "UI"
 msgid "Worker <span>Management</span>"
-msgstr "<span>Configuración</span> de trabajador"
+msgstr "<span>Aministración</span> del trabajador"
 
 #: mailing/templates/mailing/unsubscribe.html:4
 #: mailing/templates/mailing/unsubscribe_confirm.html:5
@@ -4700,10 +4851,9 @@ msgid ""
 msgstr ""
 
 #: mining/models.py:390
-#, fuzzy
 msgctxt "UI"
 msgid "Not voted"
-msgstr "No encontrado"
+msgstr "No votado"
 
 #: mining/models.py:395
 msgctxt "UI"
@@ -4718,10 +4868,9 @@ msgid ""
 msgstr ""
 
 #: mining/models.py:397
-#, fuzzy
 msgctxt "UI"
 msgid "Bitcoin Core"
-msgstr "Bitcoin dirección"
+msgstr "Núcleo Bitcoin"
 
 #: mining/models.py:402
 msgctxt "UI"
@@ -4736,10 +4885,9 @@ msgid ""
 msgstr ""
 
 #: mining/models.py:404
-#, fuzzy
 msgctxt "UI"
 msgid "Bitcoin Classic"
-msgstr "Bitcoin dirección"
+msgstr "Bitcoin Clásico"
 
 #: mining/models.py:409
 msgctxt "UI"
@@ -5773,7 +5921,7 @@ msgstr "En Progreso"
 #: web/models.py:675
 msgctxt "UI, Proposals"
 msgid "Released"
-msgstr "Lanzado"
+msgstr "Publicado"
 
 #: web/models.py:676
 msgctxt "UI, Proposals"
