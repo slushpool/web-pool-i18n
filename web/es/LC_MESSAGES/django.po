@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-31 11:25+0200\n"
-"PO-Revision-Date: 2016-09-16 14:57+0000\n"
+"PO-Revision-Date: 2016-09-25 18:55+0000\n"
 "Last-Translator: Daniel Esparza <daniel.sparza@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/bitcoin-"
 "cz/mining/es/>\n"
@@ -4058,6 +4058,9 @@ msgid ""
 "rewards and other values presented by the pool are computed. Gradually, we "
 "will show more interesting stuff."
 msgstr ""
+"Vamos a empezar con los conceptos y definiciones básicas para describir cómo "
+"son calculados exactamente las recompensas y otros valores presentados por "
+"el Pool. Poco a poco, vamos a mostrar más cosas interesantes."
 
 #: help/templates/help/manual/rewards.html:85
 msgid "Shares"
@@ -4074,12 +4077,22 @@ msgid ""
 "work) with difficulty %(d)s is submitted by a miner then %(d)s shares is "
 "accounted by the pool."
 msgstr ""
+"Cuando un minero se conecta al pool, este recibe una tarea de cálculo para "
+"ser resuelta - este calcula los valores del hash con ciertas propiedades. "
+"Los Hashes que cumplan los requisitos de la tarea, se envían de nuevo al "
+"pool y se utilizan como una <strong>prueba de trabajo del minero</ strong>. "
+"La cantidad de trabajo de los mineros se registra en unidades llamadas "
+"<strong>shares</strong>. Si un hash (prueba de trabajo) con dificultad %(d)s "
+"es enviado por un minero, entonces %(d)s shares se contabilizan en el pool."
 
 #: help/templates/help/manual/rewards.html:90
 msgid ""
 "Whenever a new share is registered by the system a timestamp of the event is "
 "recorded and used for share's valuation later."
 msgstr ""
+"Cada vez que un nuevo share es registrado por el sistema, una marca de "
+"tiempo del evento se registra y se usa para la valoración de los shares más "
+"tarde."
 
 #: help/templates/help/manual/rewards.html:93
 #, python-format
@@ -4088,10 +4101,14 @@ msgid ""
 "separately as a proof of work with difficulty 1. This approach leads "
 "numerically to the same results, however, the formulas are less complex."
 msgstr ""
+"Para los propósitos de este texto nosotros tratamos a cada %(s)s shares como "
+"si estos se hubieran enviado por separado como una prueba de trabajo con "
+"dificultad 1. Este enfoque lleva numéricamente a los mismos resultados, sin "
+"embargo, las fórmulas son menos complejas."
 
 #: help/templates/help/manual/rewards.html:96
 msgid "Time handling"
-msgstr ""
+msgstr "Tiempo de Gestión"
 
 #: help/templates/help/manual/rewards.html:98
 #, python-format
@@ -4104,6 +4121,14 @@ msgid ""
 "in time %(t_0)s, written as %(time_delta)s, is a key part of shares "
 "valuation."
 msgstr ""
+"Dejamos que %(tau)s sea una función la cual nos de un tiempo cuando algún "
+"share %(s)s fue enviado (o cuando un bloque %(b)s fue encontrado). El tiempo "
+"se mide en segundos desde algún punto estable en el tiempo (por ejemplo, "
+"inicio de la operación del pool). El valor del tiempo sólo se empieza a usar "
+"para medir la cantidad de tiempo transcurrido entre dos eventos. Por "
+"ejemplo, el tiempo entre el envío del share %(s)s y algún punto en el tiempo "
+"%(t_0)s, escrito como %(TIME_DELTA)s, es una parte fundamental de la "
+"valoración de shares."
 
 #: help/templates/help/manual/rewards.html:101
 msgid "Shares valuation<span> - score</span>"
@@ -4116,6 +4141,11 @@ msgid ""
 "with the pool steadily, without switching among pools. Once user disconnects "
 "from the pool, his shares start to lose value."
 msgstr ""
+"El valor de cada share (para el cálculo de las recompensas) disminuye con el "
+"tiempo - Los shares más jóvenes se valoran más altos que los shares de mayor "
+"edad. Esto motiva a los usuarios a minar con el pool de manera constante, "
+"sin tener que cambiarse entre pools. Una vez que el usuario se desconecta "
+"del pool, sus shares comienzan a perder valor."
 
 #: help/templates/help/manual/rewards.html:106
 #, python-format
@@ -4124,6 +4154,9 @@ msgid ""
 "strong> %(fc)s. It calculates <strong>score</strong> of a share %(s)s at "
 "time %(t_0)s as"
 msgstr ""
+"El valor del share en el momento exacto se define por ls <strong>función de "
+"puntaje</strong>%(fc)s. Este calcula la <strong>puntuación</strong> de un "
+"share %(s)s a tiempo %(t_0)s así"
 
 #: help/templates/help/manual/rewards.html:111
 #, python-format
@@ -4133,6 +4166,11 @@ msgid ""
 "greater %(lambda)s the slower old shares loose their value in comparison to "
 "new shares. Currently, the parameter %(lambda)s is set to 1200."
 msgstr ""
+"Donde %(lambda)s es un <strong>parámetro de sistema </strong> adimensional . "
+"%(lambda)s define que tan rápido declina en el tiempo la puntuación asignada "
+"al share. El mayor %(lambda)s los antiguos shares mas lentos pierden su "
+"valor en comparación con los nuevos shares. Actualmente, el parámetro "
+"%(lambda)s se establece en 1.200."
 
 #: help/templates/help/manual/rewards.html:114
 #, python-format
@@ -4144,6 +4182,13 @@ msgid ""
 "subtle but has quite significant consequences, because it fully eliminates a "
 "concept of rounds from rewards calculation.)"
 msgstr ""
+"(Para los usuarios que conocieron el sistema de puntuación de slush "
+"presentado hace años, una de las principales diferencias es que la "
+"puntuación no está relacionada con el comienzo de la ronda, pero se define "
+"de forma dinámica en relación a cualquier punto dado en el tiempo %(t_0)s, "
+"para ejemplo relacionado con el tiempo, cuando nos fijamos en el tablero de "
+"instrumentos. el cambio es sutil, pero tiene consecuencias muy importantes, "
+"ya que elimina totalmente el concepto de rondas de cálculo de recompensas.)"
 
 #: help/templates/help/manual/rewards.html:117
 #, python-format
@@ -4152,6 +4197,10 @@ msgid ""
 "be a set of <em>all valid shares</em> submitted by user %(u)s until time "
 "%(t_0)s. Written more formally the following holds"
 msgstr ""
+"Continuemos. Deje %(Us)s ser un conjunto de <em>todos lo usuarios del "
+"pool</em> and %(set)s ser un conjunto de <em>todos los shares válidos</em> "
+"enviados por usuario %(u)s hasta el tiempo %(t_0)s . Escrito de manera más "
+"formal se cumple lo siguiente"
 
 #: help/templates/help/manual/rewards.html:122
 #, python-format
@@ -4159,12 +4208,17 @@ msgid ""
 "Then score for some user %(u)s at time %(t_0)s is calculated as total score "
 "of all his/her shares from time %(t_0)s, submitted at %(t_0)s or earlier:"
 msgstr ""
+"Entonces la puntuación para algún usuario %(u)s en el instante %(t_0)s es "
+"calculado como un puntaje total de sus shares desde el tiempo %(t_0)s, "
+"enviado a las %(t_0)s o antes:"
 
 #: help/templates/help/manual/rewards.html:127
 msgid ""
 "Technically, the pool computes score for each worker separately but the math "
 "is analogous."
 msgstr ""
+"Técnicamente, el pool calcula la puntuación de cada trabajador por separado, "
+"pero la matemática es análoga."
 
 #: help/templates/help/manual/rewards.html:130
 #, python-format
@@ -4172,6 +4226,8 @@ msgid ""
 "Score of the whole pool %(c)s is a sum of score of all users in the given "
 "time together:"
 msgstr ""
+"La puntuación del pool entero %(c)s, es una suma de la puntuación de todos "
+"los usuarios en el momento dado juntos:"
 
 #: help/templates/help/manual/rewards.html:134
 msgid "Rewards Calculation"
@@ -4184,12 +4240,18 @@ msgid ""
 "- %(v_b)s, the pool can calculate reward %(R_u)s for each user %(u)s as "
 "follows (%(f)s stands for a pool fee):"
 msgstr ""
+"Cuando un bloque %(b)s es encontrado en el tiempo %(tau_b)s y su valor es "
+"finalmente conocido - %(v_b)s. el pool puede calcular la recompensa %(R_u)s "
+"para cada usuario %(u)s como sigue (%(f)s representa una cuota del pool):"
 
 #: help/templates/help/manual/rewards.html:140
 msgid ""
 "For those who really love math equations the full rewards formula for "
 "<strong>continuous scoring system</strong> is:"
 msgstr ""
+"Para aquellos que realmente aman las ecuaciones matemáticas, la fórmula de "
+"recompensas completa para el <strong>sistema de puntuación continua</strong> "
+"es:"
 
 #: help/templates/help/manual/rewards.html:145
 msgid "Other values"
@@ -4204,6 +4266,11 @@ msgid ""
 "was found at that time but instead of block value (which is not known yet) "
 "we use 12.5BTC:"
 msgstr ""
+"Cuando nos fijamos en su página de panel se encuentran otros valores "
+"calculados para usted por el pool. Ellos se definen como sigue. <strong>"
+"Recompensa estimada</strong> para el usuario %(u)s y el tiempo %(t_0)s es "
+"calculado exactamente como si un bloque fue encontrado en ese tiempo pero en "
+"lugar de valor del bloque (que no se conoce aún) utilizamos 12.5BTC:"
 
 #: help/templates/help/manual/rewards.html:152
 #, python-format
