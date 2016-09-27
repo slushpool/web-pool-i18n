@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-31 11:25+0200\n"
-"PO-Revision-Date: 2016-09-26 08:55+0000\n"
-"Last-Translator: Josef Kubíček <kubijo@gmail.com>\n"
+"PO-Revision-Date: 2016-09-27 16:38+0000\n"
+"Last-Translator: Daniel Esparza <daniel.sparza@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/bitcoin-"
 "cz/mining/es/>\n"
 "Language: es\n"
@@ -4286,6 +4286,10 @@ msgid ""
 "time %(t_0)s is internally not calculated by hash rate averaging, but "
 "directly from shares using scoring function (result is in h/s):"
 msgstr ""
+"Y finalmente la <strong>la puntuación de tasa de hash</strong> %(H)s por %(u)"
+"s y el tiempo %(t_0)s están internamente no calculados por el promedio de "
+"tasa de hash, pero directamente de los shares usando la función de "
+"puntuación (el resultado está en h/s):"
 
 #: help/templates/help/manual/rewards.html:162
 #, python-format
@@ -4293,6 +4297,8 @@ msgid ""
 "Pool's scoring hash rate %(H)s is not surprisingly defined as all user "
 "scoring hash rates together:"
 msgstr ""
+"La puntuación de tasa de hash del pool %(H)s, no está definida como todas "
+"las puntuaciones de tasa de hash juntas de todos los usuarios:"
 
 #: help/templates/help/manual/terminology.html:17
 msgid "Round"
@@ -4321,6 +4327,11 @@ msgid ""
 "Bitcoin network (the hash rate of all miners) is so high nowadays, that "
 "using such a miner would not even pay back its costs."
 msgstr ""
+"El minero es su dispositivo físico de minería. En el pasado, era posible "
+"minar con una tarjeta gráfica o incluso solo con un CPU. Sin embargo, el "
+"desempeño de la red Bitcoin (la tasa de hash de todos los mineros juntos) es "
+"tan alta en la actualidad, que usar tales dispositivos no podría ni siquiera "
+"pagar su costo."
 
 #: help/templates/help/manual/terminology.html:32
 #, python-format
@@ -4349,6 +4360,10 @@ msgid ""
 "way you can <strong>track down a faulty miner</strong> easily just by "
 "looking at the monitoring section of your profile page."
 msgstr ""
+"Nosotros recomendamos dar un nombre de trabajador a cada dispositivo minero. "
+"De esa manera usted puede <strong>localizar un minero defectuoso</strong> "
+"fácilmente con solo echar un vistazo a la sección de monitoreo de su página "
+"de perfil."
 
 #: help/templates/help/manual/terminology.html:46
 msgid ""
@@ -4358,6 +4373,11 @@ msgid ""
 "your hash rate, however, you will not be able to determine which device it "
 "is."
 msgstr ""
+"Usted también puede correr todos sus mineros bajo <strong>un solo nombre de "
+"trabajador</strong> y todo estará bien. La desventaja de este enfoque es que "
+"si uno de sus mineros no está trabajando bien, usted verá una caída en su "
+"tasa de hash, pero no será capaz de determinar cuál dispositivo es el del "
+"problema."
 
 #: help/templates/help/manual/terminology.html:54
 msgid "Hash Rate"
@@ -4375,6 +4395,9 @@ msgid ""
 "strong>in our statistics. However, you might also come across the “hash rate "
 "of the pool” or the “hash rate of the entire Bitcoin network”."
 msgstr ""
+"Mayormente verá la <strong>tasa de hash de su dispositivo minero</strong> en "
+"sus estadísticas. Sin embargo, es posible que también se encuentre con la \""
+"tasa de hash del pool\" o la \"tasa de hash de la entera red Bitcoin\"."
 
 #: help/templates/help/manual/terminology.html:61
 msgid ""
@@ -4383,6 +4406,10 @@ msgid ""
 "shown in our system. It is important for you to understand the difference "
 "between these two."
 msgstr ""
+"Hay una diferencia entre la <strong>tasa de hash nominal</strong> mostrada "
+"en el manual de su dispositivo minero y la <strong>tasa de hash "
+"efectiva</strong> mostrada en nuestro sistema. Es importante entender la "
+"diferencia entre ambas."
 
 #: help/templates/help/manual/terminology.html:63
 msgid "Nominal <span>Hash Rate</span>"
@@ -4394,6 +4421,9 @@ msgid ""
 "generating 1 billion hashes per second - no matter if they match any "
 "criteria."
 msgstr ""
+"La tasa de hash nominal de 1 Gh/s significa que su dispositivo es capaz de "
+"generar 1 billón de hashs por segundo - sin importar que ellos coincidan en "
+"algún criterio."
 
 #: help/templates/help/manual/terminology.html:66
 msgid "Effective <span>Hash Rate</span>"
@@ -4407,6 +4437,11 @@ msgid ""
 "generated hashes by your devices get sent. They must fit certain criteria "
 "assigned by the pool (see: <a href=\"%(link)s\">Shares</a>)."
 msgstr ""
+"La efectiva tasa de hash es una tasa <strong>calculada de los hash enviados "
+"por su dispositivo a nuestro pool</strong>. Solamente una pequeña parte de "
+"los hash generados por sus dispositivos son enviados. Ellos deben ajustarse "
+"a ciertos criterios asignados por el pool (ver: <a href=\"%(link)s\""
+">Shares</a>)."
 
 #: help/templates/help/manual/terminology.html:68
 msgid ""
@@ -4423,6 +4458,10 @@ msgid ""
 "experienced connection issues, then your effective hash rate will be lower "
 "than the nominal hash rate in that period of time."
 msgstr ""
+"Su tasa de hash efectiva depende de la suerte de su dispositivo de minería y "
+"la calidad (estabilidad) de su conección al servidor del pool. Si usted ha "
+"experimentado problemas de conección, entonces su tasa de hash efectiva "
+"llegará a ser más baja que la tasa de hash nominal en ese periodo de tiempo."
 
 #: help/templates/help/manual/terminology.html:70
 msgid ""
@@ -4443,6 +4482,9 @@ msgid ""
 "rewards calculation. Please, see <a href=\"%(rewards)s\">Reward System</a> "
 "for the explanation."
 msgstr ""
+"La puntuación de su tasa de hash es un valor derivado de su tasa de hash "
+"efectiva usada para el calculo de recompensas. Por favor, vea <a href=\""
+"%(rewards)s\">Sistema de recompensas</a> para una explicación."
 
 #: help/templates/help/manual/terminology.html:81
 msgid "Share - <span>Proof of Work</span>"
@@ -4452,6 +4494,8 @@ msgstr "Share - <span>Prueba de trabajo</span>"
 msgid ""
 "<strong>Share</strong> is a unit which pool uses for computing mining work."
 msgstr ""
+"<strong>Share</strong> es una unidad usada por el pool para calcular el "
+"trabajo de minería."
 
 #: help/templates/help/manual/terminology.html:86
 msgid ""
@@ -4463,10 +4507,18 @@ msgid ""
 "<strong>shares</strong>. If a hash (proof of work) with difficulty \\(d\\) "
 "is submitted by a miner then \\(d\\) shares is counted by the pool."
 msgstr ""
+"Cuando un minero se conecta al pool, recibe una tarea de cálculo a ser "
+"resuelta - este calcula los valores de hash con ciertas propiedades (que "
+"deben ser menor al límite derivado de dificultad) Los hash que satisfacen "
+"los requerimientos son enviados de regreso al pool y son usados como una "
+"<strong>prueba del trabajo de mineria</strong>. La cantidad de trabajo de "
+"minería es registrada en unidades llamadas <strong>shares</strong>. Si un "
+"hash (prueba de trabajo) con dificultad \\(d\\) es enviado por un minero, "
+"entonces \\(d\\) shares son contados por el pool."
 
 #: help/templates/help/manual/terminology.html:87
 msgid "To put it as simple as it could be:"
-msgstr ""
+msgstr "Para decirlo de la manera más sencilla posible:"
 
 #: help/templates/help/manual/terminology.html:89
 msgid "1 share = 1 proof of work on difficulty 1"
@@ -4485,6 +4537,8 @@ msgid ""
 "100 shares = 10 proofs of work on difficulty 10 (or .. you can see the "
 "pattern)"
 msgstr ""
+"100 shares = 100 pruebas de trabajo sobre dificultad 10 (o .. usted puede "
+"ver el modelo)"
 
 #: help/templates/help/manual/terminology.html:100
 msgid "Vardiff <span>(Variable Difficulty Algorithm)</span>"
@@ -4496,6 +4550,8 @@ msgid ""
 "(Please, have a look at how <a href=\"%(link)s\">shares</a> are being "
 "produced before reading on.)"
 msgstr ""
+"(Por favor, eche un vistazo a cómo se producen los <a href=\"%(link)s\""
+">shares</a> antes de seguir leyendo.)"
 
 #: help/templates/help/manual/terminology.html:105
 msgid ""
@@ -4505,6 +4561,12 @@ msgid ""
 "to stronger miners (higher difficulty) and easier tasks to weaker so that an "
 "average communication frequency is roughly the same for all miners."
 msgstr ""
+"Existen grandes diferencias en el poder de hash diferentes mineros. Para "
+"optimizar el tráfico de red entre los mineros y el pool hemos introducido el "
+"algoritmo de dificultad variable (o vardiff). Se asignan tareas más "
+"difíciles a los mineros más fuertes (mayor dificultad) y tareas más fáciles "
+"a los más débiles, de modo que la frecuencia de comunicación promedio es "
+"aproximadamente la misma para todos los mineros."
 
 #: help/templates/help/manual/terminology.html:106
 msgid ""
@@ -4514,6 +4576,12 @@ msgid ""
 "ideal frequency that allows a balanced data load to our servers and correct "
 "measurements of your miner's hash rate."
 msgstr ""
+"<strong>Vardiff</strong> asigna exactamente tanto trabajo a cada minero, que "
+"este pueda enviar resultados de vuelta al pool <strong>de 16 a 20 veces por "
+"segundo</strong>. ¿Porque de 16 a 20 veces? De acuerdo a nuestras "
+"mediciones, esta es la frecuencia ideal que permitiría una balanceada carga "
+"de datos a nuestros servidores y unas correctas mediciones de nuestra tasa "
+"de hash."
 
 #: help/templates/help/manual/terminology.html:107
 msgid ""
@@ -4530,6 +4598,10 @@ msgid ""
 "submission. Hence you will not lose any share and the network does not get "
 "jammed."
 msgstr ""
+"Por ejemplo, una dificultad de 20 significa, que usted encontrará 20 veces "
+"menos hash que satisfagan el requerimiento, pero se le dará 20 shares por "
+"cada envío. Por lo tanto, usted no perderá ningún share y la red no se "
+"atascará."
 
 #: help/templates/help/manual/terminology.html:116
 msgid "Alert Limit"
@@ -4542,6 +4614,10 @@ msgid ""
 "is greater or equal to <strong>Alert Limit</strong>, everything is perfect "
 "and you will not receive any monitoring alert reports."
 msgstr ""
+"Este valor es usado como una <strong>tasa de hash límite</strong> para "
+"comprobar si su dispositivo funciona correctamente. Si la tasa efectiva de "
+"hash de un trabajador es mayor o igual al <strong>límite de alerta</strong>, "
+"todo estará perfecto y no recibirá ningún informe de alerta del monitoreo."
 
 #: help/templates/help/manual/terminology.html:121
 msgid ""
@@ -4550,6 +4626,11 @@ msgid ""
 "will be notified by an e-mail and you can start acting accordingly. Such "
 "behavior is mainly caused by the following reasons:"
 msgstr ""
+"Sin embargo, algunas veces puede pasar que la tasa de hash efectiva caiga "
+"<strong>bajo el Límite de Alerta</strong>. Si su monitoreo está habilitado "
+"usted recibirá una notificación por email y podrá comenzar a actuar en "
+"conformidad con esto. Tal comportamiento es causado principalmente por las "
+"siguientes razones:"
 
 #: help/templates/help/manual/terminology.html:123
 msgid "Mining software does not accept difficulty assigned by our pool"
@@ -4577,10 +4658,15 @@ msgid ""
 "is done once in 5 minutes and the value is set to 70%% of hash rate average "
 "from the last 24hours."
 msgstr ""
+"Deje que el pool calcule automáticamente el <strong>Límite de alerta</strong>"
+" por usted. Este se lleva a cabo una vez en 5 minutos y el valor es "
+"establecido al 70%% de la tasa de hash promedio de las últimas 24 horas."
 
 #: help/templates/help/manual/terminology.html:132
 msgid "Set it manually to any value from 0.5 Gh/s to e.g. 100 Ph/s or more."
 msgstr ""
+"Establezcalo manualmente para cualquier valor desde 0.5 Gh/s para por "
+"ejemplo 100 Ph/s o más."
 
 #: help/templates/help/manual/terminology.html:133
 #, python-format
@@ -4589,6 +4675,10 @@ msgid ""
 "rate.<br>E.g. you expect your miner hash rate to be 1 Ths/s, the "
 "<strong>Alert Limit</strong> would be set to 700 Ghs/s."
 msgstr ""
+"Nosotros recomendamos colocarlo un 30%% más bajo del valor que usted espera "
+"de su tasa de hash efectiva. <br> Por ejemplo, si la tasa de hash de su "
+"minero es de 1 Ths/s, el <strong> Límite de Alerta</strong> podría ser "
+"establecido en 700 Ghs/s."
 
 #: help/templates/help/manual/terminology.html:143
 msgid "Luck"
@@ -4600,6 +4690,9 @@ msgid ""
 "in comparison <strong>to the average number of shares</strong> needed for "
 "finding a block."
 msgstr ""
+"La suerte del pool explica que tantos shares necesita el pool para encontrar "
+"un bloque específico en comparación con <strong>el número promedio de "
+"shares</strong> necesarios para encontrar un bloque."
 
 #: help/templates/help/manual/terminology.html:149
 #, python-format
@@ -4607,11 +4700,15 @@ msgid ""
 "If the luck is above 100%% it means that the pool needed less shares than "
 "expected for the given difficulty."
 msgstr ""
+"Si la suerte está por encima del 100%% esto significa que el pool necesita "
+"menos shares de lo esperado para la dificultada dada."
 
 #: help/templates/help/manual/terminology.html:150
 #, python-format
 msgid "If the luck is below 100%%, more shares than average were needed."
 msgstr ""
+"Si la suerte está por debajo del 100%%, se necesitaron más acciones que el "
+"promedio."
 
 #: help/templates/help/manual/terminology.html:152
 #, python-format
@@ -4619,6 +4716,8 @@ msgid ""
 "E.g. if the luck is 200%%, the pool found two times more blocks in the given "
 "time period than average."
 msgstr ""
+"Por ejemplo, si la suerte es de  200%%, el pool encontró dos veces más "
+"bloques en el periodo dado que el promedio."
 
 #: help/templates/help/manual/terminology.html:153
 #, python-format
@@ -4629,6 +4728,12 @@ msgid ""
 "luck is high and disconnecting when the luck is low does not make any sense. "
 "In the long run, the luck is always 100%%."
 msgstr ""
+"Por favor tenga en mente que <strong>la suerte solamente describe la "
+"historia pero no dice nada acerca de los futuros bloques</strong>. Encontrar "
+"un bloque es completamente independiente de los eventos históricos. Es por "
+"ello que unirse al pool cuando la suerte es alta y desconectar cuando la "
+"suerte es baja no tiene ningún sentido. A la larga, la suerte es siempre de "
+"100%%."
 
 #: help/templates/help/manual/terminology.html:161
 msgid "Stale Rate"
@@ -4640,6 +4745,9 @@ msgid ""
 "been found and pool has moved to the next block. If everything works "
 "correctly, it should be a very low number."
 msgstr ""
+"La tasa obsoleta es el número de shares que se envían una vez que el viejo "
+"bloque ya ha sido encontrado y el pool se ha movido al siguiente bloque. Si "
+"todo funciona correctamente, debe haber un número muy bajo de este parámetro."
 
 #: help/templates/help/manual/terminology.html:166
 msgid "Several factors can increase your stale rate:"
@@ -4657,6 +4765,11 @@ msgid ""
 "old block for some time and these are being rejected by the pool as "
 "<em>stale</em> shares</em>."
 msgstr ""
+"En las redes más lentas (o cuando hay un problema de red en el camino de su "
+"minero al pool), se necesita más tiempo para que un minero reciba una "
+"notificación acerca de un nuevo bloque. Sin embargo, el minero aún mantiene "
+"los resultados enviados de un viejo bloque desde hace algún tiempo y estos "
+"están siendo rechazados por el pool como <em>shares obsoletos</em>."
 
 #: help/templates/help/manual/terminology.html:171
 msgid "Slower Mining Device"
@@ -4670,11 +4783,17 @@ msgid ""
 "for the old block that cannot be accepted by the pool anymore. Such results "
 "are also called <strong>stale</strong> shares."
 msgstr ""
+"Algunos mineros son como un hombre. Ellos solamente manejan una tarea a la "
+"vez. Antes de asumir un nuevo trabajo, necesitan terminar uno anterior. "
+"Mientras que otros ya están generando shares para un nuevo bloque, estos "
+"mineros están produciendo shares para un antiguo bloque que ya no puede ser "
+"aceptado por el pool. Tales resultados también se llaman shares "
+"<strong>obsoletos</strong>."
 
 #: help/templates/help/manual/troubleshooting.html:9
 msgctxt "UI"
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Solución de problemas"
 
 #: help/templates/help/manual/troubleshooting.html:11
 msgid "Hash Rate Lower than Expected"
@@ -4686,6 +4805,9 @@ msgid ""
 "hardware manufacturer declares, it is possible your worker does not accept "
 "difficulty which our server automatically provides."
 msgstr ""
+"Si usted experimenta una significativa más baja tasa efectiva de hash de lo "
+"que su fabricante de hardware declara, es posible que su trabajador no "
+"acepta la dificultad que nuestro servidor provee automáticamente."
 
 #: help/templates/help/manual/troubleshooting.html:14
 #, python-format
@@ -4695,6 +4817,10 @@ msgid ""
 "\">workers profile</a>. See the table for <strong>recommended</strong> "
 "values…"
 msgstr ""
+"Usted puede <strong>arreglar</strong> esto ajustando el valor óptimo de "
+"<strong>dificultad mínima</strong> en <a href=\"%(workers)s\" target=\""
+"_blank\">Perfil de trabajadores</a>. Vea la tabla para "
+"valores<strong>recomendados</strong>…"
 
 #: help/templates/help/manual/troubleshooting.html:20
 msgid "Mining hardware<br/>hash rate"
@@ -4712,6 +4838,11 @@ msgid ""
 "alarms. Therefore we recommend to let <a href=\"%(url)s\">VarDiff algorithm</"
 "a> to select difficulty for you worker automatically."
 msgstr ""
+"Tenga en cuenta que si establece la dificultad mínima demasiado alta puede "
+"tener un efecto negativo en su monitoreo, ya que puede dar lugar a falsas "
+"alarmas de monitoreo. Por lo tanto nosotros recomendamos dejar que el <a "
+"href=\"%(url)s\">algoritmo VarDiff</a> seleccione la dificultad para su "
+"trabajador automáticamente."
 
 #: help/templates/help/manual/troubleshooting.html:53
 msgid "Worker offline state"
@@ -4729,6 +4860,16 @@ msgid ""
 "<strong>Offline</strong> state of your worker, even though it works. We "
 "recommend to switch off monitoring for such workers."
 msgstr ""
+"Puesto que la dificultad mínima asignada por el pool en este momento es de 8 "
+"(y probablemente se reducirá aún más en el futuro) sus trabajadores deben "
+"tener al menos 10 Gh/s para proporcionar pruebas de trabajo en la frecuencia "
+"óptima (con dificultad 8). Verá gran variabilidad en la tasa de hash en las "
+"estadísticas de los trabajadores para los dispositivos con menos de 10 Gh/s. "
+"Por último, puede ocurrir que un dispositivo de minería muy débil no "
+"producirá una prueba válida de trabajo en todo el período de monitorización "
+"de 5 minutos. Tal situación será indicada mediante el estado <strong>Fuera "
+"de linea</strong> de su trabajador, incluso cuando el mismo aún esté "
+"trabajando. Recomendamos desconectar el monitoreo de tales trabajadores."
 
 #: help/templates/help/manual/troubleshooting.html:57
 msgid "False Monitoring Alarms"
@@ -4741,6 +4882,11 @@ msgid ""
 "pool will not be optimal. It will lead to high variance of its hash rate "
 "(wide range of values in different time periods)."
 msgstr ""
+"Si usted ajusta la dificultad mínima para un trabajador a un valor "
+"significativamente más alto de lo que recomienda la tabla anterior, su "
+"frecuencia de comunicación con el pool no será óptima. Esto llevará a una "
+"alta variación de su tasa de hash (amplio rango de valores en diferentes "
+"períodos de tiempo)."
 
 #: help/templates/help/manual/troubleshooting.html:60
 #, python-format
@@ -4749,6 +4895,10 @@ msgid ""
 "with nominal hash rate 100 Gh/s with difficulty set by <a href=\"%(url)s"
 "\">vardiff</a> algorithm to roughly 70."
 msgstr ""
+"Usted puede ver este efecto en los siguientes dos gráficos. El primero "
+"muestra un minero con una tasa de hash nominal de 100 Gh/s y con una "
+"dificultad colocada por el algoritmo <a href=\"%(url)s\">vardiff</a> en "
+"aproximadamente 70."
 
 #: help/templates/help/manual/troubleshooting.html:73
 msgid ""
@@ -4756,6 +4906,10 @@ msgid ""
 "it leads to behavior as presented below. Please, notice how the hash rate "
 "spread is now much wider."
 msgstr ""
+"Si coloca manualmente a la dificultad mínima un valor significativamente "
+"mayor, esto lleva a un comportamiento como el que se presenta a "
+"continuación. Por favor, observe cómo el diferencial de tasa de hash es "
+"ahora mucho más amplia."
 
 #: help/templates/help/manual/troubleshooting.html:86
 msgid ""
@@ -4763,6 +4917,9 @@ msgid ""
 "lead to false monitoring alarms (you can be notified about some event even "
 "when the worker works correctly)."
 msgstr ""
+"Mayor variación en la tasa de hash hará un seguimiento adecuado más difícil "
+"y puede llevar a falsas alarmas de monitoreo (usted puede ser notificado "
+"sobre algún evento, incluso cuando el trabajador trabaje correctamente)."
 
 #: help/templates/help/manual/troubleshooting.html:87
 msgid "We recommend to:"
