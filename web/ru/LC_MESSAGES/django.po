@@ -8,106 +8,103 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-31 11:25+0200\n"
-"PO-Revision-Date: 2016-04-29 13:25+0000\n"
-"Last-Translator: Borys <berimorh@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/bitcoin-cz/"
-"mining/ru/>\n"
+"PO-Revision-Date: 2016-10-27 21:31+0000\n"
+"Last-Translator: Yulija Kobrynovych <Kobrinovich.jul@mail.ru>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/bitcoin-"
+"cz/mining/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.7-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.9-dev\n"
 
 #: api/exceptions.py:10
 msgctxt "UI"
 msgid "Unknown error"
-msgstr ""
+msgstr "Неизвестная ошибка"
 
 #. Translators: %s will be format description, eg.: JSON
 #: api/exceptions.py:27
 #, python-format
 msgctxt "UI"
 msgid "Request is not a %s"
-msgstr ""
+msgstr "Запрос не %s"
 
 #. Translators: %s will be format description, eg.: JSON
 #: api/exceptions.py:33
 #, python-format
 msgctxt "UI"
 msgid "Response is not a %(format)s serializable"
-msgstr ""
+msgstr "Запрос не %(format)s сериализируемый"
 
 #: api/exceptions.py:38
-#, fuzzy
 msgctxt "UI"
 msgid "Need authentication"
-msgstr "Подтверждение нового аккаунта"
+msgstr "Необходима проверка подлинности"
 
 #. Translators: %s will be api method, eg.: get, list, get_facts, etc.
 #: api/exceptions.py:44
 #, python-format
 msgctxt "UI"
 msgid "Method %s is not allowed"
-msgstr ""
+msgstr "Метод %s запрещен"
 
 #. Translators: %s will be api method, eg.: get, list, get_facts, etc.
 #: api/exceptions.py:50
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Method %s doesn't exist"
-msgstr "Воркер не существует."
+msgstr "Метод %s не существует"
 
 #: api/exceptions.py:55
 msgctxt "UI"
 msgid "Non-existent or expired token used"
-msgstr ""
+msgstr "Использован несуществующий, или просроченный маркер доступа"
 
 #: api/exceptions.py:60
-#, fuzzy
 msgctxt "UI"
 msgid "The method is not allowed in read only mode"
-msgstr "В имени устройства запрещены точки"
+msgstr "В режиме \"только для чтения\" метод запрещен"
 
 #: api/exceptions.py:65
-#, fuzzy
 msgctxt "UI"
 msgid "Bad request"
-msgstr "Недействительный ключ"
+msgstr "Неверный запрос"
 
 #: api/exceptions.py:70
 msgctxt "UI"
 msgid "Method not found"
-msgstr ""
+msgstr "Метод не найден"
 
 #. Translators: %s = worker, label, ...
 #: api/exceptions.py:76
 #, python-format
 msgctxt "UI"
 msgid "Bulk %s creation is not allowed"
-msgstr ""
+msgstr "Массовое создание %s запрещено"
 
 #. Translators: %s = worker, label, ...
 #: api/exceptions.py:82
 #, python-format
 msgctxt "UI"
 msgid "Bulk %s deletion is not allowed"
-msgstr ""
+msgstr "Массовое удаление %s запрещено"
 
 #. Translators: "Label / Worker can't be removed".
 #: api/exceptions.py:88
 #, python-format
 msgctxt "UI"
 msgid "%s can't be removed"
-msgstr ""
+msgstr "%s не может быть удален"
 
 #. Translators: %s = worker, label, ...
 #: api/exceptions.py:94
 #, python-format
 msgctxt "UI"
 msgid "Access denied to object: %s"
-msgstr ""
+msgstr "К объекту %s доступ запрещен"
 
 #: api/exceptions.py:99
 #, fuzzy, python-format
@@ -116,35 +113,33 @@ msgid "Worker \"%s\" already exists"
 msgstr "Воркер %s уже существует"
 
 #: api/exceptions.py:104
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Label \"%s\" already exists"
-msgstr "Воркер %s уже существует"
+msgstr "Маркер %s уже существует"
 
 #: api/exceptions.py:109
-#, fuzzy
 msgctxt "UI"
 msgid "Label doesn't exist"
-msgstr "Воркер не существует."
+msgstr "Маркер не существует"
 
 #: api/exceptions.py:114
-#, fuzzy
 msgctxt "UI"
 msgid "Workers labels update failed"
-msgstr "Настройки воркера изменены"
+msgstr "Не удалось обновить маркеры воркеров"
 
 #: api/exceptions.py:119
 #, python-format
 msgctxt "UI"
 msgid "User doesn't have worker (%s)"
-msgstr ""
+msgstr "У пользователя нет воркера (%s)"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
 #: api/exceptions.py:125
 #, python-format
 msgctxt "UI"
 msgid "Slot \"%s\" not found"
-msgstr ""
+msgstr "Слот \"%s\" не найден"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
 #: api/exceptions.py:131
@@ -153,66 +148,67 @@ msgctxt "UI"
 msgid ""
 "Slot number \"%s\" is not valid. Slot number must be first second of an hour."
 msgstr ""
+"Номер слота \"%s\" недействителен. Номером слота должна быть первая секунда "
+"часа."
 
 #. Translators: %s will be some invalid blockchain voting option
 #: api/exceptions.py:147
 #, python-format
 msgctxt "UI"
 msgid "You can't vote for \"%s\""
-msgstr ""
+msgstr "Вы не можете голосовать за \"%s\""
 
 #: api/exceptions.py:152
 msgctxt "UI"
 msgid "You must specify the \"coin_type\" attribute (\"BTC\" or \"NMC\")"
-msgstr ""
+msgstr "Укажите атрибуты \"coin_type\" (\"BTC\" или \"NMC\")"
 
 #: api/exceptions.py:157
 msgctxt "UI"
 msgid "Missing data for HR distribution"
-msgstr ""
+msgstr "Для HR распределения недостаточно данных"
 
 #: api/exceptions.py:167
 msgctxt "UI"
 msgid "Integrity error on worker update"
-msgstr ""
+msgstr "Ошибка целостности в ходе обновления воркера"
 
 #: api/exceptions.py:172
-#, fuzzy
 msgctxt "UI"
 msgid "Worker name has already been used"
-msgstr "Воркер создан."
+msgstr "Имя воркера уже используется"
 
 #: api/exceptions.py:177
 msgctxt "UI"
 msgid "Form error"
-msgstr ""
+msgstr "Ошибка формы"
 
 #. Translators: %s = form id
 #: api/exceptions.py:183
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Form \"%s\" doesn't exist"
-msgstr "Воркер не существует."
+msgstr "Идентификатор форма \"%s\" не существует"
 
 #: api/exceptions.py:188
 msgctxt "UI"
 msgid "Validation error"
-msgstr ""
+msgstr "Ошибка проверки"
 
 #: api/exceptions.py:193
 msgctxt "UI"
 msgid "Form save has failed."
-msgstr ""
+msgstr "Сохранение формы не удалось."
 
 #: api/exceptions.py:208
 msgctxt "UI"
 msgid "U2F device not found."
-msgstr ""
+msgstr "Устройство U2F не найдено."
 
 #: api/exceptions.py:213
 msgctxt "UI"
 msgid "U2F verification failed."
-msgstr ""
+msgstr "Проверка U2F не удалась."
 
 #: backend/queries.py:998 backend/queries.py:1044
 msgctxt "UI, Blocks"
@@ -222,7 +218,7 @@ msgstr "недействительно"
 #: backend/queries.py:1000 backend/queries.py:1046
 msgctxt "UI, Blocks"
 msgid "Confirmed"
-msgstr "подтверждено"
+msgstr "Подтверждено"
 
 #: contact/forms.py:19 contact/forms.py:20 contact/forms.py:22
 #: contact/forms.py:24 contact/forms.py:33 mailing/forms.py:65
@@ -231,17 +227,15 @@ msgstr "подтверждено"
 #: mailing/models.py:492 mailing/models.py:493 news/views.py:71
 #: notifications/backends/blocks.py:23 notifications/backends/proposals.py:23
 msgid "UI"
-msgstr ""
+msgstr "UI"
 
 #: core/validators.py:14
-#, fuzzy
 msgid "Enter a valid, non empty value."
-msgstr "Введите действительное имя пользователя."
+msgstr "Введите действительное, не пустое значение."
 
 #: core/validators.py:27
-#, fuzzy
 msgid "Enter a valid Email service provider."
-msgstr "Введите действительное имя пользователя."
+msgstr "Введите действительный е-мейл."
 
 #: dashboard/views.py:20
 #, fuzzy, python-format
@@ -253,10 +247,9 @@ msgstr ""
 
 #: dashboard/templates/dashboard/home.html:4
 #: news/templates/news/content/release-20.html:2
-#, fuzzy
 msgctxt "UI"
 msgid "Dashboard"
-msgstr "Аккаунт был обновлен."
+msgstr "Панель"
 
 #: dashboard/templates/dashboard/msg_pending_wallet.html:2
 #, fuzzy, python-format
@@ -268,76 +261,72 @@ msgstr ""
 "адреса кошелька на '%(wallet_pending)s'."
 
 #: dashboard/templates/dashboard/msg_pending_wallet.html:4
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Email confirmation has been sent to '%(email)s'. Please check your mailbox "
 "and follow confirmation link."
 msgstr ""
-"Вам было отправлено подтверждающее электронное письмо. Пожалуйста, проверьте "
-"свою электронную почту и следуйте инструкциям в нем."
+"На ваш адрес %(email)s отправлено подтверждающее электронное письмо. "
+"Пожалуйста, проверьте свою электронную почту и перейдите по подтверждающей "
+"ссылке."
 
 #: dashboard/templates/dashboard/msg_pending_wallet.html:6
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "If you didn't receive confirmation email yet, you can also <a href="
 "\"%(url_resend)s\">resend confirmation</a>."
 msgstr ""
-"В случае, если Вы еще не получили электронное письмо с подтверждением, Вы "
-"можете <a href='%(url_resend)s%(wallet_pending)s'> отправить повторный "
-"запрос</a>."
+"Если Вы еще не получили подтверждающее электронное письмо, Вы можете <a "
+"href='%(url_resend)s%(wallet_pending)s'> отправить повторный запрос </a>."
 
 #: dashboard/templates/dashboard/msg_pending_wallet.html:8
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "If you didn't initiate this change, please <a href=\"%(url_cancel)s\">cancel "
 "the request</a> and <a href=\"%(url_password_reset)s\">change your password</"
 "a> immediately."
 msgstr ""
-"В случае, если Вы не просили о изменении адреса Вашего кошелька, пожалуйста, "
-"<a href='%(url_cancel)s %(wallet_pending)s'>отмените данный запрос,</a> и <a "
-"href='%(url_password_reset)s'>немедленно измените свой</a> пароль."
+"Если вы не запрашивали изменение адреса Вашего кошелька, пожалуйста, <a "
+"href='%(url_cancel)s %(wallet_pending)s'>отмените данный запрос,</a> и <a "
+"href='%(url_password_reset)s'> измените свой пароль </a> без промедления."
 
 #: hashrate_proof/templates/hashrate_proof/home.html:4
-#, fuzzy
 msgctxt "UI"
 msgid "Hash Rate Proof"
-msgstr "Скорость хэша"
+msgstr "Подтверждение хешрейта"
 
 #: help/help_categories.py:74
 #: help/templates/help/manual/mining_beginners.html:47
-#, fuzzy
 msgid "Getting started"
-msgstr "Регистрация аккаунта"
+msgstr "Начало работы"
 
 #: help/help_categories.py:76
 msgid "Are you starting out?"
-msgstr ""
+msgstr "Вы начинаете?"
 
 #: help/help_categories.py:82
 msgid "Mining for Beginners"
-msgstr ""
+msgstr "Майнинг для начинающих"
 
 #: help/help_categories.py:83 help/templates/help/help_intro.html:25
 msgid "Want see the big picture?"
-msgstr ""
+msgstr "Хотите увидеть всю картину?"
 
 #: help/help_categories.py:89 help/templates/help/first-aid/resources.html:23
-#, fuzzy
 msgid "Getting Started"
-msgstr "Регистрация аккаунта"
+msgstr "Начало работы"
 
 #: help/help_categories.py:90
 msgid "Mining for the first time?"
-msgstr ""
+msgstr "Впервые занимаетесь майнингом?"
 
 #: help/help_categories.py:96
-#, fuzzy
 msgid "Advanced Mining Setup"
-msgstr "Мой аккаунт"
+msgstr "Расширенные настройки майнинга"
 
 #: help/help_categories.py:97
 msgid "Connect your ASIC based miner"
-msgstr ""
+msgstr "Подключите свой ASIC-майнер"
 
 #: help/help_categories.py:103
 #, fuzzy
