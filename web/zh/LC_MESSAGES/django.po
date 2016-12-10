@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-31 11:26+0200\n"
-"PO-Revision-Date: 2016-10-31 21:28+0000\n"
+"PO-Revision-Date: 2016-12-10 19:26+0000\n"
 "Last-Translator: xu <samanthaxu1987@163.com>\n"
 "Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-"
 "cz/mining/zh/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.9-dev\n"
+"X-Generator: Weblate 2.10-dev\n"
 
 #: api/exceptions.py:10
 msgctxt "UI"
@@ -896,7 +896,7 @@ msgstr ""
 msgid ""
 "The <strong>Block Value</strong> column shows the exchange rate provided by "
 "external exchange and the amount of Namecoins you have been rewarded."
-msgstr ""
+msgstr "<strong>矿区价值</strong>栏显示由外部兑换提供的兑换率和您报酬所得的Namecoin数量。"
 
 #: help/templates/help/faq/merged_mining.html:97
 msgid "How does the rewards calculation relates to other currencies?"
@@ -1673,7 +1673,7 @@ msgstr ""
 msgid ""
 "If you are interested in deep explanation and the math behind this concept "
 "feel free to read <a href=\"%(link)s\">following article</a>"
-msgstr ""
+msgstr "如果您对更详细的解释或数学原理感兴趣请阅读<a href=\"%(link)s\">下面的文章</a>"
 
 #: help/templates/help/faq/rewards.html:95
 msgid "What value should I set as a “payout threshold”?"
@@ -1689,7 +1689,7 @@ msgstr ""
 msgid ""
 "That said, you should decide for yourself based on how often you want to get "
 "your rewards and the speed at which you are able to mine such amount of BTC."
-msgstr ""
+msgstr "也就是说，您应自己决定多久获得报酬和要获得此报酬量的比特币的挖矿速度。"
 
 #: help/templates/help/faq/rewards.html:100
 #, fuzzy
@@ -1705,7 +1705,7 @@ msgstr "我的 <span>账户</span>"
 
 #: help/templates/help/faq/user_account.html:18
 msgid "How do I register at Slush Pool?"
-msgstr ""
+msgstr "我怎么注册Slush矿池呢？"
 
 #: help/templates/help/faq/user_account.html:21
 #, python-format
@@ -1721,14 +1721,14 @@ msgstr ""
 
 #: help/templates/help/faq/user_account.html:30
 msgid "What is the payout address and where can I find it?"
-msgstr ""
+msgstr "什么是报酬支付地址及怎样找到它？"
 
 #: help/templates/help/faq/user_account.html:33
 msgid ""
 "Payout address is the <strong>Bitcoin address</strong> where we will send "
 "you your rewards. If you do not have any Bitcoin address yet there are "
 "multiple wallet providers out there where you can create your own."
-msgstr ""
+msgstr "报酬支付地址是我们将要支付您的报酬使用的<strong>比特币地址</strong>。如果您还没有比特币地址，有多种多样的钱包供应商供您选择。"
 
 #: help/templates/help/faq/user_account.html:34
 #, python-format
@@ -1747,31 +1747,31 @@ msgstr ""
 
 #: help/templates/help/faq/user_account.html:35
 msgid "Once you have it:"
-msgstr ""
+msgstr "一旦您有了它："
 
 #: help/templates/help/faq/user_account.html:37
 #, python-format
 msgid "Go to your <a href=\"%(settings)s\">Settings tab</a>"
-msgstr ""
+msgstr "到您的<a href=\"%(settings)s\">设置标签</a>"
 
 #: help/templates/help/faq/user_account.html:38
 #, python-format
 msgid "Go to <a href=\"%(link)s\">Payouts tab</a>"
-msgstr ""
+msgstr "到您的<a href=\"%(link)s\">报酬支付标签</a>"
 
 #: help/templates/help/faq/user_account.html:39
 msgid "Put the address into the “New wallet” field"
-msgstr ""
+msgstr "把地址输入到“新钱包”处"
 
 #: help/templates/help/faq/user_account.html:40
 msgid "Click “Save “ button"
-msgstr ""
+msgstr "点击“保存”键"
 
 #: help/templates/help/faq/user_account.html:42
 msgid ""
 "Your mining rewards will be automatically sent to this address once your "
 "confirmed reward crosses the payout threshold.</p>"
-msgstr ""
+msgstr "当您的报酬达到支付门槛，您的挖矿报酬将会自动发送到此地址。</p>"
 
 #: help/templates/help/faq/user_account.html:43
 msgid ""
@@ -1780,10 +1780,12 @@ msgid ""
 "as wallets on exchanges - remember what happened to Mt.Gox?) as their payout "
 "wallets.</p>"
 msgstr ""
+"重要提示：我们强烈<strong>不建议用户</strong>使用他们并不<strong>完全拥有控制权的</strong><strong>电子钱包</s"
+"trong>（如兑换网站上的钱包-还记得Mt.Gox发生的事吗？）作为接收报酬的钱包。</p>"
 
 #: help/templates/help/faq/user_account.html:52
 msgid "What is the best way to protect my account?"
-msgstr ""
+msgstr "保护我的账户的最好的方式是？"
 
 #: help/templates/help/faq/user_account.html:55
 msgid ""
@@ -1791,38 +1793,39 @@ msgid ""
 "or to use <strong>2FA authentication</strong> to protect the funds on your "
 "account. Follow these instructions to enable it:"
 msgstr ""
+"我们强烈建议您启用<strong>锁定</strong>特性或使用<strong>双重认证</strong>来保护您账户上的资金。按照以下指示来启用它："
 
 #: help/templates/help/faq/user_account.html:57
 #, python-format
 msgid "Visit your <a href=\"%(settings)s\">Settings page</a>"
-msgstr ""
+msgstr "请浏览您的<a href=\"%(settings)s\">设置页面</a>"
 
 #: help/templates/help/faq/user_account.html:58
 #, python-format
 msgid "On the Settings tab, click <a href=\"%(link)s\">Security tab</a>"
-msgstr ""
+msgstr "在设置标签上，点击<a href=\"%(link)s\">安全标签</a>"
 
 #: help/templates/help/faq/user_account.html:59
 msgid ""
 "Follow instructions either for <strong>Locking the address</strong> or "
 "<strong>enabling 2FA</strong>"
-msgstr ""
+msgstr "按照提示可<strong>锁定支付地址</strong>或者<strong>启用双重认证</strong>"
 
 #: help/templates/help/faq/user_account.html:69
 msgid "I can't log in. What is wrong?"
-msgstr ""
+msgstr "我无法登录。什么原因呢？"
 
 #: help/templates/help/faq/user_account.html:72
 msgid ""
 "If you cannot log into your account, it is probably due to one of these "
 "reasons:"
-msgstr ""
+msgstr "如果您无法登录您的账户，可能有以下的原因之一："
 
 #: help/templates/help/faq/user_account.html:74
 msgid ""
 "You are entering invalid CAPTCHA. Our captchas are very challenging for "
 "security reasons. This problem is indicated by the error \"Invalid CAPTCHA\""
-msgstr ""
+msgstr "您输入了无效的验证码。我们的验证码因安全考虑非常有挑战性。如果是因此原因，会有提示“无效的验证码”"
 
 #: help/templates/help/faq/user_account.html:75
 msgid ""
@@ -1831,13 +1834,15 @@ msgid ""
 "be indicated by: \"please enter a correct user-name and password. Note that "
 "both fields are case-sensitive\"."
 msgstr ""
+"您使用了不正确的用户名。请注意邮箱如\"bob@gmail.com\" "
+"或者“矿工1号”名称并不是用户名。如果是出于此原因会有提示“请输入正确的用户名和密码”。请注意这两处都有大小写的区分。"
 
 #: help/templates/help/faq/user_account.html:76
 msgid ""
 "You are ignoring case-sensitiveness. Both user-name and password are case-"
 "sensitive. This problem might be indicated by: \"please enter a correct user-"
 "name and password. Note that both fields are case-sensitive\"."
-msgstr ""
+msgstr "您忽略了大小写的区分。用户名和密码都有大小写的区分。如果是此原因会有提示“请输入正确的用户名和密码并注意区分大小写”。"
 
 #: help/templates/help/faq/user_account.html:78
 #, python-format
@@ -1846,21 +1851,23 @@ msgid ""
 "our <a href=\"%(support)s\" target=\"_blank\" class=\"ext\">support staff</"
 "a> for not being able to log in."
 msgstr ""
+"在向我们的<a href=\"%(support)s\" target=\"_blank\" class=\"ext\""
+">技术支持</a>寻求进一步帮助前请确保您无法登录的原因不在这些原因中。"
 
 #: help/templates/help/faq/user_account.html:87
 msgid "How can I change my registered email address?"
-msgstr ""
+msgstr "我怎么更改注册的邮箱地址呢？"
 
 #: help/templates/help/faq/user_account.html:90
 msgid "There are two options how to change registered e-mail:"
-msgstr ""
+msgstr "有两种方式更改注册邮箱地址："
 
 #: help/templates/help/faq/user_account.html:92
 #, python-format
 msgid ""
 "If you have access to original mailbox, simply change it on your own on the "
 "\"Basic\" tab under <a href=\"%(settings)s\">your account</a>:"
-msgstr ""
+msgstr "如果您还有使用之前注册邮箱的权限，可以很简单地在<a href=\"%(settings)s\">您的账户</a>下“基本”标签上自行更改："
 
 #: help/templates/help/faq/user_account.html:93
 msgid ""
@@ -1875,27 +1882,27 @@ msgstr ""
 #: help/templates/help/faq/user_account.html:96
 #, python-format
 msgid "Go to Basic tab in your <a href=\"%(settings)s\">account settings</a>"
-msgstr ""
+msgstr "到您的<a href=\"%(settings)s\">账户设置</a>基本标签"
 
 #: help/templates/help/faq/user_account.html:97
 msgid "Insert your new mail and click Save"
-msgstr ""
+msgstr "输入您的新邮箱地址并点击保存"
 
 #: help/templates/help/faq/user_account.html:98
 msgid ""
 "Click \"Sign by wallet\" button which appeared just under the \"Email "
 "pending field\""
-msgstr ""
+msgstr "点击“邮箱待定区域”下出现的“由钱包签名”键"
 
 #: help/templates/help/faq/user_account.html:99
 msgid ""
 "Insert a valid signature of your payout address into the \"Signature\" field"
-msgstr ""
+msgstr "在“签名”处输入来自您支付地址的有效签名"
 
 #: help/templates/help/faq/user_account.html:100
 #: help/templates/help/faq/user_account.html:149
 msgid "Click \"Save\""
-msgstr ""
+msgstr "点击“保存”"
 
 #: help/templates/help/faq/user_account.html:102
 #, python-format
@@ -1903,16 +1910,18 @@ msgid ""
 "If you have problems with signing your message our explanatory <a href="
 "\"%(link)s\" target=\"_blank\" class=\"ext\">article</a> can be useful"
 msgstr ""
+"如果您有签名信息方面的问题，我们的说明<a href=\"%(link)s\" target=\"_blank\" class=\"ext\""
+">文章</a>将会对您有帮助"
 
 #: help/templates/help/faq/user_account.html:111
 msgid "How can I change my registered payout address (wallet)?"
-msgstr ""
+msgstr "我怎样更改我支付地址（钱包）？"
 
 #: help/templates/help/faq/user_account.html:114
 msgid ""
 "If your payout address is not protected neither by the lock nor by the 2FA "
 "then follow instructions below:"
-msgstr ""
+msgstr "如果您的地址没有锁定或双重认证的保护请按照以下提示操作："
 
 #: help/templates/help/faq/user_account.html:116
 #: help/templates/help/faq/user_account.html:281
@@ -1931,68 +1940,68 @@ msgstr "到报酬支付"
 #: help/templates/help/faq/user_account.html:118
 #: help/templates/help/faq/user_account.html:283
 msgid "Insert your new address into the “New wallet” field"
-msgstr ""
+msgstr "在“新钱包”处输入您的新地址"
 
 #: help/templates/help/faq/user_account.html:119
 #: help/templates/help/faq/user_account.html:284
 msgid "Click “Save“ button"
-msgstr ""
+msgstr "点击“保存”键"
 
 #: help/templates/help/faq/user_account.html:122
 msgid ""
 "As a security precaution, it is possible to use 2 factor authentication "
 "(2FA) which can protect your funds if someone gains access to your account."
-msgstr ""
+msgstr "作为安全预防措施，如果有人获得您账户的权限，您可以使用双重认证来保护您的资金。"
 
 #: help/templates/help/faq/user_account.html:124
 msgid "Disabling 2FA procedures:"
-msgstr ""
+msgstr "禁用双重认证步骤："
 
 #: help/templates/help/faq/user_account.html:126
 msgid "Procedure 1: YOU STILL HAVE VALID 2FA TOKEN"
-msgstr ""
+msgstr "步骤1：您仍有有效的双重认证令牌"
 
 #: help/templates/help/faq/user_account.html:127
 msgid ""
 "If you wish to disable your 2FA you can do it on your own if you STILL HAVE "
 "2FA APPLICATION with valid 2FA TOKEN installed on your device. In such case "
 "please follow instructions below:"
-msgstr ""
+msgstr "如果您还装有双重认证应用及有效的认证令牌，您可以自行禁用双重认证功能，请按照以下提示："
 
 #: help/templates/help/faq/user_account.html:129
 #, python-format
 msgid "Log into your <a href=\"%(settings)s\">Account Settings</a>"
-msgstr ""
+msgstr "登录您的<a href=\"%(settings)s\">账户设置</a>"
 
 #: help/templates/help/faq/user_account.html:130
 #, python-format
 msgid "Go to <a href=\"%(link)s\">Security tab</a>"
-msgstr ""
+msgstr "到<a href=\"%(link)s\">安全标签</a>"
 
 #: help/templates/help/faq/user_account.html:131
 msgid "Click on the Disable 2FA button and enter valid one time password (OTP)"
-msgstr ""
+msgstr "点击禁用双重认证键并输入有效的一次性密码"
 
 #: help/templates/help/faq/user_account.html:134
 msgid "Procedure 2: YOU STILL HAVE \"SECRET KEY\""
-msgstr ""
+msgstr "步骤2：您仍有“秘钥”"
 
 #: help/templates/help/faq/user_account.html:135
 msgid ""
 "If you DO NOT HAVE VALID TOKEN but you still have a \"SECRET KEY\" either in "
 "form of QR code or text which you have received when you were setting up the "
 "2FA protection then please follow these instructions:"
-msgstr ""
+msgstr "如果您没有有效的令牌但您仍有“秘钥”，即您在设置双重认证保护时受到的二维码或信息，那请按照以下提示："
 
 #: help/templates/help/faq/user_account.html:137
 msgid "Use the secret key to re-create authentication account"
-msgstr ""
+msgstr "使用秘钥重建认证账户"
 
 #: help/templates/help/faq/user_account.html:138
 msgid ""
 "Once your account is restored please follow instructions in Procedure 1 "
 "above."
-msgstr ""
+msgstr "一旦您的账户重建成功请按照上面的步骤1操作。"
 
 #: help/templates/help/faq/user_account.html:140
 msgid ""
