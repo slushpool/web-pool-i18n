@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-31 11:26+0200\n"
-"PO-Revision-Date: 2016-12-16 20:47+0000\n"
+"PO-Revision-Date: 2016-12-20 20:02+0000\n"
 "Last-Translator: xu <samanthaxu1987@163.com>\n"
 "Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-"
 "cz/mining/zh/>\n"
@@ -848,12 +848,13 @@ msgid ""
 msgstr "您可以在报酬历史里通过点击滑动开关来切换比特币和Namecoin的历史。您可以在报酬历史界面右上角看到切换的开关。"
 
 #: help/templates/help/faq/merged_mining.html:87
+#, fuzzy
 msgid ""
 "Your <strong>Reward</strong> column displays the amount of Bitcoins that "
 "belong to you after we have traded the Namecoin block. The Bitcoins for the "
 "traded Namecoin block are being fairly distributed among miners based on the "
 "same scoring hash-rate formula which we use for Bitcoin rewards distribution."
-msgstr ""
+msgstr "您的<strong>报酬</strong>栏显示"
 
 #: help/templates/help/faq/merged_mining.html:88
 msgid ""
@@ -873,6 +874,8 @@ msgid ""
 "The last few freshly mined NMC blocks always stay in NMC until they are "
 "confirmed (roughly 40 confirmations)."
 msgstr ""
+"目前，我们不追踪NMC换算到其他币种的兑换率。因此当您在报酬历史界面显示余额在现实币种的值时是由比特币所等价的值代替NMC的。最新挖的NMC矿区的所得仍保"
+"持NMC值直到被确认（大概40个确认信息）。"
 
 #: help/templates/help/faq/merged_mining.html:109
 msgid "What are the blue block lines in the hash rate monitor?"
@@ -1082,6 +1085,7 @@ msgid ""
 "going to make $5000/month (calculates with actual mining difficulty!) and "
 "you will get the miner 6 months later, you can never make that much money."
 msgstr ""
+"发货日期 - 比如产品介绍说矿机有3TH能力并且您将赚$5000/月（根据当下挖矿难度值！），但您要在6个月之后才收到此矿机，您将永不可能赚那么多钱。"
 
 #: help/templates/help/faq/mining_in_general.html:133
 msgid ""
@@ -1203,6 +1207,8 @@ msgid ""
 "odds are set by the number of tickets purchased--the target is to have "
 "someone win on average every <strong>10 minutes</strong>."
 msgstr ""
+"实际上<strong>挖矿运作</strong>并不是这样的。请把挖矿当作<strong>买彩票</strong>而不是解决一道<strong>数学谜题<"
+"/strong>。按此比喻，彩票的几率是随购买数量而定的，目标是平均每<strong>10分钟</strong>产生一个中奖者。"
 
 #: help/templates/help/faq/mining_in_general.html:179
 msgid ""
@@ -1213,6 +1219,9 @@ msgid ""
 "a block is still <strong>2 hours from then</strong>, because slush pool is "
 "consistently <strong>\"buying tickets\"</strong>."
 msgstr ""
+"请把Slush矿池看作一个大彩票池。Slush矿池是平均<strong>每2小时</strong><strong>被期望发现矿区</strong>，但有时"
+"候我们并不那么幸运所以需要更长时间。如果已经<strong>5小时还没有矿区</strong>被发现，那么预计的时间仍然是<strong>此时之后2小时<"
+"/strong>。因为Slush矿池在持续不断地<strong>“购买彩票”</strong>。"
 
 #: help/templates/help/faq/mining_in_general.html:180
 msgid ""
@@ -1221,6 +1230,8 @@ msgid ""
 "pool</strong> because they <strong>were lucky yesterday</strong> (or to play "
 "the lotto because 5 people won the day before)."
 msgstr ""
+"所以因为<strong>过去的运气</strong>而<strong>退出是不理智的</strong>，就好像去<strong>某一个矿池</strong"
+">挖矿是因为他们<strong>昨天非常幸运</strong>（或者买彩票是因为之前有5个人已经中奖了）并没有道理一样。"
 
 #: help/templates/help/faq/mining_in_general.html:181
 #, python-format
@@ -1230,6 +1241,8 @@ msgid ""
 "depth on <strong>how mining works \"under the hood\"</strong>. It is a very "
 "interesting concept!"
 msgstr ""
+"我们建议您多做一些挖矿的研究。有许多<a href=\"%(link)s\" target=\"_blank\" class=\"ext\""
+">YouTube视频</a>非常深入地讲解<strong>比特币后台的运作</strong>。都是非常有趣的概念！"
 
 #: help/templates/help/faq/mining_in_general.html:190
 msgid "I have wonderful idea that must be implemented, what should I do?"
@@ -1326,14 +1339,14 @@ msgstr ""
 msgid ""
 "Your <strong>Scoring Hash Rate</strong> on your Dashboard is <strong>non 0 "
 "value</strong>."
-msgstr ""
+msgstr "您仪表板上的<strong>加权指数Hash速率</strong>是<strong>非0</strong>。"
 
 #: help/templates/help/faq/mining_setup.html:69
 msgid ""
 "You see block rewards on Statistics page for every closed round (solved "
 "bitcoin block). This may be 0 BTC if you stopped mining during the round or "
 "if your miner is extremely slow."
-msgstr ""
+msgstr "每轮结束后（完成的比特币矿区）您将在统计界面看到区报酬。如果您在中途退出或者您的矿工能力超级低那可能会是0个比特币。"
 
 #: help/templates/help/faq/mining_setup.html:79
 msgid "My miner is offline, is it a problem?"
@@ -1383,12 +1396,14 @@ msgid ""
 "not the case and you own ASIC miner then please read more about correct "
 "miner setup <a href=\"%(link)s\">here</a>"
 msgstr ""
+"<strong>Getwork挖矿用户端已停用</strong>好多个月了，因为它缺少现代ASIC设备所需的许多特性。但如果不是这个原因且您拥有ASIC矿"
+"机的话，请在<a href=\"%(link)s\">此</a>阅读更多关于正确设置矿机的内容"
 
 #: help/templates/help/faq/mining_setup.html:109
 #, python-format
 msgid ""
 "To run older miner behind <a href=\"%(link)s\">Stratum mining proxy</a>."
-msgstr ""
+msgstr "在<a href=\"%(link)s\">阶层挖矿协议</a>后运行老旧的矿机。"
 
 #: help/templates/help/faq/mining_setup.html:110
 #, python-format
@@ -1609,7 +1624,7 @@ msgstr "我的“报酬支付门槛”该设置什么值呢？"
 msgid ""
 "All that it comes to is really finding a sweet spot between short payout "
 "period or bigger amounts."
-msgstr ""
+msgstr "归根结底就是要在短的支付期或更大额之间找到完美的折中点。"
 
 #: help/templates/help/faq/rewards.html:99
 msgid ""
@@ -2218,7 +2233,7 @@ msgstr ""
 
 #: help/templates/help/faq/user_account.html:302
 msgid "If you still have <strong>non-zero balance</strong> then:"
-msgstr ""
+msgstr "如果您仍有<strong>非0余额</strong>的话："
 
 #: help/templates/help/faq/user_account.html:305
 msgid "Go to “Payouts” tab"
@@ -2228,19 +2243,19 @@ msgstr "到”报酬支付”栏"
 msgid ""
 "Lower your threshold below your reward value (be aware that minimum payout "
 "threshold is 0.001 BTC)"
-msgstr ""
+msgstr "降低您的支付门槛到低于您的报酬值（请注意系统最低设置的报酬支付门槛是0.001 BTC）"
 
 #: help/templates/help/faq/user_account.html:307
 msgid ""
 "The transaction will be conducted automatically within one hour to your "
 "payout address"
-msgstr ""
+msgstr "报酬将在一小时内自动转入到您的报酬支付地址上"
 
 #: help/templates/help/faq/user_account.html:309
 msgid ""
 "Once your rewards <strong>balance is zero</strong> you can delete your "
 "account by following this process:"
-msgstr ""
+msgstr "一旦您的报酬<strong>余额为0</strong>您将可以按照以下操作删除账户："
 
 #: help/templates/help/faq/user_account.html:312
 msgid "Go to “Delete my account” tab"
@@ -2248,7 +2263,7 @@ msgstr "到“删除我的账户”"
 
 #: help/templates/help/faq/user_account.html:313
 msgid "Read everything carefully"
-msgstr ""
+msgstr "请认真阅读每一项"
 
 #: help/templates/help/faq/user_account.html:314
 msgid "Click “Delete my account“ button"
@@ -2256,14 +2271,14 @@ msgstr "点击“删除我的帐户”键"
 
 #: help/templates/help/faq/user_account.html:324
 msgid "Can be my deleted account restored?"
-msgstr ""
+msgstr "我删掉的账户还能恢复吗？"
 
 #: help/templates/help/faq/user_account.html:327
 #, python-format
 msgid ""
 "Unfortunately we can not recover deleted accounts. Therefore before deleting "
 "your account read carefully <a href=\"%(link)s\">following article</a>."
-msgstr ""
+msgstr "非常遗憾我们不能恢复已删的账户。因此您在删除账户前请认真阅读<a href=\"%(link)s\">下面的文章</a>。"
 
 #: help/templates/help/faq/user_account.html:328
 #, python-format
@@ -2273,16 +2288,18 @@ msgid ""
 "improvements of the pool according to our <a href=\"%(TOS)s\">Terms of "
 "service.</a>"
 msgstr ""
+"如果您的账户是系统自动删除或您自己操作删除掉的，根据<a href=\"%(TOS)s\""
+">服务条款</a>规定请把您的账户余额视作对矿池的捐赠，以致力于我们服务的改善。"
 
 #: help/templates/help/faq/user_account.html:337
 msgid "Can I change my user name?"
-msgstr ""
+msgstr "我怎么更改用户名？"
 
 #: help/templates/help/faq/user_account.html:340
 msgid ""
 "If you wish to change your user-name then we recommend to <strong>create a "
 "new account</strong> under the same e-mail address."
-msgstr ""
+msgstr "如果您想要更改用户名，那我们推荐用同一个邮箱地址<strong>创建一个新账户</strong>。"
 
 #: help/templates/help/faq/user_account.html:349
 msgid "How to sign a message using Bitcoin client?"
@@ -2321,7 +2338,7 @@ msgstr ""
 
 #: help/templates/help/faq/user_account.html:363
 msgid "I can not reset my password, what should I do?"
-msgstr ""
+msgstr "我无法重置密码。怎么办？"
 
 #: help/templates/help/faq/user_account.html:368
 msgid ""
@@ -2335,6 +2352,8 @@ msgid ""
 "please feel free to contact our <a href=\"%(support)s\" target=\"_blank\" "
 "class=\"ext\">support</a>."
 msgstr ""
+"如果确认邮件既不在您的收件箱也不在垃圾箱的话，请联系我们的<a href=\"%(support)s\" target=\"_blank\" class="
+"\"ext\">技术支持</a>。"
 
 #: help/templates/help/first-aid/resources.html:12
 msgid "Available information resources"
@@ -2359,6 +2378,8 @@ msgid ""
 "For fresh and fast updates on pool operation status visit our <a href="
 "\"%(fb_url)s\" target=\"_blank\" class=\"ext\">Facebook pages</a>."
 msgstr ""
+"关于矿池运作状态的最新最快的更新请查看我们的<a href=\"%(fb_url)s\" target=\"_blank\" class=\"ext\""
+">Facebook</a>。"
 
 #: help/templates/help/first-aid/resources.html:16
 msgid "Ask questions"
@@ -2387,7 +2408,7 @@ msgid ""
 "Please make sure the answer to your question can not be found in one of the "
 "following sources. This way we can maintain high response rate of our "
 "Support services."
-msgstr ""
+msgstr "请确认您的问题在以下的信息里找不到解决方案。这样能保证我们技术支持服务的高效回复。"
 
 #: help/templates/help/first-aid/resources.html:28
 msgid "When Submitting a Support System Ticket"
@@ -2419,7 +2440,7 @@ msgstr ""
 
 #: help/templates/help/first-aid/resources.html:39
 msgid "See what's new"
-msgstr ""
+msgstr "看看有什么更新"
 
 #: help/templates/help/first-aid/resources.html:40
 msgid "Facebook page"
