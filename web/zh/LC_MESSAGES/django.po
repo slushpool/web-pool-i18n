@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-31 11:26+0200\n"
-"PO-Revision-Date: 2016-12-20 20:02+0000\n"
+"PO-Revision-Date: 2017-01-09 21:59+0000\n"
 "Last-Translator: xu <samanthaxu1987@163.com>\n"
 "Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-"
 "cz/mining/zh/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.10\n"
+"X-Generator: Weblate 2.11-dev\n"
 
 #: api/exceptions.py:10
 msgctxt "UI"
@@ -396,9 +396,8 @@ msgid "FAQ: Pool features"
 msgstr "常见问题：矿池特性"
 
 #: help/help_categories.py:173
-#, fuzzy
 msgid "Monitoring, Vardiff, luck"
-msgstr ""
+msgstr "监控，变量困难度，运气"
 
 #: help/help_categories.py:182 help/templates/help/first-aid/resources.html:24
 msgid "User Manual"
@@ -848,13 +847,14 @@ msgid ""
 msgstr "您可以在报酬历史里通过点击滑动开关来切换比特币和Namecoin的历史。您可以在报酬历史界面右上角看到切换的开关。"
 
 #: help/templates/help/faq/merged_mining.html:87
-#, fuzzy
 msgid ""
 "Your <strong>Reward</strong> column displays the amount of Bitcoins that "
 "belong to you after we have traded the Namecoin block. The Bitcoins for the "
 "traded Namecoin block are being fairly distributed among miners based on the "
 "same scoring hash-rate formula which we use for Bitcoin rewards distribution."
-msgstr "您的<strong>报酬</strong>栏显示"
+msgstr ""
+"您的<strong>报酬</strong>栏显示我们交易Namecoin矿区后属于您的比特币值。交易Namecoin矿区得到的比特币是公平按照比特币报酬分"
+"配同样的指数加权方式在挖矿用户间分配的。"
 
 #: help/templates/help/faq/merged_mining.html:88
 msgid ""
@@ -1333,7 +1333,7 @@ msgstr "要检查您的矿工是否正确配置好，您可以参考下面的线
 msgid ""
 "Submitting shares in the mining software. For ASIC miners the submission "
 "rate should be around <strong>1 share every 2-3 seconds</strong>."
-msgstr ""
+msgstr "挖矿软件上提交shares。就ASIC矿机提交的速率应该约<strong>每2-3秒1个share</strong>。"
 
 #: help/templates/help/faq/mining_setup.html:68
 msgid ""
@@ -1464,7 +1464,7 @@ msgstr "什么是Vardiff及它怎么运作的？"
 msgid ""
 "Shortcut for <strong>Variable Difficulty</strong>. Our pool monitors the "
 "power of your mining rig and adjusts the difficulty of work being sent."
-msgstr ""
+msgstr "<strong>变量难度</strong>的简洁理解。我们矿池会监控您的挖矿设备们并调整分配工作的难度值。"
 
 #: help/templates/help/faq/pool.html:33
 #, python-format
@@ -1484,6 +1484,8 @@ msgid ""
 "sail we HAD</strong> in finding new blocks. We are no wizards to see the "
 "future."
 msgstr ""
+"俗话说就是-运气。它在任何程度上<strong>并不影响您将来的挖矿</strong>，但它显示了在寻找新矿区时<strong>我们曾经的流畅运行程度</"
+"strong>。我们不是巫师并无法预测未来。"
 
 #: help/templates/help/faq/pool.html:48
 msgid "Pool found block faster than average &rarr; Good luck."
@@ -1657,6 +1659,9 @@ msgid ""
 "\">link</a>. Click on the confirmation link which will be sent to your e-"
 "mail."
 msgstr ""
+"匿名性是深深融入我们公司理念的核心价值观之一。因此我们不收集任何个人信息并且我们的<strong>注册流程是非常简单的</strong>。请在随后的<a "
+"href=\"%(register)s\">链接</a>填入必要的信息如<strong>用户名</strong>，<strong>邮箱地址</strong"
+">和<strong>密码</strong>。在邮箱里点击发送给您的确认链接。"
 
 #: help/templates/help/faq/user_account.html:30
 msgid "What is the payout address and where can I find it?"
@@ -1683,6 +1688,12 @@ msgid ""
 "\"%(bitcoin)s\" target=\"_blank\" class=\"ext\">www.bitcoin.org</a> as well "
 "and let it create one Bitcoin receiving address for you."
 msgstr ""
+"因为TREZOR是目前市场上最安全的装置所以我们强烈推荐使用<a href=\"%(trezor)s\" target=\"_blank\" class="
+"\"ext\">比特币TREZOR</a>作为您的储存方式。我们同样也推荐其他的钱包供应商如<strong>Bitcoin-Qt</strong>，<st"
+"rong>Electrum</strong>和<strong>Multibit</strong>，它们都有<strong>信息签送</strong>的特性"
+"。此特性在您<strong>锁定钱包</strong>或<strong>双重认证验证码遗失</strong>权限的情况下非常有用。您可以在<a href="
+"\"%(bitcoin)s\" target=\"_blank\" class=\"ext\""
+">www.bitcoin.org</a>下载独立客户端并让它为您创建一个比特币接受地址。"
 
 #: help/templates/help/faq/user_account.html:35
 msgid "Once you have it:"
@@ -1817,6 +1828,9 @@ msgid ""
 "strong>, which have the feature of message signing. In that case please "
 "follow instructions below:"
 msgstr ""
+"如果您没有邮箱的权限，只有比特币支付地址的秘钥，仍有机会。此机会只在您使用<strong>TREZOR</strong>或<strong>Bitcoin-"
+"Qt</strong>，<strong>Electrum</strong>或<strong>Multibit</strong>的情况下有用，即它们有信息签"
+"送的特性。您可以按如下操作："
 
 #: help/templates/help/faq/user_account.html:96
 #, python-format
@@ -2223,6 +2237,8 @@ msgid ""
 "against it and it will be <strong>automatically deleted</strong> after "
 "<strong>one year of your inactivity</strong>."
 msgstr ""
+"一旦您决定关闭挖矿操作，有两种选择。您可以不再登录或使用它挖矿，它就会在<strong>您不活动1年</strong>后<strong>自动被删除</st"
+"rong>。"
 
 #: help/templates/help/faq/user_account.html:301
 msgid ""
@@ -2230,6 +2246,8 @@ msgid ""
 "if all rewards were already paid</strong> to your payout address "
 "<strong>before taking any action</strong>."
 msgstr ""
+"如果您决定自己删除请记得<strong>检查是否所有报酬已支付</strong>到您的支付地址<strong>，在<strong>采取任何操作前</str"
+"ong>。"
 
 #: help/templates/help/faq/user_account.html:302
 msgid "If you still have <strong>non-zero balance</strong> then:"
@@ -2303,7 +2321,7 @@ msgstr "如果您想要更改用户名，那我们推荐用同一个邮箱地址
 
 #: help/templates/help/faq/user_account.html:349
 msgid "How to sign a message using Bitcoin client?"
-msgstr ""
+msgstr "怎么使用比特币客户端签送信息？"
 
 #: help/templates/help/faq/user_account.html:352
 #, python-format
@@ -2313,6 +2331,9 @@ msgid ""
 "Qt</strong> or <strong>Multibit</strong> wallet. However signing process "
 "with other wallets is similar."
 msgstr ""
+"我们的<a href=\"%(link)s\" target=\"_blank\" class=\"ext\""
+">知识库文章</a>有解释怎么使用，在您用<strong>Bitcoin-"
+"Qt</strong>或<strong>Multibit</strong>钱包的情况下。但使用其他钱包的签名流程也是类似的。"
 
 #: help/templates/help/faq/user_account.html:353
 #, python-format
@@ -2322,6 +2343,8 @@ msgid ""
 "since it is the safest device currently available on the market. Great thing "
 "is that MyTrezor.com supports <strong>message signing</strong> by default."
 msgstr ""
+"然而我们更推荐您购买和使用<a href=\"%(link)s\" target=\"_blank\" class=\"ext\">比特币TREZOR</"
+"a>最为存储方式，因为它是目前市场上最安全的设备。更棒的是MyTrezor.com默认支持<strong>信息签送</strong>。"
 
 #: help/templates/help/faq/user_account.html:354
 #, python-format
@@ -2335,6 +2358,10 @@ msgid ""
 "bitcoin.org</a> as well and let it create one Bitcoin receiving address for "
 "you."
 msgstr ""
+"此外市场上同样有其他钱包供应商。我们推荐如<strong>Bitcoin-Qt</strong>，<strong>Electrum</strong>或<s"
+"trong>Multibit</strong>，这些有<strong>信息签送</strong>特性的。此特性在您<strong>锁定钱包</strong"
+">或<strong>双重认证验证码遗失</strong>的情况下非常有用。您可以从<a href=\"%(link)s\" class=\"ext\""
+">www.bitcoin.org</a>直接下载客户端并让它为您创建比特币接收地址。"
 
 #: help/templates/help/faq/user_account.html:363
 msgid "I can not reset my password, what should I do?"
@@ -2424,7 +2451,7 @@ msgstr "提供尽可能多的信息。"
 
 #: help/templates/help/first-aid/resources.html:32
 msgid "Including logs and/or screenshots where applicable."
-msgstr ""
+msgstr "包括日志和/或使用的屏幕截图。"
 
 #: help/templates/help/first-aid/resources.html:35
 #, python-format
@@ -2719,6 +2746,8 @@ msgid ""
 "your <strong>mining server URL's stay the same and we will notify you well "
 "ahead in case of any change</strong>."
 msgstr ""
+"即使网站现在托管在<a href=\"%(url)s\""
+">%(name)s</a>，您的<strong>挖矿服务器URL保持不变且我们会在有任何改变的情况下通知您</strong>。"
 
 #: help/templates/help/manual/getting_started.html:78
 msgid "3. Setup your payout address"
@@ -2831,12 +2860,12 @@ msgstr "我们简洁的挖矿官方文件。"
 msgid ""
 "1. <span>I am new to mining.</span> What do I need <span>to start mining?</"
 "span>"
-msgstr ""
+msgstr "1，<span>我是新手</span>我需要什么<span>来开始挖矿？</span>"
 
 #: help/templates/help/manual/mining_beginners.html:13
 msgid ""
 "First of all you need <strong>specialized hardware (ASIC miner)</strong>"
-msgstr ""
+msgstr "首先您需要<strong>专用硬件(ASIC miner)</strong>"
 
 #: help/templates/help/manual/mining_beginners.html:15
 msgid ""
@@ -2857,6 +2886,8 @@ msgid ""
 "here: <a href=\"%(url)s\" target=\"_blank\">%(globe)s Mining hardware "
 "comparison</a>"
 msgstr ""
+"如果您<strong>没有</strong>任何ASIC矿机那么您可以先在此研究：<a href=\"%(url)s\" target=\""
+"_blank\">%(globe)s挖矿硬件比较</a>"
 
 #: help/templates/help/manual/mining_beginners.html:19
 msgid "2. <span>Required</span> software"
@@ -2873,21 +2904,23 @@ msgid ""
 "calculator</a> to determine how much you can make with your mining hardware. "
 "Just insert your hash rate and you will see approximate reward."
 msgstr ""
+"您可以使用<a href=\"%(url)s\" target=\"_blank\""
+">%(globe)s在线计算器</a>来判断您的挖矿硬件能有多大效率。只需输入您的hash速率就可以看到估算的报酬。"
 
 #: help/templates/help/manual/mining_beginners.html:44
 msgid "4. Connecting your ASIC miner <span>to the pool</span>"
-msgstr ""
+msgstr "4，连接您的ASIC矿机<span>到矿池</span>"
 
 #: help/templates/help/manual/mining_beginners.html:46
 msgid ""
 "Once your ASIC miner has been delivered and you installed required software "
 "please continue with following article regarding your miner setup and "
 "connecting it to our pool:"
-msgstr ""
+msgstr "在您的ASIC矿机被送达并安装要求的软件后请参照下面的文章来设置您的挖矿并连接到我们的矿池："
 
 #: help/templates/help/manual/mining_beginners.html:49
 msgid "5. <span>How do i find my</span> Bitcoin address?"
-msgstr ""
+msgstr "5，<span>我怎么找到我的</span>比特币地址？"
 
 #: help/templates/help/manual/mining_beginners.html:50
 msgid ""
@@ -2898,17 +2931,20 @@ msgid ""
 "<strong>Electrum.org</strong>, <strong>BitcoinArmory.com</strong> and others "
 "where you can easily create your own wallet."
 msgstr ""
+"矿池并不是比特币钱包。因此在矿池网站上无法生成您的支付地址。市场上有许多比特币钱包供应商如<strong>myTrezor.com</strong>，<s"
+"trong>Mycelium.com</strong>，<strong>Greenaddress.it</strong>，<strong>Electrum"
+".org</strong>，<strong>BitcoinArmory.com</strong>等等，您可以很容易创建您的钱包。"
 
 #: help/templates/help/manual/mining_beginners.html:51
 #, python-format
 msgid ""
 "Once you have it go to <a href=\"%(account_settings)s\">Payouts tab here</a> "
 "and set it as your payout address."
-msgstr ""
+msgstr "一旦您有了地址之后去<a href=\"%(account_settings)s\">支付标签</a>并设置它为您的报酬地址。"
 
 #: help/templates/help/manual/mining_beginners.html:53
 msgid "Further questions?"
-msgstr ""
+msgstr "更多问题？"
 
 #: help/templates/help/manual/mining_beginners.html:55
 #, python-format
@@ -2916,13 +2952,13 @@ msgid ""
 "Do you have more questions? If you are serious about mining then please read "
 "<a href=\"%(url)s\">following useful articles</a> which will help you "
 "mastering at our pool."
-msgstr ""
+msgstr "您有更多问题吗？如果您很认真考虑挖矿请阅读<a href=\"%(url)s\">随后的有用文章</a>来掌握我们矿池的使用。"
 
 #: help/templates/help/manual/mining_beginners.html:57
 msgid ""
 "We would like to recommend <strong>Bitcoin Mining</strong> thread on "
 "<strong>Reddit</strong> which is a nice place to start as well:"
-msgstr ""
+msgstr "我们想推荐<strong>Reddit论坛</strong>上关于<strong>比特币挖矿</strong>的帖子，也是不错的出发点："
 
 #: help/templates/help/manual/monitoring.html:15
 msgid "Why should I care?"
@@ -3180,7 +3216,7 @@ msgstr "您可以得到的比特币数量"
 
 #: help/templates/help/manual/payouts.html:14
 msgid "Payout routines and frequency"
-msgstr ""
+msgstr "支付例行和频率"
 
 #: help/templates/help/manual/payouts.html:15
 msgid "Fees paid from every payout"
@@ -4289,7 +4325,7 @@ msgstr "请选中您想退订的账户。"
 #: mailing/templates/mailing/unsubscribe.html:19
 msgctxt "UI"
 msgid "If you care to, you can give me some feedback."
-msgstr ""
+msgstr "如果您关心，可以给我一些反馈。"
 
 #: mailing/templates/mailing/unsubscribe.html:39
 msgctxt "UI"
@@ -4387,14 +4423,14 @@ msgstr "监控系统会根据您的矿工的过去活动情况自动估量其has
 #: mining/models.py:388
 msgctxt "UI"
 msgid "-- not voted --"
-msgstr ""
+msgstr "-- 没投票 --"
 
 #: mining/models.py:389
 msgctxt "UI"
 msgid ""
 "Users that don't have any preference = their hash rate is split among all "
 "block size proposals proportionally."
-msgstr ""
+msgstr "没有任何偏好的用户=他们的hash速率按比例分散分配给所有不同矿区大小的提议。"
 
 #: mining/models.py:390
 msgctxt "UI"
@@ -4404,14 +4440,14 @@ msgstr "未投票"
 #: mining/models.py:395
 msgctxt "UI"
 msgid "Current rules / Bitcoin Core"
-msgstr ""
+msgstr "当前规定/Bitcoin Core"
 
 #: mining/models.py:396
 msgctxt "UI"
 msgid ""
 "Users that prefer Current rules given by Bitcoin core = their hash rate is "
 "used for mining Bitcoin Core blocks."
-msgstr ""
+msgstr "偏好Bitcoin core当前规定的用户=他们的hash速率用于挖Bitcoin Core矿区。"
 
 #: mining/models.py:397
 msgctxt "UI"
@@ -4421,14 +4457,14 @@ msgstr "Bitcoin Core"
 #: mining/models.py:402
 msgctxt "UI"
 msgid "Bitcoin Classic / BIP109"
-msgstr ""
+msgstr "Bitcoin Classic / BIP109"
 
 #: mining/models.py:403
 msgctxt "UI"
 msgid ""
 "Users that prefer Bitcoin Classic rules = their hash rate is used for mining "
 "Bitcoin Classic blocks (BIP109)."
-msgstr ""
+msgstr "偏好Bitcoin Classic规定的用户=他们的hash速率用于挖Bitcoin Classic矿区(BIP109)。"
 
 #: mining/models.py:404
 msgctxt "UI"
@@ -4438,31 +4474,31 @@ msgstr "Bitcoin Classic"
 #: mining/models.py:409
 msgctxt "UI"
 msgid "8MB - BIP100"
-msgstr ""
+msgstr "8MB - BIP100"
 
 #: mining/models.py:410
 msgctxt "UI"
 msgid ""
 "Users that prefer 8MB blocks = their hash rate is used for mining 8MB blocks "
 "(BIP 100)."
-msgstr ""
+msgstr "偏好8MB blocks的用户=他们的hash速率用于挖8MB blocks矿区(BIP100)。"
 
 #: mining/models.py:411
 msgctxt "UI"
 msgid "8MB (BIP100)"
-msgstr ""
+msgstr "8MB (BIP100)"
 
 #: mining/models.py:416
 msgctxt "UI"
 msgid "Bitpay's Adaptive block size"
-msgstr ""
+msgstr "Bitpay的Adaptive block大小"
 
 #: mining/models.py:417
 msgctxt "UI"
 msgid ""
 "Users that prefer BitPay's Adaptive block size proposal = their hash rate is "
 "used for mining blocks with BitPay's block version."
-msgstr ""
+msgstr "偏好BitPay的Adaptive block大小的用户=他们的hash速率用于挖BitPay矿区的版本。"
 
 #: mining/models.py:418
 msgctxt "UI"
@@ -4472,37 +4508,37 @@ msgstr "Bitpay's Bitcoin"
 #: mining/models.py:423 mining/models.py:425
 msgctxt "UI"
 msgid "Bitcoin Unlimited"
-msgstr ""
+msgstr "Bitcoin Unlimited"
 
 #: mining/models.py:424
 msgctxt "UI"
 msgid ""
 "Users that prefer Bitcoin Unlimited proposal = their hash rate is used for "
 "mining blocks with Bitcoin Unlimited signature."
-msgstr ""
+msgstr "偏好Bitcoin Unlimited提议的用户=他们的hash速率用于挖有Bitcoin Unlimited签名的矿区。"
 
 #: mining/models.py:430
 msgctxt "UI"
 msgid "I don't care, pool AI decides on her own"
-msgstr ""
+msgstr "I don't care，矿池人工智能自行决定"
 
 #: mining/models.py:431
 msgctxt "UI"
 msgid ""
 "Users that set I don't care option = pool AI decides on her own which block "
 "size is closest to her heart."
-msgstr ""
+msgstr "设置了I don't care选项的用户=矿池人工智能自行决定矿池大小。"
 
 #: mining/models.py:432
 msgctxt "UI"
 msgid "Don't care"
-msgstr ""
+msgstr "无所谓"
 
 #: mining/models.py:456
 msgctxt "UI"
 msgid ""
 "Express your attitude to forks that may take place on the Bitcoin network."
-msgstr ""
+msgstr "表达您对可能发生在比特币网络上的分叉的态度。"
 
 #: mining/validators.py:13 web/forms.py:403
 msgctxt "UI"
@@ -4843,12 +4879,12 @@ msgstr "签名过期。"
 #: settings/api/v1/api_actions.py:78
 msgctxt "UI"
 msgid "Invalid request, you don't have any wallet."
-msgstr ""
+msgstr "无效的请求，您没有任何钱包。"
 
 #: settings/api/v1/api_actions.py:81
 msgctxt "UI"
 msgid "Invalid request, wallet is allready locked."
-msgstr ""
+msgstr "无效的请求，钱包已被锁定。"
 
 #: settings/api/v1/api_actions.py:86
 msgctxt "UI"
@@ -4909,17 +4945,17 @@ msgstr "双重认证令牌无效。请重新扫描二维码（已生成一个新
 #: settings/forms/otp_setting_forms.py:139
 msgctxt "UI"
 msgid "User doesn't have OTP."
-msgstr ""
+msgstr "用户没有一次性密码。"
 
 #: settings/forms/payouts_settings_form.py:50
 msgctxt "UI"
 msgid "You cant change locked wallet."
-msgstr ""
+msgstr "您不能更改已锁定的钱包。"
 
 #: settings/forms/payouts_settings_form.py:53
 msgctxt "UI"
 msgid "New wallet is already set."
-msgstr ""
+msgstr "新钱包已设置。"
 
 #: settings/templates/settings/home.html:4
 #: user_request/templates/user_request/otp.html:4
@@ -4997,7 +5033,7 @@ msgstr "统计"
 #: user_request/templates/user_request/otp.html:9
 msgctxt "UI"
 msgid "Second Factor Verification"
-msgstr ""
+msgstr "双重验证"
 
 #: user_request/templates/user_request/otp.html:11
 msgctxt "UI"
@@ -5009,7 +5045,7 @@ msgctxt "UI"
 msgid ""
 "Enter OTP token from your <strong>Google Authenticator</strong> or similar "
 "<strong>2FA client</strong>"
-msgstr ""
+msgstr "输入来自您<strong>谷歌身份验证器</strong>或来自类似<strong>双重验证客户端</strong>的一次性密码令牌"
 
 #: user_request/templates/user_request/otp.html:18
 msgctxt "UI"
@@ -5024,7 +5060,7 @@ msgstr "FIDO验证"
 #: user_request/templates/user_request/otp.html:45
 msgctxt "UI"
 msgid "Connect your <strong>U2F device</strong> and confirm your request on it"
-msgstr ""
+msgstr "连接您的<strong>双重验证装置</strong>并从上面确认请求"
 
 #: web/auth_views.py:186
 msgctxt "UI"
@@ -5039,12 +5075,12 @@ msgstr "验证码"
 #: web/forms.py:59
 msgctxt "UI"
 msgid "Read only login token"
-msgstr ""
+msgstr "只读登录令牌"
 
 #: web/forms.py:71
 msgctxt "UI"
 msgid "User is not active"
-msgstr ""
+msgstr "用户未激活"
 
 #: web/forms.py:155
 msgctxt "UI"
@@ -5379,7 +5415,7 @@ msgstr "接收关于提议更改的通知"
 #: web/models.py:224
 msgctxt "UI"
 msgid "Readonly login token"
-msgstr ""
+msgstr "只读登录令牌"
 
 #: web/models.py:256
 msgctxt "UI"
@@ -5483,7 +5519,7 @@ msgstr "<b>%(key)s</b> 更改从 <b>%(old)s</b> 到 <b>%(new)s</b>"
 #: web/models.py:869
 msgctxt "UI"
 msgid "Depricated"
-msgstr ""
+msgstr "已弃用"
 
 #: web/models.py:881
 msgctxt "UI"
@@ -5513,7 +5549,7 @@ msgstr "首选时区"
 #: web/models.py:938
 msgctxt "UI"
 msgid "Blockchain voting"
-msgstr ""
+msgstr "矿区链投票"
 
 #: web/models.py:942
 msgctxt "UI"
@@ -5750,7 +5786,7 @@ msgstr "无效的登录"
 #: web/models.py:1025
 msgctxt "UI"
 msgid "Invalid login to readonly mode"
-msgstr ""
+msgstr "只读模式的无效登录"
 
 #: web/registration.py:53
 msgctxt "UI"
@@ -5804,7 +5840,7 @@ msgctxt "UI"
 msgid ""
 "Your opinion on block size matters to the whole community. It is up to you "
 "to make a choice. Please, select one of the options below."
-msgstr ""
+msgstr "您对矿区大小的意见影响到整个社区。一切取决于您，所以请从下面的选项中选一个。"
 
 #: web/api/v1/appeals.py:122
 #, python-format
@@ -5814,16 +5850,18 @@ msgid ""
 "\"%(settings)s\">settings</a>. Check out the latest <a href=\"%(stats)s"
 "\">results</a>."
 msgstr ""
+"如果您之后改变主意了，您可以在<a href=\"%(settings)s\">设置</a>里重新选择。查看最新<a href=\"%(stats)s\""
+">结果</a>。"
 
 #: web/templates/404.html:3
 msgctxt "UI"
 msgid "Page Not Found"
-msgstr ""
+msgstr "页面未找到"
 
 #: web/templates/404.html:7
 msgctxt "UI"
 msgid "Looks like you got lost."
-msgstr ""
+msgstr "看来您好像迷路了。"
 
 #: web/templates/404.html:8
 msgctxt "UI"
@@ -5861,6 +5899,8 @@ msgid ""
 "Please enable <strong>javascript</strong> to see all features of this "
 "website. (<a href=\"%(url)s\" target=\"_blank\">see how…</a>)"
 msgstr ""
+"请启用<strong>javascript</strong>来使用网站上的所有特性。(<a href=\"%(url)s\" target=\""
+"_blank\">查看如何…</a>)"
 
 #: web/templates/base.html:165
 msgctxt "UI"
@@ -5970,7 +6010,7 @@ msgstr ""
 
 #: web/templates/base.html:345
 msgid "Denied!"
-msgstr ""
+msgstr "拒绝！"
 
 #: web/templates/base.html:348
 msgctxt "UI"
@@ -6256,7 +6296,7 @@ msgctxt "UI"
 msgid ""
 "Looking for mining URLs? Read how to <a href=\"%(link)s\" class=\"alert-link"
 "\">get started</a>!"
-msgstr ""
+msgstr "查找挖矿URLs？阅读怎么<a href=\"%(link)s\" class=\"alert-link\">开始</a>！"
 
 #: web/templates/homepage.html:24
 msgctxt "UI"
@@ -6557,7 +6597,7 @@ msgstr "忘记密码？"
 #: web/templates/login.html:32
 msgctxt "UI"
 msgid "Can't login?"
-msgstr ""
+msgstr "无法登录？"
 
 #: web/templates/login.html:38
 msgctxt "UI"
@@ -7496,7 +7536,7 @@ msgstr "矿池费用是2%%（以区块报酬和交易费用之和来计算）。
 msgctxt "terms"
 msgid ""
 "Fees from bitcoin transactions are paid to miners that use Stratum interface."
-msgstr ""
+msgstr "比特币交易的费用用于支付使用Stratum接口的挖矿用户。"
 
 #: web/templates/terms-of-service.html:31
 msgctxt "terms"
@@ -7631,20 +7671,20 @@ msgstr "已发布："
 
 #: web/templates/djangocms_blog/post_list.html:11
 msgid "Articles by"
-msgstr ""
+msgstr "文章出自"
 
 #: web/templates/djangocms_blog/post_list.html:12
 #: web/templates/djangocms_blog/plugins/archive.html:3
 msgid "Archive"
-msgstr ""
+msgstr "存档"
 
 #: web/templates/djangocms_blog/post_list.html:13
 msgid "Tag"
-msgstr ""
+msgstr "标签"
 
 #: web/templates/djangocms_blog/post_list.html:14
 msgid "Category"
-msgstr ""
+msgstr "分类"
 
 #: web/templates/djangocms_blog/post_list.html:21
 #: web/templates/djangocms_blog/plugins/archive.html:26
@@ -7672,7 +7712,7 @@ msgstr "下"
 
 #: web/templates/djangocms_blog/includes/blog_meta.html:5
 msgid "by"
-msgstr ""
+msgstr "由"
 
 #: web/templates/djangocms_blog/plugins/archive.html:17
 #: web/templates/djangocms_blog/plugins/authors.html:10
@@ -7681,30 +7721,30 @@ msgstr ""
 #, python-format
 msgid "1 article"
 msgid_plural "%(articles)s articles"
-msgstr[0] ""
+msgstr[0] "1文章"
 
 #: web/templates/djangocms_blog/plugins/archive.html:18
 #: web/templates/djangocms_blog/plugins/authors.html:11
 #: web/templates/djangocms_blog/plugins/categories.html:12
 #: web/templates/djangocms_blog/plugins/tags.html:11
 msgid "0 articles"
-msgstr ""
+msgstr "0文章"
 
 #: web/templates/djangocms_blog/plugins/authors.html:3
 msgid "Authors"
-msgstr ""
+msgstr "作者"
 
 #: web/templates/djangocms_blog/plugins/categories.html:3
 msgid "Categories"
-msgstr ""
+msgstr "分类"
 
 #: web/templates/djangocms_blog/plugins/categories.html:17
 msgid "No categories found."
-msgstr ""
+msgstr "未发现分类。"
 
 #: web/templates/djangocms_blog/plugins/tags.html:3
 msgid "Tags"
-msgstr ""
+msgstr "标签"
 
 #: web/templates/email/_base.html:2 web/templates/email/_base_graphic.html:24
 msgctxt "UI"
@@ -7719,7 +7759,7 @@ msgstr "Slush矿池"
 #: web/templates/email/_base.html:8
 msgctxt "UI"
 msgid "Mine as one."
-msgstr ""
+msgstr "一体挖矿。"
 
 #: web/templates/email/account_delete.html:5
 #, python-format
@@ -7776,7 +7816,7 @@ msgctxt "UI"
 msgid ""
 "The pool logic is set so that it automatically deactivates unused user "
 "accounts in order to keep the database compact and reliable."
-msgstr ""
+msgstr "矿池的逻辑被设置为会自动将不使用的用户账户停用，以便维护数据库的简洁性和可靠性。"
 
 #: web/templates/email/account_delete_warning.templ.html:7
 #, python-format
@@ -7785,7 +7825,7 @@ msgid ""
 "If you do not use the services of our pool in the following %(days)s days, "
 "your account will be disabled and any remaining coins will be considered a "
 "kind donation to the pool."
-msgstr ""
+msgstr "如果您在之后%(days)s天里都不使用我们矿池的服务，您的账户将会被禁用且账户上剩余的币将被视作对矿池的捐献。"
 
 #: web/templates/email/account_delete_warning.templ.html:8
 #, python-format
@@ -7793,7 +7833,7 @@ msgctxt "UI"
 msgid ""
 "To prevent your account from being disabled, please log into your profile on "
 "the pool website at <a href=\"%(site_url)s\">%(site_url)s</a>."
-msgstr ""
+msgstr "防止您的账户被禁用，请到矿池网站<a href=\"%(site_url)s\">%(site_url)s</a>登录到您的账户。"
 
 #: web/templates/email/account_delete_warning.templ.html:9
 #, python-format
@@ -7893,6 +7933,7 @@ msgid ""
 "In case you did NOT initiate this change, please, contact us at <a href="
 "\"mailto:%(support_email)s\">%(support_email)s</a>"
 msgstr ""
+"如果不是您本人操作，请联系我们<a href=\"mailto:%(support_email)s\">%(support_email)s</a>"
 
 #: web/templates/email/password_reset.html:11
 msgid "Reset password"
@@ -7931,17 +7972,12 @@ msgstr ""
 ">%(wallet_info)s</a>查看当前报酬支付状态"
 
 #: web/templates/email/payout.html:8
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "If you see payment on Blockchain.info but not in your bitcoin client, please "
 "verify that your client is up to the latest block or ask on Bitcoin forum "
 "for any other help."
-msgstr ""
-"比特币网络的支付处理可能在30分钟到3小时之间。您可以从<a href="
-"\"%(wallet_info)s\">%(wallet_info)s</a>查看现时支付状态。如果您在矿区链上看到"
-"付款，在您的比特币客户端却没有相关信息，请查证您的客户端已到最新矿区或者向比"
-"特币论坛寻求帮助。"
+msgstr "如果您在Blockchain.info看到支付，但在您的比特币客户端没有，请确认您的客户端已更新到最新区块或者在比特币论坛寻求其他帮助。"
 
 #: web/templates/email/proposal_state_update.html:13
 msgid "View your proposal"
@@ -8049,7 +8085,7 @@ msgstr "矿池指数加权hash速率"
 #: web/templates/layout_items/pool_luck.html:3
 msgctxt "UI"
 msgid "Pool Luck (current round, 10, 50, 250 blocks)"
-msgstr ""
+msgstr "矿池运气(此轮, 10, 50, 250 blocks)"
 
 #: web/templates/layout_items/time.html:3
 msgctxt "UI"
