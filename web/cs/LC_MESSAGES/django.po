@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slush's pool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-31 11:25+0200\n"
+"POT-Creation-Date: 2017-03-13 19:32+0100\n"
 "PO-Revision-Date: 2016-08-31 09:33+0000\n"
 "Last-Translator: Josef Kubíček <kubijo@gmail.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-"
-"cz/mining/cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
+"cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,129 +19,133 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 2.8\n"
 
-#: api/exceptions.py:10
+#: api/core.py:219
+msgid "Request payload expected, but not supplied!"
+msgstr ""
+
+#: api/exceptions.py:11
 msgctxt "UI"
 msgid "Unknown error"
 msgstr "Neznámá chyba"
 
 #. Translators: %s will be format description, eg.: JSON
-#: api/exceptions.py:27
+#: api/exceptions.py:28
 #, python-format
 msgctxt "UI"
 msgid "Request is not a %s"
 msgstr "Požadavek není %s"
 
 #. Translators: %s will be format description, eg.: JSON
-#: api/exceptions.py:33
+#: api/exceptions.py:34
 #, python-format
 msgctxt "UI"
 msgid "Response is not a %(format)s serializable"
 msgstr "Dotaz %(format)s není serializovatelný"
 
-#: api/exceptions.py:38
+#: api/exceptions.py:39
 msgctxt "UI"
 msgid "Need authentication"
 msgstr "Autentizace vyžadována"
 
 #. Translators: %s will be api method, eg.: get, list, get_facts, etc.
-#: api/exceptions.py:44
+#: api/exceptions.py:45
 #, python-format
 msgctxt "UI"
 msgid "Method %s is not allowed"
 msgstr "Metoda %s není povolena"
 
 #. Translators: %s will be api method, eg.: get, list, get_facts, etc.
-#: api/exceptions.py:50
+#: api/exceptions.py:51
 #, python-format
 msgctxt "UI"
 msgid "Method %s doesn't exist"
 msgstr "Metoda %s neexistuje"
 
-#: api/exceptions.py:55
+#: api/exceptions.py:56
 msgctxt "UI"
 msgid "Non-existent or expired token used"
 msgstr "Byl použit neexistující nebo neplatný token"
 
-#: api/exceptions.py:60
+#: api/exceptions.py:61
 msgctxt "UI"
 msgid "The method is not allowed in read only mode"
 msgstr "V módu pouze pro čtení není metoda povolena"
 
-#: api/exceptions.py:65
+#: api/exceptions.py:66
 msgctxt "UI"
-msgid "Bad request"
-msgstr "Neplatný požadavek"
+msgid "Bad request."
+msgstr "Neplatný požadavek."
 
-#: api/exceptions.py:70
+#: api/exceptions.py:75
 msgctxt "UI"
 msgid "Method not found"
 msgstr "Metoda nenalezena"
 
 #. Translators: %s = worker, label, ...
-#: api/exceptions.py:76
+#: api/exceptions.py:81
 #, python-format
 msgctxt "UI"
 msgid "Bulk %s creation is not allowed"
 msgstr "Dávkové vytvoření %s není povoleno"
 
 #. Translators: %s = worker, label, ...
-#: api/exceptions.py:82
+#: api/exceptions.py:87
 #, python-format
 msgctxt "UI"
 msgid "Bulk %s deletion is not allowed"
 msgstr "Dávkové smazání %s není povoleno"
 
 #. Translators: "Label / Worker can't be removed".
-#: api/exceptions.py:88
+#: api/exceptions.py:93
 #, python-format
 msgctxt "UI"
 msgid "%s can't be removed"
 msgstr "%s nemůže být odebrán"
 
 #. Translators: %s = worker, label, ...
-#: api/exceptions.py:94
+#: api/exceptions.py:99
 #, python-format
 msgctxt "UI"
 msgid "Access denied to object: %s"
 msgstr "Zakázán přístup k objektu: %s"
 
-#: api/exceptions.py:99
+#: api/exceptions.py:104
 #, python-format
 msgctxt "UI"
 msgid "Worker \"%s\" already exists"
 msgstr "Zařízení %s již existuje"
 
-#: api/exceptions.py:104
+#: api/exceptions.py:109
 #, python-format
 msgctxt "UI"
 msgid "Label \"%s\" already exists"
 msgstr "Popisek %s už existuje"
 
-#: api/exceptions.py:109
+#: api/exceptions.py:114
 msgctxt "UI"
 msgid "Label doesn't exist"
 msgstr "Popisek neexistuje"
 
-#: api/exceptions.py:114
+#: api/exceptions.py:119
 msgctxt "UI"
 msgid "Workers labels update failed"
 msgstr "Aktualizace popisků zařízení selhala"
 
-#: api/exceptions.py:119
+#: api/exceptions.py:124
 #, python-format
 msgctxt "UI"
-msgid "User doesn't have worker (%s)"
-msgstr "Uživatel nemá zařízení (%s)"
+msgid "Worker not found (%s)"
+msgstr "Zařízení (%s) nebylo nalezeno"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
-#: api/exceptions.py:125
+#: api/exceptions.py:130
 #, python-format
 msgctxt "UI"
 msgid "Slot \"%s\" not found"
 msgstr "Slot \"%s\" nenalezen"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
-#: api/exceptions.py:131
+#: api/exceptions.py:136
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -150,70 +154,86 @@ msgstr ""
 "Číslo slotu \"%s\" je neplatné. Číslo slotu musí být první vteřina v hodině."
 
 #. Translators: %s will be some invalid blockchain voting option
-#: api/exceptions.py:147
+#: api/exceptions.py:152
 #, python-format
 msgctxt "UI"
 msgid "You can't vote for \"%s\""
 msgstr "Nemůžete hlasovat pro \"%s\""
 
-#: api/exceptions.py:152
-msgctxt "UI"
-msgid "You must specify the \"coin_type\" attribute (\"BTC\" or \"NMC\")"
-msgstr "Musíte specifikovat atribut \"coin_type\" (\"BTC\" nebo \"NMC\")"
-
 #: api/exceptions.py:157
+msgctxt "UI"
+msgid "You must specify the \"coin_type\" attribute!"
+msgstr "Musíte specifikovat atribut \"coin_type\""
+
+#: api/exceptions.py:162
 msgctxt "UI"
 msgid "Missing data for HR distribution"
 msgstr "Chybí data pro distribuci HR"
 
-#: api/exceptions.py:167
+#: api/exceptions.py:172
 msgctxt "UI"
 msgid "Integrity error on worker update"
 msgstr "Chyba integrity aktualizace zařízení"
 
-#: api/exceptions.py:172
+#: api/exceptions.py:177
 msgctxt "UI"
 msgid "Worker name has already been used"
 msgstr "Jméno zařízení již bylo použito"
 
-#: api/exceptions.py:177
+#: api/exceptions.py:182
 msgctxt "UI"
 msgid "Form error"
 msgstr "Chyba formuláře"
 
 #. Translators: %s = form id
-#: api/exceptions.py:183
+#: api/exceptions.py:188
 #, python-format
 msgctxt "UI"
 msgid "Form \"%s\" doesn't exist"
 msgstr "Formulář \"%s\" neexistuje"
 
-#: api/exceptions.py:188
+#: api/exceptions.py:193
 msgctxt "UI"
 msgid "Validation error"
 msgstr "Chyba ověření"
 
-#: api/exceptions.py:193
+#: api/exceptions.py:198 api/exceptions.py:203
 msgctxt "UI"
 msgid "Form save has failed."
 msgstr "Uložení formuláře selhalo."
 
-#: api/exceptions.py:208
+#: api/exceptions.py:218
 msgctxt "UI"
 msgid "U2F device not found."
 msgstr "U2F zařízení nebylo nalezeno."
 
-#: api/exceptions.py:213
+#: api/exceptions.py:223
 msgctxt "UI"
 msgid "U2F verification failed."
 msgstr "U2F ověření selhalo."
 
-#: backend/queries.py:998 backend/queries.py:1044
+#: api/exceptions.py:228
+msgctxt "UI"
+msgid "Used device is not active yet. Use different one."
+msgstr ""
+
+#: api/exceptions.py:239
+#, fuzzy
+msgctxt "UI"
+msgid "Your pairing token expired after {} seconds. Please try again."
+msgstr "Špatné uživatelské jméno nebo heslo. Zkus to prosím znovu."
+
+#: api/exceptions.py:244
+msgctxt "UI"
+msgid "Device for given token does not exist. Please pair your device again."
+msgstr ""
+
+#: backend/queries/legacy.py:102
 msgctxt "UI, Blocks"
 msgid "Invalid"
 msgstr "Neplatný"
 
-#: backend/queries.py:1000 backend/queries.py:1046
+#: backend/queries/legacy.py:104
 msgctxt "UI, Blocks"
 msgid "Confirmed"
 msgstr "Potvrzený"
@@ -222,8 +242,8 @@ msgstr "Potvrzený"
 #: contact/forms.py:24 contact/forms.py:33 mailing/forms.py:65
 #: mailing/forms.py:66 mailing/forms.py:67 mailing/forms.py:97
 #: mailing/models.py:489 mailing/models.py:490 mailing/models.py:491
-#: mailing/models.py:492 mailing/models.py:493 news/views.py:71
-#: notifications/backends/blocks.py:23 notifications/backends/proposals.py:23
+#: mailing/models.py:492 mailing/models.py:493 news/views.py:70
+#: notifications/backends/blocks.py:23 notifications/backends/proposals.py:22
 msgid "UI"
 msgstr "UI"
 
@@ -235,55 +255,26 @@ msgstr "Vložte platnou, neprázdnou hodnotu."
 msgid "Enter a valid Email service provider."
 msgstr "Vložte platného poskytovatele emailu."
 
-#: dashboard/views.py:20
+#: devices/models.py:38
 #, python-format
 msgctxt "UI"
-msgid "Account banned. Contact pool administrator at %(link)s"
-msgstr "Účet je zablokován. Kontaktujte správce poolu na %(link)s"
+msgid "Device was not paired in time limit of %s seconds"
+msgstr ""
 
-#: dashboard/templates/dashboard/home.html:4
-#: news/templates/news/content/release-20.html:2
+#: devices/models.py:42
 msgctxt "UI"
-msgid "Dashboard"
-msgstr "Přehled"
-
-#: dashboard/templates/dashboard/msg_pending_wallet.html:2
-#, python-format
-msgid ""
-"You have pending request for changing <strong>%(currency)s</strong> wallet "
-"to <strong>%(wallet_pending)s</strong>."
+msgid "Device you are trying to pair was not found"
 msgstr ""
-"Máte nevyřízený požadavek na změnu <strong>%(currency)s</strong> peněženky "
-"na <strong>%(wallet_pending)s</strong>."
 
-#: dashboard/templates/dashboard/msg_pending_wallet.html:4
-#, python-format
-msgid ""
-"Email confirmation has been sent to '%(email)s'. Please check your mailbox "
-"and follow confirmation link."
+#: devices/models.py:46
+msgctxt "UI"
+msgid "Values for device settings must be dictionary."
 msgstr ""
-"Právě vám byl na '%(email)s' zaslán potvrzující email. Zkontrolujte prosím "
-"svou emailovou schránku a následujte zaslané instrukce."
 
-#: dashboard/templates/dashboard/msg_pending_wallet.html:6
-#, python-format
-msgid ""
-"If you didn't receive confirmation email yet, you can also <a href="
-"\"%(url_resend)s\">resend confirmation</a>."
+#: devices/models.py:50
+msgctxt "UI"
+msgid "Invalid keys supplied as device settings."
 msgstr ""
-"Pokud vám potvrzující email ještě nedorazil, můžete požádat o jeho <a href="
-"\"%(url_resend)s\">přeposlání</a>."
-
-#: dashboard/templates/dashboard/msg_pending_wallet.html:8
-#, python-format
-msgid ""
-"If you didn't initiate this change, please <a href=\"%(url_cancel)s\">cancel "
-"the request</a> and <a href=\"%(url_password_reset)s\">change your password</"
-"a> immediately."
-msgstr ""
-"Pokud jste změnu adresy nevyžádal, <a href=\"%(url_cancel)s\">zrušte tento "
-"požadavek</a> prosím a co nejdříve si <a href=\"%(url_password_reset)s"
-"\">změňte heslo</a>."
 
 #: hashrate_proof/templates/hashrate_proof/home.html:4
 msgctxt "UI"
@@ -331,199 +322,178 @@ msgstr "Stratum těžební proxy"
 msgid "Connect your legacy HW"
 msgstr "Připojte vaše starší zařízení"
 
-#: help/help_categories.py:114
+#: help/help_categories.py:113
 msgid "First Aid"
 msgstr "První pomoc"
 
-#: help/help_categories.py:116
+#: help/help_categories.py:115
 msgid "FAQ, troubleshooting, .."
 msgstr "FAQ, řešení potíží, .."
 
-#: help/help_categories.py:122
+#: help/help_categories.py:121
 msgid "Information resources"
 msgstr "Zdroje informací"
 
-#: help/help_categories.py:124
+#: help/help_categories.py:123
 msgid "Where to go for information"
 msgstr "Kde se podívat po informacích"
 
-#: help/help_categories.py:129 help/templates/help/help_intro.html:32
+#: help/help_categories.py:128 help/templates/help/help_intro.html:32
 #: help/templates/help/first-aid/resources.html:25
 msgid "Troubleshooting"
 msgstr "Řešení potíží"
 
-#: help/help_categories.py:130 help/templates/help/help_intro.html:33
+#: help/help_categories.py:129 help/templates/help/help_intro.html:33
 msgid "Did anything go wrong?"
 msgstr "Nešlo něco podle plánu?"
 
-#: help/help_categories.py:136
+#: help/help_categories.py:135
 msgid "FAQ: User Account"
 msgstr "FAQ: Uživatelský účet"
 
-#: help/help_categories.py:138
+#: help/help_categories.py:137
 msgid "User account related questions"
 msgstr "Otázky související s uživatelským účtem"
 
-#: help/help_categories.py:143
+#: help/help_categories.py:142
 msgid "FAQ: Mining Setup"
 msgstr "FAQ: Nastavení těžby"
 
-#: help/help_categories.py:145
+#: help/help_categories.py:144
 msgid "Device setup, connectivity, power"
 msgstr "Nastavení zařízení, připojení, napájení"
 
-#: help/help_categories.py:150
+#: help/help_categories.py:149
 msgid "FAQ: Merged Mining"
 msgstr "FAQ: Sloučená těžba"
 
-#: help/help_categories.py:152
+#: help/help_categories.py:151
 msgid "Namecoin mining all the way"
 msgstr "Vše o těžbě Namecoinu"
 
-#: help/help_categories.py:157
+#: help/help_categories.py:156
 msgid "FAQ: Mining"
 msgstr "FAQ: Těžba"
 
-#: help/help_categories.py:159
+#: help/help_categories.py:158
 msgid "General mining related questions"
 msgstr "Všeobecné otázky související s těžbou"
 
-#: help/help_categories.py:164
+#: help/help_categories.py:163
 msgid "FAQ: Rewards & Payouts"
 msgstr "FAQ: Odměny & Výplaty"
 
-#: help/help_categories.py:166
+#: help/help_categories.py:165
 msgid "Rewards amounts and routines"
 msgstr "Způsoby výpočtů odměn"
 
-#: help/help_categories.py:171
+#: help/help_categories.py:170
 msgid "FAQ: Pool features"
 msgstr "FAQ: Poolové funkce"
 
-#: help/help_categories.py:173
+#: help/help_categories.py:172
 msgid "Monitoring, Vardiff, luck"
 msgstr "Sledování, Vardiff, štěstí"
 
-#: help/help_categories.py:182 help/templates/help/first-aid/resources.html:24
+#: help/help_categories.py:180 help/templates/help/first-aid/resources.html:24
 msgid "User Manual"
 msgstr "Uživatelský manuál"
 
-#: help/help_categories.py:184
+#: help/help_categories.py:182
 msgid "Do you want to know more?"
 msgstr "Chcete vědět víc?"
 
-#: help/help_categories.py:190
+#: help/help_categories.py:188
 msgid "Pool Terminology"
 msgstr "Poolová terminologie"
 
-#: help/help_categories.py:191
+#: help/help_categories.py:189
 msgid "Get to Know these big words"
 msgstr "Seznamte se se základními pojmy"
 
-#: help/help_categories.py:197
+#: help/help_categories.py:195
 msgid "Reward System"
 msgstr "Systém odměn"
 
-#: help/help_categories.py:198
+#: help/help_categories.py:196
 msgid "How much do you get"
 msgstr "Kolik dostanete"
 
-#: help/help_categories.py:204
+#: help/help_categories.py:202
 msgid "Pool Payouts"
 msgstr "Poolové výplaty"
 
-#: help/help_categories.py:205
+#: help/help_categories.py:203
 msgid "When & how you get your coins"
 msgstr "Kdy a jak dostanete své mince"
 
-#: help/help_categories.py:211
+#: help/help_categories.py:209
 msgid "Device Monitoring"
 msgstr "Sledování zařízení"
 
-#: help/help_categories.py:212
+#: help/help_categories.py:210
 msgid "Your personal watchdog"
 msgstr "Váš osobní hlídací pes"
 
-#: help/help_categories.py:218
+#: help/help_categories.py:216
 msgid "Worker Management"
 msgstr "Správa zařízení"
 
-#: help/help_categories.py:219
+#: help/help_categories.py:217
 msgid "Pile of workers managed easily"
 msgstr "Jednoduchá správa vícera zařízení"
 
-#: help/help_categories.py:225
+#: help/help_categories.py:223
 msgid "Stratum Protocol"
 msgstr "Stratum protokol"
 
-#: help/help_categories.py:226
+#: help/help_categories.py:224
 msgid "Offical protocol documentation"
 msgstr "Oficiální dokumentace protokolu"
 
-#: help/help_categories.py:232
+#: help/help_categories.py:230
 msgid "Hash Rate Proof"
 msgstr "Dokázání Hash rate"
 
-#: help/help_categories.py:233
+#: help/help_categories.py:231
 msgid "Proof of honesty"
 msgstr "Důkaz upřímnosti"
 
-#: help/help_categories.py:243 help/help_categories.py:251
+#: help/help_categories.py:240 help/help_categories.py:248
 msgid "Contacts"
 msgstr "Kontakty"
 
-#: help/help_categories.py:245
+#: help/help_categories.py:242
 msgid "Proposals, Feedback, Get Involved"
 msgstr "Návrhy, Připomínky, Zapojte se"
 
-#: help/help_categories.py:253
+#: help/help_categories.py:250
 msgid "Proposals, feedback, get involved"
 msgstr "Návrhy, připomínky, zapojte se"
 
-#: help/help_categories.py:258
+#: help/help_categories.py:255
 msgid "Feedback"
 msgstr "Připomínky"
 
-#: help/help_categories.py:260
+#: help/help_categories.py:257
 msgid "Your feedback drives Slush Pool"
 msgstr "Vaše připomínky pro nás znamenají vše"
 
-#: help/help_categories.py:265 help/templates/help/help_intro.html:56
+#: help/help_categories.py:262 help/templates/help/help_intro.html:56
 msgid "Development proposals"
 msgstr "Vývojářské návrhy"
 
-#: help/help_categories.py:267 help/templates/help/help_intro.html:57
+#: help/help_categories.py:264 help/templates/help/help_intro.html:57
 msgid "Get involved"
 msgstr "Zapojte se"
 
-#: help/help_categories.py:273
+#: help/help_categories.py:270
 msgid "Translation"
 msgstr "Překlady"
 
-#: help/help_categories.py:274
+#: help/help_categories.py:271
 msgid "Help us help you"
 msgstr "Pomozte nám pomáhat vám"
-
-#: help/help_categories.py:365
-msgid ""
-"Please note that you can not mine at your personal computer with CPU or GPU "
-"anymore. Also there is a list of unsupported software in our user manual."
-msgstr ""
-"Pamatujte si prosím, že už nemůžete těžit na svém osobním počítači pomocí "
-"CPU nebo GPU. V naší uživatelské příručce také najdete seznam "
-"nepodporovaného software."
-
-#: help/help_categories.py:370
-msgid "Login problems?"
-msgstr "Problémy s přihlášením?"
-
-#: help/help_categories.py:375
-msgid "Payouts related question?"
-msgstr "Otázky ohledně výplat?"
-
-#: help/help_categories.py:380
-msgid "Do you have a feature suggestion?"
-msgstr "Chcete navrhnout nové funkce?"
 
 #: help/templates/help/404.html:7
 msgid "Requested page has not been found"
@@ -595,38 +565,6 @@ msgstr "Časté Otázky a Odpovědi"
 msgctxt "UI"
 msgid "Help Center"
 msgstr "Centrum nápovědy"
-
-#: help/templates/help/home.html:8
-msgctxt "UI"
-msgid "Help <span>Center</span> "
-msgstr "Centrum <span>nápovědy</span> "
-
-#: help/templates/help/home.html:44
-msgctxt "UI"
-msgid "How can we help?"
-msgstr "Jak můžeme pomoci?"
-
-#: help/templates/help/home.html:50
-msgctxt "UI"
-msgid "Actual search query used:"
-msgstr "Použitý vyhledávací dotaz:"
-
-#: help/templates/help/home.html:63
-msgctxt "UI"
-msgid "No results have been found."
-msgstr "Nebyly nalezeny žádné výsledky."
-
-#: help/templates/help/home.html:65
-msgctxt "UI"
-msgid ""
-"Please try different words, use the links below or the main navigation menu."
-msgstr ""
-"Zkuste prosím jiný dotaz, použijte odkazy níže nebo hlavní navigační menu."
-
-#: help/templates/help/home.html:66
-msgctxt "UI"
-msgid "Most of typical user questions are answered in our FAQ section."
-msgstr "Většina typických dotazů je zodpovězena v naší FAQ sekci."
 
 #: help/templates/help/contact/contacts.html:12
 msgid "Possible Contact Channels"
@@ -785,17 +723,6 @@ msgstr "Pošlete svůj nápad"
 msgctxt "UI"
 msgid "Log in to submit your Idea"
 msgstr "Přihlašte se pro poslání svého nápadu"
-
-#: help/templates/help/contact/write_to_us.html:31
-msgctxt "UI"
-msgid "Send"
-msgstr "Odeslat"
-
-#: help/templates/help/contact/write_to_us.html:51
-#: web/templates/djangocms_blog/includes/blog_item.html:42
-msgctxt "UI"
-msgid "Read more"
-msgstr "Číst vše"
 
 #: help/templates/help/faq/merged_mining.html:7
 msgid "Merged <span>mining</span>"
@@ -2888,7 +2815,6 @@ msgstr "Vložte následující příkaz a stiskněte Enter:"
 
 #: help/templates/help/manual/advanced_mining.html:40
 #: help/templates/help/manual/advanced_mining.html:47
-#: help/templates/help/manual/getting_started.html:37
 msgid "userID"
 msgstr "ID uživatele"
 
@@ -3015,8 +2941,14 @@ msgid "URL:"
 msgstr "URL:"
 
 #: help/templates/help/manual/getting_started.html:37
-msgid "user name:"
-msgstr "uživatelské jméno:"
+#, fuzzy
+msgid "userID:"
+msgstr "ID uživatele"
+
+#: help/templates/help/manual/getting_started.html:37
+#, fuzzy
+msgid "userName"
+msgstr "Uživatel"
 
 #: help/templates/help/manual/getting_started.html:37
 msgid "workerName"
@@ -3068,26 +3000,15 @@ msgstr "<strong>Evropa</strong>"
 msgid "<strong>China</strong>, mainland"
 msgstr "<strong>Čína</strong>, pevnina"
 
-#: help/templates/help/manual/getting_started.html:67
+#: help/templates/help/manual/getting_started.html:70
 msgid "Asia-Pacific/<strong>Singapore</strong>"
 msgstr "Asie-Pacifik/<strong>Singapur</strong>"
 
-#: help/templates/help/manual/getting_started.html:75
-#, python-format
-msgid ""
-"Even though the website is now hosted on <a href=\"%(url)s\">%(name)s</a>, "
-"your <strong>mining server URL's stay the same and we will notify you well "
-"ahead in case of any change</strong>."
-msgstr ""
-"i když je teď náš web hostován na <a href=\"%(url)s\">%(name)s</a>, "
-"<strong>URL adresy Vašich těžebních serverů zůstaly stejné a v případě "
-"jakékoliv změny Vás budeme dopředu informovat</strong>."
-
-#: help/templates/help/manual/getting_started.html:78
+#: help/templates/help/manual/getting_started.html:77
 msgid "3. Setup your payout address"
 msgstr "3. Nastavte si výplatní adresu"
 
-#: help/templates/help/manual/getting_started.html:80
+#: help/templates/help/manual/getting_started.html:79
 msgid ""
 "To collect your reward you have to set a payout address. If you don't have "
 "an address, you need to get a bitcoin wallet first:"
@@ -3095,11 +3016,11 @@ msgstr ""
 "Pro příjem vašich odměn si musíte nastavit výplatní adresu. Pokud ještě "
 "žádnou adresu nemáte, pořiďte si nejdříve bitcoinovou peněženku:"
 
-#: help/templates/help/manual/getting_started.html:86
+#: help/templates/help/manual/getting_started.html:85
 msgid "Additional Information"
 msgstr "Dodatečné informace"
 
-#: help/templates/help/manual/getting_started.html:88
+#: help/templates/help/manual/getting_started.html:87
 #, python-format
 msgid ""
 "Detailed step by step tutorial on how to setup a miner can be found in the "
@@ -3108,7 +3029,7 @@ msgstr ""
 "Detailní návod, jak krok za krokem nastavit zařízení, najdete v sekci <a "
 "href=\"%(advanced_mining)s\">Pokročilé těžení</a>."
 
-#: help/templates/help/manual/getting_started.html:89
+#: help/templates/help/manual/getting_started.html:88
 #, python-format
 msgid ""
 "You can use one worker name for all your miners. However, we recommend to "
@@ -3119,7 +3040,7 @@ msgstr ""
 "připojit každé zařízení s unikátním názvem pro jednodušší <a href="
 "\"%(monitoring)s\">sledování</a>."
 
-#: help/templates/help/manual/getting_started.html:90
+#: help/templates/help/manual/getting_started.html:89
 #, python-format
 msgid ""
 "Optionally, enable the <a href=\"%(url_2fa)s\">Two-factor-authentication</a> "
@@ -3176,7 +3097,6 @@ msgstr ""
 
 #: help/templates/help/manual/intro.html:22
 #: help/templates/help/manual/monitoring.html:13
-#: web/templates/monitoring.html:45
 msgctxt "UI"
 msgid "Device <span>Monitoring</span>"
 msgstr "Sledování <span>zařízení</span>"
@@ -3523,13 +3443,12 @@ msgstr ""
 "Z pohledu sledování existují 4 možné stavy vašeho zařízení. Každé zařízení "
 "je vždy v jednom z <strong>následujících</strong> stavů:"
 
-#: help/templates/help/manual/monitoring.html:65
-#: web/templates/monitoring.html:185 web/templatetags/utils.py:170
+#: help/templates/help/manual/monitoring.html:66 web/templatetags/utils.py:200
 msgctxt "UI, Monitoring"
 msgid "OK"
 msgstr "OK"
 
-#: help/templates/help/manual/monitoring.html:66
+#: help/templates/help/manual/monitoring.html:68
 msgid ""
 "Means that the worker's hash rate is greater or equal to alert limit. This "
 "is the desired state. If everything works properly and the configuration is "
@@ -3539,13 +3458,12 @@ msgstr ""
 "je ideální stav. Pokud je vše správně nastavené a funguje bez problémů, měl "
 "byste vidět pouze tento stav."
 
-#: help/templates/help/manual/monitoring.html:69
-#: web/templates/monitoring.html:186 web/templatetags/utils.py:169
+#: help/templates/help/manual/monitoring.html:72 web/templatetags/utils.py:199
 msgctxt "UI, Monitoring"
 msgid "Low"
 msgstr "Pomalý"
 
-#: help/templates/help/manual/monitoring.html:70
+#: help/templates/help/manual/monitoring.html:74
 #, python-format
 msgid ""
 "This state signals that worker's hash rate is lower than it should be but "
@@ -3562,12 +3480,12 @@ msgstr ""
 "měřených obdobích. V případě, že je zařízení v tomto stavu po delší čas, "
 "vytvořte prosím požadavek na naši <a href=\"%(support_submit)s\">podporu</a>."
 
-#: help/templates/help/manual/monitoring.html:73 web/templatetags/utils.py:168
+#: help/templates/help/manual/monitoring.html:78 web/templatetags/utils.py:198
 msgctxt "UI, Monitoring"
 msgid "Offline"
 msgstr "Odpojené"
 
-#: help/templates/help/manual/monitoring.html:74
+#: help/templates/help/manual/monitoring.html:80
 msgid ""
 "You could see this state when monitoring is enabled for the worker but there "
 "is no hash rate detected for the worker. The pool doesn't monitor the actual "
@@ -3577,13 +3495,12 @@ msgstr ""
 "pro něj dohledat žádný hash rate. Pool nesleduje vlastní síťové připojení "
 "zařízení. Jedinou významnou hodnotou je hash rate."
 
-#: help/templates/help/manual/monitoring.html:77
-#: web/templates/monitoring.html:188 web/templatetags/utils.py:171
+#: help/templates/help/manual/monitoring.html:84 web/templatetags/utils.py:201
 msgctxt "UI, Monitoring"
 msgid "Disabled"
 msgstr "Vypnuto"
 
-#: help/templates/help/manual/monitoring.html:78
+#: help/templates/help/manual/monitoring.html:86
 msgid ""
 "When you switch off monitoring for a worker its state is reported as "
 "Disabled, regardless a fact if it submits some shares or not."
@@ -3869,29 +3786,7 @@ msgstr ""
 "když začnete nebo přestanete těžit (efektivní hash rate je modrý, skórovací "
 "hash rate je zlatý):"
 
-#: help/templates/help/manual/rewards.html:41
-#: help/templates/help/manual/rewards.html:55
-#: help/templates/help/manual/troubleshooting.html:62
-#: help/templates/help/manual/troubleshooting.html:75
-msgctxt "UI"
-msgid "Loading chart data, please wait..."
-msgstr "Nahrávám data grafu, vyčkejte prosím..."
-
-#: help/templates/help/manual/rewards.html:45
-#: help/templates/help/manual/rewards.html:59
-#: help/templates/help/manual/troubleshooting.html:66
-#: help/templates/help/manual/troubleshooting.html:79
-msgid "Hash Rate (5min)"
-msgstr "Hash rate (5min)"
-
-#: help/templates/help/manual/rewards.html:46
-#: help/templates/help/manual/rewards.html:60
-#: help/templates/help/manual/troubleshooting.html:67
-#: help/templates/help/manual/troubleshooting.html:80
-msgid "Scoring Hash Rate"
-msgstr "Skórovací hash rate"
-
-#: help/templates/help/manual/rewards.html:52
+#: help/templates/help/manual/rewards.html:44
 msgid ""
 "The chart would look much more like the one below with a real miner. The "
 "reason is that miner's effective hash rate changes in time (if you refresh "
@@ -3902,11 +3797,11 @@ msgstr ""
 "zkuste několikrát obnovit tuto stránku, vždy se vygeneruje náhodná nová "
 "sekvence):"
 
-#: help/templates/help/manual/rewards.html:65
+#: help/templates/help/manual/rewards.html:49
 msgid "Important Facts <span>about the Method</span>"
 msgstr "Důležitá fakta <span>o této metodě</span>"
 
-#: help/templates/help/manual/rewards.html:68
+#: help/templates/help/manual/rewards.html:52
 msgid ""
 "Important properties of using <em>scoring hash rate</em> for rewards "
 "calculation:"
@@ -3914,7 +3809,7 @@ msgstr ""
 "Důležité vlastnosti používání <em>skórovacího hash rate</em> pro výpočet "
 "odměn:"
 
-#: help/templates/help/manual/rewards.html:72
+#: help/templates/help/manual/rewards.html:56
 msgid ""
 "You can literally see and understand at any instant how the hash rate is "
 "changing and what reward you can expect."
@@ -3922,7 +3817,7 @@ msgstr ""
 "Doslova v každém okamžiku můžete vidět, jak se hash rate mění, a odvodit si, "
 "jakou odměnu můžete očekávat."
 
-#: help/templates/help/manual/rewards.html:73
+#: help/templates/help/manual/rewards.html:57
 msgid ""
 "Rewards are fully <strong>independent</strong> from rounds. The only "
 "important thing is the scoring hash rate."
@@ -3930,7 +3825,7 @@ msgstr ""
 "Odměny jsou naprosto <strong>nezávislé</strong> na kolech. Jediná podstatná "
 "věc je skórovací hash rate."
 
-#: help/templates/help/manual/rewards.html:74
+#: help/templates/help/manual/rewards.html:58
 msgid ""
 "When you start mining, it takes roughly 1.5 hour until it reaches your "
 "actual hash rate and then it becomes stable."
@@ -3938,12 +3833,12 @@ msgstr ""
 "Když začnete těžit, trvá mu zhruba 1.5 hodiny se dostat na váš aktuální hash "
 "rate a pak se stabilizuje."
 
-#: help/templates/help/manual/rewards.html:75
+#: help/templates/help/manual/rewards.html:59
 msgid ""
 "It is stable during the time when your miners are connected and working."
 msgstr "Po dobu, kdy jsou vaše zařízení připojena a těží, je stabilní."
 
-#: help/templates/help/manual/rewards.html:76
+#: help/templates/help/manual/rewards.html:60
 msgid ""
 "When you stop mining the scoring hash rate starts to fall down. It takes "
 "again cca 1.5 hour until it is roughly zero."
@@ -3951,7 +3846,7 @@ msgstr ""
 "Když přestanete těžit, skórovací hash rate začne klesat. Opět trvá cca 1.5 "
 "hodiny, než se dostane zhruba na nulu."
 
-#: help/templates/help/manual/rewards.html:77
+#: help/templates/help/manual/rewards.html:61
 msgid ""
 "When some other miner connects to the pool then your scoring hash rate will "
 "stay the same but pool's hash rate will increase proportionally. As a result "
@@ -3967,11 +3862,11 @@ msgstr ""
 "zařízení odpojí, stane se přesný opak. Statisticky v tom pro vás dlouhodobě "
 "není žádný rozdíl."
 
-#: help/templates/help/manual/rewards.html:80
+#: help/templates/help/manual/rewards.html:64
 msgid "The Math <span>Behind the Scenes</span>"
 msgstr "Matematika <span> v pozadí</span>"
 
-#: help/templates/help/manual/rewards.html:82
+#: help/templates/help/manual/rewards.html:66
 msgid ""
 "Let's start with the basic concepts and definitions to describe how exactly "
 "rewards and other values presented by the pool are computed. Gradually, we "
@@ -3981,11 +3876,11 @@ msgstr ""
 "jsou výplaty a další hodnoty poolem počítány. Postupně se dostaneme k čím "
 "dál zajímavějším věcem."
 
-#: help/templates/help/manual/rewards.html:85
+#: help/templates/help/manual/rewards.html:69
 msgid "Shares"
 msgstr "Řešení"
 
-#: help/templates/help/manual/rewards.html:87
+#: help/templates/help/manual/rewards.html:71
 #, python-format
 msgid ""
 "When a miner connects to the pool it receives computational task to be "
@@ -4003,7 +3898,7 @@ msgstr ""
 "<strong>řešení</strong>. Pokud je odevzdán hash (důkaz odvedené práce) se "
 "složitostí %(d)s, tak je to poolem započítáno jako %(d)s řešení."
 
-#: help/templates/help/manual/rewards.html:90
+#: help/templates/help/manual/rewards.html:74
 msgid ""
 "Whenever a new share is registered by the system a timestamp of the event is "
 "recorded and used for share's valuation later."
@@ -4011,7 +3906,7 @@ msgstr ""
 "Kdykoliv je nové řešení odevzdáno poolu, je tato událost označena časovým "
 "razítkem a použita pro pozdější určení hodnoty řešení."
 
-#: help/templates/help/manual/rewards.html:93
+#: help/templates/help/manual/rewards.html:77
 #, python-format
 msgid ""
 "For purposes of this text we treat each share %(s)s as if it was submitted "
@@ -4022,11 +3917,11 @@ msgstr ""
 "odděleně se složitostí 1. Tento přístup vede početně ke stejným výsledkům, "
 "jen vzorce jsou méně složité."
 
-#: help/templates/help/manual/rewards.html:96
+#: help/templates/help/manual/rewards.html:80
 msgid "Time handling"
 msgstr "Význam času"
 
-#: help/templates/help/manual/rewards.html:98
+#: help/templates/help/manual/rewards.html:82
 #, python-format
 msgid ""
 "Let %(tau)s be a function which gives us a time when some share %(s)s was "
@@ -4044,11 +3939,11 @@ msgstr ""
 "Například doba mezi odevzdáním řešení %(s)s a nějakým dalším bodem v čase "
 "%(t_0)s, zapsána jako %(time_delta)s, je klíčem k určení hodnoty řešení."
 
-#: help/templates/help/manual/rewards.html:101
+#: help/templates/help/manual/rewards.html:85
 msgid "Shares valuation<span> - score</span>"
 msgstr "Ocenění řešení<span> - skóre</span>"
 
-#: help/templates/help/manual/rewards.html:103
+#: help/templates/help/manual/rewards.html:87
 msgid ""
 "A value of each share (for rewards calculation) decreases in time - younger "
 "shares are valued higher then older shares. This motivates users to mine "
@@ -4060,7 +3955,7 @@ msgstr ""
 "těžit na poolu stabilně, bez přeskakování mezi pooly. Jakmile se uživatel od "
 "poolu odpojí, jím odevzdaná řešení začnou ztrácet na hodnotě."
 
-#: help/templates/help/manual/rewards.html:106
+#: help/templates/help/manual/rewards.html:90
 #, python-format
 msgid ""
 "The exact share value at time is defined by <strong>scoring function</"
@@ -4070,7 +3965,7 @@ msgstr ""
 "Přesná hodnota řešení v čase jedinována <strong>skórovací funkcí</strong> "
 "%(fc)s. Ta počítá <strong>skóre</strong> řešení %(s)s v čase %(t_0)s jako"
 
-#: help/templates/help/manual/rewards.html:111
+#: help/templates/help/manual/rewards.html:95
 #, python-format
 msgid ""
 "where %(lambda)s is a dimensionless <strong>system parameter</strong>. "
@@ -4083,7 +3978,7 @@ msgstr ""
 "%(lambda)s, tím pomaleji stará řešení ztrácejí hodnotu v porovnání s novými "
 "řešeními. Aktuálně je tento %(lambda)s parametr nastaven na 1200."
 
-#: help/templates/help/manual/rewards.html:114
+#: help/templates/help/manual/rewards.html:98
 #, python-format
 msgid ""
 "(For users who knew slush's scoring system presented years ago, one of the "
@@ -4100,7 +3995,7 @@ msgstr ""
 "drobná, má ale podstatný vliv, protože z počítání odměn zcela eliminuje "
 "koncept kol.)"
 
-#: help/templates/help/manual/rewards.html:117
+#: help/templates/help/manual/rewards.html:101
 #, python-format
 msgid ""
 "Let's continue. Let %(Us)s be a set of <em>all pool users</em> and %(set)s "
@@ -4111,7 +4006,7 @@ msgstr ""
 "em> a %(set)s reprezentuje <em>všechna platná řešení</em> odevzdaná "
 "uživatelem %(u)s do doby %(t_0)s. Formálněji zapsáno to znamená"
 
-#: help/templates/help/manual/rewards.html:122
+#: help/templates/help/manual/rewards.html:106
 #, python-format
 msgid ""
 "Then score for some user %(u)s at time %(t_0)s is calculated as total score "
@@ -4120,7 +4015,7 @@ msgstr ""
 "Skóre pro uživatele %(u)s v čase %(t_0)s je počítáno jako celkové skóre "
 "všech jeho řešení v čase %(t_0)s, odevzdaných v %(t_0)s nebo dříve:"
 
-#: help/templates/help/manual/rewards.html:127
+#: help/templates/help/manual/rewards.html:111
 msgid ""
 "Technically, the pool computes score for each worker separately but the math "
 "is analogous."
@@ -4128,7 +4023,7 @@ msgstr ""
 "Technicky, pool počítá skóre pro každé zařízení zvlášť, ale matematika je "
 "analogická."
 
-#: help/templates/help/manual/rewards.html:130
+#: help/templates/help/manual/rewards.html:114
 #, python-format
 msgid ""
 "Score of the whole pool %(c)s is a sum of score of all users in the given "
@@ -4137,11 +4032,11 @@ msgstr ""
 "Skóre celého poolu %(c)s je součtem skóre všech uživatelů dohromady v daném "
 "čase:"
 
-#: help/templates/help/manual/rewards.html:134
+#: help/templates/help/manual/rewards.html:118
 msgid "Rewards Calculation"
 msgstr "Počítání odměn"
 
-#: help/templates/help/manual/rewards.html:136
+#: help/templates/help/manual/rewards.html:120
 #, python-format
 msgid ""
 "When a block %(b)s is found at time %(tau_b)s and its value is finally known "
@@ -4152,7 +4047,7 @@ msgstr ""
 "- %(v_b)s, pool může spočítat odměnu %(R_u)s pro každého uživatele %(u)s "
 "následovně (%(f)s znamená poplatek poolu):"
 
-#: help/templates/help/manual/rewards.html:140
+#: help/templates/help/manual/rewards.html:124
 msgid ""
 "For those who really love math equations the full rewards formula for "
 "<strong>continuous scoring system</strong> is:"
@@ -4160,11 +4055,11 @@ msgstr ""
 "Pro opravdové matematické nadšence tu máme kompletní znění vzorce pro "
 "<strong>průběžný skórovací systém</strong>:"
 
-#: help/templates/help/manual/rewards.html:145
+#: help/templates/help/manual/rewards.html:129
 msgid "Other values"
 msgstr "Ostatní hodnoty"
 
-#: help/templates/help/manual/rewards.html:147
+#: help/templates/help/manual/rewards.html:131
 #, python-format
 msgid ""
 "When you look at your dashboard page you will find other values calculated "
@@ -4179,12 +4074,12 @@ msgstr ""
 "kdyby byl nový blok nalezen v daný čas, ale jako hodnotu bloku (která ještě "
 "není známa) používáme 12.5 BTC:"
 
-#: help/templates/help/manual/rewards.html:152
+#: help/templates/help/manual/rewards.html:136
 #, python-format
 msgid "<strong>User's contribution</strong> to the pool (in %%) is defined as"
 msgstr "<strong>Uživatelův příspěvek</strong> poolu (v %%) je definován jako"
 
-#: help/templates/help/manual/rewards.html:157
+#: help/templates/help/manual/rewards.html:141
 #, python-format
 msgid ""
 "And finally the <strong>scoring hash rate</strong> %(H)s for user %(u)s and "
@@ -4195,7 +4090,7 @@ msgstr ""
 "čas %(t_0)s se interně nepočítá průměrováním hash rate, ale přímo z řešení "
 "použitím skórovací funkce (výsledek v h/s):"
 
-#: help/templates/help/manual/rewards.html:162
+#: help/templates/help/manual/rewards.html:146
 #, python-format
 msgid ""
 "Pool's scoring hash rate %(H)s is not surprisingly defined as all user "
@@ -4729,11 +4624,11 @@ msgstr ""
 "upozornění. Proto doporučujeme nechat <a href=\"%(url)s\">VarDiff "
 "algoritmus</a> vybrat a přiřadit vašemu zařízení složitost automaticky."
 
-#: help/templates/help/manual/troubleshooting.html:53
+#: help/templates/help/manual/troubleshooting.html:52
 msgid "Worker offline state"
 msgstr "Offline stav zařízení"
 
-#: help/templates/help/manual/troubleshooting.html:54
+#: help/templates/help/manual/troubleshooting.html:53
 msgid ""
 "Since the bare minimum difficulty assigned by the pool right now is 8 (and "
 "it will probably be further lowered in the future) your workers should have "
@@ -4755,11 +4650,11 @@ msgstr ""
 "vašeho zařízení, i když zařízení funguje. Doporučujeme sledování pro taková "
 "zařízení vypnout."
 
-#: help/templates/help/manual/troubleshooting.html:57
+#: help/templates/help/manual/troubleshooting.html:56
 msgid "False Monitoring Alarms"
 msgstr "Falešná upozornění"
 
-#: help/templates/help/manual/troubleshooting.html:59
+#: help/templates/help/manual/troubleshooting.html:58
 msgid ""
 "If you set the minimum difficulty for a worker to a significantly higher "
 "value than the table above recommends, its communication frequency with the "
@@ -4771,7 +4666,7 @@ msgstr ""
 "nebude optimální. To povede k vyšší variabilitě hash rate (širší spektrum "
 "hodnot v rozdílných měřených úsecích)."
 
-#: help/templates/help/manual/troubleshooting.html:60
+#: help/templates/help/manual/troubleshooting.html:59
 #, python-format
 msgid ""
 "You can see this effect on the following two charts. The first shows miner "
@@ -4782,7 +4677,7 @@ msgstr ""
 "nominálním hash rate 100 Gh/s a minimální složitostí zhruba 70 přidělenou <a "
 "href=\"%(url)s\">VarDiff</a> algoritmem."
 
-#: help/templates/help/manual/troubleshooting.html:73
+#: help/templates/help/manual/troubleshooting.html:63
 msgid ""
 "If you manually set your minimum difficulty to a significantly higher value, "
 "it leads to behavior as presented below. Please, notice how the hash rate "
@@ -4792,7 +4687,7 @@ msgstr ""
 "k chování zobrazenému níže. Všimněte si prosím, že hash rate má nyní mnohem "
 "širší spektrum."
 
-#: help/templates/help/manual/troubleshooting.html:86
+#: help/templates/help/manual/troubleshooting.html:67
 msgid ""
 "Higher hash rate variance makes proper monitoring more difficult and can "
 "lead to false monitoring alarms (you can be notified about some event even "
@@ -4802,21 +4697,21 @@ msgstr ""
 "vést k falešným upozorněním (můžete být opozorňováni i na události, při "
 "kterých zařízení pracuje správně)."
 
-#: help/templates/help/manual/troubleshooting.html:87
+#: help/templates/help/manual/troubleshooting.html:68
 msgid "We recommend to:"
 msgstr "Doporučujeme:"
 
-#: help/templates/help/manual/troubleshooting.html:89
+#: help/templates/help/manual/troubleshooting.html:70
 msgid ""
 "Let vardiff algorithm to select difficulty for your worker automatically."
 msgstr ""
 "Nechte VarDiff algoritmus přiřadit složitost vašim zařízením automaticky."
 
-#: help/templates/help/manual/troubleshooting.html:91
+#: help/templates/help/manual/troubleshooting.html:72
 msgid "OR"
 msgstr "NEBO"
 
-#: help/templates/help/manual/troubleshooting.html:93
+#: help/templates/help/manual/troubleshooting.html:74
 msgid ""
 "Set minimum difficulty provided by the vendor of your device on your own."
 msgstr "Nastavte ručně nastavte minimální složitost doporučenou výrobcem ."
@@ -4905,55 +4800,12 @@ msgstr ""
 "Pokud změníte názor, můžete se kdykoliv znovu přihlásit v nastavení vašeho "
 "účtu."
 
-#: mining/models.py:219 web/models.py:951
+#: mining/models.py:413
 msgctxt "UI"
-msgid "Login suffix"
-msgstr "Přípona uživatelského jména"
-
-#: mining/models.py:227
-msgctxt "UI"
-msgid "Alert Limit [Gh/s]"
-msgstr "Limit pro výstrahu [Gh/s]"
-
-#: mining/models.py:228
-msgctxt "UI"
-msgid "The system will report issues, when hash rate drops below this value"
-msgstr "Systém bude hlásit potíže, pokud hash rate klesne pod tuto hodnotu"
-
-#: mining/models.py:229
-msgctxt "UI"
-msgid "Monitoring enabled"
-msgstr "Sledování zapnuto"
-
-#: mining/models.py:231
-msgctxt "UI"
-msgid ""
-"The monitoring system will detect and report any hash rate issues related to "
-"this worker"
+msgid "-- not voted (proportional split) --"
 msgstr ""
-"Sledovací systém bude detekovat a hlásit jakékoliv potíže s hash rate u "
-"tohoto zařízení"
 
-#: mining/models.py:232 web/models.py:941
-msgctxt "UI"
-msgid "Auto-detect alert limit"
-msgstr "Autodetekce výstražného limitu"
-
-#: mining/models.py:234
-msgctxt "UI"
-msgid ""
-"The monitoring system will automatically estimate hash rate of your worker "
-"based on its past activity"
-msgstr ""
-"Sledovací systém automaticky určí předpokládaný hash rate zařízení podle "
-"jeho předchozí aktivity"
-
-#: mining/models.py:388
-msgctxt "UI"
-msgid "-- not voted --"
-msgstr "-- nehlasováno --"
-
-#: mining/models.py:389
+#: mining/models.py:414
 msgctxt "UI"
 msgid ""
 "Users that don't have any preference = their hash rate is split among all "
@@ -4962,17 +4814,17 @@ msgstr ""
 "Uživatelé, kteří nemají žádné preference = jejich hash rate je poměrově "
 "rozdělen mezi ostatní návrhy na velikost bloku."
 
-#: mining/models.py:390
+#: mining/models.py:415
 msgctxt "UI"
 msgid "Not voted"
 msgstr "Nehlasováno"
 
-#: mining/models.py:395
+#: mining/models.py:420
 msgctxt "UI"
 msgid "Current rules / Bitcoin Core"
 msgstr "Aktuální pravidla / Bitcoin Core"
 
-#: mining/models.py:396
+#: mining/models.py:421
 msgctxt "UI"
 msgid ""
 "Users that prefer Current rules given by Bitcoin core = their hash rate is "
@@ -4981,74 +4833,17 @@ msgstr ""
 "Uživatelé, kteří preferují aktuální pravidla vytvořená Bitcoin core = jejich "
 "hash rate je použit pro těžení Bitcoin Core bloků."
 
-#: mining/models.py:397
+#: mining/models.py:422
 msgctxt "UI"
 msgid "Bitcoin Core"
 msgstr "Bitcoin Core"
 
-#: mining/models.py:402
-msgctxt "UI"
-msgid "Bitcoin Classic / BIP109"
-msgstr "Bitcoin Classic / BIP109"
-
-#: mining/models.py:403
-msgctxt "UI"
-msgid ""
-"Users that prefer Bitcoin Classic rules = their hash rate is used for mining "
-"Bitcoin Classic blocks (BIP109)."
-msgstr ""
-"Uživatelé, kteří preferují pravidla Bitcoin Classic = jejich hash rate je "
-"použit pro těžení Bitcoin Classic bloků (BIP109)."
-
-#: mining/models.py:404
-msgctxt "UI"
-msgid "Bitcoin Classic"
-msgstr "Bitcoin Classic"
-
-#: mining/models.py:409
-msgctxt "UI"
-msgid "8MB - BIP100"
-msgstr "8MB - BIP100"
-
-#: mining/models.py:410
-msgctxt "UI"
-msgid ""
-"Users that prefer 8MB blocks = their hash rate is used for mining 8MB blocks "
-"(BIP 100)."
-msgstr ""
-"Uživatelé, kteří preferují 8MB bloky = jejich hash rate je použit pro těžení "
-"8MB bloků (BIP100)."
-
-#: mining/models.py:411
-msgctxt "UI"
-msgid "8MB (BIP100)"
-msgstr "8MB (BIP100)"
-
-#: mining/models.py:416
-msgctxt "UI"
-msgid "Bitpay's Adaptive block size"
-msgstr "Adaptivní velikost bloku od Bitpay"
-
-#: mining/models.py:417
-msgctxt "UI"
-msgid ""
-"Users that prefer BitPay's Adaptive block size proposal = their hash rate is "
-"used for mining blocks with BitPay's block version."
-msgstr ""
-"Uživatelé, kteří preferují Adaptivní velikost bloku od Bitpay = jejich hash "
-"rate je použit pro těžení bloků s Bitpay verzí bloku."
-
-#: mining/models.py:418
-msgctxt "UI"
-msgid "Bitpay's Bitcoin"
-msgstr "Bitcoin od Bitpay"
-
-#: mining/models.py:423 mining/models.py:425
+#: mining/models.py:427 mining/models.py:429
 msgctxt "UI"
 msgid "Bitcoin Unlimited"
 msgstr "Bitcoin Unlimited"
 
-#: mining/models.py:424
+#: mining/models.py:428
 msgctxt "UI"
 msgid ""
 "Users that prefer Bitcoin Unlimited proposal = their hash rate is used for "
@@ -5057,33 +4852,33 @@ msgstr ""
 "Uživatelé, kteří preferují návrh Bitcoin Unlimited = jejich hash rate je "
 "použit pro těžení bloků s podpisem Bitcoin Unlimited."
 
-#: mining/models.py:430
+#: mining/models.py:434
 msgctxt "UI"
-msgid "I don't care, pool AI decides on her own"
-msgstr "Je mi to jedno, ať AI poolu rozhodne za mě"
+msgid "I don't care, pool operator decides"
+msgstr "Je mi to jedno, ať správce poolu rozhodne za mě"
 
-#: mining/models.py:431
+#: mining/models.py:435
 msgctxt "UI"
 msgid ""
-"Users that set I don't care option = pool AI decides on her own which block "
-"size is closest to her heart."
+"Users that set I don't care option = pool operator decides which block size "
+"is closest to his heart."
 msgstr ""
-"Uživatelé, kteří nastavili možnost Je mi to jedno = AI poolu rozhodne dle "
-"vlastního uvážení, která velikost bloků je jejímu srdci nejbližší."
+"Uživatelé, kteří nastavili možnost Je mi to jedno = Správce poolu rozhodne "
+"dle vlastního uvážení, která velikost bloků je jeho srdci nejbližší."
 
-#: mining/models.py:432
+#: mining/models.py:436
 msgctxt "UI"
-msgid "Don't care"
-msgstr "Je to jedno"
+msgid "Pool decides"
+msgstr "Rozhodne pool"
 
-#: mining/models.py:456
+#: mining/models.py:460
 msgctxt "UI"
 msgid ""
 "Express your attitude to forks that may take place on the Bitcoin network."
 msgstr ""
 "Vyjádřete svůj postoj k forkům, které se mohou v Bitcoinové síti odehrát."
 
-#: mining/validators.py:13 web/forms.py:403
+#: mining/validators.py:13
 msgctxt "UI"
 msgid ""
 "Only letters, numbers and the following characters are accepted: _ @ + -"
@@ -5096,37 +4891,21 @@ msgid "Latest News"
 msgstr "Poslední novinky"
 
 #: news/templates/news/detail.html:32 news/templates/news/home.html:9
-#: web/templates/base.html:238 web/templates/menu2_blog.html:4
+#: web/templates/base.html:147 web/templates/menu2_blog.html:4
 #: web/templates/news_detail.html:4 web/templates/news_list.html:4
-#: web/templates/djangocms_blog/base.html:13
 msgctxt "UI"
 msgid "News"
 msgstr "Aktuality"
 
-#: news/templates/news/detail.html:67
-msgctxt "UI"
-msgid "All news"
-msgstr "Všechny novinky"
-
 #: news/templates/news/detail.html:68
 msgctxt "UI"
-msgid "Other news"
-msgstr "Ostatní novinky"
+msgid "Published:"
+msgstr "Publikováno:"
 
-#: news/templates/news/home.html:39
+#: news/templates/news/home.html:56
 msgctxt "UI"
-msgid "We didn't post yet. Stay tuned."
-msgstr "Zatím tu nic není. Podívejte se prosím později."
-
-#: news/templates/news/home.html:43
-msgctxt "UI"
-msgid "Get Slush Pool news in your RSS reader"
-msgstr "Získejte novinky z poolu do své RSS čtečky"
-
-#: news/templates/news/content/release-10.html:3
-#: web/templates/release_notes.html:3
-msgid "Release notes"
-msgstr "Poznámky k verzi"
+msgid "Read more"
+msgstr "Číst vše"
 
 #: news/templates/news/content/2015/03_20_changes_in_monitoring.html:2
 msgid "Changes in Monitoring"
@@ -5173,33 +4952,10 @@ msgstr ""
 "\">uživatelském manuálu</a>."
 
 #: news/templates/news/content/2015/03_20_changes_in_monitoring.html:14
-#: news/templates/news/content/2015/03_20_feedback_form_for_direct_requests.html:9
 #: news/templates/news/content/2015/03_20_merged_mining_in_dev.html:10
 #: news/templates/news/content/2015/03_20_new_dashboard.html:21
 msgid "Slush Pool Team"
 msgstr "Slush Pool Team"
-
-#: news/templates/news/content/2015/03_20_feedback_form_for_direct_requests.html:2
-msgid "Feedback form for direct requests"
-msgstr "Formulář pro přímé žádosti"
-
-#: news/templates/news/content/2015/03_20_feedback_form_for_direct_requests.html:6
-msgid ""
-"Do you want to report a bug, is there something specific you have on your "
-"mind or you just want to say hi?"
-msgstr ""
-"Chcete nahlásit chybu, máte na mysli něco specifického nebo nám jen chcete "
-"popřát dobrý den?"
-
-#: news/templates/news/content/2015/03_20_feedback_form_for_direct_requests.html:7
-#, python-format
-msgid ""
-"We will be happy to hear from you. A new <a href=\"%(feedback)s\">feedback "
-"form</a> has been added to the site for convenience. Feel free to use it! :)"
-msgstr ""
-"Budeme rádi za jakoukoliv odezvu. Na stránky jsme přidali nový <a href="
-"\"%(feedback)s\">kontaktní formulář</a> pro vaše větší pohodlí. Neváhejte ho "
-"využít! :)"
 
 #: news/templates/news/content/2015/03_20_merged_mining_in_dev.html:2
 msgid "Merged Mining in development!"
@@ -5327,106 +5083,64 @@ msgstr ""
 "Tyto změny uzavřely více než 10 uživatelských návrhů. Nyní můžete <a href="
 "\"%(dev_corner)s\">hlasovat</a> pro další nápady!"
 
-#: news/templates/news/content/2015/03_20_reward_system_proposals.html:2
-msgid "Reward System Proposals"
-msgstr "Návrhy na změnu systému odměn"
-
-#: news/templates/news/content/2015/03_20_reward_system_proposals.html:7
-#, python-format
-msgid ""
-"We are able to gauge interest in proposed changes, updates and tweaks of our "
-"mining pool quite precisely thanks to the unique way of collecting feedback "
-"– <a href=\"%(dev_corner)s\">the devcorner</a>."
-msgstr ""
-"Jsme schopni poměrně přesně odhadnout zájem o navrhované změny a vylepšení "
-"našeho poolu díky unikátnímu způsobu sbíraní zpětné vazby– <a href="
-"\"%(dev_corner)s\">vývojářský koutek</a>."
-
-#: news/templates/news/content/2015/03_20_reward_system_proposals.html:8
-#, python-format
-msgid ""
-"One of the important topics turned out to be the reward system. There seems "
-"to be a couple of miners who would prefer different system but majority "
-"approved keeping the current score based rewards (<a href=\"%(rewards)s"
-"\">see how it works here</a>), therefore we decided to stick with the "
-"current reward system."
-msgstr ""
-"Jedním z důležitých témat se ukázal být systém odměn. Ukázalo se, že někteří "
-"z našich uživatelů by preferovali jiný systém rozdělování odměn, nicméně "
-"většina byla pro udržení aktuálního skórovacího systému (<a href="
-"\"%(rewards)s\">podívejte se jak to funguje</a>) a proto jsme se ho rozhodli "
-"zachovat."
-
-#: news/templates/news/content/2015/03_20_reward_system_proposals.html:9
-msgid ""
-"If the demand for different system grows in future we will be happy to "
-"change it to meet the needs of our miners."
-msgstr ""
-"Abychom vyšli vstříc potřebám našich uživatelů, nebudeme se bránit případné "
-"změně, pokud bude v budoucnu poptávka po jiném systému odměn růst."
-
-#: news/templates/news/content/2015/03_20_reward_system_proposals.html:11
-msgid "Slush Pool team"
-msgstr "Slush Pool tým"
-
 #: notifications/templates/notifications/parts/notifications.html:21
 msgctxt "UI"
 msgid "You don't have any notifications."
 msgstr "Nemáte žádná upozornění."
 
-#: project/settings.py:338
+#: project/settings.py:277
 msgid "English"
 msgstr "Angličtina"
 
-#: project/settings.py:339
+#: project/settings.py:278
 msgid "German"
 msgstr "Němčina"
 
-#: project/settings.py:340
+#: project/settings.py:279
 msgid "French"
 msgstr "Francouzština"
 
-#: project/settings.py:341
+#: project/settings.py:280
 msgid "Russian"
 msgstr "Ruština"
 
-#: project/settings.py:342
+#: project/settings.py:281
 msgid "Czech"
 msgstr "Čeština"
 
-#: project/settings.py:343
+#: project/settings.py:282
 msgid "Polish"
 msgstr "Polština"
 
-#: project/settings.py:344
+#: project/settings.py:283
 msgid "Dutch"
 msgstr "Holandština"
 
-#: project/settings.py:345
+#: project/settings.py:284
 msgid "Spanish"
 msgstr "Španělština"
 
-#: project/settings.py:346
+#: project/settings.py:285
 msgid "Brazilian Portuguese"
 msgstr "Brazilská Portugalština"
 
-#: project/settings.py:347
+#: project/settings.py:286
 msgid "Simplified Chinese"
 msgstr "Zjednodušená Čínština"
 
-#: project/settings.py:348
+#: project/settings.py:287
 msgid "Romanian"
 msgstr "Rumunština"
 
-#: project/settings.py:349
+#: project/settings.py:288
 msgid "Hungarian"
 msgstr "Maďarština"
 
-#: project/settings.py:350
+#: project/settings.py:289
 msgid "Italian"
 msgstr "Italština"
 
-#: project/settings.py:351
+#: project/settings.py:290
 msgid "Turkish"
 msgstr "Turečtina"
 
@@ -5435,47 +5149,68 @@ msgctxt "UI"
 msgid "Delete account confirmation"
 msgstr "Potvrzení smazání účtu"
 
-#: settings/form_mixins.py:72 web/forms.py:257
+#: settings/form_mixins.py:108 settings/form_mixins.py:157
 msgctxt "UI"
 msgid "Signature is not valid."
 msgstr "Podpis je neplatný."
 
-#: settings/form_mixins.py:82
+#: settings/form_mixins.py:118
 msgctxt "UI"
 msgid "Message is wrong."
 msgstr "Zpráva je špatně."
 
-#: settings/form_mixins.py:86
+#: settings/form_mixins.py:122
 msgctxt "UI"
 msgid "Signature is out of date."
 msgstr "Podpis je již neplatný."
 
-#: settings/api/v1/api_actions.py:78
+#: settings/api/v1/api_actions.py:86
 msgctxt "UI"
 msgid "Invalid request, you don't have any wallet."
 msgstr "Neplatný požadavek, nemáte žádnou peněženku."
 
-#: settings/api/v1/api_actions.py:81
+#: settings/api/v1/api_actions.py:89
 msgctxt "UI"
 msgid "Invalid request, wallet is allready locked."
 msgstr "Neplatný požadavek, peněženka je již uzamčena."
 
-#: settings/api/v1/api_actions.py:86
+#: settings/api/v1/api_actions.py:94
 msgctxt "UI"
 msgid "Wallet is not valid."
 msgstr "Peněženka je neplatná."
 
-#: settings/api/v1/api_actions.py:89
+#: settings/api/v1/api_actions.py:97
 msgctxt "UI"
 msgid "Your payout address has been locked."
 msgstr "Vaše výplatní adresa byla zamčena."
 
-#: settings/api/v1/api_actions.py:105 settings/api/v1/api_actions.py:121
+#: settings/api/v1/api_actions.py:113
+msgctxt "UI"
+msgid "Invalid request, you don't have any Zcash wallet."
+msgstr "Neplatný požadavek, nemáte žádnou Zcash peněženku."
+
+#: settings/api/v1/api_actions.py:116
+msgctxt "UI"
+msgid "Invalid request, wallet is already locked."
+msgstr "Neplatný požadavek, peněženka je již uzamčena."
+
+#: settings/api/v1/api_actions.py:121
+msgctxt "UI"
+msgid "Zcash wallet is not valid."
+msgstr "Zcash peněženka je neplatná."
+
+#: settings/api/v1/api_actions.py:124
+msgctxt "UI"
+msgid "Your Zcash payout address has been locked."
+msgstr "Vaše výplatní Zcash adresa byla zamčena."
+
+#: settings/api/v1/api_actions.py:137 settings/api/v1/api_actions.py:153
 msgctxt "UI"
 msgid "No pending email."
 msgstr "Žádný nevyřízený email."
 
-#: settings/api/v1/api_actions.py:111 settings/api/v1/api_actions.py:144
+#: settings/api/v1/api_actions.py:143 settings/api/v1/api_actions.py:176
+#: settings/api/v1/api_actions.py:203
 msgctxt "UI"
 msgid ""
 "Confirmation email has been sent. Please, check your mailbox and follow the "
@@ -5484,33 +5219,54 @@ msgstr ""
 "Právě vám byl zaslán potvrzující email. Zkontrolujte prosím svou emailovou "
 "schránku a následujte zaslané instrukce."
 
-#: settings/api/v1/api_actions.py:128
+#: settings/api/v1/api_actions.py:160
 msgctxt "UI"
 msgid "Email change request has been successfully canceled."
 msgstr "Požadavek na změnu emailu byl úspěšně zrušen."
 
-#: settings/api/v1/api_actions.py:138
+#: settings/api/v1/api_actions.py:170 settings/api/v1/api_actions.py:197
 msgctxt "UI"
 msgid "No pending wallet."
 msgstr "Žádná peněženka čekající na vyřízení."
 
-#: settings/api/v1/api_actions.py:158
+#: settings/api/v1/api_actions.py:190
 msgctxt "UI"
 msgid "Wallet change request has been successfully canceled."
 msgstr "Požadavek na změnu peněženky byl úspěšně zrušen."
 
-#: settings/api/v1/api_actions.py:184
+#: settings/api/v1/api_actions.py:214
+msgctxt "UI"
+msgid "Zcash wallet change request has been successfully canceled."
+msgstr "Požadavek na změnu Zcash peněženky byl úspěšně zrušen."
+
+#: settings/api/v1/api_actions.py:240
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
 msgstr "Email informující o smazání vašeho účtu byl odeslán na %s."
 
-#: settings/forms/otp_setting_forms.py:54
+#: settings/forms/btc_payouts_form.py:50 settings/forms/zec_payouts_form.py:48
+msgctxt "UI"
+msgid "You cant change locked wallet."
+msgstr "Nemůžete změnit uzamčenou peněženku."
+
+#: settings/forms/btc_payouts_form.py:53 settings/forms/zec_payouts_form.py:51
+msgctxt "UI"
+msgid "New wallet is already set."
+msgstr "Nová adresa je již nastavena."
+
+#. Translators: enabled coins selection - user cannot disable all coins
+#: settings/forms/enabled_coins_settings_form.py:39
+msgctxt "UI"
+msgid "At least one coin must be enabled!"
+msgstr ""
+
+#: settings/forms/otp_setting_forms.py:69
 msgctxt "UI"
 msgid "Two-factor authentication is already configured"
 msgstr "Dvoufaktorová autentizace je již nastavena"
 
-#: settings/forms/otp_setting_forms.py:59
+#: settings/forms/otp_setting_forms.py:74
 msgctxt "UI"
 msgid ""
 "2FA token is invalid. Please, re-scan the QR code (new one has been "
@@ -5519,96 +5275,21 @@ msgstr ""
 "Token pro dvoufaktorovou autentizaci je neplatný. Přeskenujte prosím QR kód "
 "(z bezpečnostních důvodů byl vygenerován nový)."
 
-#: settings/forms/otp_setting_forms.py:106
-#: settings/forms/otp_setting_forms.py:139
+#: settings/forms/otp_setting_forms.py:121
+#: settings/forms/otp_setting_forms.py:154
 msgctxt "UI"
 msgid "User doesn't have OTP."
 msgstr "Uživatel nemá OTP."
-
-#: settings/forms/payouts_settings_form.py:50
-msgctxt "UI"
-msgid "You cant change locked wallet."
-msgstr "Nemůžete změnit uzamčenou peněženku."
-
-#: settings/forms/payouts_settings_form.py:53
-msgctxt "UI"
-msgid "New wallet is already set."
-msgstr "Nová adresa je již nastavena."
-
-#: settings/templates/settings/home.html:4
-#: user_request/templates/user_request/otp.html:4
-msgctxt "UI"
-msgid "Settings"
-msgstr "Nastavení"
-
-#: stats/templates/stats/___chart_placeholder.html:7
-msgctxt "UI"
-msgid "Loading chart data, please wait&hellip;"
-msgstr "Nahrávám data grafu, prosím počkejte&hellip;"
-
-#: stats/templates/stats/_hashrate_distribution.html:6
-msgctxt "UI"
-msgid "Hash Rate <span>Distribution</span>"
-msgstr "<span>Rozložení</span> hash rate"
-
-#: stats/templates/stats/_hashrate_distribution.html:15
-msgctxt "UI"
-msgid "User Group"
-msgstr "Skupina uživatelů"
-
-#: stats/templates/stats/_hashrate_distribution.html:21
-msgctxt "UI"
-msgid "User Count"
-msgstr "Počet uživatelů"
-
-#: stats/templates/stats/_hashrate_distribution.html:25
-msgctxt "UI"
-msgid "Average Hash Rate"
-msgstr "Průměrný hash rate"
-
-#: stats/templates/stats/_hashrate_distribution.html:29
-msgctxt "UI"
-msgid "Group Hash Rate"
-msgstr "Hash rate skupiny"
-
-#: stats/templates/stats/_hashrate_distribution.html:38
-msgctxt "UI"
-msgid "Each circle represents a group of users with similar hash rate."
-msgstr "Každý kruh reprezentuje skupinu uživatelů s podobným hash rate."
-
-#: stats/templates/stats/_hashrate_distribution.html:39
-msgctxt "UI"
-msgid ""
-"An area of a circle represents total hash rate of all users in the group "
-"together."
-msgstr ""
-"Plocha kruhu reprezentuje celkový hash rate všech uživatelů v celé skupině "
-"dohromady."
-
-#: stats/templates/stats/_hashrate_distribution.html:40
-msgctxt "UI"
-msgid "A group you belong to is highlighted (if you are logged in)."
-msgstr "Skupina, do které patříte, je zvýrazněna (pokud jste přihlášen)."
-
-#: stats/templates/stats/_hashrate_per_location.html:6
-msgctxt "UI"
-msgid "Hash Rate <span>Per Location</span>"
-msgstr "Hash rate <span>podle lokace</span>"
-
-#: stats/templates/stats/_recent_hashrate.html:6
-msgctxt "UI"
-msgid "Recent <span>Hash Rate</span>"
-msgstr "Nedávný <span>hash rate</span>"
-
-#: stats/templates/stats/_system.html:6
-msgctxt "UI"
-msgid "System Statistics"
-msgstr "Systémové statistiky"
 
 #: stats/templates/stats/home.html:3 web/templates/hall-of-fame.html:3
 msgctxt "UI"
 msgid "Stats"
 msgstr "Statistiky"
+
+#: user_request/templates/user_request/otp.html:4 web/views.py:667
+msgctxt "UI"
+msgid "Settings"
+msgstr "Nastavení"
 
 #: user_request/templates/user_request/otp.html:9
 msgctxt "UI"
@@ -5645,185 +5326,83 @@ msgid "Connect your <strong>U2F device</strong> and confirm your request on it"
 msgstr ""
 "Připojte vaše <strong>U2F zařízení</strong> a potvrďte na něm váš požadavek"
 
-#: web/auth_views.py:186
+#: web/auth_views.py:193
 msgctxt "UI"
 msgid "Logged out"
 msgstr "Odhlášen"
 
-#: web/forms.py:48 web/forms.py:84
+#: web/forms.py:33 web/forms.py:69
 msgctxt "UI"
 msgid "Captcha"
 msgstr "Captcha"
 
-#: web/forms.py:59
+#: web/forms.py:44
 msgctxt "UI"
 msgid "Read only login token"
 msgstr "Token pro přihlášení pouze pro čtení"
 
-#: web/forms.py:71
+#: web/forms.py:56
 msgctxt "UI"
 msgid "User is not active"
 msgstr "Uživatel není aktivní"
 
-#: web/forms.py:155
+#: web/forms.py:140
 msgctxt "UI"
 msgid ""
 "Only alphabetical characters, numbers and underscore are allowed in username!"
 msgstr ""
 "Pouze alfanumerické znaky a podtržítko jsou dovolené v uživatelském jménu!"
 
-#: web/forms.py:162
+#: web/forms.py:147
 #, python-format
 msgctxt "UI"
 msgid "The username \"%(username)s\" is already taken."
 msgstr "Uživatelské jméno \"%(username)s\" je již obsazeno."
 
-#: web/forms.py:166
-msgctxt "UI"
-msgid "New email"
-msgstr "Nový email"
-
-#: web/forms.py:189
-msgctxt "UI"
-msgid "If you wish to change your email, enter it here"
-msgstr "Pokud si přejete změnit váš email, vložte ho zde"
-
-#: web/forms.py:207
-msgctxt "UI"
-msgid "New email must be different from the current."
-msgstr "Nový email musí být odlišný od předchozího."
-
-#: web/forms.py:230 web/models.py:944
-msgctxt "UI"
-msgid "Wallet"
-msgstr "Peněženka"
-
-#: web/forms.py:231 web/forms.py:234
-msgctxt "UI"
-msgid "Click to select all."
-msgstr "Kliknutím vyberete vše."
-
-#: web/forms.py:233
-msgctxt "UI"
-msgid "Message"
-msgstr "Zpráva"
-
-#: web/forms.py:236
-msgctxt "UI"
-msgid "Signature"
-msgstr "Podpis"
-
-#: web/forms.py:237
-msgctxt "UI"
-msgid "Paste the signature obtained from your BTC wallet software"
-msgstr "Zkopírujte podpis získaný z vaší BTC peněženky"
-
-#: web/forms.py:255
-msgctxt "UI"
-msgid "Cannot verify the message, please try it later."
-msgstr "Nelze ověřit zprávu, zkuste to prosím později."
-
-#: web/forms.py:275
-msgctxt "UI"
-msgid "New wallet"
-msgstr "Nová peněženka"
-
-#: web/forms.py:276
-msgctxt "UI"
-msgid "If you wish to change your BTC wallet, enter its address here"
-msgstr "Pokud si přejete změnit vaši BTC peněženku, vložte její adresu zde"
-
-#: web/forms.py:297
-msgctxt "UI"
-msgid "An additional fee of 0.0001 BTC applies to payouts lower than 0.01 BTC."
-msgstr ""
-"Pro výplatu menší než 0.01 BTC se započítá dodatečný poplatek 0.0001 BTC."
-
-#: web/forms.py:319
-msgctxt "UI"
-msgid ""
-"This is not a valid Bitcoin address. Please install Bitcoin client or "
-"register some web wallet to get one."
-msgstr ""
-"Toto není platná Bitcoinová adresa. Tu můžete získat ve svém TREZORU, po "
-"instalaci v Bitcoinovém klientu nebo po registraci na nějaké webové "
-"peněžence."
-
-#: web/forms.py:322
-msgctxt "UI"
-msgid "New wallet must be different from the current."
-msgstr "Nová peněženka musí být odlišná od stávající."
-
-#: web/forms.py:340
-msgctxt "UI"
-msgid "Sending threshold must be >= 0.001 BTC"
-msgstr "Limit pro výplatu musí být alespoň 0.001 BTC"
-
-#: web/forms.py:343
-msgctxt "UI"
-msgid "Sending threshold must be <= 5 BTC"
-msgstr "Limit pro výplatu musí být menší nebo roven 5 BTC"
-
-#: web/forms.py:364 web/models.py:952 web/models.py:953
-msgctxt "UI"
-msgid "Minimum difficulty"
-msgstr "Minimální složitost"
-
-#: web/forms.py:365
-msgctxt "UI"
-msgid "Pool always assigns difficulty equal or greater than this value."
-msgstr "Pool vždy přiřadí složitost větší nebo rovnou této hodnotě."
-
-#: web/forms.py:409 web/forms.py:414 web/forms.py:418
-#, python-format
-msgctxt "UI"
-msgid "Worker %s already exists"
-msgstr "Zařízení %s již existuje"
-
-#: web/forms.py:434 web/templates/hall-of-fame.html:19
+#: web/forms.py:151 web/templates/hall-of-fame.html:19
 #: web/templates/hall-of-fame.html.py:47
 msgctxt "UI"
 msgid "Username"
 msgstr "Uživatelské jméno"
 
-#: web/forms.py:435
+#: web/forms.py:152
 msgctxt "UI"
 msgid "Enter a valid username."
 msgstr "Vložte platné uživatelské jméno."
 
-#: web/forms.py:436 web/models.py:947
+#: web/forms.py:153 web/models.py:1007
 msgctxt "UI"
 msgid "Email"
 msgstr "Email"
 
-#: web/forms.py:437
+#: web/forms.py:154
 msgctxt "UI"
 msgid "Required password"
 msgstr "Požadované heslo"
 
-#: web/forms.py:438
+#: web/forms.py:155
 msgctxt "UI"
 msgid "Password again"
 msgstr "Heslo znovu"
 
-#: web/forms.py:450
+#: web/forms.py:167
 msgctxt "UI"
 msgid "Passwords are different!"
 msgstr "Hesla jsou rozdílná!"
 
-#: web/forms.py:535
+#: web/forms.py:252
 #, python-format
 msgctxt "UI"
 msgid "Points must be greater or equal than %s."
 msgstr "Body musí být větší nebo rovny %s."
 
-#: web/forms.py:537
+#: web/forms.py:254
 #, python-format
 msgctxt "UI"
 msgid "Points must be lower or equal than %s."
 msgstr "Body musí být menší nebo rovny %s."
 
-#: web/forms.py:555
+#: web/forms.py:272
 msgctxt "UI"
 msgid "New comment"
 msgstr "Nový komentář"
@@ -5883,507 +5462,460 @@ msgstr ""
 "Udržujte své vytěžené bitcoiny v bezpečí <br><strong>\"nejchytřejšího "
 "finančního ověřovacího zařízení na světě!\"</strong>"
 
-#: web/models.py:160
-msgctxt "UI"
-msgid "Your preferred language for web and email communication when logged in."
-msgstr ""
-"Váš preferovaný jazyk pro web a emailovou komunikaci, pokud jste prihlášen."
-
-#: web/models.py:167
-msgctxt "UI"
-msgid ""
-"You have a pending request for changing your email, please confirm or cancel "
-"the request"
-msgstr ""
-"Máte tu čekající žádost na změnu emailu. Potvrďte nebo zrušte tento "
-"požadavek prosím"
-
-#: web/models.py:175
-msgctxt "UI"
-msgid "Your Bitcoin address for receiving rewards"
-msgstr "Vaše Bitcoinová adresa pro příjem výplat"
-
-#: web/models.py:181
-msgctxt "UI"
-msgid ""
-"You have a pending request for changing your wallet, please confirm or "
-"cancel the request"
-msgstr ""
-"Máte tu čekající žádost na změnu peněženky. Potvrďte nebo zrušte tento "
-"požadavek prosím"
-
-#: web/models.py:186
-msgctxt "UI"
-msgid "Coins will be sent once the reward crosses over the threshold"
-msgstr "Výplata bude odeslána, jakmile aktuální zůstatek překročí tento limit"
-
-#: web/models.py:189 web/models.py:934
-msgctxt "UI"
-msgid "Username in stats"
-msgstr "Uživatelské jméno ve statistikách"
-
-#: web/models.py:191
-msgctxt "UI"
-msgid "Show my username in public server stats"
-msgstr "Zobrazovat moje uživatelské jméno ve veřejných statistikách"
-
-#: web/models.py:192 web/models.py:935
-msgctxt "UI"
-msgid "Notify me on payout"
-msgstr "Informovat mě při výplatě"
-
-#: web/models.py:193
-msgctxt "UI"
-msgid "Send email when the system sends me a payment"
-msgstr "Informovat mě emailem, jakmile mi systém zašle výplatu"
-
-#: web/models.py:195 web/models.py:936
-msgctxt "UI"
-msgid "Newsletter"
-msgstr "Novinky"
-
-#: web/models.py:196
-msgctxt "UI"
-msgid "Receive pool newsletters"
-msgstr "Dostávat novinky z poolu"
-
-#: web/models.py:201 web/models.py:937
-msgctxt "UI"
-msgid "Currency unit"
-msgstr "Jednotka měny"
-
-#: web/models.py:203
-msgctxt "UI"
-msgid "Unit used by the site when displaying Bitcoin amounts"
-msgstr "Jednotka měny použitá tímto webem k zobrazení objemu Bitcoinů"
-
-#: web/models.py:206 web/models.py:940
+#: web/models.py:70 web/models.py:304 web/models.py:999
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr "Reportování zapnuto"
 
-#: web/models.py:208
-msgctxt "UI"
-msgid "Send emails about device state changes"
-msgstr "Odesílat emaily o změnách stavu zařízení"
-
-#: web/models.py:210 web/templates/new_user_registered.html:47
-msgctxt "UI"
-msgid "User Manual"
-msgstr "Uživatelský manuál"
-
-#: web/models.py:211
-msgctxt "UI"
-msgid "Auto-detect alert limit for account"
-msgstr "Automaticky zjišťovat výstražný limit pro tento účet"
-
-#: web/models.py:213
-msgctxt "UI"
-msgid "Calculate alert limit from past activity of all workers"
-msgstr "Vypočítávat výstražný limit z předchozí aktivity všech zařízení"
-
-#: web/models.py:215
-msgctxt "UI"
-msgid "Alert limit for account [Gh/s]"
-msgstr "Výstražný limit pro tento účet [Gh/s]"
-
-#: web/models.py:216
-msgctxt "UI"
-msgid "Account low Effective Hash Rate threshold"
-msgstr "Spodní limit efektivního hash rate pro tento účet"
-
-#: web/models.py:218
-msgctxt "UI"
-msgid "Max. reports per day"
-msgstr "Maximální počet reportů za den"
-
-#: web/models.py:220
-msgctxt "UI"
-msgid "Pool will not send more than this number of reports to you in one day"
-msgstr "Pool nebude posílat více reportů za den než je tato hodnota"
-
-#: web/models.py:221
-msgctxt "UI"
-msgid "Watch proposals"
-msgstr "Sledovat návrhy"
-
-#: web/models.py:222
-msgctxt "UI"
-msgid "Receive notifications about proposal changes"
-msgstr "Dostávat upozornění o změnách návrhů"
-
-#: web/models.py:224
-msgctxt "UI"
-msgid "Readonly login token"
-msgstr "Token pro přihlášení pouze pro čtení"
-
-#: web/models.py:256
+#: web/models.py:107
 msgctxt "UI"
 msgid "Invalid token format"
 msgstr "Neplatný formát tokenu"
 
-#: web/models.py:261
+#: web/models.py:112
 msgctxt "UI"
 msgid "Token not generated yet"
 msgstr "Zatím nebyl vygenerován žádný token"
 
-#: web/models.py:263
+#: web/models.py:114
 msgctxt "UI"
 msgid "Invalid token"
 msgstr "Neplatný token"
 
-#: web/models.py:280
+#: web/models.py:131
 msgctxt "UI"
 msgid "Wallet change confirmation"
 msgstr "Potvrzení změny peněženky"
 
-#: web/models.py:304
+#: web/models.py:155 web/models.py:355
 msgctxt "UI"
 msgid "Email change confirmation"
 msgstr "Potvrzení změny emailu"
 
-#: web/models.py:415
+#: web/models.py:331
+#, fuzzy
+msgctxt "UI"
+msgid "Zcash wallet change confirmation"
+msgstr "Potvrzení změny peněženky"
+
+#: web/models.py:411
 msgctxt "UI, Transaction state"
 msgid "New"
 msgstr "Nové"
 
-#: web/models.py:416
+#: web/models.py:412
 msgctxt "UI, Transaction state"
 msgid "Processing"
 msgstr "Zpracovávám"
 
-#: web/models.py:417
+#: web/models.py:413
 msgctxt "UI, Transaction state"
 msgid "Failed"
 msgstr "Chyba"
 
-#: web/models.py:418
+#: web/models.py:414
 msgctxt "UI, Transaction state"
 msgid "Sent"
 msgstr "Odesláno"
 
-#: web/models.py:671
+#: web/models.py:730
 msgctxt "UI, Proposals"
 msgid "Draft"
 msgstr "Koncept"
 
-#: web/models.py:672
+#: web/models.py:731
 msgctxt "UI, Proposals"
 msgid "Approved"
 msgstr "Schváleno"
 
-#: web/models.py:673
+#: web/models.py:732
 msgctxt "UI, Proposals"
 msgid "Rejected"
 msgstr "Zamítnuto"
 
-#: web/models.py:674
+#: web/models.py:733
 msgctxt "UI, Proposals"
 msgid "In progress"
 msgstr "Ve vývoji"
 
-#: web/models.py:675
+#: web/models.py:734
 msgctxt "UI, Proposals"
 msgid "Released"
 msgstr "Implementováno"
 
-#: web/models.py:676
+#: web/models.py:735
 msgctxt "UI, Proposals"
 msgid "Merged"
 msgstr "Spojeno"
 
-#: web/models.py:835
+#: web/models.py:894
 #, python-format
 msgctxt "UI"
 msgid "Proposal %(link)s changed state from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr "Návrh %(link)s změnil status z <b>%(old)s</b> na <b>%(new)s</b>"
 
-#: web/models.py:844 web/models.py:852
+#: web/models.py:903 web/models.py:911
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> změněno z <b>%(old)s</b> na <b>%(new)s</b>"
 
-#: web/models.py:848
+#: web/models.py:907
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> změněno na <b>%(new)s</b>"
 
-#: web/models.py:856 web/models.py:875
+#: web/models.py:915 web/models.py:934
 #, python-format
 msgctxt "UI, time"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> změněno z <b>%(old)s</b> na <b>%(new)s</b>"
 
-#: web/models.py:869
+#: web/models.py:928
 msgctxt "UI"
 msgid "Depricated"
 msgstr "Zastaralý"
 
-#: web/models.py:881
+#: web/models.py:940
 msgctxt "UI"
 msgid "Nothing has changed"
 msgstr "Nic se nezměnilo"
 
-#: web/models.py:887 web/models.py:889
+#: web/models.py:946 web/models.py:948
 msgctxt "UI"
 msgid "N/A"
 msgstr "Nedostupný"
 
-#: web/models.py:907 workers/api/v1/views.py:84
+#: web/models.py:966
 msgctxt "UI"
 msgid "Worker"
 msgstr "Zařízení"
 
-#: web/models.py:932
+#: web/models.py:991
 msgctxt "UI"
 msgid "Preferred language"
 msgstr "Preferovaný jazyk"
 
-#: web/models.py:933
+#: web/models.py:992
 msgctxt "UI"
 msgid "Preferred timezone"
 msgstr "Preferované časové pásmo"
 
-#: web/models.py:938
+#: web/models.py:993
+msgctxt "UI"
+msgid "Username in stats"
+msgstr "Uživatelské jméno ve statistikách"
+
+#: web/models.py:994
+msgctxt "UI"
+msgid "Notify me on payout"
+msgstr "Informovat mě při výplatě"
+
+#: web/models.py:995
+msgctxt "UI"
+msgid "Newsletter"
+msgstr "Novinky"
+
+#: web/models.py:996
+msgctxt "UI"
+msgid "Currency unit"
+msgstr "Jednotka měny"
+
+#: web/models.py:997
 msgctxt "UI"
 msgid "Blockchain voting"
 msgstr "Blockchain hlasování"
 
-#: web/models.py:942
+#: web/models.py:1000
+msgctxt "UI"
+msgid "Auto-detect alert limit"
+msgstr "Autodetekce výstražného limitu"
+
+#: web/models.py:1001
 msgctxt "UI"
 msgid "Alert limit"
 msgstr "Výstražný limit"
 
-#: web/models.py:945
+#: web/models.py:1003
+msgctxt "UI"
+msgid "Wallet"
+msgstr "Peněženka"
+
+#: web/models.py:1004 web/models.py:1005
 msgctxt "UI"
 msgid "Pending wallet"
 msgstr "Peněženka čekající na vyřízení"
 
-#: web/models.py:946
+#: web/models.py:1006
 msgctxt "UI"
 msgid "Send threshold"
 msgstr "Limit pro odeslání výplaty"
 
-#: web/models.py:949
+#: web/models.py:1009 web/views.py:663
 msgctxt "UI"
 msgid "Monitoring"
 msgstr "Sledování"
 
-#: web/models.py:950
+#: web/models.py:1010
 msgctxt "UI"
 msgid "Last Change"
 msgstr "Poslední změna"
 
-#: web/models.py:955
+#: web/models.py:1011
+msgctxt "UI"
+msgid "Login suffix"
+msgstr "Přípona uživatelského jména"
+
+#: web/models.py:1012 web/models.py:1013
+msgctxt "UI"
+msgid "Minimum difficulty"
+msgstr "Minimální složitost"
+
+#: web/models.py:1015
 msgctxt "UI"
 msgid "Enabled"
 msgstr "Zapnuto"
 
-#: web/models.py:955
+#: web/models.py:1015
 msgctxt "UI"
 msgid "Disabled"
 msgstr "Vypnuto"
 
-#: web/models.py:976
+#: web/models.py:1037
 msgctxt "UI"
 msgid "Account deleted"
 msgstr "Účet smazán"
 
-#: web/models.py:977
+#: web/models.py:1038
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr "Vyžádáno potvrzení smazání účtu"
 
-#: web/models.py:979
+#: web/models.py:1040
 msgctxt "UI"
 msgid "Login"
 msgstr "Přihlášení"
 
-#: web/models.py:980
+#: web/models.py:1041
 msgctxt "UI"
 msgid "Login to readonly mode"
 msgstr "Přihlašte se do módu pouze pro čtení"
 
-#: web/models.py:981
+#: web/models.py:1042
 msgctxt "UI"
 msgid "Logout"
 msgstr "Odhlásit se"
 
-#: web/models.py:982
+#: web/models.py:1043
 msgctxt "UI"
 msgid "Message seen"
 msgstr "Zobrazená zpráva"
 
-#: web/models.py:983
+#: web/models.py:1044
 msgctxt "UI"
 msgid "Mining settings updated"
 msgstr "Nastavení těžby aktualizováno"
 
-#: web/models.py:984
+#: web/models.py:1045
 msgctxt "UI"
 msgid "Monitoring settings updated"
 msgstr "Nastavení sledování aktualizováno"
 
-#: web/models.py:985
+#: web/models.py:1046
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
 msgstr "Odběr novinek odhlášen"
 
-#: web/models.py:986
+#: web/models.py:1047
 msgctxt "UI"
 msgid "2-factor authentication disabled"
 msgstr "Dvoufaktorová autentizace vypnuta"
 
-#: web/models.py:987
+#: web/models.py:1048
 msgctxt "UI"
 msgid "2-factor authentication enabled"
 msgstr "Dvoufaktorová autentizace zapnuta"
 
-#: web/models.py:988 web/models.py:991
+#: web/models.py:1049 web/models.py:1052
 msgctxt "UI"
 msgid "Password changed"
 msgstr "Heslo změněno"
 
-#: web/models.py:989
+#: web/models.py:1050
 msgctxt "UI"
 msgid "Password reset completed"
 msgstr "Obnovení hesla dokončeno"
 
-#: web/models.py:990
+#: web/models.py:1051
 msgctxt "UI"
 msgid "Password reset initiated"
 msgstr "Obnovení hesla spuštěno"
 
-#: web/models.py:992
+#: web/models.py:1053
 msgctxt "UI"
 msgid "Payout settings updated"
 msgstr "Nastavení výplat aktualizováno"
 
-#: web/models.py:994
+#: web/models.py:1054
+msgctxt "UI"
+msgid "Zcash payout settings updated"
+msgstr "Nastavení Zcash výplat aktualizováno"
+
+#: web/models.py:1056
 msgctxt "UI"
 msgid "Proposal created"
 msgstr "Návrh vytvořen"
 
-#: web/models.py:995
+#: web/models.py:1057
 msgctxt "UI"
 msgid "You have created a new proposal:"
 msgstr "Vytvoříl jste nový návrh:"
 
-#: web/models.py:997
+#: web/models.py:1059
 msgctxt "UI"
 msgid "Proposal comment deleted"
 msgstr "Komentář návrhu smazán"
 
-#: web/models.py:999
+#: web/models.py:1061
 msgctxt "UI"
 msgid "Proposal updated"
 msgstr "Návrh aktualizován"
 
-#: web/models.py:1002
+#: web/models.py:1064
 msgctxt "UI"
 msgid "Proposal state changed"
 msgstr "Stav návrhu změněn"
 
-#: web/models.py:1004
+#: web/models.py:1066
 msgctxt "UI"
 msgid "Proposal vote"
 msgstr "Hlasování pro návrh"
 
-#: web/models.py:1005
+#: web/models.py:1067
 #, python-format
 msgctxt "UI"
 msgid "You gave <b>%(points)s</b> points to proposal"
 msgstr "Dal jste <b>%(points)s</b> bodů návrhu"
 
-#: web/models.py:1007
+#: web/models.py:1069
 msgctxt "UI"
 msgid "Account settings updated"
 msgstr "Nastavení účtu aktualizováno"
 
-#: web/models.py:1008
+#: web/models.py:1070
 msgctxt "UI"
 msgid "Wallet change confirmed"
 msgstr "Změna peněženky potvrzena"
 
-#: web/models.py:1009
+#: web/models.py:1071
 msgctxt "UI"
 msgid "Wallet change cancelled"
 msgstr "Změna peněženky zrušena"
 
-#: web/models.py:1010
+#: web/models.py:1072
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
 msgstr "Potvrzení změny peněženky znovu odesláno"
 
-#: web/models.py:1011
+#: web/models.py:1073
+msgctxt "UI"
+msgid "Zcash wallet change confirmed"
+msgstr "Změna Zcash peněženky potvrzena"
+
+#: web/models.py:1074
+msgctxt "UI"
+msgid "Zcash wallet change cancelled"
+msgstr "Změna Zcash peněženky zrušena"
+
+#: web/models.py:1075
+msgctxt "UI"
+msgid "Zcash wallet change confirmation resent"
+msgstr "Potvrzení změny Zcash peněženky znovu odesláno"
+
+#: web/models.py:1076
+msgctxt "UI"
+msgid "OTP change confirmed"
+msgstr "Změna OTP potvrzena"
+
+#: web/models.py:1077
 msgctxt "UI"
 msgid "Email change confirmed"
 msgstr "Změna emailu potvrzena"
 
-#: web/models.py:1012
+#: web/models.py:1078
 msgctxt "UI"
 msgid "Email change cancelled"
 msgstr "Změna emailu zrušena"
 
-#: web/models.py:1013
+#: web/models.py:1079
 msgctxt "UI"
 msgid "Email change confirmation resent"
 msgstr "Potvrzení změny emailu znovu odesláno"
 
-#: web/models.py:1014
+#: web/models.py:1080
 msgctxt "UI"
 msgid "Wallet locked"
 msgstr "Peněženka zamčena"
 
-#: web/models.py:1015
+#: web/models.py:1081
 msgctxt "UI"
 msgid "Wallet unlocked"
 msgstr "Peněženka odemčena"
 
-#: web/models.py:1016
+#: web/models.py:1082
+#, fuzzy
+msgctxt "UI"
+msgid "Zcash wallet locked"
+msgstr "Zcash peněženka odemčena"
+
+#: web/models.py:1083
+msgctxt "UI"
+msgid "Zcash wallet unlocked"
+msgstr "Zcash peněženka odemčena"
+
+#: web/models.py:1084
 msgctxt "UI"
 msgid "Worker removed"
 msgstr "Zařízení odebráno"
 
-#: web/models.py:1017
+#: web/models.py:1085
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr "Odstranil jste zařízení <b>%(name)s</b>"
 
-#: web/models.py:1018
+#: web/models.py:1086
 msgctxt "UI"
 msgid "Monitoring disabled for all workers"
 msgstr "Sledování vypnuto pro všechna zařízení"
 
-#: web/models.py:1019
+#: web/models.py:1087
 msgctxt "UI"
 msgid "Monitoring enabled for all workers"
 msgstr "Sledování zapnuto pro všechna zařízení"
 
-#: web/models.py:1020
+#: web/models.py:1088
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr "Nastavení zařízení aktualizováno"
 
-#: web/models.py:1021
+#: web/models.py:1089
 msgctxt "UI"
 msgid "New worker"
 msgstr "Nové zařízení"
 
-#: web/models.py:1022
+#: web/models.py:1090
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr "Zaregistroval jste nové zařízení"
 
-#: web/models.py:1024
+#: web/models.py:1092
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr "Neplatné uživatelské jméno"
 
-#: web/models.py:1025
+#: web/models.py:1093
 msgctxt "UI"
 msgid "Invalid login to readonly mode"
 msgstr "Neplatné přihlášení do módu pouze pro čtení"
@@ -6393,20 +5925,47 @@ msgctxt "UI"
 msgid "New account confirmation"
 msgstr "Potvrzení o registraci nového účtu"
 
-#: web/utils.py:61
+#: web/utils.py:65
 #, python-format
 msgid "%i days"
 msgstr "%i dnů"
 
-#: web/views.py:324
-msgctxt "UI"
-msgid "Account banned. Contact pool administrator at support@slushpool.com"
-msgstr "Účet je zablokován. Kontaktujte správce poolu na support@slushpool.com"
-
-#: web/views.py:677
+#: web/views.py:469
 msgctxt "UI"
 msgid "Requested proposal is waiting for admin confirmation"
 msgstr "Návrh čeká na potvrzení administrátorem"
+
+#: web/views.py:661
+msgctxt "UI"
+msgid "Dashboard"
+msgstr "Přehled"
+
+#: web/views.py:662 web/templates/email/monitoring_subject.html:2
+msgctxt "UI"
+msgid "Workers"
+msgstr "Zařízení"
+
+#: web/views.py:664
+msgctxt "UI"
+msgid "Reward History"
+msgstr "Historie odměn"
+
+#: web/views.py:665
+msgctxt "UI"
+msgid "Payout history"
+msgstr "Historie výplat"
+
+#: web/views.py:666
+#, fuzzy
+msgctxt "UI"
+msgid "Activity Log"
+msgstr "Záznam aktivit"
+
+#: web/views.py:678
+#, python-format
+msgctxt "UI"
+msgid "Account banned. Contact pool administrator at %(link)s"
+msgstr "Účet je zablokován. Kontaktujte správce poolu na %(link)s"
 
 #: web/api/v1/appeals.py:38
 #, python-format
@@ -6471,32 +6030,12 @@ msgctxt "UI"
 msgid "Not Found"
 msgstr "Nenalezeno"
 
-#: web/templates/account_delete_invalid.html:13
-msgctxt "UI"
-msgid ""
-"Your confirmation link is not valid. Please be sure that your confirmation "
-"link has been generated in less than one hour ago. If your current link is "
-"older than that, please go to your profile settings and retry your request."
-msgstr ""
-"Použitý odkaz pro potvrzení smazání účtu není platný. Ujistěte se prosím, že "
-"požadavek na smazání účtu není starší než jednu hodinu. V opačném případě se "
-"prosím vraťte na stránku nastavení svého profilu a zadejte požadavek znovu."
-
-#: web/templates/account_delete_success.html:13
-msgctxt "UI"
-msgid ""
-"Your account has been succesfuly deleted. If you would like to register to "
-"our pool again in future, your former username can be used again."
-msgstr ""
-"Váš účet byl úspěšně smazán. Vaše uživatelské jméno bude možno znovu použít "
-"při další případné budoucí registraci."
-
 #: web/templates/activity_log.html:3
 msgctxt "UI"
 msgid "Activity log"
 msgstr "Záznam aktivit"
 
-#: web/templates/base.html:155
+#: web/templates/base.html:109
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -6506,104 +6045,100 @@ msgstr ""
 "Povolte prosím <strong>javascript</strong> pro zobrazení všech funkcí tohoto "
 "webu. (<a href=\"%(url)s\" target=\"_blank\">podívejte se jak…</a>)"
 
-#: web/templates/base.html:165
+#: web/templates/base.html:119
 msgctxt "UI"
 msgid "You are using a <strong>Demo Account</strong>"
 msgstr "Jste přihlášen v <strong>Demo účtu</strong>"
 
-#: web/templates/base.html:167
+#: web/templates/base.html:121
 msgctxt "UI"
 msgid "You are using a <strong>Read-only Mode</strong>"
 msgstr "Jste přihlášen v <strong>Módu pouze pro čtení</strong>"
 
-#: web/templates/base.html:172 web/templates/login.html:9
+#: web/templates/base.html:126 web/templates/login.html:9
 #: web/templates/login.html.py:25 web/templates/login.html:45
 #: web/templates/login_failed.html:9
 msgctxt "UI"
 msgid "Log in"
 msgstr "Přihlásit"
 
-#: web/templates/base.html:173
+#: web/templates/base.html:127
 msgctxt "UI"
 msgid "Sign up"
 msgstr "Registrace"
 
-#: web/templates/base.html:186
-msgid "Loading ..."
-msgstr "Nahrávám ..."
-
-#: web/templates/base.html:237
+#: web/templates/base.html:146
 msgctxt "UI"
 msgid "<strong>Home</strong>"
 msgstr "<strong>Domů</strong>"
 
-#: web/templates/base.html:246
+#: web/templates/base.html:155
 msgctxt "UI"
 msgid "<strong>Pool</strong> Statistics"
 msgstr "<strong>Statistiky</strong> poolu"
 
-#: web/templates/base.html:247
+#: web/templates/base.html:156
 msgctxt "UI"
 msgid "Public facts"
 msgstr "Pro veřejnost"
 
-#: web/templates/base.html:256 web/templates/menu2_helpcenter_links.html:5
+#: web/templates/base.html:165 web/templates/menu2_helpcenter_links.html:5
 msgctxt "UI"
 msgid "<strong>Help</strong> Center"
 msgstr "Centrum <strong>nápovědy</strong>"
 
-#: web/templates/base.html:257 web/templates/menu2_devel_corner.html:4
+#: web/templates/base.html:166 web/templates/menu2_devel_corner.html:4
 msgctxt "UI"
 msgid "Development <span>Corner</span>"
 msgstr "Vývojářský <span>koutek</span>"
 
-#: web/templates/base.html:266
+#: web/templates/base.html:175
 msgctxt "UI"
 msgid "<strong>My</strong> account"
 msgstr "<strong>Můj</strong> účet"
 
-#: web/templates/base.html:267 web/templates/base.html.py:295
+#: web/templates/base.html:176 web/templates/base.html.py:204
 msgctxt "UI"
 msgid "Private zone"
 msgstr "Privátní zóna"
 
-#: web/templates/base.html:273
+#: web/templates/base.html:182
 msgctxt "UI"
 msgid "<strong>Log out</strong>"
 msgstr "<strong>Odhlásit</strong>"
 
-#: web/templates/base.html:288
+#: web/templates/base.html:197
 msgctxt "UI"
 msgid "<strong>Sign up</strong> HERE"
 msgstr "<strong>Registrace</strong> ZDE"
 
-#: web/templates/base.html:289
+#: web/templates/base.html:198
 msgctxt "UI"
 msgid "New account"
 msgstr "Nový účet"
 
-#: web/templates/base.html:294
+#: web/templates/base.html:203
 msgctxt "UI"
 msgid "<strong>Log in</strong>"
 msgstr "<strong>Přihlásit</strong>"
 
-#: web/templates/base.html:325
+#: web/templates/base.html:234
 msgctxt "UI"
 msgid "Feedback"
 msgstr "Připomínky"
 
-#: web/templates/base.html:326
+#: web/templates/base.html:235
 msgctxt "UI"
 msgid "Back to Top"
 msgstr "Zpět nahoru"
 
-#: web/templates/base.html:330
+#: web/templates/base.html:239
 #, python-format
 msgctxt "UI"
 msgid "Follow us on %(twitter)s and %(facebook)s."
 msgstr "Sledujte nás na %(twitter)s a %(facebook)s."
 
-#: web/templates/base.html:331
+#: web/templates/base.html:240
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -6613,16 +6148,16 @@ msgstr ""
 "Ceny BTC poskytuje <a href=\"%(url)s\" target=\"_blank\">BitcoinAverage "
 "Price Index</a>"
 
-#: web/templates/base.html:345
+#: web/templates/base.html:251
 msgid "Denied!"
 msgstr "Zamítnuto!"
 
-#: web/templates/base.html:348
+#: web/templates/base.html:254
 msgctxt "UI"
 msgid "You cannot do this in the Demo account, please log in to proceed."
 msgstr "V Demo účtu toto nelze provést. Pro pokračování se prosím přihlašte."
 
-#: web/templates/base.html:350
+#: web/templates/base.html:256
 msgctxt "UI"
 msgid "You cannot do this in the Read-only mode, please log in to proceed."
 msgstr ""
@@ -6633,26 +6168,6 @@ msgstr ""
 msgctxt "UI"
 msgid "Block History"
 msgstr "Historie bloků"
-
-#: web/templates/chart-switch.html:7
-msgctxt "UI"
-msgid "Date range:"
-msgstr "Rozsah datumů:"
-
-#: web/templates/chart-switch.html:15
-msgctxt "UI"
-msgid "Show active range"
-msgstr "Ukázat aktivní rozsah"
-
-#: web/templates/chart-switch.html:21
-msgctxt "UI"
-msgid "Show monitoring states"
-msgstr "Ukázat stavy sledování"
-
-#: web/templates/chart-switch.html:28
-msgctxt "UI"
-msgid "Show Namecoin Blocks"
-msgstr "Zobrazit Namecoinové bloky"
 
 #: web/templates/confirm_page_template.html:3
 msgctxt "UI"
@@ -6694,7 +6209,7 @@ msgid "Show unread proposals only"
 msgstr "Zobrazit pouze nepřečtené návrhy"
 
 #: web/templates/development_corner.html:72
-#: web/templates/proposal_detail.html:210
+#: web/templates/proposal_detail.html:211
 msgctxt "UI"
 msgid "Unread proposals count"
 msgstr "Počet nepřečtených návrhů"
@@ -6715,8 +6230,8 @@ msgid "Log in here"
 msgstr "Přihlašte se zde"
 
 #: web/templates/development_corner.html:98
-#: web/templates/development_corner.html:226
-#: web/templates/development_corner.html:245
+#: web/templates/development_corner.html:223
+#: web/templates/development_corner.html:242
 msgctxt "UI"
 msgid "Title"
 msgstr "Název"
@@ -6742,7 +6257,7 @@ msgid "Your<br/>Points"
 msgstr "Vašich<br/>bodů"
 
 #: web/templates/development_corner.html:104
-#: web/templates/proposal_detail.html:33
+#: web/templates/proposal_detail.html:34
 msgctxt "UI"
 msgid "Vote"
 msgstr "Hlasovat"
@@ -6767,64 +6282,40 @@ msgctxt "UI"
 msgid "Waits for admin confirmation"
 msgstr "Čeká na potvrzení administrátorem"
 
-#: web/templates/development_corner.html:209
+#: web/templates/development_corner.html:206
 msgctxt "UI"
 msgid "There are no development proposals yet."
 msgstr "Nejsou zde ještě žádné vývojářské návrhy."
 
-#: web/templates/development_corner.html:213
+#: web/templates/development_corner.html:210
 msgctxt "UI"
 msgid "There is nothing to show. Please disable the filter."
 msgstr "Není zde nic k zobrazení. Prosím vypněte filtrování."
 
-#: web/templates/development_corner.html:222
+#: web/templates/development_corner.html:219
 msgctxt "UI"
 msgid "<span>Proposals</span> In Development"
 msgstr "<span>Návrhy</span> ve vývoji"
 
-#: web/templates/development_corner.html:227
+#: web/templates/development_corner.html:224
 msgctxt "UI"
 msgid "From"
 msgstr "Z"
 
-#: web/templates/development_corner.html:241
+#: web/templates/development_corner.html:238
 msgctxt "UI"
 msgid "Released <span>Proposals</span>"
 msgstr "Dokončené <span>návrhy</span>"
 
-#: web/templates/development_corner.html:246
+#: web/templates/development_corner.html:243
 msgctxt "UI"
 msgid "Released"
 msgstr "Vydáno"
 
-#: web/templates/development_corner.html:260
+#: web/templates/development_corner.html:257
 msgctxt "UI"
 msgid "Guideline for new proposals"
 msgstr "Návod pro vytváření nových návrhů"
-
-#: web/templates/development_corner.html:309
-msgctxt "Intro"
-msgid "Shows the power of all points converted to hash rate together."
-msgstr "Zobrazení váhy všech přidělených bodů převedených na hash rate."
-
-#: web/templates/development_corner.html:310
-msgctxt "Intro"
-msgid "This value is refreshed every 5 minutes."
-msgstr "Tato hodnota se obnovuje každých 5 minut."
-
-#: web/templates/development_corner.html:318
-msgctxt "Intro"
-msgid "Shows how many users voted for a particular proposal."
-msgstr "Ukazuje, kolik uživatelů hlasovalo pro konkrétní návrh."
-
-#: web/templates/development_corner.html:326
-msgctxt "Intro"
-msgid ""
-"Total points show how many points the proposal has received from all users "
-"together."
-msgstr ""
-"Celkový počet bodů ukazuje, kolik bodů návrh dostal od všech uživatelů "
-"dohromady."
 
 #: web/templates/facebook_feed.html:3 web/templates/facebook_feed_page.html:11
 msgctxt "UI"
@@ -6866,11 +6357,6 @@ msgctxt "UI"
 msgid "Get our latest news in your RSS reader"
 msgstr "Získejte poslední novinky z poolu do své RSS čtečky"
 
-#: web/templates/faq.html:3
-msgctxt "UI"
-msgid "FAQ"
-msgstr "FAQ"
-
 #: web/templates/hall-of-fame.html:10
 msgctxt "UI"
 msgid "Hall of Fame"
@@ -6901,7 +6387,7 @@ msgctxt "UI"
 msgid "Homepage"
 msgstr "Domovská stránka"
 
-#: web/templates/homepage.html:21
+#: web/templates/homepage.html:19
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -6911,42 +6397,43 @@ msgstr ""
 "Hledáte URL těžebních serverů? Přečtěte si jak <a href=\"%(link)s\" class="
 "\"alert-link\">začít</a>!"
 
-#: web/templates/homepage.html:24
+#: web/templates/homepage.html:22
 msgctxt "UI"
 msgid "<span>World's First</span> Bitcoin Mining Pool"
 msgstr "<span>První pool</span> na těžení Bitcoinu na světě"
 
-#: web/templates/homepage.html:33
+#: web/templates/homepage.html:31
 msgctxt "UI"
 msgid "<span></span>Tradition &amp; Trust"
 msgstr "<span></span>Tradice &amp; Důvěra"
 
-#: web/templates/homepage.html:36
+#: web/templates/homepage.html:34
 msgctxt "UI"
 msgid "First Bitcoin mining pool in the world"
 msgstr "První pool na těžení bitcoinů na světě"
 
-#: web/templates/homepage.html:37
+#: web/templates/homepage.html:35
 msgctxt "UI"
 msgid "Operating since December 2010"
 msgstr "V provozu od prosince 2010"
 
-#: web/templates/homepage.html:38
+#: web/templates/homepage.html:36
+#, python-format
 msgctxt "UI"
-msgid "Over 939,000 BTC mined since December 2010"
-msgstr "Vytěženo přes 939,000 BTC od prosince 2010"
+msgid "Over %(amount)s BTC mined since December 2010"
+msgstr "Vytěženo přes %(amount)s BTC od prosince 2010"
 
-#: web/templates/homepage.html:39
+#: web/templates/homepage.html:37
 msgctxt "UI"
 msgid "Long history of stable and accurate payouts"
 msgstr "Dlouhá historie stabilních a přesných výplat"
 
-#: web/templates/homepage.html:46
+#: web/templates/homepage.html:44
 msgctxt "UI"
 msgid "Active <span>Development</span>"
 msgstr "Aktivní <span>vývoj</span>"
 
-#: web/templates/homepage.html:49
+#: web/templates/homepage.html:47
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -6956,12 +6443,12 @@ msgstr ""
 "Byly přidány nové vlastnosti. Podívejte se na <a href=\"%(release_notes)s"
 "\">Poznámky k vydání</a> pro více informací."
 
-#: web/templates/homepage.html:50
+#: web/templates/homepage.html:48
 msgctxt "UI"
 msgid "Development proposals driven by your hash&nbsp;rate"
 msgstr "Vývojářské návrhy poháněné vaším hash&nbsp;rate"
 
-#: web/templates/homepage.html:51
+#: web/templates/homepage.html:49
 msgctxt "UI"
 msgid ""
 "Submit your own idea about how the pool should change and let everybody to "
@@ -6970,12 +6457,12 @@ msgstr ""
 "Sepište svůj vlastní pohled na to, jak by se měl pool změnit a nechte "
 "všechny hlasovat"
 
-#: web/templates/homepage.html:63
+#: web/templates/homepage.html:61
 msgctxt "UI"
 msgid "<span>Unique</span> Reward System"
 msgstr "<span>Unikátní</span> systém odměn"
 
-#: web/templates/homepage.html:65
+#: web/templates/homepage.html:63
 msgctxt "UI"
 msgid ""
 "Our unique reward system provides <strong>stable and transparent rewards</"
@@ -6984,12 +6471,12 @@ msgstr ""
 "Náš unikátní systém odměn nabízí <strong>stabilní a transparentní odměny</"
 "strong> pro loajální těžaře."
 
-#: web/templates/homepage.html:71
+#: web/templates/homepage.html:69
 msgctxt "UI"
 msgid "<span>High</span> Availability"
 msgstr "<span>Vysoká</span> dostupnost"
 
-#: web/templates/homepage.html:75
+#: web/templates/homepage.html:73
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -7001,12 +6488,12 @@ msgstr ""
 "zátěže</strong> a <strong>systém převzetí služeb při selhání</strong> "
 "zajistí, že budete připojen a aktivně těžit 99.9%% času."
 
-#: web/templates/homepage.html:84
+#: web/templates/homepage.html:82
 msgctxt "UI"
 msgid "<span>Account</span> Security"
 msgstr "<span>Zabezpečení</span> účtu"
 
-#: web/templates/homepage.html:87
+#: web/templates/homepage.html:85
 msgctxt "UI"
 msgid ""
 "The entire infrastructure runs on <strong>highly secured servers</strong>."
@@ -7014,7 +6501,7 @@ msgstr ""
 "Veškerá infrastruktura běží na <strong>vysoce zabezpečených serverech</"
 "strong>."
 
-#: web/templates/homepage.html:87
+#: web/templates/homepage.html:85
 msgctxt "UI"
 msgid ""
 "Your wallet address can be secured with <strong>two-factor-authentication "
@@ -7023,12 +6510,12 @@ msgstr ""
 "Vaše výplatní adresa může být zabezpečena <strong>dvoufaktorovu autentizací "
 "(2FA)</strong>."
 
-#: web/templates/homepage.html:92
+#: web/templates/homepage.html:90
 msgctxt "UI"
 msgid "<span>Professional</span> Support"
 msgstr "<span>Profesionální</span> podpora"
 
-#: web/templates/homepage.html:95
+#: web/templates/homepage.html:93
 msgctxt "UI"
 msgid ""
 "Our support team is here for you <strong>24/7</strong>. We are working hard "
@@ -7036,78 +6523,6 @@ msgid ""
 msgstr ""
 "Náš tým zákaznické podpory je tu pro vás <strong>24/7</strong>. Tvrdě "
 "pracujeme na tom, abychom vám dali správnou odpověď v každé situaci."
-
-#: web/templates/homepage_intro_content.html:8
-msgctxt "Intro"
-msgid "Welcome to our interactive help screen!"
-msgstr "Vítejte na naší interaktivní stránce nápovědy!"
-
-#: web/templates/homepage_intro_content.html:13
-msgctxt "Intro"
-msgid ""
-"This function is here to show you what certain parts of this web mean and "
-"what they do."
-msgstr ""
-"Tato funkce je zde proto, aby vám ukázala, co konkrétní části webu znamenají "
-"a co dělají."
-
-#: web/templates/homepage_intro_content.html:14
-msgctxt "Intro"
-msgid "Please note, that many chapters do need you to be logged in."
-msgstr ""
-"Vezměte prosím v úvahu, že mnohé kapitoly vyžadují, abyste byl přihlášen."
-
-#: web/templates/homepage_intro_content.html:15
-msgctxt "Intro"
-msgid "You can use our Demo Account."
-msgstr "Můžete použít náš Demo účet."
-
-#: web/templates/homepage_intro_content.html:20
-msgctxt "Intro"
-msgid "There are several ways how to use this interactive help:"
-msgstr "Existuje několik způsobů, jak používat tuto interaktivní nápovědu:"
-
-#: web/templates/homepage_intro_content.html:22
-msgctxt "Intro"
-msgid "1) Specific Topic"
-msgstr "1) Specifické téma"
-
-#: web/templates/homepage_intro_content.html:23
-msgctxt "Intro"
-msgid ""
-"Whenever you see a small info icon, clicking on it will take you to a "
-"specific topic."
-msgstr ""
-"Kdykoliv vidíte malou informační ikonku, kliknutím na ni se dostanete na "
-"specifické téma."
-
-#: web/templates/homepage_intro_content.html:25
-msgctxt "Intro"
-msgid "2) Individual Pages"
-msgstr "2) Jednotlivé stránky"
-
-#: web/templates/homepage_intro_content.html:26
-msgctxt "Intro"
-msgid ""
-"When you see a yellow info button in left bottom corner of a page, you can "
-"invoke this screen on a particular chapter."
-msgstr ""
-"Kdykoliv vidíte žluté informační tlačítko v levém dolním rohu stránky, "
-"můžete vyvolat tuto obrazovku u konkrétních kapitol."
-
-#: web/templates/homepage_intro_content.html:28
-msgctxt "Intro"
-msgid "3) Full Walkthrough"
-msgstr "3) Kompletní prohlídka"
-
-#: web/templates/homepage_intro_content.html:29
-msgctxt "Intro"
-msgid ""
-"You can navigate yourself by chapters and then cycle through topics on "
-"individual pages right from here or any other help screen."
-msgstr ""
-"Rovnou odsud nebo odkudkoliv z této nápovědy můžete postupovat po kapitolách "
-"a poté procházet témata na jednotlivých stránkách."
 
 #: web/templates/intro_screen_markup.html:7
 msgctxt "UI"
@@ -7166,47 +6581,26 @@ msgstr "Představení"
 
 #: web/templates/intro_screen_markup.html:45
 msgctxt "Intro"
-msgid "Pool Statistics"
-msgstr "Statistiky poolu"
-
-#: web/templates/intro_screen_markup.html:46
-msgctxt "Intro"
-msgid "Development Corner"
-msgstr "Vývojářský koutek"
-
-#: web/templates/intro_screen_markup.html:47
-msgctxt "Intro"
-msgid "Account Dashboard"
-msgstr "Přehled účtu"
-
-#: web/templates/intro_screen_markup.html:48
-msgctxt "Intro"
 msgid "Device Monitoring"
 msgstr "Sledování zařízení"
 
-#: web/templates/intro_screen_markup.html:49
+#: web/templates/intro_screen_markup.html:46
 msgctxt "Intro"
 msgid "Reward History"
 msgstr "Historie odměn"
 
-#: web/templates/intro_screen_markup.html:50
+#: web/templates/intro_screen_markup.html:47
 msgctxt "Intro"
 msgid "Payout History"
 msgstr "Historie výplat"
 
-#: web/templates/intro_screen_markup.html:52
+#: web/templates/intro_screen_markup.html:49
 msgctxt "Intro"
 msgid "Activity Log"
 msgstr "Záznam aktivit"
 
-#: web/templates/intro_screen_markup.html:54
-msgctxt "Intro"
-msgid "Account Settings"
-msgstr "Nastavení účtu"
-
 #: web/templates/login.html:4 web/templates/login_failed.html:4
 #: web/templates/password_reset_confirm.html:31
-#: web/templates/registration_confirm_has_account.html:22
 msgctxt "UI, action"
 msgid "Login"
 msgstr "Přihlašovací jméno"
@@ -7265,6 +6659,16 @@ msgstr "<strong>Domovská</strong> stránka"
 msgctxt "UI"
 msgid "<strong>News</strong>"
 msgstr "<strong>Novinky</strong>"
+
+#: web/templates/menu2_homepage_links.html:11
+msgctxt "UI"
+msgid "<strong>Team</strong>"
+msgstr "<strong>Tým</strong>"
+
+#: web/templates/menu2_homepage_links.html:15
+msgctxt "UI"
+msgid "<strong>Blog</strong>"
+msgstr "<strong>Blog</strong>"
 
 #: web/templates/menu2_poolstats.html:4
 msgctxt "UI, top menu"
@@ -7336,7 +6740,7 @@ msgctxt "UI"
 msgid "<Strong>Activity</strong> Log"
 msgstr "<Strong>Záznam</strong> aktivit"
 
-#: web/templates/menu2_profile_links.html:41
+#: web/templates/menu2_profile_links.html:40
 msgctxt "UI"
 msgid "<strong>Settings</strong>"
 msgstr "<strong>Nastavení</strong>"
@@ -7372,173 +6776,43 @@ msgstr ""
 "přejete znovu dostávat tyto zprávy, tuto možnost najdete v nastavení svého "
 "účtu."
 
-#: web/templates/monitoring.html:3 web/templates/payouts.html:3
-msgctxt "UI"
-msgid "My account"
-msgstr "Můj účet"
-
-#: web/templates/monitoring.html:3
-msgctxt "UI"
-msgid "Device Monitoring"
-msgstr "Sledování zařízení"
-
-#: web/templates/monitoring.html:54 web/templates/email/monitoring_body.html:8
-msgctxt "UI"
-msgid "Event Time"
-msgstr "Čas události"
-
-#: web/templates/monitoring.html:55 web/templates/email/monitoring_body.html:10
-msgctxt "UI"
-msgid "Worker States (Changes)"
-msgstr "Stavy zařízení (změny)"
-
-#: web/templates/monitoring.html:56 web/templates/email/monitoring_body.html:9
-msgctxt "UI"
-msgid "Account Hash Rate"
-msgstr "Hash rate účtu"
-
-#: web/templates/monitoring.html:57
-msgctxt "UI"
-msgid "Report State"
-msgstr "Stav zprávy"
-
-#: web/templates/monitoring.html:90
-msgctxt "UI"
-msgid "Report has been sent to your email."
-msgstr "Zpráva byla odeslána na váš email."
-
-#: web/templates/monitoring.html:93
-msgctxt "UI"
+#: web/templates/msg_pending_wallet.html:2
+#, python-format
 msgid ""
-"Report has not been sent because it contains only <span class=\"strong"
-"\">insignificant events</span>."
+"You have pending request for changing <strong>%(currency)s</strong> wallet "
+"to <strong>%(wallet_pending)s</strong>."
 msgstr ""
-"Zpráva nebyla odeslána, protože obsahuje pouze <span class=\"strong\">drobné "
-"události</span>."
+"Máte nevyřízený požadavek na změnu <strong>%(currency)s</strong> peněženky "
+"na <strong>%(wallet_pending)s</strong>."
 
-#: web/templates/monitoring.html:96
-msgctxt "UI"
+#: web/templates/msg_pending_wallet.html:4
+#, python-format
 msgid ""
-"Report has not been sent because you have <span class=\"strong\">disabled "
-"reporting</span>."
+"Email confirmation has been sent to '%(email)s'. Please check your mailbox "
+"and follow confirmation link."
 msgstr ""
-"Zpráva nebyla odeslána, protože máte <span class=\"strong\">vypnuté "
-"reportování</span>."
+"Právě vám byl na '%(email)s' zaslán potvrzující email. Zkontrolujte prosím "
+"svou emailovou schránku a následujte zaslané instrukce."
 
-#: web/templates/monitoring.html:102
-#: web/templates/email/monitoring_body.html:17
-msgctxt "UI"
-msgid "Worker Name"
-msgstr "Název zařízení"
-
-#: web/templates/monitoring.html:103
-#: web/templates/email/monitoring_body.html:18
-msgctxt "UI"
-msgid "State Change"
-msgstr "Změna stavu"
-
-#: web/templates/monitoring.html:104
-#: web/templates/email/monitoring_body.html:19
-msgctxt "UI"
-msgid "State Changed After"
-msgstr "Stav změněn po"
-
-#: web/templates/monitoring.html:105
-msgctxt "UI"
-msgid "Worker Hash Rate"
-msgstr "Hash rate zařízení"
-
-#: web/templates/monitoring.html:106
-#: web/templates/email/monitoring_body.html:21
-msgctxt "UI"
-msgid "Alert Limit"
-msgstr "Výstražný limit"
-
-#: web/templates/monitoring.html:127
-msgctxt "UI"
+#: web/templates/msg_pending_wallet.html:6
+#, python-format
 msgid ""
-"There are no worker incidents to be shown here since only your Account State "
-"has changed."
+"If you didn't receive confirmation email yet, you can also <a href="
+"\"%(url_resend)s\">resend confirmation</a>."
 msgstr ""
-"Jelikož se změnil pouze stav účtu, nejsou zde zobrazeny žádné incidenty "
-"zařízení."
+"Pokud vám potvrzující email ještě nedorazil, můžete požádat o jeho <a href="
+"\"%(url_resend)s\">přeposlání</a>."
 
-#: web/templates/monitoring.html:139
-msgctxt "UI"
-msgid "There are no incidents available for you to show."
-msgstr "Nejsou zde žádné incidenty k zobrazení."
-
-#: web/templates/monitoring.html:150
-msgctxt "UI"
-msgid "State <span>Changes in Time</span>"
-msgstr "Změny <span>stavu v čase</span>"
-
-#: web/templates/monitoring.html:177
-msgid "Total Hash Rate"
-msgstr "Celkový hash rate"
-
-#: web/templates/monitoring.html:187
-msgctxt "UI, Monitoring"
-msgid "Error"
-msgstr "Chyba"
-
-#: web/templates/monitoring.html:190
-msgctxt "UI"
+#: web/templates/msg_pending_wallet.html:8
+#, python-format
 msgid ""
-"Each point on the chart represents worker incident and its color describes "
-"type of the incident."
+"If you didn't initiate this change, please <a href=\"%(url_cancel)s\">cancel "
+"the request</a> and <a href=\"%(url_password_reset)s\">change your password</"
+"a> immediately."
 msgstr ""
-"Každý bod v grafu reprezentuje incident zařízení a jeho barva popisuje typ "
-"incidentu."
-
-#: web/templates/monitoring.html:191
-msgctxt "UI"
-msgid ""
-"E.g. when your worker goes from Low to OK, you will see an orange line "
-"followed by green point, representing the state change, and green line."
-msgstr ""
-"Např. když vaše zařízení mění stav z Low na OK, uvidíte oranžovou linku "
-"následovanou zeleným bodem a zelenou linkou."
-
-#: web/templates/monitoring.html:205
-msgctxt "Intro"
-msgid ""
-"Every row in the following table contains summary of incidents that happened "
-"at the same time."
-msgstr ""
-"Každý řádek v následující tabulce obsahuje souhrn událostí, které se "
-"odehrály ve stejný čas."
-
-#: web/templates/monitoring.html:207 web/templates/monitoring.html.py:234
-msgctxt "Intro"
-msgid "Click the table row to see the details for a particular event."
-msgstr "Klikněte na řádek tabulky pro zobrazení detailů konkrétní události."
-
-#: web/templates/monitoring.html:215
-msgctxt "Intro"
-msgid ""
-"Absolute number of workers in each state and relative change to the previous "
-"state."
-msgstr "Konečný počet zařízení v každém stavu a předcházející změny stavů."
-
-#: web/templates/monitoring.html:217
-msgctxt "Intro"
-msgid "States: OK | Low | Error | Monitoring disabled"
-msgstr "Stavy: OK | Pomalý | Chyba | Sledování vypnuto"
-
-#: web/templates/monitoring.html:225
-msgctxt "Intro"
-msgid "Total hash rate of all your workers together (5min average)"
-msgstr "Celkový hash rate všech vašich zařízení dohromady (5minutový průměr)"
-
-#: web/templates/monitoring.html:233
-msgctxt "Intro"
-msgid ""
-"Status of the report showing if the report has been sent to you by email or "
-"not."
-msgstr ""
-"Stav reportu ukazující, jestli byl report odeslán na vaši emailovou adresu "
-"nebo ne."
+"Pokud jste změnu adresy nevyžádal, <a href=\"%(url_cancel)s\">zrušte tento "
+"požadavek</a> prosím a co nejdříve si <a href=\"%(url_password_reset)s"
+"\">změňte heslo</a>."
 
 #: web/templates/new_user_registered.html:4
 msgctxt "UI"
@@ -7592,10 +6866,10 @@ msgctxt "UI"
 msgid "Getting Started"
 msgstr "Začínáme těžit"
 
-#: web/templates/pager-angular.html:3 web/templates/pager.html:4
+#: web/templates/new_user_registered.html:47
 msgctxt "UI"
-msgid "Page"
-msgstr "Stránka"
+msgid "User Manual"
+msgstr "Uživatelský manuál"
 
 #: web/templates/password_reset.html:4
 msgctxt "UI, Page title"
@@ -7703,69 +6977,64 @@ msgstr ""
 "\" title=\"click to reset your password\">zresetovat své heslo</a> ještě "
 "jednou."
 
-#: web/templates/payouts.html:3
-msgctxt "UI"
-msgid "Payout history"
-msgstr "Historie výplat"
-
 #: web/templates/proposal_detail.html:3
 msgctxt "UI, Page title"
 msgid "Development proposal"
 msgstr "Vývojářský návrh"
 
-#: web/templates/proposal_detail.html:19
+#: web/templates/proposal_detail.html:20
 msgctxt "UI"
 msgid "Your unspent points"
 msgstr "Vaše nepřidělené body"
 
-#: web/templates/proposal_detail.html:28
+#: web/templates/proposal_detail.html:29
 msgctxt "UI"
 msgid "Total Hash Rate"
 msgstr "Celkový hash rate"
 
-#: web/templates/proposal_detail.html:29
+#: web/templates/proposal_detail.html:30
 msgctxt "UI"
 msgid "Total Votes"
 msgstr "Celkem hlasů"
 
-#: web/templates/proposal_detail.html:30
+#: web/templates/proposal_detail.html:31
 msgctxt "UI"
 msgid "Total Points"
 msgstr "Celkem bodů"
 
-#: web/templates/proposal_detail.html:32
+#: web/templates/proposal_detail.html:33
 msgctxt "UI"
 msgid "Your Points"
 msgstr "Vašich bodů"
 
-#: web/templates/proposal_detail.html:102
+#: web/templates/proposal_detail.html:103
 msgctxt "UI"
 msgid "Add this proposal to your favourites"
 msgstr "Přidat tento návrh do oblíbených"
 
-#: web/templates/proposal_detail.html:122
+#: web/templates/proposal_detail.html:123
 msgctxt "UI"
 msgid "History"
 msgstr "Historie"
 
-#: web/templates/proposal_detail.html:126
-#: web/templates/proposal_detail.html:128
+#: web/templates/proposal_detail.html:127
+#: web/templates/proposal_detail.html:129
 msgctxt "UI"
 msgid "Edit"
 msgstr "Změnit"
 
-#: web/templates/proposal_detail.html:137
+#: web/templates/proposal_detail.html:138
 msgctxt "UI"
 msgid "Comments & Updates"
 msgstr "Komentáře & Aktualizace"
 
-#: web/templates/proposal_detail.html:144
-#: web/templates/proposal_detail.html:198 web/templates/proposal_form.html:34
+#: web/templates/proposal_detail.html:145
+#: web/templates/proposal_detail.html:199 web/templates/proposal_form.html:34
 msgctxt "UI"
 msgid "Save"
 msgstr "Uložit"
 
-#: web/templates/proposal_detail.html:159
+#: web/templates/proposal_detail.html:160
 #, python-format
 msgctxt "UI, Proposal"
 msgid ""
@@ -7773,27 +7042,27 @@ msgid ""
 msgstr ""
 "Návrh spojen s <a href=\"%(proposal_merged_url)s\">#%(proposal_id)s</a>"
 
-#: web/templates/proposal_detail.html:163
+#: web/templates/proposal_detail.html:164
 msgctxt "UI, Proposal"
 msgid "Proposal state changed"
 msgstr "Stav návrhu změněn"
 
-#: web/templates/proposal_detail.html:164
+#: web/templates/proposal_detail.html:165
 msgctxt "UI, Proposals"
 msgid "to"
 msgstr "s"
 
-#: web/templates/proposal_detail.html:181
+#: web/templates/proposal_detail.html:182
 msgctxt "UI"
 msgid "Delete"
 msgstr "Smazat"
 
-#: web/templates/proposal_detail.html:209
+#: web/templates/proposal_detail.html:210
 msgctxt "UI"
 msgid "All proposals"
 msgstr "Všechny návrhy"
 
-#: web/templates/proposal_detail.html:219
+#: web/templates/proposal_detail.html:220
 msgctxt "UI"
 msgid "Draft"
 msgstr "Koncept"
@@ -7809,8 +7078,6 @@ msgid "New proposal"
 msgstr "Nový návrh"
 
 #: web/templates/proposal_form.html:36 web/templates/proposal_form.html:38
-#: web/templates/widgets/email_change.html:6
-#: web/templates/widgets/wallet_pending.html:7
 msgctxt "UI"
 msgid "Cancel"
 msgstr "Zrušit"
@@ -7965,11 +7232,6 @@ msgctxt "UI"
 msgid "Please accept the terms of service."
 msgstr "Potvrďte prosím svůj souhlas s podmínkami užití."
 
-#: web/templates/registration_confirm_has_account.html:17
-msgctxt "UI"
-msgid "Your account has already been activated. Please login to continue."
-msgstr "Váš účet už byl aktivován. Pro pokračování se prosím přihlašte."
-
 #: web/templates/registration_confirm_success.html:15
 msgctxt "UI"
 msgid "Your account has been activated!"
@@ -8019,80 +7281,6 @@ msgstr ""
 msgctxt "UI"
 msgid "Login to continue"
 msgstr "Pro pokračování se přihlašte"
-
-#: web/templates/release_notes.html:8
-msgctxt "UI"
-msgid "Release <span>Notes</span>"
-msgstr "Poznámky <span>k verzi</span>"
-
-#: web/templates/rewards.html:3
-msgctxt "UI"
-msgid "Reward History"
-msgstr "Historie odměn"
-
-#: web/templates/settings_email_change_bad_token.html:14
-msgctxt "UI"
-msgid ""
-"Verification token for changing your email address is not valid. Please, "
-"make sure that the URL in your browser matches exactly the URL that has been "
-"sent to you by email."
-msgstr ""
-"Ověřovací token pro změnu vašeho emailu není platný. Ujistěte se prosím, že "
-"URL ve vašem prohlížeči je naprosto stejná jako URL, která vám byla odeslána "
-"emailem."
-
-#: web/templates/settings_email_change_bad_token.html:15
-msgctxt "UI"
-msgid ""
-"If you are sure that the address in your browser is the same as the one you "
-"have received, please try to request a new email change message."
-msgstr ""
-"Pokud jste si jistý, že adresa ve vašem prohlížeči je naprosto stejná jako "
-"ta, kterou jste obdržel, zažádejte o novou zprávu o změně emailu."
-
-#: web/templates/settings_email_change_bad_token.html:16
-#, python-format
-msgctxt "UI"
-msgid ""
-"If this problem persists, please contact our <a href=\"%(url)s\">"
-"%(globe_icon)s support system</a>."
-msgstr ""
-"Pokud tento problém přetrvává, obraťte se prosím na náš <a href=\"%(url)s\">"
-"%(globe_icon)s systém podpory</a>."
-
-#: web/templates/settings_email_change_bad_token.html:20
-#: web/templates/settings_email_change_no_pending.html:18
-#: web/templates/settings_email_change_success.html:18
-#: web/templates/wallet_confirm_cancel.html:18
-#: web/templates/wallet_confirm_ip_reuse.html:19
-#: web/templates/wallet_confirm_no_token.html:25
-#: web/templates/wallet_confirm_not_verified.html:17
-#: web/templates/wallet_confirm_too_early.html:19
-#: web/templates/wallet_confirm_valid.html:18
-msgctxt "UI"
-msgid "Return to settings"
-msgstr "Návrat k nastavení"
-
-#: web/templates/settings_email_change_no_pending.html:14
-msgctxt "UI"
-msgid ""
-"There is no pending request for changing your email address with this ID. If "
-"you want to change your email address, please, request this change in your "
-"account settings."
-msgstr ""
-"S tímto ID zde není žádný nevyřešený požadavek na změnu vašeho emailu. Pokud "
-"chcete změnit svou emailovou adresu, zažádejte si prosím o tuto změnu v "
-"nastavení svého účtu."
-
-#: web/templates/settings_email_change_success.html:14
-#, python-format
-msgctxt "UI"
-msgid ""
-"Email (%(orig_email)s) associated with your account has been successfully "
-"changed to %(new_email)s."
-msgstr ""
-"Email (%(orig_email)s) spojený s vaším účtem byl úspěšně změněn na "
-"%(new_email)s."
 
 #: web/templates/slider.html:4
 msgctxt "UI"
@@ -8183,6 +7371,47 @@ msgstr "Kontaktujte nás"
 #: web/templates/support-titlepage.txt:7
 msgid "Contact us"
 msgstr "Kontaktujte nás"
+
+#: web/templates/team.html:3
+msgid "Team"
+msgstr "Tým"
+
+#: web/templates/team.html:9
+msgid "SlushPool Team"
+msgstr "Slush Pool Tým"
+
+#: web/templates/team.html:10
+#, fuzzy
+msgid "Solid as Block"
+msgstr "Nalezené bloky"
+
+#: web/templates/team.html:38
+msgid "CEO"
+msgstr "CEO"
+
+#: web/templates/team.html:46
+msgid "CTO"
+msgstr "CTO"
+
+#: web/templates/team.html:54
+msgid "Founder, Advisor"
+msgstr "Zakladatel, Poradce"
+
+#: web/templates/team.html:62
+msgid "Infrastructure Admin"
+msgstr ""
+
+#: web/templates/team.html:73
+msgid "Back-end Developer"
+msgstr ""
+
+#: web/templates/team.html:81
+msgid "Front-end Developer"
+msgstr ""
+
+#: web/templates/team.html:89
+msgid "Marketing, Customer Support"
+msgstr ""
 
 #: web/templates/terms-of-service.html:3
 msgctxt "terms"
@@ -8291,172 +7520,6 @@ msgstr ""
 msgctxt "terms"
 msgid "Notification of Changes"
 msgstr "Upozornění na změny"
-
-#: web/templates/wallet_confirm_cancel.html:14
-msgctxt "UI"
-msgid "Your wallet change request has been cancelled."
-msgstr "Požadavek na změnu peněženky byl zrušen."
-
-#: web/templates/wallet_confirm_ip_reuse.html:14
-#, python-format
-msgctxt "UI"
-msgid ""
-"Wallet change has already been confirmed from your IP today (%(param)s). For "
-"security reasons, only one wallet change request per IP can be processed "
-"within 24 hours. We are sorry for this inconvenience. Please, try again "
-"tomorrow."
-msgstr ""
-"Změna peněženky už dnes byla z vaší IP adresy potvrzena (%(param)s). Z "
-"bezpečnostních důvodů může být vyřízen pouze jeden požadavek na změnu "
-"peněženky z jedné IP adresy v průběhu 24 hodin. Omlouváme se za tuto "
-"nepříjemnost. Zkuste to prosím znovu zítra."
-
-#: web/templates/wallet_confirm_no_token.html:16
-msgctxt "UI"
-msgid ""
-"There is no pending wallet change request or the confirmation link is "
-"invalid."
-msgstr ""
-"Není zde žádný nevyřízený požadavek na změnu peněženky nebo je potvrzující "
-"odkaz neplatný."
-
-#: web/templates/wallet_confirm_no_token.html:19
-#, python-format
-msgctxt "UI"
-msgid ""
-"You can resend the wallet change confirmation email from your <a href="
-"\"%(profile_page)s\">profile page</a>."
-msgstr ""
-"Můžete si zažádat o poslání nového potvrzujícího emailu z vašeho <a href="
-"\"%(profile_page)s\">profilu</a>."
-
-#: web/templates/wallet_confirm_not_verified.html:13
-msgctxt "UI"
-msgid ""
-"Your request is waiting for manual confirmation by the pool staff.<br/"
-">Please, try again later."
-msgstr ""
-"Váš požadavek čeká na ruční potvrzení od zaměstnanců poolu. <br/>Zkuste to "
-"prosím později."
-
-#: web/templates/wallet_confirm_otp.html:22
-msgctxt "UI"
-msgid ""
-"Please enter valid one-time password provided by your two-factor "
-"authentication software, or return to your account settings and cancel the "
-"request."
-msgstr ""
-"Vložte prosím platné jednorázové heslo, které jste získal v aplikaci pro "
-"dvoufaktorovou autentizaci, nebo se vraťte do nastavení účtu a zrušte tento "
-"požadavek."
-
-#: web/templates/wallet_confirm_too_early.html:14
-#, python-format
-msgctxt "UI"
-msgid ""
-"Your request cannot be completed earlier than 24 hours from creation. The "
-"time limit will pass at %(param)s UTC. We are sorry for the inconvenience. "
-"This limitation has been activated due to recent brute force attacks on user "
-"profiles."
-msgstr ""
-"Váš požadavek nemůže být dokončen dříve než za 24 hodin od jeho vytvoření. "
-"Tento časový limit vyprší v %(param)s UTC. Omlouváme se za tuto "
-"nepříjemnost. Tento limit byl aktivován kvůli nedávným pokusům o nabourání "
-"se do uživatelských účtů hrubou silou."
-
-#: web/templates/wallet_confirm_valid.html:14
-msgctxt "UI"
-msgid "Your wallet has been successfully changed."
-msgstr "Vaše peněženka byla úspěšně změněna."
-
-#: web/templates/djangocms_blog/post_detail.html:19
-msgctxt "UI"
-msgid "Return to blog feed"
-msgstr "Vrátit se na blog"
-
-#: web/templates/djangocms_blog/post_detail.html:26
-msgctxt "UI"
-msgid "Published:"
-msgstr "Publikováno:"
-
-#: web/templates/djangocms_blog/post_list.html:11
-msgid "Articles by"
-msgstr "Články od"
-
-#: web/templates/djangocms_blog/post_list.html:12
-#: web/templates/djangocms_blog/plugins/archive.html:3
-msgid "Archive"
-msgstr "Archiv"
-
-#: web/templates/djangocms_blog/post_list.html:13
-msgid "Tag"
-msgstr "Značka"
-
-#: web/templates/djangocms_blog/post_list.html:14
-msgid "Category"
-msgstr "Kategorie"
-
-#: web/templates/djangocms_blog/post_list.html:21
-#: web/templates/djangocms_blog/plugins/archive.html:26
-#: web/templates/djangocms_blog/plugins/authors.html:15
-#: web/templates/djangocms_blog/plugins/latest_entries.html:7
-#: web/templates/djangocms_blog/plugins/tags.html:15
-msgid "No article found."
-msgstr "Nenalezeny žádné články."
-
-#: web/templates/djangocms_blog/post_list.html:26
-msgid "previous"
-msgstr "předchozí"
-
-#: web/templates/djangocms_blog/post_list.html:29
-msgid "Page"
-msgstr "Stránka"
-
-#: web/templates/djangocms_blog/post_list.html:29
-msgid "of"
-msgstr "z"
-
-#: web/templates/djangocms_blog/post_list.html:32
-msgid "next"
-msgstr "následující"
-
-#: web/templates/djangocms_blog/includes/blog_meta.html:5
-msgid "by"
-msgstr "od"
-
-#: web/templates/djangocms_blog/plugins/archive.html:17
-#: web/templates/djangocms_blog/plugins/authors.html:10
-#: web/templates/djangocms_blog/plugins/categories.html:10
-#: web/templates/djangocms_blog/plugins/tags.html:10
-#, python-format
-msgid "1 article"
-msgid_plural "%(articles)s articles"
-msgstr[0] "článek"
-msgstr[1] "%(articles)s články"
-msgstr[2] "%(articles)s článků"
-
-#: web/templates/djangocms_blog/plugins/archive.html:18
-#: web/templates/djangocms_blog/plugins/authors.html:11
-#: web/templates/djangocms_blog/plugins/categories.html:12
-#: web/templates/djangocms_blog/plugins/tags.html:11
-msgid "0 articles"
-msgstr "0 článků"
-
-#: web/templates/djangocms_blog/plugins/authors.html:3
-msgid "Authors"
-msgstr "Autoři"
-
-#: web/templates/djangocms_blog/plugins/categories.html:3
-msgid "Categories"
-msgstr "Kategorie"
-
-#: web/templates/djangocms_blog/plugins/categories.html:17
-msgid "No categories found."
-msgstr "Nenalezeny žádné kategorie."
-
-#: web/templates/djangocms_blog/plugins/tags.html:3
-msgid "Tags"
-msgstr "Značky"
 
 #: web/templates/email/_base.html:2 web/templates/email/_base_graphic.html:24
 msgctxt "UI"
@@ -8612,18 +7675,54 @@ msgid "Change my email"
 msgstr "Změnit můj email"
 
 #: web/templates/email/monitoring_body.html:5
+#, fuzzy, python-format
 msgctxt "UI"
 msgid ""
-"We detect changes in the current state of your workers. Please see the "
-"report below:"
+"We detect changes in the current state of your %(coin)s workers. Please see "
+"the report below:"
 msgstr ""
-"Pool zjistil změny ve stavu Vašich zařízení. Podívejte se prosím na zprávu "
-"níže:"
+"Pool zjistil změny ve stavu Vašich  %(coin)s zařízení. Podívejte se prosím "
+"na zprávu níže:"
+
+#: web/templates/email/monitoring_body.html:8
+msgctxt "UI"
+msgid "Event Time"
+msgstr "Čas události"
+
+#: web/templates/email/monitoring_body.html:9
+msgctxt "UI"
+msgid "Account Hash Rate"
+msgstr "Hash rate účtu"
+
+#: web/templates/email/monitoring_body.html:10
+msgctxt "UI"
+msgid "Worker States (Changes)"
+msgstr "Stavy zařízení (změny)"
+
+#: web/templates/email/monitoring_body.html:17
+msgctxt "UI"
+msgid "Worker Name"
+msgstr "Název zařízení"
+
+#: web/templates/email/monitoring_body.html:18
+msgctxt "UI"
+msgid "State Change"
+msgstr "Změna stavu"
+
+#: web/templates/email/monitoring_body.html:19
+msgctxt "UI"
+msgid "State Changed After"
+msgstr "Stav změněn po"
 
 #: web/templates/email/monitoring_body.html:20
 msgctxt "UI"
 msgid "Actual Hash Rate"
 msgstr "Aktuální hash rate"
+
+#: web/templates/email/monitoring_body.html:21
+msgctxt "UI"
+msgid "Alert Limit"
+msgstr "Výstražný limit"
 
 #: web/templates/email/monitoring_body.html:35
 #, python-format
@@ -8634,12 +7733,6 @@ msgid ""
 msgstr ""
 "Zpráva o sledování je přístupná on-line na stránce <a href="
 "\"%(monitoring_url)s\">%(monitoring_url)s</a>"
-
-#: web/templates/email/monitoring_subject.html:2
-#: workers/templates/workers/home.html:4
-msgctxt "UI"
-msgid "Workers"
-msgstr "Zařízení"
 
 #: web/templates/email/password_reset.html:6
 #, python-format
@@ -8768,14 +7861,14 @@ msgid "Activate"
 msgstr "Aktivovat"
 
 #: web/templates/email/wallet_change.html:5
-#, python-format
+#, fuzzy, python-format
 msgctxt "UI"
 msgid ""
-"You are receiving this email because you requested to change your wallet to "
-"the new address: <strong>%(wallet)s</strong>."
+"You are receiving this email because you requested to change your %(coin)s "
+"wallet to the new address: <strong>%(wallet)s</strong>."
 msgstr ""
-"Tento email byl odeslán, protože někdo požádal o změnu Vaší peněženky na "
-"novou adresu: <strong>%(wallet)s</strong>."
+"Tento email byl odeslán, protože někdo požádal o změnu Vaší %(coin)s "
+"peněženky na novou adresu: <strong>%(wallet)s</strong>."
 
 #: web/templates/email/wallet_change.html:6
 #, python-format
@@ -8805,82 +7898,6 @@ msgstr ""
 msgid "Change my wallet"
 msgstr "Změnit peněženku"
 
-#: web/templates/layout_items/current_block.html:3
-msgctxt "UI"
-msgid "Current Bitcoin block, difficulty"
-msgstr "Aktuální Bitcoin blok, složitost"
-
-#: web/templates/layout_items/current_round_duration.html:3
-msgctxt "UI"
-msgid "Current Round Duration"
-msgstr "Trvání aktuálního kola"
-
-#: web/templates/layout_items/current_round_duration.html:5
-msgctxt "UI"
-msgid "Loading"
-msgstr "Nahrávám"
-
-#: web/templates/layout_items/current_round_start.html:3
-msgctxt "UI"
-msgid "Current Round Start:"
-msgstr "Začátek aktuálního kola:"
-
-#: web/templates/layout_items/current_shares.html:3
-msgctxt "UI, Current Shares CDF (link)"
-msgid "Current Shares"
-msgstr "Odevzdáno řešení"
-
-#: web/templates/layout_items/current_shares.html:3
-msgctxt "UI"
-msgid "CDF"
-msgstr "CDF"
-
-#: web/templates/layout_items/hr_pool_effective_30m.html:3
-msgctxt "UI"
-msgid "Pool Effective Hash Rate (30 min average)"
-msgstr "Efektivní hash rate poolu (30 min průměr)"
-
-#: web/templates/layout_items/hr_pool_scoring.html:3
-msgctxt "UI"
-msgid "Pool Scoring Hash Rate"
-msgstr "Skórovací hash rate poolu"
-
-#: web/templates/layout_items/pool_luck.html:3
-msgctxt "UI"
-msgid "Pool Luck (current round, 10, 50, 250 blocks)"
-msgstr "Poolové štěstí (aktuální kolo, 10, 50, 250 bloků)"
-
-#: web/templates/layout_items/time.html:3
-msgctxt "UI"
-msgid "Current time"
-msgstr "Aktuální čas"
-
-#: web/templates/layout_items/total_shares.html:3
-msgctxt "UI"
-msgid "Total Shares in the Round:"
-msgstr "Celkem řešení v aktuálním kole:"
-
-#: web/templates/obsolete/newsletter_unsubscribe_invalid.html:14
-msgctxt "UI"
-msgid ""
-"It looks like you have clicked on invalid or broken link. This can be caused "
-"by your email client or recent account changes. Please go to your account "
-"settings and opt-out of our pool newsletter manually."
-msgstr ""
-"Vypadá to, že jste kliknul na neplatný nebo poškozený odkaz. Toto může být "
-"způsobeno vaším emailovým klientem nebo nedávnými změnami účtu. Zrušte "
-"prosím odebírání novinek ručně v nastavení svého účtu."
-
-#: web/templates/obsolete/newsletter_unsubscribe_success.html:14
-msgctxt "UI"
-msgid ""
-"You have been successfully unsubscribed from our pool newsletter. If you "
-"would like to receive the newsletters again, please go to your account "
-"settings."
-msgstr ""
-"Byl jste úspěšně odhlášen z odebírání novinek. Pokud si přejete tyto novinky "
-"znovu dostávat, tuto možnost najdete v nastavení svého účtu."
-
 #: web/templates/web/parts/pagination.html:8
 msgctxt "UI"
 msgid "Newer"
@@ -8891,34 +7908,980 @@ msgctxt "UI"
 msgid "Older"
 msgstr "Starší"
 
-#: web/templates/widgets/email_change.html:5
-#: web/templates/widgets/wallet_pending.html:5
-msgctxt "UI"
-msgid "Resend"
-msgstr "Poslat znovu"
-
-#: web/templates/widgets/email_change.html:8
-#: web/templates/widgets/wallet_pending.html:8
-msgctxt "UI"
-msgid "Sign by wallet"
-msgstr "Podepsat peněženkou"
-
-#: web/templates/widgets/pagedown.html:7
-#, python-format
-msgctxt "UI"
-msgid "Read more about <a target=\"_blank\" href=\"%(url)s\">markdown</a>"
-msgstr ""
-"Přečtěte si více o <a target=\"_blank\" href=\"%(url)s\">markdown</a> jazyku"
-
-#: web/templates/widgets/pagedown.html:11
-msgctxt "UI"
-msgid "Preview:"
-msgstr "Náhled:"
-
-#: web/templatetags/utils.py:228
+#: web/templatetags/utils.py:258
 msgctxt "UI"
 msgid "Help me"
 msgstr "Pomoc"
+
+#~ msgctxt "UI"
+#~ msgid "wallet locked"
+#~ msgstr "Zcash peněženka zamčena"
+
+#~ msgctxt "UI"
+#~ msgid "User doesn't have worker (%s)"
+#~ msgstr "Uživatel nemá zařízení (%s)"
+
+#~ msgid ""
+#~ "Please note that you can not mine at your personal computer with CPU or "
+#~ "GPU anymore. Also there is a list of unsupported software in our user "
+#~ "manual."
+#~ msgstr ""
+#~ "Pamatujte si prosím, že už nemůžete těžit na svém osobním počítači pomocí "
+#~ "CPU nebo GPU. V naší uživatelské příručce také najdete seznam "
+#~ "nepodporovaného software."
+
+#~ msgid "Login problems?"
+#~ msgstr "Problémy s přihlášením?"
+
+#~ msgid "Payouts related question?"
+#~ msgstr "Otázky ohledně výplat?"
+
+#~ msgid "Do you have a feature suggestion?"
+#~ msgstr "Chcete navrhnout nové funkce?"
+
+#~ msgctxt "UI"
+#~ msgid "Help <span>Center</span> "
+#~ msgstr "Centrum <span>nápovědy</span> "
+
+#~ msgctxt "UI"
+#~ msgid "How can we help?"
+#~ msgstr "Jak můžeme pomoci?"
+
+#~ msgctxt "UI"
+#~ msgid "Actual search query used:"
+#~ msgstr "Použitý vyhledávací dotaz:"
+
+#~ msgctxt "UI"
+#~ msgid "No results have been found."
+#~ msgstr "Nebyly nalezeny žádné výsledky."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Please try different words, use the links below or the main navigation "
+#~ "menu."
+#~ msgstr ""
+#~ "Zkuste prosím jiný dotaz, použijte odkazy níže nebo hlavní navigační menu."
+
+#~ msgctxt "UI"
+#~ msgid "Most of typical user questions are answered in our FAQ section."
+#~ msgstr "Většina typických dotazů je zodpovězena v naší FAQ sekci."
+
+#~ msgctxt "UI"
+#~ msgid "Send"
+#~ msgstr "Odeslat"
+
+#~ msgid "user name:"
+#~ msgstr "uživatelské jméno:"
+
+#~ msgid ""
+#~ "Even though the website is now hosted on <a href=\"%(url)s\">%(name)s</"
+#~ "a>, your <strong>mining server URL's stay the same and we will notify you "
+#~ "well ahead in case of any change</strong>."
+#~ msgstr ""
+#~ "i když je teď náš web hostován na <a href=\"%(url)s\">%(name)s</a>, "
+#~ "<strong>URL adresy Vašich těžebních serverů zůstaly stejné a v případě "
+#~ "jakékoliv změny Vás budeme dopředu informovat</strong>."
+
+#~ msgctxt "UI"
+#~ msgid "Loading chart data, please wait..."
+#~ msgstr "Nahrávám data grafu, vyčkejte prosím..."
+
+#~ msgid "Hash Rate (5min)"
+#~ msgstr "Hash rate (5min)"
+
+#~ msgid "Scoring Hash Rate"
+#~ msgstr "Skórovací hash rate"
+
+#~ msgctxt "UI"
+#~ msgid "Alert Limit [Gh/s]"
+#~ msgstr "Limit pro výstrahu [Gh/s]"
+
+#~ msgctxt "UI"
+#~ msgid "The system will report issues, when hash rate drops below this value"
+#~ msgstr "Systém bude hlásit potíže, pokud hash rate klesne pod tuto hodnotu"
+
+#~ msgctxt "UI"
+#~ msgid "Monitoring enabled"
+#~ msgstr "Sledování zapnuto"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "The monitoring system will detect and report any hash rate issues related "
+#~ "to this worker"
+#~ msgstr ""
+#~ "Sledovací systém bude detekovat a hlásit jakékoliv potíže s hash rate u "
+#~ "tohoto zařízení"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "The monitoring system will automatically estimate hash rate of your "
+#~ "worker based on its past activity"
+#~ msgstr ""
+#~ "Sledovací systém automaticky určí předpokládaný hash rate zařízení podle "
+#~ "jeho předchozí aktivity"
+
+#~ msgctxt "UI"
+#~ msgid "-- not voted --"
+#~ msgstr "-- nehlasováno --"
+
+#~ msgctxt "UI"
+#~ msgid "Bitcoin Classic / BIP109"
+#~ msgstr "Bitcoin Classic / BIP109"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Users that prefer Bitcoin Classic rules = their hash rate is used for "
+#~ "mining Bitcoin Classic blocks (BIP109)."
+#~ msgstr ""
+#~ "Uživatelé, kteří preferují pravidla Bitcoin Classic = jejich hash rate je "
+#~ "použit pro těžení Bitcoin Classic bloků (BIP109)."
+
+#~ msgctxt "UI"
+#~ msgid "Bitcoin Classic"
+#~ msgstr "Bitcoin Classic"
+
+#~ msgctxt "UI"
+#~ msgid "8MB - BIP100"
+#~ msgstr "8MB - BIP100"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Users that prefer 8MB blocks = their hash rate is used for mining 8MB "
+#~ "blocks (BIP 100)."
+#~ msgstr ""
+#~ "Uživatelé, kteří preferují 8MB bloky = jejich hash rate je použit pro "
+#~ "těžení 8MB bloků (BIP100)."
+
+#~ msgctxt "UI"
+#~ msgid "8MB (BIP100)"
+#~ msgstr "8MB (BIP100)"
+
+#~ msgctxt "UI"
+#~ msgid "Bitpay's Adaptive block size"
+#~ msgstr "Adaptivní velikost bloku od Bitpay"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Users that prefer BitPay's Adaptive block size proposal = their hash rate "
+#~ "is used for mining blocks with BitPay's block version."
+#~ msgstr ""
+#~ "Uživatelé, kteří preferují Adaptivní velikost bloku od Bitpay = jejich "
+#~ "hash rate je použit pro těžení bloků s Bitpay verzí bloku."
+
+#~ msgctxt "UI"
+#~ msgid "Bitpay's Bitcoin"
+#~ msgstr "Bitcoin od Bitpay"
+
+#~ msgctxt "UI"
+#~ msgid "Don't care"
+#~ msgstr "Je to jedno"
+
+#~ msgctxt "UI"
+#~ msgid "All news"
+#~ msgstr "Všechny novinky"
+
+#~ msgctxt "UI"
+#~ msgid "Other news"
+#~ msgstr "Ostatní novinky"
+
+#~ msgctxt "UI"
+#~ msgid "We didn't post yet. Stay tuned."
+#~ msgstr "Zatím tu nic není. Podívejte se prosím později."
+
+#~ msgctxt "UI"
+#~ msgid "Get Slush Pool news in your RSS reader"
+#~ msgstr "Získejte novinky z poolu do své RSS čtečky"
+
+#~ msgid "Release notes"
+#~ msgstr "Poznámky k verzi"
+
+#~ msgid "Feedback form for direct requests"
+#~ msgstr "Formulář pro přímé žádosti"
+
+#~ msgid ""
+#~ "Do you want to report a bug, is there something specific you have on your "
+#~ "mind or you just want to say hi?"
+#~ msgstr ""
+#~ "Chcete nahlásit chybu, máte na mysli něco specifického nebo nám jen "
+#~ "chcete popřát dobrý den?"
+
+#~ msgid ""
+#~ "We will be happy to hear from you. A new <a href=\"%(feedback)s"
+#~ "\">feedback form</a> has been added to the site for convenience. Feel "
+#~ "free to use it! :)"
+#~ msgstr ""
+#~ "Budeme rádi za jakoukoliv odezvu. Na stránky jsme přidali nový <a href="
+#~ "\"%(feedback)s\">kontaktní formulář</a> pro vaše větší pohodlí. Neváhejte "
+#~ "ho využít! :)"
+
+#~ msgid "Reward System Proposals"
+#~ msgstr "Návrhy na změnu systému odměn"
+
+#~ msgid ""
+#~ "We are able to gauge interest in proposed changes, updates and tweaks of "
+#~ "our mining pool quite precisely thanks to the unique way of collecting "
+#~ "feedback – <a href=\"%(dev_corner)s\">the devcorner</a>."
+#~ msgstr ""
+#~ "Jsme schopni poměrně přesně odhadnout zájem o navrhované změny a "
+#~ "vylepšení našeho poolu díky unikátnímu způsobu sbíraní zpětné vazby– <a "
+#~ "href=\"%(dev_corner)s\">vývojářský koutek</a>."
+
+#~ msgid ""
+#~ "One of the important topics turned out to be the reward system. There "
+#~ "seems to be a couple of miners who would prefer different system but "
+#~ "majority approved keeping the current score based rewards (<a href="
+#~ "\"%(rewards)s\">see how it works here</a>), therefore we decided to stick "
+#~ "with the current reward system."
+#~ msgstr ""
+#~ "Jedním z důležitých témat se ukázal být systém odměn. Ukázalo se, že "
+#~ "někteří z našich uživatelů by preferovali jiný systém rozdělování odměn, "
+#~ "nicméně většina byla pro udržení aktuálního skórovacího systému (<a href="
+#~ "\"%(rewards)s\">podívejte se jak to funguje</a>) a proto jsme se ho "
+#~ "rozhodli zachovat."
+
+#~ msgid ""
+#~ "If the demand for different system grows in future we will be happy to "
+#~ "change it to meet the needs of our miners."
+#~ msgstr ""
+#~ "Abychom vyšli vstříc potřebám našich uživatelů, nebudeme se bránit "
+#~ "případné změně, pokud bude v budoucnu poptávka po jiném systému odměn "
+#~ "růst."
+
+#~ msgid "Slush Pool team"
+#~ msgstr "Slush Pool tým"
+
+#~ msgctxt "UI"
+#~ msgid "Loading chart data, please wait&hellip;"
+#~ msgstr "Nahrávám data grafu, prosím počkejte&hellip;"
+
+#~ msgctxt "UI"
+#~ msgid "Hash Rate <span>Distribution</span>"
+#~ msgstr "<span>Rozložení</span> hash rate"
+
+#~ msgctxt "UI"
+#~ msgid "User Group"
+#~ msgstr "Skupina uživatelů"
+
+#~ msgctxt "UI"
+#~ msgid "User Count"
+#~ msgstr "Počet uživatelů"
+
+#~ msgctxt "UI"
+#~ msgid "Average Hash Rate"
+#~ msgstr "Průměrný hash rate"
+
+#~ msgctxt "UI"
+#~ msgid "Group Hash Rate"
+#~ msgstr "Hash rate skupiny"
+
+#~ msgctxt "UI"
+#~ msgid "Each circle represents a group of users with similar hash rate."
+#~ msgstr "Každý kruh reprezentuje skupinu uživatelů s podobným hash rate."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "An area of a circle represents total hash rate of all users in the group "
+#~ "together."
+#~ msgstr ""
+#~ "Plocha kruhu reprezentuje celkový hash rate všech uživatelů v celé "
+#~ "skupině dohromady."
+
+#~ msgctxt "UI"
+#~ msgid "A group you belong to is highlighted (if you are logged in)."
+#~ msgstr "Skupina, do které patříte, je zvýrazněna (pokud jste přihlášen)."
+
+#~ msgctxt "UI"
+#~ msgid "Hash Rate <span>Per Location</span>"
+#~ msgstr "Hash rate <span>podle lokace</span>"
+
+#~ msgctxt "UI"
+#~ msgid "Recent <span>Hash Rate</span>"
+#~ msgstr "Nedávný <span>hash rate</span>"
+
+#~ msgctxt "UI"
+#~ msgid "System Statistics"
+#~ msgstr "Systémové statistiky"
+
+#~ msgctxt "UI"
+#~ msgid "New email"
+#~ msgstr "Nový email"
+
+#~ msgctxt "UI"
+#~ msgid "If you wish to change your email, enter it here"
+#~ msgstr "Pokud si přejete změnit váš email, vložte ho zde"
+
+#~ msgctxt "UI"
+#~ msgid "New email must be different from the current."
+#~ msgstr "Nový email musí být odlišný od předchozího."
+
+#~ msgctxt "UI"
+#~ msgid "Click to select all."
+#~ msgstr "Kliknutím vyberete vše."
+
+#~ msgctxt "UI"
+#~ msgid "Message"
+#~ msgstr "Zpráva"
+
+#~ msgctxt "UI"
+#~ msgid "Signature"
+#~ msgstr "Podpis"
+
+#~ msgctxt "UI"
+#~ msgid "Paste the signature obtained from your BTC wallet software"
+#~ msgstr "Zkopírujte podpis získaný z vaší BTC peněženky"
+
+#~ msgctxt "UI"
+#~ msgid "Cannot verify the message, please try it later."
+#~ msgstr "Nelze ověřit zprávu, zkuste to prosím později."
+
+#~ msgctxt "UI"
+#~ msgid "New wallet"
+#~ msgstr "Nová peněženka"
+
+#~ msgctxt "UI"
+#~ msgid "If you wish to change your BTC wallet, enter its address here"
+#~ msgstr "Pokud si přejete změnit vaši BTC peněženku, vložte její adresu zde"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "An additional fee of 0.0001 BTC applies to payouts lower than 0.01 BTC."
+#~ msgstr ""
+#~ "Pro výplatu menší než 0.01 BTC se započítá dodatečný poplatek 0.0001 BTC."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "This is not a valid Bitcoin address. Please install Bitcoin client or "
+#~ "register some web wallet to get one."
+#~ msgstr ""
+#~ "Toto není platná Bitcoinová adresa. Tu můžete získat ve svém TREZORU, po "
+#~ "instalaci v Bitcoinovém klientu nebo po registraci na nějaké webové "
+#~ "peněžence."
+
+#~ msgctxt "UI"
+#~ msgid "New wallet must be different from the current."
+#~ msgstr "Nová peněženka musí být odlišná od stávající."
+
+#~ msgctxt "UI"
+#~ msgid "Sending threshold must be >= 0.001 BTC"
+#~ msgstr "Limit pro výplatu musí být alespoň 0.001 BTC"
+
+#~ msgctxt "UI"
+#~ msgid "Sending threshold must be <= 5 BTC"
+#~ msgstr "Limit pro výplatu musí být menší nebo roven 5 BTC"
+
+#~ msgctxt "UI"
+#~ msgid "Pool always assigns difficulty equal or greater than this value."
+#~ msgstr "Pool vždy přiřadí složitost větší nebo rovnou této hodnotě."
+
+#~ msgctxt "UI"
+#~ msgid "Worker %s already exists"
+#~ msgstr "Zařízení %s již existuje"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Your preferred language for web and email communication when logged in."
+#~ msgstr ""
+#~ "Váš preferovaný jazyk pro web a emailovou komunikaci, pokud jste "
+#~ "prihlášen."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "You have a pending request for changing your email, please confirm or "
+#~ "cancel the request"
+#~ msgstr ""
+#~ "Máte tu čekající žádost na změnu emailu. Potvrďte nebo zrušte tento "
+#~ "požadavek prosím"
+
+#~ msgctxt "UI"
+#~ msgid "Your Bitcoin address for receiving rewards"
+#~ msgstr "Vaše Bitcoinová adresa pro příjem výplat"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "You have a pending request for changing your wallet, please confirm or "
+#~ "cancel the request"
+#~ msgstr ""
+#~ "Máte tu čekající žádost na změnu peněženky. Potvrďte nebo zrušte tento "
+#~ "požadavek prosím"
+
+#~ msgctxt "UI"
+#~ msgid "Coins will be sent once the reward crosses over the threshold"
+#~ msgstr ""
+#~ "Výplata bude odeslána, jakmile aktuální zůstatek překročí tento limit"
+
+#~ msgctxt "UI"
+#~ msgid "Show my username in public server stats"
+#~ msgstr "Zobrazovat moje uživatelské jméno ve veřejných statistikách"
+
+#~ msgctxt "UI"
+#~ msgid "Send email when the system sends me a payment"
+#~ msgstr "Informovat mě emailem, jakmile mi systém zašle výplatu"
+
+#~ msgctxt "UI"
+#~ msgid "Receive pool newsletters"
+#~ msgstr "Dostávat novinky z poolu"
+
+#~ msgctxt "UI"
+#~ msgid "Unit used by the site when displaying Bitcoin amounts"
+#~ msgstr "Jednotka měny použitá tímto webem k zobrazení objemu Bitcoinů"
+
+#~ msgctxt "UI"
+#~ msgid "Send emails about device state changes"
+#~ msgstr "Odesílat emaily o změnách stavu zařízení"
+
+#~ msgctxt "UI"
+#~ msgid "Auto-detect alert limit for account"
+#~ msgstr "Automaticky zjišťovat výstražný limit pro tento účet"
+
+#~ msgctxt "UI"
+#~ msgid "Calculate alert limit from past activity of all workers"
+#~ msgstr "Vypočítávat výstražný limit z předchozí aktivity všech zařízení"
+
+#~ msgctxt "UI"
+#~ msgid "Alert limit for account [Gh/s]"
+#~ msgstr "Výstražný limit pro tento účet [Gh/s]"
+
+#~ msgctxt "UI"
+#~ msgid "Account low Effective Hash Rate threshold"
+#~ msgstr "Spodní limit efektivního hash rate pro tento účet"
+
+#~ msgctxt "UI"
+#~ msgid "Max. reports per day"
+#~ msgstr "Maximální počet reportů za den"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Pool will not send more than this number of reports to you in one day"
+#~ msgstr "Pool nebude posílat více reportů za den než je tato hodnota"
+
+#~ msgctxt "UI"
+#~ msgid "Watch proposals"
+#~ msgstr "Sledovat návrhy"
+
+#~ msgctxt "UI"
+#~ msgid "Receive notifications about proposal changes"
+#~ msgstr "Dostávat upozornění o změnách návrhů"
+
+#~ msgctxt "UI"
+#~ msgid "Readonly login token"
+#~ msgstr "Token pro přihlášení pouze pro čtení"
+
+#~ msgctxt "UI"
+#~ msgid "Account banned. Contact pool administrator at support@slushpool.com"
+#~ msgstr ""
+#~ "Účet je zablokován. Kontaktujte správce poolu na support@slushpool.com"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Your confirmation link is not valid. Please be sure that your "
+#~ "confirmation link has been generated in less than one hour ago. If your "
+#~ "current link is older than that, please go to your profile settings and "
+#~ "retry your request."
+#~ msgstr ""
+#~ "Použitý odkaz pro potvrzení smazání účtu není platný. Ujistěte se prosím, "
+#~ "že požadavek na smazání účtu není starší než jednu hodinu. V opačném "
+#~ "případě se prosím vraťte na stránku nastavení svého profilu a zadejte "
+#~ "požadavek znovu."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Your account has been succesfuly deleted. If you would like to register "
+#~ "to our pool again in future, your former username can be used again."
+#~ msgstr ""
+#~ "Váš účet byl úspěšně smazán. Vaše uživatelské jméno bude možno znovu "
+#~ "použít při další případné budoucí registraci."
+
+#~ msgid "Loading ..."
+#~ msgstr "Nahrávám ..."
+
+#~ msgctxt "UI"
+#~ msgid "Date range:"
+#~ msgstr "Rozsah datumů:"
+
+#~ msgctxt "UI"
+#~ msgid "Show active range"
+#~ msgstr "Ukázat aktivní rozsah"
+
+#~ msgctxt "UI"
+#~ msgid "Show monitoring states"
+#~ msgstr "Ukázat stavy sledování"
+
+#~ msgctxt "UI"
+#~ msgid "Show Namecoin Blocks"
+#~ msgstr "Zobrazit Namecoinové bloky"
+
+#~ msgctxt "Intro"
+#~ msgid "Shows the power of all points converted to hash rate together."
+#~ msgstr "Zobrazení váhy všech přidělených bodů převedených na hash rate."
+
+#~ msgctxt "Intro"
+#~ msgid "This value is refreshed every 5 minutes."
+#~ msgstr "Tato hodnota se obnovuje každých 5 minut."
+
+#~ msgctxt "Intro"
+#~ msgid "Shows how many users voted for a particular proposal."
+#~ msgstr "Ukazuje, kolik uživatelů hlasovalo pro konkrétní návrh."
+
+#~ msgctxt "Intro"
+#~ msgid ""
+#~ "Total points show how many points the proposal has received from all "
+#~ "users together."
+#~ msgstr ""
+#~ "Celkový počet bodů ukazuje, kolik bodů návrh dostal od všech uživatelů "
+#~ "dohromady."
+
+#~ msgctxt "UI"
+#~ msgid "FAQ"
+#~ msgstr "FAQ"
+
+#~ msgctxt "Intro"
+#~ msgid "Welcome to our interactive help screen!"
+#~ msgstr "Vítejte na naší interaktivní stránce nápovědy!"
+
+#~ msgctxt "Intro"
+#~ msgid ""
+#~ "This function is here to show you what certain parts of this web mean and "
+#~ "what they do."
+#~ msgstr ""
+#~ "Tato funkce je zde proto, aby vám ukázala, co konkrétní části webu "
+#~ "znamenají a co dělají."
+
+#~ msgctxt "Intro"
+#~ msgid "Please note, that many chapters do need you to be logged in."
+#~ msgstr ""
+#~ "Vezměte prosím v úvahu, že mnohé kapitoly vyžadují, abyste byl přihlášen."
+
+#~ msgctxt "Intro"
+#~ msgid "You can use our Demo Account."
+#~ msgstr "Můžete použít náš Demo účet."
+
+#~ msgctxt "Intro"
+#~ msgid "There are several ways how to use this interactive help:"
+#~ msgstr "Existuje několik způsobů, jak používat tuto interaktivní nápovědu:"
+
+#~ msgctxt "Intro"
+#~ msgid "1) Specific Topic"
+#~ msgstr "1) Specifické téma"
+
+#~ msgctxt "Intro"
+#~ msgid ""
+#~ "Whenever you see a small info icon, clicking on it will take you to a "
+#~ "specific topic."
+#~ msgstr ""
+#~ "Kdykoliv vidíte malou informační ikonku, kliknutím na ni se dostanete na "
+#~ "specifické téma."
+
+#~ msgctxt "Intro"
+#~ msgid "2) Individual Pages"
+#~ msgstr "2) Jednotlivé stránky"
+
+#~ msgctxt "Intro"
+#~ msgid ""
+#~ "When you see a yellow info button in left bottom corner of a page, you "
+#~ "can invoke this screen on a particular chapter."
+#~ msgstr ""
+#~ "Kdykoliv vidíte žluté informační tlačítko v levém dolním rohu stránky, "
+#~ "můžete vyvolat tuto obrazovku u konkrétních kapitol."
+
+#~ msgctxt "Intro"
+#~ msgid "3) Full Walkthrough"
+#~ msgstr "3) Kompletní prohlídka"
+
+#~ msgctxt "Intro"
+#~ msgid ""
+#~ "You can navigate yourself by chapters and then cycle through topics on "
+#~ "individual pages right from here or any other help screen."
+#~ msgstr ""
+#~ "Rovnou odsud nebo odkudkoliv z této nápovědy můžete postupovat po "
+#~ "kapitolách a poté procházet témata na jednotlivých stránkách."
+
+#~ msgctxt "Intro"
+#~ msgid "Pool Statistics"
+#~ msgstr "Statistiky poolu"
+
+#~ msgctxt "Intro"
+#~ msgid "Development Corner"
+#~ msgstr "Vývojářský koutek"
+
+#~ msgctxt "Intro"
+#~ msgid "Account Dashboard"
+#~ msgstr "Přehled účtu"
+
+#~ msgctxt "Intro"
+#~ msgid "Account Settings"
+#~ msgstr "Nastavení účtu"
+
+#~ msgctxt "UI"
+#~ msgid "My account"
+#~ msgstr "Můj účet"
+
+#~ msgctxt "UI"
+#~ msgid "Device Monitoring"
+#~ msgstr "Sledování zařízení"
+
+#~ msgctxt "UI"
+#~ msgid "Report State"
+#~ msgstr "Stav zprávy"
+
+#~ msgctxt "UI"
+#~ msgid "Report has been sent to your email."
+#~ msgstr "Zpráva byla odeslána na váš email."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Report has not been sent because it contains only <span class=\"strong"
+#~ "\">insignificant events</span>."
+#~ msgstr ""
+#~ "Zpráva nebyla odeslána, protože obsahuje pouze <span class=\"strong"
+#~ "\">drobné události</span>."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Report has not been sent because you have <span class=\"strong\">disabled "
+#~ "reporting</span>."
+#~ msgstr ""
+#~ "Zpráva nebyla odeslána, protože máte <span class=\"strong\">vypnuté "
+#~ "reportování</span>."
+
+#~ msgctxt "UI"
+#~ msgid "Worker Hash Rate"
+#~ msgstr "Hash rate zařízení"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "There are no worker incidents to be shown here since only your Account "
+#~ "State has changed."
+#~ msgstr ""
+#~ "Jelikož se změnil pouze stav účtu, nejsou zde zobrazeny žádné incidenty "
+#~ "zařízení."
+
+#~ msgctxt "UI"
+#~ msgid "There are no incidents available for you to show."
+#~ msgstr "Nejsou zde žádné incidenty k zobrazení."
+
+#~ msgctxt "UI"
+#~ msgid "State <span>Changes in Time</span>"
+#~ msgstr "Změny <span>stavu v čase</span>"
+
+#~ msgid "Total Hash Rate"
+#~ msgstr "Celkový hash rate"
+
+#~ msgctxt "UI, Monitoring"
+#~ msgid "Error"
+#~ msgstr "Chyba"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Each point on the chart represents worker incident and its color "
+#~ "describes type of the incident."
+#~ msgstr ""
+#~ "Každý bod v grafu reprezentuje incident zařízení a jeho barva popisuje "
+#~ "typ incidentu."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "E.g. when your worker goes from Low to OK, you will see an orange line "
+#~ "followed by green point, representing the state change, and green line."
+#~ msgstr ""
+#~ "Např. když vaše zařízení mění stav z Low na OK, uvidíte oranžovou linku "
+#~ "následovanou zeleným bodem a zelenou linkou."
+
+#~ msgctxt "Intro"
+#~ msgid ""
+#~ "Every row in the following table contains summary of incidents that "
+#~ "happened at the same time."
+#~ msgstr ""
+#~ "Každý řádek v následující tabulce obsahuje souhrn událostí, které se "
+#~ "odehrály ve stejný čas."
+
+#~ msgctxt "Intro"
+#~ msgid "Click the table row to see the details for a particular event."
+#~ msgstr "Klikněte na řádek tabulky pro zobrazení detailů konkrétní události."
+
+#~ msgctxt "Intro"
+#~ msgid ""
+#~ "Absolute number of workers in each state and relative change to the "
+#~ "previous state."
+#~ msgstr "Konečný počet zařízení v každém stavu a předcházející změny stavů."
+
+#~ msgctxt "Intro"
+#~ msgid "States: OK | Low | Error | Monitoring disabled"
+#~ msgstr "Stavy: OK | Pomalý | Chyba | Sledování vypnuto"
+
+#~ msgctxt "Intro"
+#~ msgid "Total hash rate of all your workers together (5min average)"
+#~ msgstr ""
+#~ "Celkový hash rate všech vašich zařízení dohromady (5minutový průměr)"
+
+#~ msgctxt "Intro"
+#~ msgid ""
+#~ "Status of the report showing if the report has been sent to you by email "
+#~ "or not."
+#~ msgstr ""
+#~ "Stav reportu ukazující, jestli byl report odeslán na vaši emailovou "
+#~ "adresu nebo ne."
+
+#~ msgctxt "UI"
+#~ msgid "Page"
+#~ msgstr "Stránka"
+
+#~ msgctxt "UI"
+#~ msgid "Your account has already been activated. Please login to continue."
+#~ msgstr "Váš účet už byl aktivován. Pro pokračování se prosím přihlašte."
+
+#~ msgctxt "UI"
+#~ msgid "Release <span>Notes</span>"
+#~ msgstr "Poznámky <span>k verzi</span>"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Verification token for changing your email address is not valid. Please, "
+#~ "make sure that the URL in your browser matches exactly the URL that has "
+#~ "been sent to you by email."
+#~ msgstr ""
+#~ "Ověřovací token pro změnu vašeho emailu není platný. Ujistěte se prosím, "
+#~ "že URL ve vašem prohlížeči je naprosto stejná jako URL, která vám byla "
+#~ "odeslána emailem."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "If you are sure that the address in your browser is the same as the one "
+#~ "you have received, please try to request a new email change message."
+#~ msgstr ""
+#~ "Pokud jste si jistý, že adresa ve vašem prohlížeči je naprosto stejná "
+#~ "jako ta, kterou jste obdržel, zažádejte o novou zprávu o změně emailu."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "If this problem persists, please contact our <a href=\"%(url)s\">"
+#~ "%(globe_icon)s support system</a>."
+#~ msgstr ""
+#~ "Pokud tento problém přetrvává, obraťte se prosím na náš <a href=\"%(url)s"
+#~ "\">%(globe_icon)s systém podpory</a>."
+
+#~ msgctxt "UI"
+#~ msgid "Return to settings"
+#~ msgstr "Návrat k nastavení"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "There is no pending request for changing your email address with this ID. "
+#~ "If you want to change your email address, please, request this change in "
+#~ "your account settings."
+#~ msgstr ""
+#~ "S tímto ID zde není žádný nevyřešený požadavek na změnu vašeho emailu. "
+#~ "Pokud chcete změnit svou emailovou adresu, zažádejte si prosím o tuto "
+#~ "změnu v nastavení svého účtu."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Email (%(orig_email)s) associated with your account has been successfully "
+#~ "changed to %(new_email)s."
+#~ msgstr ""
+#~ "Email (%(orig_email)s) spojený s vaším účtem byl úspěšně změněn na "
+#~ "%(new_email)s."
+
+#~ msgctxt "UI"
+#~ msgid "Your wallet change request has been cancelled."
+#~ msgstr "Požadavek na změnu peněženky byl zrušen."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Wallet change has already been confirmed from your IP today (%(param)s). "
+#~ "For security reasons, only one wallet change request per IP can be "
+#~ "processed within 24 hours. We are sorry for this inconvenience. Please, "
+#~ "try again tomorrow."
+#~ msgstr ""
+#~ "Změna peněženky už dnes byla z vaší IP adresy potvrzena (%(param)s). Z "
+#~ "bezpečnostních důvodů může být vyřízen pouze jeden požadavek na změnu "
+#~ "peněženky z jedné IP adresy v průběhu 24 hodin. Omlouváme se za tuto "
+#~ "nepříjemnost. Zkuste to prosím znovu zítra."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "There is no pending wallet change request or the confirmation link is "
+#~ "invalid."
+#~ msgstr ""
+#~ "Není zde žádný nevyřízený požadavek na změnu peněženky nebo je "
+#~ "potvrzující odkaz neplatný."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "You can resend the wallet change confirmation email from your <a href="
+#~ "\"%(profile_page)s\">profile page</a>."
+#~ msgstr ""
+#~ "Můžete si zažádat o poslání nového potvrzujícího emailu z vašeho <a href="
+#~ "\"%(profile_page)s\">profilu</a>."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Your request is waiting for manual confirmation by the pool staff.<br/"
+#~ ">Please, try again later."
+#~ msgstr ""
+#~ "Váš požadavek čeká na ruční potvrzení od zaměstnanců poolu. <br/>Zkuste "
+#~ "to prosím později."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Please enter valid one-time password provided by your two-factor "
+#~ "authentication software, or return to your account settings and cancel "
+#~ "the request."
+#~ msgstr ""
+#~ "Vložte prosím platné jednorázové heslo, které jste získal v aplikaci pro "
+#~ "dvoufaktorovou autentizaci, nebo se vraťte do nastavení účtu a zrušte "
+#~ "tento požadavek."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Your request cannot be completed earlier than 24 hours from creation. The "
+#~ "time limit will pass at %(param)s UTC. We are sorry for the "
+#~ "inconvenience. This limitation has been activated due to recent brute "
+#~ "force attacks on user profiles."
+#~ msgstr ""
+#~ "Váš požadavek nemůže být dokončen dříve než za 24 hodin od jeho "
+#~ "vytvoření. Tento časový limit vyprší v %(param)s UTC. Omlouváme se za "
+#~ "tuto nepříjemnost. Tento limit byl aktivován kvůli nedávným pokusům o "
+#~ "nabourání se do uživatelských účtů hrubou silou."
+
+#~ msgctxt "UI"
+#~ msgid "Your wallet has been successfully changed."
+#~ msgstr "Vaše peněženka byla úspěšně změněna."
+
+#~ msgctxt "UI"
+#~ msgid "Return to blog feed"
+#~ msgstr "Vrátit se na blog"
+
+#~ msgid "Articles by"
+#~ msgstr "Články od"
+
+#~ msgid "Archive"
+#~ msgstr "Archiv"
+
+#~ msgid "Tag"
+#~ msgstr "Značka"
+
+#~ msgid "Category"
+#~ msgstr "Kategorie"
+
+#~ msgid "No article found."
+#~ msgstr "Nenalezeny žádné články."
+
+#~ msgid "previous"
+#~ msgstr "předchozí"
+
+#~ msgid "Page"
+#~ msgstr "Stránka"
+
+#~ msgid "of"
+#~ msgstr "z"
+
+#~ msgid "next"
+#~ msgstr "následující"
+
+#~ msgid "by"
+#~ msgstr "od"
+
+#~ msgid "1 article"
+#~ msgid_plural "%(articles)s articles"
+#~ msgstr[0] "článek"
+#~ msgstr[1] "%(articles)s články"
+#~ msgstr[2] "%(articles)s článků"
+
+#~ msgid "0 articles"
+#~ msgstr "0 článků"
+
+#~ msgid "Authors"
+#~ msgstr "Autoři"
+
+#~ msgid "Categories"
+#~ msgstr "Kategorie"
+
+#~ msgid "No categories found."
+#~ msgstr "Nenalezeny žádné kategorie."
+
+#~ msgid "Tags"
+#~ msgstr "Značky"
+
+#~ msgctxt "UI"
+#~ msgid "Current Bitcoin block, difficulty"
+#~ msgstr "Aktuální Bitcoin blok, složitost"
+
+#~ msgctxt "UI"
+#~ msgid "Current Round Duration"
+#~ msgstr "Trvání aktuálního kola"
+
+#~ msgctxt "UI"
+#~ msgid "Loading"
+#~ msgstr "Nahrávám"
+
+#~ msgctxt "UI"
+#~ msgid "Current Round Start:"
+#~ msgstr "Začátek aktuálního kola:"
+
+#~ msgctxt "UI, Current Shares CDF (link)"
+#~ msgid "Current Shares"
+#~ msgstr "Odevzdáno řešení"
+
+#~ msgctxt "UI"
+#~ msgid "CDF"
+#~ msgstr "CDF"
+
+#~ msgctxt "UI"
+#~ msgid "Pool Effective Hash Rate (30 min average)"
+#~ msgstr "Efektivní hash rate poolu (30 min průměr)"
+
+#~ msgctxt "UI"
+#~ msgid "Pool Scoring Hash Rate"
+#~ msgstr "Skórovací hash rate poolu"
+
+#~ msgctxt "UI"
+#~ msgid "Pool Luck (current round, 10, 50, 250 blocks)"
+#~ msgstr "Poolové štěstí (aktuální kolo, 10, 50, 250 bloků)"
+
+#~ msgctxt "UI"
+#~ msgid "Current time"
+#~ msgstr "Aktuální čas"
+
+#~ msgctxt "UI"
+#~ msgid "Total Shares in the Round:"
+#~ msgstr "Celkem řešení v aktuálním kole:"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "It looks like you have clicked on invalid or broken link. This can be "
+#~ "caused by your email client or recent account changes. Please go to your "
+#~ "account settings and opt-out of our pool newsletter manually."
+#~ msgstr ""
+#~ "Vypadá to, že jste kliknul na neplatný nebo poškozený odkaz. Toto může "
+#~ "být způsobeno vaším emailovým klientem nebo nedávnými změnami účtu. "
+#~ "Zrušte prosím odebírání novinek ručně v nastavení svého účtu."
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "You have been successfully unsubscribed from our pool newsletter. If you "
+#~ "would like to receive the newsletters again, please go to your account "
+#~ "settings."
+#~ msgstr ""
+#~ "Byl jste úspěšně odhlášen z odebírání novinek. Pokud si přejete tyto "
+#~ "novinky znovu dostávat, tuto možnost najdete v nastavení svého účtu."
+
+#~ msgctxt "UI"
+#~ msgid "Resend"
+#~ msgstr "Poslat znovu"
+
+#~ msgctxt "UI"
+#~ msgid "Sign by wallet"
+#~ msgstr "Podepsat peněženkou"
+
+#~ msgctxt "UI"
+#~ msgid "Read more about <a target=\"_blank\" href=\"%(url)s\">markdown</a>"
+#~ msgstr ""
+#~ "Přečtěte si více o <a target=\"_blank\" href=\"%(url)s\">markdown</a> "
+#~ "jazyku"
+
+#~ msgctxt "UI"
+#~ msgid "Preview:"
+#~ msgstr "Náhled:"
 
 #, fuzzy
 #~ msgctxt "MAILING"
@@ -11312,10 +11275,6 @@ msgstr "Pomoc"
 #~ msgstr "Poznámky k vydání 20"
 
 #, fuzzy
-#~ msgid "username"
-#~ msgstr "Uživatel"
-
-#, fuzzy
 #~ msgid "log ig"
 #~ msgstr "Přihlásit"
 
@@ -12686,9 +12645,6 @@ msgstr "Pomoc"
 #~ "<a href='%(url)s'>Zaregistruj</a> svá zařízení/minery. Můžeš použít jeden "
 #~ "účet zařízení pro všechny své počítače, ale doporučuji Ti registrovat "
 #~ "účet zařízení pro každý samostatně pro jednodušší hledání problémů."
-
-#~ msgid "Your username and password didn't match. Please try again."
-#~ msgstr "Špatné uživatelské jméno nebo heslo. Zkus to prosím znovu."
 
 #~ msgid ""
 #~ " is extra income for pool members. Please fill your Namecoin settings to "
