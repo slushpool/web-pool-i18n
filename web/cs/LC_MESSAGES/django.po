@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Slush's pool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-13 20:49+0100\n"
-"PO-Revision-Date: 2018-04-03 09:28+0000\n"
+"PO-Revision-Date: 2018-04-04 10:35+0000\n"
 "Last-Translator: Braiins Admin <web.accounts@braiins.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
 "cs/>\n"
@@ -258,12 +258,12 @@ msgstr "Vložte platného poskytovatele emailu."
 #, python-format
 msgctxt "UI"
 msgid "Device was not paired in time limit of %s seconds"
-msgstr "Zařízení nebylo spárováno během časového limitu %s sekund."
+msgstr "Zařízení nebylo spárováno během časového limitu %s sekund"
 
 #: devices/models.py:42
 msgctxt "UI"
 msgid "Device you are trying to pair was not found"
-msgstr ""
+msgstr "Zařízení, které se snažíte spárovat, nebylo nalezeno"
 
 #: devices/models.py:46
 msgctxt "UI"
@@ -2940,9 +2940,8 @@ msgid "URL:"
 msgstr "URL:"
 
 #: help/templates/help/manual/getting_started.html:37
-#, fuzzy
 msgid "userID:"
-msgstr "ID uživatele"
+msgstr "ID uživatele:"
 
 #: help/templates/help/manual/getting_started.html:37
 #, fuzzy
@@ -4802,7 +4801,7 @@ msgstr ""
 #: mining/models.py:413
 msgctxt "UI"
 msgid "-- not voted (proportional split) --"
-msgstr ""
+msgstr "-- nehlasováno (poměrné rozdělení) --"
 
 #: mining/models.py:414
 msgctxt "UI"
@@ -5256,9 +5255,10 @@ msgstr "Nová adresa je již nastavena."
 
 #. Translators: enabled coins selection - user cannot disable all coins
 #: settings/forms/enabled_coins_settings_form.py:39
+#, fuzzy
 msgctxt "UI"
 msgid "At least one coin must be enabled!"
-msgstr ""
+msgstr "Alespoň jeden coin musí být povolený!"
 
 #: settings/forms/otp_setting_forms.py:69
 msgctxt "UI"
@@ -5492,10 +5492,9 @@ msgid "Email change confirmation"
 msgstr "Potvrzení změny emailu"
 
 #: web/models.py:331
-#, fuzzy
 msgctxt "UI"
 msgid "Zcash wallet change confirmation"
-msgstr "Potvrzení změny peněženky"
+msgstr "Potvrzení změny Zcash peněženky"
 
 #: web/models.py:411
 msgctxt "UI, Transaction state"
@@ -5863,10 +5862,9 @@ msgid "Wallet unlocked"
 msgstr "Peněženka odemčena"
 
 #: web/models.py:1082
-#, fuzzy
 msgctxt "UI"
 msgid "Zcash wallet locked"
-msgstr "Zcash peněženka odemčena"
+msgstr "Zcash peněženka uzamčena"
 
 #: web/models.py:1083
 msgctxt "UI"
@@ -5955,7 +5953,6 @@ msgid "Payout history"
 msgstr "Historie výplat"
 
 #: web/views.py:666
-#, fuzzy
 msgctxt "UI"
 msgid "Activity Log"
 msgstr "Záznam aktivit"
@@ -7398,19 +7395,19 @@ msgstr "Zakladatel, Poradce"
 
 #: web/templates/team.html:62
 msgid "Infrastructure Admin"
-msgstr ""
+msgstr "Správce infrastruktury"
 
 #: web/templates/team.html:73
 msgid "Back-end Developer"
-msgstr ""
+msgstr "Back-end vývojář"
 
 #: web/templates/team.html:81
 msgid "Front-end Developer"
-msgstr ""
+msgstr "Front-end vývojář"
 
 #: web/templates/team.html:89
 msgid "Marketing, Customer Support"
-msgstr ""
+msgstr "Marketing, zákaznická podpora"
 
 #: web/templates/terms-of-service.html:3
 msgctxt "terms"
@@ -7674,13 +7671,13 @@ msgid "Change my email"
 msgstr "Změnit můj email"
 
 #: web/templates/email/monitoring_body.html:5
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "We detect changes in the current state of your %(coin)s workers. Please see "
 "the report below:"
 msgstr ""
-"Pool zjistil změny ve stavu Vašich  %(coin)s zařízení. Podívejte se prosím "
+"Pool zjistil změny ve stavu vašich  %(coin)s zařízení. Podívejte se prosím "
 "na zprávu níže:"
 
 #: web/templates/email/monitoring_body.html:8
@@ -7860,7 +7857,7 @@ msgid "Activate"
 msgstr "Aktivovat"
 
 #: web/templates/email/wallet_change.html:5
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "You are receiving this email because you requested to change your %(coin)s "
