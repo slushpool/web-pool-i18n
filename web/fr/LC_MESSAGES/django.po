@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 13:25+0200\n"
+"POT-Creation-Date: 2018-05-22 15:39+0200\n"
 "PO-Revision-Date: 2016-05-02 09:39+0000\n"
 "Last-Translator: sega fanatik <segafanatik@free.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
@@ -248,14 +248,31 @@ msgctxt "UI, Blocks"
 msgid "Confirmed"
 msgstr "confirmé(e)"
 
-#: contact/forms.py:19 contact/forms.py:20 contact/forms.py:21
-#: contact/forms.py:23 contact/forms.py:32 mailing/forms.py:65
-#: mailing/forms.py:66 mailing/forms.py:67 mailing/forms.py:97
-#: mailing/models.py:489 mailing/models.py:490 mailing/models.py:491
-#: mailing/models.py:492 mailing/models.py:493 news/views.py:70
-#: notifications/backends/blocks.py:23 notifications/backends/proposals.py:22
-msgid "UI"
-msgstr "Interface utilisateur"
+#: contact/forms.py:19
+msgctxt "UI"
+msgid "Your name (optional)"
+msgstr ""
+
+#: contact/forms.py:20
+msgctxt "UI"
+msgid "Email (optional)"
+msgstr ""
+
+#: contact/forms.py:21
+msgctxt "UI"
+msgid "Subject"
+msgstr ""
+
+#: contact/forms.py:23
+#, fuzzy
+msgctxt "UI"
+msgid "Your message"
+msgstr "Message"
+
+#: contact/forms.py:32
+msgctxt "UI"
+msgid "You should wait few minutes before you can submit this form again."
+msgstr ""
 
 #: core/validators.py:10
 msgid "Enter a valid, non empty value."
@@ -4615,6 +4632,59 @@ msgctxt "UI"
 msgid "Worker <span>Management</span>"
 msgstr "Paramètres <span>du travailleur</span>"
 
+#: mailing/forms.py:65
+#, fuzzy
+msgctxt "UI"
+msgid "What is your main reason?"
+msgstr "Qu'est-ce que le minage en pool?"
+
+#: mailing/forms.py:66
+#, fuzzy
+msgctxt "UI"
+msgid "Your feedback means a lot for me."
+msgstr "Vos commentaires nous rapprochent du monde !"
+
+#: mailing/forms.py:67
+#, fuzzy
+msgctxt "UI"
+msgid "Optional feedback"
+msgstr "Retour d'expérience général"
+
+#: mailing/forms.py:97
+msgctxt "UI"
+msgid "Send"
+msgstr "Envoyer"
+
+#: mailing/models.py:489
+#, fuzzy
+msgctxt "UI"
+msgid "I receive newsletters too frequently"
+msgstr "Je reçois les newsletters trop souvent."
+
+#: mailing/models.py:490
+#, fuzzy
+msgctxt "UI"
+msgid "I do not mind anymore"
+msgstr "Je ne mine plus."
+
+#: mailing/models.py:491
+#, fuzzy
+msgctxt "UI"
+msgid "I have joined another pool"
+msgstr "j'ai rejoint une autre pool."
+
+#: mailing/models.py:492
+#, fuzzy
+msgctxt "UI"
+msgid "The newsletter content is of no value to me"
+msgstr "Le contenu de la newsletter n'est d'aucune utilité pour moi."
+
+#: mailing/models.py:493
+#, fuzzy
+msgctxt "UI"
+msgid "Other reason"
+msgstr "Autre raison."
+
 #: mailing/templates/mailing/unsubscribe.html:4
 #: mailing/templates/mailing/unsubscribe_confirm.html:5
 msgctxt "UI"
@@ -4899,6 +4969,11 @@ msgid ""
 msgstr ""
 "Seul les lettres, chiffres et les caractères suivants sont acceptés : _ @ + -"
 
+#: news/views.py:70
+msgctxt "UI"
+msgid "Can't find requested post. Please check recent below."
+msgstr ""
+
 #: news/templates/news/detail.html:4 news/templates/news/home.html:4
 #: web/templates/facebook_feed_page.html:3
 msgctxt "UI"
@@ -5094,6 +5169,17 @@ msgid ""
 "These changes closed more then 10 user proposals, you can now <a href="
 "\"%(dev_corner)s\">vote here</a> for other ideas!"
 msgstr ""
+
+#: notifications/backends/blocks.py:23
+msgctxt "UI"
+msgid "New block found in <span class=\"strong\">{!s}</span>"
+msgstr ""
+
+#: notifications/backends/proposals.py:22
+#, fuzzy
+msgctxt "UI"
+msgid "New comment <span class=\"strong\">{!s}</span>"
+msgstr "Paramètres du <span>nouveau travailleur </span>"
 
 #: notifications/templates/notifications/parts/notifications.html:21
 msgctxt "UI"
@@ -5366,6 +5452,12 @@ msgid ""
 "Please enter a correct username (not an e-mail address) and password. Note "
 "that both fields may be case-sensitive."
 msgstr ""
+
+#: web/forms.py:30
+#, fuzzy
+msgctxt "UI"
+msgid "This account is inactive."
+msgstr "Le compte a été mis à jour."
 
 #: web/forms.py:38 web/forms.py:74
 msgctxt "UI"
@@ -7504,19 +7596,15 @@ msgctxt "UI"
 msgid "Older"
 msgstr "Plus âgés"
 
+#~ msgid "UI"
+#~ msgstr "Interface utilisateur"
+
 #, fuzzy
 #~| msgctxt "UI"
 #~| msgid "2-factor authentication enabled"
 #~ msgctxt "UI"
 #~ msgid "Authentication required"
 #~ msgstr "authentification 2-factor activée"
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "Message"
-#~ msgctxt "UI"
-#~ msgid "Your message"
-#~ msgstr "Message"
 
 #, fuzzy
 #~| msgctxt "UI"
@@ -7551,45 +7639,6 @@ msgstr "Plus âgés"
 #~ msgctxt "UI"
 #~ msgid "Invalid user selection"
 #~ msgstr "Requête invalide"
-
-#~ msgctxt "UI"
-#~ msgid "Send"
-#~ msgstr "Envoyer"
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "I receive the newsletters too frequently."
-#~ msgctxt "UI"
-#~ msgid "I receive newsletters too frequently"
-#~ msgstr "Je reçois les newsletters trop souvent."
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "I don't mine anymore."
-#~ msgctxt "UI"
-#~ msgid "I do not mind anymore"
-#~ msgstr "Je ne mine plus."
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "I have joined another pool."
-#~ msgctxt "UI"
-#~ msgid "I have joined another pool"
-#~ msgstr "j'ai rejoint une autre pool."
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "The newsletter content is of no value to me."
-#~ msgctxt "UI"
-#~ msgid "The newsletter content is of no value to me"
-#~ msgstr "Le contenu de la newsletter n'est d'aucune utilité pour moi."
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "Other reason."
-#~ msgctxt "UI"
-#~ msgid "Other reason"
-#~ msgstr "Autre raison."
 
 #, fuzzy
 #~ msgctxt "UI"
@@ -8830,10 +8879,6 @@ msgstr "Plus âgés"
 #~ msgstr "L'authentification 2-factor a été configurée."
 
 #~ msgctxt "UI"
-#~ msgid "The account has been updated."
-#~ msgstr "Le compte a été mis à jour."
-
-#~ msgctxt "UI"
 #~ msgid "The monitoring settings has been updated."
 #~ msgstr "Les paramètres de surveillance ont étés mis à jour."
 
@@ -9413,10 +9458,6 @@ msgstr "Plus âgés"
 #~ msgctxt "UI"
 #~ msgid "Give Us Feedback"
 #~ msgstr "Donnez nous votre retour d'expérience"
-
-#~ msgctxt "UI"
-#~ msgid "Your feedback means the world to us!"
-#~ msgstr "Vos commentaires nous rapprochent du monde !"
 
 #~ msgctxt "UI"
 #~ msgid "Write to Us"
@@ -10280,10 +10321,6 @@ msgstr "Plus âgés"
 #~ msgctxt "UI"
 #~ msgid "Terms <span>of Service</span>"
 #~ msgstr "<span>Termes d'utilisation du service</span>"
-
-#~ msgctxt "UI"
-#~ msgid "New Worker <span>Settings</span>"
-#~ msgstr "Paramètres du <span>nouveau travailleur </span>"
 
 #~ msgctxt "UI"
 #~ msgid "Switch to worker"

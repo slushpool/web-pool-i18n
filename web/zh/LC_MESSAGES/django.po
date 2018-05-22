@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 13:25+0200\n"
+"POT-Creation-Date: 2018-05-22 15:39+0200\n"
 "PO-Revision-Date: 2017-04-16 19:49+0000\n"
 "Last-Translator: Josef Kubíček <kubijo@gmail.com>\n"
 "Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-cz/"
@@ -237,14 +237,31 @@ msgctxt "UI, Blocks"
 msgid "Confirmed"
 msgstr "确认的"
 
-#: contact/forms.py:19 contact/forms.py:20 contact/forms.py:21
-#: contact/forms.py:23 contact/forms.py:32 mailing/forms.py:65
-#: mailing/forms.py:66 mailing/forms.py:67 mailing/forms.py:97
-#: mailing/models.py:489 mailing/models.py:490 mailing/models.py:491
-#: mailing/models.py:492 mailing/models.py:493 news/views.py:70
-#: notifications/backends/blocks.py:23 notifications/backends/proposals.py:22
-msgid "UI"
-msgstr "用户界面"
+#: contact/forms.py:19
+msgctxt "UI"
+msgid "Your name (optional)"
+msgstr ""
+
+#: contact/forms.py:20
+msgctxt "UI"
+msgid "Email (optional)"
+msgstr ""
+
+#: contact/forms.py:21
+msgctxt "UI"
+msgid "Subject"
+msgstr ""
+
+#: contact/forms.py:23
+#, fuzzy
+msgctxt "UI"
+msgid "Your message"
+msgstr "信息"
+
+#: contact/forms.py:32
+msgctxt "UI"
+msgid "You should wait few minutes before you can submit this form again."
+msgstr ""
 
 #: core/validators.py:10
 msgid "Enter a valid, non empty value."
@@ -4773,6 +4790,59 @@ msgctxt "UI"
 msgid "Worker <span>Management</span>"
 msgstr "矿工 <span>管理</span>"
 
+#: mailing/forms.py:65
+#, fuzzy
+msgctxt "UI"
+msgid "What is your main reason?"
+msgstr "合并挖矿是什么？"
+
+#: mailing/forms.py:66
+#, fuzzy
+msgctxt "UI"
+msgid "Your feedback means a lot for me."
+msgstr "您的反馈对我们很重要！"
+
+#: mailing/forms.py:67
+#, fuzzy
+msgctxt "UI"
+msgid "Optional feedback"
+msgstr "一般反馈"
+
+#: mailing/forms.py:97
+msgctxt "UI"
+msgid "Send"
+msgstr "发送"
+
+#: mailing/models.py:489
+#, fuzzy
+msgctxt "UI"
+msgid "I receive newsletters too frequently"
+msgstr "太频繁地接收到时事新闻。"
+
+#: mailing/models.py:490
+#, fuzzy
+msgctxt "UI"
+msgid "I do not mind anymore"
+msgstr "我不再挖矿了。"
+
+#: mailing/models.py:491
+#, fuzzy
+msgctxt "UI"
+msgid "I have joined another pool"
+msgstr "我换到了另一个矿池。"
+
+#: mailing/models.py:492
+#, fuzzy
+msgctxt "UI"
+msgid "The newsletter content is of no value to me"
+msgstr "时事新闻的内容对我没有价值。"
+
+#: mailing/models.py:493
+#, fuzzy
+msgctxt "UI"
+msgid "Other reason"
+msgstr "其他原因。"
+
 #: mailing/templates/mailing/unsubscribe.html:4
 #: mailing/templates/mailing/unsubscribe_confirm.html:5
 msgctxt "UI"
@@ -5035,6 +5105,11 @@ msgid ""
 "Only letters, numbers and the following characters are accepted: _ @ + -"
 msgstr "只有字母，数字和这些字符可以使用：_ @ + -"
 
+#: news/views.py:70
+msgctxt "UI"
+msgid "Can't find requested post. Please check recent below."
+msgstr ""
+
 #: news/templates/news/detail.html:4 news/templates/news/home.html:4
 #: web/templates/facebook_feed_page.html:3
 msgctxt "UI"
@@ -5209,6 +5284,17 @@ msgid ""
 msgstr ""
 "这些更改解决了超过10个用户提议，您现在可以<a href=\"%(dev_corner)s\">在此投票"
 "</a>给其他提议！"
+
+#: notifications/backends/blocks.py:23
+msgctxt "UI"
+msgid "New block found in <span class=\"strong\">{!s}</span>"
+msgstr ""
+
+#: notifications/backends/proposals.py:22
+#, fuzzy
+msgctxt "UI"
+msgid "New comment <span class=\"strong\">{!s}</span>"
+msgstr "新矿工<span>设置</span>"
 
 #: notifications/templates/notifications/parts/notifications.html:21
 msgctxt "UI"
@@ -5468,6 +5554,12 @@ msgid ""
 "Please enter a correct username (not an e-mail address) and password. Note "
 "that both fields may be case-sensitive."
 msgstr ""
+
+#: web/forms.py:30
+#, fuzzy
+msgctxt "UI"
+msgid "This account is inactive."
+msgstr "账户已被更新。"
 
 #: web/forms.py:38 web/forms.py:74
 msgctxt "UI"
@@ -7482,19 +7574,15 @@ msgctxt "UI"
 msgid "Older"
 msgstr "更旧的"
 
+#~ msgid "UI"
+#~ msgstr "用户界面"
+
 #, fuzzy
 #~| msgctxt "UI"
 #~| msgid "2-factor authentication enabled"
 #~ msgctxt "UI"
 #~ msgid "Authentication required"
 #~ msgstr "双重验证已启用"
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "Message"
-#~ msgctxt "UI"
-#~ msgid "Your message"
-#~ msgstr "信息"
 
 #, fuzzy
 #~| msgctxt "UI"
@@ -7544,45 +7632,6 @@ msgstr "更旧的"
 #~ msgctxt "UI"
 #~ msgid "Invalid user selection"
 #~ msgstr "无效的请求"
-
-#~ msgctxt "UI"
-#~ msgid "Send"
-#~ msgstr "发送"
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "I receive the newsletters too frequently."
-#~ msgctxt "UI"
-#~ msgid "I receive newsletters too frequently"
-#~ msgstr "太频繁地接收到时事新闻。"
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "I don't mine anymore."
-#~ msgctxt "UI"
-#~ msgid "I do not mind anymore"
-#~ msgstr "我不再挖矿了。"
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "I have joined another pool."
-#~ msgctxt "UI"
-#~ msgid "I have joined another pool"
-#~ msgstr "我换到了另一个矿池。"
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "The newsletter content is of no value to me."
-#~ msgctxt "UI"
-#~ msgid "The newsletter content is of no value to me"
-#~ msgstr "时事新闻的内容对我没有价值。"
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "Other reason."
-#~ msgctxt "UI"
-#~ msgid "Other reason"
-#~ msgstr "其他原因。"
 
 #, fuzzy
 #~| msgctxt "UI"
@@ -8907,10 +8956,6 @@ msgstr "更旧的"
 #~ msgstr "双重认证已被配置。"
 
 #~ msgctxt "UI"
-#~ msgid "The account has been updated."
-#~ msgstr "账户已被更新。"
-
-#~ msgctxt "UI"
 #~ msgid "The monitoring settings has been updated."
 #~ msgstr "监控设置已更新。"
 
@@ -9424,10 +9469,6 @@ msgstr "更旧的"
 #~ msgctxt "UI"
 #~ msgid "Give Us Feedback"
 #~ msgstr "反馈"
-
-#~ msgctxt "UI"
-#~ msgid "Your feedback means the world to us!"
-#~ msgstr "您的反馈对我们很重要！"
 
 #~ msgctxt "UI"
 #~ msgid "Write to Us"
@@ -10240,10 +10281,6 @@ msgstr "更旧的"
 #~ msgctxt "UI"
 #~ msgid "Terms <span>of Service</span>"
 #~ msgstr "<span>服务</span>条款"
-
-#~ msgctxt "UI"
-#~ msgid "New Worker <span>Settings</span>"
-#~ msgstr "新矿工<span>设置</span>"
 
 #~ msgctxt "UI"
 #~ msgid "Switch to worker"

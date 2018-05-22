@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 13:25+0200\n"
+"POT-Creation-Date: 2018-05-22 15:39+0200\n"
 "PO-Revision-Date: 2017-03-13 18:49+0000\n"
 "Last-Translator: Josef Kubíček <kubijo@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/bitcoin-cz/"
@@ -243,14 +243,31 @@ msgctxt "UI, Blocks"
 msgid "Confirmed"
 msgstr "Confirmado"
 
-#: contact/forms.py:19 contact/forms.py:20 contact/forms.py:21
-#: contact/forms.py:23 contact/forms.py:32 mailing/forms.py:65
-#: mailing/forms.py:66 mailing/forms.py:67 mailing/forms.py:97
-#: mailing/models.py:489 mailing/models.py:490 mailing/models.py:491
-#: mailing/models.py:492 mailing/models.py:493 news/views.py:70
-#: notifications/backends/blocks.py:23 notifications/backends/proposals.py:22
-msgid "UI"
-msgstr "UI"
+#: contact/forms.py:19
+msgctxt "UI"
+msgid "Your name (optional)"
+msgstr ""
+
+#: contact/forms.py:20
+msgctxt "UI"
+msgid "Email (optional)"
+msgstr ""
+
+#: contact/forms.py:21
+msgctxt "UI"
+msgid "Subject"
+msgstr ""
+
+#: contact/forms.py:23
+#, fuzzy
+msgctxt "UI"
+msgid "Your message"
+msgstr "Mensaje"
+
+#: contact/forms.py:32
+msgctxt "UI"
+msgid "You should wait few minutes before you can submit this form again."
+msgstr ""
 
 #: core/validators.py:10
 msgid "Enter a valid, non empty value."
@@ -5278,6 +5295,56 @@ msgctxt "UI"
 msgid "Worker <span>Management</span>"
 msgstr "<span>Aministración</span> del trabajador"
 
+#: mailing/forms.py:65
+#, fuzzy
+msgctxt "UI"
+msgid "What is your main reason?"
+msgstr "¿Qué es la minería fusionada?"
+
+#: mailing/forms.py:66
+#, fuzzy
+msgctxt "UI"
+msgid "Your feedback means a lot for me."
+msgstr "¡Su opinión es todo para nosotros!"
+
+#: mailing/forms.py:67
+#, fuzzy
+msgctxt "UI"
+msgid "Optional feedback"
+msgstr "Opinión general"
+
+#: mailing/forms.py:97
+msgctxt "UI"
+msgid "Send"
+msgstr "Enviar"
+
+#: mailing/models.py:489
+#, fuzzy
+msgctxt "UI"
+msgid "I receive newsletters too frequently"
+msgstr "Recibir boletines del pool"
+
+#: mailing/models.py:490
+msgctxt "UI"
+msgid "I do not mind anymore"
+msgstr ""
+
+#: mailing/models.py:491
+msgctxt "UI"
+msgid "I have joined another pool"
+msgstr ""
+
+#: mailing/models.py:492
+msgctxt "UI"
+msgid "The newsletter content is of no value to me"
+msgstr ""
+
+#: mailing/models.py:493
+#, fuzzy
+msgctxt "UI"
+msgid "Other reason"
+msgstr "Otras noticias"
+
 #: mailing/templates/mailing/unsubscribe.html:4
 #: mailing/templates/mailing/unsubscribe_confirm.html:5
 msgctxt "UI"
@@ -5558,6 +5625,11 @@ msgid ""
 msgstr ""
 "Solamente letras, números, y los siguientes caracteres son aceptados: _ @ + -"
 
+#: news/views.py:70
+msgctxt "UI"
+msgid "Can't find requested post. Please check recent below."
+msgstr ""
+
 #: news/templates/news/detail.html:4 news/templates/news/home.html:4
 #: web/templates/facebook_feed_page.html:3
 msgctxt "UI"
@@ -5762,6 +5834,17 @@ msgid ""
 msgstr ""
 "Estos cambios cerraron más de 10 propuestas de usuario, ¡usted puede ahora "
 "<a href=\"%(dev_corner)s\">votar aquí</a> por otras ideas!"
+
+#: notifications/backends/blocks.py:23
+msgctxt "UI"
+msgid "New block found in <span class=\"strong\">{!s}</span>"
+msgstr ""
+
+#: notifications/backends/proposals.py:22
+#, fuzzy
+msgctxt "UI"
+msgid "New comment <span class=\"strong\">{!s}</span>"
+msgstr "Nueva <span>Configuración</span> de trabajador"
 
 #: notifications/templates/notifications/parts/notifications.html:21
 msgctxt "UI"
@@ -6034,6 +6117,12 @@ msgid ""
 "Please enter a correct username (not an e-mail address) and password. Note "
 "that both fields may be case-sensitive."
 msgstr ""
+
+#: web/forms.py:30
+#, fuzzy
+msgctxt "UI"
+msgid "This account is inactive."
+msgstr "La cuenta ha sido actualizada."
 
 #: web/forms.py:38 web/forms.py:74
 msgctxt "UI"
@@ -8167,19 +8256,15 @@ msgctxt "UI"
 msgid "Older"
 msgstr "Más antiguo"
 
+#~ msgid "UI"
+#~ msgstr "UI"
+
 #, fuzzy
 #~| msgctxt "UI"
 #~| msgid "2-factor authentication enabled"
 #~ msgctxt "UI"
 #~ msgid "Authentication required"
 #~ msgstr "Autenticacion de dos factores activada"
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "Message"
-#~ msgctxt "UI"
-#~ msgid "Your message"
-#~ msgstr "Mensaje"
 
 #, fuzzy
 #~| msgctxt "UI"
@@ -8232,24 +8317,6 @@ msgstr "Más antiguo"
 #~ msgctxt "UI"
 #~ msgid "Invalid user selection"
 #~ msgstr "Pedido Invalido"
-
-#~ msgctxt "UI"
-#~ msgid "Send"
-#~ msgstr "Enviar"
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "Receive pool newsletters"
-#~ msgctxt "UI"
-#~ msgid "I receive newsletters too frequently"
-#~ msgstr "Recibir boletines del pool"
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "Other news"
-#~ msgctxt "UI"
-#~ msgid "Other reason"
-#~ msgstr "Otras noticias"
 
 #, fuzzy
 #~| msgctxt "UI"
@@ -9601,10 +9668,6 @@ msgstr "Más antiguo"
 #~ msgstr "Autenticacion de dos factores ha sido configurada."
 
 #~ msgctxt "UI"
-#~ msgid "The account has been updated."
-#~ msgstr "La cuenta ha sido actualizada."
-
-#~ msgctxt "UI"
 #~ msgid "The monitoring settings has been updated."
 #~ msgstr "Los ajustes de monitoreo han sido actualizados."
 
@@ -9925,10 +9988,6 @@ msgstr "Más antiguo"
 #~ msgctxt "UI"
 #~ msgid "Give Us Feedback"
 #~ msgstr "Danos tu opinión"
-
-#~ msgctxt "UI"
-#~ msgid "Your feedback means the world to us!"
-#~ msgstr "¡Su opinión es todo para nosotros!"
 
 #~ msgctxt "UI"
 #~ msgid "Write to Us"
@@ -10472,10 +10531,6 @@ msgstr "Más antiguo"
 #~ msgctxt "UI"
 #~ msgid "Terms <span>of Service</span>"
 #~ msgstr "Términos <span>del Servicio</span>"
-
-#~ msgctxt "UI"
-#~ msgid "New Worker <span>Settings</span>"
-#~ msgstr "Nueva <span>Configuración</span> de trabajador"
 
 #~ msgctxt "UI"
 #~ msgid "Switch to worker"
