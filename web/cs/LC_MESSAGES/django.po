@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: Slush's pool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-26 17:53+0100\n"
-"PO-Revision-Date: 2018-04-04 10:35+0000\n"
+"PO-Revision-Date: 2018-11-27 18:08+0000\n"
 "Last-Translator: Braiins Admin <web.accounts@braiins.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/bitcoin-cz/mining/"
+"Language-Team: Czech <https://hosted.weblate.org/projects/slushpool/mining/"
 "cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.20-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: api/core.py:288
 msgid "Request payload expected, but not supplied!"
@@ -249,7 +249,7 @@ msgstr ""
 #: api/exceptions.py:291
 msgctxt "UI"
 msgid "Unexpected server error. Please try again later."
-msgstr ""
+msgstr "Neočekávaná chyba serveru. Zkuste to prosím později."
 
 #: backend/queries/legacy.py:102
 msgctxt "UI, Blocks"
@@ -412,7 +412,7 @@ msgstr "U2F ověření selhalo."
 
 #: formlib/core.py:43
 msgid "Current password is incorrect!"
-msgstr ""
+msgstr "Stávající heslo je nesprávné!"
 
 #: help/help_categories.py:55
 msgid "Getting started"
@@ -517,7 +517,7 @@ msgstr "Opravdu chcete smazat svůj účet?"
 
 #: help/help_categories.py:137 help/templates/help/mobile-app.html:5
 msgid "Mobile App"
-msgstr ""
+msgstr "Mobilní aplikace"
 
 #: help/help_categories.py:138
 #, fuzzy
@@ -537,7 +537,7 @@ msgstr ""
 
 #: help/help_categories.py:155
 msgid "API Guide"
-msgstr ""
+msgstr "Příručka k API"
 
 #: help/help_categories.py:156
 msgid "Pull the mining data easily"
@@ -570,36 +570,40 @@ msgstr "Připojte vaše starší zařízení"
 #: help/templates/help/api.html:34 help/templates/help/api.html:190
 #: help/templates/help/api.html:306
 msgid "Show sample output"
-msgstr ""
+msgstr "Zobrazit ukázkový výstup"
 
 #: help/templates/help/bitcoin-setup.html:12
 #: help/templates/help/zcash-setup.html:10
 msgid "Get suitable hardware"
-msgstr ""
+msgstr "Opatřete si vhodný hardware"
 
 #: help/templates/help/bitcoin-setup.html:15
 msgid "Bitcoin <span>can</span> be efficiently mined with:"
-msgstr ""
+msgstr "Bitcoin <span>může</span> být efektivně těžen pomocí:"
 
 #: help/templates/help/bitcoin-setup.html:15
 msgid "ASIC (SHA-256 algorithm)"
-msgstr ""
+msgstr "ASIC (algoritmus SHA-256)"
 
 #: help/templates/help/bitcoin-setup.html:17
 msgid "Bitcoin <span>cannot</span> be efficiently mined with (unsupported):"
-msgstr ""
+msgstr "Bitcoin <span>nemůže</span> být efektivně těžen pomocí (nepodporováno):"
 
 #: help/templates/help/bitcoin-setup.html:17
 msgid "GPU, CPU, mobile phone"
-msgstr ""
+msgstr "GPU, CPU, mobilní telefon"
 
 #: help/templates/help/bitcoin-setup.html:20
 #: help/templates/help/zcash-setup.html:17
+#, fuzzy
 msgid ""
 "While mining with unsupported hardware might be possible, it will almost "
 "certainly be unprofitable. Also, keep in mind that our support team will not "
 "be resolving issues related to unsupported hardware."
 msgstr ""
+"Přestože těžení s nepodporovaným hardwarem může být možné, bude téměř jistě "
+"neprofitabilní. Také mějte na paměti, že náš tým podpory nebude řešit "
+"problémy spojené s nepodporovaným hardwarem."
 
 #: help/templates/help/bitcoin-setup.html:22
 #: help/templates/help/zcash-setup.html:19
@@ -676,14 +680,13 @@ msgstr "ID uživatele:"
 
 #: help/templates/help/bitcoin-setup.html:43
 #: help/templates/help/zcash-setup.html:34
-#, fuzzy
 msgid "userName"
-msgstr "Uživatel"
+msgstr "uživatelskéJméno"
 
 #: help/templates/help/bitcoin-setup.html:43
 #: help/templates/help/zcash-setup.html:34
 msgid "workerName"
-msgstr "jménozařízení"
+msgstr "jménoZařízení"
 
 #: help/templates/help/bitcoin-setup.html:44
 #: help/templates/help/bitcoin-setup.html:109
@@ -713,6 +716,9 @@ msgid ""
 "connection and lower latency</strong>, please use one of the location-"
 "specific URLs instead of the general URL."
 msgstr ""
+"Servery Slush Poolu jsou rozmístěny po celém světě. <strong>Pro lepší "
+"spojení a nižší latenci</strong> prosím namísto obecné URL použijte jednu z "
+"lokálních URL."
 
 #: help/templates/help/bitcoin-setup.html:56
 #: help/templates/help/zcash-setup.html:46
@@ -1057,13 +1063,15 @@ msgstr ""
 
 #: help/templates/help/mobile-app.html:36
 msgid "Multiple devices"
-msgstr ""
+msgstr "Více zařízení"
 
 #: help/templates/help/mobile-app.html:38
 msgid ""
 "You can connect multiple mobile devices to your user account, there is no "
 "limit."
 msgstr ""
+"Ke svému účtu můžete připojit vícero mobilních zařízení, neexistuje žádný "
+"limit."
 
 #: help/templates/help/mobile-app.html:40
 #, fuzzy
@@ -1077,6 +1085,8 @@ msgid ""
 "access to your account, you can unlink the device in the <em>Devices</em> "
 "section."
 msgstr ""
+"Pokud ztratíte své mobilní zařízení už nechcete, aby mělo přístup k vašemu "
+"účtu, můžete jej odpojit v sekci <em>Zařízení</em>."
 
 #: help/templates/help/mobile-app.html:42
 msgid ""
@@ -1899,11 +1909,12 @@ msgstr "FAQ: Sloučená těžba"
 
 #: help/templates/help/rewards-payouts.html:45
 msgid "Namecoin (converted to BTC)"
-msgstr ""
+msgstr "Namecoin (převáděno na BTC)"
 
 #: help/templates/help/rewards-payouts.html:57
+#, fuzzy
 msgid "Zcash"
-msgstr ""
+msgstr "Zcash"
 
 #: help/templates/help/rewards-payouts.html:72
 msgid "0.0001 ZEC (only for payouts under 0.01 ZEC)"
@@ -1924,6 +1935,7 @@ msgid ""
 "The most important terms every miner should know listed in alphabetical "
 "order."
 msgstr ""
+"Nejdůležitější pojmy, které by měl znát každý miner, v abecedním pořadí."
 
 #: help/templates/help/terminology.html:16
 #, fuzzy
@@ -2181,7 +2193,7 @@ msgstr ""
 
 #: help/templates/help/terminology.html:116
 msgid "Orphan block"
-msgstr ""
+msgstr "Osiřelý blok"
 
 #: help/templates/help/terminology.html:119
 msgid ""
@@ -2190,6 +2202,10 @@ msgid ""
 "valid block (block A and block B) at around the same time and broadcast them "
 "both to the network."
 msgstr ""
+"Osiřelý blok (blok A) je platný blok, který však <strong>není součástí "
+"blockchainu</strong>. Osiřelý blok vznikne tehdy, když dva těžaři najdou "
+"validní blok (blok A a blok B) přibližně ve stejný čas a oba ho rozšíří po "
+"síti."
 
 #: help/templates/help/terminology.html:120
 msgid ""
@@ -2204,7 +2220,7 @@ msgstr ""
 
 #: help/templates/help/terminology.html:129
 msgid "Reward (confirmed vs unconfirmed)"
-msgstr ""
+msgstr "Odměna (potvrzená vs nepotvrzená)"
 
 #: help/templates/help/terminology.html:133
 msgid ""
@@ -2510,6 +2526,9 @@ msgid ""
 "Therefore, we do not collect nor process any unnecessary personal data, "
 "making our registration process reasonably simple."
 msgstr ""
+"Anonymita je jedna z klíčových hodnot hluboce zakořeněných v naší filozofii. "
+"Proto nesbíráme ani nezpracováváme jiná než nezbytná osobní data, díky čemuž "
+"je náš registrační proces poměrně jednoduchý."
 
 #: help/templates/help/user-accounts.html:9
 #, python-format
@@ -2537,7 +2556,7 @@ msgstr ""
 
 #: help/templates/help/user-accounts.html:14
 msgid "Access permissions"
-msgstr ""
+msgstr "Přístupová oprávnění"
 
 #: help/templates/help/user-accounts.html:15
 msgid ""
@@ -3235,7 +3254,7 @@ msgstr "Neplatný požadavek."
 #: user_request/api/v1/views.py:85
 msgctxt "UI"
 msgid "This request belongs to a different user!"
-msgstr ""
+msgstr "Tento požadavek spadá pod jiného uživatele!"
 
 #: user_request/api/v1/views.py:92
 #, fuzzy
@@ -3249,6 +3268,8 @@ msgid ""
 "The request associated with this confirmation link is no longer active."
 "<br>It has probably been confirmed or cancelled before."
 msgstr ""
+"Požadavek související s tímto potvrzovacím odkazem už není platný.<br>Už byl "
+"pravděpodobně potvrzen nebo zrušen."
 
 #: user_request/models.py:339
 #, fuzzy
@@ -3391,7 +3412,7 @@ msgstr ""
 #, python-brace-format
 msgctxt "UI"
 msgid "Unable to send {coin} payout"
-msgstr ""
+msgstr "Nelze poslat {coin} výplatu"
 
 #: web/api/v1/appeals.py:266
 msgctxt "UI"
@@ -3428,12 +3449,12 @@ msgstr "Neplatný formát tokenu"
 #: web/api/v1/views.py:1238
 msgctxt "UI"
 msgid "Password must have at Least 5 characters!"
-msgstr ""
+msgstr "Heslo musí mít alespoň 5 znaků!"
 
 #: web/api/v1/views.py:1418
 msgctxt "UI"
 msgid "Failed to load a demo account user!"
-msgstr ""
+msgstr "Nepodařilo se načíst demo účet!"
 
 #: web/api/v1/views.py:1532
 #, fuzzy
@@ -3717,17 +3738,19 @@ msgstr "Bitcoin Core"
 #: web/models.py:1060
 msgctxt "UI"
 msgid "Ethereum Classic"
-msgstr ""
+msgstr "Ethereum Classic"
 
 #: web/models.py:1061
+#, fuzzy
 msgctxt "UI"
 msgid "Ethereum"
-msgstr ""
+msgstr "Ethereum"
 
 #: web/models.py:1062
+#, fuzzy
 msgctxt "UI"
 msgid "Zcash"
-msgstr ""
+msgstr "Zcash"
 
 #: web/models.py:1064
 msgctxt "UI"
@@ -3782,7 +3805,7 @@ msgstr "Odhlásit se"
 #: web/models.py:1114
 msgctxt "UI"
 msgid "Logout all sessions"
-msgstr ""
+msgstr "Odhlásit všechna sezení"
 
 #: web/models.py:1115
 msgctxt "UI"
@@ -4504,7 +4527,7 @@ msgstr "Stavy sledování zařízení"
 #: workers/api/v1/views.py:64
 msgctxt "UI"
 msgid "Minimum difficulty must be an integer between 8 and 500 000!"
-msgstr ""
+msgstr "Minimální složitost musí být celé číslo mezi 8 a 500 000!"
 
 #: workers/api/v1/views.py:113
 #, fuzzy, python-format
