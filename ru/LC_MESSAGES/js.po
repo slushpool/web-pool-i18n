@@ -228,7 +228,9 @@ msgstr "Обновить"
 #: components/jsonView/templates/helpers.js:71
 #: components/jsonView/registry/panel/base/UserHashrateChart.js:48
 #: app/stats/containers/PoolHashrateChart.js:26
-#: app/workers/containers/WorkerHashRateChart.js:37 /checksum/CRSAJZIsB5
+#: app/workers/containers/WorkerHashRateChart.js:37
+#: app/helpCenter/utils/exampleCharts.js:19
+#: app/workers/containers/WorkersList.js:1168 /checksum/CRSAJZIsB5
 msgctxt "UI"
 msgid "Scoring Hash Rate"
 msgstr "Оценочный хешрейт"
@@ -379,7 +381,7 @@ msgid "Automatically estimates Hash Rate of your worker by its past activity."
 msgstr ""
 "Автоматически оценивать хешрейт вашего воркера по его прошлой активности."
 
-#: components/format/Interval.js:57 app/workers/containers/WorkerDetail.js:268
+#: app/workers/containers/WorkerDetail.js:268 components/format/Interval.js:57
 #: components/format/Interval.js:57 /checksum/vkQ1giC8GS
 msgctxt "UI"
 msgid "Now"
@@ -547,9 +549,9 @@ msgstr "NMC вознаграждение"
 
 #: app/constants.js:53 app/constants.js:53
 #: app/workers/containers/WorkerDetail.js:265
+#: components/workers/WorkerStateIcon.js:50
+#: components/workers/WorkerStateIcon.js:50
 #: app/settings/widgets/AccessProfiles.js:246
-#: components/workers/WorkerStateIcon.js:50
-#: components/workers/WorkerStateIcon.js:50
 #: app/monitoring/components/MonitoringChart.js:89 /checksum/mNp+r9gd5E
 msgctxt "UI"
 msgid "Disabled"
@@ -616,8 +618,8 @@ msgctxt "UI"
 msgid "Day"
 msgstr "День"
 
-#: app/payouts/containers/Payouts.js:236 app/rewards/containers/Rewards.js:366
-#: app/rewards/containers/Rewards.js:469 components/format/TxId.js:20
+#: app/rewards/containers/Rewards.js:366 app/rewards/containers/Rewards.js:469
+#: app/payouts/containers/Payouts.js:236 components/format/TxId.js:20
 #: /checksum//uACcOzfn5
 msgctxt "UI"
 msgid "N/A"
@@ -738,11 +740,11 @@ msgstr "Блок  #"
 #: components/jsonView/registry/settings/form/Prompt.js:149
 #: app/@routes/containers/Public.js:322
 #: app/dashboard/containers/Dashboard.js:395
+#: components/settings/Confirm2ndFactor.js:314
 #: components/jsonView/registry/settings/form/Prompt.js:149
 #: components/settings/Confirm2ndFactor.js:314
-#: app/settings/widgets/AccessProfileEdit.js:524
-#: components/settings/Confirm2ndFactor.js:314
 #: components/jsonView/lib/EditorPalette.js:319
+#: app/settings/widgets/AccessProfileEdit.js:524
 #: app/workers/modules/WorkersManager.js:424
 #: app/workers/modules/LabelsManager.js:615 /checksum/1r/fx4e7T/
 msgctxt "UI"
@@ -903,10 +905,10 @@ msgctxt "UI"
 msgid "{num, plural, =1 {Month} other {Months} }"
 msgstr "{num, plural, =1 {Месяц} other {Месяцы} }"
 
-#: app/payouts/containers/Payouts.js:335 app/rewards/containers/Rewards.js:596
+#: app/rewards/containers/Rewards.js:596 app/payouts/containers/Payouts.js:335
+#: app/dashboard/containers/Dashboard.js:519
 #: app/blocks/containers/Blocks.js:502
 #: app/hashrateProof/containers/HashrateProof.js:365
-#: app/dashboard/containers/Dashboard.js:519
 #: app/workers/containers/WorkersList.js:1356
 #: app/activity/containers/Activity.js:191 /checksum/bur97dyHxQ
 msgctxt "UI"
@@ -1627,8 +1629,8 @@ msgstr ""
 " будут получать ваши воркеры."
 
 #: components/jsonView/registry/settings/form/Prompt.js:137
-#: components/jsonView/registry/settings/form/Prompt.js:137
 #: components/settings/Confirm2ndFactor.js:323
+#: components/jsonView/registry/settings/form/Prompt.js:137
 #: components/settings/Confirm2ndFactor.js:323 /checksum/mmKc43T7WX
 msgctxt "UI"
 msgid "Confirm"
@@ -1821,9 +1823,9 @@ msgctxt "UI"
 msgid "Public Key"
 msgstr "Открытый ключ"
 
-#: app/settings/widgets/U2FDevices.js:212
 #: components/settings/Confirm2ndFactor.js:189
-#: components/settings/Confirm2ndFactor.js:189 /checksum/FXWqNuuKNF
+#: components/settings/Confirm2ndFactor.js:189
+#: app/settings/widgets/U2FDevices.js:212 /checksum/FXWqNuuKNF
 msgctxt "UI"
 msgid "This device might not be registered yet."
 msgstr "Это устройство может быть еще не зарегистрированным."
@@ -1833,9 +1835,9 @@ msgctxt "UI"
 msgid "Last Used At"
 msgstr "В последний раз использовалось в"
 
-#: app/settings/widgets/U2FDevices.js:201
 #: components/settings/Confirm2ndFactor.js:185
-#: components/settings/Confirm2ndFactor.js:185 /checksum/tMIUvbWHCl
+#: components/settings/Confirm2ndFactor.js:185
+#: app/settings/widgets/U2FDevices.js:201 /checksum/tMIUvbWHCl
 msgctxt "UI"
 msgid "Unspecified"
 msgstr "Не определено"
@@ -2147,9 +2149,9 @@ msgstr ""
 "Для мониторинга вашей учетной записи в нашем официальном мобильном "
 "приложении, пожалуйста следуйте этим шагам."
 
-#: app/settings/widgets/U2FDevices.js:162
 #: components/settings/ConfirmRequestBy2ndFactor.js:64
-#: components/settings/ConfirmRequestBy2ndFactor.js:64 /checksum/SOuqfQ3tKJ
+#: components/settings/ConfirmRequestBy2ndFactor.js:64
+#: app/settings/widgets/U2FDevices.js:162 /checksum/SOuqfQ3tKJ
 msgctxt "UI"
 msgid "No data received"
 msgstr "Данные не были приняты"
@@ -2572,7 +2574,7 @@ msgctxt "UI"
 msgid "Do not forget to check the Spam folder if necessary."
 msgstr "Не забудьте проверить папку «Спам» при необходимости."
 
-#: app/aboutPool/containers/Team.js:27 app/aboutPool/containers/Tos.js:14
+#: app/aboutPool/containers/Tos.js:14 app/aboutPool/containers/Team.js:27
 #: app/aboutPool/containers/Facts.js:76 /checksum/Q1fFSwK0lm
 msgctxt "UI"
 msgid "About"
@@ -2707,11 +2709,6 @@ msgstr ""
 msgctxt "UI"
 msgid "Create free account"
 msgstr "Создать бесплатную учетную запись"
-
-#: app/workers/containers/WorkersList.js:1168 /checksum/r5sJx3Apky
-msgctxt "UI"
-msgid "Scorign Hash Rate"
-msgstr "Оцененный хешрейт"
 
 #: app/@routes/authViews/ConfirmUserRequest.js:69 /checksum//voBE4AikH
 msgctxt "UI"
@@ -3604,8 +3601,8 @@ msgid "Interface"
 msgstr "Интерфейс"
 
 #: app/@routes/containers/Public.js:118 app/blocks/containers/Blocks.js:80
-#: app/hashrateProof/containers/HashrateProof.js:82
-#: app/stats/containers/Stats.js:112 /checksum/nPQS61o4dw
+#: app/stats/containers/Stats.js:112
+#: app/hashrateProof/containers/HashrateProof.js:82 /checksum/nPQS61o4dw
 msgctxt "UI"
 msgid "Stats"
 msgstr "Статистики"
@@ -3772,8 +3769,8 @@ msgid "Page Not Found"
 msgstr "Страница не найдена"
 
 #: app/@factories/createPagedChart.js:287
-#: lib/charts/multiline_chart/MultiLineChart.js:60
 #: app/@factories/createPagedChart.js:287
+#: lib/charts/multiline_chart/MultiLineChart.js:60
 #: lib/charts/multiline_chart/MultiLineChart.js:60 /checksum/blc2wLjCo3
 #, fuzzy
 msgctxt "UI"
@@ -3887,8 +3884,8 @@ msgctxt "UI"
 msgid "This chart cannot fit in available area!"
 msgstr "Этот диаграмма не может поместиться в доступной области!"
 
-#: app/homepage/components/tiles/FeaturesTile.js:41
-#: app/aboutPool/containers/Facts.js:66 /checksum/cU+hQOxkvn
+#: app/aboutPool/containers/Facts.js:66
+#: app/homepage/components/tiles/FeaturesTile.js:41 /checksum/cU+hQOxkvn
 msgctxt "UI"
 msgid "Find out more"
 msgstr "Узнайте больше"
@@ -5235,6 +5232,11 @@ msgstr ""
 #: app/root/components/DialogSignUp.js:342 /checksum/8xPM/o9F/8
 msgctxt "UI"
 msgid "I agree with:"
+msgstr ""
+
+#: app/helpCenter/utils/exampleCharts.js:24 /checksum/IgZ/Knzxz8
+msgctxt "UI"
+msgid "Hash Rate (5min)"
 msgstr ""
 
 #~ msgctxt "UI"
