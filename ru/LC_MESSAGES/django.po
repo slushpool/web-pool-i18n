@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-30 16:07+0100\n"
-"PO-Revision-Date: 2019-01-30 16:22+0000\n"
+"PO-Revision-Date: 2019-02-01 18:10+0000\n"
 "Last-Translator: Iryna Bashkova <csepcsar@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/slushpool/mining/"
 "ru/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
 msgid "Request body must be list of objects"
-msgstr ""
+msgstr "Тело запроса должно быть списком объектов"
 
 #: api/core.py:358
 msgid "Request payload expected, but not supplied!"
@@ -152,7 +152,7 @@ msgstr "Слот \"%s\" не найден"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
 #: api/exceptions.py:168
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Slot number \"%s\" is not valid."
 msgstr "Номер слота \"%s\" недействителен."
@@ -172,7 +172,7 @@ msgstr "Укажите атрибут \"coin_type\" (например \"BTC\" и
 #: api/exceptions.py:194
 msgctxt "UI"
 msgid "Missing data for HR distribution"
-msgstr "Недостаточно данных для распределение хешрейта"
+msgstr "Недостаточно данных для распределение хэшрейта"
 
 #: api/exceptions.py:204
 msgctxt "UI"
@@ -390,13 +390,11 @@ msgstr "Требуется авторизация!"
 
 #: formlib/core.py:28
 msgid "Missing captcha data!"
-msgstr ""
+msgstr "Отсутствуют данные капчи!"
 
 #: formlib/core.py:32
-#| msgctxt "UI"
-#| msgid "OTP Validation"
 msgid "Captcha validation failed."
-msgstr ""
+msgstr "Проверка капчи не удалась."
 
 #: formlib/core.py:36
 msgid "Current password required!"
@@ -464,7 +462,7 @@ msgstr "Руководство по API"
 
 #: help/help_categories.py:96
 msgid "Hash Rate Proof"
-msgstr "Подтверждение хешрейта"
+msgstr "Подтверждение хэшрейта"
 
 #: help/help_categories.py:101
 msgid "Stratum Protocol"
@@ -678,20 +676,17 @@ msgstr "число"
 
 #: help/templates/help/api.html:104
 msgid "pool scoring hash rate"
-msgstr "значение оцененного хешрейта пула"
+msgstr "значение оцененного хэшрейта пула"
 
 #: help/templates/help/api.html:109
 msgid "number of pool active workers"
 msgstr "количество активных воркеров пула"
 
 #: help/templates/help/api.html:114
-#, fuzzy
-#| msgid "Shares contributed in current round:"
 msgid "current CDF for the current round"
 msgstr "текущий CDF для текущего раунда"
 
 #: help/templates/help/api.html:119
-#, fuzzy
 msgid "Unix time when the current round was started"
 msgstr "Unix время, в моменте, когда начался текущеий раунд"
 
@@ -708,7 +703,6 @@ msgid "Latest Blocks"
 msgstr "Последние блоки"
 
 #: help/templates/help/api.html:147
-#, fuzzy
 msgid "Unix time when given block was found"
 msgstr "Unix время, в моменте, когда был найден данный блок"
 
@@ -738,7 +732,7 @@ msgstr "вознаграждение пользователя за данный 
 
 #: help/templates/help/api.html:182
 msgid "pool scoring hash rate at the time when block was found"
-msgstr "оцененный хешрейт пула в момент обнаружения блока"
+msgstr "оцененный хэшрейт пула в момент обнаружения блока"
 
 #: help/templates/help/api.html:188
 msgid "User Profile API"
@@ -784,14 +778,13 @@ msgstr "средний хэшрейт за последние 24 часа"
 
 #: help/templates/help/api.html:279
 msgid "user current scoring hash rate"
-msgstr "текуший оцененный хешрейт пользователя"
+msgstr "текуший оцененный хэшрейт пользователя"
 
 #: help/templates/help/api.html:284
 msgid "number of workers with 'low' state"
 msgstr "количество работников со значением \"Низкий\""
 
 #: help/templates/help/api.html:289
-#, fuzzy
 msgid "number of workers with 'off' state"
 msgstr "количество работников со значением \"Выключен\""
 
@@ -818,13 +811,12 @@ msgid "Unix time of the last accepted share"
 msgstr "Unix время последнего принятого решения"
 
 #: help/templates/help/api.html:362
-#, fuzzy
 msgid "state of the worker (ok/low/off/dis)"
 msgstr "Значения воркера (ОК/Низкий/Выключен/Мониторинг отключен)"
 
 #: help/templates/help/api.html:372
 msgid "current scoring hash rate"
-msgstr "текущий оцененный хешрейт"
+msgstr "текущий оцененный хэшрейт"
 
 #: help/templates/help/bitcoin-setup.html:12
 #: help/templates/help/zcash-setup.html:10
@@ -882,8 +874,7 @@ msgstr ""
 "подтверждения по электронной почте."
 
 #: help/templates/help/bitcoin-setup.html:29
-#, fuzzy, python-format
-#| msgid "<a href=\"%(login)s\">Login</a> to your account."
+#, python-format
 msgid "<a href=\"%(login)s\">Log into</a> your account."
 msgstr "<a href=\"%(login)s\">Войдите</a> в свою учетную запись."
 
@@ -1003,8 +994,6 @@ msgstr "<strong>Европа</strong>"
 
 #: help/templates/help/bitcoin-setup.html:70
 #: help/templates/help/zcash-setup.html:56
-#, fuzzy
-#| msgid "<strong>USA</strong>, east coast"
 msgid "<strong>USA</strong>, East Coast"
 msgstr "<strong>США</strong>, восточное побережье"
 
@@ -1105,8 +1094,8 @@ msgid ""
 msgstr ""
 "Откройте <em>Приборную панель</em> и выберите криптомонету, которую вы "
 "майните, из раскрывающегося списка, расположенного в верхней центральной "
-"части страницы. Затем проверьте скорость своего хэшрейта в разделе "
-"<em>Недавний хешрейт</em> ниже."
+"части страницы. Затем проверьте скорость своего хэшрейта в разделе <em>"
+"Недавний хэшрейт</em> ниже."
 
 #: help/templates/help/bitcoin-setup.html:118
 #: help/templates/help/zcash-setup.html:91
@@ -1115,7 +1104,7 @@ msgid ""
 "the full hashing power of your newly connected device."
 msgstr ""
 "<strong>Пожалуйста, будьте терпеливы</strong>; процес, необходимый для "
-"изображения мощьности хешрейта вашего недавно подключенного устройства, "
+"изображения мощьности хэшрейта вашего недавно подключенного устройства, "
 "может занять до часа."
 
 #: help/templates/help/mining-introduction.html:5
@@ -1519,14 +1508,8 @@ msgstr ""
 "уведомления (<a href=\"%(app)s\">мобильное приложение</a>)."
 
 #: help/templates/help/monitoring.html:32
-#, fuzzy
-#| msgid ""
-#| "You can enable worker monitoring on each <a href=\"%(workers)s\" target="
-#| "\"_blank\">Worker profile</a> separately."
 msgid "You can enable worker monitoring on each worker profile separately."
-msgstr ""
-"Вы можете включить мониторинг воркеров для каждого <a href=\"%(workers)s\" "
-"target=\"_blank\">Профиля воркеров</a> отдельно."
+msgstr "Вы можете включить мониторинг воркеров для каждого профиля отдельно."
 
 #: help/templates/help/monitoring.html:34
 #, python-format
@@ -1561,13 +1544,7 @@ msgstr ""
 "ОК, Низкий, Оф-лайн, Нерабочий</strong>."
 
 #: help/templates/help/monitoring.html:44
-#, fuzzy, python-format
-#| msgid ""
-#| "Permanently <strong>Low</strong> or <strong>Offline</strong> state of "
-#| "your worker can be caused by weak worker whose hash rate is below "
-#| "<strong>10 Gh/s</strong>. We recommend to switch off monitoring for such "
-#| "workers. If it is not the case please do not hesitate to contact our <a "
-#| "href=\"%(support_submit)s\">support</a>."
+#, python-format
 msgid ""
 "Permanently <strong>Low</strong> or <strong>Offline</strong> state of your "
 "worker can be caused by weak worker. We recommend to switch off monitoring "
@@ -1576,11 +1553,10 @@ msgid ""
 "a>."
 msgstr ""
 "Постоянный <strong>Низкий</strong> или <strong>Оф-лайн</strong> статус "
-"вашего воркера может быть вызван тем, что воркер слаб и его хешрейт "
-"находится ниже <strong> 10Гх/с </strong>. Мы рекомендуем отключить "
-"мониторинг таких воркеров. Если это не ваш случай, пожалуйста, не "
-"стесняйтесь связаться с нашей <a href=\"%(support_submit)s\">службой "
-"поддержки</a>."
+"вашего воркера может быть вызван тем, что воркер слишком слабый. Мы "
+"рекомендуем отключить мониторинг таких воркеров. Если это не ваш случай, "
+"пожалуйста, не стесняйтесь связаться с нашей <a href=\"%(support_submit)s\">"
+"службой поддержки</a>."
 
 #: help/templates/help/monitoring.html:47
 msgid ""
@@ -1597,18 +1573,18 @@ msgstr ""
 "отслеживает майнинговые устройства на <strong>базе воркеров</strong>. Это "
 "означает, что если у вас более одного майнингового устройства, "
 "подсоединенного к пулу как единый воркер, мониторинг и отчеты о проблемах "
-"будут относится ко всей совокупности майнинговых устройств. С другой "
-"стороны, когда вы устанавливаете <strong> назначенное имя воркера</strong> "
-"для каждого имеющегося <strong>майнингового устройства</strong> (и при этом "
-"верно их подсоединяете), пул может отслеживать падение хешрейта и отправлять "
-"вам сообщения для каждого майнингового устройства отдельно."
+"будут относится ко всем майнинговым устройствам. С другой стороны, когда вы "
+"установите <strong>определенное имя воркера</strong> для каждого <strong>"
+"майнингового устройства</strong> (и при этом верно их подсоедините), пул "
+"сможет отслеживать падение хэшрейта и отправлять вам сообщения для каждого "
+"майнингового устройства отдельно."
 
 #: help/templates/help/monitoring.html:49
 msgid "How does monitoring work?"
 msgstr "Как работает мониторинг?"
 
 #: help/templates/help/monitoring.html:50
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The pool takes a snapshot of  <a href=\"%(hashrate_url)s\">effective hash "
 "rate</a> for all your workers <strong>every 5 minutes</strong> . This value "
@@ -1616,7 +1592,7 @@ msgid ""
 "this value while enabling the monitoring)."
 msgstr ""
 "Пул делает моментальный снимок <a href=\"%(hashrate_url)s\">эффективного "
-"хешрейта</a> всех ваших воркеров <strong>каждые 5 минут</strong>. Затем это "
+"хэшрейта</a> всех ваших воркеров <strong>каждые 5 минут</strong>. Затем это "
 "значение сравнивается с <a href=\"%(alert_url)s\">Порогом оповещения</a> (вы "
 "установили его величину, когда включали мониторинг)."
 
@@ -1667,14 +1643,7 @@ msgid "Low"
 msgstr "Низкий"
 
 #: help/templates/help/monitoring.html:68
-#, fuzzy, python-format
-#| msgid ""
-#| "This state signals that worker's hash rate is lower than it should be but "
-#| "the device still submits some shares. It was connected and working "
-#| "somehow at least part of the measuring period. A worker goes from OK to "
-#| "Low when its hash rate is lower than the alert limit for 2 consecutive "
-#| "periods. In the case you see this state for longer period of time, please "
-#| "create a ticket to our <a href=\"%(support_submit)s\">support</a>."
+#, python-format
 msgid ""
 "This state signals that worker's hash rate is lower than it should be but "
 "the device still submits some shares. It was connected and working somehow "
@@ -1685,12 +1654,12 @@ msgid ""
 "a>."
 msgstr ""
 "Это состояние указывает на то, что хешрейт воркера ниже, чем должен быть, но "
-"устройство все еще отправляет доли. Оно было подключено и как-то работало "
-"как минимум часть измеряемого периода. Воркер переходит из состояния ОК к "
-"Низкий когда его хешрейт ниже, чем порог оповещения на протяжении 2 "
-"последовательных периодов. В случае, если вы видите это состояние длительный "
-"период времени, пожалуйста, сделайте запрос в нашу <a href="
-"\"%(support_submit)s\">службу поддержки</a>."
+"устройство все еще отправляет решения. Оно было подключено и каким-то "
+"способом обработать как минимум часть измеряемого периода. Воркер переходит "
+"из состояния ОК к Низкий когда его хешрейт ниже, чем порог оповещения на "
+"протяжении 2 последовательных периодов. В случае, если вы видите это "
+"состояние длительный период времени, пожалуйста, сделайте запрос в нашу <a "
+"href=\"%(support_submit)s\">службу поддержки</a>."
 
 #: help/templates/help/monitoring.html:72 web/templatetags/utils.py:186
 msgctxt "UI, Monitoring"
@@ -1727,17 +1696,12 @@ msgid "Reward <span>System</span>"
 msgstr "<span>Система</span> Вознаграждений"
 
 #: help/templates/help/reward-system.html:9
-#, fuzzy
-#| msgid ""
-#| "Finding a Bitcoin block is quite a rare and randomly occurring event. The "
-#| "pool service however needs some method to fairly distribute the value of "
-#| "a found block among pool users and pay them accordingly."
 msgid ""
 "Finding a block is quite a rare and randomly occurring event. The pool "
 "service however needs some method to fairly distribute the value of a found "
 "block among pool users and pay them accordingly."
 msgstr ""
-"Нахождение биткоин-блока - довольно редкое событие со случайной вероятностью "
+"Нахождение блока - это довольно редкое событие со случайной вероятностью "
 "наступления. Обслуживанию пула необходим метод, который бы обеспечивал "
 "честное распределение величины найденного блока среди пользователей пула и "
 "соответствующих выплат."
@@ -1758,7 +1722,7 @@ msgid "Scoring Hash Rate"
 msgstr "Оценка хешрейта"
 
 #: help/templates/help/reward-system.html:17
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "User participation to pool's mining power is measured by <strong>scoring "
 "hash rate</strong>. It reflects how much work the user did in recent hours. "
@@ -1768,15 +1732,15 @@ msgid ""
 "smooths out short hash rate drops or increases and makes rewards calculation "
 "more stable and fair (the exact mathematical definition is provided lower)."
 msgstr ""
-"Участие пользователей в майнинговой мощности всего пула измеряется "
-"<strong>оценкой хешрейта</strong>. Он отображает сколько работы пользователь "
-"выполнил в несколько последних часов. Вы можете понимать подсчет оценки "
-"хешрейта как <em>экспоненциальную скользящую среднюю</em> от хешрейта всех "
-"майнинговых устройств пользователей, подключенных к пулу (читайте подробнее "
-"в статье <a href=\"%(url)s\" target=\"_blank\">%(globe)s EMA Википедии</a>). "
-"Усреднение сглаживает краткие падения или взлеты хешрейта и позволяет "
-"сделать вычисление вознаграждения более постоянным и честным (точное "
-"математическое определение приведено ниже)."
+"Участие пользователей в майнинговой мощности всего пула измеряется <strong>"
+"оцененным хешрейтом</strong>. Он отображает сколько работы пользователь "
+"выполнил в несколько последних часов. Вы можете воспринимать подсчет "
+"оцененного хешрейта как <em>экспоненциальную скользящую среднюю </em> от "
+"хешрейта всех майнинговых устройств пользователей, подключенных к пулу ("
+"читайте подробнее в статье <a href=\"%(url)s\" target=\"_blank\">EMA "
+"Википедии</a>). Усреднение сглаживает краткие падения или взлеты хешрейта и "
+"позволяет сделать вычисление вознаграждения более постоянным и справедливым ("
+"точное математическое определение приведено ниже)."
 
 #: help/templates/help/reward-system.html:20
 #, python-format
@@ -2193,10 +2157,8 @@ msgstr ""
 "служеб."
 
 #: help/templates/help/rewards-payouts.html:11
-#, fuzzy
-#| msgid "Additional Information"
 msgid "General information"
-msgstr "Дополнительная информация"
+msgstr "Основная информация"
 
 #: help/templates/help/rewards-payouts.html:14
 #, python-format
@@ -2233,31 +2195,23 @@ msgstr ""
 "майнинга</a>."
 
 #: help/templates/help/rewards-payouts.html:26
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Bitcoin Core"
 msgid "Bitcoin"
-msgstr "Bitcoin Core"
+msgstr "Биткоин"
 
 #: help/templates/help/rewards-payouts.html:32
 #: help/templates/help/rewards-payouts.html:63
-#, fuzzy
-#| msgctxt "Main rewards formula"
-#| msgid "pool fee"
 msgid "Pool fee"
-msgstr "взнос за использование пула"
+msgstr "комиссия за использование пула"
 
 #: help/templates/help/rewards-payouts.html:36
 #: help/templates/help/rewards-payouts.html:67
-#, fuzzy
 msgid "Minimum payout threshold"
-msgstr "История платежей"
+msgstr "Минимальный порог для выплат"
 
 #: help/templates/help/rewards-payouts.html:40
 #: help/templates/help/rewards-payouts.html:71
-#, fuzzy
 msgid "Payout fee"
-msgstr "История платежей"
+msgstr "Комиссия за выплату"
 
 #: help/templates/help/rewards-payouts.html:41
 msgid "0.0001 BTC (only for payouts under 0.01 BTC)"
@@ -2265,10 +2219,8 @@ msgstr "0,0001 BTC (только для выплат до 0,01 BTC)"
 
 #: help/templates/help/rewards-payouts.html:44
 #: help/templates/help/terminology.html:91
-#, fuzzy
-#| msgid "FAQ: Merged Mining"
 msgid "Merged mining"
-msgstr "FAQ: Объединенный майнинг"
+msgstr "Объединенный майнинг"
 
 #: help/templates/help/rewards-payouts.html:45
 msgid "Namecoin (converted to BTC)"
@@ -2301,11 +2253,8 @@ msgstr ""
 "алфавитном порядке."
 
 #: help/templates/help/terminology.html:16
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Alert limit"
 msgid "Alert limit"
-msgstr "Предел оповещения"
+msgstr "Предел оповещений"
 
 #: help/templates/help/terminology.html:20
 msgid ""
@@ -2381,8 +2330,6 @@ msgstr ""
 "установлен на 700 Гхс/с (700 Ghs/s)."
 
 #: help/templates/help/terminology.html:44
-#, fuzzy
-#| msgid "Hash Rate"
 msgid "Hash rate"
 msgstr "Хешрейт"
 
@@ -2647,10 +2594,8 @@ msgstr ""
 "\"%(link)s\">удачи пула.</a>"
 
 #: help/templates/help/terminology.html:154
-#, fuzzy
-#| msgid "What is Score Based reward system?"
 msgid "Score (reward system)"
-msgstr "Что такое система вознаграждений на базе значений хешрейтов?"
+msgstr "Оценка (система вознаграждений)"
 
 #: help/templates/help/terminology.html:158
 #, python-format
@@ -2671,10 +2616,8 @@ msgstr ""
 "это оценевание хешрейта пользователями в момент обнаружения нового блока."
 
 #: help/templates/help/terminology.html:167
-#, fuzzy
-#| msgid "Share - <span>Proof of Work</span>"
 msgid "Share - <span>proof of work</span>"
-msgstr "Доли - <span>Доказательство работы</span>"
+msgstr "Решения - <span>Доказательство работы</span>"
 
 #: help/templates/help/terminology.html:171
 msgid ""
@@ -2727,8 +2670,6 @@ msgstr ""
 "видите закономерность)"
 
 #: help/templates/help/terminology.html:187
-#, fuzzy
-#| msgid "Stale Rate"
 msgid "Stale rate"
 msgstr "Устаревшая оценка"
 
@@ -2751,13 +2692,6 @@ msgid "Network Latency"
 msgstr "Задержки сети"
 
 #: help/templates/help/terminology.html:195
-#, fuzzy
-#| msgid ""
-#| "On slower networks (or when there is a network issue on the path from "
-#| "your miner to the pool), it takes more time for a miner to receive "
-#| "notification about a new block. However, the miner still keeps submitting "
-#| "results to an old block for some time and these are being rejected by the "
-#| "pool as <em>stale</em> shares</em>."
 msgid ""
 "On slower networks (or when there is a network issue on the path from your "
 "miner to the pool), it takes more time for a miner to receive notification "
@@ -2765,11 +2699,11 @@ msgid ""
 "old block for some time and these are being rejected by the pool as "
 "<em>stale</em> shares."
 msgstr ""
-"В медленных сетях (или когда есть проблемы в сети на пути от Вашего майнера "
-"к пулу), требуется больше времени для майнера, чтобы получить уведомление о "
-"новом блоке. Однако, майнер еще некоторое время продолжает отправлять "
+"В более медленных сетях (или когда есть проблемы в сети на пути от Вашего "
+"майнера к пулу), требуется больше времени, чтобы майнер получил уведомление "
+"о новом блоке. Однако, майнер еще некоторое время продолжает отправлять "
 "результаты расчетов для старого блока, которые отвергаются пулом как "
-"<em>устаревшие</em> доли</em>."
+"<em>устаревшие</em> решения."
 
 #: help/templates/help/terminology.html:197
 msgid "Slower Mining Device"
@@ -2791,10 +2725,8 @@ msgstr ""
 "долями."
 
 #: help/templates/help/terminology.html:207
-#, fuzzy
-#| msgid "Stratum Protocol"
 msgid "Stratum (mining protocol)"
-msgstr "Протокол Stratum"
+msgstr "Майнинг протокол Stratum"
 
 #: help/templates/help/terminology.html:211
 #, python-format
@@ -2817,10 +2749,8 @@ msgstr ""
 "\">StratumProtocol.org</a>, на котором разъясняются технические подробности."
 
 #: help/templates/help/terminology.html:220
-#, fuzzy
-#| msgid "Translation"
 msgid "Transaction fee"
-msgstr "Перевод"
+msgstr "Комиссия за транзакцию"
 
 #: help/templates/help/terminology.html:224
 msgid ""
@@ -2834,11 +2764,9 @@ msgstr ""
 "strong> в дополнение к основному вознаграждению за найденый блок."
 
 #: help/templates/help/terminology.html:233
-#, fuzzy
-#| msgid "Vardiff <span>(Variable Difficulty Algorithm)</span>"
 msgid "Vardiff <span>(variable difficulty algorithm)</span>"
 msgstr ""
-"Вардиф <span> (Variable Difficulty Algorithm)</span> - алгоритм переменной "
+"Vardiff <span>(Variable Difficulty Algorithm)</span> - алгоритм переменной "
 "сложности"
 
 #: help/templates/help/terminology.html:237
@@ -2934,11 +2862,8 @@ msgstr ""
 "хешрейта, но не сможете определить, какое именно из устройств его вызывает."
 
 #: help/templates/help/user-accounts.html:7
-#, fuzzy
-#| msgctxt "Page title"
-#| msgid "New account registration"
 msgid "Account registration"
-msgstr "Регистрация новой учетной записи"
+msgstr "Регистрация учетной записи"
 
 #: help/templates/help/user-accounts.html:8
 msgid ""
@@ -2946,6 +2871,9 @@ msgid ""
 "Therefore, we do not collect nor process any unnecessary personal data, "
 "making our registration process reasonably simple."
 msgstr ""
+"Анонимность является одной из основных ценностей, глубоко укоренившихся в "
+"нашей философии. Поэтому мы не собираем и не обрабатываем ненужные личные "
+"данные, что делает процесс регистрации у нас достаточно простым."
 
 #: help/templates/help/user-accounts.html:9
 #, python-format
@@ -2955,13 +2883,14 @@ msgid ""
 "Then, confirm the registration process by clicking on the link sent to your "
 "e-mail address."
 msgstr ""
+"Вам нужно лишь выполнить только основную информацию, такую как имя "
+"пользователя, адрес электронной почты и пароль, на <a href=\"%(signup)s\">"
+"странице регистрации</a>. Затем подтвердите процесс регистрации, нажав на "
+"ссылку, отправленную на ваш адрес электронной почты."
 
 #: help/templates/help/user-accounts.html:11
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgid "Access profiles"
-msgstr "Аккаунт удален"
+msgstr "Профили доступа"
 
 #: help/templates/help/user-accounts.html:12
 msgid ""
@@ -2970,10 +2899,14 @@ msgid ""
 "permission to your account. Just click <em>+Create New</em> and choose from "
 "the list of possibilities."
 msgstr ""
+"В меню <em>Настройки > Профили доступа</em> вы можете создавать различные "
+"профили доступа с разными паролями и с разными уровнями разрешений для вашей "
+"учетной записи. Просто нажмите <em>+Создать новый</em> и выберите из списка "
+"возможностей."
 
 #: help/templates/help/user-accounts.html:14
 msgid "Access permissions"
-msgstr ""
+msgstr "Права доступа"
 
 #: help/templates/help/user-accounts.html:15
 msgid ""
@@ -2982,20 +2915,26 @@ msgid ""
 "some users to change these settings, granular permissions are a great "
 "feature for you."
 msgstr ""
+"Выберите между предоставлением полного доступа или доступа только для чтения "
+"к выбранному профилю. Если вы, например, владеете более крупнум майнингом и "
+"не хотите, чтобы некоторые пользователи имели возможность изменять его "
+"параметры, частичные разрешения - это отличная возможность для вас."
 
 #: help/templates/help/user-accounts.html:17
 msgid "Allow access to web APIs"
-msgstr ""
+msgstr "Разрешить доступ к веб-API"
 
 #: help/templates/help/user-accounts.html:18
 msgid ""
 "The user will be able to use token authentication in scripts or 3rd party "
 "applications. You can generate new tokens there."
 msgstr ""
+"Пользователь сможет использовать токен аутентификации в скриптах или "
+"сторонних приложениях. Там вы можете генерировать новые токены."
 
 #: help/templates/help/user-accounts.html:20
 msgid "Allow website login"
-msgstr ""
+msgstr "Разрешить вход на сайт"
 
 #: help/templates/help/user-accounts.html:21
 msgid ""
@@ -3003,11 +2942,14 @@ msgid ""
 "access profile name you choose (in <code>accessProfileName@userName</code> "
 "format) and password you set right there."
 msgstr ""
+"Пользователь сможет получить доступ к основной учетной записи на веб-сайте, "
+"используя выбранное вами имя профиля доступа (в формате "
+"<code>имяПрофиля@имяПользователя</code>)и пароль, которые вы установили "
+"прямо там."
 
 #: help/templates/help/user-accounts.html:23
-#, fuzzy
 msgid "Account security"
-msgstr "Настройки аккаунта"
+msgstr "Безопасность аккаунта"
 
 #: help/templates/help/user-accounts.html:24
 msgid ""
@@ -3017,6 +2959,12 @@ msgid ""
 "need to use the 2FA every time when making any important changes to your "
 "account."
 msgstr ""
+"Мы настоятельно рекомендуем активировать <strong>двухфакторную "
+"аутентификацию (2FA)</strong>, чтобы добавить дополнительный уровень "
+"безопасности для вашей учетной записи. Это можно сделать в меню <em>"
+"Настройки > Безопасность</em>. После первоначальной настройки вам необходимо "
+"будет каждый раз использовать 2FA при внесении каких-либо важных изменений в "
+"свой аккаунт."
 
 #: help/templates/help/user-accounts.html:25
 msgid ""
@@ -3024,12 +2972,13 @@ msgid ""
 "to generate the verification code) or the more advanced U2F standard (via a "
 "hardware device/token like Trezor)."
 msgstr ""
+"Вы можете использовать 2FA на основе стандарта TOTP (мобильное приложение "
+"TOTP используется для генерации кода проверки) или более усовершенствованный "
+"стандарт U2F (работающий через аппаратное устройство/токен, например Trezor)."
 
 #: help/templates/help/user-accounts.html:27
-#, fuzzy
-#| msgid "Username"
 msgid "Username change"
-msgstr "Пользователь"
+msgstr "Изменение имени пользователя"
 
 #: help/templates/help/user-accounts.html:28
 msgid ""
@@ -3038,43 +2987,36 @@ msgid ""
 "mail address. Having multiple accounts registered with the same e-mail "
 "address is possible."
 msgstr ""
+"<strong>Изменение имени пользователя в настоящее время не "
+"допускается.</strong> Однако вы можете создать новую учетную запись с другим "
+"именем пользователя под тем же адресом электронной почты. Регистрация "
+"нескольких учетных записей с одним и тем же адресом электронной почты "
+"возможна."
 
 #: help/templates/help/user-accounts.html:30
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgid "Account deletion"
-msgstr "Аккаунт удален"
+msgstr "Удаление аккаунта"
 
 #: help/templates/help/user-accounts.html:31
-#, fuzzy
-#| msgid ""
-#| "Once you decide to close your mining operation down there are two "
-#| "options. You can either leave your account as it is without signing into "
-#| "it or mining against it and it will be <strong>automatically deleted</"
-#| "strong> after <strong>one year of your inactivity</strong>."
 msgid ""
 "If you decide to close down your mining operation, there are two options. "
 "You can either leave your account as it is without signing into it or mining "
 "with it and the account will be <strong>automatically deleted</strong> after "
 "<strong>one year of your inactivity</strong>."
 msgstr ""
-"Как только вы решите закрыть свою свою работу по майнингу, у вас будет два "
-"варианта. Вы можете или оставить свою учетную запись в том состоянии, в "
-"каком она находится на данный момент, не подписываясь и не проводя майнинг, "
-"и она будет <strong>автоматически уничтожена</strong> спустя <strong>год "
-"отсутствия активности</strong>."
+"Как только вы решите закрыть свой майнинг, мы вам предлагаем два варианта. "
+"Вы можете либо оставить свою учетную запись в том состоянии, в каком она "
+"находится на данный момент, не заходить в него и не майнить, и она будет "
+"<strong>автоматически удалена</strong> спустя <strong>год по отсутствии "
+"активности</strong>."
 
 #: help/templates/help/user-accounts.html:31
 msgid "The remaining balance will be considered as a donation to the pool."
 msgstr ""
+"Баланс, оставшийся на учетной записи, будет рассмотрен как пожертвование в "
+"пул."
 
 #: help/templates/help/user-accounts.html:32
-#, fuzzy
-#| msgid ""
-#| "However if you decide to delete it on your own please always "
-#| "<strong>check if all rewards were already paid</strong> to your payout "
-#| "address <strong>before taking any action</strong>."
 msgid ""
 "However, if you decide to delete the account immediately, please always "
 "<strong>check if all rewards have already been paid</strong> to your payout "
@@ -3082,14 +3024,14 @@ msgid ""
 "<em>Settings > Accounts</em> menu and confirm it via the confirmation link "
 "sent to your e-mail."
 msgstr ""
-"Однако, если вы решите удалить учетную запись самостоятельно, пожалуйста "
-"всегда <strong>проверяйте все ли вознаграждения переведены</strong> на ваш "
-"адрес для выплат <strong>до того, как предпринимать какие-либо действия</"
-"strong>."
+"Однако, если вы решите удалить учетную запись немедленно, пожалуйста всегда "
+"<strong>проверяйте все ли вознаграждения были успешно переведены</strong> на "
+"ваш адрес для выплат прежде, чем предпринимать какие-либо действия. Затем, "
+"запросите удаление учетной записи в меню <em>Настройки > Учетные записи</em> "
+"и подтвердите удаление с помощью ссылки для подтверждения, отправленной на "
+"вашу электронную почту."
 
 #: help/templates/help/worker-management.html:9
-#, fuzzy
-#| msgid "Worker Management"
 msgid "Worker management"
 msgstr "Управление воркером"
 
@@ -3101,11 +3043,16 @@ msgid ""
 "monitor and manage your miners in the <em>Workers</em> section. Our system "
 "is designed to handle even large farms with thousands of workers."
 msgstr ""
+"Если вы используете несколько майнинговых устройств одновременно, "
+"целесообразно иметь <strong>подробный обзор каждого устройства</strong>. Мы "
+"предлагаем утонченное решение в форме удобного интерфейса для управления "
+"воркером. Вы можете легко отслеживать и управлять майнингом в разделе "
+"<em>Воркеры</em>. Наша система предназначена для обработки даже крупного "
+"майнинга с тысячами воркеров."
 
 #: help/templates/help/worker-management.html:12
-#, fuzzy
 msgid "Worker creation"
-msgstr "Регистрация аккаунта"
+msgstr "Создание воркера"
 
 #: help/templates/help/worker-management.html:13
 msgid ""
@@ -3115,6 +3062,11 @@ msgid ""
 "on <em>New Worker</em>. Then, choose a name for your worker and use this "
 "name in the device configuration."
 msgstr ""
+"После подключения майнера с настроенным именем воркера это имя <strong>"
+"автоматически появится</strong> в обзоре устройства как новый воркер. У вас "
+"также есть возможность создать нового воркера вручную, нажав на поле <em>"
+"Новый работник</em>. Затем выберите имя для своего воркера и используйте это "
+"имя в конфигурации устройства."
 
 #: help/templates/help/worker-management.html:14
 msgid ""
@@ -3122,20 +3074,17 @@ msgid ""
 "be automatically created with a name <strong>[auto] worker</strong> and your "
 "hash rate will be assigned to it."
 msgstr ""
+"Если вы не указали имя воркера в конфигурации вашего устройства, "
+"автоматически будет создано новый воркер  с именем <strong>[авто] "
+"работник</strong>, и ему будет присвоен ваш хешрейт."
 
 #: help/templates/help/worker-management.html:16
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Worker settings updated"
 msgid "Worker settings"
-msgstr "Настройки воркера изменены"
+msgstr "Настройки воркера"
 
 #: help/templates/help/worker-management.html:17
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Monitoring enabled for all workers"
 msgid "Following settings are available for each worker:"
-msgstr "Мониторинг включен для всех воркеров"
+msgstr "Для каждого воркера доступны следующие настройки:"
 
 #: help/templates/help/worker-management.html:18
 #, python-format
@@ -3147,6 +3096,13 @@ msgid ""
 "about the monitoring feature, read the <a href=\"%(url)s\">monitoring manual "
 "section</a>."
 msgstr ""
+"<strong>Включить мониторинг</strong> - система мониторинга будет выявлять и "
+"сообщать о любых проблемах, связанных с выбранным воркером. Мониторинг "
+"помогает контролировать работу майнеров за определенный период времени и "
+"сводит к минимуму потери, вызванные проблемами с подключением или сбоями "
+"оборудования/программного обеспечения. Чтобы узнать больше о функции "
+"мониторинга, прочитайте раздел <a href=\"%(url)s\">руководства по "
+"мониторингу</a>."
 
 #: help/templates/help/worker-management.html:19
 msgid ""
@@ -3155,6 +3111,10 @@ msgid ""
 "own Alert Limit. The system will report issues when hash rate drops below "
 "this value."
 msgstr ""
+"<strong>Автоопределение порога оповещений</strong> – Автоматически оценивает "
+"хэшрейт вашего воркера по его прошлой активности. Если вы снимите галочку, "
+"вы можете установить свой собственный порог оповещений. Система сообщит о "
+"проблемах, когда хэшрейт упадет ниже этого значения."
 
 #: help/templates/help/worker-management.html:20
 #, python-format
@@ -3165,6 +3125,12 @@ msgid ""
 "set the minimum provided difficulty manually, however we do not recommend "
 "this option unless you have knowledge of the technical background."
 msgstr ""
+"<strong>Используйте минимальную сложность по умолчанию</strong> - В пуле "
+"используется алгоритм<a href=\"%(vardiff)s\">VarDiff</a>, который "
+"автоматически рассчитывает оптимальную сложность для вашего устройства. Если "
+"вы уберете эту галочку, вы можете установить минимальный уровень сложности "
+"вручную, однако мы не рекомендуем эту альтернативу, если у вас нет "
+"технических знаний."
 
 #: help/templates/help/worker-management.html:21
 msgid ""
@@ -3173,18 +3139,22 @@ msgid ""
 "labels by clicking Manage Labels and +. There could be a shortcut, name, "
 "color and further description in every label detail."
 msgstr ""
+"<strong>Ярлыки</strong> – Вы можете создавать ярлыки и присваивать их "
+"воркерам в соответствии с вашими потребностями. Вы можете создавать и "
+"удалять свои ярлыки, нажав \"Управление ярлыками\" и \"+\". В деталях ярлыка "
+"может быть комбинация клавиш, имя, цвет и другая информация."
 
 #: help/templates/help/worker-management.html:22
 msgid ""
 "Assign labels by clicking <em>Edit Worker > Labels > selected label > Apply</"
 "em>."
 msgstr ""
+"Присваивайте ярлыки, нажав <em>Редактировать воркер > Ярлыки> выбранный "
+"ярлык > Применить</em>."
 
 #: help/templates/help/worker-management.html:24
-#, fuzzy
-#| msgid "Further questions?"
 msgid "Other options"
-msgstr "Еще вопросы?"
+msgstr "Другие опции"
 
 #: help/templates/help/worker-management.html:25
 msgid ""
@@ -3204,46 +3174,54 @@ msgid ""
 "is also a Recent Hash Rate graph displayed in the bottom section which can "
 "be very helpful for troubleshooting."
 msgstr ""
+"<strong>Детали воркера</strong> – Вы можете просмотреть параметры устройства "
+"и его настройки нажав на название воркера. В нижней части экрана также "
+"отображается график коэффициента недавнего хэшрейта, который может быть "
+"очень полезен для устранения неполадок."
 
 #: help/templates/help/zcash-setup.html:13
 msgid "Zcash <span>can</span> be efficiently mined with:"
 msgstr ""
+"Майнинг криптомонеты Zcash <span>можно</span> эффективно проводить с помощью:"
 
 #: help/templates/help/zcash-setup.html:13
 msgid "ASIC (Equihash algorithm), GPU"
-msgstr ""
+msgstr "ASIC (алгоритм Equihash), GPU"
 
 #: help/templates/help/zcash-setup.html:15
 msgid "Zcash <span>cannot</span> be efficiently mined with (unsupported):"
 msgstr ""
+"Майнинг криптомонеты Zcash <span>нельзя</span> эффективно проводить с "
+"помощью (не поддерживается):"
 
 #: help/templates/help/zcash-setup.html:15
 msgid "CPU, mobile phone"
-msgstr ""
+msgstr "CPU, мобильный телефон"
 
 #: help/templates/help/zcash-setup.html:24
-#, fuzzy, python-format
-#| msgid "<a href=\"%(login)s\">Login</a> to your account."
+#, python-format
 msgid "<a href=\"%(dashboard)s\">Log into</a> your account."
-msgstr "<a href=\"%(login)s\">Войдите</a> в свою учетную запись."
+msgstr "<a href=\"%(dashboard)s\">Войдите</a> в свою учетную запись."
 
 #: help/templates/help/zcash-setup.html:29
 msgid ""
 "Some popular hardware/software configurations are available in the Support "
 "Center:"
 msgstr ""
+"Некоторые популярные аппаратные/программные конфигурации доступны в Центре "
+"поддержки:"
 
 #: help/templates/help/zcash-setup.html:29
-#, fuzzy
-#| msgid "FAQ: Mining Setup"
 msgid "Zcash Mining Setup"
-msgstr "FAQ: Настройки майнинга"
+msgstr "Настройки майнинга Zcash"
 
 #: help/templates/help/zcash-setup.html:30
 msgid ""
 "Please note that we do not support Zcash addresses directly in the command; "
 "use your Slush Pool userName instead."
 msgstr ""
+"Обратите внимание, что мы не поддерживаем адреса Zcash непосредственно в "
+"команде; вместо этого используйте ваше имяПользователя от Slush Pool."
 
 #: help/templates/help/zcash-setup.html:83
 msgid "bigMiner.strongDevice"
@@ -3253,38 +3231,32 @@ msgstr "большойМайнер.сильноеУстройство"
 #, python-format
 msgid "Other usable wallets are listed on <a %(zcash)s>Zcash Community</a>."
 msgstr ""
+"Другие используемые кошельки перечислены в <a %(zcash)s>Zcash Community</a>."
 
 #: mailing/api/v1/views.py:29
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Newsletter unsubscription"
 msgctxt "UI"
 msgid "Newsletter recipient not found."
-msgstr "Отписаться от новостей"
+msgstr "Получатель рассылки не найден."
 
 #: mailing/api/v1/views.py:41 mailing/api/v1/views.py:78
 msgctxt "UI"
 msgid "No active users with active newsletter found."
-msgstr ""
+msgstr "Не найдено активных пользователей с активной рассылкой."
 
 #: mailing/api/v1/views.py:67
-#, fuzzy
 msgctxt "UI"
 msgid "Invalid user selection"
-msgstr "Недействительный ключ"
+msgstr "Неверный выбор пользователя"
 
 #: mailing/api/v1/views.py:71
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid token format"
 msgctxt "UI"
 msgid "Invalid reason format!"
-msgstr "Недействительный формат токена"
+msgstr "Неверный формат объяснения!"
 
 #: mailing/api/v1/views.py:117
 msgctxt "UI"
 msgid "Failed to process the request, please contact our support"
-msgstr ""
+msgstr "Не удалось обработать запрос, обратитесь в нашу поддержку"
 
 #: mailing/forms.py:80
 msgctxt "UI"
@@ -3292,39 +3264,34 @@ msgid "Send"
 msgstr "Отправить"
 
 #: mailing/models.py:498
-#, fuzzy
 msgctxt "UI"
 msgid "I receive newsletters too frequently"
-msgstr "Получать новостную рассылку пула"
+msgstr "Я получаю новостные рассылки слишком часто"
 
 #: mailing/models.py:499
 msgctxt "UI"
 msgid "I do not mind anymore"
-msgstr ""
+msgstr "Я больше не возражаю"
 
 #: mailing/models.py:500
 msgctxt "UI"
 msgid "I have joined another pool"
-msgstr ""
+msgstr "Я присоединился к другому пулу"
 
 #: mailing/models.py:501
 msgctxt "UI"
 msgid "The newsletter content is of no value to me"
-msgstr ""
+msgstr "Содержание рассылки для меня не имеет значения"
 
 #: mailing/models.py:502
-#, fuzzy
 msgctxt "UI"
 msgid "Other reason"
-msgstr "Другие новости"
+msgstr "Другое объяснение"
 
 #: mailing/models.py:518
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Not voted"
 msgctxt "UI"
 msgid "Not provided"
-msgstr "Не голосовали"
+msgstr "Не предоставлен"
 
 #: mailing/templates/mailing/emails/unsubscribe_confirmation.html:9
 msgctxt "UI"
@@ -3344,15 +3311,14 @@ msgstr ""
 "из настроек своей учетной записи."
 
 #: maintenance/maintenance_funcs.py:1543
-#, fuzzy
 msgctxt "UI"
 msgid "Payout sent"
-msgstr "История платежей"
+msgstr "Выплата отправлена"
 
 #: mining/models.py:394
 msgctxt "UI"
 msgid "-- not voted (proportional split) --"
-msgstr ""
+msgstr "-- не проголосовали (пропорциональное разделение) --"
 
 #: mining/models.py:395
 msgctxt "UI"
@@ -3389,56 +3355,44 @@ msgid "Bitcoin Core"
 msgstr "Bitcoin Core"
 
 #: mining/models.py:408
-#, fuzzy
 msgctxt "UI"
 msgid "I don't care, pool operator decides"
-msgstr "Мне все равно, пусть ИИ пула решит сам"
+msgstr "Мне все равно, пусть администратор пула решит сам"
 
 #: mining/models.py:409
-#, fuzzy
 msgctxt "UI"
 msgid ""
 "Users that set I don't care option = pool operator decides which block size "
 "is closest to his heart."
 msgstr ""
-"Пользователи, которые установили опцию \"Все равно\" = ИИ пула "
-"самостоятельно решит, какой размер блока ему по душе."
+"Пользователи, которые установили опцию \"Мне все равно\" — администрация "
+"пула самостоятельно решит, какой размер блока ему по душе."
 
 #: mining/models.py:410
 msgctxt "UI"
 msgid "Pool decides"
-msgstr ""
+msgstr "Решает пул"
 
 #: mining/validators.py:16
-#, fuzzy
-#| msgctxt "UI"
-#| msgid ""
-#| "Only letters, numbers and the following characters are accepted: _ @ + -"
 msgctxt "UI"
 msgid ""
 "Only letters, numbers and the following characters are accepted: _ @ + - :"
-msgstr "Допускаются только буквы, числа и указанные далее символы: _ @ + -"
+msgstr "Допускаются только буквы, числа и указанные далее символы: _ @ + - :"
 
 #: news/models.py:49
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Signature"
 msgctxt "UI"
 msgid "Feature"
-msgstr "Подпись"
+msgstr "Функция"
 
 #: news/models.py:50
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Event Time"
 msgctxt "UI"
 msgid "Event"
-msgstr "Время события"
+msgstr "Cобытие"
 
 #: news/models.py:51
 msgctxt "UI"
 msgid "Service Update"
-msgstr ""
+msgstr "Сервисное обновление"
 
 #: project/settings.py:314
 msgid "Simplified Chinese"
@@ -3582,12 +3536,12 @@ msgstr "Нет ожидающих кошельков."
 #: settings/forms/enabled_coins_settings_form.py:46
 msgctxt "UI"
 msgid "At least one coin must be enabled!"
-msgstr ""
+msgstr "Как минимум одна монета должна быть включена!"
 
 #: settings/forms/otp_setting_forms.py:48
 msgctxt "UI"
 msgid "OTP has been enabled."
-msgstr ""
+msgstr "OTP был включен."
 
 #: settings/forms/otp_setting_forms.py:67
 msgctxt "UI"
@@ -3626,7 +3580,7 @@ msgstr "Неверный запрос"
 #: user_request/api/v1/views.py:81
 msgctxt "UI"
 msgid "This request belongs to a different user!"
-msgstr ""
+msgstr "Этот запрос принадлежит другому пользователю!"
 
 #: user_request/api/v1/views.py:88
 #, fuzzy
@@ -3640,6 +3594,8 @@ msgid ""
 "The request associated with this confirmation link is no longer active."
 "<br>It has probably been confirmed or cancelled before."
 msgstr ""
+"Запрос, связанный с этой ссылкой для подтверждения, больше не активен. <br>"
+"Вероятно, он был подтвержден или отменен ранее."
 
 #: user_request/models.py:339
 #, fuzzy
@@ -3700,6 +3656,9 @@ msgid ""
 "Please login with a corresponding user name (mentioned in the confirmation e-"
 "mail) and try it again."
 msgstr ""
+"Используемая ссылка для подтверждения не связана с этой учетной записью. <br>"
+" <br> Пожалуйста, войдите в систему с соответствующим именем пользователя ("
+"указанным в электронном письме с подтверждением) и повторите попытку."
 
 #: web/api/v1/appeals.py:52
 #, python-format
@@ -3748,7 +3707,7 @@ msgstr "Изменить мой пароль"
 #: web/api/v1/appeals.py:180
 msgctxt "UI"
 msgid "Dismiss this message"
-msgstr ""
+msgstr "Отклонить это сообщение"
 
 #: web/api/v1/appeals.py:206
 msgctxt "UI"
@@ -3774,25 +3733,27 @@ msgstr ""
 #: web/api/v1/appeals.py:217
 msgctxt "UI"
 msgid "Bitcoin Proposal Preference"
-msgstr ""
+msgstr "Предпочтение по биткойн-предложениям"
 
 #: web/api/v1/appeals.py:262
 #, python-brace-format
 msgctxt "UI"
 msgid "Unable to send {coin} payout"
-msgstr ""
+msgstr "Невозможно отправить {coin} выплату"
 
 #: web/api/v1/appeals.py:266
 msgctxt "UI"
 msgid ""
 "Please setup your payout address. Your balance is over your payout threshold"
 msgstr ""
+"Пожалуйста, настройте свой адрес для выплат. Ваш баланс превышает порог для "
+"выплат"
 
 #: web/api/v1/appeals.py:267
 #, python-brace-format
 msgctxt "UI"
 msgid "Your balance is {balance} and threshold is {threshold}"
-msgstr ""
+msgstr "Ваш баланс составляет {balance}, а порог для выплат {threshold}"
 
 #: web/api/v1/appeals.py:277
 #, fuzzy
@@ -3803,7 +3764,7 @@ msgstr "Настройки аккаунта"
 #: web/api/v1/views.py:1003
 msgctxt "UI"
 msgid "Couldn't load USD/BTC exchange rate"
-msgstr ""
+msgstr "Не удалось загрузить курс обмена USD/BTC"
 
 #: web/api/v1/views.py:1188
 msgctxt "UI"
@@ -3819,7 +3780,7 @@ msgstr "Неверный формат электронной почты!"
 #: web/api/v1/views.py:1198
 msgctxt "UI"
 msgid "Password must have at Least 5 characters!"
-msgstr ""
+msgstr "Пароль должен содержать не менее 5 символов!"
 
 #: web/api/v1/views.py:1262 web/api/v1/views.py:1284 web/api/v1/views.py:1335
 #, fuzzy
@@ -3834,11 +3795,13 @@ msgid ""
 "Please enter a correct username (not an e-mail address) and password. Note "
 "that both fields are case-sensitive."
 msgstr ""
+"Пожалуйста, введите правильное имя пользователя (не адрес электронной почты) "
+"и пароль. Обратите внимание, что оба поля чувствительны к регистру."
 
 #: web/api/v1/views.py:1369
 msgctxt "UI"
 msgid "Failed to load a demo account user!"
-msgstr ""
+msgstr "Не удалось загрузить демо-учетную запись пользователя!"
 
 #: web/api/v1/views.py:1397
 #, fuzzy
@@ -4008,12 +3971,12 @@ msgstr "<b>%(key)s</b> изменено на <b>%(new)s</b>"
 #: web/models.py:882
 msgctxt "UI, value"
 msgid "profile <b>activated</b>"
-msgstr ""
+msgstr "профиль <b>активирован</b>"
 
 #: web/models.py:883
 msgctxt "UI, value"
 msgid "profile <b>deactivated</b>"
-msgstr ""
+msgstr "профиль <b>деактивирован</b>"
 
 #: web/models.py:888
 msgctxt "UI"
@@ -4029,7 +3992,7 @@ msgstr "Н/Д"
 #, python-format
 msgctxt "UI, value"
 msgid "Access Profile <b>%(name)s</b>:<br>"
-msgstr ""
+msgstr "Профиль доступа <b>%(name)s</b>:<br>"
 
 #: web/models.py:920
 msgctxt "UI"
@@ -4140,19 +4103,22 @@ msgid "Bitcoin"
 msgstr "Bitcoin Core"
 
 #: web/models.py:1047
+#, fuzzy
 msgctxt "UI"
 msgid "Ethereum Classic"
-msgstr ""
+msgstr "Ethereum Classic"
 
 #: web/models.py:1048
+#, fuzzy
 msgctxt "UI"
 msgid "Ethereum"
-msgstr ""
+msgstr "Ethereum"
 
 #: web/models.py:1049
+#, fuzzy
 msgctxt "UI"
 msgid "Zcash"
-msgstr ""
+msgstr "Zcash"
 
 #: web/models.py:1051
 msgctxt "UI"
@@ -4207,7 +4173,7 @@ msgstr "Выйти"
 #: web/models.py:1101
 msgctxt "UI"
 msgid "Logout all sessions"
-msgstr ""
+msgstr "Выйти из всех сессий"
 
 #: web/models.py:1102
 msgctxt "UI"
@@ -4277,7 +4243,7 @@ msgstr "2х-факторная аутентификация включена"
 #: web/models.py:1119
 msgctxt "UI"
 msgid "One time password setup cancelled"
-msgstr ""
+msgstr "Установка одноразового пароля отменена"
 
 #: web/models.py:1120
 #, fuzzy
@@ -4458,12 +4424,12 @@ msgstr "Вы создали новый воркер"
 #: web/models.py:1198
 msgctxt "UI"
 msgid "User appeal dismissed"
-msgstr ""
+msgstr "Обращение пользователя отклонено"
 
 #: web/models.py:1203
 msgctxt "UI"
 msgid "Enabled coins updated"
-msgstr ""
+msgstr "Активированные монеты обновлены"
 
 #: web/permissions.py:32
 #, fuzzy
@@ -4474,7 +4440,7 @@ msgstr "Изменение кошелька"
 #: web/permissions.py:33
 msgctxt "UI"
 msgid "Read-only"
-msgstr ""
+msgstr "Только для чтения"
 
 #: web/permissions.py:34
 #, fuzzy
@@ -4954,6 +4920,7 @@ msgstr "Состояния мониторинга устройств"
 msgctxt "UI"
 msgid "Minimum difficulty must be an integer between 8 and 500 000!"
 msgstr ""
+"Минимальная сложность должна быть представлена целым числом от 8 до 500 000!"
 
 #: workers/api/v1/views.py:131
 #, fuzzy, python-format
@@ -4975,12 +4942,12 @@ msgstr "Воркеры"
 #: workers/api/v1/views.py:314
 msgctxt "UI"
 msgid "Invalid label ids."
-msgstr ""
+msgstr "Неверные идентификаторы ярлыков."
 
 #: workers/api/v1/views.py:346
 msgctxt "UI"
 msgid "Names and shortcuts must be unique."
-msgstr ""
+msgstr "Имена и сочетания горячих клавиш (shortcuts) должны быть уникальными."
 
 #~ msgid "English"
 #~ msgstr "Английский"
