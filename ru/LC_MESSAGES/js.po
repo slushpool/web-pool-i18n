@@ -10,14 +10,12 @@ msgstr ""
 "POT-Creation-Date: 2015-04-10 09:32+0000\n"
 "PO-Revision-Date: 2019-01-28 14:05+0000\n"
 "Last-Translator: Iryna Bashkova <csepcsar@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/slushpool/js/ru/>"
-"\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/slushpool/js/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.5-dev\n"
 
 #: app/workers/containers/WorkersList.js:476 /checksum/9B5QaqhIGW
@@ -27,12 +25,12 @@ msgstr "Хешрейт <br/>(5 минут)"
 
 #: app/dashboard/containers/Dashboard.js:327
 #: app/workers/containers/WorkersList.js:1222
-#: app/workers/modules/LabelsManager.js:525 /checksum/kICWnnCytC
+#: app/workers/modules/LabelsManager.js:527 /checksum/kICWnnCytC
 msgctxt "UI"
 msgid "Edit"
 msgstr "Редактировать"
 
-#: app/workers/modules/WorkersManager.js:732 /checksum/m01JY0wVJ1
+#: app/workers/modules/WorkersManager.js:721 /checksum/m01JY0wVJ1
 msgctxt "UI"
 msgid "The system will report issues, when hash rate drops below this value."
 msgstr "Система сообщит о проблеме, если хешрейт упадет ниже этой величины."
@@ -75,19 +73,19 @@ msgctxt "UI"
 msgid "Click to reload data"
 msgstr "Нажмите, чтобы перезагрузить данные"
 
-#: app/payouts/containers/Payouts.js:324 /checksum/8e9PfRbTsS
+#: app/payouts/containers/Payouts.js:325 /checksum/8e9PfRbTsS
 msgctxt "UI"
 msgid "Payout History"
 msgstr "История выплат"
 
 #: app/constants.js:25 app/constants.js:25
 #: app/monitoring/containers/MonitoringOverview.js:480
-#: app/workers/modules/WorkersManager.js:639 /checksum/sEEmEZZ3Th
+#: app/workers/modules/WorkersManager.js:634 /checksum/sEEmEZZ3Th
 msgctxt "UI"
 msgid "Alert Limit"
 msgstr "Предел оповещений"
 
-#: app/workers/modules/LabelsManager.js:225 /checksum/Stn+uUFS0l
+#: app/workers/modules/LabelsManager.js:227 /checksum/Stn+uUFS0l
 msgctxt "UI"
 msgid "Do you wish to continue?"
 msgstr "Хотите продолжить?"
@@ -136,7 +134,7 @@ msgctxt "UI"
 msgid "Click to dismiss"
 msgstr "Нажмите, чтобы отклонить"
 
-#: app/workers/modules/WorkersManager.js:746 /checksum/Peb5Lft3Ya
+#: app/workers/modules/WorkersManager.js:732 /checksum/Peb5Lft3Ya
 msgctxt "UI"
 msgid "Use default minimum difficulty"
 msgstr "Используйте заданную по умолчанию минимальную сложность"
@@ -163,14 +161,14 @@ msgstr "Авто"
 
 #: app/dashboard/containers/Dashboard.js:382
 #: app/settings/widgets/AccessProfileEdit.js:682
-#: app/workers/modules/WorkersManager.js:415
-#: app/workers/modules/LabelsManager.js:443
-#: app/workers/modules/LabelsManager.js:606 /checksum/ZmaSh77Mdf
+#: app/workers/modules/WorkersManager.js:419
+#: app/workers/modules/LabelsManager.js:445
+#: app/workers/modules/LabelsManager.js:608 /checksum/ZmaSh77Mdf
 msgctxt "UI"
 msgid "Revert"
 msgstr "Назад"
 
-#: app/payouts/containers/Payouts.js:144 /checksum/L0E0oZuk35
+#: app/payouts/containers/Payouts.js:145 /checksum/L0E0oZuk35
 msgctxt "UI"
 msgid "Address"
 msgstr "Адрес"
@@ -190,18 +188,18 @@ msgctxt "UI"
 msgid "Failed"
 msgstr "Не удалось"
 
-#: app/payouts/containers/Payouts.js:132
+#: app/payouts/containers/Payouts.js:133
 #: app/workers/containers/WorkersList.js:511 /checksum/PF+vOxJHI0
 msgctxt "UI"
 msgid "State"
 msgstr "Состояние"
 
-#: app/payouts/containers/Payouts.js:290 /checksum/6z4dOhEtgv
+#: app/payouts/containers/Payouts.js:291 /checksum/6z4dOhEtgv
 msgctxt "UI"
 msgid "You do not have any Payouts yet."
 msgstr "У вас еще нет выплат."
 
-#: app/workers/modules/WorkersManager.js:672 /checksum/roX9ScQZN7
+#: app/workers/modules/WorkersManager.js:664 /checksum/roX9ScQZN7
 msgctxt "UI"
 msgid "Mandatory field (only letters, numbers and: _ @ + - )"
 msgstr ""
@@ -224,9 +222,10 @@ msgid "Refresh"
 msgstr "Обновить"
 
 #: ../frontend_coinmint/Dashboard/containers/UserHashrateChart.js:28
-#: components/jsonView/templates/helpers.js:71 app/constants.js:17
+#: components/jsonView/templates/helpers.js:71
 #: components/jsonView/registry/panel/base/UserHashrateChart.js:48
-#: app/constants.js:17 components/jsonView/templates/helpers.js:71
+#: app/constants.js:17 app/constants.js:17
+#: components/jsonView/templates/helpers.js:71
 #: components/jsonView/registry/panel/base/UserHashrateChart.js:48
 #: app/stats/containers/PoolHashrateChart.js:26
 #: app/workers/containers/WorkerHashRateChart.js:37 /checksum/CRSAJZIsB5
@@ -234,7 +233,7 @@ msgctxt "UI"
 msgid "Scoring Hash Rate"
 msgstr "Оценочный хешрейт"
 
-#: app/workers/modules/LabelsManager.js:658 /checksum/7n/XDkNyTQ
+#: app/workers/modules/LabelsManager.js:660 /checksum/7n/XDkNyTQ
 msgctxt "UI, workers"
 msgid "Shortcut"
 msgstr "Кратчайший путь"
@@ -245,7 +244,7 @@ msgctxt "UI"
 msgid "Pool Scoring<br>Hash Rate"
 msgstr "Оценочный <br> хешрейт пула"
 
-#: app/workers/modules/WorkersManager.js:603 /checksum/X+FRpHsYmL
+#: app/workers/modules/WorkersManager.js:598 /checksum/X+FRpHsYmL
 #, fuzzy
 msgctxt "UI"
 msgid "Edit {num, plural, =1 {Worker} other {# Workers} }"
@@ -261,7 +260,7 @@ msgctxt "UI"
 msgid "Manage"
 msgstr "Управление"
 
-#: app/workers/modules/WorkersManager.js:605
+#: app/workers/modules/WorkersManager.js:600
 #: app/workers/containers/WorkersList.js:1186 /checksum/Vmo3LCisNu
 msgctxt "UI"
 msgid "New Worker"
@@ -284,8 +283,8 @@ msgstr "Ваш оценочный <br>хешрейт"
 
 #: app/dashboard/containers/Dashboard.js:408
 #: app/settings/widgets/AccessProfileEdit.js:690
-#: app/workers/modules/WorkersManager.js:423
-#: app/workers/modules/LabelsManager.js:622 /checksum/159JcZalFp
+#: app/workers/modules/WorkersManager.js:427
+#: app/workers/modules/LabelsManager.js:624 /checksum/159JcZalFp
 msgctxt "UI"
 msgid "Save"
 msgstr "Сохранить"
@@ -304,7 +303,7 @@ msgctxt "UI"
 msgid "Processing…"
 msgstr "В обработке.…"
 
-#: app/workers/modules/WorkersManager.js:696 /checksum/B52aRen/mB
+#: app/workers/modules/WorkersManager.js:688 /checksum/B52aRen/mB
 msgctxt "UI"
 msgid ""
 "The monitoring system will detect and report any hash rate issues related to"
@@ -320,7 +319,7 @@ msgid "Block Found At"
 msgstr "Блок найден в"
 
 #: components/modules/AttributeApplyBox.js:307
-#: app/workers/modules/LabelsManager.js:480 /checksum/0XXaTHcnXI
+#: app/workers/modules/LabelsManager.js:482 /checksum/0XXaTHcnXI
 msgctxt "UI"
 msgid "Apply"
 msgstr "Применить"
@@ -330,12 +329,12 @@ msgctxt "UI"
 msgid "Server error: please try again after few minutes"
 msgstr "Ошибка сервера: пожалуйста, повторите спустя несколько минут"
 
-#: app/workers/modules/WorkersManager.js:695 /checksum/D7qMyDjeui
+#: app/workers/modules/WorkersManager.js:687 /checksum/D7qMyDjeui
 msgctxt "UI"
 msgid "Enable monitoring"
 msgstr "Включить мониторинг"
 
-#: app/payouts/containers/Payouts.js:166 /checksum/PSYuFaJ2IL
+#: app/payouts/containers/Payouts.js:167 /checksum/PSYuFaJ2IL
 msgctxt "UI"
 msgid "Fee"
 msgstr "Оплата пулу"
@@ -366,15 +365,15 @@ msgid "Confirmed"
 msgstr "Подтверждено"
 
 #: app/constants.js:29 app/constants.js:29
-#: app/monitoring/containers/MonitoringOverview.js:460
 #: app/workers/containers/WorkerDetail.js:350
-#: app/workers/modules/WorkersManager.js:663
+#: app/monitoring/containers/MonitoringOverview.js:460
+#: app/workers/modules/WorkersManager.js:655
 #: app/workers/containers/WorkersList.js:506 /checksum/owTgEA4biO
 msgctxt "UI"
 msgid "Worker Name"
 msgstr "Имя воркера"
 
-#: app/workers/modules/WorkersManager.js:713 /checksum/4Pm3Ebzwwf
+#: app/workers/modules/WorkersManager.js:702 /checksum/4Pm3Ebzwwf
 msgctxt "UI"
 msgid "Automatically estimates Hash Rate of your worker by its past activity."
 msgstr ""
@@ -396,7 +395,7 @@ msgctxt "UI"
 msgid "Check your internet connection"
 msgstr "Проверьте свое интернет-соединение"
 
-#: app/workers/modules/LabelsManager.js:536 /checksum/ZksSowUbnS
+#: app/workers/modules/LabelsManager.js:538 /checksum/ZksSowUbnS
 msgctxt "UI"
 msgid "Clone"
 msgstr "Клон"
@@ -407,12 +406,12 @@ msgid "Clear Filters"
 msgstr "Очистить фильтры"
 
 #: app/stats/containers/VotingResults.js:129
-#: app/workers/modules/LabelsManager.js:697 /checksum/h0HL8oD4jk
+#: app/workers/modules/LabelsManager.js:699 /checksum/h0HL8oD4jk
 msgctxt "UI"
 msgid "Description"
 msgstr "Описание"
 
-#: app/workers/modules/WorkersManager.js:731 /checksum/4Q/XUBliBf
+#: app/workers/modules/WorkersManager.js:720 /checksum/4Q/XUBliBf
 msgctxt "UI"
 msgid "Number bigger than 0.5"
 msgstr "Число, большее чем 0,5"
@@ -422,7 +421,7 @@ msgctxt "UI"
 msgid "Scoring<br/>Hash Rate"
 msgstr "Оценка <br/> хешрейта"
 
-#: app/workers/modules/LabelsManager.js:224 /checksum/hQNcjbVnOD
+#: app/workers/modules/LabelsManager.js:226 /checksum/hQNcjbVnOD
 msgctxt "UI"
 msgid "You have requested an invalid update. Those changes WILL NOT BE SAVED."
 msgstr ""
@@ -460,7 +459,7 @@ msgctxt "UI"
 msgid "Reward has been sent"
 msgstr "Вознаграждение отправлено"
 
-#: app/workers/modules/WorkersManager.js:143 /checksum/fXmA0i2C7Q
+#: app/workers/modules/WorkersManager.js:147 /checksum/fXmA0i2C7Q
 msgctxt "UI"
 msgid "Multiple values for selected workers"
 msgstr "Несколько значений для выбранных воркеров"
@@ -472,14 +471,14 @@ msgctxt "UI"
 msgid "Off"
 msgstr "Офф"
 
-#: app/payouts/containers/Payouts.js:189 app/payouts/containers/Payouts.js:205
+#: app/payouts/containers/Payouts.js:190 app/payouts/containers/Payouts.js:206
 #: /checksum/rNXdjKmgqB
 msgctxt "UI"
 msgid "Trans.ID"
 msgstr "ID транзакции"
 
 #: app/workers/containers/WorkersList.js:1196
-#: app/workers/modules/LabelsManager.js:814 /checksum/PNo7aCTOnR
+#: app/workers/modules/LabelsManager.js:816 /checksum/PNo7aCTOnR
 msgctxt "UI"
 msgid "Manage Labels"
 msgstr "Управление метками"
@@ -499,13 +498,13 @@ msgctxt "UI"
 msgid "Workers updated"
 msgstr "Воркеры обновлены"
 
-#: app/workers/modules/WorkersManager.js:423
-#: app/workers/modules/LabelsManager.js:479 /checksum/NQj4Mc1bgR
+#: app/workers/modules/WorkersManager.js:427
+#: app/workers/modules/LabelsManager.js:481 /checksum/NQj4Mc1bgR
 msgctxt "UI"
 msgid "Create"
 msgstr "Создать"
 
-#: app/payouts/containers/Payouts.js:161 /checksum/8YUQYbaZUH
+#: app/payouts/containers/Payouts.js:162 /checksum/8YUQYbaZUH
 msgctxt "UI"
 msgid "Amount"
 msgstr "Количество"
@@ -515,7 +514,7 @@ msgctxt "UI"
 msgid "Edit worker"
 msgstr "Редактировать воркер"
 
-#: app/workers/modules/WorkersManager.js:766 /checksum/aLNNujjKu9
+#: app/workers/modules/WorkersManager.js:752 /checksum/aLNNujjKu9
 msgctxt "UI"
 msgid "Pool always assigns difficulty equal or greater than this value."
 msgstr ""
@@ -548,15 +547,15 @@ msgstr "NMC вознаграждение"
 
 #: app/constants.js:53 app/constants.js:53
 #: app/workers/containers/WorkerDetail.js:265
-#: components/workers/WorkerStateIcon.js:50
 #: app/settings/widgets/AccessProfiles.js:246
+#: components/workers/WorkerStateIcon.js:50
 #: components/workers/WorkerStateIcon.js:50
 #: app/monitoring/components/MonitoringChart.js:89 /checksum/mNp+r9gd5E
 msgctxt "UI"
 msgid "Disabled"
 msgstr "Отключено"
 
-#: app/payouts/containers/Payouts.js:127 /checksum/gl6ew41IyG
+#: app/payouts/containers/Payouts.js:128 /checksum/gl6ew41IyG
 msgctxt "UI"
 msgid "Date"
 msgstr "Дата"
@@ -617,7 +616,7 @@ msgctxt "UI"
 msgid "Day"
 msgstr "День"
 
-#: app/payouts/containers/Payouts.js:235 app/rewards/containers/Rewards.js:366
+#: app/payouts/containers/Payouts.js:236 app/rewards/containers/Rewards.js:366
 #: app/rewards/containers/Rewards.js:469 components/format/TxId.js:20
 #: /checksum//uACcOzfn5
 msgctxt "UI"
@@ -682,19 +681,19 @@ msgctxt "UI"
 msgid "Difficulty"
 msgstr "Сложность"
 
-#: app/workers/modules/LabelsManager.js:675 /checksum/8M5qzEvpp2
+#: app/workers/modules/LabelsManager.js:677 /checksum/8M5qzEvpp2
 msgctxt "UI"
 msgid "Name"
 msgstr "Имя"
 
-#: app/workers/modules/LabelsManager.js:547 /checksum/qo+Q0pwj9q
+#: app/workers/modules/LabelsManager.js:549 /checksum/qo+Q0pwj9q
 msgctxt "UI"
 msgid "New"
 msgstr "Новый"
 
 #: app/constants.js:27 app/constants.js:27
 #: app/workers/containers/WorkerDetail.js:366
-#: app/workers/modules/WorkersManager.js:506
+#: app/workers/modules/WorkersManager.js:510
 #: app/workers/containers/WorkersList.js:541
 #: app/workers/containers/WorkersList.js:788 /checksum/MvxLuR68y7
 msgctxt "UI"
@@ -714,19 +713,19 @@ msgctxt "UI"
 msgid "5 minutes"
 msgstr "5 минут"
 
-#: app/workers/modules/WorkersManager.js:712 /checksum/g0SuxzSQXY
+#: app/workers/modules/WorkersManager.js:701 /checksum/g0SuxzSQXY
 msgctxt "UI"
 msgid "Auto detect Alert Limit"
 msgstr "Автоопределение предела оповещений"
 
-#: app/workers/modules/WorkersManager.js:390
-#: app/workers/modules/LabelsManager.js:431 /checksum/c74evxe3qm
+#: app/workers/modules/WorkersManager.js:394
+#: app/workers/modules/LabelsManager.js:433 /checksum/c74evxe3qm
 msgctxt "UI"
 msgid "Delete"
 msgstr "Удалить"
 
 #: app/constants.js:31 app/constants.js:31
-#: app/workers/modules/WorkersManager.js:758 /checksum/vpeMrpC58v
+#: app/workers/modules/WorkersManager.js:744 /checksum/vpeMrpC58v
 msgctxt "UI"
 msgid "Minimum Difficulty"
 msgstr "Минимальная сложность"
@@ -736,16 +735,16 @@ msgctxt "UI"
 msgid "Block #"
 msgstr "Блок  #"
 
+#: components/jsonView/registry/settings/form/Prompt.js:149
 #: app/@routes/containers/Public.js:322
 #: app/dashboard/containers/Dashboard.js:395
+#: components/jsonView/registry/settings/form/Prompt.js:149
+#: components/settings/Confirm2ndFactor.js:314
 #: app/settings/widgets/AccessProfileEdit.js:524
-#: components/jsonView/registry/settings/form/Prompt.js:149
 #: components/settings/Confirm2ndFactor.js:314
-#: components/jsonView/registry/settings/form/Prompt.js:149
-#: components/settings/Confirm2ndFactor.js:314
-#: app/workers/modules/WorkersManager.js:420
 #: components/jsonView/lib/EditorPalette.js:319
-#: app/workers/modules/LabelsManager.js:613 /checksum/1r/fx4e7T/
+#: app/workers/modules/WorkersManager.js:424
+#: app/workers/modules/LabelsManager.js:615 /checksum/1r/fx4e7T/
 msgctxt "UI"
 msgid "Cancel"
 msgstr "Отмена"
@@ -756,7 +755,7 @@ msgctxt "UI"
 msgid "{num, plural, =1 {Week} other {Weeks} }"
 msgstr "{num, plural, =1 {Неделя} other {Недели} }"
 
-#: app/settings/constants/renderTreeTemplates.js:423 /checksum/qZkF2cYPPe
+#: app/settings/constants/renderTreeTemplates.js:432 /checksum/qZkF2cYPPe
 msgctxt "UI"
 msgid "Notifications & Visibility"
 msgstr "Уведомления и Видимость"
@@ -766,8 +765,8 @@ msgctxt "UI"
 msgid "Proved Average<br>Hash Rate"
 msgstr "Доказанный средний <br>хешрейт"
 
-#: app/settings/constants/renderTreeTemplates.js:704
-#: app/settings/constants/renderTreeTemplates.js:767 /checksum/y9lJVYfpYJ
+#: app/settings/constants/renderTreeTemplates.js:713
+#: app/settings/constants/renderTreeTemplates.js:776 /checksum/y9lJVYfpYJ
 msgctxt "UI"
 msgid "6-digit number"
 msgstr "6-значный число"
@@ -776,7 +775,7 @@ msgstr "6-значный число"
 msgid "BTC value of 1 NMC when a given block was found to be valid."
 msgstr "ВТС стоимость 1 NMC, если данный блок подтвержден как действительный."
 
-#: app/settings/constants/renderTreeTemplates.js:730 /checksum/zP3YID/7nw
+#: app/settings/constants/renderTreeTemplates.js:739 /checksum/zP3YID/7nw
 msgctxt "UI"
 msgid "Enter the generated one-time password into this form."
 msgstr "Введите в эту форму сгенерированный одноразовый пароль."
@@ -787,7 +786,7 @@ msgctxt "UI"
 msgid "<span>Confirmed</span> Reward"
 msgstr "<span>Подтвержденные</span> вознаграждения"
 
-#: app/settings/constants/renderTreeTemplates.js:252 /checksum/BIIEHfc+J8
+#: app/settings/constants/renderTreeTemplates.js:261 /checksum/BIIEHfc+J8
 msgctxt "UI"
 msgid "Lock Payout Address"
 msgstr "Заблокировать адрес для выплат"
@@ -822,7 +821,7 @@ msgctxt "Intro"
 msgid "BTC value of 1 NMC when a given block was found to be valid."
 msgstr "ВТС стомость 1 NMC, если данный блок подтвержден как действительный."
 
-#: app/settings/constants/renderTreeTemplates.js:1144 /checksum/kP24l/5BLT
+#: app/settings/constants/renderTreeTemplates.js:1153 /checksum/kP24l/5BLT
 msgctxt "UI"
 msgid ""
 "You also have a full right not to vote at all. In that case, you will be "
@@ -842,7 +841,7 @@ msgctxt "UI"
 msgid "Confirmation Status"
 msgstr "Статус подтверждения"
 
-#: app/settings/constants/renderTreeTemplates.js:794 /checksum/6sQ0a+t4t6
+#: app/settings/constants/renderTreeTemplates.js:803 /checksum/6sQ0a+t4t6
 msgctxt "UI"
 msgid ""
 "Alternatively if you do not have access to your authentication software, you"
@@ -864,12 +863,12 @@ msgstr ""
 "Вертикальные линии представляют блоки, найденные пулом. Они помечены как "
 "#block numbers."
 
-#: app/workers/modules/WorkersManager.js:609 /checksum/cSOvsdAcNM
+#: app/workers/modules/WorkersManager.js:604 /checksum/cSOvsdAcNM
 msgctxt "UI"
 msgid "Miner login"
 msgstr "Логин майнера"
 
-#: app/settings/constants/renderTreeTemplates.js:497 /checksum/N5+Lx3Uzb/
+#: app/settings/constants/renderTreeTemplates.js:506 /checksum/N5+Lx3Uzb/
 msgctxt "UI"
 msgid "Change Email"
 msgstr "Изменить Email"
@@ -904,12 +903,12 @@ msgctxt "UI"
 msgid "{num, plural, =1 {Month} other {Months} }"
 msgstr "{num, plural, =1 {Месяц} other {Месяцы} }"
 
-#: app/activity/containers/Activity.js:190
-#: app/payouts/containers/Payouts.js:334
-#: app/dashboard/containers/Dashboard.js:519
-#: app/rewards/containers/Rewards.js:596 app/blocks/containers/Blocks.js:502
+#: app/payouts/containers/Payouts.js:335 app/rewards/containers/Rewards.js:596
+#: app/blocks/containers/Blocks.js:502
 #: app/hashrateProof/containers/HashrateProof.js:365
-#: app/workers/containers/WorkersList.js:1356 /checksum/bur97dyHxQ
+#: app/dashboard/containers/Dashboard.js:519
+#: app/workers/containers/WorkersList.js:1356
+#: app/activity/containers/Activity.js:191 /checksum/bur97dyHxQ
 msgctxt "UI"
 msgid "Loading data…"
 msgstr "Загрузка данных…"
@@ -925,7 +924,7 @@ msgctxt "UI"
 msgid "Vote now!"
 msgstr "Голосуйте сейчас!"
 
-#: app/workers/modules/WorkersManager.js:747 /checksum/2TX7Wuka28
+#: app/workers/modules/WorkersManager.js:733 /checksum/2TX7Wuka28
 msgctxt "UI"
 msgid "User minimum difficulty from your user profile settings."
 msgstr ""
@@ -948,15 +947,15 @@ msgstr ""
 "предшествующего выбранному времени</strong>. Значения, удовлетворяющие "
 "<strong>текущую сложность сети</strong> подчеркнуты."
 
-#: app/activity/containers/Activity.js:100 /checksum/F+pXTlPR3D
+#: app/activity/containers/Activity.js:101 /checksum/F+pXTlPR3D
 msgctxt "UI"
 msgid "Timestamp"
 msgstr "Временная метка"
 
 #: components/jsonView/templates/helpers.js:65 app/constants.js:35
 #: app/constants.js:35 components/jsonView/templates/helpers.js:65
-#: app/settings/constants/renderTreeTemplates.js:1233
-#: app/settings/constants/renderTreeTemplates.js:1364 /checksum/8mv4GtLoVs
+#: app/settings/constants/renderTreeTemplates.js:1242
+#: app/settings/constants/renderTreeTemplates.js:1373 /checksum/8mv4GtLoVs
 msgctxt "UI"
 msgid "Payout Threshold"
 msgstr "Порог выплат"
@@ -966,7 +965,7 @@ msgctxt "UI"
 msgid "Voting only"
 msgstr "Только голосование"
 
-#: app/settings/constants/renderTreeTemplates.js:172 /checksum/mytBS9COvr
+#: app/settings/constants/renderTreeTemplates.js:181 /checksum/mytBS9COvr
 msgctxt "UI"
 msgid "Wallet"
 msgstr "Кошелек"
@@ -976,9 +975,9 @@ msgctxt "UI"
 msgid "End of Period"
 msgstr "Конец периода"
 
-#: app/@routes/containers/Profile.js:183 app/root/containers/RootApp.js:134
-#: app/settings/constants/renderTreeTemplates.js:1114
-#: app/settings/constants/renderTreeTemplates.js:1278
+#: app/@routes/containers/Profile.js:184 app/root/containers/RootApp.js:139
+#: app/settings/constants/renderTreeTemplates.js:1123
+#: app/settings/constants/renderTreeTemplates.js:1287
 #: app/workers/containers/WorkersApp.js:29 /checksum/q6yrENiASR
 msgctxt "UI"
 msgid "Workers"
@@ -990,7 +989,7 @@ msgctxt "UI"
 msgid "Block Difficulty"
 msgstr "Сложность блока"
 
-#: app/settings/constants/renderTreeTemplates.js:473 /checksum/Dp8XG3omwo
+#: app/settings/constants/renderTreeTemplates.js:482 /checksum/Dp8XG3omwo
 msgctxt "UI"
 msgid "Account"
 msgstr "Учетная запись"
@@ -1000,12 +999,12 @@ msgctxt "UI"
 msgid "Saving…"
 msgstr "Сохранение…"
 
-#: app/settings/constants/renderTreeTemplates.js:791 /checksum/XeZU8lscVg
+#: app/settings/constants/renderTreeTemplates.js:800 /checksum/XeZU8lscVg
 msgctxt "UI"
 msgid "Your two-factor authentication is successfully configured."
 msgstr "Ваша двухфакторная аутентификация успешно настроена."
 
-#: app/payouts/containers/Payouts.js:153 /checksum/13VK2slavV
+#: app/payouts/containers/Payouts.js:154 /checksum/13VK2slavV
 msgctxt "Intro"
 msgid ""
 "Click for the transactions details for the particular address in blockchain."
@@ -1013,7 +1012,7 @@ msgstr ""
 "Нажмите для просмотра подробностей транзакции для конкретного адреса в "
 "блокчейне."
 
-#: app/settings/constants/renderTreeTemplates.js:507 /checksum//t7Oaakver
+#: app/settings/constants/renderTreeTemplates.js:516 /checksum//t7Oaakver
 msgctxt "UI"
 msgid ""
 "If you do not have access to your former email account, you may confirm the "
@@ -1028,8 +1027,8 @@ msgctxt "UI"
 msgid "Network Difficulty"
 msgstr "Сложность сети"
 
-#: app/@routes/containers/Profile.js:172 app/@routes/containers/Public.js:254
-#: app/root/containers/RootApp.js:139
+#: app/@routes/containers/Profile.js:173 app/@routes/containers/Public.js:254
+#: app/root/containers/RootApp.js:144
 #: app/settings/containers/SettingsApp.js:89
 #: app/settings/containers/SettingsApp.js:265 /checksum/4rTQE18CBV
 msgctxt "UI"
@@ -1043,7 +1042,7 @@ msgctxt "UI"
 msgid "Workers States"
 msgstr "Состояния воркеров"
 
-#: app/settings/constants/renderTreeTemplates.js:812 /checksum/zfvXjAU7JF
+#: app/settings/constants/renderTreeTemplates.js:821 /checksum/zfvXjAU7JF
 msgctxt "UI"
 msgid "Disable by Wallet Signature"
 msgstr "Отключить с помощью подписи кошелька"
@@ -1054,7 +1053,7 @@ msgctxt "UI"
 msgid "Block Number"
 msgstr "Номер блока"
 
-#: app/settings/constants/renderTreeTemplates.js:792 /checksum/ruV1LEyDOM
+#: app/settings/constants/renderTreeTemplates.js:801 /checksum/ruV1LEyDOM
 msgctxt "UI"
 msgid ""
 "Please note that losing your smartphone (and a backup of your secret key) "
@@ -1080,8 +1079,8 @@ msgctxt "UI"
 msgid "Hash Rate (5 min)"
 msgstr "Хешрейт (5 мин.)"
 
-#: app/settings/constants/renderTreeTemplates.js:304
-#: app/settings/constants/renderTreeTemplates.js:548 /checksum/Gelchhsv1O
+#: app/settings/constants/renderTreeTemplates.js:313
+#: app/settings/constants/renderTreeTemplates.js:557 /checksum/Gelchhsv1O
 msgctxt "UI"
 msgid "Confirm by Wallet Signature"
 msgstr "Подтвердить с помощью подписи кошелька"
@@ -1102,12 +1101,12 @@ msgctxt "UI"
 msgid "{num, plural, =1 {Year} other {Years} }"
 msgstr "{num, plural, =1 {Год} other {Годы} }"
 
-#: app/settings/constants/renderTreeTemplates.js:1007 /checksum/wSQkiUsZsW
+#: app/settings/constants/renderTreeTemplates.js:1016 /checksum/wSQkiUsZsW
 msgctxt "UI"
 msgid "Resources"
 msgstr "Ресурсы"
 
-#: app/settings/constants/renderTreeTemplates.js:570 /checksum/BmK4D39FP5
+#: app/settings/constants/renderTreeTemplates.js:579 /checksum/BmK4D39FP5
 msgctxt "UI"
 msgid ""
 "If you do not want to use our service anymore, you can delete your account."
@@ -1120,7 +1119,7 @@ msgctxt "UI"
 msgid "Block Found"
 msgstr "Блок найден"
 
-#: app/settings/constants/renderTreeTemplates.js:1026 /checksum/dx82BwcbTb
+#: app/settings/constants/renderTreeTemplates.js:1035 /checksum/dx82BwcbTb
 msgctxt "UI"
 msgid "Reporting"
 msgstr "Составление отчета"
@@ -1130,14 +1129,14 @@ msgctxt "UI"
 msgid "Pool is synchronizing mining data!"
 msgstr "Пул синхронизирует майнинговые данные!"
 
-#: app/settings/constants/renderTreeTemplates.js:728 /checksum/VftCwm9CCr
+#: app/settings/constants/renderTreeTemplates.js:737 /checksum/VftCwm9CCr
 msgctxt "UI"
 msgid "Scan the QR code below (and optionally backup the generated secret)."
 msgstr ""
 "Отсканируйте QR-код ниже (и, по желанию, сохраните резервную копию "
 "сгенерированного секретного ключа)."
 
-#: app/activity/containers/Activity.js:140 /checksum/0Pwb9rXmtY
+#: app/activity/containers/Activity.js:141 /checksum/0Pwb9rXmtY
 msgctxt "UI"
 msgid ""
 "Detailed description for certain type of activities with value changes."
@@ -1149,12 +1148,12 @@ msgctxt "UI"
 msgid "By Current Hash Rate"
 msgstr "По текущему хешрейту"
 
-#: app/settings/constants/renderTreeTemplates.js:625 /checksum/UZsrCJoMKF
+#: app/settings/constants/renderTreeTemplates.js:634 /checksum/UZsrCJoMKF
 msgctxt "UI"
 msgid "At Least 5 characters"
 msgstr "Как минимум 5 символов"
 
-#: app/settings/constants/renderTreeTemplates.js:571 /checksum/+BZnsGXEBe
+#: app/settings/constants/renderTreeTemplates.js:580 /checksum/+BZnsGXEBe
 msgctxt "UI"
 msgid ""
 "This action is <strong>final and your account can not be "
@@ -1189,12 +1188,12 @@ msgctxt "Intro"
 msgid "Block is considered to be valid after 100 confirmations."
 msgstr "Блок считается действительным после получения 100 подтверждений."
 
-#: app/activity/containers/Activity.js:133 /checksum/37ta+q3nwo
+#: app/activity/containers/Activity.js:134 /checksum/37ta+q3nwo
 msgctxt "UI"
 msgid "Details"
 msgstr "Подробности"
 
-#: app/settings/constants/renderTreeTemplates.js:1142 /checksum/oMlxXBCcWF
+#: app/settings/constants/renderTreeTemplates.js:1151 /checksum/oMlxXBCcWF
 msgctxt "UI"
 msgid ""
 "We want to give you a complete freedom to express your attitude to any "
@@ -1205,17 +1204,17 @@ msgstr ""
 " любых текущих или будущих альтернативных решений, которые могут иметь место"
 " в сети Биткоин."
 
-#: app/settings/constants/renderTreeTemplates.js:486 /checksum/5+gfgWUBuG
+#: app/settings/constants/renderTreeTemplates.js:495 /checksum/5+gfgWUBuG
 msgctxt "UI"
 msgid "Only valid email address"
 msgstr "Только действительный адрес электронной почты"
 
-#: app/settings/constants/renderTreeTemplates.js:591 /checksum/K9VIJIoWHI
+#: app/settings/constants/renderTreeTemplates.js:600 /checksum/K9VIJIoWHI
 msgctxt "UI"
 msgid "Delete your Account"
 msgstr "Удалить учетную запись"
 
-#: app/settings/constants/renderTreeTemplates.js:230 /checksum/mwp4cM8yAk
+#: app/settings/constants/renderTreeTemplates.js:239 /checksum/mwp4cM8yAk
 msgctxt "UI"
 msgid ""
 "As a security precaution, you may lock your current payout address, so it "
@@ -1240,12 +1239,12 @@ msgctxt "UI"
 msgid "Effective hash rate"
 msgstr "Эффективный хешрейт"
 
-#: app/settings/constants/renderTreeTemplates.js:185 /checksum/rRKEJ/owha
+#: app/settings/constants/renderTreeTemplates.js:194 /checksum/rRKEJ/owha
 msgctxt "UI"
 msgid "Message"
 msgstr "Сообщение"
 
-#: app/settings/constants/renderTreeTemplates.js:717 /checksum/JbwVvlV7Sm
+#: app/settings/constants/renderTreeTemplates.js:726 /checksum/JbwVvlV7Sm
 msgctxt "UI"
 msgid "How to Enable Two-factor Authentication"
 msgstr "Как включить двухфакторну аутентификацию"
@@ -1274,7 +1273,7 @@ msgctxt "UI"
 msgid "Pool Scoring Hash Rate"
 msgstr "Оценённый хешрейт пула"
 
-#: app/activity/containers/Activity.js:182 /checksum/AdtCuSABfO
+#: app/activity/containers/Activity.js:183 /checksum/AdtCuSABfO
 msgctxt "UI"
 msgid "Activity <span>Log</span>"
 msgstr "<span>Журнал</span> активности"
@@ -1284,7 +1283,7 @@ msgctxt "UI"
 msgid "Click to reload"
 msgstr "Нажмите чтобы перезагрузить"
 
-#: app/settings/constants/renderTreeTemplates.js:727 /checksum/C6S+pUVJID
+#: app/settings/constants/renderTreeTemplates.js:736 /checksum/C6S+pUVJID
 msgctxt "UI"
 msgid "Open Google Authenticator, click \"Add an account\" / \"Scan QR code\"."
 msgstr ""
@@ -1296,9 +1295,9 @@ msgctxt "UI"
 msgid "Dismiss"
 msgstr "Отказаться"
 
-#: app/@routes/containers/Profile.js:182 app/root/containers/RootApp.js:135
+#: app/@routes/containers/Profile.js:183 app/root/containers/RootApp.js:140
 #: app/monitoring/containers/MonitoringOverview.js:114
-#: app/settings/constants/renderTreeTemplates.js:990 /checksum/h7LBOrweru
+#: app/settings/constants/renderTreeTemplates.js:999 /checksum/h7LBOrweru
 msgctxt "UI"
 msgid "Monitoring"
 msgstr "Мониторинг"
@@ -1310,7 +1309,7 @@ msgctxt "UI"
 msgid "No data is available yet…"
 msgstr "Пока нет доступных данных…"
 
-#: app/settings/constants/renderTreeTemplates.js:1134 /checksum/Adw7a8a6uA
+#: app/settings/constants/renderTreeTemplates.js:1143 /checksum/Adw7a8a6uA
 msgctxt "UI"
 msgid "Blockchain Voting"
 msgstr "Блокчейн-голосование"
@@ -1328,7 +1327,7 @@ msgctxt "UI"
 msgid "Pool Daily Reward"
 msgstr "Ежедневное вознаграждение пула"
 
-#: app/settings/constants/renderTreeTemplates.js:654 /checksum/ELNEVEcuq5
+#: app/settings/constants/renderTreeTemplates.js:663 /checksum/ELNEVEcuq5
 msgctxt "UI"
 msgid "Change Password"
 msgstr "Изменить пароль"
@@ -1338,7 +1337,7 @@ msgctxt "UI"
 msgid "Hash Rate <span>Per Location</span>"
 msgstr "Хешрейт <span>по расположению</span>"
 
-#: app/settings/constants/renderTreeTemplates.js:572 /checksum/agBhxBHhx+
+#: app/settings/constants/renderTreeTemplates.js:581 /checksum/agBhxBHhx+
 msgctxt "UI"
 msgid ""
 "Your <strong>user name and e-mail address</strong> will be <strong>free to "
@@ -1352,9 +1351,9 @@ msgctxt "UI"
 msgid "Active users"
 msgstr "Активные пользователи"
 
-#: app/@routes/containers/Profile.js:186
-#: app/activity/containers/Activity.js:61
-#: app/activity/containers/Activity.js:120 /checksum/KDyt8KUnGm
+#: app/@routes/containers/Profile.js:187
+#: app/activity/containers/Activity.js:62
+#: app/activity/containers/Activity.js:121 /checksum/KDyt8KUnGm
 msgctxt "UI"
 msgid "Activity"
 msgstr "Активность"
@@ -1371,7 +1370,7 @@ msgctxt "UI"
 msgid "Last Payout"
 msgstr "Последняя выплата"
 
-#: app/settings/constants/renderTreeTemplates.js:593 /checksum/UE2EDPYBKE
+#: app/settings/constants/renderTreeTemplates.js:602 /checksum/UE2EDPYBKE
 msgctxt "UI"
 msgid "Do you really want to delete your user account?"
 msgstr "Вы действительно хотите удалить свою учетную запись?"
@@ -1393,7 +1392,7 @@ msgctxt "UI"
 msgid "Basic View"
 msgstr "Обычный просмотр"
 
-#: app/settings/constants/renderTreeTemplates.js:395 /checksum/dFhPEbE7px
+#: app/settings/constants/renderTreeTemplates.js:404 /checksum/dFhPEbE7px
 msgctxt "UI"
 msgid "Localization"
 msgstr "Локализация"
@@ -1409,20 +1408,20 @@ msgctxt "UI"
 msgid "{num, plural, =1 {Hour} other {Hours} }"
 msgstr "{num, plural, =1 {Час} other {Часы} }"
 
-#: app/settings/constants/renderTreeTemplates.js:336 /checksum/DGEkAfrBCV
+#: app/settings/constants/renderTreeTemplates.js:345 /checksum/DGEkAfrBCV
 msgctxt "UI"
 msgid "New Wallet"
 msgstr "Новый кошелек"
 
-#: app/workers/modules/WorkersManager.js:610 /checksum//mQhAI6Nqz
+#: app/workers/modules/WorkersManager.js:605 /checksum//mQhAI6Nqz
 msgctxt "UI"
 msgid "The password can be any arbitrary text"
 msgstr "Паролем может быть любой случайный текст"
 
-#: app/@routes/containers/Profile.js:185 app/root/containers/RootApp.js:136
-#: app/payouts/containers/Payouts.js:88
-#: app/settings/constants/renderTreeTemplates.js:1169
-#: app/settings/constants/renderTreeTemplates.js:1299 /checksum/oonY3Rd4Z1
+#: app/@routes/containers/Profile.js:186 app/root/containers/RootApp.js:141
+#: app/payouts/containers/Payouts.js:89
+#: app/settings/constants/renderTreeTemplates.js:1178
+#: app/settings/constants/renderTreeTemplates.js:1308 /checksum/oonY3Rd4Z1
 msgctxt "UI"
 msgid "Payouts"
 msgstr "Выплаты"
@@ -1433,7 +1432,7 @@ msgctxt "UI"
 msgid "{num, plural, =1 {Second} other {Seconds} }"
 msgstr "{num, plural, =1 {Секунда} other {Секунды} }"
 
-#: app/settings/constants/renderTreeTemplates.js:1217 /checksum/ypppNheaQ+
+#: app/settings/constants/renderTreeTemplates.js:1226 /checksum/ypppNheaQ+
 msgctxt "UI"
 msgid ""
 "An <strong>additional fee</strong> of <strong>0.0001 BTC</strong> applies to"
@@ -1449,7 +1448,7 @@ msgctxt "UI"
 msgid "Select…"
 msgstr "Выбрать…"
 
-#: app/payouts/containers/Payouts.js:137 /checksum/SDJSjFExZw
+#: app/payouts/containers/Payouts.js:138 /checksum/SDJSjFExZw
 msgctxt "Intro"
 msgid "Processing / Failed / Sent"
 msgstr "В обработке / Не удалось / Отправлено"
@@ -1469,12 +1468,12 @@ msgctxt "UI"
 msgid "Proof Data"
 msgstr "Подтверждающие данные"
 
-#: app/settings/constants/renderTreeTemplates.js:264 /checksum/zG/03HmHuB
+#: app/settings/constants/renderTreeTemplates.js:273 /checksum/zG/03HmHuB
 msgctxt "UI"
 msgid "Unlock by Wallet Signature"
 msgstr "Разблокировать с помощью подписи кошелька"
 
-#: app/settings/constants/renderTreeTemplates.js:373 /checksum/3pBGjxI5au
+#: app/settings/constants/renderTreeTemplates.js:382 /checksum/3pBGjxI5au
 msgctxt "UI"
 msgid "General"
 msgstr "Общее"
@@ -1485,7 +1484,7 @@ msgctxt "UI"
 msgid "{num, plural, =1 {Day} other {Days} }"
 msgstr "{num, plural, =1 {День} other {Дни} }"
 
-#: app/settings/constants/renderTreeTemplates.js:1145 /checksum/iEL0LbUsQe
+#: app/settings/constants/renderTreeTemplates.js:1154 /checksum/iEL0LbUsQe
 msgctxt "UI"
 msgid ""
 "You can check the current state of user preferences on the following page:"
@@ -1504,12 +1503,12 @@ msgctxt "UI"
 msgid "Maximum Difficulty <span> per minute</span>"
 msgstr "Максимальная сложность <span>в минуту</span>"
 
-#: app/activity/containers/Activity.js:113 /checksum/poT4pjfnze
+#: app/activity/containers/Activity.js:114 /checksum/poT4pjfnze
 msgctxt "UI"
 msgid "IP address of computer that initiated the change."
 msgstr "IP-адрес компьютера, инициировавшего изменение."
 
-#: app/settings/constants/renderTreeTemplates.js:633 /checksum/QPtcbQ9PPX
+#: app/settings/constants/renderTreeTemplates.js:642 /checksum/QPtcbQ9PPX
 msgctxt "UI"
 msgid "Passwords do not match"
 msgstr "Пароли не совпадают"
@@ -1522,7 +1521,7 @@ msgstr ""
 "Вознаграждение - это то, что вы получаете, если находите действительный блок"
 " (что требует не менее 100 подтверждений)."
 
-#: app/settings/constants/renderTreeTemplates.js:775 /checksum/14p2vvyj26
+#: app/settings/constants/renderTreeTemplates.js:784 /checksum/14p2vvyj26
 msgctxt "UI"
 msgid "Two-factor Authentication"
 msgstr "Двухфакторная аутентификация"
@@ -1557,8 +1556,8 @@ msgid ""
 "Your Reward = (Your Scoring Hash Rate / Pool Scoring Hash Rate) * (Block "
 "Value * 0.98)"
 msgstr ""
-"Ваше вознаграждение = (Ваш оценённый хешрейт / Оценённый хешрейт пула) * ("
-"Ценность блока * 0.98)"
+"Ваше вознаграждение = (Ваш оценённый хешрейт / Оценённый хешрейт пула) * "
+"(Ценность блока * 0.98)"
 
 #: components/jsonView/templates/helpers.js:70
 #: components/jsonView/templates/helpers.js:70 /checksum/psa0soiQpJ
@@ -1571,8 +1570,8 @@ msgctxt "UI"
 msgid "Daily <span>Reward</span>"
 msgstr "Ежедневное <span>вознаграждение</span>"
 
-#: app/settings/constants/renderTreeTemplates.js:219
-#: app/settings/constants/renderTreeTemplates.js:611 /checksum/pJ9eJVIyMK
+#: app/settings/constants/renderTreeTemplates.js:228
+#: app/settings/constants/renderTreeTemplates.js:620 /checksum/pJ9eJVIyMK
 msgctxt "UI"
 msgid "Security"
 msgstr "Безопасность"
@@ -1582,7 +1581,7 @@ msgctxt "UI"
 msgid "Users"
 msgstr "Пользователи"
 
-#: app/payouts/containers/Payouts.js:170 /checksum/U30FTeUgdv
+#: app/payouts/containers/Payouts.js:171 /checksum/U30FTeUgdv
 msgctxt "Intro"
 msgid ""
 "Payouts under certain value are weighted by additional fee (see settings)."
@@ -1596,7 +1595,7 @@ msgctxt "UI"
 msgid "Your Contribution to the Pool"
 msgstr "Ваш вклад в пул"
 
-#: app/settings/constants/renderTreeTemplates.js:558 /checksum/WvukZ8pDLZ
+#: app/settings/constants/renderTreeTemplates.js:567 /checksum/WvukZ8pDLZ
 msgctxt "UI"
 msgid "Delete Account"
 msgstr "Удалить учетную запись"
@@ -1613,12 +1612,12 @@ msgctxt "UI"
 msgid "{num, plural, =1 {Minute} other {Minutes} }"
 msgstr "{num, plural, =1 {Минута} other {Минуты} }"
 
-#: app/settings/constants/renderTreeTemplates.js:806 /checksum/VMwAIhwWxD
+#: app/settings/constants/renderTreeTemplates.js:815 /checksum/VMwAIhwWxD
 msgctxt "UI"
 msgid "One Time Password"
 msgstr "Одноразовый пароль"
 
-#: app/settings/constants/renderTreeTemplates.js:1143 /checksum/m9kWdyxdJp
+#: app/settings/constants/renderTreeTemplates.js:1152 /checksum/m9kWdyxdJp
 msgctxt "UI"
 msgid ""
 "The preference you select determines the type of mining jobs that your "
@@ -1628,19 +1627,19 @@ msgstr ""
 " будут получать ваши воркеры."
 
 #: components/jsonView/registry/settings/form/Prompt.js:137
-#: components/settings/Confirm2ndFactor.js:323
 #: components/jsonView/registry/settings/form/Prompt.js:137
+#: components/settings/Confirm2ndFactor.js:323
 #: components/settings/Confirm2ndFactor.js:323 /checksum/mmKc43T7WX
 msgctxt "UI"
 msgid "Confirm"
 msgstr "Подтвердить"
 
-#: app/settings/constants/renderTreeTemplates.js:1216 /checksum/glWVyt4qr/
+#: app/settings/constants/renderTreeTemplates.js:1225 /checksum/glWVyt4qr/
 msgctxt "UI"
 msgid "It is possible to set this limit as low as <strong>0.001 BTC.<strong>"
 msgstr "Данный предел можно снижить вплоть до  <strong>0.001 BTC.<strong>"
 
-#: app/activity/containers/Activity.js:106 /checksum/Uy+QtbFTN6
+#: app/activity/containers/Activity.js:107 /checksum/Uy+QtbFTN6
 msgctxt "UI"
 msgid "IP Address"
 msgstr "IP адрес"
@@ -1655,7 +1654,7 @@ msgctxt "UI"
 msgid "7-day Average"
 msgstr "В среднем за 7 дней"
 
-#: app/settings/constants/renderTreeTemplates.js:748 /checksum/7qqByo4tE2
+#: app/settings/constants/renderTreeTemplates.js:757 /checksum/7qqByo4tE2
 msgctxt "UI"
 msgid "Generated One-Time Password"
 msgstr "Сгенерированный одноразовый пароль"
@@ -1666,23 +1665,23 @@ msgctxt "UI"
 msgid "No data available…"
 msgstr "Нет доступных данных…"
 
-#: app/activity/containers/Activity.js:127 /checksum/SlYDwEQFnJ
+#: app/activity/containers/Activity.js:128 /checksum/SlYDwEQFnJ
 msgctxt "UI"
 msgid "Short, broad type of activity."
 msgstr "Короткий, широкий тип деятельности."
 
-#: app/settings/constants/renderTreeTemplates.js:1087
-#: app/settings/constants/renderTreeTemplates.js:1252 /checksum/nrYM3fVoq+
+#: app/settings/constants/renderTreeTemplates.js:1096
+#: app/settings/constants/renderTreeTemplates.js:1261 /checksum/nrYM3fVoq+
 msgctxt "UI"
 msgid "Mining"
 msgstr "Майнинг"
 
-#: app/settings/constants/renderTreeTemplates.js:729 /checksum/JJhBudy+sq
+#: app/settings/constants/renderTreeTemplates.js:738 /checksum/JJhBudy+sq
 msgctxt "UI"
 msgid "Click to see URI form of the QR code"
 msgstr "Нажмите, чтобы увидеть URI-адрес из QR-кода"
 
-#: app/settings/constants/renderTreeTemplates.js:793 /checksum/8bFFHA1dC1
+#: app/settings/constants/renderTreeTemplates.js:802 /checksum/8bFFHA1dC1
 msgctxt "UI"
 msgid ""
 "You can deactivate two-factor authentication by entering valid one-time "
@@ -1708,7 +1707,7 @@ msgctxt "UI"
 msgid "Go to Pool Statistics"
 msgstr "Перейти к статистикам пула"
 
-#: app/settings/constants/renderTreeTemplates.js:196 /checksum/f/qh5FJiMw
+#: app/settings/constants/renderTreeTemplates.js:205 /checksum/f/qh5FJiMw
 msgctxt "UI"
 msgid "Signature"
 msgstr "Подпись"
@@ -1720,53 +1719,53 @@ msgstr ""
 "Каждый круг представляет группу пользователей с приблизительно одинаковым "
 "хешрейтом."
 
-#: app/settings/constants/renderTreeTemplates.js:442 /checksum/cmHjXZhfvv
+#: app/settings/constants/renderTreeTemplates.js:451 /checksum/cmHjXZhfvv
 msgctxt "UI"
 msgid "Notify me on payout"
 msgstr "Информировать меня о платеже"
 
-#: app/settings/constants/renderTreeTemplates.js:405 /checksum/xW94IyHGcI
+#: app/settings/constants/renderTreeTemplates.js:414 /checksum/xW94IyHGcI
 msgctxt "UI"
 msgid "Preferred language"
 msgstr "Предпочтительный язык"
 
-#: app/settings/constants/renderTreeTemplates.js:1157 /checksum/7JwtsLGx7B
+#: app/settings/constants/renderTreeTemplates.js:1166 /checksum/7JwtsLGx7B
 msgctxt "UI"
 msgid "Preferred blockchain proposal"
 msgstr "Предпочтительное блокчейн-предложение"
 
-#: app/settings/constants/renderTreeTemplates.js:416 /checksum/Pesp2fQZ4b
+#: app/settings/constants/renderTreeTemplates.js:425 /checksum/Pesp2fQZ4b
 msgctxt "UI"
 msgid "Preferred timezone"
 msgstr "Предпочтительный часовой пояс"
 
-#: app/settings/constants/renderTreeTemplates.js:1035 /checksum/cUuqLA/yqY
+#: app/settings/constants/renderTreeTemplates.js:1044 /checksum/cUuqLA/yqY
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr "Уведомления включены"
 
-#: app/settings/constants/renderTreeTemplates.js:432 /checksum/B2Fn4I6fiH
+#: app/settings/constants/renderTreeTemplates.js:441 /checksum/B2Fn4I6fiH
 msgctxt "UI"
 msgid "Username in stats"
 msgstr "Показывать имя пользователя в статистиках"
 
-#: app/settings/constants/renderTreeTemplates.js:1127
-#: app/settings/constants/renderTreeTemplates.js:1289 /checksum/6AQvmwPrSX
+#: app/settings/constants/renderTreeTemplates.js:1136
+#: app/settings/constants/renderTreeTemplates.js:1298 /checksum/6AQvmwPrSX
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr "Минимальная сложность"
 
-#: app/settings/constants/renderTreeTemplates.js:1036 /checksum/MSUULdKAuT
+#: app/settings/constants/renderTreeTemplates.js:1045 /checksum/MSUULdKAuT
 msgctxt "UI"
 msgid "Receive e-mail notifications from the monitoring system"
 msgstr "Получать уведомления на электронную почту от мониторинговой системы"
 
-#: app/settings/constants/renderTreeTemplates.js:452 /checksum/vBqe00J0Hs
+#: app/settings/constants/renderTreeTemplates.js:461 /checksum/vBqe00J0Hs
 msgctxt "UI"
 msgid "Newsletter"
 msgstr "Новостная рассылка"
 
-#: app/settings/constants/renderTreeTemplates.js:433 /checksum/PMf/qlpP8U
+#: app/settings/constants/renderTreeTemplates.js:442 /checksum/PMf/qlpP8U
 msgctxt "UI"
 msgid "Show my username in public server stats"
 msgstr "Показывать моё имя пользователя в публичных статистиках"
@@ -1780,61 +1779,61 @@ msgstr ""
 "Блок недействителен, никому из пользователей не было отправлено "
 "вознаграждение"
 
-#: app/settings/constants/renderTreeTemplates.js:825 /checksum/1UDP98+K7Y
+#: app/settings/constants/renderTreeTemplates.js:834 /checksum/1UDP98+K7Y
 msgctxt "UI"
 msgid "Universal 2nd Factor (U2F)"
 msgstr "Универсальный 2-оу фактор (U2F)"
 
-#: app/settings/constants/renderTreeTemplates.js:491
-#: app/settings/constants/renderTreeTemplates.js:1187
-#: app/settings/constants/renderTreeTemplates.js:1318 /checksum/GJA+/6lV1n
+#: app/settings/constants/renderTreeTemplates.js:500
+#: app/settings/constants/renderTreeTemplates.js:1196
+#: app/settings/constants/renderTreeTemplates.js:1327 /checksum/GJA+/6lV1n
 msgctxt "UI"
 msgid "New value is the same as current!"
 msgstr "Новая величина такая же, как текущая!"
 
-#: app/settings/widgets/U2FDevices.js:207 /checksum/iYI1/9rfPW
+#: app/settings/widgets/U2FDevices.js:209 /checksum/iYI1/9rfPW
 msgctxt "UI"
 msgid "This device might already be registered."
 msgstr "Данное устройство может быть уже зарегистрировано."
 
-#: app/settings/widgets/U2FDevices.js:279 /checksum/eayIwIgRZt
+#: app/settings/widgets/U2FDevices.js:281 /checksum/eayIwIgRZt
 msgctxt "UI"
 msgid "Remove Existing Device"
 msgstr "Удалить существующее устройство"
 
-#: app/settings/widgets/U2FDevices.js:243 /checksum/A7j032VyrF
+#: app/settings/widgets/U2FDevices.js:245 /checksum/A7j032VyrF
 msgctxt "UI"
 msgid "Registered At"
 msgstr "Регистрация была проведена в"
 
-#: app/settings/widgets/U2FDevices.js:308 /checksum/eUux3AfzYg
+#: app/settings/widgets/U2FDevices.js:310 /checksum/eUux3AfzYg
 msgctxt "UI"
 msgid "Please confirm the request on your device"
 msgstr "Пожалуйста, подтвердите запрос на вашем устройстве"
 
-#: app/settings/widgets/U2FDevices.js:285 /checksum/kZyhWvSgGv
+#: app/settings/widgets/U2FDevices.js:287 /checksum/kZyhWvSgGv
 msgctxt "UI"
 msgid "Register New Device"
 msgstr "Зарегистрировать новое устройство"
 
-#: app/settings/widgets/U2FDevices.js:238 /checksum/Pnq1grUP9r
+#: app/settings/widgets/U2FDevices.js:240 /checksum/Pnq1grUP9r
 msgctxt "UI"
 msgid "Public Key"
 msgstr "Открытый ключ"
 
-#: app/settings/widgets/U2FDevices.js:210
+#: app/settings/widgets/U2FDevices.js:212
 #: components/settings/Confirm2ndFactor.js:189
 #: components/settings/Confirm2ndFactor.js:189 /checksum/FXWqNuuKNF
 msgctxt "UI"
 msgid "This device might not be registered yet."
 msgstr "Это устройство может быть еще не зарегистрированным."
 
-#: app/settings/widgets/U2FDevices.js:247 /checksum/3Aqux8Txbj
+#: app/settings/widgets/U2FDevices.js:249 /checksum/3Aqux8Txbj
 msgctxt "UI"
 msgid "Last Used At"
 msgstr "В последний раз использовалось в"
 
-#: app/settings/widgets/U2FDevices.js:199
+#: app/settings/widgets/U2FDevices.js:201
 #: components/settings/Confirm2ndFactor.js:185
 #: components/settings/Confirm2ndFactor.js:185 /checksum/tMIUvbWHCl
 msgctxt "UI"
@@ -1871,8 +1870,8 @@ msgctxt "UI"
 msgid "Number of users"
 msgstr "Количество пользователей"
 
-#: app/settings/widgets/U2FDevices.js:264 app/settings/widgets/Devices.js:214
-#: app/settings/widgets/AccessProfiles.js:359 /checksum/Lv0HukGQqY
+#: app/settings/widgets/U2FDevices.js:266 app/settings/widgets/Devices.js:216
+#: app/settings/widgets/AccessProfiles.js:353 /checksum/Lv0HukGQqY
 msgctxt "UI"
 msgid "You do not have any devices yet"
 msgstr "У вас еще нет ни одного устройства"
@@ -1887,14 +1886,14 @@ msgctxt "UI"
 msgid "User Count"
 msgstr "Количество пользователей"
 
-#: app/settings/constants/renderTreeTemplates.js:56 /checksum/dhzOJqmBDS
+#: app/settings/constants/renderTreeTemplates.js:65 /checksum/dhzOJqmBDS
 msgctxt "UI"
 msgid ""
 "Your <strong>payouts are disabled</strong> while this change is in progress."
 msgstr ""
 "Пока проводятся данные изменения ваши <strong>выплаты отключены</strong>."
 
-#: app/settings/constants/renderTreeTemplates.js:55 /checksum/Mk3KgrXCHt
+#: app/settings/constants/renderTreeTemplates.js:64 /checksum/Mk3KgrXCHt
 msgctxt "UI"
 msgid "You should receive a <strong>confirmation email</strong> shortly."
 msgstr ""
@@ -2006,7 +2005,7 @@ msgctxt "UI"
 msgid "Confirmed Reward"
 msgstr "Подтверждённые вознаграждения"
 
-#: app/settings/widgets/Devices.js:303 /checksum/Pk/Nu7F/w6
+#: app/settings/widgets/Devices.js:305 /checksum/Pk/Nu7F/w6
 msgctxt "UI"
 msgid "Done, take me back"
 msgstr "Готово, назад"
@@ -2060,7 +2059,7 @@ msgctxt "UI"
 msgid "BTC"
 msgstr "BTC"
 
-#: app/settings/constants/renderTreeTemplates.js:237 /checksum/uCm/gzLYgd
+#: app/settings/constants/renderTreeTemplates.js:246 /checksum/uCm/gzLYgd
 msgctxt "UI"
 msgid "Your payout address {0} is locked."
 msgstr "Ваш адрес для выплат {0} заблокирован."
@@ -2071,7 +2070,7 @@ msgctxt "UI"
 msgid "Pool"
 msgstr "Пул"
 
-#: app/settings/constants/renderTreeTemplates.js:578
+#: app/settings/constants/renderTreeTemplates.js:587
 #: app/root/components/DialogSignUp.js:297 /checksum/sm5KnYbjB+
 msgctxt "UI"
 msgid "Email"
@@ -2096,9 +2095,9 @@ msgid "Data"
 msgstr "Данные"
 
 #: lib/helpOverlay/OverlayProvider.js:560
-#: lib/helpOverlay/OverlayProvider.js:576
-#: components/modules/AttributeApplyBox.js:307
+#: lib/helpOverlay/OverlayProvider.js:581
 #: app/dashboard/containers/ErrorsConsole.js:104
+#: components/modules/AttributeApplyBox.js:307
 #: app/root/components/DialogSignUp.js:258 /checksum/JRhw9/18GD
 msgctxt "UI"
 msgid "Close"
@@ -2139,7 +2138,7 @@ msgstr ""
 "Каждая точка на диаграмме представляет инцидент воркера, а её цвет "
 "обозначает тип инцидента."
 
-#: app/settings/widgets/Devices.js:153 /checksum/6sh/nUovrD
+#: app/settings/widgets/Devices.js:155 /checksum/6sh/nUovrD
 msgctxt "UI"
 msgid ""
 "To monitor your user account in our official mobile app, please follow these"
@@ -2148,7 +2147,7 @@ msgstr ""
 "Для мониторинга вашей учетной записи в нашем официальном мобильном "
 "приложении, пожалуйста следуйте этим шагам."
 
-#: app/settings/widgets/U2FDevices.js:160
+#: app/settings/widgets/U2FDevices.js:162
 #: components/settings/ConfirmRequestBy2ndFactor.js:64
 #: components/settings/ConfirmRequestBy2ndFactor.js:64 /checksum/SOuqfQ3tKJ
 msgctxt "UI"
@@ -2161,12 +2160,12 @@ msgid "Here you can see integrity errors found in your configuration."
 msgstr ""
 "Здесь вы можете видеть ошибки целостности, найденные в вашей конфигурации."
 
-#: app/workers/modules/LabelsManager.js:318 /checksum/7obdecni86
+#: app/workers/modules/LabelsManager.js:320 /checksum/7obdecni86
 msgctxt "UI"
 msgid "Required field!"
 msgstr "Поле обязательное для заполнения!"
 
-#: app/settings/widgets/Devices.js:281 /checksum/kULTDQpO0U
+#: app/settings/widgets/Devices.js:283 /checksum/kULTDQpO0U
 msgctxt "UI"
 msgid "Now scan this QR code using our application"
 msgstr "Теперь насканируйте этот QR код с помощью нашего приложения"
@@ -2176,7 +2175,7 @@ msgctxt "Intro"
 msgid "Follow the link to see more details about the block."
 msgstr "Пройдите по ссылке, чтобы увидеть детали блока."
 
-#: app/settings/constants/renderTreeTemplates.js:254 /checksum/T/YnDPcWZv
+#: app/settings/constants/renderTreeTemplates.js:263 /checksum/T/YnDPcWZv
 msgctxt "UI"
 msgid "Be sure that you have a backup of your wallet stored in a safe place!"
 msgstr ""
@@ -2187,14 +2186,14 @@ msgctxt "UI"
 msgid "Raw"
 msgstr "Необработанный"
 
-#: app/@routes/containers/Profile.js:181 app/@routes/containers/Public.js:267
-#: app/root/containers/RootApp.js:133
+#: app/@routes/containers/Profile.js:182 app/@routes/containers/Public.js:267
+#: app/root/containers/RootApp.js:138
 #: app/dashboard/containers/Dashboard.js:151 /checksum/y7+MJmFo6l
 msgctxt "UI"
 msgid "Dashboard"
 msgstr "Рабочая панель"
 
-#: app/settings/widgets/Devices.js:179 /checksum/wPR+gqXOnZ
+#: app/settings/widgets/Devices.js:181 /checksum/wPR+gqXOnZ
 msgctxt "UI"
 msgid "Last Used"
 msgstr "Использовано в последний раз"
@@ -2206,17 +2205,17 @@ msgstr ""
 "Существует новая версия этой страницы. Пожалуйста, обновите страницу, чтобы "
 "продолжить."
 
-#: app/settings/widgets/Devices.js:99 /checksum/MJMbrddDIu
+#: app/settings/widgets/Devices.js:101 /checksum/MJMbrddDIu
 msgctxt "UI"
 msgid "No token received"
 msgstr "Токен не был получен"
 
-#: app/settings/widgets/Devices.js:226 /checksum/SWi9/dkBP2
+#: app/settings/widgets/Devices.js:228 /checksum/SWi9/dkBP2
 msgctxt "UI"
 msgid "Mandatory field, 3 to 30 characters"
 msgstr "Обязательное для заполнения поле, 3 - 30 знаков"
 
-#: app/settings/constants/renderTreeTemplates.js:231 /checksum/ZLzIg8COkw
+#: app/settings/constants/renderTreeTemplates.js:240 /checksum/ZLzIg8COkw
 msgctxt "UI"
 msgid ""
 "Please be sure that you have a <strong>backup of your wallet</strong> stored"
@@ -2225,7 +2224,7 @@ msgstr ""
 "Пожалуйста, убедитесь, что у вас есть <strong>резервная копия вашего "
 "кошелька</strong>, хранящаяся в безопасном месте."
 
-#: app/settings/widgets/Devices.js:183 /checksum/Nrngx58Hpp
+#: app/settings/widgets/Devices.js:185 /checksum/Nrngx58Hpp
 msgctxt "UI"
 msgid "Unlink"
 msgstr "Отключить"
@@ -2235,7 +2234,7 @@ msgctxt "UI"
 msgid "Error Console"
 msgstr "Панель ошибок"
 
-#: app/settings/widgets/Devices.js:126 /checksum/ooPSpz47pE
+#: app/settings/widgets/Devices.js:128 /checksum/ooPSpz47pE
 msgctxt "UI"
 msgid "Are you sure you want to unlink following device?"
 msgstr "Вы уверенны, что хотите отключить следующие устройство?"
@@ -2266,7 +2265,7 @@ msgctxt "Intro"
 msgid "Total hash rate of all your workers together (5min average)"
 msgstr "Суммарный хешрейт всех воркеров вместе (в среднем за 5 мин.)"
 
-#: app/settings/constants/renderTreeTemplates.js:911 /checksum/Nw+skPR2sV
+#: app/settings/constants/renderTreeTemplates.js:920 /checksum/Nw+skPR2sV
 msgctxt "UI"
 msgid "Enabled Coins"
 msgstr "Позволенные криптомонеты"
@@ -2276,7 +2275,7 @@ msgctxt "UI"
 msgid "Our default configuration will be inserted over your current one."
 msgstr "Наша конфигурация по умолчанию будет вставлена поверх вашей текущей."
 
-#: app/settings/constants/renderTreeTemplates.js:869 /checksum/QRPb99Bg92
+#: app/settings/constants/renderTreeTemplates.js:878 /checksum/QRPb99Bg92
 msgctxt "UI"
 msgid "Devices"
 msgstr "Устройства"
@@ -2286,24 +2285,24 @@ msgctxt "UI"
 msgid "Event Time"
 msgstr "Время события"
 
-#: app/settings/constants/renderTreeTemplates.js:1182
-#: app/settings/constants/renderTreeTemplates.js:1313 /checksum/OeKc1KEM7+
+#: app/settings/constants/renderTreeTemplates.js:1191
+#: app/settings/constants/renderTreeTemplates.js:1322 /checksum/OeKc1KEM7+
 msgctxt "UI"
 msgid "Enter valid address!"
 msgstr "Введите действительный адрес!"
 
-#: app/settings/widgets/Devices.js:175 /checksum/gBtarQ+6l+
+#: app/settings/widgets/Devices.js:177 /checksum/gBtarQ+6l+
 msgctxt "UI"
 msgid "Connected"
 msgstr "Соеденено"
 
-#: app/settings/widgets/Devices.js:171 /checksum/AXfHReCes2
+#: app/settings/widgets/Devices.js:173 /checksum/AXfHReCes2
 msgctxt "UI"
 msgid "Device Label"
 msgstr "Метка устройства"
 
 #: components/jsonView/templates/helpers.js:516
-#: app/@routes/containers/Profile.js:175 app/@routes/containers/Public.js:273
+#: app/@routes/containers/Profile.js:176 app/@routes/containers/Public.js:273
 #: components/jsonView/templates/helpers.js:516 /checksum/yXV3Wqrjmt
 msgctxt "UI"
 msgid "User"
@@ -2330,7 +2329,7 @@ msgctxt "UI"
 msgid "Visual"
 msgstr "Визуальный"
 
-#: app/settings/constants/renderTreeTemplates.js:929 /checksum/IO417LXRke
+#: app/settings/constants/renderTreeTemplates.js:938 /checksum/IO417LXRke
 msgctxt "UI"
 msgid "At least one coin must be enabled <strong>at all times</strong>."
 msgstr ""
@@ -2384,12 +2383,12 @@ msgctxt "UI"
 msgid "You do not have any Monitoring events yet."
 msgstr "У вас еще нет событий для мониторинга."
 
-#: app/settings/widgets/Devices.js:155 /checksum/WC2IukhKfA
+#: app/settings/widgets/Devices.js:157 /checksum/WC2IukhKfA
 msgctxt "UI"
 msgid "Download the application"
 msgstr "Загрузить приложение"
 
-#: app/settings/widgets/Devices.js:254 /checksum/YkuOmHmC7n
+#: app/settings/widgets/Devices.js:256 /checksum/YkuOmHmC7n
 msgctxt "UI"
 msgid "Connect"
 msgstr "Соединить"
@@ -2399,12 +2398,12 @@ msgctxt "UI"
 msgid "Account Hash Rate"
 msgstr "Хешрейт учетной записи"
 
-#: app/settings/widgets/Devices.js:236 /checksum/Cc0XABW4V/
+#: app/settings/widgets/Devices.js:238 /checksum/Cc0XABW4V/
 msgctxt "UI"
 msgid "New device label"
 msgstr "Новая метка устройства"
 
-#: app/payouts/containers/Payouts.js:152 /checksum/EP5uiPgc68
+#: app/payouts/containers/Payouts.js:153 /checksum/EP5uiPgc68
 msgctxt "Intro"
 msgid "Address to which we sent the payout."
 msgstr "Адрес, на который мы посылаем выплаты."
@@ -2416,7 +2415,7 @@ msgctxt "UI"
 msgid "Active Users"
 msgstr "Активные пользователи"
 
-#: app/workers/modules/LabelsManager.js:698 /checksum/FPdlFZtbM6
+#: app/workers/modules/LabelsManager.js:700 /checksum/FPdlFZtbM6
 msgid "Information about location / power / …"
 msgstr "Информация о расположении / мощности / …"
 
@@ -2448,7 +2447,7 @@ msgstr ""
 msgid "Your NMC reward for a given block"
 msgstr "Ваша NMC награда за данный блок"
 
-#: app/settings/constants/renderTreeTemplates.js:1348 /checksum/QEyMMpBQTn
+#: app/settings/constants/renderTreeTemplates.js:1357 /checksum/QEyMMpBQTn
 msgctxt "UI"
 msgid ""
 "An <strong>additional fee</strong> of <strong>0.0001 ZEC</strong> applies to"
@@ -2457,7 +2456,7 @@ msgstr ""
 "<strong>Дополнительны сбор</strong> в размере <strong>0.0001 ZEC</strong> "
 "распространяется на выплаты, которые ниже чем 0,01 ZEC."
 
-#: app/settings/constants/renderTreeTemplates.js:1403 /checksum/9r2ulPt4Mc
+#: app/settings/constants/renderTreeTemplates.js:1412 /checksum/9r2ulPt4Mc
 msgctxt "UI"
 msgid "Your own private mining URLs."
 msgstr "Ваше личные приватные майнинг-URL."
@@ -2467,14 +2466,14 @@ msgctxt "UI"
 msgid "How to start mining, mining URLs"
 msgstr "Как начать майнинг, майнинг-URL"
 
-#: app/settings/constants/renderTreeTemplates.js:197 /checksum/vLaze5JKbs
+#: app/settings/constants/renderTreeTemplates.js:206 /checksum/vLaze5JKbs
 msgctxt "UI"
 msgid "Paste the signature from your wallet software"
 msgstr "Вложите подпись из вашего приложения кошелька"
 
 #: lib/helpOverlay/OverlayProvider.js:538
-#: lib/helpOverlay/OverlayProvider.js:579
-#: lib/helpOverlay/OverlayProvider.js:580 /checksum/G0hTtrYtNJ
+#: lib/helpOverlay/OverlayProvider.js:584
+#: lib/helpOverlay/OverlayProvider.js:585 /checksum/G0hTtrYtNJ
 msgctxt "UI"
 msgid "Next topic"
 msgstr "Следующая тема"
@@ -2484,13 +2483,13 @@ msgctxt "UI"
 msgid "Topic"
 msgstr "Тема"
 
-#: app/settings/constants/renderTreeTemplates.js:1100
-#: app/settings/constants/renderTreeTemplates.js:1265 /checksum/pqWlGh3iE3
+#: app/settings/constants/renderTreeTemplates.js:1109
+#: app/settings/constants/renderTreeTemplates.js:1274 /checksum/pqWlGh3iE3
 msgctxt "UI"
 msgid "Number in following range:"
 msgstr "Число в следующем диапазоне:"
 
-#: app/settings/constants/renderTreeTemplates.js:255 /checksum/CwkAiz20wJ
+#: app/settings/constants/renderTreeTemplates.js:264 /checksum/CwkAiz20wJ
 msgctxt "UI"
 msgid ""
 "Do you REALLY want to LOCK the wallet? It will NOT be possible to unlock it "
@@ -2503,24 +2502,24 @@ msgstr ""
 msgid "Confirmed"
 msgstr "Подтверждено"
 
-#: app/settings/constants/renderTreeTemplates.js:1404 /checksum/JHVAoPyvDM
+#: app/settings/constants/renderTreeTemplates.js:1413 /checksum/JHVAoPyvDM
 msgctxt "UI"
 msgid "Please do not share these with anyone."
 msgstr "Пожалуйста, не делитесь этим ни с кем."
 
 #: lib/helpOverlay/OverlayProvider.js:530
-#: lib/helpOverlay/OverlayProvider.js:577
-#: lib/helpOverlay/OverlayProvider.js:578 /checksum/H6K3gW2qRU
+#: lib/helpOverlay/OverlayProvider.js:582
+#: lib/helpOverlay/OverlayProvider.js:583 /checksum/H6K3gW2qRU
 msgctxt "UI"
 msgid "Previous topic"
 msgstr "Предыдущая тема"
 
-#: app/settings/constants/renderTreeTemplates.js:1391 /checksum/ebu2jkeG1d
+#: app/settings/constants/renderTreeTemplates.js:1400 /checksum/ebu2jkeG1d
 msgctxt "UI"
 msgid "Private Mining URLs"
 msgstr "Приватные майнинг-URL"
 
-#: app/settings/constants/renderTreeTemplates.js:1347 /checksum/W6EKuF2UGR
+#: app/settings/constants/renderTreeTemplates.js:1356 /checksum/W6EKuF2UGR
 msgctxt "UI"
 msgid "It is possible to set this limit as low as <strong>0.001 ZEC.<strong>"
 msgstr "Нижний предел можно установить на уровне <strong>0,001 ZEC.<strong>"
@@ -2536,7 +2535,7 @@ msgctxt "UI"
 msgid "Close this screen"
 msgstr "Закрыть этот экран"
 
-#: app/@routes/containers/Profile.js:657 /checksum/top9j94aBr
+#: app/@routes/containers/Profile.js:658 /checksum/top9j94aBr
 msgctxt "UI"
 msgid "Not Available in Read-only Mode."
 msgstr "Недоступно в режиме \"только для чтения\"."
@@ -2546,7 +2545,7 @@ msgctxt "UI"
 msgid "API"
 msgstr "API"
 
-#: app/@routes/containers/Profile.js:646
+#: app/@routes/containers/Profile.js:647
 #: app/settings/containers/SettingsApp.js:251 /checksum/4E8YcyhROJ
 msgctxt "UI"
 msgid "Click to login"
@@ -2557,7 +2556,7 @@ msgctxt "UI"
 msgid "Created at"
 msgstr "Создано в"
 
-#: lib/ncoin/onlyForCoin.js:80 lib/ncoin/onlyForCoin.js:80
+#: lib/ncoin/onlyForCoin.js:74 lib/ncoin/onlyForCoin.js:74
 #: /checksum/xbIfgs/SA7
 msgctxt "UI"
 msgid "Not implemented for selected coin"
@@ -2573,13 +2572,13 @@ msgctxt "UI"
 msgid "Do not forget to check the Spam folder if necessary."
 msgstr "Не забудьте проверить папку «Спам» при необходимости."
 
-#: app/aboutPool/containers/Tos.js:14 app/aboutPool/containers/Team.js:27
+#: app/aboutPool/containers/Team.js:27 app/aboutPool/containers/Tos.js:14
 #: app/aboutPool/containers/Facts.js:76 /checksum/Q1fFSwK0lm
 msgctxt "UI"
 msgid "About"
 msgstr "О пулу"
 
-#: app/@routes/containers/Profile.js:189 /checksum/6LbzsXzrsB
+#: app/@routes/containers/Profile.js:190 /checksum/6LbzsXzrsB
 msgctxt "UI"
 msgid "System stats"
 msgstr "Статистики системы"
@@ -2594,12 +2593,12 @@ msgctxt "UI"
 msgid "Generate new token"
 msgstr "Создать новый токен"
 
-#: app/settings/constants/renderTreeTemplates.js:68 /checksum/KNmhc4Ozlb
+#: app/settings/constants/renderTreeTemplates.js:77 /checksum/KNmhc4Ozlb
 msgctxt "UI"
 msgid "Number in range from {0} to {1}"
 msgstr "Число в диапазоне от {0} до {1}"
 
-#: app/settings/widgets/AccessProfiles.js:178 /checksum/sHf0ZAuwbq
+#: app/settings/widgets/AccessProfiles.js:179 /checksum/sHf0ZAuwbq
 msgctxt "UI"
 msgid "Are you sure you want to delete this access profile?"
 msgstr "Вы уверены, что хотите удалить этот профиль доступа?"
@@ -2614,7 +2613,7 @@ msgctxt "UI"
 msgid "OVER 1,000,000 BTC<br />Mined Since 2010"
 msgstr "БОЛЕЕ 1 000 000 BTC<br /> добыто с года 2010"
 
-#: app/settings/constants/renderTreeTemplates.js:73 /checksum/8BkT0U27ve
+#: app/settings/constants/renderTreeTemplates.js:82 /checksum/8BkT0U27ve
 msgctxt "UI"
 msgid "-- enter --"
 msgstr "-- введите значение --"
@@ -2683,7 +2682,7 @@ msgctxt "UI"
 msgid "Try rewording your query."
 msgstr "Попробуйте переписать ваш запрос."
 
-#: app/@routes/authViews/AuthError.js:47 app/@routes/containers/Public.js:318
+#: app/@routes/containers/Public.js:318 app/@routes/authViews/AuthError.js:47
 #: app/root/components/DialogAuthIndex.js:87 /checksum/pGdnFseIrl
 msgctxt "UI"
 msgid "Signup"
@@ -2747,7 +2746,7 @@ msgctxt "UI"
 msgid "We are sorry to see you go!"
 msgstr "Нам жаль, что вы уходите!"
 
-#: app/settings/constants/renderTreeTemplates.js:894 /checksum/6FpYHlO4Ft
+#: app/settings/constants/renderTreeTemplates.js:903 /checksum/6FpYHlO4Ft
 msgctxt "UI"
 msgid "Access Profiles"
 msgstr "Профили доступа"
@@ -2788,7 +2787,7 @@ msgctxt "UI"
 msgid "Last update"
 msgstr "Последнее обновление"
 
-#: app/workers/modules/WorkersManager.js:765 /checksum/Pvvd6uWrJt
+#: app/workers/modules/WorkersManager.js:751 /checksum/Pvvd6uWrJt
 msgctxt "UI"
 msgid "Number in range"
 msgstr "Число в диапазоне"
@@ -2803,13 +2802,13 @@ msgctxt "UI"
 msgid "Passwords do not match!"
 msgstr "Пароли не совпадают!"
 
-#: app/@routes/containers/Profile.js:190 app/@routes/containers/Public.js:129
+#: app/@routes/containers/Profile.js:191 app/@routes/containers/Public.js:129
 #: /checksum/dh40hnIZGW
 msgctxt "UI"
 msgid "Block History"
 msgstr "История блоков"
 
-#: app/@routes/containers/Profile.js:177 app/@routes/containers/Public.js:259
+#: app/@routes/containers/Profile.js:178 app/@routes/containers/Public.js:259
 #: /checksum/2+dbOcbODn
 msgctxt "UI"
 msgid "Logout"
@@ -2889,12 +2888,12 @@ msgctxt "UI"
 msgid "Step right"
 msgstr "Передвинуть вправо"
 
-#: app/settings/widgets/AccessProfiles.js:221 /checksum/HpLQTzl7R6
+#: app/settings/widgets/AccessProfiles.js:222 /checksum/HpLQTzl7R6
 msgctxt "UI"
 msgid "Access profile successfully deleted."
 msgstr "Профиль доступа успешно удален."
 
-#: app/workers/modules/LabelsManager.js:647 /checksum/+05N+jugNn
+#: app/workers/modules/LabelsManager.js:649 /checksum/+05N+jugNn
 msgctxt "UI"
 msgid "Edit Label"
 msgstr "Редактировать метку"
@@ -2968,7 +2967,7 @@ msgstr "Рабочая среда пользователя"
 msgid "Back-end Developer"
 msgstr "Back-end разработчик"
 
-#: app/settings/widgets/AccessProfiles.js:328 /checksum/jzEUevTGmZ
+#: app/settings/widgets/AccessProfiles.js:331 /checksum/jzEUevTGmZ
 msgctxt "UI"
 msgid "Your current profile"
 msgstr "Ваш текущий профиль"
@@ -2985,7 +2984,7 @@ msgctxt "UI"
 msgid "Allow access to web APIs"
 msgstr "Разрешить доступ к веб-API"
 
-#: app/settings/widgets/AccessProfiles.js:338 /checksum/H4Ac6x57kf
+#: app/settings/widgets/AccessProfiles.js:341 /checksum/H4Ac6x57kf
 msgctxt "UI"
 msgid "Active"
 msgstr "Активный"
@@ -2995,7 +2994,7 @@ msgctxt "UI"
 msgid "Page size"
 msgstr "Размер страницы"
 
-#: app/@routes/containers/Profile.js:179 app/@routes/containers/Public.js:370
+#: app/@routes/containers/Profile.js:180 app/@routes/containers/Public.js:370
 #: /checksum/gzinhFzBsT
 msgctxt "UI"
 msgid "Notifications"
@@ -3032,13 +3031,13 @@ msgctxt "UI"
 msgid "User request successfully confirmed!"
 msgstr "Запрос пользователя успешно подтвержден!"
 
-#: app/@routes/containers/Profile.js:176 app/@routes/containers/Public.js:528
+#: app/@routes/containers/Profile.js:177 app/@routes/containers/Public.js:528
 #: components/app/Menu.js:282 /checksum/mro2RdHKsg
 msgctxt "UI"
 msgid "Menu"
 msgstr "Меню"
 
-#: app/settings/widgets/AccessProfiles.js:269 /checksum/LtmrZ2ucxC
+#: app/settings/widgets/AccessProfiles.js:268 /checksum/LtmrZ2ucxC
 msgctxt "UI"
 msgid "Web<br />Acess"
 msgstr "Веб<br /> доступ"
@@ -3064,7 +3063,7 @@ msgctxt "UI"
 msgid "Unsubscribe me"
 msgstr "Отказаться от подписки"
 
-#: app/@routes/containers/Profile.js:188 app/@routes/containers/Public.js:119
+#: app/@routes/containers/Profile.js:189 app/@routes/containers/Public.js:119
 #: /checksum/SDwH9bX1OU
 msgctxt "UI"
 msgid "Pool Statistics"
@@ -3144,12 +3143,12 @@ msgstr "Вы отменили запрос."
 msgid "CTO"
 msgstr "Технический директор (СТО)"
 
-#: app/settings/widgets/AccessProfiles.js:284 /checksum/ZmjnBnQzo4
+#: app/settings/widgets/AccessProfiles.js:283 /checksum/ZmjnBnQzo4
 msgctxt "UI"
 msgid "Status"
 msgstr "Статус"
 
-#: app/@routes/containers/Profile.js:187 /checksum/6CfUjaItSg
+#: app/@routes/containers/Profile.js:188 /checksum/6CfUjaItSg
 msgctxt "UI"
 msgid "Help"
 msgstr "Помощь"
@@ -3180,7 +3179,7 @@ msgctxt "UI"
 msgid "World's First<br />Bitcoin Mining Pool"
 msgstr "Первый в мире<br /> майнинг пул Биткоина"
 
-#: app/workers/modules/LabelsManager.js:370 /checksum/G2jpwB6qtQ
+#: app/workers/modules/LabelsManager.js:372 /checksum/G2jpwB6qtQ
 msgctxt "UI"
 msgid "Color"
 msgstr "Цвет"
@@ -3202,7 +3201,7 @@ msgctxt "UI"
 msgid "Please complete the multi-factor authentication."
 msgstr "Пожалуйста, завершите мульти-факторную аутентификацию."
 
-#: lib/helpOverlay/OverlayProvider.js:575 /checksum/4xTSn364up
+#: lib/helpOverlay/OverlayProvider.js:580 /checksum/4xTSn364up
 msgctxt "UI"
 msgid "Try these keyboard shortcuts"
 msgstr "Попробуйте эти сочетания клавиш"
@@ -3225,7 +3224,7 @@ msgstr ""
 "Для получения дополнительной информации, пожалуйста, свяжитесь с нашей "
 "службой технической поддержки."
 
-#: app/settings/constants/renderTreeTemplates.js:848 /checksum/Skha2MWFTU
+#: app/settings/constants/renderTreeTemplates.js:857 /checksum/Skha2MWFTU
 msgctxt "UI"
 msgid "Logout all sessions!"
 msgstr "Выйти из всех сессий!"
@@ -3254,12 +3253,12 @@ msgctxt "UI"
 msgid "Invalid read-only access token"
 msgstr "Неверный токен доступа только для чтения"
 
-#: app/root/containers/RootApp.js:146 /checksum/BsH2S2J4Af
+#: app/root/containers/RootApp.js:151 /checksum/BsH2S2J4Af
 msgctxt "UI"
 msgid "Homepage"
 msgstr "Домашняя страница"
 
-#: app/settings/widgets/AccessProfiles.js:279 /checksum/FPVHp+CKLt
+#: app/settings/widgets/AccessProfiles.js:278 /checksum/FPVHp+CKLt
 msgctxt "UI"
 msgid "Access<br />Permissions"
 msgstr "Разрешения<br />на доступ"
@@ -3288,7 +3287,7 @@ msgstr ""
 "Расширенный\n"
 "мониторинг"
 
-#: app/settings/constants/renderTreeTemplates.js:1068 /checksum/5yt4Fq7aEi
+#: app/settings/constants/renderTreeTemplates.js:1077 /checksum/5yt4Fq7aEi
 msgctxt "UI"
 msgid ""
 "Used to display amounts of money. Last known exchange rate is used when fiat"
@@ -3303,7 +3302,7 @@ msgctxt "UI"
 msgid "You don't have sufficient permissions to create a new access profile"
 msgstr "У вас недостаточно прав для создания нового профиля доступа"
 
-#: app/settings/constants/renderTreeTemplates.js:843 /checksum/BDDEBJKqHb
+#: app/settings/constants/renderTreeTemplates.js:852 /checksum/BDDEBJKqHb
 msgctxt "UI"
 msgid "Active User Sessions"
 msgstr "Активные сессии пользователя"
@@ -3324,7 +3323,7 @@ msgctxt "UI"
 msgid "Loading the U2F challenge"
 msgstr "Загрузка задачи U2F"
 
-#: app/settings/widgets/AccessProfiles.js:264 /checksum/cjxIvu+eYi
+#: app/settings/widgets/AccessProfiles.js:263 /checksum/cjxIvu+eYi
 msgctxt "UI"
 msgid "Web Access<br />Username"
 msgstr "Веб-доступ<br />Имя пользователя"
@@ -3382,7 +3381,7 @@ msgctxt "UI"
 msgid "Mailing unsubscription error"
 msgstr "Ошибка отмены подписки"
 
-#: app/settings/constants/renderTreeTemplates.js:709 /checksum/N64JkHPnph
+#: app/settings/constants/renderTreeTemplates.js:718 /checksum/N64JkHPnph
 msgctxt "UI"
 msgid "One-time password (OTP)"
 msgstr "Одноразовый пароль (OTP)"
@@ -3425,13 +3424,13 @@ msgid "Go to homepage"
 msgstr "Перейти на домашнюю страницу"
 
 #: app/settings/widgets/AccessProfiles.js:308
-#: app/settings/widgets/AccessProfiles.js:441 /checksum/ldGITP5CRa
+#: app/settings/widgets/AccessProfiles.js:432 /checksum/ldGITP5CRa
 msgctxt "UI"
 msgid "Master Account"
 msgstr "Основная учетная запись"
 
 #: app/@routes/containers/Public.js:140 app/@routes/containers/Public.js:141
-#: app/root/containers/RootApp.js:147 app/news/containers/NewsFeed.js:64
+#: app/root/containers/RootApp.js:152 app/news/containers/NewsFeed.js:64
 #: /checksum/j7ByXO/93G
 msgctxt "UI"
 msgid "News"
@@ -3447,7 +3446,7 @@ msgctxt "UI"
 msgid "Used {count, plural, =1 {once} other {# times}}"
 msgstr "Использовано {count, plural, =1 {один раз} other {# раз}}"
 
-#: app/settings/constants/renderTreeTemplates.js:1067 /checksum/UoKfS2IPKu
+#: app/settings/constants/renderTreeTemplates.js:1076 /checksum/UoKfS2IPKu
 msgctxt "UI"
 msgid "Currency"
 msgstr "Валюта"
@@ -3466,7 +3465,7 @@ msgctxt "UI"
 msgid "Useful links"
 msgstr "Полезные ссылки"
 
-#: app/settings/constants/renderTreeTemplates.js:849 /checksum/Qb3GIXmmfZ
+#: app/settings/constants/renderTreeTemplates.js:858 /checksum/Qb3GIXmmfZ
 msgctxt "UI"
 msgid ""
 "Logout all your active sessions - including the one you are using right now."
@@ -3489,11 +3488,6 @@ msgstr "Хешрейт"
 msgctxt "UI"
 msgid "Toggle vertical range"
 msgstr "Переключить вертикальный диапазон"
-
-#: app/settings/constants/renderTreeTemplates.js:286 /checksum/WjE98mgL9y
-msgctxt "UI"
-msgid "Payout adress"
-msgstr "Адрес для выплат"
 
 #: app/aboutPool/containers/Team.js:73 /checksum/MR/NU1bs/k
 msgid "Infrastructure Admin"
@@ -3546,12 +3540,12 @@ msgstr ""
 "Если вы забыли свой пароль, введите свой адрес электронной почты ниже, и мы "
 "вышлем вам инструкции по созданию нового."
 
-#: app/@routes/containers/Profile.js:502 /checksum/6bWpUta7nD
+#: app/@routes/containers/Profile.js:503 /checksum/6bWpUta7nD
 msgctxt "UI"
 msgid "Close menu"
 msgstr "Закрыть меню"
 
-#: app/settings/constants/renderTreeTemplates.js:337 /checksum/9gfbW56cdK
+#: app/settings/constants/renderTreeTemplates.js:346 /checksum/9gfbW56cdK
 msgctxt "UI"
 msgid "You don't have a payout address yet!"
 msgstr "У вас еще нет адреса для выплат!"
@@ -3561,7 +3555,7 @@ msgctxt "UI"
 msgid "Start Mining<br />with Slush Pool"
 msgstr "Начать майнинг<br /> с Slush Pool"
 
-#: app/workers/modules/LabelsManager.js:646 /checksum/SixVcb8OeN
+#: app/workers/modules/LabelsManager.js:648 /checksum/SixVcb8OeN
 msgctxt "UI"
 msgid "New Label"
 msgstr "Новая метка"
@@ -3571,12 +3565,12 @@ msgctxt "UI"
 msgid "Alert limit"
 msgstr "Предел оповещений"
 
-#: app/settings/widgets/AccessProfiles.js:274 /checksum/TS6wAn5cj5
+#: app/settings/widgets/AccessProfiles.js:273 /checksum/TS6wAn5cj5
 msgctxt "UI"
 msgid "API<br />Access"
 msgstr "API<br />Доступ"
 
-#: app/settings/constants/renderTreeTemplates.js:539 /checksum/EsV47hOtGl
+#: app/settings/constants/renderTreeTemplates.js:548 /checksum/EsV47hOtGl
 msgctxt "UI"
 msgid "E-mail"
 msgstr "Электронная почта"
@@ -3604,14 +3598,14 @@ msgctxt "UI"
 msgid "Active workers."
 msgstr "Активные воркеры."
 
-#: app/settings/constants/renderTreeTemplates.js:1048 /checksum/1gOVTI2sdS
+#: app/settings/constants/renderTreeTemplates.js:1057 /checksum/1gOVTI2sdS
 msgctxt "UI"
 msgid "Interface"
 msgstr "Интерфейс"
 
 #: app/@routes/containers/Public.js:118 app/blocks/containers/Blocks.js:80
-#: app/stats/containers/Stats.js:112
-#: app/hashrateProof/containers/HashrateProof.js:82 /checksum/nPQS61o4dw
+#: app/hashrateProof/containers/HashrateProof.js:82
+#: app/stats/containers/Stats.js:112 /checksum/nPQS61o4dw
 msgctxt "UI"
 msgid "Stats"
 msgstr "Статистики"
@@ -3625,7 +3619,7 @@ msgstr ""
 "подключением)."
 
 #: app/@routes/authViews/PasswordResetConfirm.js:176
-#: app/settings/constants/renderTreeTemplates.js:676 /checksum/To7/XIWCEG
+#: app/settings/constants/renderTreeTemplates.js:685 /checksum/To7/XIWCEG
 msgctxt "UI"
 msgid "New password"
 msgstr "Новый пароль"
@@ -3657,7 +3651,7 @@ msgctxt "UI"
 msgid "You have only one coin enabled."
 msgstr "У вас включена только одна криптомонета."
 
-#: app/@routes/containers/Profile.js:173 /checksum/nX1j5/izFA
+#: app/@routes/containers/Profile.js:174 /checksum/nX1j5/izFA
 msgctxt "UI"
 msgid "Exit Workspace"
 msgstr "Выйти из рабочего пространства"
@@ -3710,13 +3704,13 @@ msgctxt "UI"
 msgid "You have to generate an access token!"
 msgstr "Вы должны сгенерировать токен доступа!"
 
-#: app/@routes/containers/Profile.js:184 app/root/containers/RootApp.js:137
+#: app/@routes/containers/Profile.js:185 app/root/containers/RootApp.js:142
 #: app/rewards/containers/Rewards.js:95 /checksum/fAyIxIVVJY
 msgctxt "UI"
 msgid "Rewards"
 msgstr "Вознограждения"
 
-#: app/settings/widgets/AccessProfiles.js:159 /checksum/NhMqg8MYMA
+#: app/settings/widgets/AccessProfiles.js:160 /checksum/NhMqg8MYMA
 msgctxt "UI"
 msgid "Caught in an infinite loop!"
 msgstr "Система работает в бесконечном цикле!"
@@ -3736,7 +3730,7 @@ msgctxt "UI"
 msgid "Failed to fetch response from server"
 msgstr "Не удалось получить ответ от сервера"
 
-#: app/root/containers/RootApp.js:131 /checksum/HuTelkSJcA
+#: app/root/containers/RootApp.js:136 /checksum/HuTelkSJcA
 msgctxt "UI"
 msgid "User pages"
 msgstr "Пользовательские страницы"
@@ -3748,8 +3742,8 @@ msgctxt "UI"
 msgid "Resend confirmation"
 msgstr "Отправить подтверждение ещё раз"
 
-#: app/@routes/containers/Profile.js:178 app/@routes/authViews/AuthError.js:46
-#: app/@routes/containers/Public.js:664
+#: app/@routes/containers/Profile.js:179 app/@routes/containers/Public.js:664
+#: app/@routes/authViews/AuthError.js:46
 #: app/root/components/DialogAuthIndex.js:87
 #: app/root/components/DialogAuthIndex.js:96
 #: app/root/components/DialogLogin.js:235
@@ -3801,7 +3795,7 @@ msgctxt "UI"
 msgid "Touch Version"
 msgstr "Сенсорная версия"
 
-#: app/settings/constants/renderTreeTemplates.js:577 /checksum/eFR6mB/gbq
+#: app/settings/constants/renderTreeTemplates.js:586 /checksum/eFR6mB/gbq
 msgctxt "UI"
 msgid "Please make sure that this account is the one that you want to delete."
 msgstr ""
@@ -3839,7 +3833,7 @@ msgctxt "UI"
 msgid "Welcome, {username}!"
 msgstr "Добро пожаловать, {username}!"
 
-#: app/payouts/containers/Payouts.js:301 /checksum/zjZIybspsX
+#: app/payouts/containers/Payouts.js:302 /checksum/zjZIybspsX
 msgctxt "UI"
 msgid "Total"
 msgstr "Всего"
@@ -3848,7 +3842,7 @@ msgstr "Всего"
 msgid "Marketing, Customer Support"
 msgstr "Маркетинг, Поддержка клиентов"
 
-#: app/@routes/containers/Profile.js:174 /checksum/GX79qRQIAU
+#: app/@routes/containers/Profile.js:175 /checksum/GX79qRQIAU
 msgctxt "UI"
 msgid "Search"
 msgstr "Поиск"
@@ -3875,7 +3869,7 @@ msgstr ""
 "аутентификации (2FA) и подтвердите свой пароль"
 
 #. sign a message by wallet (confirmation button)
-#: app/settings/constants/renderTreeTemplates.js:814 /checksum/mj+AkU0mgt
+#: app/settings/constants/renderTreeTemplates.js:823 /checksum/mj+AkU0mgt
 msgctxt "UI"
 msgid "Sign"
 msgstr ""
@@ -3888,7 +3882,7 @@ msgstr ""
 #: app/hashrateProof/containers/HashrateProof.js:280
 #: app/@factories/createPagedChart.js:516
 #: app/stats/containers/ServersHashrateChart.js:95
-#: lib/charts/buckets_chart/BucketsChart.js:78 /checksum/wyjqhycvMv
+#: lib/charts/buckets_chart/BucketsChart.js:77 /checksum/wyjqhycvMv
 msgctxt "UI"
 msgid "This chart cannot fit in available area!"
 msgstr "Этот диаграмма не может поместиться в доступной области!"
@@ -3958,17 +3952,17 @@ msgstr ""
 "Если вы все еще не получили подтверждение, попробуйте сбросить пароль еще "
 "раз."
 
-#: app/workers/modules/LabelsManager.js:787 /checksum/Ucvr44fuZX
+#: app/workers/modules/LabelsManager.js:789 /checksum/Ucvr44fuZX
 msgctxt "UI"
 msgid "You do not have any labels yet…"
 msgstr "У вас еще нет меток…"
 
-#: app/settings/widgets/AccessProfiles.js:227 /checksum/BMX2TGnhGh
+#: app/settings/widgets/AccessProfiles.js:228 /checksum/BMX2TGnhGh
 msgctxt "UI"
 msgid "Could not submit form request!"
 msgstr "Не удалось отправить форму запроса!"
 
-#: app/settings/widgets/AccessProfiles.js:378 /checksum/PkbsEEupmi
+#: app/settings/widgets/AccessProfiles.js:371 /checksum/PkbsEEupmi
 msgctxt "UI"
 msgid "Changes were successfully saved."
 msgstr "Изменения были успешно сохранены."
@@ -3978,7 +3972,7 @@ msgctxt "UI"
 msgid "Optional feedback"
 msgstr "Факультативный отзыв"
 
-#: app/settings/constants/renderTreeTemplates.js:580
+#: app/settings/constants/renderTreeTemplates.js:589
 #: app/root/components/DialogSignUp.js:286
 #: app/root/components/DialogLogin.js:197 /checksum/UMApAywi/y
 msgctxt "UI"
@@ -4015,7 +4009,7 @@ msgctxt "UI"
 msgid "Invalid server response"
 msgstr "Ошибка сервера"
 
-#: app/@routes/containers/Profile.js:417 /checksum/hjYMzNBPLv
+#: app/@routes/containers/Profile.js:418 /checksum/hjYMzNBPLv
 msgctxt "UI"
 msgid "Support Login"
 msgstr "Вход для поддержки"
@@ -4032,7 +4026,7 @@ msgctxt "UI"
 msgid "Help Center"
 msgstr "Справочный центр"
 
-#: app/root/containers/RootApp.js:138 /checksum/Qd31jlGLVm
+#: app/root/containers/RootApp.js:143 /checksum/Qd31jlGLVm
 msgctxt "UI"
 msgid "Activity log"
 msgstr "Журнал активности"
@@ -4042,7 +4036,7 @@ msgctxt "UI"
 msgid "Show More"
 msgstr "Показать больше"
 
-#: app/settings/widgets/Devices.js:292 /checksum//fR22+0OVS
+#: app/settings/widgets/Devices.js:294 /checksum//fR22+0OVS
 msgctxt "UI"
 msgid "Token value for manual entry"
 msgstr "Значение токена для ручного ввода"
@@ -4052,12 +4046,12 @@ msgctxt "UI"
 msgid "Looks like you got lost."
 msgstr "Похоже, что вы заблудились."
 
-#: app/settings/widgets/AccessProfiles.js:338 /checksum/t9hlgntEx5
+#: app/settings/widgets/AccessProfiles.js:341 /checksum/t9hlgntEx5
 msgctxt "UI"
 msgid "Suspended"
 msgstr "Приостановлено"
 
-#: app/@routes/containers/Profile.js:647
+#: app/@routes/containers/Profile.js:648
 #: app/settings/containers/SettingsApp.js:252 /checksum/CASLR5kGO7
 msgctxt "UI"
 msgid "You have to login to view this page!"
@@ -4073,7 +4067,7 @@ msgctxt "UI"
 msgid "Contact"
 msgstr "Контакт"
 
-#: app/root/containers/RootApp.js:151 /checksum/4oAi55is6c
+#: app/root/containers/RootApp.js:156 /checksum/4oAi55is6c
 msgctxt "UI"
 msgid "Global"
 msgstr ""
@@ -4084,7 +4078,7 @@ msgid "Please select account you want to unsubscribe from."
 msgstr ""
 "Пожалуйста, выберите учетную запись, где хотите отказаться от подписки."
 
-#: app/settings/constants/renderTreeTemplates.js:850 /checksum/Nb7wmZgVI5
+#: app/settings/constants/renderTreeTemplates.js:859 /checksum/Nb7wmZgVI5
 msgctxt "UI"
 msgid ""
 "You will be logged-out from this session as well.\n"
@@ -4102,7 +4096,7 @@ msgstr ""
 "Если вы не получили письмо, убедитесь, что вы ввели адрес, который вы "
 "использовали при регистрации, и проверьте папку со спамом."
 
-#: app/settings/widgets/AccessProfiles.js:259 /checksum//g91BPk/jx
+#: app/settings/widgets/AccessProfiles.js:258 /checksum//g91BPk/jx
 msgctxt "UI"
 msgid "Profile<br />Name"
 msgstr "Профиль<br />Имя"
@@ -4163,7 +4157,7 @@ msgctxt "UI"
 msgid "Right axis"
 msgstr "Правая ось"
 
-#: app/root/containers/RootApp.js:156 /checksum/7jNPQdNG0c
+#: app/root/containers/RootApp.js:161 /checksum/7jNPQdNG0c
 msgctxt "UI"
 msgid "Shortcuts help screen"
 msgstr "Экран справки по ярлыкам"
@@ -4178,23 +4172,23 @@ msgctxt "UI"
 msgid "Newsletter unsubscription"
 msgstr "Отписаться от рассылки"
 
-#: app/@routes/containers/Profile.js:695 /checksum/n2cy45yS/b
+#: app/@routes/containers/Profile.js:696 /checksum/n2cy45yS/b
 msgctxt "UI"
 msgid "You are looking at a Demo Account"
 msgstr "Вы смотрите на демо-версию учетной записи"
 
-#: app/@routes/containers/Profile.js:615 app/homepage/components/Hero.js:245
+#: app/@routes/containers/Profile.js:616 app/homepage/components/Hero.js:245
 #: /checksum/F7Tr8OSv+r
 msgctxt "UI"
 msgid "Join Slush Pool"
 msgstr "Присоединиться к Slush Pool"
 
-#: app/@routes/containers/Profile.js:191 /checksum/kBQhlHy4EW
+#: app/@routes/containers/Profile.js:192 /checksum/kBQhlHy4EW
 msgctxt "UI"
 msgid "Hashrate Proof"
 msgstr "Докозательство хешрейта"
 
-#: app/root/containers/RootApp.js:143 /checksum/b7KadKL9u1
+#: app/root/containers/RootApp.js:148 /checksum/b7KadKL9u1
 msgctxt "UI"
 msgid "Public pages"
 msgstr "Публичные страницы"
@@ -4224,12 +4218,12 @@ msgctxt "UI"
 msgid "Spread the word"
 msgstr "Расскажите о нас"
 
-#: app/workers/modules/WorkersManager.js:396 /checksum/5fkDM3MhQd
+#: app/workers/modules/WorkersManager.js:400 /checksum/5fkDM3MhQd
 msgctxt "UI"
 msgid "Delete Worker"
 msgstr "Удалить воркер"
 
-#: app/root/containers/RootApp.js:145 /checksum/VDpVzrac5j
+#: app/root/containers/RootApp.js:150 /checksum/VDpVzrac5j
 msgctxt "UI"
 msgid "Statistics"
 msgstr "Статистики"
@@ -4266,7 +4260,7 @@ msgctxt "UI"
 msgid "Enter token"
 msgstr "Введите токен"
 
-#: app/workers/modules/LabelsManager.js:243 /checksum/HIkVEU0us9
+#: app/workers/modules/LabelsManager.js:245 /checksum/HIkVEU0us9
 msgctxt "UI"
 msgid ""
 "You have unconfirmed changes that will be discarded.\n"
@@ -4315,7 +4309,7 @@ msgstr ""
 "Получите мгновенный доступ к безопасной среде обучения без необходимости "
 "подключения оборудования для майнинга."
 
-#: app/payouts/containers/Payouts.js:136 /checksum/XMHQCFf87+
+#: app/payouts/containers/Payouts.js:137 /checksum/XMHQCFf87+
 msgctxt "Intro"
 msgid "State"
 msgstr "Статус"
@@ -4479,7 +4473,7 @@ msgctxt "Intro"
 msgid "Pool Luck"
 msgstr "Удача пула"
 
-#: app/settings/constants/renderTreeTemplates.js:43 /checksum/2krL0nZ2Dg
+#: app/settings/constants/renderTreeTemplates.js:52 /checksum/2krL0nZ2Dg
 msgctxt "UI"
 msgid ""
 "The pool automatically assigns jobs with an optimal difficulty to your "
@@ -4499,12 +4493,12 @@ msgstr ""
 "В январе 2009 года первый блок Биткоина (genesis block) был добыт Сатоши "
 "Накамото. В декабре 2010 года мы добыли наш первый блок."
 
-#: app/settings/constants/renderTreeTemplates.js:1015 /checksum/hh7wgESs7/
+#: app/settings/constants/renderTreeTemplates.js:1024 /checksum/hh7wgESs7/
 msgctxt "UI"
 msgid "Monitoring manual in the Help Center"
 msgstr "Руководство по мониторингу в Справочном центре"
 
-#: app/settings/constants/renderTreeTemplates.js:573 /checksum/5ZW7LXOzVN
+#: app/settings/constants/renderTreeTemplates.js:582 /checksum/5ZW7LXOzVN
 msgctxt "UI"
 msgid ""
 "Leftover <strong>coin balances will be lost</strong>, so please setup your "
@@ -4515,7 +4509,7 @@ msgstr ""
 "пожалуйста, установите порог выплат на минимальное доступное значение и "
 "дождитесь следующей выплаты, прежде чем подтвердить удаление аккаунта."
 
-#: app/settings/constants/renderTreeTemplates.js:665 /checksum/VpWfijf3+q
+#: app/settings/constants/renderTreeTemplates.js:674 /checksum/VpWfijf3+q
 msgctxt "UI"
 msgid "Current password"
 msgstr "Текущий пароль"
@@ -4534,12 +4528,12 @@ msgctxt "UI"
 msgid "Go to demo account"
 msgstr "Перейти на демо-версию учетной записи"
 
-#: app/activity/containers/Activity.js:112 /checksum/l/HTY+e6I3
+#: app/activity/containers/Activity.js:113 /checksum/l/HTY+e6I3
 msgctxt "UI"
 msgid "IP address."
 msgstr "IP адрес."
 
-#: app/activity/containers/Activity.js:126 /checksum/McWIipU+bf
+#: app/activity/containers/Activity.js:127 /checksum/McWIipU+bf
 msgctxt "UI"
 msgid "Activity."
 msgstr "Активность."
@@ -4580,7 +4574,7 @@ msgctxt "Intro"
 msgid "Confirmations Left"
 msgstr "Оставшиеся подтверждения"
 
-#: app/settings/constants/renderTreeTemplates.js:928 /checksum/6oZMw4CrcB
+#: app/settings/constants/renderTreeTemplates.js:937 /checksum/6oZMw4CrcB
 msgctxt "UI"
 msgid ""
 "This <strong>interface-only setting</strong> does not affect your ability to"
@@ -4595,7 +4589,7 @@ msgctxt "Intro"
 msgid "CDF"
 msgstr "CDF"
 
-#: app/settings/widgets/Devices.js:156 /checksum/JLjxpIcow3
+#: app/settings/widgets/Devices.js:158 /checksum/JLjxpIcow3
 msgctxt "UI"
 msgid "Enter device label for later identification / invalidation."
 msgstr ""
@@ -4653,7 +4647,7 @@ msgid "Reporting issues 24/7 to help you protect your investment."
 msgstr ""
 "Уведомление о проблемах 24/7, чтобы помочь вам защитить ваши инвестиции."
 
-#: app/settings/widgets/Devices.js:157 /checksum/gBx5LhUUgA
+#: app/settings/widgets/Devices.js:159 /checksum/gBx5LhUUgA
 msgctxt "UI"
 msgid "Click \"Connect\" and scan generated QR code on your device."
 msgstr ""
@@ -4691,7 +4685,7 @@ msgstr ""
 "Ваше вознаграждение = (Ваша оценненный хешрейт / Оцененный хешрейт пула) * "
 "([Ценность блока - Вознаграждение для разработчиков монеты] * 0,98))"
 
-#: app/settings/constants/renderTreeTemplates.js:687 /checksum/UuJnKl/GIn
+#: app/settings/constants/renderTreeTemplates.js:696 /checksum/UuJnKl/GIn
 msgctxt "UI"
 msgid "Confirm new password"
 msgstr "Подтвердите новый пароль"
@@ -4708,18 +4702,18 @@ msgstr ""
 "Специальные услуги и дополнительное внимание доступны для крупномасштабнного"
 " майнинга."
 
-#: app/settings/constants/renderTreeTemplates.js:592 /checksum/Sxfp7xmu9P
+#: app/settings/constants/renderTreeTemplates.js:601 /checksum/Sxfp7xmu9P
 msgctxt "UI"
 msgid "You will receive a confirmation email"
 msgstr "Вы получите подтверждение по электронной почте"
 
-#: app/@routes/containers/Profile.js:401 app/@routes/containers/Profile.js:529
+#: app/@routes/containers/Profile.js:402 app/@routes/containers/Profile.js:530
 #: /checksum/9oFKGvh+oX
 msgctxt "UI"
 msgid "Leave workspace"
 msgstr "Покинуть рабочее пространство"
 
-#: app/payouts/containers/Payouts.js:169 /checksum/g07eohMCc5
+#: app/payouts/containers/Payouts.js:170 /checksum/g07eohMCc5
 msgctxt "Intro"
 msgid "Fee"
 msgstr "Сбор"
@@ -4768,7 +4762,7 @@ msgstr ""
 "основании вашего недавнего хешрейта и текущей сложности. В зависимости от "
 "удачи, их значения могут колебаться."
 
-#: app/settings/constants/renderTreeTemplates.js:726 /checksum/0WUvCVc8hJ
+#: app/settings/constants/renderTreeTemplates.js:735 /checksum/0WUvCVc8hJ
 msgctxt "UI"
 msgid "Install Google Authenticator on your smartphone."
 msgstr "Установите Google Authenticator на свой смартфон."
@@ -4807,13 +4801,13 @@ msgctxt "Intro"
 msgid "Last 14 days of rewards"
 msgstr "Вознаграждения за последних 14 дней"
 
-#: app/activity/containers/Activity.js:139 /checksum/+YieuGwHn8
+#: app/activity/containers/Activity.js:140 /checksum/+YieuGwHn8
 msgctxt "UI"
 msgid "Details."
 msgstr "Подробности."
 
-#: app/settings/constants/renderTreeTemplates.js:232
-#: app/settings/constants/renderTreeTemplates.js:240 /checksum/AUnyww2gRC
+#: app/settings/constants/renderTreeTemplates.js:241
+#: app/settings/constants/renderTreeTemplates.js:249 /checksum/AUnyww2gRC
 msgctxt "UI"
 msgid ""
 "If you loose your wallet and the payout address is locked, there is no way "
@@ -4822,7 +4816,7 @@ msgstr ""
 "Если вы потеряете свой кошелек, а адрес для выплат будет заблокирован, вы "
 "уже не сможете его изменить."
 
-#: app/payouts/containers/Payouts.js:149 /checksum/vC0IxCLdRj
+#: app/payouts/containers/Payouts.js:150 /checksum/vC0IxCLdRj
 msgctxt "Intro"
 msgid "Address"
 msgstr "Адрес"
@@ -4836,7 +4830,7 @@ msgstr ""
 "Решения для\n"
 "VIP клиентов"
 
-#: app/settings/constants/renderTreeTemplates.js:506 /checksum//R68kn/yWZ
+#: app/settings/constants/renderTreeTemplates.js:515 /checksum//R68kn/yWZ
 msgctxt "UI"
 msgid ""
 "To change your email address, enter a new address below and confirm the "
@@ -4860,7 +4854,7 @@ msgstr ""
 "<p>Именно это является главной задачей нашей системы мониторинга. Каждый из ваших воркеров постоянно контролируется как отдельная единица, и <strong>каждая проблема записывается</strong>. Если вы нам позволите, мы с радостью будем отправлять вам уведомления об этих событиях по электронной почте или с помощью нашего мобильного приложения, чтобы вы смогли предпринять необходимые действия.</p>\n"
 "<p>Мы знаем, что не существует подхода, единого для всех, поэтому мы разрешаем майнерам настраивать мониторинг <strong>в соответствии с их потребностями</strong>. Вы хотите контролировать только определенное количество воркеров? Нет проблем. Естли вы считаете, что настройки мониторинга по умолчанию слишком (не)чувствительны? Вы можете настроить порог оповещений в соответствии с вашими нуждами</p>.\n"
 
-#: app/settings/constants/renderTreeTemplates.js:37 /checksum/6Fat183lQp
+#: app/settings/constants/renderTreeTemplates.js:46 /checksum/6Fat183lQp
 msgctxt "UI"
 msgid ""
 "When your balance crosses the threshold value, the pool sends the confirmed "
@@ -4869,7 +4863,7 @@ msgstr ""
 "Когда ваш баланс пересечет пороговое значение, пул отправит подтвержденное "
 "вознаграждение на ваш адрес для выплат"
 
-#: app/settings/constants/renderTreeTemplates.js:443 /checksum/zP570lLOw0
+#: app/settings/constants/renderTreeTemplates.js:452 /checksum/zP570lLOw0
 msgctxt "UI"
 msgid "Send email notification when the system sends me a payment"
 msgstr ""
@@ -4898,7 +4892,7 @@ msgstr ""
 "подробного анализа. Как только блок будет подтвержден, соответствующее "
 "вознаграждение также перейдет в секцию подтвержденных."
 
-#: app/settings/constants/renderTreeTemplates.js:453 /checksum/MT+50KG2Bz
+#: app/settings/constants/renderTreeTemplates.js:462 /checksum/MT+50KG2Bz
 msgctxt "UI"
 msgid "Receive our newsletter"
 msgstr "Получать нашу рассылку"
@@ -4908,7 +4902,7 @@ msgctxt "UI"
 msgid "Time elapsed since the previous block has been found by the pool."
 msgstr "Время, прошедшее с того момента, как пул обнаружил предыдущий блок."
 
-#: app/settings/constants/renderTreeTemplates.js:927 /checksum/NEvvdp0rym
+#: app/settings/constants/renderTreeTemplates.js:936 /checksum/NEvvdp0rym
 msgctxt "UI"
 msgid ""
 "Here you can choose which coins will be available for selection <strong>on "
@@ -4950,7 +4944,7 @@ msgstr ""
 "Ваш аккаунт и ваши с трудом заработанные криптомонеты защищены несколькими "
 "мерами предосторожности на нескольких разных уровнях."
 
-#: app/settings/constants/renderTreeTemplates.js:1017 /checksum/BhHzKndzo3
+#: app/settings/constants/renderTreeTemplates.js:1026 /checksum/BhHzKndzo3
 msgctxt "UI"
 msgid "Configure and manage your workers here"
 msgstr "Настройте и управляйте своими воркерами здесь"
@@ -4999,7 +4993,7 @@ msgctxt "UI"
 msgid "Don't Trust. Verify"
 msgstr "Не доверяйте - проверяйте"
 
-#: app/settings/constants/renderTreeTemplates.js:406 /checksum/DFc/pAJiFP
+#: app/settings/constants/renderTreeTemplates.js:415 /checksum/DFc/pAJiFP
 msgctxt "UI"
 msgid "Your preferred language for web and email communication"
 msgstr "Язык для веб итерфейса и комуникации по электронной почте"
@@ -5011,7 +5005,7 @@ msgstr ""
 "См. страницу руководства пользователя для получения дополнительной "
 "информации и объяснения основ."
 
-#: app/settings/constants/renderTreeTemplates.js:1146
+#: app/settings/constants/renderTreeTemplates.js:1155
 #: app/stats/containers/VotingResults.js:233 /checksum/cDN2mkIw92
 msgctxt "UI"
 msgid "Bitcoin blockchain voting results"
@@ -5082,12 +5076,12 @@ msgctxt "UI"
 msgid "Dozens of redundant servers around the world with 99.9% uptime."
 msgstr "Десятки резервных серверов по всему миру с достуностью 99,9%."
 
-#: app/settings/constants/renderTreeTemplates.js:44 /checksum/Lm3rSXBG9m
+#: app/settings/constants/renderTreeTemplates.js:53 /checksum/Lm3rSXBG9m
 msgctxt "UI"
 msgid "How VarDiff works?"
 msgstr "Как работает VarDiff?"
 
-#: app/settings/widgets/AccessProfiles.js:451 /checksum/hLDfnjcBSP
+#: app/settings/widgets/AccessProfiles.js:442 /checksum/hLDfnjcBSP
 msgctxt "UI"
 msgid "Read-only"
 msgstr "Только для чтения"
@@ -5097,7 +5091,7 @@ msgctxt "UI"
 msgid "Change After"
 msgstr ""
 
-#: app/settings/widgets/AccessProfiles.js:467 /checksum/XChlRXL7km
+#: app/settings/widgets/AccessProfiles.js:458 /checksum/XChlRXL7km
 msgctxt "UI"
 msgid "see payouts"
 msgstr ""
@@ -5107,17 +5101,17 @@ msgctxt "UI"
 msgid "Number of times this message has been shown"
 msgstr ""
 
-#: app/settings/widgets/AccessProfiles.js:466 /checksum/LgFQS3COi9
+#: app/settings/widgets/AccessProfiles.js:457 /checksum/LgFQS3COi9
 msgctxt "UI"
 msgid "see setting"
 msgstr ""
 
-#: app/@routes/containers/Profile.js:471 /checksum/BhpaOkrkLg
+#: app/@routes/containers/Profile.js:472 /checksum/BhpaOkrkLg
 msgctxt "UI"
 msgid "Server Time"
 msgstr ""
 
-#: app/settings/widgets/AccessProfiles.js:492 /checksum/6eOWdYBDbS
+#: app/settings/widgets/AccessProfiles.js:482 /checksum/6eOWdYBDbS
 msgctxt "UI"
 msgid ""
 "You can set up multiple access profiles with different passwords (or API "
@@ -5132,7 +5126,7 @@ msgctxt "UI"
 msgid "Exchange rate not available…"
 msgstr ""
 
-#: app/settings/widgets/AccessProfiles.js:456 /checksum/VDxfed7xYb
+#: app/settings/widgets/AccessProfiles.js:447 /checksum/VDxfed7xYb
 msgctxt "UI"
 msgid "Limited read-only"
 msgstr ""
@@ -5145,12 +5139,12 @@ msgid ""
 "values to fluctuate due to luck."
 msgstr ""
 
-#: app/settings/widgets/AccessProfiles.js:446 /checksum/Wrhr/hn6vR
+#: app/settings/widgets/AccessProfiles.js:437 /checksum/Wrhr/hn6vR
 msgctxt "UI"
 msgid "Full"
 msgstr ""
 
-#: app/@routes/containers/Profile.js:472 /checksum/m7J81w41fn
+#: app/@routes/containers/Profile.js:473 /checksum/m7J81w41fn
 msgctxt "UI"
 msgid "Pool Hashrate"
 msgstr ""
@@ -5160,37 +5154,37 @@ msgctxt "UI"
 msgid "Too large"
 msgstr ""
 
-#: app/settings/widgets/AccessProfiles.js:463 /checksum/bTvoo9Inzr
+#: app/settings/widgets/AccessProfiles.js:454 /checksum/bTvoo9Inzr
 msgctxt "UI"
 msgid "manage access profiles"
 msgstr ""
 
-#: app/settings/widgets/AccessProfiles.js:465 /checksum/gX7xgSvAs5
+#: app/settings/widgets/AccessProfiles.js:456 /checksum/gX7xgSvAs5
 msgctxt "UI"
 msgid "manage workers"
 msgstr ""
 
-#: app/settings/widgets/AccessProfiles.js:468 /checksum/Rb0P1UXkJW
+#: app/settings/widgets/AccessProfiles.js:459 /checksum/Rb0P1UXkJW
 msgctxt "UI"
 msgid "see activity log"
 msgstr ""
 
-#: app/@routes/containers/Profile.js:470 /checksum/iMLBWqX/Tc
+#: app/@routes/containers/Profile.js:471 /checksum/iMLBWqX/Tc
 msgctxt "UI"
 msgid "Selected Coin"
 msgstr ""
 
-#: app/settings/widgets/AccessProfiles.js:464 /checksum/cNjwxiYevd
+#: app/settings/widgets/AccessProfiles.js:455 /checksum/cNjwxiYevd
 msgctxt "UI"
 msgid "modify settings"
 msgstr ""
 
-#: app/settings/widgets/AccessProfiles.js:470 /checksum/Rg0PuZye/b
+#: app/settings/widgets/AccessProfiles.js:461 /checksum/Rg0PuZye/b
 msgctxt "UI"
 msgid "see performance data"
 msgstr ""
 
-#: app/@routes/containers/Profile.js:473 /checksum/3zo+ULqYr3
+#: app/@routes/containers/Profile.js:474 /checksum/3zo+ULqYr3
 msgctxt "UI"
 msgid "Coin Exchange Rates"
 msgstr ""
@@ -5201,14 +5195,51 @@ msgctxt "UI"
 msgid "Partially entered decimal number → value is not yet saved"
 msgstr ""
 
-#: app/settings/widgets/AccessProfiles.js:469 /checksum/qW4z3RhJAr
+#: app/settings/widgets/AccessProfiles.js:460 /checksum/qW4z3RhJAr
 msgctxt "UI"
 msgid "see reward history"
 msgstr ""
 
+#: lib/permissions/requirePermissions.js:76 /checksum/J5aVqPyt7T
+msgctxt "UI"
+msgid ""
+"This view requires specific permissions, but your permissions were not "
+"loaded yet."
+msgstr ""
+
+#: lib/helpOverlay/OverlayProvider.js:569 /checksum/WOlDGKQMK0
+msgctxt "UI"
+msgid "Walk through the topics on this page"
+msgstr ""
+
+#: lib/permissions/requirePermissions.js:89 /checksum/2215GeKgXx
+msgctxt "UI"
+msgid "You don't have required access permissions!"
+msgstr ""
+
+#: app/workers/modules/WorkersManager.js:771 /checksum/Sn1cGiuHUN
+msgctxt "UI"
+msgid "Worker Edit / Create"
+msgstr ""
+
+#: app/settings/constants/renderTreeTemplates.js:295 /checksum/78RzpSh/4M
+msgctxt "UI"
+msgid "Payout address"
+msgstr ""
+
+#: app/settings/widgets/AccessProfiles.js:506 /checksum/o0tTq9FKwp
+msgctxt "UI"
+msgid "You don't have a permission to create and/or delete access profiles!"
+msgstr ""
+
+#: app/root/components/DialogSignUp.js:342 /checksum/8xPM/o9F/8
+msgctxt "UI"
+msgid "I agree with:"
+msgstr ""
+
 #~ msgctxt "UI"
-#~ msgid "see reward histiry"
-#~ msgstr ""
+#~ msgid "Payout adress"
+#~ msgstr "Адрес для выплат"
 
 #~ msgctxt "UI"
 #~ msgid "Loading"
