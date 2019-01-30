@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-30 16:07+0100\n"
+"POT-Creation-Date: 2019-01-30 16:46+0100\n"
 "PO-Revision-Date: 2019-01-26 13:05+0000\n"
 "Last-Translator: Héctor Cárdenas <hcarpach@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/slushpool/mining/"
@@ -18,6 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.5-dev\n"
+
+#: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
+msgctxt "UI"
+msgid "Request body must be list of objects"
+msgstr ""
 
 #: api/core.py:358
 msgid "Request payload expected, but not supplied!"
@@ -3237,22 +3242,30 @@ msgid "Other usable wallets are listed on <a %(zcash)s>Zcash Community</a>."
 msgstr ""
 "Otras carteras utilizables se enumeran en <a %(zcash)s>Comunidad Zcash</a>."
 
-#: mailing/api/v1/views.py:65
+#: mailing/api/v1/views.py:29
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Newsletter unsubscription"
 msgctxt "UI"
-msgid "Invalid user selection"
-msgstr "Selección de usuario inválida"
+msgid "Newsletter recipient not found."
+msgstr "Dar de baja de boletines"
 
-#: mailing/api/v1/views.py:69
-msgctxt "UI"
-msgid "Invalid reason format!"
-msgstr "Formato de motivo inválido!"
-
-#: mailing/api/v1/views.py:76
+#: mailing/api/v1/views.py:41 mailing/api/v1/views.py:78
 msgctxt "UI"
 msgid "No active users with active newsletter found."
 msgstr "No se han encontrado usuarios activos con boletín activo."
 
-#: mailing/api/v1/views.py:115
+#: mailing/api/v1/views.py:67
+msgctxt "UI"
+msgid "Invalid user selection"
+msgstr "Selección de usuario inválida"
+
+#: mailing/api/v1/views.py:71
+msgctxt "UI"
+msgid "Invalid reason format!"
+msgstr "Formato de motivo inválido!"
+
+#: mailing/api/v1/views.py:117
 msgctxt "UI"
 msgid "Failed to process the request, please contact our support"
 msgstr ""
@@ -3394,15 +3407,15 @@ msgctxt "UI"
 msgid "Service Update"
 msgstr "Actualización del Servicio"
 
-#: project/settings.py:306
+#: project/settings.py:314
 msgid "Simplified Chinese"
 msgstr "Chino Simplificado"
 
-#: project/settings.py:307
+#: project/settings.py:315
 msgid "Spanish"
 msgstr "Español"
 
-#: project/settings.py:308
+#: project/settings.py:316
 msgid "Russian"
 msgstr "Ruso"
 
@@ -3727,6 +3740,11 @@ msgctxt "UI"
 msgid "Account Settings"
 msgstr "Configuración de la Cuenta"
 
+#: web/api/v1/views.py:1003
+msgctxt "UI"
+msgid "Couldn't load USD/BTC exchange rate"
+msgstr ""
+
 #: web/api/v1/views.py:1188
 msgctxt "UI"
 msgid ""
@@ -3745,15 +3763,48 @@ msgctxt "UI"
 msgid "Password must have at Least 5 characters!"
 msgstr "La contraseña debe tener al menos 5 caracteres!"
 
+#: web/api/v1/views.py:1262 web/api/v1/views.py:1284 web/api/v1/views.py:1335
+#, fuzzy
+#| msgid "Login problems?"
+msgctxt "UI"
+msgid "Login forbidden"
+msgstr "¿Problemas de acceso?"
+
+#: web/api/v1/views.py:1331
+msgctxt "UI"
+msgid ""
+"Please enter a correct username (not an e-mail address) and password. Note "
+"that both fields are case-sensitive."
+msgstr ""
+
 #: web/api/v1/views.py:1369
 msgctxt "UI"
 msgid "Failed to load a demo account user!"
 msgstr "Error al cargar un usuario de la cuenta de demo!"
 
+#: web/api/v1/views.py:1397
+#, fuzzy
+#| msgid "username"
+msgctxt "UI"
+msgid "Bad username/id."
+msgstr "nombreUsuario"
+
+#: web/api/v1/views.py:1400
+#, fuzzy
+msgctxt "UI"
+msgid "This user is not active yet."
+msgstr "La cuenta ha sido actualizada."
+
 #: web/api/v1/views.py:1479
 msgctxt "UI"
 msgid "No pending request found!"
 msgstr "No se ha encontrado ninguna solicitud pendiente!"
+
+#: web/api/v1/views.py:1594
+#, fuzzy
+msgctxt "UI"
+msgid "Invalid token!"
+msgstr "Formato de token inválido"
 
 #: web/api/v1/views.py:1599
 msgctxt "UI"
@@ -4788,6 +4839,25 @@ msgstr "La dificultad mínima debe ser un número entero entre 8 y 500.000!"
 msgctxt "UI"
 msgid "Worker %(name)s"
 msgstr "Equipo de minería %(name)s"
+
+#. Translators: data entity, eg: Access denied to object: workers
+#: workers/api/v1/views.py:159
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Workers"
+msgctxt "UI"
+msgid "workers"
+msgstr "Equipos de Minería"
+
+#: workers/api/v1/views.py:314
+msgctxt "UI"
+msgid "Invalid label ids."
+msgstr ""
+
+#: workers/api/v1/views.py:346
+msgctxt "UI"
+msgid "Names and shortcuts must be unique."
+msgstr ""
 
 #~ msgid "English"
 #~ msgstr "Inglés"
@@ -7821,10 +7891,6 @@ msgstr "Equipo de minería %(name)s"
 #~ msgstr "Opinión general"
 
 #~ msgctxt "UI"
-#~ msgid "Newsletter unsubscription"
-#~ msgstr "Dar de baja de boletines"
-
-#~ msgctxt "UI"
 #~ msgid "I am sorry to see you go!"
 #~ msgstr "Lamento que te vayas!"
 
@@ -8108,11 +8174,6 @@ msgstr "Equipo de minería %(name)s"
 #~ msgid "Logged out"
 #~ msgstr "Desconectado"
 
-#, fuzzy
-#~ msgctxt "UI"
-#~ msgid "This account is inactive."
-#~ msgstr "La cuenta ha sido actualizada."
-
 #~ msgctxt "UI"
 #~ msgid "Captcha"
 #~ msgstr "Captcha"
@@ -8165,11 +8226,6 @@ msgstr "Equipo de minería %(name)s"
 #~ msgstr ""
 #~ "¡Guarde a salvo sus bitcoins minados con <br><strong>\"el autenticador "
 #~ "financiero mas sofisticado en el mundo!\"</strong>"
-
-#, fuzzy
-#~ msgctxt "UI"
-#~ msgid "Invalid token format"
-#~ msgstr "Formato de token inválido"
 
 #~ msgctxt "UI"
 #~ msgid "Token not generated yet"
@@ -9206,9 +9262,6 @@ msgstr "Equipo de minería %(name)s"
 #~ "Por favor tenga en cuenta que ya no puede minar en su ordenador con GPU o "
 #~ "CPU. Así mismo hay una lista de software no soportado en nuestro manual "
 #~ "de usuario."
-
-#~ msgid "Login problems?"
-#~ msgstr "¿Problemas de acceso?"
 
 #~ msgid "Payouts related question?"
 #~ msgstr "¿Preguntas relacionadas con pagos?"

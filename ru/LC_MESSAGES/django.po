@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-30 16:07+0100\n"
+"POT-Creation-Date: 2019-01-30 16:46+0100\n"
 "PO-Revision-Date: 2019-01-28 14:05+0000\n"
 "Last-Translator: Iryna Bashkova <csepcsar@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/slushpool/mining/"
@@ -19,6 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.5-dev\n"
+
+#: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
+msgctxt "UI"
+msgid "Request body must be list of objects"
+msgstr ""
 
 #: api/core.py:358
 msgid "Request payload expected, but not supplied!"
@@ -1038,8 +1043,8 @@ msgid ""
 msgstr ""
 "Допустим, существует майнер с именем пользователя <strong>большойМайнер</"
 "strong> и его воркер с именем <strong>сильноеУстройство</strong>. Более "
-"того, этот майнер специально подключился к <strong>Европейским серверам"
-"</strong>, информация о конфигурации этого майнера будет выглядеть так:"
+"того, этот майнер специально подключился к <strong>Европейским серверам</"
+"strong>, информация о конфигурации этого майнера будет выглядеть так:"
 
 #: help/templates/help/bitcoin-setup.html:106
 #: help/templates/help/zcash-setup.html:84
@@ -3236,13 +3241,26 @@ msgstr "большойМайнер.сильноеУстройство"
 msgid "Other usable wallets are listed on <a %(zcash)s>Zcash Community</a>."
 msgstr ""
 
-#: mailing/api/v1/views.py:65
+#: mailing/api/v1/views.py:29
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Newsletter unsubscription"
+msgctxt "UI"
+msgid "Newsletter recipient not found."
+msgstr "Отписаться от новостей"
+
+#: mailing/api/v1/views.py:41 mailing/api/v1/views.py:78
+msgctxt "UI"
+msgid "No active users with active newsletter found."
+msgstr ""
+
+#: mailing/api/v1/views.py:67
 #, fuzzy
 msgctxt "UI"
 msgid "Invalid user selection"
 msgstr "Недействительный ключ"
 
-#: mailing/api/v1/views.py:69
+#: mailing/api/v1/views.py:71
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid token format"
@@ -3250,12 +3268,7 @@ msgctxt "UI"
 msgid "Invalid reason format!"
 msgstr "Недействительный формат токена"
 
-#: mailing/api/v1/views.py:76
-msgctxt "UI"
-msgid "No active users with active newsletter found."
-msgstr ""
-
-#: mailing/api/v1/views.py:115
+#: mailing/api/v1/views.py:117
 msgctxt "UI"
 msgid "Failed to process the request, please contact our support"
 msgstr ""
@@ -3414,15 +3427,15 @@ msgctxt "UI"
 msgid "Service Update"
 msgstr ""
 
-#: project/settings.py:306
+#: project/settings.py:314
 msgid "Simplified Chinese"
 msgstr "Упрощенный Китайский"
 
-#: project/settings.py:307
+#: project/settings.py:315
 msgid "Spanish"
 msgstr "Испанский"
 
-#: project/settings.py:308
+#: project/settings.py:316
 msgid "Russian"
 msgstr "Русский"
 
@@ -3774,6 +3787,11 @@ msgctxt "UI"
 msgid "Account Settings"
 msgstr "Настройки аккаунта"
 
+#: web/api/v1/views.py:1003
+msgctxt "UI"
+msgid "Couldn't load USD/BTC exchange rate"
+msgstr ""
+
 #: web/api/v1/views.py:1188
 msgctxt "UI"
 msgid ""
@@ -3790,10 +3808,37 @@ msgctxt "UI"
 msgid "Password must have at Least 5 characters!"
 msgstr ""
 
+#: web/api/v1/views.py:1262 web/api/v1/views.py:1284 web/api/v1/views.py:1335
+#, fuzzy
+#| msgid "Login problems?"
+msgctxt "UI"
+msgid "Login forbidden"
+msgstr "Проблемы с логином?"
+
+#: web/api/v1/views.py:1331
+msgctxt "UI"
+msgid ""
+"Please enter a correct username (not an e-mail address) and password. Note "
+"that both fields are case-sensitive."
+msgstr ""
+
 #: web/api/v1/views.py:1369
 msgctxt "UI"
 msgid "Failed to load a demo account user!"
 msgstr ""
+
+#: web/api/v1/views.py:1397
+#, fuzzy
+#| msgid "username"
+msgctxt "UI"
+msgid "Bad username/id."
+msgstr "имя пользователя"
+
+#: web/api/v1/views.py:1400
+#, fuzzy
+msgctxt "UI"
+msgid "This user is not active yet."
+msgstr "Аккаунт был обновлен."
 
 #: web/api/v1/views.py:1479
 #, fuzzy
@@ -3801,6 +3846,12 @@ msgstr ""
 msgctxt "UI"
 msgid "No pending request found!"
 msgstr "Категорий не найдено."
+
+#: web/api/v1/views.py:1594
+#, fuzzy
+msgctxt "UI"
+msgid "Invalid token!"
+msgstr "Недействительный формат токена"
 
 #: web/api/v1/views.py:1599
 msgctxt "UI"
@@ -4898,6 +4949,25 @@ msgstr ""
 msgctxt "UI"
 msgid "Worker %(name)s"
 msgstr "Имя воркера"
+
+#. Translators: data entity, eg: Access denied to object: workers
+#: workers/api/v1/views.py:159
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Workers"
+msgctxt "UI"
+msgid "workers"
+msgstr "Воркеры"
+
+#: workers/api/v1/views.py:314
+msgctxt "UI"
+msgid "Invalid label ids."
+msgstr ""
+
+#: workers/api/v1/views.py:346
+msgctxt "UI"
+msgid "Names and shortcuts must be unique."
+msgstr ""
 
 #~ msgid "English"
 #~ msgstr "Английский"
@@ -7947,10 +8017,6 @@ msgstr "Имя воркера"
 #~ msgstr "Общая обратная связь"
 
 #~ msgctxt "UI"
-#~ msgid "Newsletter unsubscription"
-#~ msgstr "Отписаться от новостей"
-
-#~ msgctxt "UI"
 #~ msgid "I am sorry to see you go!"
 #~ msgstr "Мне очень жаль, что вы уходите!"
 
@@ -8223,11 +8289,6 @@ msgstr "Имя воркера"
 #~ msgid "Logged out"
 #~ msgstr "Выйти из учетной записи"
 
-#, fuzzy
-#~ msgctxt "UI"
-#~ msgid "This account is inactive."
-#~ msgstr "Аккаунт был обновлен."
-
 #~ msgctxt "UI"
 #~ msgid "Captcha"
 #~ msgstr "Капча"
@@ -8277,11 +8338,6 @@ msgstr "Имя воркера"
 #~ msgstr ""
 #~ "Безопасно храните Ваши биткоины с<br><strong>\"наиболее совершенным "
 #~ "устройством финансовой аутентификации в мире!\"</strong>"
-
-#, fuzzy
-#~ msgctxt "UI"
-#~ msgid "Invalid token format"
-#~ msgstr "Недействительный формат токена"
 
 #~ msgctxt "UI"
 #~ msgid "Token not generated yet"
@@ -9312,9 +9368,6 @@ msgstr "Имя воркера"
 #~ "персональном компьютере с процессором (CPU) или графическим процессором "
 #~ "(GPU) . Также смотрите в руководстве пользователя список программного "
 #~ "обеспечения, которое не поддерживается."
-
-#~ msgid "Login problems?"
-#~ msgstr "Проблемы с логином?"
 
 #~ msgid "Payouts related question?"
 #~ msgstr "Вопрос о выплатах?"
