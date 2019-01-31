@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-30 16:46+0100\n"
-"PO-Revision-Date: 2019-01-26 13:05+0000\n"
+"PO-Revision-Date: 2019-02-01 18:10+0000\n"
 "Last-Translator: Héctor Cárdenas <hcarpach@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/slushpool/mining/"
 "es/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
 msgid "Request body must be list of objects"
-msgstr ""
+msgstr "El contenido de la solicitud debe ser una lista de objetos"
 
 #: api/core.py:358
 msgid "Request payload expected, but not supplied!"
@@ -147,14 +147,14 @@ msgstr "Equipo de minería no encontrado (%s)"
 #, python-format
 msgctxt "UI"
 msgid "Slot \"%s\" not found"
-msgstr "Ranura \"%s\" no encontrada"
+msgstr "Espacio \"%s\" no encontrado"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
 #: api/exceptions.py:168
 #, python-format
 msgctxt "UI"
 msgid "Slot number \"%s\" is not valid."
-msgstr "Número de ranura \"%s\" no es válido."
+msgstr "Espacio número \"%s\" no es válido."
 
 #. Translators: %s will be some invalid blockchain voting option
 #: api/exceptions.py:184
@@ -171,7 +171,7 @@ msgstr "Debe especificar el atributo \"coin_type\"!"
 #: api/exceptions.py:194
 msgctxt "UI"
 msgid "Missing data for HR distribution"
-msgstr "Datos perdidos para la distribución HR"
+msgstr "Faltan datos para la distribución HR"
 
 #: api/exceptions.py:204
 msgctxt "UI"
@@ -181,7 +181,7 @@ msgstr "Error de integridad en la actualización del equipo de minería"
 #: api/exceptions.py:209
 msgctxt "UI"
 msgid "Worker name has already been used"
-msgstr "El nombre del equipo de minería ha sido ya usado"
+msgstr "El nombre del equipo de minería ya ha sido usado"
 
 #: api/exceptions.py:214
 msgctxt "UI"
@@ -208,12 +208,12 @@ msgstr "Guardar el formulario ha fallado."
 #: api/exceptions.py:250
 msgctxt "UI"
 msgid "U2F device not found."
-msgstr "Dispositivo U2F no encontrado."
+msgstr "No se ha encontrado dispositivo U2F."
 
 #: api/exceptions.py:255
 msgctxt "UI"
 msgid "U2F verification failed."
-msgstr "Verificación U2F falló."
+msgstr "Verificación de U2F falló."
 
 #: api/exceptions.py:260
 msgctxt "UI"
@@ -238,7 +238,7 @@ msgstr ""
 #: api/exceptions.py:283
 msgctxt "UI"
 msgid "OTP verification failed."
-msgstr "Verificación OTP falló."
+msgstr "Verificación de OTP falló."
 
 #: api/exceptions.py:288
 #, python-format
@@ -374,7 +374,7 @@ msgstr "Claves inválidas suministradas como configuración del dispositivo."
 #: web/templates/email/monitoring_subject.html:2
 msgctxt "UI"
 msgid "Workers"
-msgstr "Equipos de Minería"
+msgstr "Equipos de minería"
 
 #: devices/templates/notification/proposal_state_update_subject.txt:1
 #, python-format
@@ -384,25 +384,23 @@ msgstr "Cambio de estado de la propuesta - %(state)s #%(id)s"
 
 #: formlib/core.py:24
 msgid "Authentication required!"
-msgstr "Autenticación requerida!"
+msgstr "¡Autenticación requerida!"
 
 #: formlib/core.py:28
 msgid "Missing captcha data!"
-msgstr ""
+msgstr "¡Faltan los datos del captcha!"
 
 #: formlib/core.py:32
-#| msgctxt "UI"
-#| msgid "OTP Validation"
 msgid "Captcha validation failed."
-msgstr ""
+msgstr "La validación del captcha falló."
 
 #: formlib/core.py:36
 msgid "Current password required!"
-msgstr "Contraseña actual requerida!"
+msgstr "¡Contraseña actual requerida!"
 
 #: formlib/core.py:40
 msgid "Second factor authentication required!"
-msgstr "Segundo factor de autenticación requerido!"
+msgstr "¡Segundo factor de autenticación requerido!"
 
 #: formlib/core.py:44
 msgid "OTP token validation failed."
@@ -410,11 +408,11 @@ msgstr "Validación del token OTP falló."
 
 #: formlib/core.py:48
 msgid "U2F authentication failed!"
-msgstr "Autenticación U2F falló!"
+msgstr "¡Autenticación U2F falló!"
 
 #: formlib/core.py:52
 msgid "Current password is incorrect!"
-msgstr "Contraseña actual es incorrecta!"
+msgstr "¡Contraseña actual es incorrecta!"
 
 #: help/help_categories.py:41
 msgid "Introduction to Mining"
@@ -458,11 +456,11 @@ msgstr "Aplicación Móvil"
 
 #: help/help_categories.py:91 help/templates/help/api.html:3
 msgid "API Guide"
-msgstr "Guia de la API"
+msgstr "Guía de la API"
 
 #: help/help_categories.py:96
 msgid "Hash Rate Proof"
-msgstr "Prueba del Hashrate"
+msgstr "Prueba de Hashrate"
 
 #: help/help_categories.py:101
 msgid "Stratum Protocol"
@@ -478,7 +476,7 @@ msgstr "Empezando"
 
 #: help/help_categories.py:120
 msgid "Are you starting out?"
-msgstr "Estás empezando?"
+msgstr "¿Estás empezando?"
 
 #: help/help_categories.py:129
 msgid "User Manual"
@@ -486,7 +484,7 @@ msgstr "Manual de Usuario"
 
 #: help/help_categories.py:131
 msgid "Do you want to know more?"
-msgstr "Quieres saber más?"
+msgstr "¿Quieres saber más?"
 
 #: help/help_categories.py:142
 msgid "Technical Documentation"
@@ -501,7 +499,7 @@ msgid ""
 "Do you want to pull the mining stats/data and analyze them yourself? API is "
 "here for you!"
 msgstr ""
-"Desea extraer las estadísticas/datos de minería y analizarlos usted mismo? "
+"¿Desea extraer las estadísticas/datos de minería y analizarlos usted mismo? ¡"
 "la API está aquí para usted!"
 
 #: help/templates/help/api.html:7
@@ -678,7 +676,7 @@ msgstr "número"
 
 #: help/templates/help/api.html:104
 msgid "pool scoring hash rate"
-msgstr "puntuación del hashrate del pool"
+msgstr "hashrate ponderado del pool"
 
 #: help/templates/help/api.html:109
 msgid "number of pool active workers"
@@ -706,7 +704,7 @@ msgstr "Bloques más recientes"
 
 #: help/templates/help/api.html:147
 msgid "Unix time when given block was found"
-msgstr "tiempo Unix cuando se encontró el bloque dado"
+msgstr "Tiempo Unix cuando se encontró el bloque dado"
 
 #: help/templates/help/api.html:152
 msgid "duration of the round leading to given block"
@@ -730,12 +728,11 @@ msgstr "valor del bloque"
 
 #: help/templates/help/api.html:177
 msgid "user reward for the given block"
-msgstr "recompensa del usuario por el bloque dado"
+msgstr "recompensa del usuario para el bloque dado"
 
 #: help/templates/help/api.html:182
 msgid "pool scoring hash rate at the time when block was found"
-msgstr ""
-"puntuación del hashrate del pool al momento en que el bloque fue encontrado"
+msgstr "hashrate ponderado del pool al momento en que el bloque fue encontrado"
 
 #: help/templates/help/api.html:188
 msgid "User Profile API"
@@ -744,11 +741,11 @@ msgstr "API del Perfil de Usuario"
 #: help/templates/help/api.html:190
 msgid "Provides information about users performance and rewards."
 msgstr ""
-"Proporciona información sobre el rendimiento y recompensas de los usuarios."
+"Proporciona información sobre rendimiento y recompensas de los usuarios."
 
 #: help/templates/help/api.html:234
 msgid "username"
-msgstr "nombreUsuario"
+msgstr "nombre de usuario"
 
 #: help/templates/help/api.html:239
 msgid "confirmed reward"
@@ -780,7 +777,7 @@ msgstr "hashrate promedio durante las últimas 24 horas"
 
 #: help/templates/help/api.html:279
 msgid "user current scoring hash rate"
-msgstr "puntuación actual del hashrate del usuario"
+msgstr "hashrate ponderado actual del usuario"
 
 #: help/templates/help/api.html:284
 msgid "number of workers with 'low' state"
@@ -818,7 +815,7 @@ msgstr "estado del equipo de minería (ok/bajo/apagado/desactivado)"
 
 #: help/templates/help/api.html:372
 msgid "current scoring hash rate"
-msgstr "puntuación actual del hashrate"
+msgstr "hashrate ponderado actual"
 
 #: help/templates/help/bitcoin-setup.html:12
 #: help/templates/help/zcash-setup.html:10
@@ -851,8 +848,7 @@ msgid ""
 msgstr ""
 "Si bien la minería con hardware no compatible puede ser posible, es casi "
 "seguro que no será rentable. Además, tenga en cuenta que nuestro equipo de "
-"soporte no resolverá los problemas relacionados con el hardware no "
-"compatible."
+"soporte no resolverá problemas relacionados con el hardware no compatible."
 
 #: help/templates/help/bitcoin-setup.html:22
 #: help/templates/help/zcash-setup.html:19
@@ -865,7 +861,7 @@ msgid ""
 "You can use an existing account if you have one. A single account can be "
 "used to mine all supported cryptocurrencies."
 msgstr ""
-"Puedes usar una cuenta existente si tienes una. Se puede utilizar una sola "
+"Puedes usar una cuenta existente, si tienes una. Se puede utilizar una sola "
 "cuenta para minar todas las criptomonedas soportadas."
 
 #: help/templates/help/bitcoin-setup.html:26
@@ -873,17 +869,17 @@ msgstr ""
 #, python-format
 msgid "<a href=\"%(signup)s\">Sign-up</a> and wait for the confirmation email."
 msgstr ""
-"<a href=\"%(signup)s\">Regístrate</a> y espera el email de confirmación."
+"<a href=\"%(signup)s\">Regístrese</a> y espere el email de confirmación."
 
 #: help/templates/help/bitcoin-setup.html:29
 #, python-format
 msgid "<a href=\"%(login)s\">Log into</a> your account."
-msgstr "<a href=\"%(login)s\">Ingresa</a> en tu cuenta."
+msgstr "<a href=\"%(login)s\">Ingrese</a> a su cuenta."
 
 #: help/templates/help/bitcoin-setup.html:33
 #: help/templates/help/zcash-setup.html:27
 msgid "Configure your mining device"
-msgstr "Configura tu dispositivo de minería"
+msgstr "Configure su dispositivo de minería"
 
 #: help/templates/help/bitcoin-setup.html:35
 #: help/templates/help/zcash-setup.html:28
@@ -971,8 +967,8 @@ msgid ""
 "specific URLs instead of the general URL."
 msgstr ""
 "Los servidores de Slush Pool están ubicados en todo el mundo. <strong>Para "
-"una mejor conexión y menor latencia</strong>, use una de las URL específicas "
-"de la ubicación en lugar de la URL general."
+"una mejor conexión y menor latencia</strong>, por favor use una de las URL "
+"específicas a la ubicación en lugar de la URL general."
 
 #: help/templates/help/bitcoin-setup.html:56
 #: help/templates/help/zcash-setup.html:46
@@ -1038,7 +1034,7 @@ msgstr ""
 #: help/templates/help/bitcoin-setup.html:106
 #: help/templates/help/zcash-setup.html:84
 msgid "anything123"
-msgstr "Algo123"
+msgstr "algo123"
 
 #: help/templates/help/bitcoin-setup.html:109
 #: help/templates/help/zcash-setup.html:86
@@ -1053,8 +1049,8 @@ msgid ""
 "threshold, <strong>your rewards will be sent there</strong>."
 msgstr ""
 "Para cobrar su recompensa, debe configurar una dirección de pago en el menú "
-"<em>Ajustes> moneda seleccionada> Pagos</em>. Una vez que alcance el umbral "
-"mínimo, <strong>sus recompensas serán enviadas allí</strong>."
+"<em>Ajustes > moneda seleccionada > Pagos</em>. Una vez que alcance el "
+"umbral mínimo, <strong>sus recompensas serán enviadas allí</strong>."
 
 #: help/templates/help/bitcoin-setup.html:111
 #: help/templates/help/zcash-setup.html:87
@@ -1073,7 +1069,7 @@ msgid ""
 "recommend the <a %(trezor)s>Trezor Hardware Wallet</a> for maximum security."
 msgstr ""
 "Si aún no tiene una dirección, primero debe obtener una cartera. "
-"Recomendamos la <a %(trezor)s>Trezor Hardware Wallet</a> para máxima "
+"Recomendamos la <a %(trezor)s>Cartera Hardware Trezor</a> para máxima "
 "seguridad."
 
 #: help/templates/help/bitcoin-setup.html:114
@@ -1085,7 +1081,7 @@ msgstr ""
 #: help/templates/help/bitcoin-setup.html:116
 #: help/templates/help/zcash-setup.html:90
 msgid "Check if you are mining"
-msgstr "Comprueba si estás minando"
+msgstr "Compruebe si está minando"
 
 #: help/templates/help/bitcoin-setup.html:118
 #: help/templates/help/zcash-setup.html:91
@@ -1096,8 +1092,8 @@ msgid ""
 msgstr ""
 "Abra su <em>Panel de Control</em> y seleccione la moneda que está minando de "
 "la lista desplegable que se encuentra en la sección central superior de la "
-"página. Luego, verifique su hashrate en <em>Hashrate Reciente</em> de la "
-"sección del gráfico a continuación."
+"página. Luego, verifique su hashrate en la sección del gráfico <em>Hashrate "
+"Reciente</em> a continuación."
 
 #: help/templates/help/bitcoin-setup.html:118
 #: help/templates/help/zcash-setup.html:91
@@ -1115,11 +1111,11 @@ msgstr "Introducción a la minería"
 #: help/templates/help/mining-introduction.html:7
 msgid "New to cryptocurrency mining? Start here and learn the crucial basics!"
 msgstr ""
-"Nuevo en la minería de criptomoneda? Empieza aquí y aprende lo esencial!"
+"¿Nuevo en la minería de criptomoneda? ¡Empieza aquí y aprende lo esencial!"
 
 #: help/templates/help/mining-introduction.html:9
 msgid "What is cryptocurrency mining"
-msgstr "Qué es la minería de criptomoneda"
+msgstr "¿Qué es la minería de criptomoneda?"
 
 #: help/templates/help/mining-introduction.html:11
 msgid ""
@@ -1161,11 +1157,11 @@ msgid ""
 msgstr ""
 "Además, a medida que se agrega más poder de cómputo a la red, aumenta la "
 "dificultad de resolver el \"rompecabezas\" que permite a los mineros ganar "
-"una recompensa, allí es donde entran en juego los pools de minería."
+"una recompensa - allí es donde entran en juego los pools de minería."
 
 #: help/templates/help/mining-introduction.html:15
 msgid "What is a mining pool"
-msgstr "Qué es un pool de minería?"
+msgstr "¿Qué es un pool de minería?"
 
 #: help/templates/help/mining-introduction.html:17
 msgid ""
@@ -1210,7 +1206,7 @@ msgstr ""
 
 #: help/templates/help/mining-introduction.html:23
 msgid "What hardware do you need to start mining"
-msgstr "Qué hardware necesitas para comenzar la minería?"
+msgstr "¿Qué hardware necesitas para comenzar a minar?"
 
 #: help/templates/help/mining-introduction.html:25
 msgid ""
@@ -1235,9 +1231,9 @@ msgid ""
 "chosen cryptocurrency."
 msgstr ""
 "Cada moneda requiere un hardware diferente, dependiendo del algoritmo "
-"utilizado, que <strong>puede o no usarse para extraer otras criptomonedas!</"
-"strong> Siempre debe asegurarse de que su equipo de minería sea adecuado "
-"para extraer su criptomoneda elegida."
+"utilizado, que <strong>¡puede o no usarse para extraer otras "
+"criptomonedas!</strong> Siempre debe asegurarse de que su equipo de minería "
+"sea adecuado para extraer su criptomoneda elegida."
 
 #: help/templates/help/mining-introduction.html:27
 msgid ""
@@ -1263,7 +1259,7 @@ msgstr ""
 
 #: help/templates/help/mining-introduction.html:31
 msgid "What else do you need"
-msgstr "Qué más necesitas?"
+msgstr "¿Qué más necesitas?"
 
 #: help/templates/help/mining-introduction.html:33
 msgid ""
@@ -1281,7 +1277,7 @@ msgstr ""
 
 #: help/templates/help/mining-introduction.html:35
 msgid "Ready to go?"
-msgstr "Listo para seguir?"
+msgstr "¿Listo para seguir?"
 
 #: help/templates/help/mining-introduction.html:35
 #, python-format
@@ -1341,7 +1337,7 @@ msgstr "pago enviado"
 
 #: help/templates/help/mobile-app.html:25
 msgid "Connect your account with the mobile app"
-msgstr "Conecta tu cuenta con la aplicación móvil"
+msgstr "Conecte su cuenta con la aplicación móvil"
 
 #: help/templates/help/mobile-app.html:27
 msgid ""
@@ -1353,7 +1349,7 @@ msgstr ""
 
 #: help/templates/help/mobile-app.html:30
 msgid "Download the application on your mobile device."
-msgstr "Descarga la aplicación en tu dispositivo móvil."
+msgstr "Descargue la aplicación en su dispositivo móvil."
 
 #: help/templates/help/mobile-app.html:31
 msgid "On the Slush Pool website go to <em>Settings > Devices</em>."
@@ -1379,7 +1375,7 @@ msgstr ""
 
 #: help/templates/help/mobile-app.html:36
 msgid "Multiple devices"
-msgstr "Dispositivos múltiples"
+msgstr "Múltiples dispositivos"
 
 #: help/templates/help/mobile-app.html:38
 msgid ""
@@ -1409,7 +1405,7 @@ msgid ""
 "em> menu."
 msgstr ""
 "Todas las opciones de gestión de dispositivos se pueden encontrar en el menú "
-"<em>Configuración> Dispositivos</em>."
+"<em>Configuración > Dispositivos</em>."
 
 #: help/templates/help/monitoring.html:9
 msgctxt "UI"
@@ -1418,7 +1414,7 @@ msgstr "<span>Monitoreo</span> del dispositivo"
 
 #: help/templates/help/monitoring.html:11
 msgid "Why should I care?"
-msgstr "Por qué debería importarme?"
+msgstr "¿Por qué debería importarme?"
 
 #: help/templates/help/monitoring.html:12
 msgid ""
@@ -1438,13 +1434,13 @@ msgid ""
 "Monitoring helps you supervise how your miners work in time and minimizes "
 "losses caused by connection issues or mining hardware/software failures."
 msgstr ""
-"El monitoreo le ayuda a supervisar cómo trabajan sus mineros en tiempo y "
+"El monitoreo le ayuda a supervisar cómo trabajan sus mineros en el tiempo y "
 "minimiza las pérdidas causadas por problemas de conexión o fallas de "
 "hardware/software de minería."
 
 #: help/templates/help/monitoring.html:17
 msgid "How can monitoring help?"
-msgstr "Cómo el monitoreo puede ayudar?"
+msgstr "¿Cómo el monitoreo puede ayudar?"
 
 #: help/templates/help/monitoring.html:18
 msgid ""
@@ -1471,11 +1467,11 @@ msgstr "Problemas de conectividad a Internet"
 
 #: help/templates/help/monitoring.html:23
 msgid "Hardware power-supply failures"
-msgstr "Fallos de la fuente de poder del Hardware"
+msgstr "Fallos de la fuente de poder del hardware"
 
 #: help/templates/help/monitoring.html:24
 msgid "Mining hardware overheating"
-msgstr "Sobrecalentamiento del hardware minería"
+msgstr "Sobrecalentamiento del hardware de minería"
 
 #: help/templates/help/monitoring.html:25
 msgid "Mining software issues"
@@ -1492,7 +1488,7 @@ msgstr ""
 
 #: help/templates/help/monitoring.html:29
 msgid "How to enable monitoring?"
-msgstr "Cómo activar el monitoreo?"
+msgstr "¿Cómo activar el monitoreo?"
 
 #: help/templates/help/monitoring.html:31
 #, python-format
@@ -1500,9 +1496,9 @@ msgid ""
 "Enable sending monitoring emails <em>(Settings > selected coin > "
 "Monitoring)</em> or notifications (<a href=\"%(app)s\">mobile app</a>)."
 msgstr ""
-"Habilite el envío de correos electrónicos de monitoreo <em>(Configuración> "
-"moneda seleccionada > Monitoreo)</em> o notificaciones (<a href=\"%(app)s"
-"\">aplicación móvil</a>)."
+"Habilite el envío de correos electrónicos de monitoreo <em>(Configuración > "
+"moneda seleccionada > Monitoreo)</em> o notificaciones (<a href=\"%(app)s\">"
+"aplicación móvil</a>)."
 
 #: help/templates/help/monitoring.html:32
 msgid "You can enable worker monitoring on each worker profile separately."
@@ -1538,8 +1534,8 @@ msgid ""
 "of these <a href=\"%(url)s\">states</a>: <strong>OK, Low, Offline, Disabled</"
 "strong>."
 msgstr ""
-"Una vez actives el monitoreo de tus equipos de minería, verás a cada equipo "
-"de minería en alguno de estos <a href=\"%(url)s\">estados</a>: <strong>OK, "
+"Una vez active el monitoreo de sus equipos de minería, verá a cada equipo de "
+"minería en alguno de estos <a href=\"%(url)s\">estados</a>: <strong>OK, "
 "Bajo, fuera de línea, Desactivado</strong>."
 
 #: help/templates/help/monitoring.html:44
@@ -1569,9 +1565,9 @@ msgid ""
 "device separately."
 msgstr ""
 "<strong class=\"red\">Por favor note:</strong> El Pool hace un seguimiento "
-"de los dispositivos de minería sobre un <strong>equipo de minería básico</"
-"strong>. Esto significa que si usted tiene más de un dispositivo minero "
-"conectado al pool como un único equipo de minería, el monitoreo y los "
+"de los dispositivos de minería sobre una <strong> base de equipo de "
+"minería</strong>. Esto significa que si usted tiene más de un dispositivo "
+"minero conectado al pool como un único equipo de minería, el monitoreo y los "
 "reportes de problemas cubrirán todos los dispositivos en lote. Por otra "
 "parte, cuando usted configure un <strong>nombre de equipo de minería "
 "designado</strong> para cada <strong>dispositivo de minería</strong> que "
@@ -1580,7 +1576,7 @@ msgstr ""
 
 #: help/templates/help/monitoring.html:49
 msgid "How does monitoring work?"
-msgstr "Cómo funciona el monitoreo?"
+msgstr "¿Cómo funciona el monitoreo?"
 
 #: help/templates/help/monitoring.html:50
 #, python-format
@@ -1722,7 +1718,7 @@ msgstr ""
 
 #: help/templates/help/reward-system.html:15
 msgid "Scoring Hash Rate"
-msgstr "Puntuación del Hashrate"
+msgstr "Hashrate ponderado"
 
 #: help/templates/help/reward-system.html:17
 #, python-format
@@ -1735,14 +1731,14 @@ msgid ""
 "smooths out short hash rate drops or increases and makes rewards calculation "
 "more stable and fair (the exact mathematical definition is provided lower)."
 msgstr ""
-"La participación de un usuario en el poder minero del pool es medida por la "
-"<strong>puntuación del hashrate</strong>. Ella refleja que tanto trabajo "
-"hizo el usuario en las últimas horas. Usted puede entender la puntuación del "
-"hashrate como un <em>promedio móvil exponencial</em> del hashrate de todos "
-"los dispositivos mineros conectados al pool (vea <a href=\"%(url)s\" target="
-"\"_blank\">EMA en wikipedia</a>). El promedio suaviza cortas caídas o "
-"aumentos en el hashrate y hace un cálculo de recompensas más estable y justo "
-"(la definición matemática exacta se proporciona más abajo)."
+"La participación de un usuario en el poder minero del pool es medida por el "
+"<strong>hashrate ponderado</strong>. El refleja que tanto trabajo hizo el "
+"usuario en las últimas horas. Usted puede entender el hashrate ponderado "
+"como un <em>promedio móvil exponencial</em> del hashrate de todos los "
+"dispositivos mineros conectados al pool (vea <a href=\"%(url)s\" target=\""
+"_blank\">EMA en wikipedia</a>). El promedio suaviza cortas caídas o aumentos "
+"en el hashrate y hace un cálculo de recompensas más estable y justo (la "
+"definición matemática exacta se proporciona más abajo)."
 
 #: help/templates/help/reward-system.html:20
 #, python-format
@@ -1751,9 +1747,9 @@ msgid ""
 "1%% of the block rewards. If you own 0.031%% of hash rate, you receive "
 "0.031%% of rewards from the block. It is that simple."
 msgstr ""
-"Por ejemplo, si su puntuación de hashrate es 1%% del pool completo, usted "
-"recibe 1%% de la recompensa del bloque. Si usted posee 0,031%% de hashrate, "
-"usted recibe 0,031%% de la recompensa del bloque. Es así de simple."
+"Por ejemplo, si su hashrate ponderado es 1%% del pool completo, usted recibe "
+"1%% de la recompensa del bloque. Si usted posee 0,031%% de hashrate, usted "
+"recibe 0,031%% de la recompensa del bloque. Es así de simple."
 
 #: help/templates/help/reward-system.html:23
 msgid ""
@@ -1781,12 +1777,12 @@ msgstr "comisión del pool"
 #: help/templates/help/reward-system.html:26
 msgctxt "Main rewards formula"
 msgid "your scoring hash rate"
-msgstr "su puntuación de hashrate"
+msgstr "su hashrate ponderado"
 
 #: help/templates/help/reward-system.html:26
 msgctxt "Main rewards formula"
 msgid "pool scoring hash rate"
-msgstr "Puntuación del hashrate del pool"
+msgstr "hashrate ponderado del pool"
 
 #: help/templates/help/reward-system.html:29
 msgid ""
@@ -1802,7 +1798,7 @@ msgid ""
 "time when a particular block was found. They reflect some mining history "
 "before the actual block finding."
 msgstr ""
-"<em>La puntuación de hashrates</em> usada para el calculo son los hashrates "
+"<em>Los hashrates ponderados</em> usados para el calculo son los hashrates "
 "del momento en que un bloque particular fue encontrado. Ellos reflejan algo "
 "del historial de minado antes de encontrar el bloque actual."
 
@@ -1821,9 +1817,9 @@ msgid ""
 "declines at time when you start or stop mining (effective hash rate is blue, "
 "scoring hash rate is gold):"
 msgstr ""
-"El siguiente gráfico muestra cómo la <strong>puntuación del hashrate</"
-"strong> sube y baja en el momento en que tu comienzas o paras de minar (el "
-"hashrate efectivo es azul, la puntuación de hashrate es dorado):"
+"El siguiente gráfico muestra cómo el <strong>hashrate ponderado</strong> "
+"sube y baja en el momento en que usted comienza o para de minar (el hashrate "
+"efectivo es azul, el hashrate ponderado es dorado):"
 
 #: help/templates/help/reward-system.html:41
 msgid ""
@@ -1844,7 +1840,7 @@ msgid ""
 "Important properties of using <em>scoring hash rate</em> for rewards "
 "calculation:"
 msgstr ""
-"Propiedades importantes de usar la <em>puntuación del hashrate</em> para el "
+"Propiedades importantes de usar el <em>hashrate ponderado</em> para el "
 "cálculo de recompensas:"
 
 #: help/templates/help/reward-system.html:53
@@ -1860,8 +1856,8 @@ msgid ""
 "Rewards are fully <strong>independent</strong> from rounds. The only "
 "important thing is the scoring hash rate."
 msgstr ""
-"Las recompensas son completamente <strong>independiente</strong> en cada "
-"ronda. Lo único importante es la puntuación del hashrate."
+"Las recompensas son completamente <strong>independientes</strong> en cada "
+"ronda. Lo único importante es el hashrate ponderado."
 
 #: help/templates/help/reward-system.html:55
 msgid ""
@@ -1883,8 +1879,8 @@ msgid ""
 "When you stop mining the scoring hash rate starts to fall down. It takes "
 "again cca 1.5 hour until it is roughly zero."
 msgstr ""
-"Cuando deja de minar, la tasa puntuación del hashrate comienza a caer. Se "
-"tarda de nuevo 1,5 horas hasta que es aproximadamente cero."
+"Cuando deja de minar, el hashrate ponderado comienza a caer. Se tarda de "
+"nuevo 1,5 horas hasta que es aproximadamente cero."
 
 #: help/templates/help/reward-system.html:58
 msgid ""
@@ -1895,12 +1891,12 @@ msgid ""
 "disconnects, the opposite will happen. Statistically, there is no difference "
 "for you in longer term."
 msgstr ""
-"Cuando algún otro minero se conecta al pool, la puntuación del hashrate "
-"seguirá siendo la misma, pero el hashrate del pool aumentará "
-"proporcionalmente. Como resultado, recibirás una parte más pequeña de los "
-"bloques encontrados como recompensa, pero con mayor frecuencia, porque el "
-"pool será más fuerte. Cuando algún otro minero se desconecte, ocurrirá lo "
-"contrario. Estadísticamente, no hay diferencia para usted en el largo plazo."
+"Cuando algún otro minero se conecta al pool, el hashrate ponderado seguirá "
+"siendo el mismo, pero el hashrate del pool aumentará proporcionalmente. Como "
+"resultado, recibirás una parte más pequeña de los bloques encontrados como "
+"recompensa, pero con mayor frecuencia, porque el pool será más fuerte. "
+"Cuando algún otro minero se desconecte, ocurrirá lo contrario. "
+"Estadísticamente, no hay diferencia para usted en el largo plazo."
 
 #: help/templates/help/reward-system.html:61
 msgid "The Math <span>Behind the Scenes</span>"
@@ -1913,8 +1909,8 @@ msgid ""
 "will show more interesting stuff."
 msgstr ""
 "Vamos a empezar con los conceptos y definiciones básicas para describir cómo "
-"son calculados exactamente las recompensas y otros valores presentados por "
-"el Pool. Gradualmente, vamos a mostrar más cosas interesantes."
+"son calculadas exactamente las recompensas y otros valores presentados por "
+"el pool. Gradualmente, vamos a mostrar más cosas interesantes."
 
 #: help/templates/help/reward-system.html:66
 msgid "Shares"
@@ -2143,10 +2139,10 @@ msgid ""
 "time %(t_0)s is internally not calculated by hash rate averaging, but "
 "directly from shares using scoring function (result is in h/s):"
 msgstr ""
-"Y finalmente la <strong>puntuación del hashrate</strong> %(H)s para el "
-"usuario %(u)s y el tiempo %(t_0)s no es internamente calculada promediando "
-"el hashrate, sino directamente desde las participaciones usando la función "
-"de puntuación (el resultado está en h/s):"
+"Y finalmente el <strong>hashrate ponderado</strong> %(H)s para el usuario "
+"%(u)s y el tiempo %(t_0)s no es internamente calculado promediando el "
+"hashrate, sino directamente desde las participaciones usando la función de "
+"puntuación (el resultado está en h/s):"
 
 #: help/templates/help/reward-system.html:143
 #, python-format
@@ -2154,8 +2150,8 @@ msgid ""
 "Pool's scoring hash rate %(H)s is not surprisingly defined as all user "
 "scoring hash rates together:"
 msgstr ""
-"La puntuación del hashrate del pool %(H)s no esta definida sorprendentemente "
-"como la puntuación de todos los hashrate del usuario juntos:"
+"El hashrate ponderado del pool %(H)s no esta definido sorprendentemente como "
+"la ponderación de todos los hashrate del usuario juntos:"
 
 #: help/templates/help/rewards-payouts.html:9
 msgid ""
@@ -2233,7 +2229,7 @@ msgstr "Minería fusionada"
 
 #: help/templates/help/rewards-payouts.html:45
 msgid "Namecoin (converted to BTC)"
-msgstr "nombreMoneda (convertido a BTC)"
+msgstr "Namecoin (convertida a BTC)"
 
 #: help/templates/help/rewards-payouts.html:57
 msgid "Zcash"
@@ -2298,7 +2294,7 @@ msgstr ""
 
 #: help/templates/help/terminology.html:24
 msgid "Internet connection is not stable"
-msgstr "Conexión a internet no es estable"
+msgstr "La conexión a internet no es estable"
 
 #: help/templates/help/terminology.html:25
 msgid "Your mining device might have a hardware problem (e.g. overheating)"
@@ -2334,8 +2330,8 @@ msgid ""
 "rate.<br>E.g. you expect your miner hash rate to be 1 Ths/s, the "
 "<strong>Alert Limit</strong> would be set to 700 Ghs/s."
 msgstr ""
-"Recomendamos establecerlo 30%% por debajo del valor de su hashrate efectivo "
-"esperado.<br>P. ej., si espera que su hashrate minero sea 1 Ths/s, el "
+"Recomendamos establecerlo 30%% por debajo del valor esperado de su hashrate "
+"efectivo.<br>P. ej., si espera que el hashrate de su minero sea 1 Ths/s, el "
 "<strong>Límite de Alerta</strong> se establecería en 700 Ghs/s."
 
 #: help/templates/help/terminology.html:44
@@ -2428,12 +2424,12 @@ msgid ""
 "Occasionally, you can be more lucky and find more valid hashes than usual. "
 "That is what gives you a slightly higher effective hash rate."
 msgstr ""
-"Ocasionalmente, puede tener más suerte y encontrar hashes más válidos de lo "
+"Ocasionalmente, puede tener más suerte y encontrar más hashes válidos de lo "
 "habitual. Eso es lo que le da un hashrate efectivo ligeramente mayor."
 
 #: help/templates/help/terminology.html:62
 msgid "Scoring <span>Hash Rate</span>"
-msgstr "Puntuación del <span>Hashrate</span>"
+msgstr "<span>Hashrate</span> ponderado"
 
 #: help/templates/help/terminology.html:63
 #, python-format
@@ -2442,9 +2438,9 @@ msgid ""
 "rewards calculation. Please, see <a href=\"%(rewards)s\">Reward System</a> "
 "for the explanation."
 msgstr ""
-"La puntuación de su hashrate es un valor derivado desde su hashrate efectivo "
-"usado para el calculo de recompensas. Por favor, vea <a href=\"%(rewards)s"
-"\">Sistema de Recompensa</a> para una explicación."
+"El hashrate ponderado es un valor derivado desde su hashrate efectivo usado "
+"para el calculo de recompensas. Por favor, vea <a href=\"%(rewards)s\">"
+"Sistema de Recompensa</a> para una explicación."
 
 #: help/templates/help/terminology.html:72
 msgid "Luck"
@@ -2456,7 +2452,7 @@ msgid ""
 "in comparison <strong>to the average number of shares</strong> needed for "
 "finding a block."
 msgstr ""
-"La suerte del pool explica que tantas participaciones necesita el pool para "
+"La suerte del pool explica qué tantas participaciones necesita el pool para "
 "encontrar un bloque específico en comparación <strong>al número promedio de "
 "participaciones</strong> necesarias para encontrar un bloque."
 
@@ -2581,13 +2577,13 @@ msgid ""
 "threshold before any payout can be made."
 msgstr ""
 "Una vez que se encuentra un bloque y su recompensa se calcula a partir de su "
-"puntuación del hashrate, aparece como una <strong>recompensa no confirmada</"
-"strong> en el panel de control de su cuenta. En ese momento, debe esperar un "
-"cierto número de bloques (dependiendo de la criptomoneda) hasta que su "
-"recompensa se convierta en <strong>confirmada</strong> = gastable. Después "
-"de estas confirmaciones, sus monedas ganadas están disponibles para el pago. "
-"Sin embargo, debe alcanzar su límite de pago antes de poder realizar "
-"cualquier pago."
+"hashrate ponderado, aparece como una <strong>recompensa no "
+"confirmada</strong> en el panel de control de su cuenta. En ese momento, "
+"debe esperar un cierto número de bloques (dependiendo de la criptomoneda) "
+"hasta que su recompensa se convierta en <strong>confirmada</strong> = "
+"gastable. Después de estas confirmaciones, sus monedas ganadas están "
+"disponibles para el pago. Sin embargo, debe alcanzar su límite de pago antes "
+"de poder realizar cualquier pago."
 
 #: help/templates/help/terminology.html:142
 msgid "Round"
@@ -2618,8 +2614,8 @@ msgid ""
 "are fully independent of rounds. The only important thing is users scoring "
 "hash rate at the moment when a new block is found."
 msgstr ""
-"Puntaje es un nombre que se usa comúnmente para nuestro <a href=\"%(rewards)s"
-"\">Sistema de Recompensa</a>. Se basa en una <strong>puntuación del "
+"Puntaje es un nombre que se usa comúnmente para nuestro <a href=\"%(rewards)"
+"s\">Sistema de Recompensa</a>. Se basa en una <strong>ponderación del "
 "hashrate</strong> (promedio móvil del hashrate real con algunos períodos de "
 "<em>subida/bajada</em> cuando usted <em>arranca/para</em> de minar). A "
 "diferencia de otros sistemas de recompensa, las recompensas en Puntaje son "
@@ -2855,7 +2851,7 @@ msgid ""
 "looking at the monitoring section of your profile page."
 msgstr ""
 "Recomendamos dar un nombre de equipo de minería designado a cada dispositivo "
-"minero. De esa manera, puedes <strong>rastrear un minero defectuoso</strong> "
+"minero. De esa manera, puede <strong>rastrear un minero defectuoso</strong> "
 "fácilmente con solo mirar la sección de monitoreo de su página de perfil."
 
 #: help/templates/help/terminology.html:256
@@ -2894,10 +2890,10 @@ msgid ""
 "Then, confirm the registration process by clicking on the link sent to your "
 "e-mail address."
 msgstr ""
-"Solo debe completar la información básica, como el nombreUsuario, la "
-"dirección de email y la contraseña que desee en la <a href=\"%(signup)s"
-"\">página de registro</a>. Luego, confirme el proceso de registro haciendo "
-"clic en el enlace enviado a su dirección de email."
+"Solo debe completar la información básica, como el nombre de usuario, la "
+"dirección de correo electrónico y la contraseña que desee en la <a href=\""
+"%(signup)s\">página de registro</a>. Luego, confirme el proceso de registro "
+"haciendo clic en el enlace enviado a su dirección de correo electrónico."
 
 #: help/templates/help/user-accounts.html:11
 msgid "Access profiles"
@@ -2955,7 +2951,7 @@ msgid ""
 msgstr ""
 "El usuario podrá acceder a la cuenta principal en el sitio web utilizando el "
 "nombre de perfil de acceso que elija (en el formato "
-"<code>accessProfileName@userName</code>) y la contraseña que haya "
+"<code>NombrePerfilacceso@usuarioNombre</code>) y la contraseña que haya "
 "establecido allí."
 
 #: help/templates/help/user-accounts.html:23
@@ -2988,7 +2984,7 @@ msgstr ""
 
 #: help/templates/help/user-accounts.html:27
 msgid "Username change"
-msgstr "Cambio de nombreUsuario"
+msgstr "Cambio de nombre de usuario"
 
 #: help/templates/help/user-accounts.html:28
 msgid ""
@@ -2997,8 +2993,8 @@ msgid ""
 "mail address. Having multiple accounts registered with the same e-mail "
 "address is possible."
 msgstr ""
-"<strong>Actualmente no está permitido cambiar el nombreUsuario.</strong> Sin "
-"embargo, puede crear una nueva cuenta con un nombre de usuario diferente "
+"<strong>Actualmente no está permitido cambiar el nombre de usuario.</strong> "
+"Sin embargo, puede crear una nueva cuenta con un nombre de usuario diferente "
 "bajo la misma dirección de correo electrónico. Tener múltiples cuentas "
 "registradas con la misma dirección de correo electrónico es posible."
 
@@ -3030,11 +3026,11 @@ msgid ""
 "<em>Settings > Accounts</em> menu and confirm it via the confirmation link "
 "sent to your e-mail."
 msgstr ""
-"Sin embargo, si decide eliminar la cuenta inmediatamente, siempre "
-"<strong>verifique si todas las recompensas ya se han pagado</strong> a su "
-"dirección de pago antes de tomar una acción. Luego, solicite la eliminación "
-"de la cuenta en el menú <em>Configuración > Cuentas</em> y confirmelo a "
-"través del enlace de confirmación enviado a su correo electrónico."
+"Sin embargo, si decide eliminar la cuenta inmediatamente, siempre <strong>"
+"verifique si todas las recompensas ya se han pagado</strong> a su dirección "
+"de pago antes de tomar una acción. Luego, solicite la eliminación de la "
+"cuenta en el menú <em>Configuración > Cuentas</em> y confírmelo a través del "
+"enlace de confirmación enviado a su correo electrónico."
 
 #: help/templates/help/worker-management.html:9
 msgid "Worker management"
@@ -3132,7 +3128,7 @@ msgid ""
 "set the minimum provided difficulty manually, however we do not recommend "
 "this option unless you have knowledge of the technical background."
 msgstr ""
-"<strong>Utilice la dificultad mínima predeterminada</strong>: el pool "
+"<strong>Utilizar la dificultad mínima predeterminada</strong>: el pool "
 "utiliza el algoritmo <a href=\"%(vardiff)s\">VarDiff</a> que calcula "
 "automáticamente la dificultad óptima para su dispositivo. Si lo desmarca, es "
 "posible establecer la dificultad mínima provista manualmente, sin embargo, "
@@ -3240,12 +3236,9 @@ msgstr ""
 "Otras carteras utilizables se enumeran en <a %(zcash)s>Comunidad Zcash</a>."
 
 #: mailing/api/v1/views.py:29
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Newsletter unsubscription"
 msgctxt "UI"
 msgid "Newsletter recipient not found."
-msgstr "Dar de baja de boletines"
+msgstr "No se ha encontrado el destinatario del boletín."
 
 #: mailing/api/v1/views.py:41 mailing/api/v1/views.py:78
 msgctxt "UI"
@@ -3376,7 +3369,7 @@ msgid ""
 "is closest to his heart."
 msgstr ""
 "Los usuarios que configuran la opción No me importa = el operador del pool "
-"decide qué tamaño de bloque es el más cercano a su corazón."
+"decide el tamaño de bloque que esté más cercano a su corazón."
 
 #: mining/models.py:410
 msgctxt "UI"
@@ -3463,7 +3456,7 @@ msgid ""
 "Confirmation email has been sent. Please, check your mailbox and follow the "
 "link."
 msgstr ""
-"Se ha enviado un correo electrónico de confirmación. Por favor, revise tu "
+"Se ha enviado un correo electrónico de confirmación. Por favor, revise su "
 "correo y siga el enlace."
 
 #: settings/api/v1/api_actions.py:142
@@ -3532,13 +3525,13 @@ msgstr "La nueva cartera ya está establecida."
 #: settings/forms/zec_payouts_form.py:119
 msgctxt "UI"
 msgid "No pending wallet to confirm."
-msgstr "No hay cartera pendiente de confirmar."
+msgstr "No hay cartera pendiente por confirmar."
 
 #. Translators: enabled coins selection - user cannot disable all coins
 #: settings/forms/enabled_coins_settings_form.py:46
 msgctxt "UI"
 msgid "At least one coin must be enabled!"
-msgstr "Al menos una moneda debe estar habilitada!"
+msgstr "¡Al menos una moneda debe estar habilitada!"
 
 #: settings/forms/otp_setting_forms.py:48
 msgctxt "UI"
@@ -3579,12 +3572,12 @@ msgstr "Solicitud de usuario"
 #: user_request/api/v1/views.py:81
 msgctxt "UI"
 msgid "This request belongs to a different user!"
-msgstr "Esta solicitud pertenece a un usuario diferente!"
+msgstr "¡Esta solicitud pertenece a un usuario diferente!"
 
 #: user_request/api/v1/views.py:88
 msgctxt "UI"
 msgid "Supplied user request is not active!"
-msgstr "Solicitud de usuario suministrada no está activa!"
+msgstr "¡Solicitud de usuario suministrada no está activa!"
 
 #: user_request/models.py:266
 msgctxt "UI"
@@ -3740,7 +3733,7 @@ msgstr "Configuración de la Cuenta"
 #: web/api/v1/views.py:1003
 msgctxt "UI"
 msgid "Couldn't load USD/BTC exchange rate"
-msgstr ""
+msgstr "No se pudo cargar la tasa de cambio USD/BTC"
 
 #: web/api/v1/views.py:1188
 msgctxt "UI"
@@ -3761,11 +3754,9 @@ msgid "Password must have at Least 5 characters!"
 msgstr "La contraseña debe tener al menos 5 caracteres!"
 
 #: web/api/v1/views.py:1262 web/api/v1/views.py:1284 web/api/v1/views.py:1335
-#, fuzzy
-#| msgid "Login problems?"
 msgctxt "UI"
 msgid "Login forbidden"
-msgstr "¿Problemas de acceso?"
+msgstr "Inicio de sesión prohibido"
 
 #: web/api/v1/views.py:1331
 msgctxt "UI"
@@ -3773,6 +3764,9 @@ msgid ""
 "Please enter a correct username (not an e-mail address) and password. Note "
 "that both fields are case-sensitive."
 msgstr ""
+"Por favor ingrese un nombre de usuario (no una dirección de correo "
+"electrónico) y contraseña correctos. Tenga en cuenta que ambos campos "
+"distinguen entre mayúsculas y minúsculas."
 
 #: web/api/v1/views.py:1369
 msgctxt "UI"
@@ -3780,17 +3774,14 @@ msgid "Failed to load a demo account user!"
 msgstr "Error al cargar un usuario de la cuenta de demo!"
 
 #: web/api/v1/views.py:1397
-#, fuzzy
-#| msgid "username"
 msgctxt "UI"
 msgid "Bad username/id."
-msgstr "nombreUsuario"
+msgstr "nombreUsuario/id errado."
 
 #: web/api/v1/views.py:1400
-#, fuzzy
 msgctxt "UI"
 msgid "This user is not active yet."
-msgstr "La cuenta ha sido actualizada."
+msgstr "Este usuario no está activo todavía."
 
 #: web/api/v1/views.py:1479
 msgctxt "UI"
@@ -3798,10 +3789,9 @@ msgid "No pending request found!"
 msgstr "No se ha encontrado ninguna solicitud pendiente!"
 
 #: web/api/v1/views.py:1594
-#, fuzzy
 msgctxt "UI"
 msgid "Invalid token!"
-msgstr "Formato de token inválido"
+msgstr "Token inválido!"
 
 #: web/api/v1/views.py:1599
 msgctxt "UI"
@@ -4839,22 +4829,19 @@ msgstr "Equipo de minería %(name)s"
 
 #. Translators: data entity, eg: Access denied to object: workers
 #: workers/api/v1/views.py:159
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Workers"
 msgctxt "UI"
 msgid "workers"
-msgstr "Equipos de Minería"
+msgstr "equipos de minería"
 
 #: workers/api/v1/views.py:314
 msgctxt "UI"
 msgid "Invalid label ids."
-msgstr ""
+msgstr "Identificaciones de etiqueta inválidas."
 
 #: workers/api/v1/views.py:346
 msgctxt "UI"
 msgid "Names and shortcuts must be unique."
-msgstr ""
+msgstr "Nombres y accesos directos deben ser únicos."
 
 #~ msgid "English"
 #~ msgstr "Inglés"
