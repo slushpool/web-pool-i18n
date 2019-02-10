@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-04 14:31+0100\n"
-"PO-Revision-Date: 2019-02-04 13:29+0000\n"
+"PO-Revision-Date: 2019-02-11 11:10+0000\n"
 "Last-Translator: Iryna Bashkova <csepcsar@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/slushpool/mining/"
 "ru/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.5-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
@@ -4184,11 +4184,9 @@ msgid "U2F device registered"
 msgstr "U2F устройство зарегистрировано"
 
 #: web/models.py:1124
-#, fuzzy
-#| msgid "request cancelled"
 msgctxt "UI"
 msgid "U2F setup cancelled"
-msgstr "запрос отменён"
+msgstr "Настройка U2F отменена"
 
 #: web/models.py:1126 web/models.py:1129
 msgctxt "UI"
@@ -4211,10 +4209,9 @@ msgid "Payout settings updated"
 msgstr "Обновлены настройки выплаты"
 
 #: web/models.py:1132
-#, fuzzy
 msgctxt "UI"
 msgid "Zcash payout settings updated"
-msgstr "Обновлены настройки выплаты"
+msgstr "Обновлены настройки выплаты Zcash"
 
 #: web/models.py:1158 web/models.py:1160
 msgctxt "UI"
@@ -4237,22 +4234,19 @@ msgid "Wallet change confirmation resent"
 msgstr "Подтверждение изменения кошелька отправлено повторно"
 
 #: web/models.py:1168
-#, fuzzy
 msgctxt "UI"
 msgid "Zcash wallet change confirmed"
-msgstr "Подтверждено изменение кошелька"
+msgstr "Изменение Zcash кошелька подтверждено"
 
 #: web/models.py:1169
-#, fuzzy
 msgctxt "UI"
 msgid "Zcash wallet change cancelled"
-msgstr "Изменение кошелька отменено"
+msgstr "Изменение Zcash кошелька отменено"
 
 #: web/models.py:1170
-#, fuzzy
 msgctxt "UI"
 msgid "Zcash wallet change confirmation resent"
-msgstr "Подтверждение изменения кошелька отправлено повторно"
+msgstr "Подтверждение изменения Zcash кошелька отправлено повторно"
 
 #: web/models.py:1172
 msgctxt "UI"
@@ -4280,22 +4274,19 @@ msgid "Wallet unlocked"
 msgstr "Изменение кошелька разблокировано"
 
 #: web/models.py:1178
-#, fuzzy
 msgctxt "UI"
 msgid "Wallet unlocked by operator"
-msgstr "Изменение кошелька разблокировано"
+msgstr "Кошелек разблокирован оператором"
 
 #: web/models.py:1179
-#, fuzzy
 msgctxt "UI"
 msgid "Zcash wallet locked"
-msgstr "Изменение кошелька заблокировано"
+msgstr "Изменение Zcash кошелька заблокировано"
 
 #: web/models.py:1180
-#, fuzzy
 msgctxt "UI"
 msgid "Zcash wallet unlocked"
-msgstr "Изменение кошелька разблокировано"
+msgstr "Изменение Zcash кошелька разблокировано"
 
 #: web/models.py:1183
 msgctxt "UI"
@@ -4309,20 +4300,15 @@ msgid "You have removed worker <b>%(name)s</b>"
 msgstr "Вы удалили воркер <b>%(name)s</b>"
 
 #: web/models.py:1187
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Worker removed"
 msgctxt "UI"
 msgid "Workers removed"
-msgstr "Воркер удален"
+msgstr "Воркеры удалены"
 
 #: web/models.py:1188
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "You have registered a new worker"
+#, python-format
 msgctxt "UI"
 msgid "You have removed %(count)d %(coin)s workers"
-msgstr "Вы создали новый воркер"
+msgstr "Вы удалили %(count)d %(coin)s воркеры"
 
 #: web/models.py:1190
 msgctxt "UI"
@@ -4350,10 +4336,9 @@ msgid "Enabled coins updated"
 msgstr "Активированные монеты обновлены"
 
 #: web/permissions.py:32
-#, fuzzy
 msgctxt "UI"
 msgid "Full access"
-msgstr "Изменение кошелька"
+msgstr "Полный доступ"
 
 #: web/permissions.py:33
 msgctxt "UI"
@@ -4361,18 +4346,15 @@ msgid "Read-only"
 msgstr "Только для чтения"
 
 #: web/permissions.py:34
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Login to readonly mode"
 msgctxt "UI"
 msgid "Limited read-only"
-msgstr "Вход в режиме только для чтения"
+msgstr "Доступ ограничен – режим только для чтения"
 
 #: web/registration.py:45
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Username \"%s\" is already taken."
-msgstr "Имя пользователя \"%(username)s\" уже используется."
+msgstr "Имя пользователя \"%s\" уже используется."
 
 #: web/registration.py:63
 msgctxt "UI"
@@ -4541,13 +4523,13 @@ msgid "Change my email"
 msgstr "Изменить мой адрес электронной почты"
 
 #: web/templates/email/monitoring_body.html:5
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "We detect changes in the current state of your %(coin)s workers. Please see "
 "the report below:"
 msgstr ""
-"Мы зарегистрировали изменение в текущем состоянии ваших воркеров. "
+"Мы зарегистрировали изменение в текущем состоянии ваших %(coin)s воркеров. "
 "Пожалуйста, прочтите отчет ниже:"
 
 #: web/templates/email/monitoring_body.html:8
@@ -4660,26 +4642,26 @@ msgstr ""
 "выплат."
 
 #: web/templates/email/payout.html:6
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "The amount of %(amount)s %(coin)s has been transferred to your address "
 "%(wallet)s on %(date)s"
 msgstr ""
-"Сумма %(amount)s ВТС была отправлена на ваш адрес для выплат %(wallet)s "
-"%(date)s"
+"Сумма %(amount)s %(coin)s была отправлена на ваш адрес для выплат %(wallet)s "
+"в день %(date)s"
 
 #: web/templates/email/payout.html:7
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "Payment processing through the network may take between 30 minutes to 3 "
 "hours. You can watch current payment status on <a href=\"%(wallet_info)s\">"
 "%(wallet_info)s</a>"
 msgstr ""
-"Обработка платежей в Биткойн сети обычно длится от 30 минут до 3 часов. "
-"Текущий статус транзакции вы можете отследить в <a href=\"%(wallet_info)s\">"
-"%(wallet_info)s</a>"
+"Обработка платежей в сети обычно длится от 30 минут до 3 часов. Текущий "
+"статус транзакции вы можете отследить в <a href=\"%(wallet_info)s\""
+">%(wallet_info)s</a>"
 
 #: web/templates/email/proposal_state_update_subject.txt:1
 #, python-format
@@ -4713,14 +4695,14 @@ msgid "Activate"
 msgstr "Активировать"
 
 #: web/templates/email/wallet_change.html:5
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "You are receiving this email because you requested to change your %(coin)s "
 "wallet to the new address: <strong>%(wallet)s</strong>."
 msgstr ""
 "Вы получили это электронное письмо, потому что запрашивали изменение адреса "
-"вашего кошелька на: <strong>%(wallet)s</strong>."
+"вашего %(coin)s кошелька на: <strong>%(wallet)s</strong>."
 
 #: web/templates/email/wallet_change.html:6
 #, python-format
@@ -4805,14 +4787,14 @@ msgstr ""
 "\"%(url_password_reset)s\"> измените свой пароль </a> без промедления."
 
 #: web/templates/web/parts/body_1_conditionals.html:12
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "To continue, you must <strong>enable javascript</strong>. (<a href=\"%(url)s"
 "\">see how…</a>)"
 msgstr ""
-"Пожалуйста, включите <strong>javascript</strong>, чтобы видеть все функции "
-"этого сайта. (<a href=\"%(url)s\" target=\"_blank\">посмотреть как...</a>)"
+"Пожалуйста, <strong>включите javascript</strong>. (<a href=\"%(url)s\">"
+"посмотреть как...</a>)"
 
 #: web/utils.py:81
 #, python-format
@@ -4820,19 +4802,14 @@ msgid "%i days"
 msgstr "%i дней"
 
 #: workers/api/v1/views.py:60
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid token"
 msgctxt "UI"
 msgid "Invalid worker name!"
-msgstr "Недействительный токен"
+msgstr "Недействительное имя воркера!"
 
 #: workers/api/v1/views.py:72
-#, fuzzy
-#| msgid "Device monitoring states"
 msgctxt "UI"
 msgid "Invalid monitoring settings."
-msgstr "Состояния мониторинга устройств"
+msgstr "Неверные настройки мониторинга."
 
 #: workers/api/v1/views.py:81
 msgctxt "UI"
@@ -4841,21 +4818,16 @@ msgstr ""
 "Минимальная сложность должна быть представлена целым числом от 8 до 500 000!"
 
 #: workers/api/v1/views.py:131
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Worker Name"
+#, python-format
 msgctxt "UI"
 msgid "Worker %(name)s"
-msgstr "Имя воркера"
+msgstr "Воркер %(name)s"
 
 #. Translators: data entity, eg: Access denied to object: workers
 #: workers/api/v1/views.py:159
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Workers"
 msgctxt "UI"
 msgid "workers"
-msgstr "Воркеры"
+msgstr "воркеры"
 
 #: workers/api/v1/views.py:314
 msgctxt "UI"
