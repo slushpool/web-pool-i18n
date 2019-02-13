@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-04 14:31+0100\n"
-"PO-Revision-Date: 2019-02-11 11:10+0000\n"
+"PO-Revision-Date: 2019-02-13 15:11+0000\n"
 "Last-Translator: Iryna Bashkova <csepcsar@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/slushpool/mining/"
 "ru/>\n"
@@ -676,7 +676,7 @@ msgstr "число"
 
 #: help/templates/help/api.html:104
 msgid "pool scoring hash rate"
-msgstr "значение оцененного хэшрейта пула"
+msgstr "оценочный хэшрейт пула"
 
 #: help/templates/help/api.html:109
 msgid "number of pool active workers"
@@ -732,7 +732,7 @@ msgstr "вознаграждение пользователя за данный 
 
 #: help/templates/help/api.html:182
 msgid "pool scoring hash rate at the time when block was found"
-msgstr "оцененный хэшрейт пула в момент обнаружения блока"
+msgstr "оценочный хэшрейт пула в момент обнаружения блока"
 
 #: help/templates/help/api.html:188
 msgid "User Profile API"
@@ -778,7 +778,7 @@ msgstr "средний хэшрейт за последние 24 часа"
 
 #: help/templates/help/api.html:279
 msgid "user current scoring hash rate"
-msgstr "текуший оцененный хэшрейт пользователя"
+msgstr "текущий оценочный хэшрейт пользователя"
 
 #: help/templates/help/api.html:284
 msgid "number of workers with 'low' state"
@@ -816,7 +816,7 @@ msgstr "Значения воркера (ОК/Низкий/Выключен/Мо
 
 #: help/templates/help/api.html:372
 msgid "current scoring hash rate"
-msgstr "текущий оцененный хэшрейт"
+msgstr "текущий оценочный хэшрейт"
 
 #: help/templates/help/bitcoin-setup.html:12
 #: help/templates/help/zcash-setup.html:10
@@ -1138,8 +1138,8 @@ msgid ""
 "reward</strong>."
 msgstr ""
 "Точнее говоря, майнинг - это процесс записи транзакций в открытую книгу "
-"(блокчейн), стимулов является получение <strong>вознаграждения за майнинг</"
-"strong>."
+"(блокчейн), стимулом является получение <strong>вознаграждения за "
+"майнинг</strong>."
 
 #: help/templates/help/mining-introduction.html:13
 msgid ""
@@ -1719,7 +1719,7 @@ msgstr ""
 
 #: help/templates/help/reward-system.html:15
 msgid "Scoring Hash Rate"
-msgstr "Оценка хешрейта"
+msgstr "Оценочный хешрейт"
 
 #: help/templates/help/reward-system.html:17
 #, python-format
@@ -1732,15 +1732,15 @@ msgid ""
 "smooths out short hash rate drops or increases and makes rewards calculation "
 "more stable and fair (the exact mathematical definition is provided lower)."
 msgstr ""
-"Участие пользователей в майнинговой мощности всего пула измеряется "
-"<strong>оцененным хешрейтом</strong>. Он отображает сколько работы "
-"пользователь выполнил в несколько последних часов. Вы можете воспринимать "
-"подсчет оцененного хешрейта как <em>экспоненциальную скользящую среднюю </"
-"em> от хешрейта всех майнинговых устройств пользователей, подключенных к "
-"пулу (читайте подробнее в статье <a href=\"%(url)s\" target=\"_blank\">EMA "
+"Участие пользователей в майнинговой мощности всего пула измеряется <strong>"
+"оценочным хешрейтом</strong>. Он отображает сколько работы пользователь "
+"выполнил в несколько последних часов. Вы можете воспринимать подсчет "
+"оценочного хешрейта как <em>экспоненциальную скользящую среднюю </em> от "
+"хешрейта всех майнинговых устройств пользователей, подключенных к пулу ("
+"читайте подробнее в статье <a href=\"%(url)s\" target=\"_blank\">EMA "
 "Википедии</a>). Усреднение сглаживает краткие падения или взлеты хешрейта и "
-"позволяет сделать вычисление вознаграждения более постоянным и справедливым "
-"(точное математическое определение приведено ниже)."
+"позволяет сделать вычисление вознаграждения более постоянным и справедливым ("
+"точное математическое определение приведено ниже)."
 
 #: help/templates/help/reward-system.html:20
 #, python-format
@@ -1749,9 +1749,9 @@ msgid ""
 "1%% of the block rewards. If you own 0.031%% of hash rate, you receive "
 "0.031%% of rewards from the block. It is that simple."
 msgstr ""
-"Например, если ваша оценка хешрейта равна 1%% от всего пула, вы получите 1%% "
-"от награды за блок. Если вам принадлежит 0,031%% хешрейта - вы получите "
-"0,031%% от вознаграждения за блок. Все вот так просто."
+"Например, если ваш оценочный хешрейт составляет 1%% от хешрейта всего пула, "
+"вы получите 1%% от награды за блок. Если вам принадлежит 0,031%% хешрейта - "
+"вы получите 0,031%% от вознаграждения за блок. Все вот так просто."
 
 #: help/templates/help/reward-system.html:23
 msgid ""
@@ -1779,12 +1779,12 @@ msgstr "взнос за использование пула"
 #: help/templates/help/reward-system.html:26
 msgctxt "Main rewards formula"
 msgid "your scoring hash rate"
-msgstr "значение вашего хешрейта"
+msgstr "значение вашего оценочного хешрейта"
 
 #: help/templates/help/reward-system.html:26
 msgctxt "Main rewards formula"
 msgid "pool scoring hash rate"
-msgstr "значение хешрейта пула"
+msgstr "значение оценочного хешрейта пула"
 
 #: help/templates/help/reward-system.html:29
 msgid ""
