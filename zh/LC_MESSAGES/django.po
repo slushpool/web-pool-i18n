@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-04 14:30+0100\n"
+"POT-Creation-Date: 2019-02-19 18:24+0100\n"
 "PO-Revision-Date: 2017-04-16 19:49+0000\n"
 "Last-Translator: Josef Kubíček <kubijo@gmail.com>\n"
 "Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-cz/"
@@ -270,6 +270,35 @@ msgstr "无效"
 msgctxt "UI, Blocks"
 msgid "Confirmed"
 msgstr "确认的"
+
+#: campaigns/forms/validators.py:345 mailing/forms/validators.py:34
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid request"
+msgctxt "UI"
+msgid "Invalid user selection."
+msgstr "无效的请求"
+
+#: campaigns/forms/validators.py:353 mailing/forms/validators.py:53
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid token format"
+msgctxt "UI"
+msgid "Invalid reason for unsubscription."
+msgstr "无效令牌格式"
+
+#: campaigns/forms/validators.py:363
+#, python-format
+msgctxt "UI"
+msgid "Feedback must be a string no longer than %d characters."
+msgstr ""
+
+#: campaigns/forms/validators.py:376
+#, fuzzy
+#| msgid "Enter a valid Email service provider."
+msgctxt "UI"
+msgid "Invalid e-mail token provided."
+msgstr "请输入一个有效的邮件服务提供商。"
 
 #: core/validators.py:10
 msgid "Enter a valid, non empty value."
@@ -3014,7 +3043,12 @@ msgstr ""
 msgid "Other usable wallets are listed on <a %(zcash)s>Zcash Community</a>."
 msgstr ""
 
-#: mailing/api/v1/views.py:30
+#: mailing/forms/campaigns.py:80
+msgctxt "UI"
+msgid "Send"
+msgstr "发送"
+
+#: mailing/forms/validators.py:17
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Newsletter unsubscription"
@@ -3022,36 +3056,10 @@ msgctxt "UI"
 msgid "Newsletter recipient not found."
 msgstr "时事通讯退订"
 
-#: mailing/api/v1/views.py:42 mailing/api/v1/views.py:79
+#: mailing/forms/validators.py:44
 msgctxt "UI"
-msgid "No active users with active newsletter found."
+msgid "Feedback must be a string no longer than 600 characters."
 msgstr ""
-
-#: mailing/api/v1/views.py:68
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid request"
-msgctxt "UI"
-msgid "Invalid user selection"
-msgstr "无效的请求"
-
-#: mailing/api/v1/views.py:72
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid token format"
-msgctxt "UI"
-msgid "Invalid reason format!"
-msgstr "无效令牌格式"
-
-#: mailing/api/v1/views.py:120
-msgctxt "UI"
-msgid "Failed to process the request, please contact our support"
-msgstr ""
-
-#: mailing/forms.py:80
-msgctxt "UI"
-msgid "Send"
-msgstr "发送"
 
 #: mailing/models.py:498
 #, fuzzy
@@ -3111,12 +3119,12 @@ msgctxt "UI"
 msgid "Payout sent"
 msgstr "报酬支付历史"
 
-#: mining/models.py:394
+#: mining/models.py:396
 msgctxt "UI"
 msgid "-- not voted (proportional split) --"
 msgstr "-- 未投票(按比例拆分) --"
 
-#: mining/models.py:395
+#: mining/models.py:397
 msgctxt "UI"
 msgid ""
 "Users that don't have any preference = their hash rate is split among all "
@@ -3124,41 +3132,41 @@ msgid ""
 msgstr ""
 "没有任何偏好的用户=他们的hash速率按比例分散分配给所有不同矿区大小的提议。"
 
-#: mining/models.py:396
+#: mining/models.py:398
 msgctxt "UI"
 msgid "Not voted"
 msgstr "未投票"
 
-#: mining/models.py:401
+#: mining/models.py:403
 msgctxt "UI"
 msgid "Current rules / Bitcoin Core"
 msgstr "当前规定/Bitcoin Core"
 
-#: mining/models.py:402
+#: mining/models.py:404
 msgctxt "UI"
 msgid ""
 "Users that prefer Current rules given by Bitcoin core = their hash rate is "
 "used for mining Bitcoin Core blocks."
 msgstr "偏好Bitcoin core当前规定的用户=他们的hash速率用于挖Bitcoin Core矿区。"
 
-#: mining/models.py:403
+#: mining/models.py:405
 msgctxt "UI"
 msgid "Bitcoin Core"
 msgstr "Bitcoin Core"
 
-#: mining/models.py:408
+#: mining/models.py:410
 msgctxt "UI"
 msgid "I don't care, pool operator decides"
 msgstr "I don't care，矿池人操作人员决定"
 
-#: mining/models.py:409
+#: mining/models.py:411
 msgctxt "UI"
 msgid ""
 "Users that set I don't care option = pool operator decides which block size "
 "is closest to his heart."
 msgstr "设置了I don't care选项的用户=矿池操作人员决定。"
 
-#: mining/models.py:410
+#: mining/models.py:412
 msgctxt "UI"
 msgid "Pool decides"
 msgstr "矿池决定"
@@ -3194,17 +3202,50 @@ msgctxt "UI"
 msgid "Service Update"
 msgstr ""
 
-#: project/settings.py:314
+#: project/settings.py:359
 msgid "Simplified Chinese"
 msgstr "简体中文"
 
-#: project/settings.py:315
+#: project/settings.py:360
 msgid "Spanish"
 msgstr "西班牙语"
 
-#: project/settings.py:316
+#: project/settings.py:361
 msgid "Russian"
 msgstr "俄语"
+
+#: reports/views.py:21
+msgctxt "UI"
+msgid "Missing \"types\" parameter!"
+msgstr ""
+
+#: reports/views.py:25
+#, python-format
+msgctxt "UI"
+msgid "Invalid query type. Choices are: %s."
+msgstr ""
+
+#: reports/views.py:35
+msgctxt "UI"
+msgid "Missing \"output format\" parameter!"
+msgstr ""
+
+#: reports/views.py:37
+#, python-format
+msgctxt "UI"
+msgid "Invalid output format. Choices are: %s."
+msgstr ""
+
+#: reports/views.py:51
+msgctxt "UI"
+msgid "Missing date range (from, to)!"
+msgstr ""
+
+#: reports/views.py:53
+#, fuzzy
+msgctxt "UI"
+msgid "Invalid date range!"
+msgstr "无效令牌格式"
 
 #: settings/api/v1/api_actions.py:64
 msgctxt "UI"
@@ -3364,7 +3405,15 @@ msgctxt "UI"
 msgid "User doesn't have OTP."
 msgstr "用户没有一次性密码。"
 
-#: user_request/api/v1/views.py:77
+#: user_request/api/v1/views.py:38
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "2-factor authentication enabled"
+msgctxt "UI"
+msgid "Second factor authentication missing."
+msgstr "双重验证已启用"
+
+#: user_request/api/v1/views.py:75
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Bad request."
@@ -3372,12 +3421,12 @@ msgctxt "UI"
 msgid "User request"
 msgstr "错误请求。"
 
-#: user_request/api/v1/views.py:81
+#: user_request/api/v1/views.py:79
 msgctxt "UI"
 msgid "This request belongs to a different user!"
 msgstr ""
 
-#: user_request/api/v1/views.py:88
+#: user_request/api/v1/views.py:86
 #, fuzzy
 msgctxt "UI"
 msgid "Supplied user request is not active!"
@@ -3651,65 +3700,65 @@ msgid ""
 "released. "
 msgstr "提议<a href=\"/proposal/detail/%(id)s\">%(title)s</a>已发布。 "
 
-#: web/models.py:101
+#: web/models.py:114
 msgctxt "UI"
 msgid "Wallet change confirmation"
 msgstr "更改钱包的确认"
 
-#: web/models.py:125
+#: web/models.py:138
 msgctxt "UI"
 msgid "Email change confirmation"
 msgstr "更改邮箱地址的确认"
 
-#: web/models.py:307
+#: web/models.py:320
 msgctxt "UI"
 msgid "Zcash wallet change confirmation"
 msgstr "更改Zcash钱包的确认"
 
-#: web/models.py:482
+#: web/models.py:495
 msgctxt "UI, Transaction state"
 msgid "New"
 msgstr "新的"
 
-#: web/models.py:483
+#: web/models.py:496
 msgctxt "UI, Transaction state"
 msgid "Processing"
 msgstr "正在处理"
 
-#: web/models.py:484
+#: web/models.py:497
 msgctxt "UI, Transaction state"
 msgid "Failed"
 msgstr "失败的"
 
-#: web/models.py:485
+#: web/models.py:498
 msgctxt "UI, Transaction state"
 msgid "Sent"
 msgstr "已发送"
 
-#: web/models.py:820 web/models.py:832
+#: web/models.py:833 web/models.py:845
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> 更改从 <b>%(old)s</b> 到 <b>%(new)s</b>"
 
-#: web/models.py:825
+#: web/models.py:838
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> 更改到 <b>%(new)s</b>"
 
-#: web/models.py:840 web/models.py:860
+#: web/models.py:853 web/models.py:873
 #, python-format
 msgctxt "UI, time"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> 更改从 <b>%(old)s</b> 到 <b>%(new)s</b>"
 
-#: web/models.py:854
+#: web/models.py:867
 msgctxt "UI"
 msgid "Depricated"
 msgstr "已弃用"
 
-#: web/models.py:866
+#: web/models.py:879
 #, fuzzy, python-format
 #| msgctxt "UI, value"
 #| msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
@@ -3717,7 +3766,7 @@ msgctxt "UI, value"
 msgid "<b>%(key)s %(old)s</b> deleted"
 msgstr "<b>%(key)s</b> 更改到 <b>%(new)s</b>"
 
-#: web/models.py:868
+#: web/models.py:881
 #, fuzzy, python-format
 #| msgctxt "UI, value"
 #| msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
@@ -3725,7 +3774,7 @@ msgctxt "UI, value"
 msgid "<b>%(key)s created: <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> 更改到 <b>%(new)s</b>"
 
-#: web/models.py:874
+#: web/models.py:887
 #, fuzzy, python-format
 #| msgctxt "UI, value"
 #| msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
@@ -3733,7 +3782,7 @@ msgctxt "UI, value"
 msgid "<b>%(key)s</b> deleted"
 msgstr "<b>%(key)s</b> 更改到 <b>%(new)s</b>"
 
-#: web/models.py:876
+#: web/models.py:889
 #, fuzzy, python-format
 #| msgctxt "UI, value"
 #| msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
@@ -3741,7 +3790,7 @@ msgctxt "UI, value"
 msgid "<b>%(key)s</b> created"
 msgstr "<b>%(key)s</b> 更改到 <b>%(new)s</b>"
 
-#: web/models.py:877
+#: web/models.py:890
 #, fuzzy, python-format
 #| msgctxt "UI, value"
 #| msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
@@ -3749,133 +3798,133 @@ msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed"
 msgstr "<b>%(key)s</b> 更改到 <b>%(new)s</b>"
 
-#: web/models.py:882
+#: web/models.py:895
 msgctxt "UI, value"
 msgid "profile <b>activated</b>"
 msgstr ""
 
-#: web/models.py:883
+#: web/models.py:896
 msgctxt "UI, value"
 msgid "profile <b>deactivated</b>"
 msgstr ""
 
-#: web/models.py:888
+#: web/models.py:901
 msgctxt "UI"
 msgid "Nothing has changed"
 msgstr "未发生任何修改"
 
-#: web/models.py:894 web/models.py:896
+#: web/models.py:907 web/models.py:909
 msgctxt "UI"
 msgid "N/A"
 msgstr "不适用"
 
-#: web/models.py:911
+#: web/models.py:924
 #, python-format
 msgctxt "UI, value"
 msgid "Access Profile <b>%(name)s</b>:<br>"
 msgstr ""
 
-#: web/models.py:920
+#: web/models.py:933
 msgctxt "UI"
 msgid "Worker"
 msgstr "矿工"
 
-#: web/models.py:1021
+#: web/models.py:1051
 msgctxt "UI"
 msgid "Preferred language"
 msgstr "首选语言"
 
-#: web/models.py:1022
+#: web/models.py:1052
 msgctxt "UI"
 msgid "Preferred timezone"
 msgstr "首选时区"
 
-#: web/models.py:1023
+#: web/models.py:1053
 msgctxt "UI"
 msgid "Username in stats"
 msgstr "用户名保存到统计数据里"
 
-#: web/models.py:1024
+#: web/models.py:1054
 msgctxt "UI"
 msgid "Watch proposals"
 msgstr "查看提议"
 
-#: web/models.py:1025
+#: web/models.py:1055
 msgctxt "UI"
 msgid "Notify me on payout"
 msgstr "在付款时通知我"
 
-#: web/models.py:1026
+#: web/models.py:1056
 msgctxt "UI"
 msgid "Newsletter"
 msgstr "时事通讯"
 
-#: web/models.py:1027
+#: web/models.py:1057
 msgctxt "UI"
 msgid "Currency unit"
 msgstr "货币单位"
 
-#: web/models.py:1028
+#: web/models.py:1058
 msgctxt "UI"
 msgid "Blockchain voting"
 msgstr "矿区链投票"
 
-#: web/models.py:1030
+#: web/models.py:1060
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr "报告已启用"
 
-#: web/models.py:1031
+#: web/models.py:1061
 msgctxt "UI"
 msgid "Auto-detect alert limit"
 msgstr "自动检测警告限值"
 
-#: web/models.py:1032
+#: web/models.py:1062
 msgctxt "UI"
 msgid "Alert limit"
 msgstr "警告限值"
 
-#: web/models.py:1034
+#: web/models.py:1064
 msgctxt "UI"
 msgid "Wallet"
 msgstr "钱包"
 
-#: web/models.py:1035 web/models.py:1036
+#: web/models.py:1065 web/models.py:1066
 msgctxt "UI"
 msgid "Pending wallet"
 msgstr "待定钱包"
 
-#: web/models.py:1037
+#: web/models.py:1067
 msgctxt "UI"
 msgid "Send threshold"
 msgstr "发送报酬的门槛"
 
-#: web/models.py:1038
+#: web/models.py:1068
 msgctxt "UI"
 msgid "Email"
 msgstr "邮箱地址"
 
-#: web/models.py:1040
+#: web/models.py:1070
 msgctxt "UI"
 msgid "Monitoring"
 msgstr "监控"
 
-#: web/models.py:1041
+#: web/models.py:1071
 msgctxt "UI"
 msgid "Last Change"
 msgstr "上次修改"
 
-#: web/models.py:1042
+#: web/models.py:1072
 msgctxt "UI"
 msgid "Login suffix"
 msgstr "登录后缀"
 
-#: web/models.py:1043 web/models.py:1044
+#: web/models.py:1073 web/models.py:1074
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr "最低难度"
 
-#: web/models.py:1046
+#: web/models.py:1076
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Bitcoin Core"
@@ -3883,32 +3932,32 @@ msgctxt "UI"
 msgid "Bitcoin"
 msgstr "Bitcoin Core"
 
-#: web/models.py:1047
+#: web/models.py:1077
 msgctxt "UI"
 msgid "Ethereum Classic"
 msgstr ""
 
-#: web/models.py:1048
+#: web/models.py:1078
 msgctxt "UI"
 msgid "Ethereum"
 msgstr ""
 
-#: web/models.py:1049
+#: web/models.py:1079
 msgctxt "UI"
 msgid "Zcash"
 msgstr ""
 
-#: web/models.py:1051
+#: web/models.py:1081
 msgctxt "UI"
 msgid "Enabled"
 msgstr "已启用"
 
-#: web/models.py:1051
+#: web/models.py:1081
 msgctxt "UI"
 msgid "Disabled"
 msgstr "已禁用"
 
-#: web/models.py:1093
+#: web/models.py:1123
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Account deletion requested"
@@ -3916,23 +3965,23 @@ msgctxt "UI"
 msgid "Account deletion cancelled"
 msgstr "账户删除已申请"
 
-#: web/models.py:1094
+#: web/models.py:1124
 msgctxt "UI"
 msgid "Account deleted"
 msgstr "账户已被删除"
 
-#: web/models.py:1095
+#: web/models.py:1125
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr "账户删除已申请"
 
-#: web/models.py:1097
+#: web/models.py:1127
 #, fuzzy
 msgctxt "UI"
 msgid "Demo login"
 msgstr "工人帐号："
 
-#: web/models.py:1098
+#: web/models.py:1128
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Support"
@@ -3940,27 +3989,27 @@ msgctxt "UI"
 msgid "Support login"
 msgstr "技术支持"
 
-#: web/models.py:1099
+#: web/models.py:1129
 msgctxt "UI"
 msgid "Login"
 msgstr "登录"
 
-#: web/models.py:1100
+#: web/models.py:1130
 msgctxt "UI"
 msgid "Logout"
 msgstr "退出"
 
-#: web/models.py:1101
+#: web/models.py:1131
 msgctxt "UI"
 msgid "Logout all sessions"
 msgstr ""
 
-#: web/models.py:1102
+#: web/models.py:1132
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr "无效的登录"
 
-#: web/models.py:1103
+#: web/models.py:1133
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Inactive Workers"
@@ -3968,7 +4017,7 @@ msgctxt "UI"
 msgid "Inactive profile"
 msgstr "不活跃的矿工"
 
-#: web/models.py:1105
+#: web/models.py:1135
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Account deleted"
@@ -3976,7 +4025,7 @@ msgctxt "UI"
 msgid "New access profile created"
 msgstr "账户已被删除"
 
-#: web/models.py:1107
+#: web/models.py:1137
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Account deleted"
@@ -3984,7 +4033,7 @@ msgctxt "UI"
 msgid "Access profile updated"
 msgstr "账户已被删除"
 
-#: web/models.py:1109
+#: web/models.py:1139
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Account deleted"
@@ -3992,53 +4041,53 @@ msgctxt "UI"
 msgid "Access profile deleted"
 msgstr "账户已被删除"
 
-#: web/models.py:1112
+#: web/models.py:1142
 msgctxt "UI"
 msgid "Message seen"
 msgstr "信息已被看到"
 
-#: web/models.py:1113
+#: web/models.py:1143
 msgctxt "UI"
 msgid "Mining settings updated"
 msgstr "监控设置已更新"
 
-#: web/models.py:1114
+#: web/models.py:1144
 msgctxt "UI"
 msgid "Monitoring settings updated"
 msgstr "监控设置已更新"
 
-#: web/models.py:1115
+#: web/models.py:1145
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
 msgstr "时事通讯订阅已取消"
 
-#: web/models.py:1117
+#: web/models.py:1147
 msgctxt "UI"
 msgid "2-factor authentication disabled"
 msgstr "双重验证已禁用"
 
-#: web/models.py:1118
+#: web/models.py:1148
 msgctxt "UI"
 msgid "2-factor authentication enabled"
 msgstr "双重验证已启用"
 
-#: web/models.py:1119
+#: web/models.py:1149
 msgctxt "UI"
 msgid "One time password setup cancelled"
 msgstr ""
 
-#: web/models.py:1120
+#: web/models.py:1150
 msgctxt "UI"
 msgid "OTP change confirmed"
 msgstr "一次性密码更改已确认"
 
-#: web/models.py:1121
+#: web/models.py:1151
 #, fuzzy
 msgctxt "UI"
 msgid "2-factor authentication removed by operator"
 msgstr "双重验证已启用"
 
-#: web/models.py:1123
+#: web/models.py:1153
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "U2F device not found."
@@ -4046,126 +4095,126 @@ msgctxt "UI"
 msgid "U2F device registered"
 msgstr "双重认证装置未找到。"
 
-#: web/models.py:1124
+#: web/models.py:1154
 #, fuzzy
 #| msgid "request cancelled"
 msgctxt "UI"
 msgid "U2F setup cancelled"
 msgstr "请求取消"
 
-#: web/models.py:1126 web/models.py:1129
+#: web/models.py:1156 web/models.py:1159
 msgctxt "UI"
 msgid "Password changed"
 msgstr "密码已更改"
 
-#: web/models.py:1127
+#: web/models.py:1157
 msgctxt "UI"
 msgid "Password reset completed"
 msgstr "重置密码完成"
 
-#: web/models.py:1128
+#: web/models.py:1158
 msgctxt "UI"
 msgid "Password reset initiated"
 msgstr "密码重置已开始"
 
-#: web/models.py:1131
+#: web/models.py:1161
 msgctxt "UI"
 msgid "Payout settings updated"
 msgstr "报酬支付设置已更新"
 
-#: web/models.py:1132
+#: web/models.py:1162
 msgctxt "UI"
 msgid "Zcash payout settings updated"
 msgstr "Zcash报酬支付设置已更新"
 
-#: web/models.py:1158 web/models.py:1160
+#: web/models.py:1188 web/models.py:1190
 msgctxt "UI"
 msgid "Account settings updated"
 msgstr "账户设置已更新"
 
-#: web/models.py:1164
+#: web/models.py:1194
 msgctxt "UI"
 msgid "Wallet change confirmed"
 msgstr "钱包更改已确认"
 
-#: web/models.py:1165
+#: web/models.py:1195
 msgctxt "UI"
 msgid "Wallet change cancelled"
 msgstr "钱包更改已取消"
 
-#: web/models.py:1166
+#: web/models.py:1196
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
 msgstr "更改钱包的确认已重新发送"
 
-#: web/models.py:1168
+#: web/models.py:1198
 msgctxt "UI"
 msgid "Zcash wallet change confirmed"
 msgstr "Zcash钱包更改已确认"
 
-#: web/models.py:1169
+#: web/models.py:1199
 msgctxt "UI"
 msgid "Zcash wallet change cancelled"
 msgstr "Zcash钱包更改已取消"
 
-#: web/models.py:1170
+#: web/models.py:1200
 msgctxt "UI"
 msgid "Zcash wallet change confirmation resent"
 msgstr "更改Zcash钱包的确认已重新发送"
 
-#: web/models.py:1172
+#: web/models.py:1202
 msgctxt "UI"
 msgid "Email change confirmed"
 msgstr "更改邮箱地址已确认"
 
-#: web/models.py:1173
+#: web/models.py:1203
 msgctxt "UI"
 msgid "Email change cancelled"
 msgstr "邮箱地址更改已取消"
 
-#: web/models.py:1174
+#: web/models.py:1204
 msgctxt "UI"
 msgid "Email change confirmation resent"
 msgstr "更改邮箱的确认已重新发送"
 
-#: web/models.py:1176
+#: web/models.py:1206
 msgctxt "UI"
 msgid "Wallet locked"
 msgstr "钱包锁定"
 
-#: web/models.py:1177
+#: web/models.py:1207
 msgctxt "UI"
 msgid "Wallet unlocked"
 msgstr "钱包解锁"
 
-#: web/models.py:1178
+#: web/models.py:1208
 #, fuzzy
 msgctxt "UI"
 msgid "Wallet unlocked by operator"
 msgstr "钱包解锁"
 
-#: web/models.py:1179
+#: web/models.py:1209
 msgctxt "UI"
 msgid "Zcash wallet locked"
 msgstr "Zcash钱包已锁定"
 
-#: web/models.py:1180
+#: web/models.py:1210
 msgctxt "UI"
 msgid "Zcash wallet unlocked"
 msgstr "Zcash钱包已解锁"
 
-#: web/models.py:1183
+#: web/models.py:1213
 msgctxt "UI"
 msgid "Worker removed"
 msgstr "矿工已移除"
 
-#: web/models.py:1184
+#: web/models.py:1214
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr "您已移除矿工 <b>%(name)s</b>"
 
-#: web/models.py:1187
+#: web/models.py:1217
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Worker removed"
@@ -4173,7 +4222,7 @@ msgctxt "UI"
 msgid "Workers removed"
 msgstr "矿工已移除"
 
-#: web/models.py:1188
+#: web/models.py:1218
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "You have registered a new worker"
@@ -4181,32 +4230,113 @@ msgctxt "UI"
 msgid "You have removed %(count)d %(coin)s workers"
 msgstr "您已注册一个新矿工"
 
-#: web/models.py:1190
+#: web/models.py:1220
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr "矿工设置已更新"
 
-#: web/models.py:1192
+#: web/models.py:1222
 msgctxt "UI"
 msgid "New worker"
 msgstr "新矿工"
 
-#: web/models.py:1193
+#: web/models.py:1223
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr "您已注册一个新矿工"
 
-#: web/models.py:1198
+#: web/models.py:1228
 msgctxt "UI"
 msgid "User appeal dismissed"
 msgstr ""
 
-#: web/models.py:1203
+#: web/models.py:1233
 msgctxt "UI"
 msgid "Enabled coins updated"
 msgstr ""
 
-#: web/permissions.py:32
+#: web/models.py:1238
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Account deleted"
+msgctxt "UI"
+msgid "New campaign created"
+msgstr "账户已被删除"
+
+#: web/models.py:1242
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Proposal updated"
+msgctxt "UI"
+msgid "Campaign updated"
+msgstr "提议已更新"
+
+#: web/models.py:1246
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Account deleted"
+msgctxt "UI"
+msgid "New campaign run created"
+msgstr "账户已被删除"
+
+#: web/models.py:1250
+msgctxt "UI"
+msgid "Campaign run updated"
+msgstr ""
+
+#: web/models.py:1254
+msgctxt "UI"
+msgid "A new e-mail template created"
+msgstr ""
+
+#: web/models.py:1258
+msgctxt "UI"
+msgid "E-mail template updated"
+msgstr ""
+
+#: web/models.py:1263
+msgctxt "UI"
+msgid "Generating e-mails for a campaign run was requested"
+msgstr ""
+
+#: web/models.py:1267
+msgctxt "UI"
+msgid "Request for generating e-mails for a campaign run was cancelled"
+msgstr ""
+
+#: web/models.py:1271
+msgctxt "UI"
+msgid "Rendering e-mails for a campaign run was requested"
+msgstr ""
+
+#: web/models.py:1275
+msgctxt "UI"
+msgid "Request for rendering e-mails for a campaign run was cancelled"
+msgstr ""
+
+#: web/models.py:1279
+msgctxt "UI"
+msgid "E-mails generated for a campaign run were deleted"
+msgstr ""
+
+#: web/models.py:1283
+msgctxt "UI"
+msgid "Testing e-mail for a campaign was sent"
+msgstr ""
+
+#: web/models.py:1287
+#, fuzzy
+msgctxt "UI"
+msgid "Unsubscribed from newsletter."
+msgstr "取消订阅"
+
+#: web/models.py:1292
+#, fuzzy
+msgctxt "UI"
+msgid "Exported user data"
+msgstr "Hash的速率"
+
+#: web/permissions.py:34
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Full range"
@@ -4214,12 +4344,12 @@ msgctxt "UI"
 msgid "Full access"
 msgstr "总览"
 
-#: web/permissions.py:33
+#: web/permissions.py:35
 msgctxt "UI"
 msgid "Read-only"
 msgstr ""
 
-#: web/permissions.py:34
+#: web/permissions.py:36
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Login to readonly mode"
@@ -7680,10 +7810,6 @@ msgstr ""
 #~ msgstr "提议评论已删除"
 
 #~ msgctxt "UI"
-#~ msgid "Proposal updated"
-#~ msgstr "提议已更新"
-
-#~ msgctxt "UI"
 #~ msgid "Proposal state changed"
 #~ msgstr "提议状态已更改"
 
@@ -8514,9 +8640,6 @@ msgstr ""
 #~ "在windows系统下，CGminer可能会没法识别您的挖矿软件并要求安装WinUSB驱动。这"
 #~ "一操作在我们之前所提到的分步<a href=\"%(miner_tutorial)s\" target=\"_blank"
 #~ "\" class=\"ext\">教程</a>里可以找到"
-
-#~ msgid "Enter a valid Email service provider."
-#~ msgstr "请输入一个有效的邮件服务提供商。"
 
 #~ msgid "Asia-Pacific/<strong>Singapore</strong>"
 #~ msgstr "亚太/<strong>新加坡</strong>"
@@ -11398,11 +11521,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgctxt "UI"
-#~ msgid "Unsubscribe from newsletter"
-#~ msgstr "取消订阅"
-
-#, fuzzy
-#~ msgctxt "UI"
 #~ msgid "Release notes 20"
 #~ msgstr "发布<span>说明</span>"
 
@@ -11632,10 +11750,6 @@ msgstr ""
 #~ msgctxt "UI"
 #~ msgid "Expected Hash Rate [Gh/s]"
 #~ msgstr "预期Hash速率 [Gh/s]"
-
-#, fuzzy
-#~ msgid "Expected Hash Rate"
-#~ msgstr "Hash的速率"
 
 #~ msgctxt "UI"
 #~ msgid "Expected Hash Rate"

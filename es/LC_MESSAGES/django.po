@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-04 14:31+0100\n"
+"POT-Creation-Date: 2019-02-19 18:24+0100\n"
 "PO-Revision-Date: 2019-02-05 17:10+0000\n"
 "Last-Translator: Héctor Cárdenas <hcarpach@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/slushpool/mining/"
@@ -266,6 +266,35 @@ msgstr "Inválido"
 msgctxt "UI, Blocks"
 msgid "Confirmed"
 msgstr "Confirmado"
+
+#: campaigns/forms/validators.py:345 mailing/forms/validators.py:34
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid user selection"
+msgctxt "UI"
+msgid "Invalid user selection."
+msgstr "Selección de usuario inválida"
+
+#: campaigns/forms/validators.py:353 mailing/forms/validators.py:53
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid reason format!"
+msgctxt "UI"
+msgid "Invalid reason for unsubscription."
+msgstr "Formato de motivo inválido!"
+
+#: campaigns/forms/validators.py:363
+#, python-format
+msgctxt "UI"
+msgid "Feedback must be a string no longer than %d characters."
+msgstr ""
+
+#: campaigns/forms/validators.py:376
+#, fuzzy
+#| msgid "Enter a valid Email service provider."
+msgctxt "UI"
+msgid "Invalid e-mail token provided."
+msgstr "Introduzca un proveedor de Email válido."
 
 #: core/validators.py:10
 msgid "Enter a valid, non empty value."
@@ -1026,11 +1055,11 @@ msgid ""
 "specifically chose to be connected to the <strong>European servers</strong>, "
 "configuration information for this miner would look like this:"
 msgstr ""
-"Digamos que hay un minero con el nombre de usuario "
-"<strong>granMinero</strong> y su equipo de minería se llama "
-"<strong>fuerteDispositivo</strong>. Además, este minero eligió "
-"específicamente estar conectado a los <strong>servidores europeos</strong>, "
-"la información de configuración para este minero se vería así:"
+"Digamos que hay un minero con el nombre de usuario <strong>granMinero</"
+"strong> y su equipo de minería se llama <strong>fuerteDispositivo</strong>. "
+"Además, este minero eligió específicamente estar conectado a los "
+"<strong>servidores europeos</strong>, la información de configuración para "
+"este minero se vería así:"
 
 #: help/templates/help/bitcoin-setup.html:106
 #: help/templates/help/zcash-setup.html:84
@@ -3237,36 +3266,20 @@ msgid "Other usable wallets are listed on <a %(zcash)s>Zcash Community</a>."
 msgstr ""
 "Otras carteras utilizables se enumeran en <a %(zcash)s>Comunidad Zcash</a>."
 
-#: mailing/api/v1/views.py:30
+#: mailing/forms/campaigns.py:80
+msgctxt "UI"
+msgid "Send"
+msgstr "Enviar"
+
+#: mailing/forms/validators.py:17
 msgctxt "UI"
 msgid "Newsletter recipient not found."
 msgstr "No se ha encontrado el destinatario del boletín."
 
-#: mailing/api/v1/views.py:42 mailing/api/v1/views.py:79
+#: mailing/forms/validators.py:44
 msgctxt "UI"
-msgid "No active users with active newsletter found."
-msgstr "No se han encontrado usuarios activos con boletín activo."
-
-#: mailing/api/v1/views.py:68
-msgctxt "UI"
-msgid "Invalid user selection"
-msgstr "Selección de usuario inválida"
-
-#: mailing/api/v1/views.py:72
-msgctxt "UI"
-msgid "Invalid reason format!"
-msgstr "Formato de motivo inválido!"
-
-#: mailing/api/v1/views.py:120
-msgctxt "UI"
-msgid "Failed to process the request, please contact our support"
+msgid "Feedback must be a string no longer than 600 characters."
 msgstr ""
-"No se pudo procesar la solicitud, póngase en contacto con nuestro soporte"
-
-#: mailing/forms.py:80
-msgctxt "UI"
-msgid "Send"
-msgstr "Enviar"
 
 #: mailing/models.py:498
 msgctxt "UI"
@@ -3321,12 +3334,12 @@ msgctxt "UI"
 msgid "Payout sent"
 msgstr "Pago enviado"
 
-#: mining/models.py:394
+#: mining/models.py:396
 msgctxt "UI"
 msgid "-- not voted (proportional split) --"
 msgstr "-- no votado (división proporcional) --"
 
-#: mining/models.py:395
+#: mining/models.py:397
 msgctxt "UI"
 msgid ""
 "Users that don't have any preference = their hash rate is split among all "
@@ -3335,17 +3348,17 @@ msgstr ""
 "Usuarios que no tienen ninguna preferencia = su hashrate se divide "
 "proporcionalmente entre todas las propuestas de tamaño de bloque."
 
-#: mining/models.py:396
+#: mining/models.py:398
 msgctxt "UI"
 msgid "Not voted"
 msgstr "No votado"
 
-#: mining/models.py:401
+#: mining/models.py:403
 msgctxt "UI"
 msgid "Current rules / Bitcoin Core"
 msgstr "Normas actuales / Bitcoin Core"
 
-#: mining/models.py:402
+#: mining/models.py:404
 msgctxt "UI"
 msgid ""
 "Users that prefer Current rules given by Bitcoin core = their hash rate is "
@@ -3354,17 +3367,17 @@ msgstr ""
 "Usuarios que prefieren las reglas actuales dadas por Bitcoin Core = su "
 "hashrate se usa para minar bloques de Bitcoin Core."
 
-#: mining/models.py:403
+#: mining/models.py:405
 msgctxt "UI"
 msgid "Bitcoin Core"
 msgstr "Bitcoin Core"
 
-#: mining/models.py:408
+#: mining/models.py:410
 msgctxt "UI"
 msgid "I don't care, pool operator decides"
 msgstr "No me importa, el operador del pool decide"
 
-#: mining/models.py:409
+#: mining/models.py:411
 msgctxt "UI"
 msgid ""
 "Users that set I don't care option = pool operator decides which block size "
@@ -3373,7 +3386,7 @@ msgstr ""
 "Los usuarios que configuran la opción No me importa = el operador del pool "
 "decide el tamaño de bloque que esté más cercano a su corazón."
 
-#: mining/models.py:410
+#: mining/models.py:412
 msgctxt "UI"
 msgid "Pool decides"
 msgstr "El pool decide"
@@ -3399,17 +3412,52 @@ msgctxt "UI"
 msgid "Service Update"
 msgstr "Actualización del Servicio"
 
-#: project/settings.py:314
+#: project/settings.py:359
 msgid "Simplified Chinese"
 msgstr "Chino Simplificado"
 
-#: project/settings.py:315
+#: project/settings.py:360
 msgid "Spanish"
 msgstr "Español"
 
-#: project/settings.py:316
+#: project/settings.py:361
 msgid "Russian"
 msgstr "Ruso"
+
+#: reports/views.py:21
+msgctxt "UI"
+msgid "Missing \"types\" parameter!"
+msgstr ""
+
+#: reports/views.py:25
+#, python-format
+msgctxt "UI"
+msgid "Invalid query type. Choices are: %s."
+msgstr ""
+
+#: reports/views.py:35
+msgctxt "UI"
+msgid "Missing \"output format\" parameter!"
+msgstr ""
+
+#: reports/views.py:37
+#, python-format
+msgctxt "UI"
+msgid "Invalid output format. Choices are: %s."
+msgstr ""
+
+#: reports/views.py:51
+msgctxt "UI"
+msgid "Missing date range (from, to)!"
+msgstr ""
+
+#: reports/views.py:53
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid token!"
+msgctxt "UI"
+msgid "Invalid date range!"
+msgstr "Token inválido!"
 
 #: settings/api/v1/api_actions.py:64
 msgctxt "UI"
@@ -3566,17 +3614,24 @@ msgctxt "UI"
 msgid "User doesn't have OTP."
 msgstr "El usuario no tiene OTP."
 
-#: user_request/api/v1/views.py:77
+#: user_request/api/v1/views.py:38
+#, fuzzy
+#| msgid "Second factor authentication required!"
+msgctxt "UI"
+msgid "Second factor authentication missing."
+msgstr "¡Segundo factor de autenticación requerido!"
+
+#: user_request/api/v1/views.py:75
 msgctxt "UI"
 msgid "User request"
 msgstr "Solicitud de usuario"
 
-#: user_request/api/v1/views.py:81
+#: user_request/api/v1/views.py:79
 msgctxt "UI"
 msgid "This request belongs to a different user!"
 msgstr "¡Esta solicitud pertenece a un usuario diferente!"
 
-#: user_request/api/v1/views.py:88
+#: user_request/api/v1/views.py:86
 msgctxt "UI"
 msgid "Supplied user request is not active!"
 msgstr "¡Solicitud de usuario suministrada no está activa!"
@@ -3837,528 +3892,610 @@ msgstr ""
 "La propuesta <a href=\"/proposal/detail/%(id)s\">%(title)s</a> ha sido "
 "publicada. "
 
-#: web/models.py:101
+#: web/models.py:114
 msgctxt "UI"
 msgid "Wallet change confirmation"
 msgstr "Confirmación de cambio de cartera"
 
-#: web/models.py:125
+#: web/models.py:138
 msgctxt "UI"
 msgid "Email change confirmation"
 msgstr "Confirmación de cambio de correo electrónico"
 
-#: web/models.py:307
+#: web/models.py:320
 msgctxt "UI"
 msgid "Zcash wallet change confirmation"
 msgstr "Confirmación de cambio de cartera Zcash"
 
-#: web/models.py:482
+#: web/models.py:495
 msgctxt "UI, Transaction state"
 msgid "New"
 msgstr "Nuevo"
 
-#: web/models.py:483
+#: web/models.py:496
 msgctxt "UI, Transaction state"
 msgid "Processing"
 msgstr "Procesando"
 
-#: web/models.py:484
+#: web/models.py:497
 msgctxt "UI, Transaction state"
 msgid "Failed"
 msgstr "Falló"
 
-#: web/models.py:485
+#: web/models.py:498
 msgctxt "UI, Transaction state"
 msgid "Sent"
 msgstr "Enviado"
 
-#: web/models.py:820 web/models.py:832
+#: web/models.py:833 web/models.py:845
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> cambiado desde <b>%(old)s</b> a <b>%(new)s</b>"
 
-#: web/models.py:825
+#: web/models.py:838
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> cambiado a <b>%(new)s</b>"
 
-#: web/models.py:840 web/models.py:860
+#: web/models.py:853 web/models.py:873
 #, python-format
 msgctxt "UI, time"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> cambiado desde <b>%(old)s</b> a <b>%(new)s</b>"
 
-#: web/models.py:854
+#: web/models.py:867
 msgctxt "UI"
 msgid "Depricated"
 msgstr "Obsoleto"
 
-#: web/models.py:866
+#: web/models.py:879
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s %(old)s</b> deleted"
 msgstr "<b>%(key)s %(old)s</b> borrado"
 
-#: web/models.py:868
+#: web/models.py:881
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s created: <b>%(new)s</b>"
 msgstr "<b>%(key)s creado: <b>%(new)s</b>"
 
-#: web/models.py:874
+#: web/models.py:887
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> deleted"
 msgstr "<b>%(key)s</b> borrado"
 
-#: web/models.py:876
+#: web/models.py:889
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> created"
 msgstr "<b>%(key)s</b> creado"
 
-#: web/models.py:877
+#: web/models.py:890
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed"
 msgstr "<b>%(key)s</b> cambiado"
 
-#: web/models.py:882
+#: web/models.py:895
 msgctxt "UI, value"
 msgid "profile <b>activated</b>"
 msgstr "perfil <b>activado</b>"
 
-#: web/models.py:883
+#: web/models.py:896
 msgctxt "UI, value"
 msgid "profile <b>deactivated</b>"
 msgstr "perfil <b>desactivado</b>"
 
-#: web/models.py:888
+#: web/models.py:901
 msgctxt "UI"
 msgid "Nothing has changed"
 msgstr "Nada ha cambiado"
 
-#: web/models.py:894 web/models.py:896
+#: web/models.py:907 web/models.py:909
 msgctxt "UI"
 msgid "N/A"
 msgstr "N/A"
 
-#: web/models.py:911
+#: web/models.py:924
 #, python-format
 msgctxt "UI, value"
 msgid "Access Profile <b>%(name)s</b>:<br>"
 msgstr "Perfil de Acceso <b>%(name)s<b>:<br>"
 
-#: web/models.py:920
+#: web/models.py:933
 msgctxt "UI"
 msgid "Worker"
 msgstr "Equipo de Minería"
 
-#: web/models.py:1021
+#: web/models.py:1051
 msgctxt "UI"
 msgid "Preferred language"
 msgstr "Idioma preferido"
 
-#: web/models.py:1022
+#: web/models.py:1052
 msgctxt "UI"
 msgid "Preferred timezone"
 msgstr "Zona horaria preferida"
 
-#: web/models.py:1023
+#: web/models.py:1053
 msgctxt "UI"
 msgid "Username in stats"
 msgstr "Nombre de usuario en las estadísticas"
 
-#: web/models.py:1024
+#: web/models.py:1054
 msgctxt "UI"
 msgid "Watch proposals"
 msgstr "Ver propuestas"
 
-#: web/models.py:1025
+#: web/models.py:1055
 msgctxt "UI"
 msgid "Notify me on payout"
 msgstr "Notificarme al momento del pago"
 
-#: web/models.py:1026
+#: web/models.py:1056
 msgctxt "UI"
 msgid "Newsletter"
 msgstr "Boletín"
 
-#: web/models.py:1027
+#: web/models.py:1057
 msgctxt "UI"
 msgid "Currency unit"
 msgstr "Unidad de moneda"
 
-#: web/models.py:1028
+#: web/models.py:1058
 msgctxt "UI"
 msgid "Blockchain voting"
 msgstr "Votación Blockchain"
 
-#: web/models.py:1030
+#: web/models.py:1060
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr "Informes habilitados"
 
-#: web/models.py:1031
+#: web/models.py:1061
 msgctxt "UI"
 msgid "Auto-detect alert limit"
 msgstr "Detectar automáticamente el Límite de Alerta"
 
-#: web/models.py:1032
+#: web/models.py:1062
 msgctxt "UI"
 msgid "Alert limit"
 msgstr "Límite de Alerta"
 
-#: web/models.py:1034
+#: web/models.py:1064
 msgctxt "UI"
 msgid "Wallet"
 msgstr "Cartera"
 
-#: web/models.py:1035 web/models.py:1036
+#: web/models.py:1065 web/models.py:1066
 msgctxt "UI"
 msgid "Pending wallet"
 msgstr "Cartera pendiente"
 
-#: web/models.py:1037
+#: web/models.py:1067
 msgctxt "UI"
 msgid "Send threshold"
 msgstr "Umbral de envío"
 
-#: web/models.py:1038
+#: web/models.py:1068
 msgctxt "UI"
 msgid "Email"
 msgstr "Email"
 
-#: web/models.py:1040
+#: web/models.py:1070
 msgctxt "UI"
 msgid "Monitoring"
 msgstr "Monitoreo"
 
-#: web/models.py:1041
+#: web/models.py:1071
 msgctxt "UI"
 msgid "Last Change"
 msgstr "Último Cambio"
 
-#: web/models.py:1042
+#: web/models.py:1072
 msgctxt "UI"
 msgid "Login suffix"
 msgstr "Sufijo de inicio de sesión"
 
-#: web/models.py:1043 web/models.py:1044
+#: web/models.py:1073 web/models.py:1074
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr "Dificultad mínima"
 
-#: web/models.py:1046
+#: web/models.py:1076
 msgctxt "UI"
 msgid "Bitcoin"
 msgstr "Bitcoin"
 
-#: web/models.py:1047
+#: web/models.py:1077
 msgctxt "UI"
 msgid "Ethereum Classic"
 msgstr "Ethereum Classic"
 
-#: web/models.py:1048
+#: web/models.py:1078
 msgctxt "UI"
 msgid "Ethereum"
 msgstr "Ethereum"
 
-#: web/models.py:1049
+#: web/models.py:1079
 msgctxt "UI"
 msgid "Zcash"
 msgstr "Zcash"
 
-#: web/models.py:1051
+#: web/models.py:1081
 msgctxt "UI"
 msgid "Enabled"
 msgstr "Habilitado"
 
-#: web/models.py:1051
+#: web/models.py:1081
 msgctxt "UI"
 msgid "Disabled"
 msgstr "Deshabilitado"
 
-#: web/models.py:1093
+#: web/models.py:1123
 msgctxt "UI"
 msgid "Account deletion cancelled"
 msgstr "Eliminación de cuenta cancelada"
 
-#: web/models.py:1094
+#: web/models.py:1124
 msgctxt "UI"
 msgid "Account deleted"
 msgstr "Cuenta eliminada"
 
-#: web/models.py:1095
+#: web/models.py:1125
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr "Eliminación de cuenta solicitada"
 
-#: web/models.py:1097
+#: web/models.py:1127
 msgctxt "UI"
 msgid "Demo login"
 msgstr "Demo de Inicio de sesión"
 
-#: web/models.py:1098
+#: web/models.py:1128
 msgctxt "UI"
 msgid "Support login"
 msgstr "Inicio de sesión de Soporte"
 
-#: web/models.py:1099
+#: web/models.py:1129
 msgctxt "UI"
 msgid "Login"
 msgstr "Inicio de sesión"
 
-#: web/models.py:1100
+#: web/models.py:1130
 msgctxt "UI"
 msgid "Logout"
 msgstr "Cerrar sesión"
 
-#: web/models.py:1101
+#: web/models.py:1131
 msgctxt "UI"
 msgid "Logout all sessions"
 msgstr "Cerrar todas las sesiones"
 
-#: web/models.py:1102
+#: web/models.py:1132
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr "Inicio de sesión inválido"
 
-#: web/models.py:1103
+#: web/models.py:1133
 msgctxt "UI"
 msgid "Inactive profile"
 msgstr "Perfil inactivo"
 
-#: web/models.py:1105
+#: web/models.py:1135
 msgctxt "UI"
 msgid "New access profile created"
 msgstr "Nuevo perfil de acceso creado"
 
-#: web/models.py:1107
+#: web/models.py:1137
 msgctxt "UI"
 msgid "Access profile updated"
 msgstr "Perfil de acceso actualizado"
 
-#: web/models.py:1109
+#: web/models.py:1139
 msgctxt "UI"
 msgid "Access profile deleted"
 msgstr "Perfil de acceso eliminado"
 
-#: web/models.py:1112
+#: web/models.py:1142
 msgctxt "UI"
 msgid "Message seen"
 msgstr "Mensaje visto"
 
-#: web/models.py:1113
+#: web/models.py:1143
 msgctxt "UI"
 msgid "Mining settings updated"
 msgstr "Configuración de minería actualizada"
 
-#: web/models.py:1114
+#: web/models.py:1144
 msgctxt "UI"
 msgid "Monitoring settings updated"
 msgstr "Configuración de monitoreo actualizada"
 
-#: web/models.py:1115
+#: web/models.py:1145
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
 msgstr "Suscripción al Boletín cancelada"
 
-#: web/models.py:1117
+#: web/models.py:1147
 msgctxt "UI"
 msgid "2-factor authentication disabled"
 msgstr "Autenticación de dos factores desactivada"
 
-#: web/models.py:1118
+#: web/models.py:1148
 msgctxt "UI"
 msgid "2-factor authentication enabled"
 msgstr "Autenticación de dos factores activada"
 
-#: web/models.py:1119
+#: web/models.py:1149
 msgctxt "UI"
 msgid "One time password setup cancelled"
 msgstr "Configuración del código temporal de seguridad cancelada"
 
-#: web/models.py:1120
+#: web/models.py:1150
 msgctxt "UI"
 msgid "OTP change confirmed"
 msgstr "Cambio OTP confirmado"
 
-#: web/models.py:1121
+#: web/models.py:1151
 msgctxt "UI"
 msgid "2-factor authentication removed by operator"
 msgstr "Autenticación de 2 factores eliminada por el operador"
 
-#: web/models.py:1123
+#: web/models.py:1153
 msgctxt "UI"
 msgid "U2F device registered"
 msgstr "Dispositivo U2F registrado"
 
-#: web/models.py:1124
+#: web/models.py:1154
 msgctxt "UI"
 msgid "U2F setup cancelled"
 msgstr "Configuración U2F cancelada"
 
-#: web/models.py:1126 web/models.py:1129
+#: web/models.py:1156 web/models.py:1159
 msgctxt "UI"
 msgid "Password changed"
 msgstr "Contraseña cambiada"
 
-#: web/models.py:1127
+#: web/models.py:1157
 msgctxt "UI"
 msgid "Password reset completed"
 msgstr "Restablecimiento de contraseña completo"
 
-#: web/models.py:1128
+#: web/models.py:1158
 msgctxt "UI"
 msgid "Password reset initiated"
 msgstr "Restablecimiento de contraseña iniciado"
 
-#: web/models.py:1131
+#: web/models.py:1161
 msgctxt "UI"
 msgid "Payout settings updated"
 msgstr "Configuración de pago actualizada"
 
-#: web/models.py:1132
+#: web/models.py:1162
 msgctxt "UI"
 msgid "Zcash payout settings updated"
 msgstr "Configuración de pago Zcash actualizada"
 
-#: web/models.py:1158 web/models.py:1160
+#: web/models.py:1188 web/models.py:1190
 msgctxt "UI"
 msgid "Account settings updated"
 msgstr "Configuración de cuenta actualizada"
 
-#: web/models.py:1164
+#: web/models.py:1194
 msgctxt "UI"
 msgid "Wallet change confirmed"
 msgstr "Cambio de cartera confirmado"
 
-#: web/models.py:1165
+#: web/models.py:1195
 msgctxt "UI"
 msgid "Wallet change cancelled"
 msgstr "Cambio de cartera cancelado"
 
-#: web/models.py:1166
+#: web/models.py:1196
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
 msgstr "Confirmación de cambio de cartera reenviada"
 
-#: web/models.py:1168
+#: web/models.py:1198
 msgctxt "UI"
 msgid "Zcash wallet change confirmed"
 msgstr "Cambio de cartera Zcash confirmado"
 
-#: web/models.py:1169
+#: web/models.py:1199
 msgctxt "UI"
 msgid "Zcash wallet change cancelled"
 msgstr "Cambio de cartera Zcash cancelado"
 
-#: web/models.py:1170
+#: web/models.py:1200
 msgctxt "UI"
 msgid "Zcash wallet change confirmation resent"
 msgstr "Confirmación de cambio de cartera Zcash reenviada"
 
-#: web/models.py:1172
+#: web/models.py:1202
 msgctxt "UI"
 msgid "Email change confirmed"
 msgstr "Cambio de correo electrónico confirmado"
 
-#: web/models.py:1173
+#: web/models.py:1203
 msgctxt "UI"
 msgid "Email change cancelled"
 msgstr "Cambio de correo electrónico cancelado"
 
-#: web/models.py:1174
+#: web/models.py:1204
 msgctxt "UI"
 msgid "Email change confirmation resent"
 msgstr "Confirmación de cambio de correo electrónico reenviada"
 
-#: web/models.py:1176
+#: web/models.py:1206
 msgctxt "UI"
 msgid "Wallet locked"
 msgstr "Cartera bloqueada"
 
-#: web/models.py:1177
+#: web/models.py:1207
 msgctxt "UI"
 msgid "Wallet unlocked"
 msgstr "Cartera desbloqueada"
 
-#: web/models.py:1178
+#: web/models.py:1208
 msgctxt "UI"
 msgid "Wallet unlocked by operator"
 msgstr "Cartera desbloqueada por el operador"
 
-#: web/models.py:1179
+#: web/models.py:1209
 msgctxt "UI"
 msgid "Zcash wallet locked"
 msgstr "Cartera Zcash bloqueada"
 
-#: web/models.py:1180
+#: web/models.py:1210
 msgctxt "UI"
 msgid "Zcash wallet unlocked"
 msgstr "Cartera Zcash desbloqueada"
 
-#: web/models.py:1183
+#: web/models.py:1213
 msgctxt "UI"
 msgid "Worker removed"
 msgstr "Equipo de minería removido"
 
-#: web/models.py:1184
+#: web/models.py:1214
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr "Has eliminado al equipo de minería <b>%(name)s</b>"
 
-#: web/models.py:1187
+#: web/models.py:1217
 msgctxt "UI"
 msgid "Workers removed"
 msgstr "Equipos de minería removidos"
 
-#: web/models.py:1188
+#: web/models.py:1218
 #, python-format
 msgctxt "UI"
 msgid "You have removed %(count)d %(coin)s workers"
 msgstr "Has eliminado %(count)d %(coin)s equipos de minería"
 
-#: web/models.py:1190
+#: web/models.py:1220
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr "Configuración de equipo de minería actualizada"
 
-#: web/models.py:1192
+#: web/models.py:1222
 msgctxt "UI"
 msgid "New worker"
 msgstr "Nuevo Equipo de Minería"
 
-#: web/models.py:1193
+#: web/models.py:1223
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr "Has registrado un nuevo equipo de minería"
 
-#: web/models.py:1198
+#: web/models.py:1228
 msgctxt "UI"
 msgid "User appeal dismissed"
 msgstr "Apelación del usuario desestimada"
 
-#: web/models.py:1203
+#: web/models.py:1233
 msgctxt "UI"
 msgid "Enabled coins updated"
 msgstr "Monedas habilitadas actualizadas"
 
-#: web/permissions.py:32
+#: web/models.py:1238
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "New access profile created"
+msgctxt "UI"
+msgid "New campaign created"
+msgstr "Nuevo perfil de acceso creado"
+
+#: web/models.py:1242
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Proposal updated"
+msgctxt "UI"
+msgid "Campaign updated"
+msgstr "Propuesta actualizada"
+
+#: web/models.py:1246
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "New access profile created"
+msgctxt "UI"
+msgid "New campaign run created"
+msgstr "Nuevo perfil de acceso creado"
+
+#: web/models.py:1250
+msgctxt "UI"
+msgid "Campaign run updated"
+msgstr ""
+
+#: web/models.py:1254
+msgctxt "UI"
+msgid "A new e-mail template created"
+msgstr ""
+
+#: web/models.py:1258
+msgctxt "UI"
+msgid "E-mail template updated"
+msgstr ""
+
+#: web/models.py:1263
+msgctxt "UI"
+msgid "Generating e-mails for a campaign run was requested"
+msgstr ""
+
+#: web/models.py:1267
+msgctxt "UI"
+msgid "Request for generating e-mails for a campaign run was cancelled"
+msgstr ""
+
+#: web/models.py:1271
+msgctxt "UI"
+msgid "Rendering e-mails for a campaign run was requested"
+msgstr ""
+
+#: web/models.py:1275
+msgctxt "UI"
+msgid "Request for rendering e-mails for a campaign run was cancelled"
+msgstr ""
+
+#: web/models.py:1279
+msgctxt "UI"
+msgid "E-mails generated for a campaign run were deleted"
+msgstr ""
+
+#: web/models.py:1283
+msgctxt "UI"
+msgid "Testing e-mail for a campaign was sent"
+msgstr ""
+
+#: web/models.py:1287
+#, fuzzy
+msgctxt "UI"
+msgid "Unsubscribed from newsletter."
+msgstr "Recibir boletines del pool"
+
+#: web/models.py:1292
+#, fuzzy
+#| msgid "Expected Hash Rate"
+msgctxt "UI"
+msgid "Exported user data"
+msgstr "Poder de Hasheo Esperado"
+
+#: web/permissions.py:34
 msgctxt "UI"
 msgid "Full access"
 msgstr "Acceso completo"
 
-#: web/permissions.py:33
+#: web/permissions.py:35
 msgctxt "UI"
 msgid "Read-only"
 msgstr "Solo lectura"
 
-#: web/permissions.py:34
+#: web/permissions.py:36
 msgctxt "UI"
 msgid "Limited read-only"
 msgstr "Sólo lectura limitada"
@@ -4619,8 +4756,8 @@ msgctxt "UI"
 msgid ""
 "The username associated with this e-mail is: <strong>%(username)s</strong>"
 msgstr ""
-"El nombre de usuario asociado con este email es: "
-"<strong>%(username)s</strong>"
+"El nombre de usuario asociado con este email es: <strong>%(username)s</"
+"strong>"
 
 #: web/templates/email/password_reset.html:9
 #, python-format
@@ -4845,6 +4982,15 @@ msgstr "Identificaciones de etiqueta inválidas."
 msgctxt "UI"
 msgid "Names and shortcuts must be unique."
 msgstr "Nombres y accesos directos deben ser únicos."
+
+#~ msgctxt "UI"
+#~ msgid "No active users with active newsletter found."
+#~ msgstr "No se han encontrado usuarios activos con boletín activo."
+
+#~ msgctxt "UI"
+#~ msgid "Failed to process the request, please contact our support"
+#~ msgstr ""
+#~ "No se pudo procesar la solicitud, póngase en contacto con nuestro soporte"
 
 #~ msgid "English"
 #~ msgstr "Inglés"
@@ -8242,10 +8388,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgstr "Comentario sobre propuesta eliminado"
 
 #~ msgctxt "UI"
-#~ msgid "Proposal updated"
-#~ msgstr "Propuesta actualizada"
-
-#~ msgctxt "UI"
 #~ msgid "Proposal state changed"
 #~ msgstr "Estado de propuesta cambiado"
 
@@ -9116,9 +9258,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ "que instale los controladores WinUSB. Este proceso se abarca en nuestro "
 #~ "citado <a target=\"_blank\" href=\"%(miner_tutorial)s\" class=\"ext"
 #~ "\">tutorial</a>"
-
-#~ msgid "Enter a valid Email service provider."
-#~ msgstr "Introduzca un proveedor de Email válido."
 
 #~ msgid "Asia-Pacific/<strong>Singapore</strong>"
 #~ msgstr "Asia-Pacífico/<strong>Singapur</strong>"
@@ -11426,11 +11565,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 
 #, fuzzy
 #~ msgctxt "UI"
-#~ msgid "Unsubscribe from newsletter"
-#~ msgstr "Recibir boletines del pool"
-
-#, fuzzy
-#~ msgctxt "UI"
 #~ msgid "Permalink"
 #~ msgstr "Alemán"
 
@@ -11696,9 +11830,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgctxt "UI"
 #~ msgid "Expected Hash Rate [Gh/s]"
 #~ msgstr "Capacidad de Hasheo Esperada [Gh/s]"
-
-#~ msgid "Expected Hash Rate"
-#~ msgstr "Poder de Hasheo Esperado"
 
 #, fuzzy
 #~ msgctxt "UI"
