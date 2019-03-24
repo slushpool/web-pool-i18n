@@ -8,25 +8,26 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-19 18:24+0100\n"
-"PO-Revision-Date: 2017-04-16 19:49+0000\n"
-"Last-Translator: Josef Kubíček <kubijo@gmail.com>\n"
-"Language-Team: Chinese <https://hosted.weblate.org/projects/bitcoin-cz/"
-"mining/zh/>\n"
+"PO-Revision-Date: 2019-03-28 23:03+0000\n"
+"Last-Translator: JohnsonWang <johnsonwong@westudyin.cz>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"slushpool/mining/zh_Hans/>\n"
 "Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.14-dev\n"
+"X-Generator: Weblate 3.6-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
 msgid "Request body must be list of objects"
-msgstr ""
+msgstr "请求的主体必须是项目的列表"
 
 #: api/core.py:358
+#, fuzzy
 msgid "Request payload expected, but not supplied!"
-msgstr "Request payload expected, but not supplied!"
+msgstr "达到有效负荷，但是没有供应！"
 
 #: api/exceptions.py:13
 msgctxt "UI"
@@ -48,12 +49,9 @@ msgid "Response is not a %(format)s serializable"
 msgstr "回复不能%(format)s序列化"
 
 #: api/exceptions.py:52
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "2-factor authentication enabled"
 msgctxt "UI"
 msgid "Authentication required"
-msgstr "双重验证已启用"
+msgstr "需要验证"
 
 #. Translators: %s will be api method, eg.: get, list, get_facts, etc.
 #: api/exceptions.py:62
@@ -82,7 +80,7 @@ msgstr "此方法在只读状态下是不允许的"
 #: api/exceptions.py:83
 msgctxt "UI"
 msgid "Bad request."
-msgstr "错误请求。"
+msgstr "请求无效。"
 
 #: api/exceptions.py:107
 msgctxt "UI"
@@ -147,7 +145,7 @@ msgstr "矿工未找到（%s）"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
 #: api/exceptions.py:162
-#, python-format
+#, fuzzy, python-format
 msgctxt "UI"
 msgid "Slot \"%s\" not found"
 msgstr "时间段”%s“未找到"
@@ -157,7 +155,7 @@ msgstr "时间段”%s“未找到"
 #, fuzzy, python-format
 msgctxt "UI"
 msgid "Slot number \"%s\" is not valid."
-msgstr "签名无效。"
+msgstr "槽\"%s\"是无效的。"
 
 #. Translators: %s will be some invalid blockchain voting option
 #: api/exceptions.py:184
@@ -179,7 +177,7 @@ msgstr "Hash速率分配数据不足"
 #: api/exceptions.py:204
 msgctxt "UI"
 msgid "Integrity error on worker update"
-msgstr "矿工更新完整性错误"
+msgstr "矿工完整性更新错误"
 
 #: api/exceptions.py:209
 msgctxt "UI"
@@ -224,10 +222,10 @@ msgid "Used device is not active yet. Use different one."
 msgstr "使用的设备还未激活，请使用另一个。"
 
 #: api/exceptions.py:268
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Your pairing token expired after %s seconds. Please try again."
-msgstr "您的配对令牌在 {} 秒后过期，请重试。"
+msgstr "您的配对令牌在%s秒后过期，请重试。"
 
 #: api/exceptions.py:273
 msgctxt "UI"
@@ -235,31 +233,25 @@ msgid "Device for given token does not exist. Please pair your device again."
 msgstr "给定的令牌不存在，请重新配对您的设备。"
 
 #: api/exceptions.py:283
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "U2F verification failed."
 msgctxt "UI"
 msgid "OTP verification failed."
-msgstr "双重认证验证失败。"
+msgstr "一次性密码验证失败。"
 
 #: api/exceptions.py:288
 #, python-format
 msgctxt "UI"
 msgid "Coin \"%(coin)s\" is not allowed. Use one of: %(choices)s"
-msgstr ""
+msgstr "“%(coin)s”不被允许使用。 请使用%(choices)s中的一个"
 
 #: api/exceptions.py:293
 msgctxt "UI"
 msgid "Unexpected server error. Please try again later."
-msgstr ""
+msgstr "未预料到的服务器错误。请稍后再试。"
 
 #: api/exceptions.py:298
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Access denied to object: %s"
 msgctxt "UI"
 msgid "Access denied."
-msgstr "访问: %s 被拒绝"
+msgstr "拒绝访问。"
 
 #: backend/queries/legacy.py:107
 msgctxt "UI, Blocks"
@@ -272,33 +264,25 @@ msgid "Confirmed"
 msgstr "确认的"
 
 #: campaigns/forms/validators.py:345 mailing/forms/validators.py:34
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid request"
 msgctxt "UI"
 msgid "Invalid user selection."
-msgstr "无效的请求"
+msgstr "无效的用户选择。"
 
 #: campaigns/forms/validators.py:353 mailing/forms/validators.py:53
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid token format"
 msgctxt "UI"
 msgid "Invalid reason for unsubscription."
-msgstr "无效令牌格式"
+msgstr "无效的退订理由。"
 
 #: campaigns/forms/validators.py:363
 #, python-format
 msgctxt "UI"
 msgid "Feedback must be a string no longer than %d characters."
-msgstr ""
+msgstr "反馈必须是长于%d个字的字符串。"
 
 #: campaigns/forms/validators.py:376
-#, fuzzy
-#| msgid "Enter a valid Email service provider."
 msgctxt "UI"
 msgid "Invalid e-mail token provided."
-msgstr "请输入一个有效的邮件服务提供商。"
+msgstr "提供了无效的邮件令牌。"
 
 #: core/validators.py:10
 msgid "Enter a valid, non empty value."
@@ -393,14 +377,16 @@ msgid "Device you are trying to pair was not found"
 msgstr "您尝试配对的设备未能找到"
 
 #: devices/models.py:59
+#, fuzzy
 msgctxt "UI"
 msgid "Values for device settings must be dictionary."
-msgstr "Values for device settings must be dictionary."
+msgstr "设备设定的值必须是字典的。"
 
 #: devices/models.py:63
+#, fuzzy
 msgctxt "UI"
 msgid "Invalid keys supplied as device settings."
-msgstr "Invalid keys supplied as device settings."
+msgstr "无效的密钥作为设备设定供给。"
 
 #: devices/templates/notification/monitoring_subject.txt:2
 #: web/templates/email/monitoring_subject.html:2
@@ -409,75 +395,54 @@ msgid "Workers"
 msgstr "矿工"
 
 #: devices/templates/notification/proposal_state_update_subject.txt:1
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Proposal state change - %(state)s #%(id)s"
-msgstr "提议状态更改- %(state)s（%(name)s）"
+msgstr "提出状态更改 - %(state)s #%(id)s"
 
 #: formlib/core.py:24
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "2-factor authentication enabled"
 msgid "Authentication required!"
-msgstr "双重验证已启用"
+msgstr "需要验证！"
 
 #: formlib/core.py:28
 msgid "Missing captcha data!"
-msgstr ""
+msgstr "验证码缺失！"
 
 #: formlib/core.py:32
 msgid "Captcha validation failed."
-msgstr ""
+msgstr "验证码验证失败。"
 
 #: formlib/core.py:36
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "2-factor authentication enabled"
 msgid "Current password required!"
-msgstr "双重验证已启用"
+msgstr "需要当前密码！"
 
 #: formlib/core.py:40
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "2-factor authentication enabled"
 msgid "Second factor authentication required!"
-msgstr "双重验证已启用"
+msgstr "需要两步验证！"
 
 #: formlib/core.py:44
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "OTP Validation"
 msgid "OTP token validation failed."
-msgstr "一次性验证"
+msgstr "一次性密码验证令牌验证失败。"
 
 #: formlib/core.py:48
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "U2F verification failed."
 msgid "U2F authentication failed!"
-msgstr "双重认证验证失败。"
+msgstr "U2F验证失败!"
 
 #: formlib/core.py:52
 msgid "Current password is incorrect!"
-msgstr ""
+msgstr "当前密码错误！"
 
 #: help/help_categories.py:41
-#, fuzzy
-#| msgctxt "Intro"
-#| msgid "Introduction"
 msgid "Introduction to Mining"
-msgstr "介绍"
+msgstr "挖矿介绍"
 
 #: help/help_categories.py:46 help/templates/help/bitcoin-setup.html:10
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Bitcoin Core"
 msgid "Bitcoin Setup"
-msgstr "Bitcoin Core"
+msgstr "比特币设置"
 
 #: help/help_categories.py:51 help/templates/help/zcash-setup.html:8
 msgid "Zcash Setup"
-msgstr ""
+msgstr "Zcash设置"
 
 #: help/help_categories.py:56 help/templates/help/rewards-payouts.html:7
 msgid "Rewards & Payouts"
@@ -489,7 +454,7 @@ msgstr "矿池术语"
 
 #: help/help_categories.py:66
 msgid "Reward System"
-msgstr "报酬系统"
+msgstr "收益系统"
 
 #: help/help_categories.py:71
 msgid "Device Monitoring"
@@ -500,18 +465,16 @@ msgid "Worker Management"
 msgstr "矿工管理"
 
 #: help/help_categories.py:81
-#, fuzzy
-#| msgid "FAQ: User Account"
 msgid "User Accounts"
-msgstr "常见问题：账户"
+msgstr "用户账户"
 
 #: help/help_categories.py:86 help/templates/help/mobile-app.html:5
 msgid "Mobile App"
-msgstr ""
+msgstr "手机APP"
 
 #: help/help_categories.py:91 help/templates/help/api.html:3
 msgid "API Guide"
-msgstr ""
+msgstr "API指南"
 
 #: help/help_categories.py:96
 msgid "Hash Rate Proof"
@@ -519,11 +482,11 @@ msgstr "Hash速率证明"
 
 #: help/help_categories.py:101
 msgid "Stratum Protocol"
-msgstr "阶层协议"
+msgstr "阶层(Stratum)协议"
 
 #: help/help_categories.py:106
 msgid "Stratum Mining Proxy"
-msgstr "阶层挖矿代理"
+msgstr "阶层(Stratum)挖矿代理"
 
 #: help/help_categories.py:119
 msgid "Getting started"
@@ -535,17 +498,15 @@ msgstr "您开始了吗？"
 
 #: help/help_categories.py:129
 msgid "User Manual"
-msgstr "用户指南"
+msgstr "用户手册"
 
 #: help/help_categories.py:131
 msgid "Do you want to know more?"
 msgstr "您想了解更多吗？"
 
 #: help/help_categories.py:142
-#, fuzzy
-#| msgid "Offical protocol documentation"
 msgid "Technical Documentation"
-msgstr "官方协议文件"
+msgstr "技术文件"
 
 #: help/help_categories.py:144
 #, fuzzy
@@ -558,7 +519,7 @@ msgstr "剩余分数"
 msgid ""
 "Do you want to pull the mining stats/data and analyze them yourself? API is "
 "here for you!"
-msgstr ""
+msgstr "您想提取挖矿统计/数据自己分析吗？这里为您准备了API！"
 
 #: help/templates/help/api.html:7
 msgid ""
@@ -567,49 +528,46 @@ msgid ""
 "You have to include the abbreviation of the selected coin (e.g. btc) and "
 "your access token in every API URL."
 msgstr ""
+"矿池API在JSON文件的以下三个端点上 <strong>统计</strong>, <strong>配置</strong> and "
+"<strong>工作矿机</strong>提供数据。\n"
+"在每个API的URL里访问代币，您需要包括选择币种的简写（例如，BTC）。"
 
 #: help/templates/help/api.html:10
 msgid ""
 "To acquire <strong>access token</strong> needed for API authentication, "
 "please follow these steps:"
-msgstr ""
+msgstr "需要API验证以获得 <strong>接入令牌</strong> , 请按照以下步骤操作："
 
 #: help/templates/help/api.html:13
 msgid "Go to <em>Settings > Access Profiles</em>"
-msgstr ""
+msgstr "前往 <em>设置 > 接入配置</em>"
 
 #: help/templates/help/api.html:14
 msgid "Select one of your access profiles or create a new one"
-msgstr ""
+msgstr "选择您访问配置中的一个或创建一个新配置"
 
 #: help/templates/help/api.html:15
 msgid "Select <em>Allow access to web APIs</em> in the access profile detail"
-msgstr ""
+msgstr "在访问配置的详细信息中选择 <em>允许接入网页API</em>"
 
 #: help/templates/help/api.html:16
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Generate new token"
 msgid "Click on <em>Generate New token</em>"
-msgstr "生成新的令牌"
+msgstr "点击<em>生成新令牌</em>"
 
 #: help/templates/help/api.html:17
 msgid "<em>Save</em> the changes"
-msgstr ""
+msgstr "<em>保存</em> 更改"
 
 #: help/templates/help/api.html:20
 msgid ""
 "Each access profile has its own access token (in case API access is "
 "enabled). Access tokens can be regenerated any time, effectively canceling "
 "the former access token belonging to the selected access profile."
-msgstr ""
+msgstr "每个访问配置都有各自独立的访问令牌（如果API访问已开启）。访问令牌可以在任何时候重新生成，这样选中的旧访问配置的访问令牌则可以被有效地取消。"
 
 #: help/templates/help/api.html:22
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Need authentication"
 msgid "API authentication"
-msgstr "需要身份验证"
+msgstr "API验证"
 
 #: help/templates/help/api.html:24
 msgid ""
@@ -617,13 +575,12 @@ msgid ""
 "<code>SlushPool-Auth-Token</code> or <code>X-SlushPool-Auth-Token</code> to "
 "authenticate your requests."
 msgstr ""
+"访问配置令牌需要在HTTP头字段项中命名为 <code>SlushPool-Auth-Token</code> 或 <code>X-SlushPool-"
+"Auth-Token</code> 以验证您的请求。"
 
 #: help/templates/help/api.html:26
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Alert limit"
 msgid "API request limit"
-msgstr "警告限值"
+msgstr "API请求限制"
 
 #: help/templates/help/api.html:28
 msgid ""
@@ -634,17 +591,16 @@ msgid ""
 "might get banned. If that is the case, please contact us to resolve the "
 "situation."
 msgstr ""
+"API允许 大约<strong>单个请求</strong><strong>每5秒</strong> (的安全值). "
+"当您短时间超过这一限制时，您的部分请求会被忽略。当您的请求长期大量超过这一限制时，您的IP地址将受到封禁。这种情况下，请您联系客服解决这一情况。"
 
 #: help/templates/help/api.html:30
-#, fuzzy
-#| msgctxt "Intro"
-#| msgid "Pool Statistics"
 msgid "Pool Stats API"
-msgstr "矿池统计"
+msgstr "矿池统计API"
 
 #: help/templates/help/api.html:32
 msgid "Provides information about pool performance and recently found blocks."
-msgstr ""
+msgstr "提供关于矿池效能和近期发现的区块的信息。"
 
 #: help/templates/help/api.html:33 help/templates/help/api.html:191
 #: help/templates/help/api.html:308 help/templates/help/bitcoin-setup.html:42
@@ -657,32 +613,26 @@ msgstr "链接："
 #: help/templates/help/api.html:39 help/templates/help/api.html:197
 #: help/templates/help/api.html:314
 msgid "Show sample output"
-msgstr ""
+msgstr "显示输出的示例"
 
 #: help/templates/help/api.html:72
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Go to Pool Statistics"
 msgid "General Pool Stats"
-msgstr "去矿池统计"
+msgstr "通用矿池统计"
 
 #: help/templates/help/api.html:77 help/templates/help/api.html:140
 #: help/templates/help/api.html:227 help/templates/help/api.html:350
 msgid "Field"
-msgstr ""
+msgstr "项(Field)"
 
 #: help/templates/help/api.html:78 help/templates/help/api.html:141
 #: help/templates/help/api.html:228 help/templates/help/api.html:351
 msgid "Type"
-msgstr ""
+msgstr "类型"
 
 #: help/templates/help/api.html:79 help/templates/help/api.html:142
 #: help/templates/help/api.html:229 help/templates/help/api.html:352
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Duration"
 msgid "Description"
-msgstr "持续时间"
+msgstr "描述"
 
 #: help/templates/help/api.html:83 help/templates/help/api.html:88
 #: help/templates/help/api.html:93 help/templates/help/api.html:98
@@ -692,26 +642,25 @@ msgstr "持续时间"
 #: help/templates/help/api.html:243 help/templates/help/api.html:248
 #: help/templates/help/api.html:253 help/templates/help/api.html:258
 #: help/templates/help/api.html:361 help/templates/help/api.html:366
-#, fuzzy
 msgid "string"
-msgstr "监控"
+msgstr "串"
 
 #: help/templates/help/api.html:84
 msgid "pool luck for the last ten blocks"
-msgstr ""
+msgstr "最近10个区块的矿池幸运值"
 
 #: help/templates/help/api.html:89
 msgid "pool luck for the last 50 blocks"
-msgstr ""
+msgstr "最近50个区块的矿池幸运值"
 
 #: help/templates/help/api.html:94
 msgid "pool luck for the last 250 blocks"
-msgstr ""
+msgstr "最近250个区块的矿池幸运值"
 
 #: help/templates/help/api.html:99 help/templates/help/api.html:259
 #: help/templates/help/api.html:367
 msgid "unit used for the hash rate values"
-msgstr ""
+msgstr "用于哈希率值的单位"
 
 #: help/templates/help/api.html:103 help/templates/help/api.html:108
 #: help/templates/help/api.html:118 help/templates/help/api.html:123
@@ -724,22 +673,16 @@ msgstr ""
 #: help/templates/help/api.html:298 help/templates/help/api.html:356
 #: help/templates/help/api.html:371 help/templates/help/api.html:376
 #: help/templates/help/api.html:381 help/templates/help/api.html:386
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Block number"
 msgid "number"
-msgstr "矿区编号"
+msgstr "编号"
 
 #: help/templates/help/api.html:104
-#, fuzzy
-#| msgctxt "Main rewards formula"
-#| msgid "pool scoring hash rate"
 msgid "pool scoring hash rate"
-msgstr "矿池指数加权hash速率"
+msgstr "矿池计分哈希律(Pool scoring hash rate)"
 
 #: help/templates/help/api.html:109
 msgid "number of pool active workers"
-msgstr ""
+msgstr "矿池实时工作矿机数量"
 
 #: help/templates/help/api.html:114
 #, fuzzy
@@ -749,202 +692,152 @@ msgstr "在本轮的股份的贡献："
 
 #: help/templates/help/api.html:119
 msgid "Unix time when the current round was started"
-msgstr ""
+msgstr "当前轮开始时的UNIX时间"
 
 #: help/templates/help/api.html:124
 msgid "duration of the current round (seconds)"
-msgstr ""
+msgstr "当前轮长度(秒)"
 
 #: help/templates/help/api.html:129
 msgid "information for the last 15 blocks (breakdown below)"
-msgstr ""
+msgstr "最近15个区块的信息 (下方有详细分解)"
 
 #: help/templates/help/api.html:135
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Recent Blocks"
 msgid "Latest Blocks"
-msgstr "当前矿区"
+msgstr "最新的区块"
 
 #: help/templates/help/api.html:147
-#, fuzzy
-#| msgctxt "Intro"
-#| msgid "Your scoring hash rate at the time when the block was found."
 msgid "Unix time when given block was found"
-msgstr "当区块发现时您的指数加权hash速率。"
+msgstr "指定区块被开采时的UNIX时间"
 
 #: help/templates/help/api.html:152
 msgid "duration of the round leading to given block"
-msgstr ""
+msgstr "给定区块的轮长度"
 
 #: help/templates/help/api.html:157
 msgid "number of shares collected during the round"
-msgstr ""
+msgstr "在一轮中的share数 (Share指矿池所定义的最小单位工作量)"
 
 #: help/templates/help/api.html:162
 msgid "state of given block"
-msgstr ""
+msgstr "指定区块状态"
 
 #: help/templates/help/api.html:167
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "New account confirmation"
 msgid "number of confirmations left"
-msgstr "新账户的确认"
+msgstr "剩余确认数"
 
 #: help/templates/help/api.html:172
-#, fuzzy
-#| msgctxt "Main rewards formula"
-#| msgid "block value"
 msgid "block value"
-msgstr "矿区价值"
+msgstr "区块价值"
 
 #: help/templates/help/api.html:177
 msgid "user reward for the given block"
-msgstr ""
+msgstr "指定区块的用户收益"
 
 #: help/templates/help/api.html:182
-#, fuzzy
-#| msgctxt "Intro"
-#| msgid "Your scoring hash rate at the time when the block was found."
 msgid "pool scoring hash rate at the time when block was found"
-msgstr "当区块发现时您的指数加权hash速率。"
+msgstr "开采到区块时您的矿池计分哈希律"
 
 #: help/templates/help/api.html:188
 msgid "User Profile API"
-msgstr ""
+msgstr "用户配置API"
 
 #: help/templates/help/api.html:190
 msgid "Provides information about users performance and rewards."
-msgstr ""
+msgstr "提供关于用户效能和奖励的信息。"
 
 #: help/templates/help/api.html:234
-#, fuzzy
-#| msgid "user name:"
 msgid "username"
-msgstr "用户名："
+msgstr "用户名"
 
 #: help/templates/help/api.html:239
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Unconfirmed Reward"
 msgid "confirmed reward"
-msgstr "未确认的报酬"
+msgstr "已确认的收益"
 
 #: help/templates/help/api.html:244
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Unconfirmed Reward"
 msgid "unconfirmed reward"
-msgstr "未确认的报酬"
+msgstr "未确认的收益"
 
 #: help/templates/help/api.html:249
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "<span>Estimated</span> Reward for Current Block"
 msgid "estimated reward for the current block"
-msgstr "<span>估计的</span>当前区块的报酬"
+msgstr "预计当前区块的收益"
 
 #: help/templates/help/api.html:254
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Payout Threshold"
 msgid "user minimum payout threshold"
-msgstr "报酬支付门槛"
+msgstr "用户最低支付限额"
 
 #: help/templates/help/api.html:264 help/templates/help/api.html:377
-#, fuzzy
-#| msgctxt "Intro"
-#| msgid ""
-#| "Average effective hash rate for the past 5 minutes / 1 hour / 24 hours."
 msgid "average hash rate for the last 5 minutes"
-msgstr "过去5分钟/1小时/24小时的平均有效hash速率。"
+msgstr "最近5分钟的平均哈希率"
 
 #: help/templates/help/api.html:269 help/templates/help/api.html:382
-#, fuzzy
-#| msgid "Average hashrate in last 10 rounds:"
 msgid "average hash rate for the last 60 minutes"
-msgstr "前十个回合的平均hash速率"
+msgstr "最近60分钟的平均哈希率"
 
 #: help/templates/help/api.html:274 help/templates/help/api.html:387
-#, fuzzy
-#| msgid "Average hashrate in last 10 rounds:"
 msgid "average hash rate for the last 24 hours"
-msgstr "前十个回合的平均hash速率"
+msgstr "最近24小时的平均哈希率"
 
 #: help/templates/help/api.html:279
-#, fuzzy
-#| msgctxt "Main rewards formula"
-#| msgid "your scoring hash rate"
 msgid "user current scoring hash rate"
-msgstr "您的指数加权hash速率"
+msgstr "用户当前的计分哈希律"
 
 #: help/templates/help/api.html:284
 msgid "number of workers with 'low' state"
-msgstr ""
+msgstr "“低”状态工作矿机数量"
 
 #: help/templates/help/api.html:289
 msgid "number of workers with 'off' state"
-msgstr ""
+msgstr "“离线”状态工作矿机数量"
 
 #: help/templates/help/api.html:294
 msgid "number of workers with 'ok' state"
-msgstr ""
+msgstr "“正常”状态工作矿机数量"
 
 #: help/templates/help/api.html:299
-#, fuzzy
-#| msgctxt "Intro"
-#| msgid "# of workers in respective monitoring states."
 msgid "number of workers with disabled monitoring"
-msgstr "# 矿工在各自监控状态。"
+msgstr "停用监控的矿工数量"
 
 #: help/templates/help/api.html:305
-#, fuzzy
-#| msgid "Worker"
 msgid "Worker API"
-msgstr "矿工"
+msgstr "矿工 API"
 
 #: help/templates/help/api.html:307
 msgid "Provides performance data for each one of users worker."
-msgstr ""
+msgstr "提供每个用户的矿工的效能数据。"
 
 #: help/templates/help/api.html:357
-#, fuzzy
-#| msgid "Date and time of last share."
 msgid "Unix time of the last accepted share"
-msgstr "上次share的日期和时间。"
+msgstr "上次被接受的share的UNIX时间"
 
 #: help/templates/help/api.html:362
 msgid "state of the worker (ok/low/off/dis)"
-msgstr ""
+msgstr "矿工状态 (正常/低/离线/已禁用)"
 
 #: help/templates/help/api.html:372
-#, fuzzy
-#| msgctxt "Main rewards formula"
-#| msgid "your scoring hash rate"
 msgid "current scoring hash rate"
-msgstr "您的指数加权hash速率"
+msgstr "当前的计分哈希律"
 
 #: help/templates/help/bitcoin-setup.html:12
 #: help/templates/help/zcash-setup.html:10
 msgid "Get suitable hardware"
-msgstr ""
+msgstr "请用合适的硬件"
 
 #: help/templates/help/bitcoin-setup.html:15
 msgid "Bitcoin <span>can</span> be efficiently mined with:"
-msgstr ""
+msgstr "比特币 <span>能够</span> 被以下的有效地开采:"
 
 #: help/templates/help/bitcoin-setup.html:15
 msgid "ASIC (SHA-256 algorithm)"
-msgstr ""
+msgstr "ASIC (SHA-256 算法)"
 
 #: help/templates/help/bitcoin-setup.html:17
 msgid "Bitcoin <span>cannot</span> be efficiently mined with (unsupported):"
-msgstr ""
+msgstr "比特币 <span>不能</span> 被以下的有效地开采（不支持）:"
 
 #: help/templates/help/bitcoin-setup.html:17
 msgid "GPU, CPU, mobile phone"
-msgstr ""
+msgstr "GPU, CPU, 手机"
 
 #: help/templates/help/bitcoin-setup.html:20
 #: help/templates/help/zcash-setup.html:17
@@ -952,41 +845,35 @@ msgid ""
 "While mining with unsupported hardware might be possible, it will almost "
 "certainly be unprofitable. Also, keep in mind that our support team will not "
 "be resolving issues related to unsupported hardware."
-msgstr ""
+msgstr "使用不支持的硬件挖矿是可能的，但是肯定是不会有利润的。而且，您须知的是我们的客服团队不会解决您有关不支持的硬件挖矿的任何问题。"
 
 #: help/templates/help/bitcoin-setup.html:22
 #: help/templates/help/zcash-setup.html:19
-#, fuzzy
 msgid "Sign-up for a Slush Pool account"
-msgstr "2.使用bitcoin.cz帐户来注册"
+msgstr "注册一个Slush Pool账户"
 
 #: help/templates/help/bitcoin-setup.html:23
 #: help/templates/help/zcash-setup.html:20
 msgid ""
 "You can use an existing account if you have one. A single account can be "
 "used to mine all supported cryptocurrencies."
-msgstr ""
+msgstr "您能使用您已有的账号，如果您已经有一个。所有被矿池支持的虚拟货币，都能使用同一账号进行挖矿。"
 
 #: help/templates/help/bitcoin-setup.html:26
 #: help/templates/help/zcash-setup.html:23
-#, fuzzy, python-format
-#| msgid ""
-#| "<a href=\"%(signup)s\">Sign-up</a> and wait for a confirmation email."
+#, python-format
 msgid "<a href=\"%(signup)s\">Sign-up</a> and wait for the confirmation email."
-msgstr "<a href=\"%(signup)s\">注册</a>然后等待一封确认邮件。"
+msgstr "<a href=\"%(signup)s\">注册</a>然后等待确认邮件。"
 
 #: help/templates/help/bitcoin-setup.html:29
-#, fuzzy, python-format
-#| msgid "<a href=\"%(login)s\">Login</a> to your account."
+#, python-format
 msgid "<a href=\"%(login)s\">Log into</a> your account."
 msgstr "<a href=\"%(login)s\">登录</a>到您的账户。"
 
 #: help/templates/help/bitcoin-setup.html:33
 #: help/templates/help/zcash-setup.html:27
-#, fuzzy
-#| msgid "Slower Mining Device"
 msgid "Configure your mining device"
-msgstr "慢的挖矿设备"
+msgstr "配置您的挖矿设备"
 
 #: help/templates/help/bitcoin-setup.html:35
 #: help/templates/help/zcash-setup.html:28
@@ -995,14 +882,14 @@ msgid ""
 "and different settings interfaces. Please follow their official "
 "documentation when setting up your miners. This also applies to cloud mining "
 "services."
-msgstr ""
+msgstr "每个矿机厂商都有不一样的配置要求和配置界面。请根据他们的官方文件配置矿机，云矿机服务也同理。"
 
 #: help/templates/help/bitcoin-setup.html:38
 #: help/templates/help/zcash-setup.html:30
 msgid ""
 "Your miner must be connected to one of our pool servers listed below. "
 "Remember to configure the user credentials to your account."
-msgstr ""
+msgstr "您的矿机必须连接到一个以下列出的我们的矿池服务器。请记得要配置您的账户里的用户登陆信息。"
 
 #: help/templates/help/bitcoin-setup.html:38
 #: help/templates/help/zcash-setup.html:30
@@ -1011,6 +898,8 @@ msgid ""
 "<span class=\"red\">userName</span> and <span class=\"green\">workerName</"
 "span> according to your account information):"
 msgstr ""
+"您的矿机所需的登陆信息如下所示 (请根据您的账号信息更改 <span class=\"red\">用户名</span> and <span class="
+"\"green\">工作矿机名</span>):"
 
 #: help/templates/help/bitcoin-setup.html:43
 #: help/templates/help/bitcoin-setup.html:105
@@ -1049,6 +938,8 @@ msgid ""
 "you. However, we recommend connecting each mining device with a separate "
 "workerName for efficient monitoring."
 msgstr ""
+"矿工名不是必须的，您不填也行。这种情况下，我们的系统会为您自动生成一个 <strong>自动矿工名</strong>。 "
+"但是，我们建议用不同的矿工名连接每个不同的挖矿设备，以便更有效的监控和管理。"
 
 #: help/templates/help/bitcoin-setup.html:49
 #: help/templates/help/zcash-setup.html:39
@@ -1057,6 +948,7 @@ msgid ""
 "connection and lower latency</strong>, please use one of the location-"
 "specific URLs instead of the general URL."
 msgstr ""
+"Slush Pool的服务器位于世界各地。请使用特定地点的URL而不是通用的URL <strong>以获得更好的连接和更低的延迟</strong>。"
 
 #: help/templates/help/bitcoin-setup.html:56
 #: help/templates/help/zcash-setup.html:46
@@ -1065,18 +957,13 @@ msgstr "服务器位置"
 
 #: help/templates/help/bitcoin-setup.html:57
 #: help/templates/help/zcash-setup.html:47
-#, fuzzy
-#| msgid "URL:"
 msgid "URL"
-msgstr "链接："
+msgstr "链接"
 
 #: help/templates/help/bitcoin-setup.html:62
 #: help/templates/help/zcash-setup.html:52
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "<strong>Team</strong>"
 msgid "<strong>General</strong>"
-msgstr "<strong>组</strong>"
+msgstr "<strong>通用</strong>"
 
 #: help/templates/help/bitcoin-setup.html:66
 #: help/templates/help/zcash-setup.html:60
@@ -1085,27 +972,20 @@ msgstr "<strong>欧洲</strong>"
 
 #: help/templates/help/bitcoin-setup.html:70
 #: help/templates/help/zcash-setup.html:56
-#, fuzzy
-#| msgid "<strong>USA</strong>, east coast"
 msgid "<strong>USA</strong>, East Coast"
 msgstr "<strong>美国</strong>, 东岸"
 
 #: help/templates/help/bitcoin-setup.html:74
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "<strong>Team</strong>"
 msgid "<strong>Canada</strong>"
-msgstr "<strong>组</strong>"
+msgstr "<strong>加拿大</strong>"
 
 #: help/templates/help/bitcoin-setup.html:78
-#, fuzzy
 msgid "<strong>Singapore</strong>, South Asia"
-msgstr "<strong>联系</strong>我们"
+msgstr "<strong>新加坡</strong>，南亚"
 
 #: help/templates/help/bitcoin-setup.html:82
-#, fuzzy
 msgid "<strong>Japan</strong>, Pacific"
-msgstr "<strong>我的</strong> 账户"
+msgstr "<strong>日本</strong>，太平洋"
 
 #: help/templates/help/bitcoin-setup.html:86
 #: help/templates/help/zcash-setup.html:64
@@ -1114,9 +994,8 @@ msgstr "<strong>中国</strong>, 大陆"
 
 #: help/templates/help/bitcoin-setup.html:100
 #: help/templates/help/zcash-setup.html:79
-#, fuzzy
 msgid "Example configuration"
-msgstr "确定更改钱包"
+msgstr "配置案例"
 
 #: help/templates/help/bitcoin-setup.html:101
 #: help/templates/help/zcash-setup.html:80
@@ -1126,20 +1005,18 @@ msgid ""
 "specifically chose to be connected to the <strong>European servers</strong>, "
 "configuration information for this miner would look like this:"
 msgstr ""
+"假如有一个挖矿者的用户名是 <strong>bigMiner</strong>，他的矿工名是 <strong>strongDevice</strong>"
+". 然后这名挖矿者，更详细地说连接到了 <strong>欧洲服务器</strong>, 他的配置信息可能会像如下所示："
 
 #: help/templates/help/bitcoin-setup.html:106
 #: help/templates/help/zcash-setup.html:84
-#, fuzzy
-#| msgid "anything"
 msgid "anything123"
-msgstr "任意"
+msgstr "任意123"
 
 #: help/templates/help/bitcoin-setup.html:109
 #: help/templates/help/zcash-setup.html:86
-#, fuzzy
-#| msgid "3. Setup your payout address"
 msgid "Register your payout address"
-msgstr "3. 设置您的报酬支付地址"
+msgstr "注册您的报酬支付地址"
 
 #: help/templates/help/bitcoin-setup.html:111
 #: help/templates/help/zcash-setup.html:87
@@ -1148,13 +1025,15 @@ msgid ""
 "<em>Settings > selected coin > Payouts</em> menu. Once you reach the minimum "
 "threshold, <strong>your rewards will be sent there</strong>."
 msgstr ""
+"您需要在目录<em>设置 > 选择币种 > "
+"支付</em>中设置支付地址。只要您达到最低阈值，<strong>您的收益将会被送到您的钱包地址</strong>。"
 
 #: help/templates/help/bitcoin-setup.html:111
 #: help/templates/help/zcash-setup.html:87
 msgid ""
 "You can start mining even without this address being registered, but it is "
 "highly recommended that you register it straight away."
-msgstr ""
+msgstr "您甚至可以没有注册钱包地址就开始挖矿，但是我们非常建议您注册一个。"
 
 #: help/templates/help/bitcoin-setup.html:114
 #: help/templates/help/zcash-setup.html:88
@@ -1163,16 +1042,17 @@ msgid ""
 "If you do not have an address yet, you need to get a wallet first. We "
 "recommend the <a %(trezor)s>Trezor Hardware Wallet</a> for maximum security."
 msgstr ""
+"如果您还没有地址，您需要先弄一个钱包。我们建议使用最安全的 <a %(trezor)s1>Trezor Hardware Wallet</a>。"
 
 #: help/templates/help/bitcoin-setup.html:114
 #, python-format
 msgid "Other usable wallets are listed on <a %(bitcoin)s>Bitcoin.org</a>."
-msgstr ""
+msgstr "其他可以用的钱包您可以在这个网站的列表中找到<a %(bitcoin)s1>Bitcoin.org</a>。"
 
 #: help/templates/help/bitcoin-setup.html:116
 #: help/templates/help/zcash-setup.html:90
 msgid "Check if you are mining"
-msgstr ""
+msgstr "如果您在挖矿请勾选"
 
 #: help/templates/help/bitcoin-setup.html:118
 #: help/templates/help/zcash-setup.html:91
@@ -1181,44 +1061,40 @@ msgid ""
 "the drop-down list located in the top center section of the page. Then check "
 "your hash rate in the <em>Recent Hash Rate</em> graph section below."
 msgstr ""
+"请打开您的<em>仪表板</em>然后在页面上部中间的下拉菜单内选择您正在挖矿的币种。然后在下面的图表<em>最近哈希率</em>中检查您的哈希率。"
 
 #: help/templates/help/bitcoin-setup.html:118
 #: help/templates/help/zcash-setup.html:91
 msgid ""
 "<strong>Please be patient</strong>; it can take up to an hour until you see "
 "the full hashing power of your newly connected device."
-msgstr ""
+msgstr "<strong>请耐心等待</strong>；当您连接一个新设备后，需要等待可能要一小时才能看到满载的哈希值。"
 
 #: help/templates/help/mining-introduction.html:5
-#, fuzzy
-#| msgctxt "Intro"
-#| msgid "Introduction"
 msgid "Introduction to mining"
-msgstr "介绍"
+msgstr "挖矿介绍"
 
 #: help/templates/help/mining-introduction.html:7
 msgid "New to cryptocurrency mining? Start here and learn the crucial basics!"
-msgstr ""
+msgstr "第一次接触加密货币挖矿？从这儿开始学习一些重要的基础知识吧！"
 
 #: help/templates/help/mining-introduction.html:9
-#, fuzzy
-#| msgid "What is merged mining?"
 msgid "What is cryptocurrency mining"
-msgstr "合并挖矿是什么？"
+msgstr "什么是加密货币挖矿"
 
 #: help/templates/help/mining-introduction.html:11
 msgid ""
 "Cryptocurrencies (or coins) are mined by miners (individuals or "
 "organizations) using their computing (hashing) power to <strong>process "
 "transactions and earn rewards</strong>."
-msgstr ""
+msgstr "加密货币的挖矿，矿工（可能是个人或组织）用他们的计算（哈希）力<strong>处理交易和获得报酬</strong>的过程。"
 
 #: help/templates/help/mining-introduction.html:11
 msgid ""
 "To be more specific, mining is the process of recording transactions to the "
 "public ledger (blockchain) with an incentive to receive a <strong>miner "
 "reward</strong>."
-msgstr ""
+msgstr "更具体地说，挖矿是记录交易公帐（区块链）的过程，而<strong>挖矿的收益</strong>是激励挖矿的手段。"
 
 #: help/templates/help/mining-introduction.html:13
 msgid ""
@@ -1227,52 +1103,50 @@ msgid ""
 "system and to ensure that all network participants agree the blockchain is "
 "valid and accurate."
 msgstr ""
+"这一过程是非常<strong>资源集中型的</strong>的。它需要大量的计算力以达到加密货币保证系统安全性的挖矿规则，以及所有挖矿网络的参与者都同意区"
+"块链是有效和准确的。"
 
 #: help/templates/help/mining-introduction.html:13
 msgid ""
 "Moreover, as more computing power is added to the network, the difficulty of "
 "solving the ‘puzzle’ which allows miners to earn a reward increases – that "
 "is where the mining pools come into play."
-msgstr ""
+msgstr "进一步说，网络内的算力更多，计算并获得收益的难度就增加 - 这时就需要矿池的作用了。"
 
 #: help/templates/help/mining-introduction.html:15
-#, fuzzy
-#| msgid "What is merged mining?"
 msgid "What is a mining pool"
-msgstr "合并挖矿是什么？"
+msgstr "什么是矿池"
 
 #: help/templates/help/mining-introduction.html:17
 msgid ""
 "A mining pool is a service that merges computing power from multiple miners "
 "<strong>to increase the frequency of finding a new block</strong>."
-msgstr ""
+msgstr "矿池是能够合并多个矿工的算力的服务<strong>以增加找到新区块的频率</strong>。"
 
 #: help/templates/help/mining-introduction.html:17
 msgid ""
 "The pool then distributes mining rewards among pool’s miners based on their "
 "amount of contributed computing power and <strong>stabilizes miners’ income</"
 "strong> as a result."
-msgstr ""
+msgstr "之后，矿池会基于矿池的矿工的计算力贡献分配挖矿报酬，并会在最后<strong>稳固矿工收入</strong>。"
 
 #: help/templates/help/mining-introduction.html:19
 msgid ""
 "If you want to venture into cryptocurrency mining, there is no better place "
 "than Slush Pool. We were the first in the world to successfully implement "
 "the concept of pooled mining in 2010 and we have been operating since then."
-msgstr ""
+msgstr "如果您想投资加密货币挖矿，没有比Sluch Pool更好的地方了。我们早在2010年就曾是世界上第一个成功实践矿池挖矿，且至今营业的矿池。"
 
 #: help/templates/help/mining-introduction.html:21
 msgid ""
 "Note: please bear in mind the difference between mining pools and cloud "
 "mining services (organizations renting out hashing power which can be "
 "redirected to a pool to earn mining rewards)."
-msgstr ""
+msgstr "注意：请要区别矿池和云挖矿服务（出租哈希算力并重定向至矿池以获得挖矿报酬的组织）之间的差异。"
 
 #: help/templates/help/mining-introduction.html:23
-#, fuzzy
-#| msgid "What do I need to start mining on Slush Pool?"
 msgid "What hardware do you need to start mining"
-msgstr "要开始在Slush矿池挖矿我需要什么？"
+msgstr "我需要什么硬件开始挖矿"
 
 #: help/templates/help/mining-introduction.html:25
 msgid ""
@@ -1282,6 +1156,8 @@ msgid ""
 "specific coins) or PC with powerful <strong>GPUs</strong> (graphics card) "
 "or,  in some cases, <strong>CPUs</strong> (processor)."
 msgstr ""
+"要想进行特定加密货币的挖矿，您需要合适挖矿该种加密货币的硬件。取决于币种，您会需要<strong>ASIC矿机</strong>（专为挖某种币设计的计算机"
+"）或者带有高性能<strong>GPU</strong>（显卡)的电脑，或者在某些情况下，也可能用<strong>CPU</strong>（中央处理器）。"
 
 #: help/templates/help/mining-introduction.html:27
 msgid ""
@@ -1290,12 +1166,14 @@ msgid ""
 "You must always ensure that your mining equipment is suitable to mine your "
 "chosen cryptocurrency."
 msgstr ""
+"由于不同的挖矿算法，每种币都需要不同的硬件，挖某种币的硬件<strong>可能或可能不能用于挖其他加密货币！</strong>您必须确定您的挖矿设备是适合"
+"用于挖您选择挖的加密货币的。"
 
 #: help/templates/help/mining-introduction.html:27
 msgid ""
 "Mining with unsuitable hardware will either be unprofitable or will not work "
 "at all."
-msgstr ""
+msgstr "使用不合适的硬件挖矿，要不不会盈利，要不就根本行不通。"
 
 #: help/templates/help/mining-introduction.html:29
 msgid ""
@@ -1305,10 +1183,12 @@ msgid ""
 "cannot be used for mining Zcash (Equihash), because the algorithm used is "
 "different."
 msgstr ""
+"基于GPU的矿机，可以挖能够有效地挖被显卡挖的币，但是这一规则并不适用于ASIC矿机。例如，为挖比特币（SHA256算法）的ASIC矿机不能用于挖Zcas"
+"h（Equihash算法），因为算法是不同的。"
 
 #: help/templates/help/mining-introduction.html:31
 msgid "What else do you need"
-msgstr ""
+msgstr "您还需要什么"
 
 #: help/templates/help/mining-introduction.html:33
 msgid ""
@@ -1318,117 +1198,114 @@ msgid ""
 "you will need a stable internet connection – remember that stability is the "
 "key here, not necessarily the speed."
 msgstr ""
+"除了挖矿硬件，稳定的电力供应也是需要的。请要注意<strong>电力的成本会十分影响您的利润</strong>，所以请想办法用最低的电价。然后，"
+"您也需要稳定的互联网连接 - 请记得稳定性是关键，不是速度。"
 
 #: help/templates/help/mining-introduction.html:35
 msgid "Ready to go?"
-msgstr ""
+msgstr "准备好了么？"
 
 #: help/templates/help/mining-introduction.html:35
 #, python-format
 msgid ""
 "<a href=\"%(signup)s\">Setup an account</a> on Slush Pool and configure your "
 "miners according to our guides."
-msgstr ""
+msgstr "在Slush Pool<a href=\"%(signup)s\">创建一个账户</a>并根据我们的指南配置您的矿机。"
 
 #: help/templates/help/mobile-app.html:7
 msgid ""
 "Download the official application for Slush Pool for free – available for "
 "<strong>Android and iOS.</strong>"
-msgstr ""
+msgstr "您可以免费下载Slush Pool的官方应用程序 - 在<strong>安卓和iOS上</strong>"
 
 #: help/templates/help/mobile-app.html:10
 msgid ""
 "Note: please be aware that our mobile app is not a mining app – it is an "
 "account monitoring tool."
-msgstr ""
+msgstr "注意：请您须知的是我们的手机APP不是挖矿APP - 它只是一个账户监控工具。"
 
 #: help/templates/help/mobile-app.html:11
 msgid "<strong>You will not be able to mine any coins with it.</strong>"
-msgstr ""
+msgstr "<strong>您将不能用此来挖任何币。</strong>"
 
 #: help/templates/help/mobile-app.html:17
 msgid ""
 "The mobile application offers a convenient overview of your dashboard and "
 "allows you to receive notifications for significant events of your choice "
 "such as:"
-msgstr ""
+msgstr "手机应用能够方便地提供您的仪表板的概览，您会您选择的重要事件发生时，收到通知推送，这些重要事件可能是："
 
 #: help/templates/help/mobile-app.html:20
 #, python-format
 msgid ""
 "worker issues (see <a href=\"%(url)s\">device monitoring</a> section for "
 "more details)"
-msgstr ""
+msgstr "矿工的问题 (更多内容请见 <a href=\"%(url)s\">设备监控</a> 的部分)"
 
 #: help/templates/help/mobile-app.html:21
-#, fuzzy
-#| msgid "Number of block found."
 msgid "new block found"
-msgstr "发现的矿区数。"
+msgstr "新发现的区块"
 
 #: help/templates/help/mobile-app.html:22
-#, fuzzy
 msgid "payout sent"
-msgstr "报酬支付历史"
+msgstr "已支付报酬"
 
 #: help/templates/help/mobile-app.html:25
 msgid "Connect your account with the mobile app"
-msgstr ""
+msgstr "关联您的账户和手机APP"
 
 #: help/templates/help/mobile-app.html:27
 msgid ""
 "To monitor your user account in our official mobile app, please follow these "
 "steps:"
-msgstr ""
+msgstr "要在我们的官方手机应用上监控您的用户账户，请按以下步骤："
 
 #: help/templates/help/mobile-app.html:30
 msgid "Download the application on your mobile device."
-msgstr ""
+msgstr "下载应用程序到您的手机上。"
 
 #: help/templates/help/mobile-app.html:31
 msgid "On the Slush Pool website go to <em>Settings > Devices</em>."
-msgstr ""
+msgstr "在Slush Pool网站上找到<em>设置 > 设备</em>。"
 
 #: help/templates/help/mobile-app.html:32
 msgid ""
 "Fill in the <em>New device label</em> field with a name of your choice and "
 "confirm by clicking on <em>Connect</em>."
-msgstr ""
+msgstr "在<em>新设备标签</em>这项，填写您的设备名并点击<em>连接</em>以确认。"
 
 #: help/templates/help/mobile-app.html:33
 msgid ""
 "Connect the mobile app to your user account by either scanning the QR code "
 "in the mobile app or manually entering the token value in the mobile app."
-msgstr ""
+msgstr "通过在手机APP内扫描二维码的方式，关联手机APP和您的账户，或者您可以在手机APP里手动输入令牌。"
 
 #: help/templates/help/mobile-app.html:36
 msgid "Multiple devices"
-msgstr ""
+msgstr "多个设备"
 
 #: help/templates/help/mobile-app.html:38
 msgid ""
 "You can connect multiple mobile devices to your user account, there is no "
 "limit."
-msgstr ""
+msgstr "您不能关联您的用户账户到多个手机设备。"
 
 #: help/templates/help/mobile-app.html:40
-#, fuzzy
-#| msgid "Slower Mining Device"
 msgid "Unlinking a device"
-msgstr "慢的挖矿设备"
+msgstr "断开一个设备的连接"
 
 #: help/templates/help/mobile-app.html:42
 msgid ""
 "In case you lost your mobile device, or you no longer want it to have the "
 "access to your account, you can unlink the device in the <em>Devices</em> "
 "section."
-msgstr ""
+msgstr "如果您丢失了您的手机，或您不想用这台手机接入到您的账户，您可以在<em>设备</em>这一项内解绑设备。"
 
 #: help/templates/help/mobile-app.html:42
 msgid ""
 "All device management options can be found in the <em>Settings > Devices</"
 "em> menu."
-msgstr ""
+msgstr "所有设备管理选项都能在<em>设置 > 设备</em>目录内找到。"
 
 #: help/templates/help/monitoring.html:9
 msgctxt "UI"
@@ -1462,13 +1339,6 @@ msgid "How can monitoring help?"
 msgstr "监控是怎么发挥用处的呢？"
 
 #: help/templates/help/monitoring.html:18
-#, fuzzy
-#| msgid ""
-#| "The main benefit of monitoring is an alert message you will receive to "
-#| "your Inbox once a mining device starts misbehaving. E.g. there are "
-#| "communication issues between your miner and our pool. Such alert will "
-#| "help you to <strong>react faster</strong> therefore <strong>minimize "
-#| "financial impact</strong> of the outage."
 msgid ""
 "Monitoring allows you to be alerted once a mining device starts misbehaving. "
 "Notifications are sent via e-mail or in your mobile app. E.g. there are "
@@ -1476,9 +1346,8 @@ msgid ""
 "you to <strong>react faster</strong> therefore <strong>minimize financial "
 "impact</strong> of the outage."
 msgstr ""
-"最主要的好处就是当您的矿机开始工作不正常时，您将收到一条警告信息。例如：当您"
-"的矿机和矿池间通讯有故障时。警告信息会帮助你<strong>更快速做出反应</strong>从"
-"而把运行中断的<strong>财务影响最小化</strong>。"
+"通过监控，您能在当您的矿机开始工作不正常时，收到一条警告信息。通知会通过邮件或您的手机APP发送。 例如：当您的矿机和矿池间通讯有故障时。警告信息会帮助你"
+"<strong>更快速做出反应</strong>从而把运行中断的<strong>财务影响最小化</strong>。"
 
 #: help/templates/help/monitoring.html:20
 msgid "Outages may typically have the following causes:"
@@ -1516,17 +1385,11 @@ msgstr "怎样启用监控？"
 msgid ""
 "Enable sending monitoring emails <em>(Settings > selected coin > "
 "Monitoring)</em> or notifications (<a href=\"%(app)s\">mobile app</a>)."
-msgstr ""
+msgstr "开启监控邮件推送<em>(设置 > 选择币 > 监控1)</em>或通知推送(<a href=\"%(app)s\">手机APP</a>)。"
 
 #: help/templates/help/monitoring.html:32
-#, fuzzy
-#| msgid ""
-#| "You can enable worker monitoring on each <a href=\"%(workers)s\" target="
-#| "\"_blank\">Worker profile</a> separately."
 msgid "You can enable worker monitoring on each worker profile separately."
-msgstr ""
-"您可以在每一个<a href=\"%(workers)s\" target=\"_blank\">矿工资料</a>下单独启"
-"用每个矿工的监控。"
+msgstr "您可以在每一个矿工的资料下，单独启用每个矿工的监控。"
 
 #: help/templates/help/monitoring.html:34
 #, python-format
@@ -1539,11 +1402,11 @@ msgstr "一旦矿工监控启用，<a href=\"%(url)s\">警告限值</a>就可以
 msgid ""
 "Automatically - our system selects the Alert Limit based on the past "
 "performance of the worker"
-msgstr "自动化－我们的系统根据矿工的历史工作表现选定警告限值"
+msgstr "自动地 - 我们的系统根据矿工的历史工作效能选定警告限值"
 
 #: help/templates/help/monitoring.html:37
 msgid "Manually - You can set your own Alert Limit value"
-msgstr "手动型－您自己设置警告限值"
+msgstr "您手动地 - 自己设置警告限值"
 
 #: help/templates/help/monitoring.html:43
 #, python-format
@@ -1556,13 +1419,7 @@ msgstr ""
 "<strong>正常，低，离线，已禁用</strong>。"
 
 #: help/templates/help/monitoring.html:44
-#, fuzzy, python-format
-#| msgid ""
-#| "Permanently <strong>Low</strong> or <strong>Offline</strong> state of "
-#| "your worker can be caused by weak worker whose hash rate is below "
-#| "<strong>10 Gh/s</strong>. We recommend to switch off monitoring for such "
-#| "workers. If it is not the case please do not hesitate to contact our <a "
-#| "href=\"%(support_submit)s\">support</a>."
+#, python-format
 msgid ""
 "Permanently <strong>Low</strong> or <strong>Offline</strong> state of your "
 "worker can be caused by weak worker. We recommend to switch off monitoring "
@@ -1570,9 +1427,9 @@ msgid ""
 "our <a href=\"%(support_submit)s\" target=\"_blank\" class=\"ext\">support</"
 "a>."
 msgstr ""
-"长期的<strong>低</strong>或<strong>离线</strong>状态可能是由于矿工的hash速率"
-"低于<strong>10 Gh/s</strong>引起的。我们建议取消这些矿工的监控选项。如果不是"
-"这个原因，请随时联系我们的<a href=\"%(support_submit)s\">技术支持</a>。"
+"您的矿工长期在<strong>低</strong>或<strong>离线</strong>的状态可能是由于工作效能弱的矿工引起的。 "
+"我们建议您取消对这些矿工的监控。如果不是这个原因，请随时联系我们的<a href=\"%(support_submit)s\" target=\""
+"_blank\" class=\"ext\">技术支持客服</a>。"
 
 #: help/templates/help/monitoring.html:47
 msgid ""
@@ -1585,11 +1442,9 @@ msgid ""
 "pool can track down hash rate drops and report them to you for each mining "
 "device separately."
 msgstr ""
-"<strong class=\"red\">请注意：</strong>矿池对挖矿设备的监控是建立在<strong>矿"
-"工基础</strong>上的。这就表示如果您有不止一个挖矿设备连接到矿池却只用一个矿工"
-"时，监控和故障报告是针对所有设备为一体的。然而，如果您设置了<strong>特定的矿"
-"工名字</strong>给每一个您拥有的（如果您正确连接它们到矿池）<strong>挖矿设备</"
-"strong>，矿池可以监控到hash速率的下降并单独发送每个设备的报告给您。"
+"<strong class=\"red\">请注意：</strong> 矿池对挖矿设备的监控是建立在<strong>矿工账户的基础上</strong>的。"
+"这就表示如果您有不止一个挖矿设备，但是在一个矿工名下连接到矿池时，监控和故障报告是一起显示的该矿工名下的所有设备。而如果您为每一个<strong>矿机</"
+"strong>设置了<strong>单独的矿工名</strong>（并正确连接它们到矿池），矿池可以监控到哈希速率的下降并单独发送每个矿机的报告给您。"
 
 #: help/templates/help/monitoring.html:49
 msgid "How does monitoring work?"
@@ -1603,9 +1458,9 @@ msgid ""
 "is then compared to <a href=\"%(alert_url)s\">Alert Limit</a> (you setup "
 "this value while enabling the monitoring)."
 msgstr ""
-"矿池<strong>每５分钟</strong>给您所有矿工的<a href=\"%(hashrate_url)s\">有效"
-"hash速率</a>快速一览。一览时检测到的值会跟<a href=\"%(alert_url)s\">警告限值"
-"</a>进行对比（在启用监控时您设置的值）。"
+"矿池<strong>每５分钟</strong>会对您所有矿工的<a href=\"%(hashrate_url)s\""
+">有效hash速率</a>进行快速一览检测。一览时检测到的值会跟<a href=\"%(alert_url)s\">警告限值</a> "
+"进行对比（您设置的启用监控时的值）。"
 
 #: help/templates/help/monitoring.html:51
 #, python-format
@@ -1615,9 +1470,8 @@ msgid ""
 "servers. With a <a href=\"%(url)s\">Vardiff</a> introduced, even a slow "
 "miner can submit sufficient amount of results."
 msgstr ""
-"５分钟的周期能成功收集到足够的用来准确计算所有值的信息，同时不用堵塞我们的服"
-"务器。通过我们介绍过的<a href=\"%(url)s\">变量困难值</a>，即使慢速的矿机也能"
-"提交足够的信息量。"
+"５分钟的周期能成功收集到足够的用来准确计算所有值的信息，同时不用堵塞我们的服务器。通过我们介绍过的<a href=\"%(url)s\""
+">变量困难值(Vardiff)</a>，即使慢速的矿机也能提交足够的信息量。"
 
 #: help/templates/help/monitoring.html:53
 msgid "Device monitoring states"
@@ -1627,8 +1481,7 @@ msgstr "设备监控状态"
 msgid ""
 "There are 4 possible states of your worker, regarding monitoring. Every "
 "worker is always in one of the <strong>following</strong> states:"
-msgstr ""
-"根据监控，矿工的状态有４种可能。每个矿工都在<strong>以下</strong>状态之一："
+msgstr "矿工可能有四种状态。每个矿工总会在<strong>以下</strong>状态之一："
 
 #: help/templates/help/monitoring.html:60 web/templatetags/utils.py:188
 msgctxt "UI, Monitoring"
@@ -1640,9 +1493,7 @@ msgid ""
 "Means that the worker's hash rate is greater or equal to alert limit. This "
 "is the desired state. If everything works properly and the configuration is "
 "correct, you should see this state all the time."
-msgstr ""
-"表示矿工的hash速率高于或等于警告限值。这是期望的状态。如果一切工作正常并且配"
-"置正确，您将一直看到这个状态。"
+msgstr "这表示矿工的哈希率高于或等于警告限值。这是期望的状态。如果您一直看到这个状态，则表示一切工作正常并且配置正确。"
 
 #: help/templates/help/monitoring.html:66 web/templatetags/utils.py:187
 msgctxt "UI, Monitoring"
@@ -1650,14 +1501,7 @@ msgid "Low"
 msgstr "低"
 
 #: help/templates/help/monitoring.html:68
-#, fuzzy, python-format
-#| msgid ""
-#| "This state signals that worker's hash rate is lower than it should be but "
-#| "the device still submits some shares. It was connected and working "
-#| "somehow at least part of the measuring period. A worker goes from OK to "
-#| "Low when its hash rate is lower than the alert limit for 2 consecutive "
-#| "periods. In the case you see this state for longer period of time, please "
-#| "create a ticket to our <a href=\"%(support_submit)s\">support</a>."
+#, python-format
 msgid ""
 "This state signals that worker's hash rate is lower than it should be but "
 "the device still submits some shares. It was connected and working somehow "
@@ -1667,10 +1511,9 @@ msgid ""
 "our <a href=\"%(support_submit)s\" target=\"_blank\" class=\"ext\">support</"
 "a>."
 msgstr ""
-"这一状态显示矿工hash速率低于其预期但设备仍在提交shares。至少在一定时期内矿机"
-"是连接并工作的。当矿工的hash速率在连续２个监控期降到低于警告限值时，状态会从"
-"正常变到低。如果您长时间看到此状态，请创建一个消息发送给我们的<a href="
-"\"%(support_submit)s\">技术支持组</a>。"
+"这一状态显示矿工哈希速率低于其预期，但设备仍在提交shares。至少在一定时期内矿工是连接并工作的。当矿工的哈希速率在连续２个监控期降到低于警告限值时，状"
+"态会从正常变到低。如果您长时间看到此状态，请创建一个消息发送给我们的<a href=\"%(support_submit)s\" target=\""
+"_blank\" class=\"ext\">技术支持客服</a>。"
 
 #: help/templates/help/monitoring.html:72 web/templatetags/utils.py:186
 msgctxt "UI, Monitoring"
@@ -1682,9 +1525,7 @@ msgid ""
 "You could see this state when monitoring is enabled for the worker but there "
 "is no hash rate detected for the worker. The pool doesn't monitor the actual "
 "network connection of the worker. The only significant value is hash rate."
-msgstr ""
-"您将在已启用监控但系统未检测到任何hash速率时看到此状态。矿池不监控矿工实际的"
-"连接状况。唯一重要的价值就是hash速率。"
+msgstr "您可以看到在这一状态下对矿工的监控已经启用，但是没有检测到矿工有任何哈希速率。矿池不监控矿工实际的连接状况。唯一重要的就是哈希速率值。"
 
 #: help/templates/help/monitoring.html:78 web/templatetags/utils.py:189
 msgctxt "UI, Monitoring"
@@ -1695,40 +1536,30 @@ msgstr "已禁用"
 msgid ""
 "When you switch off monitoring for a worker its state is reported as "
 "Disabled, regardless a fact if it submits some shares or not."
-msgstr ""
-"当您取消矿工的监控时，它的状态就会显示为已禁用，不管其是否有提交shares。"
+msgstr "当您取消对矿工的监控时，它的状态就会显示为已禁用，不管其是否有提交shares。"
 
 #: help/templates/help/reward-system.html:6
 msgctxt "UI"
 msgid "Reward <span>System</span>"
-msgstr "报酬<span>系统</span>"
+msgstr "收益<span>系统</span>"
 
 #: help/templates/help/reward-system.html:9
-#, fuzzy
-#| msgid ""
-#| "Finding a Bitcoin block is quite a rare and randomly occurring event. The "
-#| "pool service however needs some method to fairly distribute the value of "
-#| "a found block among pool users and pay them accordingly."
 msgid ""
 "Finding a block is quite a rare and randomly occurring event. The pool "
 "service however needs some method to fairly distribute the value of a found "
 "block among pool users and pay them accordingly."
-msgstr ""
-"发现一个矿区是不容易并很随机的事。因此矿池得有好的方法公平分配给挖矿者相应的"
-"报酬。"
+msgstr "找到一个区块是稀有而随机的。因此矿池服务需要一些方法，将找到的区块的价值公平分配给矿池用户。"
 
 #: help/templates/help/reward-system.html:12
 msgid ""
 "Our reward system ensures that when a new block is found every user receives "
 "a reward proportional to his/her participation in the pool's mining power. "
 "Bigger miners receive proportionally more than smaller miners."
-msgstr ""
-"我们的报酬系统确保每个挖矿者在新矿区发现后按挖矿能力比例得到相应的报酬。挖矿"
-"能力大的比能力小的得到更大比例。"
+msgstr "我们的收益系统确保每个挖矿者在新矿区发现后按挖矿能力比例得到相应的收益。挖矿能力大的比能力小的得到的更多。"
 
 #: help/templates/help/reward-system.html:15
 msgid "Scoring Hash Rate"
-msgstr "指数加权Hash速率"
+msgstr "计分哈希律 (Scoring Hash Rate)"
 
 #: help/templates/help/reward-system.html:17
 #, fuzzy, python-format
@@ -1741,11 +1572,11 @@ msgid ""
 "smooths out short hash rate drops or increases and makes rewards calculation "
 "more stable and fair (the exact mathematical definition is provided lower)."
 msgstr ""
-"用户参与挖矿的能力由<strong>指数加权hash速率</strong>衡量。它反映的是用户在当"
-"前的一段时间内工作的量。您可以把指数加权hash速率看作由所有用户连接到矿池的挖"
-"矿设备的hash速率<em>指数加权变动的均值</em> (参看 <a href=\"%(url)s\" target="
-"\"_blank\">%(globe)s EMA on wikipedia</a>)。平均的方法消除了hash速率短期升降"
-"的影响，使报酬结果的计算更稳定公平（精确的数学计算之后有提供）。"
+"用户参与挖矿的能力由<strong>计分哈希律(Scoring Hash "
+"Rate)</strong>衡量。它反映的是用户在当前的一段时间内工作的量。您可以把计分哈希律看作由所有用户连接到矿池的时，挖矿设备的哈希率 (参看 <"
+"a href=\"%(url)s\" target=\"_blank\">%(globe)s EMA on wikipedia</a>) 的 "
+"<em>指数加权变动(Exponential Moving "
+"Average)的均值</em>。平均计算的方法消除了哈希率短期升降的影响，使报酬结果的计算更稳定公平（精确的数学计算请见下方）。"
 
 #: help/templates/help/reward-system.html:20
 #, python-format
@@ -1754,19 +1585,18 @@ msgid ""
 "1%% of the block rewards. If you own 0.031%% of hash rate, you receive "
 "0.031%% of rewards from the block. It is that simple."
 msgstr ""
-"例如：如果您的指数加权hash速率是整个矿池的1%%，您将收到1%%整个区的报酬。如果"
-"您有0.031%%的hash速率，您将收到0.031%%整个区得报酬。非常简单。"
+"例如：如果您的计分哈希率是整个矿池的1%%，您将收到1%%个区块的报酬。如果您有0.031%%的哈希率，您将收到0.031%%的区块的报酬。非常简单。"
 
 #: help/templates/help/reward-system.html:23
 msgid ""
 "The pool calculates your reward for <strong>every found block</strong> as "
 "follows:"
-msgstr "矿池对<strong>每个发现的矿区</strong>对您的报酬计算方法如下："
+msgstr "矿池对<strong>每个发现的矿区</strong>对您的收益计算方法如下："
 
 #: help/templates/help/reward-system.html:26
 msgctxt "Main rewards formula"
 msgid "your reward"
-msgstr "您的报酬"
+msgstr "您的收益"
 
 #: help/templates/help/reward-system.html:26
 msgctxt "Main rewards formula"
@@ -1781,43 +1611,39 @@ msgstr "矿池费用"
 #: help/templates/help/reward-system.html:26
 msgctxt "Main rewards formula"
 msgid "your scoring hash rate"
-msgstr "您的指数加权hash速率"
+msgstr "您的计分哈希率"
 
 #: help/templates/help/reward-system.html:26
 msgctxt "Main rewards formula"
 msgid "pool scoring hash rate"
-msgstr "矿池指数加权hash速率"
+msgstr "矿池计分哈希率"
 
 #: help/templates/help/reward-system.html:29
 msgid ""
 "A <em>block value</em> consists of the block reward and the fees from "
 "transactions contained in the block."
-msgstr ""
+msgstr "<em>区块值</em>包含区块收益和区块中包含的交易手续费。"
 
 #: help/templates/help/reward-system.html:30
 msgid ""
 "<em>Scoring hash rates</em> used for the calculation are hash rates from "
 "time when a particular block was found. They reflect some mining history "
 "before the actual block finding."
-msgstr ""
-"用于计算的<em>指数加权hash速率</em>是指自某个矿区被发现时的hash速率。它们反映"
-"当前矿区发现前的挖矿历史。"
+msgstr "用于计算的<em>计分哈希率</em>是指自某个区块被发现时的哈希率。它们反映当前区块发现前的挖矿历史。"
 
 #: help/templates/help/reward-system.html:31
 #, python-format
 msgid ""
 "<em>Pool fees</em> for all coins are listed in the <a href=\"%(url)s"
 "\">Rewards & Payouts</a> section."
-msgstr ""
+msgstr "所有币种的<em>矿池手续费</em>在<a href=\"%(url)s\">收益&支付</a>的部分已经列出。"
 
 #: help/templates/help/reward-system.html:35
 msgid ""
 "The chart below shows how the <strong>scoring hash rate</strong> rises and "
 "declines at time when you start or stop mining (effective hash rate is blue, "
 "scoring hash rate is gold):"
-msgstr ""
-"下表展现<strong>指数加权hash速率</strong>在您开始或停止挖矿后的升或降。（有效"
-"的hash速率是蓝线，指数加权hash速率是金色线）："
+msgstr "下表中的是<strong>计分哈希率</strong>在您开始或停止挖矿后的升降。（有效的哈希率是蓝线，计分哈希率是金色线）："
 
 #: help/templates/help/reward-system.html:41
 msgid ""
@@ -1836,20 +1662,19 @@ msgstr "<span>关于方法</span>的重要事实"
 msgid ""
 "Important properties of using <em>scoring hash rate</em> for rewards "
 "calculation:"
-msgstr "使用<em>指数加权hash速率</em>来计算报酬的重要性能："
+msgstr "<em>计分哈希率</em>计算收益的重要属性："
 
 #: help/templates/help/reward-system.html:53
 msgid ""
 "You can literally see and understand at any instant how the hash rate is "
 "changing and what reward you can expect."
-msgstr "您可以在任何时间看到hash速率是怎样变化的并预期您将得到的报酬。"
+msgstr "您可以在任何时间看到哈希速率是怎样变化的，并预计您将得到的收益。"
 
 #: help/templates/help/reward-system.html:54
 msgid ""
 "Rewards are fully <strong>independent</strong> from rounds. The only "
 "important thing is the scoring hash rate."
-msgstr ""
-"报酬是完全<strong>独立</strong>于每轮的。唯一重要的是指数加权hash速率。"
+msgstr "收益是完全<strong>独立</strong>于每轮的。唯一重要的是计分哈希率。"
 
 #: help/templates/help/reward-system.html:55
 msgid ""
@@ -1867,7 +1692,7 @@ msgstr "只要您的矿机是连接好并正常工作的，它将保持稳定。
 msgid ""
 "When you stop mining the scoring hash rate starts to fall down. It takes "
 "again cca 1.5 hour until it is roughly zero."
-msgstr "当您停止挖矿，指数加权hash速率将开始下降，会在1.5小时后趋于0。"
+msgstr "当您停止挖矿，计分哈希率将开始下降，并会在1.5小时后趋于0。"
 
 #: help/templates/help/reward-system.html:58
 msgid ""
@@ -1878,10 +1703,8 @@ msgid ""
 "disconnects, the opposite will happen. Statistically, there is no difference "
 "for you in longer term."
 msgstr ""
-"当其他挖矿者连接到矿池时您的指数加权hash速率不会变但实际矿池的hash速率总值会"
-"上升。因而您将拥有稍小的比例来分配到报酬，但更常出现的情况是因为矿池的能力加"
-"强，在一些其他挖矿者断开连接的情况下，相反的结果会出现。统计学上来看，长期来"
-"看对您来说没有区别。"
+"当其他挖矿者连接到矿池时，用于分数计算的哈希速率不会变，但矿池的哈希速率总值会上升。因而，您会收到挖到的区块的更小的部分最为收益。但更常出现的情况是因为矿"
+"池的能力加强。在一些其他挖矿者断开连接的情况下，相反的结果会出现。统计学上来看，长期来看对您来说没有区别。"
 
 #: help/templates/help/reward-system.html:61
 msgid "The Math <span>Behind the Scenes</span>"
@@ -1911,10 +1734,9 @@ msgid ""
 "work) with difficulty %(d)s is submitted by a miner then %(d)s shares is "
 "accounted by the pool."
 msgstr ""
-"当矿机连接到矿池时将会收到可被计算的任务去解决-它计算具有某些特性的hash值。符"
-"合任务要求的hash值将被发送回矿池被作为<strong>挖矿工作的证明</strong>。挖矿工"
-"作的数量以单位记录被称作<strong>shares</strong>。如果一个困难度%(d)s的"
-"hash（工作证明）值被提交，那么用户将有%(d)s share量被矿池采纳用于计算。"
+"当矿机连接到矿池时将会收到可被计算的任务去解决-它计算具有某些特性的哈希值。符合任务要求的哈希值将被发送回矿池被作为<strong>挖矿工作的证明</st"
+"rong>。挖矿工作的数量以单位记录被称作<strong>shares</strong>。如果一个困难度%(d)s的哈希（工作证明）值被提交，那么用户将有"
+"%(d)s 的shares被矿池采纳用于计算。"
 
 #: help/templates/help/reward-system.html:71
 msgid ""
@@ -1956,7 +1778,7 @@ msgstr ""
 
 #: help/templates/help/reward-system.html:82
 msgid "Shares valuation<span> - score</span>"
-msgstr "Share量的计算<span>-指数加权</span>"
+msgstr "Share量的计算<span>-分数</span>"
 
 #: help/templates/help/reward-system.html:84
 msgid ""
@@ -1976,8 +1798,8 @@ msgid ""
 "strong> %(fc)s. It calculates <strong>score</strong> of a share %(s)s at "
 "time %(t_0)s as"
 msgstr ""
-"确切的share价值根据<strong>指数加权功能</strong> %(fc)s来确定。它计算一个"
-"share%(s)s在时间%(t_0)s的<strong>指数加权</strong>为"
+"具体的share的价值根据<strong>计分功能</strong> "
+"%(fc)s来确定。计分功能会计算每个share%(s)s在时间%(t_0)s的<strong>分数</strong>为"
 
 #: help/templates/help/reward-system.html:92
 #, python-format
@@ -1987,9 +1809,8 @@ msgid ""
 "greater %(lambda)s the slower old shares loose their value in comparison to "
 "new shares. Currently, the parameter %(lambda)s is set to 1200."
 msgstr ""
-"%(lambda)s是一个无量纲的<strong>系统参数</strong>。%(lambda)s定义一个share随"
-"时间下降的速度。%(lambda)s值越大，旧的shares对比新的shares失去价值的速度就越"
-"慢。当前参数%(lambda)s被设为1200。"
+"%(lambda)s是一个无量纲的<strong>系统参数</strong>。%(lambda)s定义一个share的分数随时间降低的速度。%(lambd"
+"a)s值越大，旧的shares对比新的shares失去价值的速度就越慢。当前%(lambda)s参数被设为1200。"
 
 #: help/templates/help/reward-system.html:95
 #, python-format
@@ -2001,10 +1822,8 @@ msgid ""
 "subtle but has quite significant consequences, because it fully eliminates a "
 "concept of rounds from rewards calculation.)"
 msgstr ""
-"（对于从几年前就知道slush的指数加权系统的用户来说，关键的不同点之一是指数加权"
-"不是关联到一轮开始的那个点，而是随给出的任意时点%(t_0)s相关联的动态来确定的，"
-"例如当您查看仪表板的时候那个点。这种变化是很微妙的但却有显著的结果，因为它完"
-"全消除了报酬计算时每轮的概念。)"
+"（对于从几年前就知道slush的计数系统的用户来说，重要的不同点之一是，分数和每轮开始的时候不相关，而是随给出的任意时间点%(t_0)s的关系动态地确定，"
+"例如当您查看仪表板的时候的时间点。这种变化是很微妙的但却有显著的结果，因为它完全消除了收益计算时用到的每轮的概念。)"
 
 #: help/templates/help/reward-system.html:98
 #, python-format
@@ -2021,22 +1840,20 @@ msgstr ""
 msgid ""
 "Then score for some user %(u)s at time %(t_0)s is calculated as total score "
 "of all his/her shares from time %(t_0)s, submitted at %(t_0)s or earlier:"
-msgstr ""
-"因此一些用户%(u)s在时间%(t_0)s的指数加权被计算为一个总指数加权数，即是他们从"
-"时间%(t_0)s或更早时间前提交的总share量："
+msgstr "一些用户%(u)s在时间%(t_0)s的分数被计算为一个总分数，并在%(t_0)s或更早时间前提交："
 
 #: help/templates/help/reward-system.html:108
 msgid ""
 "Technically, the pool computes score for each worker separately but the math "
 "is analogous."
-msgstr "理论上讲，矿池给每个矿工分开计算指数加权但运用的数学方法是类似的。"
+msgstr "从技术上讲，矿池单独地计算每个矿工的分数，但是算法是相似的。"
 
 #: help/templates/help/reward-system.html:111
 #, python-format
 msgid ""
 "Score of the whole pool %(c)s is a sum of score of all users in the given "
 "time together:"
-msgstr "整个矿池的指数加权%(c)s是在给出时间内的所有用户的指数加权的总和："
+msgstr "整个矿池的分数%(c)s是在给出时间内的所有用户的分数的总和："
 
 #: help/templates/help/reward-system.html:115
 msgid "Rewards Calculation"
@@ -2049,16 +1866,14 @@ msgid ""
 "- %(v_b)s, the pool can calculate reward %(R_u)s for each user %(u)s as "
 "follows (%(f)s stands for a pool fee):"
 msgstr ""
-"当矿区%(b)s在时间%(tau_b)s呗发现时，它的价值被认为是-%(v_b)s，矿池可以按如下"
-"方式给每个用户%(u)s计算报酬%(R_u)s（%(f)s代表矿池费用）："
+"当一个区块%(b)s在时间%(tau_b)s被发现时，它的价值被认为是 - "
+"%(v_b)s，矿池可以按如下方式给每个用户%(u)s计算收益%(R_u)s（%(f)s代表矿池费用）："
 
 #: help/templates/help/reward-system.html:121
 msgid ""
 "For those who really love math equations the full rewards formula for "
 "<strong>continuous scoring system</strong> is:"
-msgstr ""
-"对于热爱数学公式的用户们，<strong>连续的指数加权系统</strong>完整的报酬公式如"
-"下："
+msgstr "对于热爱数学公式的用户们，<strong>连续计分哈希率系统</strong>完整的收益公式如下："
 
 #: help/templates/help/reward-system.html:126
 msgid "Other values"
@@ -2073,9 +1888,8 @@ msgid ""
 "was found at that time but instead of block value (which is not known yet) "
 "we use 12.5BTC:"
 msgstr ""
-"当您查看您的仪表板时，会发现矿池为您计算的其他价值。如用户%(u)s在时"
-"间%(t_0)s<strong>估计的报酬</strong>根据矿池被发现时，我们使用12.5BTC代替矿区"
-"价值（还没有确定）来计算："
+"当您查看您的仪表板时，会发现矿池为您计算的其他价值。如用户%(u)s在时间%(t_0)s<strong>估计的收益</strong>根据矿池被发现时，我们"
+"使用12.5BTC代替矿区价值（还没有确定）来计算："
 
 #: help/templates/help/reward-system.html:133
 #, python-format
@@ -2089,97 +1903,83 @@ msgid ""
 "time %(t_0)s is internally not calculated by hash rate averaging, but "
 "directly from shares using scoring function (result is in h/s):"
 msgstr ""
-"最后用户%(u)s和时间%(t_0)s的<strong>指数加权hash速率</strong>%(H)s实际上并不"
-"是由hash速率的均值来计算，而是直接用指数加权法计算share量（结果是以h/s）："
+"最后，用户%(u)s和时间%(t_0)s的<strong>计分哈希率</strong>%(H)s实际上并不是由哈希率的均值来计算，而是直接用计分法则计算s"
+"hare量（结果是以h/s）："
 
 #: help/templates/help/reward-system.html:143
 #, python-format
 msgid ""
 "Pool's scoring hash rate %(H)s is not surprisingly defined as all user "
 "scoring hash rates together:"
-msgstr "矿池指数加权hash速率%(H)s也不是定义为所有用户的指数加权hash速率之和："
+msgstr "不令人惊讶的是，矿池计分哈希率%(H)s是所有用户的计分哈希率之和："
 
 #: help/templates/help/rewards-payouts.html:9
 msgid ""
 "The following fees are currently applied by Slush Pool to provide the pool "
 "mining service."
-msgstr ""
+msgstr "以下的费用是现在Slush Pool提供矿池服务的费用。"
 
 #: help/templates/help/rewards-payouts.html:11
-#, fuzzy
-#| msgid "Additional Information"
 msgid "General information"
-msgstr "附加信息"
+msgstr "一般信息"
 
 #: help/templates/help/rewards-payouts.html:14
 #, python-format
 msgid ""
 "Proceeds from transaction (network) fees are shared with miners, see the <a "
 "href=\"%(link)s\">Reward System</a>."
-msgstr ""
+msgstr "交易（网络）手续费是和其他矿工共享的，请见<a href=\"%(link)s\">收益系统</a>。"
 
 #: help/templates/help/rewards-payouts.html:15
 msgid ""
 "Payouts are usually processed on an hourly basis, however, the confirmation "
 "time may take longer."
-msgstr ""
+msgstr "支付通常是每小时处理的，但是确认时间可能需要更久。"
 
 #: help/templates/help/rewards-payouts.html:16
 msgid ""
 "Payout threshold can be customized in the <em>Settings > selected coin > "
 "Payouts</em> menu."
-msgstr ""
+msgstr "支付阈值能够在目录<em>设置 > 选择币种 > 支付</em>中自定。"
 
 #: help/templates/help/rewards-payouts.html:17
 #, python-format
 msgid ""
 "Same pool fee applies to proceeds from <a href=\"%(merge)s\">merge mined</a> "
 "coins."
-msgstr ""
+msgstr "同样的矿池手续费也适用于<a href=\"%(merge)s\">合并挖矿</a>过程中的币。"
 
 #: help/templates/help/rewards-payouts.html:26
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Bitcoin Core"
 msgid "Bitcoin"
-msgstr "Bitcoin Core"
+msgstr "比特币"
 
 #: help/templates/help/rewards-payouts.html:32
 #: help/templates/help/rewards-payouts.html:63
-#, fuzzy
-#| msgctxt "Main rewards formula"
-#| msgid "pool fee"
 msgid "Pool fee"
-msgstr "矿池费用"
+msgstr "矿池手续费"
 
 #: help/templates/help/rewards-payouts.html:36
 #: help/templates/help/rewards-payouts.html:67
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Payout Threshold"
 msgid "Minimum payout threshold"
-msgstr "报酬支付门槛"
+msgstr "最低报酬支付限额"
 
 #: help/templates/help/rewards-payouts.html:40
 #: help/templates/help/rewards-payouts.html:71
-#, fuzzy
 msgid "Payout fee"
-msgstr "报酬支付历史"
+msgstr "报酬支付手续费"
 
 #: help/templates/help/rewards-payouts.html:41
 msgid "0.0001 BTC (only for payouts under 0.01 BTC)"
-msgstr ""
+msgstr "0.0001 BTC （只适用于0.01BTC以下的支付）"
 
 #: help/templates/help/rewards-payouts.html:44
 #: help/templates/help/terminology.html:91
-#, fuzzy
-#| msgid "FAQ: Merged Mining"
 msgid "Merged mining"
-msgstr "常见问题：合并挖矿"
+msgstr "合并挖矿"
 
 #: help/templates/help/rewards-payouts.html:45
 msgid "Namecoin (converted to BTC)"
-msgstr ""
+msgstr "域名币 （转换为BTC）"
 
 #: help/templates/help/rewards-payouts.html:57
 msgid "Zcash"
@@ -2187,12 +1987,12 @@ msgstr ""
 
 #: help/templates/help/rewards-payouts.html:72
 msgid "0.0001 ZEC (only for payouts under 0.01 ZEC)"
-msgstr ""
+msgstr "0.0001 ZEC (只适用于0.01ZEC以下的支付)"
 
 #: help/templates/help/stratum-protocol.html:6
 msgctxt "UI"
 msgid "Stratum <span>Mining Protocol</span>"
-msgstr "阶层<span>挖矿协议</span>"
+msgstr "阶层(Stratum)<span>挖矿协议</span>"
 
 #: help/templates/help/terminology.html:7
 msgctxt "UI"
@@ -2203,12 +2003,9 @@ msgstr "矿池<span>术语</span>"
 msgid ""
 "The most important terms every miner should know listed in alphabetical "
 "order."
-msgstr ""
+msgstr "最重要的条件是每个矿工都应该知道被以字母表的顺序排列。"
 
 #: help/templates/help/terminology.html:16
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Alert limit"
 msgid "Alert limit"
 msgstr "警告限值"
 
@@ -2219,9 +2016,8 @@ msgid ""
 "is greater or equal to <strong>Alert Limit</strong>, everything is perfect "
 "and you will not receive any monitoring alert reports."
 msgstr ""
-"这个值被用为检查您设置是否运作正常的<strong>hash速率的限值</strong>。如果有效"
-"的hash速率不低于此<strong>警告限值</strong>，一切都很正常所以您也不会收到任何"
-"监控警告报告。"
+"这个值被用为检查您设置是否运作正常的<strong>哈希速率的限值</strong>。如果一个矿工有效的hash速率不低于此<strong>警告限值</s"
+"trong>，一切都正常所以您也不会收到任何监控警告报告。"
 
 #: help/templates/help/terminology.html:21
 msgid ""
@@ -2271,14 +2067,12 @@ msgid ""
 "rate.<br>E.g. you expect your miner hash rate to be 1 Ths/s, the "
 "<strong>Alert Limit</strong> would be set to 700 Ghs/s."
 msgstr ""
-"我们推荐您用低于您预期hash速率的30%%的值来设置。<br>比如您的矿机预期的hash速"
-"率是1 Ths/s，<strong>警告限值</strong>就是700 Ghs/s。"
+"我们推荐您用低于您预期哈希速率的30%%的值来设置。<br>比如您的矿机预期的哈希速率是1 Ths/s，<strong>警告限值</strong>"
+"就是700 Ghs/s。"
 
 #: help/templates/help/terminology.html:44
-#, fuzzy
-#| msgid "Hash Rate"
 msgid "Hash rate"
-msgstr "Hash速率"
+msgstr "哈希率"
 
 #: help/templates/help/terminology.html:48
 msgid ""
@@ -2301,8 +2095,8 @@ msgid ""
 "shown in our system. It is important for you to understand the difference "
 "between these two."
 msgstr ""
-"显示在您挖矿设备指南上的<strong>名义hash速率</strong>和在我们系统里的<strong>"
-"有效hash速率</strong>是不同的。了解这两项之间的不同对您是非常重要的。"
+"显示在您挖矿设备手册上的<strong>名义哈希率</strong>和在我们系统里的<strong>有效哈希率</strong>是不同的。了解这两项之间的"
+"不同对您是非常重要的。"
 
 #: help/templates/help/terminology.html:53
 msgid "Nominal <span>Hash Rate</span>"
@@ -2346,8 +2140,7 @@ msgid ""
 "experienced connection issues, then your effective hash rate will be lower "
 "than the nominal hash rate in that period of time."
 msgstr ""
-"您的有效hash速率取决于您挖矿设备的运气和您连接到我们矿池的质量（稳定性）。如"
-"果您遇到过连接问题，那么那段时间里您的有效hash速率将低于名义hash速率。"
+"您的有效哈希速率取决于您挖矿设备的幸运值，和您和我们矿池间的连接质量（稳定性）。如果您曾遇到过连接问题，那么那段时间里您的有效哈希速率将低于名义哈希速率。"
 
 #: help/templates/help/terminology.html:60
 msgid ""
@@ -2359,7 +2152,7 @@ msgstr ""
 
 #: help/templates/help/terminology.html:62
 msgid "Scoring <span>Hash Rate</span>"
-msgstr "指数加权<span>Hash速率</span>"
+msgstr "<span>哈希率</span>计分"
 
 #: help/templates/help/terminology.html:63
 #, python-format
@@ -2367,41 +2160,37 @@ msgid ""
 "Scoring hash rate is a value derived from effective hash rate used for "
 "rewards calculation. Please, see <a href=\"%(rewards)s\">Reward System</a> "
 "for the explanation."
-msgstr ""
-"指数加权hash速率是由有效hash速率生成的用给报酬计算的一个值。详情请参看<a "
-"href=\"%(rewards)s\">报酬系统</a>。"
+msgstr "计分哈希率是由有效哈希率生成的用给收益计算的一个值。详情请参看<a href=\"%(rewards)s\">收益系统</a>。"
 
 #: help/templates/help/terminology.html:72
 msgid "Luck"
-msgstr "运气"
+msgstr "幸运值"
 
 #: help/templates/help/terminology.html:76
 msgid ""
 "Pool luck explains how many shares the pool needed to find a specific block "
 "in comparison <strong>to the average number of shares</strong> needed for "
 "finding a block."
-msgstr ""
-"矿池运气表示相对于发现一个矿区的<strong>平均share数量</strong>矿池发现某一矿"
-"区实际需要的share数量。"
+msgstr "矿池幸运值的意思是相对于发现一个矿区的<strong>平均share数量</strong>矿池发现某一矿区实际需要的share数量。"
 
 #: help/templates/help/terminology.html:78
 #, python-format
 msgid ""
 "If the luck is above 100%% it means that the pool needed less shares than "
 "expected for the given difficulty."
-msgstr "如果运气值高于100%%即表示矿池需要在预期困难度下较少的share量。"
+msgstr "如果幸运值高于100%%即表示矿池需要在预期困难度下较少的share量。"
 
 #: help/templates/help/terminology.html:79
 #, python-format
 msgid "If the luck is below 100%%, more shares than average were needed."
-msgstr "如果运气值低于100%%，那么需要高于平均数的share量。"
+msgstr "如果幸运值低于100%%，那么需要高于平均数的share量。"
 
 #: help/templates/help/terminology.html:81
 #, python-format
 msgid ""
 "E.g. if the luck is 200%%, the pool found two times more blocks in the given "
 "time period than average."
-msgstr "例如：如果运气是 200%%，矿池将在平均时间内找到高于2倍的矿区数。"
+msgstr "例如：如果幸运值是 200%%，矿池将在平均时间内找到高于2倍的矿区数。"
 
 #: help/templates/help/terminology.html:82
 #, python-format
@@ -2412,9 +2201,8 @@ msgid ""
 "luck is high and disconnecting when the luck is low does not make any sense. "
 "In the long run, the luck is always 100%%."
 msgstr ""
-"请牢记<strong>运气代表的是之前矿池的状况并不能预期矿池在未来发现矿区的情况</"
-"strong>。发现一个新矿区跟历史记录是毫无关系的。因此在矿池运气好的时候加入挖"
-"矿，在矿池运气不好的时候离开是没有意义的。长期来看，运气基本是处于100%%的。"
+"请牢记<strong>幸运值代表的是之前矿池的状况，但并不能预期矿池在未来发现矿区的情况</strong>。发现一个新矿区跟历史记录是毫无关系的。因此在矿"
+"池幸运值高的时候加入挖矿，在矿池幸运值低的时候离开是没有意义的。长期来看，幸运值基本是处于100%%的。"
 
 #: help/templates/help/terminology.html:95
 msgid ""
@@ -2424,6 +2212,8 @@ msgid ""
 "The benefit of merged mining is that you do not have to split your hash rate "
 "between mining several cryptocurrencies."
 msgstr ""
+"合并挖矿，如果某种加密货币支持的话，您可以在用同样算法<strong>同时</strong>挖不只是一个区块链的时候，从中获得<em>“额外的币”</em"
+">。合并挖矿的好处是您在挖多种加密货币的时候，不需要单独分开您的总哈希值。"
 
 #: help/templates/help/terminology.html:104
 #: web/templates/email/_base_graphic.html:23
@@ -2437,10 +2227,12 @@ msgid ""
 "powerful GPU sufficient for mining. There are different types of mining "
 "hardware for each cryptocurrency depending on its mining algorithm."
 msgstr ""
+"矿机是您的物理挖矿设备。通常它是一个专用的ASIC矿机（专为挖矿设计的计算机），或带有高性能GPU的个人电脑。根据不同加密货币算法的不同，有好几种不同的挖"
+"矿设备（矿机）。"
 
 #: help/templates/help/terminology.html:116
 msgid "Orphan block"
-msgstr ""
+msgstr "孤儿块"
 
 #: help/templates/help/terminology.html:119
 msgid ""
@@ -2449,6 +2241,8 @@ msgid ""
 "valid block (block A and block B) at around the same time and broadcast them "
 "both to the network."
 msgstr ""
+"孤儿块（A块）是一个有效的区块，但是<strong>它不是区块链的一部分</strong>。一个孤儿块是因为两个矿工在大约同时找到一个有效的区块（A块和B"
+"块）并一起向网络广播造成的。"
 
 #: help/templates/help/terminology.html:120
 msgid ""
@@ -2460,10 +2254,13 @@ msgid ""
 "longest chain. <strong>The miners does not receive a reward for such a block."
 "</strong>"
 msgstr ""
+"孤儿块（A块）是先由部分节点（通常是离矿工更近的）接受（确认）了，但是另一个区块（B块）积累了更多工作的证明 - 被更多的节点所接受并成为了下一个区块的母"
+"块。因为孤儿块不是最长的区块链的一部分，孤儿块（A块）会被标记为<strong>无效</strong>。<strong>矿工无法从孤儿块中获得收益。</s"
+"trong>"
 
 #: help/templates/help/terminology.html:129
 msgid "Reward (confirmed vs unconfirmed)"
-msgstr ""
+msgstr "收益（已确认 和 未确认的）"
 
 #: help/templates/help/terminology.html:133
 msgid ""
@@ -2475,6 +2272,9 @@ msgid ""
 "earned coins are available for payout. However, you must reach your payout "
 "threshold before any payout can be made."
 msgstr ""
+"只要一个区块被找到，您的收益将由您的哈希值计分的方式计算，它会由<strong>未确认收益</strong>的方式出现在您的账号仪表板上。至此，您需要等待"
+"一定数量的区块（由不同的加密货币决定）直到您的收益变为<strong>已确认的</strong> = 可支配的。 "
+"在这些确认后，您赚得的币就能够被支付了。然而，您需要能到您的收益达到支付阈值才能进行支付。"
 
 #: help/templates/help/terminology.html:142
 msgid "Round"
@@ -2486,15 +2286,11 @@ msgid ""
 "Round is the time period between two blocks found by the pool. It can last "
 "from few seconds to many hours, depending on <a href=\"%(link)s\">pool's "
 "luck.</a>"
-msgstr ""
-"一轮即是矿池发现两个区之间的时间。它可能会是几秒钟也可能持续多个小时，取决于"
-"<a href=\"%(link)s\">矿池运气。</a>"
+msgstr "一轮即是矿池发现两个区之间的时间。它可能会是几秒钟也可能持续多个小时，取决于<a href=\"%(link)s\">矿池幸运值。</a>"
 
 #: help/templates/help/terminology.html:154
-#, fuzzy
-#| msgid "What is Score Based reward system?"
 msgid "Score (reward system)"
-msgstr "什么是基于指数加权的报酬系统？"
+msgstr "分数 (收益系统)"
 
 #: help/templates/help/terminology.html:158
 #, python-format
@@ -2506,10 +2302,11 @@ msgid ""
 "are fully independent of rounds. The only important thing is users scoring "
 "hash rate at the moment when a new block is found."
 msgstr ""
+"分数是在我们的 <a href=\"%(rewards)s\">收益系统</a>中常用的一个名词. 它是基于 <strong>计分哈希率</strong>"
+" (当您<em>开始/停止</em>挖矿时的平均实际哈希律变化，和部分<em>增长/减少</em>). "
+"不像其他的收益系统，以分数为基础的收益是和每轮挖矿完全独立的。唯一重要的是，用户的计分哈希率每当发现一个新区块的时候的。"
 
 #: help/templates/help/terminology.html:167
-#, fuzzy
-#| msgid "Share - <span>Proof of Work</span>"
 msgid "Share - <span>proof of work</span>"
 msgstr "share-<span>工作证明</span>"
 
@@ -2528,11 +2325,9 @@ msgid ""
 "<strong>shares</strong>. If a hash (proof of work) with difficulty \\(d\\) "
 "is submitted by a miner then \\(d\\) shares is counted by the pool."
 msgstr ""
-"当矿机连接到矿池时将接收需要被解决的任务-它根据某些特性来计算hash值（必须低于"
-"来自困难度的限值）。符合要求的hash值将被发送回矿池并作为 <strong>矿机的工作证"
-"明</strong>。矿机工作的数量以单位形式称作<strong>shares</strong>。 如果在困难"
-"度 \\(d\\)的一个hash值（工作证明）被用户提交，那么\\(d\\) shares将被矿池采"
-"用。"
+"当矿机连接到矿池时将接收需要被解决的任务-它根据某些特性来计算哈希值（必须低于来自困难度的限值）。符合要求的哈希值将被发送回矿池并作为 "
+"<strong>矿机的工作证明</strong>。矿机工作的数量以单位形式称作<strong>shares</strong>。 如果在困难度 \\(d\\"
+")的一个哈希值（工作证明）被用户提交，那么\\(d\\) shares将被矿池采用。"
 
 #: help/templates/help/terminology.html:173
 msgid "To put it as simple as it could be:"
@@ -2578,13 +2373,6 @@ msgid "Network Latency"
 msgstr "网络延迟"
 
 #: help/templates/help/terminology.html:195
-#, fuzzy
-#| msgid ""
-#| "On slower networks (or when there is a network issue on the path from "
-#| "your miner to the pool), it takes more time for a miner to receive "
-#| "notification about a new block. However, the miner still keeps submitting "
-#| "results to an old block for some time and these are being rejected by the "
-#| "pool as <em>stale</em> shares</em>."
 msgid ""
 "On slower networks (or when there is a network issue on the path from your "
 "miner to the pool), it takes more time for a miner to receive notification "
@@ -2592,9 +2380,8 @@ msgid ""
 "old block for some time and these are being rejected by the pool as "
 "<em>stale</em> shares."
 msgstr ""
-"在较慢的网络上（或在您的矿机与矿池连接间有网络故障），用户接收新矿区的通知将"
-"需要更多时间。然而，矿机仍在提交工作结果到旧的矿区时，矿池已把这些结果当作"
-"<em>过期</em> shares</em>否决掉了。"
+"在较慢的网络上（或在您的矿机与矿池连接间有网络故障），用户接收新矿区的通知将需要更多时间。然而，矿机仍在提交工作结果到旧的矿区时，矿池已把这些结果当作<e"
+"m>过期</em>shares否决掉了。"
 
 #: help/templates/help/terminology.html:197
 msgid "Slower Mining Device"
@@ -2613,10 +2400,8 @@ msgstr ""
 "作生成不再被矿池接受的share。这样的结果也被称作<strong>过期</strong>shares。"
 
 #: help/templates/help/terminology.html:207
-#, fuzzy
-#| msgid "Stratum Protocol"
 msgid "Stratum (mining protocol)"
-msgstr "阶层协议"
+msgstr "阶层(Stratum)（挖矿协议）"
 
 #: help/templates/help/terminology.html:211
 #, python-format
@@ -2629,12 +2414,13 @@ msgid ""
 "official website <a href=\"%(url)s\" target=\"_blank\">StratumProtocol.org</"
 "a> which explains the technical details."
 msgstr ""
+"阶层(Stratum)是Slush Pool最开始在2012年为比特币挖矿发行并采用的挖矿协议，后来很多其他矿池（也挖其他加密货币的）也逐渐采用此协议。矿"
+"工能够通过协议和矿池，以相比旧getwork协议更高效的方式交流。作为矿工，您不需要完全懂得此协议。协议的官网<a href=\"%(url)s\" "
+"target=\"_blank\">StratumProtocol.org</a>能为您解释技术上的细节。"
 
 #: help/templates/help/terminology.html:220
-#, fuzzy
-#| msgid "Translation"
 msgid "Transaction fee"
-msgstr "交易"
+msgstr "交易手续费"
 
 #: help/templates/help/terminology.html:224
 msgid ""
@@ -2642,10 +2428,9 @@ msgid ""
 "to incentivize miners to add the given transaction to a block. <strong>Miner "
 "receives this fee</strong> in addition to the basic block reward."
 msgstr ""
+"交易发送者可能会给一定的交易（网络）手续费，以刺激矿工网络达成转账交易。除基本的区块收益外，<strong>矿工会收到这笔费用</strong>。"
 
 #: help/templates/help/terminology.html:233
-#, fuzzy
-#| msgid "Vardiff <span>(Variable Difficulty Algorithm)</span>"
 msgid "Vardiff <span>(variable difficulty algorithm)</span>"
 msgstr "Vardiff<span>(变量困难值算法)</span>"
 
@@ -2664,10 +2449,8 @@ msgid ""
 "to stronger miners (higher difficulty) and easier tasks to weaker so that an "
 "average communication frequency is roughly the same for all miners."
 msgstr ""
-"不同挖矿用户的hash值有很大的不同。为了最优化您的矿机和矿池间的网络通信量，我"
-"们介绍给您变量困难运算法（变量困难值）。它将分配给强一些的矿机更困难的任务"
-"（大一点的难度），容易点的任务给弱的矿机，因此所有的用户享有大致平均的通信频"
-"率。"
+"不同采矿者的哈希值有很大的不同。为了最优化您的矿机和矿池间的网络通信量，我们介绍给您变量困难运算法（变量困难值, Vardiff, Variable "
+"Difficulty Algorithm）。它将分配给更高性能的矿机（更困难）的任务，给弱的矿机（更容易）的任务，因此所有的用户享有大致平均的通信频率。"
 
 #: help/templates/help/terminology.html:239
 msgid ""
@@ -2677,15 +2460,14 @@ msgid ""
 "ideal frequency that allows a balanced data load to our servers and correct "
 "measurements of your miner's hash rate."
 msgstr ""
-"<strong>变量困难值</strong>分配给用户恰好能够发送回矿池<strong>每分钟16-20次"
-"</strong>的工作任务。为什么每分钟16-20次呢？根据我们的计算，这是能够允许一个"
-"平衡的数据加载到我们的服务器并能准确计算您的hash速率的理想频率。"
+"<strong>变量困难值(Vardiff)</strong>分配给用户恰好能够发送回矿池<strong>每分钟16-20次</strong>的工作任务。"
+"为什么每分钟16-20次呢？根据我们的计算，这是能够允许一个平衡的数据加载到我们的服务器并能准确计算您的哈希率的理想频率。"
 
 #: help/templates/help/terminology.html:240
 msgid ""
 "If your miner is too fast, Vardiff increases the difficulty for its work and "
 "when too slow, the difficulty decreases."
-msgstr "当您的矿机工作非常快，变量困难值将增加其工作的困难度，反之减少。"
+msgstr "当您的矿机工作非常快，变量困难值(Vardiff)将增加其工作的困难度，反之减少。"
 
 #: help/templates/help/terminology.html:241
 msgid ""
@@ -2705,16 +2487,14 @@ msgstr "矿工"
 msgid ""
 "Worker is a name for your mining device that you use as a login for your "
 "mining software."
-msgstr "矿工是作为登录您挖矿软件您使用的的挖矿设备的名称。"
+msgstr "矿工是用于登录您的挖矿设备到挖矿软件的名字。"
 
 #: help/templates/help/terminology.html:255
 msgid ""
 "We recommend to give a designated worker name to every mining device. That "
 "way you can <strong>track down a faulty miner</strong> easily just by "
 "looking at the monitoring section of your profile page."
-msgstr ""
-"我们推荐您给每个挖矿设备指定一个名称。这样您就可以通过查看您个人资料下的监控"
-"选项轻松<strong>追查到出错的矿机</strong>。"
+msgstr "我们推荐您给每个矿工指定一个名称。这样您就可以通过查看您个人资料下的监控选项轻松<strong>追查到出错的矿机</strong>。"
 
 #: help/templates/help/terminology.html:256
 msgid ""
@@ -2724,23 +2504,19 @@ msgid ""
 "your hash rate, however, you will not be able to determine which device it "
 "is."
 msgstr ""
-"您也可以用 <strong>一个矿工名称</strong>命名所有的挖矿设备，没有问题的。但这"
-"样做的不利之处是当您的某个设备工作不正常时，您可以觉察到hash速率的下降，但是"
-"您无法确认不正常工作的是哪一个设备。"
+"您在<strong>一个矿工名称</strong>下运行所有的挖矿设备也没有问题。但这样做的不利之处是当您的某个设备工作不正常时，您可以觉察到哈希速率的下"
+"降，但是您无法确认不正常工作的是哪一个设备。"
 
 #: help/templates/help/user-accounts.html:7
-#, fuzzy
-#| msgctxt "Page title"
-#| msgid "New account registration"
 msgid "Account registration"
-msgstr "新账户注册"
+msgstr "账户注册"
 
 #: help/templates/help/user-accounts.html:8
 msgid ""
 "Anonymity is one of the core values deeply rooted in our philosophy. "
 "Therefore, we do not collect nor process any unnecessary personal data, "
 "making our registration process reasonably simple."
-msgstr ""
+msgstr "匿名性是我们的一个核心价值。因此，我们不收集任何无关的个人信息，所以我们矿池的注册过程是合理又简单的。"
 
 #: help/templates/help/user-accounts.html:9
 #, python-format
@@ -2750,13 +2526,12 @@ msgid ""
 "Then, confirm the registration process by clicking on the link sent to your "
 "e-mail address."
 msgstr ""
+"您只需要在<a href=\"%(signup)s\""
+">注册页面</a>填写基本信息，例如您的用户名，邮箱地址以及密码。然后确认链接您邮箱中收到的确认邮件。"
 
 #: help/templates/help/user-accounts.html:11
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgid "Access profiles"
-msgstr "账户已被删除"
+msgstr "访问配置"
 
 #: help/templates/help/user-accounts.html:12
 msgid ""
@@ -2765,10 +2540,12 @@ msgid ""
 "permission to your account. Just click <em>+Create New</em> and choose from "
 "the list of possibilities."
 msgstr ""
+"在<em>设置>访问配置</em>里，有一个选项能创建多个密码不同的访问配置，以及不同等级的账户接入权限。只需要点击<em>+添加一个新的</em>然后在"
+"列表中选择。"
 
 #: help/templates/help/user-accounts.html:14
 msgid "Access permissions"
-msgstr ""
+msgstr "访问权限"
 
 #: help/templates/help/user-accounts.html:15
 msgid ""
@@ -2776,21 +2553,21 @@ msgid ""
 "profile. If you, for example, run a larger mining operation and do not want "
 "some users to change these settings, granular permissions are a great "
 "feature for you."
-msgstr ""
+msgstr "对选定的配置可以授予完整权限或只读权限。如果您需要运行更大的挖矿活动，或者不想一些用户改变这些设定，粒状权限将会是您的好帮手。"
 
 #: help/templates/help/user-accounts.html:17
 msgid "Allow access to web APIs"
-msgstr ""
+msgstr "允许接入网页API"
 
 #: help/templates/help/user-accounts.html:18
 msgid ""
 "The user will be able to use token authentication in scripts or 3rd party "
 "applications. You can generate new tokens there."
-msgstr ""
+msgstr "用户能够在脚本或第三方应用里使用令牌验证。您能在这里生成一个新令牌。"
 
 #: help/templates/help/user-accounts.html:20
 msgid "Allow website login"
-msgstr ""
+msgstr "允许网站登陆"
 
 #: help/templates/help/user-accounts.html:21
 msgid ""
@@ -2798,11 +2575,11 @@ msgid ""
 "access profile name you choose (in <code>accessProfileName@userName</code> "
 "format) and password you set right there."
 msgstr ""
+"用户能够通过网站上不同名字的访问配置访问主账户（以<code>accessProfileName@userName</code>的格式）以及同时设置密码。"
 
 #: help/templates/help/user-accounts.html:23
-#, fuzzy
 msgid "Account security"
-msgstr "户口选项"
+msgstr "账户安全"
 
 #: help/templates/help/user-accounts.html:24
 msgid ""
@@ -2812,6 +2589,8 @@ msgid ""
 "need to use the 2FA every time when making any important changes to your "
 "account."
 msgstr ""
+"我们非常建议激活<strong>两步验证</strong>以让您的账户安全级别提高。两步验证能够在<em>设置>安全</em>目录里开启。在设置后，每次您"
+"更改账号的重要信息时您都需要使用两步验证。"
 
 #: help/templates/help/user-accounts.html:25
 msgid ""
@@ -2819,12 +2598,11 @@ msgid ""
 "to generate the verification code) or the more advanced U2F standard (via a "
 "hardware device/token like Trezor)."
 msgstr ""
+"您既可以使用基于TOTP标准（用手机TOTP APP生成验证码）的两步验证，也可以用更先进的U2F标准（用硬件设备例如Trezor生成验证码）的两步验证。"
 
 #: help/templates/help/user-accounts.html:27
-#, fuzzy
-#| msgid "Username"
 msgid "Username change"
-msgstr "帐号"
+msgstr "更改用户名"
 
 #: help/templates/help/user-accounts.html:28
 msgid ""
@@ -2833,40 +2611,27 @@ msgid ""
 "mail address. Having multiple accounts registered with the same e-mail "
 "address is possible."
 msgstr ""
+"<strong>现在更改用户名是不允许的</strong>但是您能用同一个邮箱地址创建一个不同用户名的账户。在一个邮箱地址下有多个账户是允许的。"
 
 #: help/templates/help/user-accounts.html:30
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgid "Account deletion"
-msgstr "账户已被删除"
+msgstr "删除账户"
 
 #: help/templates/help/user-accounts.html:31
-#, fuzzy
-#| msgid ""
-#| "Once you decide to close your mining operation down there are two "
-#| "options. You can either leave your account as it is without signing into "
-#| "it or mining against it and it will be <strong>automatically deleted</"
-#| "strong> after <strong>one year of your inactivity</strong>."
 msgid ""
 "If you decide to close down your mining operation, there are two options. "
 "You can either leave your account as it is without signing into it or mining "
 "with it and the account will be <strong>automatically deleted</strong> after "
 "<strong>one year of your inactivity</strong>."
 msgstr ""
-"一旦您决定关闭挖矿操作，有两种选择。您可以不再登录或使用它挖矿，它就会在"
-"<strong>您不活动1年</strong>后<strong>自动被删除</strong>。"
+"一旦您决定不想挖矿了，有两种选择。您可以不再登录或不再挖矿，您的账号就会在<strong>您不活动1年</strong>后<strong>自动被删除</s"
+"trong>。"
 
 #: help/templates/help/user-accounts.html:31
 msgid "The remaining balance will be considered as a donation to the pool."
-msgstr ""
+msgstr "剩余的余额将会被视为对矿池的捐赠。"
 
 #: help/templates/help/user-accounts.html:32
-#, fuzzy
-#| msgid ""
-#| "However if you decide to delete it on your own please always "
-#| "<strong>check if all rewards were already paid</strong> to your payout "
-#| "address <strong>before taking any action</strong>."
 msgid ""
 "However, if you decide to delete the account immediately, please always "
 "<strong>check if all rewards have already been paid</strong> to your payout "
@@ -2874,12 +2639,10 @@ msgid ""
 "<em>Settings > Accounts</em> menu and confirm it via the confirmation link "
 "sent to your e-mail."
 msgstr ""
-"如果您决定自己删除记得在<strong>采取任何操作前</strong>请<strong>检查是否所有"
-"报酬已支付</strong>到您的支付地址。"
+"然而，如果您决定马上删除账户，请一定记得在采取任何操作前<strong>检查是否所有报酬已支付</strong>到您的支付地址。然后，删除账户的请求在目录"
+"<em>设置 > 账户</em>里能找到，并同时通过发送给您的邮件里的链接确认。"
 
 #: help/templates/help/worker-management.html:9
-#, fuzzy
-#| msgid "Worker Management"
 msgid "Worker management"
 msgstr "矿工管理"
 
@@ -2891,13 +2654,12 @@ msgid ""
 "monitor and manage your miners in the <em>Workers</em> section. Our system "
 "is designed to handle even large farms with thousands of workers."
 msgstr ""
+"如果您同时使用多个挖矿设备，<strong>每个设备详细概况</strong>是很实用的。我们提供用户友好的矿工管理的复杂解决方案。您能在<em>矿工</"
+"em>部分下，轻松监控和管理您的矿机。我们的系统设计甚至能够支持大型的矿场和成千上万的工作矿机。"
 
 #: help/templates/help/worker-management.html:12
-#, fuzzy
-#| msgctxt "Intro"
-#| msgid "Worker Configuration"
 msgid "Worker creation"
-msgstr "矿工配置"
+msgstr "创建矿工"
 
 #: help/templates/help/worker-management.html:13
 msgid ""
@@ -2907,27 +2669,23 @@ msgid ""
 "on <em>New Worker</em>. Then, choose a name for your worker and use this "
 "name in the device configuration."
 msgstr ""
+"只要您将您的矿机和它的矿工名连接和配置后，名字会以新矿工的形式<strong>自动出现</strong>在设备总览里。您通过点击<em>新矿工</em>手"
+"动创建矿工。然后，为您的矿工选择一个名字并用于配置。"
 
 #: help/templates/help/worker-management.html:14
 msgid ""
 "If you do not set a worker name in your device configuration, a new one will "
 "be automatically created with a name <strong>[auto] worker</strong> and your "
 "hash rate will be assigned to it."
-msgstr ""
+msgstr "如果您没有在设备配置中设置一个矿工名，一个新<strong>[auto]矿工</strong>的名字将被自动创建，您的哈希值也会被定向于此。"
 
 #: help/templates/help/worker-management.html:16
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Worker settings updated"
 msgid "Worker settings"
-msgstr "矿工设置已更新"
+msgstr "矿工设置"
 
 #: help/templates/help/worker-management.html:17
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Monitoring enabled for all workers"
 msgid "Following settings are available for each worker:"
-msgstr "所有矿工的监控已启用"
+msgstr "以下设定可适用于每个矿工："
 
 #: help/templates/help/worker-management.html:18
 #, python-format
@@ -2939,6 +2697,8 @@ msgid ""
 "about the monitoring feature, read the <a href=\"%(url)s\">monitoring manual "
 "section</a>."
 msgstr ""
+"<strong>开启监控</strong> - 监控系统会探测和汇报任何相关于选定矿工的哈希率的问题。监控能帮助您不间断地管理您的矿机工况，最小化连接问题"
+"或硬/软件失效带来的损失。了解更多关于监控功能，请阅读<a href=\"%(url)s\">监控功能使用手册</a>。"
 
 #: help/templates/help/worker-management.html:19
 msgid ""
@@ -2947,6 +2707,8 @@ msgid ""
 "own Alert Limit. The system will report issues when hash rate drops below "
 "this value."
 msgstr ""
+"<strong>自动探测警报限额</strong> - "
+"由最近工况自动估计您的矿工的哈希值。如果去勾这项，您可以自己设置警报限额。但哈希值低于警报限额时，系统会向您报告问题。"
 
 #: help/templates/help/worker-management.html:20
 #, python-format
@@ -2957,6 +2719,8 @@ msgid ""
 "set the minimum provided difficulty manually, however we do not recommend "
 "this option unless you have knowledge of the technical background."
 msgstr ""
+"<strong>使用默认最低难度</strong> - 矿池使用<a href=\"%(vardiff)s\">变量困难值(Vardiff)</a>算法，"
+"这种算法为您的设备自动计算出优化的计算难度。如果您不选择这项，您可以手动设置最低难度，除非您有一定的技术知识背景，我们并不建议这样做。"
 
 #: help/templates/help/worker-management.html:21
 msgid ""
@@ -2965,19 +2729,18 @@ msgid ""
 "labels by clicking Manage Labels and +. There could be a shortcut, name, "
 "color and further description in every label detail."
 msgstr ""
+"<strong>标签</strong> - 您可以创建标签并指定给您需要指定标签的矿工。 您点击管理标签和 + "
+"，就可以创建和删除标签。标签内的详细信息可以有快捷方式，名字以及更多描述。"
 
 #: help/templates/help/worker-management.html:22
 msgid ""
 "Assign labels by clicking <em>Edit Worker > Labels > selected label > Apply</"
 "em>."
-msgstr ""
+msgstr "点击<em>编辑矿工 > 标签 > 选择标签 > 应用</em>以指定标签。"
 
 #: help/templates/help/worker-management.html:24
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Other news"
 msgid "Other options"
-msgstr "其他新闻"
+msgstr "其他选项"
 
 #: help/templates/help/worker-management.html:25
 msgid ""
@@ -2985,6 +2748,7 @@ msgid ""
 "workers, you can filter them by their state, name, hash rate, minimum "
 "difficulty, alert limit or actual state."
 msgstr ""
+"<strong>筛选您的矿机</strong> - 以更好地获得您的矿机总览， 您可以根据它们的状态，名字，哈希率，最小难度，警告限值或实时状态筛选矿机。"
 
 #: help/templates/help/worker-management.html:26
 msgid ""
@@ -2993,55 +2757,54 @@ msgid ""
 "is also a Recent Hash Rate graph displayed in the bottom section which can "
 "be very helpful for troubleshooting."
 msgstr ""
+"<strong>矿工详情</strong> - "
+"如果您点击矿工名打开矿工详情，能看到矿机的参数和设定。以及底下部分会展示最近的哈希值图表，这对排障非常有帮助。"
 
 #: help/templates/help/zcash-setup.html:13
 msgid "Zcash <span>can</span> be efficiently mined with:"
-msgstr ""
+msgstr "Zcash<span>能够</span>被以下的有效地开采："
 
 #: help/templates/help/zcash-setup.html:13
 msgid "ASIC (Equihash algorithm), GPU"
-msgstr ""
+msgstr "ASIC（Equihas算法），GPU"
 
 #: help/templates/help/zcash-setup.html:15
 msgid "Zcash <span>cannot</span> be efficiently mined with (unsupported):"
-msgstr ""
+msgstr "Zcash <span>不能</span> 被以下的有效地开采（不支持）:"
 
 #: help/templates/help/zcash-setup.html:15
 msgid "CPU, mobile phone"
-msgstr ""
+msgstr "CPU，手机"
 
 #: help/templates/help/zcash-setup.html:24
-#, fuzzy, python-format
-#| msgid "<a href=\"%(login)s\">Login</a> to your account."
+#, python-format
 msgid "<a href=\"%(dashboard)s\">Log into</a> your account."
-msgstr "<a href=\"%(login)s\">登录</a>到您的账户。"
+msgstr "<a href=\"%(dashboard)s\">登录</a>到您的账户。"
 
 #: help/templates/help/zcash-setup.html:29
 msgid ""
 "Some popular hardware/software configurations are available in the Support "
 "Center:"
-msgstr ""
+msgstr "一些常用的硬/软件配置可以在技术支持客服中心找到："
 
 #: help/templates/help/zcash-setup.html:29
-#, fuzzy
-#| msgid "FAQ: Mining Setup"
 msgid "Zcash Mining Setup"
-msgstr "常见问题：挖矿设置"
+msgstr "Zcash挖矿设置"
 
 #: help/templates/help/zcash-setup.html:30
 msgid ""
 "Please note that we do not support Zcash addresses directly in the command; "
 "use your Slush Pool userName instead."
-msgstr ""
+msgstr "请注意我们不支持直接在命令里使用Zcash地址；请使用您的Slush Pool用户名。"
 
 #: help/templates/help/zcash-setup.html:83
 msgid "bigMiner.strongDevice"
-msgstr ""
+msgstr "规模大的挖矿者。性能强的设备"
 
 #: help/templates/help/zcash-setup.html:88
 #, python-format
 msgid "Other usable wallets are listed on <a %(zcash)s>Zcash Community</a>."
-msgstr ""
+msgstr "其他可用的钱包在<a %(zcash)s>Zcash 社区</a>列出。"
 
 #: mailing/forms/campaigns.py:80
 msgctxt "UI"
@@ -3049,55 +2812,44 @@ msgid "Send"
 msgstr "发送"
 
 #: mailing/forms/validators.py:17
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Newsletter unsubscription"
 msgctxt "UI"
 msgid "Newsletter recipient not found."
-msgstr "时事通讯退订"
+msgstr "实事通讯(Newsletter)接收人未找到。"
 
 #: mailing/forms/validators.py:44
 msgctxt "UI"
 msgid "Feedback must be a string no longer than 600 characters."
-msgstr ""
+msgstr "反馈必须是短于600个字符的字符串。"
 
 #: mailing/models.py:498
-#, fuzzy
 msgctxt "UI"
 msgid "I receive newsletters too frequently"
-msgstr "太频繁地接收到时事新闻。"
+msgstr "我收到太多的实事通讯(Newsletter)了"
 
 #: mailing/models.py:499
-#, fuzzy
 msgctxt "UI"
 msgid "I do not mind anymore"
-msgstr "我不再挖矿了。"
+msgstr "我不再挖矿了"
 
 #: mailing/models.py:500
-#, fuzzy
 msgctxt "UI"
 msgid "I have joined another pool"
-msgstr "我换到了另一个矿池。"
+msgstr "我换了一家矿池"
 
 #: mailing/models.py:501
-#, fuzzy
 msgctxt "UI"
 msgid "The newsletter content is of no value to me"
-msgstr "时事新闻的内容对我没有价值。"
+msgstr "实事通讯(Newsletter)的内容对我没有用"
 
 #: mailing/models.py:502
-#, fuzzy
 msgctxt "UI"
 msgid "Other reason"
-msgstr "其他原因。"
+msgstr "其他原因"
 
 #: mailing/models.py:518
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Not voted"
 msgctxt "UI"
 msgid "Not provided"
-msgstr "未投票"
+msgstr "未列出"
 
 #: mailing/templates/mailing/emails/unsubscribe_confirmation.html:9
 msgctxt "UI"
@@ -3114,10 +2866,9 @@ msgid ""
 msgstr "如果您改变主意了，可以随时去账户设置启用订阅。"
 
 #: maintenance/maintenance_funcs.py:1543
-#, fuzzy
 msgctxt "UI"
 msgid "Payout sent"
-msgstr "报酬支付历史"
+msgstr "收益支付历史"
 
 #: mining/models.py:396
 msgctxt "UI"
@@ -3152,7 +2903,7 @@ msgstr "偏好Bitcoin core当前规定的用户=他们的hash速率用于挖Bitc
 #: mining/models.py:405
 msgctxt "UI"
 msgid "Bitcoin Core"
-msgstr "Bitcoin Core"
+msgstr "比特币核"
 
 #: mining/models.py:410
 msgctxt "UI"
@@ -3172,35 +2923,25 @@ msgid "Pool decides"
 msgstr "矿池决定"
 
 #: mining/validators.py:16
-#, fuzzy
-#| msgctxt "UI"
-#| msgid ""
-#| "Only letters, numbers and the following characters are accepted: _ @ + -"
 msgctxt "UI"
 msgid ""
 "Only letters, numbers and the following characters are accepted: _ @ + - :"
-msgstr "只有字母，数字和这些字符可以使用：_ @ + -"
+msgstr "只有字母，数字和这些字符可以使用：_ @ + - :"
 
 #: news/models.py:49
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Signature"
 msgctxt "UI"
 msgid "Feature"
-msgstr "签名"
+msgstr "特性"
 
 #: news/models.py:50
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Event Time"
 msgctxt "UI"
 msgid "Event"
-msgstr "事件时间"
+msgstr "事件"
 
 #: news/models.py:51
 msgctxt "UI"
 msgid "Service Update"
-msgstr ""
+msgstr "服务更新"
 
 #: project/settings.py:359
 msgid "Simplified Chinese"
@@ -3217,35 +2958,34 @@ msgstr "俄语"
 #: reports/views.py:21
 msgctxt "UI"
 msgid "Missing \"types\" parameter!"
-msgstr ""
+msgstr "缺失“类型”参数！"
 
 #: reports/views.py:25
 #, python-format
 msgctxt "UI"
 msgid "Invalid query type. Choices are: %s."
-msgstr ""
+msgstr "无效的查询类型。有这些选择：%s。"
 
 #: reports/views.py:35
 msgctxt "UI"
 msgid "Missing \"output format\" parameter!"
-msgstr ""
+msgstr "缺失“输出格式”参数！"
 
 #: reports/views.py:37
 #, python-format
 msgctxt "UI"
 msgid "Invalid output format. Choices are: %s."
-msgstr ""
+msgstr "无效的输出格式。有这些选择%s。"
 
 #: reports/views.py:51
 msgctxt "UI"
 msgid "Missing date range (from, to)!"
-msgstr ""
+msgstr "缺失日期范围（从，到）！"
 
 #: reports/views.py:53
-#, fuzzy
 msgctxt "UI"
 msgid "Invalid date range!"
-msgstr "无效令牌格式"
+msgstr "无效数据范围！"
 
 #: settings/api/v1/api_actions.py:64
 msgctxt "UI"
@@ -3285,7 +3025,7 @@ msgstr "您的Zcash支付地址已被锁定。"
 #: settings/api/v1/api_actions.py:115 settings/api/v1/api_actions.py:135
 msgctxt "UI"
 msgid "No pending email."
-msgstr "没有待定邮件。"
+msgstr "没有等待中的邮件。"
 
 #: settings/api/v1/api_actions.py:123 settings/api/v1/api_actions.py:161
 #: settings/api/v1/api_actions.py:193
@@ -3303,7 +3043,7 @@ msgstr "更改邮箱地址的请求已成功取消。"
 #: settings/api/v1/api_actions.py:153 settings/api/v1/api_actions.py:185
 msgctxt "UI"
 msgid "No pending wallet."
-msgstr "没有待定钱包。"
+msgstr "没有等待中的钱包。"
 
 #: settings/api/v1/api_actions.py:177
 msgctxt "UI"
@@ -3311,12 +3051,9 @@ msgid "Wallet change request has been successfully canceled."
 msgstr "更改邮箱地址的请求已成功取消。"
 
 #: settings/api/v1/api_actions.py:208
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Zcash wallet change request has been successfully canceled."
 msgctxt "UI"
 msgid "Zcash wallet change request has been successfully cancelled."
-msgstr "Zcash钱包更改请求已成功取消。"
+msgstr "已成功取消Zcash钱包更改请求。"
 
 #: settings/api/v1/api_actions.py:224
 #, python-format
@@ -3346,12 +3083,9 @@ msgstr "签名过期。"
 
 #: settings/forms/btc_payouts_form.py:48 settings/forms/btc_payouts_form.py:129
 #: settings/forms/zec_payouts_form.py:48 settings/forms/zec_payouts_form.py:126
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "You cant change locked wallet."
 msgctxt "UI"
 msgid "You can not change a locked wallet."
-msgstr "您不能更改已锁定的钱包。"
+msgstr "您不能更改一个已被锁定的钱包。"
 
 #: settings/forms/btc_payouts_form.py:51 settings/forms/btc_payouts_form.py:136
 #: settings/forms/zec_payouts_form.py:51 settings/forms/zec_payouts_form.py:133
@@ -3361,12 +3095,9 @@ msgstr "新钱包已设置。"
 
 #: settings/forms/btc_payouts_form.py:122
 #: settings/forms/zec_payouts_form.py:119
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "No pending wallet."
 msgctxt "UI"
 msgid "No pending wallet to confirm."
-msgstr "没有待定钱包。"
+msgstr "没有等待确认中的钱包。"
 
 #. Translators: enabled coins selection - user cannot disable all coins
 #: settings/forms/enabled_coins_settings_form.py:46
@@ -3377,12 +3108,12 @@ msgstr "至少要启用一个币！"
 #: settings/forms/otp_setting_forms.py:48
 msgctxt "UI"
 msgid "OTP has been enabled."
-msgstr ""
+msgstr "一次性密码验证开启。"
 
 #: settings/forms/otp_setting_forms.py:67
 msgctxt "UI"
 msgid "Two-factor authentication is already configured"
-msgstr "双重验证已配置"
+msgstr "两步验证已配置"
 
 #: settings/forms/otp_setting_forms.py:72
 msgctxt "UI"
@@ -3393,38 +3124,30 @@ msgstr "双重认证令牌无效。请重新扫描二维码（已生成一个新
 
 #: settings/forms/otp_setting_forms.py:116
 #: settings/forms/otp_setting_forms.py:162
-#, fuzzy
-#| msgid "Whitelist has been updated."
 msgctxt "UI"
 msgid "OTP has been disabled."
-msgstr "白名单已被更新"
+msgstr "一次性密码验证已关闭。"
 
 #: settings/forms/otp_setting_forms.py:120
 #: settings/forms/otp_setting_forms.py:153
 msgctxt "UI"
 msgid "User doesn't have OTP."
-msgstr "用户没有一次性密码。"
+msgstr "用户没有一次性密码验证。"
 
 #: user_request/api/v1/views.py:38
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "2-factor authentication enabled"
 msgctxt "UI"
 msgid "Second factor authentication missing."
-msgstr "双重验证已启用"
+msgstr "缺少两步验证。"
 
 #: user_request/api/v1/views.py:75
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Bad request."
 msgctxt "UI"
 msgid "User request"
-msgstr "错误请求。"
+msgstr "用户请求"
 
 #: user_request/api/v1/views.py:79
 msgctxt "UI"
 msgid "This request belongs to a different user!"
-msgstr ""
+msgstr "这个请求属于其他用户！"
 
 #: user_request/api/v1/views.py:86
 #, fuzzy
@@ -3437,63 +3160,42 @@ msgctxt "UI"
 msgid ""
 "The request associated with this confirmation link is no longer active."
 "<br>It has probably been confirmed or cancelled before."
-msgstr ""
+msgstr "和确认连接相关的请求已失效。<br>它可能在之前已经被确认或取消了。"
 
 #: user_request/models.py:339
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Wallet change"
 msgctxt "UI"
 msgid "Wallet has been changed."
-msgstr "更改钱包"
+msgstr "钱包已更改。"
 
 #: user_request/models.py:354
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Your wallet change request has been cancelled."
 msgctxt "UI"
 msgid "Wallet change request has been cancelled."
-msgstr "更改钱包地址的请求已被取消。"
+msgstr "更改钱包的请求已被取消。"
 
 #: user_request/models.py:383
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Zcash wallet change cancelled"
 msgctxt "UI"
 msgid "Zcash wallet has been changed."
-msgstr "Zcash钱包更改已取消"
+msgstr "Zcash钱包已更改。"
 
 #: user_request/models.py:398
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Your wallet change request has been cancelled."
 msgctxt "UI"
 msgid "Zcash wallet change request has been cancelled."
 msgstr "更改钱包地址的请求已被取消。"
 
 #: user_request/models.py:424
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Your wallet has been successfully changed."
 msgctxt "UI"
 msgid "Your e-mail has been changed."
-msgstr "您的钱包已更改成功。"
+msgstr "您的邮箱已更改成功。"
 
 #: user_request/models.py:439
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Your wallet change request has been cancelled."
 msgctxt "UI"
 msgid "E-mail change request has been cancelled."
-msgstr "更改钱包地址的请求已被取消。"
+msgstr "更改邮箱地址的请求已被取消。"
 
 #: user_request/models.py:540
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deletion requested"
 msgctxt "UI"
 msgid "Account deletion has been cancelled."
-msgstr "账户删除已申请"
+msgstr "账户删除申请已取消。"
 
 #: user_request/views.py:37
 msgctxt "UI"
@@ -3501,7 +3203,7 @@ msgid ""
 "The confirmation link used is not associated with this account.<br><br> "
 "Please login with a corresponding user name (mentioned in the confirmation e-"
 "mail) and try it again."
-msgstr ""
+msgstr "确认连接和这个账号无关。<br><br>请用相关的用户名（在确认邮件内有）登陆并再试一次。"
 
 #: web/api/v1/appeals.py:52
 #, python-format
@@ -3513,22 +3215,17 @@ msgstr "您的支付已暂时被矿池操作人员锁住 (%(reason)s)。"
 #: web/api/v1/appeals.py:54
 msgctxt "UI"
 msgid "Please, contact our support for further details."
-msgstr "请联系我们的技术支持获取更多详情。"
+msgstr "请联系我们的客服获取更多详情。"
 
 #: web/api/v1/appeals.py:58
-#, fuzzy
-#| msgid "Pool Payouts"
 msgctxt "UI"
 msgid "Blocked Payouts"
-msgstr "矿池报酬支付"
+msgstr "已冻结支付"
 
 #: web/api/v1/appeals.py:82
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Pending wallet"
 msgctxt "UI"
 msgid "Pending Wallet"
-msgstr "待定钱包"
+msgstr "等待中的钱包"
 
 #: web/api/v1/appeals.py:92
 msgctxt "UI"
@@ -3548,7 +3245,7 @@ msgstr "更改我的密码"
 #: web/api/v1/appeals.py:180
 msgctxt "UI"
 msgid "Dismiss this message"
-msgstr ""
+msgstr "无视此消息"
 
 #: web/api/v1/appeals.py:206
 msgctxt "UI"
@@ -3578,19 +3275,19 @@ msgstr ""
 #, python-brace-format
 msgctxt "UI"
 msgid "Unable to send {coin} payout"
-msgstr ""
+msgstr "无法发送{coin}的支付"
 
 #: web/api/v1/appeals.py:266
 msgctxt "UI"
 msgid ""
 "Please setup your payout address. Your balance is over your payout threshold"
-msgstr ""
+msgstr "请您设置您的支付地址。您的余额已超过您的支付阈值"
 
 #: web/api/v1/appeals.py:267
 #, python-brace-format
 msgctxt "UI"
 msgid "Your balance is {balance} and threshold is {threshold}"
-msgstr ""
+msgstr "您的余额为{balance}您的阈值为{threshold}"
 
 #: web/api/v1/appeals.py:277
 msgctxt "UI"
@@ -3600,76 +3297,65 @@ msgstr "账户设置"
 #: web/api/v1/views.py:1003
 msgctxt "UI"
 msgid "Couldn't load USD/BTC exchange rate"
-msgstr ""
+msgstr "无法加载USD/BTC汇率"
 
 #: web/api/v1/views.py:1188
 msgctxt "UI"
 msgid ""
 "Only alphabetical characters, numbers and underscore are allowed in username!"
-msgstr "用户名只允许含有字母，数字和下划线！"
+msgstr "用户名中只允许有字母字符，数字和下划线！"
 
 #: web/api/v1/views.py:1193 web/api/v1/views.py:1513
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid token format"
 msgctxt "UI"
 msgid "Invalid email format!"
-msgstr "无效令牌格式"
+msgstr "无效邮箱格式！"
 
 #: web/api/v1/views.py:1198
 msgctxt "UI"
 msgid "Password must have at Least 5 characters!"
-msgstr ""
+msgstr "密码必须长于5个字符！"
 
 #: web/api/v1/views.py:1264 web/api/v1/views.py:1286 web/api/v1/views.py:1337
-#, fuzzy
-#| msgid "Login problems?"
 msgctxt "UI"
 msgid "Login forbidden"
-msgstr "登录有困难？"
+msgstr "禁止登陆"
 
 #: web/api/v1/views.py:1333
 msgctxt "UI"
 msgid ""
 "Please enter a correct username (not an e-mail address) and password. Note "
 "that both fields are case-sensitive."
-msgstr ""
+msgstr "请输入正确的用户名（不是邮箱地址）和密码。请注意这两个位置都是要区分大小写的。"
 
 #: web/api/v1/views.py:1371
 msgctxt "UI"
 msgid "Failed to load a demo account user!"
-msgstr ""
+msgstr "加载演示账户用户失败!"
 
 #: web/api/v1/views.py:1399
-#, fuzzy
-#| msgid "user name:"
 msgctxt "UI"
 msgid "Bad username/id."
-msgstr "用户名："
+msgstr "错误的用户名/ID。"
 
 #: web/api/v1/views.py:1402
-#, fuzzy
 msgctxt "UI"
 msgid "This user is not active yet."
-msgstr "账户已被更新。"
+msgstr "这个用户尚未激活。"
 
 #: web/api/v1/views.py:1481
-#, fuzzy
-#| msgid "No categories found."
 msgctxt "UI"
 msgid "No pending request found!"
-msgstr "未发现分类。"
+msgstr "未发现等待中的请求!"
 
 #: web/api/v1/views.py:1597
-#, fuzzy
 msgctxt "UI"
 msgid "Invalid token!"
-msgstr "无效令牌格式"
+msgstr "无效的令牌！"
 
 #: web/api/v1/views.py:1602
 msgctxt "UI"
 msgid "Password must have at least 5 characters!"
-msgstr ""
+msgstr "密码必须至少有5个字符！"
 
 #: web/messages.py:5
 msgctxt "UI"
@@ -3759,54 +3445,44 @@ msgid "Depricated"
 msgstr "已弃用"
 
 #: web/models.py:879
-#, fuzzy, python-format
-#| msgctxt "UI, value"
-#| msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
+#, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s %(old)s</b> deleted"
-msgstr "<b>%(key)s</b> 更改到 <b>%(new)s</b>"
+msgstr "<b>%(key)s %(old)s</b> 已删除"
 
 #: web/models.py:881
-#, fuzzy, python-format
-#| msgctxt "UI, value"
-#| msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
+#, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s created: <b>%(new)s</b>"
-msgstr "<b>%(key)s</b> 更改到 <b>%(new)s</b>"
+msgstr "<b>%(key)s 已创建: <b>%(new)s</b>"
 
 #: web/models.py:887
-#, fuzzy, python-format
-#| msgctxt "UI, value"
-#| msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
+#, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> deleted"
-msgstr "<b>%(key)s</b> 更改到 <b>%(new)s</b>"
+msgstr "<b>%(key)s</b> 已删除"
 
 #: web/models.py:889
-#, fuzzy, python-format
-#| msgctxt "UI, value"
-#| msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
+#, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> created"
-msgstr "<b>%(key)s</b> 更改到 <b>%(new)s</b>"
+msgstr "<b>%(key)s</b> 已创建"
 
 #: web/models.py:890
-#, fuzzy, python-format
-#| msgctxt "UI, value"
-#| msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
+#, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed"
-msgstr "<b>%(key)s</b> 更改到 <b>%(new)s</b>"
+msgstr "<b>%(key)s</b> 已更改"
 
 #: web/models.py:895
 msgctxt "UI, value"
 msgid "profile <b>activated</b>"
-msgstr ""
+msgstr "配置<b>已启用</b>"
 
 #: web/models.py:896
 msgctxt "UI, value"
 msgid "profile <b>deactivated</b>"
-msgstr ""
+msgstr "配置<b>已停用</b>"
 
 #: web/models.py:901
 msgctxt "UI"
@@ -3822,7 +3498,7 @@ msgstr "不适用"
 #, python-format
 msgctxt "UI, value"
 msgid "Access Profile <b>%(name)s</b>:<br>"
-msgstr ""
+msgstr "访问配置(Access Profile)<b>%(name)s</b>:<br>"
 
 #: web/models.py:933
 msgctxt "UI"
@@ -3852,12 +3528,12 @@ msgstr "查看提议"
 #: web/models.py:1055
 msgctxt "UI"
 msgid "Notify me on payout"
-msgstr "在付款时通知我"
+msgstr "在支付时通知我"
 
 #: web/models.py:1056
 msgctxt "UI"
 msgid "Newsletter"
-msgstr "时事通讯"
+msgstr "时事通讯(Newsletter)"
 
 #: web/models.py:1057
 msgctxt "UI"
@@ -3892,7 +3568,7 @@ msgstr "钱包"
 #: web/models.py:1065 web/models.py:1066
 msgctxt "UI"
 msgid "Pending wallet"
-msgstr "待定钱包"
+msgstr "等待中的钱包"
 
 #: web/models.py:1067
 msgctxt "UI"
@@ -3902,7 +3578,7 @@ msgstr "发送报酬的门槛"
 #: web/models.py:1068
 msgctxt "UI"
 msgid "Email"
-msgstr "邮箱地址"
+msgstr "邮箱"
 
 #: web/models.py:1070
 msgctxt "UI"
@@ -3925,27 +3601,24 @@ msgid "Minimum difficulty"
 msgstr "最低难度"
 
 #: web/models.py:1076
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Bitcoin Core"
 msgctxt "UI"
 msgid "Bitcoin"
-msgstr "Bitcoin Core"
+msgstr "比特币"
 
 #: web/models.py:1077
 msgctxt "UI"
 msgid "Ethereum Classic"
-msgstr ""
+msgstr "以太坊经典"
 
 #: web/models.py:1078
 msgctxt "UI"
 msgid "Ethereum"
-msgstr ""
+msgstr "以太坊"
 
 #: web/models.py:1079
 msgctxt "UI"
 msgid "Zcash"
-msgstr ""
+msgstr "零币(Zcash)"
 
 #: web/models.py:1081
 msgctxt "UI"
@@ -3958,12 +3631,9 @@ msgid "Disabled"
 msgstr "已禁用"
 
 #: web/models.py:1123
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deletion requested"
 msgctxt "UI"
 msgid "Account deletion cancelled"
-msgstr "账户删除已申请"
+msgstr "账户删除申请已取消"
 
 #: web/models.py:1124
 msgctxt "UI"
@@ -3976,33 +3646,29 @@ msgid "Account deletion requested"
 msgstr "账户删除已申请"
 
 #: web/models.py:1127
-#, fuzzy
 msgctxt "UI"
 msgid "Demo login"
-msgstr "工人帐号："
+msgstr "演示账户登录"
 
 #: web/models.py:1128
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Support"
 msgctxt "UI"
 msgid "Support login"
-msgstr "技术支持"
+msgstr "技术支持登录"
 
 #: web/models.py:1129
 msgctxt "UI"
 msgid "Login"
-msgstr "登录"
+msgstr "登陆"
 
 #: web/models.py:1130
 msgctxt "UI"
 msgid "Logout"
-msgstr "退出"
+msgstr "登出"
 
 #: web/models.py:1131
 msgctxt "UI"
 msgid "Logout all sessions"
-msgstr ""
+msgstr "登出所有进程"
 
 #: web/models.py:1132
 msgctxt "UI"
@@ -4010,36 +3676,24 @@ msgid "Invalid Login"
 msgstr "无效的登录"
 
 #: web/models.py:1133
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Inactive Workers"
 msgctxt "UI"
 msgid "Inactive profile"
-msgstr "不活跃的矿工"
+msgstr "不活跃的配置"
 
 #: web/models.py:1135
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgctxt "UI"
 msgid "New access profile created"
-msgstr "账户已被删除"
+msgstr "新的访问配置已创建"
 
 #: web/models.py:1137
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgctxt "UI"
 msgid "Access profile updated"
-msgstr "账户已被删除"
+msgstr "访问配置已更新"
 
 #: web/models.py:1139
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgctxt "UI"
 msgid "Access profile deleted"
-msgstr "账户已被删除"
+msgstr "访问配置已删除"
 
 #: web/models.py:1142
 msgctxt "UI"
@@ -4064,43 +3718,37 @@ msgstr "时事通讯订阅已取消"
 #: web/models.py:1147
 msgctxt "UI"
 msgid "2-factor authentication disabled"
-msgstr "双重验证已禁用"
+msgstr "两步验证已停用"
 
 #: web/models.py:1148
 msgctxt "UI"
 msgid "2-factor authentication enabled"
-msgstr "双重验证已启用"
+msgstr "两步验证已启用"
 
 #: web/models.py:1149
 msgctxt "UI"
 msgid "One time password setup cancelled"
-msgstr ""
+msgstr "一次性密码验证设置已取消"
 
 #: web/models.py:1150
 msgctxt "UI"
 msgid "OTP change confirmed"
-msgstr "一次性密码更改已确认"
+msgstr "一次性密码验证更改已确认"
 
 #: web/models.py:1151
-#, fuzzy
 msgctxt "UI"
 msgid "2-factor authentication removed by operator"
-msgstr "双重验证已启用"
+msgstr "两步验证已被管理员移除"
 
 #: web/models.py:1153
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "U2F device not found."
 msgctxt "UI"
 msgid "U2F device registered"
-msgstr "双重认证装置未找到。"
+msgstr "U2F装置已注册"
 
 #: web/models.py:1154
-#, fuzzy
-#| msgid "request cancelled"
 msgctxt "UI"
 msgid "U2F setup cancelled"
-msgstr "请求取消"
+msgstr "U2F设置已取消"
 
 #: web/models.py:1156 web/models.py:1159
 msgctxt "UI"
@@ -4188,10 +3836,9 @@ msgid "Wallet unlocked"
 msgstr "钱包解锁"
 
 #: web/models.py:1208
-#, fuzzy
 msgctxt "UI"
 msgid "Wallet unlocked by operator"
-msgstr "钱包解锁"
+msgstr "钱包已由管理员解锁"
 
 #: web/models.py:1209
 msgctxt "UI"
@@ -4215,20 +3862,15 @@ msgid "You have removed worker <b>%(name)s</b>"
 msgstr "您已移除矿工 <b>%(name)s</b>"
 
 #: web/models.py:1217
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Worker removed"
 msgctxt "UI"
 msgid "Workers removed"
 msgstr "矿工已移除"
 
 #: web/models.py:1218
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "You have registered a new worker"
+#, python-format
 msgctxt "UI"
 msgid "You have removed %(count)d %(coin)s workers"
-msgstr "您已注册一个新矿工"
+msgstr "您已移除%(count)d %(coin)s矿工"
 
 #: web/models.py:1220
 msgctxt "UI"
@@ -4248,12 +3890,12 @@ msgstr "您已注册一个新矿工"
 #: web/models.py:1228
 msgctxt "UI"
 msgid "User appeal dismissed"
-msgstr ""
+msgstr "用户上诉被驳回"
 
 #: web/models.py:1233
 msgctxt "UI"
 msgid "Enabled coins updated"
-msgstr ""
+msgstr "已启动的币已更新"
 
 #: web/models.py:1238
 #, fuzzy
@@ -4287,17 +3929,18 @@ msgstr ""
 #: web/models.py:1254
 msgctxt "UI"
 msgid "A new e-mail template created"
-msgstr ""
+msgstr "新的邮件模板已创建"
 
 #: web/models.py:1258
 msgctxt "UI"
 msgid "E-mail template updated"
-msgstr ""
+msgstr "邮件模板已更新"
 
 #: web/models.py:1263
+#, fuzzy
 msgctxt "UI"
 msgid "Generating e-mails for a campaign run was requested"
-msgstr ""
+msgstr "用于campaign run的生成邮件已被请求"
 
 #: web/models.py:1267
 msgctxt "UI"
@@ -4325,43 +3968,35 @@ msgid "Testing e-mail for a campaign was sent"
 msgstr ""
 
 #: web/models.py:1287
-#, fuzzy
 msgctxt "UI"
 msgid "Unsubscribed from newsletter."
-msgstr "取消订阅"
+msgstr "取消实事通讯(Newsletter)订阅。"
 
 #: web/models.py:1292
-#, fuzzy
 msgctxt "UI"
 msgid "Exported user data"
-msgstr "Hash的速率"
+msgstr "已导出用户数据"
 
 #: web/permissions.py:34
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Full range"
 msgctxt "UI"
 msgid "Full access"
-msgstr "总览"
+msgstr "完整访问权限"
 
 #: web/permissions.py:35
 msgctxt "UI"
 msgid "Read-only"
-msgstr ""
+msgstr "只读的"
 
 #: web/permissions.py:36
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Login to readonly mode"
 msgctxt "UI"
 msgid "Limited read-only"
-msgstr "以只读登录"
+msgstr "已限制只读"
 
 #: web/registration.py:45
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Username \"%s\" is already taken."
-msgstr "用户名 \"%(username)s\" 已经被注册。"
+msgstr "用户名 \"%s\"已经被使用。"
 
 #: web/registration.py:63
 msgctxt "UI"
@@ -4531,7 +4166,7 @@ msgstr "事件时间"
 #: web/templates/email/monitoring_body.html:9
 msgctxt "UI"
 msgid "Account Hash Rate"
-msgstr "账户hash速率"
+msgstr "账户哈希率"
 
 #: web/templates/email/monitoring_body.html:10
 msgctxt "UI"
@@ -4541,7 +4176,7 @@ msgstr "矿工状态 (更改)"
 #: web/templates/email/monitoring_body.html:17
 msgctxt "UI"
 msgid "Worker Name"
-msgstr "矿工名字"
+msgstr "矿工名"
 
 #: web/templates/email/monitoring_body.html:18
 msgctxt "UI"
@@ -4622,28 +4257,26 @@ msgctxt "UI"
 msgid ""
 "Your reward for mining with our <a href=\"%(site_url)s\">%(site_name)s</a> "
 "mining pool has exceeded your defined threshold."
-msgstr ""
-"您使用我们矿池服务的采矿报酬 <a href=\"%(site_url)s\">%(site_name)s</a>已超过"
-"您的支付门槛设定值。"
+msgstr "您在我们矿池的挖矿收益 <a href=\"%(site_url)s\">%(site_name)s</a>已超过您的支付门槛设定值。"
 
 #: web/templates/email/payout.html:6
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "The amount of %(amount)s %(coin)s has been transferred to your address "
 "%(wallet)s on %(date)s"
-msgstr "此数量的%(amount)s比特币已被转到您的报酬支付地址上%(wallet)s于%(date)s"
+msgstr "数量为%(amount)s %(coin)s的比特币已于%(date)s被转到您的收益支付钱包地址上%(wallet)s"
 
 #: web/templates/email/payout.html:7
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "Payment processing through the network may take between 30 minutes to 3 "
 "hours. You can watch current payment status on <a href=\"%(wallet_info)s\">"
 "%(wallet_info)s</a>"
 msgstr ""
-"比特币网络的报酬支付流程可能在30分钟到3小时间。您可以在<a href="
-"\"%(wallet_info)s\">%(wallet_info)s</a>查看当前报酬支付状态"
+"比特币网络的收益支付流程可能在30分钟到3小时间。您可以在<a href=\"%(wallet_info)s\""
+">%(wallet_info)s</a>查看当前收益支付状态"
 
 #: web/templates/email/proposal_state_update_subject.txt:1
 #, python-format
@@ -4717,12 +4350,12 @@ msgstr "页面未找到"
 #: web/templates/web/404.html:8
 msgctxt "UI"
 msgid "Looks like you got lost."
-msgstr "看来您好像迷路了。"
+msgstr "您好像并不知道自己在做什么。"
 
 #: web/templates/web/404.html:9
 msgctxt "UI"
 msgid "Not Found"
-msgstr "未发现"
+msgstr "未找到"
 
 #: web/templates/web/msg_pending_wallet.html:2
 #, python-format
@@ -4730,8 +4363,8 @@ msgid ""
 "You have pending request for changing <strong>%(currency)s</strong> wallet "
 "to <strong>%(wallet_pending)s</strong>."
 msgstr ""
-"您有待定的请求：更改<strong>%(currency)s</strong>钱包为<strong>"
-"%(wallet_pending)s</strong>。"
+"您有等待中的请求：更改<strong>%(currency)s</strong>钱包为<strong>%(wallet_pending)s</strong"
+">。"
 
 #: web/templates/web/msg_pending_wallet.html:4
 #, python-format
@@ -4759,14 +4392,12 @@ msgstr ""
 "\"%(url_password_reset)s\">更改您的密码</a>。"
 
 #: web/templates/web/parts/body_1_conditionals.html:12
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "To continue, you must <strong>enable javascript</strong>. (<a href=\"%(url)s"
 "\">see how…</a>)"
-msgstr ""
-"请启用<strong>javascript</strong>来使用网站上的所有特性。(<a href=\"%(url)s"
-"\" target=\"_blank\">查看如何…</a>)"
+msgstr "您必须<strong>启用Java脚本</strong>以继续。(<a href=\"%(url)s\">查看如何…</a>)"
 
 #: web/utils.py:81
 #, python-format
@@ -4774,38 +4405,28 @@ msgid "%i days"
 msgstr "%i日"
 
 #: workers/api/v1/views.py:60
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid token"
 msgctxt "UI"
 msgid "Invalid worker name!"
-msgstr "无效令牌"
+msgstr "矿工名无效！"
 
 #: workers/api/v1/views.py:72
-#, fuzzy
-#| msgid "Device monitoring states"
 msgctxt "UI"
 msgid "Invalid monitoring settings."
-msgstr "设备监控状态"
+msgstr "无效的监控设定。"
 
 #: workers/api/v1/views.py:81
 msgctxt "UI"
 msgid "Minimum difficulty must be an integer between 8 and 500 000!"
-msgstr ""
+msgstr "最低难度必须是8到500000间的一个整数！"
 
 #: workers/api/v1/views.py:131
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Worker Name"
+#, python-format
 msgctxt "UI"
 msgid "Worker %(name)s"
-msgstr "矿工名字"
+msgstr "矿工%(name)s"
 
 #. Translators: data entity, eg: Access denied to object: workers
 #: workers/api/v1/views.py:159
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Workers"
 msgctxt "UI"
 msgid "workers"
 msgstr "矿工"
@@ -4818,7 +4439,7 @@ msgstr ""
 #: workers/api/v1/views.py:346
 msgctxt "UI"
 msgid "Names and shortcuts must be unique."
-msgstr ""
+msgstr "名称和快捷方式必须是唯一的。"
 
 #~ msgid "English"
 #~ msgstr "英文"
