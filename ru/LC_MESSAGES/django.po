@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-19 18:24+0100\n"
-"PO-Revision-Date: 2019-02-17 11:28+0000\n"
+"PO-Revision-Date: 2019-06-10 14:11+0000\n"
 "Last-Translator: Iryna Bashkova <csepcsar@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/slushpool/mining/"
 "ru/>\n"
@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.5-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.7-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
@@ -27,7 +27,7 @@ msgstr "Тело запроса должно быть списком объек�
 
 #: api/core.py:358
 msgid "Request payload expected, but not supplied!"
-msgstr ""
+msgstr "Ожидаемые данные не были получены!"
 
 #: api/exceptions.py:13
 msgctxt "UI"
@@ -269,33 +269,25 @@ msgid "Confirmed"
 msgstr "Подтверждено"
 
 #: campaigns/forms/validators.py:345 mailing/forms/validators.py:34
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid user selection"
 msgctxt "UI"
 msgid "Invalid user selection."
-msgstr "Неверный выбор пользователя"
+msgstr "Неверный выбор пользователя."
 
 #: campaigns/forms/validators.py:353 mailing/forms/validators.py:53
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid reason format!"
 msgctxt "UI"
 msgid "Invalid reason for unsubscription."
-msgstr "Неверный формат объяснения!"
+msgstr "Неверный формат причины отписки."
 
 #: campaigns/forms/validators.py:363
 #, python-format
 msgctxt "UI"
 msgid "Feedback must be a string no longer than %d characters."
-msgstr ""
+msgstr "Реакция должна иметь строковый тип длиной не более %d знаков."
 
 #: campaigns/forms/validators.py:376
-#, fuzzy
-#| msgid "Enter a valid Email service provider."
 msgctxt "UI"
 msgid "Invalid e-mail token provided."
-msgstr "Введите действительный е-мейл."
+msgstr "Задан недействительный е-мейл токен."
 
 #: core/validators.py:10
 msgid "Enter a valid, non empty value."
@@ -984,11 +976,11 @@ msgid ""
 "you. However, we recommend connecting each mining device with a separate "
 "workerName for efficient monitoring."
 msgstr ""
-"\"имяПользователя\" не является обязательным полем - ничего не случится, "
-"если вы его не выполните. В этом случае наша система автоматически создаст "
-"для вас <strong>авто-воркера</strong>. Тем не менее, мы рекомендуем "
-"подключать каждое майнинговое устройство с отдельным атрибутом "
-"\"имяПользователя\" для эффективного мониторинга."
+"\"имяВоркера\" не является обязательным полем - ничего не случится, если вы "
+"его не выполните. В этом случае наша система автоматически создаст для вас "
+"<strong>авто-воркера</strong>. Тем не менее, мы рекомендуем подключать "
+"каждое майнинговое устройство с отдельным атрибутом \"имяВоркера\" для "
+"эффективного мониторинга."
 
 #: help/templates/help/bitcoin-setup.html:49
 #: help/templates/help/zcash-setup.html:39
@@ -3278,7 +3270,7 @@ msgstr "Получатель рассылки не найден."
 #: mailing/forms/validators.py:44
 msgctxt "UI"
 msgid "Feedback must be a string no longer than 600 characters."
-msgstr ""
+msgstr "Реакция должна иметь строковый тип длиной не более 600 знаков."
 
 #: mailing/models.py:498
 msgctxt "UI"
@@ -3426,37 +3418,34 @@ msgstr "Русский"
 #: reports/views.py:21
 msgctxt "UI"
 msgid "Missing \"types\" parameter!"
-msgstr ""
+msgstr "Отсутствует параметр \"тип\"!"
 
 #: reports/views.py:25
 #, python-format
 msgctxt "UI"
 msgid "Invalid query type. Choices are: %s."
-msgstr ""
+msgstr "Неверный тип запроса. Выберите одну из вариант: %s."
 
 #: reports/views.py:35
 msgctxt "UI"
 msgid "Missing \"output format\" parameter!"
-msgstr ""
+msgstr "Отсутствует параметр \"формат выходных данных\"!"
 
 #: reports/views.py:37
 #, python-format
 msgctxt "UI"
 msgid "Invalid output format. Choices are: %s."
-msgstr ""
+msgstr "Недействительный формат выходных данных. Выберите одну из вариант: %s."
 
 #: reports/views.py:51
 msgctxt "UI"
 msgid "Missing date range (from, to)!"
-msgstr ""
+msgstr "Отсутствует диапазон дат (от, до)!"
 
 #: reports/views.py:53
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid token!"
 msgctxt "UI"
 msgid "Invalid date range!"
-msgstr "Неверный токен!"
+msgstr "Неверный диапазон дат!"
 
 #: settings/api/v1/api_actions.py:64
 msgctxt "UI"
@@ -3471,7 +3460,7 @@ msgstr "Неверный запрос, кошелек уже заблокиро�
 #: settings/api/v1/api_actions.py:72
 msgctxt "UI"
 msgid "Wallet is not valid."
-msgstr "Кошелек не действителен."
+msgstr "Кошелек недействителен."
 
 #: settings/api/v1/api_actions.py:75
 msgctxt "UI"
@@ -3486,7 +3475,7 @@ msgstr "Неверный запрос, у вас нет ни одного Zcash 
 #: settings/api/v1/api_actions.py:98
 msgctxt "UI"
 msgid "Zcash wallet is not valid."
-msgstr "Кошелек Zcash не действителен."
+msgstr "Кошелек Zcash недействителен."
 
 #: settings/api/v1/api_actions.py:101
 msgctxt "UI"
@@ -3505,8 +3494,8 @@ msgid ""
 "Confirmation email has been sent. Please, check your mailbox and follow the "
 "link."
 msgstr ""
-"Вам было отправлено подтверждающее электронное письмо. Пожалуйста, проверьте "
-"свою электронную почту и перейдите по указанной ссылке."
+"Вам было отправлено подтверждение по электронной почте.. Пожалуйста, "
+"проверьте свою электронную почту и перейдите по указанной ссылке."
 
 #: settings/api/v1/api_actions.py:142
 msgctxt "UI"
@@ -3538,7 +3527,7 @@ msgstr ""
 #: settings/email.py:25
 msgctxt "UI"
 msgid "Delete account confirmation"
-msgstr "Подтвердите удаление учетной записи"
+msgstr "Подтверждение удаления учетной записи"
 
 #: settings/form_mixins.py:107 settings/form_mixins.py:156
 msgctxt "UI"
@@ -3548,7 +3537,7 @@ msgstr "Подпись не действительна."
 #: settings/form_mixins.py:117
 msgctxt "UI"
 msgid "Message is wrong."
-msgstr "Сообщение неверно."
+msgstr "Неверное сообщение."
 
 #: settings/form_mixins.py:121
 msgctxt "UI"
@@ -3611,11 +3600,9 @@ msgid "User doesn't have OTP."
 msgstr "У пользователя нет OTP."
 
 #: user_request/api/v1/views.py:38
-#, fuzzy
-#| msgid "Second factor authentication required!"
 msgctxt "UI"
 msgid "Second factor authentication missing."
-msgstr "Требуется 2х-факторная аутентификация!"
+msgstr "Отсутствует 2х-факторная аутентификация."
 
 #: user_request/api/v1/views.py:75
 msgctxt "UI"
@@ -4395,28 +4382,19 @@ msgid "Enabled coins updated"
 msgstr "Активированные монеты обновлены"
 
 #: web/models.py:1238
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "New access profile created"
 msgctxt "UI"
 msgid "New campaign created"
-msgstr "Новый профиль доступа создан"
+msgstr ""
 
 #: web/models.py:1242
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Proposal updated"
 msgctxt "UI"
 msgid "Campaign updated"
-msgstr "Предложение обновлено"
+msgstr ""
 
 #: web/models.py:1246
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "New access profile created"
 msgctxt "UI"
 msgid "New campaign run created"
-msgstr "Новый профиль доступа создан"
+msgstr ""
 
 #: web/models.py:1250
 msgctxt "UI"
@@ -4426,12 +4404,12 @@ msgstr ""
 #: web/models.py:1254
 msgctxt "UI"
 msgid "A new e-mail template created"
-msgstr ""
+msgstr "Создан новый шаблон электронной почты"
 
 #: web/models.py:1258
 msgctxt "UI"
 msgid "E-mail template updated"
-msgstr ""
+msgstr "Шаблон электронной почты обновлен"
 
 #: web/models.py:1263
 msgctxt "UI"
@@ -4464,16 +4442,14 @@ msgid "Testing e-mail for a campaign was sent"
 msgstr ""
 
 #: web/models.py:1287
-#, fuzzy
 msgctxt "UI"
 msgid "Unsubscribed from newsletter."
-msgstr "Получать новостную рассылку пула"
+msgstr "Отписался от рассылки."
 
 #: web/models.py:1292
-#, fuzzy
 msgctxt "UI"
 msgid "Exported user data"
-msgstr "Скорость хэша"
+msgstr "Экспортированные данные пользователя"
 
 #: web/permissions.py:34
 msgctxt "UI"
