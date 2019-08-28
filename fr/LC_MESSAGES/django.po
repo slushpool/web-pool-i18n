@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-10 18:26+0100\n"
-"PO-Revision-Date: 2019-08-14 15:22+0000\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2019-08-29 13:23+0000\n"
+"Last-Translator: Iryna Bashkova <csepcsar@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/slushpool/mining/"
 "fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9-dev\n"
 
 #: api/core.py:358
 msgid "Request payload expected, but not supplied!"
@@ -113,7 +113,7 @@ msgstr "Accès refusé à l'objet: %s"
 #, python-format
 msgctxt "UI"
 msgid "Worker \"%s\" already exists"
-msgstr "Un travailleur %s existe déjà avec ce nom"
+msgstr "Un travailleur \"%s\" existe déjà avec ce nom"
 
 #: api/exceptions.py:139
 #, python-format
@@ -497,8 +497,8 @@ msgid ""
 "your access token in every API URL."
 msgstr ""
 "L'API de la pool fournit des données dans des fichiers JSON sur trois "
-"perspectives: les <strong> statistiques </strong>, le <strong> profil "
-"</strong> et les <strong> travailleurs</strong>.\n"
+"perspectives: les <strong>statistiques</strong>, le <strong>profil</strong> "
+"et les <strong>travailleurs</strong>.\n"
 "Vous devez inclure l'abréviation de la devise sélectionnée (par exemple, btc)"
 " et votre jeton d'accès dans chaque URL de l'API."
 
@@ -507,12 +507,12 @@ msgid ""
 "To acquire <strong>access token</strong> needed for API authentication, "
 "please follow these steps:"
 msgstr ""
-"Pour acquérir le <strong> jeton d'accès </strong> nécessaire à "
+"Pour acquérir le <strong>jeton d'accès</strong> nécessaire à "
 "l'authentification par l'API, procédez comme suit :"
 
 #: help/templates/help/api.html:13
 msgid "Go to <em>Settings > Access Profiles</em>"
-msgstr "Accédez à <em>Paramètres> Profils d'accès </em>"
+msgstr "Accédez à <em>Paramètres> Profils d'accès</em>"
 
 #: help/templates/help/api.html:14
 msgid "Select one of your access profiles or create a new one"
@@ -521,16 +521,16 @@ msgstr "Sélectionnez l'un de vos profils d'accès ou créez-en un"
 #: help/templates/help/api.html:15
 msgid "Select <em>Allow access to web APIs</em> in the access profile detail"
 msgstr ""
-"Sélectionnez <em> Autoriser l'accès aux API Web </em> dans les détails du "
+"Sélectionnez <em>Autoriser l'accès aux API Web</em> dans les détails du "
 "profil d'accès"
 
 #: help/templates/help/api.html:16
 msgid "Click on <em>Generate New token</em>"
-msgstr "Cliquez sur <em> Générer un nouveau jeton </em>"
+msgstr "Cliquez sur <em>Générer un nouveau jeton</em>"
 
 #: help/templates/help/api.html:17
 msgid "<em>Save</em> the changes"
-msgstr "<em> Enregistrer </em> les modifications"
+msgstr "<em>Enregistrer</em> les modifications"
 
 #: help/templates/help/api.html:20
 msgid ""
@@ -553,8 +553,8 @@ msgid ""
 "authenticate your requests."
 msgstr ""
 "Le jeton de profil d'accès doit être inclus dans le champ d'en-tête HTTP "
-"nommé <code> SlushPool-Auth-Token </code> ou <code> X-SlushPool-Auth-Token "
-"</code> pour authentifier vos demandes."
+"nommé <code> SlushPool-Auth-Token</code> ou <code>X-SlushPool-Auth-"
+"Token</code> pour authentifier vos demandes."
 
 #: help/templates/help/api.html:26
 msgid "API request limit"
@@ -569,8 +569,8 @@ msgid ""
 "might get banned. If that is the case, please contact us to resolve the "
 "situation."
 msgstr ""
-"L'API autorise <strong> une requête </strong> par environ<strong> cinq "
-"secondes </strong> (valeur sûre). Lorsque vous dépassez provisoirement cette "
+"L'API autorise <strong>une requête</strong> par environ<strong>cinq "
+"secondes</strong> (valeur sûre). Lorsque vous dépassez provisoirement cette "
 "limite, certaines de vos demandes seront ignorées. Si le débit de requête "
 "autorisé est largement dépassé ou sur une longue période, votre adresse IP "
 "peut être bannie. Si tel est le cas, veuillez nous contacter pour résoudre "
@@ -744,7 +744,7 @@ msgstr "Récompense non confirmée"
 
 #: help/templates/help/api.html:249
 msgid "estimated reward for the current block"
-msgstr "Récompense <span>estimée</span> pour le bloc en cours"
+msgstr "Récompense estimée pour le bloc en cours"
 
 #: help/templates/help/api.html:254
 msgid "user minimum payout threshold"
@@ -768,11 +768,11 @@ msgstr "taux de hachage du score actuel de l'utilisateur"
 
 #: help/templates/help/api.html:284
 msgid "number of workers with 'low' state"
-msgstr "nombre de travailleurs avec l'état «bas»"
+msgstr "nombre de travailleurs avec l'état 'bas'"
 
 #: help/templates/help/api.html:289
 msgid "number of workers with 'off' state"
-msgstr "nombre de travailleurs avec l'état \"off\""
+msgstr "nombre de travailleurs avec l'état 'off'"
 
 #: help/templates/help/api.html:294
 msgid "number of workers with 'ok' state"
@@ -809,7 +809,7 @@ msgstr "Obtenez du matériel approprié"
 
 #: help/templates/help/bitcoin-setup.html:15
 msgid "Bitcoin <span>can</span> be efficiently mined with:"
-msgstr "Bitcoin <span> peut</span> être miné efficacement avec :"
+msgstr "Bitcoin <span>peut</span> être miné efficacement avec :"
 
 #: help/templates/help/bitcoin-setup.html:15
 msgid "ASIC (SHA-256 algorithm)"
@@ -856,7 +856,7 @@ msgstr ""
 #, python-format
 msgid "<a href=\"%(signup)s\">Sign-up</a> and wait for the confirmation email."
 msgstr ""
-"<a href=\"%(signup)s\">Inscrivez-vous </a> et attendez votre email de "
+"<a href=\"%(signup)s\">Inscrivez-vous</a> et attendez votre email de "
 "confirmation."
 
 #: help/templates/help/bitcoin-setup.html:29
@@ -900,8 +900,8 @@ msgid ""
 "span> according to your account information):"
 msgstr ""
 "Les identifiants nécessaires pour votre mineur ressemblent à ceci (modifiez <"
-"span class=\"red\"> nom d'utilisateur </span> et <span class=\"green\"> nom "
-"d'utilisateur </span> en fonction des informations de votre compte) :"
+"span class=\"red\">nom d'utilisateur </span> et <span class=\"green\">nom "
+"d'utilisateur</span> en fonction des informations de votre compte) :"
 
 #: help/templates/help/bitcoin-setup.html:43
 #: help/templates/help/bitcoin-setup.html:108
@@ -941,7 +941,7 @@ msgid ""
 "workerName for efficient monitoring."
 msgstr ""
 "Le nom de travailleur est facultatif - c'est correct si vous n'en fournissez "
-"pas. Dans ce cas, notre système créera automatiquement un <strong> "
+"pas. Dans ce cas, notre système créera automatiquement un <strong>"
 "travailleur autonome </strong> pour vous. Cependant, nous vous recommandons "
 "de connecter chaque périphérique avec un nom de travailleur distinct pour "
 "une surveillance efficace."
@@ -953,8 +953,8 @@ msgid ""
 "connection and lower latency</strong>, please use one of the location-"
 "specific URLs instead of the general URL."
 msgstr ""
-"Les serveurs Slush Pool sont situés partout dans le monde. <strong> Pour "
-"améliorer la connexion et réduire le temps de latence </strong>, utilisez "
+"Les serveurs Slush Pool sont situés partout dans le monde. <strong>Pour "
+"améliorer la connexion et réduire le temps de latence</strong>, utilisez "
 "l'une des URL spécifiques à l'emplacement au lieu de l'URL générale."
 
 #: help/templates/help/bitcoin-setup.html:56
@@ -970,17 +970,17 @@ msgstr "URL"
 #: help/templates/help/bitcoin-setup.html:62
 #: help/templates/help/zcash-setup.html:52
 msgid "<strong>General</strong>"
-msgstr "<strong> Général</strong>"
+msgstr "<strong>Général</strong>"
 
 #: help/templates/help/bitcoin-setup.html:66
 #: help/templates/help/zcash-setup.html:60
 msgid "<strong>Europe</strong>"
-msgstr "<strong>Europe </strong>"
+msgstr "<strong>Europe</strong>"
 
 #: help/templates/help/bitcoin-setup.html:70
 #: help/templates/help/zcash-setup.html:56
 msgid "<strong>USA</strong>, East Coast"
-msgstr "<strong> États-Unis </strong>, côte est"
+msgstr "<strong>États-Unis</strong>, côte est"
 
 #: help/templates/help/bitcoin-setup.html:74
 msgid "<strong>Canada</strong>"
@@ -988,11 +988,11 @@ msgstr "<strong>Canada</strong>"
 
 #: help/templates/help/bitcoin-setup.html:78
 msgid "<strong>Singapore</strong>, South Asia"
-msgstr "<strong> Singapour </strong>, Asie du Sud"
+msgstr "<strong>Singapour</strong>, Asie du Sud"
 
 #: help/templates/help/bitcoin-setup.html:82
 msgid "<strong>Japan</strong>, Pacific"
-msgstr "<strong> Japon </strong>, Pacifique"
+msgstr "<strong>Japon</strong>, Pacifique"
 
 #: help/templates/help/bitcoin-setup.html:86
 #: help/templates/help/zcash-setup.html:64
@@ -1012,11 +1012,11 @@ msgid ""
 "<strong>European servers</strong>, configuration information for this miner "
 "would look like this:"
 msgstr ""
-"Supposons qu'il existe un mineur dont le nom d'utilisateur est <strong> "
-"bigMiner </strong> et que son agent est nommé <strong> strongDevice </strong>"
-". De plus, ce mineur a spécifiquement choisi de se connecter aux <strong> "
-"serveurs européens </strong>. Les informations de configuration de ce mineur "
-"ressemblent à ceci :"
+"Supposons qu'il existe un mineur dont le nom d'utilisateur est "
+"<strong>bigMiner</strong> et que son agent est nommé "
+"<strong>strongDevice</strong>. De plus, ce mineur a spécifiquement choisi de "
+"se connecter aux <strong>serveurs européens</strong>. Les informations de "
+"configuration de ce mineur ressemblent à ceci :"
 
 #: help/templates/help/bitcoin-setup.html:109
 #: help/templates/help/zcash-setup.html:84
@@ -1036,9 +1036,9 @@ msgid ""
 "threshold, <strong>your rewards will be sent there</strong>."
 msgstr ""
 "Pour recevoir votre récompense, vous devez configurer une adresse de "
-"paiement dans le menu <em>Paramètres> Coin sélectionné> Paiements </em>. Une "
-"fois le seuil minimal atteint, <strong> vos récompenses y seront envoyées "
-"</strong>."
+"paiement dans le menu <em>Paramètres> Coin sélectionné> Paiements</em>. Une "
+"fois le seuil minimal atteint, <strong>vos récompenses y seront "
+"envoyées</strong>."
 
 #: help/templates/help/bitcoin-setup.html:114
 #: help/templates/help/zcash-setup.html:87
@@ -1057,15 +1057,15 @@ msgid ""
 "recommend the <a %(trezor)s>Trezor Hardware Wallet</a> for maximum security."
 msgstr ""
 "Si vous n'avez pas encore d'adresse, vous devez d'abord vous procurer un "
-"portefeuille. Nous recommandons le <a %(trezor)s> portefeuille matériel "
-"Trezor </a> pour une sécurité maximale."
+"portefeuille. Nous recommandons le <a %(trezor)s>portefeuille matériel "
+"Trezor</a> pour une sécurité maximale."
 
 #: help/templates/help/bitcoin-setup.html:117
 #, python-format
 msgid "Other usable wallets are listed on <a %(bitcoin)s>Bitcoin.org</a>."
 msgstr ""
 "La liste des autres portefeuilles utilisables est répertoriée dans <a "
-"%(bitcoin)s> Bitcoin.org </a>."
+"%(bitcoin)s>Bitcoin.org</a>."
 
 #: help/templates/help/bitcoin-setup.html:119
 #: help/templates/help/zcash-setup.html:90
@@ -1079,10 +1079,10 @@ msgid ""
 "the drop-down list located in the top center section of the page. Then check "
 "your hash rate in the <em>Recent Hash Rate</em> graph section below."
 msgstr ""
-"Ouvrez votre <em> Tableau de bord </em> et sélectionnez le coin que vous "
-"minez dans la liste déroulante située dans la partie centrale supérieure de "
-"la page. Vérifiez ensuite votre taux de hachage dans la section graphique "
-"<em> Taux de hachage récent </em> ci-dessous."
+"Ouvrez votre <em>Tableau de bord</em> et sélectionnez le coin que vous minez "
+"dans la liste déroulante située dans la partie centrale supérieure de la "
+"page. Vérifiez ensuite votre taux de hachage dans la section graphique <em> "
+"Taux de hachage récent </em> ci-dessous."
 
 #: help/templates/help/bitcoin-setup.html:121
 #: help/templates/help/zcash-setup.html:91
@@ -1090,9 +1090,9 @@ msgid ""
 "<strong>Please be patient</strong>; it can take up to an hour until you see "
 "the full hashing power of your newly connected device."
 msgstr ""
-"<strong> Soyez patient </strong>. Cela peut prendre jusqu'à une heure "
-"jusqu'à ce que vous voyiez toute la puissance de hachage de votre nouvel "
-"appareil connecté."
+"<strong>Soyez patient</strong>. Cela peut prendre jusqu'à une heure jusqu'à "
+"ce que vous voyiez toute la puissance de hachage de votre nouvel appareil "
+"connecté."
 
 #: help/templates/help/mining-introduction.html:5
 msgid "Introduction to mining"
@@ -1116,7 +1116,7 @@ msgid ""
 msgstr ""
 "Les cryptomonnaies (ou coins) sont extraites par des mineurs (particuliers "
 "ou organisations) qui utilisent leur puissance de calcul (de hachage) pour "
-"<strong> traiter les transactions et gagner des récompenses </strong>."
+"<strong>traiter les transactions et gagner des récompenses</strong>."
 
 #: help/templates/help/mining-introduction.html:11
 msgid ""
@@ -1126,7 +1126,7 @@ msgid ""
 msgstr ""
 "Pour être plus précis, le mining est le processus d’enregistrement des "
 "transactions dans le grand livre public (blockchain) avec une incitation à "
-"recevoir une <strong> récompense de mineur </strong>."
+"recevoir une <strong>récompense de mineur</strong>."
 
 #: help/templates/help/mining-introduction.html:13
 msgid ""
@@ -1135,7 +1135,7 @@ msgid ""
 "system and to ensure that all network participants agree the blockchain is "
 "valid and accurate."
 msgstr ""
-"Ce processus est très <strong> gourmand en ressources </strong>. Il faut une "
+"Ce processus est très <strong>gourmand en ressources</strong>. Il faut une "
 "puissance de calcul importante pour respecter les règles cryptographiques "
 "qui sécurisent le système et pour garantir que tous les participants du "
 "réseau conviennent que la blockchain est valide et précise."
@@ -1160,8 +1160,8 @@ msgid ""
 "<strong>to increase the frequency of finding a new block</strong>."
 msgstr ""
 "Un pool de mining est un service qui associe la puissance de calcul de "
-"plusieurs mineurs <strong> pour augmenter la fréquence de recherche d'un "
-"nouveau bloc </strong>."
+"plusieurs mineurs <strong>pour augmenter la fréquence de recherche d'un "
+"nouveau bloc</strong>."
 
 #: help/templates/help/mining-introduction.html:17
 msgid ""
@@ -1171,7 +1171,7 @@ msgid ""
 msgstr ""
 "Le pool distribue ensuite les récompenses de mining entre les mineurs du "
 "pool en fonction de la quantité de leur puissance informatique fournie et "
-"<strong> en stabilise le revenu des mineurs </strong>."
+"<strong>en stabilise le revenu des mineurs</strong>."
 
 #: help/templates/help/mining-introduction.html:19
 msgid ""
@@ -1208,10 +1208,10 @@ msgid ""
 msgstr ""
 "Pour miner une crypto-monnaie particulière, vous aurez besoin d'un matériel "
 "informatique adapté à cette crypto-monnaie. Selon la pièce, vous aurez "
-"besoin d’un <strong> mineur ASIC </strong> (ordinateur conçu exclusivement "
-"pour l’extraction de coins spécifiques) ou d’un PC doté de <strong> GPU "
-"puissants </strong> (carte graphique) ou, dans certains cas, <strong> CPU "
-"</strong> (processeur)."
+"besoin d’un <strong>mineur ASIC</strong> (ordinateur conçu exclusivement "
+"pour l’extraction de coins spécifiques) ou d’un PC doté de <strong>GPU "
+"puissants</strong> (carte graphique) ou, dans certains cas, "
+"<strong>CPU</strong> (processeur)."
 
 #: help/templates/help/mining-introduction.html:27
 msgid ""
@@ -1221,7 +1221,7 @@ msgid ""
 "chosen cryptocurrency."
 msgstr ""
 "Chaque coin nécessite un matériel différent, selon l'algorithme utilisé, qui "
-"<strong> peut ou peut ne pas être utilisé pour extraire d'autres crypto-"
+"<strong>peut ou peut ne pas être utilisé pour extraire d'autres crypto-"
 "monnaies!</strong>. Vous devez toujours vous assurer que votre équipement de "
 "minage est adapté au minage de la crypto-monnaie de votre choix."
 
@@ -1260,11 +1260,11 @@ msgid ""
 "key here, not necessarily the speed."
 msgstr ""
 "Outre le matériel de minage, une alimentation électrique stable est "
-"également requise. N'oubliez pas que le <strong> coût de l'électricité "
-"influe fortement sur votre rentabilité </strong>. Essayez donc de vous "
-"organiser au prix le plus bas possible. Ensuite, vous aurez besoin d’une "
-"connexion Internet stable - rappelez-vous que la stabilité est la clé ici, "
-"pas nécessairement la vitesse."
+"également requise. N'oubliez pas que le <strong>coût de l'électricité influe "
+"fortement sur votre rentabilité</strong>. Essayez donc de vous organiser au "
+"prix le plus bas possible. Ensuite, vous aurez besoin d’une connexion "
+"Internet stable - rappelez-vous que la stabilité est la clé ici, pas "
+"nécessairement la vitesse."
 
 #: help/templates/help/mining-introduction.html:35
 msgid "Ready to go?"
@@ -1276,8 +1276,8 @@ msgid ""
 "<a href=\"%(signup)s\">Setup an account</a> on Slush Pool and configure your "
 "miners according to our guides."
 msgstr ""
-"<a href=\"%(signup)s\"> Configurez un compte </a> sur Slush Pool et "
-"configurez vos mineurs conformément à nos guides."
+"<a href=\"%(signup)s\">Configurez un compte</a> sur Slush Pool et configurez "
+"vos mineurs conformément à nos guides."
 
 #: help/templates/help/mobile-app.html:7
 msgid ""
@@ -1285,7 +1285,7 @@ msgid ""
 "<strong>Android and iOS.</strong>"
 msgstr ""
 "Téléchargez l'application officielle de Slush Pool gratuitement - disponible "
-"pour <strong> Android et iOS.</strong>"
+"pour <strong>Android et iOS.</strong>"
 
 #: help/templates/help/mobile-app.html:10
 msgid ""
@@ -1297,7 +1297,7 @@ msgstr ""
 
 #: help/templates/help/mobile-app.html:11
 msgid "<strong>You will not be able to mine any coins with it.</strong>"
-msgstr "<strong> Vous ne pourrez pas miner de coins avec ceci. </strong>"
+msgstr "<strong>Vous ne pourrez pas miner de coins avec ceci.</strong>"
 
 #: help/templates/help/mobile-app.html:17
 msgid ""
@@ -1316,7 +1316,7 @@ msgid ""
 "more details)"
 msgstr ""
 "problèmes liés aux travailleurs (voir la section <a href=\"%(url)s\"> "
-"Surveillance des appareils </a> pour plus de détails)"
+"Surveillance des appareils</a> pour plus de détails)"
 
 #: help/templates/help/mobile-app.html:21
 msgid "new block found"
@@ -1345,15 +1345,15 @@ msgstr "Téléchargez l'application sur votre appareil mobile."
 #: help/templates/help/mobile-app.html:31
 msgid "On the Slush Pool website go to <em>Settings > Devices</em>."
 msgstr ""
-"Sur le site Web de Slush Pool, accédez à <em> Paramètres> Appareils </em>."
+"Sur le site Web de Slush Pool, accédez à <em>Paramètres> Appareils</em>."
 
 #: help/templates/help/mobile-app.html:32
 msgid ""
 "Fill in the <em>New device label</em> field with a name of your choice and "
 "confirm by clicking on <em>Connect</em>."
 msgstr ""
-"Remplissez le champ <em> Nouvelle étiquette de périphérique </em> avec le "
-"nom de votre choix et confirmez en cliquant sur <em> Connecter </em>."
+"Remplissez le champ <em>Nouvelle étiquette de périphérique</em> avec le nom "
+"de votre choix et confirmez en cliquant sur <em>Connecter</em>."
 
 #: help/templates/help/mobile-app.html:33
 msgid ""
@@ -1387,8 +1387,8 @@ msgid ""
 "section."
 msgstr ""
 "Si vous perdez votre appareil mobile ou si vous ne souhaitez plus qu'il ait "
-"accès à votre compte, vous pouvez dissocier l'appareil dans la section <em> "
-"Appareils </em>."
+"accès à votre compte, vous pouvez dissocier l'appareil dans la section "
+"<em>Appareils</em>."
 
 #: help/templates/help/mobile-app.html:42
 msgid ""
@@ -1396,12 +1396,12 @@ msgid ""
 "em> menu."
 msgstr ""
 "Toutes les options de gestion des périphériques sont disponibles dans le "
-"menu <em> Paramètres> Périphériques </em>."
+"menu <em>Paramètres> Périphériques</em>."
 
 #: help/templates/help/monitoring.html:9
 msgctxt "UI"
 msgid "Device <span>Monitoring</span>"
-msgstr "Dispositif de <span>surveillance</span>"
+msgstr "Dispositif de <span>Surveillance</span>"
 
 #: help/templates/help/monitoring.html:11
 msgid "Why should I care?"
@@ -1446,9 +1446,9 @@ msgstr ""
 "commence à se comporter de manière incorrecte. Les notifications sont "
 "envoyées par courrier électronique ou dans votre application mobile. Par "
 "exemple. Il y a des problèmes de communication entre votre mineur et notre "
-"piscine. Une telle alerte vous aidera à <strong> réagir plus rapidement "
-"</strong> et, par conséquent, à <strong> minimiser les conséquences "
-"financières </strong> de la panne."
+"piscine. Une telle alerte vous aidera à <strong>réagir plus "
+"rapidement</strong> et, par conséquent, à <strong>minimiser les conséquences "
+"financières</strong> de la panne."
 
 #: help/templates/help/monitoring.html:20
 msgid "Outages may typically have the following causes:"
@@ -1489,9 +1489,9 @@ msgid ""
 "Enable sending monitoring emails <em>(Settings > selected coin > "
 "Monitoring)</em> or notifications (<a href=\"%(app)s\">mobile app</a>)."
 msgstr ""
-"Activer l'envoi de courriels de surveillance <em> (Paramètres> pièce "
-"sélectionnée> Surveillance) </em> ou de notifications (<a href=\"%(app)s\"> "
-"application mobile </a>)."
+"Activer l'envoi de courriels de surveillance <em>(Paramètres> pièce "
+"sélectionnée> Surveillance)</em> ou de notifications (<a href=\"%(app)s\">"
+"application mobile</a>)."
 
 #: help/templates/help/monitoring.html:32
 msgid "You can enable worker monitoring on each worker profile separately."
@@ -1505,8 +1505,8 @@ msgid ""
 "Once the worker monitoring is enabled, the <a href=\"%(url)s\">Alert limit</"
 "a> can be set:"
 msgstr ""
-"Une fois la surveillance des travailleurs activée, la <a href=\"%(url)s\"> "
-"limite d'alerte </a> peut être définie :"
+"Une fois la surveillance des travailleurs activée, la <a href=\"%(url)s\">"
+"limite d'alerte</a> peut être définie :"
 
 #: help/templates/help/monitoring.html:36
 msgid ""
@@ -1529,8 +1529,8 @@ msgid ""
 "strong>."
 msgstr ""
 "Une fois que vous avez activé la surveillance pour vos travailleurs, vous "
-"verrez chaque travailleurs dans l’un de ces <a href=\"%(url)s\"> états </a>: "
-"<strong> OK, Bas, Hors ligne, Désactivé </strong>."
+"verrez chaque travailleurs dans l’un de ces <a href=\"%(url)s\">états</a>: "
+"<strong>OK, Bas, Hors ligne, Désactivé</strong>."
 
 #: help/templates/help/monitoring.html:44
 #, python-format
@@ -1541,11 +1541,11 @@ msgid ""
 "our <a href=\"%(support_submit)s\" target=\"_blank\" class=\"ext\">support</"
 "a>."
 msgstr ""
-"De manière permanente <strong> Faible </strong> ou <strong> Hors ligne "
-"</strong> peut être provoquée par un travailleur faible. Nous vous "
-"recommandons de désactiver la surveillance pour ces travailleurs. Si ce "
-"n'est pas le cas, n'hésitez pas à contacter notre <a href=\"%(support_submit)"
-"s\" target=\"_blank\" class=\"ext\"> assistance </a>."
+"De manière permanente <strong>Faible</strong> ou <strong>Hors ligne</strong> "
+"peut être provoquée par un travailleur faible. Nous vous recommandons de "
+"désactiver la surveillance pour ces travailleurs. Si ce n'est pas le cas, "
+"n'hésitez pas à contacter notre <a href=\"%(support_submit)s\" target=\""
+"_blank\" class=\"ext\">assistance</a>."
 
 #: help/templates/help/monitoring.html:47
 msgid ""
@@ -1558,13 +1558,13 @@ msgid ""
 "pool can track down hash rate drops and report them to you for each mining "
 "device separately."
 msgstr ""
-"<strong class = \"red\"> Remarque: </strong> la pool assure le suivi des "
-"périphériques de minage sur une <strong> base de travail </strong>. Cela "
+"<strong class = \"red\">Remarque:</strong> la pool assure le suivi des "
+"périphériques de minage sur une <strong>base de travail</strong>. Cela "
 "signifie que si plusieurs périphériques de minage sont connectés à la pool "
 "en tant que travailleur unique, la surveillance et le rapport des problèmes "
 "couvrent l’ensemble des périphériques de minage. D'autre part, lorsque vous "
-"configurez un <strong> nom d'utilisateur désigné </strong> pour chaque "
-"<strong> appareil </strong> que vous possédez (et que vous les connectez "
+"configurez un <strong>nom d'utilisateur désigné</strong> pour chaque "
+"<strong>appareil</strong> que vous possédez (et que vous les connectez "
 "correctement), la pool peut détecter les baisses de taux de hachage et les "
 "signaler."
 
@@ -1580,11 +1580,10 @@ msgid ""
 "is then compared to <a href=\"%(alert_url)s\">Alert Limit</a> (you setup "
 "this value while enabling the monitoring)."
 msgstr ""
-"La pool prend un snapshot du <a href=\"%(hashrate_url)s\"> taux de hachage "
-"effectif </a> pour tous vos travailleurs<strong> toutes les 5 minutes "
-"</strong>. Cette valeur est ensuite comparée à la <a href=\"%(alert_url)s\"> "
-"Limite d’alerte </a> (vous configurez cette valeur tout en activant la "
-"surveillance)."
+"La pool prend un snapshot du <a href=\"%(hashrate_url)s\">taux de hachage "
+"effectif</a> pour tous vos travailleurs<strong>toutes les 5 minutes </strong>"
+". Cette valeur est ensuite comparée à la <a href=\"%(alert_url)s\">Limite "
+"d’alerte</a> (vous configurez cette valeur tout en activant la surveillance)."
 
 #: help/templates/help/monitoring.html:51
 #, python-format
@@ -1596,7 +1595,7 @@ msgid ""
 msgstr ""
 "La période de 5 minutes est suffisante pour collecter juste assez de données "
 "pour calculer toutes les valeurs avec une certaine précision sans ralentir "
-"nos serveurs. Avec un <a href=\"%(url)s\"> Vardiff </a> introduit, même un "
+"nos serveurs. Avec un <a href=\"%(url)s\">Vardiff</a> introduit, même un "
 "mineur lent peut soumettre un nombre suffisant de résultats."
 
 #: help/templates/help/monitoring.html:53
@@ -1609,8 +1608,8 @@ msgid ""
 "worker is always in one of the <strong>following</strong> states:"
 msgstr ""
 "Il existe 4 états possibles de votre travailleur, concernant la "
-"surveillance. Chaque travailleur est toujours dans l'un des <strong> états "
-"</strong> suivants :"
+"surveillance. Chaque travailleur est toujours dans l'un des "
+"<strong>états</strong> suivants :"
 
 #: help/templates/help/monitoring.html:60 web/templatetags/utils.py:188
 msgctxt "UI, Monitoring"
@@ -1650,7 +1649,7 @@ msgstr ""
 "son taux de hachage est inférieur à la limite d'alerte pendant 2 périodes "
 "consécutives. Si vous voyez cet état pendant plus longtemps, veuillez créer "
 "un ticket pour notre <a href=\"%(support_submit)s\" target=\"_blank\" class="
-"\"ext\"> assistance </a>."
+"\"ext\">assistance</a>."
 
 #: help/templates/help/monitoring.html:72 web/templatetags/utils.py:186
 msgctxt "UI, Monitoring"
@@ -1685,7 +1684,7 @@ msgstr ""
 #: help/templates/help/reward-system.html:6
 msgctxt "UI"
 msgid "Reward <span>System</span>"
-msgstr "Système de <span>récompense</span>"
+msgstr "<span>Système</span> de récompense"
 
 #: help/templates/help/reward-system.html:9
 msgid ""
@@ -1725,13 +1724,13 @@ msgid ""
 "more stable and fair (the exact mathematical definition is provided lower)."
 msgstr ""
 "La participation des utilisateurs à la puissance de minage de la pool est "
-"mesurée par le <strong> taux de hachage des scores </strong>. Cela reflète "
+"mesurée par le <strong>taux de hachage des scores</strong>. Cela reflète "
 "combien de travail l'utilisateur a fait ces dernières heures. Vous pouvez "
-"comprendre le taux de hachage de scoring comme une <em> moyenne mobile "
-"exponentielle </em> du taux de hachage de tous les périphériques d’"
+"comprendre le taux de hachage de scoring comme une <em>moyenne mobile "
+"exponentielle</em> du taux de hachage de tous les périphériques d’"
 "exploration d’utilisateurs connectés au pool (voir <a href=\"%(url)s\" "
-"target=\"_blank\"> EMA. sur Wikipédia </a>). La moyenne atténue les baisses "
-"ou augmentations de taux de hachage courts et rend le calcul des récompenses "
+"target=\"_blank\">EMA. sur Wikipédia</a>). La moyenne atténue les baisses ou "
+"augmentations de taux de hachage courts et rend le calcul des récompenses "
 "plus stable et plus équitable (la définition mathématique exacte est fournie "
 "plus bas)."
 
@@ -1743,8 +1742,8 @@ msgid ""
 "0.031%% of rewards from the block. It is that simple."
 msgstr ""
 "Par exemple, si votre taux de hachage de notation est égal à 1 %% du pool "
-"total, vous recevez 1 %% des récompenses en bloc. Si vous possédez 0.031%% "
-"du taux de hachage, vous recevez 0.031%% de récompenses du bloc. C'est aussi "
+"total, vous recevez 1%% des récompenses en bloc. Si vous possédez 0.031%% du "
+"taux de hachage, vous recevez 0.031%% de récompenses du bloc. C'est aussi "
 "simple que ça."
 
 #: help/templates/help/reward-system.html:23
@@ -1785,8 +1784,8 @@ msgid ""
 "A <em>block value</em> consists of the block reward and the fees from "
 "transactions contained in the block."
 msgstr ""
-"Une <em> valeur de bloc </em> comprend la récompense de bloc et les frais "
-"des transactions contenues dans le bloc."
+"Une <em>valeur de bloc</em> comprend la récompense de bloc et les frais des "
+"transactions contenues dans le bloc."
 
 #: help/templates/help/reward-system.html:30
 msgid ""
@@ -1794,7 +1793,7 @@ msgid ""
 "time when a particular block was found. They reflect some mining history "
 "before the actual block finding."
 msgstr ""
-"Les <em> scores de hachage </em> utilisés pour le calcul sont les taux de "
+"Les <em>scores de hachage</em> utilisés pour le calcul sont les taux de "
 "hachage à partir du moment où un bloc particulier a été trouvé. Ils "
 "reflètent certains antécédents miniers avant la découverte du bloc."
 
@@ -1805,7 +1804,7 @@ msgid ""
 "\">Rewards & Payouts</a> section."
 msgstr ""
 "Les <em> frais de pool </em> pour toutes les coins sont répertoriés dans la "
-"section <a href=\"%(url)s\"> Récompenses et paiements </a>."
+"section <a href=\"%(url)s\">Récompenses et paiements</a>."
 
 #: help/templates/help/reward-system.html:35
 msgid ""
@@ -1813,9 +1812,9 @@ msgid ""
 "declines at time when you start or stop mining (effective hash rate is blue, "
 "scoring hash rate is gold):"
 msgstr ""
-"Le graphique ci-dessous montre comment le <strong> taux de hachage des "
-"scores </strong> augmente et diminue au moment où vous démarrez ou arrêtez "
-"le minage (le taux de hachage effectif est en bleu et le taux de hachage des "
+"Le graphique ci-dessous montre comment le <strong>taux de hachage des "
+"scores</strong> augmente et diminue au moment où vous démarrez ou arrêtez le "
+"minage (le taux de hachage effectif est en bleu et le taux de hachage des "
 "scores est doré) :"
 
 #: help/templates/help/reward-system.html:41
@@ -1838,7 +1837,7 @@ msgid ""
 "Important properties of using <em>scoring hash rate</em> for rewards "
 "calculation:"
 msgstr ""
-"Les propriétés importantes d'utiliser <em> le taux de hachage du score </em> "
+"Les propriétés importantes d'utiliser <em>le taux de hachage du score</em> "
 "pour le calcul des récompenses :"
 
 #: help/templates/help/reward-system.html:53
@@ -1854,7 +1853,7 @@ msgid ""
 "Rewards are fully <strong>independent</strong> from rounds. The only "
 "important thing is the scoring hash rate."
 msgstr ""
-"Les récompenses sont totalement <strong> indépendantes </strong> des séries. "
+"Les récompenses sont totalement <strong>indépendantes</strong> des séries. "
 "La seule chose importante est le taux de hachage des scores."
 
 #: help/templates/help/reward-system.html:55
@@ -1949,7 +1948,7 @@ msgid ""
 "separately as a proof of work with difficulty 1. This approach leads "
 "numerically to the same results, however, the formulas are less complex."
 msgstr ""
-"Aux fins du présent texte, nous traitons chaque pourcentage de part%(s)s "
+"Aux fins du présent texte, nous traitons chaque pourcentage de part %(s)s "
 "comme si il avait été soumis séparément comme preuve de travail avec "
 "difficulté 1. Cette approche conduit numériquement aux mêmes résultats, "
 "toutefois, les formules sont moins complexes."
@@ -1969,13 +1968,13 @@ msgid ""
 "in time %(t_0)s, written as %(time_delta)s, is a key part of shares "
 "valuation."
 msgstr ""
-"Soit %(tau)s une fonction qui nous donne l’heure à laquelle une part%(s)s a "
+"Soit %(tau)s une fonction qui nous donne l’heure à laquelle une part %(s)s a "
 "été soumise (ou quand un bloc %(b)s a été trouvé). Le temps est mesuré en "
 "secondes à partir d’un instant donné (par exemple, le début de l’opération "
 "de pool). La valeur temps est utilisée uniquement pour mesurer le temps "
 "écoulé entre deux événements. Par exemple, un délai entre la soumission de "
-"la part%(s)s et un moment donné%(t_0)s, écrit sous la forme %(time_delta)s, "
-"est un élément clé de la valorisation des actions."
+"la part %(s)s et un moment donné %(t_0)s, écrit sous la forme %(time_delta)"
+"s, est un élément clé de la valorisation des actions."
 
 #: help/templates/help/reward-system.html:82
 msgid "Shares valuation<span> - score</span>"
@@ -2001,8 +2000,8 @@ msgid ""
 "strong> %(fc)s. It calculates <strong>score</strong> of a share %(s)s at "
 "time %(t_0)s as"
 msgstr ""
-"La valeur exacte de la part à la fois est définie par la <strong> fonction "
-"d'évaluation </strong> %(fc)s. Il calcule le <strong> score </strong> d'une "
+"La valeur exacte de la part à la fois est définie par la <strong>fonction "
+"d'évaluation</strong> %(fc)s. Il calcule le <strong>score</strong> d'une "
 "part %(s)s au moment %(t_0)s"
 
 #: help/templates/help/reward-system.html:92
@@ -2044,7 +2043,7 @@ msgid ""
 "%(t_0)s. Written more formally the following holds"
 msgstr ""
 "Continuons. Soit %(Us)s un ensemble de <em> tous les utilisateurs du pool "
-"</em> et %(set)s un ensemble de <em> tous les partages valides </em> soumis "
+"</em> et %(set)s un ensemble de <em> tous les partages valides</em> soumis "
 "par l'utilisateur %(u)s jusqu'au temps %(t_0)s. Écrit plus formellement cela "
 "tient"
 
@@ -2121,7 +2120,7 @@ msgstr ""
 #, python-format
 msgid "<strong>User's contribution</strong> to the pool (in %%) is defined as"
 msgstr ""
-"La <strong> contribution de l'utilisateur </strong> au pool (en %%) est "
+"La <strong>contribution de l'utilisateur</strong> au pool (en %%) est "
 "définie comme suit"
 
 #: help/templates/help/reward-system.html:138
@@ -2164,7 +2163,7 @@ msgid ""
 "href=\"%(link)s\">Reward System</a>."
 msgstr ""
 "Les frais de transaction (réseau) sont partagés avec les mineurs, voir le <a "
-"href=\"%(link)s\"> système de récompense </a>."
+"href=\"%(link)s\">système de récompense</a>."
 
 #: help/templates/help/rewards-payouts.html:15
 msgid ""
@@ -2179,8 +2178,8 @@ msgid ""
 "Payout threshold can be customized in the <em>Settings > selected coin > "
 "Payouts</em> menu."
 msgstr ""
-"Le seuil de paiement peut être personnalisé dans le menu <em> Paramètres> "
-"pièce sélectionnée> Paiements </em>."
+"Le seuil de paiement peut être personnalisé dans le menu <em>Paramètres> "
+"pièce sélectionnée> Paiements</em>."
 
 #: help/templates/help/rewards-payouts.html:17
 #, python-format
@@ -2188,7 +2187,7 @@ msgid ""
 "Same pool fee applies to proceeds from <a href=\"%(merge)s\">merge mined</a> "
 "coins."
 msgstr ""
-"Les mêmes frais de pool s’appliquent au produit de la <a href=\"%(merge)s\"> "
+"Les mêmes frais de pool s’appliquent au produit de la <a href=\"%(merge)s\">"
 "fusion de coins minés</a>."
 
 #: help/templates/help/rewards-payouts.html:26
@@ -2239,7 +2238,7 @@ msgstr "Protocole de <span>minage en Stratum</span>"
 #: help/templates/help/terminology.html:7
 msgctxt "UI"
 msgid "Pool <span>Terminology</span>"
-msgstr "Terminologie de la <span>pool</span>"
+msgstr "<span>Terminologie</span> de la pool"
 
 #: help/templates/help/terminology.html:9
 msgid ""
@@ -2260,10 +2259,10 @@ msgid ""
 "is greater or equal to <strong>Alert Limit</strong>, everything is perfect "
 "and you will not receive any monitoring alert reports."
 msgstr ""
-"Cette valeur est utilisée comme <strong> limite de taux de hachage </strong> "
+"Cette valeur est utilisée comme <strong>limite de taux de hachage</strong> "
 "pour vérifier le bon fonctionnement de votre appareil. Si le taux de hachage "
-"effectif d'un travailleur est supérieur ou égal à la <strong> limite "
-"d'alerte </strong>, tout est parfait et vous ne recevrez aucun rapport "
+"effectif d'un travailleur est supérieur ou égal à la <strong>limite "
+"d'alerte</strong>, tout est parfait et vous ne recevrez aucun rapport "
 "d'alerte de surveillance."
 
 #: help/templates/help/terminology.html:21
@@ -2273,8 +2272,8 @@ msgid ""
 "will be notified by an e-mail and you can start acting accordingly. Such "
 "behavior is mainly caused by the following reasons:"
 msgstr ""
-"Toutefois, il peut arriver que le taux de hachage effectif tombe <strong> en "
-"dessous de la limite d’alerte </strong>. Si votre surveillance est activée, "
+"Toutefois, il peut arriver que le taux de hachage effectif tombe <strong>en "
+"dessous de la limite d’alerte</strong>. Si votre surveillance est activée, "
 "vous en serez informé par courrier électronique et vous pourrez commencer à "
 "agir en conséquence. Un tel comportement est principalement dû aux raisons "
 "suivantes :"
@@ -2306,10 +2305,10 @@ msgid ""
 "is done once in 5 minutes and the value is set to 70%% of hash rate average "
 "from the last 24hours."
 msgstr ""
-"Laissez la pool calculer automatiquement la <strong> limite d'alerte "
-"</strong> pour vous. Cette opération est effectuée une fois toutes les 5 "
-"minutes et la valeur est définie à 70%% de la moyenne du taux de hachage des "
-"dernières 24 heures."
+"Laissez la pool calculer automatiquement la <strong>limite d'alerte</strong> "
+"pour vous. Cette opération est effectuée une fois toutes les 5 minutes et la "
+"valeur est définie à 70%% de la moyenne du taux de hachage des dernières 24 "
+"heures."
 
 #: help/templates/help/terminology.html:32
 msgid "Set it manually to any value from 0.5 Gh/s to e.g. 100 Ph/s or more."
@@ -2337,8 +2336,8 @@ msgstr "Taux de hachage"
 msgid ""
 "<strong>Hash rate</strong> is the number of hashes generated per second."
 msgstr ""
-"Le <strong> taux de hachage </strong> correspond au nombre de hachages "
-"générés par seconde."
+"Le <strong>taux de hachage</strong> correspond au nombre de hachages générés "
+"par seconde."
 
 #: help/templates/help/terminology.html:50
 msgid ""
@@ -2346,7 +2345,7 @@ msgid ""
 "strong>in our statistics. However, you might also come across the “hash rate "
 "of the pool” or the “hash rate of the entire Bitcoin network”."
 msgstr ""
-"Vous observerez principalement le <strong> taux de hachage de votre appareil "
+"Vous observerez principalement le <strong>taux de hachage de votre appareil "
 "de minage</strong> dans nos statistiques. Cependant, vous pouvez également "
 "rencontrer le «taux de hachage du pool» ou le «taux de hachage de l'ensemble "
 "du réseau Bitcoin»."
@@ -2358,14 +2357,14 @@ msgid ""
 "shown in our system. It is important for you to understand the difference "
 "between these two."
 msgstr ""
-"Il existe une différence entre un <strong> taux de hachage nominal </strong> "
-"indiqué dans le manuel de votre appareil de minage et un <strong> taux de "
-"hachage effectif </strong> affiché dans notre système. Il est important que "
+"Il existe une différence entre un <strong>taux de hachage nominal</strong> "
+"indiqué dans le manuel de votre appareil de minage et un <strong>taux de "
+"hachage effectif</strong> affiché dans notre système. Il est important que "
 "vous compreniez la différence entre les deux."
 
 #: help/templates/help/terminology.html:53
 msgid "Nominal <span>Hash Rate</span>"
-msgstr "Taux de hachage <span>nominal</span>"
+msgstr "Taux de <span>hachage</span> nominal"
 
 #: help/templates/help/terminology.html:54
 msgid ""
@@ -2379,7 +2378,7 @@ msgstr ""
 
 #: help/templates/help/terminology.html:56
 msgid "Effective <span>Hash Rate</span>"
-msgstr "Taux de hachage <span>effectif</span>"
+msgstr "Taux de <span>hachage</span> effectif"
 
 #: help/templates/help/terminology.html:57
 #, python-format
@@ -2389,11 +2388,11 @@ msgid ""
 "generated hashes by your devices get sent. They must fit certain criteria "
 "assigned by the pool (see: <a href=\"%(link)s\">Shares</a>)."
 msgstr ""
-"Le taux de hachage effectif est un taux de hachage <strong> calculé à partir "
-"des hachages envoyés par votre appareil à notre pool </strong>. Seule une "
+"Le taux de hachage effectif est un taux de hachage <strong>calculé à partir "
+"des hachages envoyés par votre appareil à notre pool</strong>. Seule une "
 "petite partie des hachages générés par vos appareils est envoyée. Ils "
 "doivent répondre à certains critères assignés par le pool (voir: <a href=\""
-"%(link)s\"> Shares </a>)."
+"%(link)s\">Shares</a>)."
 
 #: help/templates/help/terminology.html:58
 msgid ""
@@ -2437,7 +2436,7 @@ msgid ""
 msgstr ""
 "Le taux de hachage de notation est une valeur dérivée du taux de hachage "
 "effectif utilisé pour le calcul des récompenses. Veuillez consulter le <a "
-"href=\"%(rewards)s\"> système de récompense </a> pour plus d'explications."
+"href=\"%(rewards)s\">système de récompense</a> pour plus d'explications."
 
 #: help/templates/help/terminology.html:72
 msgid "Luck"
@@ -2450,8 +2449,8 @@ msgid ""
 "finding a block."
 msgstr ""
 "La chance de la pool explique le nombre de partages dont le pool a besoin "
-"pour trouver un bloc spécifique par rapport au nombre <strong> moyen par "
-"rapport au nombre moyen d’actions </strong> nécessaires à la recherche d’un "
+"pour trouver un bloc spécifique par rapport au nombre <strong>moyen par "
+"rapport au nombre moyen d’actions</strong> nécessaires à la recherche d’un "
 "bloc."
 
 #: help/templates/help/terminology.html:78
@@ -2487,8 +2486,8 @@ msgid ""
 "luck is high and disconnecting when the luck is low does not make any sense. "
 "In the long run, the luck is always 100%%."
 msgstr ""
-"N'oubliez pas que <strong> la chance ne décrit que l'historique, mais ne dit "
-"rien sur les futurs blocs </strong>. La recherche d'un bloc est totalement "
+"N'oubliez pas que <strong>la chance ne décrit que l'historique, mais ne dit "
+"rien sur les futurs blocs</strong>. La recherche d'un bloc est totalement "
 "indépendante des événements historiques. C'est pourquoi rejoindre la pool "
 "quand la chance est forte et déconnecter lorsque la chance est faible n'a "
 "aucun sens. À long terme, la chance est toujours à 100%%."
@@ -2502,10 +2501,10 @@ msgid ""
 "between mining several cryptocurrencies."
 msgstr ""
 "Le minage fusionné, si pris en charge par une crypto-monnaie particulière, "
-"vous permet de gagner des <em> \"coins supplémentaires\" </em> lors du "
-"minage de plusieurs chaînes de blocs avec le même algorithme d'extraction "
-"<strong> en même temps </strong>. L'avantage du minage fusionné est que vous "
-"n'avez pas à diviser votre taux de hachage entre plusieurs crypto-monnaies."
+"vous permet de gagner des <em>\"coins supplémentaires\"</em> lors du minage "
+"de plusieurs chaînes de blocs avec le même algorithme d'extraction <strong>"
+"en même temps</strong>. L'avantage du minage fusionné est que vous n'avez "
+"pas à diviser votre taux de hachage entre plusieurs crypto-monnaies."
 
 #: help/templates/help/terminology.html:104
 #: web/templates/email/_base_graphic.html:23
@@ -2536,8 +2535,8 @@ msgid ""
 "valid block (block A and block B) at around the same time and broadcast them "
 "both to the network."
 msgstr ""
-"Un bloc orphelin (bloc A) est un bloc valide, mais il <strong> ne fait pas "
-"partie d'une chaîne de blocs </strong>. Un bloc orphelin est créé lorsque "
+"Un bloc orphelin (bloc A) est un bloc valide, mais il <strong>ne fait pas "
+"partie d'une chaîne de blocs</strong>. Un bloc orphelin est créé lorsque "
 "deux mineurs trouvent un bloc valide (bloc A et bloc B) à peu près au même "
 "moment et les diffusent tous les deux sur le réseau."
 
@@ -2555,9 +2554,9 @@ msgstr ""
 "qui sont généralement géographiquement plus proches du mineur), mais l’autre "
 "bloc (bloc B) accumule une preuve de travail plus importante; il est accepté "
 "par plusieurs nœuds et devient un bloc parent pour le prochain. Le bloc "
-"orphelin (bloc A) est alors marqué comme <strong> invalide </strong> car il "
-"ne fait pas partie de la chaîne la plus longue. <strong> Les mineurs ne "
-"reçoivent aucune récompense pour un tel bloc. </strong>"
+"orphelin (bloc A) est alors marqué comme <strong>invalide</strong> car il ne "
+"fait pas partie de la chaîne la plus longue. <strong>Les mineurs ne "
+"reçoivent aucune récompense pour un tel bloc.</strong>"
 
 #: help/templates/help/terminology.html:129
 msgid "Reward (confirmed vs unconfirmed)"
@@ -2574,13 +2573,13 @@ msgid ""
 "threshold before any payout can be made."
 msgstr ""
 "Une fois qu'un bloc est trouvé et que votre récompense est calculée à partir "
-"de votre taux de hachage, il apparaît sous la forme d'une <strong> "
-"récompense non confirmée </strong> sur le tableau de bord de votre compte. À "
-"ce stade, vous devez attendre un certain nombre de blocs (en fonction de la "
-"crypto-monnaie) jusqu'à ce que votre récompense devienne <strong> confirmée "
-"</strong> = dépensable. Après ces confirmations, vos coins gagnés sont "
-"disponibles pour le paiement. Cependant, vous devez atteindre votre seuil de "
-"paiement avant que tout paiement puisse être effectué."
+"de votre taux de hachage, il apparaît sous la forme d'une <strong>récompense "
+"non confirmée</strong> sur le tableau de bord de votre compte. À ce stade, "
+"vous devez attendre un certain nombre de blocs (en fonction de la crypto-"
+"monnaie) jusqu'à ce que votre récompense devienne <strong>confirmée</strong> "
+"= dépensable. Après ces confirmations, vos coins gagnés sont disponibles "
+"pour le paiement. Cependant, vous devez atteindre votre seuil de paiement "
+"avant que tout paiement puisse être effectué."
 
 #: help/templates/help/terminology.html:142
 msgid "Round"
@@ -2595,7 +2594,7 @@ msgid ""
 msgstr ""
 "La manche est la période de temps entre deux blocs trouvés par la pool. Cela "
 "peut durer de quelques secondes à plusieurs heures, en fonction de la <a "
-"href=\"%(link)s\"> chance de la pool.</a>"
+"href=\"%(link)s\">chance de la pool.</a>"
 
 #: help/templates/help/terminology.html:154
 msgid "Score (reward system)"
@@ -2611,14 +2610,14 @@ msgid ""
 "are fully independent of rounds. The only important thing is users scoring "
 "hash rate at the moment when a new block is found."
 msgstr ""
-"Le score est un nom couramment utilisé pour notre <a href=\"%(rewards)s\"> "
-"système de récompense </a>. Il est basé sur un <strong> taux de hachage du "
-"score </strong> (moyenne mobile du taux de hachage réel avec une <em> "
-"période de montée/descente </em> où vous <em> démarrez/arrêtez </em> le "
-"minage). Contrairement aux autres systèmes de récompense, les récompenses de "
-"score sont totalement indépendantes des manches. La seule chose importante "
-"est que les utilisateurs marquent le taux de hachage au moment où un nouveau "
-"bloc est trouvé."
+"Le score est un nom couramment utilisé pour notre <a href=\"%(rewards)s\">"
+"système de récompense</a>. Il est basé sur un <strong>taux de hachage du "
+"score</strong> (moyenne mobile du taux de hachage réel avec une <em>période "
+"de montée/descente</em> où vous <em>démarrez/arrêtez</em> le minage). "
+"Contrairement aux autres systèmes de récompense, les récompenses de score "
+"sont totalement indépendantes des manches. La seule chose importante est que "
+"les utilisateurs marquent le taux de hachage au moment où un nouveau bloc "
+"est trouvé."
 
 #: help/templates/help/terminology.html:167
 msgid "Share - <span>proof of work</span>"
@@ -2628,8 +2627,8 @@ msgstr "Partage - <span>preuve de travail</span>"
 msgid ""
 "<strong>Share</strong> is a unit which pool uses for computing mining work."
 msgstr ""
-"<strong> Partager </strong> est une unité utilisée par le pool pour le "
-"travail de minage."
+"<strong>Partager</strong> est une unité utilisée par le pool pour le travail "
+"de minage."
 
 #: help/templates/help/terminology.html:172
 msgid ""
@@ -2645,9 +2644,9 @@ msgstr ""
 "résoudre - il calcule des valeurs de hachage avec certaines propriétés ("
 "elles doivent être inférieures à la limite dérivée de difficulté). Les "
 "hachages satisfaisant les exigences sont renvoyés au pool et sont utilisés "
-"comme <strong> preuve du travail de mineur </strong>. La quantité de travail "
-"de mineur est enregistrée dans des unités appelées <strong> actions </strong>"
-". Si un hachage (preuve de travail) rencontrant des difficultés \\(d\\) est "
+"comme <strong>preuve du travail de mineur</strong>. La quantité de travail "
+"de mineur est enregistrée dans des unités appelées <strong>actions</strong>. "
+"Si un hachage (preuve de travail) rencontrant des difficultés \\(d\\) est "
 "soumis par un mineur, alors \\(d\\) actions sont comptées par la pool."
 
 #: help/templates/help/terminology.html:173
@@ -2708,7 +2707,7 @@ msgstr ""
 "mineur et la pool), il faut plus de temps à un mineur pour recevoir une "
 "notification concernant un nouveau bloc. Cependant, le mineur continue de "
 "soumettre les résultats à un ancien bloc pendant un certain temps et ceux-ci "
-"sont rejetés par la pool sous forme d'actions <em> obsolètes </em>."
+"sont rejetés par la pool sous forme d'actions <em>obsolètes</em>."
 
 #: help/templates/help/terminology.html:197
 msgid "Slower Mining Device"
@@ -2727,7 +2726,7 @@ msgstr ""
 "précédent. Alors que d'autres génèrent déjà des actions pour un nouveau "
 "bloc, ces mineurs produisent des actions pour l'ancien bloc qui ne peuvent "
 "plus être acceptés par le pool. Ces résultats sont également appelés des "
-"<strong> actions obsolètes </strong>."
+"<strong>actions obsolètes</strong>."
 
 #: help/templates/help/terminology.html:207
 msgid "Stratum (mining protocol)"
@@ -2750,7 +2749,7 @@ msgstr ""
 "communiquer avec la pool à un niveau très efficace pour lequel il a remplacé "
 "l’ancien protocole de réseau. En tant que mineur, vous n'avez pas besoin de "
 "bien comprendre le protocole. Il existe un site Web officiel <a href=\"%(url)"
-"s\" target=\"_blank\"> StratumProtocol.org </a> qui explique les détails "
+"s\" target=\"_blank\">StratumProtocol.org</a> qui explique les détails "
 "techniques."
 
 #: help/templates/help/terminology.html:220
@@ -2765,12 +2764,12 @@ msgid ""
 msgstr ""
 "Le payeur peut inclure des frais de transaction (ou de réseau) dans une "
 "transaction afin d'inciter les mineurs à ajouter la transaction donnée à un "
-"bloc. <strong> Le mineur reçoit ces frais </strong> en plus de la prime de "
+"bloc. <strong>Le mineur reçoit ces frais</strong> en plus de la prime de "
 "base."
 
 #: help/templates/help/terminology.html:233
 msgid "Vardiff <span>(variable difficulty algorithm)</span>"
-msgstr "Vardiff <span> (algorithme de difficulté variable) </span>"
+msgstr "Vardiff <span>(algorithme de difficulté variable)</span>"
 
 #: help/templates/help/terminology.html:237
 #, python-format
@@ -2778,7 +2777,7 @@ msgid ""
 "(Please, have a look at how <a href=\"%(link)s\">shares</a> are being "
 "produced before reading on.)"
 msgstr ""
-"(Merci de regarder comment les <a href=\"%(link)s\"> actions</a> sont "
+"(Merci de regarder comment les <a href=\"%(link)s\">actions</a> sont "
 "générées avant la lecture.)"
 
 #: help/templates/help/terminology.html:238
@@ -4333,7 +4332,7 @@ msgstr "travailleur supprimé"
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
-msgstr "Vous avez supprimé ce travailleur  <b>%(name)s</b>"
+msgstr "Vous avez supprimé ce travailleur <b>%(name)s</b>"
 
 #: web/models.py:1186
 msgctxt "UI"
@@ -4781,8 +4780,8 @@ msgid ""
 "You have pending request for changing <strong>%(currency)s</strong> wallet "
 "to <strong>%(wallet_pending)s</strong>."
 msgstr ""
-"Vous avez une demande en attente pour modifier le portefeuille "
-"<strong>%(currency)s</strong> à <strong>%(wallet_pending)s</strong>."
+"Vous avez une demande en attente pour modifier <strong>%(currency)s</strong> "
+"le portefeuille à <strong>%(wallet_pending)s</strong>."
 
 #: web/templates/web/msg_pending_wallet.html:4
 #, python-format
