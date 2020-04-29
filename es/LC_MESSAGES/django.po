@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-10 16:31+0200\n"
+"POT-Creation-Date: 2020-04-29 13:11+0200\n"
 "PO-Revision-Date: 2019-08-01 17:10+0000\n"
 "Last-Translator: Héctor Cárdenas <hcarpach@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/slushpool/mining/"
@@ -24,203 +24,205 @@ msgctxt "UI"
 msgid "Request body must be list of objects"
 msgstr "El contenido de la solicitud debe ser una lista de objetos"
 
-#: api/core.py:352
+#: api/core.py:357
 msgid "Request payload expected, but not supplied!"
 msgstr "Solicitud de carga esperada, pero no suministrada!"
 
-#: api/exceptions.py:13
+#: api/exceptions.py:16
 msgctxt "UI"
 msgid "Unknown error"
 msgstr "Error desconocido"
 
 #. Translators: %s will be format description, eg.: JSON
-#: api/exceptions.py:41
+#: api/exceptions.py:44
 #, python-format
 msgctxt "UI"
 msgid "Request is not a %s"
 msgstr "La solicitud no es un %s"
 
 #. Translators: %s will be format description, eg.: JSON
-#: api/exceptions.py:47
+#: api/exceptions.py:50
 #, python-format
 msgctxt "UI"
 msgid "Response is not a %(format)s serializable"
 msgstr "La respuesta no es un %(format)s serializable"
 
-#: api/exceptions.py:52
+#: api/exceptions.py:55
 msgctxt "UI"
 msgid "Authentication required"
 msgstr "Autenticación requerida"
 
 #. Translators: %s will be api method, eg.: get, list, get_facts, etc.
-#: api/exceptions.py:62
+#: api/exceptions.py:65
 #, python-format
 msgctxt "UI"
 msgid "Method %s is not allowed"
 msgstr "El método %s no está permitido"
 
 #. Translators: %s will be api method, eg.: get, list, get_facts, etc.
-#: api/exceptions.py:68
+#: api/exceptions.py:71
 #, python-format
 msgctxt "UI"
 msgid "Method %s doesn't exist"
 msgstr "El método %s no existe"
 
-#: api/exceptions.py:73
+#: api/exceptions.py:76
 msgctxt "UI"
 msgid "Non-existent or expired token used"
 msgstr "Token utilizado inexistente o caducado"
 
-#: api/exceptions.py:78
+#: api/exceptions.py:81
 msgctxt "UI"
 msgid "The method is not allowed in read only mode"
 msgstr "El método no es permitido en modo de solo lectura"
 
-#: api/exceptions.py:83
+#: api/exceptions.py:86
 msgctxt "UI"
 msgid "Bad request."
 msgstr "Solicitud incorrecta."
 
-#: api/exceptions.py:107
+#: api/exceptions.py:110
 msgctxt "UI"
 msgid "Method not found"
 msgstr "Método no encontrado"
 
 #. Translators: %s = worker, label, ...
-#: api/exceptions.py:113
+#: api/exceptions.py:116
 #, python-format
 msgctxt "UI"
 msgid "Bulk %s creation is not allowed"
 msgstr "La creación masiva de %s no es permitida"
 
 #. Translators: %s = worker, label, ...
-#: api/exceptions.py:119
+#: api/exceptions.py:122
 #, python-format
 msgctxt "UI"
 msgid "Bulk %s deletion is not allowed"
 msgstr "La eliminación masiva de %s no es permitida"
 
 #. Translators: "Label / Worker can't be removed".
-#: api/exceptions.py:125
+#: api/exceptions.py:128
 #, python-format
 msgctxt "UI"
 msgid "%s can't be removed"
 msgstr "%s no puede ser removida"
 
 #. Translators: %s = worker, label, ...
-#: api/exceptions.py:131
+#: api/exceptions.py:134
 #, python-format
 msgctxt "UI"
 msgid "Access denied to object: %s"
 msgstr "Acceso denegado al objeto: %s"
 
-#: api/exceptions.py:136
+#: api/exceptions.py:139
 #, python-format
 msgctxt "UI"
 msgid "Worker \"%s\" already exists"
 msgstr "El equipo de minería \"%s\" ya existe"
 
-#: api/exceptions.py:141
+#: api/exceptions.py:144
 #, python-format
 msgctxt "UI"
 msgid "Label \"%s\" already exists"
 msgstr "La etiqueta \"%s\" ya existe"
 
-#: api/exceptions.py:146
+#: api/exceptions.py:149
 msgctxt "UI"
 msgid "Label doesn't exist"
 msgstr "La etiqueta no existe"
 
-#: api/exceptions.py:151
+#: api/exceptions.py:154
 msgctxt "UI"
 msgid "Workers labels update failed"
 msgstr "La actualización de etiquetas de equipos de minería falló"
 
-#: api/exceptions.py:156
-#, python-format
+#: api/exceptions.py:159
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid worker name!"
 msgctxt "UI"
-msgid "Worker not found (%s)"
-msgstr "Equipo de minería no encontrado (%s)"
+msgid "Invalid worker id."
+msgstr "Nombre de equipo de minería inválido!"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
-#: api/exceptions.py:162
+#: api/exceptions.py:165
 #, python-format
 msgctxt "UI"
 msgid "Slot \"%s\" not found"
 msgstr "Espacio \"%s\" no encontrado"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
-#: api/exceptions.py:168
+#: api/exceptions.py:171
 #, python-format
 msgctxt "UI"
 msgid "Slot number \"%s\" is not valid."
 msgstr "Espacio número \"%s\" no es válido."
 
 #. Translators: %s will be some invalid blockchain voting option
-#: api/exceptions.py:184
+#: api/exceptions.py:187
 #, python-format
 msgctxt "UI"
 msgid "You can't vote for \"%s\""
 msgstr "Usted no puede votar por \"%s\""
 
-#: api/exceptions.py:189
+#: api/exceptions.py:192
 msgctxt "UI"
 msgid "You must specify the \"coin_type\" attribute!"
 msgstr "Debe especificar el atributo \"coin_type\"!"
 
-#: api/exceptions.py:194
+#: api/exceptions.py:197
 msgctxt "UI"
 msgid "Missing data for HR distribution"
 msgstr "Faltan datos para la distribución HR"
 
-#: api/exceptions.py:204
+#: api/exceptions.py:207
 msgctxt "UI"
 msgid "Integrity error on worker update"
 msgstr "Error de integridad en la actualización del equipo de minería"
 
-#: api/exceptions.py:209
+#: api/exceptions.py:212
 msgctxt "UI"
 msgid "Worker name has already been used"
 msgstr "El nombre del equipo de minería ya ha sido usado"
 
-#: api/exceptions.py:214
+#: api/exceptions.py:217
 msgctxt "UI"
 msgid "Form error"
 msgstr "Error de formulario"
 
 #. Translators: %s = form id
-#: api/exceptions.py:220
+#: api/exceptions.py:223
 #, python-format
 msgctxt "UI"
 msgid "Form \"%s\" doesn't exist"
 msgstr "Formulario \"%s\" no existe"
 
-#: api/exceptions.py:225
+#: api/exceptions.py:228
 msgctxt "UI"
 msgid "Validation error"
 msgstr "Error de validación"
 
-#: api/exceptions.py:230 api/exceptions.py:235
+#: api/exceptions.py:233 api/exceptions.py:238
 msgctxt "UI"
 msgid "Form save has failed."
 msgstr "Guardar el formulario ha fallado."
 
-#: api/exceptions.py:250
+#: api/exceptions.py:253
 msgctxt "UI"
 msgid "U2F device not found."
 msgstr "No se ha encontrado dispositivo U2F."
 
-#: api/exceptions.py:255
+#: api/exceptions.py:258
 msgctxt "UI"
 msgid "U2F verification failed."
 msgstr "Verificación de U2F falló."
 
-#: api/exceptions.py:260
+#: api/exceptions.py:263
 msgctxt "UI"
 msgid "Used device is not active yet. Use different one."
 msgstr "Dispositivo usado no está activo aún. Use uno diferente."
 
-#: api/exceptions.py:268
+#: api/exceptions.py:271
 #, python-format
 msgctxt "UI"
 msgid "Your pairing token expired after %s seconds. Please try again."
@@ -228,36 +230,36 @@ msgstr ""
 "Su token de pareo expiró después de %s segundos. Por favor, inténtelo de "
 "nuevo."
 
-#: api/exceptions.py:273
+#: api/exceptions.py:276
 msgctxt "UI"
 msgid "Device for given token does not exist. Please pair your device again."
 msgstr ""
 "El dispositivo para el token dado no existe. Por favor, parea tu dispositivo "
 "de nuevo."
 
-#: api/exceptions.py:283
+#: api/exceptions.py:286
 msgctxt "UI"
 msgid "OTP verification failed."
 msgstr "Verificación de OTP falló."
 
-#: api/exceptions.py:288
+#: api/exceptions.py:291
 #, python-format
 msgctxt "UI"
 msgid "Coin \"%(coin)s\" is not allowed. Use one of: %(choices)s"
 msgstr "La moneda \"%(coin)s\" no está permitida. Utilice una de: %(choices)s"
 
-#: api/exceptions.py:293
+#: api/exceptions.py:296
 msgctxt "UI"
 msgid "Unexpected server error. Please try again later."
 msgstr ""
 "Error inesperado del servidor. Por favor, inténtelo de nuevo más tarde."
 
-#: api/exceptions.py:298
+#: api/exceptions.py:301 formlib/core.py:68 settings/forms/claim_nmc_form.py:43
 msgctxt "UI"
 msgid "Access denied."
 msgstr "Acceso denegado."
 
-#: api/exceptions.py:305
+#: api/exceptions.py:308
 msgctxt "UI"
 msgid ""
 "Please update the app via Play Store / App Store. This version is no longer "
@@ -266,138 +268,408 @@ msgstr ""
 "Por favor actualice la aplicación a través de la Play Store / App Store. "
 "Esta versión ya no es compatible."
 
-#: backend/queries/legacy.py:107
-msgctxt "UI, Blocks"
-msgid "Invalid"
-msgstr "Inválido"
+#: api/exceptions.py:316
+msgctxt "UI"
+msgid ""
+"Deletion aborted. It is not possible to delete active workers. Please adjust "
+"your selection."
+msgstr ""
 
-#: backend/queries/legacy.py:109
-msgctxt "UI, Blocks"
-msgid "Confirmed"
-msgstr "Confirmado"
+#: api/exceptions.py:324
+msgctxt "UI"
+msgid ""
+"Deletion aborted. It is not possible to delete auto-workers. Please adjust "
+"your selection."
+msgstr ""
 
-#: campaigns/forms/validators.py:373 mailing/forms/validators.py:34
+#: campaigns/email_templates/change_email_template.html:15
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid ""
+#| "You are receiving this email because you requested to change your e-mail "
+#| "address to <strong>%(email)s</strong>"
+msgctxt "UI"
+msgid ""
+"We got a request to change your email address to <strong>%(email)s</strong>."
+msgstr ""
+"Está recibiendo este email porque solicitó cambiar su dirección de correo "
+"electrónico a <strong>%(email)s</strong>"
+
+#: campaigns/email_templates/change_email_template.html:18
+#: campaigns/email_templates/wallet_change_template.html:18
+msgctxt "UI"
+msgid "To authorize this change, please click the button below."
+msgstr ""
+
+#: campaigns/email_templates/change_email_template.html:30
+#, fuzzy
+#| msgid "Change my email"
+msgctxt "UI"
+msgid "Change email address"
+msgstr "Cambiar mi email"
+
+#: campaigns/email_templates/change_email_template.html:43
+#, fuzzy, python-format
+#| msgid ""
+#| "If you didn't initiate this change, please <a href=\"%(url_cancel)s"
+#| "\">cancel the request</a> and <a href=\"%(url_password_reset)s\">change "
+#| "your password</a> immediately."
+msgctxt "UI"
+msgid ""
+"If you <strong>did not</strong> ask us to change your email address, please "
+"<a href=\"%(url)s\">cancel&nbsp;the&nbsp;request</a> and change your "
+"password immediately."
+msgstr ""
+"Si no inició este cambio, por favor, <a href=\"%(url_cancel)s\">cancele la "
+"solicitud</a> y <a href=\"%(url_password_reset)s\">cambie su contraseña</a> "
+"de inmediato."
+
+#: campaigns/email_templates/delete_account_template.html:16
+msgctxt "UI"
+msgid ""
+"It's Pavel Moravec, co-CEO of Braiins. I wanted to reach out to you "
+"personally and thank you for giving Slush Pool a shot."
+msgstr ""
+
+#: campaigns/email_templates/delete_account_template.html:19
+#, python-format
+msgctxt "UI"
+msgid ""
+"Did you run into any issues using Slush Pool that our support team can <a "
+"href=\"%(support)s\">help you with</a>? Or perhaps you are missing some "
+"features? <a href=\"%(new_ticket)s\">Please&nbsp;let&nbsp;us&nbsp;know</a> "
+"so that we can make Slush Pool better."
+msgstr ""
+
+#: campaigns/email_templates/delete_account_template.html:22
+#, python-format
+msgctxt "UI"
+msgid ""
+"If you’d still like to delete your account, make sure you <strong>request "
+"your final payout BEFORE</strong> doing so. Otherwise, any remaining "
+"balances are considered a generous donation to the pool. Then click this <a "
+"href=\"%(url)s\">confirmation link</a> to delete your account. For your "
+"security, the link is only good for an hour."
+msgstr ""
+
+#: campaigns/email_templates/delete_account_template.html:25
+msgctxt "UI"
+msgid ""
+"Lastly, if you DIDN’T request to delete your account, make sure you change "
+"your password ASAP.️"
+msgstr ""
+
+#: campaigns/email_templates/delete_account_template.html:28
+msgctxt "UI"
+msgid "We hope to see you back soon."
+msgstr ""
+
+#: campaigns/email_templates/footer_system.html:34
+msgctxt "UI"
+msgid "Settings"
+msgstr "Ajustes"
+
+#: campaigns/email_templates/monitoring_incident_template.html:14
+#, fuzzy, python-format
+#| msgid "<strong>Run miners</strong>"
+msgctxt "UI"
+msgid "Hey <strong>%(username)s</strong>,"
+msgstr "<strong>Arranca los mineros</strong>"
+
+#: campaigns/email_templates/monitoring_incident_template.html:17
+#, python-format
+msgctxt "UI"
+msgid ""
+"We wanted to let you know that we noticed something going on with your "
+"<strong>%(coin)s</strong> workers. You can see the details below."
+msgstr ""
+
+#: campaigns/email_templates/monitoring_incident_template.html:21
+#: web/templates/email/monitoring_body.html:8
+msgctxt "UI"
+msgid "Event Time"
+msgstr "Tiempo del Evento"
+
+#: campaigns/email_templates/monitoring_incident_template.html:22
+#: web/templates/email/monitoring_body.html:9
+msgctxt "UI"
+msgid "Account Hash Rate"
+msgstr "Hashrate de la Cuenta"
+
+#: campaigns/email_templates/monitoring_incident_template.html:23
+#: web/templates/email/monitoring_body.html:10
+msgctxt "UI"
+msgid "Worker States (Changes)"
+msgstr "Estados del Equipo de Minería (Cambios)"
+
+#: campaigns/email_templates/monitoring_incident_template.html:32
+#: web/templates/email/monitoring_body.html:20
+msgctxt "UI"
+msgid "Worker Name"
+msgstr "Nombre del Equipo de Minería"
+
+#: campaigns/email_templates/monitoring_incident_template.html:33
+#: web/templates/email/monitoring_body.html:21
+msgctxt "UI"
+msgid "State Change"
+msgstr "Cambio de Estado"
+
+#: campaigns/email_templates/monitoring_incident_template.html:34
+#: web/templates/email/monitoring_body.html:22
+msgctxt "UI"
+msgid "State Changed After"
+msgstr "Estado cambiado después de"
+
+#: campaigns/email_templates/monitoring_incident_template.html:35
+#: web/templates/email/monitoring_body.html:23
+msgctxt "UI"
+msgid "Actual Hash Rate"
+msgstr "Hashrate actual"
+
+#: campaigns/email_templates/monitoring_incident_template.html:36
+#: web/templates/email/monitoring_body.html:24
+msgctxt "UI"
+msgid "Alert Limit"
+msgstr "Límite de Alerta"
+
+#: campaigns/email_templates/monitoring_incident_template.html:55
+#, python-format
+msgctxt "UI"
+msgid ""
+"You can also <a href=\"%(url)s\">click here</a> to see this report online."
+msgstr ""
+
+#: campaigns/email_templates/monitoring_incident_template.html:58
+#, fuzzy
+#| msgid "Slush Pool Team"
+msgctxt "UI"
+msgid "– The Slush Pool Team"
+msgstr "Equipo Slush Pool"
+
+#: campaigns/email_templates/onboarding_template.html:15
+msgctxt "UI"
+msgid "Ready to jumpstart your mining? 🔥🚀"
+msgstr ""
+
+#: campaigns/email_templates/onboarding_template.html:18
+msgctxt "UI"
+msgid ""
+"Right now, Slush Pool supports <strong>Bitcoin</strong> and <strong>Zcash</"
+"strong> mining, but make sure you keep an eye out for an announcement coming "
+"soon! (Hint: 3 more cryptos incoming 🎉)"
+msgstr ""
+
+#: campaigns/email_templates/onboarding_template.html:20
+msgctxt "UI"
+msgid ""
+"Need a little help getting started? These how-to guides will help get you up "
+"and running."
+msgstr ""
+
+#: campaigns/email_templates/onboarding_template.html:30
+msgctxt "UI"
+msgid "Quickstart Guide"
+msgstr ""
+
+#: campaigns/email_templates/onboarding_template.html:46
+#, python-format
+msgctxt "UI"
+msgid ""
+"If you ever need help with anything else, make sure you check out our&nbsp;"
+"<a href=\"%(url)s\"><strong>online support portal</strong></a>"
+msgstr ""
+
+#: campaigns/email_templates/payout_template.html:16
+#, python-format
+msgctxt "UI"
+msgid "Congrats! You've hit your %(coin)s payout threshold 🎉"
+msgstr ""
+
+#: campaigns/email_templates/payout_template.html:19
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid ""
+#| "The amount of %(amount)s %(coin)s has been transferred to your address "
+#| "%(wallet)s on %(date)s"
+msgctxt "UI"
+msgid "We've transferred %(amount)s %(coin)s to your address %(address)s."
+msgstr ""
+"La cantidad de %(amount)s %(coin)s ha sido transferida a su dirección "
+"%(wallet)s en %(date)s"
+
+#: campaigns/email_templates/payout_template.html:22
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid ""
+#| "Payment processing through the network may take between 30 minutes to 3 "
+#| "hours. You can watch current payment status on <a href=\"%(wallet_info)s"
+#| "\">%(wallet_info)s</a>"
+msgctxt "UI"
+msgid ""
+"Typically, payments take somewhere between 30 minutes to 3 hours to go "
+"through. You can keep an eye on your payment's status <a href=\"%(url)s"
+"\">here</a>."
+msgstr ""
+"El procesamiento de pagos a través de la red puede demorar entre 30 minutos "
+"y 3 horas. Puedes ver el estado de pago actual en <a href=\"%(wallet_info)s"
+"\">%(wallet_info)s</a>"
+
+#: campaigns/email_templates/payout_template.html:24
+msgctxt "UI"
+msgid "Keep up the good work and happy mining!"
+msgstr ""
+
+#: campaigns/email_templates/registration_template.html:15
+msgctxt "UI"
+msgid "Thanks for joining Slush Pool! 💪"
+msgstr ""
+
+#: campaigns/email_templates/registration_template.html:18
+msgctxt "UI"
+msgid "To start mining, activate your account by clicking the button below."
+msgstr ""
+
+#: campaigns/email_templates/registration_template.html:30
+msgctxt "UI"
+msgid "START MINING"
+msgstr ""
+
+#: campaigns/email_templates/registration_template.html:43
+msgctxt "UI"
+msgid ""
+"If that link doesn't work, try copy and pasting the full link below into "
+"your browser address bar:"
+msgstr ""
+
+#: campaigns/email_templates/reset_password_template.html:16
+msgctxt "UI"
+msgid "We got a password reset request for your Slush Pool account."
+msgstr ""
+
+#: campaigns/email_templates/reset_password_template.html:19
+msgctxt "UI"
+msgid "To reset your password, click the button below."
+msgstr ""
+
+#: campaigns/email_templates/reset_password_template.html:31
+msgctxt "UI"
+msgid "RESET PASSWORD"
+msgstr ""
+
+#: campaigns/email_templates/wallet_change_template.html:15
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid ""
+#| "You are receiving this email because you requested to change your "
+#| "%(coin)s wallet to the new address: <strong>%(wallet)s</strong>."
+msgctxt "UI"
+msgid ""
+"We received a request to change your %(coin)s wallet to this new address: "
+"<strong>%(address)s</strong>"
+msgstr ""
+"Está recibiendo este email porque solicitó cambiar su cartera %(coin)s a la "
+"nueva dirección: <strong>%(wallet)s</strong>."
+
+#: campaigns/email_templates/wallet_change_template.html:21
+msgctxt "UI"
+msgid "CONFIRM CHANGE"
+msgstr ""
+
+#: campaigns/email_templates/wallet_change_template.html:25
+#, fuzzy, python-format
+#| msgid ""
+#| "If you didn't initiate this change, please <a href=\"%(url_cancel)s"
+#| "\">cancel the request</a> and <a href=\"%(url_password_reset)s\">change "
+#| "your password</a> immediately."
+msgctxt "UI"
+msgid ""
+"If you didn’t request an address change, please <a href=\"%(url)s\">cancel "
+"this request</a> and change your password immediately."
+msgstr ""
+"Si no inició este cambio, por favor, <a href=\"%(url_cancel)s\">cancele la "
+"solicitud</a> y <a href=\"%(url_password_reset)s\">cambie su contraseña</a> "
+"de inmediato."
+
+#: campaigns/forms/campaign.py:59 campaigns/forms/campaign.py:104
+#: campaigns/forms/campaign.py:161 campaigns/forms/campaign.py:219
+#: campaigns/forms/campaign.py:286 campaigns/forms/template.py:41
+#: campaigns/forms/template.py:104
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Access denied."
+msgctxt "UI"
+msgid "Access to campaigns denied."
+msgstr "Acceso denegado."
+
+#: campaigns/forms/campaign.py:226
+msgctxt "UI"
+msgid "Campaign must be in DRAFT state."
+msgstr ""
+
+#: campaigns/forms/validators.py:439 mailing/forms/validators.py:36
 msgctxt "UI"
 msgid "Invalid user selection."
 msgstr "Selección de usuario inválida."
 
-#: campaigns/forms/validators.py:381 mailing/forms/validators.py:53
+#: campaigns/forms/validators.py:447 mailing/forms/validators.py:55
 msgctxt "UI"
 msgid "Invalid reason for unsubscription."
 msgstr "Motivo no válido para cancelar la suscripción."
 
-#: campaigns/forms/validators.py:391
+#: campaigns/forms/validators.py:459
 #, python-format
 msgctxt "UI"
 msgid "Feedback must be a string no longer than %d characters."
 msgstr ""
 "La retroalimentación debe ser una cadena que no tenga más de %d caracteres."
 
-#: campaigns/forms/validators.py:404
+#: campaigns/forms/validators.py:472
 msgctxt "UI"
 msgid "Invalid e-mail token provided."
 msgstr "El token de correo electrónico proporcionado es inválido."
+
+#: campaigns/templates/campaign_fragment/hello.html:4
+#, fuzzy, python-format
+#| msgid "<strong>Run miners</strong>"
+msgctxt "UI"
+msgid "Hey <strong>%(username)s</strong>!"
+msgstr "<strong>Arranca los mineros</strong>"
+
+#: campaigns/templates/campaign_fragment/signature.html:5
+msgctxt "UI"
+msgid "Happy mining!"
+msgstr ""
+
+#: campaigns/templates/campaign_fragment/signature.html:6
+#, fuzzy
+#| msgid "Slush Pool Team"
+msgctxt "UI"
+msgid "The Slush Pool Team"
+msgstr "Equipo Slush Pool"
 
 #: core/validators.py:10
 msgid "Enter a valid, non empty value."
 msgstr "Introduzca un valor válido, no vacío."
 
-#: development_corner/forms.py:79
-#, python-format
-msgctxt "UI"
-msgid "Points must be greater or equal than %s."
-msgstr "Los puntos deben ser mayores o iguales que %s."
-
-#: development_corner/forms.py:81
-#, python-format
-msgctxt "UI"
-msgid "Points must be lower or equal than %s."
-msgstr "Los puntos deben ser menores o iguales que %s."
-
-#: development_corner/forms.py:99
-msgctxt "UI"
-msgid "New comment"
-msgstr "Nuevo comentario"
-
-#: development_corner/models.py:26
-msgctxt "UI, Proposals"
-msgid "Draft"
-msgstr "Borrador"
-
-#: development_corner/models.py:27
-msgctxt "UI, Proposals"
-msgid "Approved"
-msgstr "Aprobado"
-
-#: development_corner/models.py:28
-msgctxt "UI, Proposals"
-msgid "Rejected"
-msgstr "Rechazado"
-
-#: development_corner/models.py:29
-msgctxt "UI, Proposals"
-msgid "In progress"
-msgstr "En progreso"
-
-#: development_corner/models.py:30
-msgctxt "UI, Proposals"
-msgid "Released"
-msgstr "Publicado"
-
-#: development_corner/models.py:31
-msgctxt "UI, Proposals"
-msgid "Merged"
-msgstr "Fusionado"
-
-#: development_corner/templates/development_corner.html:119
-msgctxt "UI, Proposals"
-msgid "New comments"
-msgstr "Nuevos comentarios"
-
-#: development_corner/templates/proposal_history.html:9
-msgctxt "UI"
-msgid "Back to proposal detail"
-msgstr "Volver al detalle de la propuesta"
-
-#: development_corner/templates/proposal_history.html:22
-msgctxt "UI"
-msgid "Saved at:"
-msgstr "Guardado en:"
-
-#: development_corner/templates/proposals_feed.html:2
-msgctxt "UI"
-msgid "Development Corner"
-msgstr "Rincón de Desarrollo"
-
-#: development_corner/templates/proposals_feed.html:5
-msgctxt "UI"
-msgid "Proposals feed"
-msgstr "Alimentador de propuestas"
-
-#: development_corner/views.py:211
-msgctxt "UI"
-msgid "Requested proposal is waiting for admin confirmation"
-msgstr "La propuesta solicitada está esperando confirmación del administrador"
-
-#: devices/models.py:53
+#: devices/models.py:50
 #, python-format
 msgctxt "UI"
 msgid "Device was not paired in time limit of %s seconds"
 msgstr "El dispositivo no fue pareado en el tiempo límite de %s segundos"
 
-#: devices/models.py:57
+#: devices/models.py:54
 msgctxt "UI"
 msgid "Device you are trying to pair was not found"
 msgstr "El dispositivo que está intentando parear no fue encontrado"
 
-#: devices/models.py:61
+#: devices/models.py:58
 msgctxt "UI"
 msgid "Values for device settings must be dictionary."
 msgstr ""
 "Los valores para la configuración del dispositivo deben estar en el "
 "diccionario."
 
-#: devices/models.py:65
+#: devices/models.py:62
 msgctxt "UI"
 msgid "Invalid keys supplied as device settings."
 msgstr "Claves inválidas suministradas como configuración del dispositivo."
@@ -408,62 +680,717 @@ msgctxt "UI"
 msgid "Workers"
 msgstr "Equipos de minería"
 
-#: devices/templates/notification/proposal_state_update_subject.txt:1
+#: finance/api/v1/api_actions.py:28
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid label ids."
+msgctxt "UI"
+msgid "Invalid payout channel id."
+msgstr "Identificaciones de etiqueta inválidas."
+
+#: finance/api/v1/api_actions.py:42
+msgctxt "UI"
+msgid "This verification request has already been processed."
+msgstr ""
+
+#: finance/api/v1/api_actions.py:84 settings/api/v1/api_actions.py:119
+#: settings/api/v1/api_actions.py:157 settings/api/v1/api_actions.py:189
+msgctxt "UI"
+msgid ""
+"Confirmation email has been sent. Please, check your mailbox and follow the "
+"link."
+msgstr ""
+"Se ha enviado un correo electrónico de confirmación. Por favor, revise su "
+"correo y siga el enlace."
+
+#: finance/api/v1/api_actions.py:117
+#, fuzzy
+msgctxt "UI"
+msgid "Payout channel confirmation has been cancelled."
+msgstr "Confirmación del cambio de la cartera"
+
+#: finance/forms/mixins.py:57 settings/form_mixins.py:127
+#: settings/form_mixins.py:176
+msgctxt "UI"
+msgid "Signature is not valid."
+msgstr "Firma no válida."
+
+#: finance/forms/mixins.py:74 settings/form_mixins.py:137
+msgctxt "UI"
+msgid "Message is wrong."
+msgstr "El mensaje es erróneo."
+
+#: finance/forms/mixins.py:78 settings/form_mixins.py:141
+msgctxt "UI"
+msgid "Signature is out of date."
+msgstr "La firma no está actualizada."
+
+#: finance/forms/payout_account.py:31 finance/forms/payout_account.py:71
+#: finance/forms/payout_account.py:150 finance/forms/payout_channel.py:44
+#: finance/forms/payout_hold.py:29 finance/forms/payout_hold.py:69
+#: finance/forms/payout_lock.py:35 finance/forms/payout_lock.py:115
+#: finance/forms/payout_request.py:30 finance/forms/payout_split.py:37
+#: finance/forms/wallet.py:38 finance/forms/wallet.py:96
+#: finance/forms/wallet.py:145
+msgctxt "UI"
+msgid "You do not have permission to submit this form."
+msgstr ""
+
+#: finance/forms/payout_account.py:120
+msgctxt "UI"
+msgid "Unable to deactivate account with non-zero balance."
+msgstr ""
+
+#: finance/forms/payout_account.py:135
+msgctxt "UI"
+msgid ""
+"This account has non-zero split percentage. Reassign its rewards split first."
+msgstr ""
+
+#: finance/forms/payout_channel.py:57 user_request/models.py:615
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Payouts blocked"
+msgctxt "UI"
+msgid "Payouts are locked."
+msgstr "Pagos bloqueados"
+
+#: finance/forms/payout_hold.py:33
+#, fuzzy
+#| msgid "Payouts related question?"
+msgctxt "UI"
+msgid "Payouts are already paused."
+msgstr "¿Preguntas relacionadas con pagos?"
+
+#: finance/forms/payout_hold.py:72
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Payout settings updated"
+msgctxt "UI"
+msgid "Payouts are not paused."
+msgstr "Configuración de pago actualizada"
+
+#: finance/forms/payout_lock.py:45 finance/forms/payout_split.py:47
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Payouts blocked"
+msgctxt "UI"
+msgid "Payouts are already locked."
+msgstr "Pagos bloqueados"
+
+#: finance/forms/payout_lock.py:55
 #, python-format
 msgctxt "UI"
-msgid "Proposal state change - %(state)s #%(id)s"
-msgstr "Cambio de estado de la propuesta - %(state)s #%(id)s"
+msgid ""
+"Payout account \"%(name)s\" does not meet the requirements for payouts lock."
+msgstr ""
 
-#: formlib/core.py:22
+#: finance/forms/payout_lock.py:121
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Payouts unblocked"
+msgctxt "UI"
+msgid "Payouts are not locked."
+msgstr "Pagos desbloqueados"
+
+#: finance/forms/validators.py:27
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid user selection."
+msgctxt "UI"
+msgid "Invalid currency."
+msgstr "Selección de usuario inválida."
+
+#: finance/forms/validators.py:40
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid label ids."
+msgctxt "UI"
+msgid "Invalid wallet id."
+msgstr "Identificaciones de etiqueta inválidas."
+
+#: finance/forms/validators.py:55
+msgctxt "UI"
+msgid "This wallet is not a target of any locked split rule."
+msgstr ""
+
+#: finance/forms/validators.py:60
+msgctxt "UI"
+msgid "This type of wallet is not supported for signatures."
+msgstr ""
+
+#: finance/forms/validators.py:67
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Wallet has been changed."
+msgctxt "UI"
+msgid "Wallet name must be a string!"
+msgstr "La cartera ha sido cambiada."
+
+#: finance/forms/validators.py:72 finance/forms/validators.py:234
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Feedback must be a string no longer than %d characters."
+msgctxt "UI"
+msgid "Name can not be longer than %(length)s characters."
+msgstr ""
+"La retroalimentación debe ser una cadena que no tenga más de %d caracteres."
+
+#: finance/forms/validators.py:79
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "The method is not allowed in read only mode"
+msgctxt "UI"
+msgid "Character \"#\" is not allowed in wallet name."
+msgstr "El método no es permitido en modo de solo lectura"
+
+#: finance/forms/validators.py:96 finance/forms/validators.py:113
+#: finance/forms/validators.py:260 finance/forms/validators.py:279
+#: formlib/validators.py:279
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "New wallet is already set."
+msgctxt "UI"
+msgid "This name is already used."
+msgstr "La nueva cartera ya está establecida."
+
+#: finance/forms/validators.py:126
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid email format!"
+msgctxt "UI"
+msgid "Invalid address format."
+msgstr "Formato de correo electrónico inválido!"
+
+#: finance/forms/validators.py:131
+msgctxt "UI"
+msgid "Blockchain address is not supported for this coin."
+msgstr ""
+
+#: finance/forms/validators.py:153 finance/forms/validators.py:185
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "New wallet is already set."
+msgctxt "UI"
+msgid "This wallet already exists."
+msgstr "La nueva cartera ya está establecida."
+
+#: finance/forms/validators.py:164
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid email format!"
+msgctxt "UI"
+msgid "Invalid xpub format."
+msgstr "Formato de correo electrónico inválido!"
+
+#: finance/forms/validators.py:169
+msgctxt "UI"
+msgid "XPub is not supported for this coin."
+msgstr ""
+
+#: finance/forms/validators.py:199
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid email format!"
+msgctxt "UI"
+msgid "Invalid params format."
+msgstr "Formato de correo electrónico inválido!"
+
+#: finance/forms/validators.py:206
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid token!"
+msgctxt "UI"
+msgid "Invalid type."
+msgstr "Token inválido!"
+
+#: finance/forms/validators.py:219
+msgctxt "UI"
+msgid "Invalid payout account id."
+msgstr ""
+
+#: finance/forms/validators.py:229
+msgctxt "UI"
+msgid "Invalid payout account name."
+msgstr ""
+
+#: finance/forms/validators.py:241
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "The method is not allowed in read only mode"
+msgctxt "UI"
+msgid "Character \"#\" is not allowed in payout account name."
+msgstr "El método no es permitido en modo de solo lectura"
+
+#: finance/forms/validators.py:293
+#, fuzzy
+#| msgid "Enter a valid, non empty value."
+msgctxt "UI"
+msgid "Invalid payout request value."
+msgstr "Introduzca un valor válido, no vacío."
+
+#: finance/forms/validators.py:302
+msgctxt "UI"
+msgid "Payout has already been requested for this payout account."
+msgstr ""
+
+#: finance/forms/validators.py:313
+#, python-format
+msgctxt "UI"
+msgid "Account balance must be higher than %(amount)s %(unit)s."
+msgstr ""
+
+#: finance/forms/validators.py:329
+msgctxt "UI"
+msgid "There is no wallet for this payout account."
+msgstr ""
+
+#: finance/forms/validators.py:336
+msgctxt "UI"
+msgid "Payout was not requested for this payout account."
+msgstr ""
+
+#: finance/forms/validators.py:353
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid email format!"
+msgctxt "UI"
+msgid "Invalid split format."
+msgstr "Formato de correo electrónico inválido!"
+
+#: finance/forms/validators.py:357
+msgctxt "UI"
+msgid "Percentages must add up to 100 %."
+msgstr ""
+
+#: finance/forms/validators.py:363
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid label ids."
+msgctxt "UI"
+msgid "Invalid payout account ids."
+msgstr "Identificaciones de etiqueta inválidas."
+
+#: finance/forms/validators.py:370
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid date range!"
+msgctxt "UI"
+msgid "Invalid payout accounts."
+msgstr "¡Rango de fechas inválido!"
+
+#: finance/forms/validators.py:386 finance/forms/validators.py:434
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid email format!"
+msgctxt "UI"
+msgid "Invalid threshold format."
+msgstr "Formato de correo electrónico inválido!"
+
+#: finance/forms/validators.py:402
+#, python-format
+msgctxt "UI"
+msgid "Threshold must be higher than %(minimum)s %(unit)s."
+msgstr ""
+
+#: finance/forms/validators.py:411
+#, python-format
+msgctxt "UI"
+msgid "Threshold must be lower than %(minimum)s %(unit)s."
+msgstr ""
+
+#: finance/forms/validators.py:440
+msgctxt "UI"
+msgid "Invalid payout frequency."
+msgstr ""
+
+#: finance/forms/validators.py:444
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid e-mail token provided."
+msgctxt "UI"
+msgid "Invalid day in period."
+msgstr "El token de correo electrónico proporcionado es inválido."
+
+#: finance/forms/validators.py:452
+#, python-format
+msgctxt "UI"
+msgid "Day of the week must be a number between %(min)s and %(max)s."
+msgstr ""
+
+#: finance/forms/validators.py:462
+#, python-format
+msgctxt "UI"
+msgid "Day of the month must be a number between %(min)s and %(max)s."
+msgstr ""
+
+#: finance/forms/validators.py:487
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid email format!"
+msgctxt "UI"
+msgid "Invalid trigger format."
+msgstr "Formato de correo electrónico inválido!"
+
+#: finance/forms/validators.py:507
+#, python-format
+msgctxt "UI"
+msgid "Unknown trigger type \"%(type)s\"."
+msgstr ""
+
+#: finance/forms/validators.py:526
+#, python-format
+msgctxt "UI"
+msgid "Choose a %(coin)s wallet."
+msgstr ""
+
+#. Translators: type = type of address (P2PKH, P2SH, Sapling etc.)
+#: finance/utils.py:44
+#, python-format
+msgctxt "UI"
+msgid "%(type)s addresses are not supported."
+msgstr ""
+
+#: finance/utils.py:57
+msgctxt "UI"
+msgid "Unable to derive address type."
+msgstr ""
+
+#. Translators: blockchain = Mainnet or Testnet
+#: finance/utils.py:69
+#, python-format
+msgctxt "UI"
+msgid "Enter a %(blockchain)s address."
+msgstr ""
+
+#. Translators: coin = 'Bitcoin', 'Zcash' etc.
+#: finance/utils.py:82
+#, python-format
+msgctxt "UI"
+msgid "This is not a valid %(coin)s address."
+msgstr ""
+
+#: finance/utils.py:96
+#, python-format
+msgctxt "UI"
+msgid "%(coind)s: This is not a valid %(coin)s address."
+msgstr ""
+
+#: finance/utils.py:109
+#, python-format
+msgctxt "UI"
+msgid "Validation failed. %(coind)s is not connected."
+msgstr ""
+
+#: finance/utils.py:174
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Signature is not valid."
+msgctxt "UI"
+msgid "This is not a valid XPub."
+msgstr "Firma no válida."
+
+#: finance/utils.py:184
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Enter a valid username."
+msgctxt "UI"
+msgid "Enter a valid XPub."
+msgstr "Introduzca un nombre de usuario válido."
+
+#. Translators: blockchain = Mainnet or Testnet
+#: finance/utils.py:196
+#, python-format
+msgctxt "UI"
+msgid "Enter a %(blockchain)s xpub."
+msgstr ""
+
+#: formlib/core.py:24
 msgid "Authentication required!"
 msgstr "¡Autenticación requerida!"
 
-#: formlib/core.py:26
+#: formlib/core.py:28
 msgid "Missing captcha data!"
 msgstr "¡Faltan los datos del captcha!"
 
-#: formlib/core.py:30
+#: formlib/core.py:32
 msgid "Captcha validation failed."
 msgstr "La validación del captcha falló."
 
-#: formlib/core.py:34
+#: formlib/core.py:36
 msgid "Current password required!"
 msgstr "¡Contraseña actual requerida!"
 
-#: formlib/core.py:38
+#: formlib/core.py:40
 msgid "Second factor authentication required!"
 msgstr "¡Segundo factor de autenticación requerido!"
 
-#: formlib/core.py:42
+#: formlib/core.py:44
 msgid "OTP token validation failed."
 msgstr "Validación del token OTP falló."
 
-#: formlib/core.py:46
+#: formlib/core.py:48
 msgid "U2F authentication failed!"
 msgstr "¡Autenticación U2F falló!"
 
-#: formlib/core.py:50
-msgid "Current password is incorrect!"
+#: formlib/core.py:52
+#, fuzzy
+#| msgid "Current password is incorrect!"
+msgid "Password is incorrect!"
 msgstr "¡Contraseña actual es incorrecta!"
 
-#: formlib/core.py:254
+#: formlib/core.py:250
 msgctxt "UI"
 msgid "Required field!"
 msgstr "¡Campo requerido!"
+
+#: formlib/core.py:268
+#, python-format
+msgctxt "UI"
+msgid "Context value \"%s\" is missing."
+msgstr ""
+
+#: formlib/core.py:394
+#, python-format
+msgctxt "UI"
+msgid "Missing initial value %s!"
+msgstr ""
+
+#: formlib/core.py:397
+msgctxt "UI"
+msgid "Initial values were not up to date!"
+msgstr ""
+
+#: formlib/validators.py:53
+msgctxt "UI"
+msgid "Boolean value is required."
+msgstr ""
+
+#: formlib/validators.py:62 formlib/validators.py:182
+msgctxt "UI"
+msgid "Whole number is required."
+msgstr ""
+
+#: formlib/validators.py:71
+msgctxt "UI"
+msgid "Number is required."
+msgstr ""
+
+#: formlib/validators.py:80
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Points must be lower or equal than %s."
+msgctxt "UI"
+msgid "Max length must be lower than %s."
+msgstr "Los puntos deben ser menores o iguales que %s."
+
+#: formlib/validators.py:89
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Points must be greater or equal than %s."
+msgctxt "UI"
+msgid "Max length must be greater than %s."
+msgstr "Los puntos deben ser mayores o iguales que %s."
+
+#: formlib/validators.py:98
+#, python-format
+msgctxt "UI"
+msgid "Max length must be between %(lower)s and %(upper)s."
+msgstr ""
+
+#: formlib/validators.py:110
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Points must be lower or equal than %s."
+msgctxt "UI"
+msgid "Value must be lower than %s."
+msgstr "Los puntos deben ser menores o iguales que %s."
+
+#: formlib/validators.py:119
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Points must be greater or equal than %s."
+msgctxt "UI"
+msgid "Value must be greater than %s."
+msgstr "Los puntos deben ser mayores o iguales que %s."
+
+#: formlib/validators.py:129
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Wallet is not valid."
+msgctxt "UI"
+msgid "Value is not a number."
+msgstr "La cartera no es válida."
+
+#: formlib/validators.py:133
+#, python-format
+msgctxt "UI"
+msgid "Value must be between %(lower)s and %(upper)s."
+msgstr ""
+
+#: formlib/validators.py:145
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Method %s is not allowed"
+msgctxt "UI"
+msgid "This value is not allowed."
+msgstr "El método %s no está permitido"
+
+#: formlib/validators.py:154
+#, fuzzy
+#| msgid "Current password is incorrect!"
+msgctxt "UI"
+msgid "Password is incorrect."
+msgstr "¡Contraseña actual es incorrecta!"
+
+#: formlib/validators.py:185
+#, python-format
+msgctxt "UI"
+msgid "Value must be between %(lower)d and %(upper)d."
+msgstr ""
+
+#: formlib/validators.py:198
+msgctxt "UI"
+msgid "This is not a valid Bitcoin address."
+msgstr ""
+
+#: formlib/validators.py:203
+msgctxt "UI"
+msgid "Validation failed. Bitcoind is not connected."
+msgstr ""
+
+#: formlib/validators.py:205
+msgctxt "UI"
+msgid "bitcoind: This is not a valid Bitcoin address."
+msgstr ""
+
+#: formlib/validators.py:222
+msgctxt "UI"
+msgid "This is not a valid Zcash address."
+msgstr ""
+
+#: formlib/validators.py:227
+msgctxt "UI"
+msgid "Validation failed. Zcash is not connected."
+msgstr ""
+
+#: formlib/validators.py:229
+msgctxt "UI"
+msgid "zcashd: This is not a valid Zcash address."
+msgstr ""
+
+#: formlib/validators.py:238
+#, fuzzy
+#| msgctxt "UI"
+#| msgid ""
+#| "Two-factor authentication token is invalid. Please, enter valid token."
+msgctxt "UI"
+msgid "Two-factor authentication token is invalid."
+msgstr ""
+"El token de la autenticacion de dos factores es invalido. Por favor, escriba "
+"un token valido."
+
+#: formlib/validators.py:247
+msgctxt "UI"
+msgid "TOTP URI is invalid."
+msgstr ""
+
+#: formlib/validators.py:257
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Wallet is not valid."
+msgctxt "UI"
+msgid "Email is not valid."
+msgstr "La cartera no es válida."
+
+#: formlib/validators.py:277
+msgctxt "UI"
+msgid "There must always be one main Access Profile!"
+msgstr ""
+
+#: formlib/validators.py:293
+msgctxt "UI"
+msgid "You can not delete the password of the main Access Profile."
+msgstr ""
+
+#: formlib/validators.py:307 formlib/validators.py:326
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid user selection."
+msgctxt "UI"
+msgid "Invalid permissions value."
+msgstr "Selección de usuario inválida."
+
+#: formlib/validators.py:323
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "You can not change a locked wallet."
+msgctxt "UI"
+msgid "You can not change permissions of this Access Profile."
+msgstr "No puede cambiar una cartera bloqueada."
+
+#: formlib/validators.py:337
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Password must have at Least 5 characters!"
+msgctxt "UI"
+msgid "Token must have 16 characters."
+msgstr "La contraseña debe tener al menos 5 caracteres!"
+
+#: formlib/validators.py:339 formlib/validators.py:344
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid token!"
+msgctxt "UI"
+msgid "Invalid token."
+msgstr "Token inválido!"
+
+#: formlib/validators.py:354
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid label ids."
+msgctxt "UI"
+msgid "Invalid Access Profile id."
+msgstr "Identificaciones de etiqueta inválidas."
+
+#: formlib/validators.py:368
+msgctxt "UI"
+msgid "You can not deactivate your own Access Profile."
+msgstr ""
+
+#: formlib/validators.py:372
+msgctxt "UI"
+msgid "You can not deactivate the main Access Profile."
+msgstr ""
+
+#: formlib/validators.py:382
+msgctxt "UI"
+msgid "You can not delete your own Access Profile."
+msgstr ""
+
+#: formlib/validators.py:386
+msgctxt "UI"
+msgid "You can not delete the main Access Profile."
+msgstr ""
+
+#: formlib/validators.py:389
+msgctxt "UI"
+msgid "You can not delete staff Access Profile."
+msgstr ""
 
 #: help/help_categories.py:41
 msgid "Introduction to Mining"
 msgstr "Introducción a la Minería"
 
-#: help/help_categories.py:46 help/templates/help/bitcoin-setup.html:10
+#: help/help_categories.py:46 help/templates/help/bitcoin-setup.html:9
 msgid "Bitcoin Setup"
 msgstr "Configuración Bitcoin"
 
-#: help/help_categories.py:51 help/templates/help/zcash-setup.html:8
+#: help/help_categories.py:51 help/templates/help/zcash-setup.html:7
 msgid "Zcash Setup"
 msgstr "Configuración Zcash"
 
-#: help/help_categories.py:56 help/templates/help/rewards-payouts.html:7
+#: help/help_categories.py:56 help/templates/help/rewards-payouts.html:4
 msgid "Rewards & Payouts"
 msgstr "Recompensas & Pagos"
 
@@ -494,18 +1421,6 @@ msgstr "Aplicación Móvil"
 #: help/help_categories.py:91 help/templates/help/api.html:3
 msgid "API Guide"
 msgstr "Guía de la API"
-
-#: help/help_categories.py:96
-msgid "Hash Rate Proof"
-msgstr "Prueba de Hashrate"
-
-#: help/help_categories.py:101
-msgid "Stratum Protocol"
-msgstr "Protocolo Stratum"
-
-#: help/help_categories.py:106
-msgid "Stratum Mining Proxy"
-msgstr "Proxy Stratum de Minería"
 
 #: help/help_categories.py:119
 msgid "Getting started"
@@ -627,257 +1542,264 @@ msgstr ""
 "de tiempo más largo, su dirección IP puede ser bloqueada. Si ese es el caso, "
 "contáctenos para resolver la situación."
 
-#: help/templates/help/api.html:30
+#: help/templates/help/api.html:31
 msgid "Pool Stats API"
 msgstr "API de Estadísticas del Pool"
 
-#: help/templates/help/api.html:32
+#: help/templates/help/api.html:33
 msgid "Provides information about pool performance and recently found blocks."
 msgstr ""
 "Proporciona información sobre el rendimiento del Pool y los bloques "
 "recientemente encontrados."
 
-#: help/templates/help/api.html:33 help/templates/help/api.html:191
-#: help/templates/help/api.html:308 help/templates/help/bitcoin-setup.html:42
-#: help/templates/help/bitcoin-setup.html:104
-#: help/templates/help/zcash-setup.html:33
-#: help/templates/help/zcash-setup.html:82
+#: help/templates/help/api.html:34 help/templates/help/api.html:192
+#: help/templates/help/api.html:315 help/templates/help/bitcoin-setup.html:45
+#: help/templates/help/bitcoin-setup.html:111
+#: help/templates/help/zcash-setup.html:32
+#: help/templates/help/zcash-setup.html:81
 msgid "URL:"
 msgstr "URL:"
 
-#: help/templates/help/api.html:39 help/templates/help/api.html:197
-#: help/templates/help/api.html:314
+#: help/templates/help/api.html:40 help/templates/help/api.html:198
+#: help/templates/help/api.html:321
 msgid "Show sample output"
 msgstr "Mostrar salida de prueba"
 
-#: help/templates/help/api.html:72
+#: help/templates/help/api.html:73
 msgid "General Pool Stats"
 msgstr "Estadísticas Generales del Pool"
 
-#: help/templates/help/api.html:77 help/templates/help/api.html:140
-#: help/templates/help/api.html:227 help/templates/help/api.html:350
+#: help/templates/help/api.html:78 help/templates/help/api.html:141
+#: help/templates/help/api.html:229 help/templates/help/api.html:357
 msgid "Field"
 msgstr "Campo"
 
-#: help/templates/help/api.html:78 help/templates/help/api.html:141
-#: help/templates/help/api.html:228 help/templates/help/api.html:351
+#: help/templates/help/api.html:79 help/templates/help/api.html:142
+#: help/templates/help/api.html:230 help/templates/help/api.html:358
 msgid "Type"
 msgstr "Tipo"
 
-#: help/templates/help/api.html:79 help/templates/help/api.html:142
-#: help/templates/help/api.html:229 help/templates/help/api.html:352
+#: help/templates/help/api.html:80 help/templates/help/api.html:143
+#: help/templates/help/api.html:231 help/templates/help/api.html:359
 msgid "Description"
 msgstr "Descripción"
 
-#: help/templates/help/api.html:83 help/templates/help/api.html:88
-#: help/templates/help/api.html:93 help/templates/help/api.html:98
-#: help/templates/help/api.html:113 help/templates/help/api.html:161
-#: help/templates/help/api.html:171 help/templates/help/api.html:176
-#: help/templates/help/api.html:233 help/templates/help/api.html:238
-#: help/templates/help/api.html:243 help/templates/help/api.html:248
-#: help/templates/help/api.html:253 help/templates/help/api.html:258
-#: help/templates/help/api.html:361 help/templates/help/api.html:366
+#: help/templates/help/api.html:84 help/templates/help/api.html:89
+#: help/templates/help/api.html:94 help/templates/help/api.html:99
+#: help/templates/help/api.html:114 help/templates/help/api.html:162
+#: help/templates/help/api.html:172 help/templates/help/api.html:177
+#: help/templates/help/api.html:235 help/templates/help/api.html:240
+#: help/templates/help/api.html:245 help/templates/help/api.html:250
+#: help/templates/help/api.html:255 help/templates/help/api.html:260
+#: help/templates/help/api.html:368 help/templates/help/api.html:373
 msgid "string"
 msgstr "cadena de caracteres"
 
-#: help/templates/help/api.html:84
+#: help/templates/help/api.html:85
 msgid "pool luck for the last ten blocks"
 msgstr "suerte del pool en los últimos diez bloques"
 
-#: help/templates/help/api.html:89
+#: help/templates/help/api.html:90
 msgid "pool luck for the last 50 blocks"
 msgstr "suerte del pool en los últimos 50 bloques"
 
-#: help/templates/help/api.html:94
+#: help/templates/help/api.html:95
 msgid "pool luck for the last 250 blocks"
 msgstr "suerte del pool en los últimos 250 bloques"
 
-#: help/templates/help/api.html:99 help/templates/help/api.html:259
-#: help/templates/help/api.html:367
+#: help/templates/help/api.html:100 help/templates/help/api.html:261
+#: help/templates/help/api.html:374
 msgid "unit used for the hash rate values"
 msgstr "unidad utilizada para los valores de hashrate"
 
-#: help/templates/help/api.html:103 help/templates/help/api.html:108
-#: help/templates/help/api.html:118 help/templates/help/api.html:123
-#: help/templates/help/api.html:146 help/templates/help/api.html:151
-#: help/templates/help/api.html:156 help/templates/help/api.html:166
-#: help/templates/help/api.html:181 help/templates/help/api.html:263
-#: help/templates/help/api.html:268 help/templates/help/api.html:273
-#: help/templates/help/api.html:278 help/templates/help/api.html:283
-#: help/templates/help/api.html:288 help/templates/help/api.html:293
-#: help/templates/help/api.html:298 help/templates/help/api.html:356
-#: help/templates/help/api.html:371 help/templates/help/api.html:376
-#: help/templates/help/api.html:381 help/templates/help/api.html:386
+#: help/templates/help/api.html:104 help/templates/help/api.html:109
+#: help/templates/help/api.html:119 help/templates/help/api.html:124
+#: help/templates/help/api.html:147 help/templates/help/api.html:152
+#: help/templates/help/api.html:157 help/templates/help/api.html:167
+#: help/templates/help/api.html:182 help/templates/help/api.html:265
+#: help/templates/help/api.html:270 help/templates/help/api.html:275
+#: help/templates/help/api.html:280 help/templates/help/api.html:285
+#: help/templates/help/api.html:290 help/templates/help/api.html:295
+#: help/templates/help/api.html:300 help/templates/help/api.html:305
+#: help/templates/help/api.html:363 help/templates/help/api.html:378
+#: help/templates/help/api.html:383 help/templates/help/api.html:388
+#: help/templates/help/api.html:393
 msgid "number"
 msgstr "número"
 
-#: help/templates/help/api.html:104
+#: help/templates/help/api.html:105
 msgid "pool scoring hash rate"
 msgstr "hashrate ponderado del pool"
 
-#: help/templates/help/api.html:109
+#: help/templates/help/api.html:110
 msgid "number of pool active workers"
 msgstr "número de equipos de minería activos del pool"
 
-#: help/templates/help/api.html:114
+#: help/templates/help/api.html:115
 msgid "current CDF for the current round"
 msgstr "CDF vigente para la ronda actual"
 
-#: help/templates/help/api.html:119
+#: help/templates/help/api.html:120
 msgid "Unix time when the current round was started"
 msgstr "Tiempo Unix cuando la ronda actual fue iniciada"
 
-#: help/templates/help/api.html:124
+#: help/templates/help/api.html:125
 msgid "duration of the current round (seconds)"
 msgstr "duración de la ronda actual (segundos)"
 
-#: help/templates/help/api.html:129
+#: help/templates/help/api.html:130
 msgid "information for the last 15 blocks (breakdown below)"
 msgstr "información de los últimos 15 bloques (detalle abajo)"
 
-#: help/templates/help/api.html:135
+#: help/templates/help/api.html:136
 msgid "Latest Blocks"
 msgstr "Bloques más recientes"
 
-#: help/templates/help/api.html:147
+#: help/templates/help/api.html:148
 msgid "Unix time when given block was found"
 msgstr "Tiempo Unix cuando se encontró el bloque dado"
 
-#: help/templates/help/api.html:152
+#: help/templates/help/api.html:153
 msgid "duration of the round leading to given block"
 msgstr "duración de la ronda que conduce al bloque dado"
 
-#: help/templates/help/api.html:157
+#: help/templates/help/api.html:158
 msgid "number of shares collected during the round"
 msgstr "número de participaciones recaudadas durante la ronda"
 
-#: help/templates/help/api.html:162
+#: help/templates/help/api.html:163
 msgid "state of given block"
 msgstr "estado del bloque dado"
 
-#: help/templates/help/api.html:167
+#: help/templates/help/api.html:168
 msgid "number of confirmations left"
 msgstr "número de confirmaciones restantes"
 
-#: help/templates/help/api.html:172
+#: help/templates/help/api.html:173
 msgid "block value"
 msgstr "valor del bloque"
 
-#: help/templates/help/api.html:177
+#: help/templates/help/api.html:178
 msgid "user reward for the given block"
 msgstr "recompensa del usuario para el bloque dado"
 
-#: help/templates/help/api.html:182
+#: help/templates/help/api.html:183
 msgid "pool scoring hash rate at the time when block was found"
 msgstr "hashrate ponderado del pool al momento en que el bloque fue encontrado"
 
-#: help/templates/help/api.html:188
+#: help/templates/help/api.html:189
 msgid "User Profile API"
 msgstr "API del Perfil de Usuario"
 
-#: help/templates/help/api.html:190
+#: help/templates/help/api.html:191
 msgid "Provides information about users performance and rewards."
 msgstr ""
 "Proporciona información sobre rendimiento y recompensas de los usuarios."
 
-#: help/templates/help/api.html:234
+#: help/templates/help/api.html:236
 msgid "username"
 msgstr "nombre de usuario"
 
-#: help/templates/help/api.html:239
+#: help/templates/help/api.html:241
 msgid "confirmed reward"
 msgstr "recompensa confirmada"
 
-#: help/templates/help/api.html:244
+#: help/templates/help/api.html:246
 msgid "unconfirmed reward"
 msgstr "recompensa no confirmada"
 
-#: help/templates/help/api.html:249
+#: help/templates/help/api.html:251
 msgid "estimated reward for the current block"
 msgstr "recompensa estimada para el bloque actual"
 
-#: help/templates/help/api.html:254
+#: help/templates/help/api.html:256
 msgid "user minimum payout threshold"
 msgstr "umbral de pago mínimo del usuario"
 
-#: help/templates/help/api.html:264 help/templates/help/api.html:377
+#: help/templates/help/api.html:266 help/templates/help/api.html:384
 msgid "average hash rate for the last 5 minutes"
 msgstr "hashrate promedio durante los últimos 5 minutos"
 
-#: help/templates/help/api.html:269 help/templates/help/api.html:382
+#: help/templates/help/api.html:271 help/templates/help/api.html:389
 msgid "average hash rate for the last 60 minutes"
 msgstr "hashrate promedio durante los últimos 60 minutos"
 
-#: help/templates/help/api.html:274 help/templates/help/api.html:387
+#: help/templates/help/api.html:276 help/templates/help/api.html:394
 msgid "average hash rate for the last 24 hours"
 msgstr "hashrate promedio durante las últimas 24 horas"
 
-#: help/templates/help/api.html:279
+#: help/templates/help/api.html:281
 msgid "user current scoring hash rate"
 msgstr "hashrate ponderado actual del usuario"
 
-#: help/templates/help/api.html:284
+#: help/templates/help/api.html:286
+#, fuzzy
+#| msgid "average hash rate for the last 24 hours"
+msgid "average hash rate for the previous UTC day"
+msgstr "hashrate promedio durante las últimas 24 horas"
+
+#: help/templates/help/api.html:291
 msgid "number of workers with 'low' state"
 msgstr "número de equipos de minería con estado 'bajo'"
 
-#: help/templates/help/api.html:289
+#: help/templates/help/api.html:296
 msgid "number of workers with 'off' state"
 msgstr "número de equipos de minería con estado 'apagado'"
 
-#: help/templates/help/api.html:294
+#: help/templates/help/api.html:301
 msgid "number of workers with 'ok' state"
 msgstr "número de equipos de minería con estado 'ok'"
 
-#: help/templates/help/api.html:299
+#: help/templates/help/api.html:306
 msgid "number of workers with disabled monitoring"
 msgstr "número de equipos de minería con monitoreo desactivado"
 
-#: help/templates/help/api.html:305
+#: help/templates/help/api.html:312
 msgid "Worker API"
 msgstr "API del equipo de minería"
 
-#: help/templates/help/api.html:307
+#: help/templates/help/api.html:314
 msgid "Provides performance data for each one of users worker."
 msgstr ""
 "Proporciona datos de rendimiento para cada uno de los equipos de minería de "
 "los usuarios."
 
-#: help/templates/help/api.html:357
+#: help/templates/help/api.html:364
 msgid "Unix time of the last accepted share"
 msgstr "tiempo Unix de la última participación aceptada"
 
-#: help/templates/help/api.html:362
+#: help/templates/help/api.html:369
 msgid "state of the worker (ok/low/off/dis)"
 msgstr "estado del equipo de minería (ok/bajo/apagado/desactivado)"
 
-#: help/templates/help/api.html:372
+#: help/templates/help/api.html:379
 msgid "current scoring hash rate"
 msgstr "hashrate ponderado actual"
 
-#: help/templates/help/bitcoin-setup.html:12
-#: help/templates/help/zcash-setup.html:10
+#: help/templates/help/bitcoin-setup.html:11
+#: help/templates/help/zcash-setup.html:9
 msgid "Get suitable hardware"
 msgstr "Obtener hardware adecuado"
 
-#: help/templates/help/bitcoin-setup.html:15
+#: help/templates/help/bitcoin-setup.html:14
 msgid "Bitcoin <span>can</span> be efficiently mined with:"
 msgstr "Bitcoin <span>puede</span> ser eficientemente minado con:"
 
-#: help/templates/help/bitcoin-setup.html:15
+#: help/templates/help/bitcoin-setup.html:14
 msgid "ASIC (SHA-256 algorithm)"
 msgstr "ASIC (algoritmo SHA-256)"
 
-#: help/templates/help/bitcoin-setup.html:17
+#: help/templates/help/bitcoin-setup.html:16
 msgid "Bitcoin <span>cannot</span> be efficiently mined with (unsupported):"
 msgstr ""
 "Bitcoin <span>no puede</span> ser eficientemente minado con (no compatible):"
 
-#: help/templates/help/bitcoin-setup.html:17
+#: help/templates/help/bitcoin-setup.html:16
 msgid "GPU, CPU, mobile phone"
 msgstr "GPU, CPU, teléfono móvil"
 
-#: help/templates/help/bitcoin-setup.html:20
-#: help/templates/help/zcash-setup.html:17
+#: help/templates/help/bitcoin-setup.html:19
+#: help/templates/help/zcash-setup.html:16
 msgid ""
 "While mining with unsupported hardware might be possible, it will almost "
 "certainly be unprofitable. Also, keep in mind that our support team will not "
@@ -887,13 +1809,13 @@ msgstr ""
 "seguro que no será rentable. Además, tenga en cuenta que nuestro equipo de "
 "soporte no resolverá problemas relacionados con el hardware no compatible."
 
-#: help/templates/help/bitcoin-setup.html:22
-#: help/templates/help/zcash-setup.html:19
+#: help/templates/help/bitcoin-setup.html:21
+#: help/templates/help/zcash-setup.html:18
 msgid "Sign-up for a Slush Pool account"
 msgstr "Regístrese para obtener una cuenta de Slush Pool"
 
-#: help/templates/help/bitcoin-setup.html:23
-#: help/templates/help/zcash-setup.html:20
+#: help/templates/help/bitcoin-setup.html:22
+#: help/templates/help/zcash-setup.html:19
 msgid ""
 "You can use an existing account if you have one. A single account can be "
 "used to mine all supported cryptocurrencies."
@@ -901,25 +1823,25 @@ msgstr ""
 "Puedes usar una cuenta existente, si tienes una. Se puede utilizar una sola "
 "cuenta para minar todas las criptomonedas soportadas."
 
-#: help/templates/help/bitcoin-setup.html:26
-#: help/templates/help/zcash-setup.html:23
+#: help/templates/help/bitcoin-setup.html:25
+#: help/templates/help/zcash-setup.html:22
 #, python-format
 msgid "<a href=\"%(signup)s\">Sign-up</a> and wait for the confirmation email."
 msgstr ""
 "<a href=\"%(signup)s\">Regístrese</a> y espere el email de confirmación."
 
-#: help/templates/help/bitcoin-setup.html:29
+#: help/templates/help/bitcoin-setup.html:28
 #, python-format
 msgid "<a href=\"%(login)s\">Log into</a> your account."
 msgstr "<a href=\"%(login)s\">Ingrese</a> a su cuenta."
 
-#: help/templates/help/bitcoin-setup.html:33
-#: help/templates/help/zcash-setup.html:27
+#: help/templates/help/bitcoin-setup.html:32
+#: help/templates/help/zcash-setup.html:26
 msgid "Configure your mining device"
 msgstr "Configure su dispositivo de minería"
 
-#: help/templates/help/bitcoin-setup.html:35
-#: help/templates/help/zcash-setup.html:28
+#: help/templates/help/bitcoin-setup.html:34
+#: help/templates/help/zcash-setup.html:27
 msgid ""
 "Individual hardware manufacturers may have specific settings requirements "
 "and different settings interfaces. Please follow their official "
@@ -931,8 +1853,17 @@ msgstr ""
 "favor, siga su documentación oficial al configurar sus mineros. Esto también "
 "se aplica a los servicios de minería en la nube."
 
-#: help/templates/help/bitcoin-setup.html:38
-#: help/templates/help/zcash-setup.html:30
+#: help/templates/help/bitcoin-setup.html:37
+msgid ""
+"Braiins OS+ is our per-chip autotuning firmware that optimizes the "
+"frequencies on every hashing chip to give you the maximum possible hashrate "
+"with a given power input. Visit <a href=\"httpp://braiins-os.com?"
+"utm_source=SlushPool&utm_medium=HelpBitcoinSetup\" target=\"_blank\" rel="
+"\"noreferrer noopener\">braiins-os.com</a> to learn more."
+msgstr ""
+
+#: help/templates/help/bitcoin-setup.html:41
+#: help/templates/help/zcash-setup.html:29
 msgid ""
 "Your miner must be connected to one of our pool servers listed below. "
 "Remember to configure the user credentials to your account."
@@ -941,8 +1872,8 @@ msgstr ""
 "enumerados a continuación. Recuerde configurar las credenciales de usuario "
 "para su cuenta."
 
-#: help/templates/help/bitcoin-setup.html:38
-#: help/templates/help/zcash-setup.html:30
+#: help/templates/help/bitcoin-setup.html:41
+#: help/templates/help/zcash-setup.html:29
 msgid ""
 "The login credentials needed for your miner look like this (please change "
 "<span class=\"red\">userName</span> and <span class=\"green\">workerName</"
@@ -953,37 +1884,37 @@ msgstr ""
 "\"green\">nombreEquipoMinería</span> de acuerdo con la información de su "
 "cuenta):"
 
-#: help/templates/help/bitcoin-setup.html:43
-#: help/templates/help/bitcoin-setup.html:105
-#: help/templates/help/zcash-setup.html:34
-#: help/templates/help/zcash-setup.html:83
+#: help/templates/help/bitcoin-setup.html:46
+#: help/templates/help/bitcoin-setup.html:112
+#: help/templates/help/zcash-setup.html:33
+#: help/templates/help/zcash-setup.html:82
 msgid "userID:"
 msgstr "usuarioID:"
 
-#: help/templates/help/bitcoin-setup.html:43
-#: help/templates/help/zcash-setup.html:34
+#: help/templates/help/bitcoin-setup.html:46
+#: help/templates/help/zcash-setup.html:33
 msgid "userName"
 msgstr "nombreUsuario"
 
-#: help/templates/help/bitcoin-setup.html:43
-#: help/templates/help/zcash-setup.html:34
+#: help/templates/help/bitcoin-setup.html:46
+#: help/templates/help/zcash-setup.html:33
 msgid "workerName"
 msgstr "nombreEquipoMinería"
 
-#: help/templates/help/bitcoin-setup.html:44
-#: help/templates/help/bitcoin-setup.html:106
-#: help/templates/help/zcash-setup.html:35
-#: help/templates/help/zcash-setup.html:84
+#: help/templates/help/bitcoin-setup.html:47
+#: help/templates/help/bitcoin-setup.html:113
+#: help/templates/help/zcash-setup.html:34
+#: help/templates/help/zcash-setup.html:83
 msgid "password:"
 msgstr "contraseña:"
 
-#: help/templates/help/bitcoin-setup.html:44
-#: help/templates/help/zcash-setup.html:35
+#: help/templates/help/bitcoin-setup.html:47
+#: help/templates/help/zcash-setup.html:34
 msgid "anything"
 msgstr "algo"
 
-#: help/templates/help/bitcoin-setup.html:47
-#: help/templates/help/zcash-setup.html:38
+#: help/templates/help/bitcoin-setup.html:50
+#: help/templates/help/zcash-setup.html:37
 msgid ""
 "workerName is optional—it is fine if you do not provide any. In this case, "
 "our system will automatically create an <strong>auto worker</strong> for "
@@ -996,8 +1927,8 @@ msgstr ""
 "dispositivo de minería con un nombreEquipoMinería separado para un monitoreo "
 "eficiente."
 
-#: help/templates/help/bitcoin-setup.html:49
-#: help/templates/help/zcash-setup.html:39
+#: help/templates/help/bitcoin-setup.html:52
+#: help/templates/help/zcash-setup.html:38
 msgid ""
 "Slush Pool servers are located all around the world. <strong>For better "
 "connection and lower latency</strong>, please use one of the location-"
@@ -1007,55 +1938,66 @@ msgstr ""
 "una mejor conexión y menor latencia</strong>, por favor use una de las URL "
 "específicas a la ubicación en lugar de la URL general."
 
-#: help/templates/help/bitcoin-setup.html:56
-#: help/templates/help/zcash-setup.html:46
+#: help/templates/help/bitcoin-setup.html:59
+#: help/templates/help/bitcoin-setup.html:131
+#: help/templates/help/zcash-setup.html:45
 msgid "Servers Location"
 msgstr "Ubicación de Servidores"
 
-#: help/templates/help/bitcoin-setup.html:57
-#: help/templates/help/zcash-setup.html:47
+#: help/templates/help/bitcoin-setup.html:60
+#: help/templates/help/bitcoin-setup.html:132
+#: help/templates/help/zcash-setup.html:46
 msgid "URL"
 msgstr "URL"
 
-#: help/templates/help/bitcoin-setup.html:62
-#: help/templates/help/zcash-setup.html:52
+#: help/templates/help/bitcoin-setup.html:65
+#: help/templates/help/bitcoin-setup.html:137
+#: help/templates/help/zcash-setup.html:51
 msgid "<strong>General</strong>"
 msgstr "<strong>General</strong>"
 
-#: help/templates/help/bitcoin-setup.html:66
-#: help/templates/help/zcash-setup.html:60
+#: help/templates/help/bitcoin-setup.html:69
+#: help/templates/help/bitcoin-setup.html:143
+#: help/templates/help/zcash-setup.html:59
 msgid "<strong>Europe</strong>"
 msgstr "<strong>Europa</strong>"
 
-#: help/templates/help/bitcoin-setup.html:70
-#: help/templates/help/zcash-setup.html:56
+#: help/templates/help/bitcoin-setup.html:73
+#: help/templates/help/bitcoin-setup.html:149
+#: help/templates/help/zcash-setup.html:55
 msgid "<strong>USA</strong>, East Coast"
 msgstr "<strong>USA</strong>, Costa Este"
 
-#: help/templates/help/bitcoin-setup.html:74
+#: help/templates/help/bitcoin-setup.html:77
 msgid "<strong>Canada</strong>"
 msgstr "<strong>Canadá</strong>"
 
-#: help/templates/help/bitcoin-setup.html:78
+#: help/templates/help/bitcoin-setup.html:81
 msgid "<strong>Singapore</strong>, South Asia"
 msgstr "<strong>Singapur</strong>, Sur de Asia"
 
-#: help/templates/help/bitcoin-setup.html:82
+#: help/templates/help/bitcoin-setup.html:85
 msgid "<strong>Japan</strong>, Pacific"
 msgstr "<strong>Japón</strong>, Pacífico"
 
-#: help/templates/help/bitcoin-setup.html:86
-#: help/templates/help/zcash-setup.html:64
+#: help/templates/help/bitcoin-setup.html:89
+#: help/templates/help/zcash-setup.html:63
 msgid "<strong>China</strong>, mainland"
 msgstr "<strong>China</strong>, continente"
 
 #: help/templates/help/bitcoin-setup.html:100
-#: help/templates/help/zcash-setup.html:79
+#: help/templates/help/bitcoin-setup.html:155
+#, fuzzy
+msgid "<strong>Russia</strong>, Moscow"
+msgstr "Configuración de la cuenta"
+
+#: help/templates/help/bitcoin-setup.html:107
+#: help/templates/help/zcash-setup.html:78
 msgid "Example configuration"
 msgstr "Ejemplo de configuración"
 
-#: help/templates/help/bitcoin-setup.html:101
-#: help/templates/help/zcash-setup.html:80
+#: help/templates/help/bitcoin-setup.html:108
+#: help/templates/help/zcash-setup.html:79
 msgid ""
 "Let's say there is a miner with username <strong>bigMiner</strong> and his "
 "worker is named <strong>strongDevice</strong>. Moreover this miner "
@@ -1068,18 +2010,54 @@ msgstr ""
 "<strong>servidores europeos</strong>, la información de configuración para "
 "este minero se vería así:"
 
-#: help/templates/help/bitcoin-setup.html:106
-#: help/templates/help/zcash-setup.html:84
+#: help/templates/help/bitcoin-setup.html:113
+#: help/templates/help/zcash-setup.html:83
 msgid "anything123"
 msgstr "algo123"
 
-#: help/templates/help/bitcoin-setup.html:109
-#: help/templates/help/zcash-setup.html:86
+#: help/templates/help/bitcoin-setup.html:120
+msgid "How to connect to a Stratum V2 endpoint"
+msgstr ""
+
+#: help/templates/help/bitcoin-setup.html:123
+msgid ""
+"<a href=\"https://stratumprotocol.org/?"
+"utm_source=SlushPool&utm_medium=HelpBitcoinSetup\">Stratum V2</a> is a new "
+"protocol for pooled mining that we developed in collaboration with Bitcoin "
+"developer Matt Corallo. It improves efficiency, prevents man-in-the-middle "
+"attacks, and will eventually enable miners to work on their own block "
+"templates. Stratum V2 is implemented in our firmware, Braiins OS and <a href="
+"\"https://braiins-os.com/plus?"
+"utm_source=SlushPool&utm_medium=HelpBitcoinSetup\">Braiins OS+</a>, and will "
+"be the new open standard in mining. However, it is still possible to mine "
+"with Stratum V1 if you prefer."
+msgstr ""
+
+#: help/templates/help/bitcoin-setup.html:124
+msgid ""
+"You don't have to specify an explicit port for Stratum V2 on Slush Pool. The "
+"reason is that the protocol is still in development and we alternate between "
+"two default ports (3336 and 3337) across protocol upgrades. Simply use a "
+"Stratum V2 URL for your pool URL and it will work the same as a V1 URL."
+msgstr ""
+
+#: help/templates/help/bitcoin-setup.html:125
+msgid ""
+"However, there is a new required element of the URL in the path and that is "
+"the public key advertised by the pool that the mining software uses to "
+"verify the authenticity of the mining endpoint that it connects to. This "
+"prevents man-in-the-middle-attacks that attempt to steal hashrate. Any such "
+"attempt results in failed verification and the software refuses to use the "
+"given pool entry."
+msgstr ""
+
+#: help/templates/help/bitcoin-setup.html:166
+#: help/templates/help/zcash-setup.html:85
 msgid "Register your payout address"
 msgstr "Registre su dirección de pago"
 
-#: help/templates/help/bitcoin-setup.html:111
-#: help/templates/help/zcash-setup.html:87
+#: help/templates/help/bitcoin-setup.html:168
+#: help/templates/help/zcash-setup.html:86
 msgid ""
 "To collect your reward you have to set up a payout address in the "
 "<em>Settings > selected coin > Payouts</em> menu. Once you reach the minimum "
@@ -1089,8 +2067,8 @@ msgstr ""
 "<em>Ajustes > moneda seleccionada > Pagos</em>. Una vez que alcance el "
 "umbral mínimo, <strong>sus recompensas serán enviadas allí</strong>."
 
-#: help/templates/help/bitcoin-setup.html:111
-#: help/templates/help/zcash-setup.html:87
+#: help/templates/help/bitcoin-setup.html:168
+#: help/templates/help/zcash-setup.html:86
 msgid ""
 "You can start mining even without this address being registered, but it is "
 "highly recommended that you register it straight away."
@@ -1098,8 +2076,8 @@ msgstr ""
 "Puede comenzar a minar incluso sin que registre esta dirección, pero es muy "
 "recomendable que la registre de inmediato."
 
-#: help/templates/help/bitcoin-setup.html:114
-#: help/templates/help/zcash-setup.html:88
+#: help/templates/help/bitcoin-setup.html:171
+#: help/templates/help/zcash-setup.html:87
 #, python-format
 msgid ""
 "If you do not have an address yet, you need to get a wallet first. We "
@@ -1109,19 +2087,19 @@ msgstr ""
 "Recomendamos la <a %(trezor)s>Cartera Hardware Trezor</a> para máxima "
 "seguridad."
 
-#: help/templates/help/bitcoin-setup.html:114
+#: help/templates/help/bitcoin-setup.html:171
 #, python-format
 msgid "Other usable wallets are listed on <a %(bitcoin)s>Bitcoin.org</a>."
 msgstr ""
 "Otras carteras utilizables se enumeran en <a %(bitcoin)s>Bitcoin.org</a>."
 
-#: help/templates/help/bitcoin-setup.html:116
-#: help/templates/help/zcash-setup.html:90
+#: help/templates/help/bitcoin-setup.html:173
+#: help/templates/help/zcash-setup.html:89
 msgid "Check if you are mining"
 msgstr "Compruebe si está minando"
 
-#: help/templates/help/bitcoin-setup.html:118
-#: help/templates/help/zcash-setup.html:91
+#: help/templates/help/bitcoin-setup.html:175
+#: help/templates/help/zcash-setup.html:90
 msgid ""
 "Open your <em>Dashboard</em> and select the coin that you are mining from "
 "the drop-down list located in the top center section of the page. Then check "
@@ -1132,8 +2110,8 @@ msgstr ""
 "página. Luego, verifique su hashrate en la sección del gráfico <em>Hashrate "
 "Reciente</em> a continuación."
 
-#: help/templates/help/bitcoin-setup.html:118
-#: help/templates/help/zcash-setup.html:91
+#: help/templates/help/bitcoin-setup.html:175
+#: help/templates/help/zcash-setup.html:90
 msgid ""
 "<strong>Please be patient</strong>; it can take up to an hour until you see "
 "the full hashing power of your newly connected device."
@@ -1325,6 +2303,22 @@ msgstr ""
 "<a href=\"%(signup)s\">Configure una cuenta</a> en Slush Pool y configure "
 "sus mineros de acuerdo con nuestras guías."
 
+#: help/templates/help/mining-proxy.html:8
+msgid ""
+"There are now multiple options for stratum proxies. In addition to the "
+"original stratum proxy, there are also translation proxies for <a href="
+"\"https://stratumprotocol.org/?utm_source=SlushPool&utm_medium=HelpProxy"
+"\">Stratum V2</a> and Stratum V1 to be used together. For example, you can "
+"run a Stratum V2 implementation on your mining devices and still connect to "
+"a pool that only has Stratum V1 by using a V2 -> V1 translation proxy. These "
+"proxies can be found on the <a href=\"https://github.com/braiins/braiins"
+"\">Braiins monorepo</a>."
+msgstr ""
+
+#: help/templates/help/mining-proxy.html:9
+msgid "The documentation for the original Stratum (V1) proxy is below."
+msgstr ""
+
 #: help/templates/help/mobile-app.html:7
 msgid ""
 "Download the official application for Slush Pool for free – available for "
@@ -1444,16 +2438,16 @@ msgstr ""
 "Todas las opciones de gestión de dispositivos se pueden encontrar en el menú "
 "<em>Configuración > Dispositivos</em>."
 
-#: help/templates/help/monitoring.html:9
+#: help/templates/help/monitoring.html:8
 msgctxt "UI"
 msgid "Device <span>Monitoring</span>"
 msgstr "<span>Monitoreo</span> del dispositivo"
 
-#: help/templates/help/monitoring.html:11
+#: help/templates/help/monitoring.html:10
 msgid "Why should I care?"
 msgstr "¿Por qué debería importarme?"
 
-#: help/templates/help/monitoring.html:12
+#: help/templates/help/monitoring.html:11
 msgid ""
 "Since mining is usually considered as an investment, we believe that "
 "monitoring should be an essential part of your mining operation. Although "
@@ -1466,7 +2460,7 @@ msgstr ""
 "monitoreo, pueden administrarse mejor con algunas herramientas simples que "
 "hemos desarrollado hasta ahora."
 
-#: help/templates/help/monitoring.html:14
+#: help/templates/help/monitoring.html:13
 msgid ""
 "Monitoring helps you supervise how your miners work in time and minimizes "
 "losses caused by connection issues or mining hardware/software failures."
@@ -1475,11 +2469,11 @@ msgstr ""
 "minimiza las pérdidas causadas por problemas de conexión o fallas de "
 "hardware/software de minería."
 
-#: help/templates/help/monitoring.html:17
+#: help/templates/help/monitoring.html:16
 msgid "How can monitoring help?"
 msgstr "¿Cómo el monitoreo puede ayudar?"
 
-#: help/templates/help/monitoring.html:18
+#: help/templates/help/monitoring.html:17
 msgid ""
 "Monitoring allows you to be alerted once a mining device starts misbehaving. "
 "Notifications are sent via e-mail or in your mobile app. E.g. there are "
@@ -1494,27 +2488,27 @@ msgstr ""
 "más rápido</strong>, por lo tanto, <strong>minimizar el impacto financiero</"
 "strong> de la interrupción."
 
-#: help/templates/help/monitoring.html:20
+#: help/templates/help/monitoring.html:19
 msgid "Outages may typically have the following causes:"
 msgstr "Las interrupciones suelen tener las siguientes causas:"
 
-#: help/templates/help/monitoring.html:22
+#: help/templates/help/monitoring.html:21
 msgid "Internet connectivity issues"
 msgstr "Problemas de conectividad a Internet"
 
-#: help/templates/help/monitoring.html:23
+#: help/templates/help/monitoring.html:22
 msgid "Hardware power-supply failures"
 msgstr "Fallos de la fuente de poder del hardware"
 
-#: help/templates/help/monitoring.html:24
+#: help/templates/help/monitoring.html:23
 msgid "Mining hardware overheating"
 msgstr "Sobrecalentamiento del hardware de minería"
 
-#: help/templates/help/monitoring.html:25
+#: help/templates/help/monitoring.html:24
 msgid "Mining software issues"
 msgstr "Problemas con el software de minería"
 
-#: help/templates/help/monitoring.html:27
+#: help/templates/help/monitoring.html:26
 msgid ""
 "Below you can find simple step-by-step instructions how to setup monitoring "
 "in order to keep track of how your mining equipment is doing."
@@ -1523,11 +2517,11 @@ msgstr ""
 "el monitoreo con el fin de realizar un seguimiento de cómo su equipo de "
 "minería está trabajando."
 
-#: help/templates/help/monitoring.html:29
+#: help/templates/help/monitoring.html:28
 msgid "How to enable monitoring?"
 msgstr "¿Cómo activar el monitoreo?"
 
-#: help/templates/help/monitoring.html:31
+#: help/templates/help/monitoring.html:30
 #, python-format
 msgid ""
 "Enable sending monitoring emails <em>(Settings > selected coin > "
@@ -1537,13 +2531,13 @@ msgstr ""
 "moneda seleccionada > Monitoreo)</em> o notificaciones (<a href=\"%(app)s"
 "\">aplicación móvil</a>)."
 
-#: help/templates/help/monitoring.html:32
+#: help/templates/help/monitoring.html:31
 msgid "You can enable worker monitoring on each worker profile separately."
 msgstr ""
 "Puede habilitar el monitoreo del equipo de minería en cada perfil del equipo "
 "de minería por separado."
 
-#: help/templates/help/monitoring.html:34
+#: help/templates/help/monitoring.html:33
 #, python-format
 msgid ""
 "Once the worker monitoring is enabled, the <a href=\"%(url)s\">Alert limit</"
@@ -1552,7 +2546,7 @@ msgstr ""
 "Una vez activado el monitoreo del equipo de minería, el <a href=\"%(url)s"
 "\">Límite de Alerta</a> puede ser configurado:"
 
-#: help/templates/help/monitoring.html:36
+#: help/templates/help/monitoring.html:35
 msgid ""
 "Automatically - our system selects the Alert Limit based on the past "
 "performance of the worker"
@@ -1560,11 +2554,11 @@ msgstr ""
 "Automáticamente - nuestro sistema selecciona el Límite de Alerta basándose "
 "en el desempeño pasado del equipo de minería"
 
-#: help/templates/help/monitoring.html:37
+#: help/templates/help/monitoring.html:36
 msgid "Manually - You can set your own Alert Limit value"
 msgstr "Manualmente - Puede ajustar su propio valor de Límite de Alerta"
 
-#: help/templates/help/monitoring.html:43
+#: help/templates/help/monitoring.html:42
 #, python-format
 msgid ""
 "Once you enable monitoring for your workers you will see each worker in one "
@@ -1575,7 +2569,7 @@ msgstr ""
 "minería en alguno de estos <a href=\"%(url)s\">estados</a>: <strong>OK, "
 "Bajo, fuera de línea, Desactivado</strong>."
 
-#: help/templates/help/monitoring.html:44
+#: help/templates/help/monitoring.html:43
 #, python-format
 msgid ""
 "Permanently <strong>Low</strong> or <strong>Offline</strong> state of your "
@@ -1590,7 +2584,7 @@ msgstr ""
 "minería. Si no es el caso, no dude en ponerse en contacto con nuestro <a "
 "href=\"%(support_submit)s\" target=\"_blank\" class=\"ext\">soporte</a>."
 
-#: help/templates/help/monitoring.html:47
+#: help/templates/help/monitoring.html:46
 msgid ""
 "<strong class=\"red\">Please note:</strong> The pool keeps track of mining "
 "devices on a <strong>worker basis</strong>. This means that if you have more "
@@ -1611,11 +2605,11 @@ msgstr ""
 "usted tenga (y conectados correctamente), el pool puede rastrear las caídas "
 "de hash rate e informarle de cada dispositivo de minería por separado."
 
-#: help/templates/help/monitoring.html:49
+#: help/templates/help/monitoring.html:48
 msgid "How does monitoring work?"
 msgstr "¿Cómo funciona el monitoreo?"
 
-#: help/templates/help/monitoring.html:50
+#: help/templates/help/monitoring.html:49
 #, python-format
 msgid ""
 "The pool takes a snapshot of  <a href=\"%(hashrate_url)s\">effective hash "
@@ -1629,7 +2623,7 @@ msgstr ""
 "\"%(alert_url)s\">Límite de Alerta</a> (usted configura este valor mientras "
 "habilita el monitoreo)."
 
-#: help/templates/help/monitoring.html:51
+#: help/templates/help/monitoring.html:50
 #, python-format
 msgid ""
 "The period of 5 minutes is sufficient for collecting just enough data to "
@@ -1643,11 +2637,11 @@ msgstr ""
 "introducido, incluso un minero lento puede presentar una cantidad suficiente "
 "de resultados."
 
-#: help/templates/help/monitoring.html:53
+#: help/templates/help/monitoring.html:52
 msgid "Device monitoring states"
 msgstr "Estados de monitoreo del dispositivo"
 
-#: help/templates/help/monitoring.html:54
+#: help/templates/help/monitoring.html:53
 msgid ""
 "There are 4 possible states of your worker, regarding monitoring. Every "
 "worker is always in one of the <strong>following</strong> states:"
@@ -1656,12 +2650,12 @@ msgstr ""
 "equipo de minería siempre está en uno de los <strong>siguientes</strong> "
 "estados:"
 
-#: help/templates/help/monitoring.html:60 web/templatetags/utils.py:188
+#: help/templates/help/monitoring.html:59 web/templatetags/utils.py:192
 msgctxt "UI, Monitoring"
 msgid "OK"
 msgstr "OK"
 
-#: help/templates/help/monitoring.html:62
+#: help/templates/help/monitoring.html:61
 msgid ""
 "Means that the worker's hash rate is greater or equal to alert limit. This "
 "is the desired state. If everything works properly and the configuration is "
@@ -1671,12 +2665,12 @@ msgstr ""
 "de alerta. Este es el estado deseado. Si todo funciona correctamente y la "
 "configuración es correcta, debería ver este estado todo el tiempo."
 
-#: help/templates/help/monitoring.html:66 web/templatetags/utils.py:187
+#: help/templates/help/monitoring.html:65 web/templatetags/utils.py:191
 msgctxt "UI, Monitoring"
 msgid "Low"
 msgstr "Bajo"
 
-#: help/templates/help/monitoring.html:68
+#: help/templates/help/monitoring.html:67
 #, python-format
 msgid ""
 "This state signals that worker's hash rate is lower than it should be but "
@@ -1696,12 +2690,12 @@ msgstr ""
 "para nuestro <a href=\"%(support_submit)s\" target=\"_blank\" class=\"ext"
 "\">soporte</a>."
 
-#: help/templates/help/monitoring.html:72 web/templatetags/utils.py:186
+#: help/templates/help/monitoring.html:71 web/templatetags/utils.py:190
 msgctxt "UI, Monitoring"
 msgid "Offline"
 msgstr "Fuera de línea"
 
-#: help/templates/help/monitoring.html:74
+#: help/templates/help/monitoring.html:73
 msgid ""
 "You could see this state when monitoring is enabled for the worker but there "
 "is no hash rate detected for the worker. The pool doesn't monitor the actual "
@@ -1712,12 +2706,12 @@ msgstr ""
 "El pool no supervisa la conexión de red real del equipo de minería. El único "
 "valor importante es el hashrate."
 
-#: help/templates/help/monitoring.html:78 web/templatetags/utils.py:189
+#: help/templates/help/monitoring.html:77 web/templatetags/utils.py:193
 msgctxt "UI, Monitoring"
 msgid "Disabled"
 msgstr "Desactivado"
 
-#: help/templates/help/monitoring.html:80
+#: help/templates/help/monitoring.html:79
 msgid ""
 "When you switch off monitoring for a worker its state is reported as "
 "Disabled, regardless a fact if it submits some shares or not."
@@ -2190,7 +3184,7 @@ msgstr ""
 "El hashrate ponderado del pool %(H)s no esta definido sorprendentemente como "
 "la ponderación de todos los hashrate del usuario juntos:"
 
-#: help/templates/help/rewards-payouts.html:9
+#: help/templates/help/rewards-payouts.html:5
 msgid ""
 "The following fees are currently applied by Slush Pool to provide the pool "
 "mining service."
@@ -2198,11 +3192,11 @@ msgstr ""
 "Slush Pool aplica actualmente las siguientes comisiones para proporcionar el "
 "servicio de pool de minería."
 
-#: help/templates/help/rewards-payouts.html:11
+#: help/templates/help/rewards-payouts.html:7
 msgid "General information"
 msgstr "Información general"
 
-#: help/templates/help/rewards-payouts.html:14
+#: help/templates/help/rewards-payouts.html:9
 #, python-format
 msgid ""
 "Proceeds from transaction (network) fees are shared with miners, see the <a "
@@ -2211,7 +3205,7 @@ msgstr ""
 "Los ingresos por las comisiones de transacción (red) se comparten con los "
 "mineros, consulte el <a href=\"%(link)s\">Sistema de Recompensa</a>."
 
-#: help/templates/help/rewards-payouts.html:15
+#: help/templates/help/rewards-payouts.html:10
 msgid ""
 "Payouts are usually processed on an hourly basis, however, the confirmation "
 "time may take longer."
@@ -2219,7 +3213,7 @@ msgstr ""
 "Los pagos generalmente se procesan cada hora, sin embargo, el tiempo de "
 "confirmación puede demorar."
 
-#: help/templates/help/rewards-payouts.html:16
+#: help/templates/help/rewards-payouts.html:11
 msgid ""
 "Payout threshold can be customized in the <em>Settings > selected coin > "
 "Payouts</em> menu."
@@ -2227,59 +3221,51 @@ msgstr ""
 "El umbral de pago se puede personalizar en el menú <em>Configuración > "
 "moneda seleccionada > Pagos</em>."
 
-#: help/templates/help/rewards-payouts.html:17
-#, python-format
-msgid ""
-"Same pool fee applies to proceeds from <a href=\"%(merge)s\">merge mined</a> "
-"coins."
-msgstr ""
-"La misma comisión de pool se aplica a los ingresos desde las monedas de <a "
-"href=\"%(merge)s\">minería fusionada</a>."
-
-#: help/templates/help/rewards-payouts.html:26
+#: help/templates/help/rewards-payouts.html:20
 msgid "Bitcoin"
 msgstr "Bitcoin"
 
-#: help/templates/help/rewards-payouts.html:32
-#: help/templates/help/rewards-payouts.html:63
+#: help/templates/help/rewards-payouts.html:26
+#: help/templates/help/rewards-payouts.html:53
 msgid "Pool fee"
 msgstr "Comisión del pool"
 
-#: help/templates/help/rewards-payouts.html:36
-#: help/templates/help/rewards-payouts.html:67
+#: help/templates/help/rewards-payouts.html:30
+#: help/templates/help/rewards-payouts.html:57
 msgid "Minimum payout threshold"
 msgstr "Umbral de pago mínimo"
 
-#: help/templates/help/rewards-payouts.html:40
-#: help/templates/help/rewards-payouts.html:71
+#: help/templates/help/rewards-payouts.html:34
+#: help/templates/help/rewards-payouts.html:61
 msgid "Payout fee"
 msgstr "Comisión de pago"
 
-#: help/templates/help/rewards-payouts.html:41
+#: help/templates/help/rewards-payouts.html:35
 msgid "0.0001 BTC (only for payouts under 0.01 BTC)"
 msgstr "0,0001 BTC (solo para pagos menores a 0,01 BTC)"
 
-#: help/templates/help/rewards-payouts.html:44
-#: help/templates/help/terminology.html:91
-msgid "Merged mining"
-msgstr "Minería fusionada"
-
-#: help/templates/help/rewards-payouts.html:45
-msgid "Namecoin (converted to BTC)"
-msgstr "Namecoin (convertida a BTC)"
-
-#: help/templates/help/rewards-payouts.html:57
+#: help/templates/help/rewards-payouts.html:47
 msgid "Zcash"
 msgstr "Zcash"
 
-#: help/templates/help/rewards-payouts.html:72
+#: help/templates/help/rewards-payouts.html:62
 msgid "0.0001 ZEC (only for payouts under 0.01 ZEC)"
 msgstr "0,0001 ZEC (solo para pagos menores a 0,01 ZEC)"
 
-#: help/templates/help/stratum-protocol.html:6
-msgctxt "UI"
-msgid "Stratum <span>Mining Protocol</span>"
-msgstr "<span>Protocolo de Minería</span> Stratum"
+#: help/templates/help/stratum-protocol.html:8
+msgid ""
+"The original stratum protocol was developed in 2012 as an evolution of the "
+"getwork protocol to support pooled mining. We have since developed a new "
+"open standard, Stratum V2, which makes significant quality improvements on "
+"the old protocol so that it is better suited for the modern mining industry."
+msgstr ""
+
+#: help/templates/help/stratum-protocol.html:9
+msgid ""
+"You can find the documentation for Stratum V2 at <strong><a href=\"https://"
+"stratumprotocol.org/?utm_source=SlushPool&utm_medium=HelpStratum"
+"\">stratumprotocol.org</a></strong>. The Stratum V1 documentation is below."
+msgstr ""
 
 #: help/templates/help/terminology.html:7
 msgctxt "UI"
@@ -2532,6 +3518,10 @@ msgstr ""
 "totalmente independiente de los eventos históricos. Es por eso que unirse al "
 "pool cuando la suerte es alta y desconectarse cuando la suerte es baja no "
 "tiene ningún sentido. A largo plazo, la suerte siempre es 100%%."
+
+#: help/templates/help/terminology.html:91
+msgid "Merged mining"
+msgstr "Minería fusionada"
 
 #: help/templates/help/terminology.html:95
 msgid ""
@@ -3220,30 +4210,30 @@ msgstr ""
 "reciente en la sección inferior que puede ser muy útil para la resolución de "
 "problemas."
 
-#: help/templates/help/zcash-setup.html:13
+#: help/templates/help/zcash-setup.html:12
 msgid "Zcash <span>can</span> be efficiently mined with:"
 msgstr "Zcash <span>puede</span> ser minado de manera eficiente con:"
 
-#: help/templates/help/zcash-setup.html:13
+#: help/templates/help/zcash-setup.html:12
 msgid "ASIC (Equihash algorithm), GPU"
 msgstr "ASIC (algoritmo Equihash), GPU"
 
-#: help/templates/help/zcash-setup.html:15
+#: help/templates/help/zcash-setup.html:14
 msgid "Zcash <span>cannot</span> be efficiently mined with (unsupported):"
 msgstr ""
 "Zcash <span>no puede</span> ser minado de manera eficiente con (no "
 "compatible):"
 
-#: help/templates/help/zcash-setup.html:15
+#: help/templates/help/zcash-setup.html:14
 msgid "CPU, mobile phone"
 msgstr "CPU, teléfono móvil"
 
-#: help/templates/help/zcash-setup.html:24
+#: help/templates/help/zcash-setup.html:23
 #, python-format
 msgid "<a href=\"%(dashboard)s\">Log into</a> your account."
 msgstr "<a href=\"%(dashboard)s\">Inicie sesión</a> en su cuenta."
 
-#: help/templates/help/zcash-setup.html:29
+#: help/templates/help/zcash-setup.html:28
 msgid ""
 "Some popular hardware/software configurations are available in the Support "
 "Center:"
@@ -3251,11 +4241,11 @@ msgstr ""
 "Algunas configuraciones populares de hardware/software están disponibles en "
 "el Centro de Soporte:"
 
-#: help/templates/help/zcash-setup.html:29
+#: help/templates/help/zcash-setup.html:28
 msgid "Zcash Mining Setup"
 msgstr "Configuración de Minería Zcash"
 
-#: help/templates/help/zcash-setup.html:30
+#: help/templates/help/zcash-setup.html:29
 msgid ""
 "Please note that we do not support Zcash addresses directly in the command; "
 "use your Slush Pool userName instead."
@@ -3263,11 +4253,11 @@ msgstr ""
 "Tenga en cuenta que no admitimos direcciones Zcash directamente en el "
 "comando; use su nombreUsuario de Slush Pool en su lugar."
 
-#: help/templates/help/zcash-setup.html:83
+#: help/templates/help/zcash-setup.html:82
 msgid "bigMiner.strongDevice"
 msgstr "granMinero.fuerteDispositivo"
 
-#: help/templates/help/zcash-setup.html:88
+#: help/templates/help/zcash-setup.html:87
 #, python-format
 msgid "Other usable wallets are listed on <a %(zcash)s>Zcash Community</a>."
 msgstr ""
@@ -3278,42 +4268,42 @@ msgctxt "UI"
 msgid "Send"
 msgstr "Enviar"
 
-#: mailing/forms/validators.py:17
+#: mailing/forms/validators.py:19
 msgctxt "UI"
 msgid "Newsletter recipient not found."
 msgstr "No se ha encontrado el destinatario del boletín."
 
-#: mailing/forms/validators.py:44
+#: mailing/forms/validators.py:46
 msgctxt "UI"
 msgid "Feedback must be a string no longer than 600 characters."
 msgstr "La retroalimentación debe ser una cadena de no más de 600 caracteres."
 
-#: mailing/models.py:498
+#: mailing/models.py:507
 msgctxt "UI"
 msgid "I receive newsletters too frequently"
 msgstr "Recibo boletines con demasiada frecuencia"
 
-#: mailing/models.py:499
+#: mailing/models.py:508
 msgctxt "UI"
 msgid "I do not mind anymore"
 msgstr "Ya no me importa"
 
-#: mailing/models.py:500
+#: mailing/models.py:509
 msgctxt "UI"
 msgid "I have joined another pool"
 msgstr "Me he unido a otro pool"
 
-#: mailing/models.py:501
+#: mailing/models.py:510
 msgctxt "UI"
 msgid "The newsletter content is of no value to me"
 msgstr "El contenido del boletín no tiene valor para mí"
 
-#: mailing/models.py:502
+#: mailing/models.py:511
 msgctxt "UI"
 msgid "Other reason"
 msgstr "Otra razón"
 
-#: mailing/models.py:518
+#: mailing/models.py:527
 msgctxt "UI"
 msgid "Not provided"
 msgstr "No provisto"
@@ -3336,17 +4326,17 @@ msgstr ""
 "En caso de que cambie de opinión, puede sintonizar nuestras noticias desde "
 "la configuración de su cuenta."
 
-#: maintenance/funcs/payouts_funcs.py:243
+#: maintenance/funcs/payouts_funcs.py:290
 msgctxt "UI"
 msgid "Payout sent"
 msgstr "Pago enviado"
 
-#: mining/models.py:396
+#: mining/models.py:380
 msgctxt "UI"
 msgid "-- not voted (proportional split) --"
 msgstr "-- no votado (división proporcional) --"
 
-#: mining/models.py:397
+#: mining/models.py:381
 msgctxt "UI"
 msgid ""
 "Users that don't have any preference = their hash rate is split among all "
@@ -3355,17 +4345,17 @@ msgstr ""
 "Usuarios que no tienen ninguna preferencia = su hashrate se divide "
 "proporcionalmente entre todas las propuestas de tamaño de bloque."
 
-#: mining/models.py:398
+#: mining/models.py:382
 msgctxt "UI"
 msgid "Not voted"
 msgstr "No votado"
 
-#: mining/models.py:403
+#: mining/models.py:387
 msgctxt "UI"
 msgid "Current rules / Bitcoin Core"
 msgstr "Normas actuales / Bitcoin Core"
 
-#: mining/models.py:404
+#: mining/models.py:388
 msgctxt "UI"
 msgid ""
 "Users that prefer Current rules given by Bitcoin core = their hash rate is "
@@ -3374,17 +4364,17 @@ msgstr ""
 "Usuarios que prefieren las reglas actuales dadas por Bitcoin Core = su "
 "hashrate se usa para minar bloques de Bitcoin Core."
 
-#: mining/models.py:405
+#: mining/models.py:389
 msgctxt "UI"
 msgid "Bitcoin Core"
 msgstr "Bitcoin Core"
 
-#: mining/models.py:410
+#: mining/models.py:394
 msgctxt "UI"
 msgid "I don't care, pool operator decides"
 msgstr "No me importa, el operador del pool decide"
 
-#: mining/models.py:411
+#: mining/models.py:395
 msgctxt "UI"
 msgid ""
 "Users that set I don't care option = pool operator decides which block size "
@@ -3393,7 +4383,7 @@ msgstr ""
 "Los usuarios que configuran la opción No me importa = el operador del pool "
 "decide el tamaño de bloque que esté más cercano a su corazón."
 
-#: mining/models.py:412
+#: mining/models.py:396
 msgctxt "UI"
 msgid "Pool decides"
 msgstr "El pool decide"
@@ -3419,128 +4409,134 @@ msgctxt "UI"
 msgid "Service Update"
 msgstr "Actualización del Servicio"
 
-#: project/settings.py:354
+#: pool_u2f/utils.py:49 pool_u2f/utils.py:94
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Slot \"%s\" not found"
+msgctxt "UI"
+msgid "Challenge was not found!"
+msgstr "Espacio \"%s\" no encontrado"
+
+#: project/settings.py:439
 msgid "Simplified Chinese"
 msgstr "Chino Simplificado"
 
-#: project/settings.py:355
+#: project/settings.py:440
 msgid "Spanish"
 msgstr "Español"
 
-#: project/settings.py:356
+#: project/settings.py:441
 msgid "Russian"
 msgstr "Ruso"
 
-#: reports/views.py:21
+#: project/settings.py:442
+msgid "French"
+msgstr "Francés"
+
+#: project/settings.py:443
+msgid "Persian"
+msgstr ""
+
+#: reports/views.py:22
 msgctxt "UI"
 msgid "Missing \"types\" parameter!"
 msgstr "¡Falta el parámetro \"tipos\"!"
 
-#: reports/views.py:25
+#: reports/views.py:26
 #, python-format
 msgctxt "UI"
 msgid "Invalid query type. Choices are: %s."
 msgstr "Tipo de consulta inválido. Las opciones son: %s."
 
-#: reports/views.py:35
+#: reports/views.py:36
 msgctxt "UI"
 msgid "Missing \"output format\" parameter!"
 msgstr "¡Falta el parámetro \"formato de salida\"!"
 
-#: reports/views.py:37
+#: reports/views.py:38
 #, python-format
 msgctxt "UI"
 msgid "Invalid output format. Choices are: %s."
 msgstr "Formato de salida inválido. Las opciones son: %s."
 
-#: reports/views.py:52
+#: reports/views.py:53
 msgctxt "UI"
 msgid "Invalid lower bound. \"From\" must be >= 2016-01-01!"
 msgstr "Límite inferior inválido. ¡\"Desde\" debe ser >= 2016-01-01!"
 
-#: reports/views.py:58
+#: reports/views.py:59
 msgctxt "UI"
 msgid "Missing date range (from, to)!"
 msgstr "¡Falta el rango de fechas (desde, hasta)!"
 
-#: reports/views.py:60
+#: reports/views.py:61
 msgctxt "UI"
 msgid "Invalid date range!"
 msgstr "¡Rango de fechas inválido!"
 
-#: settings/api/v1/api_actions.py:64
+#: settings/api/v1/api_actions.py:60
 msgctxt "UI"
 msgid "Invalid request, you don't have any wallet."
 msgstr "Solicitud inválida, usted no tiene ninguna cartera."
 
-#: settings/api/v1/api_actions.py:67 settings/api/v1/api_actions.py:93
+#: settings/api/v1/api_actions.py:63 settings/api/v1/api_actions.py:89
 msgctxt "UI"
 msgid "Invalid request, wallet is already locked."
 msgstr "Solicitud inválida, la cartera ya está bloqueada."
 
-#: settings/api/v1/api_actions.py:72
+#: settings/api/v1/api_actions.py:68
 msgctxt "UI"
 msgid "Wallet is not valid."
 msgstr "La cartera no es válida."
 
-#: settings/api/v1/api_actions.py:75
+#: settings/api/v1/api_actions.py:71
 msgctxt "UI"
 msgid "Your payout address has been locked."
 msgstr "Su dirección de pago ha sido bloqueada."
 
-#: settings/api/v1/api_actions.py:90
+#: settings/api/v1/api_actions.py:86
 msgctxt "UI"
 msgid "Invalid request, you don't have any Zcash wallet."
 msgstr "Solicitud inválida, usted no tiene ninguna cartera Zcash."
 
-#: settings/api/v1/api_actions.py:98
+#: settings/api/v1/api_actions.py:94
 msgctxt "UI"
 msgid "Zcash wallet is not valid."
 msgstr "La cartera Zcash no es válida."
 
-#: settings/api/v1/api_actions.py:101
+#: settings/api/v1/api_actions.py:97
 msgctxt "UI"
 msgid "Your Zcash payout address has been locked."
 msgstr "Su dirección de pago Zcash ha sido bloqueada."
 
-#: settings/api/v1/api_actions.py:115 settings/api/v1/api_actions.py:135
+#: settings/api/v1/api_actions.py:111 settings/api/v1/api_actions.py:131
 msgctxt "UI"
 msgid "No pending email."
 msgstr "Sin email pendiente."
 
-#: settings/api/v1/api_actions.py:123 settings/api/v1/api_actions.py:161
-#: settings/api/v1/api_actions.py:193
-msgctxt "UI"
-msgid ""
-"Confirmation email has been sent. Please, check your mailbox and follow the "
-"link."
-msgstr ""
-"Se ha enviado un correo electrónico de confirmación. Por favor, revise su "
-"correo y siga el enlace."
-
-#: settings/api/v1/api_actions.py:142
+#: settings/api/v1/api_actions.py:138
 msgctxt "UI"
 msgid "Email change request has been successfully canceled."
 msgstr ""
 "La solicitud de cambio de correo electrónico se ha cancelado exitosamente."
 
-#: settings/api/v1/api_actions.py:153 settings/api/v1/api_actions.py:185
+#: settings/api/v1/api_actions.py:149 settings/api/v1/api_actions.py:181
 msgctxt "UI"
 msgid "No pending wallet."
 msgstr "Sin cartera pendiente."
 
-#: settings/api/v1/api_actions.py:177
+#: settings/api/v1/api_actions.py:173
 msgctxt "UI"
 msgid "Wallet change request has been successfully canceled."
 msgstr "La solicitud de cambio de cartera se ha cancelado exitosamente."
 
-#: settings/api/v1/api_actions.py:208
+#: settings/api/v1/api_actions.py:204
 msgctxt "UI"
 msgid "Zcash wallet change request has been successfully cancelled."
 msgstr ""
 "La solicitud de cambio de cartera Zcash ha sido cancelada exitosamente."
 
-#: settings/api/v1/api_actions.py:224
+#: settings/api/v1/api_actions.py:220
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
@@ -3548,25 +4544,20 @@ msgstr ""
 "Se ha enviado un email de notificación sobre la eliminación de su cuenta a "
 "%s."
 
-#: settings/email.py:24
+#: settings/email.py:36
 msgctxt "UI"
 msgid "Delete account confirmation"
 msgstr "Confirmación de eliminación de cuenta"
 
-#: settings/form_mixins.py:107 settings/form_mixins.py:156
+#: settings/forms/access_profile_forms.py:48
+#: settings/forms/access_profile_forms.py:122
+#: settings/forms/access_profile_forms.py:211
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Access profile deleted"
 msgctxt "UI"
-msgid "Signature is not valid."
-msgstr "Firma no válida."
-
-#: settings/form_mixins.py:117
-msgctxt "UI"
-msgid "Message is wrong."
-msgstr "El mensaje es erróneo."
-
-#: settings/form_mixins.py:121
-msgctxt "UI"
-msgid "Signature is out of date."
-msgstr "La firma no está actualizada."
+msgid "Access to access profiles denied."
+msgstr "Perfil de acceso eliminado"
 
 #: settings/forms/btc_payouts_form.py:48 settings/forms/btc_payouts_form.py:131
 #: settings/forms/zec_payouts_form.py:48 settings/forms/zec_payouts_form.py:130
@@ -3586,8 +4577,65 @@ msgctxt "UI"
 msgid "No pending wallet to confirm."
 msgstr "No hay cartera pendiente por confirmar."
 
+#: settings/forms/claim_nmc_form.py:48
+#, fuzzy
+#| msgid "Rewards Calculation"
+msgctxt "UI"
+msgid "No reward to be claimed."
+msgstr "Cálculo de recompensas"
+
+#: settings/forms/claim_nmc_form.py:54
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Reward has been sent"
+msgctxt "UI"
+msgid "The reward has already been sent."
+msgstr "La recompensa ha sido enviada"
+
+#: settings/forms/claim_nmc_form.py:63
+#, python-format
+msgctxt "UI"
+msgid ""
+"Not available for claim. Your reward is lower than the minimum claimable "
+"amount (%s NMC)."
+msgstr ""
+
+#: settings/forms/claim_nmc_form.py:75
+#, fuzzy
+#| msgid ""
+#| "This is not a valid Namecoin address. Please install Namecoin client to "
+#| "get one."
+msgctxt "UI"
+msgid "This is not a valid Namecoin address."
+msgstr ""
+"Esto no es una dirección válida namecoin. Por favor, instale el cliente para "
+"obtener una Namecoin"
+
+#: settings/forms/claim_nmc_form.py:82
+msgctxt "UI"
+msgid "Validation failed. Namecoind is not connected."
+msgstr ""
+
+#: settings/forms/claim_nmc_form.py:86
+msgctxt "UI"
+msgid "namecoind: This is not a valid Namecoin address."
+msgstr ""
+
+#: settings/forms/email_settings_form.py:27
+#, fuzzy
+msgctxt "UI"
+msgid "Access to e-mail change denied."
+msgstr "Cambio de cartera se envió nuevamente"
+
+#: settings/forms/email_settings_form.py:31
+#, fuzzy
+#| msgid "There are two options how to change registered e-mail:"
+msgctxt "UI"
+msgid "There already is a request to change the e-mail!"
+msgstr "Hay dos opciones para cambiar el e-mail registrado:"
+
 #. Translators: enabled coins selection - user cannot disable all coins
-#: settings/forms/enabled_coins_settings_form.py:46
+#: settings/forms/enabled_coins_settings_form.py:47
 msgctxt "UI"
 msgid "At least one coin must be enabled!"
 msgstr "¡Al menos una moneda debe estar habilitada!"
@@ -3612,13 +4660,13 @@ msgstr ""
 "generado uno nuevo)."
 
 #: settings/forms/otp_setting_forms.py:119
-#: settings/forms/otp_setting_forms.py:165
+#: settings/forms/otp_setting_forms.py:170
 msgctxt "UI"
 msgid "OTP has been disabled."
 msgstr "OTP ha sido desactivado."
 
 #: settings/forms/otp_setting_forms.py:123
-#: settings/forms/otp_setting_forms.py:156
+#: settings/forms/otp_setting_forms.py:161
 msgctxt "UI"
 msgid "User doesn't have OTP."
 msgstr "El usuario no tiene OTP."
@@ -3643,7 +4691,7 @@ msgctxt "UI"
 msgid "Supplied user request is not active!"
 msgstr "¡Solicitud de usuario suministrada no está activa!"
 
-#: user_request/models.py:285
+#: user_request/models.py:288
 msgctxt "UI"
 msgid ""
 "The request associated with this confirmation link is no longer active."
@@ -3652,32 +4700,32 @@ msgstr ""
 "La solicitud asociada con este enlace de confirmación ya no está activa. "
 "<br>Probablemente se haya confirmado o cancelado anteriormente."
 
-#: user_request/models.py:358
+#: user_request/models.py:362
 msgctxt "UI"
 msgid "Wallet has been changed."
 msgstr "La cartera ha sido cambiada."
 
-#: user_request/models.py:373
+#: user_request/models.py:377
 msgctxt "UI"
 msgid "Wallet change request has been cancelled."
 msgstr "La solicitud de cambio de la cartera ha sido cancelada."
 
-#: user_request/models.py:402
+#: user_request/models.py:406
 msgctxt "UI"
 msgid "Zcash wallet has been changed."
 msgstr "La cartera Zcash ha sido cambiada."
 
-#: user_request/models.py:417
+#: user_request/models.py:421
 msgctxt "UI"
 msgid "Zcash wallet change request has been cancelled."
 msgstr "La solicitud de cambio de cartera Zcash ha sido cancelada."
 
-#: user_request/models.py:443
+#: user_request/models.py:447
 msgctxt "UI"
 msgid "Your e-mail has been changed."
 msgstr "Su correo electrónico ha sido cambiado."
 
-#: user_request/models.py:458
+#: user_request/models.py:462
 msgctxt "UI"
 msgid "E-mail change request has been cancelled."
 msgstr "La solicitud de cambio de correo electrónico ha sido cancelada."
@@ -3687,7 +4735,31 @@ msgctxt "UI"
 msgid "Account deletion has been cancelled."
 msgstr "La cancelación de la cuenta ha sido anulada."
 
-#: user_request/views.py:37
+#: user_request/models.py:595
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "No results have been found."
+msgctxt "UI"
+msgid "Payout channel not found."
+msgstr "No se encontraron resultados."
+
+#: user_request/models.py:646
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Your payout address has been locked."
+msgctxt "UI"
+msgid "Payout channel has been verified."
+msgstr "Su dirección de pago ha sido bloqueada."
+
+#: user_request/models.py:671
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Account deletion has been cancelled."
+msgctxt "UI"
+msgid "Payout channel verification has been cancelled."
+msgstr "La cancelación de la cuenta ha sido anulada."
+
+#: user_request/views.py:36
 msgctxt "UI"
 msgid ""
 "The confirmation link used is not associated with this account.<br><br> "
@@ -3698,51 +4770,99 @@ msgstr ""
 "<br><br> Por favor, inicie sesión con el nombre de usuario correspondiente "
 "(mencionado en el correo electrónico de confirmación) e inténtelo de nuevo."
 
-#: web/api/v1/appeals.py:52
-#, python-format
+#: web/api/v1/appeals.py:80
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid ""
+#| "Your payouts have been temporarily blocked by the pool operator "
+#| "(%(reason)s)."
 msgctxt "UI"
 msgid ""
-"Your payouts have been temporarily blocked by the pool operator (%(reason)s)."
+"Your %(coin)s payouts have been temporarily blocked by the pool operator "
+"(%(reason)s)."
 msgstr ""
 "Sus pagos han sido bloqueados temporalmente por el operador del pool "
 "(%(reason)s)."
 
-#: web/api/v1/appeals.py:54
+#: web/api/v1/appeals.py:85
 msgctxt "UI"
 msgid "Please, contact our support for further details."
 msgstr "Por favor, póngase en contacto con nuestro soporte para más detalles."
 
-#: web/api/v1/appeals.py:58
+#: web/api/v1/appeals.py:89
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Blocked Payouts"
 msgctxt "UI"
-msgid "Blocked Payouts"
+msgid "Blocked %(coin)s Payouts"
 msgstr "Pagos bloqueados"
 
-#: web/api/v1/appeals.py:82
+#: web/api/v1/appeals.py:135
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Pending Wallet"
 msgctxt "UI"
-msgid "Pending Wallet"
+msgid "Pending %(coin)s Wallet"
 msgstr "Cartera pendiente"
 
-#: web/api/v1/appeals.py:92
+#: web/api/v1/appeals.py:145
 msgctxt "UI"
 msgid "Resend Confirmation"
 msgstr "Reenviar confirmación"
 
-#: web/api/v1/appeals.py:97
+#: web/api/v1/appeals.py:150
 msgctxt "UI"
 msgid "Cancel the Request"
 msgstr "Cancelar la Solicitud"
 
-#: web/api/v1/appeals.py:102
+#: web/api/v1/appeals.py:155
 msgctxt "UI"
 msgid "Change my Password"
 msgstr "Cambiar mi Contraseña"
 
-#: web/api/v1/appeals.py:180
+#: web/api/v1/appeals.py:163
+#, fuzzy
+#| msgctxt "UI"
+#| msgid ""
+#| "Please setup your payout address. Your balance is over your payout "
+#| "threshold"
+msgctxt "UI"
+msgid ""
+"Please setup your payout address. Your balance is over your payout threshold."
+msgstr ""
+"Por favor, configure su dirección de pago. Su saldo está por encima de su "
+"umbral de pago"
+
+#: web/api/v1/appeals.py:166
+#, fuzzy, python-brace-format
+#| msgctxt "UI"
+#| msgid "Your balance is {balance} and threshold is {threshold}"
+msgctxt "UI"
+msgid "Your balance is {balance} and threshold is {threshold}."
+msgstr "Su saldo es {balance} y el umbral es {threshold}"
+
+#: web/api/v1/appeals.py:178
+msgctxt "UI"
+msgid "Account Settings"
+msgstr "Configuración de la Cuenta"
+
+#: web/api/v1/appeals.py:221
+#, python-brace-format
+msgctxt "UI"
+msgid "Unable to send {coin} payout"
+msgstr "No se puede enviar pago {coin}"
+
+#: web/api/v1/appeals.py:278
+msgctxt "UI"
+msgid "Explore"
+msgstr ""
+
+#: web/api/v1/appeals.py:295
 msgctxt "UI"
 msgid "Dismiss this message"
 msgstr "Descartar este mensaje"
 
-#: web/api/v1/appeals.py:206
+#: web/api/v1/appeals.py:326
 msgctxt "UI"
 msgid ""
 "Your opinion on block size matters to the whole community. It is up to you "
@@ -3752,7 +4872,7 @@ msgstr ""
 "Depende de usted hacer una elección. Por favor, seleccione una de las "
 "siguientes opciones."
 
-#: web/api/v1/appeals.py:207
+#: web/api/v1/appeals.py:331
 #, python-format
 msgctxt "UI"
 msgid ""
@@ -3764,42 +4884,12 @@ msgstr ""
 "\"%(settings)s\">Configuración</a>. Echa un vistazo a los últimos <a href="
 "\"%(stats)s\">resultados</a>."
 
-#: web/api/v1/appeals.py:217
+#: web/api/v1/appeals.py:342
 msgctxt "UI"
 msgid "Bitcoin Proposal Preference"
 msgstr "Preferencia de la Propuesta de Bitcoin"
 
-#: web/api/v1/appeals.py:262
-#, python-brace-format
-msgctxt "UI"
-msgid "Unable to send {coin} payout"
-msgstr "No se puede enviar pago {coin}"
-
-#: web/api/v1/appeals.py:266
-msgctxt "UI"
-msgid ""
-"Please setup your payout address. Your balance is over your payout threshold"
-msgstr ""
-"Por favor, configure su dirección de pago. Su saldo está por encima de su "
-"umbral de pago"
-
-#: web/api/v1/appeals.py:267
-#, python-brace-format
-msgctxt "UI"
-msgid "Your balance is {balance} and threshold is {threshold}"
-msgstr "Su saldo es {balance} y el umbral es {threshold}"
-
-#: web/api/v1/appeals.py:277
-msgctxt "UI"
-msgid "Account Settings"
-msgstr "Configuración de la Cuenta"
-
-#: web/api/v1/views.py:1007
-msgctxt "UI"
-msgid "Couldn't load USD/BTC exchange rate"
-msgstr "No se pudo cargar la tasa de cambio USD/BTC"
-
-#: web/api/v1/views.py:1192
+#: web/api/v1/views.py:1553
 msgctxt "UI"
 msgid ""
 "Only alphabetical characters, numbers and underscore are allowed in username!"
@@ -3807,22 +4897,30 @@ msgstr ""
 "¡Solo se permiten caracteres alfabéticos, números y guiones bajos en el "
 "nombre de usuario!"
 
-#: web/api/v1/views.py:1197 web/api/v1/views.py:1518
+#: web/api/v1/views.py:1558 web/api/v1/views.py:1879
 msgctxt "UI"
 msgid "Invalid email format!"
 msgstr "Formato de correo electrónico inválido!"
 
-#: web/api/v1/views.py:1202
+#: web/api/v1/views.py:1563
 msgctxt "UI"
 msgid "Password must have at Least 5 characters!"
 msgstr "La contraseña debe tener al menos 5 caracteres!"
 
-#: web/api/v1/views.py:1268 web/api/v1/views.py:1285 web/api/v1/views.py:1336
+#: web/api/v1/views.py:1629 web/api/v1/views.py:1646 web/api/v1/views.py:1700
 msgctxt "UI"
 msgid "Login forbidden"
 msgstr "Inicio de sesión prohibido"
 
-#: web/api/v1/views.py:1332
+#: web/api/v1/views.py:1685
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid user selection."
+msgctxt "UI"
+msgid "Invalid credentials."
+msgstr "Selección de usuario inválida."
+
+#: web/api/v1/views.py:1696
 msgctxt "UI"
 msgid ""
 "Please enter a correct username (not an e-mail address) and password. Note "
@@ -3832,89 +4930,42 @@ msgstr ""
 "electrónico) y contraseña correctos. Tenga en cuenta que ambos campos "
 "distinguen entre mayúsculas y minúsculas."
 
-#: web/api/v1/views.py:1370
-msgctxt "UI"
-msgid "Failed to load a demo account user!"
-msgstr "Error al cargar un usuario de la cuenta de demo!"
-
-#: web/api/v1/views.py:1400
+#: web/api/v1/views.py:1753
 msgctxt "UI"
 msgid "Bad username/id."
 msgstr "nombre de usuario/id errado."
 
-#: web/api/v1/views.py:1402
+#: web/api/v1/views.py:1755
 msgctxt "UI"
 msgid "This user is not active yet/anymore."
 msgstr "Este usuario no está activo aún/más."
 
-#: web/api/v1/views.py:1486
+#: web/api/v1/views.py:1847
 msgctxt "UI"
 msgid "No pending request found!"
 msgstr "No se ha encontrado ninguna solicitud pendiente!"
 
-#: web/api/v1/views.py:1603
+#: web/api/v1/views.py:1980
 msgctxt "UI"
 msgid "Invalid token!"
 msgstr "Token inválido!"
 
-#: web/api/v1/views.py:1608
+#: web/api/v1/views.py:1985
 msgctxt "UI"
 msgid "Password must have at least 5 characters!"
 msgstr "La contraseña debe tener al menos 5 caracteres!"
 
-#: web/messages.py:5
-msgctxt "UI"
-msgid ""
-"(Deactivate proposal updates in <a href=\"/accounts/settings\">Settings</a>)"
-msgstr ""
-"(Desactive las actualizaciones de la propuesta en <a href=\"/accounts/"
-"settings\">Configuración</a>)"
-
-#: web/messages.py:8
-msgctxt "UI"
-msgid ""
-"New proposal(s) is ready for voting in <a href=\"/devcorner/\">Development "
-"Corner</a>. "
-msgstr ""
-"Las nuevas propuestas están listas para votación en <a href=\"/devcorner/"
-"\">Rincón de Desarrollo</a>. "
-
-#: web/messages.py:10
-#, python-format
-msgctxt "UI"
-msgid ""
-"Proposal <a href=\"/proposal/detail/%(id)s\">%(title)s</a> is now being "
-"implemented. "
-msgstr ""
-"La propuesta <a href=\"/proposal/detail/%(id)s\">%(title)s</a> está siendo "
-"implementada. "
-
-#: web/messages.py:12
-#, python-format
-msgctxt "UI"
-msgid ""
-"Proposal <a href=\"/proposal/detail/%(id)s\">%(title)s</a> has been "
-"released. "
-msgstr ""
-"La propuesta <a href=\"/proposal/detail/%(id)s\">%(title)s</a> ha sido "
-"publicada. "
-
-#: web/models.py:118
+#: web/models.py:132
 msgctxt "UI"
 msgid "Wallet change confirmation"
 msgstr "Confirmación de cambio de cartera"
 
-#: web/models.py:143
+#: web/models.py:171
 msgctxt "UI"
 msgid "Email change confirmation"
 msgstr "Confirmación de cambio de correo electrónico"
 
-#: web/models.py:327
-msgctxt "UI"
-msgid "Zcash wallet change confirmation"
-msgstr "Confirmación de cambio de cartera Zcash"
-
-#: web/models.py:459
+#: web/models.py:373
 msgctxt "UI"
 msgid ""
 "Only alphabetical characters, numbers, underscore and dash are allowed in "
@@ -3923,544 +4974,785 @@ msgstr ""
 "¡Solo se permiten caracteres alfabéticos, números, guiones bajos y guiones "
 "en el nombre!"
 
-#: web/models.py:472
+#: web/models.py:386
 msgctxt "UI"
 msgid "Password must be at least 5 characters long!"
 msgstr "¡La contraseña debe tener al menos 5 caracteres!"
 
-#: web/models.py:567
+#: web/models.py:481
 msgctxt "UI, Transaction state"
 msgid "New"
 msgstr "Nuevo"
 
-#: web/models.py:568
+#: web/models.py:482
 msgctxt "UI, Transaction state"
 msgid "Processing"
 msgstr "Procesando"
 
-#: web/models.py:569
+#: web/models.py:483
 msgctxt "UI, Transaction state"
 msgid "Failed"
 msgstr "Falló"
 
-#: web/models.py:570
+#: web/models.py:484
 msgctxt "UI, Transaction state"
 msgid "Sent"
 msgstr "Enviado"
 
-#: web/models.py:909 web/models.py:921
+#: web/models.py:713
+msgctxt "UI"
+msgid ""
+"Thank you for your valuable contribution to our pool. As a VIP, you have "
+"access to premium features and services."
+msgstr ""
+
+#: web/models.py:747
+msgctxt "UI"
+msgid "Monday"
+msgstr ""
+
+#: web/models.py:748
+msgctxt "UI"
+msgid "Tuesday"
+msgstr ""
+
+#: web/models.py:749
+msgctxt "UI"
+msgid "Wednesday"
+msgstr ""
+
+#: web/models.py:750
+msgctxt "UI"
+msgid "Thursday"
+msgstr ""
+
+#: web/models.py:751
+msgctxt "UI"
+msgid "Friday"
+msgstr ""
+
+#: web/models.py:752
+msgctxt "UI"
+msgid "Saturday"
+msgstr ""
+
+#: web/models.py:753
+msgctxt "UI"
+msgid "Sunday"
+msgstr ""
+
+#: web/models.py:788 web/models.py:850
+#, fuzzy, python-format
+#| msgctxt "UI, value"
+#| msgid "Access Profile <b>%(name)s</b>:<br>"
+msgctxt "UI"
+msgid "Wallet: <b>%(name)s</b>"
+msgstr "Perfil de Acceso <b>%(name)s<b>:<br>"
+
+#: web/models.py:810
+#, python-format
+msgctxt "UI"
+msgid "Threshold: <b>%(threshold)s %(unit)s</b>"
+msgstr ""
+
+#: web/models.py:821
+msgctxt "UI"
+msgid "Triggered daily"
+msgstr ""
+
+#: web/models.py:827
+#, python-format
+msgctxt "UI"
+msgid "Triggered weekly on: %(weekday)s"
+msgstr ""
+
+#: web/models.py:828
+msgctxt "UI"
+msgid "unknown day"
+msgstr ""
+
+#: web/models.py:835
+#, python-format
+msgctxt "UI"
+msgid "Triggered monthly on the %(number)s. day"
+msgstr ""
+
+#: web/models.py:847
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "You have removed worker <b>%(name)s</b>"
+msgctxt "UI"
+msgid "Payout account: <b>%(name)s</b>"
+msgstr "Has eliminado al equipo de minería <b>%(name)s</b>"
+
+#. Translators: Example: "Bitcoin enabled" / "Monitoring disabled"
+#: web/models.py:867
+#, fuzzy, python-format
+#| msgctxt "UI, value"
+#| msgid "<b>%(key)s</b> deleted"
+msgctxt "UI"
+msgid "<b>%(key)s</b> disabled"
+msgstr "<b>%(key)s</b> borrado"
+
+#. Translators: Example: "Bitcoin enabled" / "Monitoring disabled"
+#: web/models.py:871
+#, fuzzy, python-format
+#| msgctxt "UI, value"
+#| msgid "<b>%(key)s</b> deleted"
+msgctxt "UI"
+msgid "<b>%(key)s</b> enabled"
+msgstr "<b>%(key)s</b> borrado"
+
+#: web/models.py:875 web/models.py:887
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> cambiado desde <b>%(old)s</b> a <b>%(new)s</b>"
 
-#: web/models.py:914
+#: web/models.py:880
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> cambiado a <b>%(new)s</b>"
 
-#: web/models.py:929 web/models.py:949
+#: web/models.py:895 web/models.py:915
 #, python-format
 msgctxt "UI, time"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> cambiado desde <b>%(old)s</b> a <b>%(new)s</b>"
 
-#: web/models.py:943
+#: web/models.py:909
 msgctxt "UI"
 msgid "Depricated"
 msgstr "Obsoleto"
 
-#: web/models.py:955
+#: web/models.py:921
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s %(old)s</b> deleted"
 msgstr "<b>%(key)s %(old)s</b> borrado"
 
-#: web/models.py:957
+#: web/models.py:923
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s created: <b>%(new)s</b>"
 msgstr "<b>%(key)s creado: <b>%(new)s</b>"
 
-#: web/models.py:963
+#: web/models.py:929
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> deleted"
 msgstr "<b>%(key)s</b> borrado"
 
-#: web/models.py:965
+#: web/models.py:931
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> created"
 msgstr "<b>%(key)s</b> creado"
 
-#: web/models.py:966
+#: web/models.py:932
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed"
 msgstr "<b>%(key)s</b> cambiado"
 
-#: web/models.py:971
+#: web/models.py:937
 msgctxt "UI, value"
 msgid "profile <b>activated</b>"
 msgstr "perfil <b>activado</b>"
 
-#: web/models.py:972
+#: web/models.py:938
 msgctxt "UI, value"
 msgid "profile <b>deactivated</b>"
 msgstr "perfil <b>desactivado</b>"
 
-#: web/models.py:977
-msgctxt "UI"
-msgid "Nothing has changed"
-msgstr "Nada ha cambiado"
-
-#: web/models.py:983 web/models.py:985
+#: web/models.py:942 web/models.py:1016 web/models.py:1024
 msgctxt "UI"
 msgid "N/A"
 msgstr "N/A"
 
-#: web/models.py:1000
-#, python-format
-msgctxt "UI, value"
-msgid "Access Profile <b>%(name)s</b>:<br>"
-msgstr "Perfil de Acceso <b>%(name)s<b>:<br>"
+#: web/models.py:945
+msgctxt "UI"
+msgid "Nothing has changed"
+msgstr "Nada ha cambiado"
 
-#: web/models.py:1009
+#: web/models.py:983
+#, fuzzy, python-format
+#| msgid "Access profiles"
+msgctxt "UI, value"
+msgid "Access Profile: %s"
+msgstr "Perfiles de acceso"
+
+#: web/models.py:993
 msgctxt "UI"
 msgid "Worker"
 msgstr "Equipo de Minería"
 
-#: web/models.py:1130
+#: web/models.py:1069
+#, python-format
+msgctxt "UI, value"
+msgid "Coin: %s"
+msgstr ""
+
+#: web/models.py:1212
 msgctxt "UI"
 msgid "Preferred language"
 msgstr "Idioma preferido"
 
-#: web/models.py:1131
+#: web/models.py:1213
 msgctxt "UI"
 msgid "Preferred timezone"
 msgstr "Zona horaria preferida"
 
-#: web/models.py:1132
+#: web/models.py:1214
 msgctxt "UI"
 msgid "Username in stats"
 msgstr "Nombre de usuario en las estadísticas"
 
-#: web/models.py:1133
-msgctxt "UI"
-msgid "Watch proposals"
-msgstr "Ver propuestas"
-
-#: web/models.py:1134
+#: web/models.py:1215
 msgctxt "UI"
 msgid "Notify me on payout"
 msgstr "Notificarme al momento del pago"
 
-#: web/models.py:1135
+#: web/models.py:1216
 msgctxt "UI"
 msgid "Newsletter"
 msgstr "Boletín"
 
-#: web/models.py:1136
+#: web/models.py:1217
 msgctxt "UI"
 msgid "Currency unit"
 msgstr "Unidad de moneda"
 
-#: web/models.py:1137
+#: web/models.py:1218
 msgctxt "UI"
 msgid "Blockchain voting"
 msgstr "Votación Blockchain"
 
-#: web/models.py:1139
+#: web/models.py:1220
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr "Informes habilitados"
 
-#: web/models.py:1140
+#: web/models.py:1221
 msgctxt "UI"
 msgid "Auto-detect alert limit"
 msgstr "Detectar automáticamente el Límite de Alerta"
 
-#: web/models.py:1141
+#: web/models.py:1222
 msgctxt "UI"
 msgid "Alert limit"
 msgstr "Límite de Alerta"
 
-#: web/models.py:1143
+#: web/models.py:1224
 msgctxt "UI"
 msgid "Wallet"
 msgstr "Cartera"
 
-#: web/models.py:1144 web/models.py:1145
+#: web/models.py:1225 web/models.py:1226
 msgctxt "UI"
 msgid "Pending wallet"
 msgstr "Cartera pendiente"
 
-#: web/models.py:1146
+#: web/models.py:1227
 msgctxt "UI"
 msgid "Send threshold"
 msgstr "Umbral de envío"
 
-#: web/models.py:1147
+#: web/models.py:1228
 msgctxt "UI"
 msgid "Email"
 msgstr "Email"
 
-#: web/models.py:1149
+#: web/models.py:1230
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "You don't have any notifications."
+msgctxt "UI"
+msgid "Monitoring notifications"
+msgstr "Usted no tiene ninguna notificación."
+
+#: web/models.py:1231
 msgctxt "UI"
 msgid "Monitoring"
 msgstr "Monitoreo"
 
-#: web/models.py:1150
+#: web/models.py:1232
 msgctxt "UI"
 msgid "Last Change"
 msgstr "Último Cambio"
 
-#: web/models.py:1151
+#: web/models.py:1233
 msgctxt "UI"
 msgid "Login suffix"
 msgstr "Sufijo de inicio de sesión"
 
-#: web/models.py:1152 web/models.py:1153
+#: web/models.py:1234 web/models.py:1235
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr "Dificultad mínima"
 
-#: web/models.py:1155
-msgctxt "UI"
-msgid "Bitcoin"
-msgstr "Bitcoin"
-
-#: web/models.py:1156
-msgctxt "UI"
-msgid "Ethereum Classic"
-msgstr "Ethereum Classic"
-
-#: web/models.py:1157
-msgctxt "UI"
-msgid "Ethereum"
-msgstr "Ethereum"
-
-#: web/models.py:1158
-msgctxt "UI"
-msgid "Zcash"
-msgstr "Zcash"
-
-#: web/models.py:1160
+#: web/models.py:1237
 msgctxt "UI"
 msgid "Enabled"
 msgstr "Habilitado"
 
-#: web/models.py:1160
+#: web/models.py:1237
 msgctxt "UI"
 msgid "Disabled"
 msgstr "Deshabilitado"
 
-#: web/models.py:1202
+#: web/models.py:1278
 msgctxt "UI"
 msgid "Account deletion cancelled"
 msgstr "Eliminación de cuenta cancelada"
 
-#: web/models.py:1203
+#: web/models.py:1279
 msgctxt "UI"
 msgid "Account deleted"
 msgstr "Cuenta eliminada"
 
-#: web/models.py:1204
+#: web/models.py:1280
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr "Eliminación de cuenta solicitada"
 
-#: web/models.py:1206
+#: web/models.py:1282
 msgctxt "UI"
 msgid "Demo login"
 msgstr "Demo de Inicio de sesión"
 
-#: web/models.py:1207
+#: web/models.py:1283
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Demo login"
+msgctxt "UI"
+msgid "Demo logout"
+msgstr "Demo de Inicio de sesión"
+
+#: web/models.py:1284
 msgctxt "UI"
 msgid "Support login"
 msgstr "Inicio de sesión de Soporte"
 
-#: web/models.py:1208
+#: web/models.py:1285
 msgctxt "UI"
 msgid "Login"
 msgstr "Inicio de sesión"
 
-#: web/models.py:1209
+#: web/models.py:1286
 msgctxt "UI"
 msgid "Logout"
 msgstr "Cerrar sesión"
 
-#: web/models.py:1210
+#: web/models.py:1287
 msgctxt "UI"
 msgid "Logout all sessions"
 msgstr "Cerrar todas las sesiones"
 
-#: web/models.py:1211
+#: web/models.py:1288
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr "Inicio de sesión inválido"
 
-#: web/models.py:1212
+#: web/models.py:1289
 msgctxt "UI"
 msgid "Inactive profile"
 msgstr "Perfil inactivo"
 
-#: web/models.py:1214
+#: web/models.py:1292
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "New wallet"
+msgctxt "UI"
+msgid "New wallet created"
+msgstr "Nueva Cartera"
+
+#: web/models.py:1294
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Wallet unlocked"
+msgctxt "UI"
+msgid "Wallet updated"
+msgstr "Cartera desbloqueada"
+
+#: web/models.py:1296
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Wallet locked"
+msgctxt "UI"
+msgid "Wallet deleted"
+msgstr "Cartera bloqueada"
+
+#: web/models.py:1298
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Payouts blocked"
+msgctxt "UI"
+msgid "Payouts locked"
+msgstr "Pagos bloqueados"
+
+#: web/models.py:1299
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Payouts unblocked"
+msgctxt "UI"
+msgid "Payouts unlocked"
+msgstr "Pagos desbloqueados"
+
+#: web/models.py:1300
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "New access profile created"
+msgctxt "UI"
+msgid "New payout account created"
+msgstr "Nuevo perfil de acceso creado"
+
+#: web/models.py:1302
+#, fuzzy
+msgctxt "UI"
+msgid "Payout account updated"
+msgstr "Bitcoin dirección"
+
+#: web/models.py:1304
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Your account has been activated!"
+msgctxt "UI"
+msgid "Payout account deactivated"
+msgstr "¡Su cuenta ha sido activada!"
+
+#: web/models.py:1306
+msgctxt "UI"
+msgid "Immediate payout requested"
+msgstr ""
+
+#: web/models.py:1308
+msgctxt "UI"
+msgid "Immediate payout request cancelled"
+msgstr ""
+
+#: web/models.py:1311
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Payouts blocked"
+msgctxt "UI"
+msgid "Payout split modified"
+msgstr "Pagos bloqueados"
+
+#: web/models.py:1315
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Payout settings updated"
+msgctxt "UI"
+msgid "Payout account settings updated"
+msgstr "Configuración de pago actualizada"
+
+#: web/models.py:1319
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "OTP change confirmed"
+msgctxt "UI"
+msgid "Payout channel confirmed"
+msgstr "Cambio OTP confirmado"
+
+#: web/models.py:1323
+#, fuzzy
+msgctxt "UI"
+msgid "Payout channel confirmation cancelled"
+msgstr "Confirmación del cambio de la cartera"
+
+#: web/models.py:1327
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Wallet change confirmation resent"
+msgctxt "UI"
+msgid "Payout channel confirmation e-mail resent"
+msgstr "Confirmación de cambio de cartera reenviada"
+
+#: web/models.py:1331
 msgctxt "UI"
 msgid "New access profile created"
 msgstr "Nuevo perfil de acceso creado"
 
-#: web/models.py:1216
+#: web/models.py:1333
 msgctxt "UI"
 msgid "Access profile updated"
 msgstr "Perfil de acceso actualizado"
 
-#: web/models.py:1218
+#: web/models.py:1335
 msgctxt "UI"
 msgid "Access profile deleted"
 msgstr "Perfil de acceso eliminado"
 
-#: web/models.py:1221
+#: web/models.py:1338
+#, fuzzy
+msgctxt "UI"
+msgid "Payouts paused"
+msgstr "Bitcoin dirección"
+
+#: web/models.py:1339
+#, fuzzy
+msgctxt "UI"
+msgid "Payouts unpaused"
+msgstr "Bitcoin dirección"
+
+#: web/models.py:1341
 msgctxt "UI"
 msgid "Message seen"
 msgstr "Mensaje visto"
 
-#: web/models.py:1222
+#: web/models.py:1343
 msgctxt "UI"
 msgid "Mining settings updated"
 msgstr "Configuración de minería actualizada"
 
-#: web/models.py:1223
+#: web/models.py:1347
 msgctxt "UI"
 msgid "Monitoring settings updated"
 msgstr "Configuración de monitoreo actualizada"
 
-#: web/models.py:1224
+#: web/models.py:1350
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
 msgstr "Suscripción al Boletín cancelada"
 
-#: web/models.py:1226
+#: web/models.py:1352
 msgctxt "UI"
 msgid "2-factor authentication disabled"
 msgstr "Autenticación de dos factores desactivada"
 
-#: web/models.py:1227
+#: web/models.py:1353
 msgctxt "UI"
 msgid "2-factor authentication enabled"
 msgstr "Autenticación de dos factores activada"
 
-#: web/models.py:1228
+#: web/models.py:1354
 msgctxt "UI"
 msgid "One time password setup cancelled"
 msgstr "Configuración del código temporal de seguridad cancelada"
 
-#: web/models.py:1229
+#: web/models.py:1355
 msgctxt "UI"
 msgid "OTP change confirmed"
 msgstr "Cambio OTP confirmado"
 
-#: web/models.py:1230
+#: web/models.py:1356
 msgctxt "UI"
 msgid "2-factor authentication removed by operator"
 msgstr "Autenticación de 2 factores eliminada por el operador"
 
-#: web/models.py:1232
+#: web/models.py:1358
 msgctxt "UI"
 msgid "U2F device registered"
 msgstr "Dispositivo U2F registrado"
 
-#: web/models.py:1233
+#: web/models.py:1359
 msgctxt "UI"
 msgid "U2F setup cancelled"
 msgstr "Configuración U2F cancelada"
 
-#: web/models.py:1236
+#: web/models.py:1362
 msgctxt "UI"
 msgid "Payouts blocked"
 msgstr "Pagos bloqueados"
 
-#: web/models.py:1238
+#: web/models.py:1364
 msgctxt "UI"
 msgid "Payouts unblocked"
 msgstr "Pagos desbloqueados"
 
-#: web/models.py:1240 web/models.py:1243
+#: web/models.py:1366 web/models.py:1369
 msgctxt "UI"
 msgid "Password changed"
 msgstr "Contraseña cambiada"
 
-#: web/models.py:1241
+#: web/models.py:1367
 msgctxt "UI"
 msgid "Password reset completed"
 msgstr "Restablecimiento de contraseña completo"
 
-#: web/models.py:1242
+#: web/models.py:1368
 msgctxt "UI"
 msgid "Password reset initiated"
 msgstr "Restablecimiento de contraseña iniciado"
 
-#: web/models.py:1245
-msgctxt "UI"
-msgid "Payout settings updated"
-msgstr "Configuración de pago actualizada"
-
-#: web/models.py:1246
-msgctxt "UI"
-msgid "Zcash payout settings updated"
-msgstr "Configuración de pago Zcash actualizada"
-
-#: web/models.py:1272 web/models.py:1274
+#: web/models.py:1372 web/models.py:1529
 msgctxt "UI"
 msgid "Account settings updated"
 msgstr "Configuración de cuenta actualizada"
 
-#: web/models.py:1278
-msgctxt "UI"
-msgid "Wallet change confirmed"
-msgstr "Cambio de cartera confirmado"
-
-#: web/models.py:1279
-msgctxt "UI"
-msgid "Wallet change cancelled"
-msgstr "Cambio de cartera cancelado"
-
-#: web/models.py:1280
-msgctxt "UI"
-msgid "Wallet change confirmation resent"
-msgstr "Confirmación de cambio de cartera reenviada"
-
-#: web/models.py:1282
-msgctxt "UI"
-msgid "Zcash wallet change confirmed"
-msgstr "Cambio de cartera Zcash confirmado"
-
-#: web/models.py:1283
-msgctxt "UI"
-msgid "Zcash wallet change cancelled"
-msgstr "Cambio de cartera Zcash cancelado"
-
-#: web/models.py:1284
-msgctxt "UI"
-msgid "Zcash wallet change confirmation resent"
-msgstr "Confirmación de cambio de cartera Zcash reenviada"
-
-#: web/models.py:1286
+#: web/models.py:1375
 msgctxt "UI"
 msgid "Email change confirmed"
 msgstr "Cambio de correo electrónico confirmado"
 
-#: web/models.py:1287
+#: web/models.py:1376
 msgctxt "UI"
 msgid "Email change cancelled"
 msgstr "Cambio de correo electrónico cancelado"
 
-#: web/models.py:1288
+#: web/models.py:1377
 msgctxt "UI"
 msgid "Email change confirmation resent"
 msgstr "Confirmación de cambio de correo electrónico reenviada"
 
-#: web/models.py:1290
-msgctxt "UI"
-msgid "Wallet locked"
-msgstr "Cartera bloqueada"
-
-#: web/models.py:1291
-msgctxt "UI"
-msgid "Wallet unlocked"
-msgstr "Cartera desbloqueada"
-
-#: web/models.py:1292
-msgctxt "UI"
-msgid "Wallet unlocked by operator"
-msgstr "Cartera desbloqueada por el operador"
-
-#: web/models.py:1293
-msgctxt "UI"
-msgid "Zcash wallet locked"
-msgstr "Cartera Zcash bloqueada"
-
-#: web/models.py:1294
-msgctxt "UI"
-msgid "Zcash wallet unlocked"
-msgstr "Cartera Zcash desbloqueada"
-
-#: web/models.py:1297
+#: web/models.py:1380
 msgctxt "UI"
 msgid "Worker removed"
 msgstr "Equipo de minería removido"
 
-#: web/models.py:1298
+#: web/models.py:1381
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr "Has eliminado al equipo de minería <b>%(name)s</b>"
 
-#: web/models.py:1301
+#: web/models.py:1384
 msgctxt "UI"
 msgid "Workers removed"
 msgstr "Equipos de minería removidos"
 
-#: web/models.py:1302
+#: web/models.py:1385
 #, python-format
 msgctxt "UI"
 msgid "You have removed %(count)d %(coin)s workers"
 msgstr "Has eliminado %(count)d %(coin)s equipos de minería"
 
-#: web/models.py:1304
+#: web/models.py:1387
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr "Configuración de equipo de minería actualizada"
 
-#: web/models.py:1306
+#: web/models.py:1389
 msgctxt "UI"
 msgid "New worker"
 msgstr "Nuevo Equipo de Minería"
 
-#: web/models.py:1307
+#: web/models.py:1390
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr "Has registrado un nuevo equipo de minería"
 
-#: web/models.py:1312
+#: web/models.py:1394
 msgctxt "UI"
 msgid "User appeal dismissed"
 msgstr "Apelación del usuario desestimada"
 
-#: web/models.py:1317
+#: web/models.py:1399
 msgctxt "UI"
 msgid "Enabled coins updated"
 msgstr "Monedas habilitadas actualizadas"
 
-#: web/models.py:1377
+#: web/models.py:1459
 msgctxt "UI"
 msgid "Exported user data"
 msgstr "Datos de usuario exportados"
 
-#: web/permissions.py:38
+#: web/models.py:1464
+#, fuzzy
+#| msgid "Your NMC reward"
+msgctxt "UI"
+msgid "NMC reward claimed"
+msgstr "Su recompensa NMC"
+
+#: web/models.py:1468
+msgctxt "UI"
+msgid "NMC claim - address changed"
+msgstr ""
+
+#: web/models.py:1474
+msgctxt "UI"
+msgid "Wallet unlocked by operator"
+msgstr "Cartera desbloqueada por el operador"
+
+#: web/models.py:1478
+msgctxt "UI"
+msgid "Payout settings updated"
+msgstr "Configuración de pago actualizada"
+
+#: web/models.py:1482
+msgctxt "UI"
+msgid "Zcash payout settings updated"
+msgstr "Configuración de pago Zcash actualizada"
+
+#: web/models.py:1486
+msgctxt "UI"
+msgid "Wallet change confirmed"
+msgstr "Cambio de cartera confirmado"
+
+#: web/models.py:1490
+msgctxt "UI"
+msgid "Wallet change cancelled"
+msgstr "Cambio de cartera cancelado"
+
+#: web/models.py:1494
+msgctxt "UI"
+msgid "Wallet change confirmation resent"
+msgstr "Confirmación de cambio de cartera reenviada"
+
+#: web/models.py:1498
+msgctxt "UI"
+msgid "Zcash wallet change confirmed"
+msgstr "Cambio de cartera Zcash confirmado"
+
+#: web/models.py:1502
+msgctxt "UI"
+msgid "Zcash wallet change cancelled"
+msgstr "Cambio de cartera Zcash cancelado"
+
+#: web/models.py:1506
+msgctxt "UI"
+msgid "Zcash wallet change confirmation resent"
+msgstr "Confirmación de cambio de cartera Zcash reenviada"
+
+#: web/models.py:1510
+msgctxt "UI"
+msgid "Wallet locked"
+msgstr "Cartera bloqueada"
+
+#: web/models.py:1514
+msgctxt "UI"
+msgid "Wallet unlocked"
+msgstr "Cartera desbloqueada"
+
+#: web/models.py:1518
+msgctxt "UI"
+msgid "Zcash wallet locked"
+msgstr "Cartera Zcash bloqueada"
+
+#: web/models.py:1522
+msgctxt "UI"
+msgid "Zcash wallet unlocked"
+msgstr "Cartera Zcash desbloqueada"
+
+#: web/models_zec.py:78
+msgctxt "UI"
+msgid "Zcash wallet change confirmation"
+msgstr "Confirmación de cambio de cartera Zcash"
+
+#: web/permissions.py:44
 msgctxt "UI"
 msgid "Full access"
 msgstr "Acceso completo"
 
-#: web/permissions.py:39
+#: web/permissions.py:45
 msgctxt "UI"
 msgid "Read-only"
 msgstr "Solo lectura"
 
-#: web/permissions.py:40
+#: web/permissions.py:46
 msgctxt "UI"
 msgid "Limited read-only"
 msgstr "Sólo lectura limitada"
 
-#: web/registration.py:46
+#: web/registration.py:58
 #, python-format
 msgctxt "UI"
 msgid "Username \"%s\" is already taken."
 msgstr "Nombre de usuario \"%s\" ya ha sido tomado."
 
-#: web/registration.py:64
+#: web/registration.py:112
 msgctxt "UI"
 msgid "New account confirmation"
 msgstr "Confirmación de cuenta nueva"
@@ -4634,46 +5926,6 @@ msgstr ""
 "Hemos detectado cambios en el estado de sus equipos de minería %(coin)s. Por "
 "favor, vea el siguiente informe:"
 
-#: web/templates/email/monitoring_body.html:8
-msgctxt "UI"
-msgid "Event Time"
-msgstr "Tiempo del Evento"
-
-#: web/templates/email/monitoring_body.html:9
-msgctxt "UI"
-msgid "Account Hash Rate"
-msgstr "Hashrate de la Cuenta"
-
-#: web/templates/email/monitoring_body.html:10
-msgctxt "UI"
-msgid "Worker States (Changes)"
-msgstr "Estados del Equipo de Minería (Cambios)"
-
-#: web/templates/email/monitoring_body.html:20
-msgctxt "UI"
-msgid "Worker Name"
-msgstr "Nombre del Equipo de Minería"
-
-#: web/templates/email/monitoring_body.html:21
-msgctxt "UI"
-msgid "State Change"
-msgstr "Cambio de Estado"
-
-#: web/templates/email/monitoring_body.html:22
-msgctxt "UI"
-msgid "State Changed After"
-msgstr "Estado cambiado después de"
-
-#: web/templates/email/monitoring_body.html:23
-msgctxt "UI"
-msgid "Actual Hash Rate"
-msgstr "Hashrate actual"
-
-#: web/templates/email/monitoring_body.html:24
-msgctxt "UI"
-msgid "Alert Limit"
-msgstr "Límite de Alerta"
-
 #: web/templates/email/monitoring_body.html:42
 #, python-format
 msgctxt "UI "
@@ -4763,12 +6015,6 @@ msgstr ""
 "El procesamiento de pagos a través de la red puede demorar entre 30 minutos "
 "y 3 horas. Puedes ver el estado de pago actual en <a href=\"%(wallet_info)s"
 "\">%(wallet_info)s</a>"
-
-#: web/templates/email/proposal_state_update_subject.txt:1
-#, python-format
-msgctxt "UI"
-msgid "Proposal state change - %(state)s (%(name)s)"
-msgstr "Cambio de estado de propuesta - %(state)s (%(name)s)"
 
 #: web/templates/email/registration.html:5
 #, python-format
@@ -4880,47 +6126,271 @@ msgstr ""
 "Para continuar, debe <strong>habilitar javascript</strong>. (<a href="
 "\"%(url)s\">vea cómo...</a>)"
 
-#: web/utils.py:81
+#: web/utils.py:80
 #, python-format
 msgid "%i days"
 msgstr "%i días"
 
-#: workers/api/v1/views.py:60
+#: workers/api/v1/views.py:64
 msgctxt "UI"
 msgid "Invalid worker name!"
 msgstr "Nombre de equipo de minería inválido!"
 
-#: workers/api/v1/views.py:72
+#: workers/api/v1/views.py:76
 msgctxt "UI"
 msgid "Invalid monitoring settings."
 msgstr "Configuración de monitoreo inválida."
 
-#: workers/api/v1/views.py:81
+#: workers/api/v1/views.py:85
 msgctxt "UI"
 msgid "Minimum difficulty must be an integer between 8 and 500 000!"
 msgstr "La dificultad mínima debe ser un número entero entre 8 y 500.000!"
 
-#: workers/api/v1/views.py:131
-#, python-format
-msgctxt "UI"
-msgid "Worker %(name)s"
-msgstr "Equipo de minería %(name)s"
-
 #. Translators: data entity, eg: Access denied to object: workers
-#: workers/api/v1/views.py:159
+#: workers/api/v1/views.py:189
 msgctxt "UI"
 msgid "workers"
 msgstr "equipos de minería"
 
-#: workers/api/v1/views.py:314
+#: workers/api/v1/views.py:282
+msgctxt "UI"
+msgid "Label name must be a string."
+msgstr ""
+
+#: workers/api/v1/views.py:285
+msgctxt "UI"
+msgid "Name is required."
+msgstr ""
+
+#: workers/api/v1/views.py:287
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Feedback must be a string no longer than %d characters."
+msgctxt "UI"
+msgid "Name must not be longer than 15 characters."
+msgstr ""
+"La retroalimentación debe ser una cadena que no tenga más de %d caracteres."
+
+#: workers/api/v1/views.py:292
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Label \"%s\" already exists"
+msgctxt "UI"
+msgid "A label with this name already exists."
+msgstr "La etiqueta \"%s\" ya existe"
+
+#: workers/api/v1/views.py:296
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Names and shortcuts must be unique."
+msgctxt "UI"
+msgid "Label shortcut must be a string."
+msgstr "Nombres y accesos directos deben ser únicos."
+
+#: workers/api/v1/views.py:299
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Names and shortcuts must be unique."
+msgctxt "UI"
+msgid "Label shortcut is required."
+msgstr "Nombres y accesos directos deben ser únicos."
+
+#: workers/api/v1/views.py:301
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Feedback must be a string no longer than %d characters."
+msgctxt "UI"
+msgid "Shortcut must not be longer than 2 characters."
+msgstr ""
+"La retroalimentación debe ser una cadena que no tenga más de %d caracteres."
+
+#: workers/api/v1/views.py:312
+msgctxt "UI"
+msgid "Label description must be a string."
+msgstr ""
+
+#: workers/api/v1/views.py:316
+msgctxt "UI"
+msgid "Maximal length of label description is 100 characters."
+msgstr ""
+
+#: workers/api/v1/views.py:323
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid Login"
+msgctxt "UI"
+msgid "Invalid color."
+msgstr "Inicio de sesión inválido"
+
+#: workers/api/v1/views.py:359
 msgctxt "UI"
 msgid "Invalid label ids."
 msgstr "Identificaciones de etiqueta inválidas."
 
-#: workers/api/v1/views.py:346
+#: workers/api/v1/views.py:391
 msgctxt "UI"
 msgid "Names and shortcuts must be unique."
 msgstr "Nombres y accesos directos deben ser únicos."
+
+#~ msgctxt "UI"
+#~ msgid "Worker not found (%s)"
+#~ msgstr "Equipo de minería no encontrado (%s)"
+
+#~ msgctxt "UI, Blocks"
+#~ msgid "Invalid"
+#~ msgstr "Inválido"
+
+#~ msgctxt "UI, Blocks"
+#~ msgid "Confirmed"
+#~ msgstr "Confirmado"
+
+#~ msgctxt "UI"
+#~ msgid "New comment"
+#~ msgstr "Nuevo comentario"
+
+#~ msgctxt "UI, Proposals"
+#~ msgid "Draft"
+#~ msgstr "Borrador"
+
+#~ msgctxt "UI, Proposals"
+#~ msgid "Approved"
+#~ msgstr "Aprobado"
+
+#~ msgctxt "UI, Proposals"
+#~ msgid "Rejected"
+#~ msgstr "Rechazado"
+
+#~ msgctxt "UI, Proposals"
+#~ msgid "In progress"
+#~ msgstr "En progreso"
+
+#~ msgctxt "UI, Proposals"
+#~ msgid "Released"
+#~ msgstr "Publicado"
+
+#~ msgctxt "UI, Proposals"
+#~ msgid "Merged"
+#~ msgstr "Fusionado"
+
+#~ msgctxt "UI, Proposals"
+#~ msgid "New comments"
+#~ msgstr "Nuevos comentarios"
+
+#~ msgctxt "UI"
+#~ msgid "Back to proposal detail"
+#~ msgstr "Volver al detalle de la propuesta"
+
+#~ msgctxt "UI"
+#~ msgid "Saved at:"
+#~ msgstr "Guardado en:"
+
+#~ msgctxt "UI"
+#~ msgid "Development Corner"
+#~ msgstr "Rincón de Desarrollo"
+
+#~ msgctxt "UI"
+#~ msgid "Proposals feed"
+#~ msgstr "Alimentador de propuestas"
+
+#~ msgctxt "UI"
+#~ msgid "Requested proposal is waiting for admin confirmation"
+#~ msgstr ""
+#~ "La propuesta solicitada está esperando confirmación del administrador"
+
+#~ msgctxt "UI"
+#~ msgid "Proposal state change - %(state)s #%(id)s"
+#~ msgstr "Cambio de estado de la propuesta - %(state)s #%(id)s"
+
+#~ msgid "Hash Rate Proof"
+#~ msgstr "Prueba de Hashrate"
+
+#~ msgid "Stratum Protocol"
+#~ msgstr "Protocolo Stratum"
+
+#~ msgid "Stratum Mining Proxy"
+#~ msgstr "Proxy Stratum de Minería"
+
+#~ msgid ""
+#~ "Same pool fee applies to proceeds from <a href=\"%(merge)s\">merge mined</"
+#~ "a> coins."
+#~ msgstr ""
+#~ "La misma comisión de pool se aplica a los ingresos desde las monedas de "
+#~ "<a href=\"%(merge)s\">minería fusionada</a>."
+
+#~ msgid "Namecoin (converted to BTC)"
+#~ msgstr "Namecoin (convertida a BTC)"
+
+#~ msgctxt "UI"
+#~ msgid "Stratum <span>Mining Protocol</span>"
+#~ msgstr "<span>Protocolo de Minería</span> Stratum"
+
+#~ msgctxt "UI"
+#~ msgid "Couldn't load USD/BTC exchange rate"
+#~ msgstr "No se pudo cargar la tasa de cambio USD/BTC"
+
+#~ msgctxt "UI"
+#~ msgid "Failed to load a demo account user!"
+#~ msgstr "Error al cargar un usuario de la cuenta de demo!"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "(Deactivate proposal updates in <a href=\"/accounts/settings\">Settings</"
+#~ "a>)"
+#~ msgstr ""
+#~ "(Desactive las actualizaciones de la propuesta en <a href=\"/accounts/"
+#~ "settings\">Configuración</a>)"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "New proposal(s) is ready for voting in <a href=\"/devcorner/"
+#~ "\">Development Corner</a>. "
+#~ msgstr ""
+#~ "Las nuevas propuestas están listas para votación en <a href=\"/devcorner/"
+#~ "\">Rincón de Desarrollo</a>. "
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Proposal <a href=\"/proposal/detail/%(id)s\">%(title)s</a> is now being "
+#~ "implemented. "
+#~ msgstr ""
+#~ "La propuesta <a href=\"/proposal/detail/%(id)s\">%(title)s</a> está "
+#~ "siendo implementada. "
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Proposal <a href=\"/proposal/detail/%(id)s\">%(title)s</a> has been "
+#~ "released. "
+#~ msgstr ""
+#~ "La propuesta <a href=\"/proposal/detail/%(id)s\">%(title)s</a> ha sido "
+#~ "publicada. "
+
+#~ msgctxt "UI"
+#~ msgid "Watch proposals"
+#~ msgstr "Ver propuestas"
+
+#~ msgctxt "UI"
+#~ msgid "Bitcoin"
+#~ msgstr "Bitcoin"
+
+#~ msgctxt "UI"
+#~ msgid "Ethereum Classic"
+#~ msgstr "Ethereum Classic"
+
+#~ msgctxt "UI"
+#~ msgid "Ethereum"
+#~ msgstr "Ethereum"
+
+#~ msgctxt "UI"
+#~ msgid "Zcash"
+#~ msgstr "Zcash"
+
+#~ msgctxt "UI"
+#~ msgid "Proposal state change - %(state)s (%(name)s)"
+#~ msgstr "Cambio de estado de propuesta - %(state)s (%(name)s)"
+
+#~ msgctxt "UI"
+#~ msgid "Worker %(name)s"
+#~ msgstr "Equipo de minería %(name)s"
 
 #, fuzzy
 #~| msgctxt "UI"
@@ -4935,13 +6405,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgctxt "UI"
 #~ msgid "Campaign updated"
 #~ msgstr "Propuesta actualizada"
-
-#, fuzzy
-#~| msgctxt "UI"
-#~| msgid "New access profile created"
-#~ msgctxt "UI"
-#~ msgid "New campaign run created"
-#~ msgstr "Nuevo perfil de acceso creado"
 
 #, fuzzy
 #~ msgctxt "UI"
@@ -4974,9 +6437,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 
 #~ msgid "German"
 #~ msgstr "Alemán"
-
-#~ msgid "French"
-#~ msgstr "Francés"
 
 #~ msgid "Czech"
 #~ msgstr "Checo"
@@ -5026,11 +6486,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~| msgid "Get to Know these big words"
 #~ msgid "Get to know these big words"
 #~ msgstr "Conozca estas grandes palabras"
-
-#, fuzzy
-#~| msgid "Rewards Calculation"
-#~ msgid "How rewards are calculated"
-#~ msgstr "Cálculo de recompensas"
 
 #~ msgid "Your personal watchdog"
 #~ msgstr "Tu alerta personal"
@@ -5886,9 +7341,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgid "<strong>Connect your miners</strong> by following instructions"
 #~ msgstr "<strong>Conecta tus mineros</strong> siguiendo las instrucciones"
 
-#~ msgid "<strong>Run miners</strong>"
-#~ msgstr "<strong>Arranca los mineros</strong>"
-
 #~ msgid "Set-up your <strong>payout address</strong> for receiving rewards"
 #~ msgstr ""
 #~ "Configura tu <strong>dirección de pago</strong> para recibir recompensas"
@@ -6649,9 +8101,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 
 #~ msgid "How can I change my registered email address?"
 #~ msgstr "¿Cómo puedo cambiar mi dirección de email ya registrada?"
-
-#~ msgid "There are two options how to change registered e-mail:"
-#~ msgstr "Hay dos opciones para cambiar el e-mail registrado:"
 
 #~ msgid ""
 #~ "If you have access to original mailbox, simply change it on your own on "
@@ -8111,9 +9560,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ "Usted puede leer una completa descripción del Monitoreo en un <a href="
 #~ "\"%(manual_moni)s\">Manual de Usuario</a>."
 
-#~ msgid "Slush Pool Team"
-#~ msgstr "Equipo Slush Pool"
-
 #~ msgid "Merged Mining in development!"
 #~ msgstr "¡Merged Mining en desarrollo!"
 
@@ -8233,20 +9679,12 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgstr "Nueva <span>Configuración</span> de trabajador"
 
 #~ msgctxt "UI"
-#~ msgid "You don't have any notifications."
-#~ msgstr "Usted no tiene ninguna notificación."
-
-#~ msgctxt "UI"
 #~ msgid "Invalid request, wallet is allready locked."
 #~ msgstr "Solicitud inválida, la cartera ya está bloqueada."
 
 #~ msgctxt "UI"
 #~ msgid "Stats"
 #~ msgstr "Estadísticas"
-
-#~ msgctxt "UI"
-#~ msgid "Settings"
-#~ msgstr "Ajustes"
 
 #~ msgctxt "UI"
 #~ msgid "Second Factor Verification"
@@ -8300,10 +9738,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgctxt "UI"
 #~ msgid "Username"
 #~ msgstr "Nombre de usuario"
-
-#~ msgctxt "UI"
-#~ msgid "Enter a valid username."
-#~ msgstr "Introduzca un nombre de usuario válido."
 
 #~ msgctxt "UI"
 #~ msgid "Password again"
@@ -8965,10 +10399,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgstr "Por favor acepta los términos del servicio."
 
 #~ msgctxt "UI"
-#~ msgid "Your account has been activated!"
-#~ msgstr "¡Su cuenta ha sido activada!"
-
-#~ msgctxt "UI"
 #~ msgid ""
 #~ "Your pool account is now ready for mining. Please, use the following "
 #~ "credentials in your miner configuration:"
@@ -9362,9 +10792,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ "CPU. Así mismo hay una lista de software no soportado en nuestro manual "
 #~ "de usuario."
 
-#~ msgid "Payouts related question?"
-#~ msgstr "¿Preguntas relacionadas con pagos?"
-
 #~ msgid "Do you have a feature suggestion?"
 #~ msgstr "¿Tienes alguna funcionalidad que sugerir?"
 
@@ -9379,10 +10806,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgctxt "UI"
 #~ msgid "Actual search query used:"
 #~ msgstr "Actual consulta de búsqueda usada:"
-
-#~ msgctxt "UI"
-#~ msgid "No results have been found."
-#~ msgstr "No se encontraron resultados."
 
 #~ msgctxt "UI"
 #~ msgid ""
@@ -9649,10 +11072,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgctxt "UI"
 #~ msgid "Cannot verify the message, please try it later."
 #~ msgstr "Imposible verificar el mensaje, por favor intente más tarde."
-
-#~ msgctxt "UI"
-#~ msgid "New wallet"
-#~ msgstr "Nueva Cartera"
 
 #~ msgctxt "UI"
 #~ msgid "If you wish to change your BTC wallet, enter its address here"
@@ -10415,13 +11834,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgstr "Autenticacion de dos factores aun no esta configurada"
 
 #~ msgctxt "UI"
-#~ msgid ""
-#~ "Two-factor authentication token is invalid. Please, enter valid token."
-#~ msgstr ""
-#~ "El token de la autenticacion de dos factores es invalido. Por favor, "
-#~ "escriba un token valido."
-
-#~ msgctxt "UI"
 #~ msgid "Two-factor authentication has been succesfully disabled."
 #~ msgstr "Autenticacion de dos factores ha sido desactivada."
 
@@ -11013,10 +12425,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgctxt "UI"
 #~ msgid "Block is invalid, no reward has been sent"
 #~ msgstr "El bloque no es válido, no se han enviado recompensas"
-
-#~ msgctxt "UI"
-#~ msgid "Reward has been sent"
-#~ msgstr "La recompensa ha sido enviada"
 
 #~ msgctxt "UI"
 #~ msgid "Processing..."
@@ -11694,11 +13102,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 
 #, fuzzy
 #~ msgctxt "UI"
-#~ msgid "<strong>Release</strong> Notes"
-#~ msgstr "Configuración de la cuenta"
-
-#, fuzzy
-#~ msgctxt "UI"
 #~ msgid "Reward <span>System"
 #~ msgstr "Configuración de la cuenta"
 
@@ -11942,11 +13345,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 
 #, fuzzy
 #~ msgctxt "UI"
-#~ msgid "Wallet change confirmation cancelled"
-#~ msgstr "Confirmación del cambio de la cartera"
-
-#, fuzzy
-#~ msgctxt "UI"
 #~ msgid "terms of service"
 #~ msgstr "Configuración de la cuenta"
 
@@ -12052,11 +13450,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgctxt "Page title"
 #~ msgid "Password reset successful"
 #~ msgstr "Contraseña reajustada con éxito"
-
-#, fuzzy
-#~ msgctxt "UI"
-#~ msgid "No email change is pending"
-#~ msgstr "Cambio de cartera se envió nuevamente"
 
 #~ msgid "success"
 #~ msgstr "Éxito"
@@ -12179,10 +13572,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ "Fue lo primero grupo de la minería de Bitcoins, ha estado operando "
 #~ "constantemente desde diciembre de 2010 y tiene un largo historial de "
 #~ "pagos estables y precisos."
-
-#, fuzzy
-#~ msgid "Payouts update"
-#~ msgstr "Bitcoin dirección"
 
 #, fuzzy
 #~ msgid "Wallet confirm"
@@ -12574,9 +13963,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgid "List of found blocks is delayed for two hours."
 #~ msgstr "Lista de los bloques encontrados se ha retrasado por dos horas."
 
-#~ msgid "Your NMC reward"
-#~ msgstr "Su recompensa NMC"
-
 #~ msgid "Validity"
 #~ msgstr "Validez"
 
@@ -12611,13 +13997,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 #~ msgid "Namecoins will be sent once the reward crosses over the threshold"
 #~ msgstr ""
 #~ "Los Namecoins se enviará una vez que la recompensa se cruza el umbral"
-
-#~ msgid ""
-#~ "This is not a valid Namecoin address. Please install Namecoin client to "
-#~ "get one."
-#~ msgstr ""
-#~ "Esto no es una dirección válida namecoin. Por favor, instale el cliente "
-#~ "para obtener una Namecoin"
 
 #~ msgid "Sending threshold must be <= 100! I'm not a bank :-)."
 #~ msgstr "El umbral de enbio debe ser <= 100! Yo no soy un banco :-)."
