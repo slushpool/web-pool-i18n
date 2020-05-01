@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-29 17:26+0200\n"
 "PO-Revision-Date: 2020-05-01 21:32+0000\n"
-"Last-Translator: Estarossa <lpusoldier14@gmail.com>\n"
+"Last-Translator: Artemis3 v <artemis3@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/slushpool/mining/"
 "es/>\n"
 "Language: es\n"
@@ -333,6 +333,11 @@ msgid ""
 "features? <a href=\"%(new_ticket)s\">Please&nbsp;let&nbsp;us&nbsp;know</a> "
 "so that we can make Slush Pool better."
 msgstr ""
+"¿Se encontró con algún problema usando Slush Pool que nuestro equipo de "
+"soporte pueda <a href=\"%(support)s\">ayudarle con</a>? ¿O tal vez le falte "
+"alguna característica? <a href=\"%(new_ticket)s\""
+">Por&nbsp;favor&nbsp;permítanos&nbsp;saber</a> para que podamos mejorar "
+"Slush Pool."
 
 #: campaigns/email_templates/delete_account_template.html:22
 #, python-format
@@ -344,6 +349,11 @@ msgid ""
 "href=\"%(url)s\">confirmation link</a> to delete your account. For your "
 "security, the link is only good for an hour."
 msgstr ""
+"Si usted aun desea borrar su cuenta, asegúrese de <strong>pedir su pago "
+"final ANTES</strong> de hacerlo. De lo contrario, cualquier balance restante "
+"será considerado una generosa donación para el pool. Haga click a este <a "
+"href=\"%(url)s\">enlace de confirmación</a> para borrar su cuenta. Por su "
+"seguridad, el enlace será válido solo por una hora."
 
 #: campaigns/email_templates/delete_account_template.html:25
 msgctxt "UI"
@@ -351,11 +361,13 @@ msgid ""
 "Lastly, if you DIDN’T request to delete your account, make sure you change "
 "your password ASAP.️"
 msgstr ""
+"Por último, si usted NO ha pedido borrar su cuenta, asegúrese de cambiar su "
+"palabra clave LO ANTES POSIBLE."
 
 #: campaigns/email_templates/delete_account_template.html:28
 msgctxt "UI"
 msgid "We hope to see you back soon."
-msgstr ""
+msgstr "Esperamos verle de nuevo pronto."
 
 #: campaigns/email_templates/footer_system.html:34
 msgctxt "UI"
@@ -363,11 +375,10 @@ msgid "Settings"
 msgstr "Ajustes"
 
 #: campaigns/email_templates/monitoring_incident_template.html:14
-#, fuzzy, python-format
-#| msgid "<strong>Run miners</strong>"
+#, python-format
 msgctxt "UI"
 msgid "Hey <strong>%(username)s</strong>,"
-msgstr "<strong>Arranca los mineros</strong>"
+msgstr "Oiga <strong>%(username)s</strong>,"
 
 #: campaigns/email_templates/monitoring_incident_template.html:17
 #, python-format
@@ -376,6 +387,8 @@ msgid ""
 "We wanted to let you know that we noticed something going on with your "
 "<strong>%(coin)s</strong> workers. You can see the details below."
 msgstr ""
+"Queremos notificarle que hemos notado que algo está ocurriendo con sus "
+"mineros <strong>%(coin)s</strong>. Puede ver los detalles abajo."
 
 #: campaigns/email_templates/monitoring_incident_template.html:21
 #: web/templates/email/monitoring_body.html:8
@@ -431,18 +444,18 @@ msgctxt "UI"
 msgid ""
 "You can also <a href=\"%(url)s\">click here</a> to see this report online."
 msgstr ""
+"También puede hacer <a href=\"%(url)s\">clic aquí</a> pare ver este reporte "
+"en linea."
 
 #: campaigns/email_templates/monitoring_incident_template.html:58
-#, fuzzy
-#| msgid "Slush Pool Team"
 msgctxt "UI"
 msgid "– The Slush Pool Team"
-msgstr "Equipo Slush Pool"
+msgstr "– El Equipo Slush Pool"
 
 #: campaigns/email_templates/onboarding_template.html:15
 msgctxt "UI"
 msgid "Ready to jumpstart your mining? 🔥🚀"
-msgstr ""
+msgstr "¿Listos para arrancar su minado? 🔥🚀"
 
 #: campaigns/email_templates/onboarding_template.html:18
 msgctxt "UI"
@@ -451,6 +464,9 @@ msgid ""
 "strong> mining, but make sure you keep an eye out for an announcement coming "
 "soon! (Hint: 3 more cryptos incoming 🎉)"
 msgstr ""
+"En estos momentos, Slush Pool soporta minado <strong>Bitcoin</strong> y "
+"<strong>Zcash</strong>, ¡pero asegúrese de estar pendiente para un próximo "
+"anuncio pronto! (Pista: 3 cripto entrando 🎉)"
 
 #: campaigns/email_templates/onboarding_template.html:20
 msgctxt "UI"
@@ -458,11 +474,13 @@ msgid ""
 "Need a little help getting started? These how-to guides will help get you up "
 "and running."
 msgstr ""
+"¿Necesita una pequeña ayuda para comenzar? Estas guías de como-hacer le "
+"ayudarán a levantarse y correr."
 
 #: campaigns/email_templates/onboarding_template.html:30
 msgctxt "UI"
 msgid "Quickstart Guide"
-msgstr ""
+msgstr "Guía de Inicio rápido"
 
 #: campaigns/email_templates/onboarding_template.html:46
 #, python-format
@@ -471,61 +489,52 @@ msgid ""
 "If you ever need help with anything else, make sure you check out our&nbsp;"
 "<a href=\"%(url)s\"><strong>online support portal</strong></a>"
 msgstr ""
+"Si en algún momento necesita ayuda con cualquier otra cosa, asegúrese de "
+"revisar nuestro&nbsp;<a href=\"%(url)s\"><strong>portal de soporte en "
+"línea</strong></a>"
 
 #: campaigns/email_templates/payout_template.html:16
 #, python-format
 msgctxt "UI"
 msgid "Congrats! You've hit your %(coin)s payout threshold 🎉"
-msgstr ""
+msgstr "¡Felicitaciones! Alcanzó el umbral de pago para %(coin)s 🎉"
 
 #: campaigns/email_templates/payout_template.html:19
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid ""
-#| "The amount of %(amount)s %(coin)s has been transferred to your address "
-#| "%(wallet)s on %(date)s"
+#, python-format
 msgctxt "UI"
 msgid "We've transferred %(amount)s %(coin)s to your address %(address)s."
-msgstr ""
-"La cantidad de %(amount)s %(coin)s ha sido transferida a su dirección "
-"%(wallet)s en %(date)s"
+msgstr "Hemos transferido %(amount)s %(coin)s a su dirección %(address)s."
 
 #: campaigns/email_templates/payout_template.html:22
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid ""
-#| "Payment processing through the network may take between 30 minutes to 3 "
-#| "hours. You can watch current payment status on <a href=\"%(wallet_info)s"
-#| "\">%(wallet_info)s</a>"
+#, python-format
 msgctxt "UI"
 msgid ""
 "Typically, payments take somewhere between 30 minutes to 3 hours to go "
 "through. You can keep an eye on your payment's status <a href=\"%(url)s"
 "\">here</a>."
 msgstr ""
-"El procesamiento de pagos a través de la red puede demorar entre 30 minutos "
-"y 3 horas. Puedes ver el estado de pago actual en <a href=\"%(wallet_info)s"
-"\">%(wallet_info)s</a>"
+"Normalmente, los pagos toman desde 30 minutos a 3 horas para ser procesados. "
+"Puede vigilar el estado de su pago <a href=\"%(url)s\">aquí</a>."
 
 #: campaigns/email_templates/payout_template.html:24
 msgctxt "UI"
 msgid "Keep up the good work and happy mining!"
-msgstr ""
+msgstr "¡Siga el buen trabajo y feliz minado!"
 
 #: campaigns/email_templates/registration_template.html:15
 msgctxt "UI"
 msgid "Thanks for joining Slush Pool! 💪"
-msgstr ""
+msgstr "Gracias por unirse a Slush Pool! 💪"
 
 #: campaigns/email_templates/registration_template.html:18
 msgctxt "UI"
 msgid "To start mining, activate your account by clicking the button below."
-msgstr ""
+msgstr "Para comenzar a minar, active su cuenta haciendo clic al botón debajo."
 
 #: campaigns/email_templates/registration_template.html:30
 msgctxt "UI"
 msgid "START MINING"
-msgstr ""
+msgstr "COMENZAR MINADO"
 
 #: campaigns/email_templates/registration_template.html:43
 msgctxt "UI"
@@ -533,40 +542,40 @@ msgid ""
 "If that link doesn't work, try copy and pasting the full link below into "
 "your browser address bar:"
 msgstr ""
+"Si ese enlace no funciona, intente copiar y pegar el enlace completo debajo, "
+"en la barra de direcciones de su navegador:"
 
 #: campaigns/email_templates/reset_password_template.html:16
 msgctxt "UI"
 msgid "We got a password reset request for your Slush Pool account."
 msgstr ""
+"Recibimos una petición para restablecer su palabra clave en su cuenta de "
+"Slush Pool."
 
 #: campaigns/email_templates/reset_password_template.html:19
 msgctxt "UI"
 msgid "To reset your password, click the button below."
-msgstr ""
+msgstr "Para restablecer su palabra clave, presione el botón debajo."
 
 #: campaigns/email_templates/reset_password_template.html:31
 msgctxt "UI"
 msgid "RESET PASSWORD"
-msgstr ""
+msgstr "RESTABLECER CLAVE"
 
 #: campaigns/email_templates/wallet_change_template.html:15
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid ""
-#| "You are receiving this email because you requested to change your "
-#| "%(coin)s wallet to the new address: <strong>%(wallet)s</strong>."
+#, python-format
 msgctxt "UI"
 msgid ""
 "We received a request to change your %(coin)s wallet to this new address: "
 "<strong>%(address)s</strong>"
 msgstr ""
-"Está recibiendo este email porque solicitó cambiar su cartera %(coin)s a la "
-"nueva dirección: <strong>%(wallet)s</strong>."
+"Hemos recibido una petición para cambiar su cartera %(coin)s a esta nueva "
+"dirección: <strong>%(address)s</strong>"
 
 #: campaigns/email_templates/wallet_change_template.html:21
 msgctxt "UI"
 msgid "CONFIRM CHANGE"
-msgstr ""
+msgstr "CONFIRMAR CAMBIO"
 
 #: campaigns/email_templates/wallet_change_template.html:25
 #, python-format
