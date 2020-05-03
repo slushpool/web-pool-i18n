@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-29 17:26+0200\n"
-"PO-Revision-Date: 2020-05-03 22:11+0000\n"
+"PO-Revision-Date: 2020-05-04 11:00+0000\n"
 "Last-Translator: JohnsonWang <johnsonwong@westudyin.cz>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "slushpool/mining/zh_Hans/>\n"
@@ -526,53 +526,38 @@ msgid "RESET PASSWORD"
 msgstr "<strong>重置密码</strong>"
 
 #: campaigns/email_templates/wallet_change_template.html:15
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid ""
-#| "You are receiving this email because you requested to change your "
-#| "%(coin)s wallet to the new address: <strong>%(wallet)s</strong>."
+#, python-format
 msgctxt "UI"
 msgid ""
 "We received a request to change your %(coin)s wallet to this new address: "
 "<strong>%(address)s</strong>"
-msgstr ""
-"此邮件被发送是因为您请求更改您的%(coin)s钱包到新地址：<strong>%(wallet)s</"
-"strong>。"
+msgstr "我们收到了您要求更改您的 %(coin)s 钱包地址到这个地址：<strong>%(address)s</strong> 的请求。"
 
 #: campaigns/email_templates/wallet_change_template.html:21
 msgctxt "UI"
 msgid "CONFIRM CHANGE"
-msgstr ""
+msgstr "<strong>确认更改</strong>"
 
 #: campaigns/email_templates/wallet_change_template.html:25
-#, fuzzy, python-format
-#| msgid ""
-#| "If you didn't initiate this change, please <a href=\"%(url_cancel)s"
-#| "\">cancel the request</a> and <a href=\"%(url_password_reset)s\">change "
-#| "your password</a> immediately."
+#, python-format
 msgctxt "UI"
 msgid ""
 "If you didn’t request an address change, please <a href=\"%(url)s\">cancel "
 "this request</a> and change your password immediately."
-msgstr ""
-"如果您未要求此更改，请<a href=\"%(url_cancel)s\">取消请求</a>并立即<a href="
-"\"%(url_password_reset)s\">更改您的密码</a>。"
+msgstr "如您未曾请求更改地址，请<a href=\"%(url)s\">取消这一请求</a>并立即更改密码。"
 
 #: campaigns/forms/campaign.py:59 campaigns/forms/campaign.py:104
 #: campaigns/forms/campaign.py:161 campaigns/forms/campaign.py:219
 #: campaigns/forms/campaign.py:286 campaigns/forms/template.py:41
 #: campaigns/forms/template.py:104
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Access denied."
 msgctxt "UI"
 msgid "Access to campaigns denied."
-msgstr "拒绝访问。"
+msgstr "拒绝访问活动。"
 
 #: campaigns/forms/campaign.py:226
 msgctxt "UI"
 msgid "Campaign must be in DRAFT state."
-msgstr ""
+msgstr "活动必须是<strong>草案</strong>格式的。"
 
 #: campaigns/forms/validators.py:439 mailing/forms/validators.py:36
 msgctxt "UI"
@@ -596,23 +581,20 @@ msgid "Invalid e-mail token provided."
 msgstr "提供了无效的邮件令牌。"
 
 #: campaigns/templates/campaign_fragment/hello.html:4
-#, fuzzy, python-format
-#| msgid "<strong>Run miners</strong>"
+#, python-format
 msgctxt "UI"
 msgid "Hey <strong>%(username)s</strong>!"
-msgstr "<strong>运行矿机</strong>"
+msgstr "<strong>%(username)s</strong>您好！"
 
 #: campaigns/templates/campaign_fragment/signature.html:5
 msgctxt "UI"
 msgid "Happy mining!"
-msgstr ""
+msgstr "祝您挖矿愉快！"
 
 #: campaigns/templates/campaign_fragment/signature.html:6
-#, fuzzy
-#| msgid "Slush Pool Team"
 msgctxt "UI"
 msgid "The Slush Pool Team"
-msgstr "Slush矿池组"
+msgstr "Slush Pool矿池团队"
 
 #: core/validators.py:10
 msgid "Enter a valid, non empty value."
@@ -630,16 +612,14 @@ msgid "Device you are trying to pair was not found"
 msgstr "您尝试配对的设备未能找到"
 
 #: devices/models.py:58
-#, fuzzy
 msgctxt "UI"
 msgid "Values for device settings must be dictionary."
-msgstr "设备设定的值必须是字典的。"
+msgstr "设备的设置必须使用字典值。"
 
 #: devices/models.py:62
-#, fuzzy
 msgctxt "UI"
 msgid "Invalid keys supplied as device settings."
-msgstr "无效的密钥作为设备设定供给。"
+msgstr "提供了无效的密钥作为设备设定。"
 
 #: devices/templates/notification/monitoring_subject.txt:2
 #: web/templates/email/monitoring_subject.html:2
@@ -648,17 +628,14 @@ msgid "Workers"
 msgstr "矿工"
 
 #: finance/api/v1/api_actions.py:28
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid label ids."
 msgctxt "UI"
 msgid "Invalid payout channel id."
-msgstr "无效的标签ID。"
+msgstr "无效的支付渠道ID。"
 
 #: finance/api/v1/api_actions.py:42
 msgctxt "UI"
 msgid "This verification request has already been processed."
-msgstr ""
+msgstr "验证请求已正在处理中。"
 
 #: finance/api/v1/api_actions.py:84 settings/api/v1/api_actions.py:119
 #: settings/api/v1/api_actions.py:157 settings/api/v1/api_actions.py:189
@@ -669,12 +646,9 @@ msgid ""
 msgstr "确认邮件已发送。请查看邮箱后使用邮件里的链接。"
 
 #: finance/api/v1/api_actions.py:117
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Wallet change confirmation cancelled"
 msgctxt "UI"
 msgid "Payout channel confirmation has been cancelled."
-msgstr "更改钱包的确认已被取消"
+msgstr "已取消收益支付渠道确认。"
 
 #: finance/forms/mixins.py:57 settings/form_mixins.py:127
 #: settings/form_mixins.py:176
@@ -701,64 +675,50 @@ msgstr "签名过期。"
 #: finance/forms/wallet.py:145
 msgctxt "UI"
 msgid "You do not have permission to submit this form."
-msgstr ""
+msgstr "您没有提交此表的权限。"
 
 #: finance/forms/payout_account.py:120
 msgctxt "UI"
 msgid "Unable to deactivate account with non-zero balance."
-msgstr ""
+msgstr "不能停用余额为零的账户。"
 
 #: finance/forms/payout_account.py:135
 msgctxt "UI"
 msgid ""
 "This account has non-zero split percentage. Reassign its rewards split first."
-msgstr ""
+msgstr "此账号的分配百分比非零。请先重新分配收益。"
 
 #: finance/forms/payout_channel.py:57 user_request/models.py:615
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Payouts blocked"
 msgctxt "UI"
 msgid "Payouts are locked."
-msgstr "收益支付已被锁定"
+msgstr "收益支付已被锁定。"
 
 #: finance/forms/payout_hold.py:33
-#, fuzzy
-#| msgid "Payouts related question?"
 msgctxt "UI"
 msgid "Payouts are already paused."
-msgstr "关于报酬支付的问题？"
+msgstr "收益支付已暂停。"
 
 #: finance/forms/payout_hold.py:72
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Payout settings updated"
 msgctxt "UI"
 msgid "Payouts are not paused."
-msgstr "报酬支付设置已更新"
+msgstr "收益支付未暂停。"
 
 #: finance/forms/payout_lock.py:45 finance/forms/payout_split.py:47
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Payouts blocked"
 msgctxt "UI"
 msgid "Payouts are already locked."
-msgstr "收益支付已被锁定"
+msgstr "收益支付已被锁定。"
 
 #: finance/forms/payout_lock.py:55
 #, python-format
 msgctxt "UI"
 msgid ""
 "Payout account \"%(name)s\" does not meet the requirements for payouts lock."
-msgstr ""
+msgstr "收益支付账户 \"%(name)s\" 未能达到收益支付锁的要求。"
 
 #: finance/forms/payout_lock.py:121
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Payouts unblocked"
 msgctxt "UI"
 msgid "Payouts are not locked."
-msgstr "收益支付已解锁"
+msgstr "收益支付未上锁。"
 
 #: finance/forms/validators.py:27
 #, fuzzy
@@ -873,32 +833,27 @@ msgstr "无效的令牌！"
 #: finance/forms/validators.py:219
 msgctxt "UI"
 msgid "Invalid payout account id."
-msgstr ""
+msgstr "无效的收益支付账户ID。"
 
 #: finance/forms/validators.py:229
 msgctxt "UI"
 msgid "Invalid payout account name."
-msgstr ""
+msgstr "无效的收益支付账户名。"
 
 #: finance/forms/validators.py:241
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "The method is not allowed in read only mode"
 msgctxt "UI"
 msgid "Character \"#\" is not allowed in payout account name."
-msgstr "此方法在只读状态下是不允许的"
+msgstr "“#”号不能在收益支付账户名中使用。"
 
 #: finance/forms/validators.py:293
-#, fuzzy
-#| msgid "Enter a valid, non empty value."
 msgctxt "UI"
 msgid "Invalid payout request value."
-msgstr "请输入一个有效非空白的值。"
+msgstr "请求的收益支付值无效。"
 
 #: finance/forms/validators.py:302
 msgctxt "UI"
 msgid "Payout has already been requested for this payout account."
-msgstr ""
+msgstr "已经请求过此收益支付账户的收益支付了。"
 
 #: finance/forms/validators.py:313
 #, python-format
@@ -909,12 +864,12 @@ msgstr ""
 #: finance/forms/validators.py:329
 msgctxt "UI"
 msgid "There is no wallet for this payout account."
-msgstr ""
+msgstr "此收益支付账户未设置钱包地址。"
 
 #: finance/forms/validators.py:336
 msgctxt "UI"
 msgid "Payout was not requested for this payout account."
-msgstr ""
+msgstr "尚未请求此收益支付账户的收益支付。"
 
 #: finance/forms/validators.py:353
 #, fuzzy
@@ -930,20 +885,14 @@ msgid "Percentages must add up to 100 %."
 msgstr ""
 
 #: finance/forms/validators.py:363
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid label ids."
 msgctxt "UI"
 msgid "Invalid payout account ids."
-msgstr "无效的标签ID。"
+msgstr "无效的收益支付账户ID。"
 
 #: finance/forms/validators.py:370
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid date range!"
 msgctxt "UI"
 msgid "Invalid payout accounts."
-msgstr "无效数据范围！"
+msgstr "无效的收益支付账户。"
 
 #: finance/forms/validators.py:386 finance/forms/validators.py:434
 #, fuzzy
@@ -968,7 +917,7 @@ msgstr ""
 #: finance/forms/validators.py:440
 msgctxt "UI"
 msgid "Invalid payout frequency."
-msgstr ""
+msgstr "无效的收益支付频率。"
 
 #: finance/forms/validators.py:444
 #, fuzzy
@@ -1359,7 +1308,7 @@ msgstr "Zcash设置"
 
 #: help/help_categories.py:56 help/templates/help/rewards-payouts.html:4
 msgid "Rewards & Payouts"
-msgstr "报酬&支付"
+msgstr "收益与收益支付"
 
 #: help/help_categories.py:61
 msgid "Pool Terminology"
@@ -1646,7 +1595,7 @@ msgstr "用户配置API"
 
 #: help/templates/help/api.html:191
 msgid "Provides information about users performance and rewards."
-msgstr "提供关于用户效能和奖励的信息。"
+msgstr "提供关于用户效能和收益的信息。"
 
 #: help/templates/help/api.html:236
 msgid "username"
@@ -2002,8 +1951,8 @@ msgid ""
 "<em>Settings > selected coin > Payouts</em> menu. Once you reach the minimum "
 "threshold, <strong>your rewards will be sent there</strong>."
 msgstr ""
-"您需要在目录<em>设置 > 选择币种 > 支付</em>中设置支付地址。只要您达到最低阈"
-"值，<strong>您的收益将会被送到您的钱包地址</strong>。"
+"如想提现收益，您需要在目录<em>设置 > 选择币种 > "
+"收益支付</em>中设置支付地址。达到最低阈值，<strong>您的收益将将会被发送到您的钱包地址</strong>。"
 
 #: help/templates/help/bitcoin-setup.html:168
 #: help/templates/help/zcash-setup.html:86
@@ -2069,18 +2018,14 @@ msgid ""
 "Cryptocurrencies (or coins) are mined by miners (individuals or "
 "organizations) using their computing (hashing) power to <strong>process "
 "transactions and earn rewards</strong>."
-msgstr ""
-"加密货币的挖矿，矿工（可能是个人或组织）用他们的计算（哈希）力<strong>处理交"
-"易和获得报酬</strong>的过程。"
+msgstr "加密货币的挖矿，是矿工（个人或组织）用他们的算（哈希）力<strong>处理交易并获得奖励收益</strong>的过程。"
 
 #: help/templates/help/mining-introduction.html:11
 msgid ""
 "To be more specific, mining is the process of recording transactions to the "
 "public ledger (blockchain) with an incentive to receive a <strong>miner "
 "reward</strong>."
-msgstr ""
-"更具体地说，挖矿是记录交易公帐（区块链）的过程，而<strong>挖矿的收益</strong>"
-"是激励挖矿的手段。"
+msgstr "更具体地说，挖矿是记录交易公帐（区块链）的过程，而<strong>挖矿的奖励收益</strong>是激励挖矿的手段。"
 
 #: help/templates/help/mining-introduction.html:13
 msgid ""
@@ -3740,9 +3685,8 @@ msgid ""
 "<em>Settings > Accounts</em> menu and confirm it via the confirmation link "
 "sent to your e-mail."
 msgstr ""
-"然而，如果您决定马上删除账户，请一定记得在采取任何操作前<strong>检查是否所有"
-"报酬已支付</strong>到您的支付地址。然后，删除账户的请求在目录<em>设置 > 账户"
-"</em>里能找到，并同时通过发送给您的邮件里的链接确认。"
+"然而，如果您决定马上删除账户，请一定记得在采取任何操作前<strong>检查是否所有收益已支付</strong>到您的支付地址。然后，删除账户的请求在目录"
+"<em>设置 > 账户</em>里能找到，并同时通过发送给您的邮件里的链接确认。"
 
 #: help/templates/help/worker-management.html:9
 msgid "Worker management"
@@ -5280,11 +5224,9 @@ msgid "Exported user data"
 msgstr "已导出用户数据"
 
 #: web/models.py:1464
-#, fuzzy
-#| msgid "Your NMC reward"
 msgctxt "UI"
 msgid "NMC reward claimed"
-msgstr "您的名币酬报"
+msgstr "已要求的NMC域名币收益支付"
 
 #: web/models.py:1468
 msgctxt "UI"
