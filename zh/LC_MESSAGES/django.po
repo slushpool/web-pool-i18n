@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-29 17:26+0200\n"
-"PO-Revision-Date: 2019-08-16 10:22+0000\n"
+"PO-Revision-Date: 2020-05-03 22:11+0000\n"
 "Last-Translator: JohnsonWang <johnsonwong@westudyin.cz>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "slushpool/mining/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
@@ -138,26 +138,23 @@ msgid "Workers labels update failed"
 msgstr "矿工标签更新失败"
 
 #: api/exceptions.py:159
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid worker name!"
 msgctxt "UI"
 msgid "Invalid worker id."
-msgstr "矿工名无效！"
+msgstr "无效的矿工名ID。"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
 #: api/exceptions.py:165
 #, fuzzy, python-format
 msgctxt "UI"
 msgid "Slot \"%s\" not found"
-msgstr "时间段”%s“未找到"
+msgstr "时间段 \"%s\" 未找到"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
 #: api/exceptions.py:171
 #, fuzzy, python-format
 msgctxt "UI"
 msgid "Slot number \"%s\" is not valid."
-msgstr "槽\"%s\"是无效的。"
+msgstr "编号为的槽 \"%s\" 是无效的。"
 
 #. Translators: %s will be some invalid blockchain voting option
 #: api/exceptions.py:187
@@ -267,60 +264,50 @@ msgctxt "UI"
 msgid ""
 "Deletion aborted. It is not possible to delete active workers. Please adjust "
 "your selection."
-msgstr ""
+msgstr "删除已撤销。无法删除处于活跃状态的矿工名。请调整您的选择。"
 
 #: api/exceptions.py:324
 msgctxt "UI"
 msgid ""
 "Deletion aborted. It is not possible to delete auto-workers. Please adjust "
 "your selection."
-msgstr ""
+msgstr "删除已撤销。无法删除处于自动状态的矿工名。请调整您的选择。"
 
 #: campaigns/email_templates/change_email_template.html:15
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid ""
-#| "You are receiving this email because you requested to change your e-mail "
-#| "address to <strong>%(email)s</strong>"
+#, python-format
 msgctxt "UI"
 msgid ""
 "We got a request to change your email address to <strong>%(email)s</strong>."
-msgstr "此邮件被发送是因为您请求更改邮箱地址到：<strong>%(email)s</strong>"
+msgstr "我们收到了您想将邮件地址改到：<strong>%(email)s</strong> 的请求。"
 
 #: campaigns/email_templates/change_email_template.html:18
 #: campaigns/email_templates/wallet_change_template.html:18
 msgctxt "UI"
 msgid "To authorize this change, please click the button below."
-msgstr ""
+msgstr "请点击下方按钮许可更改。"
 
 #: campaigns/email_templates/change_email_template.html:30
-#, fuzzy
-#| msgid "Change my email"
 msgctxt "UI"
 msgid "Change email address"
-msgstr "更改我的邮箱"
+msgstr "更改邮箱地址"
 
 #: campaigns/email_templates/change_email_template.html:43
-#, fuzzy, python-format
-#| msgid ""
-#| "If you didn't initiate this change, please <a href=\"%(url_cancel)s"
-#| "\">cancel the request</a> and <a href=\"%(url_password_reset)s\">change "
-#| "your password</a> immediately."
+#, python-format
 msgctxt "UI"
 msgid ""
 "If you <strong>did not</strong> ask us to change your email address, please "
 "<a href=\"%(url)s\">cancel&nbsp;the&nbsp;request</a> and change your "
 "password immediately."
 msgstr ""
-"如果您未要求此更改，请<a href=\"%(url_cancel)s\">取消请求</a>并立即<a href="
-"\"%(url_password_reset)s\">更改您的密码</a>。"
+"如您 <strong>没有</strong> 向我们发送更改邮箱地址的请求，请您 <a href=\"%(url)s\""
+">&nbsp;取消这一请求&nbsp;</a> 并立即更改您的密码。"
 
 #: campaigns/email_templates/delete_account_template.html:16
 msgctxt "UI"
 msgid ""
 "It's Pavel Moravec, co-CEO of Braiins. I wanted to reach out to you "
 "personally and thank you for giving Slush Pool a shot."
-msgstr ""
+msgstr "Pavel Moravec，首脑-Braiins的联合首席运营官。想亲自和您交流交流，并感谢您选择Slush Pool矿池。"
 
 #: campaigns/email_templates/delete_account_template.html:19
 #, python-format
@@ -331,6 +318,9 @@ msgid ""
 "features? <a href=\"%(new_ticket)s\">Please&nbsp;let&nbsp;us&nbsp;know</a> "
 "so that we can make Slush Pool better."
 msgstr ""
+"您在使用Slush Pool矿池时有遇到问题么？我们的客服团队能为您 <a href=\"%(support)s\""
+">提供帮助</a>。或者，您觉得矿池有功能缺失？<a href=\"%(new_ticket)s\">&nbsp;请告诉我们&nbsp;</a> ，"
+"这能帮助我们将Slush Pool矿池完善得更好。"
 
 #: campaigns/email_templates/delete_account_template.html:22
 #, python-format
@@ -342,18 +332,20 @@ msgid ""
 "href=\"%(url)s\">confirmation link</a> to delete your account. For your "
 "security, the link is only good for an hour."
 msgstr ""
+"如果您决心想要删除您的账户，请在删除前<strong>务必确认您是否请求了支付账户收益</strong>。否则，您账户内的余额将被视为对矿池的慷慨捐赠。没"
+"有问题的话，请点击这个<a href=\"%(url)s\">确认链接</a>确认删除您的账户。为保证安全，确认链接的有效期为一小时。"
 
 #: campaigns/email_templates/delete_account_template.html:25
 msgctxt "UI"
 msgid ""
 "Lastly, if you DIDN’T request to delete your account, make sure you change "
 "your password ASAP.️"
-msgstr ""
+msgstr "最后，如您<strong>没有要求</strong>删除账户，请您<strong>立即</strong>更改您的密码。"
 
 #: campaigns/email_templates/delete_account_template.html:28
 msgctxt "UI"
 msgid "We hope to see you back soon."
-msgstr ""
+msgstr "我们期望与您后会有期。"
 
 #: campaigns/email_templates/footer_system.html:34
 msgctxt "UI"
@@ -361,11 +353,10 @@ msgid "Settings"
 msgstr "设置"
 
 #: campaigns/email_templates/monitoring_incident_template.html:14
-#, fuzzy, python-format
-#| msgid "<strong>Run miners</strong>"
+#, python-format
 msgctxt "UI"
 msgid "Hey <strong>%(username)s</strong>,"
-msgstr "<strong>运行矿机</strong>"
+msgstr "<strong>%(username)s</strong>您好，"
 
 #: campaigns/email_templates/monitoring_incident_template.html:17
 #, python-format
@@ -373,7 +364,7 @@ msgctxt "UI"
 msgid ""
 "We wanted to let you know that we noticed something going on with your "
 "<strong>%(coin)s</strong> workers. You can see the details below."
-msgstr ""
+msgstr "我们在此通知您，您账户下的<strong>%(coin)s</strong>矿工名有异常情况，详情如下。"
 
 #: campaigns/email_templates/monitoring_incident_template.html:21
 #: web/templates/email/monitoring_body.html:8
@@ -428,19 +419,17 @@ msgstr "警告限值"
 msgctxt "UI"
 msgid ""
 "You can also <a href=\"%(url)s\">click here</a> to see this report online."
-msgstr ""
+msgstr "您也可以<a href=\"%(url)s\">点此</a>在线查看本报告。"
 
 #: campaigns/email_templates/monitoring_incident_template.html:58
-#, fuzzy
-#| msgid "Slush Pool Team"
 msgctxt "UI"
 msgid "– The Slush Pool Team"
-msgstr "Slush矿池组"
+msgstr "——Slush Pool矿池团队"
 
 #: campaigns/email_templates/onboarding_template.html:15
 msgctxt "UI"
 msgid "Ready to jumpstart your mining? 🔥🚀"
-msgstr ""
+msgstr "准备好点燃挖矿的小火箭了么？🔥🚀"
 
 #: campaigns/email_templates/onboarding_template.html:18
 msgctxt "UI"
@@ -449,18 +438,20 @@ msgid ""
 "strong> mining, but make sure you keep an eye out for an announcement coming "
 "soon! (Hint: 3 more cryptos incoming 🎉)"
 msgstr ""
+"Slush Pool矿池现已支持<strong>比特币</strong>和<strong>Zcash</strong>的合并挖矿。我们还即将推出另外三种加"
+"密货币的合并挖矿，请对我们的公告保持关注！🎉"
 
 #: campaigns/email_templates/onboarding_template.html:20
 msgctxt "UI"
 msgid ""
 "Need a little help getting started? These how-to guides will help get you up "
 "and running."
-msgstr ""
+msgstr "不知从何开始？请看下文详解。"
 
 #: campaigns/email_templates/onboarding_template.html:30
 msgctxt "UI"
 msgid "Quickstart Guide"
-msgstr ""
+msgstr "快速指南"
 
 #: campaigns/email_templates/onboarding_template.html:46
 #, python-format
@@ -469,82 +460,70 @@ msgid ""
 "If you ever need help with anything else, make sure you check out our&nbsp;"
 "<a href=\"%(url)s\"><strong>online support portal</strong></a>"
 msgstr ""
+"如果您还需要其他帮助，您还可以试试我们的&nbsp;<a href=\"%(url)s\"><strong>在线客服平台</strong></a>"
 
 #: campaigns/email_templates/payout_template.html:16
 #, python-format
 msgctxt "UI"
 msgid "Congrats! You've hit your %(coin)s payout threshold 🎉"
-msgstr ""
+msgstr "恭喜！您已达到您的 %(coin)s 收益支付阈值🎉"
 
 #: campaigns/email_templates/payout_template.html:19
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid ""
-#| "The amount of %(amount)s %(coin)s has been transferred to your address "
-#| "%(wallet)s on %(date)s"
+#, python-format
 msgctxt "UI"
 msgid "We've transferred %(amount)s %(coin)s to your address %(address)s."
-msgstr ""
-"数量为%(amount)s %(coin)s的比特币已于%(date)s被转到您的收益支付钱包地址"
-"上%(wallet)s"
+msgstr "我们已将 %(amount)s 个 %(coin)s 转到了您的 %(address)s 地址。"
 
 #: campaigns/email_templates/payout_template.html:22
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid ""
-#| "Payment processing through the network may take between 30 minutes to 3 "
-#| "hours. You can watch current payment status on <a href=\"%(wallet_info)s"
-#| "\">%(wallet_info)s</a>"
+#, python-format
 msgctxt "UI"
 msgid ""
 "Typically, payments take somewhere between 30 minutes to 3 hours to go "
 "through. You can keep an eye on your payment's status <a href=\"%(url)s"
 "\">here</a>."
-msgstr ""
-"比特币网络的收益支付流程可能在30分钟到3小时间。您可以在<a href="
-"\"%(wallet_info)s\">%(wallet_info)s</a>查看当前收益支付状态"
+msgstr "通常，转账需要30分钟到3小时完成。您可以在<a href=\"%(url)s\">这里</a>查看到账状态。"
 
 #: campaigns/email_templates/payout_template.html:24
 msgctxt "UI"
 msgid "Keep up the good work and happy mining!"
-msgstr ""
+msgstr "全力以赴，挖矿愉快！"
 
 #: campaigns/email_templates/registration_template.html:15
 msgctxt "UI"
 msgid "Thanks for joining Slush Pool! 💪"
-msgstr ""
+msgstr "感谢您选择Slush Pool矿池！💪"
 
 #: campaigns/email_templates/registration_template.html:18
 msgctxt "UI"
 msgid "To start mining, activate your account by clicking the button below."
-msgstr ""
+msgstr "要开始挖矿，您需要先点击下方的按钮激活您的账户。"
 
 #: campaigns/email_templates/registration_template.html:30
 msgctxt "UI"
 msgid "START MINING"
-msgstr ""
+msgstr "<strong>开始挖矿</strong>"
 
 #: campaigns/email_templates/registration_template.html:43
 msgctxt "UI"
 msgid ""
 "If that link doesn't work, try copy and pasting the full link below into "
 "your browser address bar:"
-msgstr ""
+msgstr "如果链接无法点开，请尝试复制粘贴它到浏览器地址栏打开："
 
 #: campaigns/email_templates/reset_password_template.html:16
 msgctxt "UI"
 msgid "We got a password reset request for your Slush Pool account."
-msgstr ""
+msgstr "我们收到了重置您Slush Pool矿池账号密码的请求。"
 
 #: campaigns/email_templates/reset_password_template.html:19
 msgctxt "UI"
 msgid "To reset your password, click the button below."
-msgstr ""
+msgstr "请点击下方按钮重置您的密码。"
 
 #: campaigns/email_templates/reset_password_template.html:31
 msgctxt "UI"
 msgid "RESET PASSWORD"
-msgstr ""
+msgstr "<strong>重置密码</strong>"
 
 #: campaigns/email_templates/wallet_change_template.html:15
 #, fuzzy, python-format
