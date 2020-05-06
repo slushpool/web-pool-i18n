@@ -10,14 +10,12 @@ msgstr ""
 "POT-Creation-Date: 2015-04-10 09:32+0000\n"
 "PO-Revision-Date: 2020-05-03 22:11+0000\n"
 "Last-Translator: Iryna Bashkova <csepcsar@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/slushpool/js/ru/>"
-"\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/slushpool/js/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.1-dev\n"
 
 #: packages/slushpool/app/workers/containers/WorkersList.tsx:414
@@ -362,6 +360,7 @@ msgstr ""
 "Автоматически оценивать хешрейт вашего воркера по его прошлой активности."
 
 #: packages/slushpool/app/workers/containers/WorkerDetail.tsx:218
+#: shared/components/format/Interval/index.tsx:55
 #: shared/components/format/Interval/index.tsx:55 /checksum/vkQ1giC8GS
 msgctxt "UI"
 msgid "Now"
@@ -2414,7 +2413,7 @@ msgctxt "UI"
 msgid "Not Available in Read-only Mode."
 msgstr "Недоступно в режиме \"только для чтения\"."
 
-#: packages/slushpool/components/Footer/index.tsx:116 /checksum/7oxrdDNMQy
+#: packages/slushpool/components/Footer/index.tsx:122 /checksum/7oxrdDNMQy
 msgctxt "UI"
 msgid "API"
 msgstr "API"
@@ -2496,12 +2495,12 @@ msgctxt "UI"
 msgid "-- enter --"
 msgstr "-- введите значение --"
 
-#: packages/slushpool/components/Footer/index.tsx:122 /checksum/YA1INohKjx
+#: packages/slushpool/components/Footer/index.tsx:128 /checksum/YA1INohKjx
 msgctxt "UI"
 msgid "About Pool"
 msgstr "О пуле"
 
-#: packages/slushpool/components/Footer/index.tsx:106 /checksum/1RYAQD6QkE
+#: packages/slushpool/components/Footer/index.tsx:112 /checksum/1RYAQD6QkE
 msgctxt "UI"
 msgid "Bitcoin Mining"
 msgstr "Bitcoin майнинг"
@@ -2523,6 +2522,7 @@ msgstr "Последнее использование"
 msgid "Founder, Advisor"
 msgstr "Основатель, Советник"
 
+#: shared/lib/react/getDidCatchMessage.tsx:17
 #: shared/lib/react/getDidCatchMessage.tsx:17 /checksum/9RN9hrzIxV
 msgctxt "UI"
 msgid "Please contact our technical support."
@@ -2539,7 +2539,7 @@ msgctxt "UI"
 msgid "Password must have at least 5 characters!"
 msgstr "Пароль должен содержать не менее 5 символов!"
 
-#: packages/slushpool/components/Footer/index.tsx:70 /checksum/0jL9zI7N+X
+#: packages/slushpool/components/Footer/index.tsx:76 /checksum/0jL9zI7N+X
 msgctxt "UI"
 msgid "All rights reserved."
 msgstr "Все права защищены."
@@ -2553,7 +2553,7 @@ msgid ""
 msgstr "В имени пользователя допускаются только буквы, цифры и подчеркивание!"
 
 #: packages/slushpool/app/@routes/containers/Public.tsx:159
-#: packages/slushpool/components/Footer/index.tsx:125 /checksum/sq3si6tJYN
+#: packages/slushpool/components/Footer/index.tsx:131 /checksum/sq3si6tJYN
 msgctxt "UI"
 msgid "Terms and Conditions"
 msgstr "Условия использования"
@@ -2933,7 +2933,7 @@ msgctxt "UI"
 msgid "User request successfully confirmed!"
 msgstr "Запрос пользователя успешно подтвержден!"
 
-#: packages/slushpool/app/@routes/containers/Public.tsx:536
+#: packages/slushpool/app/@routes/containers/Public.tsx:538
 #: packages/slushpool/app/@routes/containers/Workspace.tsx:177
 #: shared/components/Menu/index.tsx:280 /checksum/mro2RdHKsg
 msgctxt "UI"
@@ -3090,6 +3090,7 @@ msgctxt "UI"
 msgid "Color"
 msgstr "Цвет"
 
+#: shared/lib/react/getDidCatchMessage.tsx:76
 #: shared/lib/react/getDidCatchMessage.tsx:76 /checksum/sM67mb+aX6
 msgctxt "UI"
 msgid "Technical support"
@@ -3117,6 +3118,7 @@ msgctxt "UI"
 msgid "accounting"
 msgstr "отчетность"
 
+#: shared/lib/react/getDidCatchMessage.tsx:23
 #: shared/lib/react/getDidCatchMessage.tsx:23 /checksum/hav+RWLOY7
 msgctxt "UI"
 msgid "For further information please contact our technical support."
@@ -3200,7 +3202,7 @@ msgctxt "UI"
 msgid "Active User Sessions"
 msgstr "Активные сессии пользователя"
 
-#: packages/slushpool/components/Footer/index.tsx:111 /checksum/32ejZOwyVE
+#: packages/slushpool/components/Footer/index.tsx:117 /checksum/32ejZOwyVE
 msgctxt "UI"
 msgid "Zcash Mining"
 msgstr "Zcash майнинг"
@@ -3391,12 +3393,13 @@ msgid "Not Found"
 msgstr "Не найдено"
 
 #: packages/slushpool/app/dashboard/containers/Dashboard.tsx:92
+#: shared/lib/layout/components/Layout.tsx:100
 #: shared/lib/layout/components/Layout.tsx:100 /checksum/NXzuN9vcvw
 msgctxt "UI"
 msgid "An error has occured!"
 msgstr "Произошла ошибка!"
 
-#: packages/slushpool/components/Footer/index.tsx:130 /checksum/NehXklGDja
+#: packages/slushpool/components/Footer/index.tsx:136 /checksum/NehXklGDja
 msgctxt "UI"
 msgid "Rewards & Fees"
 msgstr "Вознаграждения и комиссии"
@@ -3505,6 +3508,7 @@ msgctxt "UI"
 msgid "Stats"
 msgstr "Статистика"
 
+#: shared/lib/react/getDidCatchMessage.tsx:16
 #: shared/lib/react/getDidCatchMessage.tsx:16 /checksum/3F4weLrme0
 msgctxt "UI"
 msgid "We've failed to report the issue (you might have connection issues)."
@@ -3636,7 +3640,7 @@ msgctxt "UI"
 msgid "Resend confirmation"
 msgstr "Отправить подтверждение ещё раз"
 
-#: packages/slushpool/app/@routes/containers/Public.tsx:676
+#: packages/slushpool/app/@routes/containers/Public.tsx:678
 #: packages/slushpool/app/@routes/containers/Workspace.tsx:179
 #: packages/slushpool/app/@utils/formatUsername.tsx:4
 #: packages/slushpool/components/Dialog/DialogAuthIndex.tsx:78
@@ -3938,7 +3942,7 @@ msgctxt "UI"
 msgid "Local hints available"
 msgstr "На этой странице доступны подсказки"
 
-#: packages/slushpool/components/Footer/index.tsx:136 /checksum/mgioJQpAT1
+#: packages/slushpool/components/Footer/index.tsx:142 /checksum/mgioJQpAT1
 msgctxt "UI"
 msgid "Contact"
 msgstr "Контакт"
@@ -4000,6 +4004,7 @@ msgctxt "UI"
 msgid "Cancel request"
 msgstr "Отменить запрос"
 
+#: shared/lib/react/getDidCatchMessage.tsx:22
 #: shared/lib/react/getDidCatchMessage.tsx:22 /checksum/FCn4igDlz4
 msgctxt "UI"
 msgid "We have been notified about the issue and are working on the fix."
@@ -4555,7 +4560,7 @@ msgstr ""
 "Если у вас нет учетной записи,<br />пожалуйста, зарегестрируйтесь "
 "<strong>здесь</strong>."
 
-#: packages/slushpool/app/@routes/containers/Public.tsx:559
+#: packages/slushpool/app/@routes/containers/Public.tsx:561
 #: /checksum/A6KHcLN2bT
 msgctxt "UI"
 msgid "Enter workspace"
@@ -5736,22 +5741,26 @@ msgctxt "UI"
 msgid "Toggle Y2"
 msgstr "Переключить Y2"
 
+#: shared/lib/react/getDidCatchMessage.tsx:29
 #: shared/lib/react/getDidCatchMessage.tsx:29 /checksum/ia/LtU7xYZ
 msgctxt "UI"
 msgid "There's a new version of this page available"
 msgstr "Доступна новая версия этой страницы"
 
+#: shared/lib/react/getDidCatchMessage.tsx:31
 #: shared/lib/react/getDidCatchMessage.tsx:31 /checksum/nLnO+1+HEd
 msgctxt "UI"
 msgid ""
 "This is not an error, we have just released a new version of this page."
 msgstr "Это не ошибка, мы только что выпустили новую версию этой страницы."
 
+#: shared/lib/react/getDidCatchMessage.tsx:32
 #: shared/lib/react/getDidCatchMessage.tsx:32 /checksum/fva7Ai+/Ke
 msgctxt "UI"
 msgid "Please reload the page to get the latest version of our service."
 msgstr "Пожалуйста, перезагрузите страницу, чтобы получить последнюю версию."
 
+#: shared/lib/react/getDidCatchMessage.tsx:68
 #: shared/lib/react/getDidCatchMessage.tsx:68 /checksum/W5XZYVGZrq
 msgctxt "UI"
 msgid "Reload the page to continue"
@@ -5780,8 +5789,8 @@ msgid ""
 "Need help? By using this ticket form, you can make sure you will always be "
 "at the front of the queue and our support agents will get back to you ASAP."
 msgstr ""
-"Нужна помощь? Используя эту форму заявки, вы можете быть уверены, что всегда "
-"будете в начале очереди, и наши агенты поддержки свяжутся с вами как можно "
+"Нужна помощь? Используя эту форму заявки, вы можете быть уверены, что всегда"
+" будете в начале очереди, и наши агенты поддержки свяжутся с вами как можно "
 "скорее."
 
 #: packages/slushpool/app/VIP/VIP.tsx:98 /checksum/r4CodQAebd
@@ -5863,8 +5872,8 @@ msgid ""
 msgstr ""
 "Если вы хотите установить более прямой контакт с нами, мы только за! Мы "
 "можем <b>создать совместный чат</b> между нашими организациями, который "
-"поможет нам решить ваши проблемы или быстро ответить на ваши вопросы. Нашими "
-"предпочтительными мессенджерами являются Telegram и WeChat."
+"поможет нам решить ваши проблемы или быстро ответить на ваши вопросы. Нашими"
+" предпочтительными мессенджерами являются Telegram и WeChat."
 
 #: packages/slushpool/app/VIP/VIP.tsx:333 /checksum/aIoHyy6cOh
 msgctxt "UI"
@@ -5878,9 +5887,9 @@ msgid ""
 "contribution to our pool.<br />As a VIP, you have access to the following "
 "premium features and services:"
 msgstr ""
-"Вы являетесь <b>Slush Pool VIP</b>. <br />Благодарим вас за ваш ценный вклад "
-"в наш пул.<br />Как VIP вы имеете доступ к следующим премиальным функциям и "
-"услугам:"
+"Вы являетесь <b>Slush Pool VIP</b>. <br />Благодарим вас за ваш ценный вклад"
+" в наш пул.<br />Как VIP вы имеете доступ к следующим премиальным функциям и"
+" услугам:"
 
 #: packages/slushpool/app/aboutPool/constants.tsx:61 /checksum/2dr+FajzEe
 msgctxt "UI"
@@ -5915,16 +5924,13 @@ msgid ""
 "<p>Download the official application for Slush Pool for free – available for Android and iOS.</p>\n"
 msgstr ""
 "\n"
-"<p>Мобильное приложение предлагает удобный обзор вашей панели и позволяет "
-"получать уведомления о важных событиях по вашему выбору, таких как:</p>\n"
+"<p>Мобильное приложение предлагает удобный обзор вашей панели и позволяет получать уведомления о важных событиях по вашему выбору, таких как:</p>\n"
 "<ul>\n"
-"    <li>проблемы с воркерами (см. раздел мониторинга устройств для более "
-"подробной информации)</li>\n"
+"    <li>проблемы с воркерами (см. раздел мониторинга устройств для более подробной информации)</li>\n"
 "    <li>находка нового блока</li>\n"
 "    <li>payout sentотправленные выплаты</li>\n"
 "</ul>\n"
-"<p>Скачать официальное приложение для Slush Pool бесплатно - доступно для "
-"Android и iOS.</p>\n"
+"<p>Скачать официальное приложение для Slush Pool бесплатно - доступно для Android и iOS.</p>\n"
 
 #: packages/slushpool/app/aboutPool/constants.tsx:178 /checksum/vAT9sdszbT
 msgctxt "UI"
@@ -5971,26 +5977,20 @@ msgstr ""
 "Увеличьте скорость и эффективность хешрейта с помощью прошивки с "
 "автонастройкой Braiins OS+"
 
-#: packages/slushpool/components/Footer/index.tsx:69 /checksum/kTJgMGxeXw
+#: packages/slushpool/components/Footer/index.tsx:75 /checksum/kTJgMGxeXw
 msgctxt "UI"
 msgid "Slush Pool is powered by Braiins."
 msgstr "Slush Pool от Braiins."
 
-#: packages/slushpool/components/Footer/index.tsx:83 /checksum/mLvq+O5o08
+#: packages/slushpool/components/Footer/index.tsx:89 /checksum/mLvq+O5o08
 msgctxt "UI"
 msgid "Products"
 msgstr "Продукты"
 
-#: packages/slushpool/components/Footer/index.tsx:103 /checksum/Um5t/v2sK4
+#: packages/slushpool/components/Footer/index.tsx:109 /checksum/Um5t/v2sK4
 msgctxt "UI"
 msgid "Pool Setup"
 msgstr "Настройка пула"
-
-#: packages/slushpool/components/Portfolio/Portfolio.tsx:12
-#: /checksum/HPIs7BIi0K
-msgctxt "UI"
-msgid "Braiins Full Mining Stack"
-msgstr "Полный майнинг стэк Braiins"
 
 #: packages/slushpool/components/Portfolio/Portfolio.tsx:39
 #: /checksum/IgIqgnhlm0
@@ -6061,8 +6061,8 @@ msgid ""
 "Industry leaders in transparency and innovation, with more than 1.25 million"
 " BTC mined since 2010."
 msgstr ""
-"Лидеры отрасли в сфере прозрачности операций и инноваций, с 2010 года добыто "
-"более 1,25 млн. BTC."
+"Лидеры отрасли в сфере прозрачности операций и инноваций, с 2010 года добыто"
+" более 1,25 млн. BTC."
 
 #: packages/slushpool/app/VIP/VIP.tsx:216 /checksum/L8LTZW5Rse
 msgctxt "UI"
@@ -6078,8 +6078,8 @@ msgid ""
 msgstr ""
 "Хотите получать больше данных? Мы можем предоставить вам экспорт данных, "
 "адаптированный к вашим потребностям. Также возможны улучшения API, либо "
-"путем расширения нашего <a href=\"$link\">общедоступного API</a>, либо путем "
-"имплементации приватной конечной точки API."
+"путем расширения нашего <a href=\"$link\">общедоступного API</a>, либо путем"
+" имплементации приватной конечной точки API."
 
 #: packages/slushpool/app/VIP/VIP.tsx:232 /checksum/wryposBEhd
 msgctxt "UI"
@@ -6131,45 +6131,15 @@ msgctxt "UI"
 msgid "Help Me Upgrade"
 msgstr "Помощь с обновлением"
 
-#~ msgctxt "UI"
-#~ msgid "Custom API"
-#~ msgstr ""
+#: packages/slushpool/components/Portfolio/Portfolio.tsx:12
+#: /checksum/jtVwdgJoSe
+msgctxt "UI"
+msgid "Braiins full product stack"
+msgstr ""
 
 #~ msgctxt "UI"
-#~ msgid ""
-#~ "Are you missing something in our public API? Let us know so we can add it. "
-#~ "Or, if you have specific needs, we might be able to deploy a private API "
-#~ "endpoint for you."
-#~ msgstr ""
-
-#~ msgctxt "UI"
-#~ msgid "Request API customization"
-#~ msgstr ""
-
-#~ msgctxt "UI"
-#~ msgid ""
-#~ "By using Slush Pool, you are also supporting our efforts to promote "
-#~ "decentralization and security for the entire Bitcoin network through the "
-#~ "development of open-source software such as <a href=\"$bos\" "
-#~ "target=\"_blank\">Braiins&nbsp;OS</a> and <a href=\"$stratum2\" "
-#~ "target=\"_blank\">Stratum&nbsp;V2</a>."
-#~ msgstr ""
-
-#~ msgctxt "UI"
-#~ msgid ""
-#~ "These solutions are free for everyone to use, but you can influence their "
-#~ "direction (e.g. let us know what device we should support next). We can also"
-#~ " <b>help you migrate your devices to bOS</b> or give you early access to "
-#~ "previews of new versions."
-#~ msgstr ""
-
-#~ msgctxt "UI"
-#~ msgid "Braiins OS"
-#~ msgstr ""
-
-#~ msgctxt "UI"
-#~ msgid "Help me Switch to bOS"
-#~ msgstr ""
+#~ msgid "Braiins Full Mining Stack"
+#~ msgstr "Полный майнинг стэк Braiins"
 
 #~ msgctxt "UI"
 #~ msgid "Rate"
