@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-06 16:36+0200\n"
-"PO-Revision-Date: 2020-06-20 16:41+0000\n"
+"PO-Revision-Date: 2020-06-23 12:41+0000\n"
 "Last-Translator: Behzad Amiri Nezhad <behzad.amiri.nezhad@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/slushpool/mining/"
 "fa/>\n"
@@ -77,10 +77,9 @@ msgid "The method is not allowed in read only mode"
 msgstr "روش در حالت فقط خواندنی مجاز نیست"
 
 #: api/exceptions.py:86
-#, fuzzy
 msgctxt "UI"
 msgid "Bad request."
-msgstr "درخواست بد."
+msgstr "درخواست نامساعد."
 
 #: api/exceptions.py:110
 msgctxt "UI"
@@ -113,7 +112,7 @@ msgstr "%s نمی تواند حذف شود"
 #, python-format
 msgctxt "UI"
 msgid "Access denied to object: %s"
-msgstr ""
+msgstr "دسترسی به اعتراض رد شد: %s"
 
 #: api/exceptions.py:139
 #, python-format
@@ -144,7 +143,7 @@ msgstr "شناسه ورکر نامعتبر است."
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
 #: api/exceptions.py:165
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid "Slot \"%s\" not found"
 msgstr "اسلات \"%s\" یافت نشد"
@@ -301,7 +300,7 @@ msgid "Change email address"
 msgstr "آدرس ایمیل را تغییر دهید"
 
 #: campaigns/email_templates/change_email_template.html:43
-#, fuzzy, python-format
+#, python-format
 msgctxt "UI"
 msgid ""
 "If you <strong>did not</strong> ask us to change your email address, please "
@@ -309,7 +308,7 @@ msgid ""
 "password immediately."
 msgstr ""
 "اگر شما از ما درخواست تغییر آدرس ایمیل <strong>نداشته اید</strong>، لطفا "
-"&nbsp;درخواست</a> را<a href=\"%(url)s\"> لغو کرده &nbsp; و رمز عبور خود را "
+"&nbsp;درخواست </a>را <a href=\"%(url)s\">لغو کرده&nbsp; و رمز عبور خود را "
 "سریعا تغییر دهید."
 
 #: campaigns/email_templates/delete_account_template.html:16
@@ -398,7 +397,7 @@ msgstr "نرخ هش حساب کاربری"
 #: web/templates/email/monitoring_body.html:10
 msgctxt "UI"
 msgid "Worker States (Changes)"
-msgstr ""
+msgstr "حالت های ورکر (تغییرات)"
 
 #: campaigns/email_templates/monitoring_incident_template.html:32
 #: web/templates/email/monitoring_body.html:20
@@ -753,7 +752,7 @@ msgstr "پرداخت ها قبلاً قفل شده است."
 msgctxt "UI"
 msgid ""
 "Payout account \"%(name)s\" does not meet the requirements for payouts lock."
-msgstr ""
+msgstr "حساب پرداخت \"%(name)s\" الزامات قفل پرداخت را برآورده نمی کند."
 
 #: finance/forms/payout_lock.py:121
 msgctxt "UI"
@@ -783,7 +782,7 @@ msgstr "این نوع کیف پول برای امضا پشتیبانی نمی ش
 #: finance/forms/validators.py:67
 msgctxt "UI"
 msgid "Wallet name must be a string!"
-msgstr ""
+msgstr "نام کیف پول باید یک ردیف باشد!"
 
 #: finance/forms/validators.py:72 finance/forms/validators.py:234
 #, python-format
@@ -941,15 +940,16 @@ msgid "Day of the month must be a number between %(min)s and %(max)s."
 msgstr "روز از ماه باید یک عدد باشد بین %(min)s و%(max)s."
 
 #: finance/forms/validators.py:487
+#, fuzzy
 msgctxt "UI"
 msgid "Invalid trigger format."
-msgstr ""
+msgstr "فرمت راه اندازی نا معتبر است."
 
 #: finance/forms/validators.py:507
-#, python-format
+#, fuzzy, python-format
 msgctxt "UI"
 msgid "Unknown trigger type \"%(type)s\"."
-msgstr ""
+msgstr "الگوی ناشناخته راه اندازی \"%(type)s\"."
 
 #: finance/forms/validators.py:526
 #, python-format
@@ -1067,9 +1067,10 @@ msgid "Initial values were not up to date!"
 msgstr "مقادیر اولیه به روز نیستند!"
 
 #: formlib/validators.py:53
+#, fuzzy
 msgctxt "UI"
 msgid "Boolean value is required."
-msgstr ""
+msgstr "مقدار Boolean مورد نیاز است."
 
 #: formlib/validators.py:62 formlib/validators.py:182
 msgctxt "UI"
@@ -1326,6 +1327,11 @@ msgid ""
 "You have to include the abbreviation of the selected coin (e.g. btc) and "
 "your access token in every API URL."
 msgstr ""
+"API استخر داده ها را در پرونده های JSON در سه نقطه پایانی فراهم می کند: "
+"<strong> آمار </strong> ، <strong> پروفایل </strong> و <strong> ورکر "
+"</strong>.\n"
+"شما باید مخفف اختصار سکه(ارز) انتخاب شده (مانند btc) و نشانه دسترسی خود را "
+"در هر آدرس API درج کنید."
 
 #: help/templates/help/api.html:10
 msgid ""
@@ -1391,6 +1397,11 @@ msgid ""
 "might get banned. If that is the case, please contact us to resolve the "
 "situation."
 msgstr ""
+"API اجازه می دهد تا برای <strong> یک درخواست </strong> در حدود <strong> پنج "
+"ثانیه </strong> (مقدارامن). هنگامی که شما از این محدودیت تجاوز می کنید ، "
+"برخی از درخواست های شما نادیده گرفته می شوند. در صورتی که نرخ درخواست از حد "
+"مجاز فراترو یا از یک دوره زمانی طولانی تر باشد ، آدرس IP شما ممکن است بسته "
+"شود. اگر این مورد است ، برای رفع این وضعیت لطفا با ما تماس بگیرید ."
 
 #: help/templates/help/api.html:31
 msgid "Pool Stats API"
@@ -1441,7 +1452,7 @@ msgstr "توضیحات"
 #: help/templates/help/api.html:255 help/templates/help/api.html:260
 #: help/templates/help/api.html:368 help/templates/help/api.html:373
 msgid "string"
-msgstr ""
+msgstr "ردیف"
 
 #: help/templates/help/api.html:85
 msgid "pool luck for the last ten blocks"
@@ -1517,95 +1528,95 @@ msgstr ""
 
 #: help/templates/help/api.html:163
 msgid "state of given block"
-msgstr ""
+msgstr "حالت بلوک داده شده"
 
 #: help/templates/help/api.html:168
 msgid "number of confirmations left"
-msgstr ""
+msgstr "تعدادی از تأییدها مانده است"
 
 #: help/templates/help/api.html:173
 msgid "block value"
-msgstr ""
+msgstr "ارزش بلوک"
 
 #: help/templates/help/api.html:178
 msgid "user reward for the given block"
-msgstr ""
+msgstr "پاداش کاربر برای بلوک داده شده"
 
 #: help/templates/help/api.html:183
 msgid "pool scoring hash rate at the time when block was found"
-msgstr ""
+msgstr "نرخ هش موثر استخر هنگامی که بلوک پیدا شده است"
 
 #: help/templates/help/api.html:189
 msgid "User Profile API"
-msgstr ""
+msgstr "API پروفایل کاربر"
 
 #: help/templates/help/api.html:191
 msgid "Provides information about users performance and rewards."
-msgstr ""
+msgstr "اطلاعاتی درباره عملکرد و پاداش های کاربران ارائه می دهد."
 
 #: help/templates/help/api.html:236
 msgid "username"
-msgstr ""
+msgstr "نام کاربری"
 
 #: help/templates/help/api.html:241
 msgid "confirmed reward"
-msgstr ""
+msgstr "پاداش تأیید شده"
 
 #: help/templates/help/api.html:246
 msgid "unconfirmed reward"
-msgstr ""
+msgstr "پاداش تأیید نشده"
 
 #: help/templates/help/api.html:251
 msgid "estimated reward for the current block"
-msgstr ""
+msgstr "پاداش تخمینی برای بلوک کنونی"
 
 #: help/templates/help/api.html:256
 msgid "user minimum payout threshold"
-msgstr ""
+msgstr "حداقل آستانه پرداخت کاربر"
 
 #: help/templates/help/api.html:266 help/templates/help/api.html:384
 msgid "average hash rate for the last 5 minutes"
-msgstr ""
+msgstr "میانگین نرخ هش برای 5 دقیقه گذشته"
 
 #: help/templates/help/api.html:271 help/templates/help/api.html:389
 msgid "average hash rate for the last 60 minutes"
-msgstr ""
+msgstr "میانگین نرخ هش برای 60 دقیقه گذشته"
 
 #: help/templates/help/api.html:276 help/templates/help/api.html:394
 msgid "average hash rate for the last 24 hours"
-msgstr ""
+msgstr "میانگین نرخ هش برای 24 ساعت گذشته"
 
 #: help/templates/help/api.html:281
 msgid "user current scoring hash rate"
-msgstr ""
+msgstr "امتیازنرخ هش کنونی کاربر"
 
 #: help/templates/help/api.html:286
 msgid "average hash rate for the previous UTC day"
-msgstr ""
+msgstr "میانگین نرخ هش برای روز UTC قبلی"
 
 #: help/templates/help/api.html:291
 msgid "number of workers with 'low' state"
-msgstr ""
+msgstr "تعداد ورکرهایی که حالت \"کم\" دارند"
 
 #: help/templates/help/api.html:296
 msgid "number of workers with 'off' state"
-msgstr ""
+msgstr "تعداد ورکرهایی که حالت \"خاموش\" دارند"
 
 #: help/templates/help/api.html:301
 msgid "number of workers with 'ok' state"
-msgstr ""
+msgstr "تعداد ورکرهایی که حالت \"خوب\" دارند"
 
 #: help/templates/help/api.html:306
 msgid "number of workers with disabled monitoring"
-msgstr ""
+msgstr "تعداد ورکرها با نظارت غیر فعال شده"
 
 #: help/templates/help/api.html:312
 msgid "Worker API"
-msgstr ""
+msgstr "API ورکر"
 
 #: help/templates/help/api.html:314
 msgid "Provides performance data for each one of users worker."
-msgstr ""
+msgstr "داده های عملکرد را برای هر یک از ورکر های کاربران فراهم می کند."
 
 #: help/templates/help/api.html:364
 msgid "Unix time of the last accepted share"
@@ -1613,20 +1624,20 @@ msgstr ""
 
 #: help/templates/help/api.html:369
 msgid "state of the worker (ok/low/off/dis)"
-msgstr ""
+msgstr "حالت ورکر (خوب / کم / خاموش / غیر فعال)"
 
 #: help/templates/help/api.html:379
 msgid "current scoring hash rate"
-msgstr ""
+msgstr "امتیازنرخ هش کنونی کاربر"
 
 #: help/templates/help/bitcoin-setup.html:11
 #: help/templates/help/zcash-setup.html:9
 msgid "Get suitable hardware"
-msgstr ""
+msgstr "دریافت سخت افزار مناسب"
 
 #: help/templates/help/bitcoin-setup.html:14
 msgid "Bitcoin <span>can</span> be efficiently mined with:"
-msgstr ""
+msgstr "بیت کوین <span> می تواند </span> بطور کارآمدی استخراج شود با:"
 
 #: help/templates/help/bitcoin-setup.html:14
 msgid "ASIC (SHA-256 algorithm)"
@@ -1635,10 +1646,12 @@ msgstr ""
 #: help/templates/help/bitcoin-setup.html:16
 msgid "Bitcoin <span>cannot</span> be efficiently mined with (unsupported):"
 msgstr ""
+"بیت کوین <span> نمی تواند </span> بطور کارآمدی استخراج شود با( پشتیبانی "
+"نشده):"
 
 #: help/templates/help/bitcoin-setup.html:16
 msgid "GPU, CPU, mobile phone"
-msgstr ""
+msgstr "GPU ، CPU ، تلفن همراه"
 
 #: help/templates/help/bitcoin-setup.html:19
 #: help/templates/help/zcash-setup.html:16
@@ -1647,11 +1660,14 @@ msgid ""
 "certainly be unprofitable. Also, keep in mind that our support team will not "
 "be resolving issues related to unsupported hardware."
 msgstr ""
+"در حالی که ممکن است استخراج با سخت افزار پشتیبانی نشده امکان پذیر باشد ، "
+"تقریباً مطمئناً بدون سود خواهد بود. همچنین، به خاطر داشته باشید که تیم "
+"پشتیبانی ما مشکلی در رابطه با سخت افزار پشتیبانی نشده را حل نمی کند."
 
 #: help/templates/help/bitcoin-setup.html:21
 #: help/templates/help/zcash-setup.html:18
 msgid "Sign-up for a Slush Pool account"
-msgstr ""
+msgstr "ثبت نام برای یک حساب کاربریSlush Pool"
 
 #: help/templates/help/bitcoin-setup.html:22
 #: help/templates/help/zcash-setup.html:19
@@ -1664,17 +1680,17 @@ msgstr ""
 #: help/templates/help/zcash-setup.html:22
 #, python-format
 msgid "<a href=\"%(signup)s\">Sign-up</a> and wait for the confirmation email."
-msgstr ""
+msgstr "<a href=\"%(signup)s\"> ثبت نام کنید </a>و منتظر ایمیل تأیید باشید."
 
 #: help/templates/help/bitcoin-setup.html:28
 #, python-format
 msgid "<a href=\"%(login)s\">Log into</a> your account."
-msgstr ""
+msgstr "<a href=\"%(login)s\">وارد </a>حساب کاربری خود شوید."
 
 #: help/templates/help/bitcoin-setup.html:32
 #: help/templates/help/zcash-setup.html:26
 msgid "Configure your mining device"
-msgstr ""
+msgstr "دستگاه استخراج خود را پیکر بندی کنید"
 
 #: help/templates/help/bitcoin-setup.html:34
 #: help/templates/help/zcash-setup.html:27
@@ -1684,6 +1700,9 @@ msgid ""
 "documentation when setting up your miners. This also applies to cloud mining "
 "services."
 msgstr ""
+"تولید کنندگان سخت افزار شخصی ممکن است نیاز به تنظیمات خاص و رابط های مختلف "
+"تنظیمات داشته باشند. لطفاً هنگام تنظیم ماینرهای خود ، اسناد رسمی آنها را "
+"دنبال کنید. این همچنین در مورد خدمات استخراج ابری صدق می کند."
 
 #: help/templates/help/bitcoin-setup.html:37
 msgid ""
@@ -1696,10 +1715,13 @@ msgstr ""
 
 #: help/templates/help/bitcoin-setup.html:41
 #: help/templates/help/zcash-setup.html:29
+#, fuzzy
 msgid ""
 "Your miner must be connected to one of our pool servers listed below. "
 "Remember to configure the user credentials to your account."
 msgstr ""
+"ماینر شما باید به یکی از سرورهای استخر ما در لیست زیر وصل شود. به یاد داشته "
+"باشید که اختیار کاربر را به حساب خود تنظیم کنید."
 
 #: help/templates/help/bitcoin-setup.html:41
 #: help/templates/help/zcash-setup.html:29
@@ -1708,35 +1730,38 @@ msgid ""
 "<span class=\"red\">userName</span> and <span class=\"green\">workerName</"
 "span> according to your account information):"
 msgstr ""
+"اعتبار ورود به سیستم برای ماینر شما به این شکل است (لطفاً <span class=\"red\""
+">نام کاربری</span> و<span class=\"green\">نام ورکر</span> را با توجه به "
+"اطلاعات حساب خود تغییر دهید):"
 
 #: help/templates/help/bitcoin-setup.html:46
 #: help/templates/help/bitcoin-setup.html:112
 #: help/templates/help/zcash-setup.html:33
 #: help/templates/help/zcash-setup.html:82
 msgid "userID:"
-msgstr ""
+msgstr "شناسه کاربری:"
 
 #: help/templates/help/bitcoin-setup.html:46
 #: help/templates/help/zcash-setup.html:33
 msgid "userName"
-msgstr ""
+msgstr "نام کاربری"
 
 #: help/templates/help/bitcoin-setup.html:46
 #: help/templates/help/zcash-setup.html:33
 msgid "workerName"
-msgstr ""
+msgstr "نام ورکر"
 
 #: help/templates/help/bitcoin-setup.html:47
 #: help/templates/help/bitcoin-setup.html:113
 #: help/templates/help/zcash-setup.html:34
 #: help/templates/help/zcash-setup.html:83
 msgid "password:"
-msgstr ""
+msgstr "رمز عبور:"
 
 #: help/templates/help/bitcoin-setup.html:47
 #: help/templates/help/zcash-setup.html:34
 msgid "anything"
-msgstr ""
+msgstr "هر چیزی"
 
 #: help/templates/help/bitcoin-setup.html:50
 #: help/templates/help/zcash-setup.html:37
@@ -1746,6 +1771,10 @@ msgid ""
 "you. However, we recommend connecting each mining device with a separate "
 "workerName for efficient monitoring."
 msgstr ""
+"نام ورکراختیاری است - خوب است شما هیچ كدام را ارائه نكنید . در این حالت ، "
+"سیستم ما به طور خودکار <strong>یک اتو ورکر</strong> را برای شما ایجاد می "
+"کند. با این حال ، ما توصیه می کنیم برای نظارت کارآمد ، هر دستگاه استخراج را "
+"با نام ورکر جداگانه وصل کنید."
 
 #: help/templates/help/bitcoin-setup.html:52
 #: help/templates/help/zcash-setup.html:38
@@ -1754,63 +1783,66 @@ msgid ""
 "connection and lower latency</strong>, please use one of the location-"
 "specific URLs instead of the general URL."
 msgstr ""
+"سرور های Slush Pool در سراسر جهان قرار دارند. <strong>برای اتصال بهتر و "
+"تاخیر کمتر</strong>،لطفا از یکی از URL های خاص مکان به جای URL عمومی استفاده "
+"کنید."
 
 #: help/templates/help/bitcoin-setup.html:59
 #: help/templates/help/bitcoin-setup.html:131
 #: help/templates/help/zcash-setup.html:45
 msgid "Servers Location"
-msgstr ""
+msgstr "محل سرورها"
 
 #: help/templates/help/bitcoin-setup.html:60
 #: help/templates/help/bitcoin-setup.html:132
 #: help/templates/help/zcash-setup.html:46
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: help/templates/help/bitcoin-setup.html:65
 #: help/templates/help/bitcoin-setup.html:137
 #: help/templates/help/zcash-setup.html:51
 msgid "<strong>General</strong>"
-msgstr ""
+msgstr "<strong>عمومی</strong>"
 
 #: help/templates/help/bitcoin-setup.html:69
 #: help/templates/help/bitcoin-setup.html:143
 #: help/templates/help/zcash-setup.html:59
 msgid "<strong>Europe</strong>"
-msgstr ""
+msgstr "<strong> اروپا</strong>"
 
 #: help/templates/help/bitcoin-setup.html:73
 #: help/templates/help/bitcoin-setup.html:149
 #: help/templates/help/zcash-setup.html:55
 msgid "<strong>USA</strong>, East Coast"
-msgstr ""
+msgstr "<strong>ایالات متحده آمریکا</strong>، ساحل شرقی"
 
 #: help/templates/help/bitcoin-setup.html:77
 msgid "<strong>Canada</strong>"
-msgstr ""
+msgstr "<strong> کانادا</strong>"
 
 #: help/templates/help/bitcoin-setup.html:81
 msgid "<strong>Singapore</strong>, South Asia"
-msgstr ""
+msgstr "<strong>سنگاپور</strong>، آسیای جنوبی"
 
 #: help/templates/help/bitcoin-setup.html:85
 msgid "<strong>Japan</strong>, Pacific"
-msgstr ""
+msgstr "<strong>ژاپن</strong>، اقیانوس آرام"
 
 #: help/templates/help/bitcoin-setup.html:89
 #: help/templates/help/zcash-setup.html:63
 msgid "<strong>China</strong>, mainland"
-msgstr ""
+msgstr "<strong>چین</strong>،سرزمین اصلی"
 
 #: help/templates/help/bitcoin-setup.html:100
 #: help/templates/help/bitcoin-setup.html:155
 msgid "<strong>Russia</strong>, Moscow"
-msgstr ""
+msgstr "<strong>روسیه</strong>، مسکو"
 
 #: help/templates/help/bitcoin-setup.html:107
 #: help/templates/help/zcash-setup.html:78
 msgid "Example configuration"
-msgstr ""
+msgstr "مثال پیکربندی"
 
 #: help/templates/help/bitcoin-setup.html:108
 #: help/templates/help/zcash-setup.html:79
@@ -1820,11 +1852,15 @@ msgid ""
 "specifically chose to be connected to the <strong>European servers</strong>, "
 "configuration information for this miner would look like this:"
 msgstr ""
+"بیایید بگوییم یک ماینر با نام کاربری <strong>bigMiner</strong> وجود دارد و "
+"ورکر آن <strong>strongDevice</strong>نامگذاری شده است. علاوه بر این این "
+"ماینر به طور خاص انتخاب می شود برای اتصال به <strong>سرورهای اروپا</strong>، "
+"پیکربندی اطلاعات برای این ماینرشبیه به این خواهد بود:"
 
 #: help/templates/help/bitcoin-setup.html:113
 #: help/templates/help/zcash-setup.html:83
 msgid "anything123"
-msgstr ""
+msgstr "هر چیزی 123"
 
 #: help/templates/help/bitcoin-setup.html:120
 msgid "How to connect to a Stratum V2 endpoint"
@@ -1843,6 +1879,15 @@ msgid ""
 "be the new open standard in mining. However, it is still possible to mine "
 "with Stratum V1 if you prefer."
 msgstr ""
+"<a href=\"https://stratumprotocol.org/؟"
+"utm_source=SlushPool&utm_medium=HelpBitcoinSetup \"> Stratum V2 </a> پروتکل "
+"جدیدی برای استخراج  است که ما با همکاری توسعه دهنده بیت کوین Matt Corallo "
+"تهیه کردیم. این کارآیی را بهبود می بخشد، از حملات انسان در وسط جلوگیری می "
+"کند و در نهایت ماینرها را قادر می سازد تا روی قالب های بلوک خود کار کنند. "
+"Stratum V2 در سیستم عامل ، Braiins OS و <a href=\"https://braiins-os.com/"
+"plus؟utm_source=SlushPool&utm_medium=HelpBitcoinSetup\"> Braiins OS + </a> "
+"پیاده سازی شده است و استاندارد باز جدیدی در استخراج خواهد بود. با این حال،"
+"اگر ترجیح می دهید استخراج با Stratum V1 هنوز امکان پذیر است."
 
 #: help/templates/help/bitcoin-setup.html:124
 msgid ""
@@ -1851,6 +1896,10 @@ msgid ""
 "two default ports (3336 and 3337) across protocol upgrades. Simply use a "
 "Stratum V2 URL for your pool URL and it will work the same as a V1 URL."
 msgstr ""
+"مشخص کردن یک پورت صریح و روشن برای Stratum V2 در Slush Pool لازم نیست. دلیل "
+"آن این است که پروتکل هنوز در حال توسعه است و مابین دو پورت پیش فرض (3336 و "
+"3337) در بین ارتقاء پروتکل متناوب هستیم. به سادگی استفاده ازآدرس یک  Stratum "
+"V2 برای URL استخر شما همانند URL V1 کار خواهد کرد."
 
 #: help/templates/help/bitcoin-setup.html:125
 msgid ""
@@ -1865,7 +1914,7 @@ msgstr ""
 #: help/templates/help/bitcoin-setup.html:166
 #: help/templates/help/zcash-setup.html:85
 msgid "Register your payout address"
-msgstr ""
+msgstr "آدرس پرداخت خود را ثبت کنید"
 
 #: help/templates/help/bitcoin-setup.html:168
 #: help/templates/help/zcash-setup.html:86
@@ -1874,6 +1923,9 @@ msgid ""
 "<em>Settings > selected coin > Payouts</em> menu. Once you reach the minimum "
 "threshold, <strong>your rewards will be sent there</strong>."
 msgstr ""
+"برای جمع آوری پاداش خود ، باید یک آدرس پرداخت را در منوی <em> تنظیمات> سکه "
+"انتخاب شده> پرداختها </em> تنظیم کنید. پس از رسیدن به حداقل آستانه ، "
+"<strong> پاداش شما به آنجا ارسال خواهد شد </strong>."
 
 #: help/templates/help/bitcoin-setup.html:168
 #: help/templates/help/zcash-setup.html:86
@@ -1881,6 +1933,8 @@ msgid ""
 "You can start mining even without this address being registered, but it is "
 "highly recommended that you register it straight away."
 msgstr ""
+"حتی بدون ثبت این آدرس می توانید استخراج را شروع کنید ، اما توصیه می شود "
+"بلافاصله آن را ثبت کنید."
 
 #: help/templates/help/bitcoin-setup.html:171
 #: help/templates/help/zcash-setup.html:87
@@ -1889,16 +1943,19 @@ msgid ""
 "If you do not have an address yet, you need to get a wallet first. We "
 "recommend the <a %(trezor)s>Trezor Hardware Wallet</a> for maximum security."
 msgstr ""
+"اگر هنوز آدرس ندارید ، ابتدا باید کیف پول تهیه کنید. ما برای اطمینان از "
+"حداکثر امنیت %(trezor)sکیف پول سخت افزاریTrezor </a>را توصیه می کنیم."
 
 #: help/templates/help/bitcoin-setup.html:171
 #, python-format
 msgid "Other usable wallets are listed on <a %(bitcoin)s>Bitcoin.org</a>."
 msgstr ""
+"سایر کیف پولهای قابل استفاده در <a %(bitcoin)s>Bitcoin.org</a> درج شده است."
 
 #: help/templates/help/bitcoin-setup.html:173
 #: help/templates/help/zcash-setup.html:89
 msgid "Check if you are mining"
-msgstr ""
+msgstr "بررسی کنید که آیا استخراج دارید"
 
 #: help/templates/help/bitcoin-setup.html:175
 #: help/templates/help/zcash-setup.html:90
@@ -1907,6 +1964,9 @@ msgid ""
 "the drop-down list located in the top center section of the page. Then check "
 "your hash rate in the <em>Recent Hash Rate</em> graph section below."
 msgstr ""
+"<em> پیشخوان</em> خود را باز کنید و سکه( ارز) مورد استخراج خود را از لیست "
+"کشویی واقع در قسمت بالای مرکز صفحه انتخاب کنید. سپس نرخ هش خود را در قسمت "
+"نمودار<em>نرخ هش اخیر</em> در زیر بررسی کنید."
 
 #: help/templates/help/bitcoin-setup.html:175
 #: help/templates/help/zcash-setup.html:90
@@ -1914,18 +1974,22 @@ msgid ""
 "<strong>Please be patient</strong>; it can take up to an hour until you see "
 "the full hashing power of your newly connected device."
 msgstr ""
+"<strong>لطفا صبور باشید</strong>; این می تواند تا یک ساعت طول بکشد تا شما "
+"قدرت هش کامل دستگاه تازه متصل شده خود را ببینید."
 
 #: help/templates/help/mining-introduction.html:5
 msgid "Introduction to mining"
-msgstr ""
+msgstr "مقدمه‌ای بر استخراج"
 
 #: help/templates/help/mining-introduction.html:7
 msgid "New to cryptocurrency mining? Start here and learn the crucial basics!"
 msgstr ""
+"آیا در استخراج رمزارزها تازه کار هستید؟ از اینجا شروع کنید و اصول حیاتی را "
+"یاد بگیرید!"
 
 #: help/templates/help/mining-introduction.html:9
 msgid "What is cryptocurrency mining"
-msgstr ""
+msgstr "استخراج رمزارز چیست"
 
 #: help/templates/help/mining-introduction.html:11
 msgid ""
@@ -1933,6 +1997,9 @@ msgid ""
 "organizations) using their computing (hashing) power to <strong>process "
 "transactions and earn rewards</strong>."
 msgstr ""
+"رمزارزها (یا سکه) بوسیله ماینر ها (اشخاص یا سازمانها) با استفاده از قدرت "
+"محاسباتی(hashing) آنها برای<strong>پردازش معاملات و کسب پاداش </"
+"strong>استخراج می شوند."
 
 #: help/templates/help/mining-introduction.html:11
 msgid ""
@@ -1940,6 +2007,8 @@ msgid ""
 "public ledger (blockchain) with an incentive to receive a <strong>miner "
 "reward</strong>."
 msgstr ""
+"به طور خاص ، استخراج فرآیند ثبت معاملات به دفتر عمومی (blockchain) با انگیزه "
+"ی دریافت <strong>پاداش ماینر</strong> است."
 
 #: help/templates/help/mining-introduction.html:13
 msgid ""
@@ -1948,6 +2017,10 @@ msgid ""
 "system and to ensure that all network participants agree the blockchain is "
 "valid and accurate."
 msgstr ""
+"این فرایند بسیار <strong> منابع فشرده </strong>است. این نیاز به قدرت "
+"محاسباتی قابل توجهی برای مواجه شدن با قوانین رمزنگاری است که امنیت سیستم را "
+"تضمین می کند و اطمینان حاصل می کند که همه شرکت کنندگان در شبکه ،موافق هستند "
+"که blockchain معتبر و دقیق است."
 
 #: help/templates/help/mining-introduction.html:13
 msgid ""
@@ -1955,16 +2028,21 @@ msgid ""
 "solving the ‘puzzle’ which allows miners to earn a reward increases – that "
 "is where the mining pools come into play."
 msgstr ""
+"علاوه بر این ، با افزودن قدرت محاسباتی بیشتر به شبکه ، سختی حل \"معما\" که "
+"به ماینرها امکان می دهد پاداش بدست آورند افزایش می یابد - یعنی جایی که "
+"استخرهای استخراج وارد بازی می شوند."
 
 #: help/templates/help/mining-introduction.html:15
 msgid "What is a mining pool"
-msgstr ""
+msgstr "استخر استخراج چیست"
 
 #: help/templates/help/mining-introduction.html:17
 msgid ""
 "A mining pool is a service that merges computing power from multiple miners "
 "<strong>to increase the frequency of finding a new block</strong>."
 msgstr ""
+"یک استخر استخراج یک سرویس است که قدرت محاسباتی را از چند ماینر <strong> برای "
+"افزایش فرکانس پیدا کردن یک بلوک جدید </strong> ادغام می کند."
 
 #: help/templates/help/mining-introduction.html:17
 msgid ""
@@ -1972,13 +2050,20 @@ msgid ""
 "amount of contributed computing power and <strong>stabilizes miners’ income</"
 "strong> as a result."
 msgstr ""
+"سپس استخر پاداش استخراج را بین ماینرهای استخر با توجه به میزان توان محاسباتی "
+"آنها توزیع می کند و در نتیجه <strong> درآمد ماینرها را تثبیت می کند "
+"</strong>."
 
 #: help/templates/help/mining-introduction.html:19
+#, fuzzy
 msgid ""
 "If you want to venture into cryptocurrency mining, there is no better place "
 "than Slush Pool. We were the first in the world to successfully implement "
 "the concept of pooled mining in 2010 and we have been operating since then."
 msgstr ""
+"اگر می خواهید به استخراج رمزارز مبادرت کنید، جایی بهتر از Slush Pool وجود "
+"ندارد. ما در سال 2010 برای اولین بار در جهان مفهوم استخر استخراج را با "
+"موفقیت پیاده سازی کرده و از آن زمان به بعد فعالیت داشتیم."
 
 #: help/templates/help/mining-introduction.html:21
 msgid ""
@@ -1986,10 +2071,13 @@ msgid ""
 "mining services (organizations renting out hashing power which can be "
 "redirected to a pool to earn mining rewards)."
 msgstr ""
+"توجه: لطفاً تفاوت بین استخرهای استخراج و سرویسهای استخراج ابری را در نظر "
+"داشته باشید (سازمانهایی که قدرت هش را اجاره می دهند که می توانند برای کسب "
+"پاداش استخراج به یک استخر هدایت شوند)."
 
 #: help/templates/help/mining-introduction.html:23
 msgid "What hardware do you need to start mining"
-msgstr ""
+msgstr "برای شروع استخراج به چه سخت افزار نیاز دارید"
 
 #: help/templates/help/mining-introduction.html:25
 msgid ""
@@ -1999,6 +2087,11 @@ msgid ""
 "specific coins) or PC with powerful <strong>GPUs</strong> (graphics card) "
 "or,  in some cases, <strong>CPUs</strong> (processor)."
 msgstr ""
+"به منظور استخراج یک رمزارز خاص ، به سخت افزاری مناسب برای استخراج آن "
+"رمزارزاحتیاج دارید. بسته به یک سکه( ارز)، شما به یک <strong>ماینر ASIC </"
+"strong> (کامپیوتری که منحصرا برای استخراج سکه های(ارزهای) خاص طراحی شده) یا "
+"رایانه شخصی با <strong>GPU های</strong> قدرتمند  (کارت گرافیک) یا در برخی "
+"موارد ، <strong>CPUهای</strong> (پردازنده) نیاز دارید."
 
 #: help/templates/help/mining-introduction.html:27
 msgid ""
@@ -2007,12 +2100,16 @@ msgid ""
 "You must always ensure that your mining equipment is suitable to mine your "
 "chosen cryptocurrency."
 msgstr ""
+"هر سکه ای(ارزی) براساس الگوریتم استفاده شده در آن به سخت افزار متفاوتی نیاز "
+"دارد، که<strong>ممکن است بتوانیم و یا نتوانیم از آن برای استخراج سایر "
+"رمزارزها استفاده کنیم!</strong> همیشه باید اطمینان حاصل کنید که تجهیزات "
+"استخراج شما برای استخراج رمزارز انتخابی شما مناسب است."
 
 #: help/templates/help/mining-introduction.html:27
 msgid ""
 "Mining with unsuitable hardware will either be unprofitable or will not work "
 "at all."
-msgstr ""
+msgstr "استخراج با سخت افزار نامناسب یا فایده ای ندارد یا اصلاً کار نخواهد کرد."
 
 #: help/templates/help/mining-introduction.html:29
 msgid ""
@@ -2022,10 +2119,15 @@ msgid ""
 "cannot be used for mining Zcash (Equihash), because the algorithm used is "
 "different."
 msgstr ""
+"در حالی که ماینرهای مبتنی بر GPU قادر به استخراج کلیه سکه هایی(ارزهایی) "
+"هستند که با استفاده از کارتهای گرافیکی به طور کارآمد می تواننداستخراج شوند ، "
+"این قانون برای ماینرهای ASIC صدق نمی کند. به عنوان مثال ، یک ماینر ASIC که "
+"برای استخراج بیت کوین (SHA256) طراحی شده است، نمی تواند برای استخراج (Zcash ("
+"Equihash استفاده شود ، زیرا الگوریتم مورد استفاده متفاوت است."
 
 #: help/templates/help/mining-introduction.html:31
 msgid "What else do you need"
-msgstr ""
+msgstr "چه چیز دیگری نیاز دارید"
 
 #: help/templates/help/mining-introduction.html:33
 msgid ""
@@ -2035,10 +2137,15 @@ msgid ""
 "you will need a stable internet connection – remember that stability is the "
 "key here, not necessarily the speed."
 msgstr ""
+"علاوه بر سخت افزار استخراج، منبع برق پایدار نیز مورد نیاز است. به یاد داشته "
+"باشید که <strong> هزینه برق بسیار روی سودآوری شما تأثیر می گذارد </strong> ، "
+"بنابراین سعی کنید پایین ترین قیمت ممکن را ترتیب دهید. در مرحله بعد ، به یک "
+"اتصال اینترنتی پایدار نیاز خواهید داشت - به یاد داشته باشید که ثبات در اینجا "
+"مهم است و نه لزوما سرعت."
 
 #: help/templates/help/mining-introduction.html:35
 msgid "Ready to go?"
-msgstr ""
+msgstr "برای رفتن آماده ای؟"
 
 #: help/templates/help/mining-introduction.html:35
 #, python-format
@@ -2046,6 +2153,8 @@ msgid ""
 "<a href=\"%(signup)s\">Setup an account</a> on Slush Pool and configure your "
 "miners according to our guides."
 msgstr ""
+"<a href=\"%(signup)s\">یک حساب کاربری راه اندازی کنید</a> در Slush Pool و "
+"ماینر های خود را طبق دستورالعمل های ما پیکربندی کنید."
 
 #: help/templates/help/mining-proxy.html:8
 msgid ""
@@ -2061,23 +2170,27 @@ msgstr ""
 
 #: help/templates/help/mining-proxy.html:9
 msgid "The documentation for the original Stratum (V1) proxy is below."
-msgstr ""
+msgstr "اسناد مربوط به پروکسی اصلی Stratum (V1) در زیر آمده است."
 
 #: help/templates/help/mobile-app.html:7
 msgid ""
 "Download the official application for Slush Pool for free – available for "
 "<strong>Android and iOS.</strong>"
 msgstr ""
+"دانلود برنامه رسمی برای Slush Pool به صورت رایگان در دسترس برای <strong>با "
+"اندروید و آی او اس. </strong>"
 
 #: help/templates/help/mobile-app.html:10
 msgid ""
 "Note: please be aware that our mobile app is not a mining app – it is an "
 "account monitoring tool."
 msgstr ""
+"توجه: لطفاً توجه داشته باشید که برنامه تلفن همراه ما یک برنامه استخراج نیست -"
+" این یک ابزار نظارت بر حساب است."
 
 #: help/templates/help/mobile-app.html:11
 msgid "<strong>You will not be able to mine any coins with it.</strong>"
-msgstr ""
+msgstr "<strong> شما نمی توانید هیچ سکه ای را با آن استخراج کنید. </strong>"
 
 #: help/templates/help/mobile-app.html:17
 msgid ""
@@ -2085,6 +2198,8 @@ msgid ""
 "allows you to receive notifications for significant events of your choice "
 "such as:"
 msgstr ""
+"برنامه تلفن همراه نمایی راحت از پیشخوان شما ارائه می دهد و به شما امکان می "
+"دهد برای رویدادهای مهم مورد نظر خود اعلان دریافت کنید مانند:"
 
 #: help/templates/help/mobile-app.html:20
 #, python-format
@@ -2092,58 +2207,68 @@ msgid ""
 "worker issues (see <a href=\"%(url)s\">device monitoring</a> section for "
 "more details)"
 msgstr ""
+"مشکلات ورکر (برای اطلاعات بیشتر به بخش <a href=\"%(url)s\">نظارت بر دستگاه </"
+"a> مراجعه کنید )"
 
 #: help/templates/help/mobile-app.html:21
 msgid "new block found"
-msgstr ""
+msgstr "بلوک جدید یافت شد"
 
 #: help/templates/help/mobile-app.html:22
 msgid "payout sent"
-msgstr ""
+msgstr "پرداخت ارسال شد"
 
 #: help/templates/help/mobile-app.html:25
 msgid "Connect your account with the mobile app"
-msgstr ""
+msgstr "حساب کاربری خود را به برنامه تلفن همراه وصل کنید"
 
 #: help/templates/help/mobile-app.html:27
 msgid ""
 "To monitor your user account in our official mobile app, please follow these "
 "steps:"
 msgstr ""
+"برای نظارت بر حساب کاربری خود در برنامه رسمی تلفن همراه ما، لطفا این مراحل "
+"را دنبال کنید:"
 
 #: help/templates/help/mobile-app.html:30
 msgid "Download the application on your mobile device."
-msgstr ""
+msgstr "برنامه را بر روی دستگاه تلفن همراه خود دانلود کنید."
 
 #: help/templates/help/mobile-app.html:31
 msgid "On the Slush Pool website go to <em>Settings > Devices</em>."
-msgstr ""
+msgstr "در وب سایت Slush Pool به <em> تنظیمات> دستگاه ها </em> بروید."
 
 #: help/templates/help/mobile-app.html:32
 msgid ""
 "Fill in the <em>New device label</em> field with a name of your choice and "
 "confirm by clicking on <em>Connect</em>."
 msgstr ""
+"قسمت <em> برچسب دستگاه جدید </em> را با نام دلخواه خود پر کنید و با کلیک روی "
+"<em> اتصال </em> تأیید کنید."
 
 #: help/templates/help/mobile-app.html:33
 msgid ""
 "Connect the mobile app to your user account by either scanning the QR code "
 "in the mobile app or manually entering the token value in the mobile app."
 msgstr ""
+"با اسکن کد QR در برنامه تلفن همراه یا وارد کردن دستی رمز در برنامه تلفن "
+"همراه ، برنامه تلفن همراه را به حساب کاربری خود متصل کنید."
 
 #: help/templates/help/mobile-app.html:36
 msgid "Multiple devices"
-msgstr ""
+msgstr "چند دستگاه"
 
 #: help/templates/help/mobile-app.html:38
 msgid ""
 "You can connect multiple mobile devices to your user account, there is no "
 "limit."
 msgstr ""
+"شما می توانید چندین دستگاه تلفن همراه را به حساب کاربری خود متصل کنید ، هیچ "
+"محدودیتی وجود ندارد."
 
 #: help/templates/help/mobile-app.html:40
 msgid "Unlinking a device"
-msgstr ""
+msgstr "جدا کردن یک دستگاه"
 
 #: help/templates/help/mobile-app.html:42
 msgid ""
@@ -2151,21 +2276,26 @@ msgid ""
 "access to your account, you can unlink the device in the <em>Devices</em> "
 "section."
 msgstr ""
+"در صورت گم شدن دستگاه تلفن همراه خود،و یااینکه دیگر نمی خواهید به حساب "
+"کاربری خود دسترسی  داشته باشید ، می توانید در بخش <em> دستگاه ها </em> "
+"دستگاه را جدا کنید."
 
 #: help/templates/help/mobile-app.html:42
 msgid ""
 "All device management options can be found in the <em>Settings > Devices</"
 "em> menu."
 msgstr ""
+"همه گزینه های مدیریت دستگاه را می توانید در فهرست <em> تنظیمات> دستگاه ها </"
+"em> پیدا کنید."
 
 #: help/templates/help/monitoring.html:8
 msgctxt "UI"
 msgid "Device <span>Monitoring</span>"
-msgstr ""
+msgstr "<span>نظارت بر</span>دستگاه"
 
 #: help/templates/help/monitoring.html:10
 msgid "Why should I care?"
-msgstr ""
+msgstr "چرا باید مراقب باشم؟"
 
 #: help/templates/help/monitoring.html:11
 msgid ""
@@ -2174,16 +2304,23 @@ msgid ""
 "your rewards are not directly affected by any monitoring settings they can "
 "be better managed with few simple tools we have developed so far."
 msgstr ""
+"از آنجا که استخراج معمولاً به عنوان یک سرمایه گذاری در نظر گرفته می شود ، ما "
+"معتقدیم نظارت باید بخشی اساسی از عملیات استخراج شما باشد. اگرچه جوایز شما به "
+"طور مستقیم تحت تأثیر هیچ تنظیمات نظارت قرار نمی گیرد اما با چند ابزار ساده "
+"ای که تاکنون ایجاد کرده ایم بهتر می توان آنها را مدیریت کرد."
 
 #: help/templates/help/monitoring.html:13
 msgid ""
 "Monitoring helps you supervise how your miners work in time and minimizes "
 "losses caused by connection issues or mining hardware/software failures."
 msgstr ""
+"مانیتورینگ به شما کمک می کند تا بر نحوه کار ماینر های خود به موقع نظارت کنید "
+"و ضررهای ناشی از مشکلات اتصال یا خرابی سخت افزار / نرم افزار استخراج را به "
+"حداقل برسانید."
 
 #: help/templates/help/monitoring.html:16
 msgid "How can monitoring help?"
-msgstr ""
+msgstr "نظارت چگونه میتواند کمک کند؟"
 
 #: help/templates/help/monitoring.html:17
 msgid ""
@@ -2193,36 +2330,43 @@ msgid ""
 "you to <strong>react faster</strong> therefore <strong>minimize financial "
 "impact</strong> of the outage."
 msgstr ""
+"مانیتورینگ به شما امکان می دهد تا هنگامی که یک دستگاه استخراج سوء رفتار را "
+"شروع می کند آگاه شوید. اعلان ها از طریق پست الکترونیکی یا برنامه تلفن همراه "
+"شما ارسال می شوند. به عنوان مثال. مشکلات ارتباطی بین ماینر شما و استخر ما "
+"وجود دارد. چنین هشداری به شما کمک می کند تا <strong> سریعتر واکنش نشان دهید "
+"</strong> بنابراین <strong> تأثیر مالی </strong> قطع را به حداقل برساند."
 
 #: help/templates/help/monitoring.html:19
 msgid "Outages may typically have the following causes:"
-msgstr ""
+msgstr "قطع معمولا به دلایل زیر است:"
 
 #: help/templates/help/monitoring.html:21
 msgid "Internet connectivity issues"
-msgstr ""
+msgstr "مشکلات اتصال به اینترنت"
 
 #: help/templates/help/monitoring.html:22
 msgid "Hardware power-supply failures"
-msgstr ""
+msgstr "خرابی منبع تغذیه سخت افزار"
 
 #: help/templates/help/monitoring.html:23
 msgid "Mining hardware overheating"
-msgstr ""
+msgstr "گرمای بیش از حد سخت افزار استخراج"
 
 #: help/templates/help/monitoring.html:24
 msgid "Mining software issues"
-msgstr ""
+msgstr "مسائل مربوط به نرم افزار استخراج"
 
 #: help/templates/help/monitoring.html:26
 msgid ""
 "Below you can find simple step-by-step instructions how to setup monitoring "
 "in order to keep track of how your mining equipment is doing."
 msgstr ""
+"در زیر می توانید دستورالعمل های گام به گام ساده ی نحوه تنظیم نظارت برای "
+"پیگیری نحوه عملکرد تجهیزات استخراج خود را پیدا کنید."
 
 #: help/templates/help/monitoring.html:28
 msgid "How to enable monitoring?"
-msgstr ""
+msgstr "چگونه نظارت را فعال کنیم؟"
 
 #: help/templates/help/monitoring.html:30
 #, python-format
