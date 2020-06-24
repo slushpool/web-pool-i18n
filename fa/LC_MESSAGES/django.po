@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-06 16:36+0200\n"
-"PO-Revision-Date: 2020-06-23 12:41+0000\n"
+"PO-Revision-Date: 2020-06-25 09:41+0000\n"
 "Last-Translator: Behzad Amiri Nezhad <behzad.amiri.nezhad@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/slushpool/mining/"
 "fa/>\n"
@@ -2374,10 +2374,13 @@ msgid ""
 "Enable sending monitoring emails <em>(Settings > selected coin > "
 "Monitoring)</em> or notifications (<a href=\"%(app)s\">mobile app</a>)."
 msgstr ""
+"فعال کردن ارسال ایمیل های مانیتورینگ <em> (تنظیمات > انتخاب سکه > نظارت) </"
+"em> یا اعلان ها (<a href=\"%(app)s\"> برنامه تلفن همراه </a>)."
 
 #: help/templates/help/monitoring.html:31
 msgid "You can enable worker monitoring on each worker profile separately."
 msgstr ""
+"شما می توانید نظارت بر ورکرها را در هر پروفایل ورکر بطور جداگانه فعال کنید."
 
 #: help/templates/help/monitoring.html:33
 #, python-format
@@ -2385,16 +2388,20 @@ msgid ""
 "Once the worker monitoring is enabled, the <a href=\"%(url)s\">Alert limit</"
 "a> can be set:"
 msgstr ""
+"به محص فعال کردن نظارت بر ورکر،<a href=\"%(url)s\">محدودیت هشدار</a> میتواند "
+"تنظیم شود:"
 
 #: help/templates/help/monitoring.html:35
 msgid ""
 "Automatically - our system selects the Alert Limit based on the past "
 "performance of the worker"
 msgstr ""
+"بطور خودکار - سیستم ما محدودیت هشدار را بر اساس عملکرد گذشته ورکر انتخاب می "
+"کند"
 
 #: help/templates/help/monitoring.html:36
 msgid "Manually - You can set your own Alert Limit value"
-msgstr ""
+msgstr "به صورت دستی-شما می توانید مقدار محدودیت هشدار خود را تنظیم کنید"
 
 #: help/templates/help/monitoring.html:42
 #, python-format
@@ -2403,6 +2410,9 @@ msgid ""
 "of these <a href=\"%(url)s\">states</a>: <strong>OK, Low, Offline, Disabled</"
 "strong>."
 msgstr ""
+"با نظارت بر ورکرهای خود ، هر یک از ورکرها را در یکی از این <a href=\"%(url)"
+"s\"> حالت ها</a> مشاهده خواهید کرد: <strong> خوب ، کم ، آفلاین ، غیرفعال "
+"</strong>."
 
 #: help/templates/help/monitoring.html:43
 #, python-format
@@ -2428,7 +2438,7 @@ msgstr ""
 
 #: help/templates/help/monitoring.html:48
 msgid "How does monitoring work?"
-msgstr ""
+msgstr "نظارت چگونه کار می کند؟"
 
 #: help/templates/help/monitoring.html:49
 #, python-format
@@ -2438,6 +2448,10 @@ msgid ""
 "is then compared to <a href=\"%(alert_url)s\">Alert Limit</a> (you setup "
 "this value while enabling the monitoring)."
 msgstr ""
+"استخر برای همه ورکرها <strong> هر 5 دقیقه </strong> یک عکس فوری از <a href=\""
+"%(hashrate_url)s\"> نرخ هش مؤثر</a> می گیرد. این مقدار سپس با <a href=\""
+"%(alert_url)s\">محدودیت هشدار </a> مقایسه می شود (شما می توانید ضمن فعال "
+"کردن نظارت ، این مقدار را تنظیم کنید)."
 
 #: help/templates/help/monitoring.html:50
 #, python-format
@@ -2450,18 +2464,20 @@ msgstr ""
 
 #: help/templates/help/monitoring.html:52
 msgid "Device monitoring states"
-msgstr ""
+msgstr "حالتهای نظارت بر دستگاه"
 
 #: help/templates/help/monitoring.html:53
 msgid ""
 "There are 4 possible states of your worker, regarding monitoring. Every "
 "worker is always in one of the <strong>following</strong> states:"
 msgstr ""
+"در مورد نظارت 4 حالت ممکن از ورکر شما وجود دارد. هر ورکر همیشه در یکی از "
+"حالتهای <strong>زیر</strong> است:"
 
 #: help/templates/help/monitoring.html:59 web/templatetags/utils.py:192
 msgctxt "UI, Monitoring"
 msgid "OK"
-msgstr ""
+msgstr "تاييد"
 
 #: help/templates/help/monitoring.html:61
 msgid ""
@@ -2469,11 +2485,14 @@ msgid ""
 "is the desired state. If everything works properly and the configuration is "
 "correct, you should see this state all the time."
 msgstr ""
+"به این معنی که نرخ هش کارگر بیشتر یا برابر با محدودیت هشدار است. این حالت "
+"مورد نظر است. اگر همه چیز به درستی کار می کند و پیکربندی درست است ، شما باید "
+"همیشه این حالت را ببینید."
 
 #: help/templates/help/monitoring.html:65 web/templatetags/utils.py:191
 msgctxt "UI, Monitoring"
 msgid "Low"
-msgstr ""
+msgstr "کم"
 
 #: help/templates/help/monitoring.html:67
 #, python-format
@@ -2490,7 +2509,7 @@ msgstr ""
 #: help/templates/help/monitoring.html:71 web/templatetags/utils.py:190
 msgctxt "UI, Monitoring"
 msgid "Offline"
-msgstr ""
+msgstr "آفلاین"
 
 #: help/templates/help/monitoring.html:73
 msgid ""
