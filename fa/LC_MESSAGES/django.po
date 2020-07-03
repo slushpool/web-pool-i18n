@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-06 16:36+0200\n"
-"PO-Revision-Date: 2020-06-27 22:41+0000\n"
+"PO-Revision-Date: 2020-07-03 14:41+0000\n"
 "Last-Translator: Behzad Amiri Nezhad <behzad.amiri.nezhad@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/slushpool/mining/"
 "fa/>\n"
@@ -326,6 +326,10 @@ msgid ""
 "features? <a href=\"%(new_ticket)s\">Please&nbsp;let&nbsp;us&nbsp;know</a> "
 "so that we can make Slush Pool better."
 msgstr ""
+"آیا به مشکلی در استفاده Slush Pool برخورد کرده اید که تیم پشتیبانی ما می‌"
+"تواند <a href=\"%(support)s\">به شما کمک کند</a>؟ یا شما نیاز به امکاناتی "
+"دارید؟ <a href=\"%(new_ticket)s\">لطفا&nbsp;ما را&nbsp;در "
+"جریان&nbsp;بگذارید</a> تا ما Slush Pool را بهبود بخشیم."
 
 #: campaigns/email_templates/delete_account_template.html:22
 #, python-format
@@ -633,7 +637,7 @@ msgstr "یک مقدار معتبر و غیر خالی وارد کنید."
 #, python-format
 msgctxt "UI"
 msgid "Device was not paired in time limit of %s seconds"
-msgstr ""
+msgstr "دستگاه در محدوده زمانی %s ثانیه جفت نشد"
 
 #: devices/models.py:54
 msgctxt "UI"
@@ -1342,7 +1346,7 @@ msgstr "یکی از پروفایل های دسترسی خود را انتخاب 
 #: help/templates/help/api.html:15
 msgid "Select <em>Allow access to web APIs</em> in the access profile detail"
 msgstr ""
-"<em>اجازه دسترسی به API های وب </em> را در جزئیات پروفایل  دسترسی انتخاب کنید"
+"<em>اجازه دسترسی به API های وب </em> را در جزئیات پروفایل دسترسی انتخاب کنید"
 
 #: help/templates/help/api.html:16
 msgid "Click on <em>Generate New token</em>"
@@ -1869,7 +1873,7 @@ msgid ""
 msgstr ""
 "<a href=\"https://stratumprotocol.org/؟"
 "utm_source=SlushPool&utm_medium=HelpBitcoinSetup \"> Stratum V2 </a> پروتکل "
-"جدیدی برای استخراج  است که ما با همکاری توسعه دهنده بیت کوین Matt Corallo "
+"جدیدی برای استخراج است که ما با همکاری توسعه دهنده بیت کوین Matt Corallo "
 "تهیه کردیم. این کارآیی را بهبود می بخشد، از حملات انسان در وسط جلوگیری می "
 "کند و در نهایت ماینرها را قادر می سازد تا روی قالب های بلوک خود کار کنند. "
 "Stratum V2 در سیستم عامل ، Braiins OS و <a href=\"https://braiins-os.com/"
@@ -1886,7 +1890,7 @@ msgid ""
 msgstr ""
 "مشخص کردن یک پورت صریح و روشن برای Stratum V2 در Slush Pool لازم نیست. دلیل "
 "آن این است که پروتکل هنوز در حال توسعه است و مابین دو پورت پیش فرض (3336 و "
-"3337) در بین ارتقاء پروتکل متناوب هستیم. به سادگی استفاده ازآدرس یک  Stratum "
+"3337) در بین ارتقاء پروتکل متناوب هستیم. به سادگی استفاده ازآدرس یک Stratum "
 "V2 برای URL استخر شما همانند URL V1 کار خواهد کرد."
 
 #: help/templates/help/bitcoin-setup.html:125
@@ -2263,9 +2267,9 @@ msgid ""
 "access to your account, you can unlink the device in the <em>Devices</em> "
 "section."
 msgstr ""
-"در صورت گم شدن دستگاه تلفن همراه خود،و یااینکه دیگر نمی خواهید به حساب "
-"کاربری خود دسترسی  داشته باشید ، می توانید در بخش <em> دستگاه ها </em> "
-"دستگاه را جدا کنید."
+"در صورت گم شدن دستگاه تلفن همراه خود، و یااینکه دیگر نمی خواهید به حساب "
+"کاربری خود دسترسی داشته باشید ، می توانید در بخش <em> دستگاه ها </em> دستگاه "
+"را جدا کنید."
 
 #: help/templates/help/mobile-app.html:42
 msgid ""
@@ -2504,22 +2508,28 @@ msgid ""
 "is no hash rate detected for the worker. The pool doesn't monitor the actual "
 "network connection of the worker. The only significant value is hash rate."
 msgstr ""
+"شما زمانی می توانید این وضعیت را مشاهده کنید که نظارت برای ورکر فعال شده "
+"باشد، اما هیچ نرخ هشی برای ورکر تشخیص داده نشده است. استخر اتصال واقعی شبکه "
+"ورکر را کنترل نمی کند. نرخ هش تنها ارزش قابل توجه است."
 
 #: help/templates/help/monitoring.html:77 web/templatetags/utils.py:193
 msgctxt "UI, Monitoring"
 msgid "Disabled"
-msgstr "غیرفعال"
+msgstr "غیرفعال شده"
 
 #: help/templates/help/monitoring.html:79
 msgid ""
 "When you switch off monitoring for a worker its state is reported as "
 "Disabled, regardless a fact if it submits some shares or not."
 msgstr ""
+"هنگامی که شما نظارت را برای یک ورکر خاموش می کنید وضعیت آن بعنوان غیرفعال "
+"شده گزارش می شود، صرف نظر از این واقعیت که برخی از سهام را ارسال می کند یا "
+"نه."
 
 #: help/templates/help/reward-system.html:5
 msgctxt "UI"
 msgid "Reward <span>System</span>"
-msgstr "پاداش <span> سیستم </span>"
+msgstr "<span> سیستم </span>پاداش"
 
 #: help/templates/help/reward-system.html:8
 msgid ""
@@ -2527,6 +2537,9 @@ msgid ""
 "service however needs some method to fairly distribute the value of a found "
 "block among pool users and pay them accordingly."
 msgstr ""
+"یافتن بلوک یک اتفاق کاملاً نادر و تصادفی است. با این وجود خدمات استخر به روش "
+"خاصی نیاز دارد تا ارزش یک بلوک یافت شده را بین کاربران استخر بصورت عادلانه "
+"توزیع کرده و براساس آن آنها را پرداخت کند."
 
 #: help/templates/help/reward-system.html:11
 msgid ""
@@ -2534,10 +2547,13 @@ msgid ""
 "a reward proportional to his/her participation in the pool's mining power. "
 "Bigger miners receive proportionally more than smaller miners."
 msgstr ""
+"سیستم پاداش ما تضمین می کند که در هنگام یافتن یک بلوک جدید ، هر کاربر پاداش "
+"متناسب با مشارکت خود در قدرت استخراج استخر دریافت می کند. ماینر های بزرگتر "
+"به همان نسبت بیشتر از ماینر های کوچکتر دریافت می کنند."
 
 #: help/templates/help/reward-system.html:14
 msgid "Scoring Hash Rate"
-msgstr ""
+msgstr "امتیاز نرخ‌هش"
 
 #: help/templates/help/reward-system.html:16
 #, python-format
@@ -2550,6 +2566,13 @@ msgid ""
 "smooths out short hash rate drops or increases and makes rewards calculation "
 "more stable and fair (the exact mathematical definition is provided lower)."
 msgstr ""
+"مشارکت کاربر در قدرت استخراج استخر بوسیله <strong>امتیاز نرخ هش</"
+"strong>محاسبه می شود. این نشان می دهد که کاربر در ساعات اخیر چقدر کار کرده "
+"است. شما می توانید امتیاز نرخ هش را به عنوان یک<em> میانگین متحرک نمایی </"
+"em> از نرخ هش تمام دستگاه های کاربر استخراج متصل به استخر درک کنید (به <a "
+"href=\"%(url)s\" target=\"_blank\"> EMAدر ویکی پدیا</a> مراجعه کنید). "
+"میانگین کاهش نرخ هش کوتاه باعث کاهش یا افزایش می شود و محاسبه پاداش ها را با "
+"ثبات تر و عادلانه تر می کند (تعریف دقیق ریاضی پایین تر ارائه می شود)."
 
 #: help/templates/help/reward-system.html:19
 #, python-format
@@ -2558,12 +2581,17 @@ msgid ""
 "1%% of the block rewards. If you own 0.031%% of hash rate, you receive "
 "0.031%% of rewards from the block. It is that simple."
 msgstr ""
+"برای مثال، اگر امتیاز نرخ هش شما 1%%از کل استخر باشد، شما 1%% از پاداش های "
+"بلوک را دریافت می کنید. اگر شما دارای 0.031%% نرخ هش هستید، شما 0.031%% از "
+"پاداش های بلوک را دریافت می کنید. این ساده است."
 
 #: help/templates/help/reward-system.html:22
 msgid ""
 "The pool calculates your reward for <strong>every found block</strong> as "
 "follows:"
 msgstr ""
+"استخر پاداش شما را برای <strong>هر بلوک یافت شده </strong> به شرح زیر محاسبه "
+"میکند:"
 
 #: help/templates/help/reward-system.html:25
 msgctxt "Main rewards formula"
@@ -2583,18 +2611,20 @@ msgstr "کارمزد استخر"
 #: help/templates/help/reward-system.html:25
 msgctxt "Main rewards formula"
 msgid "your scoring hash rate"
-msgstr ""
+msgstr "امتیاز نرخ هش شما"
 
 #: help/templates/help/reward-system.html:25
 msgctxt "Main rewards formula"
 msgid "pool scoring hash rate"
-msgstr ""
+msgstr "امتیاز نرخ هش استخر"
 
 #: help/templates/help/reward-system.html:28
 msgid ""
 "A <em>block value</em> consists of the block reward and the fees from "
 "transactions contained in the block."
 msgstr ""
+"<em>ارزش بلوک </em>شامل پاداش بلوک و کارمزد حاصل از معاملات موجود در بلوک "
+"است."
 
 #: help/templates/help/reward-system.html:29
 msgid ""
@@ -2602,6 +2632,9 @@ msgid ""
 "time when a particular block was found. They reflect some mining history "
 "before the actual block finding."
 msgstr ""
+"<em>امتیاز نرخ هش</em>برای محاسبه نرخ هش زمانی که یک بلوک خاص پیدا شده است "
+"استفاده می شود. آنها منعکس کننده بخشی از تاریخچه استخراج قبل از پیدا شدن "
+"بلوک فعلی هستند."
 
 #: help/templates/help/reward-system.html:30
 #, python-format
@@ -2609,6 +2642,8 @@ msgid ""
 "<em>Pool fees</em> for all coins are listed in the <a href=\"%(url)s"
 "\">Rewards & Payouts</a> section."
 msgstr ""
+"<em> کارمزد استخر</em> برای تمام سکه ها (ارزها) در قسمت <a href=\"%(url)s\"> "
+"پاداش ها و پرداخت ها</a> ذکر شده است."
 
 #: help/templates/help/reward-system.html:34
 msgid ""
@@ -2616,6 +2651,9 @@ msgid ""
 "declines at time when you start or stop mining (effective hash rate is blue, "
 "scoring hash rate is gold):"
 msgstr ""
+"نمودار زیر چگونگی افزایش و کاهش<strong>امتیاز نرخ هش</strong> زمانی که شما "
+"استخراج را شروع کرده یا متوقف می کنید را نشان می دهد (نرخ هش موثر به رنگ آبی،"
+" امتیاز نرخ هش به رنگ طلایی):"
 
 #: help/templates/help/reward-system.html:40
 msgid ""
@@ -2623,45 +2661,57 @@ msgid ""
 "reason is that miner's effective hash rate changes in time (if you refresh "
 "the page a new random sequence will be generated to give you the idea):"
 msgstr ""
+"نمودار یک ماینر واقعی بسیار شبیه به نمودار زیر است. دلیل این امر این است که "
+"نرخ هش مؤثر ماینر در زمان تغییر می کند(اگر صفحه را تازه کنید دنباله ی تصادفی "
+"جدیدی ایجاد می شود تا به شماایده ای ارائه دهد):"
 
 #: help/templates/help/reward-system.html:45
 msgid "Important Facts <span>about the Method</span>"
-msgstr ""
+msgstr "حقایق مهم <span> در مورد روش </span>"
 
 #: help/templates/help/reward-system.html:48
 msgid ""
 "Important properties of using <em>scoring hash rate</em> for rewards "
 "calculation:"
-msgstr ""
+msgstr "ویژگی های مهم استفاده از <em> امتیاز نرخ هش</em> برای محاسبه پاداش:"
 
 #: help/templates/help/reward-system.html:52
 msgid ""
 "You can literally see and understand at any instant how the hash rate is "
 "changing and what reward you can expect."
 msgstr ""
+"شما به معنای واقعی کلمه می توانید در هر لحظه ببینید و درک کنید که چگونه نرخ "
+"هش تغییر می کند و چه پاداشی را می توان انتظار داشت."
 
 #: help/templates/help/reward-system.html:53
 msgid ""
 "Rewards are fully <strong>independent</strong> from rounds. The only "
 "important thing is the scoring hash rate."
 msgstr ""
+"پاداش به طور کامل <strong>مستقل</strong> از دوره است. تنها چیز مهم امتیاز "
+"نرخ هش است."
 
 #: help/templates/help/reward-system.html:54
 msgid ""
 "When you start mining, it takes roughly 1.5 hour until it reaches your "
 "actual hash rate and then it becomes stable."
 msgstr ""
+"هنگامی که شما شروع به استخراج می کنید ، تقریباً 1.5 ساعت طول می کشد تا اینکه "
+"به نرخ هش واقعی شما برسد و سپس پایدار شود."
 
 #: help/templates/help/reward-system.html:55
 msgid ""
 "It is stable during the time when your miners are connected and working."
 msgstr ""
+"این در طول زمان پایدار است زمانی که ماینر های شما متصل هستند و کار می کنند."
 
 #: help/templates/help/reward-system.html:56
 msgid ""
 "When you stop mining the scoring hash rate starts to fall down. It takes "
 "again cca 1.5 hour until it is roughly zero."
 msgstr ""
+"زمانی که شما استخراج را متوقف می کنید امتیاز نرخ هش شروع به کاهش می کند. و "
+"دوباره 1.5 ساعت طول می کشد تا تقریبا به صفر برسد."
 
 #: help/templates/help/reward-system.html:57
 msgid ""
@@ -2672,10 +2722,16 @@ msgid ""
 "disconnects, the opposite will happen. Statistically, there is no difference "
 "for you in longer term."
 msgstr ""
+"هنگامی که برخی از ماینرهای دیگر به استخر وصل می شوند ، میزان امتیاز نرخ هش "
+"شما به همان میزان باقی می ماند ، اما نرخ هش استخر به تناسب افزایش می یابد. "
+"در نتیجه شما بخش کمتری از بلوک های یافت شده را به عنوان پاداش دریافت خواهید "
+"کرد ، اما بیشتر اوقات ، زیرا استخر قوی تر خواهد بود. وقتی برخی از ماینرهای "
+"دیگر قطع شود ، برعکس اتفاق می افتد. از نظر آماری ، در طولانی مدت تفاوتی برای "
+"شما وجود ندارد."
 
 #: help/templates/help/reward-system.html:60
 msgid "The Math <span>Behind the Scenes</span>"
-msgstr ""
+msgstr "ریاضی <span> پشت صحنه </span>"
 
 #: help/templates/help/reward-system.html:62
 msgid ""
@@ -2683,6 +2739,9 @@ msgid ""
 "rewards and other values presented by the pool are computed. Gradually, we "
 "will show more interesting stuff."
 msgstr ""
+"بیایید با مفاهیم و تعاریف اساسی شروع کنیم تا چگونگی محاسبه دقیق پاداش و سایر "
+"مقادیر ارائه شده توسط استخر را توضیح دهیم. به تدریج چیزهای جالب تری را نشان "
+"خواهیم داد."
 
 #: help/templates/help/reward-system.html:65
 msgid "Shares"
@@ -2705,6 +2764,8 @@ msgid ""
 "Whenever a new share is registered by the system a timestamp of the event is "
 "recorded and used for share's valuation later."
 msgstr ""
+"هرگاه یک اشتراک جدید توسط سیستم ثبت شود ، یک مهر زمانی از رویداد ثبت شده و "
+"برای ارزیابی سهم در آینده مورد استفاده قرار می گیرد."
 
 #: help/templates/help/reward-system.html:73
 #, python-format
@@ -2715,8 +2776,9 @@ msgid ""
 msgstr ""
 
 #: help/templates/help/reward-system.html:76
+#, fuzzy
 msgid "Time handling"
-msgstr ""
+msgstr "بررسی زمان"
 
 #: help/templates/help/reward-system.html:78
 #, python-format
@@ -2732,7 +2794,7 @@ msgstr ""
 
 #: help/templates/help/reward-system.html:81
 msgid "Shares valuation<span> - score</span>"
-msgstr ""
+msgstr "ارزیابی سهام <span> - امتیاز </span>"
 
 #: help/templates/help/reward-system.html:83
 msgid ""
@@ -2741,6 +2803,10 @@ msgid ""
 "with the pool steadily, without switching among pools. Once user disconnects "
 "from the pool, his shares start to lose value."
 msgstr ""
+"ارزش هر سهم (برای محاسبه پاداش) در زمان کاهش می یابد-سهام جوان ارزش بالاتر "
+"از سهام قدیمی دارند. این به کاربران انگیزه می دهد تا بطور پیوسته با استخر "
+"استخراج کنند, بدون تغییر در میان استخرها. هنگامی که کاربر از استخر خارج می "
+"شود ، سهام او شروع به از دست دادن ارزش می کند."
 
 #: help/templates/help/reward-system.html:86
 #, python-format
@@ -2749,6 +2815,9 @@ msgid ""
 "strong> %(fc)s. It calculates <strong>score</strong> of a share %(s)s at "
 "time %(t_0)s as"
 msgstr ""
+"ارزش دقیق سهم در زمان توسط <strong>امتیازعملکرد </strong>%(fc)sتعریف شده "
+"است. این <strong>امتیاز</strong> سهم %(s)s در زمان %(t_0)s را محاسبه میکند "
+"به عنوان"
 
 #: help/templates/help/reward-system.html:90
 #, python-format
@@ -2769,6 +2838,11 @@ msgid ""
 "subtle but has quite significant consequences, because it fully eliminates a "
 "concept of rounds from rewards calculation.)"
 msgstr ""
+"(برای کاربرانی که سیستم امتیاز دهی اسلش را که سالها پیش ارائه شده بود می "
+"دانستند، یکی از تفاوت های کلیدی این است که امتیاز مربوط به آغاز دوره نیست، "
+"بلکه در رابطه با هر نقطه معین در زمان تعریف شده است %(t_0)s، به عنوان مثال "
+"مربوط به زمانی که به پیشخوان نگاه می کنید. تغییر ظریف است اما عواقب کاملاً "
+"مهمی دارد ، زیرا مفهوم دوره را از محاسبه پاداش به طور کامل حذف می کند.)"
 
 #: help/templates/help/reward-system.html:96
 #, python-format
@@ -2777,6 +2851,9 @@ msgid ""
 "be a set of <em>all valid shares</em> submitted by user %(u)s until time "
 "%(t_0)s. Written more formally the following holds"
 msgstr ""
+"بیا ادامه بدهیم. بگذارید %(Us)s مجموعه ای از <em> کلیه کاربران استخر </em> و "
+"%(set)s مجموعه ای از <em> کلیه سهام معتبر</em> ارسال شده توسط کاربر %(u)s تا "
+"زمان %(t_0)sباشد . نوشته های زیر به صورت رسمی تر نوشته شده است"
 
 #: help/templates/help/reward-system.html:100
 #, python-format
@@ -2784,12 +2861,16 @@ msgid ""
 "Then score for some user %(u)s at time %(t_0)s is calculated as total score "
 "of all his/her shares from time %(t_0)s, submitted at %(t_0)s or earlier:"
 msgstr ""
+"سپس امتیاز برای برخی از کاربر %(u)s در زمان %(t_0)s به عنوان امتیاز کل همه "
+"سهام خود را از زمان %(t_0)s ، ارسال شده در %(t_0)s یا زودتر محاسبه می شود:"
 
 #: help/templates/help/reward-system.html:104
 msgid ""
 "Technically, the pool computes score for each worker separately but the math "
 "is analogous."
 msgstr ""
+"از نظر فنی ، استخر برای هر ورکر به طور جداگانه امتیاز را محاسبه می کند ، اما "
+"ریاضیات مشابه است."
 
 #: help/templates/help/reward-system.html:107
 #, python-format
@@ -2797,6 +2878,8 @@ msgid ""
 "Score of the whole pool %(c)s is a sum of score of all users in the given "
 "time together:"
 msgstr ""
+"امتیاز کل استخر %(c)s مجموعه ای از امتیاز کلیه کاربران در زمان معین با هم "
+"است:"
 
 #: help/templates/help/reward-system.html:110
 msgid "Rewards Calculation"
@@ -2809,16 +2892,21 @@ msgid ""
 "- %(v_b)s, the pool can calculate reward %(R_u)s for each user %(u)s as "
 "follows (%(f)s stands for a pool fee):"
 msgstr ""
+"هنگامی که یک بلوک %(b)s در زمان یافت می شود %(tau_b)s و ارزش آن بالاخره "
+"شناخته شد - %(v_b)s،استخر می تواند پاداش را%(R_u)s برای هر کاربر%(u)s به شرح "
+"زیر محاسبه کند(%(f)s مخارج استخر است):"
 
 #: help/templates/help/reward-system.html:115
 msgid ""
 "For those who really love math equations the full rewards formula for "
 "<strong>continuous scoring system</strong> is:"
 msgstr ""
+"برای کسانی که واقعاً عاشق معادلات ریاضی هستند فرمول کامل پاداش برای <strong> "
+"سیستم امتیاز دهی مداوم </strong> است:"
 
 #: help/templates/help/reward-system.html:118
 msgid "Other values"
-msgstr ""
+msgstr "ارزش های دیگر"
 
 #: help/templates/help/reward-system.html:120
 #, python-format
@@ -2829,11 +2917,16 @@ msgid ""
 "was found at that time but instead of block value (which is not known yet) "
 "we use 12.5BTC:"
 msgstr ""
+"هنگامی که شما صفحه پیشخوان خود را نگاه می کنید مقادیر دیگری را پیدا خواهید "
+"کرد که توسط استخر برای شما محاسبه می شود. آنها به شرح زیر تعریف می شوند. "
+"<strong> تخمین پاداش</strong> برای کاربر%(u)s و زمان%(t_0)s دقیقا مثل اینکه "
+"یک بلوک پیدا شده است محاسبه می شود اما به جای مقدار بلوک (که هنوز مشخص نیست) "
+"از 12.5BTC استفاده می کنیم:"
 
 #: help/templates/help/reward-system.html:124
 #, python-format
 msgid "<strong>User's contribution</strong> to the pool (in %%) is defined as"
-msgstr ""
+msgstr "<strong> مشارکت کاربر</strong> در استخر (در%%) تعریف شده است به عنوان"
 
 #: help/templates/help/reward-system.html:128
 #, python-format
@@ -2842,6 +2935,9 @@ msgid ""
 "time %(t_0)s is internally not calculated by hash rate averaging, but "
 "directly from shares using scoring function (result is in h/s):"
 msgstr ""
+"و در نهایت <strong>امتیاز نرخ هش</strong> %(H)sبرای کاربر%(u)s و زمان%(t_0)s "
+"در داخل با میانگین نرخ هش محاسبه نمی شود، بلکه مستقیماً از سهام با استفاده "
+"از عملکرد امتیاز دهی (نتیجه در h/s):"
 
 #: help/templates/help/reward-system.html:132
 #, python-format
@@ -2849,12 +2945,16 @@ msgid ""
 "Pool's scoring hash rate %(H)s is not surprisingly defined as all user "
 "scoring hash rates together:"
 msgstr ""
+"امتیاز نرخ هش استخر %(H)s شگفت آور نیست زیرا به عنوان امتیاز نرخ هش تمام "
+"کاربران با هم تعریف شده:"
 
 #: help/templates/help/rewards-payouts.html:5
 msgid ""
 "The following fees are currently applied by Slush Pool to provide the pool "
 "mining service."
 msgstr ""
+"هزینه های زیر در حال حاضر توسط Slush Pool برای ارائه خدمات استخراج استخر "
+"اعمال می شود."
 
 #: help/templates/help/rewards-payouts.html:7
 msgid "General information"
@@ -2866,18 +2966,24 @@ msgid ""
 "Proceeds from transaction (network) fees are shared with miners, see the <a "
 "href=\"%(link)s\">Reward System</a>."
 msgstr ""
+"درآمد حاصل از هزینه های معامله (شبکه) با ماینر ها به اشتراک گذاشته می شود ، "
+"به <a href=\"%(link)s\"> سیستم پاداش </a> مراجعه کنید."
 
 #: help/templates/help/rewards-payouts.html:10
 msgid ""
 "Payouts are usually processed on an hourly basis, however, the confirmation "
 "time may take longer."
 msgstr ""
+"پرداخت ها معمولاً بصورت ساعتی پردازش می شوند ، با این وجود زمان تأیید ممکن "
+"است طولانی تر شود."
 
 #: help/templates/help/rewards-payouts.html:11
 msgid ""
 "Payout threshold can be customized in the <em>Settings > selected coin > "
 "Payouts</em> menu."
 msgstr ""
+"آستانه پرداخت را می توان در فهرست <em> تنظیمات> سکه انتخاب شده> پرداختها </"
+"em> تنظیم کرد."
 
 #: help/templates/help/rewards-payouts.html:20
 msgid "Bitcoin"
@@ -2891,7 +2997,7 @@ msgstr "کارمزد استخر"
 #: help/templates/help/rewards-payouts.html:30
 #: help/templates/help/rewards-payouts.html:57
 msgid "Minimum payout threshold"
-msgstr ""
+msgstr "حداقل آستانه پرداخت"
 
 #: help/templates/help/rewards-payouts.html:34
 #: help/templates/help/rewards-payouts.html:61
@@ -2900,23 +3006,28 @@ msgstr "کارمزد پرداخت"
 
 #: help/templates/help/rewards-payouts.html:35
 msgid "0.0001 BTC (only for payouts under 0.01 BTC)"
-msgstr ""
+msgstr "0.0001 BTC (فقط برای پرداخت های زیر 0.01 BTC)"
 
 #: help/templates/help/rewards-payouts.html:47
 msgid "Zcash"
-msgstr "زی‌کش"
+msgstr "Zcash"
 
 #: help/templates/help/rewards-payouts.html:62
 msgid "0.0001 ZEC (only for payouts under 0.01 ZEC)"
-msgstr ""
+msgstr "0.0001 ZEC (فقط برای پرداخت های زیر 0.01 ZEC)"
 
 #: help/templates/help/stratum-protocol.html:8
+#, fuzzy
 msgid ""
 "The original stratum protocol was developed in 2012 as an evolution of the "
 "getwork protocol to support pooled mining. We have since developed a new "
 "open standard, Stratum V2, which makes significant quality improvements on "
 "the old protocol so that it is better suited for the modern mining industry."
 msgstr ""
+"پروتکل stratum اصلی در سال 2012 به عنوان تکامل پروتکل کار به منظور پشتیبانی "
+"از استخراج استخر توسعه داده شد. ما از آن زمان استاندارد جدید باز را ایجاد "
+"کرده ایم، Stratum V2، که باعث بهبود کیفیت قابل توجهی در پروتکل قدیمی می شود "
+"به گونه ای که برای صنعت استخراج مدرن مناسب تر است."
 
 #: help/templates/help/stratum-protocol.html:9
 msgid ""
@@ -2924,6 +3035,10 @@ msgid ""
 "stratumprotocol.org/?utm_source=SlushPool&utm_medium=HelpStratum"
 "\">stratumprotocol.org</a></strong>. The Stratum V1 documentation is below."
 msgstr ""
+"می توانید اسناد مربوط به Stratum V2 را در <strong> <a href=\"https"
+"://stratumprotocol.org/؟utm_source=SlushPool&utm_medium=HelpStratum \"> "
+"stratumprotocol.org </a> </strong> پیدا کنید. اسناد Stratum V1 در زیر آمده "
+"است."
 
 #: help/templates/help/terminology.html:7
 msgctxt "UI"
@@ -2934,7 +3049,7 @@ msgstr "<span>اصطلاحات</span> استخر"
 msgid ""
 "The most important terms every miner should know listed in alphabetical "
 "order."
-msgstr ""
+msgstr "مهمترین مقرارتی که هر ماینر باید بداند به ترتیب حروف الفبا ذکر شده است."
 
 #: help/templates/help/terminology.html:16
 msgid "Alert limit"
@@ -2947,6 +3062,10 @@ msgid ""
 "is greater or equal to <strong>Alert Limit</strong>, everything is perfect "
 "and you will not receive any monitoring alert reports."
 msgstr ""
+"این مفدار به عنوان <strong> محدودیت نرخ هش</strong> برای بررسی اینکه آیا "
+"دستگاه شما به درستی کار می کند استفاده می شود. اگر نرخ هش موثر ورکر بیشتر یا "
+"برابر با <strong>حد هشدار</strong> باشد، همه چیز عالی است و شما هیچ گزارشی "
+"از هشدار نظارت دریافت نخواهید کرد."
 
 #: help/templates/help/terminology.html:21
 msgid ""
@@ -2955,22 +3074,28 @@ msgid ""
 "will be notified by an e-mail and you can start acting accordingly. Such "
 "behavior is mainly caused by the following reasons:"
 msgstr ""
+"با این حال ، گاهی اوقات ممکن است اتفاق بیفتد که نرخ هش مؤثر به <strong> زیر "
+"حد هشدار </strong> افت می کند. اگر نظارت خود را فعال کرده باشید، از طریق پست "
+"الکترونیکی به شما اطلاع داده می شود و می توانید مطابق آن اقدام کنید. چنین "
+"رفتاری عمدتاً به دلایل زیر ایجاد می شود:"
 
 #: help/templates/help/terminology.html:23
 msgid "Mining software does not accept difficulty assigned by our pool"
-msgstr ""
+msgstr "نرم افزار استخراج سختی را که توسط استخر ما تعیین شده است را نمی پذیرند"
 
 #: help/templates/help/terminology.html:24
 msgid "Internet connection is not stable"
-msgstr ""
+msgstr "اتصال به اینترنت پایدار نیست"
 
 #: help/templates/help/terminology.html:25
 msgid "Your mining device might have a hardware problem (e.g. overheating)"
 msgstr ""
+"دستگاه استخراج شما ممکن است مشکل سخت افزاری داشته باشد (برای مثال گرمای بیش "
+"از حد)"
 
 #: help/templates/help/terminology.html:28
 msgid "How to set the alert limit"
-msgstr ""
+msgstr "نحوه تنظیم حد هشدار"
 
 #: help/templates/help/terminology.html:30
 #, python-format
@@ -2979,10 +3104,15 @@ msgid ""
 "is done once in 5 minutes and the value is set to 70%% of hash rate average "
 "from the last 24hours."
 msgstr ""
+"بگذارید استخر به طور خودکار <strong> حد هشدار </strong> را برای شما محاسبه "
+"کند. این یک بار در 5 دقیقه انجام می شود و مقدار آن بر اساس70 %% میانگین نرخ "
+"هش در24 ساعت گذشته تنظیم می شود."
 
 #: help/templates/help/terminology.html:32
 msgid "Set it manually to any value from 0.5 Gh/s to e.g. 100 Ph/s or more."
 msgstr ""
+"آن را به صورت دستی بر روی هر مقدار به عنوان مثال از 0.5 Gh / s تا 100 Ph / s "
+"یا بیشتر تنظیم کنید.."
 
 #: help/templates/help/terminology.html:33
 #, python-format
@@ -2991,6 +3121,9 @@ msgid ""
 "rate.<br>E.g. you expect your miner hash rate to be 1 Ths/s, the "
 "<strong>Alert Limit</strong> would be set to 700 Ghs/s."
 msgstr ""
+"توصیه می کنیم آن را 30 %% پایین تر از مقدار مورد انتظار نرخ هش مؤثر خود قرار "
+"دهید. به عنوان مثال شما انتظار دارید که نرخ هش ماینر شما 1 Th/s باشد ، "
+"<strong> حد هشدار </ strong> روی 700 GHs/s تنظیم می شود."
 
 #: help/templates/help/terminology.html:44
 msgid "Hash rate"
@@ -2999,7 +3132,7 @@ msgstr "نرخ هش"
 #: help/templates/help/terminology.html:48
 msgid ""
 "<strong>Hash rate</strong> is the number of hashes generated per second."
-msgstr ""
+msgstr "<strong>نرخ هش </strong> تعداد هش های تولید شده در هر ثانیه است."
 
 #: help/templates/help/terminology.html:50
 msgid ""
@@ -3007,6 +3140,9 @@ msgid ""
 "strong>in our statistics. However, you might also come across the “hash rate "
 "of the pool” or the “hash rate of the entire Bitcoin network”."
 msgstr ""
+"شما بیشتر <strong> نرخ هش دستگاه ماینر خود را </strong> در آمار ما مشاهده "
+"خواهید کرد. با این حال ، ممکن است شما با \"نرخ هش استخر\" یا \"نرخ هش کل "
+"شبکه بیت کوین\" مواجه شوید."
 
 #: help/templates/help/terminology.html:51
 msgid ""
@@ -3015,10 +3151,13 @@ msgid ""
 "shown in our system. It is important for you to understand the difference "
 "between these two."
 msgstr ""
+"بین <strong> نرخ هش اسمی </strong> نشان داده شده در دفترچه راهنمای دستگاه "
+"ماینر شما و <strong> نرخ هش مؤثر </strong> نشان داده شده در سیستم ما تفاوت "
+"وجود دارد. درک این تفاوت برای شما مهم است."
 
 #: help/templates/help/terminology.html:53
 msgid "Nominal <span>Hash Rate</span>"
-msgstr ""
+msgstr "<span> نرخ هش </span> اسمی"
 
 #: help/templates/help/terminology.html:54
 msgid ""
@@ -3026,10 +3165,12 @@ msgid ""
 "generating 1 billion hashes per second - no matter if they match any "
 "criteria."
 msgstr ""
+"نرخ اسمی هش 1 Gh / s بدان معنی است که دستگاه شما قادر به تولید 1 میلیارد هش "
+"در ثانیه است - مهم نیست که آنها با هر معیاری مطابقت داشته باشند."
 
 #: help/templates/help/terminology.html:56
 msgid "Effective <span>Hash Rate</span>"
-msgstr ""
+msgstr "<span>نرخ هش</span> موثر"
 
 #: help/templates/help/terminology.html:57
 #, python-format
@@ -3039,12 +3180,16 @@ msgid ""
 "generated hashes by your devices get sent. They must fit certain criteria "
 "assigned by the pool (see: <a href=\"%(link)s\">Shares</a>)."
 msgstr ""
+"نرخ هش موثر نرخ هشی است که <strong>از هش های ارسال شده توسط دستگاه شما به "
+"استخر ما محاسبه می شود</strong>. فقط بخش کوچکی از هش های تولید شده توسط "
+"دستگاه های شما ارسال می شوند. آنها باید با معیار های خاصی که توسط استخر "
+"تعیین شده اند متناسب باشند (<a href=\"%(link)s\">سهام</a> را مشاهده کنید:)."
 
 #: help/templates/help/terminology.html:58
 msgid ""
 "Most of the times, the effective hash rate will be somewhat lower than the "
 "nominal hash rate."
-msgstr ""
+msgstr "در اکثر اوقات ، نرخ هش موثر تا حدودی پایین تر از نرخ هش اسمی خواهد بود."
 
 #: help/templates/help/terminology.html:59
 msgid ""
@@ -3053,16 +3198,21 @@ msgid ""
 "experienced connection issues, then your effective hash rate will be lower "
 "than the nominal hash rate in that period of time."
 msgstr ""
+"نرخ هش موثر شما بستگی به شانس دستگاه ماینر شما و کیفیت (ثبات) اتصال شما به "
+"سرور استخر دارد. اگر شما مشکلات مربوط به اتصال را تجربه کرده اید ، نرخ هش "
+"موثر شما کمتر از نرخ هش اسمی در آن دوره از زمان خواهد بود."
 
 #: help/templates/help/terminology.html:60
 msgid ""
 "Occasionally, you can be more lucky and find more valid hashes than usual. "
 "That is what gives you a slightly higher effective hash rate."
 msgstr ""
+"گاهی اوقات، شما می توانید خوش شانس تر باشید و هش های معتبر بیشتر از معمول "
+"پیدا کنید. این همان چیزی است که به شما نرخ هش موثر کمی بالاتری می دهد."
 
 #: help/templates/help/terminology.html:62
 msgid "Scoring <span>Hash Rate</span>"
-msgstr ""
+msgstr "امتیاز<span> نرخ هش</span>"
 
 #: help/templates/help/terminology.html:63
 #, python-format
@@ -3071,6 +3221,8 @@ msgid ""
 "rewards calculation. Please, see <a href=\"%(rewards)s\">Reward System</a> "
 "for the explanation."
 msgstr ""
+"امتیاز نرخ هش ارزش مشتق شده از نرخ هش موثر مورد استفاده برای محاسبه پاداش "
+"است. لطفا برای توضیح <a href=\"%(rewards)s\">سیستم پاداش </a>را مشاهده کنید ."
 
 #: help/templates/help/terminology.html:72
 msgid "Luck"
@@ -3082,6 +3234,9 @@ msgid ""
 "in comparison <strong>to the average number of shares</strong> needed for "
 "finding a block."
 msgstr ""
+"شانس استخر توضیح می دهد که استخر چه تعداد سهم برای یافتن یک بلوک خاص در "
+"مقایسه با <strong>میانگین تعداد سهامی </strong> که برای یافتن یک بلوک لازم "
+"است نیاز دارد."
 
 #: help/templates/help/terminology.html:78
 #, python-format
@@ -3089,11 +3244,13 @@ msgid ""
 "If the luck is above 100%% it means that the pool needed less shares than "
 "expected for the given difficulty."
 msgstr ""
+"اگر شانس بالای 100 %% باشد، بدین معنی است که استخر برای سختی معین به سهام "
+"کمتری نیاز داشت."
 
 #: help/templates/help/terminology.html:79
 #, python-format
 msgid "If the luck is below 100%%, more shares than average were needed."
-msgstr ""
+msgstr "اگر شانس زیر 100 %% است ، سهام بیش از حد متوسط مورد نیاز است."
 
 #: help/templates/help/terminology.html:81
 #, python-format
@@ -3101,6 +3258,8 @@ msgid ""
 "E.g. if the luck is 200%%, the pool found two times more blocks in the given "
 "time period than average."
 msgstr ""
+"به عنوان مثال. اگر شانس 200%% باشد، استخر در دوره زمانی معین دو برابر بیشتر "
+"از حد متوسط  بلوک پیدا کرده است."
 
 #: help/templates/help/terminology.html:82
 #, python-format
@@ -3111,6 +3270,11 @@ msgid ""
 "luck is high and disconnecting when the luck is low does not make any sense. "
 "In the long run, the luck is always 100%%."
 msgstr ""
+"لطفا به خاطر داشته باشید که<strong>شانس فقط تاریخ را توصیف می کند، اما در "
+"مورد بلوک های آینده چیزی نمی گوید</strong>. پیدا کردن یک بلوک کاملاً مستقل "
+"از وقایع تاریخی است. به همین دلیل است که پیوستن به استخر وقتی شانس زیاد است "
+"و خرج از آن وقتی شانس کم است ، معنی ندارد. در طولانی مدت، شانس همیشه 100%% "
+"است."
 
 #: help/templates/help/terminology.html:91
 msgid "Merged mining"
@@ -3124,6 +3288,11 @@ msgid ""
 "The benefit of merged mining is that you do not have to split your hash rate "
 "between mining several cryptocurrencies."
 msgstr ""
+"ماینینگ ادغام شده، اگر بوسیله کریپتوکارنسی (رمزارز) بخصوصی پشتیبانی شود، به "
+"شما این امکان را می دهد که درحالی که در بیش از یک بلاکچین با الگوریتم "
+"استخراج یکسان <strong>بصورت همزمان</strong> استخراج انجام می دهید <em>\"سکه "
+"بیشتری\"</em> به دست بیاورید. مزایای ماینینگ ادغام شده این است که لازم نیست "
+"شما نرخ هش خود را بین استخراج چندین رمزارز تقسیم کنید."
 
 #: help/templates/help/terminology.html:104
 #: web/templates/email/_base_graphic.html:23
@@ -3137,6 +3306,10 @@ msgid ""
 "powerful GPU sufficient for mining. There are different types of mining "
 "hardware for each cryptocurrency depending on its mining algorithm."
 msgstr ""
+"ماینر دستگاه فیزیکی استخراج شماست. معمولا، این یک ماینر اختصاصی ASIC ("
+"دستگاهی فقط با یک هدف برای استخراج رمزارز) یا رایانه شخصی با GPU قدرتمند "
+"برای استخراج است. بسته به الگوریتم استخراج آن ، سخت افزارهای مختلف استخراج "
+"برای هر رمزارز وجود دارد."
 
 #: help/templates/help/terminology.html:116
 msgid "Orphan block"
@@ -3163,7 +3336,7 @@ msgstr ""
 
 #: help/templates/help/terminology.html:129
 msgid "Reward (confirmed vs unconfirmed)"
-msgstr ""
+msgstr "پاداش (تایید شده در مقابل تأیید نشده)"
 
 #: help/templates/help/terminology.html:133
 msgid ""
@@ -3175,10 +3348,16 @@ msgid ""
 "earned coins are available for payout. However, you must reach your payout "
 "threshold before any payout can be made."
 msgstr ""
+"هنگامی که یک بلوک پیدا می شود پاداش بر اساس امتیاز نرخ هش شما محاسبه می شود،"
+"این پاداش در پیشخوان حساب کاربری شما بعنوان <strong>پاداش تایید نشده</"
+"strong> ظاهر می شود. در آن زمان، در آن مرحله، شما باید منتظر تعداد معینی از "
+"بلوک (بسته به میزان رمزارز) باشید تا پاداش شما<strong>تایید</strong>شود "
+"=قابل مصرف. پس از این تایید، سکه های دریافتی شما قابل پرداخت می شوند. با این "
+"حال ، قبل از انجام هرگونه پرداخت ، باید به آستانه پرداخت خود برسید."
 
 #: help/templates/help/terminology.html:142
 msgid "Round"
-msgstr "راند"
+msgstr "دور"
 
 #: help/templates/help/terminology.html:145
 #, python-format
@@ -3187,10 +3366,12 @@ msgid ""
 "from few seconds to many hours, depending on <a href=\"%(link)s\">pool's "
 "luck.</a>"
 msgstr ""
+"دور فاصله زمانی بین پیدا شدن دو بلوک توسط استخر است. دور می تواند بسته به <a "
+"href=\"%(link)s\">شانس استخر</a>،بین چند ثانیه تا چندین ساعت باشد."
 
 #: help/templates/help/terminology.html:154
 msgid "Score (reward system)"
-msgstr ""
+msgstr "امتیاز (سیستم پاداش)"
 
 #: help/templates/help/terminology.html:158
 #, python-format
@@ -3202,15 +3383,24 @@ msgid ""
 "are fully independent of rounds. The only important thing is users scoring "
 "hash rate at the moment when a new block is found."
 msgstr ""
+"امتیاز معمولا نامی است که برای <a href=\"%(rewards)s\">سیستم پاداش</a> "
+"استفاده می شود. آن بر اساس<strong> امتیاز نرخ هش</strong> (میانگین متحرک نرخ "
+"هش واقعی با برخی دوره های <em>شیب به بالا/ شیب به پایین</em> زمانی که شما "
+"استخراج را <em>آغاز/ متوقف</em> می کنید). برخلاف سایر سیستم های پاداش، پاداش "
+"در امتیاز کاملا مستقل از دور است. تنها چیز مهم امتیاز نرخ هش کاربر در زمان "
+"پیدا شدن بلوک است."
 
 #: help/templates/help/terminology.html:167
+#, fuzzy
 msgid "Share - <span>proof of work</span>"
-msgstr ""
+msgstr "به اشتراک گذاری - <span>اثبات کار</span>"
 
 #: help/templates/help/terminology.html:171
 msgid ""
 "<strong>Share</strong> is a unit which pool uses for computing mining work."
 msgstr ""
+"<strong> سهم</strong> واحدی است که استخر از آن برای محاسبات کار استخراج "
+"استفاده می کند."
 
 #: help/templates/help/terminology.html:172
 msgid ""
@@ -3222,30 +3412,38 @@ msgid ""
 "<strong>shares</strong>. If a hash (proof of work) with difficulty \\(d\\) "
 "is submitted by a miner then \\(d\\) shares is counted by the pool."
 msgstr ""
+"زمانی که یک ماینر به استخر وصل می شود یک وظیفه محاسباتی برای حل کردن دریافت "
+"می کند- این کار مقدار هش را با ویژگی های خاص محاسبه می کند (آنها باید پایین "
+"تر از حد ناشی از سختی باشند). هش هایی که شرایط را برآورده می کنند به استخر "
+"فرستاده شده و به عنوان <strong>اثبات کار ماینر</strong> مورد استفاده قرار می "
+"گیرند. مقدار کار ماینر در واحدهایی به نام <strong> سهم </strong> ثبت شده "
+"است. اگر یک هش (اثبات کار) با سختی  \\(d\\) توسط یک ماینر ارسال شود پس از آن "
+"\\(d\\) سهام توسط استخر محاسبه می شود."
 
 #: help/templates/help/terminology.html:173
 msgid "To put it as simple as it could be:"
-msgstr ""
+msgstr "به عبارت ساده تر:"
 
 #: help/templates/help/terminology.html:175
 msgid "1 share = 1 proof of work on difficulty 1"
-msgstr ""
+msgstr "1 اشتراک = 1 اثبات کار در سختی 1"
 
 #: help/templates/help/terminology.html:176
 msgid ""
 "5 shares = 1 proof of work on difficulty 5 (or 5 proofs of work on "
 "difficulty 1)"
-msgstr ""
+msgstr "5 سهم = 1 اثبات کار در سختی 5 (یا 5 اثبات کار در سختی 1)"
 
 #: help/templates/help/terminology.html:177
 msgid ""
 "100 shares = 10 proofs of work on difficulty 10 (or .. you can see the "
 "pattern)"
 msgstr ""
+"100 سهم = 10 اثبات کار در سختی 10 (یا .. شما می توانید این الگو را ببینید)"
 
 #: help/templates/help/terminology.html:187
 msgid "Stale rate"
-msgstr "نرخ بیات"
+msgstr "نرخ مانده"
 
 #: help/templates/help/terminology.html:191
 msgid ""
@@ -3253,10 +3451,12 @@ msgid ""
 "been found and pool has moved to the next block. If everything works "
 "correctly, it should be a very low number."
 msgstr ""
+"نرخ مانده تعداد سهام ارسال شده پس از پیدا شدن بلوک قدیمی است و استخر به بلوک "
+"بعدی منتقل شده است. اگر همه چیز درست کار کند ، باید عدد بسیار کمی باشد."
 
 #: help/templates/help/terminology.html:192
 msgid "Several factors can increase your stale rate:"
-msgstr ""
+msgstr "عوامل متعددی می توانند نرخ های مانده شما را افزایش دهند:"
 
 #: help/templates/help/terminology.html:194
 msgid "Network Latency"
@@ -3270,10 +3470,15 @@ msgid ""
 "old block for some time and these are being rejected by the pool as "
 "<em>stale</em> shares."
 msgstr ""
+"در شبکه های کندتر (و یا زمانی که یک ایراد شبکه در مسیر از ماینر شما به استخر "
+"وجود دارد)، زمان بیشتری برای یک ماینربرای دریافت اطلاع رسانی در مورد یک بلوک "
+"جدید طول می کشد. با این حال ، ماینر هنوز هم برای مدتی ارسال نتایج به بلوک "
+"قدیمی را ادامه می دهد و این توسط استخر به عنوان سهام<em> مانده </em> رد می "
+"شود."
 
 #: help/templates/help/terminology.html:197
 msgid "Slower Mining Device"
-msgstr ""
+msgstr "دستگاه استخراج کند تر"
 
 #: help/templates/help/terminology.html:198
 msgid ""
@@ -3283,10 +3488,15 @@ msgid ""
 "for the old block that cannot be accepted by the pool anymore. Such results "
 "are also called <strong>stale</strong> shares."
 msgstr ""
+"برخی از ماینرها مانند مردان هستند. آنها فقط یک کار را در یک زمان اداره می "
+"کنند. آنها قبل از شروع به کار جدید، نیاز به پایان دادن کار قبلی دارند. در "
+"حالی که دیگران در حال حاضر سهام خود را برای یک بلوک جدید ایجاد می کنند، این "
+"ماینرها در حال تولید سهام برای بلوک قدیمی هستند که دیگر توسط استخر قابل قبول "
+"نیست. به چنین نتایجی نیزسهام <strong> مانده</strong> گفته می شود."
 
 #: help/templates/help/terminology.html:207
 msgid "Stratum (mining protocol)"
-msgstr ""
+msgstr "Stratum (پروتکل استخراج)"
 
 #: help/templates/help/terminology.html:211
 #, python-format
@@ -3299,6 +3509,13 @@ msgid ""
 "official website <a href=\"%(url)s\" target=\"_blank\">StratumProtocol.org</"
 "a> which explains the technical details."
 msgstr ""
+"Stratum پروتکل استخراج است که در ابتدا توسط Slush Pool در سال 2012 برای بیت "
+"کوین منتشر شد و بعدا توسط بسیاری از استخرهای دیگر (و همچنین برای استخراج "
+"سایر ارزهای رمزنگاری شده) به تصویب رسید. این امر به ماینرها اجازه می دهد تا "
+"در سطح بسیار کارآمد که جایگزین پروتکل قدیمی تر شده است ، با استخر ارتباط "
+"برقرار کنند. شما به عنوان یک ماینر ، لازم نیست پروتکل را کاملاً درک کنید. یک "
+"وب سایت رسمی <a href=\"%(url)s\" target=\"_blank\"> StratumProtocol.org </a> "
+"وجود دارد که جزئیات فنی را توضیح می دهد."
 
 #: help/templates/help/terminology.html:220
 msgid "Transaction fee"
@@ -3310,10 +3527,13 @@ msgid ""
 "to incentivize miners to add the given transaction to a block. <strong>Miner "
 "receives this fee</strong> in addition to the basic block reward."
 msgstr ""
+"Spender ممکن است هزینه معامله (یا شبکه) در یک تراکنش بمنظور تشویق ماینرها به "
+"اضافه کردن معامله معین به یک بلاک، را شامل شود. ماینر علاوه بر پاداش اساسی ، "
+"<strong>این هزینه را نیز دریافت می کند </strong>."
 
 #: help/templates/help/terminology.html:233
 msgid "Vardiff <span>(variable difficulty algorithm)</span>"
-msgstr ""
+msgstr "Vardiff <span> (الگوریتم سختی متغیر) </span>"
 
 #: help/templates/help/terminology.html:237
 #, python-format
@@ -3321,6 +3541,8 @@ msgid ""
 "(Please, have a look at how <a href=\"%(link)s\">shares</a> are being "
 "produced before reading on.)"
 msgstr ""
+"(لطفاً قبل از مطالعه ، به چگونگی تولید <a href=\"%(link)s\"> سهام </a> توجه "
+"کنید.)"
 
 #: help/templates/help/terminology.html:238
 msgid ""
@@ -3330,6 +3552,11 @@ msgid ""
 "to stronger miners (higher difficulty) and easier tasks to weaker so that an "
 "average communication frequency is roughly the same for all miners."
 msgstr ""
+"در قدرت هش ماینرهای مختلف تفاوت های زیادی وجود دارد. برای بهینه سازی ترافیک "
+"شبکه بین ماینرهای شما و استخر،الگوریتم سختی متغیر (یا vardiff) را معرفی کرده "
+"ایم. این الگوریتم وظایف دشوارتر را به ماینرهای قوی تر (سختی بالاتر) و کارهای "
+"آسان تر به ضعیف ترها اختصاص می دهد به طوری که فرکانس ارتباط متوسط برای همه "
+"ماینرها  تقریباً یکسان است."
 
 #: help/templates/help/terminology.html:239
 msgid ""
@@ -3345,6 +3572,8 @@ msgid ""
 "If your miner is too fast, Vardiff increases the difficulty for its work and "
 "when too slow, the difficulty decreases."
 msgstr ""
+"اگر ماینر شما بیش از حد سریع است ، Vardiff سختی کار آن را افزایش می دهد و "
+"زمانی که بیش از حد آهسته است، سختی کاهش می یابد."
 
 #: help/templates/help/terminology.html:241
 msgid ""
@@ -3353,6 +3582,9 @@ msgid ""
 "submission. Hence you will not lose any share and the network does not get "
 "jammed."
 msgstr ""
+"به عنوان مثال ، سختی 20 به معنای این است که شما هشی 20 برابر کمتر از برآورده "
+"کردن نیاز را بیابید ، اما در هر ارسال 20 سهم به شما داده می شود. از این رو "
+"هیچ سهمی را از دست نخواهید داد و شبکه دچار مشکل نمی شود."
 
 #: help/templates/help/terminology.html:250
 msgid "Worker"
@@ -3363,6 +3595,8 @@ msgid ""
 "Worker is a name for your mining device that you use as a login for your "
 "mining software."
 msgstr ""
+"ورکر نامی برای دستگاه استخراج شما است که از آن به عنوان ورود به سیستم برای "
+"نرم افزار استخراج استفاده می کنید."
 
 #: help/templates/help/terminology.html:255
 msgid ""
@@ -3370,6 +3604,9 @@ msgid ""
 "way you can <strong>track down a faulty miner</strong> easily just by "
 "looking at the monitoring section of your profile page."
 msgstr ""
+"توصیه می کنیم به هر دستگاه استخراج یک نام ورکر تعیین شده بدهید. به این ترتیب "
+"شما می توانید  فقط با مراجعه به بخش نظارت از صفحه پروفایل خود، به "
+"راحتی<strong>یک ماینر معیوب را ردیابی کنید</strong>."
 
 #: help/templates/help/terminology.html:256
 msgid ""
@@ -3379,10 +3616,14 @@ msgid ""
 "your hash rate, however, you will not be able to determine which device it "
 "is."
 msgstr ""
+"شما همچنین می توانید تمام ماینرهای خود را تحت <strong> یک نام ورکر </strong> "
+"اداره کنید و همه چیز درست خواهد بود. نکته منفی این رویکرد این است که اگر یکی "
+"از ماینرهای شما به درستی کار نکند ، شما شاهد افت نرخ هش خود خواهید بود ، با "
+"این وجود ، شما قادر به تعیین دستگاه معیوب نیستید."
 
 #: help/templates/help/user-accounts.html:7
 msgid "Account registration"
-msgstr "ثبت‌نام حساب"
+msgstr "ثبت‌نام حساب کاربری"
 
 #: help/templates/help/user-accounts.html:8
 msgid ""
@@ -3390,6 +3631,9 @@ msgid ""
 "Therefore, we do not collect nor process any unnecessary personal data, "
 "making our registration process reasonably simple."
 msgstr ""
+"ناشناسی یکی از ارزشهای اساسی است که عمیقاً در فلسفه ما ریشه دارد. بنابراین ، "
+"ما هیچ گونه اطلاعات شخصی غیر ضروری را جمع آوری و پردازش نمی کنیم ، و این امر "
+"باعث می شود روند ثبت نام ما ساده باشد."
 
 #: help/templates/help/user-accounts.html:9
 #, python-format
@@ -3399,10 +3643,13 @@ msgid ""
 "Then, confirm the registration process by clicking on the link sent to your "
 "e-mail address."
 msgstr ""
+"شما فقط باید در <a href=\"%(signup)s\">صفحه ثبت نام </a>اطلاعات اصلی مانند "
+"نام کاربری ، آدرس پست الکترونیکی و رمز عبور خود را پر کنید. سپس با کلیک روی "
+"لینک ارسال شده به آدرس ایمیل خود ، روند ثبت نام را تأیید کنید."
 
 #: help/templates/help/user-accounts.html:11
 msgid "Access profiles"
-msgstr "دسترسی پروفایل‌ها"
+msgstr "پروفایل‌های دسترسی"
 
 #: help/templates/help/user-accounts.html:12
 msgid ""
@@ -3411,10 +3658,14 @@ msgid ""
 "permission to your account. Just click <em>+Create New</em> and choose from "
 "the list of possibilities."
 msgstr ""
+"در<em> تنظیمات> پروفایل های دسترسی</em>، گزینه ای برای ایجاد پروفایل های "
+"متفاوت با رمزهای مختلف و با سطوح مختلف اجازه دسترسی به حساب کاربری خود وجود "
+"دارد. فقط روی <em> + ایجاد جدید </em> کلیک کرده و از لیست امکانات انتخاب "
+"کنید."
 
 #: help/templates/help/user-accounts.html:14
 msgid "Access permissions"
-msgstr "دسترسی مجوزها"
+msgstr "مجوزهای دسترسی"
 
 #: help/templates/help/user-accounts.html:15
 msgid ""
@@ -3423,20 +3674,26 @@ msgid ""
 "some users to change these settings, granular permissions are a great "
 "feature for you."
 msgstr ""
+"بین دسترسی کامل یا دسترسی فقط-خواندنی برای پروفایل انتخاب شده یکی را انتخاب "
+"کنید. اگر شما،برای مثال، یک کار استخراج بزرگتر را اجرا می کنید و نمی خواهید "
+"برخی از کاربران این تنظیمات را تغییر دهند ، مجوزهای دانه ای ویژگی بسیار خوبی "
+"برای شما است."
 
 #: help/templates/help/user-accounts.html:17
 msgid "Allow access to web APIs"
-msgstr ""
+msgstr "اجازه دسترسی به APIهای وب"
 
 #: help/templates/help/user-accounts.html:18
 msgid ""
 "The user will be able to use token authentication in scripts or 3rd party "
 "applications. You can generate new tokens there."
 msgstr ""
+"کاربر قادر به استفاده از تأیید هویت رمز در اسکریپت ها یا برنامه های شخص ثالث "
+"خواهد بود. شما می توانید رمزهای جدید در آنجا تولید کنید."
 
 #: help/templates/help/user-accounts.html:20
 msgid "Allow website login"
-msgstr ""
+msgstr "اجازه ورود به وب سایت"
 
 #: help/templates/help/user-accounts.html:21
 msgid ""
@@ -3444,6 +3701,9 @@ msgid ""
 "access profile name you choose (in <code>accessProfileName@userName</code> "
 "format) and password you set right there."
 msgstr ""
+"کاربر می تواند با استفاده از نام پروفایل دسترسی که شما انتخاب کرده اید (در "
+"قالب <code> accessProfileName @ userName </code>) و گذرواژه ای که آنجا تنظیم "
+"کرده اید ، به حساب اصلی وب سایت دسترسی پیدا کند."
 
 #: help/templates/help/user-accounts.html:23
 msgid "Account security"
@@ -3457,6 +3717,11 @@ msgid ""
 "need to use the 2FA every time when making any important changes to your "
 "account."
 msgstr ""
+"ما به شدت توصیه می کنیم <strong> تأیید هویت دو عاملی (2FA) </strong> را فعال "
+"کنید تا یک لایه امنیتی بیشتر به حساب شما اضافه شود. این کار را می توانید در "
+"فهرست <em> تنظیمات> امنیت </em> انجام دهید. پس از تنظیم اولیه ، هر بار که می "
+"خواهید تغییرات مهمی را در حساب خود ایجاد کنید ، باید از تایید هویت دو عاملی "
+"استفاده کنید."
 
 #: help/templates/help/user-accounts.html:25
 msgid ""
@@ -4238,7 +4503,7 @@ msgstr ""
 #: web/api/v1/views.py:1753
 msgctxt "UI"
 msgid "Bad username/id."
-msgstr "نام کاربری/شناسه نادرست"
+msgstr "نام کاربری/شناسه نادرست."
 
 #: web/api/v1/views.py:1755
 msgctxt "UI"
@@ -5273,6 +5538,8 @@ msgid ""
 "Email confirmation has been sent to '%(email)s'. Please check your mailbox "
 "and follow confirmation link."
 msgstr ""
+"ایمیل تأیید به آدرس ‘%(email)s’ ارسال شد. لطفا صندوق ایمیل خود را چک کنید و "
+"لینک تأییدیه را دنبال کنید."
 
 #: web/templates/web/msg_pending_wallet.html:6
 #, python-format
@@ -5280,6 +5547,8 @@ msgid ""
 "If you didn't receive confirmation email yet, you can also <a href="
 "\"%(url_resend)s\">resend confirmation</a>."
 msgstr ""
+"اگر هنوز ایمیل تأیید دریافت نکرده‌اید، همچنان می‌توانید <a href=\""
+"%(url_resend)s\"> درخواست ارسال دوباره تأییدیه نمایید</a>."
 
 #: web/templates/web/msg_pending_wallet.html:8
 #, python-format
@@ -5288,6 +5557,9 @@ msgid ""
 "the request</a> and <a href=\"%(url_password_reset)s\">change your password</"
 "a> immediately."
 msgstr ""
+"اگر این تغییر را شما شروع نکرده‌اید، لطفا <a href=\"%(url_cancel)s\">درخواست "
+"را لغو کنید</a> و هر چه سریعتر <a href=\"%(url_password_reset)s\"> کلمه عبور "
+"خود را تغییر دهید</a>."
 
 #: web/templates/web/parts/body_1_conditionals.html:12
 #, python-format
@@ -5296,26 +5568,28 @@ msgid ""
 "To continue, you must <strong>enable javascript</strong>. (<a href=\"%(url)s"
 "\">see how…</a>)"
 msgstr ""
+"برای ادامه، شما باید <strong>جاواسکریپت را فعال کنید</strong>. (<a href=\""
+"%(url)s\">راهنمایی بیشتر...</a>)"
 
 #: web/utils.py:80
 #, python-format
 msgid "%i days"
-msgstr ""
+msgstr "%i روز"
 
 #: workers/api/v1/views.py:64
 msgctxt "UI"
 msgid "Invalid worker name!"
-msgstr ""
+msgstr "نام ورکر نامعتبر!"
 
 #: workers/api/v1/views.py:76
 msgctxt "UI"
 msgid "Invalid monitoring settings."
-msgstr ""
+msgstr "تنظیمات مانیتورینگ نامعتبر."
 
 #: workers/api/v1/views.py:85
 msgctxt "UI"
 msgid "Minimum difficulty must be an integer between 8 and 500 000!"
-msgstr ""
+msgstr "حداقل سختی باید یک عدد ما بین ۸ تا ۵۰۰۰۰۰ باشد!"
 
 #. Translators: data entity, eg: Access denied to object: workers
 #: workers/api/v1/views.py:189
@@ -5326,47 +5600,47 @@ msgstr "workers"
 #: workers/api/v1/views.py:282
 msgctxt "UI"
 msgid "Label name must be a string."
-msgstr ""
+msgstr "نام برچسب باید از نوع رشته باشد."
 
 #: workers/api/v1/views.py:285
 msgctxt "UI"
 msgid "Name is required."
-msgstr ""
+msgstr "درج نام الزامیست."
 
 #: workers/api/v1/views.py:287
 msgctxt "UI"
 msgid "Name must not be longer than 15 characters."
-msgstr ""
+msgstr "نام نباید بیشتر از ۱۵ کاراکتر باشد."
 
 #: workers/api/v1/views.py:292
 msgctxt "UI"
 msgid "A label with this name already exists."
-msgstr ""
+msgstr "یک برچسب با این نام وجود دا‌رد."
 
 #: workers/api/v1/views.py:296
 msgctxt "UI"
 msgid "Label shortcut must be a string."
-msgstr ""
+msgstr "میانبر برچسب باید از نوع رشته باشد."
 
 #: workers/api/v1/views.py:299
 msgctxt "UI"
 msgid "Label shortcut is required."
-msgstr ""
+msgstr "میانبر برچسب الزامیست."
 
 #: workers/api/v1/views.py:301
 msgctxt "UI"
 msgid "Shortcut must not be longer than 2 characters."
-msgstr ""
+msgstr "میانبر نباید بیشتر از ۲ کاراکتر باشد."
 
 #: workers/api/v1/views.py:312
 msgctxt "UI"
 msgid "Label description must be a string."
-msgstr ""
+msgstr "توضیح برچسب باید از نوع رشته باشد."
 
 #: workers/api/v1/views.py:316
 msgctxt "UI"
 msgid "Maximal length of label description is 100 characters."
-msgstr ""
+msgstr "حداکثر تعداد کاراکتر مجاز برای توضیح برچسب ۱۰۰ می‌باشد."
 
 #: workers/api/v1/views.py:323
 msgctxt "UI"
