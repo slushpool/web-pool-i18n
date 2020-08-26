@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-06 16:35+0200\n"
-"PO-Revision-Date: 2020-05-06 14:33+0000\n"
+"PO-Revision-Date: 2020-08-30 19:37+0000\n"
 "Last-Translator: JohnsonWang <johnsonwong@westudyin.cz>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "slushpool/mining/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2.1-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
@@ -390,7 +390,7 @@ msgstr "账户算力"
 #: web/templates/email/monitoring_body.html:10
 msgctxt "UI"
 msgid "Worker States (Changes)"
-msgstr "矿工状态 (更改)"
+msgstr "矿工状态 (变化)"
 
 #: campaigns/email_templates/monitoring_incident_template.html:32
 #: web/templates/email/monitoring_body.html:20
@@ -1913,7 +1913,7 @@ msgstr ""
 #: help/templates/help/bitcoin-setup.html:173
 #: help/templates/help/zcash-setup.html:89
 msgid "Check if you are mining"
-msgstr "如果您在挖矿请勾选"
+msgstr "如果您在挖矿请注意检查"
 
 #: help/templates/help/bitcoin-setup.html:175
 #: help/templates/help/zcash-setup.html:90
@@ -1922,8 +1922,7 @@ msgid ""
 "the drop-down list located in the top center section of the page. Then check "
 "your hash rate in the <em>Recent Hash Rate</em> graph section below."
 msgstr ""
-"请打开您的<em>仪表板</em>，然后在页面上部中间的下拉菜单内选择您正在挖矿的币"
-"种。然后在下方的<em>最近算力</em>图表中检查您的算力。"
+"请打开您的<em>仪表盘</em>，然后在页面上部中间的下拉菜单内选择您正在挖矿的币种。然后在下方的<em>最近算力</em>图表中查看您的算力。"
 
 #: help/templates/help/bitcoin-setup.html:175
 #: help/templates/help/zcash-setup.html:90
@@ -2141,9 +2140,7 @@ msgid ""
 "The mobile application offers a convenient overview of your dashboard and "
 "allows you to receive notifications for significant events of your choice "
 "such as:"
-msgstr ""
-"手机应用能够方便地提供您的仪表板的概览，您会您选择的重要事件发生时，收到通知"
-"推送，这些重要事件可能是："
+msgstr "手机应用程式能够方便地为您提供的仪表盘的概览，且会在您选定的重要事件发生时，收到通知推送，这些重要事件可能是："
 
 #: help/templates/help/mobile-app.html:20
 #, python-format
@@ -2765,10 +2762,8 @@ msgid ""
 "subtle but has quite significant consequences, because it fully eliminates a "
 "concept of rounds from rewards calculation.)"
 msgstr ""
-"（对于从几年前就知道slush的计数系统的用户来说，重要的不同点之一是，分数和每轮"
-"开始的时候不相关，而是随给出的任意时间点%(t_0)s的关系动态地确定，例如当您查看"
-"仪表板的时候的时间点。这种变化是很微妙的但却有显著的结果，因为它完全消除了收"
-"益计算时用到的每轮的概念。)"
+"（对于从几年前就知道slush的计数系统的用户来说，重要的不同点之一是，分数和每轮开始的时候不相关，而是随给出的任意时间点%(t_0)s的关系动态地确定，"
+"例如当您查看仪表盘的时候的时间点。这种变化是很微妙的但却有显著的结果，因为它完全消除了收益计算时用到的每轮的概念。)"
 
 #: help/templates/help/reward-system.html:96
 #, python-format
@@ -2836,9 +2831,8 @@ msgid ""
 "was found at that time but instead of block value (which is not known yet) "
 "we use 12.5BTC:"
 msgstr ""
-"当您查看您的仪表板时，还能找到矿池为您计算的其他值。例如，估计收益值，它如果"
-"是挖出新区块，用户%(u)s在%(t_0)s<strong>时的估计收益</strong>。我们使用"
-"12.5BTC代替区块价值（待定的）来计算："
+"当您查看您的仪表盘时，还能找到矿池为您计算的其他值。例如，估计收益值，它如果是挖出新区块，用户%(u)s在%(t_0)s<strong>时的估计收益</s"
+"trong>。我们使用12.5BTC代替区块价值（待定的）来计算："
 
 #: help/templates/help/reward-system.html:124
 #, python-format
@@ -2866,7 +2860,7 @@ msgstr "当然，矿池的总计分算力%(H)s就是所有用户的计分算力�
 msgid ""
 "The following fees are currently applied by Slush Pool to provide the pool "
 "mining service."
-msgstr "Slush Pool矿池目前的服务费如下。"
+msgstr "Slush Pool矿池目前的服务手续费如下。"
 
 #: help/templates/help/rewards-payouts.html:7
 msgid "General information"
@@ -3239,11 +3233,9 @@ msgid ""
 "earned coins are available for payout. However, you must reach your payout "
 "threshold before any payout can be made."
 msgstr ""
-"算池出新块的时候，您的收益将由您的计分算力得出，它会以<strong>未确认收益</"
-"strong>的方式出现在您的账号仪表板上。至此，您还需要等待一定数量的新块（具体数"
-"量由不同的加密货币决定），并直到您的收益变为<strong>已确认的</strong>，即表示"
-"可提现的。 在这些确认后，您赚得的币就能够被支付提现了。然而，您需要能到您的收"
-"益达到支付阈值才能进行提现。"
+"算池出新块的时候，您的收益将由您的计分算力得出，它会以<strong>未确认收益</strong>的方式出现在您账号的仪表盘上。至此，您还需要等待一定数量"
+"的新块（具体数量由不同的加密货币决定），并直到您的收益变为<strong>已确认的</strong>，即表示可提现的。 "
+"在这些确认后，您赚得的币就能够被支付提现了。然而，您需要能到您的收益达到支付阈值才能进行提现。"
 
 #: help/templates/help/terminology.html:142
 msgid "Round"
@@ -4657,12 +4649,12 @@ msgstr "币：%s"
 #: web/models.py:1212
 msgctxt "UI"
 msgid "Preferred language"
-msgstr "首选语言"
+msgstr "语言"
 
 #: web/models.py:1213
 msgctxt "UI"
 msgid "Preferred timezone"
-msgstr "首选时区"
+msgstr "时区"
 
 #: web/models.py:1214
 msgctxt "UI"
