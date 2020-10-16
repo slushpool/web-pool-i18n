@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-06 16:35+0200\n"
-"PO-Revision-Date: 2020-08-30 19:37+0000\n"
+"PO-Revision-Date: 2020-10-17 23:26+0000\n"
 "Last-Translator: JohnsonWang <johnsonwong@westudyin.cz>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "slushpool/mining/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.2.1-dev\n"
+"X-Generator: Weblate 4.3.1-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
@@ -69,7 +69,7 @@ msgstr "方法 %s不存在"
 #: api/exceptions.py:76
 msgctxt "UI"
 msgid "Non-existent or expired token used"
-msgstr "使用了不存在或已过期的令牌"
+msgstr "使用了不存在或已过期的口令"
 
 #: api/exceptions.py:81
 msgctxt "UI"
@@ -223,12 +223,12 @@ msgstr "使用的设备还未激活，请使用另一个。"
 #, python-format
 msgctxt "UI"
 msgid "Your pairing token expired after %s seconds. Please try again."
-msgstr "您的配对令牌在%s秒后过期，请重试。"
+msgstr "您的配对口令在%s秒后过期，请重试。"
 
 #: api/exceptions.py:276
 msgctxt "UI"
 msgid "Device for given token does not exist. Please pair your device again."
-msgstr "相应令牌的设备不存在，请重新配对您的设备。"
+msgstr "相应口令的设备不存在，请重新配对您的设备。"
 
 #: api/exceptions.py:286
 msgctxt "UI"
@@ -592,7 +592,7 @@ msgstr "反馈必须是长于%d个字的字符串。"
 #: campaigns/forms/validators.py:472
 msgctxt "UI"
 msgid "Invalid e-mail token provided."
-msgstr "提供了无效的邮件令牌。"
+msgstr "提供了无效的邮件口令。"
 
 #: campaigns/templates/campaign_fragment/hello.html:4
 #, python-format
@@ -1006,7 +1006,7 @@ msgstr "需要两步验证！"
 
 #: formlib/core.py:44
 msgid "OTP token validation failed."
-msgstr "一次性密码验证令牌验证失败。"
+msgstr "一次性密码验证口令验证失败。"
 
 #: formlib/core.py:48
 msgid "U2F authentication failed!"
@@ -1143,7 +1143,7 @@ msgstr "zcashd：不是一个有效的Zcash地址。"
 #: formlib/validators.py:238
 msgctxt "UI"
 msgid "Two-factor authentication token is invalid."
-msgstr "两步验证令牌无效。"
+msgstr "两步验证口令无效。"
 
 #: formlib/validators.py:247
 msgctxt "UI"
@@ -1178,12 +1178,12 @@ msgstr "您不能更改此访问配置的权限。"
 #: formlib/validators.py:337
 msgctxt "UI"
 msgid "Token must have 16 characters."
-msgstr "令牌必须至少有16个字符。"
+msgstr "口令必须至少有16个字符。"
 
 #: formlib/validators.py:339 formlib/validators.py:344
 msgctxt "UI"
 msgid "Invalid token."
-msgstr "无效的令牌。"
+msgstr "无效的口令。"
 
 #: formlib/validators.py:354
 msgctxt "UI"
@@ -1296,15 +1296,15 @@ msgid ""
 "You have to include the abbreviation of the selected coin (e.g. btc) and "
 "your access token in every API URL."
 msgstr ""
-"矿池API在JSON文件的以下三个端点上 <strong>统计</strong>, <strong>配置</"
-"strong> and <strong>矿工</strong>提供数据。\n"
-"在每个API的URL里访问代币，您需要包括选择币种的简写（例如，BTC）。"
+"矿池API在JSON文件的以下三个端点上 <strong>统计</strong>, <strong>配置</strong> and "
+"<strong>矿工</strong>提供数据。\n"
+"在每个API的URL里访问口令，您需要包括选择币种的简写（例如，BTC）。"
 
 #: help/templates/help/api.html:10
 msgid ""
 "To acquire <strong>access token</strong> needed for API authentication, "
 "please follow these steps:"
-msgstr "需要API验证以获得 <strong>接入令牌</strong> , 请按照以下步骤操作："
+msgstr "需要API验证以获得 <strong>访问口令</strong> , 请按照以下步骤操作："
 
 #: help/templates/help/api.html:13
 msgid "Go to <em>Settings > Access Profiles</em>"
@@ -1320,7 +1320,7 @@ msgstr "在访问配置的详细信息中选择 <em>允许接入网页API</em>"
 
 #: help/templates/help/api.html:16
 msgid "Click on <em>Generate New token</em>"
-msgstr "点击<em>生成新令牌</em>"
+msgstr "点击<em>生成新口令</em>"
 
 #: help/templates/help/api.html:17
 msgid "<em>Save</em> the changes"
@@ -1331,9 +1331,7 @@ msgid ""
 "Each access profile has its own access token (in case API access is "
 "enabled). Access tokens can be regenerated any time, effectively canceling "
 "the former access token belonging to the selected access profile."
-msgstr ""
-"每个访问配置都有各自独立的访问令牌（如果API访问已开启）。访问令牌可以在任何时"
-"候重新生成，这样选中的旧访问配置的访问令牌则可以被有效地取消。"
+msgstr "每个访问配置都有各自独立的访问口令（如果API访问已开启）。访问口令可以在任何时候重新生成，这样选中的旧访问配置的访问口令则可以被有效地取消。"
 
 #: help/templates/help/api.html:22
 msgid "API authentication"
@@ -1345,8 +1343,8 @@ msgid ""
 "<code>SlushPool-Auth-Token</code> or <code>X-SlushPool-Auth-Token</code> to "
 "authenticate your requests."
 msgstr ""
-"访问配置令牌需要在HTTP头字段项中命名为 <code>SlushPool-Auth-Token</code> 或 "
-"<code>X-SlushPool-Auth-Token</code> 以验证您的请求。"
+"访问配置口令需要在HTTP头字段项中命名为 <code>SlushPool-Auth-Token</code> 或 <code>X-SlushPool-"
+"Auth-Token</code> 以验证您的请求。"
 
 #: help/templates/help/api.html:26
 msgid "API request limit"
@@ -2185,9 +2183,7 @@ msgstr "在<em>新设备标签</em>这项，填写您的设备名并点击<em>�
 msgid ""
 "Connect the mobile app to your user account by either scanning the QR code "
 "in the mobile app or manually entering the token value in the mobile app."
-msgstr ""
-"通过在手机APP内扫描二维码的方式，关联手机APP和您的账户，或者您可以在手机APP里"
-"手动输入令牌。"
+msgstr "通过在手机APP内扫描二维码的方式，关联手机APP和您的账户，或者您可以在手机APP里手动输入口令。"
 
 #: help/templates/help/mobile-app.html:36
 msgid "Multiple devices"
@@ -3544,7 +3540,7 @@ msgstr "允许接入网页API"
 msgid ""
 "The user will be able to use token authentication in scripts or 3rd party "
 "applications. You can generate new tokens there."
-msgstr "用户能够在脚本或第三方应用里使用令牌验证。您能在这里生成一个新令牌。"
+msgstr "用户能够在脚本或第三方应用里使用令牌验证。您能在这里生成一个新口令。"
 
 #: help/templates/help/user-accounts.html:20
 msgid "Allow website login"
@@ -4160,7 +4156,7 @@ msgctxt "UI"
 msgid ""
 "2FA token is invalid. Please, re-scan the QR code (new one has been "
 "generated)."
-msgstr "双重认证令牌无效。请重新扫描二维码（已生成一个新的二维码）。"
+msgstr "双重认证口令无效。请重新扫描二维码（已生成一个新的二维码）。"
 
 #: settings/forms/otp_setting_forms.py:120
 #: settings/forms/otp_setting_forms.py:171
@@ -4410,7 +4406,7 @@ msgstr "未发现等待中的请求!"
 #: web/api/v1/views.py:1980
 msgctxt "UI"
 msgid "Invalid token!"
-msgstr "无效的令牌！"
+msgstr "无效的口令！"
 
 #: web/api/v1/views.py:1985
 msgctxt "UI"
