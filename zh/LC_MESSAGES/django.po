@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-26 14:23+0100\n"
-"PO-Revision-Date: 2020-10-17 23:26+0000\n"
+"PO-Revision-Date: 2020-10-31 14:26+0000\n"
 "Last-Translator: JohnsonWang <johnsonwong@westudyin.cz>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "slushpool/mining/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.3.1-dev\n"
+"X-Generator: Weblate 4.3.2-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
@@ -115,12 +115,10 @@ msgid "Access denied to object: %s"
 msgstr "访问: %s 被拒绝"
 
 #: api/exceptions.py:142
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Worker \"%s\" already exists"
+#, python-format
 msgctxt "UI"
 msgid "Worker \"%s\" already exists (it may have been deactivated)"
-msgstr "矿工 %s 已存在"
+msgstr "矿工 %s 已存在（或已禁用）"
 
 #: api/exceptions.py:147
 #, python-format
@@ -1545,20 +1543,14 @@ msgid "User doesn't have OTP."
 msgstr "用户没有一次性密码验证。"
 
 #: settings/forms/password_settings_form.py:39
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "This value is not allowed."
 msgctxt "UI"
 msgid "Password change is not allowed."
-msgstr "不允许此值。"
+msgstr "不可更改密码。"
 
 #: settings/forms/password_settings_form.py:65
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Passwords are different!"
 msgctxt "UI"
 msgid "Passwords are different."
-msgstr "密码不匹配！"
+msgstr "密码不匹配。"
 
 #: user_request/api/v1/views.py:40
 msgctxt "UI"
@@ -2170,7 +2162,7 @@ msgstr "技术支持登录"
 #: web/models.py:1359
 msgctxt "UI"
 msgid "Impersonate user"
-msgstr ""
+msgstr "拟人用户"
 
 #: web/models.py:1361
 msgctxt "UI"
@@ -2542,7 +2534,7 @@ msgstr "只读"
 #: web/permissions.py:45
 msgctxt "UI"
 msgid "Limited read-only"
-msgstr "已限制只读"
+msgstr "部分只读"
 
 #: web/registration.py:58
 #, python-format
@@ -2753,7 +2745,7 @@ msgctxt "UI"
 msgid ""
 "If you did not request to receive this password reset email, you can ignore "
 "it."
-msgstr ""
+msgstr "如果您没有申请更改密码，请忽视此邮件。"
 
 #: web/templates/email/password_reset.html:11
 msgid "Reset password"
