@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-14 14:26+0100\n"
-"PO-Revision-Date: 2020-11-11 02:28+0000\n"
+"PO-Revision-Date: 2021-03-16 15:02+0000\n"
 "Last-Translator: Artemis3 v <artemis3@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/slushpool/mining/"
 "es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.5.2-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
@@ -458,12 +458,9 @@ msgid "Event Time"
 msgstr "Tiempo del Evento"
 
 #: campaigns/email_templates/v4_monitoring_incident.html:305
-#, fuzzy
-#| msgctxt "email"
-#| msgid "Account Hash Rate"
 msgctxt "email"
 msgid "Account Hashrate"
-msgstr "Tasa de Hash en la Cuenta"
+msgstr "Tasa de hash en la Cuenta"
 
 #: campaigns/email_templates/v4_monitoring_incident.html:320
 msgctxt "email"
@@ -506,12 +503,9 @@ msgid "State Change"
 msgstr "Cambio de Estado"
 
 #: campaigns/email_templates/v4_monitoring_incident.html:514
-#, fuzzy
-#| msgctxt "email"
-#| msgid "Actual Hash Rate"
 msgctxt "email"
 msgid "Actual Hashrate"
-msgstr "Tasa de Hash actual"
+msgstr "Tasa de hash actual"
 
 #: campaigns/email_templates/v4_monitoring_incident.html:540
 msgctxt "email"
@@ -810,7 +804,7 @@ msgstr "Claves inválidas suministradas como configuración del dispositivo."
 #: devices/templates/devices/news.html:8
 msgctxt "UI"
 msgid "Sorry, nothing has been found on this URL."
-msgstr ""
+msgstr "Lo sentimos, no se encuentra nada en esta dirección."
 
 #: devices/templates/notification/monitoring_subject.txt:2
 #: web/templates/email/monitoring_subject.html:2
@@ -819,51 +813,34 @@ msgid "Workers"
 msgstr "Equipos de minería"
 
 #: devices_v2/api/common.py:150
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Label name must be a string."
 msgctxt "UI"
 msgid "Coins must be a list."
-msgstr "El nombre de la etiqueta debe ser una frase."
+msgstr "Monedas debe ser una lista."
 
 #: devices_v2/api/common.py:278
 msgctxt "UI"
 msgid "Pair token timeout exceeded. Please request a new one."
-msgstr ""
+msgstr "Tiempo de espera del par token excedido. Favor solicite uno nuevo."
 
 #: devices_v2/api/common.py:417
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Wallet has been changed."
 msgctxt "UI"
 msgid "Platform can not be changed."
-msgstr "La cartera ha sido cambiada."
+msgstr "La plataforma no puede cambiarse."
 
 #: devices_v2/api/common.py:468 devices_v2/api/common.py:496
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid monitoring settings."
 msgctxt "UI"
 msgid "Invalid notifications settings."
-msgstr "Configuración de monitoreo inválida."
+msgstr "Configuración de notifiaciones inválida."
 
 #: devices_v2/api/common.py:533
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Values for device settings must be dictionary."
 msgctxt "UI"
 msgid "Values for device settings must be a dictionary."
-msgstr ""
-"Los valores para la configuración del dispositivo deben estar en el "
-"diccionario."
+msgstr "Los valores de configuración del dispositivo deben ser un diccionario."
 
 #: devices_v2/api/common.py:599
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid token."
 msgctxt "UI"
 msgid "Invalid notification ID."
-msgstr "Token inválido."
+msgstr "Notificación ID inválida."
 
 #: devices_v2/notifications_utils.py:498 maintenance/funcs/payouts_funcs.py:290
 msgctxt "UI"
@@ -871,104 +848,78 @@ msgid "Payout sent"
 msgstr "Pago enviado"
 
 #: devices_v2/validators.py:31
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Label name must be a string."
 msgctxt "UI"
 msgid "Label must be a string."
-msgstr "El nombre de la etiqueta debe ser una frase."
+msgstr "La etiqueta debe ser una frase."
 
 #: devices_v2/validators.py:35
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Feedback must be a string no longer than %d characters."
+#, python-format
 msgid "Label must be a string no longer than %s characters."
-msgstr ""
-"La retroalimentación debe ser una cadena que no tenga más de %d caracteres."
+msgstr "La etiqueta debe ser una frase que no tenga más de %s caracteres."
 
 #: devices_v2/validators.py:50
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "This name is already used."
 msgid "This label is already used."
-msgstr "Este nombre ya está en uso."
+msgstr "Esta etiqueta ya está en uso."
 
 #: devices_v2/validators.py:56
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Label name must be a string."
 msgid "Platform must be a string."
-msgstr "El nombre de la etiqueta debe ser una frase."
+msgstr "La plataforma debe ser una frase."
 
 #: devices_v2/validators.py:67
 msgid ""
 "Platform must start with either \"ios\" or \"android\", followed by a space."
 msgstr ""
+"La plataforma debe comenzar con \"ios\" o \"android\", seguida por un "
+"espacio."
 
 #: devices_v2/validators.py:74
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Feedback must be a string no longer than %d characters."
+#, python-format
 msgctxt "UI"
 msgid "Platform version must be a string no longer than %d characters."
 msgstr ""
-"La retroalimentación debe ser una cadena que no tenga más de %d caracteres."
+"La versión de la plataforma debe ser una frase no mayor de %d caracteres."
 
 #: devices_v2/validators.py:83
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Feedback must be a string no longer than %d characters."
+#, python-format
 msgid ""
 "Firebase notification token must be a string no longer than %d characters."
 msgstr ""
-"La retroalimentación debe ser una cadena que no tenga más de %d caracteres."
+"El token de notificación Firebase debe ser una frase no mayor de %d "
+"caracteres."
 
 #: devices_v2/validators.py:96
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Feedback must be a string no longer than %d characters."
+#, python-format
 msgid "Device model must be a string no longer than %d characters."
 msgstr ""
-"La retroalimentación debe ser una cadena que no tenga más de %d caracteres."
+"El modelo de dispositivo debe ser una frase que no mayor de %d caracteres."
 
 #: devices_v2/validators.py:111
 msgid "App version code must be an integer."
-msgstr ""
+msgstr "El código de versión de la aplicación debe ser un entero."
 
 #: devices_v2/validators.py:114
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid permissions value."
 msgid "Invalid app version code."
-msgstr "Valor de permisos inválido."
+msgstr "Código de versión de la aplicación inválido."
 
 #: devices_v2/validators.py:120
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Feedback must be a string no longer than %d characters."
+#, python-format
 msgid "Language must be a string no longer than %d characters."
-msgstr ""
-"La retroalimentación debe ser una cadena que no tenga más de %d caracteres."
+msgstr "El idioma debe ser una frase no mayor de %d caracteres."
 
 #: devices_v2/validators.py:133
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Feedback must be a string no longer than %d characters."
+#, python-format
 msgid "Country must be a string no longer than %d characters."
-msgstr ""
-"La retroalimentación debe ser una cadena que no tenga más de %d caracteres."
+msgstr "El país debe ser una frase no mayor de %d caracteres."
 
 #: devices_v2/validators.py:146
 msgid "Dashboard autorefresh setting must be a boolean."
-msgstr ""
+msgstr "La configuración de autorefresco del tablero debe ser un booleano."
 
 #: devices_v2/validators.py:152
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Feedback must be a string no longer than %d characters."
+#, python-format
 msgid "Token must be a string of %d lowercase ASCII characters or digits."
 msgstr ""
-"La retroalimentación debe ser una cadena que no tenga más de %d caracteres."
+"El token debe ser una frase de %d caracteres ASCII en minúscula o dígitos."
 
 #: finance/api/v1/api_actions.py:33 finance/forms/validators.py:308
 msgctxt "UI"
@@ -1014,27 +965,19 @@ msgstr ""
 "recompensas divididas primero."
 
 #: finance/forms/payout_channel.py:64
-#, fuzzy
-#| msgid "Select one of your access profiles or create a new one"
 msgctxt "UI"
 msgid "Select an existing wallet or create a new one."
-msgstr "Selecciona uno de tus perfiles de acceso o crea uno nuevo"
+msgstr "Selecciona una cartera existente o crea una nueva."
 
 #: finance/forms/payout_channel.py:68
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Wallet name must be a string!"
 msgctxt "UI"
 msgid "Wallet params are missing."
-msgstr "¡El nombre de la cartera debe ser una frase!"
+msgstr "Faltan los parámetros de la cartera."
 
 #: finance/forms/payout_channel.py:71
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Wallet name must be a string!"
 msgctxt "UI"
 msgid "Wallet name is missing."
-msgstr "¡El nombre de la cartera debe ser una frase!"
+msgstr "Falta el nombre de la cartera."
 
 #: finance/forms/payout_channel.py:89 user_request/models.py:678
 msgctxt "UI"
@@ -1130,9 +1073,6 @@ msgid "This name is already used!"
 msgstr "¡Este nombre ya fue usado!"
 
 #: finance/forms/validators.py:149
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Adress missing!"
 msgctxt "UI"
 msgid "Address missing!"
 msgstr "¡Falta la dirección!"
@@ -1173,12 +1113,9 @@ msgid "Missing \"type\" attribute in wallet params."
 msgstr "Falta el atributo \"tipo\" en los parámetros de la cartera."
 
 #: finance/forms/validators.py:268
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "XPub is not supported for this coin!"
 msgctxt "UI"
 msgid "Xpub wallets are not supported at the moment."
-msgstr "¡XPub no está soportado para esta moneda!"
+msgstr "En estos momentos las carteras Xpub no tienen soporte."
 
 #: finance/forms/validators.py:272
 msgctxt "UI"
@@ -1258,28 +1195,19 @@ msgid "Invalid payout accounts!"
 msgstr "¡Cuentas de pago no válidas!"
 
 #: finance/forms/validators.py:481
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid threshold format!"
 msgctxt "UI"
 msgid "Invalid threshold parameters!"
-msgstr "¡Formato de umbral no válido!"
+msgstr "¡Parámetros de umbral inválidos!"
 
 #: finance/forms/validators.py:483
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Boolean value is required."
 msgctxt "UI"
 msgid "Threshold value is required!"
-msgstr "Se requiere un valor booleano."
+msgstr "¡Se requiere el valor del umbral!"
 
 #: finance/forms/validators.py:485
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid threshold format!"
 msgctxt "UI"
 msgid "Invalid threshold value!"
-msgstr "¡Formato de umbral no válido!"
+msgstr "¡Valor de umbral inválido!"
 
 #: finance/forms/validators.py:501
 #, python-format
@@ -1430,12 +1358,10 @@ msgid "Password is incorrect!"
 msgstr "¡La contraseña es incorrecta!"
 
 #: formlib/core.py:81
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "You don't have sufficient permissions to confirm user requests."
 msgctxt "UI"
 msgid "You don't have sufficient access permissions to modify the settings."
-msgstr "No tiene permiso suficiente para confirmar solicitudes de usuario."
+msgstr ""
+"No tiene permisos de acceso suficientes para modificar la configuración."
 
 #: formlib/core.py:304
 msgctxt "UI"
@@ -1449,12 +1375,10 @@ msgid "Context value \"%s\" is missing."
 msgstr "Falta el valor de contexto %s."
 
 #: formlib/core.py:481
-#, fuzzy, python-brace-format
-#| msgctxt "UI"
-#| msgid "Missing initial value %s!"
+#, python-brace-format
 msgctxt "UI"
 msgid "Missing initial value for the \"{key}\" key!"
-msgstr "¡Falta el valor inicial %s!"
+msgstr "¡Falta el valor inicial para la \"{key}\" llave!"
 
 #: formlib/core.py:484
 msgctxt "UI"
@@ -1706,17 +1630,12 @@ msgid "-- not voted (proportional split) --"
 msgstr "-- no votado (división proporcional) --"
 
 #: mining/models.py:381
-#, fuzzy
-#| msgctxt "UI"
-#| msgid ""
-#| "Users that don't have any preference = their hash rate is split among all "
-#| "block size proposals proportionally."
 msgctxt "UI"
 msgid ""
 "Users that don't have any preference = their hashrate is split among all "
 "block size proposals proportionally."
 msgstr ""
-"Usuarios que no tienen ninguna preferencia = su hashrate se divide "
+"Usuarios que no tengan preferencia = su tasa de hash se dividide "
 "proporcionalmente entre todas las propuestas de tamaño de bloque."
 
 #: mining/models.py:382
@@ -1730,18 +1649,13 @@ msgid "Current rules / Bitcoin Core"
 msgstr "Normas actuales / Bitcoin Core"
 
 #: mining/models.py:388
-#, fuzzy
-#| msgctxt "UI"
-#| msgid ""
-#| "Users that prefer Current rules given by Bitcoin core = their hash rate "
-#| "is used for mining Bitcoin Core blocks."
 msgctxt "UI"
 msgid ""
 "Users that prefer Current rules given by Bitcoin core = their hashrate is "
 "used for mining Bitcoin Core blocks."
 msgstr ""
-"Usuarios que prefieren las reglas actuales dadas por Bitcoin Core = su "
-"hashrate se usa para minar bloques de Bitcoin Core."
+"Usuarios que prefieren las Reglas actuales dadas por Bitcoin Core = su tasa "
+"de hash se usa para minar bloques de Bitcoin Core."
 
 #: mining/models.py:389
 msgctxt "UI"
@@ -2020,18 +1934,13 @@ msgid "Supplied user request is not active!"
 msgstr "¡Solicitud de usuario suministrada no está activa!"
 
 #: user_request/models.py:294
-#, fuzzy
-#| msgctxt "UI"
-#| msgid ""
-#| "The request associated with this confirmation link is no longer active."
-#| "<br>It has probably been confirmed or cancelled before."
 msgctxt "UI"
 msgid ""
 "The request associated with this confirmation link is no longer active. It "
 "has probably been confirmed or canceled before."
 msgstr ""
-"La solicitud asociada con este enlace de confirmación ya no está activa. "
-"<br>Probablemente se haya confirmado o cancelado anteriormente."
+"La solicitud asociada a este enlace de confirmación ya no está activa. "
+"Probablemente ha sido confirmada o cancelada previsamente."
 
 #: user_request/models.py:388
 msgctxt "UI"
@@ -2165,7 +2074,7 @@ msgstr "Descartar este mensaje"
 #: web/api/v1/views.py:291
 msgctxt "UI"
 msgid "The current access profile has already seen the v4 welcome dialogue!"
-msgstr ""
+msgstr "¡El perfil de acceso actual ya ha visto el mensaje de bienvenida v4!"
 
 #: web/api/v1/views.py:1446
 msgctxt "UI"
@@ -2345,7 +2254,7 @@ msgstr "día desconocido"
 #, python-format
 msgctxt "UI"
 msgid "Triggered monthly on the %(number)s. day"
-msgstr "Disparador mensual los días %(number)s."
+msgstr "Activado los días %(number)s. mensualmente"
 
 #: web/models.py:881
 #, python-format
@@ -2818,12 +2727,9 @@ msgid "Account settings updated"
 msgstr "Configuración de cuenta actualizada"
 
 #: web/models.py:1424
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Color theme"
 msgctxt "UI"
 msgid "Color theme changed"
-msgstr "Color del tema"
+msgstr "Cambió el color de tema"
 
 #: web/models.py:1427
 msgctxt "UI"
@@ -3172,12 +3078,9 @@ msgid "Event Time"
 msgstr "Tiempo del Evento"
 
 #: web/templates/email/monitoring_body.html:9
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account Hash Rate"
 msgctxt "UI"
 msgid "Account Hashrate"
-msgstr "Hashrate de la Cuenta"
+msgstr "Tasa de hash de la Cuenta"
 
 #: web/templates/email/monitoring_body.html:10
 msgctxt "UI"
@@ -3200,12 +3103,9 @@ msgid "State Changed After"
 msgstr "Estado cambiado después de"
 
 #: web/templates/email/monitoring_body.html:23
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Actual Hash Rate"
 msgctxt "UI"
 msgid "Actual Hashrate"
-msgstr "Hashrate actual"
+msgstr "Tasa de hash actual"
 
 #: web/templates/email/monitoring_body.html:24
 msgctxt "UI"
