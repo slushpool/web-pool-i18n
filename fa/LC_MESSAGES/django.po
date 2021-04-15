@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-20 15:08+0100\n"
+"POT-Creation-Date: 2021-04-15 16:34+0200\n"
 "PO-Revision-Date: 2021-03-20 13:57+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/slushpool/mining/"
@@ -267,7 +267,7 @@ msgid ""
 msgstr ""
 "حذف قطع شد. حذف ورکرهای فعال امکان پذیر نیست. لطفاً انتخاب خود را تنظیم کنید."
 
-#: backend/queries/finance.py:234
+#: backend/queries/finance.py:232
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid currency."
@@ -1000,13 +1000,11 @@ msgid "Few newest blocks for this coin can be seen here:"
 msgstr ""
 
 #: devices/templates/devices/block_found.html:31
-#: devices/templates/devices/payout_sent.html:24
 msgctxt "UI"
 msgid "&laquo; Previous change"
 msgstr ""
 
 #: devices/templates/devices/block_found.html:33
-#: devices/templates/devices/payout_sent.html:26
 msgctxt "UI"
 msgid "Next change &raquo;"
 msgstr ""
@@ -1099,6 +1097,16 @@ msgstr "کارمزد تراکنش"
 msgctxt "UI"
 msgid ""
 "You can see all <a href=\"%(url)s\" target=\"_blank\">your payouts here</a>"
+msgstr ""
+
+#: devices/templates/devices/payout_sent.html:24
+msgctxt "UI"
+msgid "&laquo; Previous payout"
+msgstr ""
+
+#: devices/templates/devices/payout_sent.html:26
+msgctxt "UI"
+msgid "Next payout &raquo;"
 msgstr ""
 
 #: devices/templates/devices/reward.html:7
@@ -1207,7 +1215,7 @@ msgctxt "UI"
 msgid "Hashrate"
 msgstr "نرخ هش"
 
-#: devices/templates/devices/worker_moni.html:54 web/models.py:1258
+#: devices/templates/devices/worker_moni.html:54 web/models.py:1237
 msgctxt "UI"
 msgid "Alert limit"
 msgstr "محدوده هشدار"
@@ -1226,7 +1234,7 @@ msgctxt "UI"
 msgid "Workers"
 msgstr "ورکر ها"
 
-#: devices/validators.py:31
+#: devices/validators.py:32
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Label name must be a string."
@@ -1234,33 +1242,37 @@ msgctxt "UI"
 msgid "Label must be a string."
 msgstr "نام برچسب باید از نوع متن باشد."
 
-#: devices/validators.py:35
+#: devices/validators.py:36
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Feedback must be a string no longer than %d characters."
 msgid "Label must be a string no longer than %s characters."
 msgstr "بازخورد نباید بیشتر از %d کاراکتر باشد."
 
-#: devices/validators.py:50
+#: devices/validators.py:39
+msgid "HTML tags are not allowed in device label."
+msgstr ""
+
+#: devices/validators.py:53
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "This name is already used."
 msgid "This label is already used."
 msgstr "این نام قبلاً استفاده شده است."
 
-#: devices/validators.py:56
+#: devices/validators.py:59
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Label name must be a string."
 msgid "Platform must be a string."
 msgstr "نام برچسب باید از نوع متن باشد."
 
-#: devices/validators.py:67
+#: devices/validators.py:70
 msgid ""
 "Platform must start with either \"ios\" or \"android\", followed by a space."
 msgstr ""
 
-#: devices/validators.py:74
+#: devices/validators.py:77
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Feedback must be a string no longer than %d characters."
@@ -1268,7 +1280,7 @@ msgctxt "UI"
 msgid "Platform version must be a string no longer than %d characters."
 msgstr "بازخورد نباید بیشتر از %d کاراکتر باشد."
 
-#: devices/validators.py:83
+#: devices/validators.py:86
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Feedback must be a string no longer than %d characters."
@@ -1276,50 +1288,50 @@ msgid ""
 "Firebase notification token must be a string no longer than %d characters."
 msgstr "بازخورد نباید بیشتر از %d کاراکتر باشد."
 
-#: devices/validators.py:96
+#: devices/validators.py:99
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Feedback must be a string no longer than %d characters."
 msgid "Device model must be a string no longer than %d characters."
 msgstr "بازخورد نباید بیشتر از %d کاراکتر باشد."
 
-#: devices/validators.py:111
+#: devices/validators.py:114
 msgid "App version code must be an integer."
 msgstr ""
 
-#: devices/validators.py:114
+#: devices/validators.py:117
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid permissions value."
 msgid "Invalid app version code."
 msgstr "مقدار مجوزهای نامعتبر."
 
-#: devices/validators.py:120
+#: devices/validators.py:123
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Feedback must be a string no longer than %d characters."
 msgid "Language must be a string no longer than %d characters."
 msgstr "بازخورد نباید بیشتر از %d کاراکتر باشد."
 
-#: devices/validators.py:133
+#: devices/validators.py:136
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Feedback must be a string no longer than %d characters."
 msgid "Country must be a string no longer than %d characters."
 msgstr "بازخورد نباید بیشتر از %d کاراکتر باشد."
 
-#: devices/validators.py:146
+#: devices/validators.py:149
 msgid "Dashboard autorefresh setting must be a boolean."
 msgstr ""
 
-#: devices/validators.py:152
+#: devices/validators.py:155
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Feedback must be a string no longer than %d characters."
 msgid "Token must be a string of %d lowercase ASCII characters or digits."
 msgstr "بازخورد نباید بیشتر از %d کاراکتر باشد."
 
-#: finance/api/v1/api_actions.py:33 finance/forms/validators.py:308
+#: finance/api/v1/api_actions.py:33 finance/forms/validators.py:307
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid payout account id."
@@ -1332,8 +1344,8 @@ msgctxt "UI"
 msgid "This verification request has already been processed."
 msgstr "این درخواست تأیید قبلاً پردازش شده است."
 
-#: finance/api/v1/api_actions.py:89 settings/api/v1/api_actions.py:164
-#: settings/api/v1/api_actions.py:196
+#: finance/api/v1/api_actions.py:89 settings/api/v1/api_actions.py:122
+#: settings/api/v1/api_actions.py:164 settings/api/v1/api_actions.py:196
 msgctxt "UI"
 msgid ""
 "Confirmation email has been sent. Please, check your mailbox and follow the "
@@ -1342,10 +1354,10 @@ msgstr ""
 "ایمیل تایید ارسال شده است. لطفاًایمیل خود را بررسی کرده و پیوند را دنبال کنید."
 
 #: finance/forms/payout_account.py:35 finance/forms/payout_account.py:75
-#: finance/forms/payout_account.py:167 finance/forms/payout_channel.py:76
+#: finance/forms/payout_account.py:167 finance/forms/payout_channel.py:94
 #: finance/forms/payout_hold.py:29 finance/forms/payout_hold.py:69
 #: finance/forms/payout_lock.py:34 finance/forms/payout_request.py:32
-#: finance/forms/payout_split.py:69 finance/forms/wallet.py:39
+#: finance/forms/payout_split.py:68 finance/forms/wallet.py:39
 #: finance/forms/wallet.py:82 finance/forms/wallet.py:139 formlib/core.py:412
 msgctxt "UI"
 msgid "You do not have permission to submit this form."
@@ -1364,7 +1376,7 @@ msgstr ""
 "این حساب دارای درصد تقسیم غیر صفر است. ابتدا پاداشهای خود را دوباره تقسیم "
 "کنید."
 
-#: finance/forms/payout_channel.py:64
+#: finance/forms/payout_channel.py:68
 #, fuzzy
 #| msgid "Select one of your access profiles or create a new one"
 msgctxt "UI"
@@ -1372,7 +1384,7 @@ msgid "Select an existing wallet or create a new one."
 msgstr ""
 "یکی از پروفایل های دسترسی خود را انتخاب کنید یا یک مورد جدید ایجاد کنید"
 
-#: finance/forms/payout_channel.py:68
+#: finance/forms/payout_channel.py:72
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Wallet name must be a string!"
@@ -1380,7 +1392,7 @@ msgctxt "UI"
 msgid "Wallet params are missing."
 msgstr "نام کیف پول باید یک ردیف باشد!"
 
-#: finance/forms/payout_channel.py:71
+#: finance/forms/payout_channel.py:75
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Wallet name must be a string!"
@@ -1388,7 +1400,12 @@ msgctxt "UI"
 msgid "Wallet name is missing."
 msgstr "نام کیف پول باید یک ردیف باشد!"
 
-#: finance/forms/payout_channel.py:89 user_request/models.py:678
+#: finance/forms/payout_channel.py:87
+msgctxt "UI"
+msgid "Settings of an API-driven payout account can not be changed."
+msgstr ""
+
+#: finance/forms/payout_channel.py:107 user_request/models.py:675
 msgctxt "UI"
 msgid "Payouts are locked."
 msgstr "پرداخت ها قفل شده اند."
@@ -1423,12 +1440,12 @@ msgctxt "UI"
 msgid "Payouts are locked!"
 msgstr "پرداخت ها قفل شده اند."
 
-#: finance/forms/payout_split.py:62
+#: finance/forms/payout_split.py:61
 msgctxt "UI"
-msgid "Reward split is not allowed for accounts with API-driven payouts."
+msgid "Reward split can not be changed for accounts with API-driven payouts."
 msgstr ""
 
-#: finance/forms/validators.py:31
+#: finance/forms/validators.py:30
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid currency."
@@ -1436,7 +1453,7 @@ msgctxt "UI"
 msgid "Invalid currency!"
 msgstr "ارز نامعتبر."
 
-#: finance/forms/validators.py:48
+#: finance/forms/validators.py:47
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid wallet id."
@@ -1444,7 +1461,7 @@ msgctxt "UI"
 msgid "Invalid wallet id!"
 msgstr "شناسه کیف پول نامعتبر است."
 
-#: finance/forms/validators.py:58
+#: finance/forms/validators.py:57
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Wallet name must be a string!"
@@ -1452,7 +1469,7 @@ msgctxt "UI"
 msgid "The wallet must be active!"
 msgstr "نام کیف پول باید یک ردیف باشد!"
 
-#: finance/forms/validators.py:67
+#: finance/forms/validators.py:66
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid date range!"
@@ -1460,7 +1477,7 @@ msgctxt "UI"
 msgid "Invalid \"is_active\" parameter!"
 msgstr "دامنه تاریخ نامعتبر است!"
 
-#: finance/forms/validators.py:72
+#: finance/forms/validators.py:71
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "This wallet already exists."
@@ -1468,7 +1485,7 @@ msgctxt "UI"
 msgid "This wallet is already active!"
 msgstr "این کیف پول از قبل موجود است."
 
-#: finance/forms/validators.py:75
+#: finance/forms/validators.py:74
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "This wallet already exists."
@@ -1476,12 +1493,12 @@ msgctxt "UI"
 msgid "This wallet has already been deactivated!"
 msgstr "این کیف پول از قبل موجود است."
 
-#: finance/forms/validators.py:82
+#: finance/forms/validators.py:81
 msgctxt "UI"
 msgid "Wallet name must be a string!"
 msgstr "نام کیف پول باید یک ردیف باشد!"
 
-#: finance/forms/validators.py:87 finance/forms/validators.py:329
+#: finance/forms/validators.py:86 finance/forms/validators.py:328
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Name can not be longer than %(length)s characters."
@@ -1489,16 +1506,16 @@ msgctxt "UI"
 msgid "Name can not be longer than %(length)s characters!"
 msgstr "نام نمی تواند طولانی تر از %(length)s کاراکتر باشد."
 
-#: finance/forms/validators.py:94
+#: finance/forms/validators.py:93
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Character \"#\" is not allowed in wallet name."
 msgctxt "UI"
-msgid "Character \"#\" is not allowed in wallet name!"
+msgid "Unsupported characters in wallet name!"
 msgstr "کاراکتر \"#\" در نام کیف پول مجاز نیست."
 
-#: finance/forms/validators.py:117 finance/forms/validators.py:134
-#: finance/forms/validators.py:355 finance/forms/validators.py:374
+#: finance/forms/validators.py:116 finance/forms/validators.py:133
+#: finance/forms/validators.py:354 finance/forms/validators.py:373
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "This name is already used."
@@ -1506,14 +1523,14 @@ msgctxt "UI"
 msgid "This name is already used!"
 msgstr "این نام قبلاً استفاده شده است."
 
-#: finance/forms/validators.py:149
+#: finance/forms/validators.py:148
 #, fuzzy
 #| msgid "Access permissions"
 msgctxt "UI"
 msgid "Address missing!"
 msgstr "مجوزهای دسترسی"
 
-#: finance/forms/validators.py:152
+#: finance/forms/validators.py:151
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid address format."
@@ -1521,7 +1538,7 @@ msgctxt "UI"
 msgid "Invalid address format!"
 msgstr "فرمت آدرس نامعتبر است."
 
-#: finance/forms/validators.py:157
+#: finance/forms/validators.py:156
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Blockchain address is not supported for this coin."
@@ -1529,7 +1546,7 @@ msgctxt "UI"
 msgid "Blockchain address is not supported for this coin!"
 msgstr "آدرس Blockchain برای این سکه(ارز) پشتیبانی نمی شود."
 
-#: finance/forms/validators.py:193
+#: finance/forms/validators.py:192
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid xpub format."
@@ -1537,7 +1554,7 @@ msgctxt "UI"
 msgid "Invalid xpub format!"
 msgstr "فرمت xpub نامعتبر است."
 
-#: finance/forms/validators.py:198
+#: finance/forms/validators.py:197
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "XPub is not supported for this coin."
@@ -1545,7 +1562,7 @@ msgctxt "UI"
 msgid "XPub is not supported for this coin!"
 msgstr "XPub برای این سکه(ارز) پشتیبانی نمی شود."
 
-#: finance/forms/validators.py:212
+#: finance/forms/validators.py:211
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "This wallet already exists."
@@ -1553,18 +1570,18 @@ msgctxt "UI"
 msgid "This wallet already exists!"
 msgstr "این کیف پول از قبل موجود است."
 
-#: finance/forms/validators.py:253
+#: finance/forms/validators.py:252
 msgctxt "UI"
 msgid "Invalid params format."
 msgstr "فرمت پارامتر ها نا معتبر است."
 
-#: finance/forms/validators.py:257
+#: finance/forms/validators.py:256
 #, fuzzy
 msgctxt "UI"
 msgid "Missing \"type\" attribute in wallet params."
 msgstr "پارامتر \"انواع\" وجود ندارد!"
 
-#: finance/forms/validators.py:268
+#: finance/forms/validators.py:267
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "XPub is not supported for this coin."
@@ -1572,7 +1589,7 @@ msgctxt "UI"
 msgid "Xpub wallets are not supported at the moment."
 msgstr "XPub برای این سکه(ارز) پشتیبانی نمی شود."
 
-#: finance/forms/validators.py:272
+#: finance/forms/validators.py:271
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid type."
@@ -1580,12 +1597,12 @@ msgctxt "UI"
 msgid "Invalid type!"
 msgstr "نوع نامعتبر است."
 
-#: finance/forms/validators.py:289
+#: finance/forms/validators.py:288
 msgctxt "UI"
 msgid "Invalid payout account id."
 msgstr "شناسه حساب پرداخت نامعتبر است."
 
-#: finance/forms/validators.py:318
+#: finance/forms/validators.py:317
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid payout account name."
@@ -1593,20 +1610,20 @@ msgctxt "UI"
 msgid "Invalid payout account name!"
 msgstr "نام حساب پرداخت نامعتبر است."
 
-#: finance/forms/validators.py:324
+#: finance/forms/validators.py:323
 msgctxt "UI"
 msgid "Name cannot be empty!"
 msgstr ""
 
-#: finance/forms/validators.py:336
+#: finance/forms/validators.py:335
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Character \"#\" is not allowed in payout account name."
 msgctxt "UI"
-msgid "Character \"#\" is not allowed in payout account name!"
+msgid "Unsupported characters in payout account name!"
 msgstr "کاراکتر \"#\" در نام حساب پرداخت مجاز نیست."
 
-#: finance/forms/validators.py:388
+#: finance/forms/validators.py:387
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid payout request value."
@@ -1614,7 +1631,7 @@ msgctxt "UI"
 msgid "Invalid payout request value!"
 msgstr "ارزش درخواست پرداخت نامعتبر است."
 
-#: finance/forms/validators.py:397
+#: finance/forms/validators.py:396
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Payout has already been requested for this payout account."
@@ -1622,7 +1639,7 @@ msgctxt "UI"
 msgid "Payout has already been requested for this payout account!"
 msgstr "پرداخت قبلا برای این حساب پرداخت درخواست شده است."
 
-#: finance/forms/validators.py:405
+#: finance/forms/validators.py:404
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "There is no wallet for this payout account."
@@ -1630,7 +1647,7 @@ msgctxt "UI"
 msgid "There is no wallet for this payout account!"
 msgstr "هیچ کیف پولی برای این حساب پرداخت وجود ندارد."
 
-#: finance/forms/validators.py:409
+#: finance/forms/validators.py:408
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Zcash wallet change confirmed"
@@ -1638,7 +1655,7 @@ msgctxt "UI"
 msgid "The assigned wallet is not confirmed yet!"
 msgstr "تغییر کیف پول Zcash تأیید شد"
 
-#: finance/forms/validators.py:419
+#: finance/forms/validators.py:418
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Account balance must be higher than %(amount)s %(unit)s."
@@ -1646,7 +1663,7 @@ msgctxt "UI"
 msgid "Account balance must be higher than %(amount)s %(unit)s!"
 msgstr "موجودی حساب باید بالاتر از %(amount)s%(unit)s باشد."
 
-#: finance/forms/validators.py:435
+#: finance/forms/validators.py:434
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Payout was not requested for this payout account."
@@ -1654,7 +1671,7 @@ msgctxt "UI"
 msgid "Payout was not requested for this payout account!"
 msgstr "پرداخت برای این حساب پرداخت درخواست نشده است."
 
-#: finance/forms/validators.py:452
+#: finance/forms/validators.py:451
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid split format."
@@ -1662,7 +1679,7 @@ msgctxt "UI"
 msgid "Invalid split format!"
 msgstr "فرمت تقسیم نامعتبر است."
 
-#: finance/forms/validators.py:456
+#: finance/forms/validators.py:455
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Percentages must add up to 100 %."
@@ -1670,7 +1687,7 @@ msgctxt "UI"
 msgid "Percentages must add up to 100%!"
 msgstr "درصد باید تا 100٪ اضافه شود."
 
-#: finance/forms/validators.py:462
+#: finance/forms/validators.py:461
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid payout account ids."
@@ -1678,7 +1695,7 @@ msgctxt "UI"
 msgid "Invalid payout account ids!"
 msgstr "شناسه های حساب پرداخت غیرمعتبراست."
 
-#: finance/forms/validators.py:469
+#: finance/forms/validators.py:468
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid payout accounts."
@@ -1686,7 +1703,7 @@ msgctxt "UI"
 msgid "Invalid payout accounts!"
 msgstr "حساب های پرداخت نا معتبر است."
 
-#: finance/forms/validators.py:481
+#: finance/forms/validators.py:480
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid threshold format."
@@ -1694,7 +1711,7 @@ msgctxt "UI"
 msgid "Invalid threshold parameters!"
 msgstr "فرمت آستانه نامعتبر است."
 
-#: finance/forms/validators.py:483
+#: finance/forms/validators.py:482
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Boolean value is required."
@@ -1702,7 +1719,7 @@ msgctxt "UI"
 msgid "Threshold value is required!"
 msgstr "مقدار Boolean مورد نیاز است."
 
-#: finance/forms/validators.py:485
+#: finance/forms/validators.py:484
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid threshold format."
@@ -1710,7 +1727,7 @@ msgctxt "UI"
 msgid "Invalid threshold value!"
 msgstr "فرمت آستانه نامعتبر است."
 
-#: finance/forms/validators.py:501
+#: finance/forms/validators.py:500
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Threshold must be higher than %(minimum)s %(unit)s."
@@ -1718,7 +1735,7 @@ msgctxt "UI"
 msgid "Threshold must be higher than %(minimum)s %(unit)s!"
 msgstr "آستانه باید بالاتر از %(minimum)s%(unit)s باشد."
 
-#: finance/forms/validators.py:510
+#: finance/forms/validators.py:509
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Threshold must be lower than %(minimum)s %(unit)s."
@@ -1726,12 +1743,12 @@ msgctxt "UI"
 msgid "Threshold must be lower than %(minimum)s %(unit)s!"
 msgstr "آستانه باید کمتر از %(minimum)s%(unit)s باشد."
 
-#: finance/forms/validators.py:531
+#: finance/forms/validators.py:530
 msgctxt "UI"
 msgid "You have to set a frequency!!"
 msgstr ""
 
-#: finance/forms/validators.py:533 finance/forms/validators.py:535
+#: finance/forms/validators.py:532 finance/forms/validators.py:534
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid email format!"
@@ -1739,7 +1756,7 @@ msgctxt "UI"
 msgid "Invalid frequency format!"
 msgstr "فرمت ایمیل نامعتبر است!"
 
-#: finance/forms/validators.py:541
+#: finance/forms/validators.py:540
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid payout frequency."
@@ -1747,7 +1764,7 @@ msgctxt "UI"
 msgid "Invalid payout frequency!"
 msgstr "فرکانس پرداخت نامعتبر است."
 
-#: finance/forms/validators.py:545
+#: finance/forms/validators.py:544
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid day in period."
@@ -1755,7 +1772,7 @@ msgctxt "UI"
 msgid "Invalid day in period!"
 msgstr "روز نامعتبر در دوره."
 
-#: finance/forms/validators.py:553
+#: finance/forms/validators.py:552
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Day of the week must be a number between %(min)s and %(max)s."
@@ -1763,7 +1780,7 @@ msgctxt "UI"
 msgid "Day of the week must be a number between %(min)s and %(max)s!"
 msgstr "روز هفته باید یک عدد بین %(min)s و %(max)sباشد."
 
-#: finance/forms/validators.py:563
+#: finance/forms/validators.py:562
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Day of the month must be a number between %(min)s and %(max)s."
@@ -1771,7 +1788,7 @@ msgctxt "UI"
 msgid "Day of the month must be a number between %(min)s and %(max)s!"
 msgstr "روز از ماه باید یک عدد باشد بین %(min)s و%(max)s."
 
-#: finance/forms/validators.py:588
+#: finance/forms/validators.py:587
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid trigger format."
@@ -1779,7 +1796,7 @@ msgctxt "UI"
 msgid "Invalid trigger format!"
 msgstr "فرمت راه انداز نامعتبر است."
 
-#: finance/forms/validators.py:608
+#: finance/forms/validators.py:607
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Unknown trigger type \"%(type)s\"."
@@ -1787,7 +1804,7 @@ msgctxt "UI"
 msgid "Unknown trigger type \"%(type)s\"!"
 msgstr "الگوی ناشناخته راه انداز \"%(type)s\"."
 
-#: finance/forms/validators.py:631
+#: finance/forms/validators.py:630
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid "Choose a %(coin)s wallet."
@@ -2220,21 +2237,21 @@ msgctxt "UI"
 msgid "Challenge was not found!"
 msgstr "چالش یافت نشد!"
 
-#: project/settings.py:470
-msgid "Simplified Chinese"
-msgstr "Simplified Chinese"
-
-#: project/settings.py:471
+#: project/settings.py:447
 msgid "Spanish"
 msgstr "اسپانیایی"
 
-#: project/settings.py:472
+#: project/settings.py:448
 msgid "Russian"
 msgstr "روسی"
 
-#: project/settings.py:473
+#: project/settings.py:449
 msgid "Persian"
 msgstr "فارسی"
+
+#: project/settings.py:450
+msgid "Simplified Chinese"
+msgstr "Simplified Chinese"
 
 #: reports/views.py:22
 #, fuzzy
@@ -2309,28 +2326,7 @@ msgctxt "UI"
 msgid "Your Zcash payout address has been locked."
 msgstr "آدرس پرداخت Zcash شما قفل شده است."
 
-#: settings/api/v1/api_actions.py:112
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "No pending email."
-msgctxt "UI"
-msgid "No pending e-mail."
-msgstr "ایمیلی در حالت انتظار نیست."
-
-#: settings/api/v1/api_actions.py:122
-#, fuzzy
-#| msgctxt "UI"
-#| msgid ""
-#| "Confirmation email has been sent. Please, check your mailbox and follow "
-#| "the link."
-msgctxt "UI"
-msgid ""
-"Confirmation e-mail has been sent. Please, check your mailbox and follow the "
-"link."
-msgstr ""
-"ایمیل تایید ارسال شده است. لطفاًایمیل خود را بررسی کرده و پیوند را دنبال کنید."
-
-#: settings/api/v1/api_actions.py:135
+#: settings/api/v1/api_actions.py:112 settings/api/v1/api_actions.py:135
 msgctxt "UI"
 msgid "No pending email."
 msgstr "ایمیلی در حالت انتظار نیست."
@@ -2340,7 +2336,7 @@ msgstr "ایمیلی در حالت انتظار نیست."
 #| msgctxt "UI"
 #| msgid "Email change request has been successfully canceled."
 msgctxt "UI"
-msgid "E-mail change request has been successfully canceled."
+msgid "Email change request has been successfully canceled."
 msgstr "درخواست تغییر ایمیل با موفقیت لغو شد."
 
 #: settings/api/v1/api_actions.py:156 settings/api/v1/api_actions.py:188
@@ -2364,19 +2360,20 @@ msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
 msgstr "یک ایمیل اطلاع رسانی درباره حذف حساب شما به %s ارسال شده است."
 
-#: settings/email.py:36
+#: settings/forms/account_settings_form.py:74
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Access to e-mail change denied."
 msgctxt "UI"
-msgid "Delete account confirmation"
-msgstr "تأیید حذف حساب کاربری"
-
-#: settings/forms/account_settings_form.py:76
-msgctxt "UI"
-msgid "Access to e-mail change denied."
+msgid "Access to email change denied."
 msgstr "دسترسی به تغییر ایمیل رد شد."
 
-#: settings/forms/account_settings_form.py:87
+#: settings/forms/account_settings_form.py:85
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "There already is a request to change the e-mail!"
 msgctxt "UI"
-msgid "There already is a request to change the e-mail!"
+msgid "There already is a request to change the email!"
 msgstr "در حال حاضر یک درخواست برای تغییر ایمیل وجود دارد!"
 
 #: settings/forms/common.py:28
@@ -2475,37 +2472,40 @@ msgctxt "UI"
 msgid "This request has expired."
 msgstr ""
 
-#: user_request/models.py:437
+#: user_request/models.py:434
 msgctxt "UI"
 msgid "Wallet has been changed."
 msgstr "کیف پول تغییر کرده است."
 
-#: user_request/models.py:451
+#: user_request/models.py:448
 msgctxt "UI"
 msgid "Wallet change request has been cancelled."
 msgstr "درخواست تغییر کیف پول لغو شده است."
 
-#: user_request/models.py:507
+#: user_request/models.py:504
 msgctxt "UI"
 msgid "Your e-mail has been changed."
 msgstr "ایمیل شما تغییر کرده است."
 
-#: user_request/models.py:521
+#: user_request/models.py:518
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "E-mail change request has been cancelled."
 msgctxt "UI"
-msgid "E-mail change request has been cancelled."
+msgid "Email change request has been cancelled."
 msgstr "درخواست تغییر ایمیل لغو شده است."
 
-#: user_request/models.py:612
+#: user_request/models.py:609
 msgctxt "UI"
 msgid "Account deletion has been cancelled."
 msgstr "حذف حساب کاربری لغو شده است."
 
-#: user_request/models.py:655
+#: user_request/models.py:652
 msgctxt "UI"
 msgid "Payout channel not found."
 msgstr "کانال پرداخت یافت نشد."
 
-#: user_request/models.py:708
+#: user_request/models.py:705
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Payout channel has been verified."
@@ -2513,7 +2513,7 @@ msgctxt "UI"
 msgid "Payout settings have been verified."
 msgstr "کانال پرداخت تایید شده است."
 
-#: user_request/models.py:733
+#: user_request/models.py:730
 msgctxt "UI"
 msgid ""
 "Payout channel verification request can not be canceled. To return to the "
@@ -2538,19 +2538,19 @@ msgctxt "UI"
 msgid "You don't have sufficient permissions to confirm user requests."
 msgstr "شما اجازه ارسال این فرم را ندارید."
 
-#: web/api/v1/appeals.py:26
+#: web/api/v1/appeals.py:28
 msgctxt "UI"
 msgid "We are finalizing a major upgrade of the system."
 msgstr ""
 
-#: web/api/v1/appeals.py:29
+#: web/api/v1/appeals.py:31
 msgctxt "UI"
 msgid ""
 "Please note that the data displayed may not yet be complete or entirely "
 "accurate.<br>Thank you for understanding."
 msgstr ""
 
-#: web/api/v1/appeals.py:48
+#: web/api/v1/appeals.py:50
 #, fuzzy
 #| msgctxt "UI"
 #| msgid ""
@@ -2562,7 +2562,7 @@ msgstr ""
 "%(coin)sپرداخت های شما به طور موقت توسط اپراتور استخر مسدود شده "
 "است(%(reason)s)."
 
-#: web/api/v1/appeals.py:58
+#: web/api/v1/appeals.py:60
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Payouts blocked"
@@ -2570,17 +2570,17 @@ msgctxt "UI"
 msgid "Payouts blocked by sysadmin"
 msgstr "پرداخت ها مسدود شدند"
 
-#: web/api/v1/appeals.py:63
+#: web/api/v1/appeals.py:65
 msgctxt "UI"
 msgid "Contact support"
 msgstr ""
 
-#: web/api/v1/appeals.py:72
+#: web/api/v1/appeals.py:74
 msgctxt "UI"
 msgid "Your payouts have been paused on your request."
 msgstr ""
 
-#: web/api/v1/appeals.py:77
+#: web/api/v1/appeals.py:79
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Payouts blocked"
@@ -2588,14 +2588,14 @@ msgctxt "UI"
 msgid "Payouts blocked by user"
 msgstr "پرداخت ها مسدود شدند"
 
-#: web/api/v1/appeals.py:82
+#: web/api/v1/appeals.py:84
 #, fuzzy
 #| msgid "Rewards & Payouts"
 msgctxt "UI"
 msgid "Resume payouts"
 msgstr "پاداش هاو پرداخت ها"
 
-#: web/api/v1/appeals.py:103
+#: web/api/v1/appeals.py:105
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "No pending email."
@@ -2603,7 +2603,7 @@ msgctxt "UI"
 msgid "Pending email change"
 msgstr "ایمیلی در حالت انتظار نیست."
 
-#: web/api/v1/appeals.py:106
+#: web/api/v1/appeals.py:108
 #, fuzzy, python-format
 #| msgctxt "UI"
 #| msgid ""
@@ -2616,7 +2616,7 @@ msgstr ""
 "ما یک درخواست برای تغییر آدرس ایمیل شما به <strong> %(email)s </strong> "
 "دریافت کردیم."
 
-#: web/api/v1/appeals.py:112
+#: web/api/v1/appeals.py:114
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Cancel the Request"
@@ -2624,7 +2624,7 @@ msgctxt "UI"
 msgid "Cancel request"
 msgstr "لغو درخواست"
 
-#: web/api/v1/appeals.py:117
+#: web/api/v1/appeals.py:119
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Resend Confirmation"
@@ -2632,17 +2632,17 @@ msgctxt "UI"
 msgid "Resend confirmation"
 msgstr "ارسال مجدد تاییدیه"
 
-#: web/api/v1/appeals.py:157
+#: web/api/v1/appeals.py:159
 msgctxt "UI"
 msgid "Explore"
 msgstr "کاوش"
 
-#: web/api/v1/appeals.py:182
+#: web/api/v1/appeals.py:184
 msgctxt "UI"
 msgid "Dismiss this message"
 msgstr "رد این پیام"
 
-#: web/api/v1/views.py:250
+#: web/api/v1/views.py:247
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid permissions value."
@@ -2650,7 +2650,7 @@ msgctxt "UI"
 msgid "Invalid appeal model."
 msgstr "مقدار مجوزهای نامعتبر."
 
-#: web/api/v1/views.py:257
+#: web/api/v1/views.py:254
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Invalid label ids."
@@ -2658,38 +2658,38 @@ msgctxt "UI"
 msgid "Invalid appeal ID."
 msgstr "شناسه های برچسب نامعتبر است."
 
-#: web/api/v1/views.py:289
+#: web/api/v1/views.py:286
 msgctxt "UI"
 msgid "The current access profile has already seen the v4 welcome dialogue!"
 msgstr ""
 
-#: web/api/v1/views.py:1444
+#: web/api/v1/views.py:1441
 msgctxt "UI"
 msgid ""
 "Only alphabetical characters, numbers and underscore are allowed in username!"
 msgstr "فقط حروف الفبا،اعداد و زیر خط در نام کاربری مجاز است!"
 
-#: web/api/v1/views.py:1449 web/api/v1/views.py:1834
+#: web/api/v1/views.py:1446 web/api/v1/views.py:1831
 msgctxt "UI"
 msgid "Invalid email format!"
 msgstr "فرمت ایمیل نامعتبر است!"
 
-#: web/api/v1/views.py:1454
+#: web/api/v1/views.py:1451
 msgctxt "UI"
 msgid "Password must have at Least 5 characters!"
 msgstr "رمز عبور باید حداقل 5 کاراکتر داشته باشد!"
 
-#: web/api/v1/views.py:1524 web/api/v1/views.py:1543 web/api/v1/views.py:1604
+#: web/api/v1/views.py:1521 web/api/v1/views.py:1540 web/api/v1/views.py:1601
 msgctxt "UI"
 msgid "Login forbidden"
 msgstr "ورود ممنوع"
 
-#: web/api/v1/views.py:1583
+#: web/api/v1/views.py:1580
 msgctxt "UI"
 msgid "Invalid credentials."
 msgstr "اعتبارنامه های نامعتبر."
 
-#: web/api/v1/views.py:1598
+#: web/api/v1/views.py:1595
 msgctxt "UI"
 msgid ""
 "Please enter a correct username (not an e-mail address) and password. Note "
@@ -2698,69 +2698,64 @@ msgstr ""
 "لطفاً یک نام کاربری (نه آدرس ایمیل) و رمز عبور صحیح وارد کنید. توجه داشته "
 "باشید که هر دو ردیف به حروف کوچک و بزرگ حساس هستند."
 
-#: web/api/v1/views.py:1683 web/api/v1/views.py:1732
+#: web/api/v1/views.py:1680 web/api/v1/views.py:1729
 msgctxt "UI"
 msgid "Bad username/id."
 msgstr "نام کاربری/شناسه نادرست."
 
-#: web/api/v1/views.py:1685 web/api/v1/views.py:1734
+#: web/api/v1/views.py:1682 web/api/v1/views.py:1731
 msgctxt "UI"
 msgid "This user is not active yet/anymore."
 msgstr "این کاربر هنوز/ دیگر فعال نیست ."
 
-#: web/api/v1/views.py:1801
+#: web/api/v1/views.py:1798
 msgctxt "UI"
 msgid "No pending request found!"
 msgstr "هیچ درخواست در انتظاری یافت نشد!"
 
-#: web/api/v1/views.py:1940
+#: web/api/v1/views.py:1916
 msgctxt "UI"
 msgid "Invalid token!"
 msgstr "رمز نامعتبر!"
 
-#: web/api/v1/views.py:1945
+#: web/api/v1/views.py:1921
 msgctxt "UI"
 msgid "Password must have at least 5 characters!"
 msgstr "رمز عبور باید حداقل 5 کاراکتر داشته باشد!"
 
-#: web/models.py:136
-msgctxt "UI"
-msgid "Email change confirmation"
-msgstr "تأیید تغییر ایمیل"
-
-#: web/models.py:333
+#: web/models.py:312
 msgctxt "UI"
 msgid ""
 "Only alphabetical characters, numbers, underscore and dash are allowed in "
 "name!"
 msgstr "فقط حروف الفبا ، اعداد ، زیرخط و خط تیره در نام مجاز هستند!"
 
-#: web/models.py:346
+#: web/models.py:325
 msgctxt "UI"
 msgid "Password must be at least 5 characters long!"
 msgstr "رمز عبور باید حداقل 5 کاراکتر داشته باشد!"
 
-#: web/models.py:475
+#: web/models.py:454
 msgctxt "UI, Transaction state"
 msgid "New"
 msgstr "جدید"
 
-#: web/models.py:476
+#: web/models.py:455
 msgctxt "UI, Transaction state"
 msgid "Processing"
 msgstr "در حال پردازش"
 
-#: web/models.py:477
+#: web/models.py:456
 msgctxt "UI, Transaction state"
 msgid "Failed"
 msgstr "ناموفق"
 
-#: web/models.py:478
+#: web/models.py:457
 msgctxt "UI, Transaction state"
 msgid "Sent"
 msgstr "ارسال شد"
 
-#: web/models.py:704
+#: web/models.py:683
 msgctxt "UI"
 msgid ""
 "Thank you for your valuable contribution to our pool. As a VIP, you have "
@@ -2769,375 +2764,375 @@ msgstr ""
 "با تشکر از مشارکت ارزشمند شما در استخر ما، به عنوان وی آی پی شما به ویژگی "
 "های پاداش و خدمات دسترسی دارید."
 
-#: web/models.py:777
+#: web/models.py:756
 msgctxt "UI"
 msgid "Monday"
 msgstr "دوشنبه"
 
-#: web/models.py:778
+#: web/models.py:757
 msgctxt "UI"
 msgid "Tuesday"
 msgstr "سه‌شنبه"
 
-#: web/models.py:779
+#: web/models.py:758
 msgctxt "UI"
 msgid "Wednesday"
 msgstr "چهارشنبه"
 
-#: web/models.py:780
+#: web/models.py:759
 msgctxt "UI"
 msgid "Thursday"
 msgstr "پنجشنبه"
 
-#: web/models.py:781
+#: web/models.py:760
 msgctxt "UI"
 msgid "Friday"
 msgstr "جمعه"
 
-#: web/models.py:782
+#: web/models.py:761
 msgctxt "UI"
 msgid "Saturday"
 msgstr "شنبه"
 
-#: web/models.py:783
+#: web/models.py:762
 msgctxt "UI"
 msgid "Sunday"
 msgstr "يكشنبه"
 
-#: web/models.py:818 web/models.py:880
+#: web/models.py:797 web/models.py:859
 #, python-format
 msgctxt "UI"
 msgid "Wallet: <b>%(name)s</b>"
 msgstr "کیف پول: <b> %(name)s </b>"
 
-#: web/models.py:840
+#: web/models.py:819
 #, python-format
 msgctxt "UI"
 msgid "Threshold: <b>%(threshold)s %(unit)s</b>"
 msgstr "آستانه:<b>%(threshold)s%(unit)s</b>"
 
-#: web/models.py:851
+#: web/models.py:830
 msgctxt "UI"
 msgid "Triggered daily"
 msgstr "تریگر روزانه"
 
-#: web/models.py:857
+#: web/models.py:836
 #, python-format
 msgctxt "UI"
 msgid "Triggered weekly on: %(weekday)s"
 msgstr "تریگر هفتگی در:%(weekday)s"
 
-#: web/models.py:858
+#: web/models.py:837
 msgctxt "UI"
 msgid "unknown day"
 msgstr "روز ناشناخته"
 
-#: web/models.py:865
+#: web/models.py:844
 #, fuzzy, python-format
 msgctxt "UI"
 msgid "Triggered monthly on the %(number)s. day"
 msgstr "تریگر ماهانه در %(number)s. روز"
 
-#: web/models.py:877
+#: web/models.py:856
 #, python-format
 msgctxt "UI"
 msgid "Payout account: <b>%(name)s</b>"
 msgstr "حساب پرداخت: <b>%(name)s</b>"
 
 #. Translators: Example: "Bitcoin enabled" / "Monitoring disabled"
-#: web/models.py:897
+#: web/models.py:876
 #, python-format
 msgctxt "UI"
 msgid "<b>%(key)s</b> disabled"
 msgstr "<b>%(key)s</b> غیرفعال شده"
 
 #. Translators: Example: "Bitcoin enabled" / "Monitoring disabled"
-#: web/models.py:901
+#: web/models.py:880
 #, python-format
 msgctxt "UI"
 msgid "<b>%(key)s</b> enabled"
 msgstr "<b>%(key)s</b> فعال شده"
 
-#: web/models.py:905 web/models.py:917
+#: web/models.py:884 web/models.py:896
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> تغییر داده شد از <b>%(old)s</b> به <b>%(new)s</b>"
 
-#: web/models.py:910
+#: web/models.py:889
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b>تغییر یافت به<b>%(new)s</b>"
 
-#: web/models.py:925 web/models.py:945
+#: web/models.py:904 web/models.py:924
 #, python-format
 msgctxt "UI, time"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
 msgstr "<b>%(key)s</b> تغییر داده شد از <b>%(old)s</b> به <b>%(new)s</b>"
 
-#: web/models.py:939
+#: web/models.py:918
 msgctxt "UI"
 msgid "Depricated"
 msgstr "منسوخ"
 
-#: web/models.py:951
+#: web/models.py:930
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s %(old)s</b> deleted"
 msgstr "<b>%(key)s %(old)s</b> حذف شد"
 
-#: web/models.py:953
+#: web/models.py:932
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s created: <b>%(new)s</b>"
 msgstr "<b>%(key)sایجاد شده: <b> %(new)s </b>"
 
-#: web/models.py:959
+#: web/models.py:938
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> deleted"
 msgstr "<b>%(key)s</b> حذف شد"
 
-#: web/models.py:961
+#: web/models.py:940
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> created"
 msgstr "<b> %(key)s </b> ایجاد شده است"
 
-#: web/models.py:962
+#: web/models.py:941
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed"
 msgstr "<b>%(key)s</b> تغییر کرده است"
 
-#: web/models.py:967
+#: web/models.py:946
 msgctxt "UI, value"
 msgid "profile <b>activated</b>"
 msgstr "پروفایل<b> فعال شده </b>"
 
-#: web/models.py:968
+#: web/models.py:947
 msgctxt "UI, value"
 msgid "profile <b>deactivated</b>"
 msgstr "پروفایل<b> غیر فعال شده </b>"
 
-#: web/models.py:972 web/models.py:1046 web/models.py:1072
+#: web/models.py:951 web/models.py:1025 web/models.py:1051
 msgctxt "UI"
 msgid "N/A"
 msgstr "N/A"
 
-#: web/models.py:975
+#: web/models.py:954
 msgctxt "UI"
 msgid "Nothing has changed"
 msgstr "چیزی تغییر نکرده است"
 
-#: web/models.py:1013
+#: web/models.py:992
 #, python-format
 msgctxt "UI, value"
 msgid "Access Profile: %s"
 msgstr "پروفایل دسترسی: %s"
 
-#: web/models.py:1023
+#: web/models.py:1002
 msgctxt "UI"
 msgid "Worker"
 msgstr "ورکر"
 
-#: web/models.py:1098
+#: web/models.py:1077
 #, python-format
 msgctxt "UI, value"
 msgid "Coin: %s"
 msgstr "سکه: %s"
 
-#: web/models.py:1246
+#: web/models.py:1225
 msgctxt "UI"
 msgid "Preferred language"
 msgstr "زبان مورد نظر"
 
-#: web/models.py:1247
+#: web/models.py:1226
 msgctxt "UI"
 msgid "Preferred timezone"
 msgstr "منطقه زمانی مورد نظر"
 
-#: web/models.py:1248 web/models.py:1273
+#: web/models.py:1227 web/models.py:1252
 msgctxt "UI"
 msgid "Color theme"
 msgstr ""
 
-#: web/models.py:1249
+#: web/models.py:1228
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Change email address"
 msgctxt "UI"
-msgid "E-mail address"
+msgid "Email address"
 msgstr "آدرس ایمیل را تغییر دهید"
 
-#: web/models.py:1250
+#: web/models.py:1229
 msgctxt "UI"
 msgid "Username in stats"
 msgstr "نام کاربری در آمار"
 
-#: web/models.py:1251
+#: web/models.py:1230
 msgctxt "UI"
 msgid "Notify me on payout"
 msgstr "پرداخت را به من اطلاع دهید"
 
-#: web/models.py:1252
+#: web/models.py:1231
 msgctxt "UI"
 msgid "Newsletter"
 msgstr "خبرنامه"
 
-#: web/models.py:1253
+#: web/models.py:1232
 #, fuzzy
 msgctxt "UI"
 msgid "Currency unit"
 msgstr "واحد ارز"
 
-#: web/models.py:1254
+#: web/models.py:1233
 msgctxt "UI"
 msgid "Blockchain voting"
 msgstr "رای گیری بلاکچین"
 
-#: web/models.py:1256
+#: web/models.py:1235
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr "گزارش فعال شد"
 
-#: web/models.py:1257
+#: web/models.py:1236
 msgctxt "UI"
 msgid "Auto-detect alert limit"
 msgstr "تشخیص خودکار حد هشدار"
 
-#: web/models.py:1260
+#: web/models.py:1239
 msgctxt "UI"
 msgid "Wallet"
 msgstr "کیف پول"
 
-#: web/models.py:1261 web/models.py:1262
+#: web/models.py:1240 web/models.py:1241
 msgctxt "UI"
 msgid "Pending wallet"
 msgstr "کیف پول در حالت انتظار"
 
-#: web/models.py:1263
+#: web/models.py:1242
 msgctxt "UI"
 msgid "Send threshold"
 msgstr "آستانه ارسال"
 
-#: web/models.py:1264
+#: web/models.py:1243
 msgctxt "UI"
 msgid "Email"
 msgstr "ایمیل"
 
-#: web/models.py:1266
+#: web/models.py:1245
 msgctxt "UI"
 msgid "Monitoring notifications"
 msgstr "نظارت بر اطلاعیه ها"
 
-#: web/models.py:1267
+#: web/models.py:1246
 msgctxt "UI"
 msgid "Monitoring"
 msgstr "نظارت"
 
-#: web/models.py:1268
+#: web/models.py:1247
 msgctxt "UI"
 msgid "Last Change"
 msgstr "آخرین تغییر"
 
-#: web/models.py:1269
+#: web/models.py:1248
 msgctxt "UI"
 msgid "Login suffix"
 msgstr "پسوند ورود"
 
-#: web/models.py:1270 web/models.py:1271
+#: web/models.py:1249 web/models.py:1250
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr "سختی حداقل"
 
-#: web/models.py:1275
+#: web/models.py:1254
 msgctxt "UI"
 msgid "Enabled"
 msgstr "فعال شده است"
 
-#: web/models.py:1275
+#: web/models.py:1254
 msgctxt "UI"
 msgid "Disabled"
 msgstr "غیرفعال شده است"
 
-#: web/models.py:1316
+#: web/models.py:1295
 msgctxt "UI"
 msgid "Account deletion cancelled"
 msgstr "حذف حسابکاربری لغو شد"
 
-#: web/models.py:1317
+#: web/models.py:1296
 msgctxt "UI"
 msgid "Account deleted"
 msgstr "حساب کاربری حذف شد"
 
-#: web/models.py:1318
+#: web/models.py:1297
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr "حذف حساب کاربری درخواست شد"
 
-#: web/models.py:1320
+#: web/models.py:1299
 msgctxt "UI"
 msgid "Demo login"
 msgstr "ورود به سیستم نمایشی"
 
-#: web/models.py:1321
+#: web/models.py:1300
 msgctxt "UI"
 msgid "Demo logout"
 msgstr "خروج از سیستم نمایشی"
 
-#: web/models.py:1322
+#: web/models.py:1301
 msgctxt "UI"
 msgid "Support login"
 msgstr "ورود به سیستم پشتیبانی"
 
-#: web/models.py:1324
+#: web/models.py:1303
 msgctxt "UI"
 msgid "Impersonate user"
 msgstr ""
 
-#: web/models.py:1326
+#: web/models.py:1305
 msgctxt "UI"
 msgid "Login"
 msgstr "ورود"
 
-#: web/models.py:1327
+#: web/models.py:1306
 msgctxt "UI"
 msgid "Logout"
 msgstr "خروج از سیستم"
 
-#: web/models.py:1328
+#: web/models.py:1307
 msgctxt "UI"
 msgid "Logout all sessions"
 msgstr "خروج از همه جلسات"
 
-#: web/models.py:1329
+#: web/models.py:1308
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr "ورود به سیستم نامعتبر"
 
-#: web/models.py:1330
+#: web/models.py:1309
 msgctxt "UI"
 msgid "Inactive profile"
 msgstr "پروفایل غیر فعال"
 
-#: web/models.py:1333
+#: web/models.py:1312
 msgctxt "UI"
 msgid "New wallet created"
 msgstr "کیف پول جدید ایجاد شده است"
 
-#: web/models.py:1335
+#: web/models.py:1314
 msgctxt "UI"
 msgid "Wallet updated"
 msgstr "کیف پول به روز رسانی شد"
 
-#: web/models.py:1337
+#: web/models.py:1316
 msgctxt "UI"
 msgid "Wallet deleted"
 msgstr "کیف پول حذف شد"
 
-#: web/models.py:1340
+#: web/models.py:1319
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Wallet updated"
@@ -3145,22 +3140,22 @@ msgctxt "UI"
 msgid "Wallet reactivated"
 msgstr "کیف پول به روز رسانی شد"
 
-#: web/models.py:1342
+#: web/models.py:1321
 msgctxt "UI"
 msgid "Payouts locked"
 msgstr "پرداخت ها قفل شده اند"
 
-#: web/models.py:1343
+#: web/models.py:1322
 msgctxt "UI"
 msgid "Payouts unlocked"
 msgstr "قفل پرداخت ها باز شده اند"
 
-#: web/models.py:1344
+#: web/models.py:1323
 msgctxt "UI"
 msgid "New payout account created"
 msgstr "حساب پرداخت جدید ایجاد شده است"
 
-#: web/models.py:1346
+#: web/models.py:1325
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Payout account updated"
@@ -3168,152 +3163,155 @@ msgctxt "UI"
 msgid "Financial account updated"
 msgstr "حساب پرداخت به روز رسانی شد"
 
-#: web/models.py:1348
+#: web/models.py:1327
 msgctxt "UI"
 msgid "Payout account deactivated"
 msgstr "حساب پرداخت غیرفعال شده است"
 
-#: web/models.py:1350
+#: web/models.py:1329
 msgctxt "UI"
 msgid "Immediate payout requested"
 msgstr "پرداخت فوری درخواست شد"
 
-#: web/models.py:1352
+#: web/models.py:1331
 msgctxt "UI"
 msgid "Immediate payout request cancelled"
 msgstr "درخواست پرداخت فوری لغو شد"
 
-#: web/models.py:1355
+#: web/models.py:1334
 msgctxt "UI"
 msgid "Payout split modified"
 msgstr "تقسیم پرداخت اصلاح شد"
 
-#: web/models.py:1359
+#: web/models.py:1338
 msgctxt "UI"
 msgid "Payout account settings updated"
 msgstr "تنظیمات حساب پرداخت به روز رسانی شد"
 
-#: web/models.py:1363
+#: web/models.py:1342
 msgctxt "UI"
 msgid "Payout channel confirmed"
 msgstr "کانال پرداخت تأیید شد"
 
-#: web/models.py:1367
+#: web/models.py:1346
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Payout channel confirmation e-mail resent"
 msgctxt "UI"
-msgid "Payout channel confirmation e-mail resent"
+msgid "Payout channel confirmation email resent"
 msgstr "ایمیل تایید کانال پرداخت دوباره ارسال شد"
 
-#: web/models.py:1371
+#: web/models.py:1350
 msgctxt "UI"
 msgid "New access profile created"
 msgstr "پروفایل دسترسی جدید ایجاد شد"
 
-#: web/models.py:1373
+#: web/models.py:1352
 msgctxt "UI"
 msgid "Access profile updated"
 msgstr "پروفایل دسترسی به روز رسانی شد"
 
-#: web/models.py:1375
+#: web/models.py:1354
 msgctxt "UI"
 msgid "Access profile deleted"
 msgstr "پروفایل دسترسی حذف شد"
 
-#: web/models.py:1378
+#: web/models.py:1357
 msgctxt "UI"
 msgid "Payouts paused"
 msgstr "پرداخت ها متوقف شد"
 
-#: web/models.py:1379
+#: web/models.py:1358
 msgctxt "UI"
 msgid "Payouts unpaused"
 msgstr "توقف پرداخت ها برطرف شد"
 
-#: web/models.py:1381
+#: web/models.py:1360
 msgctxt "UI"
 msgid "Message seen"
 msgstr "پیام دیده شد"
 
-#: web/models.py:1383
+#: web/models.py:1362
 msgctxt "UI"
 msgid "Mining settings updated"
 msgstr "تنظیمات استخراج به روز رسانی شد"
 
-#: web/models.py:1387
+#: web/models.py:1366
 msgctxt "UI"
 msgid "Monitoring settings updated"
 msgstr "تنظیمات نظارت به روز رسانی شد"
 
-#: web/models.py:1390
+#: web/models.py:1369
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
 msgstr "خبرنامه لغو اشتراک شد"
 
-#: web/models.py:1392
+#: web/models.py:1371
 msgctxt "UI"
 msgid "2-factor authentication disabled"
 msgstr "تأیید هویت دو عاملی غیرفعال شد"
 
-#: web/models.py:1393
+#: web/models.py:1372
 msgctxt "UI"
 msgid "2-factor authentication enabled"
 msgstr "تأیید هویت دو عاملی فعال شد"
 
-#: web/models.py:1394
+#: web/models.py:1373
 msgctxt "UI"
 msgid "One time password setup cancelled"
 msgstr "راه اندازی رمز عبور یکبار مصرف لغو شد"
 
-#: web/models.py:1395
+#: web/models.py:1374
 msgctxt "UI"
 msgid "OTP change confirmed"
 msgstr "تغییر OTP تأیید شد"
 
-#: web/models.py:1396
+#: web/models.py:1375
 msgctxt "UI"
 msgid "2-factor authentication removed by operator"
 msgstr "احراز هویت 2 عاملی توسط اپراتور حذف شد"
 
-#: web/models.py:1398
+#: web/models.py:1377
 msgctxt "UI"
 msgid "U2F device registered"
 msgstr "دستگاه U2F ثبت شد"
 
-#: web/models.py:1399
+#: web/models.py:1378
 msgctxt "UI"
 msgid "U2F setup cancelled"
 msgstr "راه اندازی U2F لغو شد"
 
-#: web/models.py:1402
+#: web/models.py:1381
 msgctxt "UI"
 msgid "Payouts blocked"
 msgstr "پرداخت ها مسدود شدند"
 
-#: web/models.py:1404
+#: web/models.py:1383
 msgctxt "UI"
 msgid "Payouts unblocked"
 msgstr "پرداختها از مسدودی خارج شدند"
 
-#: web/models.py:1406 web/models.py:1409
+#: web/models.py:1385 web/models.py:1388
 msgctxt "UI"
 msgid "Password changed"
 msgstr "رمز عبور تغییر کرد"
 
-#: web/models.py:1407
+#: web/models.py:1386
 msgctxt "UI"
 msgid "Password reset completed"
 msgstr "تنظیم مجدد کلمه عبور کامل شد"
 
-#: web/models.py:1408
+#: web/models.py:1387
 msgctxt "UI"
 msgid "Password reset initiated"
 msgstr "تنظیم مجدد رمز عبور آغاز شد"
 
-#: web/models.py:1412 web/models.py:1416 web/models.py:1577
+#: web/models.py:1391 web/models.py:1395 web/models.py:1556
 msgctxt "UI"
 msgid "Account settings updated"
 msgstr "تنظیمات حساب کاربری به روز رسانی شد"
 
-#: web/models.py:1420
+#: web/models.py:1399
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Wallet has been changed."
@@ -3321,144 +3319,144 @@ msgctxt "UI"
 msgid "Color theme changed"
 msgstr "کیف پول تغییر کرده است."
 
-#: web/models.py:1423
+#: web/models.py:1402
 msgctxt "UI"
 msgid "Email change confirmed"
 msgstr "تغییر ایمیل تأیید شد"
 
-#: web/models.py:1424
+#: web/models.py:1403
 msgctxt "UI"
 msgid "Email change cancelled"
 msgstr "تغییر ایمیل لغو شد"
 
-#: web/models.py:1425
+#: web/models.py:1404
 msgctxt "UI"
 msgid "Email change confirmation resent"
 msgstr "تایید تغییر ایمیل دوباره ارسال شد"
 
-#: web/models.py:1428
+#: web/models.py:1407
 msgctxt "UI"
 msgid "Worker removed"
 msgstr "ورکر حذف شد"
 
-#: web/models.py:1429
+#: web/models.py:1408
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr "شما ورکر را حذف کرده اید <b>%(name)s</b>"
 
-#: web/models.py:1432
+#: web/models.py:1411
 msgctxt "UI"
 msgid "Workers removed"
 msgstr "ورکرها حذف شدند"
 
-#: web/models.py:1433
+#: web/models.py:1412
 #, python-format
 msgctxt "UI"
 msgid "You have removed %(count)d %(coin)s workers"
 msgstr "شما %(count)d%(coin)s ورکرها را حذف کرده اید"
 
-#: web/models.py:1435
+#: web/models.py:1414
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr "تنظیمات ورکر به روزرسانی شد"
 
-#: web/models.py:1437
+#: web/models.py:1416
 msgctxt "UI"
 msgid "New worker"
 msgstr "ورکر جدید"
 
-#: web/models.py:1438
+#: web/models.py:1417
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr "شما یک ورکر جدید ثبت کرده اید"
 
-#: web/models.py:1442
+#: web/models.py:1421
 msgctxt "UI"
 msgid "User appeal dismissed"
 msgstr "درخواست تجدیدنظر کاربر رد شد"
 
-#: web/models.py:1447
+#: web/models.py:1426
 msgctxt "UI"
 msgid "Enabled coins updated"
 msgstr "بروزرسانی سکه ها(ارزها) فعال شد"
 
-#: web/models.py:1507
+#: web/models.py:1486
 msgctxt "UI"
 msgid "Exported user data"
 msgstr "داده های کاربری صادر شده"
 
-#: web/models.py:1512
+#: web/models.py:1491
 msgctxt "UI"
 msgid "NMC reward claimed"
 msgstr "پاداش NMC دریافت شد"
 
-#: web/models.py:1516
+#: web/models.py:1495
 msgctxt "UI"
 msgid "NMC claim - address changed"
 msgstr "درخواست NMC - آدرس تغییر یافت"
 
-#: web/models.py:1522
+#: web/models.py:1501
 msgctxt "UI"
 msgid "Wallet unlocked by operator"
 msgstr "قفل کیف پول توسط اپراتور باز شد"
 
-#: web/models.py:1526
+#: web/models.py:1505
 msgctxt "UI"
 msgid "Payout settings updated"
 msgstr "تنظیمات پرداخت بروزرسانی شد"
 
-#: web/models.py:1530
+#: web/models.py:1509
 msgctxt "UI"
 msgid "Zcash payout settings updated"
 msgstr "تنظیمات پرداخت zcash به روزرسانی شد"
 
-#: web/models.py:1534
+#: web/models.py:1513
 msgctxt "UI"
 msgid "Wallet change confirmed"
 msgstr "تغییر کیف پول تایید شد"
 
-#: web/models.py:1538
+#: web/models.py:1517
 msgctxt "UI"
 msgid "Wallet change cancelled"
 msgstr "تغییر کیف پول لغو شد"
 
-#: web/models.py:1542
+#: web/models.py:1521
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
 msgstr "تایید تغییر کیف پول دوباره ارسال شد"
 
-#: web/models.py:1546
+#: web/models.py:1525
 msgctxt "UI"
 msgid "Zcash wallet change confirmed"
 msgstr "تغییر کیف پول Zcash تأیید شد"
 
-#: web/models.py:1550
+#: web/models.py:1529
 msgctxt "UI"
 msgid "Zcash wallet change cancelled"
 msgstr "تغییر کیف پول Zcash لغو شد"
 
-#: web/models.py:1554
+#: web/models.py:1533
 msgctxt "UI"
 msgid "Zcash wallet change confirmation resent"
 msgstr "تایید تغییر کیف پول zcash دوباره ارسال شد"
 
-#: web/models.py:1558
+#: web/models.py:1537
 msgctxt "UI"
 msgid "Wallet locked"
 msgstr "کیف پول قفل شد"
 
-#: web/models.py:1562
+#: web/models.py:1541
 msgctxt "UI"
 msgid "Wallet unlocked"
 msgstr "قفل کیف پول باز شد"
 
-#: web/models.py:1566
+#: web/models.py:1545
 msgctxt "UI"
 msgid "Zcash wallet locked"
 msgstr "کیف پول Zcash قفل شد"
 
-#: web/models.py:1570
+#: web/models.py:1549
 msgctxt "UI"
 msgid "Zcash wallet unlocked"
 msgstr "قفل کیف پول Zcash باز شد"
@@ -3478,16 +3476,11 @@ msgctxt "UI"
 msgid "Limited read-only"
 msgstr "محدود شده فقط خواندنی"
 
-#: web/registration.py:57
+#: web/registration.py:54
 #, python-format
 msgctxt "UI"
 msgid "Username \"%s\" is already taken."
 msgstr "نام کاربری \"%s\" قبلاً گرفته شده است."
-
-#: web/registration.py:118
-msgctxt "UI"
-msgid "New account confirmation"
-msgstr "تأیید حساب کاربری جدید"
 
 #: web/templates/email/_base.html:2 web/templates/email/_base_graphic.html:24
 msgctxt "UI"
@@ -3995,6 +3988,38 @@ msgstr "شناسه های برچسب نامعتبر است."
 msgctxt "UI"
 msgid "Names and shortcuts must be unique."
 msgstr "نامها و میانبرها باید منحصر به فرد باشند."
+
+#, fuzzy
+#~| msgctxt "UI"
+#~| msgid "No pending email."
+#~ msgctxt "UI"
+#~ msgid "No pending e-mail."
+#~ msgstr "ایمیلی در حالت انتظار نیست."
+
+#, fuzzy
+#~| msgctxt "UI"
+#~| msgid ""
+#~| "Confirmation email has been sent. Please, check your mailbox and follow "
+#~| "the link."
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Confirmation e-mail has been sent. Please, check your mailbox and follow "
+#~ "the link."
+#~ msgstr ""
+#~ "ایمیل تایید ارسال شده است. لطفاًایمیل خود را بررسی کرده و پیوند را دنبال "
+#~ "کنید."
+
+#~ msgctxt "UI"
+#~ msgid "Delete account confirmation"
+#~ msgstr "تأیید حذف حساب کاربری"
+
+#~ msgctxt "UI"
+#~ msgid "Email change confirmation"
+#~ msgstr "تأیید تغییر ایمیل"
+
+#~ msgctxt "UI"
+#~ msgid "New account confirmation"
+#~ msgstr "تأیید حساب کاربری جدید"
 
 #~ msgctxt "UI"
 #~ msgid "Device was not paired in time limit of %s seconds"
