@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 16:34+0200\n"
-"PO-Revision-Date: 2021-03-23 13:29+0000\n"
+"PO-Revision-Date: 2021-05-08 16:32+0000\n"
 "Last-Translator: Artemis3 v <artemis3@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/slushpool/mining/"
 "es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.5.2-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
@@ -954,20 +954,14 @@ msgstr ""
 "Puede ver todos <a href=\"%(url)s\" target=\"_blank\">sus pagos aquí</a>"
 
 #: devices/templates/devices/payout_sent.html:24
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "&laquo; Previous change"
 msgctxt "UI"
 msgid "&laquo; Previous payout"
-msgstr "&laquo; Cambio previo"
+msgstr "&laquo; Pago previo"
 
 #: devices/templates/devices/payout_sent.html:26
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Next change &raquo;"
 msgctxt "UI"
 msgid "Next payout &raquo;"
-msgstr "Cambio próximo &raquo;"
+msgstr "Próximo pago &raquo;"
 
 #: devices/templates/devices/reward.html:7
 msgctxt "UI"
@@ -1097,7 +1091,7 @@ msgstr "La etiqueta debe ser una frase que no tenga más de %s caracteres."
 
 #: devices/validators.py:39
 msgid "HTML tags are not allowed in device label."
-msgstr ""
+msgstr "Etiquetas HTML no son permitidas en la etiqueta del dispositivo."
 
 #: devices/validators.py:53
 msgid "This label is already used."
@@ -1224,7 +1218,7 @@ msgstr "Falta el nombre de la cartera."
 #: finance/forms/payout_channel.py:87
 msgctxt "UI"
 msgid "Settings of an API-driven payout account can not be changed."
-msgstr ""
+msgstr "Los ajustes de pago de una cuenta manejada por API no pueden cambiarse."
 
 #: finance/forms/payout_channel.py:107 user_request/models.py:675
 msgctxt "UI"
@@ -1261,13 +1255,11 @@ msgid "Payouts are locked!"
 msgstr "¡Los pagos están bloqueados!"
 
 #: finance/forms/payout_split.py:61
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Reward split is not allowed for accounts with API-driven payouts."
 msgctxt "UI"
 msgid "Reward split can not be changed for accounts with API-driven payouts."
 msgstr ""
-"El reparto de recompensa no se permite en cuentas con pagos llevados por API."
+"El reparto de recompensa no puede cambiarse en cuentas con pagos manejadas "
+"por API."
 
 #: finance/forms/validators.py:30
 msgctxt "UI"
@@ -1311,12 +1303,9 @@ msgid "Name can not be longer than %(length)s characters!"
 msgstr "¡El nombre no puede tener mas de %(length)s caracteres!"
 
 #: finance/forms/validators.py:93
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Character \"#\" is not allowed in wallet name!"
 msgctxt "UI"
 msgid "Unsupported characters in wallet name!"
-msgstr "¡El caracter \"#\" no está permitido en el nombre de la cartera!"
+msgstr "¡Caracteres no permitidos en el nombre de la cartera!"
 
 #: finance/forms/validators.py:116 finance/forms/validators.py:133
 #: finance/forms/validators.py:354 finance/forms/validators.py:373
@@ -1390,13 +1379,9 @@ msgid "Name cannot be empty!"
 msgstr "¡El nombre no puede estar en blanco!"
 
 #: finance/forms/validators.py:335
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Character \"#\" is not allowed in payout account name!"
 msgctxt "UI"
 msgid "Unsupported characters in payout account name!"
-msgstr ""
-"¡El caracter \"#\" no está permitido en el nombre de la cuenta de pago!"
+msgstr "¡Caracteres no permitidos en el nombre de la cuenta de pago!"
 
 #: finance/forms/validators.py:387
 msgctxt "UI"
@@ -2025,9 +2010,6 @@ msgid "No pending email."
 msgstr "Sin email pendiente."
 
 #: settings/api/v1/api_actions.py:145
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "E-mail change request has been successfully canceled."
 msgctxt "UI"
 msgid "Email change request has been successfully canceled."
 msgstr "La solicitud de cambio de correo se ha cancelado exitosamente."
@@ -2057,20 +2039,14 @@ msgstr ""
 "%s."
 
 #: settings/forms/account_settings_form.py:74
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Access to e-mail change denied."
 msgctxt "UI"
 msgid "Access to email change denied."
-msgstr "Acceso al cambio de correo electrónico denegado."
+msgstr "Acceso denegado al cambio de correo."
 
 #: settings/forms/account_settings_form.py:85
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "There already is a request to change the e-mail!"
 msgctxt "UI"
 msgid "There already is a request to change the email!"
-msgstr "¡Ya hay una solicitud para cambiar el correo electrónico!"
+msgstr "¡Ya existe una solicitud para cambiar el correo!"
 
 #: settings/forms/common.py:28
 msgctxt "UI"
@@ -2171,12 +2147,9 @@ msgid "Your e-mail has been changed."
 msgstr "Su correo electrónico ha sido cambiado."
 
 #: user_request/models.py:518
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "E-mail change request has been cancelled."
 msgctxt "UI"
 msgid "Email change request has been cancelled."
-msgstr "La solicitud de cambio de correo electrónico ha sido cancelada."
+msgstr "La solicitud de cambio de correo ha sido cancelada."
 
 #: user_request/models.py:609
 msgctxt "UI"
@@ -2612,9 +2585,6 @@ msgid "Color theme"
 msgstr "Color del tema"
 
 #: web/models.py:1228
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "E-mail address"
 msgctxt "UI"
 msgid "Email address"
 msgstr "Dirección de correo"
@@ -2840,9 +2810,6 @@ msgid "Payout channel confirmed"
 msgstr "Canal de pago confirmado"
 
 #: web/models.py:1346
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Payout channel confirmation e-mail resent"
 msgctxt "UI"
 msgid "Payout channel confirmation email resent"
 msgstr "Correo de confirmación del canal de pago re-enviado"
