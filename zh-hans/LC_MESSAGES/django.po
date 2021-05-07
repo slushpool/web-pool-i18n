@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 16:34+0200\n"
-"PO-Revision-Date: 2021-03-22 09:59+0000\n"
-"Last-Translator: JohnsonWang <johnsonwong@westudyin.cz>\n"
+"PO-Revision-Date: 2021-05-08 16:32+0000\n"
+"Last-Translator: Jáchym Černý <jachym.cerny@braiins.cz>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "slushpool/mining/zh_Hans/>\n"
-"Language: zh\n"
+"Language: zh-hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5.2-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
@@ -912,20 +912,14 @@ msgstr ""
 "您可以在<a href=\"%(url)s\" target=\"_blank\">此处</a>查看您的所有提现记录"
 
 #: devices/templates/devices/payout_sent.html:24
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "&laquo; Previous change"
 msgctxt "UI"
 msgid "&laquo; Previous payout"
-msgstr "&laquo; 之前的变化"
+msgstr "&laquo; 之前的提现"
 
 #: devices/templates/devices/payout_sent.html:26
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Next change &raquo;"
 msgctxt "UI"
 msgid "Next payout &raquo;"
-msgstr "下次变化 &raquo;"
+msgstr "下次提现 &raquo;"
 
 #: devices/templates/devices/reward.html:7
 msgctxt "UI"
@@ -1052,7 +1046,7 @@ msgstr "标签必须长于 %s 个字。"
 
 #: devices/validators.py:39
 msgid "HTML tags are not allowed in device label."
-msgstr ""
+msgstr "设备标签中不能用HTML标签。"
 
 #: devices/validators.py:53
 msgid "This label is already used."
@@ -1168,7 +1162,7 @@ msgstr "钱包名缺失。"
 #: finance/forms/payout_channel.py:87
 msgctxt "UI"
 msgid "Settings of an API-driven payout account can not be changed."
-msgstr ""
+msgstr "用API发起账户的提现设置无法更改。"
 
 #: finance/forms/payout_channel.py:107 user_request/models.py:675
 msgctxt "UI"
@@ -1203,12 +1197,9 @@ msgid "Payouts are locked!"
 msgstr "提现已被锁定!"
 
 #: finance/forms/payout_split.py:61
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Reward split is not allowed for accounts with API-driven payouts."
 msgctxt "UI"
 msgid "Reward split can not be changed for accounts with API-driven payouts."
-msgstr "账户用API发起的提现，不允许提现分配。"
+msgstr "账户用API发起的提现，无法提现分配。"
 
 #: finance/forms/validators.py:30
 msgctxt "UI"
@@ -1252,12 +1243,9 @@ msgid "Name can not be longer than %(length)s characters!"
 msgstr "名中不能长于%(length)s个字！"
 
 #: finance/forms/validators.py:93
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Character \"#\" is not allowed in wallet name!"
 msgctxt "UI"
 msgid "Unsupported characters in wallet name!"
-msgstr "不可在钱包名中使用符号 \"#\" ！"
+msgstr "在钱包名中不可使用不支持的符号 ！"
 
 #: finance/forms/validators.py:116 finance/forms/validators.py:133
 #: finance/forms/validators.py:354 finance/forms/validators.py:373
@@ -1331,12 +1319,9 @@ msgid "Name cannot be empty!"
 msgstr "名字这项不可为空！"
 
 #: finance/forms/validators.py:335
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Character \"#\" is not allowed in payout account name!"
 msgctxt "UI"
 msgid "Unsupported characters in payout account name!"
-msgstr "不可以在提现账户名中使用符号“#”！"
+msgstr "在提现账户名中不可使用不支持的符号 ！"
 
 #: finance/forms/validators.py:387
 msgctxt "UI"
@@ -1955,9 +1940,6 @@ msgid "No pending email."
 msgstr "没有正在处理中的邮件。"
 
 #: settings/api/v1/api_actions.py:145
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "E-mail change request has been successfully canceled."
 msgctxt "UI"
 msgid "Email change request has been successfully canceled."
 msgstr "已成功取消变更邮箱地址的请求。"
@@ -1984,17 +1966,11 @@ msgid "A notification email about deleting your account has been sent to %s."
 msgstr "关于删除您的账户的通知邮件已被发送到%s。"
 
 #: settings/forms/account_settings_form.py:74
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Access to e-mail change denied."
 msgctxt "UI"
 msgid "Access to email change denied."
 msgstr "拒绝变更邮箱地址。"
 
 #: settings/forms/account_settings_form.py:85
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "There already is a request to change the e-mail!"
 msgctxt "UI"
 msgid "There already is a request to change the email!"
 msgstr "已申请过变更邮箱地址了！"
@@ -2094,9 +2070,6 @@ msgid "Your e-mail has been changed."
 msgstr "已成功变更您的邮箱地址。"
 
 #: user_request/models.py:518
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "E-mail change request has been cancelled."
 msgctxt "UI"
 msgid "Email change request has been cancelled."
 msgstr "已取消邮箱地址变更请求。"
@@ -2524,9 +2497,6 @@ msgid "Color theme"
 msgstr "颜色主题"
 
 #: web/models.py:1228
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "E-mail address"
 msgctxt "UI"
 msgid "Email address"
 msgstr "邮箱地址"
@@ -2752,9 +2722,6 @@ msgid "Payout channel confirmed"
 msgstr "已确认提现渠道"
 
 #: web/models.py:1346
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Payout channel confirmation e-mail resent"
 msgctxt "UI"
 msgid "Payout channel confirmation email resent"
 msgstr "已发送提现渠道确认邮件"
