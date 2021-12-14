@@ -7,24 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-26 14:23+0100\n"
-"PO-Revision-Date: 2020-10-31 14:26+0000\n"
+"POT-Creation-Date: 2021-11-18 17:53+0100\n"
+"PO-Revision-Date: 2021-10-20 09:32+0000\n"
 "Last-Translator: JohnsonWang <johnsonwong@westudyin.cz>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "slushpool/mining/zh_Hans/>\n"
-"Language: zh\n"
+"Language: zh-hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.3.2-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
 msgid "Request body must be list of objects"
 msgstr "请求的主体必须是项目的列表"
 
-#: api/core.py:357
+#: api/core.py:274
 msgid "Request payload expected, but not supplied!"
 msgstr "未提供预计载荷的值！"
 
@@ -34,550 +34,687 @@ msgid "Unknown error"
 msgstr "未知错误"
 
 #. Translators: %s will be format description, eg.: JSON
-#: api/exceptions.py:44
+#: api/exceptions.py:45
 #, python-format
 msgctxt "UI"
 msgid "Request is not a %s"
-msgstr "请求未 %s"
+msgstr "请求非 %s"
 
 #. Translators: %s will be format description, eg.: JSON
-#: api/exceptions.py:50
+#: api/exceptions.py:51
 #, python-format
 msgctxt "UI"
 msgid "Response is not a %(format)s serializable"
-msgstr "回复不能%(format)s序列化"
+msgstr "响应不是 %(format)s 的可序列形式"
 
-#: api/exceptions.py:55
+#: api/exceptions.py:56
 msgctxt "UI"
 msgid "Authentication required"
 msgstr "需要验证"
 
 #. Translators: %s will be api method, eg.: get, list, get_facts, etc.
-#: api/exceptions.py:65
+#: api/exceptions.py:66
 #, python-format
 msgctxt "UI"
 msgid "Method %s is not allowed"
 msgstr "方法 %s 是不允许的"
 
 #. Translators: %s will be api method, eg.: get, list, get_facts, etc.
-#: api/exceptions.py:71
+#: api/exceptions.py:72
 #, python-format
 msgctxt "UI"
 msgid "Method %s doesn't exist"
 msgstr "方法 %s不存在"
 
-#: api/exceptions.py:76
+#: api/exceptions.py:77
 msgctxt "UI"
 msgid "Non-existent or expired token used"
 msgstr "使用了不存在或已过期的口令"
 
-#: api/exceptions.py:81
+#: api/exceptions.py:82
 msgctxt "UI"
 msgid "The method is not allowed in read only mode"
 msgstr "此方法在只读状态下是不允许的"
 
-#: api/exceptions.py:86
+#: api/exceptions.py:87
 msgctxt "UI"
 msgid "Bad request."
 msgstr "请求无效。"
 
-#: api/exceptions.py:110
+#: api/exceptions.py:118
 msgctxt "UI"
 msgid "Method not found"
 msgstr "方法未找到"
 
 #. Translators: %s = worker, label, ...
-#: api/exceptions.py:116
+#: api/exceptions.py:124
 #, python-format
 msgctxt "UI"
 msgid "Bulk %s creation is not allowed"
-msgstr "大量的%s创建不允许"
+msgstr "大量创建%s是不允许的"
 
 #. Translators: %s = worker, label, ...
-#: api/exceptions.py:122
+#: api/exceptions.py:130
 #, python-format
 msgctxt "UI"
 msgid "Bulk %s deletion is not allowed"
-msgstr "批量%s删除不允许"
+msgstr "批量删除%s是不允许的"
 
 #. Translators: "Label / Worker can't be removed".
-#: api/exceptions.py:128
+#: api/exceptions.py:136
 #, python-format
 msgctxt "UI"
 msgid "%s can't be removed"
-msgstr "%s 无法删除"
+msgstr "%s 无法被删除"
 
 #. Translators: %s = worker, label, ...
-#: api/exceptions.py:134
-#, python-format
-msgctxt "UI"
-msgid "Access denied to object: %s"
-msgstr "访问: %s 被拒绝"
-
 #: api/exceptions.py:142
 #, python-format
 msgctxt "UI"
-msgid "Worker \"%s\" already exists (it may have been deactivated)"
-msgstr "矿工 %s 已存在（或已禁用）"
+msgid "Access denied to object: %s"
+msgstr "访问： %s 被拒绝"
 
-#: api/exceptions.py:147
+#: api/exceptions.py:150
+#, python-format
+msgctxt "UI"
+msgid "Worker \"%s\" already exists (it may have been deactivated)"
+msgstr "矿工 “%s” 已存在（或已禁用）"
+
+#: api/exceptions.py:155
 #, python-format
 msgctxt "UI"
 msgid "Label \"%s\" already exists"
-msgstr "标签 %s 已经存在"
+msgstr "标签“ %s” 已经存在"
 
-#: api/exceptions.py:152
+#: api/exceptions.py:160
 msgctxt "UI"
 msgid "Label doesn't exist"
 msgstr "标签不存在"
 
-#: api/exceptions.py:157
+#: api/exceptions.py:165
 msgctxt "UI"
 msgid "Workers labels update failed"
 msgstr "矿工标签更新失败"
 
-#: api/exceptions.py:162
+#: api/exceptions.py:170
 msgctxt "UI"
 msgid "Invalid worker id."
 msgstr "无效的矿工ID。"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
-#: api/exceptions.py:168
+#: api/exceptions.py:176
 #, python-format
 msgctxt "UI"
 msgid "Slot \"%s\" not found"
-msgstr "时间戳 \"%s\" 未找到"
+msgstr "时间戳 “%s” 未找到"
 
 #. Translators: %s will be timestamp, eg.: "1471594856"
-#: api/exceptions.py:174
+#: api/exceptions.py:182
 #, python-format
 msgctxt "UI"
 msgid "Slot number \"%s\" is not valid."
-msgstr "编号为 \"%s\" 的时间戳无效。"
+msgstr "编号为 “%s” 的时间戳无效。"
 
 #. Translators: %s will be some invalid blockchain voting option
-#: api/exceptions.py:190
+#: api/exceptions.py:198
 #, python-format
 msgctxt "UI"
 msgid "You can't vote for \"%s\""
-msgstr "您不能投票给 \"%s\""
+msgstr "您不能投票给 “%s”"
 
-#: api/exceptions.py:195
+#: api/exceptions.py:203
 msgctxt "UI"
 msgid "You must specify the \"coin_type\" attribute!"
 msgstr "您需指定“币种”属性！"
 
-#: api/exceptions.py:200
+#: api/exceptions.py:208
 msgctxt "UI"
 msgid "Missing data for HR distribution"
-msgstr "算力分配数据不足"
+msgstr "缺失算力分配数据"
 
-#: api/exceptions.py:210
+#: api/exceptions.py:218
 msgctxt "UI"
 msgid "Worker name has already been used"
 msgstr "矿工名已被使用"
 
-#: api/exceptions.py:215
+#: api/exceptions.py:223
 msgctxt "UI"
 msgid "Form error"
 msgstr "格式错误"
 
 #. Translators: %s = form id
-#: api/exceptions.py:221
+#: api/exceptions.py:229
 #, python-format
 msgctxt "UI"
 msgid "Form \"%s\" doesn't exist"
-msgstr "格式 \"%s\" 不存在"
+msgstr "格式 “%s” 不存在"
 
-#: api/exceptions.py:226
+#: api/exceptions.py:234
 msgctxt "UI"
 msgid "Validation error"
 msgstr "验证错误"
 
-#: api/exceptions.py:231 api/exceptions.py:236
+#: api/exceptions.py:239 api/exceptions.py:244
 msgctxt "UI"
 msgid "Form save has failed."
 msgstr "格式保存失败。"
 
-#: api/exceptions.py:251
+#: api/exceptions.py:259
 msgctxt "UI"
 msgid "U2F device not found."
 msgstr "未找到双重认证U2F设备。"
 
-#: api/exceptions.py:256
+#: api/exceptions.py:264
 msgctxt "UI"
 msgid "U2F verification failed."
-msgstr "双重认证验证失败。"
-
-#: api/exceptions.py:261
-msgctxt "UI"
-msgid "Used device is not active yet. Use different one."
-msgstr "使用的设备还未激活，请使用另一个。"
+msgstr "双重认证U2F验证失败。"
 
 #: api/exceptions.py:269
+msgctxt "UI"
+msgid "Used device is not active yet. Use different one."
+msgstr "使用的设备尚未启用，请使用另一个。"
+
+#: api/exceptions.py:277
 #, python-format
 msgctxt "UI"
 msgid "Your pairing token expired after %s seconds. Please try again."
 msgstr "您的配对口令在%s秒后过期，请重试。"
 
-#: api/exceptions.py:274
+#: api/exceptions.py:282
 msgctxt "UI"
 msgid "Device for given token does not exist. Please pair your device again."
 msgstr "相应口令的设备不存在，请重新配对您的设备。"
 
-#: api/exceptions.py:284
+#: api/exceptions.py:292
 msgctxt "UI"
 msgid "OTP verification failed."
-msgstr "一次性密码验证失败。"
+msgstr "一次性密码OTP验证失败。"
 
-#: api/exceptions.py:289
+#: api/exceptions.py:297
 #, python-format
 msgctxt "UI"
 msgid "Coin \"%(coin)s\" is not allowed. Use one of: %(choices)s"
-msgstr "“%(coin)s”币不被允许使用。 请使用%(choices)s中的一个"
+msgstr "“%(coin)s”币不被允许使用。 请使用：%(choices)s 中的一个"
 
-#: api/exceptions.py:294
+#: api/exceptions.py:302
 msgctxt "UI"
 msgid "Unexpected server error. Please try again later."
-msgstr "未预料到的服务器错误。请稍后再试。"
+msgstr "未知服务器错误。请稍后再试。"
 
-#: api/exceptions.py:299 formlib/core.py:68
+#: api/exceptions.py:307 formlib/core.py:71
 msgctxt "UI"
 msgid "Access denied."
 msgstr "拒绝访问。"
 
-#: api/exceptions.py:306
+#: api/exceptions.py:314
 msgctxt "UI"
 msgid ""
 "Please update the app via Play Store / App Store. This version is no longer "
 "supported."
-msgstr "请通过Play 商店/App Store 更新应用。不再支持此版本。"
+msgstr "请通过Play 商店 / App Store 更新应用。该版本已不再提供支持。"
 
-#: api/exceptions.py:314
+#: api/exceptions.py:322
 msgctxt "UI"
 msgid ""
 "Deletion aborted. It is not possible to delete active workers. Please adjust "
 "your selection."
-msgstr "删除已撤销。无法删除处于活跃状态的矿工名。请调整您的选择。"
+msgstr "删除已撤销。无法删除处于启用状态的矿工名。请调整您的选择。"
 
-#: campaigns/email_templates/change_email_template.html:15
-#, python-format
+#: backend/queries/finance.py:272
 msgctxt "UI"
-msgid ""
-"We got a request to change your email address to <strong>%(email)s</strong>."
-msgstr "我们收到了您想将邮件地址改到：<strong>%(email)s</strong> 的请求。"
-
-#: campaigns/email_templates/change_email_template.html:18
-#: campaigns/email_templates/wallet_change_template.html:18
-msgctxt "UI"
-msgid "To authorize this change, please click the button below."
-msgstr "请点击下方按钮许可更改。"
-
-#: campaigns/email_templates/change_email_template.html:30
-msgctxt "UI"
-msgid "Change email address"
-msgstr "更改邮箱地址"
-
-#: campaigns/email_templates/change_email_template.html:43
-#, python-format
-msgctxt "UI"
-msgid ""
-"If you <strong>did not</strong> ask us to change your email address, please "
-"<a href=\"%(url)s\">cancel&nbsp;the&nbsp;request</a> and change your "
-"password immediately."
-msgstr ""
-"如您 <strong>没有</strong> 向我们发送更改邮箱地址的请求，请您 <a href="
-"\"%(url)s\">&nbsp;取消这一请求&nbsp;</a> 并立即更改您的密码。"
-
-#: campaigns/email_templates/delete_account_template.html:16
-msgctxt "UI"
-msgid ""
-"It's Pavel Moravec, co-CEO of Braiins. I wanted to reach out to you "
-"personally and thank you for giving Slush Pool a shot."
-msgstr ""
-"Pavel Moravec，首脑-Braiins的联合首席运营官。想亲自和您交流交流，并感谢您选择"
-"Slush Pool矿池。"
-
-#: campaigns/email_templates/delete_account_template.html:19
-#, python-format
-msgctxt "UI"
-msgid ""
-"Did you run into any issues using Slush Pool that our support team can <a "
-"href=\"%(support)s\">help you with</a>? Or perhaps you are missing some "
-"features? <a href=\"%(new_ticket)s\">Please&nbsp;let&nbsp;us&nbsp;know</a> "
-"so that we can make Slush Pool better."
-msgstr ""
-"您在使用Slush Pool矿池时有遇到问题么？我们的客服团队能为您 <a href="
-"\"%(support)s\">提供帮助</a>。或者，您觉得矿池有功能缺失？<a href="
-"\"%(new_ticket)s\">&nbsp;请告诉我们&nbsp;</a> ，这能帮助我们将Slush Pool矿池"
-"完善得更好。"
-
-#: campaigns/email_templates/delete_account_template.html:22
-#, python-format
-msgctxt "UI"
-msgid ""
-"If you’d still like to delete your account, make sure you <strong>request "
-"your final payout BEFORE</strong> doing so. Otherwise, any remaining "
-"balances are considered a generous donation to the pool. Then click this <a "
-"href=\"%(url)s\">confirmation link</a> to delete your account. For your "
-"security, the link is only good for an hour."
-msgstr ""
-"如果您决心想要删除您的账户，请在删除前<strong>务必确认您是否最后请求了提现</"
-"strong>。否则，您账户内的余额将被视为对矿池的慷慨捐赠。没有问题的话，请点击这"
-"个<a href=\"%(url)s\">确认链接</a>确认删除您的账户。为保证安全，确认链接的有"
-"效期为一小时。"
-
-#: campaigns/email_templates/delete_account_template.html:25
-msgctxt "UI"
-msgid ""
-"Lastly, if you DIDN’T request to delete your account, make sure you change "
-"your password ASAP.️"
-msgstr ""
-"最后，如您<strong>没有要求</strong>删除账户，请您<strong>立即</strong>更改您"
-"的密码。"
-
-#: campaigns/email_templates/delete_account_template.html:28
-msgctxt "UI"
-msgid "We hope to see you back soon."
-msgstr "我们期望与您后会有期。"
+msgid "Invalid currency code"
+msgstr "无效的币种代码"
 
 #: campaigns/email_templates/footer_system.html:34
 msgctxt "UI"
 msgid "Settings"
 msgstr "设置"
 
-#: campaigns/email_templates/monitoring_incident_template.html:14
+#: campaigns/email_templates/v4_account_delete.html:171
+#: campaigns/email_templates/v4_account_delete.html:235
 #, python-format
-msgctxt "UI"
-msgid "Hey <strong>%(username)s</strong>,"
-msgstr "<strong>%(username)s</strong>您好，"
+msgctxt "email"
+msgid "We received a request to delete your %(name)s account."
+msgstr "我们收到了您对账户%(name)s的删除请求。"
 
-#: campaigns/email_templates/monitoring_incident_template.html:17
+#: campaigns/email_templates/v4_account_delete.html:219
+msgctxt "email"
+msgid "Account deletion request"
+msgstr "账户删除申请"
+
+#: campaigns/email_templates/v4_account_delete.html:257
 #, python-format
-msgctxt "UI"
+msgctxt "email"
 msgid ""
-"We wanted to let you know that we noticed something going on with your "
-"<strong>%(coin)s</strong> workers. You can see the details below."
+"Did you run into any issues using Slush Pool that our support team can <a "
+"href=\"%(url)s\">help you with?</a> Or perhaps you are missing some "
+"features? <a href=\"%(url)s\">Let us know</a> so that we can make our "
+"services better."
 msgstr ""
-"我们在此通知您，您账户下名为<strong>%(coin)s</strong>的矿工有异常情况，详情如"
-"下。"
+"您在使用Slush Pool矿池时有遇到问题？我们的客服团队竭诚为您 <a href=\"%(url)s"
+"\">提供帮助</a>。或者，您觉得矿池还缺少什么功能？<a href=\"%(url)s\">请告诉我"
+"们</a>，这将帮助我们把Slush Pool矿池完善得更好。"
 
-#: campaigns/email_templates/monitoring_incident_template.html:21
-#: web/templates/email/monitoring_body.html:8
-msgctxt "UI"
+#: campaigns/email_templates/v4_account_delete.html:269
+msgctxt "email"
+msgid "In any case, if you’d still like to delete your account:"
+msgstr "不管怎么样，如果您真的决定要删除您的账户："
+
+#: campaigns/email_templates/v4_account_delete.html:270
+msgctxt "email"
+msgid ""
+"1. Make sure you <strong>request your final payout BEFORE doing so.</strong> "
+"Otherwise, any remaining balances are considered a generous donation to the "
+"pool."
+msgstr ""
+"1. 请确保 <strong>在删除账户前提现账户内的币。</strong> 否则，账户内的余额将"
+"被视为对矿池的捐赠。"
+
+#: campaigns/email_templates/v4_account_delete.html:271
+#, python-format
+msgctxt "email"
+msgid ""
+"2. Then click <a href=\"%(url)s\">this confirmation link to delete your "
+"account.</a> For your security, the link is only valid for 1 hour."
+msgstr ""
+"2. 然后点击 <a href=\"%(url)s\">这个确认链接来删除您的账户。</a> 出于安全因"
+"素，该链接仅1小时有效。"
+
+#: campaigns/email_templates/v4_account_delete.html:296
+#: campaigns/email_templates/v4_email_change.html:287
+#: campaigns/email_templates/v4_payout_channel_verification.html:290
+msgctxt "email"
+msgid ""
+"<strong>If you didn’t initiate</strong> this process, your account may be "
+"compromised."
+msgstr "如该操作<strong>不是您</strong> 发起的，您的账户可能被盗。"
+
+#: campaigns/email_templates/v4_account_delete.html:297
+#: campaigns/email_templates/v4_email_change.html:290
+#, python-format
+msgctxt "email"
+msgid ""
+"Please <a href=\"%(url)s\">cancel the request</a> and change your password "
+"immediately."
+msgstr "请<a href=\"%(url)s\">取消请求</a>并立即变更密码。"
+
+#: campaigns/email_templates/v4_account_delete.html:305
+#: campaigns/email_templates/v4_email_change.html:302
+#: campaigns/email_templates/v4_password_reset.html:318
+#: campaigns/email_templates/v4_payout_channel_verification.html:302
+#: campaigns/email_templates/v4_signup_confirmation.html:297
+msgctxt "email"
+msgid ""
+"In case you need assistance or help with securing your account, please "
+"contact our support team. We are here to help."
+msgstr ""
+"如果您需要账户安全方面的协助或帮助，请联系我们的客服团队。我们竭诚为您服务。"
+
+#: campaigns/email_templates/v4_account_delete.html:316
+#: campaigns/email_templates/v4_email_change.html:316
+#: campaigns/email_templates/v4_monitoring_incident.html:657
+#: campaigns/email_templates/v4_onboarding.html:310
+#: campaigns/email_templates/v4_password_reset.html:330
+#: campaigns/email_templates/v4_payout_channel_verification.html:316
+#: campaigns/email_templates/v4_payout_sent.html:335
+#: campaigns/email_templates/v4_signup_confirmation.html:311
+msgctxt "email"
+msgid "Contact Support"
+msgstr "联系客服"
+
+#: campaigns/email_templates/v4_account_delete.html:327
+#: campaigns/email_templates/v4_email_change.html:328
+#: campaigns/email_templates/v4_password_reset.html:342
+#: campaigns/email_templates/v4_payout_channel_verification.html:328
+msgctxt "email"
+msgid "Don't trust, verify!"
+msgstr "别轻易相信，总是再三确认!"
+
+#: campaigns/email_templates/v4_account_delete.html:369
+#: campaigns/email_templates/v4_email_change.html:370
+#: campaigns/email_templates/v4_monitoring_incident.html:718
+#: campaigns/email_templates/v4_onboarding.html:362
+#: campaigns/email_templates/v4_password_reset.html:384
+#: campaigns/email_templates/v4_payout_channel_verification.html:370
+#: campaigns/email_templates/v4_payout_sent.html:393
+#: campaigns/email_templates/v4_signup_confirmation.html:368
+msgctxt "email"
+msgid "Bitcoin mining full stack company"
+msgstr "有比特币挖矿全堆栈的公司"
+
+#: campaigns/email_templates/v4_account_delete.html:382
+#: campaigns/email_templates/v4_email_change.html:385
+#: campaigns/email_templates/v4_monitoring_incident.html:732
+#: campaigns/email_templates/v4_onboarding.html:376
+#: campaigns/email_templates/v4_password_reset.html:398
+#: campaigns/email_templates/v4_payout_channel_verification.html:384
+#: campaigns/email_templates/v4_payout_sent.html:408
+#: campaigns/email_templates/v4_signup_confirmation.html:382
+msgctxt "email"
+msgid "FOLLOW US"
+msgstr "关注我们"
+
+#: campaigns/email_templates/v4_email_change.html:167
+#: campaigns/email_templates/v4_email_change.html:226
+#, python-format
+msgctxt "email"
+msgid ""
+"We received a request to change the email address of your account %(name)s "
+"to: %(email)s"
+msgstr "我们收到了您要求变更账户%(name)s的邮箱地址为：%(email)s 的请求"
+
+#: campaigns/email_templates/v4_email_change.html:210
+msgctxt "email"
+msgid "Email change request"
+msgstr "邮箱地址变更请求"
+
+#: campaigns/email_templates/v4_email_change.html:248
+msgctxt "email"
+msgid "To authorize this change, please click the button below."
+msgstr "请点击下方按钮许可更改。"
+
+#: campaigns/email_templates/v4_email_change.html:260
+msgctxt "email"
+msgid "Change Email Address"
+msgstr "变更邮箱地址"
+
+#: campaigns/email_templates/v4_monitoring_incident.html:191
+#: campaigns/email_templates/v4_monitoring_incident.html:263
+#, python-format
+msgctxt "email"
+msgid ""
+"We have detected that something is going on with your %(coin)s workers. You "
+"can see the details below."
+msgstr "我们发现您的%(coin)s矿工有异常情况。详情见下。"
+
+#: campaigns/email_templates/v4_monitoring_incident.html:247
+msgctxt "email"
+msgid "Worker State Changes"
+msgstr "矿工状态变化"
+
+#: campaigns/email_templates/v4_monitoring_incident.html:300
+msgctxt "email"
 msgid "Event Time"
 msgstr "事件时间"
 
-#: campaigns/email_templates/monitoring_incident_template.html:22
-#: web/templates/email/monitoring_body.html:9
-msgctxt "UI"
-msgid "Account Hash Rate"
+#: campaigns/email_templates/v4_monitoring_incident.html:305
+msgctxt "email"
+msgid "Account Hashrate"
 msgstr "账户算力"
 
-#: campaigns/email_templates/monitoring_incident_template.html:23
-#: web/templates/email/monitoring_body.html:10
-msgctxt "UI"
-msgid "Worker States (Changes)"
+#: campaigns/email_templates/v4_monitoring_incident.html:320
+msgctxt "email"
+msgid "Worker States (changes)"
 msgstr "矿工状态 (变化)"
 
-#: campaigns/email_templates/monitoring_incident_template.html:32
-#: web/templates/email/monitoring_body.html:20
-msgctxt "UI"
+#: campaigns/email_templates/v4_monitoring_incident.html:339
+msgctxt "email"
+msgid "OK"
+msgstr "正常"
+
+#: campaigns/email_templates/v4_monitoring_incident.html:353
+msgctxt "email"
+msgid "Low"
+msgstr "低"
+
+#: campaigns/email_templates/v4_monitoring_incident.html:367
+msgctxt "email"
+msgid "Offline"
+msgstr "离线"
+
+#: campaigns/email_templates/v4_monitoring_incident.html:381
+msgctxt "email"
+msgid "Disabled"
+msgstr "已禁用"
+
+#: campaigns/email_templates/v4_monitoring_incident.html:410
+msgctxt "email"
+msgid "Incident detail"
+msgstr "故障详情"
+
+#: campaigns/email_templates/v4_monitoring_incident.html:445
+msgctxt "email"
 msgid "Worker Name"
 msgstr "矿工名"
 
-#: campaigns/email_templates/monitoring_incident_template.html:33
-#: web/templates/email/monitoring_body.html:21
-msgctxt "UI"
+#: campaigns/email_templates/v4_monitoring_incident.html:495
+msgctxt "email"
 msgid "State Change"
-msgstr "状态修改"
+msgstr "状态变化"
 
-#: campaigns/email_templates/monitoring_incident_template.html:34
-#: web/templates/email/monitoring_body.html:22
-msgctxt "UI"
+#: campaigns/email_templates/v4_monitoring_incident.html:514
+msgctxt "email"
+msgid "Actual Hashrate"
+msgstr "实际算力"
+
+#: campaigns/email_templates/v4_monitoring_incident.html:540
+msgctxt "email"
 msgid "State Changed After"
-msgstr "状态持续"
+msgstr "状态变化（在此后）"
 
-#: campaigns/email_templates/monitoring_incident_template.html:35
-#: web/templates/email/monitoring_body.html:23
-msgctxt "UI"
-msgid "Actual Hash Rate"
-msgstr "当前算力"
-
-#: campaigns/email_templates/monitoring_incident_template.html:36
-#: web/templates/email/monitoring_body.html:24
-msgctxt "UI"
+#: campaigns/email_templates/v4_monitoring_incident.html:558
+msgctxt "email"
 msgid "Alert Limit"
 msgstr "警告限值"
 
-#: campaigns/email_templates/monitoring_incident_template.html:55
+#: campaigns/email_templates/v4_monitoring_incident.html:597
 #, python-format
-msgctxt "UI"
+msgctxt "email"
 msgid ""
-"You can also <a href=\"%(url)s\">click here</a> to see this report online."
-msgstr "您也可以<a href=\"%(url)s\">点此</a>在线查看本报告。"
-
-#: campaigns/email_templates/monitoring_incident_template.html:58
-msgctxt "UI"
-msgid "– The Slush Pool Team"
-msgstr "——Slush Pool矿池团队"
-
-#: campaigns/email_templates/onboarding_template.html:15
-msgctxt "UI"
-msgid "Ready to jumpstart your mining? 🔥🚀"
-msgstr "准备好点燃挖矿的小火箭了么？🔥🚀"
-
-#: campaigns/email_templates/onboarding_template.html:18
-msgctxt "UI"
-msgid ""
-"Right now, Slush Pool supports <strong>Bitcoin</strong> and <strong>Zcash</"
-"strong> mining, but make sure you keep an eye out for an announcement coming "
-"soon! (Hint: 3 more cryptos incoming 🎉)"
+"<strong>Showing %(shown)s out of %(total)s changes.</strong> To see full "
+"report click the button below."
 msgstr ""
-"Slush Pool矿池现已支持<strong>比特币</strong>和<strong>Zcash</strong>的合并挖"
-"矿。我们还即将推出另外三种加密货币的合并挖矿，请对我们的公告保持关注！🎉"
+"<strong>显示%(total)s中的%(shown)s变化。</strong>查看完整报告请点击下方按钮。"
 
-#: campaigns/email_templates/onboarding_template.html:20
-msgctxt "UI"
+#: campaigns/email_templates/v4_monitoring_incident.html:613
+msgctxt "email"
+msgid "View Full Report"
+msgstr "查看完整报告"
+
+#: campaigns/email_templates/v4_monitoring_incident.html:641
+#: campaigns/email_templates/v4_payout_sent.html:323
+msgctxt "email"
 msgid ""
-"Need a little help getting started? These how-to guides will help get you up "
-"and running."
+"In case of any issues please contact our support team. We are here to help."
+msgstr "如果您遇到任何问题，请联系我们的客服团队。我们竭诚为您服务。"
+
+#: campaigns/email_templates/v4_onboarding.html:212
+msgctxt "email"
+msgid "Ready, set, mine!"
+msgstr "来，安排上，挖矿！"
+
+#: campaigns/email_templates/v4_onboarding.html:226
+msgctxt "email"
+msgid ""
+"Need a little assistance getting started? These setup guides will help get "
+"you up and running."
 msgstr "不知从何开始？请看下文详解。"
 
-#: campaigns/email_templates/onboarding_template.html:30
-msgctxt "UI"
-msgid "Quickstart Guide"
-msgstr "快速指南"
+#: campaigns/email_templates/v4_onboarding.html:250
+msgctxt "email"
+msgid "Bitcoin Quickstart Guide"
+msgstr "比特币挖矿快速指南"
 
-#: campaigns/email_templates/onboarding_template.html:46
+#: campaigns/email_templates/v4_onboarding.html:273
+msgctxt "email"
+msgid "Zcash Quickstart Guide"
+msgstr "零币Zcash快速指南"
+
+#: campaigns/email_templates/v4_onboarding.html:298
+msgctxt "email"
+msgid "Do you have more questions? Our support team is always here to help."
+msgstr "您有不少问题？我们的客户团队竭诚为您提供帮助。"
+
+#: campaigns/email_templates/v4_onboarding.html:321
+#: campaigns/email_templates/v4_signup_confirmation.html:325
+msgctxt "email"
+msgid "Let’s mine some blocks!"
+msgstr "开始挖矿吧！"
+
+#: campaigns/email_templates/v4_password_reset.html:166
+#: campaigns/email_templates/v4_password_reset.html:228
 #, python-format
-msgctxt "UI"
-msgid ""
-"If you ever need help with anything else, make sure you check out our&nbsp;"
-"<a href=\"%(url)s\"><strong>online support portal</strong></a>"
-msgstr ""
-"如果您还需要其他帮助，您还可以试试我们的&nbsp;<a href=\"%(url)s\"><strong>在"
-"线客服平台</strong></a>"
+msgctxt "email"
+msgid "We received a request for a password reset on your account %(name)s."
+msgstr "我们收到了您对账户%(name)s的密码重置请求。"
 
-#: campaigns/email_templates/payout_template.html:16
-#, python-format
-msgctxt "UI"
-msgid "Congrats! You've hit your %(coin)s payout threshold 🎉"
-msgstr "恭喜！您已达到您的 %(coin)s 提现阈值🎉"
+#: campaigns/email_templates/v4_password_reset.html:214
+msgctxt "email"
+msgid "Password reset request"
+msgstr "密码重置请求"
 
-#: campaigns/email_templates/payout_template.html:19
-#, python-format
-msgctxt "UI"
-msgid "We've transferred %(amount)s %(coin)s to your address %(address)s."
-msgstr "我们已将 %(amount)s 个 %(coin)s 转到了您的 %(address)s 地址。"
-
-#: campaigns/email_templates/payout_template.html:22
-#, python-format
-msgctxt "UI"
-msgid ""
-"Typically, payments take somewhere between 30 minutes to 3 hours to go "
-"through. You can keep an eye on your payment's status <a href=\"%(url)s"
-"\">here</a>."
-msgstr ""
-"通常，转账需要30分钟到3小时完成。您可以在<a href=\"%(url)s\">这里</a>查看到账"
-"状态。"
-
-#: campaigns/email_templates/payout_template.html:24
-msgctxt "UI"
-msgid "Keep up the good work and happy mining!"
-msgstr "全力以赴，挖矿愉快！"
-
-#: campaigns/email_templates/registration_template.html:15
-msgctxt "UI"
-msgid "Thanks for joining Slush Pool! 💪"
-msgstr "感谢您选择Slush Pool矿池！💪"
-
-#: campaigns/email_templates/registration_template.html:18
-msgctxt "UI"
-msgid "To start mining, activate your account by clicking the button below."
-msgstr "要开始挖矿，您需要先点击下方的按钮激活您的账户。"
-
-#: campaigns/email_templates/registration_template.html:30
-msgctxt "UI"
-msgid "START MINING"
-msgstr "<strong>开始挖矿</strong>"
-
-#: campaigns/email_templates/registration_template.html:43
-msgctxt "UI"
-msgid ""
-"If that link doesn't work, try copy and pasting the full link below into "
-"your browser address bar:"
-msgstr "如果链接无法点开，请尝试复制粘贴它到浏览器地址栏打开："
-
-#: campaigns/email_templates/reset_password_template.html:16
-msgctxt "UI"
-msgid "We got a password reset request for your Slush Pool account."
-msgstr "我们收到了重置您Slush Pool矿池账号密码的请求。"
-
-#: campaigns/email_templates/reset_password_template.html:19
-msgctxt "UI"
+#: campaigns/email_templates/v4_password_reset.html:248
+msgctxt "email"
 msgid "To reset your password, click the button below."
 msgstr "请点击下方按钮重置您的密码。"
 
-#: campaigns/email_templates/reset_password_template.html:31
-msgctxt "UI"
-msgid "RESET PASSWORD"
-msgstr "<strong>重置密码</strong>"
+#: campaigns/email_templates/v4_password_reset.html:281
+msgctxt "email"
+msgid "Reset Password"
+msgstr "重置密码"
 
-#: campaigns/email_templates/wallet_change_template.html:15
-#, python-format
-msgctxt "UI"
+#: campaigns/email_templates/v4_password_reset.html:308
+msgctxt "email"
 msgid ""
-"We received a request to change your %(coin)s wallet to this new address: "
-"<strong>%(address)s</strong>"
-msgstr ""
-"我们收到了您要求更改您的 %(coin)s 钱包地址到这个新地址：<strong>%(address)s</"
-"strong> 的请求。"
+"<strong>If you didn’t initiate</strong> this process, you can ignore this "
+"message."
+msgstr "如该操作<strong>不是您</strong>发起的，您可以忽略本消息。"
 
-#: campaigns/email_templates/wallet_change_template.html:21
-msgctxt "UI"
-msgid "CONFIRM CHANGE"
-msgstr "<strong>确认更改</strong>"
-
-#: campaigns/email_templates/wallet_change_template.html:25
+#: campaigns/email_templates/v4_payout_channel_verification.html:168
+#: campaigns/email_templates/v4_payout_channel_verification.html:227
 #, python-format
-msgctxt "UI"
+msgctxt "email"
 msgid ""
-"If you didn’t request an address change, please <a href=\"%(url)s\">cancel "
-"this request</a> and change your password immediately."
+"We received a request to change your %(coin)s wallet under the financial "
+"account \"%(account)s\" to this new address: %(address)s"
 msgstr ""
-"如您未曾请求更改地址，请<a href=\"%(url)s\">取消这一请求</a>并立即更改密码。"
+"我们收到了您要求变更您财务账户“%(account)s”下的 %(coin)s 钱包地址到这个新地"
+"址：%(address)s 的请求"
 
-#: campaigns/forms/campaign.py:59 campaigns/forms/campaign.py:104
-#: campaigns/forms/campaign.py:161 campaigns/forms/campaign.py:219
-#: campaigns/forms/campaign.py:286 campaigns/forms/template.py:44
-#: campaigns/forms/template.py:114
-msgctxt "UI"
-msgid "Access to campaigns denied."
-msgstr "拒绝访问活动。"
+#: campaigns/email_templates/v4_payout_channel_verification.html:212
+#, python-format
+msgctxt "email"
+msgid "%(coin)s wallet change request"
+msgstr "%(coin)s钱包变更请求"
 
-#: campaigns/forms/campaign.py:226
+#: campaigns/email_templates/v4_payout_channel_verification.html:249
+msgctxt "email"
+msgid "To confirm this change, click the button below."
+msgstr "请点击下方按钮许可变更。"
+
+#: campaigns/email_templates/v4_payout_channel_verification.html:263
+msgctxt "email"
+msgid "Change Wallet"
+msgstr "变更钱包"
+
+#: campaigns/email_templates/v4_payout_sent.html:171
+#: campaigns/email_templates/v4_payout_sent.html:231
+#, python-format
+msgctxt "email"
+msgid ""
+"Congratulations! You've just reached your %(coin)s payout threshold on the "
+"financial account \"%(name)s\"."
+msgstr "恭喜！您的财务帐户 “%(name)s” 已达到 %(coin)s 的提现阈值🎉。"
+
+#: campaigns/email_templates/v4_payout_sent.html:215
+#, python-format
+msgctxt "email"
+msgid "Your %(coin)s payout"
+msgstr "您的%(coin)s提现"
+
+#: campaigns/email_templates/v4_payout_sent.html:255
+msgctxt "email"
+msgid "For this reason we’ve transferred:"
+msgstr "出于该原因，我们转了："
+
+#: campaigns/email_templates/v4_payout_sent.html:270
+#, python-format
+msgctxt "email"
+msgid "to your address <strong>(%(address)s)</strong>"
+msgstr "到您的地址 <strong>(%(address)s)</strong>"
+
+#: campaigns/email_templates/v4_payout_sent.html:272
+#, python-format
+msgctxt "email"
+msgid "on %(date)s"
+msgstr "在 %(date)s"
+
+#: campaigns/email_templates/v4_payout_sent.html:284
+msgctxt "email"
+msgid ""
+"Typically, payments take somewhere between 30 minutes to 3 hours to go "
+"through. You can keep an eye on your payment's status here:</span>"
+msgstr "通常，转账需要30分钟到3小时完成。您可以在这里查看到账状态：</span>"
+
+#: campaigns/email_templates/v4_payout_sent.html:298
+msgctxt "email"
+msgid "Check Transaction Status"
+msgstr "查看转账状态"
+
+#: campaigns/email_templates/v4_signup_confirmation.html:168
+#: campaigns/email_templates/v4_signup_confirmation.html:226
+#, python-format
+msgctxt "email"
+msgid ""
+"To start mining, activate your account %(username)s by clicking the button "
+"below."
+msgstr "要开始挖矿，您需要先点击下方的按钮对您的账户 %(username)s 进行激活。"
+
+#: campaigns/email_templates/v4_signup_confirmation.html:212
+msgctxt "email"
+msgid "Welcome to Slush Pool!"
+msgstr "欢迎来到Slush Pool矿池！"
+
+#: campaigns/email_templates/v4_signup_confirmation.html:251
+msgctxt "email"
+msgid "Confirm your email"
+msgstr "确认您的邮箱地址"
+
+#: campaigns/email_templates/v4_signup_confirmation.html:267
+msgctxt "email"
+msgid ""
+"If the link doesn't work, try copy and pasting the full link below into your "
+"browser address bar:"
+msgstr "如果链接点不开，请试试把它复制粘贴到浏览器的地址栏打开："
+
+#: campaigns/forms/campaign.py:204
 msgctxt "UI"
 msgid "Campaign must be in DRAFT state."
 msgstr "活动必须是<strong>草案</strong>格式的。"
 
-#: campaigns/forms/validators.py:518 mailing/forms/validators.py:36
+#: campaigns/forms/common.py:16
+msgctxt "UI"
+msgid "Access to campaigns denied."
+msgstr "拒绝访问活动。"
+
+#: campaigns/forms/template.py:117
+#, python-format
+msgctxt "UI"
+msgid ""
+"This template is used in campaign run \"%(campaign_run_name)s\" of campaign "
+"\"%(campaign_name)s\". To be able to change the template, you must abort the "
+"campaign run first."
+msgstr ""
+"该模板用于活动“%(campaign_name)s”中的活动运行“%(campaign_run_name)s”。如需变"
+"更模板，您必须先终止活动。"
+
+#: campaigns/forms/validators.py:512 mailing/forms/validators.py:34
 msgctxt "UI"
 msgid "Invalid user selection."
 msgstr "无效的用户选择。"
 
-#: campaigns/forms/validators.py:526 mailing/forms/validators.py:55
+#: campaigns/forms/validators.py:520 mailing/forms/validators.py:53
 msgctxt "UI"
 msgid "Invalid reason for unsubscription."
 msgstr "无效的退订理由。"
 
-#: campaigns/forms/validators.py:538
+#: campaigns/forms/validators.py:532
 #, python-format
 msgctxt "UI"
 msgid "Feedback must be a string no longer than %d characters."
-msgstr "反馈必须是长于%d个字的字符串。"
+msgstr "反馈必须长于%d个字。"
 
-#: campaigns/forms/validators.py:551
+#: campaigns/forms/validators.py:545
 msgctxt "UI"
 msgid "Invalid e-mail token provided."
 msgstr "提供了无效的邮件口令。"
@@ -598,30 +735,293 @@ msgctxt "UI"
 msgid "The Slush Pool Team"
 msgstr "Slush Pool矿池团队"
 
-#: core/validators.py:10
+#: core/validators.py:9
 msgid "Enter a valid, non empty value."
-msgstr "请输入一个有效非空白的值。"
+msgstr "请输入一个有效的非空白值。"
 
-#: devices/models.py:50
-#, python-format
+#: devices/api/common.py:161
 msgctxt "UI"
-msgid "Device was not paired in time limit of %s seconds"
-msgstr "设备未在指定的%s秒内配对"
+msgid "Coins must be a list."
+msgstr "币必须是列表。"
 
-#: devices/models.py:54
+#: devices/api/common.py:365
 msgctxt "UI"
-msgid "Device you are trying to pair was not found"
-msgstr "未能找到您尝试配对的设备"
+msgid "Pair token timeout exceeded. Please request a new one."
+msgstr "口令配对超时。请重新设置。"
 
-#: devices/models.py:58
+#: devices/api/common.py:504
 msgctxt "UI"
-msgid "Values for device settings must be dictionary."
+msgid "Platform can not be changed."
+msgstr "无法变更平台。"
+
+#: devices/api/common.py:555 devices/api/common.py:583
+msgctxt "UI"
+msgid "Invalid notifications settings."
+msgstr "无效的通知设定。"
+
+#: devices/api/common.py:620
+msgctxt "UI"
+msgid "Values for device settings must be a dictionary."
 msgstr "设备的设置必须使用字典值。"
 
-#: devices/models.py:62
+#: devices/api/common.py:686
 msgctxt "UI"
-msgid "Invalid keys supplied as device settings."
-msgstr "提供了无效的密钥作为设备设定。"
+msgid "Invalid notification ID."
+msgstr "无效的通知ID。"
+
+#: devices/notifications_utils.py:492
+msgctxt "UI"
+msgid "Payout sent"
+msgstr "提现历史"
+
+#: devices/templates/devices/block_found.html:7
+msgctxt "UI"
+msgid "Block <span>not found</span>"
+msgstr "区块 <span>未找到</span>"
+
+#: devices/templates/devices/block_found.html:11
+msgctxt "UI"
+msgid "Block <span>details</span>"
+msgstr "区块 <span>详情</span>"
+
+#: devices/templates/devices/block_found.html:14
+#: devices/templates/devices/payout_sent.html:13
+msgctxt "UI"
+msgid "Date:"
+msgstr "日期："
+
+#: devices/templates/devices/block_found.html:15
+msgctxt "UI"
+msgid "Duration:"
+msgstr "时长："
+
+#: devices/templates/devices/block_found.html:16
+msgctxt "UI"
+msgid "Pool Scoring Hashrate: "
+msgstr "矿池记分算力： "
+
+#: devices/templates/devices/block_found.html:20
+msgctxt "UI"
+msgid "Coin:"
+msgstr "币："
+
+#: devices/templates/devices/block_found.html:21
+msgctxt "UI"
+msgid "Value:"
+msgstr "值："
+
+#: devices/templates/devices/block_found.html:22
+msgctxt "UI"
+msgid "Height:"
+msgstr "高度："
+
+#: devices/templates/devices/block_found.html:27
+#, python-format
+msgctxt "UI"
+msgid ""
+"You can see all found <a href=\"%(url)s\" target=\"_blank\">blocks here</a>."
+msgstr ""
+"您可以在 <a href=\"%(url)s\" target=\"_blank\">此处</a>查看所有开出区块。"
+
+#: devices/templates/devices/block_found.html:29
+msgctxt "UI"
+msgid "Few newest blocks for this coin can be seen here:"
+msgstr "该币的最新区块记录可在此处查看："
+
+#: devices/templates/devices/block_found.html:31
+msgctxt "UI"
+msgid "&laquo; Previous change"
+msgstr "&laquo; 之前的变化"
+
+#: devices/templates/devices/block_found.html:33
+msgctxt "UI"
+msgid "Next change &raquo;"
+msgstr "下次变化 &raquo;"
+
+#: devices/templates/devices/contact.html:24
+msgctxt "UI"
+msgid "Pool Resources"
+msgstr "矿池资源"
+
+#: devices/templates/devices/contact.html:27
+msgctxt "UI"
+msgid "Pool News"
+msgstr "矿池新闻"
+
+#: devices/templates/devices/contact.html:32
+msgctxt "UI"
+msgid "Help Center"
+msgstr "帮助中心"
+
+#: devices/templates/devices/contact.html:37
+msgctxt "UI"
+msgid "Contact Support"
+msgstr "联系客服"
+
+#: devices/templates/devices/err_auth.html:6
+msgctxt "UI"
+msgid "Authentication error!"
+msgstr "验证错误！"
+
+#: devices/templates/devices/err_auth.html:8
+msgctxt "UI"
+msgid "This can happen if your device registration has changed or invalidated."
+msgstr "如果您的设备注册已更改或无效，则可能发生这种情况。"
+
+#: devices/templates/devices/err_url.html:6
+msgctxt "UI"
+msgid "Bad URL!"
+msgstr "URL地址错误！"
+
+#: devices/templates/devices/news.html:8
+msgctxt "UI"
+msgid "Sorry, nothing has been found on this URL."
+msgstr "抱歉，在此URL链接上未找到任何内容。"
+
+#: devices/templates/devices/payout_sent.html:7
+msgctxt "UI"
+msgid "Payout <span>not found</span>"
+msgstr "提现 <span>未找到</span>"
+
+#: devices/templates/devices/payout_sent.html:11
+msgctxt "UI"
+msgid "Payout <span>detail</span>"
+msgstr "提现 <span>详情</span>"
+
+#: devices/templates/devices/payout_sent.html:14
+msgctxt "UI"
+msgid "Amount:"
+msgstr "金额："
+
+#: devices/templates/devices/payout_sent.html:15
+msgctxt "UI"
+msgid "Wallet:"
+msgstr "钱包："
+
+#: devices/templates/devices/payout_sent.html:16
+msgctxt "UI"
+msgid "Transaction:"
+msgstr "交易："
+
+#: devices/templates/devices/payout_sent.html:21
+#, python-format
+msgctxt "UI"
+msgid ""
+"You can see all <a href=\"%(url)s\" target=\"_blank\">your payouts here</a>"
+msgstr ""
+"您可以在<a href=\"%(url)s\" target=\"_blank\">此处</a>查看您的所有提现记录"
+
+#: devices/templates/devices/payout_sent.html:24
+msgctxt "UI"
+msgid "&laquo; Previous payout"
+msgstr "&laquo; 之前的提现"
+
+#: devices/templates/devices/payout_sent.html:26
+msgctxt "UI"
+msgid "Next payout &raquo;"
+msgstr "下次提现 &raquo;"
+
+#: devices/templates/devices/reward.html:7
+msgctxt "UI"
+msgid "Reward <span>not found</span>"
+msgstr "收益 <span>未找到</span>"
+
+#: devices/templates/devices/reward.html:11
+#, python-format
+msgctxt "UI"
+msgid "%(currency_name)s <span>Reward Summary</span>"
+msgstr "%(currency_name)s <span>收益总结</span>"
+
+#: devices/templates/devices/reward.html:12
+msgctxt "UI"
+msgid ""
+"Hi miner, congrats on yet another successful day with Slush Pool. Here are "
+"the details about your yesterday’s reward."
+msgstr ""
+"矿工您好，又是您在Slush Pool矿池收获满满的一天。 以下是有关您昨天收益的详细信"
+"息。"
+
+#: devices/templates/devices/reward.html:14
+#: devices/templates/devices/worker_moni.html:14
+msgctxt "UI"
+msgid "Date"
+msgstr "日期"
+
+#: devices/templates/devices/reward.html:20
+msgctxt "UI"
+msgid "Reward"
+msgstr "收益"
+
+#: devices/templates/devices/reward.html:24
+msgctxt "UI"
+msgid ""
+"We have credited the reward to Financial Accounts of your choosing. If you "
+"wish to see a detailed reward breakdown, <a href=\"http://slushpool.com/"
+"mining/rewards?utm_source=sp-mobile-app&utm_medium=UsefulLinks\">visit the "
+"website</a>."
+msgstr ""
+"我们已将收益打到您所选的财务账户中。如您想查看收益详情，请<a href=\"http://"
+"slushpool.com/mining/rewards?utm_source=sp-mobile-app&utm_medium=UsefulLinks"
+"\">看这儿</a>。"
+
+#: devices/templates/devices/reward.html:25
+msgctxt "UI"
+msgid "Keep up the good work!"
+msgstr "撸起袖子加油挖！"
+
+#: devices/templates/devices/worker_moni.html:7
+msgctxt "UI"
+msgid "Monitoring incidents <span>not found</span>"
+msgstr "监控事件<span>未找到</span>"
+
+#: devices/templates/devices/worker_moni.html:12
+msgctxt "UI"
+msgid "Worker Monitoring <span>incidents</span>"
+msgstr "矿工监控 <span>事件</span>"
+
+#: devices/templates/devices/worker_moni.html:15
+#: web/templates/email/monitoring_body.html:9
+msgctxt "UI"
+msgid "Account Hashrate"
+msgstr "账户算力"
+
+#: devices/templates/devices/worker_moni.html:16
+msgctxt "UI"
+msgid "Worker states (absolute & relative)"
+msgstr "矿工状态（绝对&相对）"
+
+#: devices/templates/devices/worker_moni.html:41
+msgctxt "UI"
+msgid "Workers <span>changes</span>"
+msgstr "矿工 <span>变化</span>"
+
+#: devices/templates/devices/worker_moni.html:47
+msgctxt "UI"
+msgid "State"
+msgstr "状态"
+
+#: devices/templates/devices/worker_moni.html:52
+msgctxt "UI"
+msgid "After"
+msgstr "之后"
+
+#: devices/templates/devices/worker_moni.html:53
+msgctxt "UI"
+msgid "Hashrate"
+msgstr "算力"
+
+#: devices/templates/devices/worker_moni.html:54 web/models.py:1272
+msgctxt "UI"
+msgid "Alert limit"
+msgstr "警告限值"
+
+#: devices/templates/devices/worker_moni.html:62
+#, python-format
+msgctxt "UI"
+msgid ""
+"You can see all your <a href=\"%(url)s\" target=\"_blank\">monitoring "
+"reports here</a>"
+msgstr "您可以<a href=\"%(url)s\" target=\"_blank\">这儿e</a>查看您的监控报告"
 
 #: devices/templates/notification/monitoring_subject.txt:2
 #: web/templates/email/monitoring_subject.html:2
@@ -629,631 +1029,745 @@ msgctxt "UI"
 msgid "Workers"
 msgstr "矿工"
 
-#: finance/api/v1/api_actions.py:28
+#: devices/validators.py:30
 msgctxt "UI"
-msgid "Invalid payout channel id."
-msgstr "无效的提现渠道ID。"
+msgid "Label must be a string."
+msgstr "标签中只能用合法字符。"
 
-#: finance/api/v1/api_actions.py:42
+#: devices/validators.py:34
+#, python-format
+msgid "Label must be a string no longer than %s characters."
+msgstr "标签必须长于 %s 个字。"
+
+#: devices/validators.py:37
+msgid "HTML tags are not allowed in device label."
+msgstr "设备标签中不能用HTML标签。"
+
+#: devices/validators.py:51
+msgid "This label is already used."
+msgstr "该标签已在使用。"
+
+#: devices/validators.py:57
+msgid "Platform must be a string."
+msgstr "平台只能用合法字符。"
+
+#: devices/validators.py:68
+msgid ""
+"Platform must start with either \"ios\" or \"android\", followed by a space."
+msgstr "平台必须以“ ios”或“ android”开头，后跟一个空格。"
+
+#: devices/validators.py:75
+#, python-format
+msgctxt "UI"
+msgid "Platform version must be a string no longer than %d characters."
+msgstr "平台版本必须长于%d个字。"
+
+#: devices/validators.py:84
+#, python-format
+msgid ""
+"Firebase notification token must be a string no longer than %d characters."
+msgstr "Firebase消息推送口令必须长于%d个字。"
+
+#: devices/validators.py:97
+#, python-format
+msgid "Device model must be a string no longer than %d characters."
+msgstr "设备型号必须长于%d个字。"
+
+#: devices/validators.py:112
+msgid "App version code must be an integer."
+msgstr "APP版本号须为整数。"
+
+#: devices/validators.py:115
+msgid "Invalid app version code."
+msgstr "无效的APP版本号。"
+
+#: devices/validators.py:121
+#, python-format
+msgid "Language must be a string no longer than %d characters."
+msgstr "语言必须长于%d个字。"
+
+#: devices/validators.py:134
+#, python-format
+msgid "Country must be a string no longer than %d characters."
+msgstr "国家必须长于%d个字。"
+
+#: devices/validators.py:147
+msgid "Dashboard autorefresh setting must be a boolean."
+msgstr "仪表盘自动刷新设置必须是布尔值。"
+
+#: devices/validators.py:153
+#, python-format
+msgid "Token must be a string of %d lowercase ASCII characters or digits."
+msgstr "口令必须是 %d 个小写字符或数字。"
+
+#: finance/api/v1/api_actions.py:31 finance/forms/validators.py:316
+msgctxt "UI"
+msgid "Invalid payout account id!"
+msgstr "无效的提现账户ID!"
+
+#: finance/api/v1/api_actions.py:45
 msgctxt "UI"
 msgid "This verification request has already been processed."
-msgstr "验证请求已正在处理中。"
+msgstr "该验证请求已正在处理中。"
 
-#: finance/api/v1/api_actions.py:84 settings/api/v1/api_actions.py:119
-#: settings/api/v1/api_actions.py:157 settings/api/v1/api_actions.py:189
+#: finance/api/v1/api_actions.py:87 settings/api/v1/api_actions.py:121
+#: settings/api/v1/api_actions.py:163 settings/api/v1/api_actions.py:195
 msgctxt "UI"
 msgid ""
 "Confirmation email has been sent. Please, check your mailbox and follow the "
 "link."
-msgstr "确认邮件已发送。请查看邮箱后使用邮件里的链接。"
+msgstr "确认邮件已发送。请查看收到邮件中的链接。"
 
-#: finance/api/v1/api_actions.py:117
-msgctxt "UI"
-msgid "Payout channel confirmation has been cancelled."
-msgstr "已取消提现渠道确认。"
-
-#: finance/forms/mixins.py:57 settings/form_mixins.py:127
-#: settings/form_mixins.py:176
-msgctxt "UI"
-msgid "Signature is not valid."
-msgstr "签名无效。"
-
-#: finance/forms/mixins.py:74 settings/form_mixins.py:137
-msgctxt "UI"
-msgid "Message is wrong."
-msgstr "信息错误。"
-
-#: finance/forms/mixins.py:78 settings/form_mixins.py:141
-msgctxt "UI"
-msgid "Signature is out of date."
-msgstr "签名过期。"
-
-#: finance/forms/payout_account.py:31 finance/forms/payout_account.py:71
-#: finance/forms/payout_account.py:150 finance/forms/payout_channel.py:44
-#: finance/forms/payout_hold.py:29 finance/forms/payout_hold.py:69
-#: finance/forms/payout_lock.py:35 finance/forms/payout_lock.py:115
-#: finance/forms/payout_request.py:30 finance/forms/payout_split.py:37
-#: finance/forms/wallet.py:38 finance/forms/wallet.py:96
-#: finance/forms/wallet.py:145
+#: finance/forms/payout_account.py:34 finance/forms/payout_account.py:74
+#: finance/forms/payout_account.py:165 finance/forms/payout_channel.py:92
+#: finance/forms/payout_hold.py:28 finance/forms/payout_hold.py:68
+#: finance/forms/payout_lock.py:33 finance/forms/payout_request.py:33
+#: finance/forms/payout_split.py:66 finance/forms/wallet.py:38
+#: finance/forms/wallet.py:81 finance/forms/wallet.py:138 formlib/core.py:397
 msgctxt "UI"
 msgid "You do not have permission to submit this form."
-msgstr "您没有提交此表的权限。"
+msgstr "您没有提交该表的权限。"
 
-#: finance/forms/payout_account.py:120
+#: finance/forms/payout_account.py:132
 msgctxt "UI"
 msgid "Unable to deactivate account with non-zero balance."
 msgstr "不能停用余额为零的账户。"
 
-#: finance/forms/payout_account.py:135
+#: finance/forms/payout_account.py:148
 msgctxt "UI"
 msgid ""
 "This account has non-zero split percentage. Reassign its rewards split first."
-msgstr "此账号的分配百分比非零。请先重新分配收益。"
+msgstr "该账号的分配比例非零。请先重新分配收益。"
 
-#: finance/forms/payout_channel.py:57 user_request/models.py:615
+#: finance/forms/payout_channel.py:66
+msgctxt "UI"
+msgid "Select an existing wallet or create a new one."
+msgstr "选择已有钱包或新建一个钱包。"
+
+#: finance/forms/payout_channel.py:70
+msgctxt "UI"
+msgid "Wallet params are missing."
+msgstr "钱包参数缺失。"
+
+#: finance/forms/payout_channel.py:73
+msgctxt "UI"
+msgid "Wallet name is missing."
+msgstr "钱包名缺失。"
+
+#: finance/forms/payout_channel.py:85
+msgctxt "UI"
+msgid "Settings of an API-driven payout account can not be changed."
+msgstr "用API发起账户的提现设置无法更改。"
+
+#: finance/forms/payout_channel.py:109 user_request/models.py:708
 msgctxt "UI"
 msgid "Payouts are locked."
 msgstr "提现已被锁定。"
 
-#: finance/forms/payout_hold.py:33
+#: finance/forms/payout_hold.py:32
 msgctxt "UI"
 msgid "Payouts are already paused."
 msgstr "提现已暂停。"
 
-#: finance/forms/payout_hold.py:72
+#: finance/forms/payout_hold.py:71
 msgctxt "UI"
 msgid "Payouts are not paused."
 msgstr "提现未暂停。"
 
-#: finance/forms/payout_lock.py:45 finance/forms/payout_split.py:47
+#: finance/forms/payout_lock.py:43
 msgctxt "UI"
 msgid "Payouts are already locked."
 msgstr "提现已被锁定。"
 
-#: finance/forms/payout_lock.py:55
+#: finance/forms/payout_lock.py:53
 #, python-format
 msgctxt "UI"
 msgid ""
 "Payout account \"%(name)s\" does not meet the requirements for payouts lock."
-msgstr "提现账户 \"%(name)s\" 未能达到提现锁的要求。"
+msgstr "提现账户 “%(name)s” 未能达到提现锁的要求。"
 
-#: finance/forms/payout_lock.py:121
+#: finance/forms/payout_split.py:45
 msgctxt "UI"
-msgid "Payouts are not locked."
-msgstr "提现未上锁。"
+msgid "Payouts are locked!"
+msgstr "提现已被锁定!"
 
-#: finance/forms/validators.py:27
+#: finance/forms/payout_split.py:59
 msgctxt "UI"
-msgid "Invalid currency."
-msgstr "币种无效。"
+msgid "Reward split can not be changed for accounts with API-driven payouts."
+msgstr "设置了API提现的账户，无法更改提现分配。"
 
-#: finance/forms/validators.py:40
+#: finance/forms/validators.py:28
 msgctxt "UI"
-msgid "Invalid wallet id."
-msgstr "无效的钱包ID。"
+msgid "Invalid currency!"
+msgstr "币种无效!"
+
+#: finance/forms/validators.py:45
+msgctxt "UI"
+msgid "Invalid wallet id!"
+msgstr "无效的钱包ID!"
 
 #: finance/forms/validators.py:55
 msgctxt "UI"
-msgid "This wallet is not a target of any locked split rule."
-msgstr "钱包地址不在任何一个锁定分配规则中。"
+msgid "The wallet must be active!"
+msgstr "钱包必须处于启用状态！"
 
-#: finance/forms/validators.py:60
+#: finance/forms/validators.py:64
 msgctxt "UI"
-msgid "This type of wallet is not supported for signatures."
-msgstr "这种钱包不支持签名。"
+msgid "Invalid \"is_active\" parameter!"
+msgstr "“is_active” 参数无效!"
 
-#: finance/forms/validators.py:67
+#: finance/forms/validators.py:69
 msgctxt "UI"
-msgid "Wallet name must be a string!"
-msgstr "钱包名必须以字符为格式！"
+msgid "This wallet is already active!"
+msgstr "该钱包已处于启用状态！"
 
-#: finance/forms/validators.py:72 finance/forms/validators.py:234
-#, python-format
+#: finance/forms/validators.py:72
 msgctxt "UI"
-msgid "Name can not be longer than %(length)s characters."
-msgstr "名字不能长于%(length)s个字符。"
+msgid "This wallet has already been deactivated!"
+msgstr "该钱包已被停用！"
 
 #: finance/forms/validators.py:79
 msgctxt "UI"
-msgid "Character \"#\" is not allowed in wallet name."
-msgstr "符号 \"#\" 在钱包名中不可使用。"
+msgid "Wallet name must be a string!"
+msgstr "钱包名中只能用合法字符！"
 
-#: finance/forms/validators.py:96 finance/forms/validators.py:113
-#: finance/forms/validators.py:260 finance/forms/validators.py:279
-#: formlib/validators.py:279
+#: finance/forms/validators.py:84 finance/forms/validators.py:337
+#, python-format
 msgctxt "UI"
-msgid "This name is already used."
-msgstr "此名已占用。"
+msgid "Name can not be longer than %(length)s characters!"
+msgstr "名中不能长于%(length)s个字！"
 
-#: finance/forms/validators.py:126
+#: finance/forms/validators.py:90
 msgctxt "UI"
-msgid "Invalid address format."
-msgstr "无效的地址格式。"
+msgid "Name can not be empty!"
+msgstr "名不可为空！"
 
-#: finance/forms/validators.py:131
+#: finance/forms/validators.py:95
 msgctxt "UI"
-msgid "Blockchain address is not supported for this coin."
-msgstr "此货币不支持区块链地址。"
+msgid "Unsupported characters in wallet name!"
+msgstr "在钱包名中不可使用不支持的符号 ！"
 
-#: finance/forms/validators.py:153 finance/forms/validators.py:185
+#: finance/forms/validators.py:118 finance/forms/validators.py:135
+#: finance/forms/validators.py:363 finance/forms/validators.py:382
 msgctxt "UI"
-msgid "This wallet already exists."
-msgstr "此钱包已存在。"
+msgid "This name is already used!"
+msgstr "该名已被占用！"
 
-#: finance/forms/validators.py:164
+#: finance/forms/validators.py:150
 msgctxt "UI"
-msgid "Invalid xpub format."
-msgstr "无效的xpub格式。"
+msgid "Address missing!"
+msgstr "没填地址！"
 
-#: finance/forms/validators.py:169
+#: finance/forms/validators.py:153
 msgctxt "UI"
-msgid "XPub is not supported for this coin."
-msgstr "此货币不支持XPub。"
+msgid "Invalid address format!"
+msgstr "无效的地址格式！"
 
-#: finance/forms/validators.py:199
+#: finance/forms/validators.py:158
+msgctxt "UI"
+msgid "Blockchain address is not supported for this coin!"
+msgstr "不支持该币种的这种地址！"
+
+#: finance/forms/validators.py:201
+msgctxt "UI"
+msgid "Invalid xpub format!"
+msgstr "无效的xpub（拓展公钥）格式！"
+
+#: finance/forms/validators.py:206
+msgctxt "UI"
+msgid "XPub is not supported for this coin!"
+msgstr "该币种不支持XPub（拓展公钥）！"
+
+#: finance/forms/validators.py:220
+msgctxt "UI"
+msgid "This wallet already exists!"
+msgstr "这个钱包已存在！"
+
+#: finance/forms/validators.py:261
 msgctxt "UI"
 msgid "Invalid params format."
 msgstr "无效的参数格式。"
 
-#: finance/forms/validators.py:206
+#: finance/forms/validators.py:265
 msgctxt "UI"
-msgid "Invalid type."
-msgstr "无效的类型。"
+msgid "Missing \"type\" attribute in wallet params."
+msgstr "钱包参数中缺少“类型”属性。"
 
-#: finance/forms/validators.py:219
+#: finance/forms/validators.py:276
+msgctxt "UI"
+msgid "Xpub wallets are not supported at the moment."
+msgstr "暂不支持XPub（拓展公钥）钱包。"
+
+#: finance/forms/validators.py:280
+msgctxt "UI"
+msgid "Invalid type!"
+msgstr "无效的类型！"
+
+#: finance/forms/validators.py:297
 msgctxt "UI"
 msgid "Invalid payout account id."
 msgstr "无效的提现账户ID。"
 
-#: finance/forms/validators.py:229
+#: finance/forms/validators.py:326
 msgctxt "UI"
-msgid "Invalid payout account name."
-msgstr "无效的提现账户名。"
+msgid "Invalid payout account name!"
+msgstr "无效的提现账户名！"
 
-#: finance/forms/validators.py:241
+#: finance/forms/validators.py:332
 msgctxt "UI"
-msgid "Character \"#\" is not allowed in payout account name."
-msgstr "“#”号不能在提现账户名中使用。"
+msgid "Name cannot be empty!"
+msgstr "名字这项不可为空！"
 
-#: finance/forms/validators.py:293
+#: finance/forms/validators.py:344
 msgctxt "UI"
-msgid "Invalid payout request value."
-msgstr "请求的提现值无效。"
+msgid "Unsupported characters in payout account name!"
+msgstr "在提现账户名中不可使用不支持的符号 ！"
 
-#: finance/forms/validators.py:302
+#: finance/forms/validators.py:396
 msgctxt "UI"
-msgid "Payout has already been requested for this payout account."
-msgstr "已经请求过此提现账户的提现了。"
+msgid "Invalid payout request value!"
+msgstr "请求的提现值无效！"
 
-#: finance/forms/validators.py:313
+#: finance/forms/validators.py:405
+msgctxt "UI"
+msgid "Payout has already been requested for this payout account!"
+msgstr "已请求过对该提现账户的提现！"
+
+#: finance/forms/validators.py:413
+msgctxt "UI"
+msgid "There is no wallet for this payout account!"
+msgstr "该提现账户尚未设置钱包地址！"
+
+#: finance/forms/validators.py:417
+msgctxt "UI"
+msgid "The assigned wallet is not confirmed yet!"
+msgstr "选中的钱包尚未确认！"
+
+#: finance/forms/validators.py:427
 #, python-format
 msgctxt "UI"
-msgid "Account balance must be higher than %(amount)s %(unit)s."
-msgstr "账户余额必须高于%(amount)s %(unit)s。"
+msgid "Account balance must be higher than %(amount)s %(unit)s!"
+msgstr "账户余额必须高于%(amount)s %(unit)s！"
 
-#: finance/forms/validators.py:329
+#: finance/forms/validators.py:443
 msgctxt "UI"
-msgid "There is no wallet for this payout account."
-msgstr "此提现账户未设置钱包地址。"
+msgid "Payout was not requested for this payout account!"
+msgstr "尚未请求过对该提现账户的提现！"
 
-#: finance/forms/validators.py:336
+#: finance/forms/validators.py:460
 msgctxt "UI"
-msgid "Payout was not requested for this payout account."
-msgstr "尚未请求提现此账户。"
+msgid "Invalid split format!"
+msgstr "无效的分配格式！"
 
-#: finance/forms/validators.py:353
+#: finance/forms/validators.py:463
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Name cannot be empty!"
 msgctxt "UI"
-msgid "Invalid split format."
-msgstr "无效的分配格式。"
+msgid "Percentages cannot be negative!"
+msgstr "名字这项不可为空！"
 
-#: finance/forms/validators.py:357
+#: finance/forms/validators.py:468
 msgctxt "UI"
-msgid "Percentages must add up to 100 %."
-msgstr "总百分比须为100%。"
+msgid "No more than 2 fractional digits are allowed in the percentages!"
+msgstr ""
 
-#: finance/forms/validators.py:363
+#: finance/forms/validators.py:474
 msgctxt "UI"
-msgid "Invalid payout account ids."
-msgstr "无效的提现账户ID。"
+msgid "Percentages must add up to 100%!"
+msgstr "加起来的总和须为100%！"
 
-#: finance/forms/validators.py:370
+#: finance/forms/validators.py:480
 msgctxt "UI"
-msgid "Invalid payout accounts."
-msgstr "无效的提现账户。"
-
-#: finance/forms/validators.py:386 finance/forms/validators.py:434
-msgctxt "UI"
-msgid "Invalid threshold format."
-msgstr "无效的阈值格式。"
-
-#: finance/forms/validators.py:402
-#, python-format
-msgctxt "UI"
-msgid "Threshold must be higher than %(minimum)s %(unit)s."
-msgstr "阈值必须高于%(minimum)s %(unit)s。"
-
-#: finance/forms/validators.py:411
-#, python-format
-msgctxt "UI"
-msgid "Threshold must be lower than %(minimum)s %(unit)s."
-msgstr "阈值必须低于%(minimum)s %(unit)s。"
-
-#: finance/forms/validators.py:440
-msgctxt "UI"
-msgid "Invalid payout frequency."
-msgstr "无效的提现频率。"
-
-#: finance/forms/validators.py:444
-msgctxt "UI"
-msgid "Invalid day in period."
-msgstr "周期内的天数无效。"
-
-#: finance/forms/validators.py:452
-#, python-format
-msgctxt "UI"
-msgid "Day of the week must be a number between %(min)s and %(max)s."
-msgstr "单周内天数必须是在%(min)s和%(max)s之间的一个值。"
-
-#: finance/forms/validators.py:462
-#, python-format
-msgctxt "UI"
-msgid "Day of the month must be a number between %(min)s and %(max)s."
-msgstr "单月内天数必须是在%(min)s和%(max)s之间的一个值。"
+msgid "Invalid payout account ids!"
+msgstr "无效的提现账户ID！"
 
 #: finance/forms/validators.py:487
 msgctxt "UI"
-msgid "Invalid trigger format."
-msgstr "无效的触发格式。"
+msgid "Invalid payout accounts!"
+msgstr "无效的提现账户！"
 
-#: finance/forms/validators.py:507
+#: finance/forms/validators.py:499
+msgctxt "UI"
+msgid "Invalid threshold parameters!"
+msgstr "无效的阈值参数！"
+
+#: finance/forms/validators.py:501
+msgctxt "UI"
+msgid "Threshold value is required!"
+msgstr "需填阈值！"
+
+#: finance/forms/validators.py:503
+msgctxt "UI"
+msgid "Invalid threshold value!"
+msgstr "无效的阈值！"
+
+#: finance/forms/validators.py:519
 #, python-format
 msgctxt "UI"
-msgid "Unknown trigger type \"%(type)s\"."
-msgstr "未知的触发类型，“%(type)s”。"
+msgid "Threshold must be higher than %(minimum)s %(unit)s!"
+msgstr "阈值必须高于%(minimum)s %(unit)s！"
 
-#: finance/forms/validators.py:526
+#: finance/forms/validators.py:528
 #, python-format
 msgctxt "UI"
-msgid "Choose a %(coin)s wallet."
-msgstr "选择一个%(coin)s钱包。"
+msgid "Threshold must be lower than %(minimum)s %(unit)s!"
+msgstr "阈值必须低于%(minimum)s %(unit)s！"
+
+#: finance/forms/validators.py:549
+msgctxt "UI"
+msgid "You have to set a frequency!!"
+msgstr "您必须设定频率！！"
+
+#: finance/forms/validators.py:551 finance/forms/validators.py:553
+msgctxt "UI"
+msgid "Invalid frequency format!"
+msgstr "无效的频率格式！"
+
+#: finance/forms/validators.py:559
+msgctxt "UI"
+msgid "Invalid payout frequency!"
+msgstr "无效的提现频率！"
+
+#: finance/forms/validators.py:563
+msgctxt "UI"
+msgid "Invalid day in period!"
+msgstr "周期内的天数无效！"
+
+#: finance/forms/validators.py:571
+#, python-format
+msgctxt "UI"
+msgid "Day of the week must be a number between %(min)s and %(max)s!"
+msgstr "一周内的天数必须是在%(min)s和%(max)s间的一个值！"
+
+#: finance/forms/validators.py:581
+#, python-format
+msgctxt "UI"
+msgid "Day of the month must be a number between %(min)s and %(max)s!"
+msgstr "一个月内的天数必须是在%(min)s和%(max)s间的一个值！"
+
+#: finance/forms/validators.py:606
+msgctxt "UI"
+msgid "Invalid trigger format!"
+msgstr "无效的触发格式！"
+
+#: finance/forms/validators.py:626
+#, python-format
+msgctxt "UI"
+msgid "Unknown trigger type \"%(type)s\"!"
+msgstr "未知的触发类型，“%(type)s”！"
+
+#: finance/forms/validators.py:649
+#, python-format
+msgctxt "UI"
+msgid "Choose a %(coin)s wallet!"
+msgstr "选择%(coin)s钱包！"
 
 #. Translators: type = type of address (P2PKH, P2SH, Sapling etc.)
-#: finance/utils.py:44
+#: finance/utils.py:59
 #, python-format
 msgctxt "UI"
 msgid "%(type)s addresses are not supported."
 msgstr "不支持%(type)s这种类型的地址。"
 
-#: finance/utils.py:57
+#: finance/utils.py:72
 msgctxt "UI"
 msgid "Unable to derive address type."
 msgstr "无法导出地址类型。"
 
 #. Translators: blockchain = Mainnet or Testnet
-#: finance/utils.py:69
+#: finance/utils.py:84
 #, python-format
 msgctxt "UI"
 msgid "Enter a %(blockchain)s address."
-msgstr "输入%(blockchain)s链的地址。"
+msgstr "输入%(blockchain)s地址。"
 
 #. Translators: coin = 'Bitcoin', 'Zcash' etc.
-#: finance/utils.py:82
+#: finance/utils.py:97
 #, python-format
 msgctxt "UI"
 msgid "This is not a valid %(coin)s address."
-msgstr "不是有效的%(coin)s地址。"
+msgstr "该地址不是有效的%(coin)s地址。"
 
-#: finance/utils.py:96
+#: finance/utils.py:111
 #, python-format
 msgctxt "UI"
 msgid "%(coind)s: This is not a valid %(coin)s address."
-msgstr "%(coind)s：不是有效的%(coin)s地址。"
+msgstr "%(coind)s：该地址不是有效的%(coin)s地址。"
 
-#: finance/utils.py:109
+#: finance/utils.py:124
 #, python-format
 msgctxt "UI"
 msgid "Validation failed. %(coind)s is not connected."
 msgstr "验证失败。%(coind)s无法连接。"
 
-#: finance/utils.py:174
+#: finance/utils.py:185
 msgctxt "UI"
 msgid "This is not a valid XPub."
-msgstr "不是有效的XPub。"
+msgstr "该XPub（拓展公钥）无效。"
 
-#: finance/utils.py:184
+#: finance/utils.py:195
 msgctxt "UI"
 msgid "Enter a valid XPub."
-msgstr "请输入有效的XPub。"
+msgstr "请输入有效的XPub（拓展公钥）。"
 
 #. Translators: blockchain = Mainnet or Testnet
-#: finance/utils.py:196
+#: finance/utils.py:207
 #, python-format
 msgctxt "UI"
 msgid "Enter a %(blockchain)s xpub."
-msgstr "请输入%(blockchain)s链的XPub。"
+msgstr "请输入%(blockchain)s的XPub（拓展公钥）。"
 
-#: formlib/core.py:24
+#: formlib/core.py:25
 msgid "Authentication required!"
 msgstr "需要验证！"
 
-#: formlib/core.py:28
+#: formlib/core.py:29
 msgid "Missing captcha data!"
 msgstr "验证码缺失！"
 
-#: formlib/core.py:32
+#: formlib/core.py:33
 msgid "Captcha validation failed."
 msgstr "验证码验证失败。"
 
-#: formlib/core.py:36
+#: formlib/core.py:37
 msgid "Current password required!"
 msgstr "需要当前密码！"
 
-#: formlib/core.py:40
+#: formlib/core.py:41
 msgid "Second factor authentication required!"
 msgstr "需要两步验证！"
 
-#: formlib/core.py:44
+#: formlib/core.py:45
 msgid "OTP token validation failed."
-msgstr "一次性密码验证口令验证失败。"
+msgstr "一次性密码验证OTP口令验证失败。"
 
-#: formlib/core.py:48
+#: formlib/core.py:49
 msgid "U2F authentication failed!"
 msgstr "双重验证U2F失败!"
 
-#: formlib/core.py:52
+#: formlib/core.py:53
 msgid "Password is incorrect!"
 msgstr "密码错误！"
 
-#: formlib/core.py:247
+#: formlib/core.py:82
+msgctxt "UI"
+msgid "You don't have sufficient access permissions to modify the settings."
+msgstr "您没有足够的权限更改设置。"
+
+#: formlib/core.py:289
 msgctxt "UI"
 msgid "Required field!"
 msgstr "必填项！"
 
-#: formlib/core.py:265
+#: formlib/core.py:308
 #, python-format
 msgctxt "UI"
 msgid "Context value \"%s\" is missing."
 msgstr "缺失背景值“%s”。"
 
-#: formlib/core.py:391
-#, python-format
+#: formlib/core.py:479
 msgctxt "UI"
-msgid "Missing initial value %s!"
-msgstr "缺失初始值%s！"
+msgid "Missing initial value for the \"{}\" key!"
+msgstr "\"{}\" 缺失初始值！"
 
-#: formlib/core.py:394
+#: formlib/core.py:482
 msgctxt "UI"
 msgid "Initial values were not up to date!"
 msgstr "初始值未更新！"
 
-#: formlib/validators.py:53
+#: formlib/validators.py:51
 msgctxt "UI"
 msgid "Boolean value is required."
-msgstr "需为布尔值。"
+msgstr "需为布尔值（真或假）。"
 
-#: formlib/validators.py:62 formlib/validators.py:182
+#: formlib/validators.py:60
 msgctxt "UI"
 msgid "Whole number is required."
 msgstr "需为整数值。"
 
-#: formlib/validators.py:71
+#: formlib/validators.py:69
 msgctxt "UI"
 msgid "Number is required."
 msgstr "需为数值。"
 
-#: formlib/validators.py:80
+#: formlib/validators.py:78
 #, python-format
 msgctxt "UI"
 msgid "Max length must be lower than %s."
 msgstr "最大长度不能大于%s。"
 
-#: formlib/validators.py:89
+#: formlib/validators.py:87
 #, python-format
 msgctxt "UI"
 msgid "Max length must be greater than %s."
 msgstr "最大长度不能小于%s。"
 
-#: formlib/validators.py:98
+#: formlib/validators.py:96
 #, python-format
 msgctxt "UI"
 msgid "Max length must be between %(lower)s and %(upper)s."
 msgstr "最大长度需在%(lower)s和%(upper)s之间。"
 
-#: formlib/validators.py:110
+#: formlib/validators.py:108
 #, python-format
 msgctxt "UI"
 msgid "Value must be lower than %s."
 msgstr "值必需小于%s。"
 
-#: formlib/validators.py:119
+#: formlib/validators.py:117
 #, python-format
 msgctxt "UI"
 msgid "Value must be greater than %s."
 msgstr "值必需大于%s。"
 
-#: formlib/validators.py:129
+#: formlib/validators.py:127
 msgctxt "UI"
 msgid "Value is not a number."
 msgstr "不是一个数值。"
 
-#: formlib/validators.py:133
+#: formlib/validators.py:131
 #, python-format
 msgctxt "UI"
 msgid "Value must be between %(lower)s and %(upper)s."
 msgstr "值需在%(lower)s和%(upper)s之间。"
 
-#: formlib/validators.py:145
+#: formlib/validators.py:143
 msgctxt "UI"
 msgid "This value is not allowed."
-msgstr "不允许此值。"
+msgstr "不允许这个值。"
 
-#: formlib/validators.py:154
-msgctxt "UI"
-msgid "Password is incorrect."
-msgstr "密码错误。"
-
-#: formlib/validators.py:185
-#, python-format
-msgctxt "UI"
-msgid "Value must be between %(lower)d and %(upper)d."
-msgstr "值需为%(lower)d和%(upper)d之间。"
-
-#: formlib/validators.py:198
-msgctxt "UI"
-msgid "This is not a valid Bitcoin address."
-msgstr "不是一个有效的比特币地址。"
-
-#: formlib/validators.py:203
-msgctxt "UI"
-msgid "Validation failed. Bitcoind is not connected."
-msgstr "验证失败。Bitcoind未连接。"
-
-#: formlib/validators.py:205
-msgctxt "UI"
-msgid "bitcoind: This is not a valid Bitcoin address."
-msgstr "bitcoind：不是一个有效的比特币地址。"
-
-#: formlib/validators.py:222
-msgctxt "UI"
-msgid "This is not a valid Zcash address."
-msgstr "不是一个有效的Zcash地址。"
-
-#: formlib/validators.py:227
-msgctxt "UI"
-msgid "Validation failed. Zcash is not connected."
-msgstr "验证失败。Zcash未连接。"
-
-#: formlib/validators.py:229
-msgctxt "UI"
-msgid "zcashd: This is not a valid Zcash address."
-msgstr "zcashd：不是一个有效的Zcash地址。"
-
-#: formlib/validators.py:238
+#: formlib/validators.py:152
 msgctxt "UI"
 msgid "Two-factor authentication token is invalid."
 msgstr "两步验证口令无效。"
 
-#: formlib/validators.py:247
+#: formlib/validators.py:161
 msgctxt "UI"
 msgid "TOTP URI is invalid."
 msgstr "TOTP URI地址无效。"
 
-#: formlib/validators.py:257
+#: formlib/validators.py:171
 msgctxt "UI"
 msgid "Email is not valid."
 msgstr "邮箱地址无效。"
 
-#: formlib/validators.py:277
+#: formlib/validators.py:191
 msgctxt "UI"
 msgid "There must always be one main Access Profile!"
 msgstr "主访问配置只能有一个！"
 
-#: formlib/validators.py:293
+#: formlib/validators.py:193
+msgctxt "UI"
+msgid "This name is already used."
+msgstr "该名已被占用。"
+
+#: formlib/validators.py:207
 msgctxt "UI"
 msgid "You can not delete the password of the main Access Profile."
 msgstr "您不能删除主访问配置的密码。"
 
-#: formlib/validators.py:307 formlib/validators.py:326
+#: formlib/validators.py:221 formlib/validators.py:240
 msgctxt "UI"
 msgid "Invalid permissions value."
 msgstr "无效的许可值。"
 
-#: formlib/validators.py:323
+#: formlib/validators.py:237
 msgctxt "UI"
 msgid "You can not change permissions of this Access Profile."
-msgstr "您不能更改此访问配置的权限。"
+msgstr "您不能变更该访问配置的权限。"
 
-#: formlib/validators.py:337
+#: formlib/validators.py:251
 msgctxt "UI"
 msgid "Token must have 16 characters."
-msgstr "口令必须至少有16个字符。"
+msgstr "口令中必须至少有16个字。"
 
-#: formlib/validators.py:339 formlib/validators.py:344
+#: formlib/validators.py:253 formlib/validators.py:258
 msgctxt "UI"
 msgid "Invalid token."
 msgstr "无效的口令。"
 
-#: formlib/validators.py:354
+#: formlib/validators.py:267
 msgctxt "UI"
 msgid "Invalid Access Profile id."
 msgstr "无效的访问配置ID。"
 
-#: formlib/validators.py:368
+#: formlib/validators.py:287
 msgctxt "UI"
 msgid "You can not deactivate your own Access Profile."
 msgstr "您不能停用您自己的访问配置。"
 
-#: formlib/validators.py:372
+#: formlib/validators.py:291
 msgctxt "UI"
 msgid "You can not deactivate the main Access Profile."
 msgstr "您不能停用主访问配置。"
 
-#: formlib/validators.py:382
+#: formlib/validators.py:301
 msgctxt "UI"
 msgid "You can not delete your own Access Profile."
 msgstr "您不能删除您自己的访问配置。"
 
-#: formlib/validators.py:386
+#: formlib/validators.py:305
 msgctxt "UI"
 msgid "You can not delete the main Access Profile."
 msgstr "您不能删除主访问配置。"
 
-#: formlib/validators.py:389
+#: formlib/validators.py:308
 msgctxt "UI"
 msgid "You can not delete staff Access Profile."
 msgstr "您不能删除子访问配置。"
 
-#: mailing/forms/campaigns.py:80
+#: mailing/forms/campaigns.py:78
 msgctxt "UI"
 msgid "Send"
 msgstr "发送"
 
-#: mailing/forms/validators.py:19
+#: mailing/forms/validators.py:17
 msgctxt "UI"
 msgid "Newsletter recipient not found."
-msgstr "实事通讯(Newsletter)接收人未找到。"
+msgstr "实事通讯（Newsletter）收件人未找到。"
 
-#: mailing/forms/validators.py:46
+#: mailing/forms/validators.py:44
 msgctxt "UI"
 msgid "Feedback must be a string no longer than 600 characters."
-msgstr "反馈必须是短于600个字符的字符串。"
+msgstr "反馈不能超过600个字。"
 
-#: mailing/models.py:507
+#: mailing/models.py:505
 msgctxt "UI"
 msgid "I receive newsletters too frequently"
-msgstr "我收到太多的实事通讯(Newsletter)了"
+msgstr "我觉得实事通讯（Newsletter）发送太过于频繁"
 
-#: mailing/models.py:508
+#: mailing/models.py:506
 msgctxt "UI"
 msgid "I do not mind anymore"
 msgstr "我不再挖矿了"
 
-#: mailing/models.py:509
+#: mailing/models.py:507
 msgctxt "UI"
 msgid "I have joined another pool"
 msgstr "我换了一家矿池"
 
-#: mailing/models.py:510
+#: mailing/models.py:508
 msgctxt "UI"
 msgid "The newsletter content is of no value to me"
-msgstr "实事通讯(Newsletter)的内容对我没有用"
+msgstr "实事通讯（Newsletter）的内容对我没有用"
 
-#: mailing/models.py:511
+#: mailing/models.py:509
 msgctxt "UI"
 msgid "Other reason"
 msgstr "其他原因"
 
-#: mailing/models.py:527
+#: mailing/models.py:525
 msgctxt "UI"
 msgid "Not provided"
-msgstr "未列出"
+msgstr "未列出的原因"
 
 #: mailing/templates/mailing/emails/unsubscribe_confirmation.html:9
 msgctxt "UI"
 msgid ""
 "From the bottom of our heart we would like to confirm that we had "
 "unsubscribed you from our newsletter."
-msgstr "我们可以向您确认您已经取消了我们时事通讯的订阅。"
+msgstr "我们诚挚确认，您已经取消订阅时事通讯。"
 
 #: mailing/templates/mailing/emails/unsubscribe_confirmation.html:11
 msgctxt "UI"
@@ -1262,120 +1776,117 @@ msgid ""
 "settings."
 msgstr "如果您改变主意了，可以随时去账户设置启用订阅。"
 
-#: maintenance/funcs/payouts_funcs.py:290
-msgctxt "UI"
-msgid "Payout sent"
-msgstr "提现历史"
-
-#: mining/models.py:377
+#: mining/models.py:389
 msgctxt "UI"
 msgid "-- not voted (proportional split) --"
-msgstr "-- 未投票的(按比例) --"
-
-#: mining/models.py:378
-msgctxt "UI"
-msgid ""
-"Users that don't have any preference = their hash rate is split among all "
-"block size proposals proportionally."
-msgstr "没有设置任何偏好的用户，他们的算力在所有区块大小提议中按比例分配。"
-
-#: mining/models.py:379
-msgctxt "UI"
-msgid "Not voted"
-msgstr "未投票"
-
-#: mining/models.py:384
-msgctxt "UI"
-msgid "Current rules / Bitcoin Core"
-msgstr "当前规定/Bitcoin Core"
-
-#: mining/models.py:385
-msgctxt "UI"
-msgid ""
-"Users that prefer Current rules given by Bitcoin core = their hash rate is "
-"used for mining Bitcoin Core blocks."
-msgstr "偏好Bitcoin core的当前规则的用户，他们的算力用于挖Bitcoin Core区块。"
-
-#: mining/models.py:386
-msgctxt "UI"
-msgid "Bitcoin Core"
-msgstr "比特币核"
-
-#: mining/models.py:391
-msgctxt "UI"
-msgid "I don't care, pool operator decides"
-msgstr "I don't care，矿池人操作人员决定"
+msgstr "-- 未投票的（按比例分配） --"
 
 #: mining/models.py:392
 msgctxt "UI"
 msgid ""
+"Users that don't have any preference = their hashrate is split among all "
+"block size proposals proportionally."
+msgstr "如用户没有设置任何偏好，他们的算力在所有区块大小提议中按比例分配。"
+
+#: mining/models.py:395
+msgctxt "UI"
+msgid "Not voted"
+msgstr "未投票"
+
+#: mining/models.py:400
+msgctxt "UI"
+msgid "Current rules / Bitcoin Core"
+msgstr "当前规则 / Bitcoin Core"
+
+#: mining/models.py:403
+msgctxt "UI"
+msgid ""
+"Users that prefer Current rules given by Bitcoin core = their hashrate is "
+"used for mining Bitcoin Core blocks."
+msgstr "偏好Bitcoin core的当前规则的用户，他们的算力用于挖Bitcoin Core区块。"
+
+#: mining/models.py:406
+msgctxt "UI"
+msgid "Bitcoin Core"
+msgstr "Bitcoin Core （比特币核心）"
+
+#: mining/models.py:411
+msgctxt "UI"
+msgid "I don't care, pool operator decides"
+msgstr "我觉得无所谓，让矿池决定吧"
+
+#: mining/models.py:414
+msgctxt "UI"
+msgid ""
 "Users that set I don't care option = pool operator decides which block size "
 "is closest to his heart."
-msgstr "设置了I don't care选项的用户=矿池操作人员决定。"
+msgstr "觉得无所谓的用户，他们的区块大小则由矿池来决定。"
 
-#: mining/models.py:393
+#: mining/models.py:417
 msgctxt "UI"
 msgid "Pool decides"
-msgstr "矿池决定"
+msgstr "由矿池来决定"
 
-#: mining/validators.py:16
+#: mining/validators.py:15
 msgctxt "UI"
 msgid ""
 "Only letters, numbers and the following characters are accepted: _ @ + - :"
 msgstr "只有字母，数字以及这些字符可以被使用：_ @ + - :"
 
-#: news/models.py:49
+#: news/api/v1/views.py:105
+#, python-format
+msgctxt "UI"
+msgid "News article not found: \"%s\""
+msgstr "未发现新闻文章 : “%s”"
+
+#: news/models.py:46
 msgctxt "UI"
 msgid "Feature"
 msgstr "特性"
 
-#: news/models.py:50
+#: news/models.py:47
 msgctxt "UI"
 msgid "Event"
 msgstr "事件"
 
-#: news/models.py:51
+#: news/models.py:48
 msgctxt "UI"
 msgid "Service Update"
 msgstr "服务更新"
 
-#: pool_u2f/utils.py:49 pool_u2f/utils.py:94
+#: pool_u2f/utils.py:48 pool_u2f/utils.py:93
 msgctxt "UI"
 msgid "Challenge was not found!"
 msgstr "挑战未找到！"
 
-#: project/settings.py:453
-msgid "Simplified Chinese"
-msgstr "简体中文"
-
-#: project/settings.py:454
+#: project/settings.py:513
 msgid "Spanish"
 msgstr "西班牙语"
 
-#: project/settings.py:455
+#: project/settings.py:514
 msgid "Russian"
 msgstr "俄语"
 
-#: project/settings.py:456
-msgid "French"
-msgstr "法语"
-
-#: project/settings.py:457
+#: project/settings.py:515
 msgid "Persian"
 msgstr "波斯语"
 
-#: reports/views.py:22
+#: project/settings.py:516
+msgid "Simplified Chinese"
+msgstr "简体中文"
+
+#: reports/views.py:20
 msgctxt "UI"
 msgid "Missing \"types\" parameter!"
 msgstr "缺失“类型”参数！"
 
-#: reports/views.py:26
+#: reports/views.py:25
 #, python-format
 msgctxt "UI"
 msgid "Invalid query type. Choices are: %s."
-msgstr "无效的查询类型。有这些选择：%s。"
+msgstr "无效的查询类型。有这些选项：%s。"
 
-#: reports/views.py:36
+#: reports/views.py:35
 msgctxt "UI"
 msgid "Missing \"output format\" parameter!"
 msgstr "缺失“输出格式”参数！"
@@ -1384,19 +1895,19 @@ msgstr "缺失“输出格式”参数！"
 #, python-format
 msgctxt "UI"
 msgid "Invalid output format. Choices are: %s."
-msgstr "无效的输出格式。有这些选择%s。"
+msgstr "无效的输出格式。有这些选项：%s。"
 
-#: reports/views.py:53
+#: reports/views.py:54
 msgctxt "UI"
 msgid "Invalid lower bound. \"From\" must be >= 2016-01-01!"
-msgstr "下限无效。 \"从\"必须是>= 2016-01-01起!"
+msgstr "下限无效。 \"从\"须在2016-01-01之后!"
 
-#: reports/views.py:59
+#: reports/views.py:61
 msgctxt "UI"
 msgid "Missing date range (from, to)!"
 msgstr "缺失日期范围（从，到）！"
 
-#: reports/views.py:61
+#: reports/views.py:63
 msgctxt "UI"
 msgid "Invalid date range!"
 msgstr "无效数据范围！"
@@ -1436,200 +1947,171 @@ msgctxt "UI"
 msgid "Your Zcash payout address has been locked."
 msgstr "您的Zcash提现地址已被锁定。"
 
-#: settings/api/v1/api_actions.py:111 settings/api/v1/api_actions.py:131
+#: settings/api/v1/api_actions.py:111 settings/api/v1/api_actions.py:134
 msgctxt "UI"
 msgid "No pending email."
-msgstr "没有等待中的邮件。"
+msgstr "没有正在处理中的邮件。"
 
-#: settings/api/v1/api_actions.py:138
+#: settings/api/v1/api_actions.py:144
 msgctxt "UI"
 msgid "Email change request has been successfully canceled."
-msgstr "更改邮箱地址的请求已成功取消。"
+msgstr "已成功取消变更邮箱地址的请求。"
 
-#: settings/api/v1/api_actions.py:149 settings/api/v1/api_actions.py:181
+#: settings/api/v1/api_actions.py:155 settings/api/v1/api_actions.py:187
 msgctxt "UI"
 msgid "No pending wallet."
-msgstr "没有等待中的钱包。"
+msgstr "没有正在处理中的钱包。"
 
-#: settings/api/v1/api_actions.py:173
+#: settings/api/v1/api_actions.py:179
 msgctxt "UI"
 msgid "Wallet change request has been successfully canceled."
-msgstr "更改邮箱地址的请求已成功取消。"
+msgstr "已成功取消钱包地址变更请求。"
 
-#: settings/api/v1/api_actions.py:204
+#: settings/api/v1/api_actions.py:210
 msgctxt "UI"
 msgid "Zcash wallet change request has been successfully cancelled."
-msgstr "已成功取消Zcash钱包更改请求。"
+msgstr "已成功取消Zcash钱包变更请求。"
 
-#: settings/api/v1/api_actions.py:220
+#: settings/api/v1/api_actions.py:226
 #, python-format
 msgctxt "UI"
 msgid "A notification email about deleting your account has been sent to %s."
 msgstr "关于删除您的账户的通知邮件已被发送到%s。"
 
-#: settings/email.py:36
+#: settings/forms/account_settings_form.py:74
 msgctxt "UI"
-msgid "Delete account confirmation"
-msgstr "删除账户的确认"
+msgid "Access to email change denied."
+msgstr "拒绝变更邮箱地址。"
 
-#: settings/forms/access_profile_forms.py:48
-#: settings/forms/access_profile_forms.py:122
-#: settings/forms/access_profile_forms.py:211
+#: settings/forms/account_settings_form.py:85
+msgctxt "UI"
+msgid "There already is a request to change the email!"
+msgstr "已申请过变更邮箱地址了！"
+
+#: settings/forms/common.py:26
 msgctxt "UI"
 msgid "Access to access profiles denied."
 msgstr "访问配置拒绝访问。"
 
-#: settings/forms/btc_payouts_form.py:48 settings/forms/btc_payouts_form.py:131
-#: settings/forms/zec_payouts_form.py:48 settings/forms/zec_payouts_form.py:130
-msgctxt "UI"
-msgid "You can not change a locked wallet."
-msgstr "您不能更改一个已被锁定的钱包。"
-
-#: settings/forms/btc_payouts_form.py:51 settings/forms/btc_payouts_form.py:138
-#: settings/forms/zec_payouts_form.py:51 settings/forms/zec_payouts_form.py:137
-msgctxt "UI"
-msgid "New wallet is already set."
-msgstr "新钱包已设置。"
-
-#: settings/forms/btc_payouts_form.py:124
-#: settings/forms/zec_payouts_form.py:123
-msgctxt "UI"
-msgid "No pending wallet to confirm."
-msgstr "没有等待确认中的钱包。"
-
-#: settings/forms/email_settings_form.py:27
-msgctxt "UI"
-msgid "Access to e-mail change denied."
-msgstr "拒绝更改邮箱地址。"
-
-#: settings/forms/email_settings_form.py:31
-msgctxt "UI"
-msgid "There already is a request to change the e-mail!"
-msgstr "有两种方式可以要求更改邮箱地址！"
-
-#. Translators: enabled coins selection - user cannot disable all coins
-#: settings/forms/enabled_coins_settings_form.py:47
+#: settings/forms/enabled_coins_settings_form.py:45
 msgctxt "UI"
 msgid "At least one coin must be enabled!"
-msgstr "至少要启用一个币！"
+msgstr "至少要启用一种币！"
 
-#: settings/forms/otp_setting_forms.py:51
+#: settings/forms/otp_setting_forms.py:40
 msgctxt "UI"
 msgid "OTP has been enabled."
-msgstr "一次性密码验证开启。"
+msgstr "一次性密码验证OTP已开启。"
 
-#: settings/forms/otp_setting_forms.py:71
+#: settings/forms/otp_setting_forms.py:61
 msgctxt "UI"
 msgid "Two-factor authentication is already configured"
 msgstr "两步验证已配置"
 
-#: settings/forms/otp_setting_forms.py:76
+#: settings/forms/otp_setting_forms.py:70
 msgctxt "UI"
 msgid ""
 "2FA token is invalid. Please, re-scan the QR code (new one has been "
 "generated)."
-msgstr "双重认证口令无效。请重新扫描二维码（已生成一个新的二维码）。"
+msgstr "双重认证2FA口令无效。请重新扫描二维码（已生成一个新的二维码）。"
 
-#: settings/forms/otp_setting_forms.py:120
-#: settings/forms/otp_setting_forms.py:171
+#: settings/forms/otp_setting_forms.py:108
 msgctxt "UI"
 msgid "OTP has been disabled."
-msgstr "一次性密码验证已关闭。"
+msgstr "一次性密码验证OTP已关闭。"
 
-#: settings/forms/otp_setting_forms.py:124
-#: settings/forms/otp_setting_forms.py:162
+#: settings/forms/otp_setting_forms.py:112
 msgctxt "UI"
 msgid "User doesn't have OTP."
-msgstr "用户没有一次性密码验证。"
+msgstr "用户未设置一次性密码验证OTP。"
 
-#: settings/forms/password_settings_form.py:39
+#: settings/forms/password_settings_form.py:34
 msgctxt "UI"
 msgid "Password change is not allowed."
-msgstr "不可更改密码。"
+msgstr "不可变更密码。"
 
-#: settings/forms/password_settings_form.py:65
+#: settings/forms/password_settings_form.py:85
 msgctxt "UI"
 msgid "Passwords are different."
 msgstr "密码不匹配。"
 
-#: user_request/api/v1/views.py:40
+#: user_request/api/v1/views.py:39
 msgctxt "UI"
 msgid "Second factor authentication missing."
 msgstr "缺少两步验证。"
 
-#: user_request/api/v1/views.py:79
+#: user_request/api/v1/views.py:78
 msgctxt "UI"
-msgid "User request"
-msgstr "用户请求"
+msgid "User request not found!"
+msgstr "用户请求未找到！"
 
-#: user_request/api/v1/views.py:83
+#: user_request/api/v1/views.py:82
 msgctxt "UI"
 msgid "This request belongs to a different user!"
-msgstr "这个请求属于其他用户！"
+msgstr "该请求是其他用户的！"
 
-#: user_request/api/v1/views.py:90
+#: user_request/api/v1/views.py:89
 msgctxt "UI"
 msgid "Supplied user request is not active!"
-msgstr "提供的用户请求不处于活跃状态！"
+msgstr "提供的用户请求不处于启用状态！"
 
-#: user_request/models.py:288
+#: user_request/models.py:322
 msgctxt "UI"
 msgid ""
-"The request associated with this confirmation link is no longer active."
-"<br>It has probably been confirmed or cancelled before."
-msgstr "和确认连接相关的请求已失效。<br>它可能在之前已经被确认或取消了。"
+"The request associated with this confirmation link is no longer active. It "
+"has probably been confirmed or canceled before."
+msgstr "和这个确认连接相关的请求已失效。它可能已被确认或取消了。"
 
-#: user_request/models.py:362
+#: user_request/models.py:415
+msgctxt "UI"
+msgid "This request has expired."
+msgstr "该请求已过期。"
+
+#: user_request/models.py:461
 msgctxt "UI"
 msgid "Wallet has been changed."
-msgstr "钱包已更改。"
+msgstr "钱包已变更。"
 
-#: user_request/models.py:377
+#: user_request/models.py:475
 msgctxt "UI"
 msgid "Wallet change request has been cancelled."
-msgstr "更改钱包的请求已被取消。"
+msgstr "已取消钱包变更请求。"
 
-#: user_request/models.py:406
-msgctxt "UI"
-msgid "Zcash wallet has been changed."
-msgstr "Zcash钱包已更改。"
-
-#: user_request/models.py:421
-msgctxt "UI"
-msgid "Zcash wallet change request has been cancelled."
-msgstr "更改钱包地址的请求已被取消。"
-
-#: user_request/models.py:447
+#: user_request/models.py:531
 msgctxt "UI"
 msgid "Your e-mail has been changed."
-msgstr "您的邮箱已更改成功。"
+msgstr "已成功变更您的邮箱地址。"
 
-#: user_request/models.py:462
+#: user_request/models.py:545
 msgctxt "UI"
-msgid "E-mail change request has been cancelled."
-msgstr "更改邮箱地址的请求已被取消。"
+msgid "Email change request has been cancelled."
+msgstr "已取消邮箱地址变更请求。"
 
-#: user_request/models.py:559
+#: user_request/models.py:644
 msgctxt "UI"
 msgid "Account deletion has been cancelled."
 msgstr "账户删除申请已取消。"
 
-#: user_request/models.py:595
+#: user_request/models.py:686
 msgctxt "UI"
 msgid "Payout channel not found."
 msgstr "未找到提现渠道。"
 
-#: user_request/models.py:646
+#: user_request/models.py:738
 msgctxt "UI"
-msgid "Payout channel has been verified."
-msgstr "提现渠道已认证。"
+msgid "Payout settings have been verified."
+msgstr "提现设置已验证。"
 
-#: user_request/models.py:671
+#: user_request/models.py:763
 msgctxt "UI"
-msgid "Payout channel verification has been cancelled."
-msgstr "提现渠道验证已取消。"
+msgid ""
+"Payout channel verification request can not be canceled. To return to the "
+"previous state create a new payout channel with the same values."
+msgstr ""
+"不可取消对提现渠道的验证请求。您可以返回之前的状态，使用同样值重新创建提现渠"
+"道。"
 
-#: user_request/views.py:36
+#: user_request/views.py:38
 msgctxt "UI"
 msgid ""
 "The confirmation link used is not associated with this account.<br><br> "
@@ -1639,129 +2121,115 @@ msgstr ""
 "确认连接和这个账号无关。<br><br>请用相关的用户名（在确认邮件内有）登陆并再试"
 "一次。"
 
-#: web/api/v1/appeals.py:80
+#: user_request/views.py:52
+msgctxt "UI"
+msgid "You don't have sufficient permissions to confirm user requests."
+msgstr "您没有足够的权限确认用户请求。"
+
+#: web/api/v1/appeals.py:44
+msgctxt "UI"
+msgid "Your payouts have been temporarily blocked by the pool operator"
+msgstr "您的提现已被矿池暂时锁定"
+
+#: web/api/v1/appeals.py:54
+msgctxt "UI"
+msgid "Payouts blocked by sysadmin"
+msgstr "系统管理员锁定了提现"
+
+#: web/api/v1/appeals.py:59
+msgctxt "UI"
+msgid "Contact support"
+msgstr "联系客服"
+
+#: web/api/v1/appeals.py:68
+msgctxt "UI"
+msgid "Your payouts have been paused on your request."
+msgstr "已按您的请求暂停了您的提现。"
+
+#: web/api/v1/appeals.py:73
+msgctxt "UI"
+msgid "Payouts blocked by user"
+msgstr "用户锁定了提现"
+
+#: web/api/v1/appeals.py:78
+msgctxt "UI"
+msgid "Resume payouts"
+msgstr "恢复提现"
+
+#: web/api/v1/appeals.py:105
+msgctxt "UI"
+msgid "Pending email change"
+msgstr "邮箱变更正在处理中"
+
+#: web/api/v1/appeals.py:108
 #, python-format
 msgctxt "UI"
 msgid ""
-"Your %(coin)s payouts have been temporarily blocked by the pool operator "
-"(%(reason)s)."
-msgstr "您的%(coin)s提现已暂被矿池运管锁定 (原因：%(reason)s)。"
+"You have a pending request to change your email address to: %(email_address)s"
+msgstr "您有一个正在处理中的请求：变更邮箱地址为：%(email_address)s"
 
-#: web/api/v1/appeals.py:85
+#: web/api/v1/appeals.py:114
 msgctxt "UI"
-msgid "Please, contact our support for further details."
-msgstr "请联系我们的客服获取更多详情。"
-
-#: web/api/v1/appeals.py:89
-#, python-format
-msgctxt "UI"
-msgid "Blocked %(coin)s Payouts"
-msgstr "已锁定的%(coin)s 提现"
-
-#: web/api/v1/appeals.py:135
-#, python-format
-msgctxt "UI"
-msgid "Pending %(coin)s Wallet"
-msgstr "等待中的%(coin)s钱包"
-
-#: web/api/v1/appeals.py:145
-msgctxt "UI"
-msgid "Resend Confirmation"
-msgstr "重发确认信息"
-
-#: web/api/v1/appeals.py:150
-msgctxt "UI"
-msgid "Cancel the Request"
+msgid "Cancel request"
 msgstr "取消请求"
 
-#: web/api/v1/appeals.py:155
+#: web/api/v1/appeals.py:119
 msgctxt "UI"
-msgid "Change my Password"
-msgstr "更改我的密码"
+msgid "Resend confirmation"
+msgstr "重新发送确认"
 
-#: web/api/v1/appeals.py:163
-msgctxt "UI"
-msgid ""
-"Please setup your payout address. Your balance is over your payout threshold."
-msgstr "请您设置您的提现地址。您的余额已超过您的提现阈值。"
-
-#: web/api/v1/appeals.py:166
-#, python-brace-format
-msgctxt "UI"
-msgid "Your balance is {balance} and threshold is {threshold}."
-msgstr "您的余额为{balance}您的阈值为{threshold}。"
-
-#: web/api/v1/appeals.py:178
-msgctxt "UI"
-msgid "Account Settings"
-msgstr "账户设置"
-
-#: web/api/v1/appeals.py:221
-#, python-brace-format
-msgctxt "UI"
-msgid "Unable to send {coin} payout"
-msgstr "无法发送{coin}的提现"
-
-#: web/api/v1/appeals.py:278
+#: web/api/v1/appeals.py:167
 msgctxt "UI"
 msgid "Explore"
-msgstr "探索"
+msgstr "了解"
 
-#: web/api/v1/appeals.py:301
+#: web/api/v1/appeals.py:191
 msgctxt "UI"
-msgid "Dismiss this message"
-msgstr "无视此消息"
+msgid "Dismiss this Message"
+msgstr "忽略该消息"
 
-#: web/api/v1/appeals.py:332
+#: web/api/v1/views.py:356
 msgctxt "UI"
-msgid ""
-"Your opinion on block size matters to the whole community. It is up to you "
-"to make a choice. Please, select one of the options below."
-msgstr "您对区块大小的意见对整个挖矿社区都很重要。请您从下面的选项中选一个吧。"
+msgid "Invalid appeal model."
+msgstr "无效的请求模型。"
 
-#: web/api/v1/appeals.py:337
-#, python-format
+#: web/api/v1/views.py:363
 msgctxt "UI"
-msgid ""
-"If you change your mind later on, you can make a new choice in <a href="
-"\"%(settings)s\">settings</a>. Check out the latest <a href=\"%(stats)s"
-"\">results</a>."
-msgstr ""
-"如果您之后改变主意了，您可以在<a href=\"%(settings)s\">设置</a>里重新选择。查"
-"看最新<a href=\"%(stats)s\">结果</a>。"
+msgid "Invalid appeal ID."
+msgstr "无效的请求ID。"
 
-#: web/api/v1/appeals.py:348
+#: web/api/v1/views.py:393
 msgctxt "UI"
-msgid "Bitcoin Proposal Preference"
-msgstr "比特币提案参考"
+msgid "The current access profile has already seen the v4 welcome dialogue!"
+msgstr "当前的访问配置已见过V4欢迎对话！"
 
-#: web/api/v1/views.py:1554
+#: web/api/v1/views.py:768
 msgctxt "UI"
 msgid ""
 "Only alphabetical characters, numbers and underscore are allowed in username!"
-msgstr "用户名中只允许有字母字符，数字和下划线！"
+msgstr "用户名中只允许字母字符，数字和下划线！"
 
-#: web/api/v1/views.py:1559 web/api/v1/views.py:1934
+#: web/api/v1/views.py:774 web/api/v1/views.py:1206
 msgctxt "UI"
 msgid "Invalid email format!"
-msgstr "无效邮箱格式！"
+msgstr "无效的邮箱格式！"
 
-#: web/api/v1/views.py:1564
+#: web/api/v1/views.py:779
 msgctxt "UI"
 msgid "Password must have at Least 5 characters!"
-msgstr "密码必须长于5个字符！"
+msgstr "密码必须长于5个字！"
 
-#: web/api/v1/views.py:1630 web/api/v1/views.py:1647 web/api/v1/views.py:1704
+#: web/api/v1/views.py:853 web/api/v1/views.py:872 web/api/v1/views.py:952
 msgctxt "UI"
 msgid "Login forbidden"
 msgstr "禁止登陆"
 
-#: web/api/v1/views.py:1687
+#: web/api/v1/views.py:927
 msgctxt "UI"
 msgid "Invalid credentials."
 msgstr "无效的凭证。"
 
-#: web/api/v1/views.py:1700
+#: web/api/v1/views.py:945
 msgctxt "UI"
 msgid ""
 "Please enter a correct username (not an e-mail address) and password. Note "
@@ -1770,74 +2238,64 @@ msgstr ""
 "请输入正确的用户名（不是邮箱地址）和密码。请注意这两个位置都是要区分大小写"
 "的。"
 
-#: web/api/v1/views.py:1783 web/api/v1/views.py:1832
+#: web/api/v1/views.py:1043 web/api/v1/views.py:1098
 msgctxt "UI"
 msgid "Bad username/id."
 msgstr "错误的用户名/ID。"
 
-#: web/api/v1/views.py:1785 web/api/v1/views.py:1834
+#: web/api/v1/views.py:1046 web/api/v1/views.py:1101
 msgctxt "UI"
 msgid "This user is not active yet/anymore."
-msgstr "这个用户尚未活跃/已不再活跃。"
+msgstr "这个用户尚未启用/已不处于启用状态。"
 
-#: web/api/v1/views.py:1901
+#: web/api/v1/views.py:1172
 msgctxt "UI"
 msgid "No pending request found!"
-msgstr "未发现等待中的请求!"
+msgstr "未发现正在处理中的请求!"
 
-#: web/api/v1/views.py:2036
+#: web/api/v1/views.py:1295
 msgctxt "UI"
 msgid "Invalid token!"
 msgstr "无效的口令！"
 
-#: web/api/v1/views.py:2041
+#: web/api/v1/views.py:1302
 msgctxt "UI"
 msgid "Password must have at least 5 characters!"
-msgstr "密码必须至少有5个字符！"
+msgstr "密码中必须至少有5个字！"
 
-#: web/models.py:134
-msgctxt "UI"
-msgid "Wallet change confirmation"
-msgstr "更改钱包的确认"
-
-#: web/models.py:173
-msgctxt "UI"
-msgid "Email change confirmation"
-msgstr "更改邮箱地址的确认"
-
-#: web/models.py:375
+#: web/models.py:311
 msgctxt "UI"
 msgid ""
 "Only alphabetical characters, numbers, underscore and dash are allowed in "
 "name!"
-msgstr "用户名中只允许有字母字符，数字，下划线和连接号！"
+msgstr "用户名中只允许字母字符，数字，下划线和连接符！"
 
-#: web/models.py:388
+#: web/models.py:324
 msgctxt "UI"
 msgid "Password must be at least 5 characters long!"
-msgstr "密码必须至少包含5个字符！"
+msgstr "密码中必须至少包含5个字！"
 
-#: web/models.py:515
+#: web/models.py:453
 msgctxt "UI, Transaction state"
 msgid "New"
 msgstr "新的"
 
-#: web/models.py:516
+#: web/models.py:454
 msgctxt "UI, Transaction state"
 msgid "Processing"
 msgstr "正在处理"
 
-#: web/models.py:517
+#: web/models.py:455
 msgctxt "UI, Transaction state"
 msgid "Failed"
 msgstr "失败的"
 
-#: web/models.py:518
+#: web/models.py:456
 msgctxt "UI, Transaction state"
 msgid "Sent"
 msgstr "已发送"
 
-#: web/models.py:747
+#: web/models.py:682
 msgctxt "UI"
 msgid ""
 "Thank you for your valuable contribution to our pool. As a VIP, you have "
@@ -1845,707 +2303,748 @@ msgid ""
 msgstr ""
 "感谢您对我池的宝贵贡献。作为尊贵的VIP客户，您可以使用矿池的高级特性和服务。"
 
-#: web/models.py:820
+#: web/models.py:755
 msgctxt "UI"
 msgid "Monday"
 msgstr "星期一"
 
-#: web/models.py:821
+#: web/models.py:756
 msgctxt "UI"
 msgid "Tuesday"
 msgstr "星期二"
 
-#: web/models.py:822
+#: web/models.py:757
 msgctxt "UI"
 msgid "Wednesday"
 msgstr "星期三"
 
-#: web/models.py:823
+#: web/models.py:758
 msgctxt "UI"
 msgid "Thursday"
 msgstr "星期四"
 
-#: web/models.py:824
+#: web/models.py:759
 msgctxt "UI"
 msgid "Friday"
 msgstr "星期五"
 
-#: web/models.py:825
+#: web/models.py:760
 msgctxt "UI"
 msgid "Saturday"
 msgstr "星期六"
 
-#: web/models.py:826
+#: web/models.py:761
 msgctxt "UI"
 msgid "Sunday"
 msgstr "星期日"
 
-#: web/models.py:861 web/models.py:923
+#: web/models.py:796 web/models.py:858
 #, python-format
 msgctxt "UI"
 msgid "Wallet: <b>%(name)s</b>"
 msgstr "钱包地址： <b>%(name)s</b>"
 
-#: web/models.py:883
+#: web/models.py:818
 #, python-format
 msgctxt "UI"
 msgid "Threshold: <b>%(threshold)s %(unit)s</b>"
 msgstr "阈值： <b>%(threshold)s %(unit)s</b>"
 
-#: web/models.py:894
+#: web/models.py:829
 msgctxt "UI"
 msgid "Triggered daily"
 msgstr "每天触发"
 
-#: web/models.py:900
+#: web/models.py:835
 #, python-format
 msgctxt "UI"
 msgid "Triggered weekly on: %(weekday)s"
 msgstr "每周触发：%(weekday)s"
 
-#: web/models.py:901
+#: web/models.py:836
 msgctxt "UI"
 msgid "unknown day"
 msgstr "未知日期"
 
-#: web/models.py:908
+#: web/models.py:843
 #, python-format
 msgctxt "UI"
 msgid "Triggered monthly on the %(number)s. day"
 msgstr "每月的%(number)s号触发"
 
-#: web/models.py:920
+#: web/models.py:855
 #, python-format
 msgctxt "UI"
 msgid "Payout account: <b>%(name)s</b>"
 msgstr "提现账户： <b>%(name)s</b>"
 
 #. Translators: Example: "Bitcoin enabled" / "Monitoring disabled"
-#: web/models.py:940
+#: web/models.py:875
 #, python-format
 msgctxt "UI"
 msgid "<b>%(key)s</b> disabled"
 msgstr "<b>%(key)s</b> 已停用"
 
 #. Translators: Example: "Bitcoin enabled" / "Monitoring disabled"
-#: web/models.py:944
+#: web/models.py:879
 #, python-format
 msgctxt "UI"
 msgid "<b>%(key)s</b> enabled"
 msgstr "<b>%(key)s</b> 已启用"
 
-#: web/models.py:948 web/models.py:960
+#: web/models.py:883 web/models.py:895
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
-msgstr "<b>%(key)s</b> 更改从 <b>%(old)s</b> 到 <b>%(new)s</b>"
+msgstr "<b>%(key)s</b>从<b>%(old)s</b> 变更为<b>%(new)s</b>"
 
-#: web/models.py:953
+#: web/models.py:888
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed to <b>%(new)s</b>"
-msgstr "<b>%(key)s</b> 更改到 <b>%(new)s</b>"
+msgstr "<b>%(key)s</b> 变更为 <b>%(new)s</b>"
 
-#: web/models.py:968 web/models.py:988
+#: web/models.py:903 web/models.py:923
 #, python-format
 msgctxt "UI, time"
 msgid "<b>%(key)s</b> changed from <b>%(old)s</b> to <b>%(new)s</b>"
-msgstr "<b>%(key)s</b> 更改从 <b>%(old)s</b> 到 <b>%(new)s</b>"
+msgstr "<b>%(key)s</b> 从<b>%(old)s</b>变更为<b>%(new)s</b>"
 
-#: web/models.py:982
+#: web/models.py:917
 msgctxt "UI"
 msgid "Depricated"
 msgstr "已弃用"
 
-#: web/models.py:994
+#: web/models.py:929
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s %(old)s</b> deleted"
 msgstr "<b>%(key)s %(old)s</b> 已删除"
 
-#: web/models.py:996
+#: web/models.py:931
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s created: <b>%(new)s</b>"
 msgstr "<b>%(key)s 已创建: <b>%(new)s</b>"
 
-#: web/models.py:1002
+#: web/models.py:937
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> deleted"
 msgstr "<b>%(key)s</b> 已删除"
 
-#: web/models.py:1004
+#: web/models.py:939
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> created"
 msgstr "<b>%(key)s</b> 已创建"
 
-#: web/models.py:1005
+#: web/models.py:940
 #, python-format
 msgctxt "UI, value"
 msgid "<b>%(key)s</b> changed"
-msgstr "<b>%(key)s</b> 已更改"
+msgstr "<b>%(key)s</b> 已变更"
 
-#: web/models.py:1010
+#: web/models.py:945
 msgctxt "UI, value"
 msgid "profile <b>activated</b>"
 msgstr "配置<b>已启用</b>"
 
-#: web/models.py:1011
+#: web/models.py:946
 msgctxt "UI, value"
 msgid "profile <b>deactivated</b>"
 msgstr "配置<b>已停用</b>"
 
-#: web/models.py:1015 web/models.py:1089 web/models.py:1115
+#: web/models.py:950 web/models.py:1024 web/models.py:1050
 msgctxt "UI"
 msgid "N/A"
 msgstr "不适用"
 
-#: web/models.py:1018
+#: web/models.py:953
 msgctxt "UI"
 msgid "Nothing has changed"
-msgstr "未发生任何修改"
+msgstr "未发生任何变化"
 
-#: web/models.py:1056
+#: web/models.py:991
 #, python-format
 msgctxt "UI, value"
 msgid "Access Profile: %s"
 msgstr "访问配置：%s"
 
-#: web/models.py:1066
+#: web/models.py:1001
 msgctxt "UI"
 msgid "Worker"
 msgstr "矿工"
 
-#: web/models.py:1141
+#: web/models.py:1076
 #, python-format
 msgctxt "UI, value"
 msgid "Coin: %s"
 msgstr "币：%s"
 
-#: web/models.py:1285
+#: web/models.py:1093
+msgctxt "UI"
+msgid "rewards"
+msgstr "报酬"
+
+#: web/models.py:1095
+msgctxt "UI"
+msgid "activities"
+msgstr "活动"
+
+#: web/models.py:1097
+msgctxt "UI"
+msgid "payouts"
+msgstr "提现"
+
+#. Translators: data_types will be a list of data types, e.g. "rewards, payouts, activities"
+#: web/models.py:1100
+#, python-format
+msgctxt "UI"
+msgid "Exported data: %(data_types)s"
+msgstr "已导出数据: %(data_types)s"
+
+#. Translators: format will be name of a data format such as "JSON", "CSV" etc.
+#: web/models.py:1102
+#, python-format
+msgctxt "UI"
+msgid "Format: %(format)s"
+msgstr "格式: %(format)s"
+
+#: web/models.py:1103
+#, python-format
+msgctxt "UI"
+msgid "From: %(date)s"
+msgstr "从： %(date)s"
+
+#: web/models.py:1104
+#, python-format
+msgctxt "UI"
+msgid "To: %(date)s"
+msgstr "到 %(date)s"
+
+#: web/models.py:1260
 msgctxt "UI"
 msgid "Preferred language"
-msgstr "语言"
+msgstr "偏好语言"
 
-#: web/models.py:1286
+#: web/models.py:1261
 msgctxt "UI"
 msgid "Preferred timezone"
-msgstr "时区"
+msgstr "偏好时区"
 
-#: web/models.py:1287
+#: web/models.py:1262 web/models.py:1287
+msgctxt "UI"
+msgid "Color theme"
+msgstr "颜色主题"
+
+#: web/models.py:1263
+msgctxt "UI"
+msgid "Email address"
+msgstr "邮箱地址"
+
+#: web/models.py:1264
 msgctxt "UI"
 msgid "Username in stats"
-msgstr "用户名保存到统计数据里"
+msgstr "用户名统计数据"
 
-#: web/models.py:1288
+#: web/models.py:1265
 msgctxt "UI"
 msgid "Notify me on payout"
 msgstr "在提现时通知我"
 
-#: web/models.py:1289
+#: web/models.py:1266
 msgctxt "UI"
 msgid "Newsletter"
-msgstr "时事通讯(Newsletter)"
+msgstr "时事通讯（Newsletter）"
 
-#: web/models.py:1290
+#: web/models.py:1267
 msgctxt "UI"
 msgid "Currency unit"
-msgstr "货币单位"
+msgstr "币种"
 
-#: web/models.py:1291
+#: web/models.py:1268
 msgctxt "UI"
 msgid "Blockchain voting"
 msgstr "区块链投票"
 
-#: web/models.py:1293
+#: web/models.py:1270
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr "报告已启用"
 
-#: web/models.py:1294
+#: web/models.py:1271
 msgctxt "UI"
 msgid "Auto-detect alert limit"
 msgstr "自动检测警告限值"
 
-#: web/models.py:1295
-msgctxt "UI"
-msgid "Alert limit"
-msgstr "警告限值"
-
-#: web/models.py:1297
+#: web/models.py:1274
 msgctxt "UI"
 msgid "Wallet"
 msgstr "钱包"
 
-#: web/models.py:1298 web/models.py:1299
+#: web/models.py:1275 web/models.py:1276
 msgctxt "UI"
 msgid "Pending wallet"
-msgstr "等待中的钱包"
+msgstr "正在处理中的钱包"
 
-#: web/models.py:1300
+#: web/models.py:1277
 msgctxt "UI"
 msgid "Send threshold"
-msgstr "发送报酬的门槛"
+msgstr "发送的阈值"
 
-#: web/models.py:1301
+#: web/models.py:1278
 msgctxt "UI"
 msgid "Email"
 msgstr "邮箱"
 
-#: web/models.py:1303
+#: web/models.py:1280
 msgctxt "UI"
 msgid "Monitoring notifications"
 msgstr "监控通知"
 
-#: web/models.py:1304
+#: web/models.py:1281
 msgctxt "UI"
 msgid "Monitoring"
 msgstr "监控"
 
-#: web/models.py:1305
+#: web/models.py:1282
 msgctxt "UI"
 msgid "Last Change"
-msgstr "上次修改"
+msgstr "上次变化"
 
-#: web/models.py:1306
+#: web/models.py:1283
 msgctxt "UI"
 msgid "Login suffix"
 msgstr "登录后缀"
 
-#: web/models.py:1307 web/models.py:1308
+#: web/models.py:1284 web/models.py:1285
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr "最低难度"
 
-#: web/models.py:1310
+#: web/models.py:1289
 msgctxt "UI"
 msgid "Enabled"
 msgstr "已启用"
 
-#: web/models.py:1310
+#: web/models.py:1289
 msgctxt "UI"
 msgid "Disabled"
 msgstr "已禁用"
 
-#: web/models.py:1351
+#: web/models.py:1330
 msgctxt "UI"
 msgid "Account deletion cancelled"
 msgstr "账户删除申请已取消"
 
-#: web/models.py:1352
+#: web/models.py:1331
 msgctxt "UI"
 msgid "Account deleted"
 msgstr "账户已被删除"
 
-#: web/models.py:1353
+#: web/models.py:1332
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr "账户删除已申请"
 
-#: web/models.py:1355
+#: web/models.py:1334
 msgctxt "UI"
 msgid "Demo login"
-msgstr "演示账户登录"
+msgstr "登录演示账户"
 
-#: web/models.py:1356
+#: web/models.py:1335
 msgctxt "UI"
 msgid "Demo logout"
 msgstr "演示账户登出"
 
-#: web/models.py:1357
+#: web/models.py:1336
 msgctxt "UI"
 msgid "Support login"
-msgstr "技术支持登录"
+msgstr "客服登录"
 
-#: web/models.py:1359
+#: web/models.py:1338
 msgctxt "UI"
 msgid "Impersonate user"
 msgstr "拟人用户"
 
-#: web/models.py:1361
+#: web/models.py:1340
 msgctxt "UI"
 msgid "Login"
 msgstr "登陆"
 
-#: web/models.py:1362
+#: web/models.py:1341
 msgctxt "UI"
 msgid "Logout"
 msgstr "登出"
 
-#: web/models.py:1363
+#: web/models.py:1342
 msgctxt "UI"
 msgid "Logout all sessions"
-msgstr "登出所有进程"
+msgstr "登出所有会话"
 
-#: web/models.py:1364
+#: web/models.py:1343
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr "无效的登录"
 
-#: web/models.py:1365
+#: web/models.py:1344
 msgctxt "UI"
 msgid "Inactive profile"
-msgstr "不活跃的配置"
+msgstr "未启用的配置"
 
-#: web/models.py:1368
+#: web/models.py:1347
 msgctxt "UI"
 msgid "New wallet created"
 msgstr "新钱包已创建"
 
-#: web/models.py:1370
+#: web/models.py:1349
 msgctxt "UI"
 msgid "Wallet updated"
 msgstr "钱包已更新"
 
-#: web/models.py:1372
+#: web/models.py:1351
 msgctxt "UI"
 msgid "Wallet deleted"
 msgstr "钱包已删除"
 
-#: web/models.py:1374
+#: web/models.py:1354
+msgctxt "UI"
+msgid "Wallet reactivated"
+msgstr "钱包已重新激活"
+
+#: web/models.py:1356
 msgctxt "UI"
 msgid "Payouts locked"
 msgstr "提现已锁定"
 
-#: web/models.py:1375
+#: web/models.py:1357
 msgctxt "UI"
 msgid "Payouts unlocked"
 msgstr "提现已解锁"
 
-#: web/models.py:1376
+#: web/models.py:1358
 msgctxt "UI"
 msgid "New payout account created"
 msgstr "已创建新的提现账户"
 
-#: web/models.py:1378
+#: web/models.py:1360
 msgctxt "UI"
-msgid "Payout account updated"
-msgstr "提现地址已更新"
+msgid "Financial account updated"
+msgstr "财务账户已更新"
 
-#: web/models.py:1380
+#: web/models.py:1362
 msgctxt "UI"
 msgid "Payout account deactivated"
 msgstr "提现账户已停用"
 
-#: web/models.py:1382
+#: web/models.py:1364
 msgctxt "UI"
 msgid "Immediate payout requested"
-msgstr "立即提现已请求"
+msgstr "已请求立即提现"
 
-#: web/models.py:1384
+#: web/models.py:1366
 msgctxt "UI"
 msgid "Immediate payout request cancelled"
-msgstr "立即提现请求已取消"
+msgstr "已取消立即提现请求"
+
+#: web/models.py:1369
+msgctxt "UI"
+msgid "Payout split modified"
+msgstr "已修改提现分配"
+
+#: web/models.py:1373
+msgctxt "UI"
+msgid "Payout account settings updated"
+msgstr "已更新提现账户设置"
+
+#: web/models.py:1377
+msgctxt "UI"
+msgid "Payout channel confirmed"
+msgstr "已确认提现渠道"
+
+#: web/models.py:1381
+msgctxt "UI"
+msgid "Payout channel confirmation email resent"
+msgstr "提现渠道确认邮件已发送"
+
+#: web/models.py:1385
+msgctxt "UI"
+msgid "New access profile created"
+msgstr "已创建新的访问配置"
 
 #: web/models.py:1387
 msgctxt "UI"
-msgid "Payout split modified"
-msgstr "提现分配已修改"
+msgid "Access profile updated"
+msgstr "已更新访问配置"
 
-#: web/models.py:1391
+#: web/models.py:1389
 msgctxt "UI"
-msgid "Payout account settings updated"
-msgstr "提现账户设置已更新"
+msgid "Access profile deleted"
+msgstr "已删除访问配置"
+
+#: web/models.py:1392
+msgctxt "UI"
+msgid "Payouts paused"
+msgstr "已暂停提现"
+
+#: web/models.py:1393
+msgctxt "UI"
+msgid "Payouts unpaused"
+msgstr "已继续提现"
 
 #: web/models.py:1395
 msgctxt "UI"
-msgid "Payout channel confirmed"
-msgstr "提现渠道已确认"
+msgid "Message seen"
+msgstr "信息已阅"
 
-#: web/models.py:1399
+#: web/models.py:1397
 msgctxt "UI"
-msgid "Payout channel confirmation cancelled"
-msgstr "提现渠道确认已取消"
+msgid "Mining settings updated"
+msgstr "已更新监控设置"
 
-#: web/models.py:1403
+#: web/models.py:1401
 msgctxt "UI"
-msgid "Payout channel confirmation e-mail resent"
-msgstr "提现渠道确认邮件已发送"
+msgid "Monitoring settings updated"
+msgstr "已更新监控设置"
+
+#: web/models.py:1404
+msgctxt "UI"
+msgid "Newsletter unsubscribed"
+msgstr "已取消订阅时事通讯"
+
+#: web/models.py:1406
+msgctxt "UI"
+msgid "2-factor authentication disabled"
+msgstr "已停用两步验证"
 
 #: web/models.py:1407
 msgctxt "UI"
-msgid "New access profile created"
-msgstr "新的访问配置已创建"
+msgid "2-factor authentication enabled"
+msgstr "已启用两步验证"
+
+#: web/models.py:1408
+msgctxt "UI"
+msgid "One time password setup cancelled"
+msgstr "已取消一次性密码验证设置"
 
 #: web/models.py:1409
 msgctxt "UI"
-msgid "Access profile updated"
-msgstr "访问配置已更新"
-
-#: web/models.py:1411
-msgctxt "UI"
-msgid "Access profile deleted"
-msgstr "访问配置已删除"
-
-#: web/models.py:1414
-msgctxt "UI"
-msgid "Payouts paused"
-msgstr "提现已暂停"
-
-#: web/models.py:1415
-msgctxt "UI"
-msgid "Payouts unpaused"
-msgstr "提现暂停已恢复"
-
-#: web/models.py:1417
-msgctxt "UI"
-msgid "Message seen"
-msgstr "信息已被看到"
-
-#: web/models.py:1419
-msgctxt "UI"
-msgid "Mining settings updated"
-msgstr "监控设置已更新"
-
-#: web/models.py:1423
-msgctxt "UI"
-msgid "Monitoring settings updated"
-msgstr "监控设置已更新"
-
-#: web/models.py:1426
-msgctxt "UI"
-msgid "Newsletter unsubscribed"
-msgstr "时事通讯订阅已取消"
-
-#: web/models.py:1428
-msgctxt "UI"
-msgid "2-factor authentication disabled"
-msgstr "两步验证已停用"
-
-#: web/models.py:1429
-msgctxt "UI"
-msgid "2-factor authentication enabled"
-msgstr "两步验证已启用"
-
-#: web/models.py:1430
-msgctxt "UI"
-msgid "One time password setup cancelled"
-msgstr "一次性密码验证设置已取消"
-
-#: web/models.py:1431
-msgctxt "UI"
 msgid "OTP change confirmed"
-msgstr "一次性密码验证更改已确认"
+msgstr "已确认变更一次性密码验证OTP"
 
-#: web/models.py:1432
+#: web/models.py:1410
 msgctxt "UI"
 msgid "2-factor authentication removed by operator"
 msgstr "两步验证已被管理员移除"
 
-#: web/models.py:1434
+#: web/models.py:1412
 msgctxt "UI"
 msgid "U2F device registered"
-msgstr "双重验证U2F设备已注册"
+msgstr "已注册双重验证U2F设备"
 
-#: web/models.py:1435
+#: web/models.py:1413
 msgctxt "UI"
 msgid "U2F setup cancelled"
-msgstr "双重验证U2F设置已取消"
+msgstr "已取消双重验证U2F设置"
 
-#: web/models.py:1438
+#: web/models.py:1416
 msgctxt "UI"
 msgid "Payouts blocked"
 msgstr "提现已被锁定"
 
-#: web/models.py:1440
+#: web/models.py:1418
 msgctxt "UI"
 msgid "Payouts unblocked"
 msgstr "提现已解锁"
 
-#: web/models.py:1442 web/models.py:1445
+#: web/models.py:1420 web/models.py:1423
 msgctxt "UI"
 msgid "Password changed"
-msgstr "密码已更改"
+msgstr "密码已变更"
 
-#: web/models.py:1443
+#: web/models.py:1421
 msgctxt "UI"
 msgid "Password reset completed"
-msgstr "重置密码完成"
+msgstr "已完成密码重置"
 
-#: web/models.py:1444
+#: web/models.py:1422
 msgctxt "UI"
 msgid "Password reset initiated"
-msgstr "密码重置已开始"
+msgstr "已开始密码重置"
 
-#: web/models.py:1448 web/models.py:1605
+#: web/models.py:1426 web/models.py:1430 web/models.py:1591
 msgctxt "UI"
 msgid "Account settings updated"
-msgstr "账户设置已更新"
+msgstr "已更新账户设置"
 
-#: web/models.py:1451
+#: web/models.py:1434
+msgctxt "UI"
+msgid "Color theme changed"
+msgstr "颜色主题已变更"
+
+#: web/models.py:1437
 msgctxt "UI"
 msgid "Email change confirmed"
-msgstr "更改邮箱地址已确认"
+msgstr "已确认邮箱地址变更"
 
-#: web/models.py:1452
+#: web/models.py:1438
 msgctxt "UI"
 msgid "Email change cancelled"
-msgstr "邮箱地址更改已取消"
+msgstr "已取消邮箱地址变更"
 
-#: web/models.py:1453
+#: web/models.py:1439
 msgctxt "UI"
 msgid "Email change confirmation resent"
-msgstr "更改邮箱的确认已重新发送"
+msgstr "已重新发送邮箱地址变更确认"
 
-#: web/models.py:1456
+#: web/models.py:1442
 msgctxt "UI"
 msgid "Worker removed"
 msgstr "矿工已移除"
 
-#: web/models.py:1457
+#: web/models.py:1443
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr "您已移除矿工 <b>%(name)s</b>"
 
-#: web/models.py:1460
+#: web/models.py:1446
 msgctxt "UI"
 msgid "Workers removed"
 msgstr "矿工已移除"
 
-#: web/models.py:1461
+#: web/models.py:1447
 #, python-format
 msgctxt "UI"
 msgid "You have removed %(count)d %(coin)s workers"
 msgstr "您已移除%(count)d %(coin)s矿工"
 
-#: web/models.py:1463
+#: web/models.py:1449
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr "矿工设置已更新"
 
-#: web/models.py:1465
+#: web/models.py:1451
 msgctxt "UI"
 msgid "New worker"
 msgstr "新矿工"
 
-#: web/models.py:1466
+#: web/models.py:1452
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr "您已注册一个新矿工"
 
-#: web/models.py:1470
+#: web/models.py:1456
 msgctxt "UI"
 msgid "User appeal dismissed"
 msgstr "用户上诉被驳回"
 
-#: web/models.py:1475
+#: web/models.py:1461
 msgctxt "UI"
 msgid "Enabled coins updated"
 msgstr "已启动的币已更新"
 
-#: web/models.py:1535
+#: web/models.py:1521
 msgctxt "UI"
 msgid "Exported user data"
 msgstr "已导出用户数据"
 
-#: web/models.py:1540
+#: web/models.py:1526
 msgctxt "UI"
 msgid "NMC reward claimed"
 msgstr "已要求的NMC域名币收益支付"
 
-#: web/models.py:1544
+#: web/models.py:1530
 msgctxt "UI"
 msgid "NMC claim - address changed"
-msgstr "NMC域名币收益支付请求 —— 地址已变"
+msgstr "NMC域名币收益支付请求 —— 地址已变更"
 
-#: web/models.py:1550
+#: web/models.py:1536
 msgctxt "UI"
 msgid "Wallet unlocked by operator"
 msgstr "钱包已由管理员解锁"
 
-#: web/models.py:1554
+#: web/models.py:1540
 msgctxt "UI"
 msgid "Payout settings updated"
 msgstr "提现设置已更新"
 
-#: web/models.py:1558
+#: web/models.py:1544
 msgctxt "UI"
 msgid "Zcash payout settings updated"
 msgstr "Zcash提现设置已更新"
 
-#: web/models.py:1562
+#: web/models.py:1548
 msgctxt "UI"
 msgid "Wallet change confirmed"
-msgstr "钱包更改已确认"
+msgstr "已确认钱包变更"
 
-#: web/models.py:1566
+#: web/models.py:1552
 msgctxt "UI"
 msgid "Wallet change cancelled"
-msgstr "钱包更改已取消"
+msgstr "已取消钱包变更"
 
-#: web/models.py:1570
+#: web/models.py:1556
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
-msgstr "更改钱包的确认已重新发送"
+msgstr "已重新发送钱包变更确认"
 
-#: web/models.py:1574
+#: web/models.py:1560
 msgctxt "UI"
 msgid "Zcash wallet change confirmed"
-msgstr "Zcash钱包更改已确认"
+msgstr "已确认Zcash钱包变更"
 
-#: web/models.py:1578
+#: web/models.py:1564
 msgctxt "UI"
 msgid "Zcash wallet change cancelled"
-msgstr "Zcash钱包更改已取消"
+msgstr "已取消Zcash钱包变更"
 
-#: web/models.py:1582
+#: web/models.py:1568
 msgctxt "UI"
 msgid "Zcash wallet change confirmation resent"
-msgstr "更改Zcash钱包的确认已重新发送"
+msgstr "已重新发送Zcash钱包变更确认"
 
-#: web/models.py:1586
+#: web/models.py:1572
 msgctxt "UI"
 msgid "Wallet locked"
-msgstr "钱包锁定"
+msgstr "钱包已锁定"
 
-#: web/models.py:1590
+#: web/models.py:1576
 msgctxt "UI"
 msgid "Wallet unlocked"
-msgstr "钱包解锁"
+msgstr "钱包已解锁"
 
-#: web/models.py:1594
+#: web/models.py:1580
 msgctxt "UI"
 msgid "Zcash wallet locked"
 msgstr "Zcash钱包已锁定"
 
-#: web/models.py:1598
+#: web/models.py:1584
 msgctxt "UI"
 msgid "Zcash wallet unlocked"
 msgstr "Zcash钱包已解锁"
 
-#: web/models_zec.py:78
-msgctxt "UI"
-msgid "Zcash wallet change confirmation"
-msgstr "更改Zcash钱包的确认"
-
-#: web/permissions.py:43
+#: web/permissions.py:61
 msgctxt "UI"
 msgid "Full access"
 msgstr "完整访问权限"
 
-#: web/permissions.py:44
+#: web/permissions.py:62
 msgctxt "UI"
 msgid "Read-only"
 msgstr "只读"
 
-#: web/permissions.py:45
+#: web/permissions.py:63
 msgctxt "UI"
 msgid "Limited read-only"
 msgstr "部分只读"
 
-#: web/registration.py:58
+#: web/registration.py:55
 #, python-format
 msgctxt "UI"
 msgid "Username \"%s\" is already taken."
-msgstr "用户名 \"%s\"已经被使用。"
-
-#: web/registration.py:116
-msgctxt "UI"
-msgid "New account confirmation"
-msgstr "新账户的确认"
+msgstr "用户名 “%s”已经被使用。"
 
 #: web/templates/email/_base.html:2 web/templates/email/_base_graphic.html:24
 msgctxt "UI"
@@ -2573,8 +3072,8 @@ msgid ""
 "You are receiving this email because you requested a deletion of your "
 "account in our <a href=\"%(site_url)s\">%(site_name)s</a> mining pool."
 msgstr ""
-"您收到此邮件是因为您申请了删除在<a href=\"%(site_url)s\">%(site_name)s</a>矿"
-"池的账户。"
+"您收到这封邮件，是因为您申请删除在<a href=\"%(site_url)s\">%(site_name)s</a>"
+"矿池的账户。"
 
 #: web/templates/email/account_delete.html:6
 #, python-format
@@ -2587,8 +3086,8 @@ msgid ""
 "pool website."
 msgstr ""
 "如果您确定要删除您的账户<strong>%(username)s</strong>，请使用 <a href="
-"\"%(delete_url)s\">&nbsp;这个确认&nbsp;链接</a>。此链接一小时内有效。如果您错"
-"过了此链接的有效期，它将失效，请去网站重新申请。"
+"\"%(delete_url)s\">&nbsp;这个确认&nbsp;链接</a>。该链接一小时内有效。如果您错"
+"过了该链接的有效期，它将失效，请在矿池网站重新申请删除。"
 
 #: web/templates/email/account_delete.html:7
 msgctxt "UI"
@@ -2610,8 +3109,8 @@ msgid ""
 "incident for further investigation at <a href=\"mailto:%(support_email)s\">"
 "%(support_email)s</a>."
 msgstr ""
-"如果您没有发起申请，请不要点上面的确认链接，立即更改您的密码，并报告此事件到"
-"<a href=\"mailto:%(support_email)s\">%(support_email)s</a>以进一步调查。"
+"如果您没有发起该申请，请不要点上面的确认链接，立即变更您的密码，并报告该事件"
+"到<a href=\"mailto:%(support_email)s\">%(support_email)s</a>以进一步调查。"
 
 #: web/templates/email/account_delete_warning.templ.html:5
 #, python-format
@@ -2640,8 +3139,8 @@ msgid ""
 "your account will be disabled and any remaining coins will be considered a "
 "kind donation to the pool."
 msgstr ""
-"如果您在之后%(days)s天里都不使用我们矿池的服务，您的账户将会被禁用且账户上剩"
-"余的币将被视作对矿池的捐献。"
+"如果您在之后的%(days)s天都不使用我们矿池的服务，您的账户将会被禁用，且账户上"
+"剩余的币将被视作对矿池的捐献。"
 
 #: web/templates/email/account_delete_warning.templ.html:8
 #, python-format
@@ -2669,7 +3168,7 @@ msgctxt "UI"
 msgid ""
 "You are receiving this email because you requested to change your e-mail "
 "address to <strong>%(email)s</strong>"
-msgstr "此邮件被发送是因为您请求更改邮箱地址到：<strong>%(email)s</strong>"
+msgstr "您收到这封邮件，是因为您请求变更邮箱地址到：<strong>%(email)s</strong>"
 
 #: web/templates/email/email_change.html:6
 #, python-format
@@ -2678,8 +3177,8 @@ msgid ""
 "To authorize this request, please follow <a href=\"%(confirm_url)s"
 "\">this&nbsp;confirmation&nbsp;link</a>"
 msgstr ""
-"授权此请求， 请按照 <a href=\"%(confirm_url)s\">此&nbsp;确认&nbsp;链接</a>操"
-"作"
+"授权该请求， 请按照 <a href=\"%(confirm_url)s\">这个&nbsp;确认&nbsp;链接</a>"
+"操作"
 
 #: web/templates/email/email_change.html:7
 #, python-format
@@ -2690,13 +3189,13 @@ msgid ""
 "immediately and report this incident for further investigation at <a href="
 "\"mailto:%(support_email)s\">%(support_email)s</a>."
 msgstr ""
-"如果您未要求此更改，请在<a href=\"%(cancel_url)s\">此&nbsp;取消&nbsp;链接</a>"
-"取消请求，立即更改您的密码，并报告此事件给<a href=\"mailto:%(support_email)s"
-"\">%(support_email)s</a>以进一步调查。"
+"如果您未要求该变更，请在<a href=\"%(cancel_url)s\">这个&nbsp;取消&nbsp;链接</"
+"a>取消请求，立即变更您的密码，并报告该事件给<a href=\"mailto:"
+"%(support_email)s\">%(support_email)s</a>以进一步调查。"
 
 #: web/templates/email/email_change.html:9
 msgid "Change my email"
-msgstr "更改我的邮箱"
+msgstr "变更我的邮箱"
 
 #: web/templates/email/monitoring_body.html:5
 #, python-format
@@ -2704,7 +3203,42 @@ msgctxt "UI"
 msgid ""
 "We've detected changes in the current state of your %(coin)s workers. Please "
 "see the report below:"
-msgstr "矿池检测到您的%(coin)s矿工发生了当前状态的更改，请您阅读以下报告："
+msgstr "矿池检测到您的%(coin)s矿工发生了当前状态的变化，请您阅读以下报告："
+
+#: web/templates/email/monitoring_body.html:8
+msgctxt "UI"
+msgid "Event Time"
+msgstr "事件时间"
+
+#: web/templates/email/monitoring_body.html:10
+msgctxt "UI"
+msgid "Worker States (Changes)"
+msgstr "矿工状态 (变化)"
+
+#: web/templates/email/monitoring_body.html:20
+msgctxt "UI"
+msgid "Worker Name"
+msgstr "矿工名"
+
+#: web/templates/email/monitoring_body.html:21
+msgctxt "UI"
+msgid "State Change"
+msgstr "状态变化"
+
+#: web/templates/email/monitoring_body.html:22
+msgctxt "UI"
+msgid "State Changed After"
+msgstr "状态变化（在此后）"
+
+#: web/templates/email/monitoring_body.html:23
+msgctxt "UI"
+msgid "Actual Hashrate"
+msgstr "当前算力"
+
+#: web/templates/email/monitoring_body.html:24
+msgctxt "UI"
+msgid "Alert Limit"
+msgstr "警告限值"
 
 #: web/templates/email/monitoring_body.html:42
 #, python-format
@@ -2722,8 +3256,8 @@ msgid ""
 "You are receiving this email because you requested a password reset for your "
 "user account at <a href=\"%(site_url)s\">%(site_name)s</a>."
 msgstr ""
-"您收到此邮件是因为您在<a href=\"%(site_url)s\">%(site_name)s</a>申请了账户的"
-"密码重置。"
+"您收到这封邮件，是因为您在<a href=\"%(site_url)s\">%(site_name)s</a>申请重置"
+"账户密码。"
 
 #: web/templates/email/password_reset.html:7
 #, python-format
@@ -2731,21 +3265,21 @@ msgctxt "UI"
 msgid ""
 "Please, follow the link and change your password <a href=\"%(reset_url)s"
 "\">here</a>"
-msgstr "请使用此链接在<a href=\"%(reset_url)s\">这里</a>更改您的密码"
+msgstr "请使用此链接在<a href=\"%(reset_url)s\">这里</a>变更您的密码"
 
 #: web/templates/email/password_reset.html:8
 #, python-format
 msgctxt "UI"
 msgid ""
 "The username associated with this e-mail is: <strong>%(username)s</strong>"
-msgstr "您此邮箱关联的用户名是：<strong>%(username)s</strong>"
+msgstr "您与该邮箱关联的用户名是：<strong>%(username)s</strong>"
 
 #: web/templates/email/password_reset.html:9
 msgctxt "UI"
 msgid ""
 "If you did not request to receive this password reset email, you can ignore "
 "it."
-msgstr "如果您没有申请更改密码，请忽视此邮件。"
+msgstr "如果您没有申请更改密码，请忽视这封邮件。"
 
 #: web/templates/email/password_reset.html:11
 msgid "Reset password"
@@ -2763,8 +3297,8 @@ msgid ""
 "Your reward for mining with our <a href=\"%(site_url)s\">%(site_name)s</a> "
 "mining pool has exceeded your defined threshold."
 msgstr ""
-"您在我们矿池的挖矿收益 <a href=\"%(site_url)s\">%(site_name)s</a>已超过您的支"
-"付门槛设定值。"
+"您在我们矿池的挖矿收益 <a href=\"%(site_url)s\">%(site_name)s</a>已超过您设定"
+"的提现阈值。"
 
 #: web/templates/email/payout.html:6
 #, python-format
@@ -2773,7 +3307,7 @@ msgid ""
 "The amount of %(amount)s %(coin)s has been transferred to your address "
 "%(wallet)s on %(date)s"
 msgstr ""
-"数量为%(amount)s %(coin)s的比特币已于%(date)s被转到您的收益支付钱包地"
+"数量为%(amount)s %(coin)s的比特币，已于%(date)s转到您的收益支付钱包地"
 "址%(wallet)s上"
 
 #: web/templates/email/payout.html:7
@@ -2784,7 +3318,7 @@ msgid ""
 "hours. You can watch current payment status on <a href=\"%(wallet_info)s\">"
 "%(wallet_info)s</a>"
 msgstr ""
-"比特币网络的收益支付流程可能在30分钟到3小时间。您可以在<a href="
+"比特币网络的收益支付转账流程可能在30分钟到3小时间。您可以在<a href="
 "\"%(wallet_info)s\">%(wallet_info)s</a>查看当前收益支付状态"
 
 #: web/templates/email/registration.html:5
@@ -2793,7 +3327,7 @@ msgctxt "UI"
 msgid ""
 "Thank you for signing up for our <a href=\"%(site_url)s\">%(site_name)s</a> "
 "mining pool."
-msgstr "感谢您在我们矿池注册<a href=\"%(site_url)s\">%(site_name)s</a>账户。"
+msgstr "感谢您在我们矿池<a href=\"%(site_url)s\">%(site_name)s</a>注册了账户。"
 
 #: web/templates/email/registration.html:6
 #, python-format
@@ -2802,7 +3336,8 @@ msgid ""
 "In order to activate your account and start mining, please follow this <a "
 "href=\"%(activate_url)s\">activation url</a>."
 msgstr ""
-"为激活您账户开始挖矿，请使用此<a href=\"%(activate_url)s\">激活链接</a>。"
+"要想激活您的账户并开始挖矿，请使用这个<a href=\"%(activate_url)s\">激活链接</"
+"a>。"
 
 #: web/templates/email/registration.html:8
 msgid "Activate"
@@ -2815,8 +3350,8 @@ msgid ""
 "You are receiving this email because you requested to change your %(coin)s "
 "wallet to the new address: <strong>%(wallet)s</strong>."
 msgstr ""
-"此邮件被发送是因为您请求更改您的%(coin)s钱包到新地址：<strong>%(wallet)s</"
-"strong>。"
+"您收到这封邮件，是因为您请求变更您的%(coin)s钱包到新地址：<strong>"
+"%(wallet)s</strong>。"
 
 #: web/templates/email/wallet_change.html:6
 #, python-format
@@ -2825,8 +3360,8 @@ msgid ""
 "To authorize this request, please follow <a href=\"%(wallet_confirm_link)s"
 "\">this&nbsp;confirmation&nbsp;link</a>."
 msgstr ""
-"授权此请求, 请使用<a href=\"%(wallet_confirm_link)s\">此&nbsp;确认&nbsp;链接"
-"</a>。"
+"要授权该请求，请使用<a href=\"%(wallet_confirm_link)s\">这个&nbsp;确认&nbsp;"
+"链接</a>。"
 
 #: web/templates/email/wallet_change.html:7
 #, python-format
@@ -2837,13 +3372,13 @@ msgid ""
 "password immediately and report this incident for further investigation at "
 "<a href=\"mailto:%(support_email)s\">%(support_email)s</a>."
 msgstr ""
-"如果您未要求此更改，请<a href=\"%(wallet_cancel_link)s\">取消&nbsp;此&nbsp;请"
-"求</a>，立即更改您的密码，并报告此事件给<a href=\"mailto:%(support_email)s\">"
-"%(support_email)s</a>以进一步调查。"
+"如果您未曾发起这个请求，请<a href=\"%(wallet_cancel_link)s\">取消&nbsp;该"
+"&nbsp;请求</a>，立即变更您的密码，并报告该事件给<a href=\"mailto:"
+"%(support_email)s\">%(support_email)s</a>以进一步调查。"
 
 #: web/templates/email/wallet_change.html:9
 msgid "Change my wallet"
-msgstr "更改我的钱包"
+msgstr "变更我的钱包"
 
 #: web/templates/web/msg_pending_wallet.html:2
 #, python-format
@@ -2851,7 +3386,7 @@ msgid ""
 "You have pending request for changing <strong>%(currency)s</strong> wallet "
 "to <strong>%(wallet_pending)s</strong>."
 msgstr ""
-"您有等待中的请求：更改<strong>%(currency)s</strong>钱包为<strong>"
+"您有正在处理中的请求：更改<strong>%(currency)s</strong>钱包为<strong>"
 "%(wallet_pending)s</strong>。"
 
 #: web/templates/web/msg_pending_wallet.html:4
@@ -2876,8 +3411,8 @@ msgid ""
 "the request</a> and <a href=\"%(url_password_reset)s\">change your password</"
 "a> immediately."
 msgstr ""
-"如果您未要求此更改，请<a href=\"%(url_cancel)s\">取消请求</a>并立即<a href="
-"\"%(url_password_reset)s\">更改您的密码</a>。"
+"如果您未曾发起这个要求，请<a href=\"%(url_cancel)s\">取消请求</a>并立即<a "
+"href=\"%(url_password_reset)s\">变更您的密码</a>。"
 
 #: web/templates/web/parts/body_1_conditionals.html:12
 #, python-format
@@ -2886,30 +3421,30 @@ msgid ""
 "To continue, you must <strong>enable javascript</strong>. (<a href=\"%(url)s"
 "\">see how…</a>)"
 msgstr ""
-"您必须<strong>启用Java脚本</strong>以继续。(<a href=\"%(url)s\">查看如何…</"
-"a>)"
+"您必须<strong>启用Javascript</strong>才能继续。(<a href=\"%(url)s\">查看如何…"
+"</a>)"
 
-#: web/templatetags/utils.py:190
+#: web/templatetags/utils.py:168
 msgctxt "UI, Monitoring"
 msgid "Offline"
 msgstr "离线"
 
-#: web/templatetags/utils.py:191
+#: web/templatetags/utils.py:169
 msgctxt "UI, Monitoring"
 msgid "Low"
 msgstr "低"
 
-#: web/templatetags/utils.py:192
+#: web/templatetags/utils.py:170
 msgctxt "UI, Monitoring"
 msgid "OK"
 msgstr "好"
 
-#: web/templatetags/utils.py:193
+#: web/templatetags/utils.py:171
 msgctxt "UI, Monitoring"
 msgid "Disabled"
 msgstr "已禁用"
 
-#: web/utils.py:80
+#: web/utils.py:83
 #, python-format
 msgid "%i days"
 msgstr "%i日"
@@ -2938,7 +3473,7 @@ msgstr "矿工"
 #: workers/api/v1/views.py:302
 msgctxt "UI"
 msgid "Label name must be a string."
-msgstr "必须使用字符作为标签名。"
+msgstr "标签名中只能用合法字符。"
 
 #: workers/api/v1/views.py:305
 msgctxt "UI"
@@ -2953,12 +3488,12 @@ msgstr "名称必须短于15字。"
 #: workers/api/v1/views.py:312
 msgctxt "UI"
 msgid "A label with this name already exists."
-msgstr "使用此名称的标签已存在。"
+msgstr "使用该名称的标签已存在。"
 
 #: workers/api/v1/views.py:316
 msgctxt "UI"
 msgid "Label shortcut must be a string."
-msgstr "必须使用字符作为标签快捷方式。"
+msgstr "标签快捷方式中只能用合法字符。"
 
 #: workers/api/v1/views.py:319
 msgctxt "UI"
@@ -2968,17 +3503,17 @@ msgstr "必须要有标签快捷方式。"
 #: workers/api/v1/views.py:321
 msgctxt "UI"
 msgid "Shortcut must not be longer than 2 characters."
-msgstr "快捷方式必须短于2字。"
+msgstr "快捷方式必须短于2个字。"
 
 #: workers/api/v1/views.py:332
 msgctxt "UI"
 msgid "Label description must be a string."
-msgstr "必须使用字符作为标签描述。"
+msgstr "标签描述中只能用合法字符。"
 
 #: workers/api/v1/views.py:336
 msgctxt "UI"
 msgid "Maximal length of label description is 100 characters."
-msgstr "标签描述的长度最长100字。"
+msgstr "标签描述的长度最长只能有100个字。"
 
 #: workers/api/v1/views.py:343
 msgctxt "UI"
@@ -2993,7 +3528,313 @@ msgstr "无效的标签ID。"
 #: workers/api/v1/views.py:411
 msgctxt "UI"
 msgid "Names and shortcuts must be unique."
-msgstr "名称和快捷方式必须是唯一的。"
+msgstr "名称和快捷方式不能重复。"
+
+#~ msgctxt "UI"
+#~ msgid "Average HR"
+#~ msgstr "平均算力"
+
+#~ msgctxt "UI"
+#~ msgid "We are finalizing a major upgrade of the system."
+#~ msgstr "我们正在完成重要的系统升级。"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Please note that the data displayed may not yet be complete or entirely "
+#~ "accurate.<br>Thank you for understanding."
+#~ msgstr "请注意，显示的数据可能尚不完整或不完全准确。<br>感谢您的理解。"
+
+#~ msgctxt "UI"
+#~ msgid "No pending e-mail."
+#~ msgstr "没有正在处理中的邮件。"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Confirmation e-mail has been sent. Please, check your mailbox and follow "
+#~ "the link."
+#~ msgstr "确认邮件已发送。请查看收到邮件中的链接。"
+
+#~ msgctxt "UI"
+#~ msgid "Delete account confirmation"
+#~ msgstr "账户删除确认"
+
+#~ msgctxt "UI"
+#~ msgid "Email change confirmation"
+#~ msgstr "邮箱地址变更确认"
+
+#~ msgctxt "UI"
+#~ msgid "New account confirmation"
+#~ msgstr "新账户确认"
+
+#~ msgctxt "UI"
+#~ msgid "Device was not paired in time limit of %s seconds"
+#~ msgstr "设备未在要求的%s秒内配对"
+
+#~ msgctxt "UI"
+#~ msgid "Device you are trying to pair was not found"
+#~ msgstr "未能找到您尝试配对的设备"
+
+#~ msgctxt "UI"
+#~ msgid "Values for device settings must be dictionary."
+#~ msgstr "设备的设置必须使用字典值。"
+
+#~ msgctxt "UI"
+#~ msgid "Invalid keys supplied as device settings."
+#~ msgstr "提供了无效的密钥作为设备设定。"
+
+#~ msgctxt "UI"
+#~ msgid "Password is incorrect."
+#~ msgstr "密码错误。"
+
+#~ msgctxt "UI"
+#~ msgid "This is not a valid Bitcoin address."
+#~ msgstr "该地址不是一个有效的比特币地址。"
+
+#~ msgctxt "UI"
+#~ msgid "Validation failed. Bitcoind is not connected."
+#~ msgstr "验证失败。Bitcoind未连接。"
+
+#~ msgctxt "UI"
+#~ msgid "bitcoind: This is not a valid Bitcoin address."
+#~ msgstr "bitcoind：该地址不是一个有效的比特币地址。"
+
+#~ msgctxt "UI"
+#~ msgid "This is not a valid Zcash address."
+#~ msgstr "该地址不是一个有效的Zcash地址。"
+
+#~ msgctxt "UI"
+#~ msgid "Validation failed. Zcash is not connected."
+#~ msgstr "验证失败。Zcash未连接。"
+
+#~ msgctxt "UI"
+#~ msgid "zcashd: This is not a valid Zcash address."
+#~ msgstr "zcashd：该地址不是一个有效的Zcash地址。"
+
+#~ msgctxt "UI"
+#~ msgid "Value must be between %(lower)d and %(upper)d."
+#~ msgstr "值需在%(lower)d和%(upper)d之间。"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "If you <strong>did not</strong> ask us to change your email address, "
+#~ "please <a href=\"%(url)s\">cancel&nbsp;the&nbsp;request</a> and change "
+#~ "your password immediately."
+#~ msgstr ""
+#~ "如您 <strong>没有</strong> 向我们发送更改邮箱地址的请求，请您 <a href="
+#~ "\"%(url)s\">&nbsp;取消这一请求&nbsp;</a> 并立即更改您的密码。"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "It's Pavel Moravec, co-CEO of Braiins. I wanted to reach out to you "
+#~ "personally and thank you for giving Slush Pool a shot."
+#~ msgstr ""
+#~ "Pavel Moravec，首脑-Braiins的联合首席运营官。想亲自和您交流交流，并感谢您"
+#~ "选择Slush Pool矿池。"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "If you’d still like to delete your account, make sure you <strong>request "
+#~ "your final payout BEFORE</strong> doing so. Otherwise, any remaining "
+#~ "balances are considered a generous donation to the pool. Then click this "
+#~ "<a href=\"%(url)s\">confirmation link</a> to delete your account. For "
+#~ "your security, the link is only good for an hour."
+#~ msgstr ""
+#~ "如果您决心想要删除您的账户，请在删除前<strong>务必确认您是否最后请求了提现"
+#~ "</strong>。否则，您账户内的余额将被视为对矿池的慷慨捐赠。没有问题的话，请"
+#~ "点击这个<a href=\"%(url)s\">确认链接</a>确认删除您的账户。为保证安全，确认"
+#~ "链接的有效期为一小时。"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Lastly, if you DIDN’T request to delete your account, make sure you "
+#~ "change your password ASAP.️"
+#~ msgstr ""
+#~ "最后，如您<strong>没有要求</strong>删除账户，请您<strong>立即</strong>更改"
+#~ "您的密码。"
+
+#~ msgctxt "UI"
+#~ msgid "We hope to see you back soon."
+#~ msgstr "我们期望与您后会有期。"
+
+#~ msgctxt "UI"
+#~ msgid "Hey <strong>%(username)s</strong>,"
+#~ msgstr "<strong>%(username)s</strong>您好，"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "You can also <a href=\"%(url)s\">click here</a> to see this report online."
+#~ msgstr "您也可以<a href=\"%(url)s\">点此</a>在线查看本报告。"
+
+#~ msgctxt "UI"
+#~ msgid "– The Slush Pool Team"
+#~ msgstr "——Slush Pool矿池团队"
+
+#~ msgctxt "UI"
+#~ msgid "Ready to jumpstart your mining? 🔥🚀"
+#~ msgstr "准备好点燃挖矿的小火箭了么？🔥🚀"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Right now, Slush Pool supports <strong>Bitcoin</strong> and "
+#~ "<strong>Zcash</strong> mining, but make sure you keep an eye out for an "
+#~ "announcement coming soon! (Hint: 3 more cryptos incoming 🎉)"
+#~ msgstr ""
+#~ "Slush Pool矿池现已支持<strong>比特币</strong>和<strong>Zcash</strong>的合"
+#~ "并挖矿。我们还即将推出另外三种加密货币的合并挖矿，请对我们的公告保持关注！"
+#~ "🎉"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "If you ever need help with anything else, make sure you check out "
+#~ "our&nbsp;<a href=\"%(url)s\"><strong>online support portal</strong></a>"
+#~ msgstr ""
+#~ "如果您还需要其他帮助，您还可以试试我们的&nbsp;<a href=\"%(url)s\"><strong>"
+#~ "在线客服平台</strong></a>"
+
+#~ msgctxt "UI"
+#~ msgid "We've transferred %(amount)s %(coin)s to your address %(address)s."
+#~ msgstr "我们已将 %(amount)s 个 %(coin)s 转到了您的 %(address)s 地址。"
+
+#~ msgctxt "UI"
+#~ msgid "Thanks for joining Slush Pool! 💪"
+#~ msgstr "感谢您选择Slush Pool矿池！💪"
+
+#~ msgctxt "UI"
+#~ msgid "START MINING"
+#~ msgstr "<strong>开始挖矿</strong>"
+
+#~ msgctxt "UI"
+#~ msgid "We got a password reset request for your Slush Pool account."
+#~ msgstr "我们收到了重置您Slush Pool矿池账号密码的请求。"
+
+#~ msgctxt "UI"
+#~ msgid "RESET PASSWORD"
+#~ msgstr "<strong>重置密码</strong>"
+
+#~ msgctxt "UI"
+#~ msgid "CONFIRM CHANGE"
+#~ msgstr "<strong>确认更改</strong>"
+
+#~ msgctxt "UI"
+#~ msgid "Invalid payout channel id."
+#~ msgstr "无效的提现渠道ID。"
+
+#~ msgctxt "UI"
+#~ msgid "Payout channel confirmation has been cancelled."
+#~ msgstr "已取消提现渠道确认。"
+
+#~ msgctxt "UI"
+#~ msgid "Signature is not valid."
+#~ msgstr "签名无效。"
+
+#~ msgctxt "UI"
+#~ msgid "Message is wrong."
+#~ msgstr "信息错误。"
+
+#~ msgctxt "UI"
+#~ msgid "Signature is out of date."
+#~ msgstr "签名过期。"
+
+#~ msgctxt "UI"
+#~ msgid "Payouts are not locked."
+#~ msgstr "提现未上锁。"
+
+#~ msgctxt "UI"
+#~ msgid "This wallet is not a target of any locked split rule."
+#~ msgstr "钱包地址不在任何一个锁定分配规则中。"
+
+#~ msgctxt "UI"
+#~ msgid "This type of wallet is not supported for signatures."
+#~ msgstr "这种钱包不支持签名。"
+
+#~ msgid "French"
+#~ msgstr "法语"
+
+#~ msgctxt "UI"
+#~ msgid "You can not change a locked wallet."
+#~ msgstr "您不能更改一个已被锁定的钱包。"
+
+#~ msgctxt "UI"
+#~ msgid "New wallet is already set."
+#~ msgstr "新钱包已设置。"
+
+#~ msgctxt "UI"
+#~ msgid "No pending wallet to confirm."
+#~ msgstr "没有等待确认中的钱包。"
+
+#~ msgctxt "UI"
+#~ msgid "Zcash wallet has been changed."
+#~ msgstr "Zcash钱包已更改。"
+
+#~ msgctxt "UI"
+#~ msgid "Zcash wallet change request has been cancelled."
+#~ msgstr "更改钱包地址的请求已被取消。"
+
+#~ msgctxt "UI"
+#~ msgid "Payout channel verification has been cancelled."
+#~ msgstr "提现渠道验证已取消。"
+
+#~ msgctxt "UI"
+#~ msgid "Please, contact our support for further details."
+#~ msgstr "请联系我们的客服获取更多详情。"
+
+#~ msgctxt "UI"
+#~ msgid "Pending %(coin)s Wallet"
+#~ msgstr "等待中的%(coin)s钱包"
+
+#~ msgctxt "UI"
+#~ msgid "Change my Password"
+#~ msgstr "更改我的密码"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Please setup your payout address. Your balance is over your payout "
+#~ "threshold."
+#~ msgstr "请您设置您的提现地址。您的余额已超过您的提现阈值。"
+
+#~ msgctxt "UI"
+#~ msgid "Your balance is {balance} and threshold is {threshold}."
+#~ msgstr "您的余额为{balance}您的阈值为{threshold}。"
+
+#~ msgctxt "UI"
+#~ msgid "Account Settings"
+#~ msgstr "账户设置"
+
+#~ msgctxt "UI"
+#~ msgid "Unable to send {coin} payout"
+#~ msgstr "无法发送{coin}的提现"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "Your opinion on block size matters to the whole community. It is up to "
+#~ "you to make a choice. Please, select one of the options below."
+#~ msgstr ""
+#~ "您对区块大小的意见对整个挖矿社区都很重要。请您从下面的选项中选一个吧。"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "If you change your mind later on, you can make a new choice in <a href="
+#~ "\"%(settings)s\">settings</a>. Check out the latest <a href=\"%(stats)s"
+#~ "\">results</a>."
+#~ msgstr ""
+#~ "如果您之后改变主意了，您可以在<a href=\"%(settings)s\">设置</a>里重新选"
+#~ "择。查看最新<a href=\"%(stats)s\">结果</a>。"
+
+#~ msgctxt "UI"
+#~ msgid "Bitcoin Proposal Preference"
+#~ msgstr "比特币提案参考"
+
+#~ msgctxt "UI"
+#~ msgid "Wallet change confirmation"
+#~ msgstr "更改钱包的确认"
+
+#~ msgctxt "UI"
+#~ msgid "Payout channel confirmation cancelled"
+#~ msgstr "提现渠道确认已取消"
+
+#~ msgctxt "UI"
+#~ msgid "Zcash wallet change confirmation"
+#~ msgstr "更改Zcash钱包的确认"
 
 #~ msgctxt "UI"
 #~ msgid "Integrity error on worker update"
@@ -3013,9 +3854,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 
 #~ msgid "Zcash Setup"
 #~ msgstr "Zcash设置"
-
-#~ msgid "Rewards & Payouts"
-#~ msgstr "收益与提现"
 
 #~ msgid "Pool Terminology"
 #~ msgstr "矿池术语"
@@ -3078,9 +3916,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 
 #~ msgid "Go to <em>Settings > Access Profiles</em>"
 #~ msgstr "前往 <em>设置 > 接入配置</em>"
-
-#~ msgid "Select one of your access profiles or create a new one"
-#~ msgstr "选择您访问配置中的一个或创建一个新配置"
 
 #~ msgid ""
 #~ "Select <em>Allow access to web APIs</em> in the access profile detail"
@@ -3148,9 +3983,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 
 #~ msgid "Type"
 #~ msgstr "类型"
-
-#~ msgid "Description"
-#~ msgstr "描述"
 
 #~ msgid "string"
 #~ msgstr "字符串"
@@ -3319,9 +4151,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 
 #~ msgid "<a href=\"%(login)s\">Log into</a> your account."
 #~ msgstr "<a href=\"%(login)s\">登录</a>到您的账户。"
-
-#~ msgid "Configure your mining device"
-#~ msgstr "配置您的挖矿设备"
 
 #~ msgid ""
 #~ "Individual hardware manufacturers may have specific settings requirements "
@@ -4337,9 +5166,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgid "Bitcoin"
 #~ msgstr "比特币"
 
-#~ msgid "Pool fee"
-#~ msgstr "矿池手续费"
-
 #~ msgid "Minimum payout threshold"
 #~ msgstr "最低提现阈值"
 
@@ -4438,9 +5264,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgstr ""
 #~ "我们推荐您设置为低于您预期有效算力的30%%。<br>比如您的矿工预期算力是1 Ths/"
 #~ "s，<strong>警告限值</strong>会就是700 Ghs/s。"
-
-#~ msgid "Hash rate"
-#~ msgstr "算力"
 
 #~ msgid ""
 #~ "<strong>Hash rate</strong> is the number of hashes generated per second."
@@ -4753,9 +5576,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ "得此协议。协议的官网<a href=\"%(url)s\" target=\"_blank\">StratumProtocol."
 #~ "org</a>能为您解释技术上的细节。"
 
-#~ msgid "Transaction fee"
-#~ msgstr "交易手续费"
-
 #~ msgid ""
 #~ "Spender may include transaction (or network) fee in a transaction in "
 #~ "order to incentivize miners to add the given transaction to a block. "
@@ -4874,9 +5694,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgstr ""
 #~ "在<em>设置>访问配置</em>里，有一个选项能创建多个密码不同的访问配置，以及不"
 #~ "同等级的账户接入权限。只需要点击<em>+添加一个新的</em>然后在列表中选择。"
-
-#~ msgid "Access permissions"
-#~ msgstr "访问权限"
 
 #~ msgid ""
 #~ "Choose between granting full access or just read-only access to a "
@@ -5808,9 +6625,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgid "Device setup, connectivity, power"
 #~ msgstr "设备设置，连通性，功率"
 
-#~ msgid "Namecoin mining all the way"
-#~ msgstr "关于Namecoin挖矿的一切"
-
 #~ msgid "FAQ: Mining"
 #~ msgstr "常见问题：挖矿"
 
@@ -5897,18 +6711,11 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgid "Beginners Guide"
 #~ msgstr "新手导航"
 
-#~ msgid "Rewards"
-#~ msgstr "报酬历史"
-
 #~ msgid "FAQ"
 #~ msgstr "常见问题"
 
 #~ msgid "Frequently Asked Questions"
 #~ msgstr "常见问题"
-
-#~ msgctxt "UI"
-#~ msgid "Help Center"
-#~ msgstr "帮助中心"
 
 #~ msgid "Possible Contact Channels"
 #~ msgstr "可能的联系渠道"
@@ -6160,9 +6967,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgid "Create an <strong>account</strong> on slushpool.com"
 #~ msgstr "在slushpool.com创建一个<strong>账户</strong>"
 
-#~ msgid "Create your <strong>Bitcoin payout address</strong>"
-#~ msgstr "创建您的<strong>比特币报酬支付地址</strong>"
-
 #~ msgid "Secure your <strong>electricity supply</strong>"
 #~ msgstr "确保您的<strong>电源</strong>"
 
@@ -6349,9 +7153,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 
 #~ msgid "Development corner"
 #~ msgstr "开发角"
-
-#~ msgid "Mining <span>Setup</span>"
-#~ msgstr "挖矿<span>设置</span>"
 
 #~ msgid "How to start mining on Slush Pool??"
 #~ msgstr "如何开始在Slush矿池挖矿呢？？"
@@ -6612,9 +7413,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgstr ""
 #~ "您可以使用<a href=\"%(link)s\" target=\"_blank\" class=\"ext\">在线计算器"
 #~ "</a>来判断以您的挖矿硬件能挖得多少。只需输入您的hash速率就能得到个估值。"
-
-#~ msgid "Reward"
-#~ msgstr "报酬"
 
 #~ msgid ""
 #~ "See the question above and the <a href=\"%(link)s\">following article</a>"
@@ -7870,9 +8668,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ "基于ASIC的矿工提供一个在较低能量消耗情况下的显著的高<a href=\"%(link)s"
 #~ "\">Hash速率</a>。"
 
-#~ msgid "Alert Limit"
-#~ msgstr "警告限值"
-
 #~ msgctxt "UI"
 #~ msgid "Troubleshooting"
 #~ msgstr "故障排除"
@@ -7987,10 +8782,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgid ""
 #~ "Set minimum difficulty provided by the vendor of your device on your own."
 #~ msgstr "根据您设备的配置自行设置最低困难值。"
-
-#~ msgctxt "UI"
-#~ msgid "Worker <span>Management</span>"
-#~ msgstr "矿工 <span>管理</span>"
 
 #, fuzzy
 #~ msgctxt "UI"
@@ -8412,14 +9203,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgid "Follow us on %(twitter)s and %(facebook)s."
 #~ msgstr "从%(twitter)s和%(facebook)s关注我们。"
 
-#~ msgctxt "UI"
-#~ msgid ""
-#~ "BTC prices provided by <a href=\"%(url)s\" target=\"_blank"
-#~ "\">BitcoinAverage Price Index</a>"
-#~ msgstr ""
-#~ "比特币价格由<a href=\"%(url)s\" target=\"_blank\">BitcoinAverage Price "
-#~ "Index</a>提供"
-
 #~ msgid "Denied!"
 #~ msgstr "拒绝！"
 
@@ -8631,10 +9414,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgid "<strong>Blog</strong>"
 #~ msgstr "<strong>博客</strong>"
 
-#~ msgctxt "UI, top menu"
-#~ msgid "Pool <span>Statistics</span>"
-#~ msgstr "矿池 <span>统计</span>"
-
 #~ msgctxt "UI"
 #~ msgid "<strong>System</strong> Stats"
 #~ msgstr "<strong>系统</strong> 统计"
@@ -8658,10 +9437,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgctxt "UI"
 #~ msgid "<strong>JSON</strong> Stats"
 #~ msgstr "<strong>JSON</strong> 统计"
-
-#~ msgctxt "UI"
-#~ msgid "My <span>account</span>"
-#~ msgstr "我的 <span>账户</span>"
 
 #~ msgctxt "UI"
 #~ msgid "<strong>Dashboard</strong>"
@@ -8761,10 +9536,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgctxt "UI"
 #~ msgid "User Manual"
 #~ msgstr "用户指南"
-
-#~ msgctxt "UI, Page title"
-#~ msgid "Password reset"
-#~ msgstr "密码重设"
 
 #~ msgctxt "UI"
 #~ msgid "Password reset"
@@ -8971,12 +9742,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgid "My account"
 #~ msgstr "本人帐户"
 
-#~ msgid "Contact Us"
-#~ msgstr "联系我们"
-
-#~ msgid "Contact us"
-#~ msgstr "联系我们"
-
 #~ msgid "Team"
 #~ msgstr "组"
 
@@ -9161,10 +9926,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ "Our unique reward system provides <strong>stable and transparent rewards</"
 #~ "strong> for loyal miners."
 #~ msgstr "我们的独特回报系统为忠实用户提供 <strong>稳定透明的报酬</strong> 。"
-
-#~ msgctxt "UI"
-#~ msgid "Previous Chapter"
-#~ msgstr "前一章节"
 
 #~ msgctxt "UI"
 #~ msgid "Select Chapter"
@@ -9435,10 +10196,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgctxt "UI"
 #~ msgid "User Count"
 #~ msgstr "用户统计"
-
-#~ msgctxt "UI"
-#~ msgid "Average Hash Rate"
-#~ msgstr "Hash速率均值"
 
 #~ msgctxt "UI"
 #~ msgid "Group Hash Rate"
@@ -9949,9 +10706,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgid "Category"
 #~ msgstr "分类"
 
-#~ msgid "No article found."
-#~ msgstr "未发现文章。"
-
 #~ msgid "previous"
 #~ msgstr "前"
 
@@ -10010,10 +10764,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgctxt "UI"
 #~ msgid "Pool Effective Hash Rate (30 min average)"
 #~ msgstr "矿池有效Hash速率（30分钟平均值）"
-
-#~ msgctxt "UI"
-#~ msgid "Pool Scoring Hash Rate"
-#~ msgstr "矿池指数加权hash速率"
 
 #~ msgctxt "UI"
 #~ msgid "Pool Luck (current round, 10, 50, 250 blocks)"
@@ -10140,12 +10890,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 
 #~ msgid "Installation on Linux (Ubuntu / Debian)"
 #~ msgstr "在Linux (Ubuntu / Debian)上安装"
-
-#, fuzzy
-#~ msgid ""
-#~ "Download TGZ file from <a href=\"%(url)s\" target=\"_blank\" class=\"ext"
-#~ "\">here</a>"
-#~ msgstr "从<a href=\"%(url)s\">这里</a>下载TGZ文件"
 
 #~ msgid ""
 #~ "Open your terminal application (<code>ctrl + alt + T</code> on Ubuntu) "
@@ -10796,10 +11540,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ "址："
 
 #~ msgctxt "UI"
-#~ msgid "Block <span>History</span>"
-#~ msgstr "矿区 <span>历史</span>"
-
-#~ msgctxt "UI"
 #~ msgid "Block Found At"
 #~ msgstr "矿区被发现在"
 
@@ -11088,10 +11828,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgstr ""
 #~ "我们的技术支持小组在这里 <strong>全年每天24小时</strong> 为您服务。我们为"
 #~ "给您在任何情况下提供有用的答复正非常努力地工作着。"
-
-#~ msgctxt "UI"
-#~ msgid "Reward <span>History</span>"
-#~ msgstr "回报 <span>历史</span>"
 
 #~ msgctxt "UI"
 #~ msgid ""
@@ -11476,20 +12212,8 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgstr "总计："
 
 #~ msgctxt "UI"
-#~ msgid "Date"
-#~ msgstr "日期"
-
-#~ msgctxt "UI"
-#~ msgid "State"
-#~ msgstr "状态"
-
-#~ msgctxt "UI"
 #~ msgid "Address"
 #~ msgstr "地址"
-
-#~ msgctxt "UI"
-#~ msgid "Amount"
-#~ msgstr "数额"
 
 #~ msgctxt "UI"
 #~ msgid "Fee"
@@ -11763,10 +12487,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgctxt "UI"
 #~ msgid "Time Since"
 #~ msgstr "起于时间"
-
-#~ msgctxt "UI"
-#~ msgid "Confirmation Status"
-#~ msgstr "确认状态"
 
 #~ msgctxt "UI"
 #~ msgid "Rewards for Last 14 Days"
@@ -12169,14 +12889,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgid "Login"
 #~ msgstr "登录"
 
-#, fuzzy
-#~ msgid "OK"
-#~ msgstr "好"
-
-#, fuzzy
-#~ msgid "Low"
-#~ msgstr "低"
-
 #~ msgctxt "UI"
 #~ msgid "All times are in UTC."
 #~ msgstr "所有时间均是世界统一时间。"
@@ -12304,10 +13016,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgctxt "UI, Page title"
 #~ msgid "New proposal"
 #~ msgstr "新提议"
-
-#~ msgctxt "UI"
-#~ msgid "API details"
-#~ msgstr "API详情"
 
 #~ msgctxt "UI"
 #~ msgid "Contact us"
@@ -12557,11 +13265,6 @@ msgstr "名称和快捷方式必须是唯一的。"
 #~ msgctxt "Page title"
 #~ msgid "Login"
 #~ msgstr "登入"
-
-#, fuzzy
-#~ msgctxt "UI, settings tab"
-#~ msgid "Payouts"
-#~ msgstr "派息历史"
 
 #, fuzzy
 #~ msgctxt "UI, settings"
