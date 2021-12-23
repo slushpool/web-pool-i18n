@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-20 11:36+0100\n"
-"PO-Revision-Date: 2021-12-23 09:53+0000\n"
+"PO-Revision-Date: 2021-12-24 14:53+0000\n"
 "Last-Translator: Behzad Amiri Nezhad <behzad.amiri.nezhad@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/slushpool/mining/"
 "fa/>\n"
@@ -414,8 +414,8 @@ msgid ""
 "We received a request to change the email address of your account %(name)s "
 "to: %(email)s"
 msgstr ""
-"ما درخواستی برای تغییر آدرس ایمیل حساب %(name)s شما به %(email)s دریافت "
-"کردیم."
+"ما درخواستی برای تغییر آدرس ایمیل حساب %(name)s شما به: %(email)s دریافت "
+"کردیم"
 
 #: campaigns/email_templates/v4_email_change.html:210
 msgctxt "email"
@@ -612,6 +612,8 @@ msgid ""
 "We received a request to change your %(coin)s wallet under the financial "
 "account \"%(account)s\" to this new address: %(address)s"
 msgstr ""
+"ما درخواستی برای تغییر آدرس کیف پول %(coin)s شما در حساب مالی \"%(account)s\""
+" به این آدرس جدید دریافت کردیم: %(address)s"
 
 #: campaigns/email_templates/v4_payout_channel_verification.html:212
 #, python-format
@@ -725,8 +727,8 @@ msgid ""
 "\"%(campaign_name)s\". To be able to change the template, you must abort the "
 "campaign run first."
 msgstr ""
-"این الگو در اجرای کمپین \"%(campaign_run_name)s\" کمپین \"%(campaign_name)s\""
-" استفاده می شود. برای اینکه بتوانید قالب را تغییر دهید، ابتدا باید اجرای "
+"این الگو در اجرای کمپین \"%(campaign_run_name)s\" از کمپین \"%(campaign_name)"
+"s\" استفاده می شود. برای اینکه بتوانید قالب را تغییر دهید، ابتدا باید اجرای "
 "کمپین را لغو کنید."
 
 #: campaigns/forms/validators.py:512 mailing/forms/validators.py:34
@@ -1140,7 +1142,7 @@ msgstr "توکن باید استرینگی از %d کاراکتر یا ارقا�
 #: finance/api/v1/api_actions.py:31 finance/forms/validators.py:316
 msgctxt "UI"
 msgid "Invalid payout account id!"
-msgstr "شناسه  حساب پرداخت غیرمعتبراست!"
+msgstr "شناسه حساب پرداخت غیرمعتبراست!"
 
 #: finance/api/v1/api_actions.py:45
 msgctxt "UI"
@@ -1240,7 +1242,7 @@ msgstr ""
 #: finance/forms/validators.py:28
 msgctxt "UI"
 msgid "Invalid currency!"
-msgstr "ارز نامعتبر."
+msgstr "ارز نامعتبر!"
 
 #: finance/forms/validators.py:45
 msgctxt "UI"
@@ -1342,7 +1344,7 @@ msgstr "کیف پول Xpub در حال حاضر پشتیبانی نمی شود."
 #: finance/forms/validators.py:280
 msgctxt "UI"
 msgid "Invalid type!"
-msgstr "نوع نامعتبر است."
+msgstr "نوع نامعتبر است!"
 
 #: finance/forms/validators.py:297
 msgctxt "UI"
@@ -1352,7 +1354,7 @@ msgstr "شناسه حساب پرداخت نامعتبر است."
 #: finance/forms/validators.py:326
 msgctxt "UI"
 msgid "Invalid payout account name!"
-msgstr "نام حساب پرداخت نامعتبر است."
+msgstr "نام حساب پرداخت نامعتبر است!"
 
 #: finance/forms/validators.py:332
 msgctxt "UI"
@@ -1867,7 +1869,7 @@ msgid ""
 "Users that set I don't care option = pool operator decides which block size "
 "is closest to his heart."
 msgstr ""
-"کاربرانی که  گزینه من اهمیتی نمی دهم تنظیم می کنند = اپراتوراستخر تصمیم می "
+"کاربرانی که گزینه من اهمیتی نمی دهم تنظیم می کنند = اپراتوراستخر تصمیم می "
 "گیرد که کدام اندازه بلوک نزدیک ترین به قلب اوست."
 
 #: mining/models.py:417
@@ -2153,7 +2155,7 @@ msgid ""
 "Please login with a corresponding user name (mentioned in the confirmation e-"
 "mail) and try it again."
 msgstr ""
-"لینک تأیید استفاده شده با این حساب کاربری مرتبط نیست. <br> <br> لطفا با نام "
+"لینک تأیید استفاده شده با این حساب کاربری مرتبط نیست. <br><br> لطفا با نام "
 "کاربری مربوطه (ذکر شده در ایمیل تایید) وارد شوید و دوباره امتحان کنید."
 
 #: user_request/views.py:52
@@ -3107,11 +3109,11 @@ msgid ""
 "missed this e-mail and the link expired, please make a new request on the "
 "pool website."
 msgstr ""
-"اگر مطمئن هستید که می خواهید حساب کاربری خود را حذف کنید <strong>"
-"%(username)s</strong> ، لطفاً <a href=\"%(delete_url)s\"> این &nbsp; &nbsp;"
-"لینک</a>تأیید را دنبال کنید. این لینک فقط برای یک ساعت معتبر است. اگر این "
-"ایمیل را از دست دادید و لینک منقضی شد، لطفاً یک درخواست جدید در وب سایت استخر "
-"ارائه دهید."
+"اگر مطمئن هستید که می خواهید حساب کاربری خود را حذف کنید "
+"<strong>%(username)s</strong> ، لطفاً <a href=\"%(delete_url)s\"> "
+"این&nbsp;تأیید&nbsp; را دنبال کنید</a>. این لینک فقط برای یک ساعت معتبر است. "
+"اگر این ایمیل را از دست دادید و لینک منقضی شد، لطفاً یک درخواست جدید در وب "
+"سایت استخر ارائه دهید."
 
 #: web/templates/email/account_delete.html:7
 msgctxt "UI"
@@ -3134,9 +3136,9 @@ msgid ""
 "incident for further investigation at <a href=\"mailto:%(support_email)s\">"
 "%(support_email)s</a>."
 msgstr ""
-"اگر شما این درخواست را آغاز نکرده اید ، لطفاً روی پیوند تأیید بالا کلیک "
-"نکنید ، رمز عبور خود را فوراً تغییر دهید و این رویداد را برای تحقیقات بیشتر "
-"در<a href=\"mailto:%(support_email)s\">%(support_email)s گزارش دهید."
+"اگر شما این درخواست را آغاز نکرده اید، لطفاً روی پیوند تأیید بالا کلیک نکنید،"
+" رمز عبور خود را فوراً تغییر دهید و این رویداد را برای بررسی بیشتر در <a "
+"href=\"mailto:%(support_email)s\">%(support_email)s</a>گزارش دهید."
 
 #: web/templates/email/account_delete_warning.templ.html:5
 #, python-format
@@ -3206,8 +3208,8 @@ msgid ""
 "To authorize this request, please follow <a href=\"%(confirm_url)s"
 "\">this&nbsp;confirmation&nbsp;link</a>"
 msgstr ""
-"برای تأیید این درخواست ، لطفاً <a href=\"%(confirm_url)s\">این&nbsp; &nbsp;"
-"لینک</a>تایید را دنبال کنید"
+"برای تأیید این درخواست ، لطفاً <a href=\"%(confirm_url)s\""
+">این&nbsp;تایید&nbsp; لینک را دنبال کنید</a>"
 
 #: web/templates/email/email_change.html:7
 #, python-format
@@ -3218,10 +3220,10 @@ msgid ""
 "immediately and report this incident for further investigation at <a href="
 "\"mailto:%(support_email)s\">%(support_email)s</a>."
 msgstr ""
-"اگر شما این تغییر را آغاز نکردید ، لطفاً این درخواست را در <a href="
-"\"%(cancel_url)s\"> این &nbsp; &nbsp;لینک</a>لغو، لغو کنید ، رمز عبور خود را "
-"فوراً تغییر دهید و این رویداد را برای تحقیقات بیشتر در <a href=\"mailto:"
-"%(support_email)s\">%(support_email)s</a> گزارش کنید."
+"اگر شما این تغییر را آغاز نکرده اید، لطفا &nbsp;این&nbsp;درخواست را <a href="
+"\"%(cancel_url)s\">لغو کنید</a>، رمز عبور خود را بلافاصله تغییر دهید و این "
+"رویداد را برای بررسی بیشتر در به ایمیل <a href=\"mailto:%(support_email)s\""
+">%(support_email)s</a> گزارش کنید."
 
 #: web/templates/email/email_change.html:9
 msgid "Change my email"
@@ -3375,8 +3377,8 @@ msgid ""
 "In order to activate your account and start mining, please follow this <a "
 "href=\"%(activate_url)s\">activation url</a>."
 msgstr ""
-"برای فعال کردن حساب خود و شروع به استخراج ، لطفاً این <a href="
-"\"%(activate_url)s\">آدرس  فعال سازی</a> را دنبال کنید."
+"برای فعال کردن حساب خود و شروع به استخراج ، لطفاً این <a href=\""
+"%(activate_url)s\">آدرس فعال سازی</a> را دنبال کنید."
 
 #: web/templates/email/registration.html:8
 msgid "Activate"
@@ -3399,8 +3401,8 @@ msgid ""
 "To authorize this request, please follow <a href=\"%(wallet_confirm_link)s"
 "\">this&nbsp;confirmation&nbsp;link</a>."
 msgstr ""
-"برای تأیید این درخواست ، لطفاً <a href=\"%(wallet_confirm_link)s\">این&nbsp;"
-"&nbsp;لینک</a>تایید را دنبال کنید."
+"برای تأیید این درخواست ، لطفاً <a href=\"%(wallet_confirm_link)s\""
+">این&nbsp;تایید&nbsp; لینک را دنبال کنید</a>."
 
 #: web/templates/email/wallet_change.html:7
 #, python-format
@@ -3411,10 +3413,10 @@ msgid ""
 "password immediately and report this incident for further investigation at "
 "<a href=\"mailto:%(support_email)s\">%(support_email)s</a>."
 msgstr ""
-"اگر شمااین تغییر را آغاز نکرده اید ، لطفاً این&nbsp;درخواست</a> را <a href="
-"\"%(wallet_cancel_link)s\">لغو کنید &nbsp;، رمز عبور خود را بلافاصله تغییر "
-"دهید و این رویداد را برای تحقیقات بیشتر در <a href=\"mailto:%(support_email)s"
-"\"> %(support_email)s </a> گزارش دهید."
+"اگر شما این تغییر را آغاز نکرده اید، لطفا &nbsp;این&nbsp;درخواست را <a href="
+"\"%(wallet_cancel_link)s\">لغو کنید</a>، رمز عبور خود را بلافاصله تغییر دهید "
+"و این رویداد را برای بررسی بیشتر در به ایمیل <a href=\"mailto"
+":%(support_email)s\">%(support_email)s</a> گزارش کنید."
 
 #: web/templates/email/wallet_change.html:9
 msgid "Change my wallet"
