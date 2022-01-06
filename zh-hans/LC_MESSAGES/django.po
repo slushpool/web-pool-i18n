@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-20 11:36+0100\n"
+"POT-Creation-Date: 2022-01-06 15:08+0100\n"
 "PO-Revision-Date: 2021-10-20 09:32+0000\n"
 "Last-Translator: JohnsonWang <johnsonwong@westudyin.cz>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -698,12 +698,12 @@ msgstr ""
 "该模板用于活动“%(campaign_name)s”中的活动运行“%(campaign_run_name)s”。如需变"
 "更模板，您必须先终止活动。"
 
-#: campaigns/forms/validators.py:512 mailing/forms/validators.py:34
+#: campaigns/forms/validators.py:512
 msgctxt "UI"
 msgid "Invalid user selection."
 msgstr "无效的用户选择。"
 
-#: campaigns/forms/validators.py:520 mailing/forms/validators.py:53
+#: campaigns/forms/validators.py:520
 msgctxt "UI"
 msgid "Invalid reason for unsubscription."
 msgstr "无效的退订理由。"
@@ -718,6 +718,39 @@ msgstr "反馈必须长于%d个字。"
 msgctxt "UI"
 msgid "Invalid e-mail token provided."
 msgstr "提供了无效的邮件口令。"
+
+#: campaigns/models.py:46
+msgctxt "UI"
+msgid "I receive newsletters too frequently"
+msgstr "我觉得实事通讯（Newsletter）发送太过于频繁"
+
+#: campaigns/models.py:47
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "I do not mind anymore"
+msgctxt "UI"
+msgid "I do not mine anymore"
+msgstr "我不再挖矿了"
+
+#: campaigns/models.py:48
+msgctxt "UI"
+msgid "I have joined another pool"
+msgstr "我换了一家矿池"
+
+#: campaigns/models.py:49
+msgctxt "UI"
+msgid "The newsletter content is of no value to me"
+msgstr "实事通讯（Newsletter）的内容对我没有用"
+
+#: campaigns/models.py:50
+msgctxt "UI"
+msgid "Other reason"
+msgstr "其他原因"
+
+#: campaigns/models.py:66
+msgctxt "UI"
+msgid "Not provided"
+msgstr "未列出的原因"
 
 #: campaigns/templates/campaign_fragment/hello.html:4
 #, python-format
@@ -1716,65 +1749,6 @@ msgstr "您不能删除主访问配置。"
 msgctxt "UI"
 msgid "You can not delete staff Access Profile."
 msgstr "您不能删除子访问配置。"
-
-#: mailing/forms/campaigns.py:78
-msgctxt "UI"
-msgid "Send"
-msgstr "发送"
-
-#: mailing/forms/validators.py:17
-msgctxt "UI"
-msgid "Newsletter recipient not found."
-msgstr "实事通讯（Newsletter）收件人未找到。"
-
-#: mailing/forms/validators.py:44
-msgctxt "UI"
-msgid "Feedback must be a string no longer than 600 characters."
-msgstr "反馈不能超过600个字。"
-
-#: mailing/models.py:505
-msgctxt "UI"
-msgid "I receive newsletters too frequently"
-msgstr "我觉得实事通讯（Newsletter）发送太过于频繁"
-
-#: mailing/models.py:506
-msgctxt "UI"
-msgid "I do not mind anymore"
-msgstr "我不再挖矿了"
-
-#: mailing/models.py:507
-msgctxt "UI"
-msgid "I have joined another pool"
-msgstr "我换了一家矿池"
-
-#: mailing/models.py:508
-msgctxt "UI"
-msgid "The newsletter content is of no value to me"
-msgstr "实事通讯（Newsletter）的内容对我没有用"
-
-#: mailing/models.py:509
-msgctxt "UI"
-msgid "Other reason"
-msgstr "其他原因"
-
-#: mailing/models.py:525
-msgctxt "UI"
-msgid "Not provided"
-msgstr "未列出的原因"
-
-#: mailing/templates/mailing/emails/unsubscribe_confirmation.html:9
-msgctxt "UI"
-msgid ""
-"From the bottom of our heart we would like to confirm that we had "
-"unsubscribed you from our newsletter."
-msgstr "我们诚挚确认，您已经取消订阅时事通讯。"
-
-#: mailing/templates/mailing/emails/unsubscribe_confirmation.html:11
-msgctxt "UI"
-msgid ""
-"In case you change your mind, you can tune up our news from your account "
-"settings."
-msgstr "如果您改变主意了，可以随时去账户设置启用订阅。"
 
 #: mining/models.py:389
 msgctxt "UI"
@@ -3498,6 +3472,30 @@ msgstr "无效的标签ID。"
 msgctxt "UI"
 msgid "Names and shortcuts must be unique."
 msgstr "名称和快捷方式不能重复。"
+
+#~ msgctxt "UI"
+#~ msgid "Send"
+#~ msgstr "发送"
+
+#~ msgctxt "UI"
+#~ msgid "Newsletter recipient not found."
+#~ msgstr "实事通讯（Newsletter）收件人未找到。"
+
+#~ msgctxt "UI"
+#~ msgid "Feedback must be a string no longer than 600 characters."
+#~ msgstr "反馈不能超过600个字。"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "From the bottom of our heart we would like to confirm that we had "
+#~ "unsubscribed you from our newsletter."
+#~ msgstr "我们诚挚确认，您已经取消订阅时事通讯。"
+
+#~ msgctxt "UI"
+#~ msgid ""
+#~ "In case you change your mind, you can tune up our news from your account "
+#~ "settings."
+#~ msgstr "如果您改变主意了，可以随时去账户设置启用订阅。"
 
 #~ msgid "Spanish"
 #~ msgstr "西班牙语"
