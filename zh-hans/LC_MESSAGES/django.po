@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-06 15:08+0100\n"
+"POT-Creation-Date: 2022-01-24 17:28+0100\n"
 "PO-Revision-Date: 2021-10-20 09:32+0000\n"
 "Last-Translator: JohnsonWang <johnsonwong@westudyin.cz>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -1043,7 +1043,7 @@ msgctxt "UI"
 msgid "Hashrate"
 msgstr "算力"
 
-#: devices/templates/devices/worker_moni.html:54 web/models.py:1272
+#: devices/templates/devices/worker_moni.html:54 web/models.py:1273
 msgctxt "UI"
 msgid "Alert limit"
 msgstr "警告限值"
@@ -1133,7 +1133,7 @@ msgstr "仪表盘自动刷新设置必须是布尔值。"
 msgid "Token must be a string of %d lowercase ASCII characters or digits."
 msgstr "口令必须是 %d 个小写字符或数字。"
 
-#: finance/api/v1/api_actions.py:31 finance/forms/validators.py:316
+#: finance/api/v1/api_actions.py:31 finance/forms/validators.py:319
 msgctxt "UI"
 msgid "Invalid payout account id!"
 msgstr "无效的提现账户ID!"
@@ -1151,51 +1151,75 @@ msgid ""
 "link."
 msgstr "确认邮件已发送。请查看收到邮件中的链接。"
 
-#: finance/forms/payout_account.py:34 finance/forms/payout_account.py:74
-#: finance/forms/payout_account.py:165 finance/forms/payout_channel.py:92
+#: finance/forms/payout_account.py:35 finance/forms/payout_account.py:85
+#: finance/forms/payout_account.py:176 finance/forms/payout_channel.py:93
 #: finance/forms/payout_hold.py:28 finance/forms/payout_hold.py:68
 #: finance/forms/payout_lock.py:33 finance/forms/payout_request.py:33
 #: finance/forms/payout_split.py:66 finance/forms/wallet.py:38
-#: finance/forms/wallet.py:81 finance/forms/wallet.py:138 formlib/core.py:397
+#: finance/forms/wallet.py:81 finance/forms/wallet.py:138 formlib/core.py:399
 msgctxt "UI"
 msgid "You do not have permission to submit this form."
 msgstr "您没有提交该表的权限。"
 
-#: finance/forms/payout_account.py:132
+#: finance/forms/payout_account.py:52
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "A label with this name already exists."
+msgctxt "UI"
+msgid "An account with this name already exists!"
+msgstr "使用该名称的标签已存在。"
+
+#: finance/forms/payout_account.py:143
 msgctxt "UI"
 msgid "Unable to deactivate account with non-zero balance."
 msgstr "不能停用余额为零的账户。"
 
-#: finance/forms/payout_account.py:148
+#: finance/forms/payout_account.py:159
 msgctxt "UI"
 msgid ""
 "This account has non-zero split percentage. Reassign its rewards split first."
 msgstr "该账号的分配比例非零。请先重新分配收益。"
 
-#: finance/forms/payout_channel.py:66
+#: finance/forms/payout_channel.py:67
 msgctxt "UI"
 msgid "Select an existing wallet or create a new one."
 msgstr "选择已有钱包或新建一个钱包。"
 
-#: finance/forms/payout_channel.py:70
+#: finance/forms/payout_channel.py:71
 msgctxt "UI"
 msgid "Wallet params are missing."
 msgstr "钱包参数缺失。"
 
-#: finance/forms/payout_channel.py:73
+#: finance/forms/payout_channel.py:74
 msgctxt "UI"
 msgid "Wallet name is missing."
 msgstr "钱包名缺失。"
 
-#: finance/forms/payout_channel.py:85
+#: finance/forms/payout_channel.py:86
 msgctxt "UI"
 msgid "Settings of an API-driven payout account can not be changed."
 msgstr "用API发起账户的提现设置无法更改。"
 
-#: finance/forms/payout_channel.py:109 user_request/models.py:708
+#: finance/forms/payout_channel.py:114 user_request/models.py:708
 msgctxt "UI"
 msgid "Payouts are locked."
 msgstr "提现已被锁定。"
+
+#: finance/forms/payout_channel.py:148
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "A label with this name already exists."
+msgctxt "UI"
+msgid "Wallet with this name already exists!"
+msgstr "使用该名称的标签已存在。"
+
+#: finance/forms/payout_channel.py:152
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "A label with this name already exists."
+msgctxt "UI"
+msgid "Wallet with this address already exists!"
+msgstr "使用该名称的标签已存在。"
 
 #: finance/forms/payout_hold.py:32
 msgctxt "UI"
@@ -1229,170 +1253,170 @@ msgctxt "UI"
 msgid "Reward split can not be changed for accounts with API-driven payouts."
 msgstr "设置了API提现的账户，无法更改提现分配。"
 
-#: finance/forms/validators.py:28
+#: finance/forms/validators.py:31
 msgctxt "UI"
 msgid "Invalid currency!"
 msgstr "币种无效!"
 
-#: finance/forms/validators.py:45
+#: finance/forms/validators.py:48
 msgctxt "UI"
 msgid "Invalid wallet id!"
 msgstr "无效的钱包ID!"
 
-#: finance/forms/validators.py:55
+#: finance/forms/validators.py:58
 msgctxt "UI"
 msgid "The wallet must be active!"
 msgstr "钱包必须处于启用状态！"
 
-#: finance/forms/validators.py:64
+#: finance/forms/validators.py:67
 msgctxt "UI"
 msgid "Invalid \"is_active\" parameter!"
 msgstr "“is_active” 参数无效!"
 
-#: finance/forms/validators.py:69
+#: finance/forms/validators.py:72
 msgctxt "UI"
 msgid "This wallet is already active!"
 msgstr "该钱包已处于启用状态！"
 
-#: finance/forms/validators.py:72
+#: finance/forms/validators.py:75
 msgctxt "UI"
 msgid "This wallet has already been deactivated!"
 msgstr "该钱包已被停用！"
 
-#: finance/forms/validators.py:79
+#: finance/forms/validators.py:82
 msgctxt "UI"
 msgid "Wallet name must be a string!"
 msgstr "钱包名中只能用合法字符！"
 
-#: finance/forms/validators.py:84 finance/forms/validators.py:337
+#: finance/forms/validators.py:87 finance/forms/validators.py:340
 #, python-format
 msgctxt "UI"
 msgid "Name can not be longer than %(length)s characters!"
 msgstr "名中不能长于%(length)s个字！"
 
-#: finance/forms/validators.py:90
+#: finance/forms/validators.py:93
 msgctxt "UI"
 msgid "Name can not be empty!"
 msgstr "名不可为空！"
 
-#: finance/forms/validators.py:95
+#: finance/forms/validators.py:98
 msgctxt "UI"
 msgid "Unsupported characters in wallet name!"
 msgstr "在钱包名中不可使用不支持的符号 ！"
 
-#: finance/forms/validators.py:118 finance/forms/validators.py:135
-#: finance/forms/validators.py:363 finance/forms/validators.py:382
+#: finance/forms/validators.py:121 finance/forms/validators.py:138
+#: finance/forms/validators.py:366 finance/forms/validators.py:385
 msgctxt "UI"
 msgid "This name is already used!"
 msgstr "该名已被占用！"
 
-#: finance/forms/validators.py:150
+#: finance/forms/validators.py:153
 msgctxt "UI"
 msgid "Address missing!"
 msgstr "没填地址！"
 
-#: finance/forms/validators.py:153
+#: finance/forms/validators.py:156
 msgctxt "UI"
 msgid "Invalid address format!"
 msgstr "无效的地址格式！"
 
-#: finance/forms/validators.py:158
+#: finance/forms/validators.py:161
 msgctxt "UI"
 msgid "Blockchain address is not supported for this coin!"
 msgstr "不支持该币种的这种地址！"
 
-#: finance/forms/validators.py:201
+#: finance/forms/validators.py:204
 msgctxt "UI"
 msgid "Invalid xpub format!"
 msgstr "无效的xpub（拓展公钥）格式！"
 
-#: finance/forms/validators.py:206
+#: finance/forms/validators.py:209
 msgctxt "UI"
 msgid "XPub is not supported for this coin!"
 msgstr "该币种不支持XPub（拓展公钥）！"
 
-#: finance/forms/validators.py:220
+#: finance/forms/validators.py:223
 msgctxt "UI"
 msgid "This wallet already exists!"
 msgstr "这个钱包已存在！"
 
-#: finance/forms/validators.py:261
+#: finance/forms/validators.py:264
 msgctxt "UI"
 msgid "Invalid params format."
 msgstr "无效的参数格式。"
 
-#: finance/forms/validators.py:265
+#: finance/forms/validators.py:268
 msgctxt "UI"
 msgid "Missing \"type\" attribute in wallet params."
 msgstr "钱包参数中缺少“类型”属性。"
 
-#: finance/forms/validators.py:276
+#: finance/forms/validators.py:279
 msgctxt "UI"
 msgid "Xpub wallets are not supported at the moment."
 msgstr "暂不支持XPub（拓展公钥）钱包。"
 
-#: finance/forms/validators.py:280
+#: finance/forms/validators.py:283
 msgctxt "UI"
 msgid "Invalid type!"
 msgstr "无效的类型！"
 
-#: finance/forms/validators.py:297
+#: finance/forms/validators.py:300
 msgctxt "UI"
 msgid "Invalid payout account id."
 msgstr "无效的提现账户ID。"
 
-#: finance/forms/validators.py:326
+#: finance/forms/validators.py:329
 msgctxt "UI"
 msgid "Invalid payout account name!"
 msgstr "无效的提现账户名！"
 
-#: finance/forms/validators.py:332
+#: finance/forms/validators.py:335
 msgctxt "UI"
 msgid "Name cannot be empty!"
 msgstr "名字这项不可为空！"
 
-#: finance/forms/validators.py:344
+#: finance/forms/validators.py:347
 msgctxt "UI"
 msgid "Unsupported characters in payout account name!"
 msgstr "在提现账户名中不可使用不支持的符号 ！"
 
-#: finance/forms/validators.py:396
+#: finance/forms/validators.py:399
 msgctxt "UI"
 msgid "Invalid payout request value!"
 msgstr "请求的提现值无效！"
 
-#: finance/forms/validators.py:405
+#: finance/forms/validators.py:408
 msgctxt "UI"
 msgid "Payout has already been requested for this payout account!"
 msgstr "已请求过对该提现账户的提现！"
 
-#: finance/forms/validators.py:413
+#: finance/forms/validators.py:416
 msgctxt "UI"
 msgid "There is no wallet for this payout account!"
 msgstr "该提现账户尚未设置钱包地址！"
 
-#: finance/forms/validators.py:417
+#: finance/forms/validators.py:420
 msgctxt "UI"
 msgid "The assigned wallet is not confirmed yet!"
 msgstr "选中的钱包尚未确认！"
 
-#: finance/forms/validators.py:427
+#: finance/forms/validators.py:430
 #, python-format
 msgctxt "UI"
 msgid "Account balance must be higher than %(amount)s %(unit)s!"
 msgstr "账户余额必须高于%(amount)s %(unit)s！"
 
-#: finance/forms/validators.py:443
+#: finance/forms/validators.py:446
 msgctxt "UI"
 msgid "Payout was not requested for this payout account!"
 msgstr "尚未请求过对该提现账户的提现！"
 
-#: finance/forms/validators.py:460
+#: finance/forms/validators.py:463
 msgctxt "UI"
 msgid "Invalid split format!"
 msgstr "无效的分配格式！"
 
-#: finance/forms/validators.py:463
+#: finance/forms/validators.py:466
 #, fuzzy
 #| msgctxt "UI"
 #| msgid "Name cannot be empty!"
@@ -1400,97 +1424,105 @@ msgctxt "UI"
 msgid "Percentages cannot be negative!"
 msgstr "名字这项不可为空！"
 
-#: finance/forms/validators.py:468
+#: finance/forms/validators.py:471
 msgctxt "UI"
 msgid "No more than 2 fractional digits are allowed in the percentages!"
 msgstr ""
 
-#: finance/forms/validators.py:474
+#: finance/forms/validators.py:477
 msgctxt "UI"
 msgid "Percentages must add up to 100%!"
 msgstr "加起来的总和须为100%！"
 
-#: finance/forms/validators.py:480
+#: finance/forms/validators.py:483
 msgctxt "UI"
 msgid "Invalid payout account ids!"
 msgstr "无效的提现账户ID！"
 
-#: finance/forms/validators.py:487
+#: finance/forms/validators.py:490
 msgctxt "UI"
 msgid "Invalid payout accounts!"
 msgstr "无效的提现账户！"
 
-#: finance/forms/validators.py:499
+#: finance/forms/validators.py:502
 msgctxt "UI"
 msgid "Invalid threshold parameters!"
 msgstr "无效的阈值参数！"
 
-#: finance/forms/validators.py:501
+#: finance/forms/validators.py:504
 msgctxt "UI"
 msgid "Threshold value is required!"
 msgstr "需填阈值！"
 
-#: finance/forms/validators.py:503
+#: finance/forms/validators.py:506
 msgctxt "UI"
 msgid "Invalid threshold value!"
 msgstr "无效的阈值！"
 
-#: finance/forms/validators.py:519
+#: finance/forms/validators.py:522
 #, python-format
 msgctxt "UI"
 msgid "Threshold must be higher than %(minimum)s %(unit)s!"
 msgstr "阈值必须高于%(minimum)s %(unit)s！"
 
-#: finance/forms/validators.py:528
+#: finance/forms/validators.py:531
 #, python-format
 msgctxt "UI"
 msgid "Threshold must be lower than %(minimum)s %(unit)s!"
 msgstr "阈值必须低于%(minimum)s %(unit)s！"
 
-#: finance/forms/validators.py:549
+#: finance/forms/validators.py:543
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid threshold value!"
+msgctxt "UI"
+msgid "Invalid threshold value."
+msgstr "无效的阈值！"
+
+#: finance/forms/validators.py:558
 msgctxt "UI"
 msgid "You have to set a frequency!!"
 msgstr "您必须设定频率！！"
 
-#: finance/forms/validators.py:551 finance/forms/validators.py:553
+#: finance/forms/validators.py:560 finance/forms/validators.py:562
 msgctxt "UI"
 msgid "Invalid frequency format!"
 msgstr "无效的频率格式！"
 
-#: finance/forms/validators.py:559
+#: finance/forms/validators.py:568
 msgctxt "UI"
 msgid "Invalid payout frequency!"
 msgstr "无效的提现频率！"
 
-#: finance/forms/validators.py:563
+#: finance/forms/validators.py:572
 msgctxt "UI"
 msgid "Invalid day in period!"
 msgstr "周期内的天数无效！"
 
-#: finance/forms/validators.py:571
+#: finance/forms/validators.py:580
 #, python-format
 msgctxt "UI"
 msgid "Day of the week must be a number between %(min)s and %(max)s!"
 msgstr "一周内的天数必须是在%(min)s和%(max)s间的一个值！"
 
-#: finance/forms/validators.py:581
+#: finance/forms/validators.py:590
 #, python-format
 msgctxt "UI"
 msgid "Day of the month must be a number between %(min)s and %(max)s!"
 msgstr "一个月内的天数必须是在%(min)s和%(max)s间的一个值！"
 
-#: finance/forms/validators.py:606
+#: finance/forms/validators.py:615
 msgctxt "UI"
 msgid "Invalid trigger format!"
 msgstr "无效的触发格式！"
 
-#: finance/forms/validators.py:626
+#: finance/forms/validators.py:635
 #, python-format
 msgctxt "UI"
 msgid "Unknown trigger type \"%(type)s\"!"
 msgstr "未知的触发类型，“%(type)s”！"
 
-#: finance/forms/validators.py:649
+#: finance/forms/validators.py:658
 #, python-format
 msgctxt "UI"
 msgid "Choose a %(coin)s wallet!"
@@ -1599,12 +1631,12 @@ msgctxt "UI"
 msgid "Context value \"%s\" is missing."
 msgstr "缺失背景值“%s”。"
 
-#: formlib/core.py:479
+#: formlib/core.py:481
 msgctxt "UI"
 msgid "Missing initial value for the \"{}\" key!"
 msgstr "\"{}\" 缺失初始值！"
 
-#: formlib/core.py:482
+#: formlib/core.py:484
 msgctxt "UI"
 msgid "Initial values were not up to date!"
 msgstr "初始值未更新！"
@@ -1750,53 +1782,53 @@ msgctxt "UI"
 msgid "You can not delete staff Access Profile."
 msgstr "您不能删除子访问配置。"
 
-#: mining/models.py:389
+#: mining/models.py:391
 msgctxt "UI"
 msgid "-- not voted (proportional split) --"
 msgstr "-- 未投票的（按比例分配） --"
 
-#: mining/models.py:392
+#: mining/models.py:394
 msgctxt "UI"
 msgid ""
 "Users that don't have any preference = their hashrate is split among all "
 "block size proposals proportionally."
 msgstr "如用户没有设置任何偏好，他们的算力在所有区块大小提议中按比例分配。"
 
-#: mining/models.py:395
+#: mining/models.py:397
 msgctxt "UI"
 msgid "Not voted"
 msgstr "未投票"
 
-#: mining/models.py:400
+#: mining/models.py:402
 msgctxt "UI"
 msgid "Current rules / Bitcoin Core"
 msgstr "当前规则 / Bitcoin Core"
 
-#: mining/models.py:403
+#: mining/models.py:405
 msgctxt "UI"
 msgid ""
 "Users that prefer Current rules given by Bitcoin core = their hashrate is "
 "used for mining Bitcoin Core blocks."
 msgstr "偏好Bitcoin core的当前规则的用户，他们的算力用于挖Bitcoin Core区块。"
 
-#: mining/models.py:406
+#: mining/models.py:408
 msgctxt "UI"
 msgid "Bitcoin Core"
 msgstr "Bitcoin Core （比特币核心）"
 
-#: mining/models.py:411
+#: mining/models.py:413
 msgctxt "UI"
 msgid "I don't care, pool operator decides"
 msgstr "我觉得无所谓，让矿池决定吧"
 
-#: mining/models.py:414
+#: mining/models.py:416
 msgctxt "UI"
 msgid ""
 "Users that set I don't care option = pool operator decides which block size "
 "is closest to his heart."
 msgstr "觉得无所谓的用户，他们的区块大小则由矿池来决定。"
 
-#: mining/models.py:417
+#: mining/models.py:419
 msgctxt "UI"
 msgid "Pool decides"
 msgstr "由矿池来决定"
@@ -2146,48 +2178,64 @@ msgctxt "UI"
 msgid "Dismiss this Message"
 msgstr "忽略该消息"
 
-#: web/api/v1/views.py:356
+#: web/api/v1/views.py:359
 msgctxt "UI"
 msgid "Invalid appeal model."
 msgstr "无效的请求模型。"
 
-#: web/api/v1/views.py:363
+#: web/api/v1/views.py:366
 msgctxt "UI"
 msgid "Invalid appeal ID."
 msgstr "无效的请求ID。"
 
-#: web/api/v1/views.py:393
+#: web/api/v1/views.py:396
 msgctxt "UI"
 msgid "The current access profile has already seen the v4 welcome dialogue!"
 msgstr "当前的访问配置已见过V4欢迎对话！"
 
-#: web/api/v1/views.py:768
+#: web/api/v1/views.py:771
 msgctxt "UI"
 msgid ""
 "Only alphabetical characters, numbers and underscore are allowed in username!"
 msgstr "用户名中只允许字母字符，数字和下划线！"
 
-#: web/api/v1/views.py:774 web/api/v1/views.py:1206
+#: web/api/v1/views.py:775
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Name can not be longer than %(length)s characters!"
+msgctxt "UI"
+msgid "Username cannot be longer than %d characters!"
+msgstr "名中不能长于%(length)s个字！"
+
+#: web/api/v1/views.py:782 web/api/v1/views.py:1219
 msgctxt "UI"
 msgid "Invalid email format!"
 msgstr "无效的邮箱格式！"
 
-#: web/api/v1/views.py:779
+#: web/api/v1/views.py:785
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Name can not be longer than %(length)s characters!"
+msgctxt "UI"
+msgid "Email address cannot be longer than %d characters!"
+msgstr "名中不能长于%(length)s个字！"
+
+#: web/api/v1/views.py:792
 msgctxt "UI"
 msgid "Password must have at Least 5 characters!"
 msgstr "密码必须长于5个字！"
 
-#: web/api/v1/views.py:853 web/api/v1/views.py:872 web/api/v1/views.py:952
+#: web/api/v1/views.py:866 web/api/v1/views.py:885 web/api/v1/views.py:965
 msgctxt "UI"
 msgid "Login forbidden"
 msgstr "禁止登陆"
 
-#: web/api/v1/views.py:927
+#: web/api/v1/views.py:940
 msgctxt "UI"
 msgid "Invalid credentials."
 msgstr "无效的凭证。"
 
-#: web/api/v1/views.py:945
+#: web/api/v1/views.py:958
 msgctxt "UI"
 msgid ""
 "Please enter a correct username (not an e-mail address) and password. Note "
@@ -2196,27 +2244,27 @@ msgstr ""
 "请输入正确的用户名（不是邮箱地址）和密码。请注意这两个位置都是要区分大小写"
 "的。"
 
-#: web/api/v1/views.py:1043 web/api/v1/views.py:1098
+#: web/api/v1/views.py:1056 web/api/v1/views.py:1111
 msgctxt "UI"
 msgid "Bad username/id."
 msgstr "错误的用户名/ID。"
 
-#: web/api/v1/views.py:1046 web/api/v1/views.py:1101
+#: web/api/v1/views.py:1059 web/api/v1/views.py:1114
 msgctxt "UI"
 msgid "This user is not active yet/anymore."
 msgstr "这个用户尚未启用/已不处于启用状态。"
 
-#: web/api/v1/views.py:1172
+#: web/api/v1/views.py:1185
 msgctxt "UI"
 msgid "No pending request found!"
 msgstr "未发现正在处理中的请求!"
 
-#: web/api/v1/views.py:1295
+#: web/api/v1/views.py:1308
 msgctxt "UI"
 msgid "Invalid token!"
 msgstr "无效的口令！"
 
-#: web/api/v1/views.py:1302
+#: web/api/v1/views.py:1315
 msgctxt "UI"
 msgid "Password must have at least 5 characters!"
 msgstr "密码中必须至少有5个字！"
@@ -2481,509 +2529,515 @@ msgctxt "UI"
 msgid "To: %(date)s"
 msgstr "到 %(date)s"
 
-#: web/models.py:1260
+#: web/models.py:1261
 msgctxt "UI"
 msgid "Preferred language"
 msgstr "偏好语言"
 
-#: web/models.py:1261
+#: web/models.py:1262
 msgctxt "UI"
 msgid "Preferred timezone"
 msgstr "偏好时区"
 
-#: web/models.py:1262 web/models.py:1287
+#: web/models.py:1263 web/models.py:1288
 msgctxt "UI"
 msgid "Color theme"
 msgstr "颜色主题"
 
-#: web/models.py:1263
+#: web/models.py:1264
 msgctxt "UI"
 msgid "Email address"
 msgstr "邮箱地址"
 
-#: web/models.py:1264
+#: web/models.py:1265
 msgctxt "UI"
 msgid "Username in stats"
 msgstr "用户名统计数据"
 
-#: web/models.py:1265
+#: web/models.py:1266
 msgctxt "UI"
 msgid "Notify me on payout"
 msgstr "在提现时通知我"
 
-#: web/models.py:1266
+#: web/models.py:1267
 msgctxt "UI"
 msgid "Newsletter"
 msgstr "时事通讯（Newsletter）"
 
-#: web/models.py:1267
+#: web/models.py:1268
 msgctxt "UI"
 msgid "Currency unit"
 msgstr "币种"
 
-#: web/models.py:1268
+#: web/models.py:1269
 msgctxt "UI"
 msgid "Blockchain voting"
 msgstr "区块链投票"
 
-#: web/models.py:1270
+#: web/models.py:1271
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr "报告已启用"
 
-#: web/models.py:1271
+#: web/models.py:1272
 msgctxt "UI"
 msgid "Auto-detect alert limit"
 msgstr "自动检测警告限值"
 
-#: web/models.py:1274
+#: web/models.py:1275
 msgctxt "UI"
 msgid "Wallet"
 msgstr "钱包"
 
-#: web/models.py:1275 web/models.py:1276
+#: web/models.py:1276 web/models.py:1277
 msgctxt "UI"
 msgid "Pending wallet"
 msgstr "正在处理中的钱包"
 
-#: web/models.py:1277
+#: web/models.py:1278
 msgctxt "UI"
 msgid "Send threshold"
 msgstr "发送的阈值"
 
-#: web/models.py:1278
+#: web/models.py:1279
 msgctxt "UI"
 msgid "Email"
 msgstr "邮箱"
 
-#: web/models.py:1280
+#: web/models.py:1281
 msgctxt "UI"
 msgid "Monitoring notifications"
 msgstr "监控通知"
 
-#: web/models.py:1281
+#: web/models.py:1282
 msgctxt "UI"
 msgid "Monitoring"
 msgstr "监控"
 
-#: web/models.py:1282
+#: web/models.py:1283
 msgctxt "UI"
 msgid "Last Change"
 msgstr "上次变化"
 
-#: web/models.py:1283
+#: web/models.py:1284
 msgctxt "UI"
 msgid "Login suffix"
 msgstr "登录后缀"
 
-#: web/models.py:1284 web/models.py:1285
+#: web/models.py:1285 web/models.py:1286
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr "最低难度"
 
-#: web/models.py:1289
+#: web/models.py:1290
 msgctxt "UI"
 msgid "Enabled"
 msgstr "已启用"
 
-#: web/models.py:1289
+#: web/models.py:1290
 msgctxt "UI"
 msgid "Disabled"
 msgstr "已禁用"
 
-#: web/models.py:1330
+#: web/models.py:1331
 msgctxt "UI"
 msgid "Account deletion cancelled"
 msgstr "账户删除申请已取消"
 
-#: web/models.py:1331
+#: web/models.py:1332
 msgctxt "UI"
 msgid "Account deleted"
 msgstr "账户已被删除"
 
-#: web/models.py:1332
+#: web/models.py:1333
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr "账户删除已申请"
 
 #: web/models.py:1334
+#, fuzzy
+msgctxt "UI"
+msgid "Account deleted by admin"
+msgstr "户口选项"
+
+#: web/models.py:1336
 msgctxt "UI"
 msgid "Demo login"
 msgstr "登录演示账户"
 
-#: web/models.py:1335
+#: web/models.py:1337
 msgctxt "UI"
 msgid "Demo logout"
 msgstr "演示账户登出"
 
-#: web/models.py:1336
+#: web/models.py:1338
 msgctxt "UI"
 msgid "Support login"
 msgstr "客服登录"
 
-#: web/models.py:1338
+#: web/models.py:1340
 msgctxt "UI"
 msgid "Impersonate user"
 msgstr "拟人用户"
 
-#: web/models.py:1340
+#: web/models.py:1342
 msgctxt "UI"
 msgid "Login"
 msgstr "登陆"
 
-#: web/models.py:1341
+#: web/models.py:1343
 msgctxt "UI"
 msgid "Logout"
 msgstr "登出"
 
-#: web/models.py:1342
+#: web/models.py:1344
 msgctxt "UI"
 msgid "Logout all sessions"
 msgstr "登出所有会话"
 
-#: web/models.py:1343
+#: web/models.py:1345
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr "无效的登录"
 
-#: web/models.py:1344
+#: web/models.py:1346
 msgctxt "UI"
 msgid "Inactive profile"
 msgstr "未启用的配置"
 
-#: web/models.py:1347
+#: web/models.py:1349
 msgctxt "UI"
 msgid "New wallet created"
 msgstr "新钱包已创建"
 
-#: web/models.py:1349
+#: web/models.py:1351
 msgctxt "UI"
 msgid "Wallet updated"
 msgstr "钱包已更新"
 
-#: web/models.py:1351
+#: web/models.py:1353
 msgctxt "UI"
 msgid "Wallet deleted"
 msgstr "钱包已删除"
 
-#: web/models.py:1354
+#: web/models.py:1356
 msgctxt "UI"
 msgid "Wallet reactivated"
 msgstr "钱包已重新激活"
 
-#: web/models.py:1356
+#: web/models.py:1358
 msgctxt "UI"
 msgid "Payouts locked"
 msgstr "提现已锁定"
 
-#: web/models.py:1357
+#: web/models.py:1359
 msgctxt "UI"
 msgid "Payouts unlocked"
 msgstr "提现已解锁"
 
-#: web/models.py:1358
+#: web/models.py:1360
 msgctxt "UI"
 msgid "New payout account created"
 msgstr "已创建新的提现账户"
 
-#: web/models.py:1360
+#: web/models.py:1362
 msgctxt "UI"
 msgid "Financial account updated"
 msgstr "财务账户已更新"
 
-#: web/models.py:1362
+#: web/models.py:1364
 msgctxt "UI"
 msgid "Payout account deactivated"
 msgstr "提现账户已停用"
 
-#: web/models.py:1364
+#: web/models.py:1366
 msgctxt "UI"
 msgid "Immediate payout requested"
 msgstr "已请求立即提现"
 
-#: web/models.py:1366
+#: web/models.py:1368
 msgctxt "UI"
 msgid "Immediate payout request cancelled"
 msgstr "已取消立即提现请求"
 
-#: web/models.py:1369
+#: web/models.py:1371
 msgctxt "UI"
 msgid "Payout split modified"
 msgstr "已修改提现分配"
 
-#: web/models.py:1373
+#: web/models.py:1375
 msgctxt "UI"
 msgid "Payout account settings updated"
 msgstr "已更新提现账户设置"
 
-#: web/models.py:1377
+#: web/models.py:1379
 msgctxt "UI"
 msgid "Payout channel confirmed"
 msgstr "已确认提现渠道"
 
-#: web/models.py:1381
+#: web/models.py:1383
 msgctxt "UI"
 msgid "Payout channel confirmation email resent"
 msgstr "提现渠道确认邮件已发送"
 
-#: web/models.py:1385
+#: web/models.py:1387
 msgctxt "UI"
 msgid "New access profile created"
 msgstr "已创建新的访问配置"
 
-#: web/models.py:1387
+#: web/models.py:1389
 msgctxt "UI"
 msgid "Access profile updated"
 msgstr "已更新访问配置"
 
-#: web/models.py:1389
+#: web/models.py:1391
 msgctxt "UI"
 msgid "Access profile deleted"
 msgstr "已删除访问配置"
 
-#: web/models.py:1392
+#: web/models.py:1394
 msgctxt "UI"
 msgid "Payouts paused"
 msgstr "已暂停提现"
 
-#: web/models.py:1393
+#: web/models.py:1395
 msgctxt "UI"
 msgid "Payouts unpaused"
 msgstr "已继续提现"
 
-#: web/models.py:1395
+#: web/models.py:1397
 msgctxt "UI"
 msgid "Message seen"
 msgstr "信息已阅"
 
-#: web/models.py:1397
+#: web/models.py:1399
 msgctxt "UI"
 msgid "Mining settings updated"
 msgstr "已更新监控设置"
 
-#: web/models.py:1401
+#: web/models.py:1403
 msgctxt "UI"
 msgid "Monitoring settings updated"
 msgstr "已更新监控设置"
 
-#: web/models.py:1404
+#: web/models.py:1406
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
 msgstr "已取消订阅时事通讯"
 
-#: web/models.py:1406
+#: web/models.py:1408
 msgctxt "UI"
 msgid "2-factor authentication disabled"
 msgstr "已停用两步验证"
 
-#: web/models.py:1407
+#: web/models.py:1409
 msgctxt "UI"
 msgid "2-factor authentication enabled"
 msgstr "已启用两步验证"
 
-#: web/models.py:1408
+#: web/models.py:1410
 msgctxt "UI"
 msgid "One time password setup cancelled"
 msgstr "已取消一次性密码验证设置"
 
-#: web/models.py:1409
+#: web/models.py:1411
 msgctxt "UI"
 msgid "OTP change confirmed"
 msgstr "已确认变更一次性密码验证OTP"
 
-#: web/models.py:1410
+#: web/models.py:1412
 msgctxt "UI"
 msgid "2-factor authentication removed by operator"
 msgstr "两步验证已被管理员移除"
 
-#: web/models.py:1412
+#: web/models.py:1414
 msgctxt "UI"
 msgid "U2F device registered"
 msgstr "已注册双重验证U2F设备"
 
-#: web/models.py:1413
+#: web/models.py:1415
 msgctxt "UI"
 msgid "U2F setup cancelled"
 msgstr "已取消双重验证U2F设置"
 
-#: web/models.py:1416
+#: web/models.py:1418
 msgctxt "UI"
 msgid "Payouts blocked"
 msgstr "提现已被锁定"
 
-#: web/models.py:1418
+#: web/models.py:1420
 msgctxt "UI"
 msgid "Payouts unblocked"
 msgstr "提现已解锁"
 
-#: web/models.py:1420 web/models.py:1423
+#: web/models.py:1422 web/models.py:1425
 msgctxt "UI"
 msgid "Password changed"
 msgstr "密码已变更"
 
-#: web/models.py:1421
+#: web/models.py:1423
 msgctxt "UI"
 msgid "Password reset completed"
 msgstr "已完成密码重置"
 
-#: web/models.py:1422
+#: web/models.py:1424
 msgctxt "UI"
 msgid "Password reset initiated"
 msgstr "已开始密码重置"
 
-#: web/models.py:1426 web/models.py:1430 web/models.py:1591
+#: web/models.py:1428 web/models.py:1432 web/models.py:1593
 msgctxt "UI"
 msgid "Account settings updated"
 msgstr "已更新账户设置"
 
-#: web/models.py:1434
+#: web/models.py:1436
 msgctxt "UI"
 msgid "Color theme changed"
 msgstr "颜色主题已变更"
 
-#: web/models.py:1437
+#: web/models.py:1439
 msgctxt "UI"
 msgid "Email change confirmed"
 msgstr "已确认邮箱地址变更"
 
-#: web/models.py:1438
+#: web/models.py:1440
 msgctxt "UI"
 msgid "Email change cancelled"
 msgstr "已取消邮箱地址变更"
 
-#: web/models.py:1439
+#: web/models.py:1441
 msgctxt "UI"
 msgid "Email change confirmation resent"
 msgstr "已重新发送邮箱地址变更确认"
 
-#: web/models.py:1442
+#: web/models.py:1444
 msgctxt "UI"
 msgid "Worker removed"
 msgstr "矿工已移除"
 
-#: web/models.py:1443
+#: web/models.py:1445
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr "您已移除矿工 <b>%(name)s</b>"
 
-#: web/models.py:1446
+#: web/models.py:1448
 msgctxt "UI"
 msgid "Workers removed"
 msgstr "矿工已移除"
 
-#: web/models.py:1447
+#: web/models.py:1449
 #, python-format
 msgctxt "UI"
 msgid "You have removed %(count)d %(coin)s workers"
 msgstr "您已移除%(count)d %(coin)s矿工"
 
-#: web/models.py:1449
+#: web/models.py:1451
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr "矿工设置已更新"
 
-#: web/models.py:1451
+#: web/models.py:1453
 msgctxt "UI"
 msgid "New worker"
 msgstr "新矿工"
 
-#: web/models.py:1452
+#: web/models.py:1454
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr "您已注册一个新矿工"
 
-#: web/models.py:1456
+#: web/models.py:1458
 msgctxt "UI"
 msgid "User appeal dismissed"
 msgstr "用户上诉被驳回"
 
-#: web/models.py:1461
+#: web/models.py:1463
 msgctxt "UI"
 msgid "Enabled coins updated"
 msgstr "已启动的币已更新"
 
-#: web/models.py:1521
+#: web/models.py:1523
 msgctxt "UI"
 msgid "Exported user data"
 msgstr "已导出用户数据"
 
-#: web/models.py:1526
+#: web/models.py:1528
 msgctxt "UI"
 msgid "NMC reward claimed"
 msgstr "已要求的NMC域名币收益支付"
 
-#: web/models.py:1530
+#: web/models.py:1532
 msgctxt "UI"
 msgid "NMC claim - address changed"
 msgstr "NMC域名币收益支付请求 —— 地址已变更"
 
-#: web/models.py:1536
+#: web/models.py:1538
 msgctxt "UI"
 msgid "Wallet unlocked by operator"
 msgstr "钱包已由管理员解锁"
 
-#: web/models.py:1540
+#: web/models.py:1542
 msgctxt "UI"
 msgid "Payout settings updated"
 msgstr "提现设置已更新"
 
-#: web/models.py:1544
+#: web/models.py:1546
 msgctxt "UI"
 msgid "Zcash payout settings updated"
 msgstr "Zcash提现设置已更新"
 
-#: web/models.py:1548
+#: web/models.py:1550
 msgctxt "UI"
 msgid "Wallet change confirmed"
 msgstr "已确认钱包变更"
 
-#: web/models.py:1552
+#: web/models.py:1554
 msgctxt "UI"
 msgid "Wallet change cancelled"
 msgstr "已取消钱包变更"
 
-#: web/models.py:1556
+#: web/models.py:1558
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
 msgstr "已重新发送钱包变更确认"
 
-#: web/models.py:1560
+#: web/models.py:1562
 msgctxt "UI"
 msgid "Zcash wallet change confirmed"
 msgstr "已确认Zcash钱包变更"
 
-#: web/models.py:1564
+#: web/models.py:1566
 msgctxt "UI"
 msgid "Zcash wallet change cancelled"
 msgstr "已取消Zcash钱包变更"
 
-#: web/models.py:1568
+#: web/models.py:1570
 msgctxt "UI"
 msgid "Zcash wallet change confirmation resent"
 msgstr "已重新发送Zcash钱包变更确认"
 
-#: web/models.py:1572
+#: web/models.py:1574
 msgctxt "UI"
 msgid "Wallet locked"
 msgstr "钱包已锁定"
 
-#: web/models.py:1576
+#: web/models.py:1578
 msgctxt "UI"
 msgid "Wallet unlocked"
 msgstr "钱包已解锁"
 
-#: web/models.py:1580
+#: web/models.py:1582
 msgctxt "UI"
 msgid "Zcash wallet locked"
 msgstr "Zcash钱包已锁定"
 
-#: web/models.py:1584
+#: web/models.py:1586
 msgctxt "UI"
 msgid "Zcash wallet unlocked"
 msgstr "Zcash钱包已解锁"
 
-#: web/registration.py:55
+#: web/registration.py:61
 #, python-format
 msgctxt "UI"
 msgid "Username \"%s\" is already taken."
@@ -3408,67 +3462,67 @@ msgid "Minimum difficulty must be an integer between 8 and 500 000!"
 msgstr "最低难度必须是8到500000间的一个整数！"
 
 #. Translators: data entity, eg: Access denied to object: workers
-#: workers/api/v1/views.py:215
+#: workers/api/v1/views.py:220
 msgctxt "UI"
 msgid "workers"
 msgstr "矿工"
 
-#: workers/api/v1/views.py:302
+#: workers/api/v1/views.py:307
 msgctxt "UI"
 msgid "Label name must be a string."
 msgstr "标签名中只能用合法字符。"
 
-#: workers/api/v1/views.py:305
+#: workers/api/v1/views.py:310
 msgctxt "UI"
 msgid "Name is required."
 msgstr "需要一个名称。"
 
-#: workers/api/v1/views.py:307
+#: workers/api/v1/views.py:312
 msgctxt "UI"
 msgid "Name must not be longer than 15 characters."
 msgstr "名称必须短于15字。"
 
-#: workers/api/v1/views.py:312
+#: workers/api/v1/views.py:317
 msgctxt "UI"
 msgid "A label with this name already exists."
 msgstr "使用该名称的标签已存在。"
 
-#: workers/api/v1/views.py:316
+#: workers/api/v1/views.py:321
 msgctxt "UI"
 msgid "Label shortcut must be a string."
 msgstr "标签快捷方式中只能用合法字符。"
 
-#: workers/api/v1/views.py:319
+#: workers/api/v1/views.py:324
 msgctxt "UI"
 msgid "Label shortcut is required."
 msgstr "必须要有标签快捷方式。"
 
-#: workers/api/v1/views.py:321
+#: workers/api/v1/views.py:326
 msgctxt "UI"
 msgid "Shortcut must not be longer than 2 characters."
 msgstr "快捷方式必须短于2个字。"
 
-#: workers/api/v1/views.py:332
+#: workers/api/v1/views.py:337
 msgctxt "UI"
 msgid "Label description must be a string."
 msgstr "标签描述中只能用合法字符。"
 
-#: workers/api/v1/views.py:336
+#: workers/api/v1/views.py:341
 msgctxt "UI"
 msgid "Maximal length of label description is 100 characters."
 msgstr "标签描述的长度最长只能有100个字。"
 
-#: workers/api/v1/views.py:343
+#: workers/api/v1/views.py:348
 msgctxt "UI"
 msgid "Invalid color."
 msgstr "无效的颜色。"
 
-#: workers/api/v1/views.py:379
+#: workers/api/v1/views.py:384
 msgctxt "UI"
 msgid "Invalid label ids."
 msgstr "无效的标签ID。"
 
-#: workers/api/v1/views.py:411
+#: workers/api/v1/views.py:416
 msgctxt "UI"
 msgid "Names and shortcuts must be unique."
 msgstr "名称和快捷方式不能重复。"
@@ -13231,10 +13285,6 @@ msgstr "名称和快捷方式不能重复。"
 
 #~ msgid "<User%(id)d>"
 #~ msgstr "<User%(id)d>"
-
-#, fuzzy
-#~ msgid "Account delete email"
-#~ msgstr "户口选项"
 
 #, fuzzy
 #~ msgid "Password updated"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-06 15:08+0100\n"
+"POT-Creation-Date: 2022-01-24 17:28+0100\n"
 "PO-Revision-Date: 2022-01-05 18:55+0000\n"
 "Last-Translator: Behzad Amiri Nezhad <behzad.amiri.nezhad@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/slushpool/mining/"
@@ -1080,7 +1080,7 @@ msgctxt "UI"
 msgid "Hashrate"
 msgstr "نرخ هش"
 
-#: devices/templates/devices/worker_moni.html:54 web/models.py:1272
+#: devices/templates/devices/worker_moni.html:54 web/models.py:1273
 msgctxt "UI"
 msgid "Alert limit"
 msgstr "محدوده هشدار"
@@ -1172,7 +1172,7 @@ msgstr "تنظیمات بازخوانی خودکار داشبورد باید ی�
 msgid "Token must be a string of %d lowercase ASCII characters or digits."
 msgstr "توکن باید استرینگی از %d کاراکتر یا ارقام کوچک ASCII باشد."
 
-#: finance/api/v1/api_actions.py:31 finance/forms/validators.py:316
+#: finance/api/v1/api_actions.py:31 finance/forms/validators.py:319
 msgctxt "UI"
 msgid "Invalid payout account id!"
 msgstr "شناسه حساب پرداخت غیرمعتبراست!"
@@ -1191,22 +1191,30 @@ msgid ""
 msgstr ""
 "ایمیل تایید ارسال شده است. لطفاًایمیل خود را بررسی کرده و پیوند را دنبال کنید."
 
-#: finance/forms/payout_account.py:34 finance/forms/payout_account.py:74
-#: finance/forms/payout_account.py:165 finance/forms/payout_channel.py:92
+#: finance/forms/payout_account.py:35 finance/forms/payout_account.py:85
+#: finance/forms/payout_account.py:176 finance/forms/payout_channel.py:93
 #: finance/forms/payout_hold.py:28 finance/forms/payout_hold.py:68
 #: finance/forms/payout_lock.py:33 finance/forms/payout_request.py:33
 #: finance/forms/payout_split.py:66 finance/forms/wallet.py:38
-#: finance/forms/wallet.py:81 finance/forms/wallet.py:138 formlib/core.py:397
+#: finance/forms/wallet.py:81 finance/forms/wallet.py:138 formlib/core.py:399
 msgctxt "UI"
 msgid "You do not have permission to submit this form."
 msgstr "شما اجازه ارسال این فرم را ندارید."
 
-#: finance/forms/payout_account.py:132
+#: finance/forms/payout_account.py:52
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "A label with this name already exists."
+msgctxt "UI"
+msgid "An account with this name already exists!"
+msgstr "یک برچسب با این نام از قبل وجود دا‌رد."
+
+#: finance/forms/payout_account.py:143
 msgctxt "UI"
 msgid "Unable to deactivate account with non-zero balance."
 msgstr "غیرفعال کردن حساب با موجودی غیر صفر امکان پذیر نیست."
 
-#: finance/forms/payout_account.py:148
+#: finance/forms/payout_account.py:159
 msgctxt "UI"
 msgid ""
 "This account has non-zero split percentage. Reassign its rewards split first."
@@ -1214,30 +1222,46 @@ msgstr ""
 "این حساب دارای درصد تقسیم غیر صفر است. ابتدا پاداشهای خود را دوباره تقسیم "
 "کنید."
 
-#: finance/forms/payout_channel.py:66
+#: finance/forms/payout_channel.py:67
 msgctxt "UI"
 msgid "Select an existing wallet or create a new one."
 msgstr "یک کیف پول موجود را انتخاب کنید یا یک کیف پول جدید ایجاد کنید."
 
-#: finance/forms/payout_channel.py:70
+#: finance/forms/payout_channel.py:71
 msgctxt "UI"
 msgid "Wallet params are missing."
 msgstr "پارامترهای کیف پول وجود ندارد."
 
-#: finance/forms/payout_channel.py:73
+#: finance/forms/payout_channel.py:74
 msgctxt "UI"
 msgid "Wallet name is missing."
 msgstr "نام کیف پول موجود نیست."
 
-#: finance/forms/payout_channel.py:85
+#: finance/forms/payout_channel.py:86
 msgctxt "UI"
 msgid "Settings of an API-driven payout account can not be changed."
 msgstr "تنظیمات یک حساب پرداخت مبتنی بر API را نمی توان تغییر داد."
 
-#: finance/forms/payout_channel.py:109 user_request/models.py:708
+#: finance/forms/payout_channel.py:114 user_request/models.py:708
 msgctxt "UI"
 msgid "Payouts are locked."
 msgstr "پرداخت ها قفل شده اند."
+
+#: finance/forms/payout_channel.py:148
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "A label with this name already exists."
+msgctxt "UI"
+msgid "Wallet with this name already exists!"
+msgstr "یک برچسب با این نام از قبل وجود دا‌رد."
+
+#: finance/forms/payout_channel.py:152
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "A label with this name already exists."
+msgctxt "UI"
+msgid "Wallet with this address already exists!"
+msgstr "یک برچسب با این نام از قبل وجود دا‌رد."
 
 #: finance/forms/payout_hold.py:32
 msgctxt "UI"
@@ -1271,265 +1295,273 @@ msgctxt "UI"
 msgid "Reward split can not be changed for accounts with API-driven payouts."
 msgstr "تقسیم پاداش برای حساب‌های دارای پرداخت‌های مبتنی بر API قابل تغییر نیست."
 
-#: finance/forms/validators.py:28
+#: finance/forms/validators.py:31
 msgctxt "UI"
 msgid "Invalid currency!"
 msgstr "ارز نامعتبر!"
 
-#: finance/forms/validators.py:45
+#: finance/forms/validators.py:48
 msgctxt "UI"
 msgid "Invalid wallet id!"
 msgstr "شناسه کیف پول نامعتبر است!"
 
-#: finance/forms/validators.py:55
+#: finance/forms/validators.py:58
 msgctxt "UI"
 msgid "The wallet must be active!"
 msgstr "کیف پول باید فعال باشد!"
 
-#: finance/forms/validators.py:64
+#: finance/forms/validators.py:67
 msgctxt "UI"
 msgid "Invalid \"is_active\" parameter!"
 msgstr "پارامتر \"is_active\" نامعتبر است!"
 
-#: finance/forms/validators.py:69
+#: finance/forms/validators.py:72
 msgctxt "UI"
 msgid "This wallet is already active!"
 msgstr "این کیف پول در حال حاضر فعال است!"
 
-#: finance/forms/validators.py:72
+#: finance/forms/validators.py:75
 msgctxt "UI"
 msgid "This wallet has already been deactivated!"
 msgstr "این کیف پول در حال حاضر غیر فعال شده است!"
 
-#: finance/forms/validators.py:79
+#: finance/forms/validators.py:82
 msgctxt "UI"
 msgid "Wallet name must be a string!"
 msgstr "نام کیف پول باید یک ردیف باشد!"
 
-#: finance/forms/validators.py:84 finance/forms/validators.py:337
+#: finance/forms/validators.py:87 finance/forms/validators.py:340
 #, python-format
 msgctxt "UI"
 msgid "Name can not be longer than %(length)s characters!"
 msgstr "نام نمی تواند طولانی تر از %(length)s کاراکتر باشد!"
 
-#: finance/forms/validators.py:90
+#: finance/forms/validators.py:93
 msgctxt "UI"
 msgid "Name can not be empty!"
 msgstr "نام نمی تواند خالی باشد!"
 
-#: finance/forms/validators.py:95
+#: finance/forms/validators.py:98
 msgctxt "UI"
 msgid "Unsupported characters in wallet name!"
 msgstr "کاراکترهای پشتیبانی نشده در نام کیف پول وجود دارد!"
 
-#: finance/forms/validators.py:118 finance/forms/validators.py:135
-#: finance/forms/validators.py:363 finance/forms/validators.py:382
+#: finance/forms/validators.py:121 finance/forms/validators.py:138
+#: finance/forms/validators.py:366 finance/forms/validators.py:385
 msgctxt "UI"
 msgid "This name is already used!"
 msgstr "این نام قبلاً استفاده شده است!"
 
-#: finance/forms/validators.py:150
+#: finance/forms/validators.py:153
 msgctxt "UI"
 msgid "Address missing!"
 msgstr "آدرس پیدا نشد!"
 
-#: finance/forms/validators.py:153
+#: finance/forms/validators.py:156
 msgctxt "UI"
 msgid "Invalid address format!"
 msgstr "فرمت آدرس نامعتبر است!"
 
-#: finance/forms/validators.py:158
+#: finance/forms/validators.py:161
 msgctxt "UI"
 msgid "Blockchain address is not supported for this coin!"
 msgstr "آدرس Blockchain برای این کوین پشتیبانی نمی شود!"
 
-#: finance/forms/validators.py:201
+#: finance/forms/validators.py:204
 msgctxt "UI"
 msgid "Invalid xpub format!"
 msgstr "فرمت xpub نامعتبر است!"
 
-#: finance/forms/validators.py:206
+#: finance/forms/validators.py:209
 msgctxt "UI"
 msgid "XPub is not supported for this coin!"
 msgstr "XPub برای این کوین پشتیبانی نمی شود!"
 
-#: finance/forms/validators.py:220
+#: finance/forms/validators.py:223
 msgctxt "UI"
 msgid "This wallet already exists!"
 msgstr "این کیف پول از قبل وجود دارد!"
 
-#: finance/forms/validators.py:261
+#: finance/forms/validators.py:264
 msgctxt "UI"
 msgid "Invalid params format."
 msgstr "فرمت پارامتر ها نا معتبر است."
 
-#: finance/forms/validators.py:265
+#: finance/forms/validators.py:268
 msgctxt "UI"
 msgid "Missing \"type\" attribute in wallet params."
 msgstr "ویژگی \"نوع\" در پارامترهای کیف پول وجود ندارد."
 
-#: finance/forms/validators.py:276
+#: finance/forms/validators.py:279
 msgctxt "UI"
 msgid "Xpub wallets are not supported at the moment."
 msgstr "کیف پول Xpub در حال حاضر پشتیبانی نمی شود."
 
-#: finance/forms/validators.py:280
+#: finance/forms/validators.py:283
 msgctxt "UI"
 msgid "Invalid type!"
 msgstr "نوع نامعتبر است!"
 
-#: finance/forms/validators.py:297
+#: finance/forms/validators.py:300
 msgctxt "UI"
 msgid "Invalid payout account id."
 msgstr "شناسه حساب پرداخت نامعتبر است."
 
-#: finance/forms/validators.py:326
+#: finance/forms/validators.py:329
 msgctxt "UI"
 msgid "Invalid payout account name!"
 msgstr "نام حساب پرداخت نامعتبر است!"
 
-#: finance/forms/validators.py:332
+#: finance/forms/validators.py:335
 msgctxt "UI"
 msgid "Name cannot be empty!"
 msgstr "نام نمی تواند خالی باشد!"
 
-#: finance/forms/validators.py:344
+#: finance/forms/validators.py:347
 msgctxt "UI"
 msgid "Unsupported characters in payout account name!"
 msgstr "کاراکترهای غیرمجاز در نام حساب پرداخت وجود دارد!"
 
-#: finance/forms/validators.py:396
+#: finance/forms/validators.py:399
 msgctxt "UI"
 msgid "Invalid payout request value!"
 msgstr "مقدار درخواست پرداخت نامعتبر است!"
 
-#: finance/forms/validators.py:405
+#: finance/forms/validators.py:408
 msgctxt "UI"
 msgid "Payout has already been requested for this payout account!"
 msgstr "پرداخت قبلا برای این حساب پرداخت درخواست شده است!"
 
-#: finance/forms/validators.py:413
+#: finance/forms/validators.py:416
 msgctxt "UI"
 msgid "There is no wallet for this payout account!"
 msgstr "هیچ کیف پولی برای این حساب پرداخت وجود ندارد!"
 
-#: finance/forms/validators.py:417
+#: finance/forms/validators.py:420
 msgctxt "UI"
 msgid "The assigned wallet is not confirmed yet!"
 msgstr "کیف پول اختصاص داده شده هنوز تایید نشده است!"
 
-#: finance/forms/validators.py:427
+#: finance/forms/validators.py:430
 #, python-format
 msgctxt "UI"
 msgid "Account balance must be higher than %(amount)s %(unit)s!"
 msgstr "موجودی حساب باید بالاتر از %(amount)s %(unit)s باشد!"
 
-#: finance/forms/validators.py:443
+#: finance/forms/validators.py:446
 msgctxt "UI"
 msgid "Payout was not requested for this payout account!"
 msgstr "پرداخت برای این حساب پرداخت درخواست نشده بود!"
 
-#: finance/forms/validators.py:460
+#: finance/forms/validators.py:463
 msgctxt "UI"
 msgid "Invalid split format!"
 msgstr "فرمت تقسیم نامعتبر است!"
 
-#: finance/forms/validators.py:463
+#: finance/forms/validators.py:466
 msgctxt "UI"
 msgid "Percentages cannot be negative!"
 msgstr "درصدها نمی توانند منفی باشد!"
 
-#: finance/forms/validators.py:468
+#: finance/forms/validators.py:471
 msgctxt "UI"
 msgid "No more than 2 fractional digits are allowed in the percentages!"
 msgstr "بیش از ۲ رقم کسری در درصد مجاز نیست!"
 
-#: finance/forms/validators.py:474
+#: finance/forms/validators.py:477
 msgctxt "UI"
 msgid "Percentages must add up to 100%!"
 msgstr "درصدها باید تا 100٪ اضافه شوند!"
 
-#: finance/forms/validators.py:480
+#: finance/forms/validators.py:483
 msgctxt "UI"
 msgid "Invalid payout account ids!"
 msgstr "شناسه های حساب پرداخت غیرمعتبراست!"
 
-#: finance/forms/validators.py:487
+#: finance/forms/validators.py:490
 msgctxt "UI"
 msgid "Invalid payout accounts!"
 msgstr "حساب های پرداخت نا معتبر است!"
 
-#: finance/forms/validators.py:499
+#: finance/forms/validators.py:502
 msgctxt "UI"
 msgid "Invalid threshold parameters!"
 msgstr "پارامترهای آستانه نامعتبر است!"
 
-#: finance/forms/validators.py:501
+#: finance/forms/validators.py:504
 msgctxt "UI"
 msgid "Threshold value is required!"
 msgstr "مقدار آستانه مورد نیاز است!"
 
-#: finance/forms/validators.py:503
+#: finance/forms/validators.py:506
 msgctxt "UI"
 msgid "Invalid threshold value!"
 msgstr "مقدار آستانه نامعتبر است!"
 
-#: finance/forms/validators.py:519
+#: finance/forms/validators.py:522
 #, python-format
 msgctxt "UI"
 msgid "Threshold must be higher than %(minimum)s %(unit)s!"
 msgstr "آستانه باید بالاتر از %(minimum)s%(unit)s باشد!"
 
-#: finance/forms/validators.py:528
+#: finance/forms/validators.py:531
 #, python-format
 msgctxt "UI"
 msgid "Threshold must be lower than %(minimum)s %(unit)s!"
 msgstr "آستانه باید کمتر از %(minimum)s %(unit)s باشد!"
 
-#: finance/forms/validators.py:549
+#: finance/forms/validators.py:543
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid threshold value!"
+msgctxt "UI"
+msgid "Invalid threshold value."
+msgstr "مقدار آستانه نامعتبر است!"
+
+#: finance/forms/validators.py:558
 msgctxt "UI"
 msgid "You have to set a frequency!!"
 msgstr "شما باید یک فرکانس تنظیم کنید!!"
 
-#: finance/forms/validators.py:551 finance/forms/validators.py:553
+#: finance/forms/validators.py:560 finance/forms/validators.py:562
 msgctxt "UI"
 msgid "Invalid frequency format!"
 msgstr "فرمت فرکانس نامعتبر است!"
 
-#: finance/forms/validators.py:559
+#: finance/forms/validators.py:568
 msgctxt "UI"
 msgid "Invalid payout frequency!"
 msgstr "فرکانس پرداخت نامعتبر است!"
 
-#: finance/forms/validators.py:563
+#: finance/forms/validators.py:572
 msgctxt "UI"
 msgid "Invalid day in period!"
 msgstr "روز نامعتبر در دوره!"
 
-#: finance/forms/validators.py:571
+#: finance/forms/validators.py:580
 #, python-format
 msgctxt "UI"
 msgid "Day of the week must be a number between %(min)s and %(max)s!"
 msgstr "روز هفته باید یک عدد مابین %(min)s و %(max)s باشد!"
 
-#: finance/forms/validators.py:581
+#: finance/forms/validators.py:590
 #, python-format
 msgctxt "UI"
 msgid "Day of the month must be a number between %(min)s and %(max)s!"
 msgstr "روز ماه باید یک عدد مابین %(min)s و%(max)s باشد!"
 
-#: finance/forms/validators.py:606
+#: finance/forms/validators.py:615
 msgctxt "UI"
 msgid "Invalid trigger format!"
 msgstr "فرمت راه انداز نامعتبر است!"
 
-#: finance/forms/validators.py:626
+#: finance/forms/validators.py:635
 #, python-format
 msgctxt "UI"
 msgid "Unknown trigger type \"%(type)s\"!"
 msgstr "الگوی ناشناخته راه انداز \"%(type)s\"!"
 
-#: finance/forms/validators.py:649
+#: finance/forms/validators.py:658
 #, python-format
 msgctxt "UI"
 msgid "Choose a %(coin)s wallet!"
@@ -1638,12 +1670,12 @@ msgctxt "UI"
 msgid "Context value \"%s\" is missing."
 msgstr "مقدار”%s”وجود ندارد."
 
-#: formlib/core.py:479
+#: formlib/core.py:481
 msgctxt "UI"
 msgid "Missing initial value for the \"{}\" key!"
 msgstr "مقدار اولیه برای کلید \"{}\" وجود ندارد!"
 
-#: formlib/core.py:482
+#: formlib/core.py:484
 msgctxt "UI"
 msgid "Initial values were not up to date!"
 msgstr "مقادیر اولیه به روز نیستند!"
@@ -1789,12 +1821,12 @@ msgctxt "UI"
 msgid "You can not delete staff Access Profile."
 msgstr "شما نمی توانید پروفایل دسترسی کارکنان را حذف کنید."
 
-#: mining/models.py:389
+#: mining/models.py:391
 msgctxt "UI"
 msgid "-- not voted (proportional split) --"
 msgstr "--رای داده نشده (تقسیم نسبی)--"
 
-#: mining/models.py:392
+#: mining/models.py:394
 msgctxt "UI"
 msgid ""
 "Users that don't have any preference = their hashrate is split among all "
@@ -1803,17 +1835,17 @@ msgstr ""
 "کاربرانی که هیچ ترجیحی ندارند = هش ریت آنها بین همه پیشنهادات اندازه بلوک به "
 "طور متناسب تقسیم می شود."
 
-#: mining/models.py:395
+#: mining/models.py:397
 msgctxt "UI"
 msgid "Not voted"
 msgstr "رای داده نشده"
 
-#: mining/models.py:400
+#: mining/models.py:402
 msgctxt "UI"
 msgid "Current rules / Bitcoin Core"
 msgstr "قوانین فعلی / هسته بیت کوین"
 
-#: mining/models.py:403
+#: mining/models.py:405
 msgctxt "UI"
 msgid ""
 "Users that prefer Current rules given by Bitcoin core = their hashrate is "
@@ -1822,17 +1854,17 @@ msgstr ""
 "کاربرانی که قوانین فعلی داده شده توسط Bitcoin Core را ترجیح می دهند = هش ریت "
 "آنها برای استخراج بلوک های Bitcoin Core استفاده می شود."
 
-#: mining/models.py:406
+#: mining/models.py:408
 msgctxt "UI"
 msgid "Bitcoin Core"
 msgstr "هسته بیت‌کوین"
 
-#: mining/models.py:411
+#: mining/models.py:413
 msgctxt "UI"
 msgid "I don't care, pool operator decides"
 msgstr "مهم نیست ، اپراتور استخر تصمیم می گیرد"
 
-#: mining/models.py:414
+#: mining/models.py:416
 msgctxt "UI"
 msgid ""
 "Users that set I don't care option = pool operator decides which block size "
@@ -1841,7 +1873,7 @@ msgstr ""
 "کاربرانی که گزینه من اهمیتی نمی دهم تنظیم می کنند = اپراتوراستخر تصمیم می "
 "گیرد که کدام اندازه بلوک نزدیک ترین به قلب اوست."
 
-#: mining/models.py:417
+#: mining/models.py:419
 msgctxt "UI"
 msgid "Pool decides"
 msgstr "استخر تصمیم می‌گیرد"
@@ -2195,48 +2227,64 @@ msgctxt "UI"
 msgid "Dismiss this Message"
 msgstr "رد کردن این پیام"
 
-#: web/api/v1/views.py:356
+#: web/api/v1/views.py:359
 msgctxt "UI"
 msgid "Invalid appeal model."
 msgstr "مدل درخواست نامعتبر است."
 
-#: web/api/v1/views.py:363
+#: web/api/v1/views.py:366
 msgctxt "UI"
 msgid "Invalid appeal ID."
 msgstr "شناسه درخواست نامعتبر است."
 
-#: web/api/v1/views.py:393
+#: web/api/v1/views.py:396
 msgctxt "UI"
 msgid "The current access profile has already seen the v4 welcome dialogue!"
 msgstr "نمایه دسترسی فعلی قبلا گفتگوی خوش آمدگویی v4 را دیده است!"
 
-#: web/api/v1/views.py:768
+#: web/api/v1/views.py:771
 msgctxt "UI"
 msgid ""
 "Only alphabetical characters, numbers and underscore are allowed in username!"
 msgstr "فقط حروف الفبا،اعداد و زیر خط در نام کاربری مجاز است!"
 
-#: web/api/v1/views.py:774 web/api/v1/views.py:1206
+#: web/api/v1/views.py:775
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Name can not be longer than %(length)s characters!"
+msgctxt "UI"
+msgid "Username cannot be longer than %d characters!"
+msgstr "نام نمی تواند طولانی تر از %(length)s کاراکتر باشد!"
+
+#: web/api/v1/views.py:782 web/api/v1/views.py:1219
 msgctxt "UI"
 msgid "Invalid email format!"
 msgstr "فرمت ایمیل نامعتبر است!"
 
-#: web/api/v1/views.py:779
+#: web/api/v1/views.py:785
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Name can not be longer than %(length)s characters!"
+msgctxt "UI"
+msgid "Email address cannot be longer than %d characters!"
+msgstr "نام نمی تواند طولانی تر از %(length)s کاراکتر باشد!"
+
+#: web/api/v1/views.py:792
 msgctxt "UI"
 msgid "Password must have at Least 5 characters!"
 msgstr "رمز عبور باید حداقل 5 کاراکتر داشته باشد!"
 
-#: web/api/v1/views.py:853 web/api/v1/views.py:872 web/api/v1/views.py:952
+#: web/api/v1/views.py:866 web/api/v1/views.py:885 web/api/v1/views.py:965
 msgctxt "UI"
 msgid "Login forbidden"
 msgstr "ورود ممنوع"
 
-#: web/api/v1/views.py:927
+#: web/api/v1/views.py:940
 msgctxt "UI"
 msgid "Invalid credentials."
 msgstr "اعتبارنامه های نامعتبر."
 
-#: web/api/v1/views.py:945
+#: web/api/v1/views.py:958
 msgctxt "UI"
 msgid ""
 "Please enter a correct username (not an e-mail address) and password. Note "
@@ -2245,27 +2293,27 @@ msgstr ""
 "لطفاً یک نام کاربری (نه آدرس ایمیل) و رمز عبور صحیح وارد کنید. توجه داشته "
 "باشید که هر دو ردیف به حروف کوچک و بزرگ حساس هستند."
 
-#: web/api/v1/views.py:1043 web/api/v1/views.py:1098
+#: web/api/v1/views.py:1056 web/api/v1/views.py:1111
 msgctxt "UI"
 msgid "Bad username/id."
 msgstr "نام کاربری/شناسه نادرست."
 
-#: web/api/v1/views.py:1046 web/api/v1/views.py:1101
+#: web/api/v1/views.py:1059 web/api/v1/views.py:1114
 msgctxt "UI"
 msgid "This user is not active yet/anymore."
 msgstr "این کاربر هنوز/ دیگر فعال نیست ."
 
-#: web/api/v1/views.py:1172
+#: web/api/v1/views.py:1185
 msgctxt "UI"
 msgid "No pending request found!"
 msgstr "هیچ درخواست در انتظاری یافت نشد!"
 
-#: web/api/v1/views.py:1295
+#: web/api/v1/views.py:1308
 msgctxt "UI"
 msgid "Invalid token!"
 msgstr "رمز نامعتبر!"
 
-#: web/api/v1/views.py:1302
+#: web/api/v1/views.py:1315
 msgctxt "UI"
 msgid "Password must have at least 5 characters!"
 msgstr "رمز عبور باید حداقل 5 کاراکتر داشته باشد!"
@@ -2531,509 +2579,517 @@ msgctxt "UI"
 msgid "To: %(date)s"
 msgstr "به: %(date)s"
 
-#: web/models.py:1260
+#: web/models.py:1261
 msgctxt "UI"
 msgid "Preferred language"
 msgstr "زبان مورد نظر"
 
-#: web/models.py:1261
+#: web/models.py:1262
 msgctxt "UI"
 msgid "Preferred timezone"
 msgstr "منطقه زمانی مورد نظر"
 
-#: web/models.py:1262 web/models.py:1287
+#: web/models.py:1263 web/models.py:1288
 msgctxt "UI"
 msgid "Color theme"
 msgstr "رنگ قالب"
 
-#: web/models.py:1263
+#: web/models.py:1264
 msgctxt "UI"
 msgid "Email address"
 msgstr "آدرس ایمیل"
 
-#: web/models.py:1264
+#: web/models.py:1265
 msgctxt "UI"
 msgid "Username in stats"
 msgstr "نام کاربری در آمار"
 
-#: web/models.py:1265
+#: web/models.py:1266
 msgctxt "UI"
 msgid "Notify me on payout"
 msgstr "پرداخت را به من اطلاع دهید"
 
-#: web/models.py:1266
+#: web/models.py:1267
 msgctxt "UI"
 msgid "Newsletter"
 msgstr "خبرنامه"
 
-#: web/models.py:1267
+#: web/models.py:1268
 msgctxt "UI"
 msgid "Currency unit"
 msgstr "واحد ارز"
 
-#: web/models.py:1268
+#: web/models.py:1269
 msgctxt "UI"
 msgid "Blockchain voting"
 msgstr "رای گیری بلاکچین"
 
-#: web/models.py:1270
+#: web/models.py:1271
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr "گزارش فعال شد"
 
-#: web/models.py:1271
+#: web/models.py:1272
 msgctxt "UI"
 msgid "Auto-detect alert limit"
 msgstr "تشخیص خودکار حد هشدار"
 
-#: web/models.py:1274
+#: web/models.py:1275
 msgctxt "UI"
 msgid "Wallet"
 msgstr "کیف پول"
 
-#: web/models.py:1275 web/models.py:1276
+#: web/models.py:1276 web/models.py:1277
 msgctxt "UI"
 msgid "Pending wallet"
 msgstr "کیف پول در حالت انتظار"
 
-#: web/models.py:1277
+#: web/models.py:1278
 msgctxt "UI"
 msgid "Send threshold"
 msgstr "آستانه ارسال"
 
-#: web/models.py:1278
+#: web/models.py:1279
 msgctxt "UI"
 msgid "Email"
 msgstr "ایمیل"
 
-#: web/models.py:1280
+#: web/models.py:1281
 msgctxt "UI"
 msgid "Monitoring notifications"
 msgstr "نظارت بر اطلاعیه ها"
 
-#: web/models.py:1281
+#: web/models.py:1282
 msgctxt "UI"
 msgid "Monitoring"
 msgstr "نظارت"
 
-#: web/models.py:1282
+#: web/models.py:1283
 msgctxt "UI"
 msgid "Last Change"
 msgstr "آخرین تغییر"
 
-#: web/models.py:1283
+#: web/models.py:1284
 msgctxt "UI"
 msgid "Login suffix"
 msgstr "پسوند ورود"
 
-#: web/models.py:1284 web/models.py:1285
+#: web/models.py:1285 web/models.py:1286
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr "سختی حداقل"
 
-#: web/models.py:1289
+#: web/models.py:1290
 msgctxt "UI"
 msgid "Enabled"
 msgstr "فعال"
 
-#: web/models.py:1289
+#: web/models.py:1290
 msgctxt "UI"
 msgid "Disabled"
 msgstr "غیرفعال"
 
-#: web/models.py:1330
+#: web/models.py:1331
 msgctxt "UI"
 msgid "Account deletion cancelled"
 msgstr "حذف حسابکاربری لغو شد"
 
-#: web/models.py:1331
+#: web/models.py:1332
 msgctxt "UI"
 msgid "Account deleted"
 msgstr "حساب کاربری حذف شد"
 
-#: web/models.py:1332
+#: web/models.py:1333
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr "حذف حساب کاربری درخواست شد"
 
 #: web/models.py:1334
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Account deleted"
+msgctxt "UI"
+msgid "Account deleted by admin"
+msgstr "حساب کاربری حذف شد"
+
+#: web/models.py:1336
 msgctxt "UI"
 msgid "Demo login"
 msgstr "ورود به سیستم نمایشی"
 
-#: web/models.py:1335
+#: web/models.py:1337
 msgctxt "UI"
 msgid "Demo logout"
 msgstr "خروج از سیستم نمایشی"
 
-#: web/models.py:1336
+#: web/models.py:1338
 msgctxt "UI"
 msgid "Support login"
 msgstr "ورود به سیستم پشتیبانی"
 
-#: web/models.py:1338
+#: web/models.py:1340
 msgctxt "UI"
 msgid "Impersonate user"
 msgstr "جعل هویت کاربر"
 
-#: web/models.py:1340
+#: web/models.py:1342
 msgctxt "UI"
 msgid "Login"
 msgstr "ورود"
 
-#: web/models.py:1341
+#: web/models.py:1343
 msgctxt "UI"
 msgid "Logout"
 msgstr "خروج از سیستم"
 
-#: web/models.py:1342
+#: web/models.py:1344
 msgctxt "UI"
 msgid "Logout all sessions"
 msgstr "خروج از همه جلسات"
 
-#: web/models.py:1343
+#: web/models.py:1345
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr "ورود به سیستم نامعتبر"
 
-#: web/models.py:1344
+#: web/models.py:1346
 msgctxt "UI"
 msgid "Inactive profile"
 msgstr "پروفایل غیر فعال"
 
-#: web/models.py:1347
+#: web/models.py:1349
 msgctxt "UI"
 msgid "New wallet created"
 msgstr "کیف پول جدید ایجاد شده است"
 
-#: web/models.py:1349
+#: web/models.py:1351
 msgctxt "UI"
 msgid "Wallet updated"
 msgstr "کیف پول به روز رسانی شد"
 
-#: web/models.py:1351
+#: web/models.py:1353
 msgctxt "UI"
 msgid "Wallet deleted"
 msgstr "کیف پول حذف شد"
 
-#: web/models.py:1354
+#: web/models.py:1356
 msgctxt "UI"
 msgid "Wallet reactivated"
 msgstr "کیف پول دوباره فعال شد"
 
-#: web/models.py:1356
+#: web/models.py:1358
 msgctxt "UI"
 msgid "Payouts locked"
 msgstr "پرداخت ها قفل شده اند"
 
-#: web/models.py:1357
+#: web/models.py:1359
 msgctxt "UI"
 msgid "Payouts unlocked"
 msgstr "قفل پرداخت ها باز شده اند"
 
-#: web/models.py:1358
+#: web/models.py:1360
 msgctxt "UI"
 msgid "New payout account created"
 msgstr "حساب پرداخت جدید ایجاد شده است"
 
-#: web/models.py:1360
+#: web/models.py:1362
 msgctxt "UI"
 msgid "Financial account updated"
 msgstr "حساب مالی به روز شد"
 
-#: web/models.py:1362
+#: web/models.py:1364
 msgctxt "UI"
 msgid "Payout account deactivated"
 msgstr "حساب پرداخت غیرفعال شده است"
 
-#: web/models.py:1364
+#: web/models.py:1366
 msgctxt "UI"
 msgid "Immediate payout requested"
 msgstr "پرداخت فوری درخواست شد"
 
-#: web/models.py:1366
+#: web/models.py:1368
 msgctxt "UI"
 msgid "Immediate payout request cancelled"
 msgstr "درخواست پرداخت فوری لغو شد"
 
-#: web/models.py:1369
+#: web/models.py:1371
 msgctxt "UI"
 msgid "Payout split modified"
 msgstr "تقسیم پرداخت اصلاح شد"
 
-#: web/models.py:1373
+#: web/models.py:1375
 msgctxt "UI"
 msgid "Payout account settings updated"
 msgstr "تنظیمات حساب پرداخت به روز رسانی شد"
 
-#: web/models.py:1377
+#: web/models.py:1379
 msgctxt "UI"
 msgid "Payout channel confirmed"
 msgstr "کانال پرداخت تأیید شد"
 
-#: web/models.py:1381
+#: web/models.py:1383
 msgctxt "UI"
 msgid "Payout channel confirmation email resent"
 msgstr "ایمیل تایید کانال پرداخت دوباره ارسال شد"
 
-#: web/models.py:1385
+#: web/models.py:1387
 msgctxt "UI"
 msgid "New access profile created"
 msgstr "پروفایل دسترسی جدید ایجاد شد"
 
-#: web/models.py:1387
+#: web/models.py:1389
 msgctxt "UI"
 msgid "Access profile updated"
 msgstr "پروفایل دسترسی به روز رسانی شد"
 
-#: web/models.py:1389
+#: web/models.py:1391
 msgctxt "UI"
 msgid "Access profile deleted"
 msgstr "پروفایل دسترسی حذف شد"
 
-#: web/models.py:1392
+#: web/models.py:1394
 msgctxt "UI"
 msgid "Payouts paused"
 msgstr "پرداخت ها متوقف شد"
 
-#: web/models.py:1393
+#: web/models.py:1395
 msgctxt "UI"
 msgid "Payouts unpaused"
 msgstr "توقف پرداخت ها برطرف شد"
 
-#: web/models.py:1395
+#: web/models.py:1397
 msgctxt "UI"
 msgid "Message seen"
 msgstr "پیام دیده شد"
 
-#: web/models.py:1397
+#: web/models.py:1399
 msgctxt "UI"
 msgid "Mining settings updated"
 msgstr "تنظیمات استخراج به روز رسانی شد"
 
-#: web/models.py:1401
+#: web/models.py:1403
 msgctxt "UI"
 msgid "Monitoring settings updated"
 msgstr "تنظیمات نظارت به روز رسانی شد"
 
-#: web/models.py:1404
+#: web/models.py:1406
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
 msgstr "خبرنامه لغو اشتراک شد"
 
-#: web/models.py:1406
+#: web/models.py:1408
 msgctxt "UI"
 msgid "2-factor authentication disabled"
 msgstr "تأیید هویت دو عاملی غیرفعال شد"
 
-#: web/models.py:1407
+#: web/models.py:1409
 msgctxt "UI"
 msgid "2-factor authentication enabled"
 msgstr "تأیید هویت دو عاملی فعال شد"
 
-#: web/models.py:1408
+#: web/models.py:1410
 msgctxt "UI"
 msgid "One time password setup cancelled"
 msgstr "راه اندازی رمز عبور یکبار مصرف لغو شد"
 
-#: web/models.py:1409
+#: web/models.py:1411
 msgctxt "UI"
 msgid "OTP change confirmed"
 msgstr "تغییر OTP تأیید شد"
 
-#: web/models.py:1410
+#: web/models.py:1412
 msgctxt "UI"
 msgid "2-factor authentication removed by operator"
 msgstr "احراز هویت 2 عاملی توسط اپراتور حذف شد"
 
-#: web/models.py:1412
+#: web/models.py:1414
 msgctxt "UI"
 msgid "U2F device registered"
 msgstr "دستگاه U2F ثبت شد"
 
-#: web/models.py:1413
+#: web/models.py:1415
 msgctxt "UI"
 msgid "U2F setup cancelled"
 msgstr "راه اندازی U2F لغو شد"
 
-#: web/models.py:1416
+#: web/models.py:1418
 msgctxt "UI"
 msgid "Payouts blocked"
 msgstr "پرداخت ها مسدود شدند"
 
-#: web/models.py:1418
+#: web/models.py:1420
 msgctxt "UI"
 msgid "Payouts unblocked"
 msgstr "پرداختها از مسدودی خارج شدند"
 
-#: web/models.py:1420 web/models.py:1423
+#: web/models.py:1422 web/models.py:1425
 msgctxt "UI"
 msgid "Password changed"
 msgstr "رمز عبور تغییر کرد"
 
-#: web/models.py:1421
+#: web/models.py:1423
 msgctxt "UI"
 msgid "Password reset completed"
 msgstr "تنظیم مجدد کلمه عبور کامل شد"
 
-#: web/models.py:1422
+#: web/models.py:1424
 msgctxt "UI"
 msgid "Password reset initiated"
 msgstr "تنظیم مجدد رمز عبور آغاز شد"
 
-#: web/models.py:1426 web/models.py:1430 web/models.py:1591
+#: web/models.py:1428 web/models.py:1432 web/models.py:1593
 msgctxt "UI"
 msgid "Account settings updated"
 msgstr "تنظیمات حساب کاربری به روز رسانی شد"
 
-#: web/models.py:1434
+#: web/models.py:1436
 msgctxt "UI"
 msgid "Color theme changed"
 msgstr "رنگ قالب تغییر کرد"
 
-#: web/models.py:1437
+#: web/models.py:1439
 msgctxt "UI"
 msgid "Email change confirmed"
 msgstr "تغییر ایمیل تأیید شد"
 
-#: web/models.py:1438
+#: web/models.py:1440
 msgctxt "UI"
 msgid "Email change cancelled"
 msgstr "تغییر ایمیل لغو شد"
 
-#: web/models.py:1439
+#: web/models.py:1441
 msgctxt "UI"
 msgid "Email change confirmation resent"
 msgstr "تایید تغییر ایمیل دوباره ارسال شد"
 
-#: web/models.py:1442
+#: web/models.py:1444
 msgctxt "UI"
 msgid "Worker removed"
 msgstr "ورکر حذف شد"
 
-#: web/models.py:1443
+#: web/models.py:1445
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr "شما ورکر را حذف کرده اید <b>%(name)s</b>"
 
-#: web/models.py:1446
+#: web/models.py:1448
 msgctxt "UI"
 msgid "Workers removed"
 msgstr "ورکرها حذف شدند"
 
-#: web/models.py:1447
+#: web/models.py:1449
 #, python-format
 msgctxt "UI"
 msgid "You have removed %(count)d %(coin)s workers"
 msgstr "شما %(count)d%(coin)s ورکرها را حذف کرده اید"
 
-#: web/models.py:1449
+#: web/models.py:1451
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr "تنظیمات ورکر به روزرسانی شد"
 
-#: web/models.py:1451
+#: web/models.py:1453
 msgctxt "UI"
 msgid "New worker"
 msgstr "ورکر جدید"
 
-#: web/models.py:1452
+#: web/models.py:1454
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr "شما یک ورکر جدید ثبت کرده اید"
 
-#: web/models.py:1456
+#: web/models.py:1458
 msgctxt "UI"
 msgid "User appeal dismissed"
 msgstr "درخواست تجدیدنظر کاربر رد شد"
 
-#: web/models.py:1461
+#: web/models.py:1463
 msgctxt "UI"
 msgid "Enabled coins updated"
 msgstr "بروزرسانی سکه ها(ارزها) فعال شد"
 
-#: web/models.py:1521
+#: web/models.py:1523
 msgctxt "UI"
 msgid "Exported user data"
 msgstr "داده های کاربری صادر شده"
 
-#: web/models.py:1526
+#: web/models.py:1528
 msgctxt "UI"
 msgid "NMC reward claimed"
 msgstr "پاداش NMC دریافت شد"
 
-#: web/models.py:1530
+#: web/models.py:1532
 msgctxt "UI"
 msgid "NMC claim - address changed"
 msgstr "درخواست NMC - آدرس تغییر یافت"
 
-#: web/models.py:1536
+#: web/models.py:1538
 msgctxt "UI"
 msgid "Wallet unlocked by operator"
 msgstr "قفل کیف پول توسط اپراتور باز شد"
 
-#: web/models.py:1540
+#: web/models.py:1542
 msgctxt "UI"
 msgid "Payout settings updated"
 msgstr "تنظیمات پرداخت بروزرسانی شد"
 
-#: web/models.py:1544
+#: web/models.py:1546
 msgctxt "UI"
 msgid "Zcash payout settings updated"
 msgstr "تنظیمات پرداخت zcash به روزرسانی شد"
 
-#: web/models.py:1548
+#: web/models.py:1550
 msgctxt "UI"
 msgid "Wallet change confirmed"
 msgstr "تغییر کیف پول تایید شد"
 
-#: web/models.py:1552
+#: web/models.py:1554
 msgctxt "UI"
 msgid "Wallet change cancelled"
 msgstr "تغییر کیف پول لغو شد"
 
-#: web/models.py:1556
+#: web/models.py:1558
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
 msgstr "تایید تغییر کیف پول دوباره ارسال شد"
 
-#: web/models.py:1560
+#: web/models.py:1562
 msgctxt "UI"
 msgid "Zcash wallet change confirmed"
 msgstr "تغییر کیف پول Zcash تأیید شد"
 
-#: web/models.py:1564
+#: web/models.py:1566
 msgctxt "UI"
 msgid "Zcash wallet change cancelled"
 msgstr "تغییر کیف پول Zcash لغو شد"
 
-#: web/models.py:1568
+#: web/models.py:1570
 msgctxt "UI"
 msgid "Zcash wallet change confirmation resent"
 msgstr "تایید تغییر کیف پول zcash دوباره ارسال شد"
 
-#: web/models.py:1572
+#: web/models.py:1574
 msgctxt "UI"
 msgid "Wallet locked"
 msgstr "کیف پول قفل شد"
 
-#: web/models.py:1576
+#: web/models.py:1578
 msgctxt "UI"
 msgid "Wallet unlocked"
 msgstr "قفل کیف پول باز شد"
 
-#: web/models.py:1580
+#: web/models.py:1582
 msgctxt "UI"
 msgid "Zcash wallet locked"
 msgstr "کیف پول Zcash قفل شد"
 
-#: web/models.py:1584
+#: web/models.py:1586
 msgctxt "UI"
 msgid "Zcash wallet unlocked"
 msgstr "قفل کیف پول Zcash باز شد"
 
-#: web/registration.py:55
+#: web/registration.py:61
 #, python-format
 msgctxt "UI"
 msgid "Username \"%s\" is already taken."
@@ -3480,67 +3536,67 @@ msgid "Minimum difficulty must be an integer between 8 and 500 000!"
 msgstr "حداقل سختی باید یک عدد ما بین ۸ تا ۵۰۰۰۰۰ باشد!"
 
 #. Translators: data entity, eg: Access denied to object: workers
-#: workers/api/v1/views.py:215
+#: workers/api/v1/views.py:220
 msgctxt "UI"
 msgid "workers"
 msgstr "ورکرها"
 
-#: workers/api/v1/views.py:302
+#: workers/api/v1/views.py:307
 msgctxt "UI"
 msgid "Label name must be a string."
 msgstr "نام برچسب باید از نوع متن باشد."
 
-#: workers/api/v1/views.py:305
+#: workers/api/v1/views.py:310
 msgctxt "UI"
 msgid "Name is required."
 msgstr "درج نام الزامیست."
 
-#: workers/api/v1/views.py:307
+#: workers/api/v1/views.py:312
 msgctxt "UI"
 msgid "Name must not be longer than 15 characters."
 msgstr "نام نباید بیشتر از ۱۵ کاراکتر باشد."
 
-#: workers/api/v1/views.py:312
+#: workers/api/v1/views.py:317
 msgctxt "UI"
 msgid "A label with this name already exists."
 msgstr "یک برچسب با این نام از قبل وجود دا‌رد."
 
-#: workers/api/v1/views.py:316
+#: workers/api/v1/views.py:321
 msgctxt "UI"
 msgid "Label shortcut must be a string."
 msgstr "میانبر برچسب باید از نوع متن باشد."
 
-#: workers/api/v1/views.py:319
+#: workers/api/v1/views.py:324
 msgctxt "UI"
 msgid "Label shortcut is required."
 msgstr "میانبر برچسب الزامیست."
 
-#: workers/api/v1/views.py:321
+#: workers/api/v1/views.py:326
 msgctxt "UI"
 msgid "Shortcut must not be longer than 2 characters."
 msgstr "میانبر نباید بیشتر از ۲ کاراکتر باشد."
 
-#: workers/api/v1/views.py:332
+#: workers/api/v1/views.py:337
 msgctxt "UI"
 msgid "Label description must be a string."
 msgstr "توضیح برچسب باید از نوع متن باشد."
 
-#: workers/api/v1/views.py:336
+#: workers/api/v1/views.py:341
 msgctxt "UI"
 msgid "Maximal length of label description is 100 characters."
 msgstr "حداکثر تعداد کاراکتر مجاز برای توضیح برچسب ۱۰۰ می‌باشد."
 
-#: workers/api/v1/views.py:343
+#: workers/api/v1/views.py:348
 msgctxt "UI"
 msgid "Invalid color."
 msgstr "رنگ نامعتبر است."
 
-#: workers/api/v1/views.py:379
+#: workers/api/v1/views.py:384
 msgctxt "UI"
 msgid "Invalid label ids."
 msgstr "شناسه های برچسب نامعتبر است."
 
-#: workers/api/v1/views.py:411
+#: workers/api/v1/views.py:416
 msgctxt "UI"
 msgid "Names and shortcuts must be unique."
 msgstr "نامها و میانبرها باید منحصر به فرد باشند."

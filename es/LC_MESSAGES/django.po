@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-06 15:08+0100\n"
+"POT-Creation-Date: 2022-01-24 17:28+0100\n"
 "PO-Revision-Date: 2021-11-30 17:53+0000\n"
 "Last-Translator: Artemis3 v <artemis3@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/slushpool/mining/"
@@ -1086,7 +1086,7 @@ msgctxt "UI"
 msgid "Hashrate"
 msgstr "Tasa de hash"
 
-#: devices/templates/devices/worker_moni.html:54 web/models.py:1272
+#: devices/templates/devices/worker_moni.html:54 web/models.py:1273
 msgctxt "UI"
 msgid "Alert limit"
 msgstr "Límite de Alerta"
@@ -1185,7 +1185,7 @@ msgid "Token must be a string of %d lowercase ASCII characters or digits."
 msgstr ""
 "El token debe ser una frase de %d caracteres ASCII en minúscula o dígitos."
 
-#: finance/api/v1/api_actions.py:31 finance/forms/validators.py:316
+#: finance/api/v1/api_actions.py:31 finance/forms/validators.py:319
 msgctxt "UI"
 msgid "Invalid payout account id!"
 msgstr "¡ID de cuenta de pago inválida!"
@@ -1205,22 +1205,30 @@ msgstr ""
 "Se ha enviado un correo electrónico de confirmación. Por favor, revise su "
 "correo y siga el enlace."
 
-#: finance/forms/payout_account.py:34 finance/forms/payout_account.py:74
-#: finance/forms/payout_account.py:165 finance/forms/payout_channel.py:92
+#: finance/forms/payout_account.py:35 finance/forms/payout_account.py:85
+#: finance/forms/payout_account.py:176 finance/forms/payout_channel.py:93
 #: finance/forms/payout_hold.py:28 finance/forms/payout_hold.py:68
 #: finance/forms/payout_lock.py:33 finance/forms/payout_request.py:33
 #: finance/forms/payout_split.py:66 finance/forms/wallet.py:38
-#: finance/forms/wallet.py:81 finance/forms/wallet.py:138 formlib/core.py:397
+#: finance/forms/wallet.py:81 finance/forms/wallet.py:138 formlib/core.py:399
 msgctxt "UI"
 msgid "You do not have permission to submit this form."
 msgstr "No tiene permiso para enviar este formulario."
 
-#: finance/forms/payout_account.py:132
+#: finance/forms/payout_account.py:52
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "A label with this name already exists."
+msgctxt "UI"
+msgid "An account with this name already exists!"
+msgstr "Ya existe una etiqueta con este nombre."
+
+#: finance/forms/payout_account.py:143
 msgctxt "UI"
 msgid "Unable to deactivate account with non-zero balance."
 msgstr "No se puede desactivar la cuenta con saldo distinto de cero."
 
-#: finance/forms/payout_account.py:148
+#: finance/forms/payout_account.py:159
 msgctxt "UI"
 msgid ""
 "This account has non-zero split percentage. Reassign its rewards split first."
@@ -1228,31 +1236,47 @@ msgstr ""
 "Esta cuenta tiene un porcentaje de división distinto de cero. Reasigne sus "
 "recompensas divididas primero."
 
-#: finance/forms/payout_channel.py:66
+#: finance/forms/payout_channel.py:67
 msgctxt "UI"
 msgid "Select an existing wallet or create a new one."
 msgstr "Selecciona una cartera existente o crea una nueva."
 
-#: finance/forms/payout_channel.py:70
+#: finance/forms/payout_channel.py:71
 msgctxt "UI"
 msgid "Wallet params are missing."
 msgstr "Faltan los parámetros de la cartera."
 
-#: finance/forms/payout_channel.py:73
+#: finance/forms/payout_channel.py:74
 msgctxt "UI"
 msgid "Wallet name is missing."
 msgstr "Falta el nombre de la cartera."
 
-#: finance/forms/payout_channel.py:85
+#: finance/forms/payout_channel.py:86
 msgctxt "UI"
 msgid "Settings of an API-driven payout account can not be changed."
 msgstr ""
 "Los ajustes de pago de una cuenta manejada por API no pueden cambiarse."
 
-#: finance/forms/payout_channel.py:109 user_request/models.py:708
+#: finance/forms/payout_channel.py:114 user_request/models.py:708
 msgctxt "UI"
 msgid "Payouts are locked."
 msgstr "Los pagos están bloqueados."
+
+#: finance/forms/payout_channel.py:148
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "A label with this name already exists."
+msgctxt "UI"
+msgid "Wallet with this name already exists!"
+msgstr "Ya existe una etiqueta con este nombre."
+
+#: finance/forms/payout_channel.py:152
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "A label with this name already exists."
+msgctxt "UI"
+msgid "Wallet with this address already exists!"
+msgstr "Ya existe una etiqueta con este nombre."
 
 #: finance/forms/payout_hold.py:32
 msgctxt "UI"
@@ -1290,265 +1314,273 @@ msgstr ""
 "El reparto de recompensa no puede cambiarse en cuentas con pagos manejadas "
 "por API."
 
-#: finance/forms/validators.py:28
+#: finance/forms/validators.py:31
 msgctxt "UI"
 msgid "Invalid currency!"
 msgstr "¡Moneda inválida!"
 
-#: finance/forms/validators.py:45
+#: finance/forms/validators.py:48
 msgctxt "UI"
 msgid "Invalid wallet id!"
 msgstr "¡ID de cartera inválida!"
 
-#: finance/forms/validators.py:55
+#: finance/forms/validators.py:58
 msgctxt "UI"
 msgid "The wallet must be active!"
 msgstr "¡La cartera debe estar activa!"
 
-#: finance/forms/validators.py:64
+#: finance/forms/validators.py:67
 msgctxt "UI"
 msgid "Invalid \"is_active\" parameter!"
 msgstr "¡Parámetro \"es_activa\" inválido!"
 
-#: finance/forms/validators.py:69
+#: finance/forms/validators.py:72
 msgctxt "UI"
 msgid "This wallet is already active!"
 msgstr "¡Esta cartera ya está activa!"
 
-#: finance/forms/validators.py:72
+#: finance/forms/validators.py:75
 msgctxt "UI"
 msgid "This wallet has already been deactivated!"
 msgstr "¡Esta cartera ya fue desactivada!"
 
-#: finance/forms/validators.py:79
+#: finance/forms/validators.py:82
 msgctxt "UI"
 msgid "Wallet name must be a string!"
 msgstr "¡El nombre de la cartera debe ser una frase!"
 
-#: finance/forms/validators.py:84 finance/forms/validators.py:337
+#: finance/forms/validators.py:87 finance/forms/validators.py:340
 #, python-format
 msgctxt "UI"
 msgid "Name can not be longer than %(length)s characters!"
 msgstr "¡El nombre no puede tener mas de %(length)s caracteres!"
 
-#: finance/forms/validators.py:90
+#: finance/forms/validators.py:93
 msgctxt "UI"
 msgid "Name can not be empty!"
 msgstr "¡El nombre no puede estar en blanco!"
 
-#: finance/forms/validators.py:95
+#: finance/forms/validators.py:98
 msgctxt "UI"
 msgid "Unsupported characters in wallet name!"
 msgstr "¡Caracteres no permitidos en el nombre de la cartera!"
 
-#: finance/forms/validators.py:118 finance/forms/validators.py:135
-#: finance/forms/validators.py:363 finance/forms/validators.py:382
+#: finance/forms/validators.py:121 finance/forms/validators.py:138
+#: finance/forms/validators.py:366 finance/forms/validators.py:385
 msgctxt "UI"
 msgid "This name is already used!"
 msgstr "¡Este nombre ya fue usado!"
 
-#: finance/forms/validators.py:150
+#: finance/forms/validators.py:153
 msgctxt "UI"
 msgid "Address missing!"
 msgstr "¡Falta la dirección!"
 
-#: finance/forms/validators.py:153
+#: finance/forms/validators.py:156
 msgctxt "UI"
 msgid "Invalid address format!"
 msgstr "¡Formato de dirección inválida!"
 
-#: finance/forms/validators.py:158
+#: finance/forms/validators.py:161
 msgctxt "UI"
 msgid "Blockchain address is not supported for this coin!"
 msgstr "¡No se soporta una dirección de cadena de bloques para esta moneda!"
 
-#: finance/forms/validators.py:201
+#: finance/forms/validators.py:204
 msgctxt "UI"
 msgid "Invalid xpub format!"
 msgstr "¡Formato xpub inválido!"
 
-#: finance/forms/validators.py:206
+#: finance/forms/validators.py:209
 msgctxt "UI"
 msgid "XPub is not supported for this coin!"
 msgstr "¡XPub no está soportado para esta moneda!"
 
-#: finance/forms/validators.py:220
+#: finance/forms/validators.py:223
 msgctxt "UI"
 msgid "This wallet already exists!"
 msgstr "¡Esta cartera ya existe!"
 
-#: finance/forms/validators.py:261
+#: finance/forms/validators.py:264
 msgctxt "UI"
 msgid "Invalid params format."
 msgstr "Formato de parámetros inválido."
 
-#: finance/forms/validators.py:265
+#: finance/forms/validators.py:268
 msgctxt "UI"
 msgid "Missing \"type\" attribute in wallet params."
 msgstr "Falta el atributo \"tipo\" en los parámetros de la cartera."
 
-#: finance/forms/validators.py:276
+#: finance/forms/validators.py:279
 msgctxt "UI"
 msgid "Xpub wallets are not supported at the moment."
 msgstr "En estos momentos las carteras Xpub no tienen soporte."
 
-#: finance/forms/validators.py:280
+#: finance/forms/validators.py:283
 msgctxt "UI"
 msgid "Invalid type!"
 msgstr "¡Tipo inválido!"
 
-#: finance/forms/validators.py:297
+#: finance/forms/validators.py:300
 msgctxt "UI"
 msgid "Invalid payout account id."
 msgstr "ID de cuenta de pago inválida."
 
-#: finance/forms/validators.py:326
+#: finance/forms/validators.py:329
 msgctxt "UI"
 msgid "Invalid payout account name!"
 msgstr "¡Nombre de cuenta de pago inválida!"
 
-#: finance/forms/validators.py:332
+#: finance/forms/validators.py:335
 msgctxt "UI"
 msgid "Name cannot be empty!"
 msgstr "¡El nombre no puede estar en blanco!"
 
-#: finance/forms/validators.py:344
+#: finance/forms/validators.py:347
 msgctxt "UI"
 msgid "Unsupported characters in payout account name!"
 msgstr "¡Caracteres no permitidos en el nombre de la cuenta de pago!"
 
-#: finance/forms/validators.py:396
+#: finance/forms/validators.py:399
 msgctxt "UI"
 msgid "Invalid payout request value!"
 msgstr "¡Valor solicitado de pago inválido!"
 
-#: finance/forms/validators.py:405
+#: finance/forms/validators.py:408
 msgctxt "UI"
 msgid "Payout has already been requested for this payout account!"
 msgstr "¡El pago ya ha sido solicitado para esta cuenta de pago!"
 
-#: finance/forms/validators.py:413
+#: finance/forms/validators.py:416
 msgctxt "UI"
 msgid "There is no wallet for this payout account!"
 msgstr "¡No hay una cartera para esta cuenta de pago!"
 
-#: finance/forms/validators.py:417
+#: finance/forms/validators.py:420
 msgctxt "UI"
 msgid "The assigned wallet is not confirmed yet!"
 msgstr "¡La cartera asignada aún no está confirmada!"
 
-#: finance/forms/validators.py:427
+#: finance/forms/validators.py:430
 #, python-format
 msgctxt "UI"
 msgid "Account balance must be higher than %(amount)s %(unit)s!"
 msgstr "¡El balance de la cuenta debe ser mayor a %(amount)s %(unit)s!"
 
-#: finance/forms/validators.py:443
+#: finance/forms/validators.py:446
 msgctxt "UI"
 msgid "Payout was not requested for this payout account!"
 msgstr "¡No se ha solicitado pago en esta cuenta de pago!"
 
-#: finance/forms/validators.py:460
+#: finance/forms/validators.py:463
 msgctxt "UI"
 msgid "Invalid split format!"
 msgstr "¡Formato de reparto no válido!"
 
-#: finance/forms/validators.py:463
+#: finance/forms/validators.py:466
 msgctxt "UI"
 msgid "Percentages cannot be negative!"
 msgstr "¡Los porcentajes no pueden ser negativos!"
 
-#: finance/forms/validators.py:468
+#: finance/forms/validators.py:471
 msgctxt "UI"
 msgid "No more than 2 fractional digits are allowed in the percentages!"
 msgstr "¡No se permiten más de 2 dígitos fraccionados en los porcentajes!"
 
-#: finance/forms/validators.py:474
+#: finance/forms/validators.py:477
 msgctxt "UI"
 msgid "Percentages must add up to 100%!"
 msgstr "¡Los porcentajes deben sumar hasta 100%!"
 
-#: finance/forms/validators.py:480
+#: finance/forms/validators.py:483
 msgctxt "UI"
 msgid "Invalid payout account ids!"
 msgstr "¡IDs de cuenta de pago no válidos!"
 
-#: finance/forms/validators.py:487
+#: finance/forms/validators.py:490
 msgctxt "UI"
 msgid "Invalid payout accounts!"
 msgstr "¡Cuentas de pago no válidas!"
 
-#: finance/forms/validators.py:499
+#: finance/forms/validators.py:502
 msgctxt "UI"
 msgid "Invalid threshold parameters!"
 msgstr "¡Parámetros de umbral inválidos!"
 
-#: finance/forms/validators.py:501
+#: finance/forms/validators.py:504
 msgctxt "UI"
 msgid "Threshold value is required!"
 msgstr "¡Se requiere el valor del umbral!"
 
-#: finance/forms/validators.py:503
+#: finance/forms/validators.py:506
 msgctxt "UI"
 msgid "Invalid threshold value!"
 msgstr "¡Valor de umbral inválido!"
 
-#: finance/forms/validators.py:519
+#: finance/forms/validators.py:522
 #, python-format
 msgctxt "UI"
 msgid "Threshold must be higher than %(minimum)s %(unit)s!"
 msgstr "¡El umbral debe ser superior a %(minimum)s %(unit)s!"
 
-#: finance/forms/validators.py:528
+#: finance/forms/validators.py:531
 #, python-format
 msgctxt "UI"
 msgid "Threshold must be lower than %(minimum)s %(unit)s!"
 msgstr "¡El umbral debe ser inferior a %(minimum)s%(unit)s!"
 
-#: finance/forms/validators.py:549
+#: finance/forms/validators.py:543
+#, fuzzy
+#| msgctxt "UI"
+#| msgid "Invalid threshold value!"
+msgctxt "UI"
+msgid "Invalid threshold value."
+msgstr "¡Valor de umbral inválido!"
+
+#: finance/forms/validators.py:558
 msgctxt "UI"
 msgid "You have to set a frequency!!"
 msgstr "¡¡Debe fijar una frecuencia!!"
 
-#: finance/forms/validators.py:551 finance/forms/validators.py:553
+#: finance/forms/validators.py:560 finance/forms/validators.py:562
 msgctxt "UI"
 msgid "Invalid frequency format!"
 msgstr "¡Formato de frecuencia inválido!"
 
-#: finance/forms/validators.py:559
+#: finance/forms/validators.py:568
 msgctxt "UI"
 msgid "Invalid payout frequency!"
 msgstr "¡Frecuencia de pago no válida!"
 
-#: finance/forms/validators.py:563
+#: finance/forms/validators.py:572
 msgctxt "UI"
 msgid "Invalid day in period!"
 msgstr "¡Día inválido en el período!"
 
-#: finance/forms/validators.py:571
+#: finance/forms/validators.py:580
 #, python-format
 msgctxt "UI"
 msgid "Day of the week must be a number between %(min)s and %(max)s!"
 msgstr "¡El día de la semana debe ser un número entre %(min)s y %(max)s!"
 
-#: finance/forms/validators.py:581
+#: finance/forms/validators.py:590
 #, python-format
 msgctxt "UI"
 msgid "Day of the month must be a number between %(min)s and %(max)s!"
 msgstr "¡El día del mes debe ser un número entre %(min)s y %(max)s!"
 
-#: finance/forms/validators.py:606
+#: finance/forms/validators.py:615
 msgctxt "UI"
 msgid "Invalid trigger format!"
 msgstr "¡Formato de activador no válido!"
 
-#: finance/forms/validators.py:626
+#: finance/forms/validators.py:635
 #, python-format
 msgctxt "UI"
 msgid "Unknown trigger type \"%(type)s\"!"
 msgstr "¡Tipo de activador desconocido \"%(type)s\"!"
 
-#: finance/forms/validators.py:649
+#: finance/forms/validators.py:658
 #, python-format
 msgctxt "UI"
 msgid "Choose a %(coin)s wallet!"
@@ -1657,12 +1689,12 @@ msgctxt "UI"
 msgid "Context value \"%s\" is missing."
 msgstr "Falta el valor de contexto %s."
 
-#: formlib/core.py:479
+#: formlib/core.py:481
 msgctxt "UI"
 msgid "Missing initial value for the \"{}\" key!"
 msgstr "¡Falta el valor inicial para la \"{}\" llave!"
 
-#: formlib/core.py:482
+#: formlib/core.py:484
 msgctxt "UI"
 msgid "Initial values were not up to date!"
 msgstr "¡Los valores iniciales no estaban actualizados!"
@@ -1808,12 +1840,12 @@ msgctxt "UI"
 msgid "You can not delete staff Access Profile."
 msgstr "No puede borrar el Perfil de Acceso del personal."
 
-#: mining/models.py:389
+#: mining/models.py:391
 msgctxt "UI"
 msgid "-- not voted (proportional split) --"
 msgstr "-- no votado (división proporcional) --"
 
-#: mining/models.py:392
+#: mining/models.py:394
 msgctxt "UI"
 msgid ""
 "Users that don't have any preference = their hashrate is split among all "
@@ -1822,17 +1854,17 @@ msgstr ""
 "Usuarios que no tengan preferencia = su tasa de hash se dividide "
 "proporcionalmente entre todas las propuestas de tamaño de bloque."
 
-#: mining/models.py:395
+#: mining/models.py:397
 msgctxt "UI"
 msgid "Not voted"
 msgstr "No votado"
 
-#: mining/models.py:400
+#: mining/models.py:402
 msgctxt "UI"
 msgid "Current rules / Bitcoin Core"
 msgstr "Normas actuales / Bitcoin Core"
 
-#: mining/models.py:403
+#: mining/models.py:405
 msgctxt "UI"
 msgid ""
 "Users that prefer Current rules given by Bitcoin core = their hashrate is "
@@ -1841,17 +1873,17 @@ msgstr ""
 "Usuarios que prefieren las Reglas actuales dadas por Bitcoin Core = su tasa "
 "de hash se usa para minar bloques de Bitcoin Core."
 
-#: mining/models.py:406
+#: mining/models.py:408
 msgctxt "UI"
 msgid "Bitcoin Core"
 msgstr "Bitcoin Core"
 
-#: mining/models.py:411
+#: mining/models.py:413
 msgctxt "UI"
 msgid "I don't care, pool operator decides"
 msgstr "No me importa, el operador del pool decide"
 
-#: mining/models.py:414
+#: mining/models.py:416
 msgctxt "UI"
 msgid ""
 "Users that set I don't care option = pool operator decides which block size "
@@ -1860,7 +1892,7 @@ msgstr ""
 "Los usuarios que configuran la opción No me importa = el operador del pool "
 "decide el tamaño de bloque que esté más cercano a su corazón."
 
-#: mining/models.py:417
+#: mining/models.py:419
 msgctxt "UI"
 msgid "Pool decides"
 msgstr "El pool decide"
@@ -2220,22 +2252,22 @@ msgctxt "UI"
 msgid "Dismiss this Message"
 msgstr "Descartar este Mensaje"
 
-#: web/api/v1/views.py:356
+#: web/api/v1/views.py:359
 msgctxt "UI"
 msgid "Invalid appeal model."
 msgstr "Modelo de recurso inválido."
 
-#: web/api/v1/views.py:363
+#: web/api/v1/views.py:366
 msgctxt "UI"
 msgid "Invalid appeal ID."
 msgstr "ID de recurso inválida."
 
-#: web/api/v1/views.py:393
+#: web/api/v1/views.py:396
 msgctxt "UI"
 msgid "The current access profile has already seen the v4 welcome dialogue!"
 msgstr "¡El perfil de acceso actual ya ha visto el mensaje de bienvenida v4!"
 
-#: web/api/v1/views.py:768
+#: web/api/v1/views.py:771
 msgctxt "UI"
 msgid ""
 "Only alphabetical characters, numbers and underscore are allowed in username!"
@@ -2243,27 +2275,43 @@ msgstr ""
 "¡Solo se permiten caracteres alfabéticos, números y guiones bajos en el "
 "nombre de usuario!"
 
-#: web/api/v1/views.py:774 web/api/v1/views.py:1206
+#: web/api/v1/views.py:775
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Name can not be longer than %(length)s characters!"
+msgctxt "UI"
+msgid "Username cannot be longer than %d characters!"
+msgstr "¡El nombre no puede tener mas de %(length)s caracteres!"
+
+#: web/api/v1/views.py:782 web/api/v1/views.py:1219
 msgctxt "UI"
 msgid "Invalid email format!"
 msgstr "Formato de correo electrónico inválido!"
 
-#: web/api/v1/views.py:779
+#: web/api/v1/views.py:785
+#, fuzzy, python-format
+#| msgctxt "UI"
+#| msgid "Name can not be longer than %(length)s characters!"
+msgctxt "UI"
+msgid "Email address cannot be longer than %d characters!"
+msgstr "¡El nombre no puede tener mas de %(length)s caracteres!"
+
+#: web/api/v1/views.py:792
 msgctxt "UI"
 msgid "Password must have at Least 5 characters!"
 msgstr "La contraseña debe tener al menos 5 caracteres!"
 
-#: web/api/v1/views.py:853 web/api/v1/views.py:872 web/api/v1/views.py:952
+#: web/api/v1/views.py:866 web/api/v1/views.py:885 web/api/v1/views.py:965
 msgctxt "UI"
 msgid "Login forbidden"
 msgstr "Inicio de sesión prohibido"
 
-#: web/api/v1/views.py:927
+#: web/api/v1/views.py:940
 msgctxt "UI"
 msgid "Invalid credentials."
 msgstr "Credenciales inválidas."
 
-#: web/api/v1/views.py:945
+#: web/api/v1/views.py:958
 msgctxt "UI"
 msgid ""
 "Please enter a correct username (not an e-mail address) and password. Note "
@@ -2273,27 +2321,27 @@ msgstr ""
 "electrónico) y contraseña correctos. Tenga en cuenta que ambos campos "
 "distinguen entre mayúsculas y minúsculas."
 
-#: web/api/v1/views.py:1043 web/api/v1/views.py:1098
+#: web/api/v1/views.py:1056 web/api/v1/views.py:1111
 msgctxt "UI"
 msgid "Bad username/id."
 msgstr "nombre de usuario/id errado."
 
-#: web/api/v1/views.py:1046 web/api/v1/views.py:1101
+#: web/api/v1/views.py:1059 web/api/v1/views.py:1114
 msgctxt "UI"
 msgid "This user is not active yet/anymore."
 msgstr "Este usuario no está activo aún/más."
 
-#: web/api/v1/views.py:1172
+#: web/api/v1/views.py:1185
 msgctxt "UI"
 msgid "No pending request found!"
 msgstr "No se ha encontrado ninguna solicitud pendiente!"
 
-#: web/api/v1/views.py:1295
+#: web/api/v1/views.py:1308
 msgctxt "UI"
 msgid "Invalid token!"
 msgstr "Token inválido!"
 
-#: web/api/v1/views.py:1302
+#: web/api/v1/views.py:1315
 msgctxt "UI"
 msgid "Password must have at least 5 characters!"
 msgstr "La contraseña debe tener al menos 5 caracteres!"
@@ -2561,509 +2609,515 @@ msgctxt "UI"
 msgid "To: %(date)s"
 msgstr "Al: %(date)s"
 
-#: web/models.py:1260
+#: web/models.py:1261
 msgctxt "UI"
 msgid "Preferred language"
 msgstr "Idioma preferido"
 
-#: web/models.py:1261
+#: web/models.py:1262
 msgctxt "UI"
 msgid "Preferred timezone"
 msgstr "Zona horaria preferida"
 
-#: web/models.py:1262 web/models.py:1287
+#: web/models.py:1263 web/models.py:1288
 msgctxt "UI"
 msgid "Color theme"
 msgstr "Color del tema"
 
-#: web/models.py:1263
+#: web/models.py:1264
 msgctxt "UI"
 msgid "Email address"
 msgstr "Dirección de correo"
 
-#: web/models.py:1264
+#: web/models.py:1265
 msgctxt "UI"
 msgid "Username in stats"
 msgstr "Nombre de usuario en las estadísticas"
 
-#: web/models.py:1265
+#: web/models.py:1266
 msgctxt "UI"
 msgid "Notify me on payout"
 msgstr "Notificarme al momento del pago"
 
-#: web/models.py:1266
+#: web/models.py:1267
 msgctxt "UI"
 msgid "Newsletter"
 msgstr "Boletín"
 
-#: web/models.py:1267
+#: web/models.py:1268
 msgctxt "UI"
 msgid "Currency unit"
 msgstr "Unidad de moneda"
 
-#: web/models.py:1268
+#: web/models.py:1269
 msgctxt "UI"
 msgid "Blockchain voting"
 msgstr "Votación Blockchain"
 
-#: web/models.py:1270
+#: web/models.py:1271
 msgctxt "UI"
 msgid "Reporting enabled"
 msgstr "Informes habilitados"
 
-#: web/models.py:1271
+#: web/models.py:1272
 msgctxt "UI"
 msgid "Auto-detect alert limit"
 msgstr "Detectar automáticamente el Límite de Alerta"
 
-#: web/models.py:1274
+#: web/models.py:1275
 msgctxt "UI"
 msgid "Wallet"
 msgstr "Cartera"
 
-#: web/models.py:1275 web/models.py:1276
+#: web/models.py:1276 web/models.py:1277
 msgctxt "UI"
 msgid "Pending wallet"
 msgstr "Cartera pendiente"
 
-#: web/models.py:1277
+#: web/models.py:1278
 msgctxt "UI"
 msgid "Send threshold"
 msgstr "Umbral de envío"
 
-#: web/models.py:1278
+#: web/models.py:1279
 msgctxt "UI"
 msgid "Email"
 msgstr "Email"
 
-#: web/models.py:1280
+#: web/models.py:1281
 msgctxt "UI"
 msgid "Monitoring notifications"
 msgstr "Notificaciones de Vigilancia"
 
-#: web/models.py:1281
+#: web/models.py:1282
 msgctxt "UI"
 msgid "Monitoring"
 msgstr "Vigilancia"
 
-#: web/models.py:1282
+#: web/models.py:1283
 msgctxt "UI"
 msgid "Last Change"
 msgstr "Último Cambio"
 
-#: web/models.py:1283
+#: web/models.py:1284
 msgctxt "UI"
 msgid "Login suffix"
 msgstr "Sufijo de inicio de sesión"
 
-#: web/models.py:1284 web/models.py:1285
+#: web/models.py:1285 web/models.py:1286
 msgctxt "UI"
 msgid "Minimum difficulty"
 msgstr "Dificultad mínima"
 
-#: web/models.py:1289
+#: web/models.py:1290
 msgctxt "UI"
 msgid "Enabled"
 msgstr "Activado"
 
-#: web/models.py:1289
+#: web/models.py:1290
 msgctxt "UI"
 msgid "Disabled"
 msgstr "Deshabilitado"
 
-#: web/models.py:1330
+#: web/models.py:1331
 msgctxt "UI"
 msgid "Account deletion cancelled"
 msgstr "Eliminación de cuenta cancelada"
 
-#: web/models.py:1331
+#: web/models.py:1332
 msgctxt "UI"
 msgid "Account deleted"
 msgstr "Cuenta eliminada"
 
-#: web/models.py:1332
+#: web/models.py:1333
 msgctxt "UI"
 msgid "Account deletion requested"
 msgstr "Eliminación de cuenta solicitada"
 
 #: web/models.py:1334
+#, fuzzy
+msgctxt "UI"
+msgid "Account deleted by admin"
+msgstr "Configuración de la cuenta"
+
+#: web/models.py:1336
 msgctxt "UI"
 msgid "Demo login"
 msgstr "Demo de Inicio de sesión"
 
-#: web/models.py:1335
+#: web/models.py:1337
 msgctxt "UI"
 msgid "Demo logout"
 msgstr "Demo de cierre de sesión"
 
-#: web/models.py:1336
+#: web/models.py:1338
 msgctxt "UI"
 msgid "Support login"
 msgstr "Inicio de sesión de Soporte"
 
-#: web/models.py:1338
+#: web/models.py:1340
 msgctxt "UI"
 msgid "Impersonate user"
 msgstr "Hacerse pasar por usuario"
 
-#: web/models.py:1340
+#: web/models.py:1342
 msgctxt "UI"
 msgid "Login"
 msgstr "Inicio de sesión"
 
-#: web/models.py:1341
+#: web/models.py:1343
 msgctxt "UI"
 msgid "Logout"
 msgstr "Cerrar sesión"
 
-#: web/models.py:1342
+#: web/models.py:1344
 msgctxt "UI"
 msgid "Logout all sessions"
 msgstr "Cerrar todas las sesiones"
 
-#: web/models.py:1343
+#: web/models.py:1345
 msgctxt "UI"
 msgid "Invalid Login"
 msgstr "Inicio de sesión inválido"
 
-#: web/models.py:1344
+#: web/models.py:1346
 msgctxt "UI"
 msgid "Inactive profile"
 msgstr "Perfil inactivo"
 
-#: web/models.py:1347
+#: web/models.py:1349
 msgctxt "UI"
 msgid "New wallet created"
 msgstr "Nueva cartera creada"
 
-#: web/models.py:1349
+#: web/models.py:1351
 msgctxt "UI"
 msgid "Wallet updated"
 msgstr "Cartera actualizada"
 
-#: web/models.py:1351
+#: web/models.py:1353
 msgctxt "UI"
 msgid "Wallet deleted"
 msgstr "Cartera borrada"
 
-#: web/models.py:1354
+#: web/models.py:1356
 msgctxt "UI"
 msgid "Wallet reactivated"
 msgstr "Cartera reactivada"
 
-#: web/models.py:1356
+#: web/models.py:1358
 msgctxt "UI"
 msgid "Payouts locked"
 msgstr "Pagos bloqueados"
 
-#: web/models.py:1357
+#: web/models.py:1359
 msgctxt "UI"
 msgid "Payouts unlocked"
 msgstr "Pagos desbloqueados"
 
-#: web/models.py:1358
+#: web/models.py:1360
 msgctxt "UI"
 msgid "New payout account created"
 msgstr "Nueva cuenta de pago creada"
 
-#: web/models.py:1360
+#: web/models.py:1362
 msgctxt "UI"
 msgid "Financial account updated"
 msgstr "Cuenta Financiera de pago actualizada"
 
-#: web/models.py:1362
+#: web/models.py:1364
 msgctxt "UI"
 msgid "Payout account deactivated"
 msgstr "Cuenta de pago desactivada"
 
-#: web/models.py:1364
+#: web/models.py:1366
 msgctxt "UI"
 msgid "Immediate payout requested"
 msgstr "Pago inmediato solicitado"
 
-#: web/models.py:1366
+#: web/models.py:1368
 msgctxt "UI"
 msgid "Immediate payout request cancelled"
 msgstr "Petición de pago inmediato cancelada"
 
-#: web/models.py:1369
+#: web/models.py:1371
 msgctxt "UI"
 msgid "Payout split modified"
 msgstr "División de pago modificada"
 
-#: web/models.py:1373
+#: web/models.py:1375
 msgctxt "UI"
 msgid "Payout account settings updated"
 msgstr "Ajustes de la cuenta de pago actualizados"
 
-#: web/models.py:1377
+#: web/models.py:1379
 msgctxt "UI"
 msgid "Payout channel confirmed"
 msgstr "Canal de pago confirmado"
 
-#: web/models.py:1381
+#: web/models.py:1383
 msgctxt "UI"
 msgid "Payout channel confirmation email resent"
 msgstr "Correo de confirmación del canal de pago re-enviado"
 
-#: web/models.py:1385
+#: web/models.py:1387
 msgctxt "UI"
 msgid "New access profile created"
 msgstr "Nuevo perfil de acceso creado"
 
-#: web/models.py:1387
+#: web/models.py:1389
 msgctxt "UI"
 msgid "Access profile updated"
 msgstr "Perfil de acceso actualizado"
 
-#: web/models.py:1389
+#: web/models.py:1391
 msgctxt "UI"
 msgid "Access profile deleted"
 msgstr "Perfil de acceso eliminado"
 
-#: web/models.py:1392
+#: web/models.py:1394
 msgctxt "UI"
 msgid "Payouts paused"
 msgstr "Pagos pausados"
 
-#: web/models.py:1393
+#: web/models.py:1395
 msgctxt "UI"
 msgid "Payouts unpaused"
 msgstr "Pagos no pausados"
 
-#: web/models.py:1395
+#: web/models.py:1397
 msgctxt "UI"
 msgid "Message seen"
 msgstr "Mensaje visto"
 
-#: web/models.py:1397
+#: web/models.py:1399
 msgctxt "UI"
 msgid "Mining settings updated"
 msgstr "Ajustes de minería actualizados"
 
-#: web/models.py:1401
+#: web/models.py:1403
 msgctxt "UI"
 msgid "Monitoring settings updated"
 msgstr "Ajustes de vigilancia actualizados"
 
-#: web/models.py:1404
+#: web/models.py:1406
 msgctxt "UI"
 msgid "Newsletter unsubscribed"
 msgstr "Suscripción al Boletín cancelada"
 
-#: web/models.py:1406
+#: web/models.py:1408
 msgctxt "UI"
 msgid "2-factor authentication disabled"
 msgstr "Autenticación de dos factores desactivada"
 
-#: web/models.py:1407
+#: web/models.py:1409
 msgctxt "UI"
 msgid "2-factor authentication enabled"
 msgstr "Autenticación de dos factores activada"
 
-#: web/models.py:1408
+#: web/models.py:1410
 msgctxt "UI"
 msgid "One time password setup cancelled"
 msgstr "Configuración del código temporal de seguridad cancelada"
 
-#: web/models.py:1409
+#: web/models.py:1411
 msgctxt "UI"
 msgid "OTP change confirmed"
 msgstr "Cambio OTP confirmado"
 
-#: web/models.py:1410
+#: web/models.py:1412
 msgctxt "UI"
 msgid "2-factor authentication removed by operator"
 msgstr "Autenticación de 2 factores eliminada por el operador"
 
-#: web/models.py:1412
+#: web/models.py:1414
 msgctxt "UI"
 msgid "U2F device registered"
 msgstr "Dispositivo U2F registrado"
 
-#: web/models.py:1413
+#: web/models.py:1415
 msgctxt "UI"
 msgid "U2F setup cancelled"
 msgstr "Configuración U2F cancelada"
 
-#: web/models.py:1416
+#: web/models.py:1418
 msgctxt "UI"
 msgid "Payouts blocked"
 msgstr "Pagos bloqueados"
 
-#: web/models.py:1418
+#: web/models.py:1420
 msgctxt "UI"
 msgid "Payouts unblocked"
 msgstr "Pagos desbloqueados"
 
-#: web/models.py:1420 web/models.py:1423
+#: web/models.py:1422 web/models.py:1425
 msgctxt "UI"
 msgid "Password changed"
 msgstr "Contraseña cambiada"
 
-#: web/models.py:1421
+#: web/models.py:1423
 msgctxt "UI"
 msgid "Password reset completed"
 msgstr "Restablecimiento de contraseña completo"
 
-#: web/models.py:1422
+#: web/models.py:1424
 msgctxt "UI"
 msgid "Password reset initiated"
 msgstr "Restablecimiento de contraseña iniciado"
 
-#: web/models.py:1426 web/models.py:1430 web/models.py:1591
+#: web/models.py:1428 web/models.py:1432 web/models.py:1593
 msgctxt "UI"
 msgid "Account settings updated"
 msgstr "Ajustes de la cuenta actualizados"
 
-#: web/models.py:1434
+#: web/models.py:1436
 msgctxt "UI"
 msgid "Color theme changed"
 msgstr "Cambió el color de tema"
 
-#: web/models.py:1437
+#: web/models.py:1439
 msgctxt "UI"
 msgid "Email change confirmed"
 msgstr "Cambio de correo electrónico confirmado"
 
-#: web/models.py:1438
+#: web/models.py:1440
 msgctxt "UI"
 msgid "Email change cancelled"
 msgstr "Cambio de correo electrónico cancelado"
 
-#: web/models.py:1439
+#: web/models.py:1441
 msgctxt "UI"
 msgid "Email change confirmation resent"
 msgstr "Confirmación de cambio de correo electrónico reenviada"
 
-#: web/models.py:1442
+#: web/models.py:1444
 msgctxt "UI"
 msgid "Worker removed"
 msgstr "Equipo de minería removido"
 
-#: web/models.py:1443
+#: web/models.py:1445
 #, python-format
 msgctxt "UI"
 msgid "You have removed worker <b>%(name)s</b>"
 msgstr "Has eliminado al equipo de minería <b>%(name)s</b>"
 
-#: web/models.py:1446
+#: web/models.py:1448
 msgctxt "UI"
 msgid "Workers removed"
 msgstr "Equipos de minería removidos"
 
-#: web/models.py:1447
+#: web/models.py:1449
 #, python-format
 msgctxt "UI"
 msgid "You have removed %(count)d %(coin)s workers"
 msgstr "Has eliminado %(count)d %(coin)s equipos de minería"
 
-#: web/models.py:1449
+#: web/models.py:1451
 msgctxt "UI"
 msgid "Worker settings updated"
 msgstr "Ajustes de equipo actualizados"
 
-#: web/models.py:1451
+#: web/models.py:1453
 msgctxt "UI"
 msgid "New worker"
 msgstr "Nuevo Equipo de Minería"
 
-#: web/models.py:1452
+#: web/models.py:1454
 msgctxt "UI"
 msgid "You have registered a new worker"
 msgstr "Has registrado un nuevo equipo de minería"
 
-#: web/models.py:1456
+#: web/models.py:1458
 msgctxt "UI"
 msgid "User appeal dismissed"
 msgstr "Apelación del usuario desestimada"
 
-#: web/models.py:1461
+#: web/models.py:1463
 msgctxt "UI"
 msgid "Enabled coins updated"
 msgstr "Monedas habilitadas actualizadas"
 
-#: web/models.py:1521
+#: web/models.py:1523
 msgctxt "UI"
 msgid "Exported user data"
 msgstr "Datos de usuario exportados"
 
-#: web/models.py:1526
+#: web/models.py:1528
 msgctxt "UI"
 msgid "NMC reward claimed"
 msgstr "Recompensa NMC reclamada"
 
-#: web/models.py:1530
+#: web/models.py:1532
 msgctxt "UI"
 msgid "NMC claim - address changed"
 msgstr "Reclamo NMC - Dirección cambiada"
 
-#: web/models.py:1536
+#: web/models.py:1538
 msgctxt "UI"
 msgid "Wallet unlocked by operator"
 msgstr "Cartera desbloqueada por el operador"
 
-#: web/models.py:1540
+#: web/models.py:1542
 msgctxt "UI"
 msgid "Payout settings updated"
 msgstr "Ajustes de pago actualizados"
 
-#: web/models.py:1544
+#: web/models.py:1546
 msgctxt "UI"
 msgid "Zcash payout settings updated"
 msgstr "Ajustes de pago Zcash actualizados"
 
-#: web/models.py:1548
+#: web/models.py:1550
 msgctxt "UI"
 msgid "Wallet change confirmed"
 msgstr "Cambio de cartera confirmado"
 
-#: web/models.py:1552
+#: web/models.py:1554
 msgctxt "UI"
 msgid "Wallet change cancelled"
 msgstr "Cambio de cartera cancelado"
 
-#: web/models.py:1556
+#: web/models.py:1558
 msgctxt "UI"
 msgid "Wallet change confirmation resent"
 msgstr "Confirmación de cambio de cartera reenviada"
 
-#: web/models.py:1560
+#: web/models.py:1562
 msgctxt "UI"
 msgid "Zcash wallet change confirmed"
 msgstr "Cambio de cartera Zcash confirmado"
 
-#: web/models.py:1564
+#: web/models.py:1566
 msgctxt "UI"
 msgid "Zcash wallet change cancelled"
 msgstr "Cambio de cartera Zcash cancelado"
 
-#: web/models.py:1568
+#: web/models.py:1570
 msgctxt "UI"
 msgid "Zcash wallet change confirmation resent"
 msgstr "Confirmación de cambio de cartera Zcash reenviada"
 
-#: web/models.py:1572
+#: web/models.py:1574
 msgctxt "UI"
 msgid "Wallet locked"
 msgstr "Cartera bloqueada"
 
-#: web/models.py:1576
+#: web/models.py:1578
 msgctxt "UI"
 msgid "Wallet unlocked"
 msgstr "Cartera desbloqueada"
 
-#: web/models.py:1580
+#: web/models.py:1582
 msgctxt "UI"
 msgid "Zcash wallet locked"
 msgstr "Cartera Zcash bloqueada"
 
-#: web/models.py:1584
+#: web/models.py:1586
 msgctxt "UI"
 msgid "Zcash wallet unlocked"
 msgstr "Cartera Zcash desbloqueada"
 
-#: web/registration.py:55
+#: web/registration.py:61
 #, python-format
 msgctxt "UI"
 msgid "Username \"%s\" is already taken."
@@ -3517,68 +3571,68 @@ msgid "Minimum difficulty must be an integer between 8 and 500 000!"
 msgstr "La dificultad mínima debe ser un número entero entre 8 y 500.000!"
 
 #. Translators: data entity, eg: Access denied to object: workers
-#: workers/api/v1/views.py:215
+#: workers/api/v1/views.py:220
 msgctxt "UI"
 msgid "workers"
 msgstr "equipos de minería"
 
-#: workers/api/v1/views.py:302
+#: workers/api/v1/views.py:307
 msgctxt "UI"
 msgid "Label name must be a string."
 msgstr "El nombre de la etiqueta debe ser una frase."
 
-#: workers/api/v1/views.py:305
+#: workers/api/v1/views.py:310
 msgctxt "UI"
 msgid "Name is required."
 msgstr "Nombre requerido."
 
-#: workers/api/v1/views.py:307
+#: workers/api/v1/views.py:312
 msgctxt "UI"
 msgid "Name must not be longer than 15 characters."
 msgstr "El nombre no puede ser mayor a 15 caracteres."
 
-#: workers/api/v1/views.py:312
+#: workers/api/v1/views.py:317
 msgctxt "UI"
 msgid "A label with this name already exists."
 msgstr "Ya existe una etiqueta con este nombre."
 
-#: workers/api/v1/views.py:316
+#: workers/api/v1/views.py:321
 msgctxt "UI"
 msgid "Label shortcut must be a string."
 msgstr "La etiqueta de atajo debe ser una frase."
 
-#: workers/api/v1/views.py:319
+#: workers/api/v1/views.py:324
 msgctxt "UI"
 msgid "Label shortcut is required."
 msgstr "Se requiere una etiqueta de atajo."
 
-#: workers/api/v1/views.py:321
+#: workers/api/v1/views.py:326
 msgctxt "UI"
 msgid "Shortcut must not be longer than 2 characters."
 msgstr "El atajo no puede ser mayor de 2 caracteres."
 
-#: workers/api/v1/views.py:332
+#: workers/api/v1/views.py:337
 msgctxt "UI"
 msgid "Label description must be a string."
 msgstr "La descripción de la etiqueta debe ser una frase."
 
-#: workers/api/v1/views.py:336
+#: workers/api/v1/views.py:341
 msgctxt "UI"
 msgid "Maximal length of label description is 100 characters."
 msgstr ""
 "La longitud máxima en la descripción de la etiqueta es de 100 caracteres."
 
-#: workers/api/v1/views.py:343
+#: workers/api/v1/views.py:348
 msgctxt "UI"
 msgid "Invalid color."
 msgstr "Color inválido."
 
-#: workers/api/v1/views.py:379
+#: workers/api/v1/views.py:384
 msgctxt "UI"
 msgid "Invalid label ids."
 msgstr "Identificaciones de etiqueta inválidas."
 
-#: workers/api/v1/views.py:411
+#: workers/api/v1/views.py:416
 msgctxt "UI"
 msgid "Names and shortcuts must be unique."
 msgstr "Nombres y accesos directos deben ser únicos."
@@ -13567,10 +13621,6 @@ msgstr "Nombres y accesos directos deben ser únicos."
 
 #~ msgid "<User%(id)d>"
 #~ msgstr "<User%(id)d>"
-
-#, fuzzy
-#~ msgid "Account delete email"
-#~ msgstr "Configuración de la cuenta"
 
 #, fuzzy
 #~ msgid "Password updated"
