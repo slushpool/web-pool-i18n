@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-19 14:47+0100\n"
-"PO-Revision-Date: 2021-12-14 11:24+0000\n"
+"PO-Revision-Date: 2024-02-20 16:01+0000\n"
 "Last-Translator: Iryna Bashkova <iryna.bashkova@braiins.cz>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/slushpool/mining/"
 "ru/>\n"
@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.10-dev\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
@@ -160,7 +160,7 @@ msgstr "Номер слота \"%s\" недействителен."
 #, python-format
 msgctxt "UI"
 msgid "Lightning payout error: %s"
-msgstr ""
+msgstr "Ошибка выплаты через Lightning: %s"
 
 #: api/exceptions.py:202
 msgctxt "UI"
@@ -270,25 +270,22 @@ msgstr ""
 "измените свой выбор."
 
 #: api/exceptions.py:335
-#, fuzzy
-#| msgid "Second factor authentication required!"
 msgctxt "UI"
 msgid "Second factor authentication failed."
-msgstr "Требуется 2х-факторная аутентификация!"
+msgstr "Ошибка двухфакторной аутентификации."
 
 #: api/exceptions.py:340
 #, python-format
 msgctxt "UI"
 msgid "Not enough balance for lightning payout (required at least %s sats)."
 msgstr ""
+"Недостаточно средств для выплаты через Lightning (требуется как минимум %s "
+"сатоши)."
 
 #: api/exceptions.py:345
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "There is no wallet for this payout account!"
 msgctxt "UI"
 msgid "There is an active payout hold on this account."
-msgstr "У этого счета для выплат не добавлен кошелек!"
+msgstr "На этом аккаунте активирована блокировка выплат."
 
 #: backend/queries/finance.py:336
 msgctxt "UI"
@@ -299,14 +296,12 @@ msgstr "Неверный код валюты"
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:211
 msgctxt "email"
 msgid "Your Braiins Pool account has been suspended"
-msgstr ""
+msgstr "Ваш аккаунт в Braiins Pool был заблокирован"
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:234
-#, fuzzy
-#| msgid "Miner"
 msgctxt "email"
 msgid "Dear Miner,"
-msgstr "Майнер"
+msgstr "Уважаемый майнер,"
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:246
 msgctxt "email"
@@ -317,6 +312,11 @@ msgid ""
 "of the Office of Foreign Assets Control of the U.S. Treasury Department "
 "(OFAC)."
 msgstr ""
+"Мы с сожалением сообщаем вам, что были вынуждены временно приостановить "
+"любые выплаты криптовалюты с вашего пользовательского аккаунта, поскольку у "
+"нас есть веские основания подозревать, что вы попадаете под санкции в рамках "
+"программ санкций Управления по контролю за иностранными активами "
+"Министерства финансов США (OFAC)."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:256
 msgctxt "email"
@@ -326,6 +326,10 @@ msgid ""
 "responsibility of every miner to make sure that they are not subject to any "
 "such sanctions at any time when mining with the Braiins Pool."
 msgstr ""
+"Как вы знаете, мы не разрешаем майнерам, которые подпадают под санкции в "
+"рамках программ санкций OFAC, добывать криптовалюту с нами. Мы подчеркиваем, "
+"что каждый майнер обязан убедиться в том, что он не подпадает под какие-либо "
+"такие санкции в любое время, когда он занимается майнингом в Braiins Pool."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:264
 msgctxt "email"
@@ -335,6 +339,10 @@ msgid ""
 "other choice than to immediately and for an indefinite term suspend any "
 "cryptocurrency payouts to the respective miner."
 msgstr ""
+"Любой майнинг санкционированными майнерами является грубым нарушением "
+"Условий и положений Braiins Pool, и в случае обнаружения такого нарушения мы "
+"не имеем другого выбора, кроме как немедленно и на неопределенный срок "
+"приостановить любые выплаты криптовалюты соответствующему майнеру."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:272
 msgctxt "email"
@@ -345,6 +353,11 @@ msgid ""
 "target=\"_blank\">support ticket</a> and request more information on your "
 "case."
 msgstr ""
+"<strong>Чтобы узнать больше о причинах приостановки, пожалуйста, свяжитесь с "
+"нашей службой поддержки</strong> через <a href=\"https://help.braiins.com/en/"
+"support/tickets/new?utm_medium=SystemMailing&utm_source=braiins&utm_term="
+"v4_ofac\" target=\"_blank\">запрос в службу поддержки</a> и запросите "
+"дополнительную информацию по вашему случаю."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:280
 msgctxt "email"
@@ -354,6 +367,11 @@ msgid ""
 "you believe that you have been detected by mistake, or if your user account "
 "has been subject to an unauthorized access that caused the detection etc.)."
 msgstr ""
+"<strong>Вы также имеете право инициировать процедуру пересмотра</strong>, "
+"если считаете, что вы не подпадаете под какие-либо санкции OFAC (например, "
+"если вы считаете, что были обнаружены по ошибке, или если ваш "
+"пользовательский аккаунт подвергся несанкционированному доступу, который "
+"привел к обнаружению и т. д.)."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:288
 msgctxt "email"
@@ -366,6 +384,13 @@ msgid ""
 "review procedure you may be asked to undergo a detailed KYC procedure and to "
 "produce evidence to show that you are not subject to the sanctions."
 msgstr ""
+"В таком случае, пожалуйста, свяжитесь с нами через <a href=\"https://help."
+"braiins.com/en/support/tickets/"
+"new?utm_medium=SystemMailing&utm_source=braiins&utm_term=v4_ofac\" target="
+"\"_blank\">запрос в службу поддержки</a>, запросите пересмотр вашего случая "
+"и следуйте инструкциям службы поддержки. Обратите внимание, что во время "
+"процедуры пересмотра от вас могут потребовать пройти подробную процедуру KYC "
+"и предоставить доказательства того, что вы не подпадаете под санкции."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:296
 msgctxt "email"
@@ -375,6 +400,10 @@ msgid ""
 "revoked even after the review, we have a right to permanently terminate your "
 "user account and any business activities with you."
 msgstr ""
+"Если пересмотр не был инициирован вами в течение одного (1) года после того, "
+"как мы уведомили вас о приостановке, или если приостановку нельзя было "
+"отменить даже после пересмотра, мы имеем право окончательно закрыть ваш "
+"пользовательский аккаунт и прекратить любую деловую активность с вами."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:304
 msgctxt "email"
@@ -382,19 +411,19 @@ msgid ""
 "See Section 15 of the Braiins Pool Terms and Conditions for more detailed "
 "information on your rights and duties regarding the OFAC sanctions programs."
 msgstr ""
+"Смотрите раздел 15 Условий и положений Braiins Pool для получения более "
+"подробной информации о ваших правах и обязанностях в отношении программ "
+"санкций OFAC."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:312
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Bitcoin Unlimited"
 msgctxt "email"
 msgid "Braiins Mining Limited"
-msgstr "Bitcoin Unlimited"
+msgstr "Braiins Mining Limited"
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:353
 msgctxt "email"
 msgid "© 2022 Braiins. All rights reserved."
-msgstr ""
+msgstr "© 2022 Braiins. All rights reserved."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:368
 #: campaigns/email_templates/v4_account_delete.html:382
@@ -427,13 +456,7 @@ msgid "Account deletion request"
 msgstr "Запрошено удаление аккаунта"
 
 #: campaigns/email_templates/v4_account_delete.html:257
-#, fuzzy, python-format
-#| msgctxt "email"
-#| msgid ""
-#| "Did you run into any issues using Slush Pool that our support team can <a "
-#| "href=\"%(url)s\">help you with?</a> Or perhaps you are missing some "
-#| "features? <a href=\"%(url)s\">Let us know</a> so that we can make our "
-#| "services better."
+#, python-format
 msgctxt "email"
 msgid ""
 "Did you run into any issues using Braiins Pool that our support team can <a "
@@ -441,11 +464,10 @@ msgid ""
 "features? <a href=\"%(url)s\">Let us know</a> so that we can make our "
 "services better."
 msgstr ""
-"Вы столкнулись с какими-либо проблемами с использованием Slush Pool, с "
+"Вы столкнулись с какими-либо проблемами с использованием Braiins Pool, с "
 "которыми наша команда поддержки может <a href=\"%(url)s\">вам помочь?</a> "
-"Или, возможно, вам не хватает некоторых функций? <a "
-"href=\"%(url)s\">Пожалуйста, дайте нам знать</a>, чтобы мы могли сделать "
-"Slush Pool лучше."
+"Или, возможно, вам не хватает некоторых функций? <a href=\"%(url)s\""
+">Пожалуйста, дайте нам знать</a>, чтобы мы могли сделать Slush Pool лучше."
 
 #: campaigns/email_templates/v4_account_delete.html:269
 msgctxt "email"
@@ -820,12 +842,9 @@ msgstr ""
 "кнопку ниже."
 
 #: campaigns/email_templates/v4_signup_confirmation.html:212
-#, fuzzy
-#| msgctxt "email"
-#| msgid "Welcome to Slush Pool!"
 msgctxt "email"
 msgid "Welcome to Braiins Pool!"
-msgstr "Добро пожаловать в Slush Pool!"
+msgstr "Добро пожаловать в Braiins Pool!"
 
 #: campaigns/email_templates/v4_signup_confirmation.html:251
 msgctxt "email"
@@ -890,12 +909,9 @@ msgid "I receive newsletters too frequently"
 msgstr "Я получаю новостные рассылки слишком часто"
 
 #: campaigns/models.py:45
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "I do not mind anymore"
 msgctxt "UI"
 msgid "I do not mine anymore"
-msgstr "Я больше не возражаю"
+msgstr "Я больше не занимаюсь майнингом"
 
 #: campaigns/models.py:46
 msgctxt "UI"
@@ -929,12 +945,9 @@ msgid "Happy mining!"
 msgstr "Счастливого майнинга!"
 
 #: campaigns/templates/campaign_fragment/signature.html:6
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "The Slush Pool Team"
 msgctxt "UI"
 msgid "The Braiins Pool Team"
-msgstr "Команда Slush Pool"
+msgstr "Команда Braiins Pool"
 
 #: core/validators.py:9
 msgid "Enter a valid, non empty value."
@@ -1140,17 +1153,12 @@ msgid "%(currency_name)s <span>Reward Summary</span>"
 msgstr "%(currency_name)s <span>Сводка вознаграждений</span>"
 
 #: devices/templates/devices/reward.html:12
-#, fuzzy
-#| msgctxt "UI"
-#| msgid ""
-#| "Hi miner, congrats on yet another successful day with Slush Pool. Here "
-#| "are the details about your yesterday’s reward."
 msgctxt "UI"
 msgid ""
 "Hi miner, congrats on yet another successful day with Braiins Pool. Here are "
 "the details about your yesterday’s reward."
 msgstr ""
-"Приветствуем, майнер, поздравляем с еще одним успешным днем со Slush Pool. "
+"Приветствуем, майнер, поздравляем с еще одним успешным днем c Braiins Pool. "
 "Вот подробности о вашим вчерашним вознаграждением."
 
 #: devices/templates/devices/reward.html:14
@@ -1165,13 +1173,6 @@ msgid "Reward"
 msgstr "Вознаграждение"
 
 #: devices/templates/devices/reward.html:24
-#, fuzzy
-#| msgctxt "UI"
-#| msgid ""
-#| "We have credited the reward to Financial Accounts of your choosing. If "
-#| "you wish to see a detailed reward breakdown, <a href=\"http://slushpool."
-#| "com/mining/rewards?utm_source=sp-mobile-"
-#| "app&utm_medium=UsefulLinks\">visit the website</a>."
 msgctxt "UI"
 msgid ""
 "We have credited the reward to Financial Accounts of your choosing. If you "
@@ -1180,9 +1181,9 @@ msgid ""
 "a>."
 msgstr ""
 "Мы зачислили вознаграждение на выбранные вами финансовые счета. Если вы "
-"хотите увидеть подробную разбивку вознаграждений, <a href=\"http://slushpool."
-"com/mining/rewards?utm_source=sp-mobile-"
-"app&utm_medium=UsefulLinks\">посетите веб-сайт</a>."
+"хотите увидеть подробную разбивку вознаграждений, <a href=\"http"
+"://braiinspool.com/mining/rewards?utm_source=sp-mobile-app&utm_medium="
+"UsefulLinks\">посетите веб-сайт</a>."
 
 #: devices/templates/devices/reward.html:25
 msgctxt "UI"
@@ -1286,11 +1287,8 @@ msgid "Platform version must be a string no longer than %d characters."
 msgstr "Версия платформы должна быть строкой не более %d символов."
 
 #: devices/validators.py:83
-#, fuzzy
-#| msgid ""
-#| "Firebase notification token must be a string no longer than %d characters."
 msgid "Firebase notification token must be a string."
-msgstr "Токен уведомления Firebase должен быть строкой не более %d символов."
+msgstr "Токен уведомлений Firebase должен быть строкой."
 
 #: devices/validators.py:89
 #, python-format
@@ -1356,12 +1354,9 @@ msgid "You do not have permission to submit this form."
 msgstr "У вас нет разрешения на отправку этой формы."
 
 #: finance/forms/payout_account.py:52
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "A label with this name already exists."
 msgctxt "UI"
 msgid "An account with this name already exists!"
-msgstr "Ярлык с таким именем уже существует."
+msgstr "Аккаунт с таким именем уже существует!"
 
 #: finance/forms/payout_account.py:143
 msgctxt "UI"
@@ -1402,20 +1397,14 @@ msgid "Payouts are locked."
 msgstr "Выплаты заблокированы."
 
 #: finance/forms/payout_channel.py:148
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "A label with this name already exists."
 msgctxt "UI"
 msgid "Wallet with this name already exists!"
-msgstr "Ярлык с таким именем уже существует."
+msgstr "Кошелек с таким именем уже существует!"
 
 #: finance/forms/payout_channel.py:152
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "A label with this name already exists."
 msgctxt "UI"
 msgid "Wallet with this address already exists!"
-msgstr "Ярлык с таким именем уже существует."
+msgstr "Кошелек с таким адресом уже существует!"
 
 #: finance/forms/payout_hold.py:33
 msgctxt "UI"
@@ -1523,12 +1512,9 @@ msgid "Blockchain address is not supported for this coin!"
 msgstr "Блокчейн-адрес для этой монеты не поддерживается!"
 
 #: finance/forms/validators.py:168
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "This name is already used!"
 msgctxt "UI"
 msgid "This address cannot be used!"
-msgstr "Это имя уже используется!"
+msgstr "Этот адрес не может быть использован!"
 
 #: finance/forms/validators.py:210
 msgctxt "UI"
@@ -1674,12 +1660,9 @@ msgid "Threshold must be lower than %(minimum)s %(unit)s!"
 msgstr "Порог должен быть ниже чем %(minimum)s %(unit)s!"
 
 #: finance/forms/validators.py:549
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid threshold value!"
 msgctxt "UI"
 msgid "Invalid threshold value."
-msgstr "Неверное пороговое значение!"
+msgstr "Недопустимое значение порога."
 
 #: finance/forms/validators.py:564
 msgctxt "UI"
@@ -1807,6 +1790,8 @@ msgid ""
 "Password cannot be longer than %s characters. If you have a longer password, "
 "please reset it."
 msgstr ""
+"Пароль не может быть длиннее %s символов. Если у вас более длинный пароль, "
+"пожалуйста, сбросьте его."
 
 #: formlib/core.py:49
 msgid "Second factor authentication required!"
@@ -1817,10 +1802,8 @@ msgid "OTP token validation failed."
 msgstr "Сбой проверки OTP-токена."
 
 #: formlib/core.py:57
-#, fuzzy
-#| msgid "U2F authentication failed!"
 msgid "FIDO authentication failed!"
-msgstr "U2F аутентификация не удалась!"
+msgstr "Аутентификация FIDO не удалась!"
 
 #: formlib/core.py:61
 msgid "Password is incorrect!"
@@ -2336,14 +2319,14 @@ msgid ""
 "Your account is blocked due to detected OFAC violation. Check registered "
 "email for more information."
 msgstr ""
+"Ваш аккаунт заблокирован из-за обнаруженного нарушения санкций OFAC. "
+"Проверьте зарегистрированный электронный адрес для получения дополнительной "
+"информации."
 
 #: web/api/v1/appeals.py:115
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgctxt "UI"
 msgid "Account blocked"
-msgstr "Аккаунт удален"
+msgstr "Аккаунт заблокирован"
 
 #: web/api/v1/appeals.py:130
 msgctxt "UI"
@@ -2416,12 +2399,10 @@ msgid ""
 msgstr "В имени пользователя допускаются только буквы, цифры и подчеркивание!"
 
 #: web/api/v1/views.py:737
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Name can not be longer than %(length)s characters!"
+#, python-format
 msgctxt "UI"
 msgid "Username cannot be longer than %d characters!"
-msgstr "Имя не может быть длиннее %(length)s символов!"
+msgstr "Имя пользователя не может быть длиннее %d символов!"
 
 #: web/api/v1/views.py:744 web/api/v1/views.py:1224
 msgctxt "UI"
@@ -2429,12 +2410,10 @@ msgid "Invalid email format!"
 msgstr "Неверный формат электронной почты!"
 
 #: web/api/v1/views.py:747
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Name can not be longer than %(length)s characters!"
+#, python-format
 msgctxt "UI"
 msgid "Email address cannot be longer than %d characters!"
-msgstr "Имя не может быть длиннее %(length)s символов!"
+msgstr "Адрес электронной почты не может быть длиннее %d символов!"
 
 #: web/api/v1/views.py:754 web/api/v1/views.py:1305
 msgctxt "UI"
@@ -2442,12 +2421,10 @@ msgid "Password must have at least 5 characters!"
 msgstr "Пароль должен содержать не менее 5 символов!"
 
 #: web/api/v1/views.py:757 web/models.py:327
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Name can not be longer than %(length)s characters!"
+#, python-format
 msgctxt "UI"
 msgid "Password cannot have more than %s characters!"
-msgstr "Имя не может быть длиннее %(length)s символов!"
+msgstr "Пароль не может содержать более %s символов!"
 
 #: web/api/v1/views.py:823
 #, python-format
@@ -2456,6 +2433,8 @@ msgid ""
 "Password cannot have more than %s characters. If you have a longer password, "
 "please reset it."
 msgstr ""
+"Пароль не может содержать более %s символов. Если ваш пароль длиннее, "
+"пожалуйста, сбросьте его."
 
 #: web/api/v1/views.py:842 web/api/v1/views.py:861 web/api/v1/views.py:947
 msgctxt "UI"
@@ -2839,20 +2818,14 @@ msgid "Minimum difficulty"
 msgstr "Минимальная сложность"
 
 #: web/models.py:1226
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Preferred language"
 msgctxt "UI"
 msgid "Preferred fiat currency"
-msgstr "Предпочтительный язык"
+msgstr "Предпочтительная фиатная валюта"
 
 #: web/models.py:1227
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Monitoring notifications"
 msgctxt "UI"
 msgid "Payout email notifications"
-msgstr "Уведомления мониторинга"
+msgstr "Уведомления о выплатах на электронную почту"
 
 #: web/models.py:1230
 msgctxt "UI"
@@ -2880,22 +2853,19 @@ msgid "Account deletion requested"
 msgstr "Запрошено удаление аккаунта"
 
 #: web/models.py:1274
-#, fuzzy
 msgctxt "UI"
 msgid "Account deleted by admin"
-msgstr "Настройки аккаунта"
+msgstr "Аккаунт удален администратором"
 
 #: web/models.py:1275
-#, fuzzy
 msgctxt "UI"
 msgid "Account closed by admin"
-msgstr "Настройки аккаунта"
+msgstr "Аккаунт закрыт администратором"
 
 #: web/models.py:1276
-#, fuzzy
 msgctxt "UI"
 msgid "Account reopened by admin"
-msgstr "Настройки аккаунта"
+msgstr "Аккаунт восстановлен администратором"
 
 #: web/models.py:1278
 msgctxt "UI"
@@ -3277,97 +3247,64 @@ msgid "Zcash wallet unlocked"
 msgstr "Изменение Zcash кошелька разблокировано"
 
 #: web/models.py:1541
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "New wallet created"
 msgctxt "UI"
 msgid "New user created"
-msgstr "Создан новый кошелек"
+msgstr "Создан новый пользовательный аккаунт"
 
 #: web/models.py:1545
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "New wallet created"
 msgctxt "UI"
 msgid "New API key created"
-msgstr "Создан новый кошелек"
+msgstr "Создан новый ключ API"
 
 #: web/models.py:1549
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Proposal state changed"
 msgctxt "UI"
 msgid "Profile status changed"
-msgstr "Состояние предложения изменено"
+msgstr "Статус профиля изменён"
 
 #: web/models.py:1553
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deletion requested"
 msgctxt "UI"
 msgid "User account deletion requested"
-msgstr "Запрошено удаление аккаунта"
+msgstr "Запрошено удаление учетной записи пользователя"
 
 #: web/models.py:1557
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgctxt "UI"
 msgid "User account deleted"
-msgstr "Аккаунт удален"
+msgstr "Учетная запись пользователя удалена"
 
 #: web/models.py:1565
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Password reset completed"
 msgctxt "UI"
 msgid "User password reset completed"
-msgstr "Восстановление пароля завершено"
+msgstr "Сброс пароля пользователя завершен"
 
 #: web/models.py:1575
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Email address"
 msgctxt "UI"
 msgid "Email address updated by admin"
-msgstr "Адрес электронной почты"
+msgstr "Адрес электронной почты обновлен администратором"
 
 #: web/models.py:1585 web/models.py:1595
-#, fuzzy
-#| msgid "Username change"
 msgctxt "UI"
 msgid "User role changed"
-msgstr "Изменение имени пользователя"
+msgstr "Роль пользователя изменена"
 
 #: web/models.py:1590
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Cancel request"
 msgctxt "UI"
 msgid "Change of user role requested"
-msgstr "Отменить запрос"
+msgstr "Запрошено изменение роли пользователя"
 
 #: web/models.py:1600
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid notifications settings."
 msgctxt "UI"
 msgid "Email notifications settings changed"
-msgstr "Неверные настройки уведомлений."
+msgstr "Настройки уведомлений по электронной почте изменены"
 
 #: web/models.py:1611
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Payouts blocked by sysadmin"
 msgctxt "UI"
 msgid "OTP disabled by admin"
-msgstr "Выплаты заблокированы сисадмином"
+msgstr "OTP отключено администратором"
 
 #: web/models.py:1615
-#, fuzzy
 msgctxt "UI"
 msgid "FIDO disabled by admin"
-msgstr "Настройки аккаунта"
+msgstr "FIDO отключено администратором"
 
 #: web/registration.py:44
 #, python-format
@@ -3383,7 +3320,7 @@ msgstr "Здравствуйте"
 #: web/templates/email/_base.html:7
 msgctxt "UI"
 msgid "Braiins Pool"
-msgstr ""
+msgstr "Braiins Pool"
 
 #: web/templates/email/_base.html:8
 msgctxt "UI"
@@ -3638,12 +3575,9 @@ msgid "Reset password"
 msgstr "Переустановить пароль"
 
 #: web/templates/email/password_reset_subject.txt:1
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Password reset on Slush Pool"
 msgctxt "UI"
 msgid "Password reset on Braiins Pool"
-msgstr "Переустановить пароль на Slush Pool"
+msgstr "Переустановить пароль на Braiins Pool"
 
 #: web/templates/email/payout.html:5
 #, python-format
