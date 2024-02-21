@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-19 14:47+0100\n"
-"PO-Revision-Date: 2022-01-05 18:55+0000\n"
+"PO-Revision-Date: 2024-02-21 17:01+0000\n"
 "Last-Translator: Behzad Amiri Nezhad <behzad.amiri.nezhad@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/slushpool/mining/"
 "fa/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: api/bulk.py:84 api/bulk.py:93 api/bulk.py:102
 msgctxt "UI"
@@ -159,7 +159,7 @@ msgstr "شماره اسلات \"%s\" معتبر نیست."
 #, python-format
 msgctxt "UI"
 msgid "Lightning payout error: %s"
-msgstr ""
+msgstr "خطای پرداخت لایتنینگ:‌ %s"
 
 #: api/exceptions.py:202
 msgctxt "UI"
@@ -265,25 +265,20 @@ msgstr ""
 "حذف قطع شد. حذف ورکرهای فعال امکان پذیر نیست. لطفاً انتخاب خود را تنظیم کنید."
 
 #: api/exceptions.py:335
-#, fuzzy
-#| msgid "Second factor authentication required!"
 msgctxt "UI"
 msgid "Second factor authentication failed."
-msgstr "احراز هویت عامل دوم مورد نیاز است!"
+msgstr "تایید دو مرحله ای با خطا مواجه شد!"
 
 #: api/exceptions.py:340
 #, python-format
 msgctxt "UI"
 msgid "Not enough balance for lightning payout (required at least %s sats)."
-msgstr ""
+msgstr "موجودی برای پرداخت لایتنینگ کافی نیست(حداقل %s ساتوشی مورد نیاز است)."
 
 #: api/exceptions.py:345
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "There is no wallet for this payout account!"
 msgctxt "UI"
 msgid "There is an active payout hold on this account."
-msgstr "هیچ کیف پولی برای این حساب پرداخت وجود ندارد!"
+msgstr "یک پرداخت فعال در این حساب وجود دارد."
 
 #: backend/queries/finance.py:336
 msgctxt "UI"
@@ -294,14 +289,12 @@ msgstr "کد ارز نامعتبر است"
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:211
 msgctxt "email"
 msgid "Your Braiins Pool account has been suspended"
-msgstr ""
+msgstr "حساب استخر Braiins شما به حالت تعلیق درآمده است"
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:234
-#, fuzzy
-#| msgid "Miner"
 msgctxt "email"
 msgid "Dear Miner,"
-msgstr "ماینر"
+msgstr "ماینر عزیز،"
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:246
 msgctxt "email"
@@ -312,6 +305,10 @@ msgid ""
 "of the Office of Foreign Assets Control of the U.S. Treasury Department "
 "(OFAC)."
 msgstr ""
+"ما متاسفیم که به شما اطلاع می دهیم که ما مجبور شده ایم به طور موقت هر گونه "
+"پرداخت ارز دیجیتال را از حساب کاربری خود به حالت تعلیق در آوریم، زیرا ما یک "
+"دلیل منطقی برای مشکوک شدن به اینکه شما تحت تحریم برنامه های کنترل دارایی های "
+"خارجی وزارت خزانه داری ایالات متحده (OFAC) قرار دارید."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:256
 msgctxt "email"
@@ -321,6 +318,10 @@ msgid ""
 "responsibility of every miner to make sure that they are not subject to any "
 "such sanctions at any time when mining with the Braiins Pool."
 msgstr ""
+"همان‌طور که می‌دانید، ما به هیچ عنوان اجازه نمی‌دهیم که افراد تحت برنامه‌های "
+"تحریمی OFAC ماینینگ با ما داشته باشند. این امر را با تأکید بر مسئولیت هر "
+"ماینر، به شدت تأکید می‌کنیم. آنها باید در هر زمانی که با برنامه ماینینگ "
+"Braiins Pool ماینینگ می‌کنند، اطمینان حاصل کنند که تحت هیچگونه تحریمی نیستند."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:264
 msgctxt "email"
@@ -330,6 +331,9 @@ msgid ""
 "other choice than to immediately and for an indefinite term suspend any "
 "cryptocurrency payouts to the respective miner."
 msgstr ""
+"هر گونه فعالیت ماینینگ توسط ماینرهای تحت تحریم، به عنوان یک نقض جدی از شرایط "
+"و مقررات Braiins Pool محسوب می‌شود و در صورت کشف چنین نقضی، ما چاره‌ای جز "
+"تعلیق فوری و به مدت نامعلوم پرداخت هرگونه ارز دیجیتال به ماینر مربوطه نداریم."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:272
 msgctxt "email"
@@ -340,6 +344,11 @@ msgid ""
 "target=\"_blank\">support ticket</a> and request more information on your "
 "case."
 msgstr ""
+"<strong>برای کسب اطلاعات بیشتر درباره علت تعلیق، لطفاً با تیم پشتیبانی ما</"
+"strong> از طریق <a href=\"https://help.braiins.com/en/support/tickets/"
+"new?utm_medium=SystemMailing&utm_source=braiins&utm_term=v4_ofac\" target="
+"\"_blank\">بلیط پشتیبانی</a> تماس بگیرید و اطلاعات بیشتری در مورد خود "
+"درخواست کنید."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:280
 msgctxt "email"
@@ -349,6 +358,10 @@ msgid ""
 "you believe that you have been detected by mistake, or if your user account "
 "has been subject to an unauthorized access that caused the detection etc.)."
 msgstr ""
+"<strong>همچنین مجازید روند بررسی را آغاز کنید</strong>، اگر باور دارید که "
+"شما تحت هیچ یک از تحریم‌های OFAC (برای مثال، اگر باور دارید که به اشتباه "
+"شناسایی شده‌اید یا اگر حساب کاربری شما به دلایلی به طور غیرمجاز دسترسی شده "
+"باشد و این دسترسی منجر به شناسایی شما شده باشد و غیره) قرار ندارید."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:288
 msgctxt "email"
@@ -361,6 +374,13 @@ msgid ""
 "review procedure you may be asked to undergo a detailed KYC procedure and to "
 "produce evidence to show that you are not subject to the sanctions."
 msgstr ""
+"در چنین مواردی، لطفاً از طریق <a href=\"https://help.braiins.com/en/support/"
+"tickets/new?utm_medium=SystemMailing&utm_source=braiins&utm_term=v4_ofac\" "
+"target=\"_blank\">بلیت پشتیبانی</a> با ما تماس بگیرید، درخواست بررسی مورد "
+"خود را ارسال کنید و دستورالعمل‌های تیم پشتیبانی را دنبال کنید. لطفاً توجه "
+"داشته باشید که در طول روند بررسی، ممکن است از شما خواسته شود که یک رویه KYC "
+"دقیق را طی کنید و اثباتیه‌هایی را ارائه دهید تا نشان دهید که تحت تحریم‌ها "
+"قرار ندارید."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:296
 msgctxt "email"
@@ -370,6 +390,9 @@ msgid ""
 "revoked even after the review, we have a right to permanently terminate your "
 "user account and any business activities with you."
 msgstr ""
+"اگر بررسی توسط شما در یک سال پس از اطلاع‌رسانی ما از تعلیق شما آغاز نشده "
+"باشد یا اگر تعلیق حتی پس از بررسی قابل لغو نباشد، ما حق داریم که حساب کاربری "
+"شما را به‌طور دائمی متوقف کنیم و هرگونه فعالیت تجاری با شما را قطع کنیم."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:304
 msgctxt "email"
@@ -377,16 +400,18 @@ msgid ""
 "See Section 15 of the Braiins Pool Terms and Conditions for more detailed "
 "information on your rights and duties regarding the OFAC sanctions programs."
 msgstr ""
+"برای کسب اطلاعات دقیق‌تر درباره حقوق و وظایف شما در رابطه با برنامه‌های "
+"تحریم OFAC، بخش 15 شرایط و ضوابط استفاده از استخر Braiins را مشاهده کنید."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:312
 msgctxt "email"
 msgid "Braiins Mining Limited"
-msgstr ""
+msgstr "Braiins Mining Limited"
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:353
 msgctxt "email"
 msgid "© 2022 Braiins. All rights reserved."
-msgstr ""
+msgstr "© 2022 Braiins. تمام حقوق محفوظ است."
 
 #: campaigns/email_templates/blacklisted_payout_hold_created_client.html:368
 #: campaigns/email_templates/v4_account_delete.html:382
@@ -419,13 +444,7 @@ msgid "Account deletion request"
 msgstr "درخواست حذف حساب"
 
 #: campaigns/email_templates/v4_account_delete.html:257
-#, fuzzy, python-format
-#| msgctxt "email"
-#| msgid ""
-#| "Did you run into any issues using Slush Pool that our support team can <a "
-#| "href=\"%(url)s\">help you with?</a> Or perhaps you are missing some "
-#| "features? <a href=\"%(url)s\">Let us know</a> so that we can make our "
-#| "services better."
+#, python-format
 msgctxt "email"
 msgid ""
 "Did you run into any issues using Braiins Pool that our support team can <a "
@@ -433,10 +452,10 @@ msgid ""
 "features? <a href=\"%(url)s\">Let us know</a> so that we can make our "
 "services better."
 msgstr ""
-"آیا در استفاده از Slush Pool به مشکلی برخوردید که تیم پشتیبانی ما بتواند <a "
-"href=\"%(url)s\">به شما کمک کند؟</a> یا شاید برخی از ویژگی ها را از دست داده "
-"اید؟ <a href=\"%(url)s\">به ما اطلاع دهید </a> تا بتوانیم خدمات خود را بهتر "
-"کنیم."
+"آیا در استفاده از Braiins Pool به مشکلی برخوردید که تیم پشتیبانی ما بتواند "
+"<a href=\"%(url)s\">به شما کمک کند؟</a> یا شاید برخی از ویژگی ها را از دست "
+"داده اید؟ <a href=\"%(url)s\">به ما اطلاع دهید </a> تا بتوانیم خدمات خود را "
+"بهتر کنیم."
 
 #: campaigns/email_templates/v4_account_delete.html:269
 msgctxt "email"
@@ -812,12 +831,9 @@ msgstr ""
 "کنید."
 
 #: campaigns/email_templates/v4_signup_confirmation.html:212
-#, fuzzy
-#| msgctxt "email"
-#| msgid "Welcome to Slush Pool!"
 msgctxt "email"
 msgid "Welcome to Braiins Pool!"
-msgstr "به Slush Pool خوش آمدید!"
+msgstr "به Braiins Pool خوش آمدید!"
 
 #: campaigns/email_templates/v4_signup_confirmation.html:251
 msgctxt "email"
@@ -882,12 +898,9 @@ msgid "I receive newsletters too frequently"
 msgstr "من روزنامه ها را بصورت مکرر دریافت می کنم"
 
 #: campaigns/models.py:45
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "I do not mind anymore"
 msgctxt "UI"
 msgid "I do not mine anymore"
-msgstr "دیگر برایم مسئله ای نیست"
+msgstr "من دیگر ماینینگ نمی‌کنم"
 
 #: campaigns/models.py:46
 msgctxt "UI"
@@ -921,12 +934,9 @@ msgid "Happy mining!"
 msgstr "از استخراج لذت ببر!"
 
 #: campaigns/templates/campaign_fragment/signature.html:6
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "The Slush Pool Team"
 msgctxt "UI"
 msgid "The Braiins Pool Team"
-msgstr "تیم Slush Pool"
+msgstr "تیم Braiins Pool"
 
 #: core/validators.py:9
 msgid "Enter a valid, non empty value."
@@ -1129,18 +1139,13 @@ msgid "%(currency_name)s <span>Reward Summary</span>"
 msgstr "%(currency_name)s <span> خلاصه پاداش</span>"
 
 #: devices/templates/devices/reward.html:12
-#, fuzzy
-#| msgctxt "UI"
-#| msgid ""
-#| "Hi miner, congrats on yet another successful day with Slush Pool. Here "
-#| "are the details about your yesterday’s reward."
 msgctxt "UI"
 msgid ""
 "Hi miner, congrats on yet another successful day with Braiins Pool. Here are "
 "the details about your yesterday’s reward."
 msgstr ""
-"سلام استخراج کننده عزیز، یک روز موفق دیگر با Slush Pool را تبریک می گویم. در "
-"اینجا جزئیات مربوط به پاداش دیروز شما آمده است."
+"سلام استخراج کننده عزیز، یک روز موفق دیگر با Braiins Pool را تبریک می گویم. "
+"در اینجا جزئیات مربوط به پاداش دیروز شما آمده است."
 
 #: devices/templates/devices/reward.html:14
 #: devices/templates/devices/worker_moni.html:14
@@ -1154,13 +1159,6 @@ msgid "Reward"
 msgstr "پاداش"
 
 #: devices/templates/devices/reward.html:24
-#, fuzzy
-#| msgctxt "UI"
-#| msgid ""
-#| "We have credited the reward to Financial Accounts of your choosing. If "
-#| "you wish to see a detailed reward breakdown, <a href=\"http://slushpool."
-#| "com/mining/rewards?utm_source=sp-mobile-"
-#| "app&utm_medium=UsefulLinks\">visit the website</a>."
 msgctxt "UI"
 msgid ""
 "We have credited the reward to Financial Accounts of your choosing. If you "
@@ -1168,9 +1166,10 @@ msgid ""
 "rewards?utm_source=sp-mobile-app&utm_medium=UsefulLinks\">visit the website</"
 "a>."
 msgstr ""
-"ما پاداش را به حساب های مالی انتخابی شما واریز کرده ایم. اگر می‌خواهید جزئیات "
-"پاداش را ببینید، <a href=\"http://slushpool.com/mining/rewards?utm_source=sp-"
-"mobile-app&utm_medium=UsefulLinks\">از وب‌سایت دیدن کنید</a>."
+"ما پاداش را به حساب های مالی انتخابی شما واریز کرده ایم. اگر می‌خواهید "
+"جزئیات پاداش را ببینید، <a href=\"http://braiins.com/mining/"
+"rewards?utm_source=sp-mobile-app&utm_medium=UsefulLinks\">از وب‌سایت دیدن "
+"کنید</a>."
 
 #: devices/templates/devices/reward.html:25
 msgctxt "UI"
@@ -1273,11 +1272,8 @@ msgid "Platform version must be a string no longer than %d characters."
 msgstr "نسخه پلتفرم باید یک استرینگ باشد که بیشتر از %d کاراکتر نباشد."
 
 #: devices/validators.py:83
-#, fuzzy
-#| msgid ""
-#| "Firebase notification token must be a string no longer than %d characters."
 msgid "Firebase notification token must be a string."
-msgstr "توکن اعلان Firebase باید استرینگی باشد که بیشتر از %d کاراکتر نباشد."
+msgstr "توکن اعلان Firebase باید یک رشته باشد."
 
 #: devices/validators.py:89
 #, python-format
@@ -1341,12 +1337,9 @@ msgid "You do not have permission to submit this form."
 msgstr "شما اجازه ارسال این فرم را ندارید."
 
 #: finance/forms/payout_account.py:52
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "A label with this name already exists."
 msgctxt "UI"
 msgid "An account with this name already exists!"
-msgstr "یک برچسب با این نام از قبل وجود دا‌رد."
+msgstr "یک حساب کاربری با این نام از قبل وجود دارد!"
 
 #: finance/forms/payout_account.py:143
 msgctxt "UI"
@@ -1387,20 +1380,14 @@ msgid "Payouts are locked."
 msgstr "پرداخت ها قفل شده اند."
 
 #: finance/forms/payout_channel.py:148
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "A label with this name already exists."
 msgctxt "UI"
 msgid "Wallet with this name already exists!"
-msgstr "یک برچسب با این نام از قبل وجود دا‌رد."
+msgstr "یک کیف پول با این نام از قبل وجود دارد!"
 
 #: finance/forms/payout_channel.py:152
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "A label with this name already exists."
 msgctxt "UI"
 msgid "Wallet with this address already exists!"
-msgstr "یک برچسب با این نام از قبل وجود دا‌رد."
+msgstr "یک کیف پول با این آدرس از قبل وجود دارد!"
 
 #: finance/forms/payout_hold.py:33
 msgctxt "UI"
@@ -1507,12 +1494,9 @@ msgid "Blockchain address is not supported for this coin!"
 msgstr "آدرس Blockchain برای این کوین پشتیبانی نمی شود!"
 
 #: finance/forms/validators.py:168
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "This name is already used!"
 msgctxt "UI"
 msgid "This address cannot be used!"
-msgstr "این نام قبلاً استفاده شده است!"
+msgstr "این آدرس قابل استفاده نیست!"
 
 #: finance/forms/validators.py:210
 msgctxt "UI"
@@ -1658,12 +1642,9 @@ msgid "Threshold must be lower than %(minimum)s %(unit)s!"
 msgstr "آستانه باید کمتر از %(minimum)s %(unit)s باشد!"
 
 #: finance/forms/validators.py:549
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid threshold value!"
 msgctxt "UI"
 msgid "Invalid threshold value."
-msgstr "مقدار آستانه نامعتبر است!"
+msgstr "مقدار آستانه نامعتبر است."
 
 #: finance/forms/validators.py:564
 msgctxt "UI"
@@ -1791,6 +1772,8 @@ msgid ""
 "Password cannot be longer than %s characters. If you have a longer password, "
 "please reset it."
 msgstr ""
+"رمز عبور نمی‌تواند بیشتر از %s کاراکتر باشد. اگر رمز عبوری بیشتر دارید، لطفاً"
+" آن را بازنشانی کنید."
 
 #: formlib/core.py:49
 msgid "Second factor authentication required!"
@@ -1801,10 +1784,8 @@ msgid "OTP token validation failed."
 msgstr "اعتبار سنجی رمزOTP انجام نشد."
 
 #: formlib/core.py:57
-#, fuzzy
-#| msgid "U2F authentication failed!"
 msgid "FIDO authentication failed!"
-msgstr "تأیید هویت U2F انجام نشد!"
+msgstr "تأیید هویت FIDO انجام نشد!"
 
 #: formlib/core.py:61
 msgid "Password is incorrect!"
@@ -2316,14 +2297,13 @@ msgid ""
 "Your account is blocked due to detected OFAC violation. Check registered "
 "email for more information."
 msgstr ""
+"حساب کاربری شما به دلیل نقض OFAC شناسایی شده مسدود شده است. برای اطلاعات "
+"بیشتر، ایمیل ثبت‌نام شده را بررسی کنید."
 
 #: web/api/v1/appeals.py:115
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgctxt "UI"
 msgid "Account blocked"
-msgstr "حساب کاربری حذف شد"
+msgstr "حساب کاربری مسدود شده است"
 
 #: web/api/v1/appeals.py:130
 msgctxt "UI"
@@ -2395,12 +2375,10 @@ msgid ""
 msgstr "فقط حروف الفبا،اعداد و زیر خط در نام کاربری مجاز است!"
 
 #: web/api/v1/views.py:737
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Name can not be longer than %(length)s characters!"
+#, python-format
 msgctxt "UI"
 msgid "Username cannot be longer than %d characters!"
-msgstr "نام نمی تواند طولانی تر از %(length)s کاراکتر باشد!"
+msgstr "نام کاربری نمی‌تواند بیشتر از %d کاراکتر باشد!"
 
 #: web/api/v1/views.py:744 web/api/v1/views.py:1224
 msgctxt "UI"
@@ -2408,12 +2386,10 @@ msgid "Invalid email format!"
 msgstr "فرمت ایمیل نامعتبر است!"
 
 #: web/api/v1/views.py:747
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Name can not be longer than %(length)s characters!"
+#, python-format
 msgctxt "UI"
 msgid "Email address cannot be longer than %d characters!"
-msgstr "نام نمی تواند طولانی تر از %(length)s کاراکتر باشد!"
+msgstr "آدرس ایمیل نمی‌تواند بیشتر از %d کاراکتر باشد!"
 
 #: web/api/v1/views.py:754 web/api/v1/views.py:1305
 msgctxt "UI"
@@ -2421,12 +2397,10 @@ msgid "Password must have at least 5 characters!"
 msgstr "رمز عبور باید حداقل 5 کاراکتر داشته باشد!"
 
 #: web/api/v1/views.py:757 web/models.py:327
-#, fuzzy, python-format
-#| msgctxt "UI"
-#| msgid "Name can not be longer than %(length)s characters!"
+#, python-format
 msgctxt "UI"
 msgid "Password cannot have more than %s characters!"
-msgstr "نام نمی تواند طولانی تر از %(length)s کاراکتر باشد!"
+msgstr "رمز عبور نمی‌تواند بیشتر از %s کاراکتر داشته باشد!"
 
 #: web/api/v1/views.py:823
 #, python-format
@@ -2435,6 +2409,8 @@ msgid ""
 "Password cannot have more than %s characters. If you have a longer password, "
 "please reset it."
 msgstr ""
+"رمز عبور نمی‌تواند بیشتر از %s کاراکتر داشته باشد. اگر رمز عبوری با طول "
+"بیشتر دارید، لطفاً آن را بازنشانی کنید."
 
 #: web/api/v1/views.py:842 web/api/v1/views.py:861 web/api/v1/views.py:947
 msgctxt "UI"
@@ -2817,20 +2793,14 @@ msgid "Minimum difficulty"
 msgstr "سختی حداقل"
 
 #: web/models.py:1226
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Preferred language"
 msgctxt "UI"
 msgid "Preferred fiat currency"
-msgstr "زبان مورد نظر"
+msgstr "ارز اولیه ترجیحی"
 
 #: web/models.py:1227
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Monitoring notifications"
 msgctxt "UI"
 msgid "Payout email notifications"
-msgstr "نظارت بر اطلاعیه ها"
+msgstr "اعلان‌های ایمیل پرداخت"
 
 #: web/models.py:1230
 msgctxt "UI"
@@ -2858,28 +2828,19 @@ msgid "Account deletion requested"
 msgstr "حذف حساب کاربری درخواست شد"
 
 #: web/models.py:1274
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgctxt "UI"
 msgid "Account deleted by admin"
-msgstr "حساب کاربری حذف شد"
+msgstr "حساب کاربری توسط مدیر حذف شده است"
 
 #: web/models.py:1275
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgctxt "UI"
 msgid "Account closed by admin"
-msgstr "حساب کاربری حذف شد"
+msgstr "حساب کاربری توسط مدیر بسته شده است"
 
 #: web/models.py:1276
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgctxt "UI"
 msgid "Account reopened by admin"
-msgstr "حساب کاربری حذف شد"
+msgstr "حساب کاربری توسط مدیر بازگشایی شد"
 
 #: web/models.py:1278
 msgctxt "UI"
@@ -3260,99 +3221,64 @@ msgid "Zcash wallet unlocked"
 msgstr "قفل کیف پول Zcash باز شد"
 
 #: web/models.py:1541
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "New wallet created"
 msgctxt "UI"
 msgid "New user created"
-msgstr "کیف پول جدید ایجاد شده است"
+msgstr "کاربر جدید ایجاد شد"
 
 #: web/models.py:1545
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "New wallet created"
 msgctxt "UI"
 msgid "New API key created"
-msgstr "کیف پول جدید ایجاد شده است"
+msgstr "کلید API جدید ایجاد شد"
 
 #: web/models.py:1549
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Nothing has changed"
 msgctxt "UI"
 msgid "Profile status changed"
-msgstr "چیزی تغییر نکرده است"
+msgstr "وضعیت پروفایل تغییر کرد"
 
 #: web/models.py:1553
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deletion requested"
 msgctxt "UI"
 msgid "User account deletion requested"
-msgstr "حذف حساب کاربری درخواست شد"
+msgstr "درخواست حذف حساب کاربری کاربر ثبت شده است"
 
 #: web/models.py:1557
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgctxt "UI"
 msgid "User account deleted"
-msgstr "حساب کاربری حذف شد"
+msgstr "حساب کاربری کاربر حذف شده است"
 
 #: web/models.py:1565
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Password reset completed"
 msgctxt "UI"
 msgid "User password reset completed"
-msgstr "تنظیم مجدد کلمه عبور کامل شد"
+msgstr "تنظیم مجدد رمز عبور کاربر انجام شد"
 
 #: web/models.py:1575
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Email address"
 msgctxt "UI"
 msgid "Email address updated by admin"
-msgstr "آدرس ایمیل"
+msgstr "آدرس ایمیل توسط مدیر به‌روزرسانی شد"
 
 #: web/models.py:1585 web/models.py:1595
-#, fuzzy
-#| msgid "Username change"
 msgctxt "UI"
 msgid "User role changed"
-msgstr "تغییر نام‌کاربری"
+msgstr "نقش کاربر تغییر یافت"
 
 #: web/models.py:1590
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Cancel request"
 msgctxt "UI"
 msgid "Change of user role requested"
-msgstr "لغو درخواست"
+msgstr "درخواست تغییر نقش کاربری ارسال شد"
 
 #: web/models.py:1600
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Invalid notifications settings."
 msgctxt "UI"
 msgid "Email notifications settings changed"
-msgstr "تنظیمات اعلان‌ها نامعتبر است."
+msgstr "تنظیمات اطلاعیه‌های ایمیل تغییر یافت"
 
 #: web/models.py:1611
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Payouts blocked by sysadmin"
 msgctxt "UI"
 msgid "OTP disabled by admin"
-msgstr "پرداخت ها توسط مدیرسیستم مسدود شده است"
+msgstr "OTP توسط مدیر غیرفعال شد"
 
 #: web/models.py:1615
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Account deleted"
 msgctxt "UI"
 msgid "FIDO disabled by admin"
-msgstr "حساب کاربری حذف شد"
+msgstr "FIDO توسط مدیر غیرفعال شد"
 
 #: web/registration.py:44
 #, python-format
@@ -3368,7 +3294,7 @@ msgstr "سلام"
 #: web/templates/email/_base.html:7
 msgctxt "UI"
 msgid "Braiins Pool"
-msgstr ""
+msgstr "Braiins Pool"
 
 #: web/templates/email/_base.html:8
 msgctxt "UI"
@@ -3615,12 +3541,9 @@ msgid "Reset password"
 msgstr "تنظیم مجدد رمز عبور"
 
 #: web/templates/email/password_reset_subject.txt:1
-#, fuzzy
-#| msgctxt "UI"
-#| msgid "Password reset on Slush Pool"
 msgctxt "UI"
 msgid "Password reset on Braiins Pool"
-msgstr "تنظیم مجدد رمز عبوردر Slush Pool"
+msgstr "تنظیم مجدد رمز عبوردر Braiins Pool"
 
 #: web/templates/email/payout.html:5
 #, python-format
