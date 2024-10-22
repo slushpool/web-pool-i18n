@@ -4,7 +4,8 @@ default:
 
 .PHONY: format
 format:
-	yarn biome check --apply .
+	yarn run biome migrate --write
+	yarn biome check --write .
 
 .PHONY: checkPoFiles
 checkPoFiles:
